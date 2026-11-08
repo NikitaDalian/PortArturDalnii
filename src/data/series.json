@@ -1,0 +1,89 @@
+[
+ {
+  "slug": "russko-yaponskaya-voyna-za-pyat-postov",
+  "title": "Русско-японская война за пять постов",
+  "articles": [
+   "kak-vse-nachinalos-predposylki-voiny",
+   "voina-na-more-osada-mukden-tsusima",
+   "mir-i-itogi-voiny"
+  ]
+ },
+ {
+  "slug": "fotoletopis-voyny",
+  "title": "Фотолетопись войны",
+  "articles": [
+   "kto-fotografiroval-russko-yaponskuyu-voinu",
+   "albom-shtaba-glavnokomanduyushchego-1905",
+   "albom-mandzhuriya-1906"
+  ]
+ },
+ {
+  "slug": "stepanov-i-ego-port-artur",
+  "title": "Степанов и его «Порт-Артур»",
+  "articles": [
+   "stepanov-port-artur-retsenziya",
+   "aleksandr-stepanov-hrabrets-s-drugoi-voiny"
+  ]
+ },
+ {
+  "slug": "nikolay-ii-i-yaponiya",
+  "title": "Николай II и Япония",
+  "articles": [
+   "nikolai-ii-i-russko-yaponskaya-voina",
+   "otsu-1891-pokushenie-na-tsesarevicha"
+  ]
+ },
+ {
+  "slug": "arhitektory-dalnevostochnoy-politiki",
+  "title": "Архитекторы дальневосточной политики",
+  "articles": [
+   "admiral-alekseev-namestnik",
+   "li-hunchzhan-soyuznik-kotoryi-sdaval-kreposti",
+   "aleksandr-bezobrazov-kavalergard",
+   "plehve-malenkaya-pobedonosnaya-voina"
+  ]
+ },
+ {
+  "slug": "graf-polusahalinskiy",
+  "title": "Граф Полусахалинский",
+  "articles": [
+   "vitte-chast-1-ministr-kotoryi-stroil",
+   "vitte-chast-2-ministr-kotoryi-otdaval",
+   "vitte-posleslovie-reputatsiya"
+  ]
+ },
+ {
+  "slug": "bliznetsy-poselyagina",
+  "title": "Близнецы Поселягина",
+  "articles": [
+   "poselyagin-praporshchiki-po-admiralteistvu",
+   "poselyagin-poruchiki-po-admiralteistvu"
+  ]
+ },
+ {
+  "slug": "krepost-port-artur",
+  "title": "Крепость Порт-Артур",
+  "articles": [
+   "ukreplenie-5-yahutszui",
+   "kak-ustroen-fort"
+  ]
+ },
+ {
+  "slug": "vladivostokskiy-otryad-i-kreysera",
+  "title": "Владивостокский отряд и «Крейсера»",
+  "articles": [
+   "vladivostokskii-otryad-kreiserov",
+   "valentin-pikul-biografiya",
+   "pikul-kreisera-retsenziya"
+  ]
+ },
+ {
+  "slug": "general-kondratenko",
+  "title": "Генерал Кондратенко",
+  "articles": [
+   "kondratenko-put-k-port-arturu",
+   "kondratenko-dusha-oborony",
+   "kulichkin-kondratenko-zhzl"
+  ]
+ }
+]

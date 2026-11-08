@@ -1,0 +1,16 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import PersonRow from '../components/PersonRow.astro';
+import BookRow from '../components/BookRow.astro';
+import PlaceCard from '../components/PlaceCard.astro';
+import { articles, people, books, places } from '../lib/data';
+---
+<Base>
+  <PageHero title="Заглушка главной" eyebrow="Тест" lead="Основа собирается." />
+  <div class="container section grid">{articles.slice(0,3).map(a => <ArticleCard a={a} />)}</div>
+  <div class="container row-list">{people.slice(0,3).map(p => <PersonRow p={p} />)}</div>
+  <div class="container row-list">{books.slice(0,2).map(b => <BookRow b={b} />)}</div>
+  <div class="container grid">{places.slice(0,3).map(p => <PlaceCard p={p} />)}</div>
+</Base>

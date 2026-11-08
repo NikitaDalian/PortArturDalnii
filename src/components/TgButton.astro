@@ -1,0 +1,10 @@
+---
+// Кнопка «Читать в Telegram» (полный текст поста живёт в канале).
+import { tgPost } from '../lib/data';
+interface Props { id: number | string; label?: string; variant?: 'primary' | 'outline' }
+const { id, label = 'Читать полностью в Telegram', variant = 'primary' } = Astro.props;
+---
+<a class:list={['btn', `btn--${variant}`]} href={tgPost(id)} target="_blank" rel="noopener">
+  {label}
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg>
+</a>

@@ -1,0 +1,30 @@
+---
+// Блок перекрёстных ссылок: люди, места, книги — чипами. Без страницы — просто текстом.
+import { entity } from '../lib/data';
+interface Props { people?: string[]; places?: string[]; books?: string[]; title?: string }
+const { people = [], places = [], books = [], title } = Astro.props;
+const groups = [
+  { label: 'Люди', items: people.map((s) => entity('person', s)) },
+  { label: 'Места', items: places.map((s) => entity('place', s)) },
+  { label: 'Книги и источники', items: books.map((s) => entity('book', s)) },
+].filter((g) => g.items.length);
+---
+{groups.length > 0 && (
+  <div class="related stack" style="--stack-gap:20px">
+    {title && <h2 class="h3">{title}</h2>}
+    {groups.map((g) => (
+      <div class="stack" style="--stack-gap:10px">
+        <span class="eyebrow">{g.label}</span>
+        <div class="cluster">
+          {g.items.map((i) => i.href
+            ? <a class="chip" href={i.href}>{i.label}</a>
+            : <span class="related__plain">{i.label}</span>)}
+        </div>
+      </div>
+    ))}
+  </div>
+)}
+<style>
+  .related__plain { display: inline-flex; align-items: center; min-height: 44px; padding: 0 6px; font-size: 15px; color: var(--ink-2); }
+  :global(.dark) .related__plain { color: var(--mist); }
+</style>

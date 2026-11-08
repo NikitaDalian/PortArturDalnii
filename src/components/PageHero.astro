@@ -1,0 +1,52 @@
+---
+// Шапка внутренней страницы: тёмная полоса с крошками, подписью, заголовком, лидом и линией берега.
+import Coast from './Coast.astro';
+interface Crumb { label: string; href?: string }
+interface Props {
+  title: string;
+  eyebrow?: string;
+  lead?: string;
+  crumbs?: Crumb[];
+  image?: string | null;      // необязательная картинка справа
+  imageAlt?: string;
+  caption?: string;
+  transitionName?: string;    // для морфинга картинки между списком и страницей
+  coastFill?: string;
+}
+const { title, eyebrow, lead, crumbs = [], image = null, imageAlt = '', caption, transitionName, coastFill } = Astro.props;
+---
+<section class="page-hero dark">
+  <div class="container page-hero__inner" class:list={[{ 'has-img': image }]}>
+    <div class="page-hero__text stack" style="--stack-gap:16px">
+      {crumbs.length > 0 && (
+        <nav class="crumbs" aria-label="Путь">
+          {crumbs.map((c, i) => (
+            <>
+              {c.href ? <a href={c.href}>{c.label}</a> : <span aria-current="page">{c.label}</span>}
+              {i < crumbs.length - 1 && <span aria-hidden="true">/</span>}
+            </>
+          ))}
+        </nav>
+      )}
+      {eyebrow && <p class="eyebrow eyebrow--accent">{eyebrow}</p>}
+      <h1 class="h1">{title}</h1>
+      {lead && <p class="lead">{lead}</p>}
+      <slot />
+    </div>
+    {image && (
+      <figure class="page-hero__fig">
+        <img src={image} alt={imageAlt} transition:name={transitionName} loading="eager" decoding="async" />
+        {caption && <figcaption>{caption}</figcaption>}
+      </figure>
+    )}
+  </div>
+  <Coast fill={coastFill} />
+</section>
+
+<style>
+  .page-hero { padding-top: clamp(32px, 5vw, 56px); }
+  .page-hero__inner { display: flex; flex-wrap: wrap; gap: 32px 48px; align-items: flex-end; padding-bottom: 24px; }
+  .page-hero__text { flex: 1 1 520px; min-width: 0; }
+  .page-hero__fig { flex: 0 1 420px; min-width: 0; }
+  .page-hero__fig img { width: 100%; max-height: 420px; object-fit: cover; }
+</style>

@@ -1,0 +1,67 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { t } from '../i18n/ru';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;          // заголовок страницы без названия сайта
+  description?: string;
+  image?: string | null;   // абсолютный или внутренний адрес картинки для превью
+  section?: 'layers' | 'people' | 'map' | 'library' | 'notes' | 'about' | null; // подсветка пункта меню
+  lang?: 'ru' | 'en' | 'zh';
+}
+const { title, description = t.description, image = null, section = null, lang = 'ru' } = Astro.props;
+const fullTitle = title ? `${title} — ${t.site}` : `${t.site} — ${t.tagline}`;
+const ogImage = image ? new URL(image, Astro.site).href : new URL(import.meta.env.BASE_URL + 'img/p/98.webp', Astro.site).href;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+---
+<!doctype html>
+<html lang={lang} class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:locale" content="ru_RU" />
+  <meta name="theme-color" content="#0B2238" />
+  <link rel="icon" href={import.meta.env.BASE_URL + 'favicon.svg'} type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <slot name="head" />
+  <ClientRouter fallback="swap" />
+  <script is:inline>document.documentElement.classList.remove('no-js');</script>
+</head>
+<body>
+  <a class="sr-only" href="#main">К содержанию</a>
+  <Header section={section} />
+  <main id="main" data-pagefind-body>
+    <slot />
+  </main>
+  <Footer />
+  <script>
+    // Плавное появление блоков при скролле. Элементам добавляйте class="reveal" (и style="--d:120ms" для задержки).
+    function initReveal() {
+      const els = document.querySelectorAll<HTMLElement>('.reveal:not(.is-in)');
+      if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        els.forEach((el) => el.classList.add('is-in'));
+        return;
+      }
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        });
+      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.06 });
+      els.forEach((el) => io.observe(el));
+    }
+    document.addEventListener('astro:page-load', initReveal);
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+---
+// Карточка места: фото, название, современное название, слои.
+import { href, img, layerByKey, type Place } from '../lib/data';
+interface Props { p: Place; compact?: boolean }
+const { p, compact = false } = Astro.props;
+const photo = img(p.photos?.[0], 640);
+const city = p.city === 'lushun' ? 'Люйшунь' : p.city === 'dalian' ? 'Далянь' : 'Другое';
+---
+<a href={href.place(p.slug)} class:list={['card', 'place-card', { 'place-card--compact': compact }]}>
+  <div class="card__media">
+    {photo
+      ? <img class="card__img" src={photo} alt="" loading="lazy" decoding="async" transition:name={`place-${p.slug}`} />
+      : <div class="card__img place-card__ph" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+        </div>}
+  </div>
+  <span class="meta">{city} · {(p.layers || []).map((l: string) => layerByKey(l)?.years).filter(Boolean).join(', ')}</span>
+  <span class="h3 card__title">{p.name}</span>
+  {!compact && p.name_now && <span class="muted" style="font-size:15px">{p.name_now}</span>}
+</a>
+
+<style>
+  .place-card__ph { display: flex; align-items: center; justify-content: center; color: var(--line-2); background: var(--frost); }
+  .place-card--compact .h3 { font-size: 18px; }
+</style>

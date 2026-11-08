@@ -1,0 +1,45 @@
+---
+import { href, TG_CHANNEL } from '../lib/data';
+import { t } from '../i18n/ru';
+---
+<footer class="site-footer dark" data-pagefind-ignore>
+  <div class="container site-footer__grid">
+    <div class="stack" style="--stack-gap:10px">
+      <span class="site-footer__brand">{t.site}</span>
+      <p class="muted" style="max-width:420px">{t.footer.about}</p>
+      <p class="site-footer__authors">Авторы: Виктория, историк, автор канала; Оксана, Русский клуб Даляня.</p>
+    </div>
+    <nav class="stack" style="--stack-gap:10px" aria-label="Разделы">
+      <a href={href.layers()}>{t.nav.layers}</a>
+      <a href={href.people()}>{t.nav.people}</a>
+      <a href={href.map()}>Карта</a>
+      <a href={href.routes()}>Маршруты</a>
+      <a href={href.seasons()}>Сезоны</a>
+    </nav>
+    <nav class="stack" style="--stack-gap:10px" aria-label="Материалы">
+      <a href={href.library()}>{t.nav.library}</a>
+      <a href={href.notes()}>{t.nav.notes}</a>
+      <a href={href.index()}>Указатель А–Я</a>
+      <a href={href.about()}>{t.nav.about}</a>
+      <a href={TG_CHANNEL} rel="noopener">Telegram-канал</a>
+    </nav>
+    <div class="stack" style="--stack-gap:10px">
+      <span style="color:#fff;font-weight:600">{t.lang.ru}</span>
+      <span class="site-footer__soon">{t.lang.en} — {t.footer.soon}</span>
+      <span class="site-footer__soon">{t.lang.zh} — {t.footer.soon}</span>
+    </div>
+  </div>
+  <div class="container site-footer__bottom">{t.footer.rights}</div>
+</footer>
+
+<style>
+  .site-footer { padding-top: 56px; }
+  .site-footer__grid { display: grid; gap: 32px; grid-template-columns: 2fr repeat(3, 1fr); }
+  .site-footer__brand { font-size: 24px; font-weight: 800; }
+  .site-footer__authors { font-size: 15px; color: var(--steel); }
+  .site-footer nav a { color: var(--mist); width: fit-content; transition: color .2s; }
+  .site-footer nav a:hover { color: #fff; text-decoration: underline; text-underline-offset: 4px; }
+  .site-footer__soon { color: #8FA6B8; }
+  .site-footer__bottom { margin-top: 40px; padding-block: 20px 32px; border-top: 1px solid var(--sea); font-size: 13px; color: #8FA6B8; }
+  @media (max-width: 860px) { .site-footer__grid { grid-template-columns: 1fr 1fr; } .site-footer__grid > :first-child { grid-column: 1 / -1; } }
+</style>

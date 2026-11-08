@@ -1,0 +1,37 @@
+---
+// Строка персоны (как в списке «Лица»). Работает на тёмном и светлом фоне.
+import { href, img, COUNTRIES, type Person } from '../lib/data';
+interface Props { p: Person; size?: 'md' | 'sm' }
+const { p, size = 'md' } = Astro.props;
+const c = COUNTRIES[p.country] ?? COUNTRIES.other;
+const portrait = img(p.portrait, 640);
+const initials = p.short ? p.short.split(' ').map((w: string) => w[0]).slice(0, 2).join('') : p.name[0];
+---
+<a href={href.person(p.slug)} class:list={['row', 'person-row', `person-row--${size}`]} data-country={p.country} data-group={p.group}>
+  {portrait
+    ? <img class="person-row__img bw" src={portrait} alt="" loading="lazy" decoding="async" transition:name={`person-${p.slug}`} />
+    : <span class="person-row__img person-row__ph" aria-hidden="true">{initials}</span>}
+  <span class="stack" style="--stack-gap:4px; min-width:0">
+    <span class="row__title person-row__name">{p.short || p.name}</span>
+    <span class="person-row__meta" style={`--cc:${c.color}`}>{p.years ? `${p.years} · ` : ''}{c.label}</span>
+    <span class="person-row__role">{p.role}</span>
+  </span>
+</a>
+
+<style>
+  .person-row__img { flex: 0 0 72px; width: 72px; height: 90px; object-fit: cover; object-position: top; background: var(--frost); }
+  .person-row__ph { display: flex; align-items: flex-end; padding: 8px; font-size: 26px; font-weight: 800; color: var(--line-2); }
+  :global(.dark) .person-row__ph { background: var(--navy-2); color: var(--sea); }
+  .person-row__name { font-size: 21px; font-weight: 700; }
+  .person-row__meta { font-size: 14px; font-weight: 600; color: var(--ink-3); }
+  :global(.dark) .person-row__meta { color: var(--cc); }
+  .person-row__role { font-size: 15px; line-height: 1.4; color: var(--ink-2); }
+  :global(.dark) .person-row__role { color: var(--mist); }
+  .person-row--sm .person-row__img { flex-basis: 56px; width: 56px; height: 70px; }
+  .person-row--sm .person-row__name { font-size: 18px; }
+  @media (max-width: 520px) {
+    .person-row__img { flex-basis: 56px; width: 56px; height: 70px; }
+    .person-row__name { font-size: 18px; }
+    .person-row__role { font-size: 14px; }
+  }
+</style>
