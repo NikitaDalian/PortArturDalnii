@@ -26,8 +26,8 @@
 ## Данные (`src/data/*.json`, собраны скриптом `scripts/build_data.py`)
 - `articles` (60): slug, tg_ids, tg_url, date (дата поста), title, dek, summary, facts[], type, layer[], people[], places[], books[], photos[], cover, read_min, series, series_slug, + обратные связи считаются через data.ts.
 - `people` (30): slug, name, short, years, country, role, group, bio, quote, posts, portrait, places[], articles[].
-- `places` (31): slug, name, name_zh, name_now, city, layers, kind, lat, lng, coord_confidence, summary, visit, season, posts, photos, verify, articles[].
-- `books` (24), `sources` (19), `routes` (5), `seasons`, `series` (10), `photos` (каталог 215 фото), `index_terms` (имена/места без страниц).
+- `places` (45): slug, name, name_zh, name_now, city, layers, kind, lat, lng, coord_confidence, summary, visit, season, posts, photos, verify, articles[].
+- `books` (24), `sources` (19), `routes` (8), `seasons`, `series` (10), `photos` (каталог 215 фото), `index_terms` (имена/места без страниц).
 - Фото: `img(path_or_id)` → WebP с водяным знаком; `img(x, 640)` — превью. Портрет Виктории: `authorImg('viktoriia')`.
 - Поле `verify: true` или `coord_confidence: low` — показывай аккуратную пометку «уточняется», не выдавай за факт.
 
