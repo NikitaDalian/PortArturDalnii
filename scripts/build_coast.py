@@ -52,6 +52,10 @@ def main(path: Path):
     alpha = ImageChops.invert(front)
     rgba = im.convert('RGBA')
     rgba.putalpha(alpha)
+    # ниже самой нижней точки гребня ближнего ряда всё прозрачно — лишнее отрезаем, иначе разделитель станет выше нужного
+    last = alpha.point(lambda v: 255 if v > 8 else 0).getbbox()
+    if last:
+        rgba = rgba.crop((0, 0, rgba.width, min(rgba.height, last[3] + 3)))
 
     # 3. сохранить
     OUT.mkdir(parents=True, exist_ok=True)
@@ -61,7 +65,7 @@ def main(path: Path):
     big.save(OUT / 'coast-hills.webp', 'WEBP', quality=90, method=6)
     small = rgba.resize((1280, round(rgba.height * 1280 / rgba.width)), Image.LANCZOS)
     small.save(OUT / 'coast-hills-1280.webp', 'WEBP', quality=88, method=6)
-    print(f'coast-hills: {big.size}, полоса {box[1]}–{h + top}px, прозрачность {front.getbbox() is not None}')
+    print(f'coast-hills: {big.size} (было {w}x{h}), прозрачность {front.getbbox() is not None}')
 
 
 if __name__ == '__main__':
