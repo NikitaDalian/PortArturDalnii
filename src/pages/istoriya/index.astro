@@ -45,7 +45,7 @@ const lead = 'Пять эпох одного места на южной окон
     </div>
     <ol class="lb-list">
       {blocks.map(({ l, text, count, people, places, art }, i) => (
-        <li class:list={['lb reveal', { 'lb--dark dark': l.key === 'russian', 'lb--noart': !art }]} style={`--d:${i * 70}ms`}>
+        <li class:list={['lb reveal', { 'lb--noart': !art }]} style={`--d:${i * 70}ms`}>
           <a class="lb__media" href={href.layer(l.key)} tabindex="-1" aria-hidden="true">
             {art
               ? <img src={art.src} srcset={art.srcset} sizes="(max-width: 960px) 100vw, 240px" alt="" width="720" height="480" loading="lazy" decoding="async" />

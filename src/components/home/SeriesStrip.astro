@@ -1,12 +1,12 @@
 ---
-// «Серии»: горизонтальная лента циклов заметок.
-import { series, articleBySlug, href, img, focusStyle, plural } from '../../lib/data';
+// «Серии»: циклы заметок. Без картинок: название, число заметок и первые заголовки цикла.
+import { series, articleBySlug, href, plural } from '../../lib/data';
 const list = [...series]
   .sort((a, b) => (b.articles?.length ?? 0) - (a.articles?.length ?? 0))
   .slice(0, 6)
   .map((s) => {
-    const first = (s.articles ?? []).map((x) => articleBySlug.get(x)).find((a) => a?.cover);
-    return { slug: s.slug, title: s.title, n: s.articles?.length ?? 0, cover: img(first?.cover, 640), cs: focusStyle(first?.cover) };
+    const arts = (s.articles ?? []).map((x) => articleBySlug.get(x)).filter(Boolean) as any[];
+    return { slug: s.slug, title: s.title, n: arts.length, titles: arts.slice(0, 3).map((a) => a.title as string) };
   });
 ---
 <section class="section container" aria-labelledby="series-h">
@@ -17,17 +17,16 @@ const list = [...series]
     </div>
     <a class="link" href={href.seriesList()}>Все серии · {series.length}</a>
   </div>
-  <ul class="series-strip reveal" style="--d:80ms" role="list">
-    {list.map((s) => (
-      <li>
-        <a class="card series-card" href={href.series(s.slug)}>
-          <div class="card__media">
-            {s.cover
-              ? <img class="card__img" src={s.cover} alt="" loading="lazy" decoding="async" style={s.cs} />
-              : <div class="card__img series-card__ph" aria-hidden="true"></div>}
-          </div>
-          <span class="meta">{s.n} {plural(s.n, 'заметка', 'заметки', 'заметок')}</span>
-          <span class="card__title series-card__title">{s.title}</span>
+  <ul class="series" role="list">
+    {list.map((s, i) => (
+      <li class="reveal" style={`--d:${Math.min(i, 5) * 70}ms`}>
+        <a class="series__card" href={href.series(s.slug)}>
+          <span class="series__n">{s.n} {plural(s.n, 'заметка', 'заметки', 'заметок')}</span>
+          <span class="series__title">{s.title}</span>
+          <ol class="series__list">
+            {s.titles.map((t) => <li>{t}</li>)}
+          </ol>
+          <span class="series__go">Читать подряд</span>
         </a>
       </li>
     ))}
@@ -35,14 +34,17 @@ const list = [...series]
 </section>
 
 <style>
-  .series-strip { list-style: none; margin: 0; padding: 0 0 12px; display: flex; gap: 20px; overflow-x: auto;
-    scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: var(--line-2) transparent; }
-  .series-strip li { flex: 0 0 clamp(240px, 22vw, 290px); scroll-snap-align: start; display: flex; }
-  .series-card { flex: 1; gap: 8px; }
-  .series-card__title { font-size: 19px; font-weight: 700; line-height: 1.25; }
-  .series-card__ph { background: var(--navy-2); }
-  @media (max-width: 720px) {
-    .series-strip { margin-inline: calc(var(--gutter) * -1); padding-inline: var(--gutter); scroll-padding-inline: var(--gutter); gap: 14px; }
-    .series-strip li { flex-basis: 240px; }
-  }
+  .series { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); }
+  .series > li { display: flex; }
+  .series__card { flex: 1; display: flex; flex-direction: column; gap: 10px; padding: 22px 24px 20px; background: var(--paper); border: 1px solid var(--line); border-top: 4px solid var(--navy); transition: transform .3s var(--ease), box-shadow .3s; }
+  .series__card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(11, 34, 56, .1); }
+  .series__n { font-size: var(--fs-meta); font-weight: 600; color: var(--ink-3); }
+  .series__title { font-size: 21px; font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; }
+  .series__card:hover .series__title { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+  .series__list { margin: 4px 0 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 4px; font-size: 15px; line-height: 1.4; color: var(--ink-2); }
+  .series__list li { padding-left: 2px; }
+  .series__go { margin-top: auto; padding-top: 10px; font-size: 15px; font-weight: 600; color: var(--accent-on-light, var(--accent)); }
+  .series__go::after { content: ' →'; }
+  @media (max-width: 720px) { .series__card { padding: 18px 18px 16px; } .series__list li:nth-child(n + 3) { display: none; } }
+  @media (prefers-reduced-motion: reduce) { .series__card, .series__card:hover { transition: none; transform: none; } }
 </style>

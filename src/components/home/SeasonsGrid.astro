@@ -34,7 +34,7 @@ const list = (Object.keys(meta) as (keyof typeof meta)[]).map((k) => ({ key: k, 
   .seasons li { display: flex; }
   .season { flex: 1; display: flex; flex-direction: column; gap: 8px; min-height: 150px; padding: 24px; background: var(--paper); border-top: 6px solid var(--sc); transition: transform .3s var(--ease), box-shadow .3s; }
   .season:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(11, 34, 56, .1); }
-  .season__art { width: calc(100% + 48px); margin: -24px -24px 8px; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 60%; }
+  .season__art { max-width: none; width: calc(100% + 48px); margin: -24px -24px 8px; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 60%; }
   .season__title { font-size: 22px; font-weight: 700; }
   .season:hover .season__title { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
   .season__text { font-size: 16px; line-height: 1.5; color: var(--ink-2); }
@@ -42,7 +42,7 @@ const list = (Object.keys(meta) as (keyof typeof meta)[]).map((k) => ({ key: k, 
   @media (max-width: 720px) {
     .seasons { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
     .season { min-height: 0; padding: 16px; border-top-width: 5px; }
-    .season__art { width: calc(100% + 32px); margin: -16px -16px 6px; }
+    .season__art { max-width: none; width: calc(100% + 32px); margin: -16px -16px 6px; }
     .season__title { font-size: 18px; }
     .season__text { font-size: 14px; line-height: 1.4; }
   }
