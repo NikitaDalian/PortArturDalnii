@@ -15,6 +15,8 @@ done = []
 for f in sorted(SRC.glob('*/*')):
     if f.suffix.lower() not in {'.png', '.jpg', '.jpeg', '.webp'} or f.name.startswith('reference_'):
         continue
+    if f.stem.startswith('coast-'):   # разделитель с прозрачностью делает build_coast.py
+        continue
     im = Image.open(f).convert('RGB')
     w = im.width
     full = im.copy()
