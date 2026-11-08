@@ -1,12 +1,25 @@
 ---
-// Фирменный разделитель — линия берега. Ставится в конце тёмной секции.
-// fill — цвет следующей секции (по умолчанию фон страницы).
-interface Props { fill?: string; flip?: boolean }
-const { fill = 'var(--ice)', flip = false } = Astro.props;
+// Фирменный разделитель в конце тёмной секции: два плавных ряда сопок, как на иллюстрациях сайта.
+// fill — цвет следующей секции (по умолчанию фон страницы). variant="flat" — ровный край без линии.
+interface Props { fill?: string; flip?: boolean; variant?: 'hills' | 'flat' }
+const { fill = 'var(--ice)', flip = false, variant = 'hills' } = Astro.props;
 ---
-<svg class="coast" viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true" style={flip ? 'transform:scaleY(-1)' : undefined}>
-  <path d="M0 40 L60 36 L96 22 L130 30 L170 26 L200 40 L236 44 L262 30 L300 18 L338 24 L360 38 L410 42 L446 34 L480 20 L506 26 L540 44 L590 46 L640 30 L668 34 L700 22 L738 18 L760 30 L800 44 L846 40 L880 26 L930 30 L962 44 L1010 48 L1040 34 L1080 20 L1110 28 L1150 40 L1196 36 L1230 22 L1270 26 L1300 42 L1350 46 L1390 32 L1440 30 L1440 64 L0 64 Z" style={`fill:${fill}`}></path>
-</svg>
+{variant === 'flat' ? null : (
+  <svg class="coast" viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true" style={flip ? 'transform:scaleY(-1)' : undefined}>
+    <g class="coast__back">
+      <path d="M-40 30 C 80 16, 190 10, 320 22 S 560 40, 700 24 S 930 6, 1070 18 S 1320 38, 1480 20 V56 H-40 Z" />
+    </g>
+    <path class="coast__front" d="M0 42 C 150 34, 270 28, 400 36 S 640 50, 780 41 S 1020 27, 1160 36 S 1350 47, 1440 40 V56 H0 Z" style={`fill:${fill}`} />
+  </svg>
+)}
+
 <style>
-  .coast { display: block; width: 100%; height: clamp(28px, 4.5vw, 64px); margin-top: -1px; }
+  .coast { display: block; width: 100%; height: clamp(22px, 3.6vw, 52px); margin-top: -1px; overflow: visible; }
+  .coast__back path { fill: var(--sea); opacity: .55; }
+  @supports (animation-timeline: view()) {
+    .coast__back { animation: coastDrift linear both; animation-timeline: view(); animation-range: entry 0% exit 100%; }
+    @keyframes coastDrift { from { transform: translateX(-18px); } to { transform: translateX(18px); } }
+  }
+  @media (max-width: 720px) { .coast__back { display: none; } }
+  @media (prefers-reduced-motion: reduce) { .coast__back { animation: none; } }
 </style>
