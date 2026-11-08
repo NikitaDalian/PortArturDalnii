@@ -1,0 +1,508 @@
+{
+ "300": {
+  "src": "01_gavan-s-zolotoy-1905.jpg",
+  "crop": null,
+  "focus": {
+   "x": 50,
+   "y": 50,
+   "fit": "cover",
+   "note": "вид с Золотой горы"
+  }
+ },
+ "301": {
+  "src": "02_sunken-warships-uu.jpg",
+  "crop": [
+   0.065,
+   0.115,
+   0.465,
+   0.885
+  ],
+  "focus": {
+   "x": 50,
+   "y": 45,
+   "fit": "cover",
+   "note": "горизонт и броненосцы в середине"
+  }
+ },
+ "302": {
+  "src": "03_korabli-v-gavani-dym-zolotaya.jpg",
+  "crop": [
+   0.055,
+   0.095,
+   0.465,
+   0.915
+  ],
+  "focus": {
+   "x": 50,
+   "y": 58,
+   "fit": "cover",
+   "note": "дым и корабль в нижней половине"
+  }
+ },
+ "303": {
+  "src": "04_gavan-spasatelnoe-sudno.jpg",
+  "crop": [
+   0.055,
+   0.095,
+   0.465,
+   0.915
+  ],
+  "focus": {
+   "x": 50,
+   "y": 50,
+   "fit": "cover",
+   "note": "лодки и гавань"
+  }
+ },
+ "304": {
+  "src": "06_panorama-loc-1905.jpg",
+  "crop": null,
+  "focus": {
+   "x": 55,
+   "y": 50,
+   "fit": "contain",
+   "note": "панорама 4.2:1, показывать целиком"
+  }
+ },
+ "305": {
+  "src": "07_niva-naberezhnaya.jpg",
+  "crop": [
+   0,
+   0,
+   1,
+   0.915
+  ],
+  "focus": {
+   "x": 50,
+   "y": 50,
+   "fit": "cover",
+   "note": "набережная"
+  }
+ },
+ "306": {
+  "src": "08_niva-vhod-v-gavan.jpg",
+  "crop": [
+   0.004,
+   0.004,
+   0.996,
+   0.8
+  ],
+  "focus": {
+   "x": 50,
+   "y": 50,
+   "fit": "cover",
+   "note": "вход в гавань"
+  }
+ },
+ "307": {
+  "src": "09_dok-remont-uu.jpg",
+  "crop": [
+   0.055,
+   0.095,
+   0.465,
+   0.915
+  ],
+  "focus": {
+   "x": 50,
+   "y": 70,
+   "fit": "cover",
+   "note": "офицеры внизу кадра"
+  }
+ },
+ "308": {
+  "src": "10_pozhar-zolotaya-gora-uu.jpg",
+  "crop": [
+   0.055,
+   0.115,
+   0.465,
+   0.915
+  ],
+  "focus": {
+   "x": 50,
+   "y": 60,
+   "fit": "cover",
+   "note": "дым и человек на берегу"
+  }
+ },
+ "309": {
+  "src": "11_karta-sytin-port-artur-2.jpg",
+  "crop": null,
+  "focus": {
+   "x": 50,
+   "y": 50,
+   "fit": "contain",
+   "note": "план: показывать целиком"
+  },
+  "unused": true
+ },
+ "310": {
+  "src": "12_plan-kreposti-17-07-1904.jpg",
+  "crop": null,
+  "focus": {
+   "x": 50,
+   "y": 50,
+   "fit": "contain",
+   "note": "план: показывать целиком"
+  },
+  "unused": true
+ },
+ "311": {
+  "src": "13_raspolozhenie-1-marta-1904.jpg",
+  "crop": null,
+  "focus": {
+   "x": 50,
+   "y": 50,
+   "fit": "contain",
+   "note": "план: показывать целиком"
+  },
+  "unused": true
+ },
+ "312": {
+  "src": "14_plan-dalnego-loc.jpg",
+  "crop": null,
+  "focus": {
+   "x": 50,
+   "y": 50,
+   "fit": "contain",
+   "note": "план: показывать целиком"
+  },
+  "big": 3600,
+  "cap": 2400
+ },
+ "313": {
+  "src": "15_kvantunskaya-oblast-1903.jpg",
+  "crop": null,
+  "focus": {
+   "x": 50,
+   "y": 50,
+   "fit": "contain",
+   "note": "карта: показывать целиком"
+  }
+ },
+ "315": {
+  "src": "17_lushunkou-1950s-ams.jpg",
+  "crop": null,
+  "focus": {
+   "x": 50,
+   "y": 50,
+   "fit": "contain",
+   "note": "карта: показывать целиком"
+  }
+ },
+ "316": {
+  "src": "18_karta-sytin-dalniy.jpg",
+  "crop": null,
+  "focus": {
+   "x": 50,
+   "y": 50,
+   "fit": "contain",
+   "note": "карта: показывать целиком"
+  }
+ },
+ "317": {
+  "src": "19_inzhenerny-prospekt-1904.jpg",
+  "crop": null,
+  "focus": {
+   "x": 50,
+   "y": 50,
+   "fit": "contain",
+   "note": "газетный растр с подписью"
+  }
+ },
+ "319": {
+  "src": "21_dalniy-port-1905-burzagli.jpg",
+  "crop": null,
+  "focus": {
+   "x": 50,
+   "y": 50,
+   "fit": "cover",
+   "note": "пароход у пирса"
+  }
+ },
+ "320": {
+  "src": "22_dairen-ohiroba-1941.jpg",
+  "crop": [
+   0.015,
+   0.035,
+   0.99,
+   1
+  ],
+  "focus": {
+   "x": 50,
+   "y": 50,
+   "fit": "cover",
+   "note": "площадь Охироба"
+  }
+ },
+ "321": {
+  "src": "23_mantetsu-honsha-1941.jpg",
+  "crop": null,
+  "focus": {
+   "x": 50,
+   "y": 50,
+   "fit": "cover",
+   "note": "здание с портиком"
+  }
+ },
+ "322": {
+  "src": "24_yamato-hotel-dairen.jpg",
+  "crop": [
+   0.035,
+   0.06,
+   0.965,
+   0.95
+  ],
+  "focus": {
+   "x": 50,
+   "y": 50,
+   "fit": "cover",
+   "note": "Ямато-отель"
+  }
+ },
+ "324": {
+  "src": "26_dairen-port-pristan.jpg",
+  "crop": null,
+  "focus": {
+   "x": 50,
+   "y": 40,
+   "fit": "cover",
+   "note": "пароходы у причала"
+  }
+ },
+ "325": {
+  "src": "27_asia-taikan-yamato.jpg",
+  "crop": null,
+  "focus": {
+   "x": 50,
+   "y": 50,
+   "fit": "cover",
+   "note": "отель и памятник"
+  }
+ },
+ "326": {
+  "src": "28_asia-taikan-seikin.jpg",
+  "crop": null,
+  "focus": {
+   "x": 50,
+   "y": 50,
+   "fit": "cover",
+   "note": "банк с куполами"
+  }
+ },
+ "327": {
+  "src": "29_asia-taikan-chosen.jpg",
+  "crop": null,
+  "focus": {
+   "x": 50,
+   "y": 50,
+   "fit": "cover",
+   "note": "здание с колоннадой"
+  }
+ },
+ "328": {
+  "src": "30_dairen-churei-to.jpg",
+  "crop": null,
+  "focus": {
+   "x": 50,
+   "y": 40,
+   "fit": "cover",
+   "note": "башня Тюрэйто, вертикальный кадр"
+  }
+ },
+ "329": {
+  "src": "31_stessel.jpg",
+  "crop": null,
+  "focus": {
+   "x": 50,
+   "y": 22,
+   "fit": "cover",
+   "note": "лицо в верхней трети",
+   "face": [
+    0.5,
+    0.26,
+    0.13
+   ],
+   "ty": 0.4
+  }
+ },
+ "330": {
+  "src": "32_vitgeft.jpg",
+  "crop": null,
+  "focus": {
+   "x": 50,
+   "y": 22,
+   "fit": "cover",
+   "note": "лицо в верхней трети"
+  }
+ },
+ "332": {
+  "src": "35_kondratenko-sytin.jpg",
+  "crop": null,
+  "focus": {
+   "x": 50,
+   "y": 22,
+   "fit": "cover",
+   "note": "лицо в верхней трети"
+  }
+ },
+ "333": {
+  "src": "36_witte-loc.jpg",
+  "crop": [
+   0.106,
+   0.09,
+   0.88,
+   0.745
+  ],
+  "focus": {
+   "x": 50,
+   "y": 22,
+   "fit": "cover",
+   "note": "лицо в верхней трети"
+  }
+ },
+ "334": {
+  "src": "38_nogi-uu.jpg",
+  "crop": [
+   0.075,
+   0.045,
+   0.495,
+   0.915
+  ],
+  "focus": {
+   "x": 50,
+   "y": 20,
+   "fit": "cover",
+   "note": "лицо в верхней части"
+  }
+ },
+ "335": {
+  "src": "39_fort2-taikozan-uu.jpg",
+  "crop": [
+   0.055,
+   0.095,
+   0.465,
+   0.915
+  ],
+  "focus": {
+   "x": 50,
+   "y": 40,
+   "fit": "cover",
+   "note": "гора вдали"
+  }
+ },
+ "336": {
+  "src": "40_orliny-gnezdo-uu.jpg",
+  "crop": [
+   0.055,
+   0.095,
+   0.465,
+   0.915
+  ],
+  "focus": {
+   "x": 50,
+   "y": 55,
+   "fit": "cover",
+   "note": "солдаты в траншее"
+  }
+ },
+ "337": {
+  "src": "41_fort-maket-orudiya-uu.jpg",
+  "crop": [
+   0.075,
+   0.1,
+   0.465,
+   0.905
+  ],
+  "focus": {
+   "x": 50,
+   "y": 35,
+   "fit": "cover",
+   "note": "солдат у бруствера"
+  }
+ },
+ "338": {
+  "src": "42_fort3-zashchitnik-uu.jpg",
+  "crop": [
+   0.07,
+   0.095,
+   0.465,
+   0.915
+  ],
+  "focus": {
+   "x": 50,
+   "y": 70,
+   "fit": "cover",
+   "note": "люди в траншее"
+  }
+ },
+ "339": {
+  "src": "43_dvorets-alekseeva-uu.jpg",
+  "crop": [
+   0.07,
+   0.095,
+   0.465,
+   0.915
+  ],
+  "focus": {
+   "x": 50,
+   "y": 55,
+   "fit": "cover",
+   "note": "развалины здания"
+  }
+ },
+ "340": {
+  "src": "44_konec-osady-dalniy-uu.jpg",
+  "crop": [
+   0.07,
+   0.095,
+   0.465,
+   0.915
+  ],
+  "focus": {
+   "x": 50,
+   "y": 65,
+   "fit": "cover",
+   "note": "колонна на равнине"
+  }
+ },
+ "341": {
+  "src": "45_203-meter-hill.jpg",
+  "crop": null,
+  "focus": {
+   "x": 50,
+   "y": 50,
+   "fit": "cover",
+   "note": "гора 203"
+  }
+ },
+ "342": {
+  "src": "46_1894-forty-tigrovyj-hvost.jpg",
+  "crop": [
+   0.183,
+   0.176,
+   0.804,
+   0.83
+  ],
+  "focus": {
+   "x": 50,
+   "y": 50,
+   "fit": "cover",
+   "note": "вид на форт и гавань"
+  }
+ },
+ "343": {
+  "src": "47_1894-kazarmy.jpg",
+  "crop": [
+   0.193,
+   0.177,
+   0.796,
+   0.816
+  ],
+  "focus": {
+   "x": 50,
+   "y": 50,
+   "fit": "cover",
+   "note": "казармы"
+  }
+ }
+}

@@ -5,6 +5,7 @@
 import json, re
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
+ARCH = json.loads((ROOT / 'scripts/archive_src.json').read_text(encoding='utf-8'))  # снимки из архивов (id >= 300): фокус задан там
 P = json.loads((ROOT / 'src/data/photos.json').read_text(encoding='utf-8'))
 
 # id: (x, y, заметка)
@@ -67,6 +68,8 @@ for p in P:
         out[i] = {'x': 50, 'y': 50, 'fit': 'cover', 'note': 'по центру (не просмотрено отдельно)'}
 for k, v in MANUAL.items():
     out[k].update(v)
+for k, c in ARCH.items():
+    out[int(k)] = dict(c['focus'])
 (ROOT / 'src/data/focus.json').write_text(json.dumps({str(k): out[k] for k in sorted(out)}, ensure_ascii=False, indent=1), encoding='utf-8')
 from collections import Counter
 print(len(out), Counter(v['fit'] for v in out.values()))

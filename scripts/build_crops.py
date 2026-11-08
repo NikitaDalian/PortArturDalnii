@@ -4,6 +4,7 @@
 виды — точка фокуса из focus.json; карты, планы, документы, обложки, групповые и всё с fit=contain — вписываются на размытый фон.
 Ручные правки в focus.json: "crop":[l,t,r,b] (доли, рамка до подгонки), "face":[cx,cy,h] (доли, если детектор промахнулся),
 "mode":"cover"|"fit" (принудительный режим), "ty": доля высоты окна для центра лица (по умолчанию .36).
+Снимки из открытых архивов (id >= 300) берутся из work/archive_finds с рамкой обрезки из scripts/archive_src.json (scripts/archive_lib.py); для них всегда делаются все четыре пропорции.
 Запуск из папки site:  python scripts/build_crops.py [id id ...] [--all]  (без аргументов — все фото, но только нужные сайту варианты; --all — все четыре пропорции)
 """
 import json, re, sys
@@ -13,6 +14,8 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'scripts'))
+import archive_lib as AL
 SRC = ROOT.parent / 'TGArchive' / 'photos'
 OUT = ROOT / 'public' / 'img' / 'p'
 FONT = 'C:/Windows/Fonts/segoeuisl.ttf'
@@ -222,6 +225,10 @@ def used_variants():
             if isinstance(f, str):
                 u |= {(pid(f), '3x2'), (pid(f), '16x9')}
     u |= {('68', '3x2'), ('68', '1x1')}
+    for p in PH:  # снимки из архивов: все четыре пропорции
+        m = re.search(r'photo_(\d+)@archive', p['file'])
+        if m and AL.built(m.group(1)):
+            u |= {(m.group(1), r) for r in RATIOS}
     return {t for t in u if t[0]}
 
 
@@ -234,11 +241,16 @@ def main():
         pid = m.group(1)
         if only and pid not in only:
             continue
-        srcs = list(SRC.glob(f'photo_{pid}@*.jpg'))
-        srcs = [s for s in srcs if not s.name.endswith('_thumb.jpg')]
-        if not srcs:
-            continue
-        im = Image.open(srcs[0]).convert('RGB')
+        if '@archive' in p['file']:
+            if not AL.built(pid):
+                continue
+            im = AL.load(pid)
+        else:
+            srcs = list(SRC.glob(f'photo_{pid}@*.jpg'))
+            srcs = [s for s in srcs if not s.name.endswith('_thumb.jpg')]
+            if not srcs:
+                continue
+            im = Image.open(srcs[0]).convert('RGB')
         res, (has_face, fit_mode) = render(pid, p, im)
         for name, out in res.items():
             if keep is not None and (pid, name) not in keep:

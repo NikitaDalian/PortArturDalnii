@@ -2,14 +2,18 @@
 
 Источник: ../TGArchive/photos/*.jpg и ../Authors/*.jpg
 Результат: public/img/p/{id}.webp (до 1280 px) и public/img/p/{id}-640.webp
-Запуск из папки site:  python scripts/build_images.py
+Снимки из открытых архивов (id >= 300, work/archive_finds, см. scripts/archive_lib.py и archive_src.json) идут в тот же каталог;
+полный WebP ограничен по длинной стороне (2000 px, карты 2400). У id с полем "big" в archive_src.json есть ещё {id}-big.webp (для просмотрщика карты).
+Запуск из папки site:  python scripts/build_images.py [--archive]  (--archive: только снимки из архивов)
 """
-import json, re
+import json, re, sys
 import numpy as np
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'scripts'))
+import archive_lib as AL
 SRC = ROOT.parent / 'TGArchive' / 'photos'
 OUT = ROOT / 'public' / 'img' / 'p'
 OUT.mkdir(parents=True, exist_ok=True)
@@ -61,7 +65,7 @@ def tone(im, cfg):
     return Image.fromarray(np.clip(a, 0, 255).astype(np.uint8))
 
 count = 0
-for f in sorted(SRC.glob('photo_*.jpg')):
+for f in ([] if '--archive' in sys.argv else sorted(SRC.glob('photo_*.jpg'))):
     if f.name.endswith('_thumb.jpg'):
         continue
     pid = re.match(r'photo_(\d+)@', f.name).group(1)
@@ -75,6 +79,40 @@ for f in sorted(SRC.glob('photo_*.jpg')):
     small.thumbnail((640, 640))
     small.save(OUT / f'{pid}-640.webp', 'WEBP', quality=80, method=6)
     count += 1
+
+
+def save_pair(pid, im, kind):
+    """Полный WebP (с водяным знаком, до cap по длинной стороне) и превью 640."""
+    full = im.copy()
+    c = AL.cap(pid, kind)
+    if max(full.size) > c:
+        full.thumbnail((c, c), Image.LANCZOS)
+    if kind not in NO_MARK_KINDS:
+        full = watermark(full)
+    full.save(OUT / f'{pid}.webp', 'WEBP', quality=82, method=6)
+    small = full.copy()
+    small.thumbnail((640, 640))
+    small.save(OUT / f'{pid}-640.webp', 'WEBP', quality=80, method=6)
+    return full
+
+
+acount = 0
+for p in json.loads((ROOT / 'src' / 'data' / 'photos.json').read_text(encoding='utf-8')):
+    m = re.search(r'photo_(\d+)@archive', p['file'])
+    if not m or not AL.built(m.group(1)):
+        continue
+    pid = m.group(1)
+    im = AL.load(pid)
+    big = AL.CFG[pid].get('big')
+    if big:  # увеличенная версия для просмотрщика
+        b = im.copy()
+        b.thumbnail((big, big), Image.LANCZOS)
+        if p['kind'] not in NO_MARK_KINDS:
+            b = watermark(b)
+        b.save(OUT / f'{pid}-big.webp', 'WEBP', quality=80, method=6)
+    save_pair(pid, im, p['kind'])
+    acount += 1
+print('archive photos:', acount)
 
 authors = ROOT / 'public' / 'img' / 'authors'
 authors.mkdir(parents=True, exist_ok=True)
