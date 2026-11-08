@@ -7,7 +7,7 @@ import PersonRow from '../../../components/PersonRow.astro';
 import BookRow from '../../../components/BookRow.astro';
 import TgButton from '../../../components/TgButton.astro';
 import { kindLabel, peopleOf, similarBooks } from '../../../components/library/labels';
-import { books, href, img, focusStyle, entity, articlesOf, personBySlug, BOOK_LEVELS, plural, type Book } from '../../../lib/data';
+import { books, href, img, imgCrop, entity, articlesOf, personBySlug, BOOK_LEVELS, plural, type Book } from '../../../lib/data';
 
 export function getStaticPaths() {
   return books.map((b) => ({ params: { slug: b.slug }, props: { b } }));
@@ -16,7 +16,7 @@ interface Props { b: Book }
 const { b } = Astro.props;
 
 const lvl = BOOK_LEVELS[b.level] ?? BOOK_LEVELS.deep;
-const cover = img(b.cover);
+const cover = imgCrop(b.cover, '4x5');
 const notes = articlesOf(b.articles);
 const firstPost = b.review_post?.[0] ?? null;
 const personSlugs = peopleOf(b.articles);
@@ -49,7 +49,7 @@ const description = b.verdict || b.annotation?.slice(0, 160);
       </div>
       <figure class="book-hero__fig">
         {cover
-          ? <img class="book-hero__cover" src={cover} alt={`Обложка книги «${b.title}»`} transition:name={`book-${b.slug}`} style={focusStyle(b.cover)} loading="eager" decoding="async" data-pagefind-meta="image[src], image_alt[alt]" />
+          ? <img class="book-hero__cover" src={cover} alt={`Обложка книги «${b.title}»`} transition:name={`book-${b.slug}`} loading="eager" decoding="async" data-pagefind-meta="image[src], image_alt[alt]" />
           : <span class="book-hero__cover book-hero__ph" aria-hidden="true" transition:name={`book-${b.slug}`}><span>{b.title}</span></span>}
       </figure>
     </div>

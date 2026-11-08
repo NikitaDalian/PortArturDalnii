@@ -4,7 +4,7 @@ import PageHero from '../../../components/PageHero.astro';
 import Related from '../../../components/Related.astro';
 import TgButton from '../../../components/TgButton.astro';
 import TypeTag from '../../../components/notes/TypeTag.astro';
-import { series, seriesBySlug, articlesOf, href, img, focusStyle, url, fmtDate, plural, layerByKey } from '../../../lib/data';
+import { series, seriesBySlug, articlesOf, href, img, imgCrop, url, fmtDate, plural, layerByKey } from '../../../lib/data';
 
 export function getStaticPaths() {
   return series.map((s) => ({ params: { slug: s.slug } }));
@@ -54,7 +54,7 @@ const others = series.filter((x) => x.slug !== s.slug);
           </div>
           {a.cover && (
             <a class="ss__media" href={href.note(a.slug)} tabindex="-1" aria-hidden="true">
-              <img src={img(a.cover, 640)} alt="" loading="lazy" decoding="async" transition:name={`note-${a.slug}`} style={focusStyle(a.cover)} />
+              <img src={imgCrop(a.cover, '3x2', 640)} alt="" loading="lazy" decoding="async" transition:name={`note-${a.slug}`} />
             </a>
           )}
         </li>

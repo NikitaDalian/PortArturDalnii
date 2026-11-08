@@ -5,7 +5,7 @@ import Unsure from '../../components/Unsure.astro';
 import MapFigure from '../../components/MapFigure.astro';
 import MiniMap from '../../components/map/MiniMap.astro';
 import { routeArt } from '../../lib/art';
-import { routes, href, img, focusStyle, plural, type Route } from '../../lib/data';
+import { routes, href, img, imgCrop, plural, type Route } from '../../lib/data';
 import { sortedRoutes, routeAuthor, routeCover, routeStops, routeYandex, TRANSPORT, SEASONS, KINDS, isUncertain, photoCaption } from '../../components/map/places';
 
 export function getStaticPaths() {
@@ -87,7 +87,7 @@ const km = `${String(r.distance_km).replace('.', ',')} км`;
                 {s.p ? (
                   <a class="rt-stop__media" href={href.place(s.p.slug)} tabindex="-1" aria-hidden="true">
                     {s.p.photos?.[0]
-                      ? <img src={img(s.p.photos[0], 640)} alt="" loading="lazy" decoding="async" style={focusStyle(s.p.photos[0])} />
+                      ? <picture><source media="(max-width: 520px)" srcset={imgCrop(s.p.photos[0], '16x9')} /><img src={imgCrop(s.p.photos[0], '3x2', 640)} alt="" loading="lazy" decoding="async" /></picture>
                       : <span class="rt-stop__ph"></span>}
                   </a>
                 ) : null}

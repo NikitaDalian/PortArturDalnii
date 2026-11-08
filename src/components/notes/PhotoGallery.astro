@@ -1,11 +1,11 @@
 ---
 // Фотографии поста: превью 640 px; по клику — лайтбокс (<dialog>) с листанием
 // кнопками, клавишами ← → Esc и свайпом. Без библиотек.
-import { img, focusStyle, photoMeta } from '../../lib/data';
+import { img, imgCrop, photoMeta } from '../../lib/data';
 interface Props { photos: string[]; title?: string }
 const { photos: files, title = 'Фотографии поста' } = Astro.props;
 const items = files
-  .map((f) => ({ full: img(f), thumb: img(f, 640), caption: (photoMeta(f)?.subject as string | undefined) ?? '', st: files.length > 1 ? focusStyle(f) : undefined }))
+  .map((f) => ({ full: img(f), thumb: files.length > 1 ? imgCrop(f, '3x2', 640) : img(f, 640), caption: (photoMeta(f)?.subject as string | undefined) ?? ''}))
   .filter((p) => p.full && p.thumb);
 ---
 {items.length > 0 && (
@@ -15,7 +15,7 @@ const items = files
       {items.map((p, i) => (
         <li>
           <button type="button" class="pg-thumb" data-i={i} aria-label={`Открыть фото ${i + 1} из ${items.length}${p.caption ? ': ' + p.caption : ''}`}>
-            <img src={p.thumb} alt={p.caption} loading="lazy" decoding="async" style={p.st} />
+            <img src={p.thumb} alt={p.caption} loading="lazy" decoding="async" />
           </button>
         </li>
       ))}

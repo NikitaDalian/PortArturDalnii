@@ -1,10 +1,11 @@
 ---
 // Карточка заметки. variant: 'card' — с картинкой; 'row' — компактная строка; 'feature' — крупная.
-import { href, img, focusStyle, TYPES, fmtDateShort, type Article } from '../lib/data';
+import NoteCover from './NoteCover.astro';
+import { href, imgCrop, TYPES, fmtDateShort, type Article } from '../lib/data';
 interface Props { a: Article; variant?: 'card' | 'row' | 'feature'; showSummary?: boolean }
 const { a, variant = 'card', showSummary = false } = Astro.props;
 const type = TYPES[a.type] ?? TYPES.event;
-const cover = img(a.cover, 640);
+const cover = imgCrop(a.cover, '3x2', 640);
 const meta = `${type.label} · ${fmtDateShort(a.date)} · ${a.read_min} мин`;
 ---
 {variant === 'row' ? (
@@ -15,14 +16,16 @@ const meta = `${type.label} · ${fmtDateShort(a.date)} · ${a.read_min} мин`;
       <span class="row__title art-row__title">{a.title}</span>
       {showSummary && <span class="muted art-row__dek">{a.dek}</span>}
     </span>
-    {cover && <img class="art-row__img" src={cover} alt="" loading="lazy" decoding="async" transition:name={`note-${a.slug}`} style={focusStyle(a.cover)} />}
+    {cover
+      ? <img class="art-row__img" src={cover} alt="" loading="lazy" decoding="async" transition:name={`note-${a.slug}`} />
+      : <NoteCover a={a} compact class="art-row__img art-row__cover" />}
   </a>
 ) : (
   <a href={href.note(a.slug)} class:list={['card', { 'card--feature': variant === 'feature' }]}>
     <div class="card__media">
       {cover
-        ? <img class="card__img" src={variant === 'feature' ? img(a.cover) : cover} alt="" loading="lazy" decoding="async" transition:name={`note-${a.slug}`} style={focusStyle(a.cover)} />
-        : <div class="card__img art-ph" style={`--c:${type.color}`}><span>{type.label}</span></div>}
+        ? <img class="card__img" src={cover} alt="" loading="lazy" decoding="async" transition:name={`note-${a.slug}`} />
+        : <NoteCover a={a} class="card__img" />}
     </div>
     <span class="meta">{meta}</span>
     <span class="h3 card__title">{a.title}</span>
@@ -35,8 +38,8 @@ const meta = `${type.label} · ${fmtDateShort(a.date)} · ${a.read_min} мин`;
   .art-row__bar { flex: 0 0 4px; border-radius: 2px; }
   .art-row__title { font-size: 18px; font-weight: 700; line-height: 1.25; }
   .art-row__dek { font-size: 15px; line-height: 1.45; }
-  .art-row__img { flex: 0 0 96px; width: 96px; height: 72px; object-fit: cover; align-self: center; }
+  .art-row :global(.art-row__img) { flex: 0 0 96px; width: 96px; height: 72px; object-fit: cover; align-self: center; }
   .card--feature .h3 { font-size: clamp(24px, 2.4vw, 32px); }
-  .art-ph { display: flex; align-items: flex-end; padding: 16px; background: var(--navy-2); color: var(--steel); font-weight: 700; border-top: 6px solid var(--c); }
-  @media (max-width: 520px) { .art-row__img { flex-basis: 72px; width: 72px; height: 56px; } }
+  .art-row :global(.art-row__cover) { height: auto; align-self: center; }
+  @media (max-width: 520px) { .art-row :global(.art-row__img) { flex-basis: 72px; width: 72px; height: 56px; } }
 </style>

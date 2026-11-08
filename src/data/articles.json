@@ -281,9 +281,10 @@
   ],
   "books": [],
   "photos": [
+   "photos/photo_100@17-10-2026_15-14-01.jpg",
    "photos/photo_195@03-11-2026_22-32-58.jpg"
   ],
-  "cover": "photos/photo_195@03-11-2026_22-32-58.jpg",
+  "cover": "photos/photo_100@17-10-2026_15-14-01.jpg",
   "read_min": 3,
   "series": null,
   "tg_url": "https://t.me/portartur_dalnii/234",
@@ -711,7 +712,7 @@
    "photos/photo_152@27-10-2026_22-10-09.jpg",
    "photos/photo_153@27-10-2026_22-10-09.jpg"
   ],
-  "cover": "photos/photo_148@27-10-2026_22-10-09.jpg",
+  "cover": "photos/photo_151@27-10-2026_22-10-09.jpg",
   "read_min": 1,
   "series": "Фотолетопись войны",
   "tg_url": "https://t.me/portartur_dalnii/183",
@@ -1685,7 +1686,7 @@
    "photos/photo_79@12-10-2026_10-25-10.jpg",
    "photos/photo_80@12-10-2026_10-25-10.jpg"
   ],
-  "cover": "photos/photo_74@12-10-2026_10-25-10.jpg",
+  "cover": "photos/photo_80@12-10-2026_10-25-10.jpg",
   "read_min": 3,
   "series": null,
   "tg_url": "https://t.me/portartur_dalnii/102",
@@ -1727,7 +1728,7 @@
    "photos/photo_81@12-10-2026_17-06-01.jpg",
    "photos/photo_82@12-10-2026_17-06-01.jpg"
   ],
-  "cover": "photos/photo_81@12-10-2026_17-06-01.jpg",
+  "cover": "photos/photo_82@12-10-2026_17-06-01.jpg",
   "read_min": 2,
   "series": null,
   "tg_url": "https://t.me/portartur_dalnii/109",
@@ -1917,8 +1918,10 @@
    "tszinchzhou"
   ],
   "books": [],
-  "photos": [],
-  "cover": null,
+  "photos": [
+   "photos/photo_195@03-11-2026_22-32-58.jpg"
+  ],
+  "cover": "photos/photo_195@03-11-2026_22-32-58.jpg",
   "read_min": 1,
   "series": null,
   "tg_url": "https://t.me/portartur_dalnii/83",
@@ -2094,7 +2097,7 @@
    "photos/photo_54@07-10-2026_12-42-36.jpg",
    "photos/photo_55@07-10-2026_12-42-36.jpg"
   ],
-  "cover": "photos/photo_51@07-10-2026_12-42-36.jpg",
+  "cover": "photos/photo_54@07-10-2026_12-42-36.jpg",
   "read_min": 4,
   "series": "Николай II и Япония",
   "tg_url": "https://t.me/portartur_dalnii/74",
@@ -2245,7 +2248,7 @@
    "photos/photo_43@06-10-2026_21-12-08.jpg",
    "photos/photo_44@06-10-2026_21-12-09.jpg"
   ],
-  "cover": "photos/photo_42@06-10-2026_21-12-08.jpg",
+  "cover": "photos/photo_44@06-10-2026_21-12-09.jpg",
   "read_min": 4,
   "series": null,
   "tg_url": "https://t.me/portartur_dalnii/64",
@@ -2290,8 +2293,10 @@
    "yalu"
   ],
   "books": [],
-  "photos": [],
-  "cover": null,
+  "photos": [
+   "photos/photo_33@06-10-2026_17-18-17.jpg"
+  ],
+  "cover": "photos/photo_33@06-10-2026_17-18-17.jpg",
   "read_min": 5,
   "series": "Русско-японская война за пять постов",
   "tg_url": "https://t.me/portartur_dalnii/6",
@@ -2341,8 +2346,10 @@
    "tsusima"
   ],
   "books": [],
-  "photos": [],
-  "cover": null,
+  "photos": [
+   "photos/photo_98@17-10-2026_15-14-01.jpg"
+  ],
+  "cover": "photos/photo_98@17-10-2026_15-14-01.jpg",
   "read_min": 3,
   "series": "Русско-японская война за пять постов",
   "tg_url": "https://t.me/portartur_dalnii/8",
@@ -2383,8 +2390,10 @@
    "manchzhuriya"
   ],
   "books": [],
-  "photos": [],
-  "cover": null,
+  "photos": [
+   "photos/photo_163@28-10-2026_08-55-09.jpg"
+  ],
+  "cover": "photos/photo_163@28-10-2026_08-55-09.jpg",
   "read_min": 3,
   "series": "Русско-японская война за пять постов",
   "tg_url": "https://t.me/portartur_dalnii/10",
@@ -2496,6 +2505,7 @@
    "albom-russko-yaponskaya-voyna-shtab-1905"
   ],
   "photos": [
+   "photos/photo_15@05-10-2026_20-16-00.jpg",
    "photos/photo_16@05-10-2026_20-56-08.jpg",
    "photos/photo_17@05-10-2026_20-56-08.jpg",
    "photos/photo_18@05-10-2026_20-56-08.jpg",
@@ -2507,7 +2517,7 @@
    "photos/photo_24@05-10-2026_20-56-09.jpg",
    "photos/photo_25@05-10-2026_20-56-09.jpg"
   ],
-  "cover": "photos/photo_17@05-10-2026_20-56-08.jpg",
+  "cover": "photos/photo_15@05-10-2026_20-16-00.jpg",
   "read_min": 4,
   "series": "Фотолетопись войны",
   "tg_url": "https://t.me/portartur_dalnii/30",

@@ -9,7 +9,7 @@ import Coast from '../../components/Coast.astro';
 import MiniMap from '../../components/map/MiniMap.astro';
 import MapFigure from '../../components/MapFigure.astro';
 import Gallery from '../../components/map/Gallery.astro';
-import { places, href, img, focusStyle, articlesOf, amapUrl, yandexUrl, layerByKey, plural, type Place } from '../../lib/data';
+import { places, href, img, imgCrop, articlesOf, amapUrl, yandexUrl, layerByKey, plural, type Place } from '../../lib/data';
 import { KINDS, CITIES, SEASONS, placeLayers, isUncertain, routesThrough, peopleAt, nearest, photoCaption } from '../../components/map/places';
 import { fmtKm } from '../../components/map/geo';
 
@@ -37,8 +37,7 @@ const city = CITIES[p.city] ?? '';
     eyebrow={`${city} · ${KINDS[p.kind] ?? p.kind}`}
     lead={p.name_now ?? undefined}
     crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Карта', href: href.map() }, { label: p.name }]}
-    image={img(cover)}
-    imageStyle={focusStyle(cover)}
+    image={imgCrop(cover, '3x2')}
     imageAlt={cover ? photoCaption(cover) || p.name : ''}
     caption={cover ? photoCaption(cover) : undefined}
     transitionName={`place-${p.slug}`}

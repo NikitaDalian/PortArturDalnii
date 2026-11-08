@@ -1,7 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import PageHero from '../../../components/PageHero.astro';
-import { series, articlesOf, href, img, focusStyle, fmtDate, plural } from '../../../lib/data';
+import { series, articlesOf, href, imgCrop, fmtDate, plural } from '../../../lib/data';
 
 const list = series
   .map((s) => {
@@ -26,7 +26,7 @@ const list = series
         <li class="sl__item reveal" style={`--d:${(i % 3) * 70}ms`}>
           <a class="sl__link" href={href.series(s.slug)}>
             <span class="sl__media">
-              {cover ? <img src={img(cover, 640)} alt="" loading="lazy" decoding="async" style={focusStyle(cover)} /> : <span class="sl__ph"></span>}
+              {cover ? <img src={imgCrop(cover, '16x9', 640)} alt="" loading="lazy" decoding="async" /> : <span class="sl__ph"></span>}
               <span class="sl__count">{items.length} {plural(items.length, 'часть', 'части', 'частей')}</span>
             </span>
             <span class="sl__body">

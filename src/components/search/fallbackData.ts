@@ -1,6 +1,6 @@
 // Небольшой запасной индекс для страницы поиска: используется, только если Pagefind
 // недоступен (режим разработки или индекс не собран).
-import { articles, people, places, books, sources, entity, href, img, fmtDateShort, TYPES } from '../../lib/data';
+import { articles, people, places, books, sources, entity, href, img, imgCrop, fmtDateShort, TYPES } from '../../lib/data';
 
 const CITY: Record<string, string> = { lushun: 'Люйшунь', dalian: 'Далянь', other: 'Другое' };
 
@@ -15,17 +15,17 @@ export function fallbackItems(): FbItem[] {
     const names = [...a.people.map((s) => entity('person', s).label), ...a.places.map((s) => entity('place', s).label)];
     out.push({
       tab: 'Заметки', url: href.note(a.slug), title: a.title, text: a.dek || a.summary.slice(0, 180),
-      meta: `${t.label} · ${fmtDateShort(a.date)} · ${a.read_min} мин`, color: t.color, image: img(a.cover, 640),
+      meta: `${t.label} · ${fmtDateShort(a.date)} · ${a.read_min} мин`, color: t.color, image: imgCrop(a.cover, '3x2', 640),
       hay: hay(a.title, a.dek, a.summary, a.facts.join(' '), names.join(' ')),
     });
   });
   people.forEach((p) => out.push({
     tab: 'Лица', url: href.person(p.slug), title: p.name, text: p.role ?? '', meta: `Лица${p.years ? ' · ' + p.years : ''}`,
-    color: 'var(--t-person)', image: img(p.portrait, 640), hay: hay(p.name, p.short, p.role, p.bio),
+    color: 'var(--t-person)', image: imgCrop(p.portrait, '4x5', 640), hay: hay(p.name, p.short, p.role, p.bio),
   }));
   places.forEach((p) => out.push({
     tab: 'Места', url: href.place(p.slug), title: p.name, text: (p.summary ?? '').slice(0, 180), meta: `Места${p.city ? ' · ' + (CITY[p.city] ?? p.city) : ''}`,
-    color: 'var(--t-place)', image: img((p.photos as any[])?.[0], 640), hay: hay(p.name, p.name_now, p.name_zh, p.summary),
+    color: 'var(--t-place)', image: imgCrop((p.photos as any[])?.[0], '3x2', 640), hay: hay(p.name, p.name_now, p.name_zh, p.summary),
   }));
   books.forEach((b) => out.push({
     tab: 'Книги', url: href.book(b.slug), title: `${b.author} — «${b.title}»`, text: b.verdict ?? '', meta: `Книги · ${b.author}${b.year ? ', ' + b.year : ''}`,

@@ -1,15 +1,15 @@
 ---
 // Карточка источника (архив, альбом, лекция, видео, музыка) со ссылкой на его страницу.
-import { href, img, focusStyle, type Source } from '../../lib/data';
+import { href, imgCrop, type Source } from '../../lib/data';
 import { sourceKindLabel } from './labels';
 interface Props { s: Source }
 const { s } = Astro.props;
-const pic = img(s.image, 640);
+const pic = imgCrop(s.image, '3x2', 640);
 ---
 <a href={href.source(s.slug)} class="card src-card">
   <div class="card__media">
     {pic
-      ? <img class="card__img" src={pic} alt="" loading="lazy" decoding="async" transition:name={`source-${s.slug}`} style={focusStyle(s.image)} />
+      ? <img class="card__img" src={pic} alt="" loading="lazy" decoding="async" transition:name={`source-${s.slug}`} />
       : <div class="card__img src-card__ph" aria-hidden="true"><span>{sourceKindLabel(s.kind)}</span></div>}
   </div>
   <span class="meta">{sourceKindLabel(s.kind)}{s.author ? ` · ${s.author}` : ''}</span>

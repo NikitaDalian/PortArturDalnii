@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Coast from '../../components/Coast.astro';
+import NoteCover from '../../components/NoteCover.astro';
 import Crumbs from '../../components/Crumbs.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import Related from '../../components/Related.astro';
@@ -10,7 +11,7 @@ import MapFigure from '../../components/MapFigure.astro';
 import PhotoGallery from '../../components/notes/PhotoGallery.astro';
 import { prevNext, readAlso } from '../../components/notes/lib';
 import {
-  articles, articleBySlug, seriesBySlug, articlesOf, layerByKey, href, img, focusStyle, tgPost, fmtDate,
+  articles, articleBySlug, seriesBySlug, articlesOf, layerByKey, href, img, imgCrop, tgPost, fmtDate,
   TYPES, photoMeta, noteRelations, type Article,
 } from '../../lib/data';
 
@@ -31,7 +32,7 @@ const NOTE_MAPS: Record<string, number> = {
 };
 const noteMap = NOTE_MAPS[a.slug] ?? null;
 const galleryPhotos = (a.photos as string[]).filter((f) => !noteMap || !String(f).includes(`photo_${noteMap}@`));
-const cover = img(a.cover);
+const cover = imgCrop(a.cover, '3x2');
 const coverAlt = a.cover ? ((photoMeta(a.cover)?.subject as string | undefined) ?? '') : '';
 const ser = a.series_slug ? seriesBySlug.get(a.series_slug) : undefined;
 const serItems = ser ? articlesOf(ser.articles) : [];
@@ -42,7 +43,7 @@ const { prev, next } = prevNext(a.slug);
 const rel = noteRelations(a);
 const hasRelated = rel.people.length + rel.places.length + rel.books.length > 0;
 ---
-<Base title={a.title} description={a.dek || a.summary.slice(0, 160)} image={cover} section="notes">
+<Base title={a.title} description={a.dek || a.summary.slice(0, 160)} image={img(a.cover)} section="notes">
   <section class="dark nh page-top" data-pagefind-filter="type:Заметки">
     <div class="container nh__inner page-top__inner" class:list={[{ 'has-img': cover }]}>
       <div class="nh__text stack" style="--stack-gap:18px">
@@ -63,9 +64,14 @@ const hasRelated = rel.people.length + rel.places.length + rel.books.length > 0;
         <span hidden data-pagefind-meta={`ntype:${a.type}`}></span>
         <span hidden data-pagefind-meta={`date:${fmtDate(a.date)}`}></span>
       </div>
+      {!cover && (
+        <figure class="nh__fig" aria-hidden="true">
+          <NoteCover a={a} />
+        </figure>
+      )}
       {cover && (
         <figure class="nh__fig">
-          <img src={cover} alt={coverAlt} transition:name={`note-${a.slug}`} style={focusStyle(a.cover)} loading="eager" decoding="async" data-pagefind-meta="image[src], image_alt[alt]" />
+          <img src={cover} alt={coverAlt} transition:name={`note-${a.slug}`} loading="eager" decoding="async" data-pagefind-meta="image[src], image_alt[alt]" />
         </figure>
       )}
     </div>

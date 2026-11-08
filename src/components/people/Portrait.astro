@@ -1,13 +1,13 @@
 ---
 // Крупный портрет персоны; если портрета нет — плашка с инициалами.
-import { img, focusStyle, type Person } from '../../lib/data';
+import { imgCrop, type Person } from '../../lib/data';
 import { initials } from './relations';
 interface Props { p: Person; alt?: string }
 const { p, alt = p.name } = Astro.props;
-const src = img(p.portrait);
+const src = imgCrop(p.portrait, '4x5');
 ---
 {src
-  ? <img class="portrait bw" src={src} alt={alt} loading="eager" decoding="async" transition:name={`person-${p.slug}`} style={focusStyle(p.portrait)} data-pagefind-meta="image[src], image_alt[alt]" />
+  ? <img class="portrait bw" src={src} alt={alt} loading="eager" decoding="async" transition:name={`person-${p.slug}`} data-pagefind-meta="image[src], image_alt[alt]" />
   : <div class="portrait portrait--ph" role="img" aria-label={`${p.name}: портрета нет`} transition:name={`person-${p.slug}`}>
       <span class="portrait__ini" aria-hidden="true">{initials(p.name)}</span>
       <span class="portrait__note" aria-hidden="true">портрета нет</span>

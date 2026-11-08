@@ -163,6 +163,15 @@ export function img(file: string | number | null | undefined, size: 'full' | 640
   if (!id) return null;
   return url(`/img/p/${id}${size === 640 ? '-640' : ''}.webp`);
 }
+export type CropRatio = '3x2' | '4x5' | '16x9' | '1x1';
+/** Заранее нарезанный кадр под пропорцию (scripts/build_crops.py): лица в верхней трети, неподходящее по форме вписано на размытый фон,
+ *  водяной знак уже стоит в правом нижнем углу. Показывать с object-fit: cover без object-position.
+ *  Нет варианта (не из каталога фото) — запасной вариант img(file, size). */
+export function imgCrop(file: string | number | null | undefined, ratio: CropRatio, size: 'full' | 640 = 'full'): string | null {
+  const id = photoId(file);
+  if (!id || !(id in (focusJson as Record<string, unknown>))) return img(file, size);
+  return url(`/img/p/${id}-${ratio}.webp`);
+}
 const photoId = (file: string | number | null | undefined): string | null =>
   file === null || file === undefined ? null : typeof file === 'number' ? String(file) : (String(file).match(/photo_(\d+)@/)?.[1] ?? (/^\d+$/.test(String(file)) ? String(file) : null));
 /** Точка фокуса и режим показа фото (src/data/focus.json). position → object-position, fit → object-fit. */
