@@ -1,6 +1,6 @@
 ---
 // Блок карты: план Дальнего, короткий текст, ссылка на карту и список маршрутов.
-import { href, imgCrop, routes } from '../../lib/data';
+import { href, imgCrop, routes, places } from '../../lib/data';
 const plan = imgCrop(68, '1x1');
 const transport: Record<string, string> = { walk: 'пешком', car: 'на машине', mixed: 'смешанный' };
 const list = routes.slice(0, 4).map((r) => ({
@@ -20,7 +20,7 @@ const list = routes.slice(0, 4).map((r) => ({
       <p class="eyebrow">Карта и маршруты</p>
       <h2 id="map-h" class="h2 maptease__title">Места и маршруты на карте</h2>
       <p class="muted maptease__text">
-        Сорок пять мест Люйшуня и Даляня на одной карте: у каждого фотографии, краткая история и способ добраться.
+        {places.length} мест Люйшуня и Даляня на одной карте: у каждого краткая история и способ добраться, у многих есть фотографии.
         Старый план 1904 года можно наложить на современный город, а свой маршрут собрать из любых точек.
       </p>
       <ul class="routes" role="list">
