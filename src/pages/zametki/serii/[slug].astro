@@ -26,10 +26,10 @@ const others = series.filter((x) => x.slug !== s.slug);
     title={s.title}
     eyebrow={`Серия · ${items.length} ${plural(items.length, 'часть', 'части', 'частей')} · ${readMin} мин`}
     lead={dates[0] === dates[dates.length - 1] ? `Посты от ${fmtDate(dates[0])}.` : `Посты с ${fmtDate(dates[0])} по ${fmtDate(dates[dates.length - 1])}.`}
-    crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Заметки', href: href.notes() }, { label: 'Серии', href: url('/zametki/serii/') }, { label: s.title }]}
+    crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Заметки', href: href.notes() }, { label: 'Серии', href: href.seriesList() }, { label: s.title }]}
   >
     {layers.length > 0 && (
-      <div class="cluster">
+      <div class="chip-row">
         {layers.map((l) => <a class="chip" href={href.layer(l.key)}>{l.years} · {l.short}</a>)}
       </div>
     )}
@@ -38,7 +38,7 @@ const others = series.filter((x) => x.slug !== s.slug);
   <div class="container section--tight ss" data-pagefind-ignore="all">
     <ol class="ss__list">
       {items.map((a, i) => (
-        <li class="ss__item reveal" style={`--d:${Math.min(i, 3) * 80}ms`}>
+        <li class="ss__item reveal" style={`--d:${Math.min(i, 5) * 70}ms`}>
           <span class="ss__num" aria-hidden="true">{i + 1}</span>
           <div class="ss__body">
             <div class="cluster" style="--cluster-gap:6px 14px">

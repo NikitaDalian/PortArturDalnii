@@ -1,6 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import Coast from '../../../components/Coast.astro';
+import Crumbs from '../../../components/Crumbs.astro';
 import ArticleCard from '../../../components/ArticleCard.astro';
 import TgButton from '../../../components/TgButton.astro';
 import Related from '../../../components/Related.astro';
@@ -28,16 +29,13 @@ const host = s.url ? hostOf(s.url) : null;
 const description = s.annotation ? s.annotation.slice(0, 180) : `${kind}: ${s.title}`;
 ---
 <Base title={s.title} description={description} image={pic} section="library">
-  <section class="dark src-hero">
-    <div class="container src-hero__inner" class:list={[{ 'has-img': pic }]}>
+  <section class="dark src-hero page-top" data-pagefind-filter="type:Книги">
+    <div class="container src-hero__inner page-top__inner" class:list={[{ 'has-img': pic }]}>
       <div class="src-hero__text stack" style="--stack-gap:16px">
-        <nav class="crumbs" aria-label="Путь">
-          <a href={href.home()}>Главная</a><span aria-hidden="true">/</span>
-          <a href={href.library()}>Библиотека</a><span aria-hidden="true">/</span>
-          <a href={`${href.library()}#istochniki`}>Источники</a>
-        </nav>
+        <Crumbs items={[{ label: 'Главная', href: href.home() }, { label: 'Библиотека', href: href.library() }, { label: 'Источники', href: `${href.library()}#istochniki` }, { label: s.title }]} />
         <p class="eyebrow eyebrow--accent">{kind}</p>
-        <h1 class="h1 src-hero__title">{s.title}</h1>
+        <h1 class="h1 src-hero__title" data-pagefind-meta="title">{s.title}</h1>
+        <span hidden data-pagefind-meta={`sub:${kind}${s.author ? ' · ' + s.author : ''}`}></span>
         {s.author && <p class="lead src-hero__author">{s.author}</p>}
         {s.url && (
           <div class="cluster" style="--cluster-gap:12px">
@@ -51,7 +49,7 @@ const description = s.annotation ? s.annotation.slice(0, 180) : `${kind}: ${s.ti
       </div>
       {pic && (
         <figure class="src-hero__fig">
-          <img src={pic} alt={s.title} transition:name={`source-${s.slug}`} loading="eager" decoding="async" />
+          <img src={pic} alt={s.title} transition:name={`source-${s.slug}`} loading="eager" decoding="async" data-pagefind-meta="image[src], image_alt[alt]" />
         </figure>
       )}
     </div>
@@ -114,8 +112,7 @@ const description = s.annotation ? s.annotation.slice(0, 180) : `${kind}: ${s.ti
 </Base>
 
 <style>
-  .src-hero { padding-top: clamp(32px, 5vw, 56px); }
-  .src-hero__inner { display: flex; flex-wrap: wrap; gap: 32px 48px; align-items: flex-end; padding-bottom: 28px; }
+  .src-hero__inner { display: flex; flex-wrap: wrap; gap: 32px 48px; align-items: flex-end; }
   .src-hero__text { flex: 1 1 520px; min-width: 0; }
   .src-hero__title { overflow-wrap: anywhere; hyphens: auto; }
   .src-hero__author { color: #fff; font-weight: 600; }

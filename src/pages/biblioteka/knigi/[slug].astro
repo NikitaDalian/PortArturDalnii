@@ -1,6 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import Coast from '../../../components/Coast.astro';
+import Crumbs from '../../../components/Crumbs.astro';
 import ArticleCard from '../../../components/ArticleCard.astro';
 import PersonRow from '../../../components/PersonRow.astro';
 import BookRow from '../../../components/BookRow.astro';
@@ -36,22 +37,19 @@ const facts = [
 const description = b.verdict || b.annotation?.slice(0, 160);
 ---
 <Base title={`${b.title} — ${b.author}`} description={description} image={cover} section="library">
-  <section class="dark book-hero">
-    <div class="container book-hero__inner">
+  <section class="dark book-hero page-top" data-pagefind-filter="type:Книги">
+    <div class="container book-hero__inner page-top__inner">
       <div class="book-hero__text stack" style="--stack-gap:16px">
-        <nav class="crumbs" aria-label="Путь">
-          <a href={href.home()}>Главная</a><span aria-hidden="true">/</span>
-          <a href={href.library()}>Библиотека</a><span aria-hidden="true">/</span>
-          <a href={`${href.library()}#katalog`}>Книги</a>
-        </nav>
+        <Crumbs items={[{ label: 'Главная', href: href.home() }, { label: 'Библиотека', href: href.library() }, { label: 'Книги', href: `${href.library()}#katalog` }, { label: b.title }]} />
         <p class="eyebrow eyebrow--accent">{kindLabel(b.kind)}{b.year ? ` · ${b.year}` : ''}</p>
-        <h1 class="h1 book-hero__title">{b.title}</h1>
+        <h1 class="h1 book-hero__title" data-pagefind-meta="title">{b.title}</h1>
+        <span hidden data-pagefind-meta={`sub:${b.author}${b.year ? ', ' + b.year : ''}`}></span>
         <p class="lead book-hero__author">{b.author}{b.author_years ? <span class="book-hero__years"> ({b.author_years})</span> : null}</p>
         <a class="tag book-hero__tag" href={`${href.library()}?level=${b.level}#katalog`} style={`background:${lvl.color}`}>{lvl.label}</a>
       </div>
       <figure class="book-hero__fig">
         {cover
-          ? <img class="book-hero__cover" src={cover} alt={`Обложка книги «${b.title}»`} transition:name={`book-${b.slug}`} loading="eager" decoding="async" />
+          ? <img class="book-hero__cover" src={cover} alt={`Обложка книги «${b.title}»`} transition:name={`book-${b.slug}`} loading="eager" decoding="async" data-pagefind-meta="image[src], image_alt[alt]" />
           : <span class="book-hero__cover book-hero__ph" aria-hidden="true" transition:name={`book-${b.slug}`}><span>{b.title}</span></span>}
       </figure>
     </div>
@@ -153,8 +151,7 @@ const description = b.verdict || b.annotation?.slice(0, 160);
 </Base>
 
 <style>
-  .book-hero { padding-top: clamp(32px, 5vw, 56px); }
-  .book-hero__inner { display: flex; flex-wrap: wrap-reverse; gap: 32px 56px; align-items: flex-end; padding-bottom: 28px; }
+  .book-hero__inner { display: flex; flex-wrap: wrap-reverse; gap: 32px 56px; align-items: flex-end; }
   .book-hero__text { flex: 1 1 480px; min-width: 0; }
   .book-hero__title { overflow-wrap: anywhere; hyphens: auto; }
   .book-hero__author { color: #fff; font-weight: 600; }

@@ -13,7 +13,7 @@ const list = series
   })
   .sort((a, b) => b.last.localeCompare(a.last));
 ---
-<Base title="Серии заметок" description={`${series.length} серий канала: циклы заметок, которые лучше читать по порядку.`} section="notes">
+<Base searchable={false} title="Серии заметок" description={`${series.length} серий канала: циклы заметок, которые лучше читать по порядку.`} section="notes">
   <PageHero
     title="Серии"
     eyebrow={`${series.length} ${plural(series.length, 'цикл', 'цикла', 'циклов')} заметок`}
@@ -23,7 +23,7 @@ const list = series
   <div class="container section--tight" data-pagefind-ignore="all">
     <ul class="sl">
       {list.map(({ s, items, first, last, cover, readMin }, i) => (
-        <li class="sl__item reveal" style={`--d:${(i % 3) * 80}ms`}>
+        <li class="sl__item reveal" style={`--d:${(i % 3) * 70}ms`}>
           <a class="sl__link" href={href.series(s.slug)}>
             <span class="sl__media">
               {cover ? <img src={img(cover, 640)} alt="" loading="lazy" decoding="async" /> : <span class="sl__ph"></span>}

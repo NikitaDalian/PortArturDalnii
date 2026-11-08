@@ -1,6 +1,8 @@
 ---
-// «Слои истории»: пять периодов с числом заметок по каждому.
+// «Слои истории»: пять периодов с иллюстрацией и числом заметок по каждому.
+// Если иллюстрации слоя нет, вместо неё — плашка с годами того же размера.
 import { LAYERS, articles, href, plural } from '../../lib/data';
+import { layerArt } from '../layers/layers';
 const notes: Record<string, string> = {
   pre1898: 'Цинские укрепления, рыбацкие деревни и японо-китайская война 1894–1895 годов.',
   russian: 'Аренда Квантуна, город с нуля за четыре года, крепость и осада.',
@@ -10,7 +12,7 @@ const notes: Record<string, string> = {
 };
 const items = LAYERS.map((l) => {
   const n = articles.filter((a) => (a.layer as string[]).includes(l.key)).length;
-  return { ...l, n, text: notes[l.key] };
+  return { ...l, n, text: notes[l.key], art: layerArt(l.key) };
 });
 ---
 <section class="section container" aria-labelledby="layers-h">
@@ -18,10 +20,15 @@ const items = LAYERS.map((l) => {
     <h2 id="layers-h" class="h2">Слои истории</h2>
     <a class="link" href={href.layers()}>Вся хронология</a>
   </div>
-  <ul class="layers reveal" style="--d:80ms" role="list">
-    {items.map((l) => (
-      <li>
-        <a href={href.layer(l.key)} class:list={['layer', { 'layer--accent': l.key === 'russian' }]}>
+  <ul class="layers" role="list">
+    {items.map((l, i) => (
+      <li class="reveal" style={`--d:${i * 70}ms`}>
+        <a href={href.layer(l.key)} class:list={['layer', { 'layer--accent': l.key === 'russian', 'layer--noart': !l.art }]}>
+          <span class="layer__media" aria-hidden="true">
+            {l.art
+              ? <img class="layer__img" src={l.art.src} srcset={l.art.srcset} sizes="(max-width: 720px) 96px, 280px" alt="" width="720" height="480" loading="lazy" decoding="async" />
+              : <span class="layer__ph"><span>{l.years}</span></span>}
+          </span>
           <span class="layer__years">{l.years}</span>
           <span class="layer__title">{l.title}</span>
           <span class="layer__text">{l.text}</span>
@@ -35,9 +42,17 @@ const items = LAYERS.map((l) => {
 <style>
   .layers { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; background: var(--line);
     grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); }
-  .layers li { display: flex; }
-  .layer { flex: 1; display: flex; flex-direction: column; gap: 12px; min-height: 250px; padding: 28px 24px 24px; background: var(--paper); transition: background .25s; }
+  .layers li { display: flex; background: var(--paper); }
+  .layer { flex: 1; display: flex; flex-direction: column; gap: 12px; min-height: 250px; padding: 0 0 24px; background: var(--paper); transition: background .25s; }
+  .layer > :not(.layer__media) { padding-inline: 24px; }
   .layer:hover { background: var(--frost); }
+  .layer__media { display: block; overflow: hidden; aspect-ratio: 3 / 2; margin-bottom: 8px; background: var(--frost); }
+  .layer__img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s var(--ease); }
+  .layer:hover .layer__img { transform: scale(1.04); }
+  /* плашка без иллюстрации: годы крупно на тоне слоя */
+  .layer__ph { display: flex; align-items: flex-end; height: 100%; padding: 16px 20px;
+    background: repeating-linear-gradient(135deg, transparent 0 14px, rgba(11, 34, 56, .05) 14px 15px), var(--frost); }
+  .layer__ph span { font-size: clamp(28px, 2.6vw, 36px); font-weight: 800; line-height: 1; letter-spacing: -0.02em; color: var(--line-2); }
   .layer__years { font-size: 15px; font-weight: 600; color: var(--ink-3); }
   .layer__title { font-size: clamp(22px, 2vw, 26px); font-weight: 700; line-height: 1.15; letter-spacing: -0.01em; }
   .layer:hover .layer__title { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
@@ -50,10 +65,14 @@ const items = LAYERS.map((l) => {
   .layer--accent .layer__count { color: var(--steel); }
 
   @media (max-width: 720px) {
-    .layer { min-height: 0; padding: 16px; display: grid; grid-template-columns: 92px 1fr; gap: 2px 16px; align-items: baseline; }
-    .layer__years { font-size: 14px; grid-row: span 2; }
-    .layer__title { font-size: 18px; }
+    .layer { min-height: 0; padding: 12px 16px; display: grid; grid-template-columns: 1fr 96px; gap: 2px 14px; align-items: start; }
+    .layer > :not(.layer__media) { padding-inline: 0; }
+    .layer__media { grid-column: 2; grid-row: 1 / span 3; margin: 0; align-self: center; }
+    .layer--noart .layer__media { display: none; }
+    .layer__years { font-size: 14px; grid-column: 1; }
+    .layer__title { font-size: 18px; grid-column: 1; }
     .layer__text { display: none; }
-    .layer__count { padding-top: 0; grid-column: 2; }
+    .layer__count { padding-top: 0; grid-column: 1; }
   }
+  @media (prefers-reduced-motion: reduce) { .layer__img { transition: none; } }
 </style>

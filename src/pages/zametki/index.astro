@@ -14,7 +14,7 @@ const persons = facet('person', (a) => a.people);
 const placesF = facet('place', (a) => a.places);
 const total = articles.length;
 ---
-<Base title="Заметки" description={`Каталог всех ${total} заметок канала: события, люди, книги и источники о Порт-Артуре и Дальнем, с фильтрами по эпохе, серии, человеку и месту.`} section="notes">
+<Base searchable={false} title="Заметки" description={`Каталог всех ${total} заметок канала: события, люди, книги и источники о Порт-Артуре и Дальнем, с фильтрами по эпохе, серии, человеку и месту.`} section="notes">
   <PageHero
     title="Заметки"
     eyebrow={`${total} ${plural(total, 'заметка', 'заметки', 'заметок')} канала`}
@@ -22,7 +22,7 @@ const total = articles.length;
     crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Заметки' }]}
   >
     <div class="cluster" style="--cluster-gap:20px; margin-top:4px">
-      <a class="link" href={url('/zametki/serii/')}>Все серии</a>
+      <a class="link" href={href.seriesList()}>Все серии</a>
       <a class="link" href={href.index()}>Указатель А–Я</a>
       <a class="link" href={href.search()}>Поиск по сайту</a>
     </div>
@@ -119,10 +119,9 @@ const total = articles.length;
       {list.map((a) => <NoteItem a={a} />)}
     </ul>
 
-    <div class="nc-empty stack" style="--stack-gap:10px" hidden>
-      <p class="h3">Ничего не нашлось</p>
-      <p class="muted">Снимите один из фильтров или попробуйте <a class="text-link" data-search-link href={href.search()}>полнотекстовый поиск</a>.</p>
-      <div><button type="button" class="btn btn--outline btn--sm nc-reset2">Сбросить фильтры</button></div>
+    <div class="nc-empty empty" hidden>
+      <p><b>Ничего не нашлось.</b> Снимите один из фильтров или попробуйте <a class="text-link" data-search-link href={href.search()}>полнотекстовый поиск</a>.</p>
+      <button type="button" class="btn btn--outline btn--sm nc-reset2">Сбросить фильтры</button>
     </div>
   </div>
 </Base>
@@ -156,8 +155,8 @@ const total = articles.length;
   .nc-list { margin: 0; padding: 0; }
   .nc-list--grid { display: grid; gap: 40px 28px; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); }
   .nc-list--rows { display: flex; flex-direction: column; border-top: 1px solid var(--line); max-width: 920px; }
-  .nc-empty { padding: 32px 0 16px; }
-  .nc-badge[hidden], .nc-empty[hidden] { display: none; }
+  .nc-empty { margin-top: 8px; }
+  .nc-badge[hidden] { display: none; }
 
   @media (max-width: 720px) {
     .nc-more-btn { display: inline-flex; }

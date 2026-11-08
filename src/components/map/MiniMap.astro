@@ -59,8 +59,9 @@ const cfg = JSON.stringify({ points, line, zoom }).replace(/</g, '\\u003c');
 </script>
 
 <style is:global>
-  .minimap { position: relative; height: var(--h); background: #DCE6EA; overflow: hidden; }
+  .minimap { position: relative; height: var(--h); background: var(--map-bg); overflow: hidden; }
   .minimap__map { position: absolute; inset: 0; }
+  .minimap .maplibregl-ctrl-group button { width: 44px; height: 44px; }
   .minimap__nojs { padding: 16px; font-size: 15px; color: var(--ink-2); }
   .mm-mk { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
   .mm-mk > span { min-width: 28px; height: 28px; padding: 0 4px; border-radius: 14px; border: 3px solid #fff; background: var(--navy); color: #fff; font: 700 13px var(--font); display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(11, 34, 56, .35); }

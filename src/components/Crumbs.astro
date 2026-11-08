@@ -1,0 +1,16 @@
+---
+// Хлебные крошки внутренней страницы. Последний пункт без href — текущая страница.
+interface Crumb { label: string; href?: string }
+interface Props { items: Crumb[] }
+const { items } = Astro.props;
+---
+{items.length > 0 && (
+  <nav class="crumbs" aria-label="Путь" data-pagefind-ignore>
+    {items.map((c, i) => (
+      <>
+        {c.href ? <a href={c.href}>{c.label}</a> : <span aria-current="page" title={c.label}>{c.label}</span>}
+        {i < items.length - 1 && <span aria-hidden="true">/</span>}
+      </>
+    ))}
+  </nav>
+)}

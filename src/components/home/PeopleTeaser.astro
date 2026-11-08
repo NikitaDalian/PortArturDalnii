@@ -27,7 +27,7 @@ const total = people.length;
     </nav>
     <div class="grid row-list people-tease__grid">
       {picks.map((p, i) => (
-        <div class="reveal" style={`--d:${(i % 2) * 80 + Math.floor(i / 2) * 60}ms`}><PersonRow p={p} /></div>
+        <div class="reveal" style={`--d:${(i % 2) * 70 + Math.floor(i / 2) * 70}ms`}><PersonRow p={p} /></div>
       ))}
     </div>
     <a class="btn btn--outline people-tease__all-btn" href={href.people()}>Все {total} {plural(total, 'персона', 'персоны', 'персон')}</a>

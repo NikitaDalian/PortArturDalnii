@@ -271,7 +271,7 @@ export async function initMapApp() {
           </div>
           ${selBtn(p.s)}
         </div>
-        ${p.u ? `<p class="munsure">${p.low ? 'Положение на карте приблизительное, уточняется.' : 'Сведения уточняются.'}</p>` : ''}
+        ${p.u ? `<p class="unsure">${p.low ? 'Положение на карте приблизительное, уточняется.' : 'Сведения уточняются.'}</p>` : ''}
         ${p.now ? `<p class="mplace__now">${esc(p.now)}</p>` : ''}
         <p class="mplace__text">${esc(p.t)}</p>
       </div>`;

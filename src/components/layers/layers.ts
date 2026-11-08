@@ -40,3 +40,19 @@ export function layerPlaces(k: LayerKey): Place[] {
 
 export const layerIndex = (k: LayerKey) => LAYERS.findIndex((l) => l.key === k);
 export { LAYERS, people, placeBySlug };
+
+// Иллюстрации слоёв (сгенерированы в стиле сайта, public/img/gen/layer-*.webp: полный размер, -1280, -720).
+// Файл проверяется при сборке: если иллюстрации слоя нет, карточки и шапка выглядят законченными без неё.
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
+import { url } from '../../lib/data';
+const ART_FILE: Record<LayerKey, string> = {
+  pre1898: 'layer-pre1898', russian: 'layer-1898-1905', japanese: 'layer-1905-1945', soviet: 'layer-1945-1955', modern: 'layer-today',
+};
+export interface LayerArt { src: string; srcset: string; large: string }
+export function layerArt(k: LayerKey): LayerArt | null {
+  const name = ART_FILE[k];
+  if (!name || !existsSync(join(process.cwd(), 'public', 'img', 'gen', `${name}-720.webp`))) return null;
+  const u = (suffix: string) => url(`/img/gen/${name}${suffix}.webp`);
+  return { src: u('-720'), srcset: `${u('-720')} 720w, ${u('-1280')} 1280w`, large: u('-1280') };
+}

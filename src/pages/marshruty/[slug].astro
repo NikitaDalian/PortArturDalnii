@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import PageHero from '../../components/PageHero.astro';
+import Unsure from '../../components/Unsure.astro';
 import MiniMap from '../../components/map/MiniMap.astro';
 import { routes, href, img, plural, type Route } from '../../lib/data';
 import { sortedRoutes, routeAuthor, routeCover, routeStops, routeYandex, TRANSPORT, SEASONS, KINDS, isUncertain, photoCaption } from '../../components/map/places';
@@ -18,7 +19,7 @@ const fmtMin = (m: number) => (m >= 60 ? `${Math.floor(m / 60)} ч${m % 60 ? ` $
 const line = ((r as any).polyline as [number, number][] | undefined) ?? null;
 const points = stops.filter((s) => s.p).map((s, i) => ({ lat: s.p!.lat, lng: s.p!.lng, n: i + 1, name: s.p!.name, href: href.place(s.p!.slug) }));
 const others = sortedRoutes().filter((x) => x.slug !== r.slug).slice(0, 4);
-const mapHref = `${href.map()}?route=${r.slug}`;
+const mapHref = href.mapRoute(r.slug);
 const km = `${String(r.distance_km).replace('.', ',')} км`;
 ---
 <Base title={r.title} description={r.dek} image={img(cover)} section="map">
@@ -66,7 +67,7 @@ const km = `${String(r.distance_km).replace('.', ',')} км`;
         </div>
         <ol class="rt-list" role="list">
           {stops.map((s, i) => (
-            <li class="rt-stop reveal" style={`--d:${Math.min(i, 6) * 50}ms`}>
+            <li class="rt-stop reveal" style={`--d:${Math.min(i, 5) * 70}ms`}>
               <span class="rt-stop__n" aria-hidden="true">{i + 1}</span>
               <div class="rt-stop__body">
                 {s.p ? (
@@ -85,7 +86,7 @@ const km = `${String(r.distance_km).replace('.', ',')} км`;
                   </h3>
                   {s.p?.name_zh && s.p.name_zh !== '—' && <span class="rt-stop__zh" lang="zh">{s.p.name_zh.split(';')[0]}</span>}
                   {s.note && <p class="rt-stop__note">{s.note}</p>}
-                  {s.p && isUncertain(s.p) && <span class="rt-unsure">{s.p.coord_confidence === 'low' ? 'точка приблизительная, уточняется' : 'сведения уточняются'}</span>}
+                  {s.p && isUncertain(s.p) && <Unsure text={s.p.coord_confidence === 'low' ? 'точка приблизительная, уточняется' : 'сведения уточняются'} />}
                 </div>
               </div>
             </li>
@@ -103,7 +104,7 @@ const km = `${String(r.distance_km).replace('.', ',')} км`;
         <div class="panel stack rt-own" style="--stack-gap:10px">
           <h2 class="h3">Хотите по-своему?</h2>
           <p class="muted">На карте можно отметить любые места: сайт сам выстроит порядок обхода и даст ссылку для Яндекс.Карт.</p>
-          <a class="link" href={`${href.map()}?pts=${stops.filter((s) => s.p).map((s) => s.p!.slug).filter((v, i, a) => a.indexOf(v) === i).join(',')}`}>Взять остановки за основу</a>
+          <a class="link" href={href.mapPts(stops.filter((s) => s.p).map((s) => s.p!.slug))}>Взять остановки за основу</a>
         </div>
       </aside>
     </div>
@@ -155,7 +156,7 @@ const km = `${String(r.distance_km).replace('.', ',')} км`;
   .rt-copied { color: var(--steel); }
   .rt-split > :last-child { flex: 1 1 320px; }
   .rt-aside { align-self: flex-start; }
-  @media (min-width: 900px) { .rt-aside { position: sticky; top: 96px; } }
+  @media (min-width: 900px) { .rt-aside { position: sticky; top: calc(var(--header-h) + 24px); } }
   .rt-list { list-style: none; margin: 0; padding: 0; position: relative; }
   .rt-stop { position: relative; display: flex; gap: 16px; padding-bottom: 28px; }
   .rt-stop:not(:last-child)::before { content: ''; position: absolute; left: 17px; top: 40px; bottom: 4px; width: 2px; background: repeating-linear-gradient(var(--accent) 0 6px, transparent 6px 11px); }
@@ -168,7 +169,6 @@ const km = `${String(r.distance_km).replace('.', ',')} км`;
   .rt-stop__title a:hover { text-decoration-color: var(--accent); }
   .rt-stop__zh { font-size: 14px; color: var(--ink-3); }
   .rt-stop__note { font-size: 16px; line-height: 1.55; color: var(--ink-2); }
-  .rt-unsure { align-self: flex-start; font-size: 13px; font-weight: 600; color: #8A3B12; background: #FBEDE4; padding: 3px 10px; border-radius: 10px; }
   @media (max-width: 560px) {
     .rt-stop__body { flex-direction: column; }
     .rt-stop__media { flex-basis: auto; width: 100%; }

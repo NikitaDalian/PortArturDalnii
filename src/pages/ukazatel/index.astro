@@ -13,7 +13,7 @@ const groupCount = (g: Group) => entries.filter((e) => e.group === g).length;
 const id = (l: string) => 'b-' + encodeURIComponent(l).replace(/%/g, '');
 const SHORT: Record<Group, string> = { people: 'Люди', places: 'Места', books: 'Книги', series: 'Серии' };
 ---
-<Base title="Указатель А–Я" description={`Указатель имён, мест, книг и серий: ${entries.length} записей со ссылками на заметки канала.`} section="notes">
+<Base searchable={false} title="Указатель А–Я" description={`Указатель имён, мест, книг и серий: ${entries.length} записей со ссылками на заметки канала.`} section="notes">
   <PageHero
     title="Указатель А–Я"
     eyebrow={`${entries.length} ${plural(entries.length, 'запись', 'записи', 'записей')}`}
@@ -75,14 +75,13 @@ const SHORT: Record<Group, string> = { people: 'Люди', places: 'Места',
           </ul>
         </section>
       ))}
-      <p class="ix-empty muted" hidden>В указателе такого нет. Попробуйте <a class="text-link" data-ix-search href={href.search()}>полнотекстовый поиск</a>.</p>
+      <p class="ix-empty empty" hidden>В указателе такого нет. Попробуйте <a class="text-link" data-ix-search href={href.search()}>полнотекстовый поиск</a>.</p>
     </div>
   </div>
 </Base>
 
 <style>
-  .ix-bar { position: sticky; top: 72px; z-index: 20; background: var(--ice); border-bottom: 1px solid var(--line); box-shadow: 0 6px 16px -12px rgba(11, 34, 56, .35); }
-  @media (max-width: 1100px) { .ix-bar { top: 64px; } }
+  .ix-bar { position: sticky; top: var(--header-h); z-index: 20; background: var(--ice); border-bottom: 1px solid var(--line); box-shadow: 0 6px 16px -12px rgba(11, 34, 56, .35); }
   .ix-bar__inner { display: flex; flex-direction: column; gap: 8px; padding-block: 10px 6px; }
   .ix-n { margin-left: 6px; font-weight: 500; opacity: .7; }
   .ix-letters { display: flex; flex-wrap: wrap; gap: 2px; }
@@ -101,7 +100,7 @@ const SHORT: Record<Group, string> = { people: 'Люди', places: 'Места',
   .ix-find input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; font: 500 16px var(--font); color: var(--ink); }
   .ix-status { min-height: 20px; margin: 10px 0 8px; }
 
-  .ix-sec { display: grid; grid-template-columns: 96px 1fr; gap: 0 24px; padding: 28px 0; border-top: 1px solid var(--line); scroll-margin-top: 200px; }
+  .ix-sec { display: grid; grid-template-columns: 96px 1fr; gap: 0 24px; padding: 28px 0; border-top: 1px solid var(--line); scroll-margin-top: calc(var(--header-h) + 136px); }
   .ix-sec[hidden] { display: none; }
   .ix-letter { font-size: clamp(44px, 5vw, 72px); line-height: .9; color: var(--accent); }
   .ix-list { margin: 0; padding: 0; list-style: none; columns: 2 340px; column-gap: 48px; }
@@ -121,10 +120,9 @@ const SHORT: Record<Group, string> = { people: 'Люди', places: 'Места',
   .ix-e__notes[open] summary::after { content: '−'; }
   .ix-e__notes ol { margin: 2px 0 6px; padding-left: 22px; display: flex; flex-direction: column; gap: 6px; font-size: 15px; line-height: 1.4; }
   .ix-e__notes a:hover { text-decoration: underline; text-underline-offset: 3px; }
-  .ix-empty { padding: 24px 0; }
-  .ix-empty[hidden] { display: none; }
+  .ix-empty { margin-top: 16px; }
   @media (max-width: 720px) {
-    .ix-sec { grid-template-columns: 1fr; gap: 8px; scroll-margin-top: 190px; }
+    .ix-sec { grid-template-columns: 1fr; gap: 8px; scroll-margin-top: calc(var(--header-h) + 126px); }
     .ix-letter { font-size: 44px; }
   }
 </style>

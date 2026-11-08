@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Coast from '../../components/Coast.astro';
+import Crumbs from '../../components/Crumbs.astro';
 import PeopleBrowser from '../../components/people/PeopleBrowser.astro';
 import MentionCloud from '../../components/people/MentionCloud.astro';
 import { href, people, plural } from '../../lib/data';
@@ -10,13 +11,12 @@ const n = people.length;
 const extra = mentionedNames().length;
 const lead = 'Русские, японцы, китайцы и один британский лейтенант. Те, кто строил эти города, защищал и осаждал их, и те, кто потом о них писал.';
 ---
-<Base title="Лица Порт-Артура" description={`${n} ${plural(n, 'персона', 'персоны', 'персон')} из истории Порт-Артура и Дальнего: биографии, цитаты, заметки канала, места и книги.`} section="people">
-  <section class="dark lica-hero">
+<Base searchable={false} title="Лица Порт-Артура" description={`${n} ${plural(n, 'персона', 'персоны', 'персон')} из истории Порт-Артура и Дальнего: биографии, цитаты, заметки канала, места и книги.`} section="people">
+  <section class="dark lica-hero page-top">
     <div class="container">
       <div class="stack lica-hero__head" style="--stack-gap:16px">
-        <nav class="crumbs" aria-label="Путь">
-          <a href={href.home()}>Главная</a><span aria-hidden="true">/</span><span aria-current="page">Лица</span>
-        </nav>
+        <Crumbs items={[{ label: 'Главная', href: href.home() }, { label: 'Лица' }]} />
+        <p class="eyebrow eyebrow--accent">Россия · Япония · Китай</p>
         <h1 class="h1">Лица Порт-Артура</h1>
         <p class="lead">{lead}</p>
         <p class="meta">{n} {plural(n, 'персона', 'персоны', 'персон')} с отдельными страницами и ещё {extra} {plural(extra, 'имя', 'имени', 'имён')} в заметках</p>
@@ -40,7 +40,6 @@ const lead = 'Русские, японцы, китайцы и один брит�
 </Base>
 
 <style>
-  .lica-hero { padding-top: clamp(32px, 5vw, 56px); }
   .lica-hero__head { margin-bottom: 32px; }
   .lica-hero .container { padding-bottom: clamp(24px, 4vw, 48px); }
 </style>

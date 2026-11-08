@@ -64,7 +64,7 @@ const total = books.length;
       </li>
     ))}
   </ul>
-  <div class="catalog__empty panel panel--frost" data-empty hidden>
+  <div class="catalog__empty empty" data-empty hidden>
     <p>Книг с таким сочетанием уровня и жанра пока нет.</p>
     <button type="button" class="btn btn--outline btn--sm" data-reset>Сбросить фильтры</button>
   </div>
@@ -85,8 +85,7 @@ const total = books.length;
   .catalog__sort-btn[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--accent); }
   .catalog__list { list-style: none; margin: 16px 0 0; padding: 0; }
   .catalog__item[hidden] { display: none; }
-  .catalog__empty { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; }
-  .catalog__empty[hidden] { display: none; }
+  .catalog__empty { margin-top: 20px; }
 </style>
 
 <script>

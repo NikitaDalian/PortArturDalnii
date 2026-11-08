@@ -8,7 +8,7 @@ import PlaceCard from '../../components/PlaceCard.astro';
 import Timeline from '../../components/layers/Timeline.astro';
 import KeyDates from '../../components/layers/KeyDates.astro';
 import { href, img, url, plural, TYPES, LAYERS } from '../../lib/data';
-import { layerText, layerArticles, layerPeople, layerPlaces } from '../../components/layers/layers';
+import { layerText, layerArticles, layerPeople, layerPlaces, layerArt } from '../../components/layers/layers';
 
 export function getStaticPaths() {
   return LAYERS.map((l) => ({ params: { layer: l.slug }, props: { key: l.key } }));
@@ -24,8 +24,7 @@ const notes = layerArticles(key);
 const persons = layerPeople(key);
 const placeList = layerPlaces(key);
 // Иллюстрация слоя (сгенерирована в стиле сайта) — в шапку; архивное фото — в текст.
-const COVERS: Record<string, string | null> = { pre1898: 'layer-pre1898', russian: 'layer-1898-1905', japanese: 'layer-1905-1945', soviet: null, modern: 'layer-today' };
-const cover = COVERS[key] ? url(`/img/gen/${COVERS[key]}-1280.webp`) : null;
+const cover = layerArt(key)?.large ?? null;
 const photo = text.image ? img(text.image) : null;
 const heroImg = cover ?? photo;
 const typesPresent = Object.keys(TYPES)
@@ -90,8 +89,8 @@ const placesTitle = key === 'modern' ? 'Где искать следы сего�
         </div>
       )}
       <div class="grid ln-grid" style="--min:300px; --grid-gap:40px 24px">
-        {notes.map((a) => (
-          <div class="ln-item" data-type={a.type}><ArticleCard a={a} /></div>
+        {notes.map((a, i) => (
+          <div class="ln-item reveal" style={`--d:${(i % 3) * 70}ms`} data-type={a.type}><ArticleCard a={a} /></div>
         ))}
       </div>
     </div>
@@ -121,7 +120,7 @@ const placesTitle = key === 'modern' ? 'Где искать следы сего�
       </div>
       {key === 'modern' && <p class="lead" style="margin-bottom:24px">Места, куда можно прийти сейчас, — с подсказками для посещения на их страницах.</p>}
       <div class="grid" style="--min:240px; --grid-gap:32px 24px">
-        {placeList.map((p) => <PlaceCard p={p} />)}
+        {placeList.map((p, i) => <div class="reveal" style={`--d:${(i % 4) * 70}ms`}><PlaceCard p={p} /></div>)}
       </div>
     </section>
   )}

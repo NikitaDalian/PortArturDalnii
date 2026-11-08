@@ -12,7 +12,7 @@ const groups = [
 ].filter((g) => g.xs.length);
 const km = (n: number) => `${String(n).replace('.', ',')} км`;
 ---
-<Base title="Маршруты" description="Маршруты по Порт-Артуру и Дальнему: Восточный и Западный фронт крепости, Люйшунь за день, русский Дальний пешком. Остановки, советы и маршрут в Яндекс.Картах." section="map">
+<Base searchable={false} title="Маршруты" description="Маршруты по Порт-Артуру и Дальнему: Восточный и Западный фронт крепости, Люйшунь за день, русский Дальний пешком. Остановки, советы и маршрут в Яндекс.Картах." section="map">
   <PageHero
     title="Маршруты"
     eyebrow="Карта и маршруты"
@@ -21,7 +21,7 @@ const km = (n: number) => `${String(n).replace('.', ',')} км`;
   >
     <div class="cluster">
       <a class="btn btn--primary" href={href.map()}>Открыть карту</a>
-      <a class="btn btn--outline" href={`${href.map()}?build=1`}>Собрать свой маршрут</a>
+      <a class="btn btn--outline" href={href.mapBuild()}>Собрать свой маршрут</a>
     </div>
   </PageHero>
 

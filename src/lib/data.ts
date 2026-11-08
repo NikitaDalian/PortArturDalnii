@@ -76,10 +76,10 @@ export const GROUPS: Record<string, string> = {
   medicine: 'Врачи', writers: 'Писатели', culture: 'Культура', other: 'Другие',
 };
 export const BOOK_LEVELS: Record<string, { label: string; color: string }> = {
-  start: { label: 'С чего начать', color: '#1F6F5C' },
+  start: { label: 'С чего начать', color: 'var(--t-place)' },
   deep: { label: 'Для углубления', color: 'var(--navy)' },
-  fiction: { label: 'Художественное', color: '#5B4BA8' },
-  skip: { label: 'Можно пропустить', color: '#8A3B12' },
+  fiction: { label: 'Художественное', color: 'var(--t-book)' },
+  skip: { label: 'Можно пропустить', color: 'var(--warn)' },
 };
 
 // Маршруты страниц (контракт для всех разделов)
@@ -97,6 +97,12 @@ export const href = {
   seriesList: () => url('/zametki/serii/'),
   series: (s: string) => url(`/zametki/serii/${s}/`),
   map: (place?: string) => url('/karta/' + (place ? `#${place}` : '')),
+  /** Готовый маршрут на большой карте: /karta/?route=slug */
+  mapRoute: (s: string) => url(`/karta/?route=${encodeURIComponent(s)}`),
+  /** Свой маршрут из точек: /karta/?pts=a,b,c (повторы убираются) */
+  mapPts: (slugs: string[]) => url(`/karta/?pts=${[...new Set(slugs)].map(encodeURIComponent).join(',')}`),
+  /** Пустой конструктор своего маршрута */
+  mapBuild: () => url('/karta/?build=1'),
   place: (s: string) => url(`/mesta/${s}/`),
   routes: () => url('/marshruty/'),
   route: (s: string) => url(`/marshruty/${s}/`),
@@ -134,6 +140,18 @@ export function entity(kind: 'person' | 'place' | 'book', slug: string): { href:
 }
 
 export const articlesOf = (slugs: string[] = []) => slugs.map((s) => articleBySlug.get(s)).filter(Boolean) as Article[];
+
+/** Связи заметки в обе стороны: её собственные списки + сущности, которые сами ссылаются на заметку
+ *  (people[].articles, places[].articles, books[]/sources[].articles). Так заметка всегда ссылается обратно. */
+export function noteRelations(a: Article): { people: string[]; places: string[]; books: string[] } {
+  const has = (x: { articles?: string[] | null }) => ((x.articles ?? []) as string[]).includes(a.slug);
+  const uniq = (xs: string[]) => [...new Set(xs)];
+  return {
+    people: uniq([...(a.people as string[]), ...people.filter(has).map((x) => x.slug)]),
+    places: uniq([...(a.places as string[]), ...places.filter(has).map((x) => x.slug)]),
+    books: uniq([...(a.books as string[]), ...books.filter(has).map((x) => x.slug), ...sources.filter(has as any).map((x) => x.slug)]),
+  };
+}
 
 // ---------- изображения ----------
 /** 'photos/photo_98@...jpg' | 98 → адрес WebP с водяным знаком. size 640 — превью. */

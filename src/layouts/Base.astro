@@ -11,8 +11,10 @@ interface Props {
   image?: string | null;   // абсолютный или внутренний адрес картинки для превью
   section?: 'layers' | 'people' | 'map' | 'library' | 'notes' | 'about' | null; // подсветка пункта меню
   lang?: 'ru' | 'en' | 'zh';
+  /** false — страница-список: не попадает в поисковый индекс Pagefind (чтобы не дублировать карточки) */
+  searchable?: boolean;
 }
-const { title, description = t.description, image = null, section = null, lang = 'ru' } = Astro.props;
+const { title, description = t.description, image = null, section = null, lang = 'ru', searchable = true } = Astro.props;
 const fullTitle = title ? `${title} — ${t.site}` : `${t.site} — ${t.tagline}`;
 const ogImage = image ? new URL(image, Astro.site).href : new URL(import.meta.env.BASE_URL + 'img/p/98.webp', Astro.site).href;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
@@ -42,7 +44,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
 <body>
   <a class="sr-only" href="#main">К содержанию</a>
   <Header section={section} />
-  <main id="main" data-pagefind-body>
+  <main id="main" data-pagefind-body={searchable ? '' : undefined}>
     <slot />
   </main>
   <Footer />

@@ -4,6 +4,8 @@ import PageHero from '../../components/PageHero.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import PersonRow from '../../components/PersonRow.astro';
 import PlaceCard from '../../components/PlaceCard.astro';
+import Unsure from '../../components/Unsure.astro';
+import Coast from '../../components/Coast.astro';
 import MiniMap from '../../components/map/MiniMap.astro';
 import Gallery from '../../components/map/Gallery.astro';
 import { places, href, img, articlesOf, amapUrl, yandexUrl, layerByKey, plural, type Place } from '../../lib/data';
@@ -37,11 +39,14 @@ const city = CITIES[p.city] ?? '';
     imageAlt={cover ? photoCaption(cover) || p.name : ''}
     caption={cover ? photoCaption(cover) : undefined}
     transitionName={`place-${p.slug}`}
+    imageMeta
   >
+    <span hidden data-pagefind-filter="type:Места"></span>
+    <span hidden data-pagefind-meta={`sub:${[city, KINDS[p.kind]].filter(Boolean).join(" · ")}`}></span>
     {p.name_zh && p.name_zh !== '—' && <p class="pl-zh" lang="zh">{p.name_zh}</p>}
     <div class="cluster pl-tags">
       {layers.map((l) => <a class="chip" href={href.layer(l)}>{layerByKey(l)?.years}</a>)}
-      {unsure && <span class="pl-unsure">Уточняется</span>}
+      {unsure && <Unsure />}
     </div>
   </PageHero>
 
@@ -52,11 +57,9 @@ const city = CITIES[p.city] ?? '';
           <p>{p.summary}</p>
         </div>
         {unsure && (
-          <p class="pl-note reveal">
-            {p.coord_confidence === 'low'
-              ? 'Положение точки на карте приблизительное. Сведения о месте ещё проверяются; если вы были здесь и знаете точнее, напишите нам.'
-              : 'Часть сведений о месте ещё проверяется: даты, атрибуция здания или условия посещения.'}
-          </p>
+          <Unsure block text={p.coord_confidence === 'low'
+            ? 'Положение точки на карте приблизительное. Сведения о месте ещё проверяются; если вы были здесь и знаете точнее, напишите нам.'
+            : 'Часть сведений о месте ещё проверяется: даты, атрибуция здания или условия посещения.'} />
         )}
         {p.visit && (
           <div class="panel panel--frost stack reveal" style="--stack-gap:10px">
@@ -120,13 +123,14 @@ const city = CITIES[p.city] ?? '';
   )}
 
   {folk.length > 0 && (
-    <section class="section section--tight dark" aria-labelledby="pl-people">
-      <div class="container stack" style="--stack-gap:20px">
+    <section class="dark" aria-labelledby="pl-people">
+      <div class="container section section--tight stack" style="--stack-gap:20px">
         <h2 class="h2" id="pl-people">Люди, связанные с местом</h2>
         <div class="row-list grid" style="--min:300px; --grid-gap:0 32px">
           {folk.map((x) => <PersonRow p={x} size="sm" />)}
         </div>
       </div>
+      {(rts.length > 0 || near.length > 0) && <Coast fill={rts.length > 0 ? 'var(--ice)' : 'var(--paper)'} />}
     </section>
   )}
 
@@ -174,9 +178,6 @@ const city = CITIES[p.city] ?? '';
 <style>
   .pl-zh { font-size: 17px; color: var(--mist); }
   .pl-tags { --cluster-gap: 8px; }
-  .pl-unsure, .pl-note { font-size: 14px; font-weight: 600; color: #8A3B12; background: #FBEDE4; border-radius: 12px; }
-  .pl-unsure { display: inline-flex; align-items: center; min-height: 32px; padding: 0 12px; }
-  .pl-note { padding: 12px 16px; line-height: 1.5; max-width: 68ch; font-weight: 500; }
   .pl-split > :last-child { flex: 1 1 360px; }
   .pl-aside { min-width: 0; }
   .pl-btns { display: flex; flex-wrap: wrap; gap: 8px; }

@@ -11,7 +11,7 @@ const starters = books.filter((b) => b.level === 'start').slice(0, 2);
 const sourceGroups = SOURCE_KINDS.map((k) => ({ ...k, items: sources.filter((s) => s.kind === k.key) })).filter((g) => g.items.length);
 const lead = 'Книги, которые прочитаны и разобраны в канале. У каждой короткая аннотация, честная оценка и ссылка на полную рецензию в Telegram.';
 ---
-<Base title="Библиотека" description={lead} section="library">
+<Base searchable={false} title="Библиотека" description={lead} section="library">
   <PageHero
     title="Библиотека"
     eyebrow={`${books.length} ${plural(books.length, 'книга', 'книги', 'книг')} · ${sources.length} ${plural(sources.length, 'источник', 'источника', 'источников')}`}
@@ -37,7 +37,7 @@ const lead = 'Книги, которые прочитаны и разобран�
         </div>
         <div class="grid" style="--min:420px; --grid-gap:20px">
           {starters.map((b, i) => (
-            <div class="reveal" style={`--d:${i * 120}ms`}><BookFeature b={b} /></div>
+            <div class="reveal" style={`--d:${i * 70}ms`}><BookFeature b={b} /></div>
           ))}
         </div>
       </div>
@@ -72,7 +72,7 @@ const lead = 'Книги, которые прочитаны и разобран�
             <h3 class="h3 lib-src-group__title" id={`src-${g.key}-h`}>{g.label} <span class="meta">{g.items.length}</span></h3>
             <div class="grid" style="--min:250px; --grid-gap:28px 24px">
               {g.items.map((s, i) => (
-                <div class="reveal" style={`--d:${Math.min(i, 4) * 80}ms`}><SourceCard s={s} /></div>
+                <div class="reveal" style={`--d:${Math.min(i, 5) * 70}ms`}><SourceCard s={s} /></div>
               ))}
             </div>
           </section>
@@ -88,7 +88,5 @@ const lead = 'Книги, которые прочитаны и разобран�
   .lib-sources { border-top: 1px solid var(--line); }
   .lib-src-nav { margin-bottom: 36px; }
   .lib-n { margin-left: 8px; font-weight: 500; opacity: .65; }
-  .lib-src-group { scroll-margin-top: 96px; }
   .lib-src-group__title { padding-bottom: 12px; margin-bottom: 20px; border-bottom: 2px solid var(--navy); }
-  #start, #katalog, #istochniki { scroll-margin-top: 80px; }
 </style>

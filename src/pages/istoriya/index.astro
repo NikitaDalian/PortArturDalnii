@@ -4,7 +4,7 @@ import PageHero from '../../components/PageHero.astro';
 import Timeline from '../../components/layers/Timeline.astro';
 import KeyDates from '../../components/layers/KeyDates.astro';
 import { href, entity, plural } from '../../lib/data';
-import { LAYERS, layerText, layerArticles, layerPeople, layerPlaces } from '../../components/layers/layers';
+import { LAYERS, layerText, layerArticles, layerPeople, layerPlaces, layerArt } from '../../components/layers/layers';
 
 const blocks = LAYERS.map((l) => {
   const notes = layerArticles(l.key);
@@ -14,6 +14,7 @@ const blocks = LAYERS.map((l) => {
     count: notes.length,
     people: layerPeople(l.key).slice(0, 4),
     places: layerPlaces(l.key).slice(0, 3),
+    art: layerArt(l.key),
   };
 });
 
@@ -24,7 +25,7 @@ const chronology = LAYERS.flatMap((l) =>
 const title = 'Слои истории';
 const lead = 'Пять эпох одного места на южной оконечности Ляодуна: китайский Люйшунькоу, русские Порт-Артур и Дальний, японские Рёдзюн и Дайрен, советская база и сегодняшний Далянь.';
 ---
-<Base title={title} description={lead} section="layers">
+<Base searchable={false} title={title} description={lead} section="layers">
   <PageHero
     title={title}
     eyebrow="Ляодунский полуостров"
@@ -43,8 +44,13 @@ const lead = 'Пять эпох одного места на южной окон
       <a class="link" href="#chrono">Хронология</a>
     </div>
     <ol class="lb-list">
-      {blocks.map(({ l, text, count, people, places }, i) => (
-        <li class:list={['lb reveal', { 'lb--dark dark': l.key === 'russian' }]} style={`--d:${i * 60}ms`}>
+      {blocks.map(({ l, text, count, people, places, art }, i) => (
+        <li class:list={['lb reveal', { 'lb--dark dark': l.key === 'russian', 'lb--noart': !art }]} style={`--d:${i * 70}ms`}>
+          <a class="lb__media" href={href.layer(l.key)} tabindex="-1" aria-hidden="true">
+            {art
+              ? <img src={art.src} srcset={art.srcset} sizes="(max-width: 960px) 100vw, 240px" alt="" width="720" height="480" loading="lazy" decoding="async" />
+              : <span class="lb__ph"><span>{l.years}</span></span>}
+          </a>
           <div class="lb__head">
             <span class="lb__years">{l.years}</span>
             <h3 class="lb__title"><a href={href.layer(l.key)}>{l.title}</a></h3>
@@ -88,8 +94,14 @@ const lead = 'Пять эпох одного места на южной окон
 
 <style>
   .lb-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; background: var(--line); }
-  .lb { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr) auto; gap: 16px 40px; align-items: start; padding: clamp(24px, 3vw, 36px) clamp(20px, 3vw, 36px); background: var(--paper); }
+  .lb { display: grid; grid-template-columns: minmax(0, 240px) minmax(0, 5fr) minmax(0, 6fr) auto; gap: 16px 40px; align-items: start; padding: clamp(24px, 3vw, 36px) clamp(20px, 3vw, 36px); background: var(--paper); }
   .lb__head { display: flex; flex-direction: column; gap: 10px; }
+  .lb__media { display: block; overflow: hidden; aspect-ratio: 3 / 2; background: var(--frost); }
+  .lb__media img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s var(--ease); }
+  .lb__media:hover img { transform: scale(1.04); }
+  .lb__ph { display: flex; align-items: flex-end; height: 100%; padding: 14px 16px;
+    background: repeating-linear-gradient(135deg, transparent 0 14px, rgba(11, 34, 56, .05) 14px 15px), var(--frost); }
+  .lb__ph span { font-size: 28px; font-weight: 800; line-height: 1; letter-spacing: -0.02em; color: var(--line-2); }
   .lb__years { font-size: 15px; font-weight: 700; color: var(--ink-3); }
   .lb--dark .lb__years { color: var(--accent-on-dark); }
   .lb__title { font-size: clamp(26px, 2.6vw, 36px); line-height: 1.1; }
@@ -100,8 +112,15 @@ const lead = 'Пять эпох одного места на южной окон
   .lb__label { font-weight: 700; }
   .lb__go { align-self: center; white-space: nowrap; }
   .lb-note { max-width: 36ch; }
+  @media (max-width: 1180px) {
+    .lb { grid-template-columns: minmax(0, 200px) minmax(0, 1fr) minmax(0, 1.2fr); }
+    .lb__go { grid-column: 2 / -1; justify-self: start; }
+  }
   @media (max-width: 960px) {
     .lb { grid-template-columns: 1fr; }
-    .lb__go { justify-self: start; }
+    .lb__go { grid-column: auto; }
+    .lb__media { aspect-ratio: 16 / 7; }
+    .lb--noart .lb__media { display: none; }
   }
+  @media (prefers-reduced-motion: reduce) { .lb__media img { transition: none; } }
 </style>

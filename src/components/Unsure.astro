@@ -1,0 +1,8 @@
+---
+// Единая пометка «уточняется»: коротко (pill) или развёрнуто (block) — для непроверенных сведений.
+interface Props { text?: string; block?: boolean }
+const { text = 'уточняется', block = false } = Astro.props;
+---
+{block
+  ? <p class="unsure unsure--block">{text}</p>
+  : <span class="unsure">{text}</span>}

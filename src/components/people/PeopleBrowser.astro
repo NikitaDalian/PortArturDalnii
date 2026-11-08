@@ -46,7 +46,7 @@ const total = people.length;
   <div class="pb__grid" data-list>
     {people.map((p) => <PersonRow p={p} />)}
   </div>
-  <p class="pb__empty lead" data-empty hidden>Под такой фильтр никто не подходит. Попробуйте другую страну или группу.</p>
+  <p class="pb__empty empty" data-empty hidden>Под такой фильтр никто не подходит. Попробуйте другую страну или группу.</p>
 </div>
 
 <style>
@@ -65,10 +65,9 @@ const total = people.length;
     grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr));
   }
   .pb__grid > :global([hidden]) { display: none !important; }
-  .pb__empty { padding: 24px 0; }
-  .pb__empty[hidden] { display: none; }
+  .pb__empty { margin-top: 16px; }
   @media (max-width: 720px) {
-    .pb__row { flex-direction: column; align-items: stretch; gap: 6px; }
+    .pb__row { flex-direction: column; flex-wrap: nowrap; align-items: stretch; gap: 6px; }
     .pb__row .chip-row { flex: none; }
     .pb__label { flex: none; }
   }

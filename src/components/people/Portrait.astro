@@ -7,7 +7,7 @@ const { p, alt = p.name } = Astro.props;
 const src = img(p.portrait);
 ---
 {src
-  ? <img class="portrait bw" src={src} alt={alt} loading="eager" decoding="async" transition:name={`person-${p.slug}`} />
+  ? <img class="portrait bw" src={src} alt={alt} loading="eager" decoding="async" transition:name={`person-${p.slug}`} data-pagefind-meta="image[src], image_alt[alt]" />
   : <div class="portrait portrait--ph" role="img" aria-label={`${p.name}: портрета нет`} transition:name={`person-${p.slug}`}>
       <span class="portrait__ini" aria-hidden="true">{initials(p.name)}</span>
       <span class="portrait__note" aria-hidden="true">портрета нет</span>

@@ -15,6 +15,7 @@ const list = [...series]
       <h2 id="series-h" class="h2">Серии</h2>
       <p class="muted">Циклы из нескольких постов, которые лучше читать подряд.</p>
     </div>
+    <a class="link" href={href.seriesList()}>Все серии · {series.length}</a>
   </div>
   <ul class="series-strip reveal" style="--d:80ms" role="list">
     {list.map((s) => (

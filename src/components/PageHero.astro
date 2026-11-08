@@ -1,6 +1,7 @@
 ---
 // Шапка внутренней страницы: тёмная полоса с крошками, подписью, заголовком, лидом и линией берега.
 import Coast from './Coast.astro';
+import Crumbs from './Crumbs.astro';
 interface Crumb { label: string; href?: string }
 interface Props {
   title: string;
@@ -12,30 +13,22 @@ interface Props {
   caption?: string;
   transitionName?: string;    // для морфинга картинки между списком и страницей
   coastFill?: string;
+  imageMeta?: boolean;        // отдать картинку в результаты поиска (data-pagefind-meta)
 }
-const { title, eyebrow, lead, crumbs = [], image = null, imageAlt = '', caption, transitionName, coastFill } = Astro.props;
+const { title, eyebrow, lead, crumbs = [], image = null, imageAlt = '', caption, transitionName, coastFill, imageMeta = false } = Astro.props;
 ---
-<section class="page-hero dark">
-  <div class="container page-hero__inner" class:list={[{ 'has-img': image }]}>
+<section class="page-hero page-top dark">
+  <div class="container page-hero__inner page-top__inner" class:list={[{ 'has-img': image }]}>
     <div class="page-hero__text stack" style="--stack-gap:16px">
-      {crumbs.length > 0 && (
-        <nav class="crumbs" aria-label="Путь">
-          {crumbs.map((c, i) => (
-            <>
-              {c.href ? <a href={c.href}>{c.label}</a> : <span aria-current="page">{c.label}</span>}
-              {i < crumbs.length - 1 && <span aria-hidden="true">/</span>}
-            </>
-          ))}
-        </nav>
-      )}
+      <Crumbs items={crumbs} />
       {eyebrow && <p class="eyebrow eyebrow--accent">{eyebrow}</p>}
-      <h1 class="h1">{title}</h1>
+      <h1 class="h1 page-hero__title" data-pagefind-meta="title">{title}</h1>
       {lead && <p class="lead">{lead}</p>}
       <slot />
     </div>
     {image && (
       <figure class="page-hero__fig">
-        <img src={image} alt={imageAlt} transition:name={transitionName} loading="eager" decoding="async" />
+        <img src={image} alt={imageAlt} transition:name={transitionName} loading="eager" decoding="async" data-pagefind-meta={imageMeta ? 'image[src], image_alt[alt]' : undefined} />
         {caption && <figcaption>{caption}</figcaption>}
       </figure>
     )}
@@ -44,9 +37,9 @@ const { title, eyebrow, lead, crumbs = [], image = null, imageAlt = '', caption,
 </section>
 
 <style>
-  .page-hero { padding-top: clamp(32px, 5vw, 56px); }
-  .page-hero__inner { display: flex; flex-wrap: wrap; gap: 32px 48px; align-items: flex-end; padding-bottom: 24px; }
+  .page-hero__inner { display: flex; flex-wrap: wrap; gap: 32px 48px; align-items: flex-end; }
   .page-hero__text { flex: 1 1 520px; min-width: 0; }
+  .page-hero__title { overflow-wrap: break-word; hyphens: auto; }
   .page-hero__fig { flex: 0 1 420px; min-width: 0; }
   .page-hero__fig img { width: 100%; max-height: 420px; object-fit: cover; }
 </style>

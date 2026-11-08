@@ -15,6 +15,8 @@
 - `src/layouts/Base.astro` — `<Base title description image section>`; внутри уже шапка, подвал, переходы между страницами (ClientRouter) и анимация `.reveal`.
 - Компоненты `src/components/`: `PageHero` (шапка внутренней страницы с крошками), `Coast`, `ArticleCard` (variant card|row|feature), `PersonRow`, `BookRow`, `PlaceCard`, `Related` (чипы людей/мест/книг), `TgButton`.
 - Свои компоненты раздела клади в `src/components/<раздел>/`.
+- Добавлено при выравнивании: `Crumbs` (крошки, последний пункт — текущая страница), `Unsure` (пометка «уточняется», `block` — развёрнутая), классы `.page-top/.page-top__inner` (отступы любой тёмной шапки), `.unsure`, `.empty` (пустое состояние фильтра), переменные `--header-h`, `--accent-on-light`, `--accent-hover`, `--warn/--warn-bg`, `--map-bg`. Адреса карты: `href.mapRoute(slug)`, `href.mapPts([...])`, `href.mapBuild()`. Страница-список: `<Base searchable={false}>` (не попадает в Pagefind). Иллюстрации слоёв: `layerArt(key)` из `components/layers/layers.ts`.
+- Проверка ссылок, якорей, имён переходов, h1 и alt: `npm run build && npm run check`.
 
 ## Адреса страниц (контракт кросс-ссылок)
 Только через `href.*` из `data.ts`, никогда не писать `/PortArturDalnii/...` руками и не использовать голые `/путь`:

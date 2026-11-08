@@ -15,7 +15,7 @@ const meta = `${type.label} · ${fmtDateShort(a.date)} · ${a.read_min} мин`;
       <span class="row__title art-row__title">{a.title}</span>
       {showSummary && <span class="muted art-row__dek">{a.dek}</span>}
     </span>
-    {cover && <img class="art-row__img" src={cover} alt="" loading="lazy" decoding="async" />}
+    {cover && <img class="art-row__img" src={cover} alt="" loading="lazy" decoding="async" transition:name={`note-${a.slug}`} />}
   </a>
 ) : (
   <a href={href.note(a.slug)} class:list={['card', { 'card--feature': variant === 'feature' }]}>

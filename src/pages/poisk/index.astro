@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Coast from '../../components/Coast.astro';
+import Crumbs from '../../components/Crumbs.astro';
 import { href, url, TYPES } from '../../lib/data';
 import { fallbackItems } from '../../components/search/fallbackData';
 
@@ -9,15 +10,16 @@ const TABS = ['Заметки', 'Лица', 'Места', 'Книги'];
 const typeColors = Object.fromEntries(Object.entries(TYPES).map(([k, v]) => [k, { label: v.label, color: v.color }]));
 const cfg = { base: url('/'), pagefind: url('/pagefind/pagefind.js'), types: typeColors };
 ---
-<Base title="Поиск" description="Поиск по заметкам, людям, местам и книгам сайта «Портъ-Артуръ и Дальнiй»." section={null}>
+<Base searchable={false} title="Поиск" description="Поиск по заметкам, людям, местам и книгам сайта «Портъ-Артуръ и Дальнiй»." section={null}>
   <div class="sp" data-pagefind-ignore="all">
-    <section class="dark sp-head">
+    <section class="dark sp-head page-top">
       <div class="container sp-head__inner">
-        <nav class="crumbs" aria-label="Путь"><a href={href.home()}>Главная</a><span aria-hidden="true">/</span><span aria-current="page">Поиск</span></nav>
+        <Crumbs items={[{ label: 'Главная', href: href.home() }, { label: 'Поиск' }]} />
+        <p class="eyebrow eyebrow--accent">Заметки, лица, места и книги</p>
         <h1 class="h1">Поиск</h1>
         <form class="sp-form" role="search" action={href.search()} method="get">
           <label class="sp-field">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4E6A80" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>
             <span class="sr-only">Что найти</span>
             <input type="search" name="q" placeholder="Витте, форт, Пикуль…" autocomplete="off" enterkeyhint="search" />
             <button type="button" class="sp-clear" aria-label="Очистить" hidden>
@@ -64,14 +66,13 @@ const cfg = { base: url('/'), pagefind: url('/pagefind/pagefind.js'), types: typ
 </Base>
 
 <style>
-  .sp-head { padding-top: clamp(24px, 4vw, 48px); }
-  .sp-head__inner { display: flex; flex-direction: column; gap: 18px; padding-bottom: 8px; }
+  .sp-head__inner { display: flex; flex-direction: column; gap: 16px; padding-bottom: 8px; }
   .sp-form { display: flex; gap: 10px; max-width: 760px; }
-  .sp-field { flex: 1; min-width: 0; height: 54px; border-radius: 27px; background: #fff; display: flex; align-items: center; gap: 10px; padding: 0 10px 0 18px; }
+  .sp-field { flex: 1; min-width: 0; height: 54px; border-radius: 27px; background: #fff; color: var(--ink-3); display: flex; align-items: center; gap: 10px; padding: 0 10px 0 18px; }
   .sp-field input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; font: 500 17px var(--font); color: var(--ink); }
   .sp-field input::-webkit-search-cancel-button { display: none; }
   .sp-field:focus-within { box-shadow: 0 0 0 3px var(--accent); }
-  .sp-clear { width: 36px; height: 36px; border: 0; border-radius: 18px; background: var(--frost); color: var(--ink); display: inline-flex; align-items: center; justify-content: center; cursor: pointer; flex: none; }
+  .sp-clear { width: 44px; height: 44px; border: 0; border-radius: 22px; background: var(--frost); color: var(--ink); display: inline-flex; align-items: center; justify-content: center; cursor: pointer; flex: none; }
   .sp-clear[hidden] { display: none; }
   .sp-tabs { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; margin-inline: calc(var(--gutter) * -1); padding-inline: var(--gutter); }
   .sp-tabs::-webkit-scrollbar { display: none; }
@@ -107,7 +108,7 @@ const cfg = { base: url('/'), pagefind: url('/pagefind/pagefind.js'), types: typ
   .sp :global(.sp-res:hover .sp-res__t) { text-decoration: underline; text-underline-offset: 3px; }
   .sp :global(.sp-res__p) { font-size: 15px; line-height: 1.45; color: var(--ink-2); overflow-wrap: anywhere; }
   .sp :global(.sp-res__img) { flex: 0 0 96px; width: 96px; height: 72px; object-fit: cover; background: var(--frost); align-self: center; }
-  .sp :global(mark) { background: #FFE2D9; color: var(--ink); padding: 0 2px; border-radius: 3px; }
+  .sp :global(mark) { background: var(--accent-soft); color: var(--ink); padding: 0 2px; border-radius: 3px; }
   @keyframes sp-in { from { opacity: 0; transform: translateY(6px); } }
   @media (max-width: 520px) { .sp :global(.sp-res__img) { flex-basis: 64px; width: 64px; height: 52px; } .sp :global(.sp-res__t) { font-size: 17px; } }
   @media (prefers-reduced-motion: reduce) { .sp :global(.sp-res) { animation: none; } }
@@ -219,7 +220,8 @@ const cfg = { base: url('/'), pagefind: url('/pagefind/pagefind.js'), types: typ
         const d = await r.data();
         const kind: string = d.filters?.type?.[0] ?? '';
         const nt = d.meta?.ntype && cfg.types[d.meta.ntype];
-        const meta = nt ? `${nt.label}${d.meta.date ? ' · ' + d.meta.date : ''}` : kind || 'Страница';
+        // sub — годы жизни, город или автор (data-pagefind-meta="sub:…" на страницах лиц, мест и книг)
+        const meta = nt ? `${nt.label}${d.meta.date ? ' · ' + d.meta.date : ''}` : [kind || 'Страница', d.meta?.sub].filter(Boolean).join(' · ');
         return {
           url: d.url, title: d.meta?.title ?? d.url, excerpt: d.excerpt ?? '',
           meta, color: nt ? nt.color : TAB_COLOR[kind] ?? 'var(--sea)', image: d.meta?.image ?? null,

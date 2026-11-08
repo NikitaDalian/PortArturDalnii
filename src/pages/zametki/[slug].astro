@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Coast from '../../components/Coast.astro';
+import Crumbs from '../../components/Crumbs.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import Related from '../../components/Related.astro';
 import TgButton from '../../components/TgButton.astro';
@@ -9,7 +10,7 @@ import PhotoGallery from '../../components/notes/PhotoGallery.astro';
 import { prevNext, readAlso } from '../../components/notes/lib';
 import {
   articles, articleBySlug, seriesBySlug, articlesOf, layerByKey, href, img, tgPost, fmtDate,
-  TYPES, photoMeta, type Article,
+  TYPES, photoMeta, noteRelations, type Article,
 } from '../../lib/data';
 
 export function getStaticPaths() {
@@ -26,19 +27,19 @@ const serPos = ser ? ser.articles.indexOf(a.slug) : -1;
 const layers = a.layer.map((k) => layerByKey(k)).filter(Boolean) as NonNullable<ReturnType<typeof layerByKey>>[];
 const also = readAlso(a, 3);
 const { prev, next } = prevNext(a.slug);
-const hasRelated = a.people.length + a.places.length + a.books.length > 0;
+const rel = noteRelations(a);
+const hasRelated = rel.people.length + rel.places.length + rel.books.length > 0;
 ---
 <Base title={a.title} description={a.dek || a.summary.slice(0, 160)} image={cover} section="notes">
-  <section class="dark nh" data-pagefind-filter="type:Заметки">
-    <div class="container nh__inner" class:list={[{ 'has-img': cover }]}>
+  <section class="dark nh page-top" data-pagefind-filter="type:Заметки">
+    <div class="container nh__inner page-top__inner" class:list={[{ 'has-img': cover }]}>
       <div class="nh__text stack" style="--stack-gap:18px">
-        <nav class="crumbs" aria-label="Путь" data-pagefind-ignore>
-          <a href={href.home()}>Главная</a><span aria-hidden="true">/</span>
-          <a href={href.notes()}>Заметки</a><span aria-hidden="true">/</span>
-          {ser
-            ? <a href={href.series(ser.slug)}>{ser.title}</a>
-            : <a href={`${href.notes()}?type=${a.type}`}>{t.label}</a>}
-        </nav>
+        <Crumbs items={[
+          { label: 'Главная', href: href.home() },
+          { label: 'Заметки', href: href.notes() },
+          ser ? { label: ser.title, href: href.series(ser.slug) } : { label: t.label, href: `${href.notes()}?type=${a.type}` },
+          { label: a.title },
+        ]} />
         <div class="nh__meta" data-pagefind-ignore>
           <TypeTag type={a.type} size="md" />
           <span class="meta"><time datetime={a.date}>{fmtDate(a.date)}</time></span>
@@ -90,7 +91,7 @@ const hasRelated = a.people.length + a.places.length + a.books.length > 0;
     </article>
 
     <aside class="nb__side stack" style="--stack-gap:36px" aria-label="Связи заметки">
-      {hasRelated && <Related people={a.people} places={a.places} books={a.books} title="Кто и что в заметке" />}
+      {hasRelated && <Related people={rel.people} places={rel.places} books={rel.books} title="Кто и что в заметке" />}
 
       {layers.length > 0 && (
         <div class="stack" style="--stack-gap:10px">
@@ -134,7 +135,7 @@ const hasRelated = a.people.length + a.places.length + a.books.length > 0;
           <a class="link" href={href.notes()}>Все заметки</a>
         </div>
         <div class="grid" style="--min:280px">
-          {also.map((x, i) => <div class="reveal" style={`--d:${i * 100}ms`}><ArticleCard a={x} /></div>)}
+          {also.map((x, i) => <div class="reveal" style={`--d:${i * 70}ms`}><ArticleCard a={x} /></div>)}
         </div>
       </div>
     </section>
@@ -157,11 +158,10 @@ const hasRelated = a.people.length + a.places.length + a.books.length > 0;
 </Base>
 
 <style>
-  .nh { padding-top: clamp(28px, 4.5vw, 52px); }
-  .nh__inner { display: flex; flex-wrap: wrap; gap: 28px 48px; align-items: flex-end; padding-bottom: 24px; }
+  .nh__inner { display: flex; flex-wrap: wrap; gap: 28px 48px; align-items: flex-end; }
   .nh__text { flex: 1 1 520px; min-width: 0; }
   .nh__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
-  .nh__title { font-size: clamp(30px, 4.2vw, 54px); overflow-wrap: break-word; }
+  .nh__title { overflow-wrap: break-word; hyphens: auto; }
   .nh__fig { flex: 0 1 460px; min-width: 0; }
   .nh__fig img { width: 100%; max-height: 440px; object-fit: cover; background: var(--navy-2); }
   @media (max-width: 720px) { .nh__fig { flex-basis: 100%; } .nh__fig img { max-height: 320px; } }
@@ -169,7 +169,7 @@ const hasRelated = a.people.length + a.places.length + a.books.length > 0;
   .nb { display: flex; flex-wrap: wrap; gap: 48px 64px; align-items: flex-start; }
   .nb__main { flex: 1 1 560px; min-width: 0; max-width: 760px; }
   .nb__side { flex: 1 1 300px; min-width: 0; max-width: 440px; }
-  @media (min-width: 1100px) { .nb__side { position: sticky; top: 96px; } }
+  @media (min-width: 1100px) { .nb__side { position: sticky; top: calc(var(--header-h) + 24px); } }
   .nb__summary { font-size: clamp(18px, 1.6vw, 21px); line-height: 1.6; max-width: 66ch; }
   .nb__facts { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; border-top: 1px solid var(--line); }
   .nb__facts li { position: relative; padding: 14px 0 14px 28px; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.5; }
@@ -185,7 +185,7 @@ const hasRelated = a.people.length + a.places.length + a.books.length > 0;
   .nb__ser-item b { flex: 0 0 22px; font-variant-numeric: tabular-nums; color: var(--ink-3); }
   a.nb__ser-item:hover span { text-decoration: underline; text-underline-offset: 3px; }
   .nb__ser-item.is-current { font-weight: 700; }
-  .nb__ser-item.is-current b { color: var(--accent); }
+  .nb__ser-item.is-current b { color: var(--accent-on-light); }
 
   .pn { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   .pn__link { display: flex; flex-direction: column; gap: 6px; padding: 20px; background: var(--paper); border: 1px solid var(--line); min-height: 44px; transition: border-color .2s; }

@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import PageHero from '../../components/PageHero.astro';
+import Unsure from '../../components/Unsure.astro';
 import { seasons, href, img, entity, placeBySlug } from '../../lib/data';
 import { SEASONS, sortedRoutes } from '../../components/map/places';
 const order = ['spring', 'summer', 'autumn', 'winter'] as const;
@@ -14,7 +15,7 @@ const rs = sortedRoutes();
     lead="Что смотреть в Люйшуне и Даляне в разное время года: цветение, море, осенние виды с сопок и даты обороны крепости. Сроки цветения сдвигаются от года к году, поэтому многие пункты помечены как уточняемые."
     crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Сезоны' }]}
   >
-    <nav class="cluster" aria-label="Сезоны">
+    <nav class="chip-row" aria-label="Сезоны">
       {order.map((s) => <a class="chip" href={`#${s}`}>{SEASONS[s].label}</a>)}
     </nav>
   </PageHero>
@@ -38,7 +39,7 @@ const rs = sortedRoutes();
               const e = it.place ? entity('place', it.place) : null;
               const photo = pl?.photos?.[0] ? img(pl.photos[0], 640) : null;
               return (
-                <li class="sz__item reveal" style={`--d:${Math.min(i, 5) * 60}ms`}>
+                <li class="sz__item reveal" style={`--d:${Math.min(i, 5) * 70}ms`}>
                   {photo && <img class="sz__img" src={photo} alt="" loading="lazy" decoding="async" />}
                   <div class="stack" style="--stack-gap:8px; min-width:0">
                     <p class="sz__when">{it.when}</p>
@@ -47,7 +48,7 @@ const rs = sortedRoutes();
                     <div class="cluster" style="--cluster-gap:10px">
                       {e && (e.href ? <a class="link" href={e.href}>{e.label}</a> : <span class="meta">{e.label}</span>)}
                       {pl && <a class="sz__map" href={href.map(pl.slug)}>на карте</a>}
-                      {it.verify && <span class="sz__verify">уточняется</span>}
+                      {it.verify && <Unsure />}
                     </div>
                   </div>
                 </li>
@@ -55,9 +56,11 @@ const rs = sortedRoutes();
             })}
           </ul>
           {srs.length > 0 && (
-            <div class="sz__routes">
-              <span class="meta">Маршруты сезона:</span>
-              {srs.map((r) => <a class="chip" href={href.route(r.slug)}>{r.title}</a>)}
+            <div class="sz__routes stack" style="--stack-gap:10px">
+              <span class="meta">Маршруты сезона</span>
+              <div class="chip-row">
+                {srs.map((r) => <a class="chip" href={href.route(r.slug)}>{r.title}</a>)}
+              </div>
             </div>
           )}
         </div>
@@ -67,7 +70,6 @@ const rs = sortedRoutes();
 </Base>
 
 <style>
-  .sz { scroll-margin-top: 72px; }
   .sz__head { display: flex; gap: 16px; align-items: stretch; margin-bottom: 28px; }
   .sz__bar { flex: none; width: 8px; border-radius: 4px; background: var(--c); }
   .sz__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr)); }
@@ -77,7 +79,6 @@ const rs = sortedRoutes();
   .sz__when { font-size: 14px; font-weight: 700; color: var(--ink); }
   .sz__note { font-size: 16px; line-height: 1.5; }
   .sz__map { display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; font-weight: 600; color: var(--ink-3); text-decoration: underline; text-underline-offset: 3px; }
-  .sz__verify { font-size: 12px; font-weight: 700; color: #8A3B12; background: #FBEDE4; padding: 3px 9px; border-radius: 10px; }
-  .sz__routes { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 24px; }
+  .sz__routes { margin-top: 24px; }
   @media (max-width: 520px) { .sz__img { flex-basis: 72px; width: 72px; height: 72px; } .sz__item { padding: 16px; } }
 </style>

@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Coast from '../../components/Coast.astro';
+import Crumbs from '../../components/Crumbs.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import BookRow from '../../components/BookRow.astro';
 import PlaceCard from '../../components/PlaceCard.astro';
@@ -31,13 +32,9 @@ const firstPost = posts.length ? Math.min(...posts) : (notes[0]?.tg_ids?.[0] ?? 
 const bookCount = authored.length + reviewed.length;
 ---
 <Base title={name.main} description={`${p.name}${p.years ? `, ${p.years}` : ''}. ${p.role}.`} image={img(p.portrait)} section="people">
-  <section class="dark ph">
+  <section class="dark ph page-top" data-pagefind-filter="type:Лица">
     <div class="container">
-      <nav class="crumbs" aria-label="Путь">
-        <a href={href.home()}>Главная</a><span aria-hidden="true">/</span>
-        <a href={href.people()}>Лица</a><span aria-hidden="true">/</span>
-        <span aria-current="page">{name.main}</span>
-      </nav>
+      <Crumbs items={[{ label: 'Главная', href: href.home() }, { label: 'Лица', href: href.people() }, { label: name.main }]} />
       <div class="ph__inner">
         <div class="ph__portrait"><Portrait p={p} /></div>
         <div class="ph__head stack" style="--stack-gap:12px">
@@ -45,9 +42,10 @@ const bookCount = authored.length + reviewed.length;
             {p.years && <span>{p.years}</span>}
             <span class="ph__country"><span class="ph__dot" aria-hidden="true"></span>{c.label}</span>
           </p>
-          <h1 class="h1 ph__name">{name.main}{name.alt && <span class="ph__alt"> {name.alt}</span>}</h1>
+          <h1 class="h1 ph__name" data-pagefind-meta="title">{name.main}{name.alt && <span class="ph__alt"> {name.alt}</span>}</h1>
         </div>
         <p class="lead ph__role">{p.role}</p>
+        <span hidden data-pagefind-meta={`sub:${[p.years, c.label].filter(Boolean).join(' · ')}`}></span>
       </div>
     </div>
     <Coast />
@@ -152,9 +150,8 @@ const bookCount = authored.length + reviewed.length;
 </Base>
 
 <style>
-  .ph { padding-top: clamp(28px, 4vw, 48px); }
   .ph__inner {
-    display: grid; column-gap: clamp(16px, 4vw, 48px); row-gap: 16px; padding: 24px 0 clamp(16px, 3vw, 32px);
+    display: grid; column-gap: clamp(16px, 4vw, 48px); row-gap: 16px; padding: 24px 0;
     grid-template-columns: clamp(120px, 24vw, 300px) minmax(0, 1fr);
     grid-template-areas: "img ." "img head" "img role";
     grid-template-rows: 1fr auto auto;
