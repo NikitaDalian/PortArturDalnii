@@ -4,7 +4,7 @@ import { articles, people, places, books, sources, routes, series, href, plural 
 const n = (x: number, a: string, b: string, c: string) => `${x} ${plural(x, a, b, c)}`;
 const items = [
   { title: 'Слои истории', href: href.layers(), text: 'Пять периодов: от бухты Талиенвань до сегодняшнего Даляня. В каждом — события, люди и места своего времени.' },
-  { title: 'Лица', href: href.people(), text: `${n(people.length, 'персона', 'персоны', 'персон')}: кто строил эти города, защищал и осаждал их, кто о них писал.` },
+  { title: 'Лица', href: href.people(), text: `${n(people.length, 'персона', 'персоны', 'персон')}: строители городов, участники обороны и осады, авторы книг о них.` },
   { title: 'Карта', href: href.map(), text: `${n(places.length, 'место', 'места', 'мест')} на карте, с фотографиями, историей и подсказками, как добраться.` },
   { title: 'Маршруты', href: href.routes(), text: `${n(routes.length, 'маршрут', 'маршрута', 'маршрутов')} пешком и на машине, с остановками и практическими советами.` },
   { title: 'Библиотека', href: href.library(), text: `${n(books.length, 'книга', 'книги', 'книг')} и ${n(sources.length, 'источник', 'источника', 'источников')}: аннотация, оценка и ссылка на рецензию в канале.` },

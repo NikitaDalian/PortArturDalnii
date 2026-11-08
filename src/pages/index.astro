@@ -36,7 +36,7 @@ const latest = [...articles].sort((a, b) => b.date.localeCompare(a.date)).slice(
       <a class="link" href={href.library()}>Весь каталог · {libTotal}</a>
     </div>
     <p class="lead reveal" style="--d:60ms; margin-bottom:28px">
-      Книги, которые прочитаны и разобраны в канале. У каждой короткая аннотация, честная оценка и ссылка на полную рецензию.
+      Книги, разобранные в канале. У каждой есть аннотация, оценка автора и ссылка на рецензию в Telegram.
     </p>
     <div class="grid row-list home-books">
       {bookPicks.slice(0, 4).map((b, i) => (

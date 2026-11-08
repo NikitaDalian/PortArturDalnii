@@ -9,7 +9,7 @@ import { books, sources, href, plural } from '../../lib/data';
 
 const starters = books.filter((b) => b.level === 'start').slice(0, 2);
 const sourceGroups = SOURCE_KINDS.map((k) => ({ ...k, items: sources.filter((s) => s.kind === k.key) })).filter((g) => g.items.length);
-const lead = 'Книги, которые прочитаны и разобраны в канале. У каждой короткая аннотация, честная оценка и ссылка на полную рецензию в Telegram.';
+const lead = 'Книги, разобранные в канале. У каждой есть аннотация, оценка автора и ссылка на рецензию в Telegram.';
 ---
 <Base searchable={false} title="Библиотека" description={lead} section="library">
   <PageHero
@@ -48,7 +48,7 @@ const lead = 'Книги, которые прочитаны и разобран�
     <div class="container">
       <div class="section-head">
         <h2 class="h2" id="katalog-h">Каталог книг</h2>
-        <p class="muted lib-head-note">Уровень — это наша оценка: с чего начать, что читать для углубления, что взять как роман и на что можно не тратить время.</p>
+        <p class="muted lib-head-note">Уровень отражает оценку автора канала: с чего начать, что читать для углубления, что взять как роман и на что можно не тратить время.</p>
       </div>
       <BookCatalog books={books} />
     </div>
@@ -58,7 +58,7 @@ const lead = 'Книги, которые прочитаны и разобран�
     <div class="container">
       <div class="section-head">
         <div class="stack" style="--stack-gap:10px">
-          <p class="eyebrow">Не только книги</p>
+          <p class="eyebrow">Другие источники</p>
           <h2 class="h2" id="istochniki-h">Источники</h2>
         </div>
         <p class="muted lib-head-note">Архивы, фотоальбомы, лекции, видео и музыка, на которые опирается канал.</p>
