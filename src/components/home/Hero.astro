@@ -1,13 +1,21 @@
 ---
-// Первый экран главной: широкая иллюстрация гавани, заголовок в «небе» картинки, мягкий параллакс.
+// Первый экран главной: широкая иллюстрация гавани (на десктопе — тихая видеопетля), заголовок в «небе», мягкий параллакс.
 import { href, url } from '../../lib/data';
-const src = (s: string) => url(`/img/gen/${s}.webp`);
+const gen = (s: string) => url(`/img/gen/${s}.webp`);
+const vid = (s: string) => url(`/video/${s}`);
 ---
 <section class="hero">
-  <picture class="hero__art" aria-hidden="true">
-    <source media="(max-width: 720px)" srcset={src('hero-home-1280')} />
-    <img class="hero__img" src={src('hero-home')} alt="" width="2560" height="1097" loading="eager" fetchpriority="high" decoding="async" data-parallax />
-  </picture>
+  <div class="hero__art" data-parallax aria-hidden="true">
+    <picture>
+      <source media="(max-width: 720px)" srcset={gen('hero-home-1280')} />
+      <img class="hero__media hero__still" src={gen('hero-home')} alt="" width="2560" height="1097" loading="eager" fetchpriority="high" decoding="async" />
+    </picture>
+    <video class="hero__media hero__video" muted loop playsinline preload="none" poster={gen('hero-home')} data-hero-video>
+      <source src={vid('hero-loop.webm')} type="video/webm" />
+      <source src={vid('hero-loop.mp4')} type="video/mp4" />
+    </video>
+  </div>
+  <div class="hero__veil" aria-hidden="true"></div>
   <div class="container hero__inner">
     <div class="hero__text">
       <p class="eyebrow eyebrow--accent hero__in" style="--hd:0ms">Ляодунский полуостров · 1898–1955</p>
@@ -29,9 +37,15 @@ const src = (s: string) => url(`/img/gen/${s}.webp`);
 
 <style>
   .hero { position: relative; overflow: hidden; background: #EEF2F4; min-height: min(calc(100vw * 1097 / 2560), 88vh); display: flex; }
-  .hero__art { position: absolute; inset: 0; }
-  .hero__img { width: 100%; height: 100%; object-fit: cover; object-position: 70% 100%; will-change: transform; }
-  .hero__inner { position: relative; width: 100%; padding-top: clamp(32px, 5vw, 72px); padding-bottom: 32px; }
+  .hero__art { position: absolute; inset: 0; will-change: transform; animation: artIn 1.4s var(--ease) both; }
+  .hero__art picture { display: contents; }
+  .hero__media { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 100%; }
+  .hero__video { opacity: 0; transition: opacity .8s var(--ease); }
+  .hero__video.is-playing { opacity: 1; }
+  /* светлая вуаль слева: текст читается, даже когда ложится на воду */
+  .hero__veil { position: absolute; inset: 0; pointer-events: none;
+    background: linear-gradient(90deg, rgba(244, 247, 248, .94) 0%, rgba(244, 247, 248, .86) 30%, rgba(244, 247, 248, .35) 52%, rgba(244, 247, 248, 0) 66%); }
+  .hero__inner { position: relative; width: 100%; padding-top: clamp(32px, 5vw, 72px); padding-bottom: 40px; }
   .hero__text { max-width: 600px; }
   .hero__title { margin-top: 18px; color: var(--navy); }
   .hero__lead { margin-top: 22px; max-width: 520px; color: var(--ink-2); }
@@ -40,45 +54,55 @@ const src = (s: string) => url(`/img/gen/${s}.webp`);
   @keyframes heroIn { from { opacity: 0; transform: translateY(18px); } }
   .hero__in { animation: heroIn .9s var(--ease) both; animation-delay: var(--hd, 0ms); }
   @keyframes artIn { from { opacity: 0; transform: scale(1.04); } }
-  .hero__art { animation: artIn 1.4s var(--ease) both; }
 
-  /* на средних экранах текст ложится на светлую плашку, чтобы не спорить с картинкой */
-  @media (max-width: 1180px) and (min-width: 721px) {
-    .hero__text { background: rgba(244, 247, 248, .9); padding: 24px 28px 28px; margin-left: calc(var(--gutter) * -0.5); }
-  }
   @media (max-width: 720px) {
     .hero { flex-direction: column; min-height: 0; }
     .hero__art { position: relative; order: 2; height: 260px; }
-    .hero__img { object-position: 78% 100%; }
+    .hero__media { object-position: 78% 100%; }
+    .hero__video { display: none; }
+    .hero__veil { display: none; }
     .hero__inner { order: 1; padding-top: 28px; padding-bottom: 8px; }
     .hero__actions { flex-direction: column; align-items: stretch; }
   }
   @media (prefers-reduced-motion: reduce) {
     .hero__in, .hero__art { animation: none; }
+    .hero__video { display: none; }
   }
 </style>
 
 <script>
-  // Лёгкий параллакс иллюстрации: только десктоп и без reduced-motion.
+  // Видеопетля: только десктоп, без reduced-motion и без режима экономии трафика; плюс лёгкий параллакс.
   let raf = 0;
   let onScroll: (() => void) | null = null;
-  function initParallax() {
-    const el = document.querySelector<HTMLElement>('[data-parallax]');
-    if (!el || matchMedia('(prefers-reduced-motion: reduce)').matches || innerWidth < 720) return;
+  let io: IntersectionObserver | null = null;
+  function initHero() {
+    const art = document.querySelector<HTMLElement>('[data-parallax]');
+    const video = document.querySelector<HTMLVideoElement>('[data-hero-video]');
+    const calm = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const saveData = (navigator as any).connection?.saveData === true;
+    if (video && !calm && !saveData && innerWidth > 720) {
+      video.preload = 'auto';
+      video.addEventListener('playing', () => video.classList.add('is-playing'), { once: true });
+      // играть, только пока первый экран виден
+      io = new IntersectionObserver(([e]) => { e.isIntersecting ? video.play().catch(() => {}) : video.pause(); });
+      io.observe(video);
+    }
+    if (!art || calm || innerWidth < 720) return;
     onScroll = () => {
       cancelAnimationFrame(raf);
       raf = requestAnimationFrame(() => {
         const y = Math.min(scrollY, innerHeight);
-        el.style.transform = `translate3d(0, ${y * 0.18}px, 0) scale(1.02)`;
+        art.style.transform = `translate3d(0, ${y * 0.18}px, 0)`;
       });
     };
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
   }
-  document.addEventListener('astro:page-load', initParallax);
+  document.addEventListener('astro:page-load', initHero);
   document.addEventListener('astro:before-swap', () => {
     if (onScroll) window.removeEventListener('scroll', onScroll);
     cancelAnimationFrame(raf);
-    onScroll = null;
+    io?.disconnect();
+    onScroll = null; io = null;
   });
 </script>
