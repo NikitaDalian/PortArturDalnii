@@ -28,8 +28,8 @@
   "verify": true,
   "articles": [
    "voina-na-more-osada-mukden-tsusima",
-   "stepanov-port-artur-retsenziya",
    "port-artur-poslednyaya-zamorskaya-koloniya",
+   "stepanov-port-artur-retsenziya",
    "pervaya-tihookeanskaya-eskadra",
    "ukreplenie-5-yahutszui",
    "dnevnik-kapitana-lile",
@@ -170,8 +170,8 @@
   ],
   "verify": true,
   "articles": [
-   "ukreplenie-5-yahutszui",
-   "kak-ustroen-fort"
+   "kak-ustroen-fort",
+   "ukreplenie-5-yahutszui"
   ]
  },
  {
@@ -211,8 +211,8 @@
   ],
   "verify": false,
   "articles": [
-   "ukreplenie-5-yahutszui",
-   "kak-ustroen-fort"
+   "kak-ustroen-fort",
+   "ukreplenie-5-yahutszui"
   ]
  },
  {
@@ -246,8 +246,7 @@
    "stepanov-port-artur-retsenziya",
    "pervaya-tihookeanskaya-eskadra",
    "ukreplenie-5-yahutszui"
-  ],
-  "today": false
+  ]
  },
  {
   "slug": "zolotaya-gora",
@@ -359,8 +358,7 @@
    "port-artur-poslednyaya-zamorskaya-koloniya",
    "otkuda-nazvanie-port-artur",
    "pervaya-tihookeanskaya-eskadra"
-  ],
-  "today": false
+  ]
  },
  {
   "slug": "vokzal-lushun",
@@ -1366,6 +1364,30 @@
   "season": [
    "spring",
    "summer",
+   "autumn"
+  ],
+  "posts": [],
+  "photos": [],
+  "verify": true,
+  "articles": []
+ },
+ {
+  "slug": "dahei-shan",
+  "name": "Большая Чёрная гора (Дахэйшань)",
+  "name_zh": "大黑山 (Dàhēishān)",
+  "name_now": "Самая высокая гора шести районов Даляня, 663 м",
+  "city": "dalian",
+  "layers": [
+   "modern"
+  ],
+  "kind": "viewpoint",
+  "lat": 39.0945,
+  "lng": 121.7866,
+  "coord_confidence": "medium",
+  "summary": "Самая высокая гора шести районов Даляня, 663 метра над уровнем моря, в районе Цзиньчжоу. Входит в хребет Цяньшань, у подножия стоит кампус Даляньского университета. К истории Порт-Артура и Дальнего прямого отношения не имеет: это место для загородной прогулки. Весной на склонах и у вершины цветут рододендрон и другие цветы.",
+  "visit": null,
+  "season": [
+   "spring",
    "autumn"
   ],
   "posts": [],

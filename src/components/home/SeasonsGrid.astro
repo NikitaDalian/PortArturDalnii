@@ -3,9 +3,9 @@
 import { seasons, href, plural } from '../../lib/data';
 import { seasonArt } from '../../lib/art';
 const meta = {
-  spring: { label: 'Весна', text: 'Сакура в апреле, акация в конце мая, форты до листвы.' },
-  summer: { label: 'Лето', text: 'Море у Золотой горы, порт и набережные Даляня.' },
-  autumn: { label: 'Осень', text: 'Гинкго в парке Труда, сухопутный фронт по прозрачному воздуху.' },
+  spring: { label: 'Весна', text: 'Сакура и акация, цветение на Большой Чёрной горе, форты до листвы.' },
+  summer: { label: 'Лето', text: 'Черешня в июне, пляжи с конца июля, тень в лесу у фортов.' },
+  autumn: { label: 'Осень', text: 'Открытие рыболовного сезона 1 сентября, гинкго, ясная погода для фортов.' },
   winter: { label: 'Зима', text: 'Памятные даты осады и Русское кладбище зимой.' },
 } as const;
 const list = (Object.keys(meta) as (keyof typeof meta)[]).map((k) => ({ key: k, ...meta[k], n: seasons[k]?.length ?? 0, art: seasonArt(k, 720) }));
