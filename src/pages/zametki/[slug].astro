@@ -6,6 +6,7 @@ import ArticleCard from '../../components/ArticleCard.astro';
 import Related from '../../components/Related.astro';
 import TgButton from '../../components/TgButton.astro';
 import TypeTag from '../../components/notes/TypeTag.astro';
+import MapFigure from '../../components/MapFigure.astro';
 import PhotoGallery from '../../components/notes/PhotoGallery.astro';
 import { prevNext, readAlso } from '../../components/notes/lib';
 import {
@@ -19,6 +20,17 @@ export function getStaticPaths() {
 
 const a = articleBySlug.get(Astro.params.slug!) as Article;
 const t = TYPES[a.type] ?? TYPES.event;
+const NOTE_MAPS: Record<string, number> = {
+  'dalnii-gorod-s-nulya': 68,
+  'port-artur-poslednyaya-zamorskaya-koloniya': 32,
+  'ukreplenie-5-yahutszui': 114,
+  'kak-ustroen-fort': 120,
+  'kvantun-proishozhdenie-nazvaniya': 86,
+  'mir-i-itogi-voiny': 85,
+  'zheltorossiya-koloniya-kotoruyu-ne-pridumali': 82,
+};
+const noteMap = NOTE_MAPS[a.slug] ?? null;
+const galleryPhotos = (a.photos as string[]).filter((f) => !noteMap || !String(f).includes(`photo_${noteMap}@`));
 const cover = img(a.cover);
 const coverAlt = a.cover ? ((photoMeta(a.cover)?.subject as string | undefined) ?? '') : '';
 const ser = a.series_slug ? seriesBySlug.get(a.series_slug) : undefined;
@@ -76,6 +88,8 @@ const hasRelated = rel.people.length + rel.places.length + rel.books.length > 0;
         </section>
       )}
 
+      {noteMap && <div data-pagefind-ignore><MapFigure id={noteMap} /></div>}
+
       <section class="nb__tg panel panel--frost stack" style="--stack-gap:14px" data-pagefind-ignore>
         <p class="muted">Здесь — пересказ. Полный текст{a.photos.length ? ', все фотографии' : ''} и обсуждение — в посте канала.</p>
         <div><TgButton id={a.tg_ids[0]} /></div>
@@ -87,7 +101,7 @@ const hasRelated = rel.people.length + rel.places.length + rel.books.length > 0;
         )}
       </section>
 
-      <div data-pagefind-ignore><PhotoGallery photos={a.photos} /></div>
+      <div data-pagefind-ignore><PhotoGallery photos={galleryPhotos} /></div>
     </article>
 
     <aside class="nb__side stack" style="--stack-gap:36px" aria-label="Связи заметки">

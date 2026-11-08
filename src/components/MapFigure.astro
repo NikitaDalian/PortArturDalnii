@@ -1,0 +1,195 @@
+---
+// Историческая карта или план целиком (object-fit: contain) с подписью и источником.
+// По нажатию открывается полноэкранный просмотр: колесо и щипок — масштаб, перетаскивание — сдвиг,
+// Esc и кнопка — закрыть. Без внешних библиотек.
+import { img, photos, tgPost, url } from '../lib/data';
+// Подписи по каталогу photos.json (описание карты, без домыслов).
+const MAPS: Record<number, { caption: string; note?: string; maxWidth?: number }> = {
+  32: { caption: 'План крепости Порт-Артур: положение линии обороны 19 декабря 1904 г. (А. Свечин, карта Военно-исторической комиссии). Русские позиции красным, японские зелёным, подписаны форты I–VI и укрепления № 1–5.', note: 'литография, 200 саженей в дюйме' },
+  68: { caption: 'План города Дальнего, 1900 г.: порт, Европейский и Китайский город, круглая Николаевская площадь; на плане подписи архитектора и главного инженера В. Сахарова.' },
+  86: { caption: 'Карта Квантунского полуострова с рельефом: Порт-Артур, Дальний, Цзиньчжоу.', note: '10 вёрст в дюйме' },
+  85: { caption: 'Англоязычная карта: территория, арендованная Россией в 1898 году и переданная Японии в 1905 году, с нейтральной зоной.', maxWidth: 330 },
+  82: { caption: 'Карта Маньчжурии с врезками, в том числе Квантуна; издана около 1900 г.', note: 'мелкие надписи читаются только на оригинале' },
+  120: { caption: 'Схема типового форта конца XIX века: вал, ров, капониры, эскарп. Это учебная схема, а не план конкретного форта.', maxWidth: 606 },
+  114: { caption: 'План крепости Порт-Артур (1904), красным кружком отмечено Укрепление № 5.' },
+};
+interface Props {
+  id: number;            // номер фото в каталоге (photos.json)
+  caption?: string;      // что это за карта; по умолчанию — подпись из MAPS
+  alt?: string;
+  maxWidth?: number;     // ограничение ширины в px (для мелких оригиналов)
+  note?: string;         // добавка к источнику, например «рукописные пометки на полях»
+}
+const d = MAPS[Astro.props.id] ?? { caption: '' };
+const caption = Astro.props.caption ?? d.caption;
+const { id, alt } = Astro.props;
+const maxWidth = Astro.props.maxWidth ?? d.maxWidth;
+const note = Astro.props.note ?? d.note;
+const meta = photos.find((p) => String(p.file).includes(`photo_${id}@`));
+const src = img(id)!;
+const w = meta?.w ?? 1200, h = meta?.h ?? 900;
+const post = meta?.post_id ? tgPost(meta.post_id) : null;
+---
+<figure class="mapfig" style={maxWidth ? `max-width:${maxWidth}px` : undefined} data-mapfig data-mapfig-src={src} data-mapfig-caption={caption}>
+  <button type="button" class="mapfig__open" aria-label={`Открыть на весь экран: ${caption}`} aria-haspopup="dialog">
+    <img src={src} alt={alt ?? caption} width={w} height={h} loading="lazy" decoding="async" style="object-fit:contain" />
+    <span class="mapfig__zoom" aria-hidden="true">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5L21 21M10.5 7.5v6M7.5 10.5h6"></path></svg>
+      Увеличить
+    </span>
+  </button>
+  <figcaption>
+    <span class="mapfig__cap">{caption}</span>
+    <span class="meta mapfig__src">Из архива канала{post ? <> · <a class="link" href={post} target="_blank" rel="noopener">пост {meta.post_id}</a></> : ''}{note ? ` · ${note}` : ''}</span>
+  </figcaption>
+</figure>
+
+<style>
+  .mapfig { margin: 0; display: flex; flex-direction: column; gap: 10px; width: 100%; min-width: 0; }
+  .mapfig__open { position: relative; display: block; width: 100%; padding: 0; border: 1px solid var(--line); background: var(--frost); cursor: zoom-in; }
+  .mapfig__open img { display: block; width: 100%; height: auto; max-height: min(70vh, 640px); object-fit: contain; background: var(--frost); }
+  .mapfig__zoom { position: absolute; right: 10px; bottom: 10px; display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 14px; background: rgba(11, 34, 56, .88); color: #fff; font: 600 14px var(--font); }
+  .mapfig__open:hover .mapfig__zoom, .mapfig__open:focus-visible .mapfig__zoom { background: var(--accent); }
+  .mapfig figcaption { display: flex; flex-direction: column; gap: 4px; }
+  .mapfig__cap { font-size: 15px; line-height: 1.45; color: var(--ink-2); }
+  :global(.dark) .mapfig__cap { color: var(--mist); }
+  .mapfig__src { font-size: 13px; }
+</style>
+
+<script>
+  // Один общий просмотрщик на страницу; создаётся при первом открытии.
+  const FS_ID = 'mapfig-viewer';
+
+  function openViewer(src: string, caption: string, opener: HTMLElement) {
+    document.getElementById(FS_ID)?.remove();
+    const root = document.createElement('div');
+    root.id = FS_ID;
+    root.setAttribute('role', 'dialog');
+    root.setAttribute('aria-modal', 'true');
+    root.setAttribute('aria-label', caption);
+    root.style.cssText = 'position:fixed;inset:0;z-index:1000;background:rgba(6,18,30,.97);color:#fff;display:flex;flex-direction:column;touch-action:none;overscroll-behavior:contain';
+    root.innerHTML = `
+      <div style="display:flex;align-items:center;gap:8px;padding:8px 8px 8px 16px;flex:none">
+        <p style="margin:0;flex:1;min-width:0;font-size:14px;line-height:1.35">${caption.replace(/[<>&]/g, '')}</p>
+        <button type="button" data-z="out" aria-label="Уменьшить" style="${btn()}">−</button>
+        <button type="button" data-z="in" aria-label="Увеличить" style="${btn()}">+</button>
+        <button type="button" data-z="reset" aria-label="Вернуть по размеру экрана" style="${btn()};font-size:13px">1:1</button>
+        <button type="button" data-z="close" aria-label="Закрыть" style="${btn()}"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+      </div>
+      <div data-stage style="position:relative;flex:1;min-height:0;overflow:hidden;cursor:grab">
+        <img alt="" draggable="false" style="position:absolute;left:0;top:0;transform-origin:0 0;max-width:none;user-select:none;-webkit-user-drag:none;will-change:transform">
+      </div>
+      <p style="margin:0;padding:6px 16px 10px;font-size:12px;color:#9fb4c4;flex:none">Колесо или щипок — масштаб, перетаскивание — сдвиг, Esc — закрыть.</p>`;
+    function btn() {
+      return 'min-width:44px;min-height:44px;border:0;border-radius:22px;background:rgba(255,255,255,.14);color:#fff;font-family:inherit;font-weight:700;font-size:22px;line-height:1;cursor:pointer;display:inline-flex;align-items:center;justify-content:center';
+    }
+    document.body.appendChild(root);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    const stage = root.querySelector<HTMLElement>('[data-stage]')!;
+    const im = root.querySelector<HTMLImageElement>('img')!;
+    let base = 1, m = 1, tx = 0, ty = 0, nw = 0, nh = 0;
+    const MAX = 8;
+
+    const clamp = () => {
+      const sw = stage.clientWidth, sh = stage.clientHeight, s = base * m;
+      const iw = nw * s, ih = nh * s;
+      tx = iw <= sw ? (sw - iw) / 2 : Math.min(0, Math.max(sw - iw, tx));
+      ty = ih <= sh ? (sh - ih) / 2 : Math.min(0, Math.max(sh - ih, ty));
+    };
+    const apply = () => { clamp(); im.style.transform = `translate(${tx}px,${ty}px) scale(${base * m})`; };
+    const fit = () => {
+      base = Math.min(stage.clientWidth / nw, stage.clientHeight / nh);
+      m = 1; tx = ty = 0; apply();
+    };
+    const zoomAt = (factor: number, cx: number, cy: number) => {
+      const nm = Math.min(MAX, Math.max(1, m * factor));
+      const k = nm / m;
+      tx = cx - (cx - tx) * k; ty = cy - (cy - ty) * k; m = nm; apply();
+    };
+    const center = () => [stage.clientWidth / 2, stage.clientHeight / 2];
+
+    im.onload = () => { nw = im.naturalWidth; nh = im.naturalHeight; im.style.width = nw + 'px'; im.style.height = nh + 'px'; fit(); };
+    im.src = src;
+
+    stage.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      const r = stage.getBoundingClientRect();
+      zoomAt(Math.exp(-e.deltaY * 0.0015), e.clientX - r.left, e.clientY - r.top);
+    }, { passive: false });
+
+    // жесты: один палец/мышь — сдвиг, два пальца — масштаб
+    const pts = new Map<number, { x: number; y: number }>();
+    let pinch = 0;
+    stage.addEventListener('pointerdown', (e) => {
+      stage.setPointerCapture(e.pointerId);
+      pts.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      if (pts.size === 2) { const [a, b] = [...pts.values()]; pinch = Math.hypot(a.x - b.x, a.y - b.y); }
+      stage.style.cursor = 'grabbing';
+    });
+    stage.addEventListener('pointermove', (e) => {
+      const p = pts.get(e.pointerId);
+      if (!p) return;
+      if (pts.size === 1) {
+        tx += e.clientX - p.x; ty += e.clientY - p.y;
+        p.x = e.clientX; p.y = e.clientY; apply();
+      } else if (pts.size === 2) {
+        p.x = e.clientX; p.y = e.clientY;
+        const [a, b] = [...pts.values()];
+        const d = Math.hypot(a.x - b.x, a.y - b.y);
+        const r = stage.getBoundingClientRect();
+        if (pinch) zoomAt(d / pinch, (a.x + b.x) / 2 - r.left, (a.y + b.y) / 2 - r.top);
+        pinch = d;
+      }
+    });
+    const up = (e: PointerEvent) => { pts.delete(e.pointerId); pinch = 0; if (!pts.size) stage.style.cursor = 'grab'; };
+    stage.addEventListener('pointerup', up);
+    stage.addEventListener('pointercancel', up);
+    stage.addEventListener('dblclick', (e) => {
+      const r = stage.getBoundingClientRect();
+      m > 1.01 ? fit() : zoomAt(3, e.clientX - r.left, e.clientY - r.top);
+    });
+
+    const close = () => {
+      root.remove();
+      document.body.style.overflow = prevOverflow;
+      document.removeEventListener('keydown', onKey, true);
+      window.removeEventListener('resize', fit);
+      opener.focus();
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') { e.preventDefault(); close(); }
+      else if (e.key === '+' || e.key === '=') { const [x, y] = center(); zoomAt(1.4, x, y); }
+      else if (e.key === '-') { const [x, y] = center(); zoomAt(1 / 1.4, x, y); }
+      else if (e.key === 'Tab') { // фокус держим внутри окна
+        const f = [...root.querySelectorAll<HTMLElement>('button')];
+        const i = f.indexOf(document.activeElement as HTMLElement);
+        e.preventDefault();
+        f[(i + (e.shiftKey ? -1 : 1) + f.length) % f.length].focus();
+      }
+    };
+    document.addEventListener('keydown', onKey, true);
+    window.addEventListener('resize', fit);
+    root.addEventListener('click', (e) => {
+      const z = (e.target as HTMLElement).closest<HTMLElement>('[data-z]')?.dataset.z;
+      if (!z) return;
+      const [x, y] = center();
+      if (z === 'close') close();
+      else if (z === 'in') zoomAt(1.5, x, y);
+      else if (z === 'out') zoomAt(1 / 1.5, x, y);
+      else fit();
+    });
+    document.addEventListener('astro:before-swap', () => { document.body.style.overflow = prevOverflow; }, { once: true });
+    (root.querySelector('[data-z="close"]') as HTMLElement).focus();
+  }
+
+  document.addEventListener('astro:page-load', () => {
+    document.querySelectorAll<HTMLElement>('[data-mapfig]').forEach((fig) => {
+      if (fig.dataset.ready) return;
+      fig.dataset.ready = '1';
+      const b = fig.querySelector<HTMLElement>('.mapfig__open')!;
+      b.addEventListener('click', () => openViewer(fig.dataset.mapfigSrc!, fig.dataset.mapfigCaption!, b));
+    });
+  });
+</script>

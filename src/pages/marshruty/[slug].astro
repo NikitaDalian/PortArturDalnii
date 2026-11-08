@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import PageHero from '../../components/PageHero.astro';
 import Unsure from '../../components/Unsure.astro';
+import MapFigure from '../../components/MapFigure.astro';
 import MiniMap from '../../components/map/MiniMap.astro';
 import { routeArt } from '../../lib/art';
 import { routes, href, img, focusStyle, plural, type Route } from '../../lib/data';
@@ -22,6 +23,7 @@ const line = ((r as any).polyline as [number, number][] | undefined) ?? null;
 const points = stops.filter((s) => s.p).map((s, i) => ({ lat: s.p!.lat, lng: s.p!.lng, n: i + 1, name: s.p!.name, href: href.place(s.p!.slug) }));
 const others = sortedRoutes().filter((x) => x.slug !== r.slug).slice(0, 4);
 const mapHref = href.mapRoute(r.slug);
+const routeMap = ({ 'russkiy-dalniy-peshkom': 68, 'vostochnyy-front': 32, 'zapadnyy-front': 32 } as Record<string, number>)[r.slug] ?? null;
 const km = `${String(r.distance_km).replace('.', ',')} км`;
 ---
 <Base title={r.title} description={r.dek} image={artUrl ?? img(cover)} section="map">
@@ -61,6 +63,14 @@ const km = `${String(r.distance_km).replace('.', ',')} км`;
       <p class="meta">Линия соединяет остановки напрямую и не повторяет дороги. Длина ориентировочная; маршрут по улицам покажут Яндекс.Карты или Amap.</p>
     </div>
   </section>
+
+  {routeMap && (
+    <section class="section section--tight" aria-label="Историческая карта">
+      <div class="container" style="max-width:920px">
+        <MapFigure id={routeMap} />
+      </div>
+    </section>
+  )}
 
   <section class="section section--tight paper" aria-labelledby="rt-stops">
     <div class="container split rt-split">

@@ -7,6 +7,7 @@ import PlaceCard from '../../components/PlaceCard.astro';
 import Unsure from '../../components/Unsure.astro';
 import Coast from '../../components/Coast.astro';
 import MiniMap from '../../components/map/MiniMap.astro';
+import MapFigure from '../../components/MapFigure.astro';
 import Gallery from '../../components/map/Gallery.astro';
 import { places, href, img, focusStyle, articlesOf, amapUrl, yandexUrl, layerByKey, plural, type Place } from '../../lib/data';
 import { KINDS, CITIES, SEASONS, placeLayers, isUncertain, routesThrough, peopleAt, nearest, photoCaption } from '../../components/map/places';
@@ -17,7 +18,8 @@ export function getStaticPaths() {
 }
 interface Props { p: Place }
 const { p } = Astro.props;
-const photos = (p.photos || []) as string[];
+const placeMap = ({ 'nikolaevskaya-ploshchad': 68, 'fort-2': 120, 'ukreplenie-3': 120, 'ukreplenie-5': 114 } as Record<string, number>)[p.slug] ?? null;
+const photos = ((p.photos || []) as string[]).filter((f) => !placeMap || !String(f).includes(`photo_${placeMap}@`));
 const cover = photos[0] ?? null;
 const layers = placeLayers(p);
 const notes = articlesOf((p.articles || []) as string[]);
@@ -57,6 +59,7 @@ const city = CITIES[p.city] ?? '';
         <div class="prose reveal">
           <p>{p.summary}</p>
         </div>
+        {placeMap && <div class="reveal"><MapFigure id={placeMap} /></div>}
         {unsure && (
           <Unsure block text={p.coord_confidence === 'low'
             ? 'Положение точки на карте приблизительное. Сведения о месте ещё проверяются; если вы были здесь и знаете точнее, напишите нам.'
