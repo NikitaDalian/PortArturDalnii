@@ -1,12 +1,12 @@
 // Полноэкранная карта /karta/: маркеры, фильтры, карточка места, готовые маршруты, конструктор своего маршрута.
 import { loadMapLibre, webglOk } from './ml';
 import {
-  haversine, optimizeOrder, amapMarker, amapNav, yandexPoint, yandexRoute, fmtKm, osmStyle, kindSvg,
+  haversine, optimizeOrder, inEra, amapMarker, amapNav, yandexPoint, yandexRoute, fmtKm, osmStyle, kindSvg,
   PLAN_1904_CORNERS, type LL,
 } from './geo';
 
 type P = {
-  s: string; n: string; zh: string | null; now: string | null; c: string; l: string[]; k: string;
+  v: boolean; s: string; n: string; zh: string | null; now: string | null; c: string; l: string[]; k: string;
   lat: number; lng: number; u: boolean; low: boolean; t: string; ph: { f: string; t: string; a: string; s: string }[]; h: string;
 };
 type R = { s: string; title: string; dek: string; a: string | null; stops: string[]; line: LL[] | null; h: string };
@@ -47,7 +47,7 @@ export async function initMapApp() {
     route: null as string | null,
     sel: [] as string[],         // выбранные точки своего маршрута (в рациональном порядке)
     start: null as string | null, // фиксированная стартовая точка
-    city: 'all', layers: new Set<string>(), kinds: new Set<string>(), q: '',
+    city: 'all', era: null as string | null, kinds: new Set<string>(), q: '',
     plan: false, planOpacity: 0.7,
   };
 
@@ -56,6 +56,9 @@ export async function initMapApp() {
   const setUrl = () => {
     const u = new URL(location.href);
     u.search = '';
+    if (st.era) u.searchParams.set('layer', st.era);
+    if (st.city !== 'all') u.searchParams.set('city', st.city);
+    if (st.kinds.size) u.searchParams.set('kind', [...st.kinds].join(','));
     if (st.route) u.searchParams.set('route', st.route);
     else if (st.sel.length) {
       u.searchParams.set('pts', st.sel.join(','));
@@ -108,7 +111,7 @@ export async function initMapApp() {
   }
   const visible = (p: P) => {
     if (st.city !== 'all' && p.c !== st.city) return false;
-    if (st.layers.size && !p.l.some((l) => st.layers.has(l))) return false;
+    if (st.era && !inEra(p, st.era)) return false;
     if (st.kinds.size && !st.kinds.has(p.k)) return false;
     if (st.q) {
       const q = st.q.toLowerCase();
@@ -314,7 +317,7 @@ export async function initMapApp() {
         <ul class="mlist" role="list">${g.xs.map((p) => listRow(p)).join('')}</ul>`).join('') : '<p class="mempty">Ничего не найдено. Сбросьте фильтры или измените запрос.</p>'}`;
     foot.innerHTML = st.sel.length
       ? `<button type="button" class="mbtn mbtn--primary" data-open-builder>Свой маршрут: ${st.sel.length}</button>`
-      : (st.q || st.layers.size || st.kinds.size || st.city !== 'all') ? '<button type="button" class="mbtn mbtn--line" data-reset>Сбросить фильтры</button>' : '';
+      : (st.q || st.era || st.kinds.size || st.city !== 'all') ? '<button type="button" class="mbtn mbtn--line" data-reset>Сбросить фильтры</button>' : '';
   }
   const listRow = (p: P, extra = '') => `
     <li class="mrow">
@@ -483,10 +486,11 @@ export async function initMapApp() {
   };
 
   // ---------- верхняя панель ----------
+  const eras = $('.mtop__eras'), suggest = $('#m-suggest'), none = $('#m-none');
   const chipFilters = $('#m-filters'), chipPlan = $('#m-plan'), chipBuild = $('#m-build'), chipGeo = $('#m-geo'), btnList = $('#m-list');
   const panel = $('#m-filter-panel'), planPanel = $('#m-plan-panel');
   function syncChips() {
-    const nf = (st.city !== 'all' ? 1 : 0) + st.layers.size + st.kinds.size;
+    const nf = (st.city !== 'all' ? 1 : 0) + st.kinds.size;
     const fn = chipFilters.querySelector<HTMLElement>('.mchip__n')!;
     fn.hidden = !nf; fn.textContent = String(nf);
     chipFilters.setAttribute('aria-pressed', String(nf > 0));
@@ -495,7 +499,17 @@ export async function initMapApp() {
     btnList.setAttribute('aria-pressed', String(st.mode === 'list'));
     chipPlan.setAttribute('aria-pressed', String(st.plan));
     panel.querySelectorAll<HTMLElement>('[data-city]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.city === st.city)));
-    panel.querySelectorAll<HTMLElement>('[data-layer]').forEach((b) => b.setAttribute('aria-pressed', String(st.layers.has(b.dataset.layer!))));
+    eras.querySelectorAll<HTMLElement>('[data-era]').forEach((b) => b.setAttribute('aria-pressed', String((b.dataset.era === 'all' ? null : b.dataset.era) === st.era)));
+    const planOn = st.plan;
+    suggest.hidden = !(st.era === 'russian' && !planOn);
+    const shown = data.places.filter(visible).length;
+    panel.querySelector<HTMLElement>('[data-count]')!.textContent = String(shown);
+    none.hidden = shown > 0 || !!st.q;
+    if (shown === 0) {
+      const only = st.era && !data.places.some((p) => inEra(p, st.era!) );
+      $('#m-none-t').textContent = only ? 'Для этой эпохи мест пока нет.' : 'С такими фильтрами ничего нет.';
+      $('#m-none-btn').textContent = st.era ? 'Показать все эпохи' : 'Сбросить фильтры';
+    }
     panel.querySelectorAll<HTMLElement>('[data-kind]').forEach((b) => b.setAttribute('aria-pressed', String(st.kinds.has(b.dataset.kind!))));
   }
   chipFilters.addEventListener('click', () => {
@@ -507,20 +521,38 @@ export async function initMapApp() {
     if (!b) return;
     if (b.dataset.city) {
       st.city = b.dataset.city;
-      const pts = data.places.filter((p) => (st.city === 'all' ? p.c !== 'other' : p.c === st.city)).map((p) => [p.lat, p.lng] as LL);
-      fit(pts, 14);
-    } else if (b.dataset.layer) { const k = b.dataset.layer; st.layers.has(k) ? st.layers.delete(k) : st.layers.add(k); }
-    else if (b.dataset.kind) { const k = b.dataset.kind; st.kinds.has(k) ? st.kinds.delete(k) : st.kinds.add(k); }
+      applyFilters(); fitVisible(); return;
+    } else if (b.dataset.kind) { const k = b.dataset.kind; st.kinds.has(k) ? st.kinds.delete(k) : st.kinds.add(k); }
     else if (b.hasAttribute('data-reset')) { resetFilters(); return; }
     else if (b.hasAttribute('data-done')) { panel.hidden = true; chipFilters.setAttribute('aria-expanded', 'false'); chipFilters.focus(); return; }
     applyFilters();
   });
-  const applyFilters = () => { paintMarkers(); syncChips(); if (st.mode === 'list') renderListFoot(); panel.querySelector<HTMLElement>('[data-count]')!.textContent = String(data.places.filter(visible).length); };
+  const applyFilters = () => { paintMarkers(); syncChips(); setUrl(); if (st.mode === 'list') renderListFoot(); };
   function resetFilters() {
-    st.city = 'all'; st.layers.clear(); st.kinds.clear(); st.q = '';
+    st.city = 'all'; st.era = null; st.kinds.clear(); st.q = '';
     $<HTMLInputElement>('#m-q').value = '';
     applyFilters();
   }
+  // ---------- эпоха ----------
+  const fitVisible = () => {
+    const xs = data.places.filter(visible).filter((p) => p.c !== 'other' || st.city === 'other');
+    if (xs.length) fit(xs.map((p) => [p.lat, p.lng] as LL), 14);
+  };
+  const setEra = (k: string | null, o: { fit?: boolean } = {}) => {
+    st.era = k;
+    // открытое место вне эпохи не закрываем: оно остаётся на карте как выбранное
+    applyFilters();
+    if (o.fit !== false) fitVisible();
+  };
+  eras.addEventListener('click', (e) => {
+    const b = (e.target as HTMLElement).closest<HTMLElement>('[data-era]');
+    if (!b) return;
+    const k = b.dataset.era === 'all' ? null : b.dataset.era!;
+    if (k === st.era) return;
+    setEra(k);
+  });
+  $('#m-none-btn').addEventListener('click', () => { if (st.era) setEra(null); else resetFilters(); fitVisible(); });
+  $('#m-suggest-plan').addEventListener('click', () => { if (!st.plan) chipPlan.click(); });
   const q = $<HTMLInputElement>('#m-q');
   q.addEventListener('input', () => {
     st.q = q.value.trim();
@@ -590,7 +622,7 @@ export async function initMapApp() {
 
   const fromHash = () => {
     const s = decodeURIComponent(location.hash.slice(1));
-    if (s && P.has(s) && s !== st.cur) openPlace(s);
+    if (s && P.has(s) && s !== st.cur) { if (st.era && !inEra(P.get(s)!, st.era)) setEra(null, { fit: false }); openPlace(s); }
   };
   window.addEventListener('hashchange', fromHash);
 
@@ -605,8 +637,20 @@ export async function initMapApp() {
 
   // ---------- старт из адреса ----------
   const rParam = params.get('route');
+  const eraParam = params.get('layer');
+  if (eraParam && data.layers.some((l) => l.k === eraParam)) st.era = eraParam;
+  const cityParam = params.get('city');
+  if (cityParam && (cityParam in data.cities)) st.city = cityParam;
+  for (const k of (params.get('kind') || '').split(',')) if (k in data.kinds) st.kinds.add(k);
   const ptsParam = (params.get('pts') || '').split(',').map((s) => s.trim()).filter((s) => P.has(s));
   const hash = decodeURIComponent(location.hash.slice(1));
+  // маршрут, выбранные точки или место вне эпохи: эпоху сбрасываем, ничего не пропадает
+  const wanted = [
+    ...(rParam && Rt.has(rParam) ? Rt.get(rParam)!.stops : []),
+    ...(!rParam ? ptsParam : []),
+    ...(hash && P.has(hash) ? [hash] : []),
+  ];
+  if (st.era && wanted.some((s) => P.has(s) && !inEra(P.get(s)!, st.era!))) { st.era = null; }
   paintMarkers(); syncChips();
   await ready;
   if (rParam && Rt.has(rParam)) {
@@ -616,6 +660,8 @@ export async function initMapApp() {
     const sp = params.get('start');
     st.start = sp && st.sel.includes(sp) ? sp : null;
     reorder(); render('builder'); fitCurrent();
+  } else if (st.era || st.kinds.size || st.city !== 'all') {
+    fitVisible();
   } else if (params.has('build')) {
     fit(data.places.filter((p) => p.c === 'lushun').map((p) => [p.lat, p.lng] as LL), 13);
     render('builder');

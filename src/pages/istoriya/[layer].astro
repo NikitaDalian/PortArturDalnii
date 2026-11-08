@@ -118,7 +118,7 @@ const placesTitle = key === 'modern' ? 'Где искать следы сего�
     <section class="container section" aria-labelledby="places-h">
       <div class="section-head">
         <h2 id="places-h" class="h2">{placesTitle}</h2>
-        <a class="link" href={href.map()}>Открыть карту</a>
+        <a class="link" href={href.mapLayer(key)}>Все места слоя на карте</a>
       </div>
       {key === 'modern' && <p class="lead" style="margin-bottom:24px">Места, куда можно прийти сейчас, — с подсказками для посещения на их страницах.</p>}
       <div class="grid" style="--min:240px; --grid-gap:32px 24px">

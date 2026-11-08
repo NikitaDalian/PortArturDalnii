@@ -79,6 +79,7 @@ export function mapPayload() {
       lat: p.lat,
       lng: p.lng,
       u: isUncertain(p),
+      v: Boolean(p.visit) && (p as any).today !== false,
       low: p.coord_confidence === 'low',
       t: p.summary,
       ph: ((p.photos || []) as string[]).map((f) => ({ f: img(f), t: img(f, 640), a: photoCaption(f), s: focusStyle(f) })).filter((x) => x.f),

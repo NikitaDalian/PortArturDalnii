@@ -71,6 +71,7 @@ const lead = 'Пять эпох одного места на южной окон
                 })}
               </p>
             )}
+            <a class="text-link lb__map" href={href.mapLayer(l.key)}>Места слоя на карте</a>
           </div>
           <a class="btn btn--outline btn--sm lb__go" href={href.layer(l.key)} aria-label={`Открыть слой «${l.title}»`}>Открыть слой →</a>
         </li>
@@ -111,6 +112,7 @@ const lead = 'Пять эпох одного места на южной окон
   .lb__rel { font-size: 16px; line-height: 1.6; }
   .lb__label { font-weight: 700; }
   .lb__go { align-self: center; white-space: nowrap; }
+  .lb__map { align-self: flex-start; display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; font-weight: 600; }
   .lb-note { max-width: 36ch; }
   @media (max-width: 1180px) {
     .lb { grid-template-columns: minmax(0, 200px) minmax(0, 1fr) minmax(0, 1.2fr); }

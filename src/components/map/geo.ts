@@ -11,6 +11,14 @@ export function haversine(a: LL, b: LL): number {
   return 2 * R * Math.asin(Math.min(1, Math.sqrt(h)));
 }
 
+/**
+ * Принадлежность места эпохе (ключи слоёв сайта).
+ * Слой «до 1898» в данных 'chinese' уже приведён к 'pre1898' на сервере.
+ * «Сегодня» (modern): слой modern или заполнено visit (есть сведения, как прийти сейчас),
+ * кроме мест с today:false в places.json (закрытая военная база, доступ не подтверждён); см. payload.v.
+ */
+export const inEra = (p: { l: string[]; v: boolean }, era: string) => (era === 'modern' ? p.l.includes('modern') || p.v : p.l.includes(era));
+
 export const pathLength = (pts: LL[]) => pts.reduce((s, p, i) => (i ? s + haversine(pts[i - 1], p) : 0), 0);
 
 /**

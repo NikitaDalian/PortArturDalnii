@@ -98,6 +98,7 @@ export const href = {
   seriesList: () => url('/zametki/serii/'),
   series: (s: string) => url(`/zametki/serii/${s}/`),
   map: (place?: string) => url('/karta/' + (place ? `#${place}` : '')),
+  mapLayer: (key: string) => url(`/karta/?layer=${key}`),
   /** Готовый маршрут на большой карте: /karta/?route=slug */
   mapRoute: (s: string) => url(`/karta/?route=${encodeURIComponent(s)}`),
   /** Свой маршрут из точек: /karta/?pts=a,b,c (повторы убираются) */
