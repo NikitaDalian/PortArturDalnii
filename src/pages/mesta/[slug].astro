@@ -18,7 +18,7 @@ export function getStaticPaths() {
 }
 interface Props { p: Place }
 const { p } = Astro.props;
-const placeMap = ({ 'nikolaevskaya-ploshchad': 68, 'fort-2': 120, 'ukreplenie-3': 120, 'ukreplenie-5': 114 } as Record<string, number>)[p.slug] ?? null;
+const placeMap = ({ 'nikolaevskaya-ploshchad': 68, 'fort-2': 120, 'ukreplenie-3': 120, 'ukreplenie-5': 114, 'yaponskie-kvartaly-lyuyshunya': 315 } as Record<string, number>)[p.slug] ?? null;
 const photos = ((p.photos || []) as string[]).filter((f) => !placeMap || !String(f).includes(`photo_${placeMap}@`));
 const cover = photos[0] ?? null;
 const layers = placeLayers(p);

@@ -8,7 +8,8 @@ import PlaceCard from '../../components/PlaceCard.astro';
 import MapFigure from '../../components/MapFigure.astro';
 import Timeline from '../../components/layers/Timeline.astro';
 import KeyDates from '../../components/layers/KeyDates.astro';
-import { href, img, focusStyle, url, plural, TYPES, LAYERS } from '../../lib/data';
+import PhotoGallery from '../../components/notes/PhotoGallery.astro';
+import { href, img, focusStyle, url, plural, photos, TYPES, LAYERS } from '../../lib/data';
 import { layerText, layerArticles, layerPeople, layerPlaces, layerArt } from '../../components/layers/layers';
 
 export function getStaticPaths() {
@@ -28,6 +29,8 @@ const placeList = layerPlaces(key);
 const cover = layerArt(key)?.large ?? null;
 const photo = text.image ? img(text.image) : null;
 const heroImg = cover ?? photo;
+// Снимки эпохи (layers.json → gallery: номера фото каталога).
+const galleryFiles = ((text as any).gallery ?? [] as number[]).map((id: number) => photos.find((p) => String(p.file).includes(`photo_${id}@`))?.file).filter(Boolean) as string[];
 const typesPresent = Object.keys(TYPES)
   .map((t) => ({ t, n: notes.filter((a) => a.type === t).length }))
   .filter((x) => x.n > 0);
@@ -59,6 +62,7 @@ const placesTitle = key === 'modern' ? 'Где искать следы сего�
           {text.intro.map((p) => <p>{p}</p>)}
         </div>
         {key === 'russian' && <MapFigure id={68} />}
+        {galleryFiles.length > 0 && <PhotoGallery photos={galleryFiles} title="Снимки эпохи" />}
         {cover && photo && (
           <figure>
             <img src={photo} alt={text.imageAlt} loading="lazy" decoding="async" style={`width:100%; max-height:480px; background:var(--navy-2); ${focusStyle(text.image)}`} />

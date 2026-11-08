@@ -5,7 +5,7 @@ import { articles, people, places, personBySlug, placeBySlug, LAYERS, type Layer
 export interface LayerDate { year: number; date: string; text: string; key?: boolean }
 export interface LayerText {
   card: string; lead: string; intro: string[];
-  image: number | null; imageAlt: string; caption: string;
+  image: number | null; imageAlt: string; caption: string; gallery?: number[];
   dates: LayerDate[];
 }
 export const layerText = layersJson as Record<LayerKey, LayerText>;

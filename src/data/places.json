@@ -24,7 +24,9 @@
    127,
    227
   ],
-  "photos": [],
+  "photos": [
+   "photos/photo_341@archive.jpg"
+  ],
   "verify": true,
   "articles": [
    "voina-na-more-osada-mukden-tsusima",
@@ -67,7 +69,8 @@
   ],
   "photos": [
    "photos/photo_160@28-10-2026_08-55-08.jpg",
-   "photos/photo_191@02-11-2026_09-35-08.jpg"
+   "photos/photo_191@02-11-2026_09-35-08.jpg",
+   "photos/photo_335@archive.jpg"
   ],
   "verify": true,
   "articles": [
@@ -102,7 +105,8 @@
    227
   ],
   "photos": [
-   "photos/photo_159@28-10-2026_08-55-08.jpg"
+   "photos/photo_159@28-10-2026_08-55-08.jpg",
+   "photos/photo_336@archive.jpg"
   ],
   "verify": true,
   "articles": [
@@ -133,7 +137,8 @@
    227
   ],
   "photos": [
-   "photos/photo_161@28-10-2026_08-55-08.jpg"
+   "photos/photo_161@28-10-2026_08-55-08.jpg",
+   "photos/photo_338@archive.jpg"
   ],
   "verify": true,
   "articles": [
@@ -170,8 +175,8 @@
   ],
   "verify": true,
   "articles": [
-   "kak-ustroen-fort",
-   "ukreplenie-5-yahutszui"
+   "ukreplenie-5-yahutszui",
+   "kak-ustroen-fort"
   ]
  },
  {
@@ -211,8 +216,8 @@
   ],
   "verify": false,
   "articles": [
-   "kak-ustroen-fort",
-   "ukreplenie-5-yahutszui"
+   "ukreplenie-5-yahutszui",
+   "kak-ustroen-fort"
   ]
  },
  {
@@ -273,7 +278,12 @@
    50,
    127
   ],
-  "photos": [],
+  "photos": [
+   "photos/photo_302@archive.jpg",
+   "photos/photo_308@archive.jpg",
+   "photos/photo_304@archive.jpg",
+   "photos/photo_342@archive.jpg"
+  ],
   "verify": true,
   "articles": [
    "port-artur-poslednyaya-zamorskaya-koloniya",
@@ -351,7 +361,13 @@
    "photos/photo_113@20-10-2026_21-45-06.jpg",
    "photos/photo_97@17-10-2026_15-14-01.jpg",
    "photos/photo_101@17-10-2026_15-14-01.jpg",
-   "photos/photo_35@06-10-2026_17-18-17.jpg"
+   "photos/photo_35@06-10-2026_17-18-17.jpg",
+   "photos/photo_300@archive.jpg",
+   "photos/photo_306@archive.jpg",
+   "photos/photo_301@archive.jpg",
+   "photos/photo_303@archive.jpg",
+   "photos/photo_307@archive.jpg",
+   "photos/photo_342@archive.jpg"
   ],
   "verify": true,
   "articles": [
@@ -623,6 +639,7 @@
    114
   ],
   "photos": [
+   "photos/photo_320@archive.jpg",
    "photos/photo_67@11-10-2026_14-03-01.jpg",
    "photos/photo_68@11-10-2026_14-03-01.jpg"
   ],
@@ -658,7 +675,8 @@
   ],
   "photos": [
    "photos/photo_70@11-10-2026_14-03-01.jpg",
-   "photos/photo_71@11-10-2026_14-03-01.jpg"
+   "photos/photo_71@11-10-2026_14-03-01.jpg",
+   "photos/photo_317@archive.jpg"
   ],
   "verify": true,
   "articles": [
@@ -821,7 +839,9 @@
    137
   ],
   "photos": [
-   "photos/photo_73@11-10-2026_14-03-01.jpg"
+   "photos/photo_73@11-10-2026_14-03-01.jpg",
+   "photos/photo_324@archive.jpg",
+   "photos/photo_319@archive.jpg"
   ],
   "verify": false,
   "articles": [
@@ -853,7 +873,10 @@
    "winter"
   ],
   "posts": [],
-  "photos": [],
+  "photos": [
+   "photos/photo_325@archive.jpg",
+   "photos/photo_322@archive.jpg"
+  ],
   "verify": false,
   "articles": []
  },
@@ -879,7 +902,9 @@
    "winter"
   ],
   "posts": [],
-  "photos": [],
+  "photos": [
+   "photos/photo_326@archive.jpg"
+  ],
   "verify": false,
   "articles": []
  },
@@ -1047,7 +1072,8 @@
   "posts": [],
   "photos": [
    "photos/photo_104@17-10-2026_15-14-01.jpg",
-   "photos/photo_63@10-10-2026_21-53-29.jpg"
+   "photos/photo_63@10-10-2026_21-53-29.jpg",
+   "photos/photo_305@archive.jpg"
   ],
   "verify": true,
   "articles": []

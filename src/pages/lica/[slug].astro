@@ -10,7 +10,7 @@ import Portrait from '../../components/people/Portrait.astro';
 import PersonFacts from '../../components/people/PersonFacts.astro';
 import PersonNav from '../../components/people/PersonNav.astro';
 import { personArticles, personBooks, neighbors, splitName, splitQuote } from '../../components/people/relations';
-import { href, img, entity, people, placeBySlug, COUNTRIES, plural, type Person, type Place } from '../../lib/data';
+import { href, img, entity, people, placeBySlug, photoMeta, COUNTRIES, plural, type Person, type Place } from '../../lib/data';
 
 export function getStaticPaths() {
   return people.map((p) => ({ params: { slug: p.slug }, props: { p } }));
@@ -30,13 +30,21 @@ const placeText = placeSlugs.filter((s) => !placeBySlug.has(s)).map((s) => entit
 const posts = (p.posts as number[]) || [];
 const firstPost = posts.length ? Math.min(...posts) : (notes[0]?.tg_ids?.[0] ?? null);
 const bookCount = authored.length + reviewed.length;
+const portraitArchive = (p.portrait && photoMeta(p.portrait as string)?.record_url) ? `foto-${String(p.portrait).match(/photo_(\d+)@/)?.[1]}` : null;
 ---
 <Base title={name.main} description={`${p.name}${p.years ? `, ${p.years}` : ''}. ${p.role}.`} image={img(p.portrait)} section="people">
   <section class="dark ph page-top" data-pagefind-filter="type:Лица">
     <div class="container">
       <Crumbs items={[{ label: 'Главная', href: href.home() }, { label: 'Лица', href: href.people() }, { label: name.main }]} />
       <div class="ph__inner">
-        <div class="ph__portrait"><Portrait p={p} /></div>
+        <div class="ph__portrait">
+          <Portrait p={p} />
+          {portraitArchive && (
+            <p class="ph__pnote">
+              {(p as any).portrait_note ? `${(p as any).portrait_note} ` : ''}<a class="link" href={`${href.credits()}#${portraitArchive}`}>Источник снимка</a>
+            </p>
+          )}
+        </div>
         <div class="ph__head stack" style="--stack-gap:12px">
           <p class="ph__meta" style={`--cc:${c.color}`}>
             {p.years && <span>{p.years}</span>}
@@ -157,6 +165,7 @@ const bookCount = authored.length + reviewed.length;
     grid-template-rows: 1fr auto auto;
   }
   .ph__portrait { grid-area: img; align-self: end; }
+  .ph__pnote { margin: 8px 0 0; font-size: 12px; line-height: 1.4; color: var(--steel); }
   .ph__head { grid-area: head; min-width: 0; }
   .ph__role { grid-area: role; max-width: 56ch; }
   .ph__meta { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 15px; font-weight: 600; color: var(--steel); }

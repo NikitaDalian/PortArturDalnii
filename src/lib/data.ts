@@ -112,6 +112,7 @@ export const href = {
   index: () => url('/ukazatel/'),
   search: (q?: string) => url('/poisk/' + (q ? `?q=${encodeURIComponent(q)}` : '')),
   about: () => url('/o-proekte/'),
+  credits: () => url('/o-proekte/illyustratsii/'),
 };
 
 // ---------- выборки ----------
@@ -163,6 +164,12 @@ export function img(file: string | number | null | undefined, size: 'full' | 640
   if (!id) return null;
   return url(`/img/p/${id}${size === 640 ? '-640' : ''}.webp`);
 }
+/** Увеличенная версия для просмотрщика карты (3600 px по ширине); у остальных фото нет — вернётся null. */
+const BIG_IDS = new Set(['312']);
+export const imgBig = (file: string | number | null | undefined): string | null => {
+  const id = photoId(file);
+  return id && BIG_IDS.has(id) ? url(`/img/p/${id}-big.webp`) : null;
+};
 export type CropRatio = '3x2' | '4x5' | '16x9' | '1x1';
 /** Заранее нарезанный кадр под пропорцию (scripts/build_crops.py): лица в верхней трети, неподходящее по форме вписано на размытый фон,
  *  водяной знак уже стоит в правом нижнем углу. Показывать с object-fit: cover без object-position.

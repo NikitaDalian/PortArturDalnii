@@ -2,11 +2,13 @@
 // Историческая карта или план целиком (object-fit: contain) с подписью и источником.
 // По нажатию открывается полноэкранный просмотр: колесо и щипок — масштаб, перетаскивание — сдвиг,
 // Esc и кнопка — закрыть. Без внешних библиотек.
-import { img, photos, tgPost, url } from '../lib/data';
+import { img, imgBig, href, photos, tgPost } from '../lib/data';
 // Подписи по каталогу photos.json (описание карты, без домыслов).
-const MAPS: Record<number, { caption: string; note?: string; maxWidth?: number }> = {
+const MAPS: Record<number, { caption: string; note?: string; maxWidth?: number; origin?: string }> = {
   32: { caption: 'План крепости Порт-Артур: положение линии обороны 19 декабря 1904 г. (А. Свечин, карта Военно-исторической комиссии). Русские позиции красным, японские зелёным, подписаны форты I–VI и укрепления № 1–5.', note: 'литография, 200 саженей в дюйме' },
   68: { caption: 'План города Дальнего, 1900 г.: порт, Европейский и Китайский город, круглая Николаевская площадь; на плане подписи архитектора и главного инженера В. Сахарова.' },
+  312: { caption: 'План города Дальнего В. Сахарова, не позднее 1902, Library of Congress. Другой вариант плана: номера кварталов, общественные здания красным, рельеф, роза ветров, таблица и указатель слева.', note: 'на листе штамп 12.09.1902; в каталоге библиотеки указан 1899', origin: 'Library of Congress, через Wikimedia Commons' },
+  315: { caption: 'Американская карта Люйшуня (Порт-Артура) 1950-х годов, лист Army Map Service, 1:25 000. Названия кварталов и улиц на ней остались японскими.', origin: 'Army Map Service, через Wikimedia Commons' },
   86: { caption: 'Карта Квантунского полуострова с рельефом: Порт-Артур, Дальний, Цзиньчжоу.', note: '10 вёрст в дюйме' },
   85: { caption: 'Англоязычная карта: территория, арендованная Россией в 1898 году и переданная Японии в 1905 году, с нейтральной зоной.', maxWidth: 330 },
   82: { caption: 'Карта Маньчжурии с врезками, в том числе Квантуна; издана около 1900 г.', note: 'мелкие надписи читаются только на оригинале' },
@@ -20,31 +22,55 @@ interface Props {
   maxWidth?: number;     // ограничение ширины в px (для мелких оригиналов)
   note?: string;         // добавка к источнику, например «рукописные пометки на полях»
 }
-const d = MAPS[Astro.props.id] ?? { caption: '' };
-const caption = Astro.props.caption ?? d.caption;
-const { id, alt } = Astro.props;
-const maxWidth = Astro.props.maxWidth ?? d.maxWidth;
-const note = Astro.props.note ?? d.note;
-const meta = photos.find((p) => String(p.file).includes(`photo_${id}@`));
-const src = img(id)!;
-const w = meta?.w ?? 1200, h = meta?.h ?? 900;
-const post = meta?.post_id ? tgPost(meta.post_id) : null;
+// Второй вариант плана показывается под первым везде, где стоит план Дальнего 1900 г. (photo_68).
+const COMPANION: Record<number, number> = { 68: 312 };
+const ids = [Astro.props.id, ...(COMPANION[Astro.props.id] ? [COMPANION[Astro.props.id]] : [])];
+const items = ids.map((id, i) => {
+  const d = MAPS[id] ?? { caption: '' };
+  const meta = photos.find((p) => String(p.file).includes(`photo_${id}@`));
+  const src = img(id)!;
+  return {
+    id,
+    caption: (i === 0 ? Astro.props.caption : undefined) ?? d.caption,
+    alt: i === 0 ? Astro.props.alt : undefined,
+    maxWidth: (i === 0 ? Astro.props.maxWidth : undefined) ?? d.maxWidth,
+    note: (i === 0 ? Astro.props.note : undefined) ?? d.note,
+    origin: d.origin as string | undefined,
+    meta,
+    src,
+    big: imgBig(id) ?? src,
+    w: meta?.w ?? 1200,
+    h: meta?.h ?? 900,
+    post: meta?.post_id ? tgPost(meta.post_id) : null,
+    record: (meta?.record_url as string | undefined) ?? null,
+  };
+});
 ---
-<figure class="mapfig" style={maxWidth ? `max-width:${maxWidth}px` : undefined} data-mapfig data-mapfig-src={src} data-mapfig-caption={caption}>
-  <button type="button" class="mapfig__open" aria-label={`Открыть на весь экран: ${caption}`} aria-haspopup="dialog">
-    <img src={src} alt={alt ?? caption} width={w} height={h} loading="lazy" decoding="async" style="object-fit:contain" />
-    <span class="mapfig__zoom" aria-hidden="true">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5L21 21M10.5 7.5v6M7.5 10.5h6"></path></svg>
-      Увеличить
-    </span>
-  </button>
-  <figcaption>
-    <span class="mapfig__cap">{caption}</span>
-    <span class="meta mapfig__src">Из архива канала{post ? <> · <a class="link" href={post} target="_blank" rel="noopener">пост {meta.post_id}</a></> : ''}{note ? ` · ${note}` : ''}</span>
-  </figcaption>
-</figure>
+<div class="mapfigs">
+  {items.map((m) => (
+    <figure class="mapfig" style={m.maxWidth ? `max-width:${m.maxWidth}px` : undefined} data-mapfig data-mapfig-src={m.big} data-mapfig-caption={m.caption}>
+      <button type="button" class="mapfig__open" aria-label={`Открыть на весь экран: ${m.caption}`} aria-haspopup="dialog">
+        <img src={m.src} alt={m.alt ?? m.caption} width={m.w} height={m.h} loading="lazy" decoding="async" style="object-fit:contain" />
+        <span class="mapfig__zoom" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5L21 21M10.5 7.5v6M7.5 10.5h6"></path></svg>
+          Увеличить
+        </span>
+      </button>
+      <figcaption>
+        <span class="mapfig__cap">{m.caption}</span>
+        <span class="meta mapfig__src">
+          {m.record
+            ? <>{m.origin ?? 'Открытый архив'} · Public domain · <a class="link" href={m.record} target="_blank" rel="noopener">запись</a> · <a class="link" href={href.credits()}>все источники</a></>
+            : <>Из архива канала{m.post ? <> · <a class="link" href={m.post} target="_blank" rel="noopener">пост {m.meta.post_id}</a></> : ''}</>}
+          {m.note ? ` · ${m.note}` : ''}
+        </span>
+      </figcaption>
+    </figure>
+  ))}
+</div>
 
 <style>
+  .mapfigs { display: flex; flex-direction: column; gap: 28px; }
   .mapfig { margin: 0; display: flex; flex-direction: column; gap: 10px; width: 100%; min-width: 0; }
   .mapfig__open { position: relative; display: block; width: 100%; padding: 0; border: 1px solid var(--line); background: var(--frost); cursor: zoom-in; }
   .mapfig__open img { display: block; width: 100%; height: auto; max-height: min(70vh, 640px); object-fit: contain; background: var(--frost); }

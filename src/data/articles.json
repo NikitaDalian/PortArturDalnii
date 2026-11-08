@@ -487,10 +487,10 @@
   "photos": [
    "photos/photo_175@30-10-2026_10-20-05.jpg",
    "photos/photo_176@30-10-2026_10-20-06.jpg",
-   "photos/photo_177@30-10-2026_10-20-06.jpg",
+   "photos/photo_332@archive.jpg",
    "photos/photo_178@30-10-2026_10-20-06.jpg"
   ],
-  "cover": "photos/photo_177@30-10-2026_10-20-06.jpg",
+  "cover": "photos/photo_332@archive.jpg",
   "read_min": 3,
   "series": "Генерал Кондратенко",
   "tg_url": "https://t.me/portartur_dalnii/210",
@@ -1085,7 +1085,8 @@
   ],
   "books": [],
   "photos": [
-   "photos/photo_120@21-10-2026_09-32-53.jpg"
+   "photos/photo_120@21-10-2026_09-32-53.jpg",
+   "photos/photo_337@archive.jpg"
   ],
   "cover": "photos/photo_120@21-10-2026_09-32-53.jpg",
   "read_min": 2,
@@ -1962,7 +1963,8 @@
   "photos": [
    "photos/photo_59@09-10-2026_12-01-23.jpg",
    "photos/photo_60@09-10-2026_12-01-23.jpg",
-   "photos/photo_61@09-10-2026_12-01-23.jpg"
+   "photos/photo_61@09-10-2026_12-01-23.jpg",
+   "photos/photo_339@archive.jpg"
   ],
   "cover": "photos/photo_59@09-10-2026_12-01-23.jpg",
   "read_min": 4,
@@ -2391,9 +2393,10 @@
   ],
   "books": [],
   "photos": [
-   "photos/photo_163@28-10-2026_08-55-09.jpg"
+   "photos/photo_163@28-10-2026_08-55-09.jpg",
+   "photos/photo_340@archive.jpg"
   ],
-  "cover": "photos/photo_163@28-10-2026_08-55-09.jpg",
+  "cover": "photos/photo_340@archive.jpg",
   "read_min": 3,
   "series": "Русско-японская война за пять постов",
   "tg_url": "https://t.me/portartur_dalnii/10",

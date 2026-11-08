@@ -1,0 +1,148 @@
+---
+import Base from '../../../layouts/Base.astro';
+import PageHero from '../../../components/PageHero.astro';
+import { href, photos, tgPost, plural, TG_CHANNEL } from '../../../lib/data';
+import { AI_NOTE } from '../../../lib/art';
+
+const MARK = 'Портъ-Артуръ и Дальнiй · t.me/portartur_dalnii';
+const idOf = (p: any) => String(p.file).match(/photo_(\d+)@/)?.[1] ?? '';
+const noUrl = (s: string) => s.replace(/\s*https?:\/\/\S+\s*$/, '').trim();
+
+// Записи из открытых архивов: у них есть credit; shown: false — в каталоге есть, на сайте не показаны.
+const archive = photos.filter((p) => p.credit && p.shown !== false);
+const isMap = (p: any) => p.kind === 'map' || p.kind === 'plan';
+const ERAS = [
+  { key: 'pre1898', title: 'До 1898 года', text: 'японо-китайская война 1894 года' },
+  { key: 'russian', title: '1898–1905', text: 'русские Порт-Артур и Дальний, осада и первые месяцы после капитуляции' },
+  { key: 'japanese', title: '1905–1945', text: 'японские Рёдзюн и Дайрен' },
+];
+const groups = ERAS.map((e) => ({ ...e, items: archive.filter((p) => !isMap(p) && p.era === e.key) })).filter((g) => g.items.length);
+const archiveMaps = archive.filter(isMap);
+// Карты из постов канала, которые показаны на сайте (см. MapFigure)
+const channelMaps = [32, 68, 86, 85, 82, 120, 114]
+  .map((id) => photos.find((p) => String(p.file).includes(`photo_${id}@`)))
+  .filter(Boolean) as any[];
+const total = archive.length;
+const n = (x: number, a: string, b: string, c: string) => `${x} ${plural(x, a, b, c)}`;
+---
+<Base
+  searchable={false}
+  title="Иллюстрации и источники"
+  description="Откуда взяты картинки на сайте: архивные снимки с авторами и лицензиями, фотографии канала, рисунки нейросети, карты и планы."
+  section="about"
+>
+  <PageHero
+    title="Иллюстрации и источники"
+    eyebrow="О проекте"
+    lead="Откуда взяты картинки на сайте: архивные снимки с авторами и лицензиями, фотографии канала, рисунки нейросети, карты и планы."
+    crumbs={[{ label: 'Главная', href: href.home() }, { label: 'О проекте', href: href.about() }, { label: 'Иллюстрации и источники' }]}
+  />
+
+  <section class="section container cr" aria-labelledby="arch-h">
+    <div class="cr__head">
+      <h2 id="arch-h" class="h2">Архивные снимки</h2>
+      <p class="meta">{n(total, 'запись', 'записи', 'записей')} на сайте, вместе с картами и портретами</p>
+    </div>
+    <div class="prose cr__intro">
+      <p>
+        Снимки из открытых архивов, опубликованные там как общественное достояние (Public domain, CC0): Библиотека Конгресса США,
+        Rijksmuseum, Национальная парламентская библиотека Японии, «Военная энциклопедия» Сытина, журнал «Нива» и другие.
+        Права проверены по карточкам Wikimedia Commons. Для каждого снимка ниже указаны автор или издатель, год, архив, лицензия и ссылка на запись.
+      </p>
+      <p>
+        Часть снимков обрезана: у стереопар Underwood &amp; Underwood оставлен левый кадр, у листов альбомов убраны поля и подписи.
+        Место или человек на ряде снимков определены по подписи архива, по самому кадру независимо не проверялись:
+        так привязаны снимки к форту № II, форту № III, Большому Орлиному Гнезду, горе Высокой и порту Дальнего. По подписи же определены
+        генерал Стессель, адмирал Витгефт и генерал Ноги на портретах. Где подпись слабая, это сказано в подписи к фотографии.
+      </p>
+    </div>
+
+    {groups.map((g) => (
+      <div class="cr__group" aria-labelledby={`era-${g.key}`}>
+        <h3 id={`era-${g.key}`} class="h3">{g.title} <span class="meta">· {g.text}</span></h3>
+        <ul class="cr__list">
+          {g.items.map((p) => (
+            <li id={`foto-${idOf(p)}`} class="cr__item">
+              <p class="cr__line">{noUrl(p.credit)}</p>
+              <p class="meta cr__meta">
+                <span>{p.license}</span>
+                <a class="link" href={p.record_url} target="_blank" rel="noopener">Запись в архиве</a>
+              </p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </section>
+
+  <section class="paper section" aria-labelledby="tg-h">
+    <div class="container cr cr--narrow">
+      <h2 id="tg-h" class="h2">Фотографии канала</h2>
+      <div class="prose">
+        <p>
+          Снимки из постов Telegram-канала <a href={TG_CHANNEL} target="_blank" rel="noopener">{TG_CHANNEL.replace(/^https?:\/\//, '')}</a>
+          взяты из открытых архивов и из собрания авторов. На сайте они сжаты, а в правом нижнем углу стоит водяной знак канала:
+          <span class="cr__mark">{MARK}</span>. Знак стоит на фотографиях, картах и планах; на обложках книг его нет.
+        </p>
+        <p>
+          Как использовать: фотографии, тексты и пересказы можно брать со ссылкой на канал, ссылка обязательна. Водяной знак не убирайте и не обрезайте.
+          Посты с исходной подписью — в канале; у заметок на сайте есть кнопка «Читать в Telegram».
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container cr cr--narrow" aria-labelledby="ai-h">
+    <h2 id="ai-h" class="h2">Иллюстрации нейросети</h2>
+    <div class="prose">
+      <p>
+        Картинки в шапках слоёв истории и разделов, на обложках маршрутов и сезонов, на главной странице и в видеопетлях созданы с помощью нейросети по заданию авторов.
+        Это рисунки в стиле сайта, а не исторические изображения: они не показывают реальные места и события, и сопоставлять с ними архивные снимки не нужно.
+        Рядом с такими картинками на сайте стоит пометка «{AI_NOTE}».
+      </p>
+      <p>Исторические сведения на сайте опираются на посты канала и источники из раздела «Библиотека», а не на эти рисунки.</p>
+    </div>
+  </section>
+
+  <section class="paper section" aria-labelledby="maps-h">
+    <div class="container cr">
+      <h2 id="maps-h" class="h2">Карты и планы</h2>
+      <p class="prose" style="max-width:72ch">Планы и карты, которые можно открыть на весь экран и увеличить. Для карт из открытых архивов указаны издатель, год и запись; остальные взяты из постов канала.</p>
+      <ul class="cr__list">
+        {archiveMaps.map((p) => (
+          <li id={`foto-${idOf(p)}`} class="cr__item">
+            <p class="cr__line">{noUrl(p.credit)}</p>
+            <p class="meta cr__meta">
+              <span>{p.license}</span>
+              <a class="link" href={p.record_url} target="_blank" rel="noopener">Запись в архиве</a>
+            </p>
+          </li>
+        ))}
+        {channelMaps.map((p) => (
+          <li id={`foto-${idOf(p)}`} class="cr__item">
+            <p class="cr__line">{p.subject}</p>
+            <p class="meta cr__meta">
+              <span>Из постов канала</span>
+              {p.post_id && <a class="link" href={tgPost(p.post_id)} target="_blank" rel="noopener">Пост {p.post_id}</a>}
+            </p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .cr { display: flex; flex-direction: column; gap: 24px; }
+  .cr--narrow { max-width: 880px; }
+  .cr__head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; }
+  .cr__intro { max-width: 72ch; }
+  .cr__group { display: flex; flex-direction: column; gap: 12px; margin-top: 12px; }
+  .cr__list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+  .cr__item { padding: 14px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 90px; }
+  .cr__item:target { background: var(--frost); box-shadow: -12px 0 0 var(--frost), 12px 0 0 var(--frost); }
+  .cr__line { margin: 0; font-size: 16px; line-height: 1.5; color: var(--ink-2); overflow-wrap: anywhere; }
+  .cr__meta { margin: 6px 0 0; display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 14px; }
+  .cr__mark { white-space: nowrap; font-weight: 600; }
+  @media (max-width: 560px) { .cr__mark { white-space: normal; } }
+</style>

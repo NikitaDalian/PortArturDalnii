@@ -30,8 +30,8 @@
   ],
   "articles": [
    "kak-vse-nachinalos-predposylki-voiny",
-   "otsu-1891-pokushenie-na-tsesarevicha",
    "nikolai-ii-i-russko-yaponskaya-voina",
+   "otsu-1891-pokushenie-na-tsesarevicha",
    "tolstoi-odumaites-1904",
    "admiral-alekseev-namestnik",
    "otkuda-nazvanie-port-artur",
@@ -131,8 +131,8 @@
    "port-artur-poslednyaya-zamorskaya-koloniya",
    "nikolai-ii-i-russko-yaponskaya-voina",
    "admiral-alekseev-namestnik",
-   "kvantun-proishozhdenie-nazvaniya",
    "port-artur-i-dalnii-dva-goroda",
+   "kvantun-proishozhdenie-nazvaniya",
    "pervaya-tihookeanskaya-eskadra",
    "aleksandr-bezobrazov-kavalergard",
    "panishchev-krizis-nravstvennogo-soznaniya"
@@ -296,7 +296,7 @@
    241,
    250
   ],
-  "portrait": "photos/photo_177@30-10-2026_10-20-06.jpg",
+  "portrait": "photos/photo_332@archive.jpg",
   "places": [
    "port-artur",
    "fort-2",
@@ -339,11 +339,12 @@
    234,
    241
   ],
-  "portrait": null,
+  "portrait": "photos/photo_329@archive.jpg",
   "places": [
    "port-artur",
    "kvantun"
   ],
+  "portrait_note": "Личность определена по подписи архива.",
   "articles": [
    "anekdoty-rossiiskoi-imperii-shevchenko",
    "voina-na-more-osada-mukden-tsusima",
@@ -413,10 +414,11 @@
    214,
    234
   ],
-  "portrait": null,
+  "portrait": "photos/photo_330@archive.jpg",
   "places": [
    "port-artur"
   ],
+  "portrait_note": "Личность определена по подписи архива.",
   "articles": [
    "voina-na-more-osada-mukden-tsusima",
    "pervaya-tihookeanskaya-eskadra",
@@ -540,11 +542,12 @@
    28,
    50
   ],
-  "portrait": null,
+  "portrait": "photos/photo_334@archive.jpg",
   "places": [
    "port-artur",
    "vysokaya-gora"
   ],
+  "portrait_note": "Личность определена по подписи архива.",
   "articles": [
    "voina-na-more-osada-mukden-tsusima",
    "kto-fotografiroval-russko-yaponskuyu-voinu",
