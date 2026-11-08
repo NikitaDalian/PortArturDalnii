@@ -7,7 +7,7 @@ import {
 
 type P = {
   s: string; n: string; zh: string | null; now: string | null; c: string; l: string[]; k: string;
-  lat: number; lng: number; u: boolean; low: boolean; t: string; ph: { f: string; t: string; a: string }[]; h: string;
+  lat: number; lng: number; u: boolean; low: boolean; t: string; ph: { f: string; t: string; a: string; s: string }[]; h: string;
 };
 type R = { s: string; title: string; dek: string; a: string | null; stops: string[]; line: LL[] | null; h: string };
 type Data = { places: P[]; routes: R[]; layers: { k: string; t: string; y: string }[]; kinds: Record<string, string>; cities: Record<string, string>; plan: string | null };
@@ -253,13 +253,13 @@ export async function initMapApp() {
     const gal = photos.length
       ? `<div class="mgal">
           <div class="mgal__track" tabindex="0" aria-label="Фотографии: ${photos.length}. Листайте вбок">
-            ${photos.map((x, i) => `<figure class="mgal__item"><img src="${esc(x.t)}" alt="${esc(x.a || p.n)}" ${i ? 'loading="lazy"' : ''} decoding="async"></figure>`).join('')}
+            ${photos.map((x, i) => `<figure class="mgal__item"><img src="${esc(x.t)}" style="${esc(x.s)}" alt="${esc(x.a || p.n)}" ${i ? 'loading="lazy"' : ''} decoding="async"></figure>`).join('')}
           </div>
           ${photos.length > 1 ? `<span class="mgal__count" aria-hidden="true">1 / ${photos.length}</span>
           <button type="button" class="mgal__nav mgal__nav--prev" data-gal="-1" aria-label="Предыдущее фото">${ICON.prev}</button>
           <button type="button" class="mgal__nav mgal__nav--next" data-gal="1" aria-label="Следующее фото">${ICON.next}</button>` : ''}
         </div>
-        ${photos.length > 1 ? `<div class="mgal__thumbs">${photos.map((x, i) => `<button type="button" class="mgal__thumb${i ? '' : ' is-on'}" data-thumb="${i}" aria-label="Фото ${i + 1}"><img src="${esc(x.t)}" alt="" loading="lazy"></button>`).join('')}</div>` : ''}`
+        ${photos.length > 1 ? `<div class="mgal__thumbs">${photos.map((x, i) => `<button type="button" class="mgal__thumb${i ? '' : ' is-on'}" data-thumb="${i}" aria-label="Фото ${i + 1}"><img src="${esc(x.t)}" style="${esc(x.s)}" alt="" loading="lazy"></button>`).join('')}</div>` : ''}`
       : `<div class="mgal mgal--empty" aria-hidden="true">${kindSvg(p.k, 34)}<span>Фото пока нет</span></div>`;
     body.innerHTML = `${backBtn()}${gal}
       <div class="mplace">

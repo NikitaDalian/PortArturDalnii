@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import PageHero from '../../components/PageHero.astro';
 import Unsure from '../../components/Unsure.astro';
-import { seasons, href, img, entity, placeBySlug } from '../../lib/data';
+import { seasons, href, img, focusStyle, entity, placeBySlug } from '../../lib/data';
 import { SEASONS, sortedRoutes } from '../../components/map/places';
 import { seasonArt, loop } from '../../lib/art';
 const order = ['spring', 'summer', 'autumn', 'winter'] as const;
@@ -48,7 +48,7 @@ const rs = sortedRoutes();
               const photo = pl?.photos?.[0] ? img(pl.photos[0], 640) : null;
               return (
                 <li class="sz__item reveal" style={`--d:${Math.min(i, 5) * 70}ms`}>
-                  {photo && <img class="sz__img" src={photo} alt="" loading="lazy" decoding="async" />}
+                  {photo && <img class="sz__img" src={photo} alt="" loading="lazy" decoding="async" style={focusStyle(pl?.photos?.[0])} />}
                   <div class="stack" style="--stack-gap:8px; min-width:0">
                     <p class="sz__when">{it.when}</p>
                     <h3 class="h3">{it.title}</h3>

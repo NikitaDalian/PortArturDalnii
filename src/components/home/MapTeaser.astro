@@ -1,6 +1,6 @@
 ---
 // Блок карты: план Дальнего, короткий текст, ссылка на карту и список маршрутов.
-import { href, img, routes } from '../../lib/data';
+import { href, img, focusStyle, routes } from '../../lib/data';
 const plan = img(68);
 const transport: Record<string, string> = { walk: 'пешком', car: 'на машине', mixed: 'смешанный' };
 const list = routes.slice(0, 4).map((r) => ({
@@ -13,7 +13,7 @@ const list = routes.slice(0, 4).map((r) => ({
 <section class="section container" style="padding-top:0" aria-labelledby="map-h">
   <div class="maptease reveal">
     <figure class="maptease__media">
-      <img src={plan} alt="План города Дальнего 1900 года: порт, Европейский и Китайский город, круглая Николаевская площадь" width="1200" height="953" loading="lazy" decoding="async" />
+      <img src={plan} alt="План города Дальнего 1900 года: порт, Европейский и Китайский город, круглая Николаевская площадь" width="1200" height="953" loading="lazy" decoding="async" style={focusStyle(68)} />
     </figure>
     <div class="maptease__body stack" style="--stack-gap:18px">
       <p class="eyebrow">Карта и маршруты</p>

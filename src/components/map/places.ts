@@ -1,5 +1,5 @@
 // Серверные помощники разделов «Карта», «Места», «Маршруты» (только во frontmatter .astro).
-import { places, routes, people, href, img, layerByKey, photoMeta, placeBySlug, LAYERS, type Place, type Route } from '../../lib/data';
+import { places, routes, people, href, img, focusStyle, layerByKey, photoMeta, placeBySlug, LAYERS, type Place, type Route } from '../../lib/data';
 import { haversine, yandexRoute, type LL } from './geo';
 
 export const KINDS: Record<string, string> = {
@@ -81,7 +81,7 @@ export function mapPayload() {
       u: isUncertain(p),
       low: p.coord_confidence === 'low',
       t: p.summary,
-      ph: ((p.photos || []) as string[]).map((f) => ({ f: img(f), t: img(f, 640), a: photoCaption(f) })).filter((x) => x.f),
+      ph: ((p.photos || []) as string[]).map((f) => ({ f: img(f), t: img(f, 640), a: photoCaption(f), s: focusStyle(f) })).filter((x) => x.f),
       h: href.place(p.slug),
     })),
     routes: sortedRoutes().map((r) => ({

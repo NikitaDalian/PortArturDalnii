@@ -1,7 +1,7 @@
 ---
 // Крупная карточка книги для блока «С чего начать»: обложка + вердикт.
 // transition:name не ставим: та же книга есть в каталоге ниже, а имя перехода должно быть уникальным на странице.
-import { href, img, BOOK_LEVELS, type Book } from '../../lib/data';
+import { href, img, focusStyle, BOOK_LEVELS, type Book } from '../../lib/data';
 import { kindLabel } from './labels';
 interface Props { b: Book }
 const { b } = Astro.props;
@@ -10,7 +10,7 @@ const cover = img(b.cover);
 ---
 <a href={href.book(b.slug)} class="book-feat">
   {cover
-    ? <img class="book-feat__cover" src={cover} alt={`Обложка книги «${b.title}»`} loading="lazy" decoding="async" />
+    ? <img class="book-feat__cover" src={cover} alt={`Обложка книги «${b.title}»`} loading="lazy" decoding="async" style={focusStyle(b.cover)} />
     : <span class="book-feat__cover book-feat__ph" aria-hidden="true"></span>}
   <span class="stack book-feat__body" style="--stack-gap:10px">
     <span class="tag" style={`background:${lvl.color}`}>{lvl.label}</span>

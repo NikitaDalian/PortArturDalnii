@@ -13,9 +13,10 @@ interface Props {
   caption?: string;
   transitionName?: string;    // для морфинга картинки между списком и страницей
   coastFill?: string;
+  imageStyle?: string;        // object-position/object-fit из focusStyle()
   imageMeta?: boolean;        // отдать картинку в результаты поиска (data-pagefind-meta)
 }
-const { title, eyebrow, lead, crumbs = [], image = null, imageAlt = '', caption, transitionName, coastFill, imageMeta = false } = Astro.props;
+const { title, eyebrow, lead, crumbs = [], image = null, imageAlt = '', caption, transitionName, coastFill, imageMeta = false, imageStyle } = Astro.props;
 ---
 <section class="page-hero page-top dark">
   <div class="container page-hero__inner page-top__inner" class:list={[{ 'has-img': image }]}>
@@ -28,7 +29,7 @@ const { title, eyebrow, lead, crumbs = [], image = null, imageAlt = '', caption,
     </div>
     {image && (
       <figure class="page-hero__fig">
-        <img src={image} alt={imageAlt} transition:name={transitionName} loading="eager" decoding="async" data-pagefind-meta={imageMeta ? 'image[src], image_alt[alt]' : undefined} />
+        <img src={image} alt={imageAlt} style={imageStyle} transition:name={transitionName} loading="eager" decoding="async" data-pagefind-meta={imageMeta ? 'image[src], image_alt[alt]' : undefined} />
         {caption && <figcaption>{caption}</figcaption>}
       </figure>
     )}
@@ -41,5 +42,5 @@ const { title, eyebrow, lead, crumbs = [], image = null, imageAlt = '', caption,
   .page-hero__text { flex: 1 1 520px; min-width: 0; }
   .page-hero__title { overflow-wrap: break-word; hyphens: auto; }
   .page-hero__fig { flex: 0 1 420px; min-width: 0; }
-  .page-hero__fig img { width: 100%; max-height: 420px; object-fit: cover; }
+  .page-hero__fig img { width: 100%; max-height: 420px; object-fit: cover; background: var(--navy-2); }
 </style>

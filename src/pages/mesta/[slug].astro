@@ -8,7 +8,7 @@ import Unsure from '../../components/Unsure.astro';
 import Coast from '../../components/Coast.astro';
 import MiniMap from '../../components/map/MiniMap.astro';
 import Gallery from '../../components/map/Gallery.astro';
-import { places, href, img, articlesOf, amapUrl, yandexUrl, layerByKey, plural, type Place } from '../../lib/data';
+import { places, href, img, focusStyle, articlesOf, amapUrl, yandexUrl, layerByKey, plural, type Place } from '../../lib/data';
 import { KINDS, CITIES, SEASONS, placeLayers, isUncertain, routesThrough, peopleAt, nearest, photoCaption } from '../../components/map/places';
 import { fmtKm } from '../../components/map/geo';
 
@@ -36,6 +36,7 @@ const city = CITIES[p.city] ?? '';
     lead={p.name_now ?? undefined}
     crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Карта', href: href.map() }, { label: p.name }]}
     image={img(cover)}
+    imageStyle={focusStyle(cover)}
     imageAlt={cover ? photoCaption(cover) || p.name : ''}
     caption={cover ? photoCaption(cover) : undefined}
     transitionName={`place-${p.slug}`}

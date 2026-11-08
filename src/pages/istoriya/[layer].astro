@@ -7,7 +7,7 @@ import PersonRow from '../../components/PersonRow.astro';
 import PlaceCard from '../../components/PlaceCard.astro';
 import Timeline from '../../components/layers/Timeline.astro';
 import KeyDates from '../../components/layers/KeyDates.astro';
-import { href, img, url, plural, TYPES, LAYERS } from '../../lib/data';
+import { href, img, focusStyle, url, plural, TYPES, LAYERS } from '../../lib/data';
 import { layerText, layerArticles, layerPeople, layerPlaces, layerArt } from '../../components/layers/layers';
 
 export function getStaticPaths() {
@@ -59,7 +59,7 @@ const placesTitle = key === 'modern' ? 'Где искать следы сего�
         </div>
         {cover && photo && (
           <figure>
-            <img src={photo} alt={text.imageAlt} loading="lazy" decoding="async" style="width:100%; max-height:480px; object-fit:cover" />
+            <img src={photo} alt={text.imageAlt} loading="lazy" decoding="async" style={`width:100%; max-height:480px; background:var(--navy-2); ${focusStyle(text.image)}`} />
             {text.caption && <figcaption>{text.caption}</figcaption>}
           </figure>
         )}

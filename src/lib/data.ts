@@ -10,6 +10,7 @@ import seasonsJson from '../data/seasons.json';
 import seriesJson from '../data/series.json';
 import photosJson from '../data/photos.json';
 import termsJson from '../data/index_terms.json';
+import focusJson from '../data/focus.json';
 
 export type LayerKey = 'pre1898' | 'russian' | 'japanese' | 'soviet' | 'modern';
 export type Article = (typeof articlesJson)[number];
@@ -161,6 +162,18 @@ export function img(file: string | number | null | undefined, size: 'full' | 640
   if (!id) return null;
   return url(`/img/p/${id}${size === 640 ? '-640' : ''}.webp`);
 }
+const photoId = (file: string | number | null | undefined): string | null =>
+  file === null || file === undefined ? null : typeof file === 'number' ? String(file) : (String(file).match(/photo_(\d+)@/)?.[1] ?? (/^\d+$/.test(String(file)) ? String(file) : null));
+/** Точка фокуса и режим показа фото (src/data/focus.json). position → object-position, fit → object-fit. */
+export function focus(file: string | number | null | undefined): { position: string; fit: 'cover' | 'contain' } {
+  const f = (focusJson as Record<string, { x: number; y: number; fit: string }>)[photoId(file) ?? ''];
+  return f ? { position: `${f.x}% ${f.y}%`, fit: f.fit === 'contain' ? 'contain' : 'cover' } : { position: '50% 50%', fit: 'cover' };
+}
+/** Готовая строка для атрибута style: object-position + object-fit. */
+export const focusStyle = (file: string | number | null | undefined) => {
+  const f = focus(file);
+  return `object-position:${f.position};object-fit:${f.fit}`;
+};
 export const photoMeta = (file: string) => photos.find((p) => p.file === file);
 export const authorImg = (name: string) => url(`/img/authors/${name}.webp`);
 

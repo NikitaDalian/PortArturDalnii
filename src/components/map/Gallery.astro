@@ -1,10 +1,10 @@
 ---
 // Галерея фотографий места с лайтбоксом (<dialog>), листание стрелками и свайпом.
-import { img } from '../../lib/data';
+import { img, focusStyle } from '../../lib/data';
 import { photoCaption } from './places';
 interface Props { files: string[]; title: string }
 const { files, title } = Astro.props;
-const items = files.map((f) => ({ full: img(f), thumb: img(f, 640), cap: photoCaption(f) })).filter((x) => x.full);
+const items = files.map((f) => ({ full: img(f), thumb: img(f, 640), cap: photoCaption(f), st: focusStyle(f) })).filter((x) => x.full);
 ---
 {items.length > 0 && (
   <div class="pgal" data-pgal>
@@ -12,7 +12,7 @@ const items = files.map((f) => ({ full: img(f), thumb: img(f, 640), cap: photoCa
       {items.map((x, i) => (
         <li>
           <button type="button" class="pgal__btn" data-i={i} aria-label={`Открыть фото ${i + 1} из ${items.length}${x.cap ? `: ${x.cap}` : ''}`}>
-            <img src={x.thumb} alt="" loading="lazy" decoding="async" />
+            <img src={x.thumb} alt="" loading="lazy" decoding="async" style={x.st} />
           </button>
         </li>
       ))}

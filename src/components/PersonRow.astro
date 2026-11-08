@@ -1,6 +1,6 @@
 ---
 // Строка персоны (как в списке «Лица»). Работает на тёмном и светлом фоне.
-import { href, img, initials as toInitials, COUNTRIES, type Person } from '../lib/data';
+import { href, img, focusStyle, initials as toInitials, COUNTRIES, type Person } from '../lib/data';
 interface Props { p: Person; size?: 'md' | 'sm' }
 const { p, size = 'md' } = Astro.props;
 const c = COUNTRIES[p.country] ?? COUNTRIES.other;
@@ -9,7 +9,7 @@ const initials = toInitials(p.name);
 ---
 <a href={href.person(p.slug)} class:list={['row', 'person-row', `person-row--${size}`]} data-country={p.country} data-group={p.group}>
   {portrait
-    ? <img class="person-row__img bw" src={portrait} alt="" loading="lazy" decoding="async" transition:name={`person-${p.slug}`} />
+    ? <img class="person-row__img bw" src={portrait} alt="" loading="lazy" decoding="async" transition:name={`person-${p.slug}`} style={focusStyle(p.portrait)} />
     : <span class="person-row__img person-row__ph" aria-hidden="true">{initials}</span>}
   <span class="stack" style="--stack-gap:4px; min-width:0">
     <span class="row__title person-row__name">{p.short || p.name}</span>
@@ -19,7 +19,7 @@ const initials = toInitials(p.name);
 </a>
 
 <style>
-  .person-row__img { flex: 0 0 72px; width: 72px; height: 90px; object-fit: cover; object-position: top; background: var(--frost); }
+  .person-row__img { flex: 0 0 72px; width: 72px; height: 90px; background: var(--frost); }
   .person-row__ph { display: flex; align-items: flex-end; padding: 8px; font-size: 26px; font-weight: 800; color: var(--line-2); }
   :global(.dark) .person-row__ph { background: var(--navy-2); color: var(--sea); }
   .person-row__name { font-size: 21px; font-weight: 700; }

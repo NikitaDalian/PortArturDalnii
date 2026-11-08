@@ -1,7 +1,7 @@
 ---
 // Элемент каталога заметок. Один и тот же HTML показывается карточкой или строкой —
 // вид задаёт класс родителя (.nc-list--grid / .nc-list--rows).
-import { href, img, entity, TYPES, fmtDateShort, type Article } from '../../lib/data';
+import { href, img, focusStyle, entity, TYPES, fmtDateShort, type Article } from '../../lib/data';
 interface Props { a: Article }
 const { a } = Astro.props;
 const t = TYPES[a.type] ?? TYPES.event;
@@ -28,7 +28,7 @@ const text = `${a.title} ${a.dek} ${allNames}`.toLowerCase().replace(/ё/g, 'е'
   <a href={href.note(a.slug)} class="nc-link" style={`--tc:${t.color}`}>
     <span class="nc-media">
       {cover
-        ? <img src={cover} alt="" loading="lazy" decoding="async" transition:name={`note-${a.slug}`} />
+        ? <img src={cover} alt="" loading="lazy" decoding="async" transition:name={`note-${a.slug}`} style={focusStyle(a.cover)} />
         : <span class="nc-ph"><span>{t.label}</span></span>}
     </span>
     <span class="nc-bar" aria-hidden="true"></span>

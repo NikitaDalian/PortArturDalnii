@@ -9,7 +9,7 @@ import TypeTag from '../../components/notes/TypeTag.astro';
 import PhotoGallery from '../../components/notes/PhotoGallery.astro';
 import { prevNext, readAlso } from '../../components/notes/lib';
 import {
-  articles, articleBySlug, seriesBySlug, articlesOf, layerByKey, href, img, tgPost, fmtDate,
+  articles, articleBySlug, seriesBySlug, articlesOf, layerByKey, href, img, focusStyle, tgPost, fmtDate,
   TYPES, photoMeta, noteRelations, type Article,
 } from '../../lib/data';
 
@@ -53,7 +53,7 @@ const hasRelated = rel.people.length + rel.places.length + rel.books.length > 0;
       </div>
       {cover && (
         <figure class="nh__fig">
-          <img src={cover} alt={coverAlt} transition:name={`note-${a.slug}`} loading="eager" decoding="async" data-pagefind-meta="image[src], image_alt[alt]" />
+          <img src={cover} alt={coverAlt} transition:name={`note-${a.slug}`} style={focusStyle(a.cover)} loading="eager" decoding="async" data-pagefind-meta="image[src], image_alt[alt]" />
         </figure>
       )}
     </div>

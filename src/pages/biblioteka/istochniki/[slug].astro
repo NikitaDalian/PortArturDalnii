@@ -7,7 +7,7 @@ import TgButton from '../../../components/TgButton.astro';
 import Related from '../../../components/Related.astro';
 import SourceCard from '../../../components/library/SourceCard.astro';
 import { sourceKindLabel, peopleOf, similarSources } from '../../../components/library/labels';
-import { sources, href, img, articlesOf, type Source } from '../../../lib/data';
+import { sources, href, img, focusStyle, articlesOf, type Source } from '../../../lib/data';
 
 export function getStaticPaths() {
   return sources.map((s) => ({ params: { slug: s.slug }, props: { s } }));
@@ -49,7 +49,7 @@ const description = s.annotation ? s.annotation.slice(0, 180) : `${kind}: ${s.ti
       </div>
       {pic && (
         <figure class="src-hero__fig">
-          <img src={pic} alt={s.title} transition:name={`source-${s.slug}`} loading="eager" decoding="async" data-pagefind-meta="image[src], image_alt[alt]" />
+          <img src={pic} alt={s.title} transition:name={`source-${s.slug}`} style={focusStyle(s.image)} loading="eager" decoding="async" data-pagefind-meta="image[src], image_alt[alt]" />
         </figure>
       )}
     </div>

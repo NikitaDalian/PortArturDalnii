@@ -1,6 +1,6 @@
 ---
 // Карточка заметки. variant: 'card' — с картинкой; 'row' — компактная строка; 'feature' — крупная.
-import { href, img, TYPES, fmtDateShort, type Article } from '../lib/data';
+import { href, img, focusStyle, TYPES, fmtDateShort, type Article } from '../lib/data';
 interface Props { a: Article; variant?: 'card' | 'row' | 'feature'; showSummary?: boolean }
 const { a, variant = 'card', showSummary = false } = Astro.props;
 const type = TYPES[a.type] ?? TYPES.event;
@@ -15,13 +15,13 @@ const meta = `${type.label} · ${fmtDateShort(a.date)} · ${a.read_min} мин`;
       <span class="row__title art-row__title">{a.title}</span>
       {showSummary && <span class="muted art-row__dek">{a.dek}</span>}
     </span>
-    {cover && <img class="art-row__img" src={cover} alt="" loading="lazy" decoding="async" transition:name={`note-${a.slug}`} />}
+    {cover && <img class="art-row__img" src={cover} alt="" loading="lazy" decoding="async" transition:name={`note-${a.slug}`} style={focusStyle(a.cover)} />}
   </a>
 ) : (
   <a href={href.note(a.slug)} class:list={['card', { 'card--feature': variant === 'feature' }]}>
     <div class="card__media">
       {cover
-        ? <img class="card__img" src={variant === 'feature' ? img(a.cover) : cover} alt="" loading="lazy" decoding="async" transition:name={`note-${a.slug}`} />
+        ? <img class="card__img" src={variant === 'feature' ? img(a.cover) : cover} alt="" loading="lazy" decoding="async" transition:name={`note-${a.slug}`} style={focusStyle(a.cover)} />
         : <div class="card__img art-ph" style={`--c:${type.color}`}><span>{type.label}</span></div>}
     </div>
     <span class="meta">{meta}</span>
