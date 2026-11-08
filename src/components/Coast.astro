@@ -1,11 +1,22 @@
 ---
-// Фирменный разделитель в конце тёмной секции: два плавных ряда сопок, как на иллюстрациях сайта.
-// fill — цвет следующей секции (по умолчанию фон страницы). variant="flat" — ровный край без линии.
+// Разделитель в конце тёмной секции — сопки.
+// Если есть нарисованная полоса (public/img/gen/coast-hills.webp, её готовит scripts/build_coast.py), используется она:
+// небо и дальние ряды непрозрачны, ближний ряд прозрачен, поэтому под ним виден цвет следующего блока (fill).
+// Если картинки ещё нет — запасной вариант из двух рядов, нарисованных кодом.
+// fill — цвет следующего блока (по умолчанию фон страницы). variant="flat" — ровный край без линии.
+import { art } from '../lib/art';
 interface Props { fill?: string; flip?: boolean; variant?: 'hills' | 'flat' }
 const { fill = 'var(--ice)', flip = false, variant = 'hills' } = Astro.props;
+const big = variant === 'hills' ? art('coast-hills', 'full') : null;
+const small = variant === 'hills' && big ? art('coast-hills', 1280) : null;
+const hasImage = Boolean(big);
 ---
-{variant === 'flat' ? null : (
-  <svg class="coast" viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true" style={flip ? 'transform:scaleY(-1)' : undefined}>
+{variant === 'flat' ? null : hasImage ? (
+  <div class="coast coast--img" style={`background:${fill}`} aria-hidden="true">
+    <img class="coast__pic" src={big} srcset={small ? `${small} 1280w, ${big} 2560w` : undefined} sizes="100vw" alt="" loading="lazy" decoding="async" />
+  </div>
+) : (
+  <svg class="coast coast--svg" viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true" style={flip ? 'transform:scaleY(-1)' : undefined}>
     <g class="coast__back">
       <path d="M-40 30 C 80 16, 190 10, 320 22 S 560 40, 700 24 S 930 6, 1070 18 S 1320 38, 1480 20 V56 H-40 Z" />
     </g>
@@ -14,12 +25,23 @@ const { fill = 'var(--ice)', flip = false, variant = 'hills' } = Astro.props;
 )}
 
 <style>
-  .coast { display: block; width: 100%; height: clamp(22px, 3.6vw, 52px); margin-top: -1px; overflow: visible; }
+  .coast { display: block; width: 100%; margin-top: -1px; overflow: hidden; }
+  .coast--svg { height: clamp(22px, 3.6vw, 52px); overflow: visible; }
   .coast__back path { fill: var(--sea); opacity: .55; }
+
+  /* нарисованная полоса: высота задаётся самой картинкой, чтобы под небом не появилась полоса чужого цвета */
+  .coast--img { position: relative; line-height: 0; }
+  .coast__pic { display: block; width: 108%; max-width: none; height: auto; margin-left: -4%; }
+
+  /* при прокрутке сопки чуть смещаются относительно страницы */
   @supports (animation-timeline: view()) {
-    .coast__back { animation: coastDrift linear both; animation-timeline: view(); animation-range: entry 0% exit 100%; }
-    @keyframes coastDrift { from { transform: translateX(-18px); } to { transform: translateX(18px); } }
+    .coast__back, .coast__pic { animation: coastDrift linear both; animation-timeline: view(); animation-range: entry 0% exit 100%; }
+    @keyframes coastDrift { from { transform: translateX(-2.6%); } to { transform: translateX(2.6%); } }
   }
-  @media (max-width: 720px) { .coast__back { display: none; } }
-  @media (prefers-reduced-motion: reduce) { .coast__back { animation: none; } }
+  @media (max-width: 720px) {
+    .coast__back { display: none; }
+    /* на телефоне полоса крупнее и обрезается по бокам, иначе сопки превращаются в тонкую нитку */
+    .coast__pic { width: 220%; margin-left: -60%; }
+  }
+  @media (prefers-reduced-motion: reduce) { .coast__back, .coast__pic { animation: none; } }
 </style>
