@@ -1,0 +1,38 @@
+---
+// «Как устроен сайт»: разделы с короткими пояснениями и реальными счётчиками.
+import { articles, people, places, books, sources, routes, series, href, plural } from '../../lib/data';
+const n = (x: number, a: string, b: string, c: string) => `${x} ${plural(x, a, b, c)}`;
+const items = [
+  { title: 'Слои истории', href: href.layers(), text: 'Пять периодов: от бухты Талиенвань до сегодняшнего Даляня. В каждом — события, люди и места своего времени.' },
+  { title: 'Лица', href: href.people(), text: `${n(people.length, 'персона', 'персоны', 'персон')}: кто строил эти города, защищал и осаждал их, кто о них писал.` },
+  { title: 'Карта', href: href.map(), text: `${n(places.length, 'место', 'места', 'мест')} на карте, с фотографиями, историей и подсказками, как добраться.` },
+  { title: 'Маршруты', href: href.routes(), text: `${n(routes.length, 'маршрут', 'маршрута', 'маршрутов')} пешком и на машине, с остановками и практическими советами.` },
+  { title: 'Библиотека', href: href.library(), text: `${n(books.length, 'книга', 'книги', 'книг')} и ${n(sources.length, 'источник', 'источника', 'источников')}: аннотация, оценка и ссылка на рецензию в канале.` },
+  { title: 'Заметки', href: href.notes(), text: `${n(articles.length, 'заметка', 'заметки', 'заметок')} канала с аннотациями и фактами, ${n(series.length, 'серия', 'серии', 'серий')} постов, которые лучше читать подряд.` },
+  { title: 'Сезоны', href: href.seasons(), text: 'Когда ехать: цветение, море, осенние форты и памятные даты осады.' },
+  { title: 'Указатель А–Я', href: href.index(), text: 'Все имена, места и книги, которые встречаются на сайте, в одном алфавитном списке.' },
+  { title: 'Поиск', href: href.search(), text: 'Полнотекстовый поиск по заметкам, людям, местам и книгам.' },
+];
+---
+<ul class="guide" role="list">
+  {items.map((i, k) => (
+    <li class="reveal" style={`--d:${(k % 3) * 70}ms`}>
+      <a class="guide__item" href={i.href}>
+        <span class="guide__title">{i.title}</span>
+        <span class="guide__text">{i.text}</span>
+      </a>
+    </li>
+  ))}
+</ul>
+
+<style>
+  .guide { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; background: var(--line);
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); }
+  .guide li { display: flex; }
+  .guide__item { flex: 1; display: flex; flex-direction: column; gap: 8px; padding: 24px; background: var(--paper); transition: background .25s; }
+  .guide__item:hover { background: var(--frost); }
+  .guide__title { font-size: 20px; font-weight: 700; }
+  .guide__item:hover .guide__title { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; text-decoration-color: var(--accent); }
+  .guide__text { font-size: 16px; line-height: 1.5; color: var(--ink-2); }
+  @media (max-width: 720px) { .guide__item { padding: 18px 16px; } }
+</style>

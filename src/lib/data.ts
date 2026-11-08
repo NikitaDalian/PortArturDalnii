@@ -46,7 +46,14 @@ export const LAYERS: { key: LayerKey; slug: string; years: string; title: string
   { key: 'soviet', slug: '1945-1955', years: '1945–1955', title: 'Советский Порт-Артур', short: 'Советский период' },
   { key: 'modern', slug: 'segodnya', years: 'после 1955', title: 'Люйда, затем Далянь', short: 'Сегодня' },
 ];
-export const layerByKey = (k: string) => LAYERS.find((l) => l.key === k);
+// в places.json слой «до 1898» записан как 'chinese'
+const LAYER_ALIASES: Record<string, LayerKey> = { chinese: 'pre1898' };
+export const layerByKey = (k: string) => LAYERS.find((l) => l.key === (LAYER_ALIASES[k] ?? k));
+/** Инициалы для плашки без портрета: «Анатолий Михайлович Стессель» → «АС». */
+export const initials = (name: string) => {
+  const w = name.replace(/\(.*?\)/g, '').trim().split(/\s+/).filter((x) => /^[A-ZА-ЯЁ]/.test(x));
+  return w.length > 1 ? w[0][0] + w[w.length - 1][0] : (w[0]?.[0] ?? name[0]);
+};
 
 export const TYPES: Record<string, { label: string; color: string }> = {
   event: { label: 'События', color: 'var(--t-event)' },
@@ -87,6 +94,7 @@ export const href = {
   source: (s: string) => url(`/biblioteka/istochniki/${s}/`),
   notes: () => url('/zametki/'),
   note: (s: string) => url(`/zametki/${s}/`),
+  seriesList: () => url('/zametki/serii/'),
   series: (s: string) => url(`/zametki/serii/${s}/`),
   map: (place?: string) => url('/karta/' + (place ? `#${place}` : '')),
   place: (s: string) => url(`/mesta/${s}/`),

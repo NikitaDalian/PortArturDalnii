@@ -1,0 +1,88 @@
+---
+// Галерея фотографий места с лайтбоксом (<dialog>), листание стрелками и свайпом.
+import { img } from '../../lib/data';
+import { photoCaption } from './places';
+interface Props { files: string[]; title: string }
+const { files, title } = Astro.props;
+const items = files.map((f) => ({ full: img(f), thumb: img(f, 640), cap: photoCaption(f) })).filter((x) => x.full);
+---
+{items.length > 0 && (
+  <div class="pgal" data-pgal>
+    <ul class="pgal__grid" role="list">
+      {items.map((x, i) => (
+        <li>
+          <button type="button" class="pgal__btn" data-i={i} aria-label={`Открыть фото ${i + 1} из ${items.length}${x.cap ? `: ${x.cap}` : ''}`}>
+            <img src={x.thumb} alt="" loading="lazy" decoding="async" />
+          </button>
+        </li>
+      ))}
+    </ul>
+    <dialog class="pgal__dlg" aria-label={`Фотографии: ${title}`}>
+      <div class="pgal__stage">
+        <img class="pgal__img" alt="" />
+      </div>
+      <p class="pgal__cap"><span class="pgal__n"></span> <span class="pgal__t"></span></p>
+      <button type="button" class="pgal__ctl pgal__close" data-close aria-label="Закрыть"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+      {items.length > 1 && <>
+        <button type="button" class="pgal__ctl pgal__prev" data-step="-1" aria-label="Предыдущее фото"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg></button>
+        <button type="button" class="pgal__ctl pgal__next" data-step="1" aria-label="Следующее фото"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></button>
+      </>}
+      <script type="application/json" set:html={JSON.stringify(items).replace(/</g, '\\u003c')}></script>
+    </dialog>
+  </div>
+)}
+
+<script>
+  function init() {
+    document.querySelectorAll<HTMLElement>('[data-pgal]:not([data-ready])').forEach((root) => {
+      root.dataset.ready = '1';
+      const dlg = root.querySelector('dialog')!;
+      const items: { full: string; cap: string }[] = JSON.parse(dlg.querySelector('script')!.textContent || '[]');
+      const im = dlg.querySelector<HTMLImageElement>('.pgal__img')!;
+      const n = dlg.querySelector('.pgal__n')!, t = dlg.querySelector('.pgal__t')!;
+      let i = 0;
+      const show = (k: number) => {
+        i = (k + items.length) % items.length;
+        im.src = items[i].full; im.alt = items[i].cap || '';
+        n.textContent = `${i + 1} / ${items.length}`; t.textContent = items[i].cap || '';
+      };
+      root.querySelectorAll<HTMLElement>('.pgal__btn').forEach((b) => b.addEventListener('click', () => { show(Number(b.dataset.i)); dlg.showModal(); }));
+      dlg.addEventListener('click', (e) => {
+        const el = e.target as HTMLElement;
+        const step = el.closest<HTMLElement>('[data-step]');
+        if (step) show(i + Number(step.dataset.step));
+        else if (el.closest('[data-close]') || el === dlg) dlg.close();
+      });
+      dlg.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') show(i + 1);
+        if (e.key === 'ArrowLeft') show(i - 1);
+      });
+      let x0: number | null = null;
+      dlg.addEventListener('pointerdown', (e) => { x0 = e.clientX; });
+      dlg.addEventListener('pointerup', (e) => {
+        if (x0 === null) return;
+        const dx = e.clientX - x0; x0 = null;
+        if (Math.abs(dx) > 50 && items.length > 1) show(i + (dx < 0 ? 1 : -1));
+      });
+    });
+  }
+  document.addEventListener('astro:page-load', init);
+</script>
+
+<style>
+  .pgal__grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; grid-template-columns: repeat(auto-fill, minmax(min(160px, 45%), 1fr)); }
+  .pgal__btn { display: block; width: 100%; padding: 0; border: 0; cursor: zoom-in; background: var(--frost); overflow: hidden; }
+  .pgal__btn img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; transition: transform .5s var(--ease); }
+  .pgal__btn:hover img { transform: scale(1.04); }
+  .pgal__dlg { width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: rgba(6, 18, 30, .96); color: #fff; }
+  .pgal__dlg::backdrop { background: rgba(6, 18, 30, .8); }
+  .pgal__dlg[open] { display: flex; flex-direction: column; }
+  .pgal__stage { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; padding: 64px 16px 8px; }
+  .pgal__img { max-width: 100%; max-height: 100%; object-fit: contain; }
+  .pgal__cap { padding: 8px 16px calc(20px + env(safe-area-inset-bottom)); font-size: 14px; line-height: 1.45; color: var(--mist); text-align: center; }
+  .pgal__n { font-weight: 700; color: #fff; margin-right: 6px; }
+  .pgal__ctl { position: absolute; width: 48px; height: 48px; border-radius: 24px; border: 1px solid var(--sea); background: rgba(11, 34, 56, .7); color: #fff; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+  .pgal__close { top: 12px; right: 12px; }
+  .pgal__prev { left: 12px; top: 50%; translate: 0 -50%; }
+  .pgal__next { right: 12px; top: 50%; translate: 0 -50%; }
+</style>

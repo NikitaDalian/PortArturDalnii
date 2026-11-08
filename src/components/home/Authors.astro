@@ -1,0 +1,55 @@
+---
+// «Авторы» на главной: Виктория (фото, текст, цитата) и Оксана (кружок с буквой).
+import { authorImg, href } from '../../lib/data';
+---
+<section class="section container" style="padding-top:0" aria-labelledby="authors-h">
+  <h2 id="authors-h" class="h2 reveal" style="margin-bottom:28px">Авторы</h2>
+  <div class="authors">
+    <article class="author author--main reveal">
+      <img class="author__photo" src={authorImg('viktoriia')} alt="Виктория, автор канала" width="640" height="640" loading="lazy" decoding="async" />
+      <div class="author__body stack" style="--stack-gap:12px">
+        <p class="eyebrow">Автор канала</p>
+        <h3 class="author__name">Виктория</h3>
+        <p class="muted author__text">
+          Историк и преподаватель истории, 14 лет работала научным сотрудником Государственного архива Свердловской области.
+          Три года живёт в Даляне. Канал начался с экскурсии для друзей по местам обороны Порт-Артура:
+          хотела немного почитать перед прогулкой и увлеклась всерьёз.
+        </p>
+        <blockquote class="quote author__quote">«Хочется говорить о войне спокойно и честно, без лишнего пафоса, с опорой на источники».</blockquote>
+        <a class="link author__more" href={`${href.about()}#viktoriia`}>Подробнее об авторе</a>
+      </div>
+    </article>
+    <article class="author author--side panel panel--frost reveal" style="--d:100ms">
+      <span class="author__initial" aria-hidden="true">О</span>
+      <div class="stack" style="--stack-gap:8px; min-width:0">
+        <p class="eyebrow">Автор проекта</p>
+        <h3 class="author__name">Оксана</h3>
+        <p class="muted author__text">Руководитель Русского клуба Даляня.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<style>
+  .authors { display: flex; flex-wrap: wrap; gap: 24px; }
+  .author--main { flex: 3 1 560px; min-width: 0; display: flex; flex-wrap: wrap; background: var(--paper); }
+  .author__photo { flex: 1 1 240px; min-width: 0; width: 100%; max-height: 420px; aspect-ratio: 1 / 1; object-fit: cover; object-position: center 25%; }
+  .author__body { flex: 1.4 1 300px; min-width: 0; padding: clamp(20px, 3vw, 32px); }
+  .author__name { font-size: clamp(24px, 2.2vw, 28px); font-weight: 800; }
+  .author__text { font-size: 16px; line-height: 1.55; }
+  .author__quote { margin: 4px 0 0; font-size: 17px; }
+  .author__more { margin-top: auto; align-self: flex-start; }
+  .author--side { flex: 2 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 16px; }
+  .author__initial { flex: none; width: 96px; height: 96px; border-radius: 50%; background: var(--accent); color: #fff;
+    display: flex; align-items: center; justify-content: center; font-size: 32px; font-weight: 800; }
+  @media (max-width: 720px) {
+    .authors { gap: 12px; }
+    .author--main, .author--side { flex-basis: 100%; }
+    .author__photo { max-height: 300px; aspect-ratio: auto; height: 300px; flex-basis: 100%; }
+    .author--side { flex-direction: row; align-items: center; gap: 14px; }
+    .author__initial { width: 56px; height: 56px; font-size: 22px; }
+    .author--side .eyebrow { display: none; }
+    .author--side .author__name { font-size: 19px; }
+    .author__text { font-size: 15px; }
+  }
+</style>

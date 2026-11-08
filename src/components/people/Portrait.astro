@@ -1,0 +1,27 @@
+---
+// Крупный портрет персоны; если портрета нет — плашка с инициалами.
+import { img, type Person } from '../../lib/data';
+import { initials } from './relations';
+interface Props { p: Person; alt?: string }
+const { p, alt = p.name } = Astro.props;
+const src = img(p.portrait);
+---
+{src
+  ? <img class="portrait bw" src={src} alt={alt} loading="eager" decoding="async" transition:name={`person-${p.slug}`} />
+  : <div class="portrait portrait--ph" role="img" aria-label={`${p.name}: портрета нет`} transition:name={`person-${p.slug}`}>
+      <span class="portrait__ini" aria-hidden="true">{initials(p.name)}</span>
+      <span class="portrait__note" aria-hidden="true">портрета нет</span>
+    </div>}
+
+<style>
+  .portrait { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: top; background: var(--navy-2); }
+  .portrait--ph {
+    display: flex; flex-direction: column; justify-content: space-between; padding: clamp(12px, 2vw, 20px);
+    border: 1px solid var(--sea);
+    background:
+      repeating-linear-gradient(135deg, transparent 0 14px, rgba(143, 179, 201, .07) 14px 15px),
+      var(--navy-2);
+  }
+  .portrait__ini { font-size: clamp(44px, 7vw, 96px); font-weight: 800; line-height: 1; letter-spacing: -0.03em; color: var(--steel); }
+  .portrait__note { font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--steel); }
+</style>

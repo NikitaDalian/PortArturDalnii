@@ -1,0 +1,50 @@
+---
+// «Лица Порт-Артура»: тёмная секция, чипы стран (ведут в раздел «Лица» с фильтром), шесть персон.
+import PersonRow from '../PersonRow.astro';
+import Coast from '../Coast.astro';
+import { people, personBySlug, COUNTRIES, href, plural } from '../../lib/data';
+const picks = ['kondratenko', 'vitte', 'li-hunchzhan', 'kamimura', 'alekseev', 'saharov']
+  .map((s) => personBySlug.get(s)).filter(Boolean) as typeof people;
+const countries = Object.entries(COUNTRIES)
+  .map(([key, c]) => ({ key, label: c.label, n: people.filter((p) => p.country === key).length }))
+  .filter((c) => c.n > 0);
+const total = people.length;
+---
+<section class="dark people-tease" aria-labelledby="people-h">
+  <div class="container section">
+    <div class="section-head reveal" style="margin-bottom:12px">
+      <h2 id="people-h" class="h2">Лица Порт-Артура</h2>
+      <a class="link people-tease__all-top" href={href.people()}>Все {total} {plural(total, 'персона', 'персоны', 'персон')}</a>
+    </div>
+    <p class="lead reveal" style="--d:60ms; max-width:680px">
+      Русские, японцы, китайцы и один британский лейтенант. Те, кто строил эти города, защищал и осаждал их, и те, кто потом о них писал.
+    </p>
+    <nav class="chip-row people-tease__chips reveal" style="--d:120ms" aria-label="Лица по странам">
+      <a class="chip is-active" href={href.people()}>Все · {total}</a>
+      {countries.map((c) => (
+        <a class="chip" href={`${href.people()}?country=${c.key}`}>{c.label} · {c.n}</a>
+      ))}
+    </nav>
+    <div class="grid row-list people-tease__grid">
+      {picks.map((p, i) => (
+        <div class="reveal" style={`--d:${(i % 2) * 80 + Math.floor(i / 2) * 60}ms`}><PersonRow p={p} /></div>
+      ))}
+    </div>
+    <a class="btn btn--outline people-tease__all-btn" href={href.people()}>Все {total} {plural(total, 'персона', 'персоны', 'персон')}</a>
+  </div>
+  <Coast />
+</section>
+
+<style>
+  .people-tease .section { padding-bottom: calc(var(--section-y) * .6); }
+  .people-tease__chips { margin: 28px 0; }
+  .people-tease__grid { --min: 380px; --grid-gap: 0 48px; }
+  .people-tease__grid > div { display: flex; flex-direction: column; }
+  .people-tease__grid :global(.person-row) { flex: 1; }
+  .people-tease__all-btn { display: none; }
+  @media (max-width: 720px) {
+    .people-tease__chips { margin: 20px 0; }
+    .people-tease__all-top { display: none; }
+    .people-tease__all-btn { display: flex; margin-top: 24px; }
+  }
+</style>

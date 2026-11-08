@@ -1,0 +1,28 @@
+---
+// Навигация «предыдущий / следующий» по списку персон (по кругу).
+import { href, people, type Person } from '../../lib/data';
+interface Props { p: Person }
+const { p } = Astro.props;
+const i = people.findIndex((x) => x.slug === p.slug);
+const prev = people[(i - 1 + people.length) % people.length];
+const next = people[(i + 1) % people.length];
+---
+<nav class="pn" aria-label="Другие персоны">
+  <a class="pn__link" href={href.person(prev.slug)} rel="prev">
+    <span class="meta">← Предыдущий</span>
+    <span class="pn__name">{prev.name}</span>
+  </a>
+  <a class="pn__link pn__link--next" href={href.person(next.slug)} rel="next">
+    <span class="meta">Следующий →</span>
+    <span class="pn__name">{next.name}</span>
+  </a>
+</nav>
+
+<style>
+  .pn { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 0 48px; border-top: 1px solid var(--line); }
+  .pn__link { display: flex; flex-direction: column; gap: 6px; padding: 20px 0; border-bottom: 1px solid var(--line); min-height: 44px; }
+  .pn__link--next { text-align: right; align-items: flex-end; }
+  .pn__name { font-size: 20px; font-weight: 700; line-height: 1.2; }
+  .pn__link:hover .pn__name { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+  @media (max-width: 620px) { .pn__link--next { text-align: left; align-items: flex-start; } }
+</style>

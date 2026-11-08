@@ -1,0 +1,61 @@
+---
+import Base from '../../layouts/Base.astro';
+import MapApp from '../../components/map/MapApp.astro';
+import PlaceCard from '../../components/PlaceCard.astro';
+import { places, href, plural } from '../../lib/data';
+import { CITIES, sortedRoutes, routeAuthor, TRANSPORT } from '../../components/map/places';
+const groups = ['lushun', 'dalian', 'other'].map((c) => ({ c, xs: places.filter((p) => p.city === c) })).filter((g) => g.xs.length);
+const rs = sortedRoutes();
+---
+<Base title="Карта" description="Карта мест Порт-Артура и Дальнего: форты, вокзалы, кладбища, улицы. Фильтры по слоям истории, старый план крепости 1904 года и конструктор своего маршрута." section="map">
+  <h1 class="sr-only">Карта мест Порт-Артура и Дальнего</h1>
+  <MapApp />
+
+  <section class="section section--tight" aria-labelledby="k-routes">
+    <div class="container stack" style="--stack-gap:20px">
+      <div class="section-head" style="margin-bottom:0">
+        <div class="stack" style="--stack-gap:8px">
+          <h2 class="h2" id="k-routes">Маршруты на карте</h2>
+          <p class="muted">Готовый маршрут откроется на карте с линией и номерами остановок. Свой маршрут собирается кнопкой «Свой маршрут» над картой.</p>
+        </div>
+        <a class="link" href={href.routes()}>Все маршруты</a>
+      </div>
+      <ul class="k-routes" role="list">
+        {rs.map((r) => (
+          <li>
+            <a class="k-route" href={`${href.map()}?route=${r.slug}`}>
+              <span class="meta">{routeAuthor(r) ? `От авторов · ` : ''}{TRANSPORT[r.transport] ?? r.transport} · {r.duration}</span>
+              <span class="k-route__title">{r.title}</span>
+              <span class="k-route__go" aria-hidden="true">На карте →</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--tight paper" aria-labelledby="k-all">
+    <div class="container stack" style="--stack-gap:32px">
+      <div class="stack" style="--stack-gap:8px">
+        <h2 class="h2" id="k-all">Все места списком</h2>
+        <p class="muted">{places.length} {plural(places.length, 'место', 'места', 'мест')}. Координаты взяты из OpenStreetMap и постов канала; где стоит пометка «уточняется», проверьте точку на месте.</p>
+      </div>
+      {groups.map((g) => (
+        <div class="stack" style="--stack-gap:16px">
+          <h3 class="eyebrow">{CITIES[g.c]}</h3>
+          <div class="grid" style="--min:200px; --grid-gap:20px">
+            {g.xs.map((p) => <PlaceCard p={p} compact />)}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .k-routes { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); }
+  .k-route { display: flex; flex-direction: column; gap: 6px; height: 100%; padding: 18px 20px; background: var(--paper); border: 1px solid var(--line); transition: border-color .2s; }
+  .k-route:hover { border-color: var(--navy); }
+  .k-route__title { font-size: 19px; font-weight: 700; line-height: 1.25; }
+  .k-route__go { margin-top: auto; font-weight: 600; font-size: 15px; color: var(--accent); }
+</style>

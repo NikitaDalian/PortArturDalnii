@@ -1,0 +1,66 @@
+---
+// Блок карты: план Дальнего, короткий текст, ссылка на карту и список маршрутов.
+import { href, img, routes } from '../../lib/data';
+const plan = img(68);
+const transport: Record<string, string> = { walk: 'пешком', car: 'на машине', mixed: 'смешанный' };
+const list = routes.slice(0, 4).map((r) => ({
+  slug: r.slug,
+  title: r.title,
+  meta: [String(r.duration).replace(/\s*\(.*\)\s*/, ''), r.distance_km ? `${String(r.distance_km).replace('.', ',')} км` : '', transport[r.transport as string] ?? '']
+    .filter(Boolean).join(' · '),
+}));
+---
+<section class="section container" style="padding-top:0" aria-labelledby="map-h">
+  <div class="maptease reveal">
+    <figure class="maptease__media">
+      <img src={plan} alt="План города Дальнего 1900 года: порт, Европейский и Китайский город, круглая Николаевская площадь" width="1200" height="953" loading="lazy" decoding="async" />
+    </figure>
+    <div class="maptease__body stack" style="--stack-gap:18px">
+      <p class="eyebrow">Карта и маршруты</p>
+      <h2 id="map-h" class="h2 maptease__title">Дальний строили по&nbsp;циркулю</h2>
+      <p class="muted maptease__text">
+        Круглые площади, от которых лучами расходятся улицы. Николаевская площадь стала площадью Чжуншань,
+        но рисунок кварталов виден до сих пор. На карте отмечены места обоих городов — с фотографиями,
+        историей и тем, как туда добраться.
+      </p>
+      <ul class="routes" role="list">
+        {list.map((r) => (
+          <li>
+            <a class="route" href={href.route(r.slug)}>
+              <span class="route__title">{r.title}</span>
+              <span class="route__meta">{r.meta}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <div class="cluster" style="--cluster-gap:12px 24px">
+        <a class="btn btn--outline btn--sm" href={href.map()}>Открыть карту</a>
+        <a class="link" href={href.routes()}>Все маршруты</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .maptease { display: flex; flex-wrap: wrap; background: var(--paper); }
+  .maptease__media { flex: 1 1 560px; min-width: 0; overflow: hidden; background: var(--frost); }
+  .maptease__media img { width: 100%; height: 100%; min-height: 420px; object-fit: cover; transition: transform .8s var(--ease); }
+  .maptease:hover .maptease__media img { transform: scale(1.03); }
+  .maptease__body { flex: 1 1 420px; min-width: 0; padding: clamp(24px, 4vw, 48px) clamp(16px, 3.5vw, 44px); }
+  .maptease__title { font-size: clamp(26px, 2.8vw, 40px); }
+  .maptease__text { font-size: 18px; line-height: 1.55; }
+  .routes { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+  .routes li { border-bottom: 1px solid var(--line); }
+  .route { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; min-height: 56px; padding: 14px 0; }
+  .route__title { font-size: 18px; font-weight: 600; }
+  .route:hover .route__title { color: var(--accent); }
+  .route__meta { font-size: 15px; font-weight: 500; color: var(--ink-3); }
+  @media (max-width: 720px) {
+    .maptease { margin-inline: calc(var(--gutter) * -1); }
+    .maptease__media img { min-height: 0; height: 240px; }
+    .maptease__text { font-size: 16px; }
+    .route__title { font-size: 17px; }
+    .route__meta { font-size: 14px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .maptease__media img { transition: none; } }
+</style>

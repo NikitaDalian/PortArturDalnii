@@ -1,0 +1,96 @@
+---
+import Base from '../../../layouts/Base.astro';
+import PageHero from '../../../components/PageHero.astro';
+import Related from '../../../components/Related.astro';
+import TgButton from '../../../components/TgButton.astro';
+import TypeTag from '../../../components/notes/TypeTag.astro';
+import { series, seriesBySlug, articlesOf, href, img, url, fmtDate, plural, layerByKey } from '../../../lib/data';
+
+export function getStaticPaths() {
+  return series.map((s) => ({ params: { slug: s.slug } }));
+}
+const s = seriesBySlug.get(Astro.params.slug!)!;
+const items = articlesOf(s.articles);
+const uniq = (xs: string[]) => [...new Set(xs)];
+const ppl = uniq(items.flatMap((a) => a.people));
+const plc = uniq(items.flatMap((a) => a.places));
+const bks = uniq(items.flatMap((a) => a.books));
+const layers = uniq(items.flatMap((a) => a.layer)).map((k) => layerByKey(k)).filter(Boolean) as NonNullable<ReturnType<typeof layerByKey>>[];
+const readMin = items.reduce((n, a) => n + a.read_min, 0);
+const dates = items.map((a) => a.date).sort();
+const cover = items.find((a) => a.cover)?.cover ?? null;
+const others = series.filter((x) => x.slug !== s.slug);
+---
+<Base title={`Серия «${s.title}»`} description={`${items.length} ${plural(items.length, 'заметка', 'заметки', 'заметок')} по порядку: ${items.map((a) => a.title).join('; ')}.`} image={img(cover)} section="notes">
+  <PageHero
+    title={s.title}
+    eyebrow={`Серия · ${items.length} ${plural(items.length, 'часть', 'части', 'частей')} · ${readMin} мин`}
+    lead={dates[0] === dates[dates.length - 1] ? `Посты от ${fmtDate(dates[0])}.` : `Посты с ${fmtDate(dates[0])} по ${fmtDate(dates[dates.length - 1])}.`}
+    crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Заметки', href: href.notes() }, { label: 'Серии', href: url('/zametki/serii/') }, { label: s.title }]}
+  >
+    {layers.length > 0 && (
+      <div class="cluster">
+        {layers.map((l) => <a class="chip" href={href.layer(l.key)}>{l.years} · {l.short}</a>)}
+      </div>
+    )}
+  </PageHero>
+
+  <div class="container section--tight ss" data-pagefind-ignore="all">
+    <ol class="ss__list">
+      {items.map((a, i) => (
+        <li class="ss__item reveal" style={`--d:${Math.min(i, 3) * 80}ms`}>
+          <span class="ss__num" aria-hidden="true">{i + 1}</span>
+          <div class="ss__body">
+            <div class="cluster" style="--cluster-gap:6px 14px">
+              <TypeTag type={a.type} />
+              <span class="meta">{fmtDate(a.date)} · {a.read_min} мин</span>
+            </div>
+            <h2 class="h3"><a class="ss__title" href={href.note(a.slug)}><span class="sr-only">Часть {i + 1}. </span>{a.title}</a></h2>
+            {a.dek && <p class="muted">{a.dek}</p>}
+            <div class="cluster" style="--cluster-gap:8px 20px">
+              <a class="link" href={href.note(a.slug)}>Пересказ и факты</a>
+              <TgButton id={a.tg_ids[0]} label="В Telegram" variant="outline" />
+            </div>
+          </div>
+          {a.cover && (
+            <a class="ss__media" href={href.note(a.slug)} tabindex="-1" aria-hidden="true">
+              <img src={img(a.cover, 640)} alt="" loading="lazy" decoding="async" transition:name={`note-${a.slug}`} />
+            </a>
+          )}
+        </li>
+      ))}
+    </ol>
+
+    <aside class="ss__side stack" style="--stack-gap:36px" aria-label="Связи серии">
+      <Related people={ppl} places={plc} books={bks} title="Кто и что в серии" />
+      <nav class="stack" style="--stack-gap:10px" aria-label="Другие серии" data-pagefind-ignore>
+        <h2 class="eyebrow">Другие серии</h2>
+        <ul class="ss__others">
+          {others.map((o) => <li><a href={href.series(o.slug)}>{o.title}</a> <span class="meta">{o.articles.length}</span></li>)}
+        </ul>
+      </nav>
+    </aside>
+  </div>
+</Base>
+
+<style>
+  .ss { display: flex; flex-wrap: wrap; gap: 48px 64px; align-items: flex-start; }
+  .ss__list { flex: 1 1 600px; min-width: 0; max-width: 860px; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+  .ss__item { display: flex; gap: 20px; align-items: flex-start; padding: 28px 0; border-bottom: 1px solid var(--line); }
+  .ss__num { flex: 0 0 auto; min-width: 48px; font-size: clamp(36px, 4vw, 56px); font-weight: 800; line-height: .9; color: var(--accent); font-variant-numeric: tabular-nums; }
+  .ss__body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 10px; }
+  .ss__title:hover { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+  .ss__media { flex: 0 0 200px; overflow: hidden; background: var(--frost); }
+  .ss__media img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+  .ss__side { flex: 1 1 280px; min-width: 0; max-width: 400px; }
+  .ss__others { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; }
+  .ss__others li { display: flex; justify-content: space-between; gap: 12px; align-items: center; min-height: 44px; border-bottom: 1px solid var(--line); font-size: 15px; }
+  .ss__others a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  @media (max-width: 720px) {
+    .ss__item { gap: 14px; padding: 22px 0; }
+    .ss__num { min-width: 32px; }
+    .ss__media { display: none; }
+  }
+  /* длинные названия книг в общем Related не должны распирать страницу на телефоне */
+  .ss__side :global(.related .chip) { white-space: normal; max-width: 100%; padding-block: 8px; line-height: 1.3; }
+</style>

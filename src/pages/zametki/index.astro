@@ -1,0 +1,342 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import NoteItem from '../../components/notes/NoteItem.astro';
+import { articles, series, LAYERS, TYPES, href, url, plural } from '../../lib/data';
+import { byDate, facet } from '../../components/notes/lib';
+
+const list = [...byDate].reverse(); // сначала новые
+const typeCounts = Object.keys(TYPES)
+  .map((k) => ({ k, label: TYPES[k].label, color: TYPES[k].color, n: articles.filter((a) => a.type === k).length }))
+  .filter((t) => t.n > 0);
+const layerCounts = LAYERS.map((l) => ({ ...l, n: articles.filter((a) => a.layer.includes(l.key)).length })).filter((l) => l.n > 0);
+const persons = facet('person', (a) => a.people);
+const placesF = facet('place', (a) => a.places);
+const total = articles.length;
+---
+<Base title="Заметки" description={`Каталог всех ${total} заметок канала: события, люди, книги и источники о Порт-Артуре и Дальнем, с фильтрами по эпохе, серии, человеку и месту.`} section="notes">
+  <PageHero
+    title="Заметки"
+    eyebrow={`${total} ${plural(total, 'заметка', 'заметки', 'заметок')} канала`}
+    lead="Краткие пересказы постов канала с фактами и связями. Полный текст каждой заметки — в Telegram."
+    crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Заметки' }]}
+  >
+    <div class="cluster" style="--cluster-gap:20px; margin-top:4px">
+      <a class="link" href={url('/zametki/serii/')}>Все серии</a>
+      <a class="link" href={href.index()}>Указатель А–Я</a>
+      <a class="link" href={href.search()}>Поиск по сайту</a>
+    </div>
+  </PageHero>
+
+  <div class="container section--tight nc" data-pagefind-ignore="all">
+    <form class="nc-filters stack" style="--stack-gap:14px" role="search" aria-label="Фильтры заметок" onsubmit="return false">
+      <div class="nc-top">
+        <label class="nc-search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>
+          <span class="sr-only">Быстрый фильтр по заголовку и людям</span>
+          <input type="search" name="q" placeholder="Заголовок, фамилия, место…" autocomplete="off" />
+        </label>
+        <button type="button" class="btn btn--outline btn--sm nc-more-btn" aria-expanded="false" aria-controls="nc-selects">
+          Фильтры <span class="nc-badge" hidden>0</span>
+        </button>
+      </div>
+
+      <div class="stack" style="--stack-gap:8px">
+        <span class="eyebrow" id="nc-type-l">Тип</span>
+        <div class="chip-row" role="group" aria-labelledby="nc-type-l">
+          <button type="button" class="chip" data-f="type" data-v="" aria-pressed="true">Все <span class="nc-n" data-count-type="">{total}</span></button>
+          {typeCounts.map((t) => (
+            <button type="button" class="chip" data-f="type" data-v={t.k} aria-pressed="false">
+              <span class="nc-sw" style={`background:${t.color}`} aria-hidden="true"></span>{t.label} <span class="nc-n" data-count-type={t.k}>{t.n}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div class="stack" style="--stack-gap:8px">
+        <span class="eyebrow" id="nc-layer-l">Эпоха</span>
+        <div class="chip-row" role="group" aria-labelledby="nc-layer-l">
+          <button type="button" class="chip" data-f="layer" data-v="" aria-pressed="true">Все эпохи</button>
+          {layerCounts.map((l) => (
+            <button type="button" class="chip" data-f="layer" data-v={l.key} aria-pressed="false" title={l.title}>
+              {l.years} <span class="nc-n" data-count-layer={l.key}>{l.n}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div class="nc-selects" id="nc-selects">
+        <label class="nc-field">
+          <span class="eyebrow">Серия</span>
+          <select name="series">
+            <option value="">Все серии</option>
+            {series.map((s) => <option value={s.slug}>{s.title} ({s.articles.length})</option>)}
+          </select>
+        </label>
+        <label class="nc-field">
+          <span class="eyebrow">Человек</span>
+          <select name="person">
+            <option value="">Все люди</option>
+            {persons.map((p) => <option value={p.slug}>{p.label} ({p.count})</option>)}
+          </select>
+        </label>
+        <label class="nc-field">
+          <span class="eyebrow">Место</span>
+          <select name="place">
+            <option value="">Все места</option>
+            {placesF.map((p) => <option value={p.slug}>{p.label} ({p.count})</option>)}
+          </select>
+        </label>
+        <label class="nc-field">
+          <span class="eyebrow">Порядок</span>
+          <select name="sort">
+            <option value="new">Сначала новые</option>
+            <option value="old">Сначала старые</option>
+            <option value="short">Короткие сначала</option>
+            <option value="long">Длинные сначала</option>
+          </select>
+        </label>
+      </div>
+    </form>
+
+    <div class="nc-bar-row">
+      <p class="nc-count" aria-live="polite"><span>Показано: <b data-shown>{total}</b> из {total}</span></p>
+      <div class="cluster" style="--cluster-gap:12px">
+        <button type="button" class="nc-reset text-link" hidden>Сбросить фильтры</button>
+        <button type="button" class="nc-share text-link" hidden>Скопировать ссылку на подборку</button>
+        <div class="nc-view" role="group" aria-label="Вид списка">
+          <button type="button" data-view="grid" aria-pressed="true" aria-label="Карточки" title="Карточки">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="4" width="7" height="7"></rect><rect x="13" y="4" width="7" height="7"></rect><rect x="4" y="13" width="7" height="7"></rect><rect x="13" y="13" width="7" height="7"></rect></svg>
+          </button>
+          <button type="button" data-view="rows" aria-pressed="false" aria-label="Список" title="Список">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <ul class="nc-list nc-list--grid">
+      {list.map((a) => <NoteItem a={a} />)}
+    </ul>
+
+    <div class="nc-empty stack" style="--stack-gap:10px" hidden>
+      <p class="h3">Ничего не нашлось</p>
+      <p class="muted">Снимите один из фильтров или попробуйте <a class="text-link" data-search-link href={href.search()}>полнотекстовый поиск</a>.</p>
+      <div><button type="button" class="btn btn--outline btn--sm nc-reset2">Сбросить фильтры</button></div>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .nc { padding-top: 28px; }
+  .nc-filters { padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+  .nc-top { display: flex; gap: 10px; align-items: center; }
+  .nc-search { flex: 1; min-width: 0; max-width: 560px; display: flex; align-items: center; gap: 10px; height: 50px; padding: 0 16px; border-radius: 25px; background: var(--paper); border: 1.5px solid var(--line-2); color: var(--ink-3); }
+  .nc-search:focus-within { border-color: var(--navy); }
+  .nc-search input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; font: 500 16px var(--font); color: var(--ink); }
+  .nc-more-btn { display: none; flex: none; padding: 0 14px; }
+  .nc-badge { display: inline-flex; min-width: 22px; height: 22px; padding: 0 6px; align-items: center; justify-content: center; border-radius: 11px; background: var(--accent); color: #fff; font-size: 12px; }
+  .nc-sw { width: 9px; height: 9px; border-radius: 3px; margin-right: 8px; }
+  .nc-n { margin-left: 6px; font-weight: 500; opacity: .7; font-variant-numeric: tabular-nums; }
+  .chip[disabled] { opacity: .45; cursor: default; }
+  .nc-selects { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); }
+  .nc-field { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .nc-field select { height: 46px; padding: 0 40px 0 14px; border-radius: 10px; border: 1.5px solid var(--line-2); background: var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%230B2238' stroke-width='2.4'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 14px center; appearance: none; font: 500 15px var(--font); color: var(--ink); width: 100%; text-overflow: ellipsis; cursor: pointer; }
+  .nc-field select:focus-visible { border-color: var(--navy); }
+  .nc-field select.is-set { border-color: var(--navy); background-color: var(--frost); }
+
+  .nc-bar-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; padding: 16px 0 24px; }
+  .nc-count { font-size: 15px; color: var(--ink-3); }
+  .nc-count b { color: var(--ink); }
+  .nc-reset, .nc-share { background: none; border: 0; padding: 10px 0; min-height: 44px; font-weight: 600; font-size: 15px; cursor: pointer; }
+  .nc-view { display: inline-flex; border: 1.5px solid var(--line-2); border-radius: 22px; overflow: hidden; }
+  .nc-view button { width: 48px; height: 42px; border: 0; background: var(--paper); display: inline-flex; align-items: center; justify-content: center; cursor: pointer; color: var(--ink-2); }
+  .nc-view button[aria-pressed='true'] { background: var(--navy); color: #fff; }
+
+  .nc-list { margin: 0; padding: 0; }
+  .nc-list--grid { display: grid; gap: 40px 28px; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); }
+  .nc-list--rows { display: flex; flex-direction: column; border-top: 1px solid var(--line); max-width: 920px; }
+  .nc-empty { padding: 32px 0 16px; }
+  .nc-badge[hidden], .nc-empty[hidden] { display: none; }
+
+  @media (max-width: 720px) {
+    .nc-more-btn { display: inline-flex; }
+    .nc-selects { display: none; }
+    .nc-selects.is-open { display: grid; }
+    .nc-search { height: 46px; }
+    .nc-list--grid { gap: 32px; }
+  }
+</style>
+
+<script>
+  type State = { q: string; type: string; layer: string; series: string; person: string; place: string; sort: string; view: string };
+  const KEYS: (keyof State)[] = ['q', 'type', 'layer', 'series', 'person', 'place', 'sort', 'view'];
+  const DEFAULTS: State = { q: '', type: '', layer: '', series: '', person: '', place: '', sort: 'new', view: 'grid' };
+  const norm = (s: string) => s.toLowerCase().replace(/ё/g, 'е').trim();
+
+  function initCatalog() {
+    const root = document.querySelector<HTMLElement>('.nc');
+    if (!root) return;
+    const form = root.querySelector<HTMLFormElement>('.nc-filters')!;
+    const listEl = root.querySelector<HTMLUListElement>('.nc-list')!;
+    const items = [...listEl.querySelectorAll<HTMLLIElement>('.nc-item')];
+    const shownEl = root.querySelector('[data-shown]')!;
+    const empty = root.querySelector<HTMLElement>('.nc-empty')!;
+    const resetBtn = root.querySelector<HTMLButtonElement>('.nc-reset')!;
+    const shareBtn = root.querySelector<HTMLButtonElement>('.nc-share')!;
+    const moreBtn = root.querySelector<HTMLButtonElement>('.nc-more-btn')!;
+    const selectsBox = root.querySelector<HTMLElement>('.nc-selects')!;
+    const badge = root.querySelector<HTMLElement>('.nc-badge')!;
+    const searchLink = root.querySelector<HTMLAnchorElement>('[data-search-link]');
+    const input = form.querySelector<HTMLInputElement>('input[name=q]')!;
+    const selects = [...form.querySelectorAll<HTMLSelectElement>('select')];
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const searchBase = searchLink?.getAttribute('href') ?? '';
+
+    const params = new URLSearchParams(location.search);
+    const st: State = { ...DEFAULTS };
+    KEYS.forEach((k) => { const v = params.get(k); if (v !== null) st[k] = v; });
+
+    const matches = (li: HTMLLIElement, skip?: 'type' | 'layer') => {
+      const d = li.dataset;
+      if (skip !== 'type' && st.type && d.type !== st.type) return false;
+      if (skip !== 'layer' && st.layer && !d.layers!.split(' ').includes(st.layer)) return false;
+      if (st.series && d.series !== st.series) return false;
+      if (st.person && !d.people!.split(' ').includes(st.person)) return false;
+      if (st.place && !d.places!.split(' ').includes(st.place)) return false;
+      if (st.q) {
+        const words = norm(st.q).split(/\s+/);
+        if (!words.every((w) => d.text!.includes(w))) return false;
+      }
+      return true;
+    };
+
+    const order = (a: HTMLLIElement, b: HTMLLIElement) => {
+      const da = a.dataset, db = b.dataset;
+      const byDate = da.date!.localeCompare(db.date!) || Number(da.tg) - Number(db.tg);
+      if (st.sort === 'old') return byDate;
+      if (st.sort === 'short') return Number(da.read) - Number(db.read) || -byDate;
+      if (st.sort === 'long') return Number(db.read) - Number(da.read) || -byDate;
+      return -byDate;
+    };
+
+    function syncControls() {
+      input.value = st.q;
+      form.querySelectorAll<HTMLButtonElement>('.chip[data-f]').forEach((b) => {
+        b.setAttribute('aria-pressed', String(st[b.dataset.f as 'type' | 'layer'] === b.dataset.v));
+      });
+      selects.forEach((s) => {
+        const v = st[s.name as keyof State];
+        s.value = [...s.options].some((o) => o.value === v) ? v : s.name === 'sort' ? 'new' : '';
+        s.classList.toggle('is-set', s.name !== 'sort' && !!s.value);
+      });
+      root!.querySelectorAll<HTMLButtonElement>('[data-view]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.view === st.view)));
+    }
+
+    function writeUrl() {
+      const p = new URLSearchParams();
+      KEYS.forEach((k) => { if (st[k] && st[k] !== DEFAULTS[k]) p.set(k, st[k]); });
+      const qs = p.toString();
+      history.replaceState(history.state, '', location.pathname + (qs ? '?' + qs : ''));
+      const active = (['q', 'type', 'layer', 'series', 'person', 'place'] as const).filter((k) => st[k]).length;
+      resetBtn.hidden = active === 0;
+      shareBtn.hidden = active === 0;
+      const sel = (['series', 'person', 'place'] as const).filter((k) => st[k]).length;
+      badge.hidden = sel === 0;
+      badge.textContent = String(sel);
+      if (searchLink) searchLink.href = st.q ? `${searchBase}?q=${encodeURIComponent(st.q)}` : searchBase;
+    }
+
+    function updateCounts() {
+      form.querySelectorAll<HTMLElement>('[data-count-type]').forEach((el) => {
+        const k = el.dataset.countType!;
+        const n = items.filter((li) => matches(li, 'type') && (!k || li.dataset.type === k)).length;
+        el.textContent = String(n);
+        const chip = el.closest('button')!;
+        chip.disabled = n === 0 && st.type !== k;
+      });
+      form.querySelectorAll<HTMLElement>('[data-count-layer]').forEach((el) => {
+        const k = el.dataset.countLayer!;
+        const n = items.filter((li) => matches(li, 'layer') && li.dataset.layers!.split(' ').includes(k)).length;
+        el.textContent = String(n);
+        const chip = el.closest('button')!;
+        chip.disabled = n === 0 && st.layer !== k;
+      });
+    }
+
+    function render(animate = true) {
+      // FLIP: запоминаем положение видимых карточек до перестроения
+      const before = new Map<HTMLLIElement, DOMRect>();
+      const doAnim = animate && !reduce && 'animate' in Element.prototype;
+      if (doAnim) items.forEach((li) => { if (!li.hidden) before.set(li, li.getBoundingClientRect()); });
+
+      listEl.classList.toggle('nc-list--grid', st.view !== 'rows');
+      listEl.classList.toggle('nc-list--rows', st.view === 'rows');
+      const sorted = [...items].sort(order);
+      let shown = 0;
+      sorted.forEach((li) => {
+        const ok = matches(li);
+        li.hidden = !ok;
+        if (ok) shown++;
+        listEl.appendChild(li);
+      });
+      shownEl.textContent = String(shown);
+      empty.hidden = shown > 0;
+      updateCounts();
+
+      if (!doAnim) return;
+      const vh = innerHeight;
+      sorted.forEach((li) => {
+        if (li.hidden) return;
+        const now = li.getBoundingClientRect();
+        if (now.bottom < -200 || now.top > vh + 200) return;
+        const was = before.get(li);
+        if (!was) {
+          li.animate([{ opacity: 0, transform: 'scale(.97)' }, { opacity: 1, transform: 'none' }], { duration: 320, easing: 'cubic-bezier(.2,.7,.2,1)' });
+          return;
+        }
+        const dx = was.left - now.left, dy = was.top - now.top;
+        if (Math.abs(dx) < 1 && Math.abs(dy) < 1) return;
+        if (Math.abs(dy) > vh) {
+          li.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 260 });
+          return;
+        }
+        li.animate([{ transform: `translate(${dx}px, ${dy}px)` }, { transform: 'none' }], { duration: 420, easing: 'cubic-bezier(.2,.7,.2,1)' });
+      });
+    }
+
+    function apply(animate = true) { syncControls(); render(animate); writeUrl(); }
+
+    form.querySelectorAll<HTMLButtonElement>('.chip[data-f]').forEach((b) => {
+      b.addEventListener('click', () => { st[b.dataset.f as 'type' | 'layer'] = b.dataset.v ?? ''; apply(); });
+    });
+    selects.forEach((s) => s.addEventListener('change', () => { (st as any)[s.name] = s.value; apply(); }));
+    let tmr = 0;
+    input.addEventListener('input', () => {
+      clearTimeout(tmr);
+      tmr = window.setTimeout(() => { st.q = input.value; render(false); writeUrl(); }, 120);
+    });
+    root.querySelectorAll<HTMLButtonElement>('[data-view]').forEach((b) => {
+      b.addEventListener('click', () => { st.view = b.dataset.view!; apply(false); });
+    });
+    const reset = () => { const view = st.view, sort = st.sort; Object.assign(st, DEFAULTS, { view, sort }); apply(); };
+    resetBtn.addEventListener('click', reset);
+    root.querySelector('.nc-reset2')?.addEventListener('click', reset);
+    shareBtn.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(location.href); shareBtn.textContent = 'Ссылка скопирована'; }
+      catch { shareBtn.textContent = 'Скопируйте адрес из строки браузера'; }
+      setTimeout(() => { shareBtn.textContent = 'Скопировать ссылку на подборку'; }, 2400);
+    });
+    moreBtn.addEventListener('click', () => {
+      const open = moreBtn.getAttribute('aria-expanded') !== 'true';
+      moreBtn.setAttribute('aria-expanded', String(open));
+      selectsBox.classList.toggle('is-open', open);
+    });
+    if ((['series', 'person', 'place'] as const).some((k) => st[k])) {
+      moreBtn.setAttribute('aria-expanded', 'true');
+      selectsBox.classList.add('is-open');
+    }
+    apply(false);
+  }
+  document.addEventListener('astro:page-load', initCatalog);
+</script>

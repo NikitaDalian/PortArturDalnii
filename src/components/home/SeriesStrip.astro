@@ -1,0 +1,47 @@
+---
+// «Серии»: горизонтальная лента циклов заметок.
+import { series, articleBySlug, href, img, plural } from '../../lib/data';
+const list = [...series]
+  .sort((a, b) => (b.articles?.length ?? 0) - (a.articles?.length ?? 0))
+  .slice(0, 6)
+  .map((s) => {
+    const first = (s.articles ?? []).map((x) => articleBySlug.get(x)).find((a) => a?.cover);
+    return { slug: s.slug, title: s.title, n: s.articles?.length ?? 0, cover: img(first?.cover, 640) };
+  });
+---
+<section class="section container" aria-labelledby="series-h">
+  <div class="section-head reveal">
+    <div class="stack" style="--stack-gap:8px">
+      <h2 id="series-h" class="h2">Серии</h2>
+      <p class="muted">Циклы из нескольких постов, которые лучше читать подряд.</p>
+    </div>
+  </div>
+  <ul class="series-strip reveal" style="--d:80ms" role="list">
+    {list.map((s) => (
+      <li>
+        <a class="card series-card" href={href.series(s.slug)}>
+          <div class="card__media">
+            {s.cover
+              ? <img class="card__img" src={s.cover} alt="" loading="lazy" decoding="async" />
+              : <div class="card__img series-card__ph" aria-hidden="true"></div>}
+          </div>
+          <span class="meta">{s.n} {plural(s.n, 'заметка', 'заметки', 'заметок')}</span>
+          <span class="card__title series-card__title">{s.title}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</section>
+
+<style>
+  .series-strip { list-style: none; margin: 0; padding: 0 0 12px; display: flex; gap: 20px; overflow-x: auto;
+    scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: var(--line-2) transparent; }
+  .series-strip li { flex: 0 0 clamp(240px, 22vw, 290px); scroll-snap-align: start; display: flex; }
+  .series-card { flex: 1; gap: 8px; }
+  .series-card__title { font-size: 19px; font-weight: 700; line-height: 1.25; }
+  .series-card__ph { background: var(--navy-2); }
+  @media (max-width: 720px) {
+    .series-strip { margin-inline: calc(var(--gutter) * -1); padding-inline: var(--gutter); scroll-padding-inline: var(--gutter); gap: 14px; }
+    .series-strip li { flex-basis: 240px; }
+  }
+</style>

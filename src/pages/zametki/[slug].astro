@@ -1,0 +1,199 @@
+---
+import Base from '../../layouts/Base.astro';
+import Coast from '../../components/Coast.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import Related from '../../components/Related.astro';
+import TgButton from '../../components/TgButton.astro';
+import TypeTag from '../../components/notes/TypeTag.astro';
+import PhotoGallery from '../../components/notes/PhotoGallery.astro';
+import { prevNext, readAlso } from '../../components/notes/lib';
+import {
+  articles, articleBySlug, seriesBySlug, articlesOf, layerByKey, href, img, tgPost, fmtDate,
+  TYPES, photoMeta, type Article,
+} from '../../lib/data';
+
+export function getStaticPaths() {
+  return articles.map((a) => ({ params: { slug: a.slug } }));
+}
+
+const a = articleBySlug.get(Astro.params.slug!) as Article;
+const t = TYPES[a.type] ?? TYPES.event;
+const cover = img(a.cover);
+const coverAlt = a.cover ? ((photoMeta(a.cover)?.subject as string | undefined) ?? '') : '';
+const ser = a.series_slug ? seriesBySlug.get(a.series_slug) : undefined;
+const serItems = ser ? articlesOf(ser.articles) : [];
+const serPos = ser ? ser.articles.indexOf(a.slug) : -1;
+const layers = a.layer.map((k) => layerByKey(k)).filter(Boolean) as NonNullable<ReturnType<typeof layerByKey>>[];
+const also = readAlso(a, 3);
+const { prev, next } = prevNext(a.slug);
+const hasRelated = a.people.length + a.places.length + a.books.length > 0;
+---
+<Base title={a.title} description={a.dek || a.summary.slice(0, 160)} image={cover} section="notes">
+  <section class="dark nh" data-pagefind-filter="type:Заметки">
+    <div class="container nh__inner" class:list={[{ 'has-img': cover }]}>
+      <div class="nh__text stack" style="--stack-gap:18px">
+        <nav class="crumbs" aria-label="Путь" data-pagefind-ignore>
+          <a href={href.home()}>Главная</a><span aria-hidden="true">/</span>
+          <a href={href.notes()}>Заметки</a><span aria-hidden="true">/</span>
+          {ser
+            ? <a href={href.series(ser.slug)}>{ser.title}</a>
+            : <a href={`${href.notes()}?type=${a.type}`}>{t.label}</a>}
+        </nav>
+        <div class="nh__meta" data-pagefind-ignore>
+          <TypeTag type={a.type} size="md" />
+          <span class="meta"><time datetime={a.date}>{fmtDate(a.date)}</time></span>
+          <span class="meta">{a.read_min} мин чтения в канале</span>
+          {ser && <span class="meta">Серия · {serPos + 1} из {ser.articles.length}</span>}
+        </div>
+        <h1 class="h1 nh__title" data-pagefind-meta="title">{a.title}</h1>
+        {a.dek && <p class="lead">{a.dek}</p>}
+        <span hidden data-pagefind-meta={`ntype:${a.type}`}></span>
+        <span hidden data-pagefind-meta={`date:${fmtDate(a.date)}`}></span>
+      </div>
+      {cover && (
+        <figure class="nh__fig">
+          <img src={cover} alt={coverAlt} transition:name={`note-${a.slug}`} loading="eager" decoding="async" data-pagefind-meta="image[src], image_alt[alt]" />
+        </figure>
+      )}
+    </div>
+    <Coast />
+  </section>
+
+  <div class="container section--tight nb">
+    <article class="nb__main stack" style="--stack-gap:40px">
+      <section class="stack" style="--stack-gap:14px" aria-labelledby="h-short">
+        <h2 class="eyebrow eyebrow--accent" id="h-short">Коротко</h2>
+        <p class="nb__summary">{a.summary}</p>
+      </section>
+
+      {a.facts.length > 0 && (
+        <section class="stack" style="--stack-gap:14px" aria-labelledby="h-facts">
+          <h2 class="eyebrow" id="h-facts">Факты</h2>
+          <ul class="nb__facts">
+            {a.facts.map((f) => <li>{f}</li>)}
+          </ul>
+        </section>
+      )}
+
+      <section class="nb__tg panel panel--frost stack" style="--stack-gap:14px" data-pagefind-ignore>
+        <p class="muted">Здесь — пересказ. Полный текст{a.photos.length ? ', все фотографии' : ''} и обсуждение — в посте канала.</p>
+        <div><TgButton id={a.tg_ids[0]} /></div>
+        {a.tg_ids.length > 1 && (
+          <div class="cluster" style="--cluster-gap:8px 18px">
+            <span class="meta">Пост в нескольких частях:</span>
+            {a.tg_ids.map((id, i) => <a class="link" href={tgPost(id)} target="_blank" rel="noopener">Часть {i + 1}</a>)}
+          </div>
+        )}
+      </section>
+
+      <div data-pagefind-ignore><PhotoGallery photos={a.photos} /></div>
+    </article>
+
+    <aside class="nb__side stack" style="--stack-gap:36px" aria-label="Связи заметки">
+      {hasRelated && <Related people={a.people} places={a.places} books={a.books} title="Кто и что в заметке" />}
+
+      {layers.length > 0 && (
+        <div class="stack" style="--stack-gap:10px">
+          <h2 class="eyebrow">Слой истории</h2>
+          <div class="cluster">
+            {layers.map((l) => (
+              <a class="nb__layer" href={href.layer(l.key)}>
+                <span class="nb__layer-y">{l.years}</span>
+                <span>{l.title}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {ser && (
+        <nav class="nb__series stack" style="--stack-gap:12px" aria-label={`Серия «${ser.title}»`} data-pagefind-ignore>
+          <div class="stack" style="--stack-gap:4px">
+            <span class="eyebrow">Серия</span>
+            <a class="h3 text-link" href={href.series(ser.slug)}>{ser.title}</a>
+          </div>
+          <ol class="nb__ser-list">
+            {serItems.map((s, i) => (
+              <li>
+                {s.slug === a.slug
+                  ? <span class="nb__ser-item is-current" aria-current="page"><b>{i + 1}</b><span>{s.title}</span></span>
+                  : <a class="nb__ser-item" href={href.note(s.slug)}><b>{i + 1}</b><span>{s.title}</span></a>}
+              </li>
+            ))}
+          </ol>
+        </nav>
+      )}
+    </aside>
+  </div>
+
+  {also.length > 0 && (
+    <section class="section--tight paper" aria-labelledby="h-also" data-pagefind-ignore>
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2" id="h-also">Читайте также</h2>
+          <a class="link" href={href.notes()}>Все заметки</a>
+        </div>
+        <div class="grid" style="--min:280px">
+          {also.map((x, i) => <div class="reveal" style={`--d:${i * 100}ms`}><ArticleCard a={x} /></div>)}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <nav class="container section--tight pn" aria-label="Соседние заметки" data-pagefind-ignore>
+    {prev ? (
+      <a class="pn__link" href={href.note(prev.slug)} rel="prev">
+        <span class="meta">← Предыдущая · {fmtDate(prev.date)}</span>
+        <span class="pn__title">{prev.title}</span>
+      </a>
+    ) : <span></span>}
+    {next ? (
+      <a class="pn__link pn__link--next" href={href.note(next.slug)} rel="next">
+        <span class="meta">Следующая · {fmtDate(next.date)} →</span>
+        <span class="pn__title">{next.title}</span>
+      </a>
+    ) : <span></span>}
+  </nav>
+</Base>
+
+<style>
+  .nh { padding-top: clamp(28px, 4.5vw, 52px); }
+  .nh__inner { display: flex; flex-wrap: wrap; gap: 28px 48px; align-items: flex-end; padding-bottom: 24px; }
+  .nh__text { flex: 1 1 520px; min-width: 0; }
+  .nh__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+  .nh__title { font-size: clamp(30px, 4.2vw, 54px); overflow-wrap: break-word; }
+  .nh__fig { flex: 0 1 460px; min-width: 0; }
+  .nh__fig img { width: 100%; max-height: 440px; object-fit: cover; background: var(--navy-2); }
+  @media (max-width: 720px) { .nh__fig { flex-basis: 100%; } .nh__fig img { max-height: 320px; } }
+
+  .nb { display: flex; flex-wrap: wrap; gap: 48px 64px; align-items: flex-start; }
+  .nb__main { flex: 1 1 560px; min-width: 0; max-width: 760px; }
+  .nb__side { flex: 1 1 300px; min-width: 0; max-width: 440px; }
+  @media (min-width: 1100px) { .nb__side { position: sticky; top: 96px; } }
+  .nb__summary { font-size: clamp(18px, 1.6vw, 21px); line-height: 1.6; max-width: 66ch; }
+  .nb__facts { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; border-top: 1px solid var(--line); }
+  .nb__facts li { position: relative; padding: 14px 0 14px 28px; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.5; }
+  .nb__facts li::before { content: ''; position: absolute; left: 4px; top: 23px; width: 10px; height: 2px; background: var(--accent); }
+  .nb__tg .btn { white-space: normal; text-align: center; }
+
+  .nb__layer { display: inline-flex; flex-direction: column; justify-content: center; min-height: 52px; padding: 8px 16px; border-radius: 12px; border: 1.5px solid var(--line-2); background: var(--paper); font-weight: 600; font-size: 15px; line-height: 1.25; transition: border-color .2s; }
+  .nb__layer:hover { border-color: var(--navy); }
+  .nb__layer-y { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); }
+
+  .nb__ser-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+  .nb__ser-item { display: flex; gap: 12px; align-items: baseline; padding: 12px 0; min-height: 44px; border-bottom: 1px solid var(--line); font-size: 15px; line-height: 1.4; }
+  .nb__ser-item b { flex: 0 0 22px; font-variant-numeric: tabular-nums; color: var(--ink-3); }
+  a.nb__ser-item:hover span { text-decoration: underline; text-underline-offset: 3px; }
+  .nb__ser-item.is-current { font-weight: 700; }
+  .nb__ser-item.is-current b { color: var(--accent); }
+
+  .pn { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .pn__link { display: flex; flex-direction: column; gap: 6px; padding: 20px; background: var(--paper); border: 1px solid var(--line); min-height: 44px; transition: border-color .2s; }
+  .pn__link:hover { border-color: var(--navy); }
+  .pn__link:hover .pn__title { text-decoration: underline; text-underline-offset: 3px; }
+  .pn__link--next { text-align: right; }
+  .pn__title { font-weight: 700; font-size: 17px; line-height: 1.3; }
+  @media (max-width: 620px) { .pn { grid-template-columns: 1fr; } .pn__link--next { text-align: left; } }
+  /* длинные названия книг в общем Related не должны распирать страницу на телефоне */
+  .nb__side :global(.related .chip) { white-space: normal; max-width: 100%; padding-block: 8px; line-height: 1.3; }
+</style>

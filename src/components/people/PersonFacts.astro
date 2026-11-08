@@ -1,0 +1,33 @@
+---
+// Справка о персоне: годы, страна, группа, связанные места, число заметок.
+import { href, entity, COUNTRIES, GROUPS, plural, type Person } from '../../lib/data';
+interface Props { p: Person; notes: number }
+const { p, notes } = Astro.props;
+const c = COUNTRIES[p.country] ?? COUNTRIES.other;
+const places = (p.places as string[]).map((s) => entity('place', s));
+---
+<dl class="pf">
+  {p.years && (<><dt>Годы жизни</dt><dd>{p.years}</dd></>)}
+  <dt>Страна</dt>
+  <dd><a class="text-link" href={`${href.people()}?country=${p.country}`}><span class="pf__dot" style={`--cc:${c.color}`} aria-hidden="true"></span>{c.label}</a></dd>
+  {GROUPS[p.group] && (<><dt>Группа</dt><dd><a class="text-link" href={`${href.people()}?group=${p.group}`}>{GROUPS[p.group]}</a></dd></>)}
+  {places.length > 0 && (
+    <>
+      <dt>Места</dt>
+      <dd>
+        {places.map((pl, i) => (
+          <>{pl.href ? <a class="text-link" href={pl.href}>{pl.label}</a> : <span>{pl.label}</span>}{i < places.length - 1 ? ', ' : ''}</>
+        ))}
+      </dd>
+    </>
+  )}
+  {notes > 0 && (<><dt>В канале</dt><dd>{notes} {plural(notes, 'заметка', 'заметки', 'заметок')}</dd></>)}
+</dl>
+
+<style>
+  .pf { margin: 0; display: grid; grid-template-columns: minmax(96px, auto) 1fr; border-top: 2px solid var(--navy); }
+  .pf dt, .pf dd { padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .pf dt { padding-right: 16px; font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); line-height: 1.6; }
+  .pf dd { margin: 0; font-size: 16px; line-height: 1.45; }
+  .pf__dot { display: inline-block; width: 10px; height: 10px; margin-right: 8px; border-radius: 50%; background: var(--cc); box-shadow: 0 0 0 1px rgba(11, 34, 56, .35); }
+</style>

@@ -1,0 +1,310 @@
+---
+import Base from '../../layouts/Base.astro';
+import Coast from '../../components/Coast.astro';
+import { href, url, TYPES } from '../../lib/data';
+import { fallbackItems } from '../../components/search/fallbackData';
+
+const POPULAR = ['Витте', 'Кондратенко', 'Укрепление № 5', 'Пикуль', 'Дальний'];
+const TABS = ['Заметки', 'Лица', 'Места', 'Книги'];
+const typeColors = Object.fromEntries(Object.entries(TYPES).map(([k, v]) => [k, { label: v.label, color: v.color }]));
+const cfg = { base: url('/'), pagefind: url('/pagefind/pagefind.js'), types: typeColors };
+---
+<Base title="Поиск" description="Поиск по заметкам, людям, местам и книгам сайта «Портъ-Артуръ и Дальнiй»." section={null}>
+  <div class="sp" data-pagefind-ignore="all">
+    <section class="dark sp-head">
+      <div class="container sp-head__inner">
+        <nav class="crumbs" aria-label="Путь"><a href={href.home()}>Главная</a><span aria-hidden="true">/</span><span aria-current="page">Поиск</span></nav>
+        <h1 class="h1">Поиск</h1>
+        <form class="sp-form" role="search" action={href.search()} method="get">
+          <label class="sp-field">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4E6A80" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>
+            <span class="sr-only">Что найти</span>
+            <input type="search" name="q" placeholder="Витте, форт, Пикуль…" autocomplete="off" enterkeyhint="search" />
+            <button type="button" class="sp-clear" aria-label="Очистить" hidden>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+            </button>
+          </label>
+          <button type="submit" class="btn btn--primary sp-go">Найти</button>
+        </form>
+        <div class="sp-tabs" role="tablist" aria-label="Тип результатов">
+          <button type="button" role="tab" class="sp-tab" data-tab="" aria-selected="true">Все <span class="sp-n"></span></button>
+          {TABS.map((t) => <button type="button" role="tab" class="sp-tab" data-tab={t} aria-selected="false">{t} <span class="sp-n"></span></button>)}
+        </div>
+      </div>
+      <Coast />
+    </section>
+
+    <div class="container sp-body">
+      <div class="sp-status-row">
+        <p class="sp-status" aria-live="polite"></p>
+        <a class="link" href={href.index()}>Указатель А–Я</a>
+      </div>
+      <p class="sp-note muted" hidden></p>
+      <ol class="sp-results" role="tabpanel" aria-label="Результаты поиска"></ol>
+      <div class="sp-more-wrap" hidden><button type="button" class="btn btn--outline btn--sm sp-more">Показать ещё</button></div>
+
+      <div class="sp-empty stack" style="--stack-gap:18px">
+        <div class="stack" style="--stack-gap:8px">
+          <p class="h3 sp-empty__title">Что искать</p>
+          <p class="muted sp-empty__text">Фамилия, место, название книги или форта. Ищите по одному слову — без имени и отчества: «Витте», а не «Сергей Юльевич Витте».</p>
+        </div>
+        <div class="stack" style="--stack-gap:10px">
+          <span class="eyebrow">Часто ищут</span>
+          <div class="cluster">
+            {POPULAR.map((q) => <a class="chip sp-pop" href={href.search(q)} data-q={q}>{q}</a>)}
+          </div>
+        </div>
+        <p class="muted">Или откройте <a class="text-link" href={href.index()}>указатель А–Я</a> и <a class="text-link" href={href.notes()}>каталог заметок</a> с фильтрами.</p>
+      </div>
+    </div>
+
+    <script type="application/json" id="sp-cfg" set:html={JSON.stringify(cfg)}></script>
+    <script type="application/json" id="sp-fallback" set:html={JSON.stringify(fallbackItems())}></script>
+  </div>
+</Base>
+
+<style>
+  .sp-head { padding-top: clamp(24px, 4vw, 48px); }
+  .sp-head__inner { display: flex; flex-direction: column; gap: 18px; padding-bottom: 8px; }
+  .sp-form { display: flex; gap: 10px; max-width: 760px; }
+  .sp-field { flex: 1; min-width: 0; height: 54px; border-radius: 27px; background: #fff; display: flex; align-items: center; gap: 10px; padding: 0 10px 0 18px; }
+  .sp-field input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; font: 500 17px var(--font); color: var(--ink); }
+  .sp-field input::-webkit-search-cancel-button { display: none; }
+  .sp-field:focus-within { box-shadow: 0 0 0 3px var(--accent); }
+  .sp-clear { width: 36px; height: 36px; border: 0; border-radius: 18px; background: var(--frost); color: var(--ink); display: inline-flex; align-items: center; justify-content: center; cursor: pointer; flex: none; }
+  .sp-clear[hidden] { display: none; }
+  .sp-tabs { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; margin-inline: calc(var(--gutter) * -1); padding-inline: var(--gutter); }
+  .sp-tabs::-webkit-scrollbar { display: none; }
+  .sp-tab { flex: none; min-height: 44px; padding: 8px 14px; border: 0; border-bottom: 3px solid transparent; background: transparent; color: var(--steel); font-weight: 600; font-size: 16px; cursor: pointer; }
+  .sp-tab:hover { color: #fff; }
+  .sp-tab[aria-selected='true'] { color: #fff; border-bottom-color: var(--accent); }
+  .sp-n { font-weight: 500; opacity: .75; font-variant-numeric: tabular-nums; }
+
+  .sp-body { padding-top: 20px; padding-bottom: var(--section-y); }
+  .sp-body > * { max-width: 920px; }
+  .sp-status-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 20px; padding-bottom: 12px; font-size: 15px; color: var(--ink-3); }
+  .sp-status b { color: var(--ink); }
+  .sp-note { padding: 14px 16px; background: var(--frost); font-size: 15px; margin-bottom: 12px; }
+  .sp-note[hidden] { display: none; }
+  .sp-results { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+  .sp-results:empty { border: 0; }
+  .sp-more-wrap { padding-top: 24px; }
+  .sp-more-wrap[hidden] { display: none; }
+  .sp-empty { padding: 24px 0; }
+  .sp-empty[hidden] { display: none; }
+  .sp-go { flex: none; }
+  @media (max-width: 520px) {
+    .sp-go { display: none; }
+    .sp-field { height: 48px; }
+  }
+
+  /* результаты создаются скриптом — стили глобальные в пределах .sp */
+  .sp :global(.sp-res) { display: flex; gap: 14px; padding: 16px 0; border-bottom: 1px solid var(--line); animation: sp-in .3s var(--ease) both; }
+  .sp :global(.sp-res__bar) { flex: 0 0 4px; border-radius: 2px; background: var(--c, var(--navy)); }
+  .sp :global(.sp-res__body) { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 5px; }
+  .sp :global(.sp-res__meta) { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); }
+  .sp :global(.sp-res__t) { font-size: 18px; font-weight: 700; line-height: 1.25; }
+  .sp :global(.sp-res:hover .sp-res__t) { text-decoration: underline; text-underline-offset: 3px; }
+  .sp :global(.sp-res__p) { font-size: 15px; line-height: 1.45; color: var(--ink-2); overflow-wrap: anywhere; }
+  .sp :global(.sp-res__img) { flex: 0 0 96px; width: 96px; height: 72px; object-fit: cover; background: var(--frost); align-self: center; }
+  .sp :global(mark) { background: #FFE2D9; color: var(--ink); padding: 0 2px; border-radius: 3px; }
+  @keyframes sp-in { from { opacity: 0; transform: translateY(6px); } }
+  @media (max-width: 520px) { .sp :global(.sp-res__img) { flex-basis: 64px; width: 64px; height: 52px; } .sp :global(.sp-res__t) { font-size: 17px; } }
+  @media (prefers-reduced-motion: reduce) { .sp :global(.sp-res) { animation: none; } }
+</style>
+
+<script>
+  type Cfg = { base: string; pagefind: string; types: Record<string, { label: string; color: string }> };
+  type Item = { url: string; title: string; excerpt: string; meta: string; color: string; image?: string | null };
+  type FbItem = { tab: string; url: string; title: string; text: string; meta: string; color?: string; image?: string | null; hay: string };
+
+  const TAB_COLOR: Record<string, string> = { 'Лица': 'var(--t-person)', 'Места': 'var(--t-place)', 'Книги': 'var(--t-book)', 'Заметки': 'var(--navy)' };
+  const PAGE = 12;
+  let pagefind: any = null;
+  let pfFailed = false;
+
+  const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]!));
+  const norm = (s: string) => s.toLowerCase().replace(/ё/g, 'е');
+  function highlight(text: string, q: string) {
+    const safe = esc(text);
+    const words = norm(q).split(/\s+/).filter((w) => w.length > 1).map((w) => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+    if (!words.length) return safe;
+    // «е» в запросе совпадает и с «ё» в тексте
+    const re = new RegExp(`(${words.map((w) => w.replace(/е/g, '[её]')).join('|')})`, 'gi');
+    return safe.replace(re, '<mark>$1</mark>');
+  }
+
+  async function loadPagefind(cfg: Cfg) {
+    if (pagefind || pfFailed) return pagefind;
+    try {
+      const path = cfg.pagefind;
+      pagefind = await import(/* @vite-ignore */ path);
+      await pagefind.options({ baseUrl: cfg.base, excerptLength: 26 });
+      await pagefind.filters(); // без этого счётчики по вкладкам пустые
+    } catch {
+      pfFailed = true;
+      pagefind = null;
+    }
+    return pagefind;
+  }
+
+  function initSearch() {
+    const root = document.querySelector<HTMLElement>('.sp');
+    if (!root) return;
+    const cfg: Cfg = JSON.parse(document.getElementById('sp-cfg')!.textContent!);
+    const form = root.querySelector<HTMLFormElement>('.sp-form')!;
+    const input = form.querySelector<HTMLInputElement>('input[name=q]')!;
+    const clear = root.querySelector<HTMLButtonElement>('.sp-clear')!;
+    const tabs = [...root.querySelectorAll<HTMLButtonElement>('.sp-tab')];
+    const status = root.querySelector<HTMLElement>('.sp-status')!;
+    const note = root.querySelector<HTMLElement>('.sp-note')!;
+    const list = root.querySelector<HTMLOListElement>('.sp-results')!;
+    const moreWrap = root.querySelector<HTMLElement>('.sp-more-wrap')!;
+    const moreBtn = root.querySelector<HTMLButtonElement>('.sp-more')!;
+    const empty = root.querySelector<HTMLElement>('.sp-empty')!;
+    const emptyTitle = root.querySelector<HTMLElement>('.sp-empty__title')!;
+    const emptyText = root.querySelector<HTMLElement>('.sp-empty__text')!;
+    const defaultTitle = emptyTitle.textContent!, defaultText = emptyText.textContent!;
+    let fallback: FbItem[] | null = null;
+
+    const params = new URLSearchParams(location.search);
+    let q = params.get('q') ?? '';
+    let tab = params.get('tab') ?? '';
+    if (!tabs.some((t) => t.dataset.tab === tab)) tab = '';
+    input.value = q;
+
+    let token = 0;
+    let pending: (() => Promise<Item>)[] = [];
+    let shown = 0;
+
+    const writeUrl = () => {
+      const p = new URLSearchParams();
+      if (q) p.set('q', q);
+      if (tab) p.set('tab', tab);
+      const qs = p.toString();
+      history.replaceState(history.state, '', location.pathname + (qs ? '?' + qs : ''));
+    };
+    const setTabs = (counts: Record<string, number> | null, total: number | null) => {
+      tabs.forEach((t) => {
+        const k = t.dataset.tab!;
+        t.setAttribute('aria-selected', String(k === tab));
+        const n = t.querySelector('.sp-n')!;
+        n.textContent = counts === null ? '' : String(k ? counts[k] ?? 0 : total ?? 0);
+      });
+    };
+    const renderItem = (it: Item) => {
+      const li = document.createElement('li');
+      li.innerHTML = `<a class="sp-res" href="${esc(it.url)}" style="--c:${esc(it.color)}">
+        <span class="sp-res__bar" aria-hidden="true"></span>
+        <span class="sp-res__body">
+          <span class="sp-res__meta">${esc(it.meta)}</span>
+          <span class="sp-res__t">${highlight(it.title, q)}</span>
+          ${it.excerpt ? `<span class="sp-res__p">${it.excerpt}</span>` : ''}
+        </span>
+        ${it.image ? `<img class="sp-res__img" src="${esc(it.image)}" alt="" loading="lazy" decoding="async">` : ''}
+      </a>`;
+      list.appendChild(li);
+    };
+    async function showMore(my: number) {
+      const batch = pending.slice(shown, shown + PAGE);
+      const items = await Promise.all(batch.map((f) => f()));
+      if (my !== token) return;
+      items.forEach(renderItem);
+      shown += batch.length;
+      moreWrap.hidden = shown >= pending.length;
+    }
+
+    function pfToItem(r: any): () => Promise<Item> {
+      return async () => {
+        const d = await r.data();
+        const kind: string = d.filters?.type?.[0] ?? '';
+        const nt = d.meta?.ntype && cfg.types[d.meta.ntype];
+        const meta = nt ? `${nt.label}${d.meta.date ? ' · ' + d.meta.date : ''}` : kind || 'Страница';
+        return {
+          url: d.url, title: d.meta?.title ?? d.url, excerpt: d.excerpt ?? '',
+          meta, color: nt ? nt.color : TAB_COLOR[kind] ?? 'var(--sea)', image: d.meta?.image ?? null,
+        };
+      };
+    }
+
+    async function run() {
+      const my = ++token;
+      q = input.value.trim();
+      clear.hidden = !input.value;
+      writeUrl();
+      list.innerHTML = '';
+      pending = []; shown = 0;
+      moreWrap.hidden = true;
+      if (!q) {
+        status.textContent = '';
+        setTabs(null, null);
+        emptyTitle.textContent = defaultTitle; emptyText.textContent = defaultText;
+        empty.hidden = false;
+        note.hidden = !pfFailed;
+        return;
+      }
+      status.textContent = 'Ищем…';
+      const pf = await loadPagefind(cfg);
+      if (my !== token) return;
+      let counts: Record<string, number> = {};
+      let total = 0;
+
+      if (pf) {
+        note.hidden = true;
+        const all = await pf.search(q);
+        if (my !== token || !all) return;
+        counts = all.totalFilters?.type ?? all.filters?.type ?? {};
+        total = all.results.length;
+        const res = tab ? await pf.search(q, { filters: { type: tab } }) : all;
+        if (my !== token || !res) return;
+        pending = res.results.map(pfToItem);
+      } else {
+        note.hidden = false;
+        note.textContent = 'Полнотекстовый индекс недоступен: он создаётся при сборке сайта (npm run build). Пока ищем по заголовкам и аннотациям.';
+        if (!fallback) fallback = JSON.parse(document.getElementById('sp-fallback')!.textContent!);
+        const words = norm(q).split(/\s+/).filter(Boolean);
+        const hits = fallback!.filter((f) => words.every((w) => f.hay.includes(w)))
+          .sort((a, b) => Number(words.some((w) => !norm(a.title).includes(w))) - Number(words.some((w) => !norm(b.title).includes(w))));
+        hits.forEach((h) => { counts[h.tab] = (counts[h.tab] ?? 0) + 1; });
+        total = hits.length;
+        pending = hits.filter((h) => !tab || h.tab === tab).map((h) => async () => ({
+          url: h.url, title: h.title, excerpt: highlight(h.text, q), meta: h.meta, color: h.color ?? TAB_COLOR[h.tab], image: h.image,
+        }));
+      }
+      setTabs(counts, total);
+      const n = pending.length;
+      status.innerHTML = n ? `Найдено: <b>${n}</b>${tab ? ` · ${esc(tab)}` : ''}` : '';
+      if (!n) {
+        emptyTitle.textContent = 'Ничего не нашлось';
+        emptyText.textContent = tab && total
+          ? `В разделе «${tab}» совпадений нет, но есть в других — откройте вкладку «Все».`
+          : 'Проверьте написание или попробуйте фамилию без имени. Старая орфография не нужна: «Дальний», а не «Дальнiй».';
+        empty.hidden = false;
+        return;
+      }
+      empty.hidden = true;
+      await showMore(my);
+    }
+
+    let t = 0;
+    input.addEventListener('input', () => { clear.hidden = !input.value; clearTimeout(t); t = window.setTimeout(run, 220); });
+    form.addEventListener('submit', (e) => { e.preventDefault(); clearTimeout(t); run(); input.blur(); });
+    clear.addEventListener('click', () => { input.value = ''; run(); input.focus(); });
+    tabs.forEach((b) => b.addEventListener('click', () => { tab = b.dataset.tab ?? ''; run(); }));
+    // стрелки по вкладкам
+    root.querySelector('.sp-tabs')!.addEventListener('keydown', (e) => {
+      const ke = e as KeyboardEvent;
+      if (ke.key !== 'ArrowRight' && ke.key !== 'ArrowLeft') return;
+      const i = tabs.findIndex((x) => x.dataset.tab === tab);
+      const nx = tabs[(i + (ke.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length];
+      tab = nx.dataset.tab ?? ''; nx.focus(); run();
+    });
+    moreBtn.addEventListener('click', () => showMore(token));
+    root.querySelectorAll<HTMLAnchorElement>('.sp-pop').forEach((a) => a.addEventListener('click', (e) => {
+      e.preventDefault(); input.value = a.dataset.q!; tab = ''; run();
+    }));
+    run();
+    if (!q) input.focus({ preventScroll: true });
+  }
+  document.addEventListener('astro:page-load', initSearch);
+</script>

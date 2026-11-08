@@ -1,0 +1,263 @@
+---
+// Полноэкранная карта: MapLibre + OSM, фильтры, карточка места (bottom sheet / панель справа), конструктор маршрута.
+import { img } from '../../lib/data';
+import { mapPayload, KINDS, CITIES } from './places';
+import { LAYERS } from '../../lib/data';
+const payload = { ...mapPayload(), plan: img(32) };
+const usedKinds = Object.keys(KINDS).filter((k) => payload.places.some((p) => p.k === k));
+---
+<div class="mapapp" data-mapapp>
+  <script type="application/json" id="map-data" set:html={JSON.stringify(payload).replace(/</g, '\\u003c')}></script>
+  <div class="mapapp__map" id="map" role="region" aria-label="Карта мест Порт-Артура и Дальнего"></div>
+
+  <div class="mapapp__top">
+    <div class="mtop__row">
+      <form class="mtop__search" role="search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>
+        <input id="m-q" type="search" enterkeyhint="search" autocomplete="off" placeholder="Форт, гора, улица" aria-label="Поиск места на карте" />
+      </form>
+      <button type="button" class="mbtn mbtn--float mbtn--icon" id="m-list" aria-pressed="false" aria-label="Список мест">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"></path><circle cx="4.5" cy="6" r="1.2"></circle><circle cx="4.5" cy="12" r="1.2"></circle><circle cx="4.5" cy="18" r="1.2"></circle></svg>
+      </button>
+    </div>
+    <div class="mtop__chips" role="toolbar" aria-label="Фильтры и режимы карты">
+      <button type="button" class="mchip" id="m-filters" aria-expanded="false" aria-controls="m-filter-panel" aria-pressed="false">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"></path></svg>
+        Фильтры <span class="mchip__n" hidden></span>
+      </button>
+      <button type="button" class="mchip" id="m-build" aria-pressed="false">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="6" cy="18" r="2.5"></circle><circle cx="18" cy="6" r="2.5"></circle><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"></path></svg>
+        Свой маршрут <span class="mchip__n" id="m-build-n" hidden></span>
+      </button>
+      <button type="button" class="mchip" id="m-plan" aria-pressed="false" aria-controls="m-plan-panel">План 1904</button>
+      <button type="button" class="mchip" id="m-geo">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v3M12 19v3M2 12h3M19 12h3"></path></svg>
+        Где я
+      </button>
+    </div>
+
+    <div class="mpanel" id="m-filter-panel" hidden>
+      <fieldset class="mpanel__group">
+        <legend>Город</legend>
+        <div class="mpanel__chips">
+          <button type="button" class="chip" data-city="all" aria-pressed="true">Все</button>
+          <button type="button" class="chip" data-city="lushun" aria-pressed="false">{CITIES.lushun}</button>
+          <button type="button" class="chip" data-city="dalian" aria-pressed="false">{CITIES.dalian}</button>
+        </div>
+      </fieldset>
+      <fieldset class="mpanel__group">
+        <legend>Слой истории</legend>
+        <div class="mpanel__chips">
+          {LAYERS.map((l) => <button type="button" class="chip" data-layer={l.key} aria-pressed="false">{l.years}</button>)}
+        </div>
+      </fieldset>
+      <fieldset class="mpanel__group">
+        <legend>Тип</legend>
+        <div class="mpanel__chips">
+          {usedKinds.map((k) => <button type="button" class="chip" data-kind={k} aria-pressed="false">{KINDS[k]}</button>)}
+        </div>
+      </fieldset>
+      <div class="mpanel__foot">
+        <span class="meta">Показано мест: <b data-count>{payload.places.length}</b></span>
+        <button type="button" class="mbtn mbtn--ghost mbtn--sm" data-reset>Сбросить</button>
+        <button type="button" class="mbtn mbtn--dark mbtn--sm" data-done>Готово</button>
+      </div>
+    </div>
+
+    <div class="mplan" id="m-plan-panel" hidden>
+      <label for="m-plan-op">Старый план 1904 · прозрачность</label>
+      <input id="m-plan-op" type="range" min="10" max="100" value="70" />
+      <p>Привязка приблизительная, ошибка до 150 м. План А. Свечина, положение на 19 декабря 1904 года.</p>
+    </div>
+  </div>
+
+  <div class="mzoom" role="group" aria-label="Масштаб">
+    <button type="button" class="mbtn mbtn--float mbtn--icon" data-zoom="in" aria-label="Приблизить"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></button>
+    <button type="button" class="mbtn mbtn--float mbtn--icon" data-zoom="out" aria-label="Отдалить"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14"></path></svg></button>
+  </div>
+
+  <section class="msheet" id="m-sheet" aria-label="Место" hidden data-state="peek">
+    <div class="msheet__grab" id="m-grab" tabindex="0" aria-label="Потяните вверх или вниз, стрелки ↑↓ меняют высоту">
+      <span class="msheet__handle" aria-hidden="true"></span>
+      <button type="button" class="msheet__close" id="m-close" aria-label="Закрыть">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+      </button>
+    </div>
+    <div class="msheet__body" id="m-body"></div>
+    <div class="msheet__foot" id="m-foot"></div>
+    <p class="msheet__attr">Карта: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">участники OpenStreetMap</a></p>
+  </section>
+
+  <div class="mtoast" id="m-toast" role="status" aria-live="polite"></div>
+</div>
+
+<script>
+  import { initMapApp, destroyMapApp } from './app';
+  document.addEventListener('astro:page-load', () => { initMapApp(); });
+  document.addEventListener('astro:before-swap', () => destroyMapApp());
+</script>
+
+<style is:global>
+  .mapapp { position: relative; height: calc(100dvh - 72px); min-height: 480px; overflow: hidden; background: #DCE6EA; isolation: isolate; }
+  @media (max-width: 1100px) { .mapapp { height: calc(100dvh - 64px); min-height: 420px; } }
+  .mapapp [hidden] { display: none !important; }
+  .mapapp__map { position: absolute; inset: 0; }
+  .mapapp__nogl { position: absolute; inset: auto 16px 50% 16px; padding: 16px; background: var(--paper); font-size: 15px; }
+
+  /* верхняя панель */
+  .mapapp__top { position: absolute; z-index: 5; top: 0; left: 0; right: 0; padding: 12px 16px 6px; display: flex; flex-direction: column; gap: 8px; pointer-events: none; max-width: 720px; }
+  .mapapp__top > * { pointer-events: auto; }
+  @media (min-width: 900px) { .mapapp.has-sheet .mapapp__top { right: 440px; } }
+  .mtop__row { display: flex; gap: 8px; }
+  .mtop__search { flex: 1; min-width: 0; height: 48px; border-radius: 24px; background: var(--paper); display: flex; align-items: center; gap: 8px; padding: 0 16px; color: var(--ink-3); box-shadow: 0 2px 10px rgba(11, 34, 56, .18); }
+  .mtop__search:focus-within { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .mtop__search input { border: 0; outline: 0; flex: 1; min-width: 0; height: 100%; font: 500 16px var(--font); color: var(--ink); background: transparent; }
+  .mtop__chips { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; margin: 0 -16px; padding: 2px 16px 6px; }
+  .mtop__chips::-webkit-scrollbar { display: none; }
+  .mchip { flex: none; display: inline-flex; align-items: center; gap: 7px; min-height: 44px; padding: 0 16px; border: 0; border-radius: 22px; background: var(--paper); color: var(--ink); font: 600 15px var(--font); cursor: pointer; white-space: nowrap; box-shadow: 0 2px 10px rgba(11, 34, 56, .18); transition: background .2s, color .2s; }
+  .mchip[aria-pressed="true"] { background: var(--navy); color: #fff; }
+  .mchip[aria-busy="true"] { opacity: .6; }
+  .mchip__n { min-width: 22px; height: 22px; padding: 0 6px; border-radius: 11px; background: var(--accent); color: #fff; font-size: 13px; display: inline-flex; align-items: center; justify-content: center; }
+
+  .mpanel { background: var(--paper); border-radius: 18px; padding: 16px; box-shadow: 0 8px 28px rgba(11, 34, 56, .25); max-height: min(62vh, 520px); overflow: auto; display: flex; flex-direction: column; gap: 14px; }
+  .mpanel__group { border: 0; padding: 0; margin: 0; }
+  .mpanel__group legend { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 8px; padding: 0; }
+  .mpanel__chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .mapapp .mpanel .chip { min-height: 44px; font-size: 14px; padding: 0 14px; }
+  .mpanel__foot { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; border-top: 1px solid var(--line); padding-top: 12px; }
+  .mpanel__foot .meta { margin-right: auto; }
+
+  .mplan { background: rgba(255, 255, 255, .96); border-radius: 16px; padding: 10px 14px 12px; box-shadow: 0 2px 10px rgba(11, 34, 56, .18); max-width: 420px; }
+  .mplan label { font-size: 14px; font-weight: 700; }
+  .mplan input { width: 100%; height: 32px; accent-color: var(--accent); }
+  .mplan p { font-size: 12.5px; line-height: 1.4; color: var(--ink-3); }
+
+  /* кнопки */
+  .mbtn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; padding: 0 16px; border-radius: 22px; font: 600 15px var(--font); border: 1.5px solid transparent; cursor: pointer; background: transparent; color: var(--ink); white-space: nowrap; text-decoration: none; transition: background .2s, color .2s, border-color .2s; }
+  .mbtn--primary { background: var(--accent); color: #fff; }
+  .mbtn--primary:hover { background: #c93a22; }
+  .mbtn--line { border-color: var(--navy); }
+  .mbtn--line:hover { background: var(--navy); color: #fff; }
+  .mbtn--dark { background: var(--navy); color: #fff; }
+  .mbtn--ghost { color: var(--ink-2); text-decoration: underline; text-underline-offset: 3px; padding: 0 10px; }
+  .mbtn--sm { min-height: 44px; font-size: 14px; }
+  .mbtn--icon { width: 44px; padding: 0; flex: none; }
+  .mbtn--float { width: 48px; height: 48px; background: var(--navy); color: #fff; box-shadow: 0 2px 10px rgba(11, 34, 56, .25); border-radius: 24px; }
+  .mbtn--float[aria-pressed="true"] { background: var(--accent); }
+
+  .mzoom { position: absolute; z-index: 4; right: 16px; bottom: 32px; display: none; flex-direction: column; gap: 8px; }
+  @media (min-width: 900px) {
+    .mzoom { display: flex; }
+    .mapapp.has-sheet .mzoom { right: 440px; }
+  }
+
+  /* маркеры */
+  .mk { width: 44px; height: 44px; border: 0; padding: 0; background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+  .mk[hidden] { display: none; }
+  .mk__dot { width: 30px; height: 30px; border-radius: 15px; border: 3px solid #fff; background: var(--navy); color: #fff; box-shadow: 0 2px 8px rgba(11, 34, 56, .35); display: flex; align-items: center; justify-content: center; font: 700 13px var(--font); transition: transform .2s var(--ease), background .2s; }
+  .mk:hover .mk__dot { transform: scale(1.1); }
+  .mk.is-unsure .mk__dot { border-style: dashed; }
+  .mk.is-num .mk__dot { background: var(--navy-2); box-shadow: 0 0 0 2px var(--accent), 0 2px 8px rgba(11, 34, 56, .35); }
+  .mk.is-active .mk__dot { background: var(--accent); transform: scale(1.2); box-shadow: 0 3px 12px rgba(224, 69, 43, .5); }
+  .mk.is-dim { opacity: .45; }
+  .mk:focus-visible { outline: none; }
+  .mk:focus-visible .mk__dot { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .mk-me { width: 18px; height: 18px; border-radius: 50%; background: #2B8CB8; border: 3px solid #fff; box-shadow: 0 0 0 6px rgba(43, 140, 184, .25); }
+
+  /* нижняя карточка / боковая панель */
+  .msheet { position: absolute; z-index: 6; left: 0; right: 0; bottom: 0; height: 0; background: var(--paper); border-radius: 20px 20px 0 0; box-shadow: 0 -6px 24px rgba(11, 34, 56, .2); display: flex; flex-direction: column; overflow: hidden; transition: height .32s var(--ease); }
+  .msheet[hidden] { display: none; }
+  .msheet.is-drag { transition: none; }
+  .msheet__grab { position: relative; flex: none; height: 32px; display: flex; justify-content: center; align-items: flex-start; touch-action: none; cursor: grab; }
+  .msheet__handle { width: 44px; height: 5px; border-radius: 3px; background: #B7C8D2; margin-top: 9px; }
+  .msheet__close { position: absolute; right: 8px; top: 4px; width: 44px; height: 44px; border: 0; border-radius: 22px; background: var(--frost); display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 2; }
+  .msheet__body { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 4px 16px 12px; }
+  .msheet__foot { flex: none; display: flex; gap: 8px; padding: 10px 16px calc(12px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); }
+  .msheet__foot:empty { display: none; }
+  .msheet__attr { flex: none; font-size: 11px; color: var(--ink-3); padding: 0 16px calc(6px + env(safe-area-inset-bottom)); margin-top: -6px; }
+  .msheet__attr a { text-decoration: underline; }
+  @media (min-width: 900px) { .msheet__attr { display: none; } }
+  .msheet__foot .mbtn { flex: 1 1 0; min-width: 0; padding: 0 10px; }
+  .msheet__foot .mbtn--primary { flex: 1.5 1 0; }
+  .msheet__foot .mbtn--icon { flex: 0 0 44px; }
+  @media (min-width: 900px) {
+    .msheet { left: auto; right: 16px; top: 16px; bottom: 16px; width: 408px; height: auto !important; border-radius: 18px; transition: none; }
+    .msheet__grab { height: 8px; cursor: default; }
+    .msheet__handle { display: none; }
+    .msheet__close { top: 10px; right: 10px; box-shadow: 0 2px 8px rgba(11, 34, 56, .2); }
+    .msheet__body { padding-top: 10px; }
+  }
+
+  .mback { display: inline-flex; align-items: center; gap: 4px; min-height: 44px; border: 0; background: none; padding: 0 8px 0 0; font: 600 15px var(--font); color: var(--ink-2); cursor: pointer; }
+  .mgal { position: relative; background: var(--navy); margin-right: 44px; }
+  @media (min-width: 900px) { .mgal { margin-right: 48px; } }
+  .mgal__track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; height: 190px; }
+  .mgal__track::-webkit-scrollbar { display: none; }
+  .mgal__item { flex: 0 0 100%; scroll-snap-align: start; height: 100%; }
+  .mgal__item img { width: 100%; height: 100%; object-fit: cover; }
+  .mgal__count { position: absolute; right: 8px; bottom: 8px; background: rgba(11, 34, 56, .82); color: #fff; font-size: 12px; font-weight: 600; padding: 4px 8px; border-radius: 10px; pointer-events: none; }
+  .mgal__nav { position: absolute; top: 50%; translate: 0 -50%; width: 44px; height: 44px; border: 0; border-radius: 22px; background: rgba(255, 255, 255, .9); display: none; align-items: center; justify-content: center; cursor: pointer; }
+  .mgal__nav--prev { left: 8px; } .mgal__nav--next { right: 8px; }
+  @media (hover: hover) { .mgal:hover .mgal__nav { display: flex; } }
+  .mgal--empty { height: 64px; display: flex; flex-direction: row; gap: 10px; align-items: center; justify-content: center; color: var(--steel); font-size: 13px; font-weight: 600; }
+  .mgal__thumbs { display: flex; gap: 6px; padding-top: 8px; overflow-x: auto; scrollbar-width: none; }
+  .mgal__thumb { flex: none; width: 56px; height: 44px; padding: 0; border: 0; cursor: pointer; background: var(--frost); opacity: .7; }
+  .mgal__thumb img { width: 100%; height: 100%; object-fit: cover; }
+  .mgal__thumb.is-on { opacity: 1; outline: 3px solid var(--accent); outline-offset: -3px; }
+
+  .mplace { display: flex; flex-direction: column; gap: 8px; padding-top: 12px; }
+  .mtags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .mtag { font-size: 12px; font-weight: 700; padding: 3px 8px; border-radius: 10px; background: var(--frost); color: var(--ink); }
+  .mtag--kind { background: transparent; border: 1px solid var(--line-2); color: var(--ink-2); }
+  .mplace__head { display: flex; gap: 12px; align-items: flex-start; }
+  .mplace__titles { flex: 1; min-width: 0; }
+  .mplace__name { font-size: 22px; line-height: 1.15; font-weight: 800; }
+  .mplace__zh { font-size: 14px; color: var(--ink-3); margin-top: 3px; }
+  .mplace__now { font-size: 14px; line-height: 1.45; color: var(--ink-2); font-weight: 500; }
+  .mplace__text { font-size: 15px; line-height: 1.55; color: var(--ink-2); }
+  .munsure { align-self: flex-start; font-size: 13px; font-weight: 600; color: #8A3B12; background: #FBEDE4; padding: 4px 10px; border-radius: 10px; }
+  .mselbtn { flex: none; display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 12px 0 10px; border-radius: 22px; border: 1.5px solid var(--navy); background: var(--paper); font: 600 14px var(--font); color: var(--ink); cursor: pointer; }
+  .mselbtn.is-on { background: var(--navy); color: #fff; }
+
+  .mhead { display: flex; flex-direction: column; gap: 6px; padding: 4px 48px 12px 0; }
+  .mhead__eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+  .mhead__title { font-size: 22px; line-height: 1.15; font-weight: 800; }
+  .mhead__n { color: var(--ink-3); font-weight: 600; }
+  .mhead__hint { font-size: 14px; line-height: 1.45; color: var(--ink-2); }
+  .mgroup { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); padding: 12px 0 4px; }
+  .mlist, .mstops { list-style: none; margin: 0; padding: 0; }
+  .mrow { display: flex; align-items: center; border-bottom: 1px solid var(--line); }
+  .mrow__main { flex: 1; min-width: 0; display: flex; align-items: center; gap: 12px; min-height: 56px; padding: 6px 0; border: 0; background: none; text-align: left; cursor: pointer; font: inherit; color: inherit; }
+  .mrow__ic { flex: none; width: 32px; height: 32px; border-radius: 16px; background: var(--navy); color: #fff; display: flex; align-items: center; justify-content: center; }
+  .mrow__txt { display: flex; flex-direction: column; min-width: 0; }
+  .mrow__name { font-size: 16px; font-weight: 700; line-height: 1.25; }
+  .mrow__meta { font-size: 13px; color: var(--ink-3); }
+  .mrow__main:hover .mrow__name { text-decoration: underline; text-underline-offset: 3px; }
+  .mrow__chk { flex: none; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; cursor: pointer; position: relative; }
+  .mrow__chk input { position: absolute; opacity: 0; width: 100%; height: 100%; margin: 0; cursor: pointer; }
+  .mrow__box { width: 26px; height: 26px; border-radius: 8px; border: 2px solid var(--line-2); display: flex; align-items: center; justify-content: center; color: transparent; transition: background .15s, border-color .15s; }
+  .mrow__box svg { width: 16px; height: 16px; }
+  .mrow__chk input:checked + .sr-only + .mrow__box { background: var(--navy); border-color: var(--navy); color: #fff; }
+  .mrow__chk input:focus-visible + .sr-only + .mrow__box { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .mempty { padding: 16px 0; color: var(--ink-2); display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
+
+  .mfield { display: flex; flex-direction: column; gap: 4px; font-size: 13px; font-weight: 700; color: var(--ink-3); margin-bottom: 8px; }
+  .mfield select { min-height: 44px; border: 1.5px solid var(--line-2); border-radius: 12px; padding: 0 12px; font: 500 15px var(--font); color: var(--ink); background: var(--paper); }
+  .mstop { display: flex; align-items: center; gap: 10px; border-bottom: 1px solid var(--line); }
+  .mstop__n { flex: none; width: 30px; height: 30px; border-radius: 15px; background: var(--navy); color: #fff; font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center; }
+  .mstop__main { flex: 1; min-width: 0; display: flex; flex-direction: column; min-height: 56px; justify-content: center; border: 0; background: none; text-align: left; padding: 6px 0; cursor: pointer; font: inherit; color: inherit; }
+  .mstop__name { font-size: 15px; font-weight: 700; line-height: 1.25; }
+  .mstop__meta { font-size: 13px; color: var(--ink-3); }
+  .mstop__act { flex: none; min-width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; border-radius: 22px; border: 0; background: var(--frost); font: 600 13px var(--font); color: var(--ink); cursor: pointer; padding: 0 10px; }
+  .mstop__rm { padding: 0; width: 44px; }
+  .mtotal { font-size: 14px; color: var(--ink-2); padding: 10px 0; }
+  .mrowbtns { display: flex; flex-wrap: wrap; gap: 8px; padding: 6px 0 4px; }
+
+  .mtoast { position: absolute; z-index: 9; left: 50%; top: 128px; translate: -50% -10px; opacity: 0; pointer-events: none; background: var(--navy); color: #fff; font-size: 14px; font-weight: 600; padding: 10px 16px; border-radius: 20px; transition: opacity .2s, translate .2s; max-width: calc(100% - 32px); }
+  .mtoast.is-on { opacity: 1; translate: -50% 0; }
+
+  .mapapp .maplibregl-ctrl-attrib { font-size: 11px; }
+  .mapapp .maplibregl-ctrl-bottom-left { z-index: 3; }
+  @media (max-width: 899px) { .mapapp.has-sheet .maplibregl-ctrl-bottom-left { display: none; } }
+  @media (prefers-reduced-motion: reduce) { .msheet, .mk__dot, .mtoast { transition: none; } }
+</style>

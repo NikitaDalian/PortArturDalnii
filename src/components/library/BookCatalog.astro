@@ -1,0 +1,179 @@
+---
+// Каталог книг: фильтры по уровню и жанру, сортировка. Состояние в адресе (?level=start&kind=memoir&sort=year).
+import BookRow from '../BookRow.astro';
+import { BOOK_LEVELS, plural, type Book } from '../../lib/data';
+import { BOOK_KINDS, levelRank, firstYear, authorKey } from './labels';
+interface Props { books: Book[] }
+const { books } = Astro.props;
+const sorted = [...books].sort((a, b) => levelRank(a.level) - levelRank(b.level) || authorKey(a.author).localeCompare(authorKey(b.author), 'ru'));
+const levelCount = (k: string) => books.filter((b) => b.level === k).length;
+const kinds = Object.keys(BOOK_KINDS).filter((k) => books.some((b) => b.kind === k));
+const kindCount = (k: string) => books.filter((b) => b.kind === k).length;
+const SORTS = [
+  { key: 'rating', label: 'По оценке' },
+  { key: 'year', label: 'По году' },
+  { key: 'author', label: 'По автору' },
+];
+const total = books.length;
+---
+<div class="catalog" data-catalog>
+  <div class="catalog__controls stack" style="--stack-gap:14px">
+    <div class="catalog__group" role="group" aria-label="Уровень">
+      <span class="eyebrow catalog__label" aria-hidden="true">Уровень</span>
+      <div class="chip-row">
+        <button type="button" class="chip" data-filter="level" data-value="" aria-pressed="true">Все<span class="catalog__n">{total}</span></button>
+        {Object.entries(BOOK_LEVELS).map(([k, l]) => (
+          <button type="button" class="chip" data-filter="level" data-value={k} aria-pressed="false">
+            <span class="catalog__dot" style={`background:${l.color}`} aria-hidden="true"></span>{l.label}<span class="catalog__n">{levelCount(k)}</span>
+          </button>
+        ))}
+      </div>
+    </div>
+    <div class="catalog__group" role="group" aria-label="Жанр">
+      <span class="eyebrow catalog__label" aria-hidden="true">Жанр</span>
+      <div class="chip-row">
+        <button type="button" class="chip" data-filter="kind" data-value="" aria-pressed="true">Все жанры</button>
+        {kinds.map((k) => (
+          <button type="button" class="chip" data-filter="kind" data-value={k} aria-pressed="false">{BOOK_KINDS[k]}<span class="catalog__n">{kindCount(k)}</span></button>
+        ))}
+      </div>
+    </div>
+    <div class="catalog__bar">
+      <p class="meta catalog__count" aria-live="polite" data-count>{total} {plural(total, 'книга', 'книги', 'книг')}</p>
+      <div class="catalog__sort" role="group" aria-label="Сортировка">
+        <span class="meta" aria-hidden="true">Сортировать:</span>
+        {SORTS.map((s, i) => (
+          <button type="button" class="catalog__sort-btn" data-sort={s.key} aria-pressed={i === 0 ? 'true' : 'false'}>{s.label}</button>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <ul class="row-list catalog__list" data-list>
+    {sorted.map((b, i) => (
+      <li
+        class="catalog__item"
+        data-level={b.level}
+        data-kind={b.kind}
+        data-rank={levelRank(b.level)}
+        data-year={firstYear(b.year) ?? ''}
+        data-author={authorKey(b.author)}
+        data-i={i}
+      >
+        <BookRow b={b} />
+      </li>
+    ))}
+  </ul>
+  <div class="catalog__empty panel panel--frost" data-empty hidden>
+    <p>Книг с таким сочетанием уровня и жанра пока нет.</p>
+    <button type="button" class="btn btn--outline btn--sm" data-reset>Сбросить фильтры</button>
+  </div>
+</div>
+
+<style>
+  .catalog__group { display: flex; flex-direction: column; gap: 8px; }
+  .catalog__label { font-size: 12px; }
+  .catalog__n { margin-left: 8px; font-weight: 500; opacity: .65; }
+  .catalog__dot { width: 9px; height: 9px; border-radius: 50%; margin-right: 8px; flex: none; }
+  .chip[aria-pressed="true"] .catalog__dot { box-shadow: 0 0 0 2px #fff; }
+  .catalog__bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 4px 24px; margin-top: 8px; }
+  .catalog__count { font-size: 15px; }
+  .catalog__sort { display: flex; flex-wrap: wrap; align-items: center; gap: 0 4px; }
+  .catalog__sort-btn { min-height: var(--tap); padding: 0 10px; background: none; border: 0; border-bottom: 2px solid transparent;
+    font-weight: 600; font-size: 15px; color: var(--ink-2); cursor: pointer; transition: color .2s, border-color .2s; }
+  .catalog__sort-btn:hover { color: var(--ink); }
+  .catalog__sort-btn[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+  .catalog__list { list-style: none; margin: 16px 0 0; padding: 0; }
+  .catalog__item[hidden] { display: none; }
+  .catalog__empty { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; }
+  .catalog__empty[hidden] { display: none; }
+</style>
+
+<script>
+  type Key = 'level' | 'kind';
+
+  function initCatalog() {
+    const root = document.querySelector<HTMLElement>('[data-catalog]');
+    if (!root || root.dataset.ready) return;
+    root.dataset.ready = '1';
+    const list = root.querySelector<HTMLElement>('[data-list]')!;
+    const items = [...list.querySelectorAll<HTMLElement>('.catalog__item')];
+    const countEl = root.querySelector<HTMLElement>('[data-count]')!;
+    const empty = root.querySelector<HTMLElement>('[data-empty]')!;
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const valid = (key: Key) => new Set([...root.querySelectorAll<HTMLElement>(`[data-filter="${key}"]`)].map((b) => b.dataset.value ?? ''));
+    const validLevels = valid('level');
+    const validKinds = valid('kind');
+
+    const q = new URLSearchParams(location.search);
+    const state = {
+      level: validLevels.has(q.get('level') ?? '') ? q.get('level') ?? '' : '',
+      kind: validKinds.has(q.get('kind') ?? '') ? q.get('kind') ?? '' : '',
+      sort: ['rating', 'year', 'author'].includes(q.get('sort') ?? '') ? q.get('sort') ?? 'rating' : 'rating',
+    };
+
+    const word = (n: number) => {
+      const m10 = n % 10, m100 = n % 100;
+      return m10 === 1 && m100 !== 11 ? 'книга' : m10 >= 2 && m10 <= 4 && (m100 < 10 || m100 >= 20) ? 'книги' : 'книг';
+    };
+    const num = (el: HTMLElement, k: string) => Number(el.dataset[k]);
+    const cmp: Record<string, (a: HTMLElement, b: HTMLElement) => number> = {
+      rating: (a, b) => num(a, 'rank') - num(b, 'rank') || num(a, 'i') - num(b, 'i'),
+      year: (a, b) => {
+        const ya = a.dataset.year ? num(a, 'year') : Infinity;
+        const yb = b.dataset.year ? num(b, 'year') : Infinity;
+        return ya - yb || num(a, 'i') - num(b, 'i');
+      },
+      author: (a, b) => (a.dataset.author ?? '').localeCompare(b.dataset.author ?? '', 'ru') || num(a, 'i') - num(b, 'i'),
+    };
+
+    function syncUrl() {
+      const u = new URL(location.href);
+      ['level', 'kind', 'sort'].forEach((p) => u.searchParams.delete(p));
+      if (state.level) u.searchParams.set('level', state.level);
+      if (state.kind) u.searchParams.set('kind', state.kind);
+      if (state.sort !== 'rating') u.searchParams.set('sort', state.sort);
+      history.replaceState(history.state, '', u.pathname + u.search + u.hash);
+    }
+
+    function render(animate: boolean) {
+      root!.querySelectorAll<HTMLElement>('[data-filter]').forEach((b) => {
+        b.setAttribute('aria-pressed', String(state[b.dataset.filter as Key] === (b.dataset.value ?? '')));
+      });
+      root!.querySelectorAll<HTMLElement>('[data-sort]').forEach((b) => b.setAttribute('aria-pressed', String(state.sort === b.dataset.sort)));
+
+      const ordered = [...items].sort(cmp[state.sort]);
+      ordered.forEach((el) => list.appendChild(el));
+      const shown = ordered.filter((el) => {
+        const ok = (!state.level || el.dataset.level === state.level) && (!state.kind || el.dataset.kind === state.kind);
+        el.hidden = !ok;
+        return ok;
+      });
+      countEl.textContent = `${shown.length} ${word(shown.length)}`;
+      empty.hidden = shown.length > 0;
+
+      if (animate && !reduce && typeof shown[0]?.animate === 'function') {
+        shown.slice(0, 12).forEach((el, i) => {
+          el.animate(
+            [{ opacity: 0, transform: 'translateY(10px)' }, { opacity: 1, transform: 'none' }],
+            { duration: 320, delay: i * 28, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'backwards' },
+          );
+        });
+      }
+    }
+
+    root.addEventListener('click', (e) => {
+      const t = (e.target as HTMLElement).closest<HTMLElement>('[data-filter],[data-sort],[data-reset]');
+      if (!t) return;
+      if (t.dataset.filter) state[t.dataset.filter as Key] = t.dataset.value ?? '';
+      else if (t.dataset.sort) state.sort = t.dataset.sort;
+      else { state.level = ''; state.kind = ''; }
+      render(true);
+      syncUrl();
+    });
+
+    render(false);
+  }
+
+  document.addEventListener('astro:page-load', initCatalog);
+</script>

@@ -1,0 +1,167 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import SiteGuide from '../../components/about/SiteGuide.astro';
+import { href, authorImg, TG_CHANNEL, articles, people, places, books, sources, routes, plural } from '../../lib/data';
+const n = (x: number, a: string, b: string, c: string) => `${x} ${plural(x, a, b, c)}`;
+const channelLabel = TG_CHANNEL.replace(/^https?:\/\//, '');
+---
+<Base
+  title="О проекте"
+  description="Что такое «Портъ-Артуръ и Дальнiй»: сайт-каталог Telegram-канала об истории Даляня и Порт-Артура, авторы проекта и правила использования материалов."
+  section="about"
+>
+  <PageHero
+    title="О проекте"
+    eyebrow="Портъ-Артуръ и Дальнiй"
+    lead="Сайт-каталог Telegram-канала об истории Даляня и Порт-Артура: заметки, люди, места и книги, связанные между собой."
+    crumbs={[{ label: 'Главная', href: href.home() }, { label: 'О проекте' }]}
+  />
+
+  <section class="section container" aria-labelledby="what-h">
+    <div class="split">
+      <div class="stack reveal" style="--stack-gap:20px">
+        <h2 id="what-h" class="h2">Сайт и канал</h2>
+        <div class="prose">
+          <p>
+            Проект начался с Telegram-канала. Там выходят посты об истории Даляня и Люйшуня — бывших Дальнего и Порт-Артура:
+            о событиях, людях, книгах и местах. Сайт собирает эти посты в каталог.
+          </p>
+          <p>
+            Полные тексты живут в канале. На сайте у каждой заметки — короткая аннотация, главные факты и ссылка
+            «Читать в Telegram». Зато здесь видно то, что теряется в ленте: какие люди, места и книги связаны с заметкой,
+            к какому периоду она относится и где это место на карте.
+          </p>
+        </div>
+      </div>
+      <div class="compare reveal" style="--d:100ms">
+        <div class="panel compare__col">
+          <p class="eyebrow">Канал</p>
+          <ul class="compare__list">
+            <li>Полные тексты постов и фотографии</li>
+            <li>Новые заметки по мере выхода</li>
+            <li>Разговор с автором: темы, находки, споры</li>
+          </ul>
+          <a class="btn btn--primary btn--sm" href={TG_CHANNEL} target="_blank" rel="noopener">Открыть канал</a>
+        </div>
+        <div class="panel panel--frost compare__col">
+          <p class="eyebrow">Сайт</p>
+          <ul class="compare__list">
+            <li>Каталог: {n(articles.length, 'заметка', 'заметки', 'заметок')} по периодам и темам</li>
+            <li>{n(people.length, 'персона', 'персоны', 'персон')}, {n(places.length, 'место', 'места', 'мест')} на карте, {n(routes.length, 'маршрут', 'маршрута', 'маршрутов')}</li>
+            <li>Библиотека: {n(books.length, 'книга', 'книги', 'книг')} и {n(sources.length, 'источник', 'источника', 'источников')}</li>
+            <li>Связи между всем этим, указатель и поиск</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="paper about-authors" aria-labelledby="authors-h">
+    <div class="container section">
+      <h2 id="authors-h" class="h2 reveal" style="margin-bottom:32px">Авторы</h2>
+
+      <article id="viktoriia" class="vika">
+        <figure class="vika__fig reveal">
+          <img src={authorImg('viktoriia')} alt="Виктория, автор канала" width="640" height="640" loading="lazy" decoding="async" />
+        </figure>
+        <div class="stack reveal" style="--stack-gap:16px; --d:100ms">
+          <p class="eyebrow">Автор канала</p>
+          <h3 class="h3 vika__name">Виктория</h3>
+          <div class="prose">
+            <p>
+              Я историк и преподаватель истории. Четырнадцать лет работала научным сотрудником Государственного архива
+              Свердловской области в Екатеринбурге. Военным историком себя не назову, но с документами дружу давно.
+            </p>
+            <p>
+              Уже три года я живу в Даляне (大连), бывшем Дальнем. Всё началось с экскурсии: я хотела провести друзей
+              по местам обороны Порт-Артура, они совсем рядом с моим домом. Думала, немного почитаю перед прогулкой.
+              В итоге появились книги, мемуары, архивные источники, лекции, а потом и интерес ко всей Маньчжурии,
+              где переплелись судьбы России, Японии, Кореи и Китая.
+            </p>
+            <p>
+              Здесь я рассказываю о людях, которые творили эту историю, о книгах с цитатами и заметками на полях,
+              о событиях целого века, о фильмах и романах о войне, удачных и не очень. И показываю много фотографий.
+            </p>
+            <p>Жду живого разговора: предлагайте темы, делитесь находками, спорьте.</p>
+          </div>
+          <blockquote class="quote">«Хочется говорить о войне спокойно и честно, без лишнего пафоса, с опорой на источники».</blockquote>
+        </div>
+      </article>
+
+      <article id="oksana" class="oksana panel panel--frost reveal">
+        <span class="oksana__initial" aria-hidden="true">О</span>
+        <div class="stack" style="--stack-gap:4px; min-width:0">
+          <h3 class="h3">Оксана</h3>
+          <p class="muted">Руководитель Русского клуба Даляня.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section container" aria-labelledby="use-h">
+    <div class="split">
+      <div class="stack reveal" style="--stack-gap:20px">
+        <h2 id="use-h" class="h2">Как пользоваться материалами</h2>
+        <div class="prose">
+          <p>
+            Цитировать и пересказывать материалы можно со ссылкой на канал:
+            <a href={TG_CHANNEL} target="_blank" rel="noopener">{channelLabel}</a>. Ссылка обязательна и для текстов, и для фотографий.
+          </p>
+          <p>
+            Фотографии взяты из открытых архивов и собрания авторов. На сайте они публикуются с водяным знаком проекта.
+          </p>
+          <p>
+            Если у даты, координат или детали стоит пометка «уточняется», значит, сведения
+            пока проверяются. Нашли ошибку или знаете больше — напишите в канале.
+          </p>
+        </div>
+      </div>
+      <div class="stack reveal" style="--stack-gap:20px; --d:100ms">
+        <h2 class="h2">Как устроен сайт</h2>
+        <p class="lead">Все разделы ссылаются друг на друга: из заметки можно перейти к людям и местам, от места — к маршруту и карте.</p>
+      </div>
+    </div>
+    <div style="margin-top:32px">
+      <SiteGuide />
+    </div>
+  </section>
+
+  <section class="dark about-cta">
+    <div class="container section--tight about-cta__inner reveal">
+      <div class="stack" style="--stack-gap:8px; min-width:0">
+        <h2 class="h2">Полные тексты — в канале</h2>
+        <p class="lead">Посты целиком, фотографии и разговор с автором.</p>
+      </div>
+      <a class="btn btn--primary" href={TG_CHANNEL} target="_blank" rel="noopener">
+        Читать канал в Telegram
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg>
+      </a>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .compare { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); align-content: start; }
+  .compare__col { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
+  .compare__list { margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 8px; font-size: 16px; line-height: 1.45; color: var(--ink-2); }
+  .compare__list li::marker { color: var(--accent); }
+  .compare__col .btn { margin-top: auto; }
+
+  .about-authors { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .vika { display: flex; flex-wrap: wrap; gap: 32px 48px; align-items: flex-start; scroll-margin-top: 96px; }
+  .vika > .stack { flex: 1.6 1 420px; min-width: 0; }
+  .vika__fig { flex: 1 1 280px; min-width: 0; max-width: 460px; }
+  .vika__fig img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center 25%; }
+  .vika__name { font-size: clamp(26px, 2.4vw, 32px); font-weight: 800; }
+  .oksana { margin-top: 40px; display: flex; gap: 16px; align-items: center; scroll-margin-top: 96px; }
+  .oksana__initial { flex: none; width: 64px; height: 64px; border-radius: 50%; background: var(--accent); color: #fff;
+    display: flex; align-items: center; justify-content: center; font-size: 26px; font-weight: 800; }
+
+  .about-cta__inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 40px; }
+  @media (max-width: 720px) {
+    .vika__fig { max-width: none; flex-basis: 100%; }
+    .vika__fig img { aspect-ratio: auto; height: 300px; }
+    .about-cta__inner .btn { width: 100%; }
+  }
+</style>

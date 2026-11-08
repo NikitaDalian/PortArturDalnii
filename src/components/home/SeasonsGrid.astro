@@ -1,0 +1,46 @@
+---
+// «Когда ехать»: четыре сезона, цветная верхняя граница, ссылка на страницу сезонов.
+import { seasons, href, plural } from '../../lib/data';
+const meta = {
+  spring: { label: 'Весна', text: 'Сакура в апреле, акация в конце мая, форты до листвы.' },
+  summer: { label: 'Лето', text: 'Море у Золотой горы, порт и набережные Даляня.' },
+  autumn: { label: 'Осень', text: 'Гинкго в парке Труда, сухопутный фронт по прозрачному воздуху.' },
+  winter: { label: 'Зима', text: 'Памятные даты осады и Русское кладбище зимой.' },
+} as const;
+const list = (Object.keys(meta) as (keyof typeof meta)[]).map((k) => ({ key: k, ...meta[k], n: seasons[k]?.length ?? 0 }));
+---
+<section class="section container" aria-labelledby="seasons-h">
+  <div class="section-head reveal">
+    <h2 id="seasons-h" class="h2">Когда ехать</h2>
+    <a class="link" href={href.seasons()}>Календарь по сезонам</a>
+  </div>
+  <ul class="seasons" role="list">
+    {list.map((s, i) => (
+      <li class="reveal" style={`--d:${i * 70}ms`}>
+        <a class="season" href={`${href.seasons()}#${s.key}`} style={`--sc:var(--s-${s.key})`}>
+          <span class="season__title">{s.label}</span>
+          <span class="season__text">{s.text}</span>
+          <span class="meta season__n">{s.n} {plural(s.n, 'повод', 'повода', 'поводов')} поехать</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</section>
+
+<style>
+  .seasons { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); }
+  .seasons li { display: flex; }
+  .season { flex: 1; display: flex; flex-direction: column; gap: 8px; min-height: 150px; padding: 24px; background: var(--paper); border-top: 6px solid var(--sc); transition: transform .3s var(--ease), box-shadow .3s; }
+  .season:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(11, 34, 56, .1); }
+  .season__title { font-size: 22px; font-weight: 700; }
+  .season:hover .season__title { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+  .season__text { font-size: 16px; line-height: 1.5; color: var(--ink-2); }
+  .season__n { margin-top: auto; padding-top: 4px; }
+  @media (max-width: 720px) {
+    .seasons { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .season { min-height: 0; padding: 16px; border-top-width: 5px; }
+    .season__title { font-size: 18px; }
+    .season__text { font-size: 14px; line-height: 1.4; }
+  }
+  @media (prefers-reduced-motion: reduce) { .season, .season:hover { transition: none; transform: none; } }
+</style>

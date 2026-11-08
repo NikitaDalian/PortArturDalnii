@@ -1,0 +1,59 @@
+---
+// «Слои истории»: пять периодов с числом заметок по каждому.
+import { LAYERS, articles, href, plural } from '../../lib/data';
+const notes: Record<string, string> = {
+  pre1898: 'Цинские укрепления, рыбацкие деревни и японо-китайская война 1894–1895 годов.',
+  russian: 'Аренда Квантуна, город с нуля за четыре года, крепость и осада.',
+  japanese: 'Квантунская область, ЮМЖД, площадь в кольце банков и вокзал 1937 года.',
+  soviet: 'Военно-морская база, совместное управление и передача Китаю.',
+  modern: 'Что сохранилось, что снесли и где искать следы старого города.',
+};
+const items = LAYERS.map((l) => {
+  const n = articles.filter((a) => (a.layer as string[]).includes(l.key)).length;
+  return { ...l, n, text: notes[l.key] };
+});
+---
+<section class="section container" aria-labelledby="layers-h">
+  <div class="section-head reveal">
+    <h2 id="layers-h" class="h2">Слои истории</h2>
+    <a class="link" href={href.layers()}>Вся хронология</a>
+  </div>
+  <ul class="layers reveal" style="--d:80ms" role="list">
+    {items.map((l) => (
+      <li>
+        <a href={href.layer(l.key)} class:list={['layer', { 'layer--accent': l.key === 'russian' }]}>
+          <span class="layer__years">{l.years}</span>
+          <span class="layer__title">{l.title}</span>
+          <span class="layer__text">{l.text}</span>
+          <span class="layer__count">{l.n} {plural(l.n, 'заметка', 'заметки', 'заметок')}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</section>
+
+<style>
+  .layers { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; background: var(--line);
+    grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); }
+  .layers li { display: flex; }
+  .layer { flex: 1; display: flex; flex-direction: column; gap: 12px; min-height: 250px; padding: 28px 24px 24px; background: var(--paper); transition: background .25s; }
+  .layer:hover { background: var(--frost); }
+  .layer__years { font-size: 15px; font-weight: 600; color: var(--ink-3); }
+  .layer__title { font-size: clamp(22px, 2vw, 26px); font-weight: 700; line-height: 1.15; letter-spacing: -0.01em; }
+  .layer:hover .layer__title { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+  .layer__text { font-size: 16px; line-height: 1.5; color: var(--ink-2); }
+  .layer__count { margin-top: auto; padding-top: 8px; font-size: var(--fs-meta); font-weight: 600; color: var(--ink-3); }
+  .layer--accent { background: var(--navy); color: #fff; }
+  .layer--accent:hover { background: var(--navy-2); }
+  .layer--accent .layer__years { color: var(--accent-on-dark); }
+  .layer--accent .layer__text { color: var(--mist); }
+  .layer--accent .layer__count { color: var(--steel); }
+
+  @media (max-width: 720px) {
+    .layer { min-height: 0; padding: 16px; display: grid; grid-template-columns: 92px 1fr; gap: 2px 16px; align-items: baseline; }
+    .layer__years { font-size: 14px; grid-row: span 2; }
+    .layer__title { font-size: 18px; }
+    .layer__text { display: none; }
+    .layer__count { padding-top: 0; grid-column: 2; }
+  }
+</style>

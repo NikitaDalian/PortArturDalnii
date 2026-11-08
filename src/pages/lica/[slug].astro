@@ -1,0 +1,185 @@
+---
+import Base from '../../layouts/Base.astro';
+import Coast from '../../components/Coast.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import BookRow from '../../components/BookRow.astro';
+import PlaceCard from '../../components/PlaceCard.astro';
+import TgButton from '../../components/TgButton.astro';
+import Portrait from '../../components/people/Portrait.astro';
+import PersonFacts from '../../components/people/PersonFacts.astro';
+import PersonNav from '../../components/people/PersonNav.astro';
+import { personArticles, personBooks, neighbors, splitName, splitQuote } from '../../components/people/relations';
+import { href, img, entity, people, placeBySlug, COUNTRIES, plural, type Person, type Place } from '../../lib/data';
+
+export function getStaticPaths() {
+  return people.map((p) => ({ params: { slug: p.slug }, props: { p } }));
+}
+
+interface Props { p: Person }
+const { p } = Astro.props;
+const c = COUNTRIES[p.country] ?? COUNTRIES.other;
+const name = splitName(p.name);
+const notes = personArticles(p);
+const { authored, reviewed } = personBooks(p);
+const near = neighbors(p, 8);
+const quote = p.quote ? splitQuote(p.quote) : null;
+const placeSlugs = p.places as string[];
+const placePages = placeSlugs.map((s) => placeBySlug.get(s)).filter(Boolean) as Place[];
+const placeText = placeSlugs.filter((s) => !placeBySlug.has(s)).map((s) => entity('place', s));
+const posts = (p.posts as number[]) || [];
+const firstPost = posts.length ? Math.min(...posts) : (notes[0]?.tg_ids?.[0] ?? null);
+const bookCount = authored.length + reviewed.length;
+---
+<Base title={name.main} description={`${p.name}${p.years ? `, ${p.years}` : ''}. ${p.role}.`} image={img(p.portrait)} section="people">
+  <section class="dark ph">
+    <div class="container">
+      <nav class="crumbs" aria-label="Путь">
+        <a href={href.home()}>Главная</a><span aria-hidden="true">/</span>
+        <a href={href.people()}>Лица</a><span aria-hidden="true">/</span>
+        <span aria-current="page">{name.main}</span>
+      </nav>
+      <div class="ph__inner">
+        <div class="ph__portrait"><Portrait p={p} /></div>
+        <div class="ph__head stack" style="--stack-gap:12px">
+          <p class="ph__meta" style={`--cc:${c.color}`}>
+            {p.years && <span>{p.years}</span>}
+            <span class="ph__country"><span class="ph__dot" aria-hidden="true"></span>{c.label}</span>
+          </p>
+          <h1 class="h1 ph__name">{name.main}{name.alt && <span class="ph__alt"> {name.alt}</span>}</h1>
+        </div>
+        <p class="lead ph__role">{p.role}</p>
+      </div>
+    </div>
+    <Coast />
+  </section>
+
+  <section class="section section--tight">
+    <div class="container ps-split">
+      <div class="stack ps-main" style="--stack-gap:28px">
+        <h2 class="sr-only">Биография</h2>
+        {p.bio && <div class="prose reveal"><p>{p.bio}</p></div>}
+        {quote && (
+          <blockquote class="quote ps-quote reveal" style="--d:80ms">
+            <p>{quote.text}</p>
+            {quote.source && <footer class="meta ps-quote__src">{quote.source}</footer>}
+          </blockquote>
+        )}
+      </div>
+      <aside class="ps-aside reveal" style="--d:120ms" aria-labelledby="facts">
+        <h2 class="eyebrow" id="facts">Справка</h2>
+        <PersonFacts p={p} notes={notes.length} />
+      </aside>
+    </div>
+  </section>
+
+  {notes.length > 0 && (
+    <section class="section section--tight paper" aria-labelledby="notes">
+      <div class="container">
+        <div class="section-head">
+          <div class="stack" style="--stack-gap:8px">
+            <h2 class="h2" id="notes">Читать в канале</h2>
+            <p class="muted">{notes.length} {plural(notes.length, 'заметка', 'заметки', 'заметок')}: на сайте краткое изложение, полный текст в Telegram</p>
+          </div>
+          {firstPost && <TgButton id={firstPost} label="Первый пост в Telegram" variant="outline" />}
+        </div>
+        <div class="row-list ps-grid">
+          {notes.map((a) => <ArticleCard a={a} variant="row" showSummary />)}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {placeSlugs.length > 0 && (
+    <section class="section section--tight" aria-labelledby="places">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2" id="places">На карте</h2>
+          {placePages.length > 0 && <a class="link" href={href.map(placePages[0].slug)}>Открыть карту</a>}
+        </div>
+        {placePages.length > 0 && (
+          <div class="grid" style="--min:220px">
+            {placePages.map((pl) => <PlaceCard p={pl} compact />)}
+          </div>
+        )}
+        {placeText.length > 0 && (
+          <p class="muted ps-also">
+            {placePages.length > 0 ? 'Также: ' : 'Связанные места, у которых пока нет своей страницы: '}
+            {placeText.map((t, i) => <>{t.label}{i < placeText.length - 1 ? ', ' : ''}</>)}
+          </p>
+        )}
+      </div>
+    </section>
+  )}
+
+  {bookCount > 0 && (
+    <section class="section section--tight" aria-labelledby="books">
+      <div class="container stack" style="--stack-gap:28px">
+        <h2 class="h2" id="books">Книги</h2>
+        {authored.length > 0 && (
+          <div class="stack" style="--stack-gap:12px">
+            {reviewed.length > 0 && <h3 class="eyebrow">Написал сам</h3>}
+            <div class="row-list ps-grid">{authored.map((b) => <BookRow b={b} />)}</div>
+          </div>
+        )}
+        {reviewed.length > 0 && (
+          <div class="stack" style="--stack-gap:12px">
+            {authored.length > 0 && <h3 class="eyebrow">Упоминается в рецензиях</h3>}
+            <div class="row-list ps-grid">{reviewed.map((b) => <BookRow b={b} />)}</div>
+          </div>
+        )}
+      </div>
+    </section>
+  )}
+
+  <section class="section section--tight" aria-labelledby="near">
+    <div class="container stack" style="--stack-gap:40px">
+      {near.length > 0 && (
+        <div class="stack" style="--stack-gap:16px">
+          <div class="stack" style="--stack-gap:6px">
+            <h2 class="h2" id="near">Рядом в истории</h2>
+            <p class="muted">Встречаются в тех же заметках</p>
+          </div>
+          <div class="cluster">
+            {near.map((x) => <a class="chip" href={href.person(x.slug)}>{splitName(x.name).main}</a>)}
+          </div>
+        </div>
+      )}
+      {near.length === 0 && <h2 class="sr-only" id="near">Другие персоны</h2>}
+      <PersonNav p={p} />
+      <p><a class="link" href={href.people()}>Все {people.length} {plural(people.length, 'персона', 'персоны', 'персон')}</a></p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .ph { padding-top: clamp(28px, 4vw, 48px); }
+  .ph__inner {
+    display: grid; column-gap: clamp(16px, 4vw, 48px); row-gap: 16px; padding: 24px 0 clamp(16px, 3vw, 32px);
+    grid-template-columns: clamp(120px, 24vw, 300px) minmax(0, 1fr);
+    grid-template-areas: "img ." "img head" "img role";
+    grid-template-rows: 1fr auto auto;
+  }
+  .ph__portrait { grid-area: img; align-self: end; }
+  .ph__head { grid-area: head; min-width: 0; }
+  .ph__role { grid-area: role; max-width: 56ch; }
+  .ph__meta { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 15px; font-weight: 600; color: var(--steel); }
+  .ph__country { display: inline-flex; align-items: center; color: var(--cc); }
+  .ph__dot { width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; background: var(--cc); }
+  .ph__name { overflow-wrap: break-word; hyphens: auto; }
+  .ph__alt { font-weight: 500; color: var(--steel); }
+
+  .ps-split { display: flex; flex-wrap: wrap; gap: 40px 64px; align-items: flex-start; }
+  .ps-main { flex: 1 1 560px; min-width: 0; }
+  .ps-aside { flex: 1 1 300px; max-width: 440px; min-width: 0; display: flex; flex-direction: column; gap: 12px; }
+  .ps-quote { margin: 0; max-width: 60ch; }
+  .ps-quote__src { margin-top: 10px; font-size: 14px; font-weight: 500; }
+  .ps-grid { display: grid; gap: 0 48px; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); }
+  .ps-also { margin-top: 20px; font-size: 16px; }
+
+  @media (max-width: 620px) {
+    .ph__inner { grid-template-areas: "img head" "role role"; grid-template-rows: auto auto; align-items: end; }
+    .ph__name { font-size: clamp(24px, 7vw, 34px); }
+    .ph__meta { font-size: 14px; }
+    .ph__role { font-size: 16px; }
+  }
+</style>

@@ -1,0 +1,180 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Coast from '../../../components/Coast.astro';
+import ArticleCard from '../../../components/ArticleCard.astro';
+import PersonRow from '../../../components/PersonRow.astro';
+import BookRow from '../../../components/BookRow.astro';
+import TgButton from '../../../components/TgButton.astro';
+import { kindLabel, peopleOf, similarBooks } from '../../../components/library/labels';
+import { books, href, img, entity, articlesOf, personBySlug, BOOK_LEVELS, plural, type Book } from '../../../lib/data';
+
+export function getStaticPaths() {
+  return books.map((b) => ({ params: { slug: b.slug }, props: { b } }));
+}
+interface Props { b: Book }
+const { b } = Astro.props;
+
+const lvl = BOOK_LEVELS[b.level] ?? BOOK_LEVELS.deep;
+const cover = img(b.cover);
+const notes = articlesOf(b.articles);
+const firstPost = b.review_post?.[0] ?? null;
+const personSlugs = peopleOf(b.articles);
+const withPage = personSlugs.filter((s) => personBySlug.has(s)).map((s) => personBySlug.get(s)!);
+// Автор книги без своей страницы не считается «человеком в книге».
+const plainPeople = personSlugs.filter((s) => !personBySlug.has(s)).map((s) => entity('person', s).label).filter((l) => l !== b.author);
+const peopleTotal = withPage.length + plainPeople.length;
+const similar = similarBooks(b, books);
+const hostOf = (u: string) => {
+  try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return u; }
+};
+const facts = [
+  { k: 'Автор', v: b.author },
+  { k: 'Годы жизни автора', v: b.author_years },
+  { k: 'Год издания', v: b.year },
+  { k: 'Жанр', v: b.kind ? kindLabel(b.kind) : null },
+].filter((f) => f.v);
+const description = b.verdict || b.annotation?.slice(0, 160);
+---
+<Base title={`${b.title} — ${b.author}`} description={description} image={cover} section="library">
+  <section class="dark book-hero">
+    <div class="container book-hero__inner">
+      <div class="book-hero__text stack" style="--stack-gap:16px">
+        <nav class="crumbs" aria-label="Путь">
+          <a href={href.home()}>Главная</a><span aria-hidden="true">/</span>
+          <a href={href.library()}>Библиотека</a><span aria-hidden="true">/</span>
+          <a href={`${href.library()}#katalog`}>Книги</a>
+        </nav>
+        <p class="eyebrow eyebrow--accent">{kindLabel(b.kind)}{b.year ? ` · ${b.year}` : ''}</p>
+        <h1 class="h1 book-hero__title">{b.title}</h1>
+        <p class="lead book-hero__author">{b.author}{b.author_years ? <span class="book-hero__years"> ({b.author_years})</span> : null}</p>
+        <a class="tag book-hero__tag" href={`${href.library()}?level=${b.level}#katalog`} style={`background:${lvl.color}`}>{lvl.label}</a>
+      </div>
+      <figure class="book-hero__fig">
+        {cover
+          ? <img class="book-hero__cover" src={cover} alt={`Обложка книги «${b.title}»`} transition:name={`book-${b.slug}`} loading="eager" decoding="async" />
+          : <span class="book-hero__cover book-hero__ph" aria-hidden="true" transition:name={`book-${b.slug}`}><span>{b.title}</span></span>}
+      </figure>
+    </div>
+    <Coast />
+  </section>
+
+  <section class="section section--tight">
+    <div class="container split book-body">
+      <div class="stack book-main" style="--stack-gap:28px">
+        {b.verdict && (
+          <div class="stack" style="--stack-gap:10px">
+            <p class="eyebrow">Наша оценка</p>
+            <p class="quote book-verdict">{b.verdict}</p>
+          </div>
+        )}
+        {b.annotation && (
+          <div class="stack" style="--stack-gap:12px">
+            <h2 class="h3">О книге</h2>
+            <div class="prose"><p>{b.annotation}</p></div>
+          </div>
+        )}
+        {b.links?.length > 0 && (
+          <div class="stack" style="--stack-gap:12px">
+            <h2 class="h3">Где читать</h2>
+            <ul class="book-links">
+              {b.links.map((l: string) => (
+                <li>
+                  <a class="btn btn--outline btn--sm" href={l} target="_blank" rel="noopener">
+                    {hostOf(l)}
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+      <aside class="book-aside" aria-label="Карточка книги">
+        <div class="panel stack" style="--stack-gap:14px">
+          <dl class="book-facts">
+            {facts.map((f) => (<><dt class="meta">{f.k}</dt><dd>{f.v}</dd></>))}
+            <dt class="meta">Уровень</dt>
+            <dd><span class="tag" style={`background:${lvl.color}`}>{lvl.label}</span></dd>
+          </dl>
+          {firstPost && <TgButton id={firstPost} label="Рецензия в Telegram" />}
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  {(notes.length > 0 || firstPost) && (
+    <section class="section section--tight paper book-sec" aria-labelledby="review-h">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2" id="review-h">Рецензия в канале</h2>
+          {firstPost && <TgButton id={firstPost} label="Открыть пост в Telegram" variant="outline" />}
+        </div>
+        {notes.length > 0 && (
+          <div class="row-list book-notes">
+            {notes.map((a) => <ArticleCard a={a} variant="row" showSummary />)}
+          </div>
+        )}
+      </div>
+    </section>
+  )}
+
+  {peopleTotal > 0 && (
+    <section class="section section--tight" aria-labelledby="people-h">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2" id="people-h">Люди в книге</h2>
+          <p class="meta">{peopleTotal} {plural(peopleTotal, 'человек', 'человека', 'человек')} в заметках о книге</p>
+        </div>
+        {withPage.length > 0 && (
+          <div class="grid book-people" style="--min:300px; --grid-gap:0 32px">
+            {withPage.map((p) => <PersonRow p={p} size="sm" />)}
+          </div>
+        )}
+        {plainPeople.length > 0 && (
+          <p class="muted book-plain"><span class="meta">Также упомянуты: </span>{plainPeople.join(', ')}</p>
+        )}
+      </div>
+    </section>
+  )}
+
+  {similar.length > 0 && (
+    <section class="section section--tight paper book-sec" aria-labelledby="similar-h">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2" id="similar-h">Похожие книги</h2>
+          <a class="link" href={`${href.library()}#katalog`}>Весь каталог</a>
+        </div>
+        <div class="grid" style="--min:420px; --grid-gap:0 40px">
+          {similar.map((x) => <BookRow b={x} />)}
+        </div>
+      </div>
+    </section>
+  )}
+</Base>
+
+<style>
+  .book-hero { padding-top: clamp(32px, 5vw, 56px); }
+  .book-hero__inner { display: flex; flex-wrap: wrap-reverse; gap: 32px 56px; align-items: flex-end; padding-bottom: 28px; }
+  .book-hero__text { flex: 1 1 480px; min-width: 0; }
+  .book-hero__title { overflow-wrap: anywhere; hyphens: auto; }
+  .book-hero__author { color: #fff; font-weight: 600; }
+  .book-hero__years { color: var(--steel); font-weight: 400; }
+  .book-hero__tag { min-height: 28px; }
+  .book-hero__tag:hover { filter: brightness(1.15); }
+  .book-hero__fig { flex: 0 0 auto; }
+  .book-hero__cover { display: block; width: clamp(180px, 22vw, 300px); aspect-ratio: 2 / 3; height: auto; object-fit: cover;
+    box-shadow: 0 18px 48px rgba(0,0,0,.45); background: var(--navy-2); }
+  .book-hero__ph { display: flex; align-items: flex-end; padding: 18px; border-left: 8px solid var(--sea); color: var(--steel); font-weight: 700; font-size: 18px; line-height: 1.25; }
+  .book-verdict { font-size: clamp(20px, 2vw, 24px); }
+  .book-links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .book-aside { flex: 0 1 360px !important; }
+  .book-facts { display: grid; grid-template-columns: auto 1fr; gap: 10px 16px; margin: 0; align-items: baseline; }
+  .book-facts dd { margin: 0; font-weight: 600; }
+  .book-sec { border-top: 1px solid var(--line); }
+  .book-plain { margin-top: 20px; font-size: 16px; }
+  @media (max-width: 520px) {
+    .book-hero__cover { width: 160px; }
+    .book-facts { grid-template-columns: 1fr; gap: 2px; }
+    .book-facts dd + dt { margin-top: 10px; }
+  }
+</style>

@@ -1,11 +1,11 @@
 ---
 // Строка персоны (как в списке «Лица»). Работает на тёмном и светлом фоне.
-import { href, img, COUNTRIES, type Person } from '../lib/data';
+import { href, img, initials as toInitials, COUNTRIES, type Person } from '../lib/data';
 interface Props { p: Person; size?: 'md' | 'sm' }
 const { p, size = 'md' } = Astro.props;
 const c = COUNTRIES[p.country] ?? COUNTRIES.other;
 const portrait = img(p.portrait, 640);
-const initials = p.short ? p.short.split(' ').map((w: string) => w[0]).slice(0, 2).join('') : p.name[0];
+const initials = toInitials(p.name);
 ---
 <a href={href.person(p.slug)} class:list={['row', 'person-row', `person-row--${size}`]} data-country={p.country} data-group={p.group}>
   {portrait

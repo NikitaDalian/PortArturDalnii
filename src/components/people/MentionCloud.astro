@@ -1,0 +1,24 @@
+---
+// «Ещё упоминаются в заметках»: имена из указателя без своих страниц → поиск по сайту.
+import { href, plural } from '../../lib/data';
+import { mentionedNames } from './relations';
+const names = mentionedNames();
+---
+<ul class="mc" role="list">
+  {names.map((n) => (
+    <li>
+      <a class="mc__link" href={href.search(n.query)}>
+        <span class="mc__name">{n.label}</span>
+        {n.count > 0 && <span class="mc__n" aria-label={`${n.count} ${plural(n.count, 'заметка', 'заметки', 'заметок')}`}>{n.count}</span>}
+      </a>
+    </li>
+  ))}
+</ul>
+
+<style>
+  .mc { list-style: none; margin: 0; padding: 0; columns: 4 240px; column-gap: 32px; }
+  .mc li { break-inside: avoid; border-bottom: 1px solid var(--line); }
+  .mc__link { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 44px; padding: 6px 0; font-size: 15px; line-height: 1.3; }
+  .mc__link:hover .mc__name { text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+  .mc__n { flex: none; min-width: 26px; padding: 2px 8px; border-radius: 12px; background: var(--frost); font-size: 12px; font-weight: 700; text-align: center; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+</style>

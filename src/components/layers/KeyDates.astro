@@ -1,0 +1,37 @@
+---
+// Список ключевых дат. С showLayer — подпись слоя со ссылкой (для общей хронологии).
+import { href, layerByKey } from '../../lib/data';
+import type { LayerDate } from './layers';
+interface Item extends LayerDate { layer?: string }
+interface Props { items: Item[]; showLayer?: boolean }
+const { items, showLayer = false } = Astro.props;
+---
+<ol class="kd">
+  {items.map((d) => {
+    const l = d.layer ? layerByKey(d.layer) : null;
+    return (
+      <li class="kd__item">
+        <span class="kd__date">{d.date}</span>
+        <span class="kd__body">
+          <span class="kd__text">{d.text}</span>
+          {showLayer && l && <a class="kd__layer meta" href={href.layer(l.key)}>{l.short}</a>}
+        </span>
+      </li>
+    );
+  })}
+</ol>
+
+<style>
+  .kd { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+  .kd__item { display: grid; grid-template-columns: minmax(150px, 13rem) 1fr; gap: 6px 24px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .kd__date { font-weight: 700; font-size: 16px; line-height: 1.4; }
+  .kd__body { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+  .kd__text { font-size: 16px; line-height: 1.5; color: var(--ink-2); }
+  .kd__layer { align-self: flex-start; display: inline-block; padding-block: 12px; margin-block: -10px -12px; position: relative; text-decoration: underline; text-decoration-color: var(--line-2); text-underline-offset: 3px; }
+  .kd__layer:hover { color: var(--ink); text-decoration-color: var(--accent); }
+  :global(.dark) .kd, :global(.dark) .kd__item { border-color: var(--sea); }
+  :global(.dark) .kd__text { color: var(--mist); }
+  @media (max-width: 560px) {
+    .kd__item { grid-template-columns: 1fr; }
+  }
+</style>

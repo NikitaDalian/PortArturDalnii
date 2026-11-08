@@ -1,14 +1,14 @@
 ---
 // Строка книги в каталоге и в блоках «Книги» на других страницах.
 import { href, img, BOOK_LEVELS, type Book } from '../lib/data';
-interface Props { b: Book; showCover?: boolean }
-const { b, showCover = true } = Astro.props;
+interface Props { b: Book; showCover?: boolean; morph?: boolean }
+const { b, showCover = true, morph = true } = Astro.props;
 const lvl = BOOK_LEVELS[b.level] ?? BOOK_LEVELS.deep;
 const cover = img(b.cover, 640);
 ---
 <a href={href.book(b.slug)} class="row book-row" data-level={b.level} data-kind={b.kind}>
   {showCover && (cover
-    ? <img class="book-row__cover" src={cover} alt="" loading="lazy" decoding="async" transition:name={`book-${b.slug}`} />
+    ? <img class="book-row__cover" src={cover} alt="" loading="lazy" decoding="async" transition:name={morph ? `book-${b.slug}` : undefined} />
     : <span class="book-row__cover book-row__ph" aria-hidden="true"></span>)}
   <span class="stack" style="--stack-gap:6px; min-width:0">
     <span class="tag" style={`background:${lvl.color}`}>{lvl.label}</span>

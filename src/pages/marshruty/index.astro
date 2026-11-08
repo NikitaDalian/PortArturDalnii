@@ -1,0 +1,70 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import { href, img, plural } from '../../lib/data';
+import { sortedRoutes, routeAuthor, routeCover, TRANSPORT, SEASONS } from '../../components/map/places';
+const rs = sortedRoutes();
+const authored = rs.filter((r) => routeAuthor(r));
+const other = rs.filter((r) => !routeAuthor(r));
+const groups = [
+  { id: 'r-auth', title: 'Маршруты от авторов', lead: 'Проверенные на экскурсиях Русского клуба Даляня.', xs: authored },
+  { id: 'r-other', title: 'Ещё маршруты', lead: 'Собраны по материалам канала, их можно пройти самостоятельно.', xs: other },
+].filter((g) => g.xs.length);
+const km = (n: number) => `${String(n).replace('.', ',')} км`;
+---
+<Base title="Маршруты" description="Маршруты по Порт-Артуру и Дальнему: Восточный и Западный фронт крепости, Люйшунь за день, русский Дальний пешком. Остановки, советы и маршрут в Яндекс.Картах." section="map">
+  <PageHero
+    title="Маршруты"
+    eyebrow="Карта и маршруты"
+    lead={`${rs.length} ${plural(rs.length, 'маршрут', 'маршрута', 'маршрутов')} пешком и на машине: остановки по порядку, время на месте и практические советы. Любой маршрут открывается на карте и в Яндекс.Картах.`}
+    crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Маршруты' }]}
+  >
+    <div class="cluster">
+      <a class="btn btn--primary" href={href.map()}>Открыть карту</a>
+      <a class="btn btn--outline" href={`${href.map()}?build=1`}>Собрать свой маршрут</a>
+    </div>
+  </PageHero>
+
+  {groups.map((g, gi) => (
+    <section class:list={['section', 'section--tight', { paper: gi === 1 }]} aria-labelledby={g.id}>
+      <div class="container stack" style="--stack-gap:24px">
+        <div class="stack" style="--stack-gap:8px">
+          <h2 class="h2" id={g.id}>{g.title}</h2>
+          <p class="muted">{g.lead}</p>
+        </div>
+        <div class="grid" style="--min:300px">
+          {g.xs.map((r, i) => {
+            const cover = routeCover(r);
+            return (
+              <a href={href.route(r.slug)} class="card rcard reveal" style={`--d:${Math.min(i, 5) * 70}ms`}>
+                <div class="card__media rcard__media">
+                  {cover
+                    ? <img class="card__img" src={img(cover, 640)} alt="" loading="lazy" decoding="async" />
+                    : <div class="card__img rcard__ph" aria-hidden="true"></div>}
+                  {routeAuthor(r) && <span class="tag rcard__tag">От авторов</span>}
+                </div>
+                <span class="meta">{TRANSPORT[r.transport] ?? r.transport} · {r.duration} · ≈ {km(r.distance_km)} · {r.stops.length} {plural(r.stops.length, 'остановка', 'остановки', 'остановок')}</span>
+                <span class="h3 card__title">{r.title}</span>
+                <span class="muted rcard__dek">{r.dek}</span>
+                <span class="rcard__foot">
+                  {(r.season as string[]).map((s) => SEASONS[s] && <span class="rcard__season" style={`--c:${SEASONS[s].color}`}>{SEASONS[s].label}</span>)}
+                  {routeAuthor(r) && <span class="meta rcard__author">{routeAuthor(r)}</span>}
+                </span>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  ))}
+</Base>
+
+<style>
+  .rcard__media { position: relative; }
+  .rcard__ph { background: linear-gradient(135deg, var(--navy), var(--sea)); }
+  .rcard__tag { position: absolute; left: 12px; top: 12px; background: var(--accent); }
+  .rcard__dek { font-size: 16px; line-height: 1.5; }
+  .rcard__foot { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .rcard__season { font-size: 12px; font-weight: 700; padding: 3px 9px; border-radius: 10px; color: var(--ink); background: color-mix(in srgb, var(--c) 22%, white); border: 1px solid var(--c); }
+  .rcard__author { margin-left: auto; }
+</style>

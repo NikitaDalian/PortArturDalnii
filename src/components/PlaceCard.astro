@@ -4,6 +4,7 @@ import { href, img, layerByKey, type Place } from '../lib/data';
 interface Props { p: Place; compact?: boolean }
 const { p, compact = false } = Astro.props;
 const photo = img(p.photos?.[0], 640);
+const unsure = (p as any).verify === true || p.coord_confidence === 'low';
 const city = p.city === 'lushun' ? 'Люйшунь' : p.city === 'dalian' ? 'Далянь' : 'Другое';
 ---
 <a href={href.place(p.slug)} class:list={['card', 'place-card', { 'place-card--compact': compact }]}>
@@ -16,10 +17,12 @@ const city = p.city === 'lushun' ? 'Люйшунь' : p.city === 'dalian' ? 'Д�
   </div>
   <span class="meta">{city} · {(p.layers || []).map((l: string) => layerByKey(l)?.years).filter(Boolean).join(', ')}</span>
   <span class="h3 card__title">{p.name}</span>
+  {unsure && <span class="place-card__unsure">уточняется</span>}
   {!compact && p.name_now && <span class="muted" style="font-size:15px">{p.name_now}</span>}
 </a>
 
 <style>
   .place-card__ph { display: flex; align-items: center; justify-content: center; color: var(--line-2); background: var(--frost); }
   .place-card--compact .h3 { font-size: 18px; }
+  .place-card__unsure { align-self: flex-start; font-size: 12px; font-weight: 700; letter-spacing: .04em; color: var(--ink-3); border: 1px dashed var(--line-2); border-radius: 10px; padding: 2px 8px; }
 </style>

@@ -1,43 +1,24 @@
-# Astro Starter Kit: Minimal
+# Портъ-Артуръ и Дальнiй
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Сайт об историческом Даляне и Порт-Артуре для тех, кто читает по-русски. Каталог заметок Telegram-канала [t.me/portartur_dalnii](https://t.me/portartur_dalnii), лица, библиотека, карта и маршруты.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Прототип: https://nikitadalian.github.io/PortArturDalnii/
 
-## 🚀 Project Structure
+## Как устроено
 
-Inside of your Astro project, you'll see the following folders and files:
+- Astro 7, статический сайт. Публикация на GitHub Pages идёт автоматически при пуше в `main` (`.github/workflows/deploy.yml`).
+- Поиск — Pagefind: индекс строится после сборки.
+- Карта — MapLibre GL с подложкой OpenStreetMap.
+- Данные лежат в `src/data/*.json`, адреса и общие функции — в `src/lib/data.ts`, стиль — в `src/styles/global.css`, правила для разработки — в `STYLE.md`.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Обновление материалов
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+1. Выгрузить канал из Telegram в JSON и положить рядом с папкой сайта (`../TGArchive`).
+2. Обновить карточки в `../work/*.json`.
+3. `python scripts/build_data.py` — сводит данные в `src/data/` с едиными слагами.
+4. `python scripts/build_images.py` — готовит фото: WebP и водяной знак со ссылкой на канал.
+5. `npm run dev` — посмотреть локально; `npm run build` — собрать.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Переезд на свой домен
 
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+В `astro.config.mjs` заменить `site` на новый адрес и удалить `base`. Все ссылки строятся через `url()` и `href.*`, поэтому больше ничего менять не нужно.

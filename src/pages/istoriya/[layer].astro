@@ -1,0 +1,189 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import Coast from '../../components/Coast.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import PersonRow from '../../components/PersonRow.astro';
+import PlaceCard from '../../components/PlaceCard.astro';
+import Timeline from '../../components/layers/Timeline.astro';
+import KeyDates from '../../components/layers/KeyDates.astro';
+import { href, img, url, plural, TYPES, LAYERS } from '../../lib/data';
+import { layerText, layerArticles, layerPeople, layerPlaces } from '../../components/layers/layers';
+
+export function getStaticPaths() {
+  return LAYERS.map((l) => ({ params: { layer: l.slug }, props: { key: l.key } }));
+}
+
+const { key } = Astro.props as { key: (typeof LAYERS)[number]['key'] };
+const idx = LAYERS.findIndex((l) => l.key === key);
+const layer = LAYERS[idx];
+const prev = LAYERS[idx - 1];
+const next = LAYERS[idx + 1];
+const text = layerText[key];
+const notes = layerArticles(key);
+const persons = layerPeople(key);
+const placeList = layerPlaces(key);
+// Иллюстрация слоя (сгенерирована в стиле сайта) — в шапку; архивное фото — в текст.
+const COVERS: Record<string, string | null> = { pre1898: 'layer-pre1898', russian: 'layer-1898-1905', japanese: 'layer-1905-1945', soviet: null, modern: 'layer-today' };
+const cover = COVERS[key] ? url(`/img/gen/${COVERS[key]}-1280.webp`) : null;
+const photo = text.image ? img(text.image) : null;
+const heroImg = cover ?? photo;
+const typesPresent = Object.keys(TYPES)
+  .map((t) => ({ t, n: notes.filter((a) => a.type === t).length }))
+  .filter((x) => x.n > 0);
+const dates = [...text.dates].sort((a, b) => a.year - b.year);
+const placesTitle = key === 'modern' ? 'Где искать следы сегодня' : 'Места слоя';
+---
+<Base title={`${layer.title} (${layer.years})`} description={text.lead} image={heroImg} section="layers">
+  <div class="lh" data-layer={key}>
+    <PageHero
+      title={layer.title}
+      eyebrow={layer.years}
+      lead={text.lead}
+      crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Слои истории', href: href.layers() }, { label: layer.title }]}
+      image={heroImg}
+      imageAlt={cover ? '' : text.imageAlt}
+      caption={cover ? undefined : (text.caption || undefined)}
+    />
+  </div>
+
+  <section class="container section--tight" aria-label="Шкала эпох">
+    <Timeline current={key} />
+  </section>
+
+  <section class="container section" aria-labelledby="intro-h">
+    <div class="split">
+      <div class="stack reveal" style="--stack-gap:20px">
+        <h2 id="intro-h" class="h2">О слое</h2>
+        <div class="prose">
+          {text.intro.map((p) => <p>{p}</p>)}
+        </div>
+        {cover && photo && (
+          <figure>
+            <img src={photo} alt={text.imageAlt} loading="lazy" decoding="async" style="width:100%; max-height:480px; object-fit:cover" />
+            {text.caption && <figcaption>{text.caption}</figcaption>}
+          </figure>
+        )}
+      </div>
+      <div class="stack reveal" style="--stack-gap:20px; --d:120ms">
+        <h2 class="h2">Ключевые даты</h2>
+        <KeyDates items={dates} />
+        {(key === 'pre1898' || key === 'russian' || key === 'japanese') && (
+          <p class="meta">Российские даты до 1918 года — по старому стилю, в скобках по новому.</p>
+        )}
+      </div>
+    </div>
+  </section>
+
+  <section class="paper section" aria-labelledby="notes-h" data-filter-root>
+    <div class="container">
+      <div class="section-head">
+        <h2 id="notes-h" class="h2">Заметки слоя</h2>
+        <p class="meta" aria-live="polite" data-count>{notes.length} {plural(notes.length, 'заметка', 'заметки', 'заметок')}</p>
+      </div>
+      {typesPresent.length > 1 && (
+        <div class="chip-row ln-chips" role="group" aria-label="Тип заметки">
+          <button type="button" class="chip" aria-pressed="true" data-type="">Все · {notes.length}</button>
+          {typesPresent.map(({ t, n }) => (
+            <button type="button" class="chip" aria-pressed="false" data-type={t}>{TYPES[t].label} · {n}</button>
+          ))}
+        </div>
+      )}
+      <div class="grid ln-grid" style="--min:300px; --grid-gap:40px 24px">
+        {notes.map((a) => (
+          <div class="ln-item" data-type={a.type}><ArticleCard a={a} /></div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {persons.length > 0 && (
+    <section class="dark section-dark" aria-labelledby="people-h">
+      <div class="container section">
+        <div class="section-head">
+          <h2 id="people-h" class="h2">Люди слоя</h2>
+          <a class="link" href={href.people()}>Все лица</a>
+        </div>
+        <p class="lead" style="margin-bottom:24px">Те, о ком идёт речь в заметках этого слоя.</p>
+        <div class="grid people-grid" style="--min:320px; --grid-gap:0 32px">
+          {persons.map((p) => <PersonRow p={p} />)}
+        </div>
+      </div>
+      <Coast />
+    </section>
+  )}
+
+  {placeList.length > 0 && (
+    <section class="container section" aria-labelledby="places-h">
+      <div class="section-head">
+        <h2 id="places-h" class="h2">{placesTitle}</h2>
+        <a class="link" href={href.map()}>Открыть карту</a>
+      </div>
+      {key === 'modern' && <p class="lead" style="margin-bottom:24px">Места, куда можно прийти сейчас, — с подсказками для посещения на их страницах.</p>}
+      <div class="grid" style="--min:240px; --grid-gap:32px 24px">
+        {placeList.map((p) => <PlaceCard p={p} />)}
+      </div>
+    </section>
+  )}
+
+  <nav class="container section--tight layer-nav" aria-label="Соседние слои">
+    {prev ? (
+      <a class="layer-nav__a" href={href.layer(prev.key)} rel="prev">
+        <span class="meta">← Предыдущий слой · {prev.years}</span>
+        <span class="h3">{prev.title}</span>
+      </a>
+    ) : <span></span>}
+    {next ? (
+      <a class="layer-nav__a layer-nav__a--next" href={href.layer(next.key)} rel="next">
+        <span class="meta">Следующий слой · {next.years} →</span>
+        <span class="h3">{next.title}</span>
+      </a>
+    ) : <a class="layer-nav__a layer-nav__a--next" href={href.layers()}>
+        <span class="meta">Все слои →</span>
+        <span class="h3">Слои истории</span>
+      </a>}
+  </nav>
+</Base>
+
+<script>
+  function initLayerFilter() {
+    document.querySelectorAll<HTMLElement>('[data-filter-root]').forEach((root) => {
+      if (root.dataset.ready) return;
+      root.dataset.ready = '1';
+      const chips = root.querySelectorAll<HTMLButtonElement>('.ln-chips .chip');
+      const items = root.querySelectorAll<HTMLElement>('.ln-item');
+      const count = root.querySelector<HTMLElement>('[data-count]');
+      const word = (n: number) => {
+        const m10 = n % 10, m100 = n % 100;
+        return m10 === 1 && m100 !== 11 ? 'заметка' : m10 >= 2 && m10 <= 4 && (m100 < 10 || m100 >= 20) ? 'заметки' : 'заметок';
+      };
+      chips.forEach((chip) => chip.addEventListener('click', () => {
+        const t = chip.dataset.type ?? '';
+        chips.forEach((c) => c.setAttribute('aria-pressed', String(c === chip)));
+        let n = 0;
+        items.forEach((it) => {
+          const show = !t || it.dataset.type === t;
+          it.hidden = !show;
+          if (show) n++;
+        });
+        if (count) count.textContent = `${n} ${word(n)}`;
+      }));
+    });
+  }
+  document.addEventListener('astro:page-load', initLayerFilter);
+</script>
+
+<style>
+  .lh[data-layer="pre1898"] :global(.page-hero__fig img) { object-position: center 12%; }
+  .lh :global(.page-hero__fig) { flex-basis: 480px; }
+  .ln-chips { margin-bottom: 32px; }
+  .ln-item[hidden] { display: none; }
+  .people-grid :global(.row) { border-color: var(--sea); }
+  .layer-nav { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 32px; border-top: 1px solid var(--line); }
+  .layer-nav__a { display: flex; flex-direction: column; gap: 6px; min-height: var(--tap); padding: 12px 0; max-width: 46ch; }
+  .layer-nav__a:hover .h3 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+  .layer-nav__a--next { text-align: right; margin-left: auto; align-items: flex-end; }
+  @media (max-width: 560px) {
+    .layer-nav__a--next { text-align: left; margin-left: 0; align-items: flex-start; }
+  }
+</style>

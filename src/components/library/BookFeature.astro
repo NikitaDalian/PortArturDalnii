@@ -1,0 +1,41 @@
+---
+// Крупная карточка книги для блока «С чего начать»: обложка + вердикт.
+// transition:name не ставим: та же книга есть в каталоге ниже, а имя перехода должно быть уникальным на странице.
+import { href, img, BOOK_LEVELS, type Book } from '../../lib/data';
+import { kindLabel } from './labels';
+interface Props { b: Book }
+const { b } = Astro.props;
+const lvl = BOOK_LEVELS[b.level] ?? BOOK_LEVELS.deep;
+const cover = img(b.cover);
+---
+<a href={href.book(b.slug)} class="book-feat">
+  {cover
+    ? <img class="book-feat__cover" src={cover} alt={`Обложка книги «${b.title}»`} loading="lazy" decoding="async" />
+    : <span class="book-feat__cover book-feat__ph" aria-hidden="true"></span>}
+  <span class="stack book-feat__body" style="--stack-gap:10px">
+    <span class="tag" style={`background:${lvl.color}`}>{lvl.label}</span>
+    <span class="h3 book-feat__title">{b.title}</span>
+    <span class="meta book-feat__meta">{b.author}{b.year ? `, ${b.year}` : ''} · {kindLabel(b.kind)}</span>
+    <span class="quote book-feat__verdict">{b.verdict}</span>
+    <span class="link book-feat__more">Подробнее о книге</span>
+  </span>
+</a>
+
+<style>
+  .book-feat { display: flex; gap: clamp(16px, 2.4vw, 28px); align-items: flex-start; background: var(--paper); padding: clamp(16px, 2.4vw, 28px); }
+  .book-feat__cover { flex: 0 0 clamp(110px, 14vw, 180px); width: clamp(110px, 14vw, 180px); aspect-ratio: 2 / 3; height: auto;
+    object-fit: cover; box-shadow: 0 6px 22px rgba(11,34,56,.22); background: var(--frost); transition: transform .5s var(--ease); }
+  .book-feat__ph { border-left: 6px solid var(--line-2); }
+  .book-feat:hover .book-feat__cover { transform: translateY(-4px); }
+  .book-feat__body { min-width: 0; }
+  .book-feat__title { font-size: clamp(22px, 2.2vw, 28px); font-weight: 800; }
+  .book-feat:hover .book-feat__title { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+  .book-feat__meta { font-size: 15px; }
+  .book-feat__verdict { font-size: 17px; }
+  .book-feat__more { align-self: flex-start; margin-top: 4px; }
+  @media (max-width: 520px) {
+    .book-feat { flex-direction: column; }
+    .book-feat__cover { width: 120px; flex-basis: auto; }
+  }
+  @media (prefers-reduced-motion: reduce) { .book-feat__cover { transition: none; } .book-feat:hover .book-feat__cover { transform: none; } }
+</style>

@@ -1,0 +1,94 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import BookFeature from '../../components/library/BookFeature.astro';
+import BookCatalog from '../../components/library/BookCatalog.astro';
+import SourceCard from '../../components/library/SourceCard.astro';
+import { SOURCE_KINDS } from '../../components/library/labels';
+import { books, sources, href, plural } from '../../lib/data';
+
+const starters = books.filter((b) => b.level === 'start').slice(0, 2);
+const sourceGroups = SOURCE_KINDS.map((k) => ({ ...k, items: sources.filter((s) => s.kind === k.key) })).filter((g) => g.items.length);
+const lead = 'Книги, которые прочитаны и разобраны в канале. У каждой короткая аннотация, честная оценка и ссылка на полную рецензию в Telegram.';
+---
+<Base title="Библиотека" description={lead} section="library">
+  <PageHero
+    title="Библиотека"
+    eyebrow={`${books.length} ${plural(books.length, 'книга', 'книги', 'книг')} · ${sources.length} ${plural(sources.length, 'источник', 'источника', 'источников')}`}
+    lead={lead}
+    crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Библиотека' }]}
+  >
+    <nav class="cluster lib-jump" aria-label="Разделы библиотеки">
+      <a class="btn btn--outline btn--sm" href="#start">С чего начать</a>
+      <a class="btn btn--outline btn--sm" href="#katalog">Каталог книг</a>
+      <a class="btn btn--outline btn--sm" href="#istochniki">Источники</a>
+    </nav>
+  </PageHero>
+
+  {starters.length > 0 && (
+    <section class="section section--tight" id="start" aria-labelledby="start-h">
+      <div class="container">
+        <div class="section-head">
+          <div class="stack" style="--stack-gap:10px">
+            <p class="eyebrow eyebrow--accent">Первые две книги</p>
+            <h2 class="h2" id="start-h">С чего начать</h2>
+          </div>
+          <p class="muted lib-head-note">Если о войне 1904–1905 годов вы пока знаете немного, начните с этих двух книг. Остальные легче читать после них.</p>
+        </div>
+        <div class="grid" style="--min:420px; --grid-gap:20px">
+          {starters.map((b, i) => (
+            <div class="reveal" style={`--d:${i * 120}ms`}><BookFeature b={b} /></div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section class="section section--tight" id="katalog" aria-labelledby="katalog-h">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="h2" id="katalog-h">Каталог книг</h2>
+        <p class="muted lib-head-note">Уровень — это наша оценка: с чего начать, что читать для углубления, что взять как роман и на что можно не тратить время.</p>
+      </div>
+      <BookCatalog books={books} />
+    </div>
+  </section>
+
+  <section class="section paper lib-sources" id="istochniki" aria-labelledby="istochniki-h">
+    <div class="container">
+      <div class="section-head">
+        <div class="stack" style="--stack-gap:10px">
+          <p class="eyebrow">Не только книги</p>
+          <h2 class="h2" id="istochniki-h">Источники</h2>
+        </div>
+        <p class="muted lib-head-note">Архивы, фотоальбомы, лекции, видео и музыка, на которые опирается канал.</p>
+      </div>
+      <nav class="chip-row lib-src-nav" aria-label="Типы источников">
+        {sourceGroups.map((g) => <a class="chip" href={`#src-${g.key}`}>{g.label}<span class="lib-n">{g.items.length}</span></a>)}
+      </nav>
+      <div class="stack" style="--stack-gap:clamp(36px, 5vw, 56px)">
+        {sourceGroups.map((g) => (
+          <section class="lib-src-group" id={`src-${g.key}`} aria-labelledby={`src-${g.key}-h`}>
+            <h3 class="h3 lib-src-group__title" id={`src-${g.key}-h`}>{g.label} <span class="meta">{g.items.length}</span></h3>
+            <div class="grid" style="--min:250px; --grid-gap:28px 24px">
+              {g.items.map((s, i) => (
+                <div class="reveal" style={`--d:${Math.min(i, 4) * 80}ms`}><SourceCard s={s} /></div>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .lib-jump { margin-top: 8px; }
+  .lib-head-note { max-width: 52ch; font-size: 16px; }
+  .lib-sources { border-top: 1px solid var(--line); }
+  .lib-src-nav { margin-bottom: 36px; }
+  .lib-n { margin-left: 8px; font-weight: 500; opacity: .65; }
+  .lib-src-group { scroll-margin-top: 96px; }
+  .lib-src-group__title { padding-bottom: 12px; margin-bottom: 20px; border-bottom: 2px solid var(--navy); }
+  #start, #katalog, #istochniki { scroll-margin-top: 80px; }
+</style>

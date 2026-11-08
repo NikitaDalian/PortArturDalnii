@@ -1,0 +1,16 @@
+---
+// Цветная метка типа заметки: цветной квадратик + подпись (подпись всегда контрастная).
+import { TYPES } from '../../lib/data';
+interface Props { type: string; size?: 'sm' | 'md' }
+const { type, size = 'sm' } = Astro.props;
+const t = TYPES[type] ?? TYPES.event;
+---
+<span class:list={['type-tag', `type-tag--${size}`]} style={`--tc:${t.color}`}><i aria-hidden="true"></i>{t.label}</span>
+
+<style>
+  .type-tag { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); }
+  .type-tag i { width: 10px; height: 10px; border-radius: 3px; background: var(--tc); box-shadow: 0 0 0 1.5px rgba(255, 255, 255, .55); }
+  .type-tag--md { font-size: 13px; padding: 6px 12px 6px 10px; border-radius: 14px; background: var(--frost); color: var(--ink); }
+  :global(.dark) .type-tag { color: var(--mist); }
+  :global(.dark) .type-tag--md { background: var(--navy-2); color: #fff; }
+</style>

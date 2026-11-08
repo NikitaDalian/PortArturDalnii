@@ -1,0 +1,190 @@
+---
+// Список персон с фильтрами по стране и группе. Фильтр работает на клиенте,
+// состояние хранится в адресе: ?country=japan&group=navy.
+import PersonRow from '../PersonRow.astro';
+import { people, COUNTRIES, GROUPS } from '../../lib/data';
+
+const countries = Object.entries(COUNTRIES).map(([key, c]) => ({
+  key, label: c.label, n: people.filter((p) => p.country === key).length,
+})).filter((c) => c.n > 0);
+const groups = Object.entries(GROUPS).map(([key, label]) => ({
+  key, label, n: people.filter((p) => p.group === key).length,
+})).filter((g) => g.n > 0);
+const total = people.length;
+---
+<div class="pb" data-people-browser data-total={total}>
+  <div class="pb__filters stack" style="--stack-gap:10px">
+    <div class="pb__row">
+      <span class="pb__label" id="pb-country">Страна</span>
+      <div class="chip-row" role="group" aria-labelledby="pb-country">
+        <button type="button" class="chip" data-filter="country" data-value="" aria-pressed="true">Все <span class="pb__n" data-count>{total}</span></button>
+        {countries.map((c) => (
+          <button type="button" class="chip" data-filter="country" data-value={c.key} aria-pressed="false" style={`--cc:${COUNTRIES[c.key].color}`}>
+            <span class="pb__dot" aria-hidden="true"></span>{c.label} <span class="pb__n" data-count>{c.n}</span>
+          </button>
+        ))}
+      </div>
+    </div>
+    <div class="pb__row">
+      <span class="pb__label" id="pb-group">Группа</span>
+      <div class="chip-row" role="group" aria-labelledby="pb-group">
+        <button type="button" class="chip" data-filter="group" data-value="" aria-pressed="true">Все <span class="pb__n" data-count>{total}</span></button>
+        {groups.map((g) => (
+          <button type="button" class="chip" data-filter="group" data-value={g.key} aria-pressed="false">
+            {g.label} <span class="pb__n" data-count>{g.n}</span>
+          </button>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <div class="pb__status">
+    <p class="meta pb__shown" aria-live="polite" data-shown>Показано {total} из {total}</p>
+    <button type="button" class="pb__reset text-link" data-reset hidden>Сбросить фильтры</button>
+  </div>
+
+  <div class="pb__grid" data-list>
+    {people.map((p) => <PersonRow p={p} />)}
+  </div>
+  <p class="pb__empty lead" data-empty hidden>Под такой фильтр никто не подходит. Попробуйте другую страну или группу.</p>
+</div>
+
+<style>
+  .pb__row { display: flex; align-items: center; gap: 8px 16px; flex-wrap: wrap; }
+  .pb__row .chip-row { flex: 1 1 0; min-width: 0; }
+  .pb__label { flex: 0 0 64px; font-size: 13px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--steel); }
+  .pb__n { margin-left: 6px; font-weight: 500; opacity: .72; font-variant-numeric: tabular-nums; }
+  .pb__dot { width: 8px; height: 8px; border-radius: 50%; margin-right: 8px; background: var(--cc); flex: none; }
+  .chip.is-empty { opacity: .45; }
+  .pb__status { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 20px; margin: 28px 0 12px; min-height: 44px; }
+  .pb__shown { font-size: 14px; }
+  .pb__reset { background: none; border: 0; padding: 0; min-height: 44px; cursor: pointer; color: #fff; font-weight: 600; font-size: 15px; }
+  .pb__reset[hidden] { display: none; }
+  .pb__grid {
+    display: grid; gap: 0 48px; border-top: 1px solid var(--sea);
+    grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr));
+  }
+  .pb__grid > :global([hidden]) { display: none !important; }
+  .pb__empty { padding: 24px 0; }
+  .pb__empty[hidden] { display: none; }
+  @media (max-width: 720px) {
+    .pb__row { flex-direction: column; align-items: stretch; gap: 6px; }
+    .pb__row .chip-row { flex: none; }
+    .pb__label { flex: none; }
+  }
+</style>
+
+<script>
+  type State = { country: string; group: string };
+
+  function initPeopleBrowser() {
+    const root = document.querySelector<HTMLElement>('[data-people-browser]');
+    if (!root) return;
+    const list = root.querySelector<HTMLElement>('[data-list]')!;
+    const rows = Array.from(list.children) as HTMLElement[];
+    const chips = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-filter]'));
+    const shown = root.querySelector<HTMLElement>('[data-shown]')!;
+    const empty = root.querySelector<HTMLElement>('[data-empty]')!;
+    const reset = root.querySelector<HTMLButtonElement>('[data-reset]')!;
+    const total = rows.length;
+    const valid = {
+      country: new Set(chips.filter((c) => c.dataset.filter === 'country').map((c) => c.dataset.value)),
+      group: new Set(chips.filter((c) => c.dataset.filter === 'group').map((c) => c.dataset.value)),
+    };
+    const reduce = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const params = new URLSearchParams(location.search);
+    const state: State = {
+      country: valid.country.has(params.get('country') ?? '') ? params.get('country')! : '',
+      group: valid.group.has(params.get('group') ?? '') ? params.get('group')! : '',
+    };
+
+    const matches = (r: HTMLElement, s: State) =>
+      (!s.country || r.dataset.country === s.country) && (!s.group || r.dataset.group === s.group);
+
+    function syncUrl() {
+      const u = new URL(location.href);
+      state.country ? u.searchParams.set('country', state.country) : u.searchParams.delete('country');
+      state.group ? u.searchParams.set('group', state.group) : u.searchParams.delete('group');
+      if (u.href !== location.href) history.replaceState(history.state, '', u.href);
+    }
+
+    function syncChips() {
+      for (const c of chips) {
+        const key = c.dataset.filter as keyof State;
+        const v = c.dataset.value ?? '';
+        c.setAttribute('aria-pressed', String(state[key] === v));
+        // Счётчик учитывает второй фильтр: сколько будет показано, если нажать.
+        const probe: State = { ...state, [key]: v };
+        const n = rows.filter((r) => matches(r, probe)).length;
+        const out = c.querySelector('[data-count]');
+        if (out) out.textContent = String(n);
+        c.classList.toggle('is-empty', n === 0);
+      }
+    }
+
+    let anims: Animation[] = [];
+    let token = 0;
+
+    function render(animate: boolean) {
+      const my = ++token;
+      anims.forEach((a) => a.cancel());
+      anims = [];
+      const next = rows.map((r) => matches(r, state));
+      const n = next.filter(Boolean).length;
+      shown.textContent = `Показано ${n} из ${total}`;
+      empty.hidden = n > 0;
+      reset.hidden = !state.country && !state.group;
+      syncChips();
+      syncUrl();
+
+      if (!animate || reduce() || !('animate' in Element.prototype)) {
+        rows.forEach((r, i) => { r.hidden = !next[i]; });
+        return;
+      }
+
+      const leaving = rows.filter((r, i) => !r.hidden && !next[i]);
+      const flip = () => {
+        if (my !== token) return;
+        const before = new Map(rows.filter((r) => !r.hidden).map((r) => [r, r.getBoundingClientRect()]));
+        rows.forEach((r, i) => { r.hidden = !next[i]; });
+        rows.forEach((r) => {
+          if (r.hidden) return;
+          const b = before.get(r);
+          if (b) {
+            const a = r.getBoundingClientRect();
+            const dx = b.left - a.left, dy = b.top - a.top;
+            if (dx || dy) anims.push(r.animate(
+              [{ transform: `translate(${dx}px, ${dy}px)` }, { transform: 'none' }],
+              { duration: 420, easing: 'cubic-bezier(.2,.7,.2,1)' },
+            ));
+          } else {
+            anims.push(r.animate(
+              [{ opacity: 0, transform: 'translateY(10px)' }, { opacity: 1, transform: 'none' }],
+              { duration: 360, delay: 80, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'backwards' },
+            ));
+          }
+        });
+      };
+
+      if (!leaving.length) return flip();
+      const outs = leaving.map((r) => r.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 140, easing: 'ease-out', fill: 'forwards' }));
+      anims.push(...outs);
+      Promise.all(outs.map((a) => a.finished)).then(() => {
+        outs.forEach((a) => a.cancel());
+        flip();
+      }).catch(() => { /* прервано новым кликом */ });
+    }
+
+    chips.forEach((c) => c.addEventListener('click', () => {
+      const key = c.dataset.filter as keyof State;
+      state[key] = c.dataset.value ?? '';
+      render(true);
+    }));
+    reset.addEventListener('click', () => { state.country = ''; state.group = ''; render(true); });
+
+    render(false);
+  }
+
+  document.addEventListener('astro:page-load', initPeopleBrowser);
+</script>

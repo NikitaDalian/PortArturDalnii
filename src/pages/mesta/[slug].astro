@@ -1,0 +1,190 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import PersonRow from '../../components/PersonRow.astro';
+import PlaceCard from '../../components/PlaceCard.astro';
+import MiniMap from '../../components/map/MiniMap.astro';
+import Gallery from '../../components/map/Gallery.astro';
+import { places, href, img, articlesOf, amapUrl, yandexUrl, layerByKey, plural, type Place } from '../../lib/data';
+import { KINDS, CITIES, SEASONS, placeLayers, isUncertain, routesThrough, peopleAt, nearest, photoCaption } from '../../components/map/places';
+import { fmtKm } from '../../components/map/geo';
+
+export function getStaticPaths() {
+  return places.map((p) => ({ params: { slug: p.slug }, props: { p } }));
+}
+interface Props { p: Place }
+const { p } = Astro.props;
+const photos = (p.photos || []) as string[];
+const cover = photos[0] ?? null;
+const layers = placeLayers(p);
+const notes = articlesOf((p.articles || []) as string[]);
+const folk = peopleAt(p.slug);
+const rts = routesThrough(p.slug);
+const near = nearest(p, 4);
+const unsure = isUncertain(p);
+const conf: Record<string, string> = { high: 'точная', medium: 'примерная', low: 'приблизительная, уточняется' };
+const seasons = ((p.season || []) as string[]).filter((s) => SEASONS[s]);
+const city = CITIES[p.city] ?? '';
+---
+<Base title={p.name} description={p.summary.slice(0, 180)} image={img(cover)} section="map">
+  <PageHero
+    title={p.name}
+    eyebrow={`${city} · ${KINDS[p.kind] ?? p.kind}`}
+    lead={p.name_now ?? undefined}
+    crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Карта', href: href.map() }, { label: p.name }]}
+    image={img(cover)}
+    imageAlt={cover ? photoCaption(cover) || p.name : ''}
+    caption={cover ? photoCaption(cover) : undefined}
+    transitionName={`place-${p.slug}`}
+  >
+    {p.name_zh && p.name_zh !== '—' && <p class="pl-zh" lang="zh">{p.name_zh}</p>}
+    <div class="cluster pl-tags">
+      {layers.map((l) => <a class="chip" href={href.layer(l)}>{layerByKey(l)?.years}</a>)}
+      {unsure && <span class="pl-unsure">Уточняется</span>}
+    </div>
+  </PageHero>
+
+  <section class="section section--tight">
+    <div class="container split pl-split">
+      <div class="stack" style="--stack-gap:28px">
+        <div class="prose reveal">
+          <p>{p.summary}</p>
+        </div>
+        {unsure && (
+          <p class="pl-note reveal">
+            {p.coord_confidence === 'low'
+              ? 'Положение точки на карте приблизительное. Сведения о месте ещё проверяются; если вы были здесь и знаете точнее, напишите нам.'
+              : 'Часть сведений о месте ещё проверяется: даты, атрибуция здания или условия посещения.'}
+          </p>
+        )}
+        {p.visit && (
+          <div class="panel panel--frost stack reveal" style="--stack-gap:10px">
+            <h2 class="h3">Как добраться</h2>
+            <p>{p.visit}</p>
+            <p class="meta">Часы, цены и доступ меняются — уточните перед поездкой.</p>
+          </div>
+        )}
+        {seasons.length > 0 && (
+          <div class="cluster reveal">
+            <span class="meta">Лучшее время:</span>
+            {seasons.map((s) => <a class="pl-season" href={href.seasons()} style={`--c:${SEASONS[s].color}`}>{SEASONS[s].label}</a>)}
+          </div>
+        )}
+      </div>
+      <aside class="stack pl-aside reveal" style="--stack-gap:14px; --d:100ms" aria-labelledby="pl-map">
+        <h2 class="eyebrow" id="pl-map">На карте</h2>
+        <MiniMap
+          label={`Карта: ${p.name}`}
+          height="320px"
+          zoom={p.coord_confidence === 'low' ? 14 : 15}
+          points={[
+            { lat: p.lat, lng: p.lng, name: p.name, main: true },
+            ...near.map(({ x }) => ({ lat: x.lat, lng: x.lng, name: x.name, href: href.place(x.slug) })),
+          ].slice(0, p.city === 'other' ? 1 : 5)}
+        />
+        <p class="meta">{p.lat.toFixed(4)}, {p.lng.toFixed(4)} (WGS-84) · точность: {conf[p.coord_confidence] ?? p.coord_confidence}</p>
+        <div class="pl-btns">
+          <a class="btn btn--primary btn--sm" href={href.map(p.slug)}>Показать на большой карте</a>
+          <a class="btn btn--outline btn--sm" href={amapUrl(p.lat, p.lng, p.name)} target="_blank" rel="noopener">Amap</a>
+          <a class="btn btn--outline btn--sm" href={yandexUrl(p.lat, p.lng)} target="_blank" rel="noopener">Яндекс</a>
+        </div>
+        <p class="meta">Amap получает координаты, пересчитанные в китайскую систему GCJ-02.</p>
+      </aside>
+    </div>
+  </section>
+
+  {photos.length > 0 && (
+    <section class="section section--tight paper" aria-labelledby="pl-photos">
+      <div class="container stack" style="--stack-gap:20px">
+        <h2 class="h2" id="pl-photos">Фотографии</h2>
+        <Gallery files={photos} title={p.name} />
+      </div>
+    </section>
+  )}
+
+  {notes.length > 0 && (
+    <section class="section section--tight" aria-labelledby="pl-notes">
+      <div class="container">
+        <div class="section-head">
+          <div class="stack" style="--stack-gap:8px">
+            <h2 class="h2" id="pl-notes">Заметки о месте</h2>
+            <p class="muted">{notes.length} {plural(notes.length, 'заметка', 'заметки', 'заметок')} канала</p>
+          </div>
+        </div>
+        <div class="row-list">
+          {notes.map((a) => <ArticleCard a={a} variant="row" showSummary />)}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {folk.length > 0 && (
+    <section class="section section--tight dark" aria-labelledby="pl-people">
+      <div class="container stack" style="--stack-gap:20px">
+        <h2 class="h2" id="pl-people">Люди, связанные с местом</h2>
+        <div class="row-list grid" style="--min:300px; --grid-gap:0 32px">
+          {folk.map((x) => <PersonRow p={x} size="sm" />)}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {rts.length > 0 && (
+    <section class="section section--tight" aria-labelledby="pl-routes">
+      <div class="container stack" style="--stack-gap:20px">
+        <h2 class="h2" id="pl-routes">Маршруты через это место</h2>
+        <ul class="pl-routes" role="list">
+          {rts.map(({ r, n }) => (
+            <li>
+              <a class="pl-route" href={href.route(r.slug)}>
+                <span class="pl-route__n" aria-hidden="true">{n}</span>
+                <span class="stack" style="--stack-gap:4px">
+                  <span class="pl-route__title">{r.title}</span>
+                  <span class="meta">Остановка {n} из {r.stops.length} · {r.duration}{(r as any).author ? ` · ${(r as any).author}` : ''}</span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  {near.length > 0 && (
+    <section class="section section--tight paper" aria-labelledby="pl-near">
+      <div class="container stack" style="--stack-gap:20px">
+        <div class="section-head" style="margin-bottom:0">
+          <h2 class="h2" id="pl-near">Рядом</h2>
+          <a class="link" href={href.map(p.slug)}>Открыть карту</a>
+        </div>
+        <div class="grid" style="--min:200px; --grid-gap:20px">
+          {near.map(({ x, d }) => (
+            <div class="stack" style="--stack-gap:6px">
+              <PlaceCard p={x} compact />
+              <span class="meta">{fmtKm(d)} по прямой</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+</Base>
+
+<style>
+  .pl-zh { font-size: 17px; color: var(--mist); }
+  .pl-tags { --cluster-gap: 8px; }
+  .pl-unsure, .pl-note { font-size: 14px; font-weight: 600; color: #8A3B12; background: #FBEDE4; border-radius: 12px; }
+  .pl-unsure { display: inline-flex; align-items: center; min-height: 32px; padding: 0 12px; }
+  .pl-note { padding: 12px 16px; line-height: 1.5; max-width: 68ch; font-weight: 500; }
+  .pl-split > :last-child { flex: 1 1 360px; }
+  .pl-aside { min-width: 0; }
+  .pl-btns { display: flex; flex-wrap: wrap; gap: 8px; }
+  .pl-season { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: var(--radius-pill); border: 2px solid var(--c); font-weight: 600; font-size: 15px; }
+  .pl-season:hover { background: var(--c); color: #fff; }
+  .pl-routes { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); }
+  .pl-route { display: flex; gap: 14px; align-items: center; padding: 16px 18px; background: var(--paper); border: 1px solid var(--line); min-height: 72px; transition: border-color .2s; }
+  .pl-route:hover { border-color: var(--navy); }
+  .pl-route__n { flex: none; width: 36px; height: 36px; border-radius: 18px; background: var(--navy); color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+  .pl-route__title { font-size: 18px; font-weight: 700; line-height: 1.25; }
+</style>

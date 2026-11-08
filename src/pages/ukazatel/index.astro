@@ -1,0 +1,195 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import { href, plural } from '../../lib/data';
+import { buildIndex, GROUP_LABELS, type Group } from '../../components/search/indexEntries';
+
+const entries = buildIndex();
+const ALPHABET = 'АБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЩЭЮЯ'.split('');
+const letters = [...ALPHABET, ...new Set(entries.map((e) => e.letter).filter((l) => !ALPHABET.includes(l)))];
+const byLetter = letters.map((l) => ({ l, items: entries.filter((e) => e.letter === l) }));
+const groups = Object.keys(GROUP_LABELS) as Group[];
+const groupCount = (g: Group) => entries.filter((e) => e.group === g).length;
+const id = (l: string) => 'b-' + encodeURIComponent(l).replace(/%/g, '');
+const SHORT: Record<Group, string> = { people: 'Люди', places: 'Места', books: 'Книги', series: 'Серии' };
+---
+<Base title="Указатель А–Я" description={`Указатель имён, мест, книг и серий: ${entries.length} записей со ссылками на заметки канала.`} section="notes">
+  <PageHero
+    title="Указатель А–Я"
+    eyebrow={`${entries.length} ${plural(entries.length, 'запись', 'записи', 'записей')}`}
+    lead="Как в конце книги: люди, места, книги и серии по алфавиту. У каждой записи — число заметок и ссылки на них."
+    crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Заметки', href: href.notes() }, { label: 'Указатель' }]}
+  />
+
+  <div class="ix" data-pagefind-ignore="all">
+    <div class="ix-bar">
+      <div class="container ix-bar__inner">
+        <div class="chip-row ix-groups" role="group" aria-label="Что показывать">
+          <button type="button" class="chip" data-g="" aria-pressed="true">Все <span class="ix-n">{entries.length}</span></button>
+          {groups.map((g) => (
+            <button type="button" class="chip" data-g={g} aria-pressed="false">{SHORT[g]} <span class="ix-n">{groupCount(g)}</span></button>
+          ))}
+        </div>
+        <nav class="ix-letters" aria-label="Буквы">
+          {byLetter.map(({ l, items }) =>
+            items.length
+              ? <a href={`#${id(l)}`} data-l={l}>{l}</a>
+              : <span aria-hidden="true" class="is-off">{l}</span>)}
+        </nav>
+      </div>
+    </div>
+
+    <div class="container section--tight">
+      <label class="ix-find">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>
+        <span class="sr-only">Найти в указателе</span>
+        <input type="search" placeholder="Найти в указателе: Витте, Цусима…" autocomplete="off" />
+      </label>
+      <p class="ix-status meta" aria-live="polite"></p>
+
+      {byLetter.filter((b) => b.items.length).map(({ l, items }) => (
+        <section class="ix-sec" id={id(l)} data-letter={l} aria-labelledby={`${id(l)}-h`}>
+          <h2 class="ix-letter" id={`${id(l)}-h`}>{l}</h2>
+          <ul class="ix-list">
+            {items.map((e) => (
+              <li class="ix-e" data-group={e.group} data-k={e.key}>
+                <div class="ix-e__head">
+                  <a class:list={['ix-e__name', { 'is-search': !e.own }]} href={e.href} title={e.own ? undefined : 'Своей страницы нет — откроется поиск'}>{e.label}</a>
+                  <span class="ix-e__dots" aria-hidden="true"></span>
+                  <span class="ix-e__n" title={`${e.notes.length} ${plural(e.notes.length, 'заметка', 'заметки', 'заметок')}`}>{e.notes.length}</span>
+                </div>
+                <div class="ix-e__meta">
+                  <span class="ix-e__g">{SHORT[e.group]}</span>
+                  {e.sub && <span>{e.sub}</span>}
+                </div>
+                {e.notes.length > 0 && (
+                  <details class="ix-e__notes">
+                    <summary>{e.notes.length} {plural(e.notes.length, 'заметка', 'заметки', 'заметок')}</summary>
+                    <ol>
+                      {e.notes.map((n) => <li><a href={href.note(n.slug)}>{n.title}</a></li>)}
+                    </ol>
+                  </details>
+                )}
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+      <p class="ix-empty muted" hidden>В указателе такого нет. Попробуйте <a class="text-link" data-ix-search href={href.search()}>полнотекстовый поиск</a>.</p>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .ix-bar { position: sticky; top: 72px; z-index: 20; background: var(--ice); border-bottom: 1px solid var(--line); box-shadow: 0 6px 16px -12px rgba(11, 34, 56, .35); }
+  @media (max-width: 1100px) { .ix-bar { top: 64px; } }
+  .ix-bar__inner { display: flex; flex-direction: column; gap: 8px; padding-block: 10px 6px; }
+  .ix-n { margin-left: 6px; font-weight: 500; opacity: .7; }
+  .ix-letters { display: flex; flex-wrap: wrap; gap: 2px; }
+  .ix-letters a, .ix-letters span { display: inline-flex; align-items: center; justify-content: center; min-width: 34px; height: 40px; padding: 0 4px; border-radius: 8px; font-weight: 700; font-size: 16px; }
+  .ix-letters a:hover { background: var(--frost); }
+  .ix-letters a.is-cur { background: var(--navy); color: #fff; }
+  .ix-letters .is-off, .ix-letters a.is-hidden { color: var(--line-2); pointer-events: none; }
+  @media (max-width: 720px) {
+    .ix-letters { flex-wrap: nowrap; overflow-x: auto; margin-inline: calc(var(--gutter) * -1); padding-inline: var(--gutter); scrollbar-width: none; }
+    .ix-letters::-webkit-scrollbar { display: none; }
+    .ix-letters a, .ix-letters span { flex: none; min-width: 40px; height: 44px; }
+  }
+
+  .ix-find { display: flex; align-items: center; gap: 10px; max-width: 520px; height: 48px; padding: 0 16px; border-radius: 24px; background: var(--paper); border: 1.5px solid var(--line-2); color: var(--ink-3); }
+  .ix-find:focus-within { border-color: var(--navy); }
+  .ix-find input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; font: 500 16px var(--font); color: var(--ink); }
+  .ix-status { min-height: 20px; margin: 10px 0 8px; }
+
+  .ix-sec { display: grid; grid-template-columns: 96px 1fr; gap: 0 24px; padding: 28px 0; border-top: 1px solid var(--line); scroll-margin-top: 200px; }
+  .ix-sec[hidden] { display: none; }
+  .ix-letter { font-size: clamp(44px, 5vw, 72px); line-height: .9; color: var(--accent); }
+  .ix-list { margin: 0; padding: 0; list-style: none; columns: 2 340px; column-gap: 48px; }
+  .ix-e { break-inside: avoid; padding: 8px 0 10px; }
+  .ix-e[hidden] { display: none; }
+  .ix-e__head { display: flex; align-items: baseline; gap: 8px; }
+  .ix-e__name { font-weight: 700; font-size: 17px; line-height: 1.3; padding: 4px 0; }
+  .ix-e__name:hover { text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+  .ix-e__name.is-search { font-weight: 600; color: var(--ink-2); }
+  .ix-e__dots { flex: 1; min-width: 16px; border-bottom: 2px dotted var(--line-2); transform: translateY(-4px); }
+  .ix-e__n { font-weight: 700; font-variant-numeric: tabular-nums; color: var(--ink-3); }
+  .ix-e__meta { display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 13px; color: var(--ink-3); }
+  .ix-e__g { font-weight: 700; letter-spacing: .06em; text-transform: uppercase; font-size: 11px; padding-top: 2px; }
+  .ix-e__notes summary { display: inline-flex; align-items: center; min-height: 36px; font-size: 14px; font-weight: 600; color: var(--ink-2); cursor: pointer; list-style: none; }
+  .ix-e__notes summary::-webkit-details-marker { display: none; }
+  .ix-e__notes summary::after { content: '+'; margin-left: 8px; font-weight: 700; color: var(--accent); }
+  .ix-e__notes[open] summary::after { content: '−'; }
+  .ix-e__notes ol { margin: 2px 0 6px; padding-left: 22px; display: flex; flex-direction: column; gap: 6px; font-size: 15px; line-height: 1.4; }
+  .ix-e__notes a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  .ix-empty { padding: 24px 0; }
+  .ix-empty[hidden] { display: none; }
+  @media (max-width: 720px) {
+    .ix-sec { grid-template-columns: 1fr; gap: 8px; scroll-margin-top: 190px; }
+    .ix-letter { font-size: 44px; }
+  }
+</style>
+
+<script>
+  function initIndex() {
+    const root = document.querySelector<HTMLElement>('.ix');
+    if (!root) return;
+    const chips = [...root.querySelectorAll<HTMLButtonElement>('.ix-groups .chip')];
+    const secs = [...root.querySelectorAll<HTMLElement>('.ix-sec')];
+    const links = new Map([...root.querySelectorAll<HTMLAnchorElement>('.ix-letters a')].map((a) => [a.dataset.l!, a]));
+    const input = root.querySelector<HTMLInputElement>('.ix-find input')!;
+    const status = root.querySelector<HTMLElement>('.ix-status')!;
+    const empty = root.querySelector<HTMLElement>('.ix-empty')!;
+    const searchA = root.querySelector<HTMLAnchorElement>('[data-ix-search]')!;
+    const searchBase = searchA.getAttribute('href')!;
+    const params = new URLSearchParams(location.search);
+    let group = params.get('g') ?? '';
+    if (!chips.some((c) => c.dataset.g === group)) group = '';
+
+    const norm = (s: string) => s.toLowerCase().replace(/ё/g, 'е').trim();
+    function apply() {
+      const q = norm(input.value);
+      let total = 0;
+      chips.forEach((c) => c.setAttribute('aria-pressed', String(c.dataset.g === group)));
+      secs.forEach((sec) => {
+        let n = 0;
+        sec.querySelectorAll<HTMLElement>('.ix-e').forEach((e) => {
+          const ok = (!group || e.dataset.group === group) && (!q || e.dataset.k!.includes(q) || e.textContent!.toLowerCase().replace(/ё/g, 'е').includes(q));
+          e.hidden = !ok;
+          if (ok) n++;
+        });
+        sec.hidden = n === 0;
+        total += n;
+        links.get(sec.dataset.letter!)?.classList.toggle('is-hidden', n === 0);
+      });
+      status.textContent = q || group ? `Найдено записей: ${total}` : '';
+      empty.hidden = total > 0;
+      searchA.href = q ? `${searchBase}?q=${encodeURIComponent(input.value.trim())}` : searchBase;
+      const p = new URLSearchParams(location.search);
+      group ? p.set('g', group) : p.delete('g');
+      const qs = p.toString();
+      history.replaceState(history.state, '', location.pathname + (qs ? '?' + qs : '') + location.hash);
+    }
+    chips.forEach((c) => c.addEventListener('click', () => { group = c.dataset.g ?? ''; apply(); }));
+    let t = 0;
+    input.addEventListener('input', () => { clearTimeout(t); t = window.setTimeout(apply, 100); });
+
+    // подсветка текущей буквы
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((ents) => {
+        ents.forEach((en) => {
+          if (!en.isIntersecting) return;
+          links.forEach((a) => a.classList.remove('is-cur'));
+          const a = links.get((en.target as HTMLElement).dataset.letter!);
+          if (a) {
+            a.classList.add('is-cur');
+            const bar = a.parentElement!;
+            if (bar.scrollWidth > bar.clientWidth) bar.scrollTo({ left: a.offsetLeft - bar.clientWidth / 2, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+          }
+        });
+      }, { rootMargin: '-200px 0px -60% 0px' });
+      secs.forEach((s) => io.observe(s));
+    }
+    apply();
+  }
+  document.addEventListener('astro:page-load', initIndex);
+</script>

@@ -1,0 +1,59 @@
+---
+import Base from '../../../layouts/Base.astro';
+import PageHero from '../../../components/PageHero.astro';
+import { series, articlesOf, href, img, fmtDate, plural } from '../../../lib/data';
+
+const list = series
+  .map((s) => {
+    const items = articlesOf(s.articles);
+    const dates = items.map((a) => a.date).sort();
+    const cover = items.find((a) => a.cover)?.cover ?? null;
+    const readMin = items.reduce((n, a) => n + a.read_min, 0);
+    return { s, items, first: dates[0], last: dates[dates.length - 1], cover, readMin };
+  })
+  .sort((a, b) => b.last.localeCompare(a.last));
+---
+<Base title="Серии заметок" description={`${series.length} серий канала: циклы заметок, которые лучше читать по порядку.`} section="notes">
+  <PageHero
+    title="Серии"
+    eyebrow={`${series.length} ${plural(series.length, 'цикл', 'цикла', 'циклов')} заметок`}
+    lead="Циклы из нескольких постов на одну тему. Их удобнее читать по порядку — от первой части к последней."
+    crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Заметки', href: href.notes() }, { label: 'Серии' }]}
+  />
+  <div class="container section--tight" data-pagefind-ignore="all">
+    <ul class="sl">
+      {list.map(({ s, items, first, last, cover, readMin }, i) => (
+        <li class="sl__item reveal" style={`--d:${(i % 3) * 80}ms`}>
+          <a class="sl__link" href={href.series(s.slug)}>
+            <span class="sl__media">
+              {cover ? <img src={img(cover, 640)} alt="" loading="lazy" decoding="async" /> : <span class="sl__ph"></span>}
+              <span class="sl__count">{items.length} {plural(items.length, 'часть', 'части', 'частей')}</span>
+            </span>
+            <span class="sl__body">
+              <span class="meta">{first === last ? fmtDate(first) : `${fmtDate(first)} — ${fmtDate(last)}`} · {readMin} мин</span>
+              <span class="h3 sl__title">{s.title}</span>
+              <ol class="sl__parts">
+                {items.map((a) => <li>{a.title}</li>)}
+              </ol>
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</Base>
+
+<style>
+  .sl { list-style: none; margin: 0; padding: 0; display: grid; gap: 40px 28px; grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr)); }
+  .sl__link { display: flex; flex-direction: column; gap: 14px; height: 100%; }
+  .sl__media { position: relative; display: block; overflow: hidden; aspect-ratio: 16 / 9; background: var(--navy-2); }
+  .sl__media img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s var(--ease); }
+  .sl__link:hover .sl__media img { transform: scale(1.03); }
+  .sl__ph { display: block; height: 100%; }
+  .sl__count { position: absolute; left: 12px; bottom: 12px; padding: 5px 12px; border-radius: 14px; background: var(--navy); color: #fff; font-size: 13px; font-weight: 700; }
+  .sl__body { display: flex; flex-direction: column; gap: 8px; }
+  .sl__link:hover .sl__title { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+  .sl__parts { margin: 4px 0 0; padding-left: 22px; display: flex; flex-direction: column; gap: 4px; font-size: 15px; line-height: 1.4; color: var(--ink-2); }
+  .sl__parts li::marker { font-weight: 700; color: var(--ink-3); }
+  @media (prefers-reduced-motion: reduce) { .sl__media img { transition: none; } }
+</style>

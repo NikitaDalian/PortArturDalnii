@@ -1,0 +1,70 @@
+---
+// Небольшая карта на странице места или маршрута: точки (с номерами) и линия.
+interface Pt { lat: number; lng: number; n?: number | string; name: string; href?: string; main?: boolean }
+interface Props { points: Pt[]; line?: [number, number][] | null; label: string; height?: string; zoom?: number }
+const { points, line = null, label, height = '360px', zoom = 14.5 } = Astro.props;
+const cfg = JSON.stringify({ points, line, zoom }).replace(/</g, '\\u003c');
+---
+<div class="minimap" style={`--h:${height}`}>
+  <div class="minimap__map" data-minimap={cfg} role="region" aria-label={label}></div>
+  <noscript><p class="minimap__nojs">Для карты нужен JavaScript.</p></noscript>
+</div>
+
+<script>
+  import { loadMapLibre, webglOk } from './ml';
+  import { osmStyle, kindSvg } from './geo';
+  let maps: any[] = [];
+  async function init() {
+    const els = [...document.querySelectorAll<HTMLElement>('[data-minimap]')].filter((e) => !e.dataset.ready);
+    if (!els.length) return;
+    if (!webglOk()) { els.forEach((e) => (e.innerHTML = '<p class="minimap__nojs">Браузер не поддерживает WebGL.</p>')); return; }
+    const ml = await loadMapLibre();
+    for (const el of els) {
+      el.dataset.ready = '1';
+      const { points, line, zoom } = JSON.parse(el.dataset.minimap!);
+      const map = new ml.Map({
+        container: el, style: osmStyle() as any, attributionControl: false,
+        center: [points[0].lng, points[0].lat], zoom,
+        cooperativeGestures: true, dragRotate: false, touchPitch: false, pitchWithRotate: false,
+      });
+      map.addControl(new ml.AttributionControl({ compact: false }), 'bottom-right');
+      map.addControl(new ml.NavigationControl({ showCompass: false }), 'top-right');
+      maps.push(map);
+      for (const p of points) {
+        const tag = p.href ? 'a' : 'span';
+        const m = document.createElement(tag) as HTMLElement;
+        m.className = 'mm-mk' + (p.main ? ' is-main' : '');
+        if (p.href) { (m as HTMLAnchorElement).href = p.href; m.setAttribute('aria-label', p.name); }
+        m.title = p.name;
+        m.innerHTML = `<span>${p.n ?? kindSvg('building')}</span>`;
+        if (p.n === undefined || p.n === null) m.firstElementChild!.innerHTML = '';
+        new ml.Marker({ element: m }).setLngLat([p.lng, p.lat]).addTo(map);
+      }
+      map.on('load', () => {
+        if (line && line.length > 1) {
+          map.addSource('l', { type: 'geojson', data: { type: 'Feature', properties: {}, geometry: { type: 'LineString', coordinates: line.map((p: number[]) => [p[1], p[0]]) } } as any });
+          map.addLayer({ id: 'lc', type: 'line', source: 'l', layout: { 'line-join': 'round', 'line-cap': 'round' }, paint: { 'line-color': '#fff', 'line-width': 7, 'line-opacity': .9 } });
+          map.addLayer({ id: 'll', type: 'line', source: 'l', layout: { 'line-join': 'round', 'line-cap': 'round' }, paint: { 'line-color': '#E0452B', 'line-width': 3.5, 'line-dasharray': [2, 1.4] } });
+        }
+        const all = [...points.map((p: any) => [p.lat, p.lng]), ...(line || [])];
+        if (all.length > 1) {
+          const la = all.map((p: number[]) => p[0]), lo = all.map((p: number[]) => p[1]);
+          map.fitBounds([[Math.min(...lo), Math.min(...la)], [Math.max(...lo), Math.max(...la)]], { padding: 48, maxZoom: zoom, duration: 0 });
+        }
+      });
+    }
+  }
+  document.addEventListener('astro:page-load', init);
+  document.addEventListener('astro:before-swap', () => { maps.forEach((m) => { try { m.remove(); } catch {} }); maps = []; });
+</script>
+
+<style is:global>
+  .minimap { position: relative; height: var(--h); background: #DCE6EA; overflow: hidden; }
+  .minimap__map { position: absolute; inset: 0; }
+  .minimap__nojs { padding: 16px; font-size: 15px; color: var(--ink-2); }
+  .mm-mk { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+  .mm-mk > span { min-width: 28px; height: 28px; padding: 0 4px; border-radius: 14px; border: 3px solid #fff; background: var(--navy); color: #fff; font: 700 13px var(--font); display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(11, 34, 56, .35); }
+  .mm-mk.is-main > span { background: var(--accent); width: 32px; height: 32px; border-radius: 16px; }
+  .mm-mk:focus-visible { outline: none; }
+  .mm-mk:focus-visible > span { outline: 3px solid var(--accent); outline-offset: 2px; }
+</style>
