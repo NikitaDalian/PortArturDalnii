@@ -26,7 +26,7 @@ const mapHref = href.mapRoute(r.slug);
 const routeMap = ({ 'russkiy-dalniy-peshkom': 68, 'vostochnyy-front': 32, 'zapadnyy-front': 32 } as Record<string, number>)[r.slug] ?? null;
 const km = `${String(r.distance_km).replace('.', ',')} км`;
 ---
-<Base title={r.title} description={r.dek} image={artUrl ?? img(cover)} section="map">
+<Base title={r.title} description={r.dek} image={artUrl ?? img(cover)} section="routes">
   <PageHero
     title={r.title}
     eyebrow={author ? `Маршрут от авторов · ${author}` : 'Маршрут'}

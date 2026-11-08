@@ -6,14 +6,14 @@ const { section = null } = Astro.props;
 const items = [
   { key: 'layers', label: t.nav.layers, href: href.layers() },
   { key: 'people', label: t.nav.people, href: href.people() },
-  { key: 'map', label: t.nav.map, href: href.map() },
+  { key: 'map', label: 'Карта', href: href.map() },
+  { key: 'routes', label: 'Маршруты', href: href.routes() },
   { key: 'library', label: t.nav.library, href: href.library() },
   { key: 'notes', label: t.nav.notes, href: href.notes() },
   { key: 'about', label: t.nav.about, href: href.about() },
 ];
-// Второстепенные разделы — в мобильном меню (на десктопе они в «Карте и маршрутах», «Заметках» и подвале)
+// Второстепенные разделы — в мобильном меню (на десктопе они в «Заметках» и подвале)
 const extra = [
-  { label: 'Маршруты', href: href.routes() },
   { label: 'Сезоны', href: href.seasons() },
   { label: 'Указатель А–Я', href: href.index() },
 ];
@@ -78,13 +78,13 @@ const extra = [
   .mobile-nav a[aria-current] { color: var(--accent-on-dark); }
   .mobile-nav a.mobile-nav__sub { min-height: 48px; font-size: 17px; font-weight: 600; color: var(--mist); }
   @keyframes navIn { from { opacity: 0; transform: translateY(10px); } }
-  @media (max-width: 1100px) {
+  @media (max-width: 1180px) {
     .site-nav, .lang { display: none; }
     .menu-btn { display: inline-flex; }
     .brand__name { font-size: 18px; }
     .brand__tag { font-size: 10px; }
   }
-  @media (min-width: 1101px) { .mobile-nav { display: none !important; } }
+  @media (min-width: 1181px) { .mobile-nav { display: none !important; } }
 </style>
 
 <script>

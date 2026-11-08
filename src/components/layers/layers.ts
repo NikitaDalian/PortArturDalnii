@@ -33,7 +33,7 @@ const PLACE_LAYER: Partial<Record<LayerKey, string>> = { pre1898: 'chinese', rus
 
 export function layerPlaces(k: LayerKey): Place[] {
   const key = PLACE_LAYER[k];
-  const xs = key ? places.filter((p) => (p.layers || []).includes(key)) : places.filter((p) => p.visit);
+  const xs = key ? places.filter((p) => (p.layers || []).includes(key)) : places.filter((p) => p.visit && (p as any).today !== false);
   const weight = (p: Place) => (p.articles?.length ?? 0) * 10 + (p.posts?.length ?? 0) + (p.photos?.length ? 1 : 0);
   return [...xs].sort((a, b) => weight(b) - weight(a));
 }

@@ -58,13 +58,13 @@
   --section-y: clamp(48px, 7vw, 88px);
   --radius-pill: 999px;
   --tap: 44px;
-  --header-h: 72px;       /* высота липкой шапки (на ≤1100px — 64px) */
+  --header-h: 72px;       /* высота липкой шапки (на ≤1180px — 64px) */
 
   /* движение */
   --ease: cubic-bezier(.2, .7, .2, 1);
   --dur: 420ms;
 }
-@media (max-width: 1100px) { :root { --header-h: 64px; } }
+@media (max-width: 1180px) { :root { --header-h: 64px; } }
 
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + 16px); }
