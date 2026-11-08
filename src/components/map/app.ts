@@ -251,6 +251,11 @@ export async function initMapApp() {
   };
   const backBtn = () => st.back ? `<button type="button" class="mback" data-back>${ICON.back}${st.back === 'route' ? 'К маршруту' : st.back === 'builder' ? 'К своему маршруту' : 'К списку'}</button>` : '';
 
+  const placeRoutes = (slug: string) => {
+    const rs = data.routes.filter((r) => r.a && r.stops.includes(slug));
+    if (!rs.length) return '';
+    return `<div class="mplace__routes"><span class="mplace__rl">В маршрутах:</span>${rs.map((r) => `<a class="mrchip${st.route === r.s ? ' is-on' : ''}" href="${esc(location.pathname)}?route=${esc(r.s)}" data-route="${esc(r.s)}">${esc(r.title)}</a>`).join('')}</div>`;
+  };
   function renderPlace(p: P) {
     const photos = p.ph;
     const gal = photos.length
@@ -277,6 +282,7 @@ export async function initMapApp() {
         ${p.u ? `<p class="unsure">${p.low ? 'Положение на карте приблизительное, уточняется.' : 'Сведения уточняются.'}</p>` : ''}
         ${p.now ? `<p class="mplace__now">${esc(p.now)}</p>` : ''}
         <p class="mplace__text">${esc(p.t)}</p>
+        ${placeRoutes(p.s)}
       </div>`;
     foot.innerHTML = `
       <a class="mbtn mbtn--primary" href="${esc(p.h)}">Подробнее</a>
@@ -415,6 +421,21 @@ export async function initMapApp() {
     const pad = padding();
     map.easeTo({ center: [p.lng, p.lat], zoom: o.fly === false ? Math.max(map.getZoom(), 13) : Math.max(map.getZoom(), 15), padding: pad, duration: reduce ? 0 : 700 });
   }
+  function unroute() {
+    st.route = null;
+    if (st.back === 'route') st.back = null;
+    if (st.mode === 'route') closeSheet();
+    else { paintMarkers(); setUrl(); syncChips(); }
+    drawPath();
+  }
+  function openRoute(slug: string) {
+    const r = Rt.get(slug);
+    if (!r) return;
+    if (st.era && r.stops.some((s) => P.has(s) && !inEra(P.get(s)!, st.era!))) { st.era = null; applyFilters(); }
+    st.route = slug; st.back = null; st.cur = null;
+    render('route');
+    fitCurrent();
+  }
   function reorder() {
     if (st.start && !st.sel.includes(st.start)) st.start = null;
     const pts = st.sel.map((s) => P.get(s)!).filter(Boolean);
@@ -465,7 +486,16 @@ export async function initMapApp() {
     if (t.closest('[data-clear]')) { st.sel = []; st.start = null; render('builder'); return; }
     if (t.closest('[data-share]')) { share(); return; }
     if (t.closest('[data-reset]')) { resetFilters(); return; }
-    if (t.closest('[data-unroute]')) { st.route = null; closeSheet(); drawPath(); return; }
+    if (t.closest('[data-unroute]')) { unroute(); return; }
+    const rt = t.closest<HTMLElement>('[data-route]');
+    if (rt) {
+      const ev = e as MouseEvent;
+      if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.button) return; // новая вкладка работает по href
+      e.preventDefault();
+      // верхний ряд переключает маршрут, ссылка в карточке места всегда открывает
+      if (rt.classList.contains('mchip') && rt.dataset.route === st.route) unroute(); else openRoute(rt.dataset.route!);
+      return;
+    }
     if (t.closest('[data-fork]')) {
       const r = Rt.get(st.route!)!;
       st.sel = [...new Set(r.stops)].filter((s) => P.has(s));
@@ -500,6 +530,7 @@ export async function initMapApp() {
     chipPlan.setAttribute('aria-pressed', String(st.plan));
     panel.querySelectorAll<HTMLElement>('[data-city]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.city === st.city)));
     eras.querySelectorAll<HTMLElement>('[data-era]').forEach((b) => b.setAttribute('aria-pressed', String((b.dataset.era === 'all' ? null : b.dataset.era) === st.era)));
+    root.querySelectorAll<HTMLElement>('[data-route].mchip').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.route === st.route)));
     const planOn = st.plan;
     suggest.hidden = !(st.era === 'russian' && !planOn);
     const shown = data.places.filter(visible).length;

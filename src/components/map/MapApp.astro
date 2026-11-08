@@ -4,7 +4,10 @@ import { img } from '../../lib/data';
 import { mapPayload, KINDS, CITIES } from './places';
 import { LAYERS } from '../../lib/data';
 import { inEra } from './geo';
+import { href } from '../../lib/data';
 const payload = { ...mapPayload(), plan: img(32) };
+const authored = payload.routes.filter((r) => r.a);
+const authorName = authored[0]?.a ?? '';
 const eraCount = (k: string) => payload.places.filter((x) => inEra(x, k)).length;
 const usedKinds = Object.keys(KINDS).filter((k) => payload.places.some((p) => p.k === k));
 ---
@@ -26,6 +29,13 @@ const usedKinds = Object.keys(KINDS).filter((k) => payload.places.some((p) => p.
       <button type="button" class="mchip mchip--era" data-era="all" aria-pressed="true">Все эпохи <span class="mchip__c">{payload.places.length}</span></button>
       {LAYERS.map((l) => <button type="button" class="mchip mchip--era" data-era={l.key} aria-pressed="false">{l.years} <span class="mchip__c">{eraCount(l.key)}</span></button>)}
     </div>
+    {authored.length > 0 && (
+      <div class="mtop__chips mtop__routes" role="group" aria-label="Авторские маршруты">
+        <span class="mtop__lbl"><b>Авторские маршруты</b><span>От {authorName.replace('Русский клуб Даляня', 'Русского клуба Даляня')}</span></span>
+        {authored.map((r) => <button type="button" class="mchip mchip--route" data-route={r.s} aria-pressed="false">{r.title}</button>)}
+        <a class="mchip mchip--link" href={href.routes()}>Все маршруты</a>
+      </div>
+    )}
     <div class="mtop__chips" role="toolbar" aria-label="Фильтры и режимы карты">
       <button type="button" class="mchip" id="m-filters" aria-expanded="false" aria-controls="m-filter-panel" aria-pressed="false">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"></path></svg>
@@ -128,6 +138,12 @@ const usedKinds = Object.keys(KINDS).filter((k) => payload.places.some((p) => p.
   .mchip[aria-busy="true"] { opacity: .6; }
   .mtop__eras { padding-bottom: 2px; }
   .mchip--era { gap: 8px; }
+  .mtop__routes { align-items: center; }
+  .mtop__lbl { flex: none; display: flex; flex-direction: column; justify-content: center; min-height: 44px; padding: 0 12px; border-radius: 14px; background: rgba(255, 255, 255, .92); box-shadow: 0 2px 10px rgba(11, 34, 56, .18); line-height: 1.2; white-space: nowrap; }
+  .mtop__lbl b { font-size: 13px; font-weight: 800; color: var(--ink); }
+  .mtop__lbl span { font-size: 11.5px; font-weight: 600; color: var(--ink-3); }
+  .mchip--route[aria-pressed="true"] { background: var(--accent); color: #fff; }
+  .mchip--link { background: transparent; color: var(--ink); box-shadow: none; text-decoration: underline; text-underline-offset: 3px; background: rgba(255, 255, 255, .85); }
   .mchip__c { font-size: 12px; font-weight: 700; opacity: .65; }
   .mchip--era[aria-pressed="true"] .mchip__c { opacity: .85; }
   .msuggest, .mnone { display: flex; align-items: center; gap: 6px 12px; flex-wrap: wrap; background: var(--paper); border-radius: 16px; padding: 6px 8px 6px 14px; box-shadow: 0 2px 10px rgba(11, 34, 56, .18); font-size: 14px; line-height: 1.35; max-width: 460px; }
@@ -231,6 +247,10 @@ const usedKinds = Object.keys(KINDS).filter((k) => payload.places.some((p) => p.
   .mplace__name { font-size: 22px; line-height: 1.15; font-weight: 800; }
   .mplace__zh { font-size: 14px; color: var(--ink-3); margin-top: 3px; }
   .mplace__now { font-size: 14px; line-height: 1.45; color: var(--ink-2); font-weight: 500; }
+  .mplace__routes { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding-top: 4px; }
+  .mplace__rl { font-size: 13px; font-weight: 700; color: var(--ink-3); margin-right: 2px; }
+  .mrchip { display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; border-radius: 22px; border: 1.5px solid var(--navy); font: 600 14px var(--font); color: var(--ink); background: var(--paper); }
+  .mrchip:hover, .mrchip.is-on { background: var(--navy); color: #fff; }
   .mplace__text { font-size: 15px; line-height: 1.55; color: var(--ink-2); }
   .mselbtn { flex: none; display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 12px 0 10px; border-radius: 22px; border: 1.5px solid var(--navy); background: var(--paper); font: 600 14px var(--font); color: var(--ink); cursor: pointer; }
   .mselbtn.is-on { background: var(--navy); color: #fff; }
