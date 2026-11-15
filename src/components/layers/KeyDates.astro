@@ -1,6 +1,9 @@
 ---
 // Список ключевых дат. С showLayer — подпись слоя со ссылкой (для общей хронологии).
 import { href, layerByKey } from '../../lib/data';
+import LinkedText from '../LinkedText.astro';
+import { mentionContext } from '../../lib/mentions';
+const mentions = mentionContext();
 import type { LayerDate } from './layers';
 interface Item extends LayerDate { layer?: string }
 interface Props { items: Item[]; showLayer?: boolean }
@@ -13,7 +16,7 @@ const { items, showLayer = false } = Astro.props;
       <li class="kd__item">
         <span class="kd__date">{d.date}</span>
         <span class="kd__body">
-          <span class="kd__text">{d.text}</span>
+          <span class="kd__text"><LinkedText text={d.text} context={mentions} /></span>
           {showLayer && l && <a class="kd__layer meta" href={href.layer(l.key)}>{l.short}</a>}
         </span>
       </li>

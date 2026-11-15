@@ -1,0 +1,117 @@
+<aside id="entity-preview" class="entity-preview" role="dialog" aria-labelledby="entity-preview-title" aria-modal="false" data-pagefind-ignore hidden>
+  <button type="button" class="entity-preview__close" aria-label="Закрыть справку">×</button>
+  <img class="entity-preview__image" alt="" width="340" height="160" decoding="async" hidden />
+  <div class="entity-preview__body">
+    <p class="entity-preview__eyebrow">Краткая справка</p>
+    <h2 id="entity-preview-title"></h2>
+    <p id="entity-preview-description"></p>
+    <a class="entity-preview__link" href="#">Открыть полную страницу <span aria-hidden="true">→</span></a>
+  </div>
+</aside>
+<script>
+  type Preview = { title: string; description: string; href: string; image?: string; alt?: string; kind: string };
+  let active: HTMLAnchorElement | null = null;
+  let openTimer = 0, closeTimer = 0;
+  let restoringFocus = false;
+  const panel = () => document.getElementById('entity-preview') as HTMLElement | null;
+  const touchLayout = () => matchMedia('(hover: none), (pointer: coarse)').matches;
+  function close(restoreFocus = false) {
+    clearTimeout(openTimer); clearTimeout(closeTimer);
+    panel()?.setAttribute('hidden', '');
+    const previous = active; active = null;
+    previous?.removeAttribute('aria-expanded'); previous?.removeAttribute('aria-describedby');
+    if (restoreFocus) { restoringFocus = true; previous?.focus({ preventScroll: true }); restoringFocus = false; }
+  }
+  function position() {
+    const card = panel(); if (!card || !active) return;
+    if (touchLayout()) {
+      card.style.left = '16px'; card.style.top = 'auto'; card.style.bottom = '16px';
+      return;
+    }
+    card.style.bottom = 'auto';
+    const anchor = active.getBoundingClientRect();
+    const box = card.getBoundingClientRect();
+    const left = Math.max(12, Math.min(innerWidth - box.width - 12, anchor.left + anchor.width / 2 - box.width / 2));
+    const below = anchor.bottom + 10;
+    const top = below + box.height <= innerHeight - 12 ? below : Math.max(12, anchor.top - box.height - 10);
+    card.style.left = `${left}px`; card.style.top = `${top}px`;
+  }
+  function open(link: HTMLAnchorElement) {
+    clearTimeout(openTimer); clearTimeout(closeTimer);
+    const card = panel(); if (!card || !link.isConnected) return;
+    if (active === link && !card.hidden) return;
+    let data: Preview;
+    try { data = JSON.parse(link.dataset.entityPreview!); } catch { return; }
+    close(); active = link;
+    card.querySelector('h2')!.textContent = data.title;
+    card.querySelector('#entity-preview-description')!.textContent = data.description;
+    (card.querySelector('.entity-preview__link') as HTMLAnchorElement).href = data.href;
+    const picture = card.querySelector('img')!;
+    picture.hidden = !data.image; picture.alt = data.alt ?? '';
+    picture.classList.toggle('is-person', data.kind === 'person');
+    if (data.image) picture.src = data.image; else picture.removeAttribute('src');
+    link.setAttribute('aria-expanded', 'true');
+    link.setAttribute('aria-describedby', 'entity-preview-description');
+    card.hidden = false; position();
+  }
+  const linkAt = (target: EventTarget | null) => target instanceof Element ? target.closest<HTMLAnchorElement>('a[data-entity-preview]') : null;
+  const closeSoon = () => { clearTimeout(openTimer); clearTimeout(closeTimer); closeTimer = window.setTimeout(() => close(), 220); };
+  document.addEventListener('pointerover', event => {
+    if (event.pointerType === 'touch') return;
+    const target = event.target as Element;
+    if (panel()?.contains(target)) { clearTimeout(closeTimer); return; }
+    const link = linkAt(target);
+    if (link) { clearTimeout(closeTimer); clearTimeout(openTimer); openTimer = window.setTimeout(() => open(link), 160); }
+  });
+  document.addEventListener('pointerout', event => {
+    if (event.pointerType === 'touch') return;
+    const next = event.relatedTarget as Node | null;
+    if (next && (active?.contains(next) || panel()?.contains(next))) return;
+    if (linkAt(event.target) || panel()?.contains(event.target as Node)) closeSoon();
+  });
+  document.addEventListener('focusin', event => {
+    if (restoringFocus) return;
+    const link = linkAt(event.target);
+    if (link) requestAnimationFrame(() => { if (document.activeElement === link) open(link); });
+    else if (!panel()?.contains(event.target as Node)) close();
+  });
+  document.addEventListener('keydown', event => {
+    const link = linkAt(event.target);
+    if (event.key === 'ArrowDown' && link) {
+      event.preventDefault(); open(link);
+      (panel()?.querySelector('.entity-preview__link') as HTMLAnchorElement)?.focus({ preventScroll: true });
+      return;
+    }
+    if (!active || panel()?.hidden) return;
+    if (event.key === 'Escape') { event.preventDefault(); close(true); }
+  });
+  document.addEventListener('click', event => {
+    const link = linkAt(event.target);
+    if (link && touchLayout() && !event.ctrlKey && !event.metaKey && !event.shiftKey && event.button === 0) {
+      event.preventDefault(); open(link); return;
+    }
+    if ((event.target as Element)?.closest('.entity-preview__close')) { close(true); return; }
+    if (!panel()?.contains(event.target as Node)) close();
+  }, true);
+  document.addEventListener('pointerdown', event => {
+    if (active && !active.contains(event.target as Node) && !panel()?.contains(event.target as Node)) close();
+  });
+  document.addEventListener('scroll', event => {
+    if (!touchLayout() && !panel()?.contains(event.target as Node)) close();
+  }, true);
+  window.addEventListener('resize', () => close());
+  document.addEventListener('astro:before-swap', () => close());
+</script>
+<style is:global>
+  .entity-preview { position: fixed; z-index: 100; width: min(340px, calc(100vw - 32px)); max-height: min(560px, calc(100dvh - 32px)); overflow-y: auto; background: var(--paper); color: var(--ink); border: 1px solid var(--line-2); box-shadow: 0 12px 42px #0b22383d; border-radius: 4px; }
+  .entity-preview[hidden], .entity-preview__image[hidden] { display: none; }
+  .entity-preview__close { position: absolute; top: 6px; right: 6px; z-index: 1; display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 50%; background: var(--paper); color: var(--ink); font-size: 27px; cursor: pointer; }
+  .entity-preview__image { display: block; width: 100%; height: 160px; object-fit: cover; }
+  .entity-preview__image.is-person { object-position: 50% 22%; }
+  .entity-preview__body { padding: 20px; }
+  .entity-preview__eyebrow { padding-right: 28px; margin-bottom: 8px; color: var(--ink-3); font-size: 12px; letter-spacing: .07em; text-transform: uppercase; }
+  .entity-preview h2 { padding-right: 20px; margin: 0 0 12px; font-size: 21px; line-height: 1.3; }
+  .entity-preview #entity-preview-description { margin: 0; font-size: 15px; line-height: 1.65; }
+  .entity-preview__link { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin-top: 12px; color: var(--accent-on-light); font-weight: 650; font-size: 14px; text-decoration: underline; text-underline-offset: 3px; }
+  @media (hover: none), (pointer: coarse) { .entity-preview { max-height: 72dvh; } }
+</style>

@@ -1,13 +1,17 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import LinkedText from '../../../components/LinkedText.astro';
+import { mentionContext } from '../../../lib/mentions';
 import Crumbs from '../../../components/Crumbs.astro';
 import Related from '../../../components/Related.astro';
-import { articles, terms, referenceDescriptions, href, tgPost } from '../../../lib/data';
+import { articles, terms, referenceDescriptions, referencePhoto, img, href, tgPost } from '../../../lib/data';
 export function getStaticPaths() {
   return (['people', 'geo'] as const).flatMap((kind) => Object.entries(terms[kind]).map(([slug, name]) => ({ params: { kind, slug }, props: { kind, slug, name } })));
 }
 const { kind, slug, name } = Astro.props as { kind: 'people' | 'geo'; slug: string; name: string };
 const description = referenceDescriptions[kind][slug];
+const photo = referencePhoto(kind, slug);
+const mentions = mentionContext([`${kind === 'people' ? 'person' : 'place'}/${slug}`]);
 if (!description) throw new Error(`Missing reference description: ${kind}/${slug}`);
 const field = kind === 'people' ? 'people' : 'places';
 const notes = articles.filter((a) => (a[field] as string[]).includes(slug));
@@ -28,7 +32,11 @@ const related = {
     </div>
   </header>
   <article class="container reference-width section section--tight">
-    <div class="prose reference-description"><p>{description}</p></div>
+    {photo && <figure class:list={['reference-photo', { 'reference-photo--person': kind === 'people' }]}>
+      <img src={img(photo.file, 640)} alt={photo.subject} width="640" height="420" loading="lazy" />
+      <figcaption>{photo.subject}{photo.credit && <span> · {photo.credit}</span>}</figcaption>
+    </figure>}
+    <div class="prose reference-description"><p><LinkedText text={description} context={mentions} /></p></div>
     <section class="reference-notes" aria-labelledby="reference-sources">
       <h2 class="h3" id="reference-sources">Материалы и источники</h2>
       <p class="reference-note meta">Справка подготовлена по публикациям канала. Подробности и использованные авторами источники — в материалах ниже.</p>
@@ -50,6 +58,10 @@ const related = {
   .reference-type { margin: 24px 0 12px; color: var(--steel); }
   .reference-head h1 { font-size: clamp(30px, 4.3vw, 52px); line-height: 1.15; text-wrap: balance; }
   .reference-description { font-size: 20px; line-height: 1.85; }
+  .reference-photo { margin: 0 0 32px; }
+  .reference-photo img { display: block; width: 100%; height: auto; max-height: 480px; object-fit: contain; background: var(--paper-2); }
+  .reference-photo--person { max-width: 360px; }
+  .reference-photo figcaption { margin-top: 10px; font-size: 13px; line-height: 1.6; color: var(--ink-3); }
   .reference-notes { margin: 48px 0; }
   .reference-note { margin-top: 12px; max-width: 68ch; }
   .reference-notes ul { list-style: none; padding: 0; margin-top: 24px; }

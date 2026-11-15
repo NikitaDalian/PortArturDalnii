@@ -109,6 +109,18 @@ for (const file of files) {
     }
   }
 
+  // Карточки загружают изображения после наведения: их URL хранится в JSON, а не src.
+  for (const m of body.matchAll(/\sdata-entity-preview="([^"]*)"/g)) {
+    try {
+      const preview = JSON.parse(decode(m[1]));
+      if (!preview.title || !preview.description) throw new Error('пустая справка');
+      for (const resource of [preview.href, preview.image].filter(Boolean)) {
+        checked++;
+        if (!resource.startsWith(BASE) || !resolve(resource)) broken.push({ page: here, href: resource, why: 'нет ресурса справки' });
+      }
+    } catch (error) { broken.push({ page: here, href: 'data-entity-preview', why: String(error) }); }
+  }
+
   // доступность
   const h1 = (body.match(/<h1[\s>]/g) || []).length;
   if (h1 !== 1) a11y.push({ page: here, why: `заголовков h1: ${h1}` });

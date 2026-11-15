@@ -1,5 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
+import LinkedText from '../../components/LinkedText.astro';
+import { mentionContext } from '../../lib/mentions';
+const mentions = mentionContext();
 import PageHero from '../../components/PageHero.astro';
 import Coast from '../../components/Coast.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
@@ -59,7 +62,7 @@ const placesTitle = key === 'modern' ? 'Где искать следы сего�
       <div class="stack reveal" style="--stack-gap:20px">
         <h2 id="intro-h" class="h2">О слое</h2>
         <div class="prose">
-          {text.intro.map((p) => <p>{p}</p>)}
+          {text.intro.map((p) => <p><LinkedText text={p} context={mentions} /></p>)}
         </div>
         {key === 'russian' && <MapFigure id={68} />}
         {galleryFiles.length > 0 && <PhotoGallery photos={galleryFiles} title="Снимки эпохи" />}

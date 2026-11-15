@@ -1,8 +1,11 @@
 ---
 import { href, img } from '../../lib/data';
+import LinkedText from '../LinkedText.astro';
+import { mentionContext } from '../../lib/mentions';
 import { editionDate, type Dossier } from './dossiers';
 interface Props { dossier: Dossier }
 const { dossier: d } = Astro.props;
+const mentions = mentionContext([`place/${d.place}`], d.people.map(slug => `person/${slug}`));
 const canonical = new URL(href.place(d.place), Astro.site).href;
 const citation = `${d.title}. Портъ-Артуръ и Дальнiй. Редакция от 15.11.2026. ${canonical}#istoriya-mesta`;
 ---
@@ -23,7 +26,7 @@ const citation = `${d.title}. Портъ-Артуръ и Дальнiй. Реда
       {d.sections.map((s) => (
         <section id={s.id} class="dossier-section" aria-labelledby={`${s.id}-title`}>
           <h2 class="h3" id={`${s.id}-title`}>{s.title}</h2>
-          <div class="prose">{s.paragraphs.map((p) => <p>{p}</p>)}</div>
+          <div class="prose">{s.paragraphs.map((p) => <p><LinkedText text={p} context={mentions} /></p>)}</div>
           {s.takeaway && <aside class="dossier-takeaway"><p>{s.takeaway}</p></aside>}
           <p class="dossier-refs meta">Источники: {s.refs.map((ref, i) => <>{i > 0 && ', '}<a href={`#istochnik-${ref}`} aria-label={`Источник ${ref}: ${d.sources[ref - 1].title}`}>[{ref}]</a></>)}</p>
           {s.figure && (

@@ -1,5 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
+import LinkedText from '../../components/LinkedText.astro';
+import { mentionContext } from '../../lib/mentions';
 import DossierLinks from '../../components/places/DossierLinks.astro';
 import Coast from '../../components/Coast.astro';
 import NoteCover from '../../components/NoteCover.astro';
@@ -22,6 +24,7 @@ export function getStaticPaths() {
 }
 
 const a = articleBySlug.get(Astro.params.slug!) as Article;
+const mentions = mentionContext([], [...a.people.map(slug => `person/${slug}`), ...a.places.map(slug => `place/${slug}`)]);
 const t = TYPES[a.type] ?? TYPES.event;
 const NOTE_MAPS: Record<string, number> = {
   'dalnii-gorod-s-nulya': 68,
@@ -85,14 +88,14 @@ const mapPlaces = rel.places.map((slug) => placeBySlug.get(slug)).filter((place)
     <article class="nb__main stack" style="--stack-gap:40px">
       <section class="stack" style="--stack-gap:14px" aria-labelledby="h-short">
         <h2 class="eyebrow eyebrow--accent" id="h-short">Коротко</h2>
-        <p class="nb__summary">{a.summary}</p>
+        <p class="nb__summary"><LinkedText text={a.summary} context={mentions} limit={6} /></p>
       </section>
 
       {a.facts.length > 0 && (
         <section class="stack" style="--stack-gap:14px" aria-labelledby="h-facts">
           <h2 class="eyebrow" id="h-facts">Факты</h2>
           <ul class="nb__facts">
-            {a.facts.map((f) => <li>{f}</li>)}
+            {a.facts.map((f) => <li><LinkedText text={f} context={mentions} /></li>)}
           </ul>
         </section>
       )}

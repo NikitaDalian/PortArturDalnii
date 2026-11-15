@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import LinkedText from '../../components/LinkedText.astro';
 import PageHero from '../../components/PageHero.astro';
 import Unsure from '../../components/Unsure.astro';
 import { seasons, href, entity, placeBySlug } from '../../lib/data';
@@ -55,7 +56,7 @@ const rs = sortedRoutes();
                 <li class="sz__item reveal" style={`--d:${Math.min(i, 5) * 70}ms`}>
                   <p class="sz__when">{it.when}</p>
                   <h3 class="sz__title">{it.title}</h3>
-                  <p class="muted sz__note">{it.note}</p>
+                  <p class="muted sz__note"><LinkedText text={it.note} /></p>
                   <div class="sz__foot">
                     <p class="sz__place">{e ? (e.href ? <a class="link" href={e.href} title={e.label}>{e.label}</a> : <span class="meta">{e.label}</span>) : ''}</p>
                     <p class="sz__tags">

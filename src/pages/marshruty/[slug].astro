@@ -1,5 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
+import LinkedText from '../../components/LinkedText.astro';
+import { mentionContext } from '../../lib/mentions';
+const mentions = mentionContext();
 import PageHero from '../../components/PageHero.astro';
 import Unsure from '../../components/Unsure.astro';
 import MapFigure from '../../components/MapFigure.astro';
@@ -101,7 +104,7 @@ const km = `${String(r.distance_km).replace('.', ',')} км`;
                     {s.p ? <a href={href.place(s.p.slug)}>{s.p.name}</a> : s.place}
                   </h3>
                   {s.p?.name_zh && s.p.name_zh !== '—' && <span class="rt-stop__zh" lang="zh">{s.p.name_zh.split(';')[0]}</span>}
-                  {s.note && <p class="rt-stop__note">{s.note}</p>}
+                  {s.note && <p class="rt-stop__note"><LinkedText text={s.note} context={mentions} /></p>}
                   {s.p && isUncertain(s.p) && <Unsure text={s.p.coord_confidence === 'low' ? 'точка приблизительная, уточняется' : 'сведения уточняются'} />}
                 </div>
               </div>
@@ -113,7 +116,7 @@ const km = `${String(r.distance_km).replace('.', ',')} км`;
         {r.practical && (
           <div class="panel panel--frost stack" style="--stack-gap:10px">
             <h2 class="h3">Практические советы</h2>
-            <p>{r.practical}</p>
+            <p><LinkedText text={r.practical} context={mentions} /></p>
             <p class="meta">Часы работы и цены меняются — уточните перед поездкой.</p>
           </div>
         )}

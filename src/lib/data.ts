@@ -12,6 +12,7 @@ import photosJson from '../data/photos.json';
 import termsJson from '../data/index_terms.json';
 import focusJson from '../data/focus.json';
 import descriptionsJson from '../data/reference_descriptions.json';
+import referenceMediaJson from '../data/reference_media.json';
 import { assetUrl, locale, intlLocale } from '../i18n/locale';
 
 export type LayerKey = 'pre1898' | 'russian' | 'japanese' | 'soviet' | 'modern';
@@ -196,6 +197,10 @@ export const focusStyle = (file: string | number | null | undefined) => {
   return `object-position:${f.position};object-fit:${f.fit}`;
 };
 export const photoMeta = (file: string) => photos.find((p) => p.file === file);
+export const referencePhoto = (kind: 'people' | 'geo', slug: string) => {
+  const file = (referenceMediaJson[kind] as Record<string, string>)[slug];
+  return file ? photoMeta(file) : undefined;
+};
 export const authorImg = (name: string) => assetUrl(`/img/authors/${name}.webp`);
 
 // ---------- форматирование ----------

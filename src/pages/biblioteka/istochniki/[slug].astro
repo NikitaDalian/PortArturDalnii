@@ -1,5 +1,6 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import LinkedText from '../../../components/LinkedText.astro';
 import DossierLinks from '../../../components/places/DossierLinks.astro';
 import Coast from '../../../components/Coast.astro';
 import Crumbs from '../../../components/Crumbs.astro';
@@ -63,7 +64,7 @@ const description = s.annotation ? s.annotation.slice(0, 180) : `${kind}: ${s.ti
         {s.annotation && (
           <div class="stack" style="--stack-gap:12px">
             <h2 class="h3">Об источнике</h2>
-            <div class="prose"><p>{s.annotation}</p></div>
+            <div class="prose"><p><LinkedText text={s.annotation} limit={6} /></p></div>
           </div>
         )}
         <DossierLinks kind="library" slug={s.slug} />

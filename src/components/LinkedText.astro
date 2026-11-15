@@ -1,0 +1,14 @@
+---
+import { linkMentions, type MentionContext } from '../lib/mentions';
+interface Props { text: string; context?: MentionContext; limit?: number }
+const { text, context, limit = 4 } = Astro.props;
+const parts = linkMentions(text, context, limit);
+---
+{parts.map(part => part.entity
+  ? <a class="entity-mention" href={part.entity.href} data-entity-preview={JSON.stringify(part.entity)}>{part.text}</a>
+  : part.text)}
+<style is:global>
+  .entity-mention { color: inherit; text-decoration: underline; text-decoration-color: var(--steel); text-decoration-thickness: 1px; text-underline-offset: .18em; }
+  .entity-mention:hover, .entity-mention:focus-visible { color: var(--accent-on-light); text-decoration-color: currentColor; }
+  .dark .entity-mention:hover, .dark .entity-mention:focus-visible { color: var(--accent-on-dark); }
+</style>

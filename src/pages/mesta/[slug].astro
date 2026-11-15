@@ -1,5 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
+import LinkedText from '../../components/LinkedText.astro';
+import { mentionContext } from '../../lib/mentions';
 import DossierHero from '../../components/places/DossierHero.astro';
 import PlaceDossier from '../../components/places/PlaceDossier.astro';
 import { dossierFor } from '../../components/places/dossiers';
@@ -21,6 +23,7 @@ export function getStaticPaths() {
 }
 interface Props { p: Place }
 const { p } = Astro.props;
+const mentions = mentionContext([`place/${p.slug}`]);
 const dossier = dossierFor(p.slug);
 const placeMap = ({ 'nikolaevskaya-ploshchad': 68, 'fort-2': 120, 'ukreplenie-3': 120, 'ukreplenie-5': 114, 'yaponskie-kvartaly-lyuyshunya': 315 } as Record<string, number>)[p.slug] ?? null;
 const photos = ((p.photos || []) as string[]).filter((f) => !placeMap || !String(f).includes(`photo_${placeMap}@`));
@@ -62,7 +65,7 @@ const city = CITIES[p.city] ?? '';
     {dossier && <div class="container"><h2 class="h2 pl-practical-title">На месте</h2></div>}
     <div class="container split pl-split">
       <div class="stack" style="--stack-gap:28px">
-        {!dossier && <div class="prose"><p>{p.summary}</p></div>}
+        {!dossier && <div class="prose"><p><LinkedText text={p.summary} context={mentions} limit={6} /></p></div>}
         {placeMap && !dossier && <div class="reveal"><MapFigure id={placeMap} /></div>}
         {unsure && (
           <Unsure block text={p.coord_confidence === 'low'
@@ -72,7 +75,7 @@ const city = CITIES[p.city] ?? '';
         {p.visit && (
           <div class="panel panel--frost stack reveal" style="--stack-gap:10px">
             <h2 class="h3">Как добраться</h2>
-            <p>{p.visit}</p>
+            <p><LinkedText text={p.visit} context={mentions} /></p>
             <p class="meta">Часы, цены и доступ меняются — уточните перед поездкой.</p>
           </div>
         )}

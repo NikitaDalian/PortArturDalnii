@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "node scripts/build_multilingual.mjs",
-    "check": "node scripts/check_data.mjs && node scripts/check_i18n.mjs && node scripts/check_links.mjs",
+    "check": "node scripts/check_data.mjs && node scripts/check_i18n.mjs && node scripts/check_mentions.mjs && node scripts/check_links.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },

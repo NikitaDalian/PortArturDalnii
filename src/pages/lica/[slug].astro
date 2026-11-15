@@ -1,5 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
+import LinkedText from '../../components/LinkedText.astro';
+import { mentionContext } from '../../lib/mentions';
 import DossierLinks from '../../components/places/DossierLinks.astro';
 import Coast from '../../components/Coast.astro';
 import Crumbs from '../../components/Crumbs.astro';
@@ -19,6 +21,7 @@ export function getStaticPaths() {
 
 interface Props { p: Person }
 const { p } = Astro.props;
+const mentions = mentionContext([`person/${p.slug}`], p.places.map(slug => `place/${slug}`));
 const c = COUNTRIES[p.country] ?? COUNTRIES.other;
 const name = splitName(p.name);
 const notes = personArticles(p);
@@ -64,7 +67,7 @@ const portraitArchive = (p.portrait && photoMeta(p.portrait as string)?.record_u
     <div class="container ps-split">
       <div class="stack ps-main" style="--stack-gap:28px">
         <h2 class="sr-only">Биография</h2>
-        {p.bio && <div class="prose reveal"><p>{p.bio}</p></div>}
+        {p.bio && <div class="prose reveal"><p><LinkedText text={p.bio} context={mentions} limit={7} /></p></div>}
         <DossierLinks kind="people" slug={p.slug} />
         {quote && (
           <blockquote class="quote ps-quote reveal" style="--d:80ms">

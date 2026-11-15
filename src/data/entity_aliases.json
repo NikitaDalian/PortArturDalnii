@@ -1,0 +1,1376 @@
+{
+  "ru": {
+    "people": {
+      "nikolai-ii": [
+        "Николая II",
+        "Николаю II",
+        "Николаем II",
+        "Николае II"
+      ],
+      "vitte": [],
+      "alekseev": [
+        "Алексеева",
+        "Алексееву",
+        "Алексеевым",
+        "Алексееве"
+      ],
+      "li-hunchzhan": [
+        "Ли Хунчжана",
+        "Ли Хунчжану",
+        "Ли Хунчжаном"
+      ],
+      "bezobrazov": [
+        "Александра Безобразова",
+        "Александром Безобразовым"
+      ],
+      "plehve": [],
+      "kuropatkin": [
+        "Куропаткина",
+        "Куропаткину"
+      ],
+      "kondratenko": [],
+      "stessel": [
+        "Стесселя",
+        "Стесселю",
+        "Стесселем",
+        "Стесселе"
+      ],
+      "makarov": [
+        "Макарова",
+        "Макаровым"
+      ],
+      "vitgeft": [
+        "Витгефта",
+        "Витгефту"
+      ],
+      "velichko": [],
+      "saharov": [
+        "Сахарова"
+      ],
+      "skolimovsky": [
+        "Сколимовского"
+      ],
+      "lilie": [],
+      "nogi": [
+        "Ноги"
+      ],
+      "iessen": [
+        "Иессена"
+      ],
+      "kamimura": [
+        "Камимуры",
+        "Камимурой"
+      ],
+      "subotich": [
+        "Суботича"
+      ],
+      "stepanov": [
+        "Степанова"
+      ],
+      "pikul": [
+        "Пикуля",
+        "Пикулю"
+      ],
+      "veresaev": [
+        "Вересаева"
+      ],
+      "botkin": [
+        "Боткина",
+        "Боткине"
+      ],
+      "tolstoy": [
+        "Толстого",
+        "Толстом"
+      ],
+      "balmont": [
+        "Бальмонта"
+      ],
+      "menshikov": [
+        "Меньшикова"
+      ],
+      "shatrov": [
+        "Шатрова"
+      ],
+      "prokudin-gorsky": [
+        "Прокудина-Горского",
+        "Прокудину-Горскому"
+      ],
+      "artur": [],
+      "myulberg": [
+        "Михаила Мюльберга",
+        "Михаил Мюльберг"
+      ],
+      "vereshchagin": [
+        "Верещагина"
+      ],
+      "fok": [
+        "Фока",
+        "Фоком",
+        "Фоке"
+      ],
+      "abaza": [],
+      "aleksandr-iii": [
+        "Александра III"
+      ],
+      "barabash": [],
+      "bezobrazov-pyotr": [],
+      "borodovskii": [
+        "Бородовского",
+        "Бородовским"
+      ],
+      "briner": [
+        "Бринера",
+        "Бринером"
+      ],
+      "chertkov": [],
+      "denikin": [],
+      "dubasov": [
+        "Дубасова"
+      ],
+      "essen": [
+        "Эссена",
+        "Эссеном"
+      ],
+      "georg-grecheskii": [],
+      "grodekov": [
+        "Гродекова"
+      ],
+      "hodyakov": [
+        "Ходякова"
+      ],
+      "ivanov-13": [],
+      "kirill-vladimirovich": [],
+      "kokovtsov": [
+        "Коковцова"
+      ],
+      "kolchak": [
+        "Колчака"
+      ],
+      "kotvich": [
+        "Котвича",
+        "Котвичем"
+      ],
+      "kulichkin": [
+        "Куличкина"
+      ],
+      "lenin": [
+        "Ленина"
+      ],
+      "levitov": [
+        "Левитова"
+      ],
+      "linevich": [
+        "Линевича"
+      ],
+      "lysev": [
+        "Лысева",
+        "Лысевым"
+      ],
+      "martin-kristofer": [
+        "Мартина"
+      ],
+      "meidzi": [
+        "Мэйдзи"
+      ],
+      "minaev": [
+        "Сергей Минаев",
+        "Минаев"
+      ],
+      "molodyakov": [
+        "Молодякова"
+      ],
+      "myulberg-evgenii": [
+        "подпоручик Евгений Мюльберг"
+      ],
+      "nazarenko": [],
+      "nikolaev-dk": [
+        "Николаева"
+      ],
+      "panishchev": [
+        "Панищева"
+      ],
+      "poselyagin": [
+        "Поселягина"
+      ],
+      "reitsenshtein": [],
+      "rennenkampf": [
+        "Ренненкампфа"
+      ],
+      "rozhestvenskii": [
+        "Рожественского"
+      ],
+      "ruzvelt": [
+        "Рузвельта",
+        "Теодора Рузвельта"
+      ],
+      "saginadze": [],
+      "shevchenko-av": [],
+      "skitalets": [
+        "Скиталец"
+      ],
+      "smirnov": [
+        "Смирнова",
+        "Смирновым"
+      ],
+      "sozonov": [
+        "Созонова"
+      ],
+      "stalin": [
+        "Сталиным"
+      ],
+      "stark": [
+        "Старка"
+      ],
+      "suvorin": [
+        "Суворина"
+      ],
+      "takahasi": [
+        "Такахаси"
+      ],
+      "togo": [],
+      "trusov": [],
+      "tsuda-sandzo": [],
+      "tsysi": [
+        "Цыси"
+      ],
+      "uhtomskii": [
+        "Ухтомского"
+      ],
+      "viren": [
+        "Вирену"
+      ],
+      "yaroslavskii": [
+        "Ярославского"
+      ],
+      "ayrapetov": [
+        "Айрапетова"
+      ],
+      "akunin": [
+        "Акунина"
+      ],
+      "gyubbenet": [
+        "Гюббенета"
+      ],
+      "krig": [],
+      "krivosheev": [
+        "Кривошеева"
+      ],
+      "gilyarovsky": [
+        "Гиляровского"
+      ],
+      "yurovsky": [],
+      "beloborodov": [],
+      "goloschekin": [],
+      "sverdlov": [
+        "Свердловым"
+      ],
+      "tretyakov": [
+        "Третьякова"
+      ],
+      "grigorovich": []
+    },
+    "places": {
+      "vysokaya-gora": [
+        "гора Высокая",
+        "горы Высокой",
+        "гору Высокую",
+        "Высокой горы",
+        "Высокую гору",
+        "Высокая гора",
+        "гора 203",
+        "горы 203",
+        "гору 203",
+        "Эрлиншань",
+        "尔灵山"
+      ],
+      "fort-2": [
+        "форт № II",
+        "форта № II",
+        "форте № II",
+        "форту № II",
+        "форт № 2",
+        "Дунцзигуаньшань",
+        "Дунцзигуаньшане",
+        "东鸡冠山北堡垒"
+      ],
+      "bolshoe-orlinoe-gnezdo": [
+        "Большого Орлиного Гнезда",
+        "Орлиное Гнездо",
+        "Орлиного Гнезда",
+        "Ванътай",
+        "望台炮台"
+      ],
+      "fort-3": [
+        "форт № 3",
+        "форта № 3",
+        "Эрлуншань",
+        "Эрлуншане",
+        "Эрлуншаня",
+        "二龙山堡垒"
+      ],
+      "ukreplenie-3": [
+        "Суншушань",
+        "Суншушане",
+        "松树山堡垒"
+      ],
+      "ukreplenie-5": [
+        "укрепления № 5",
+        "укреплении № 5",
+        "укреплению № 5",
+        "Яхуцзуй",
+        "鸦户嘴"
+      ],
+      "elektricheskiy-utes": [
+        "Электрический утёс",
+        "Электрическом утёсе",
+        "电岩炮台"
+      ],
+      "zolotaya-gora": [
+        "Золотой горе",
+        "Золотой горы",
+        "Золотую гору",
+        "Золотой горой",
+        "黄金山"
+      ],
+      "perepelinaya-gora": [
+        "Перепелиная гора",
+        "Перепелиной горы",
+        "Перепелиную гору",
+        "Перепелиной горой",
+        "Байюйшань",
+        "Байюйшаня",
+        "Байюйшане",
+        "白玉山"
+      ],
+      "gavan-port-artura": [
+        "гавань Порт-Артура",
+        "гавани Порт-Артура",
+        "Порт-Артурской гавани",
+        "Люйшуньскую гавань",
+        "旅顺港"
+      ],
+      "vokzal-lushun": [
+        "旅顺站"
+      ],
+      "tyurma-lushun": [
+        "旅顺日俄监狱旧址"
+      ],
+      "kladbishche-lushun": [
+        "旅顺苏军烈士陵园"
+      ],
+      "muzey-lushun": [
+        "Музея Люйшуня",
+        "旅顺博物馆"
+      ],
+      "novy-gorod-taiyangou": [
+        "Тайянгоу",
+        "太阳沟"
+      ],
+      "bashnya-druzhby": [
+        "中苏友谊纪念塔"
+      ],
+      "shuishiying": [
+        "Шуйшиин",
+        "Шуйшиине",
+        "水师营会见所旧址"
+      ],
+      "longwangtang": [
+        "Лунвантан",
+        "Лунвантане",
+        "Лунвантана",
+        "龙王塘樱花园"
+      ],
+      "nikolaevskaya-ploshchad": [
+        "Николаевской площади",
+        "Николаевскую площадь",
+        "площадь Чжуншань",
+        "площади Чжуншань",
+        "Охироба",
+        "中山广场"
+      ],
+      "russkaya-ulitsa": [
+        "Русская улица",
+        "Русской улицы",
+        "бывшая Инженерная",
+        "团结街",
+        "俄罗斯风情街"
+      ],
+      "upravlenie-dalnego": [
+        "городского управления Дальнего",
+        "городское управление Дальнего",
+        "达里尼市政厅旧址"
+      ],
+      "zdanie-kvzhd-1902": [
+        "Художественный музей Даляня",
+        "大连艺术展览馆",
+        "大连美术馆"
+      ],
+      "most-pobedy": [
+        "моста Победы",
+        "мостом Победы",
+        "Ниппонбаси",
+        "胜利桥"
+      ],
+      "gorodskoy-sad": [
+        "парк Труда",
+        "парке Труда",
+        "Западный парк",
+        "Городского сада",
+        "劳动公园"
+      ],
+      "port-dalniy": [
+        "порт Дальний",
+        "порт Даляня",
+        "бухта Виктория",
+        "бухты Виктория",
+        "бухте Виктория",
+        "大连港"
+      ],
+      "gostinitsa-yamato": [
+        "大连宾馆"
+      ],
+      "bank-yokohama": [
+        "банк Ёкогама Сёкин",
+        "банка Ёкогама Сёкин",
+        "横滨正金银行大连支店旧址"
+      ],
+      "merija-dajrena": [
+        "大连市役所旧址"
+      ],
+      "politsiya-dajrena": [
+        "大连警察署旧址"
+      ],
+      "vokzal-dalian": [
+        "вокзал Даляня",
+        "大连站"
+      ],
+      "nagasaki-goshinji": [
+        "Госиндзи",
+        "Госиндзи в Нагасаки",
+        "悟真寺国際墓地"
+      ],
+      "dalyanskiy-universitet-inyaz": [
+        "大连外国语大学"
+      ],
+      "staryy-gorod-port-artura": [
+        "旅顺老城区"
+      ],
+      "redut-1": [
+        "Восточный Панлуншань",
+        "盘龙山东堡垒"
+      ],
+      "redut-2": [
+        "Западный Панлуншань",
+        "盘龙山西堡垒"
+      ],
+      "ukreplenie-4": [
+        "Большая Аньцзышань",
+        "Большой Аньцзышани",
+        "大案子山堡垒"
+      ],
+      "fort-4": [
+        "форт № 4",
+        "Ицзышань",
+        "Ицзышани",
+        "椅子山堡垒"
+      ],
+      "batareya-d": [
+        "батарея «Д»",
+        "батареи «Д»"
+      ],
+      "morskoe-sobranie": [],
+      "yamato-lyuyshun": [
+        "люйшуньская гостиница «Ямато»",
+        "旅顺大和旅馆旧址"
+      ],
+      "russkaya-shkola": [],
+      "yaponskie-kvartaly-lyuyshunya": [
+        "太阳沟历史街区"
+      ],
+      "gospital-krasnogo-kresta": [
+        "госпиталя Красного Креста",
+        "旅顺红十字医院旧址"
+      ],
+      "dom-kondratenko": [
+        "康特拉琴柯旧居"
+      ],
+      "mayak-laoteshan": [
+        "Лаотешань",
+        "маяк Лаотешань",
+        "маяка Лаотешань",
+        "老铁山灯塔"
+      ],
+      "dahei-shan": [
+        "Большая Чёрная гора",
+        "Большой Чёрной горе",
+        "Дахэйшань",
+        "大黑山"
+      ],
+      "blagoveshchensk": [
+        "Благовещенске"
+      ],
+      "chemulpo": [],
+      "dalnii": [
+        "Дальний",
+        "Дальнего",
+        "Дальнем",
+        "Дальнему",
+        "Дальним",
+        "Дайрен",
+        "Дайрена",
+        "Дайрене",
+        "Далянь",
+        "Даляня",
+        "Даляне",
+        "Далянем",
+        "Люйда"
+      ],
+      "golubinaya-buhta": [],
+      "harbin": [],
+      "koreya": [
+        "Кореи",
+        "Корее",
+        "Корею"
+      ],
+      "kvantun": [
+        "Квантун",
+        "Квантуна",
+        "Квантуне",
+        "Квантунской области",
+        "Квантунскую область",
+        "Гуань-дун",
+        "Канто-сю"
+      ],
+      "kvzhd": [
+        "КВЖД"
+      ],
+      "lyaodun": [
+        "Ляодун",
+        "Ляодуна",
+        "Ляодуне",
+        "Ляодунского полуострова"
+      ],
+      "lyaoyan": [
+        "Ляояна",
+        "Ляояном",
+        "Ляояне"
+      ],
+      "manchzhuriya": [
+        "Маньчжурии",
+        "Маньчжурию"
+      ],
+      "mukden": [
+        "Мукден",
+        "Мукдена",
+        "Мукденом",
+        "Шэньян"
+      ],
+      "otsu": [],
+      "pekin": [
+        "Пекина",
+        "Пекине"
+      ],
+      "port-artur": [
+        "Порт-Артур",
+        "Порт-Артура",
+        "Порт-Артуре",
+        "Порт-Артуром",
+        "Порт-Артуру",
+        "Люйшунь",
+        "Люйшунькоу",
+        "Люйшуня",
+        "Люйшуне",
+        "Рёдзюн"
+      ],
+      "portsmut": [
+        "Портсмут",
+        "Портсмуте",
+        "Портсмута"
+      ],
+      "sahalin": [
+        "Сахалина"
+      ],
+      "shahe": [
+        "Шахэ"
+      ],
+      "shanhaiguan": [],
+      "sopka-putilovskaya": [
+        "Путиловской сопки",
+        "Путиловскую сопку",
+        "Путиловской сопке"
+      ],
+      "tsusima": [
+        "Цусима",
+        "Цусимы",
+        "Цусиму",
+        "Цусимском проливе"
+      ],
+      "tszinchzhou": [],
+      "uglovaya-gora": [],
+      "ulsan": [
+        "Ульсана"
+      ],
+      "vafangou": [
+        "Вафангоу",
+        "Вафандянь"
+      ],
+      "vladivostok": [
+        "Владивостока",
+        "Владивостоке"
+      ],
+      "volchi-gory": [
+        "Волчьих горах"
+      ],
+      "yalu": [
+        "Ялу"
+      ],
+      "zheltoe-more": [
+        "Жёлтое море",
+        "Жёлтом море"
+      ],
+      "moskva": [
+        "Москва",
+        "Москве",
+        "Москвы",
+        "Москву",
+        "Ходынка",
+        "Ходынке",
+        "Ходынское поле",
+        "Ходынском поле",
+        "Ходынского поля"
+      ],
+      "ekaterinburg": [
+        "Екатеринбурге"
+      ],
+      "nikko": [],
+      "transsib": [
+        "Транссиб",
+        "Транссиба",
+        "Транссибу",
+        "Транссибе"
+      ],
+      "iokogama": [
+        "Иокогаме",
+        "Иокогаму"
+      ],
+      "svistov": [
+        "Свиштов",
+        "Систов",
+        "Свиштовым",
+        "Систова"
+      ]
+    }
+  },
+  "en": {
+    "people": {
+      "nikolai-ii": [],
+      "vitte": [],
+      "alekseev": [],
+      "li-hunchzhan": [],
+      "bezobrazov": [
+        "Alexander Bezobrazov"
+      ],
+      "plehve": [],
+      "kuropatkin": [],
+      "kondratenko": [],
+      "stessel": [],
+      "makarov": [],
+      "vitgeft": [],
+      "velichko": [],
+      "saharov": [],
+      "skolimovsky": [
+        "Skolimovsky"
+      ],
+      "lilie": [],
+      "nogi": [
+        "Nogi"
+      ],
+      "iessen": [],
+      "kamimura": [
+        "Kamimura"
+      ],
+      "subotich": [],
+      "stepanov": [],
+      "pikul": [],
+      "veresaev": [],
+      "botkin": [],
+      "tolstoy": [],
+      "balmont": [],
+      "menshikov": [],
+      "shatrov": [],
+      "prokudin-gorsky": [],
+      "artur": [],
+      "myulberg": [
+        "Mikhail Mühlberg"
+      ],
+      "vereshchagin": [],
+      "fok": [],
+      "abaza": [],
+      "aleksandr-iii": [],
+      "barabash": [],
+      "bezobrazov-pyotr": [
+        "P. A. Bezobrazov"
+      ],
+      "borodovskii": [],
+      "briner": [],
+      "chertkov": [],
+      "denikin": [],
+      "dubasov": [],
+      "essen": [],
+      "georg-grecheskii": [
+        "Prince George"
+      ],
+      "grodekov": [],
+      "hodyakov": [],
+      "ivanov-13": [],
+      "kirill-vladimirovich": [
+        "Grand Duke Kirill"
+      ],
+      "kokovtsov": [],
+      "kolchak": [],
+      "kotvich": [],
+      "kulichkin": [],
+      "lenin": [],
+      "levitov": [],
+      "linevich": [],
+      "lysev": [],
+      "martin-kristofer": [],
+      "meidzi": [
+        "Meiji"
+      ],
+      "minaev": [],
+      "molodyakov": [],
+      "myulberg-evgenii": [],
+      "nazarenko": [],
+      "nikolaev-dk": [],
+      "panishchev": [],
+      "poselyagin": [],
+      "reitsenshtein": [],
+      "rennenkampf": [],
+      "rozhestvenskii": [],
+      "ruzvelt": [],
+      "saginadze": [],
+      "shevchenko-av": [],
+      "skitalets": [],
+      "smirnov": [],
+      "sozonov": [],
+      "stalin": [],
+      "stark": [],
+      "suvorin": [],
+      "takahasi": [
+        "Takahashi"
+      ],
+      "togo": [],
+      "trusov": [],
+      "tsuda-sandzo": [
+        "Tsuda"
+      ],
+      "tsysi": [
+        "Cixi"
+      ],
+      "uhtomskii": [],
+      "viren": [],
+      "yaroslavskii": [],
+      "ayrapetov": [],
+      "akunin": [],
+      "gyubbenet": [],
+      "krig": [],
+      "krivosheev": [],
+      "gilyarovsky": [],
+      "yurovsky": [],
+      "beloborodov": [],
+      "goloschekin": [],
+      "sverdlov": [],
+      "tretyakov": [],
+      "grigorovich": []
+    },
+    "places": {
+      "vysokaya-gora": [
+        "尔灵山"
+      ],
+      "fort-2": [
+        "Fort No. II",
+        "Fort No. 2",
+        "East Jiguan Shan",
+        "Dongjiguanshan",
+        "东鸡冠山北堡垒"
+      ],
+      "bolshoe-orlinoe-gnezdo": [
+        "Great Eagle’s Nest",
+        "Wangtai",
+        "望台炮台"
+      ],
+      "fort-3": [
+        "Fort No. 3",
+        "Erlongshan",
+        "二龙山堡垒"
+      ],
+      "ukreplenie-3": [
+        "Songshushan",
+        "松树山堡垒"
+      ],
+      "ukreplenie-5": [
+        "Yahuzui",
+        "鸦户嘴"
+      ],
+      "elektricheskiy-utes": [
+        "Electric Cliff",
+        "电岩炮台"
+      ],
+      "zolotaya-gora": [
+        "黄金山"
+      ],
+      "perepelinaya-gora": [
+        "Baiyushan",
+        "Quail Hill",
+        "白玉山"
+      ],
+      "gavan-port-artura": [
+        "Port Arthur Harbour",
+        "Port Arthur’s Inner Harbour",
+        "旅顺港"
+      ],
+      "vokzal-lushun": [
+        "旅顺站"
+      ],
+      "tyurma-lushun": [
+        "旅顺日俄监狱旧址"
+      ],
+      "kladbishche-lushun": [
+        "旅顺苏军烈士陵园"
+      ],
+      "muzey-lushun": [
+        "旅顺博物馆"
+      ],
+      "novy-gorod-taiyangou": [
+        "太阳沟"
+      ],
+      "bashnya-druzhby": [
+        "中苏友谊纪念塔"
+      ],
+      "shuishiying": [
+        "Shuishiying",
+        "水师营会见所旧址"
+      ],
+      "longwangtang": [
+        "Longwangtang",
+        "龙王塘樱花园"
+      ],
+      "nikolaevskaya-ploshchad": [
+        "Zhongshan Square",
+        "Ōhiroba",
+        "中山广场"
+      ],
+      "russkaya-ulitsa": [
+        "Russian Street",
+        "Inzhenernaya Street",
+        "团结街",
+        "俄罗斯风情街"
+      ],
+      "upravlenie-dalnego": [
+        "达里尼市政厅旧址"
+      ],
+      "zdanie-kvzhd-1902": [
+        "大连艺术展览馆",
+        "大连美术馆"
+      ],
+      "most-pobedy": [
+        "胜利桥"
+      ],
+      "gorodskoy-sad": [
+        "Labour Park",
+        "Western Park",
+        "劳动公园"
+      ],
+      "port-dalniy": [
+        "Victoria Bay",
+        "Dalny Port",
+        "Dalian Port",
+        "大连港"
+      ],
+      "gostinitsa-yamato": [
+        "大连宾馆"
+      ],
+      "bank-yokohama": [
+        "Yokohama Specie Bank",
+        "横滨正金银行大连支店旧址"
+      ],
+      "merija-dajrena": [
+        "大连市役所旧址"
+      ],
+      "politsiya-dajrena": [
+        "大连警察署旧址"
+      ],
+      "vokzal-dalian": [
+        "Dalian Railway Station",
+        "大连站"
+      ],
+      "nagasaki-goshinji": [
+        "Goshinji",
+        "Goshinji Temple",
+        "悟真寺国際墓地"
+      ],
+      "dalyanskiy-universitet-inyaz": [
+        "大连外国语大学"
+      ],
+      "staryy-gorod-port-artura": [
+        "旅顺老城区"
+      ],
+      "redut-1": [
+        "盘龙山东堡垒"
+      ],
+      "redut-2": [
+        "盘龙山西堡垒"
+      ],
+      "ukreplenie-4": [
+        "大案子山堡垒"
+      ],
+      "fort-4": [
+        "Fort No. 4",
+        "Yizishan",
+        "椅子山堡垒"
+      ],
+      "batareya-d": [],
+      "morskoe-sobranie": [],
+      "yamato-lyuyshun": [
+        "旅顺大和旅馆旧址"
+      ],
+      "russkaya-shkola": [],
+      "yaponskie-kvartaly-lyuyshunya": [
+        "太阳沟历史街区"
+      ],
+      "gospital-krasnogo-kresta": [
+        "旅顺红十字医院旧址"
+      ],
+      "dom-kondratenko": [
+        "康特拉琴柯旧居"
+      ],
+      "mayak-laoteshan": [
+        "Laotieshan",
+        "老铁山灯塔"
+      ],
+      "dahei-shan": [
+        "Dahei Shan",
+        "大黑山"
+      ],
+      "blagoveshchensk": [],
+      "chemulpo": [
+        "Incheon"
+      ],
+      "dalnii": [
+        "Dalny",
+        "Dairen",
+        "Dalian",
+        "Lüda"
+      ],
+      "golubinaya-buhta": [],
+      "harbin": [],
+      "koreya": [],
+      "kvantun": [
+        "Kwantung",
+        "Kwantung territory",
+        "Kwantung Leased Territory"
+      ],
+      "kvzhd": [],
+      "lyaodun": [],
+      "lyaoyan": [],
+      "manchzhuriya": [],
+      "mukden": [
+        "Mukden",
+        "Shenyang"
+      ],
+      "otsu": [],
+      "pekin": [],
+      "port-artur": [
+        "Port Arthur",
+        "Lüshun",
+        "Lüshunkou",
+        "Ryojun"
+      ],
+      "portsmut": [],
+      "sahalin": [],
+      "shahe": [
+        "Shahe"
+      ],
+      "shanhaiguan": [],
+      "sopka-putilovskaya": [],
+      "tsusima": [
+        "Tsushima"
+      ],
+      "tszinchzhou": [],
+      "uglovaya-gora": [],
+      "ulsan": [],
+      "vafangou": [
+        "Wafangou",
+        "Wafangdian"
+      ],
+      "vladivostok": [],
+      "volchi-gory": [],
+      "yalu": [
+        "Yalu"
+      ],
+      "zheltoe-more": [
+        "Yellow Sea"
+      ],
+      "moskva": [
+        "Moscow",
+        "Khodynka Field",
+        "Khodynka"
+      ],
+      "ekaterinburg": [],
+      "nikko": [],
+      "transsib": [
+        "Trans-Siberian"
+      ],
+      "iokogama": [],
+      "svistov": [
+        "Svishtov"
+      ]
+    }
+  },
+  "zh": {
+    "people": {
+      "nikolai-ii": [],
+      "vitte": [],
+      "alekseev": [],
+      "li-hunchzhan": [
+        "李鴻章"
+      ],
+      "bezobrazov": [
+        "亚历山大·别佐布拉佐夫"
+      ],
+      "plehve": [],
+      "kuropatkin": [],
+      "kondratenko": [],
+      "stessel": [],
+      "makarov": [],
+      "vitgeft": [],
+      "velichko": [],
+      "saharov": [],
+      "skolimovsky": [],
+      "lilie": [],
+      "nogi": [
+        "乃木"
+      ],
+      "iessen": [],
+      "kamimura": [
+        "上村"
+      ],
+      "subotich": [],
+      "stepanov": [],
+      "pikul": [],
+      "veresaev": [],
+      "botkin": [],
+      "tolstoy": [],
+      "balmont": [],
+      "menshikov": [],
+      "shatrov": [],
+      "prokudin-gorsky": [],
+      "artur": [],
+      "myulberg": [
+        "米哈伊尔·米尔贝格"
+      ],
+      "vereshchagin": [],
+      "fok": [],
+      "abaza": [],
+      "aleksandr-iii": [],
+      "barabash": [],
+      "bezobrazov-pyotr": [],
+      "borodovskii": [],
+      "briner": [],
+      "chertkov": [],
+      "denikin": [],
+      "dubasov": [],
+      "essen": [],
+      "georg-grecheskii": [
+        "乔治王子"
+      ],
+      "grodekov": [],
+      "hodyakov": [],
+      "ivanov-13": [],
+      "kirill-vladimirovich": [],
+      "kokovtsov": [],
+      "kolchak": [],
+      "kotvich": [],
+      "kulichkin": [],
+      "lenin": [],
+      "levitov": [],
+      "linevich": [],
+      "lysev": [],
+      "martin-kristofer": [],
+      "meidzi": [],
+      "minaev": [],
+      "molodyakov": [],
+      "myulberg-evgenii": [],
+      "nazarenko": [],
+      "nikolaev-dk": [],
+      "panishchev": [],
+      "poselyagin": [],
+      "reitsenshtein": [],
+      "rennenkampf": [],
+      "rozhestvenskii": [],
+      "ruzvelt": [],
+      "saginadze": [],
+      "shevchenko-av": [],
+      "skitalets": [],
+      "smirnov": [],
+      "sozonov": [],
+      "stalin": [],
+      "stark": [],
+      "suvorin": [],
+      "takahasi": [],
+      "togo": [
+        "东乡"
+      ],
+      "trusov": [],
+      "tsuda-sandzo": [
+        "津田"
+      ],
+      "tsysi": [
+        "慈禧"
+      ],
+      "uhtomskii": [],
+      "viren": [],
+      "yaroslavskii": [],
+      "ayrapetov": [],
+      "akunin": [],
+      "gyubbenet": [],
+      "krig": [],
+      "krivosheev": [],
+      "gilyarovsky": [],
+      "yurovsky": [],
+      "beloborodov": [],
+      "goloschekin": [],
+      "sverdlov": [],
+      "tretyakov": [],
+      "grigorovich": []
+    },
+    "places": {
+      "vysokaya-gora": [
+        "203高地",
+        "二〇三高地",
+        "尔灵山"
+      ],
+      "fort-2": [
+        "第II号堡垒",
+        "第2号堡垒",
+        "东鸡冠山北堡垒",
+        "东鸡冠山"
+      ],
+      "bolshoe-orlinoe-gnezdo": [
+        "望台炮台",
+        "望台"
+      ],
+      "fort-3": [
+        "第3号堡垒",
+        "二龙山堡垒",
+        "二龙山"
+      ],
+      "ukreplenie-3": [
+        "松树山堡垒",
+        "松树山"
+      ],
+      "ukreplenie-5": [
+        "鸦户嘴",
+        "俄军指挥堡"
+      ],
+      "elektricheskiy-utes": [],
+      "zolotaya-gora": [],
+      "perepelinaya-gora": [
+        "白玉山",
+        "鹌鹑山"
+      ],
+      "gavan-port-artura": [
+        "旅顺港",
+        "旅顺内港"
+      ],
+      "vokzal-lushun": [
+        "旅顺站"
+      ],
+      "tyurma-lushun": [
+        "旅顺日俄监狱旧址"
+      ],
+      "kladbishche-lushun": [
+        "旅顺苏军烈士陵园"
+      ],
+      "muzey-lushun": [],
+      "novy-gorod-taiyangou": [
+        "太阳沟"
+      ],
+      "bashnya-druzhby": [
+        "中苏友谊纪念塔"
+      ],
+      "shuishiying": [
+        "水师营",
+        "水师营会见所旧址"
+      ],
+      "longwangtang": [
+        "龙王塘",
+        "龙王塘樱花园"
+      ],
+      "nikolaevskaya-ploshchad": [
+        "中山广场",
+        "大广场"
+      ],
+      "russkaya-ulitsa": [
+        "俄罗斯风情街",
+        "团结街",
+        "工程街"
+      ],
+      "upravlenie-dalnego": [],
+      "zdanie-kvzhd-1902": [
+        "大连艺术展览馆",
+        "大连美术馆"
+      ],
+      "most-pobedy": [],
+      "gorodskoy-sad": [
+        "劳动公园"
+      ],
+      "port-dalniy": [
+        "大连港",
+        "维多利亚湾"
+      ],
+      "gostinitsa-yamato": [
+        "大连宾馆"
+      ],
+      "bank-yokohama": [
+        "横滨正金银行",
+        "横滨正金银行大连支店旧址"
+      ],
+      "merija-dajrena": [
+        "大连市役所旧址"
+      ],
+      "politsiya-dajrena": [
+        "大连警察署旧址"
+      ],
+      "vokzal-dalian": [
+        "大连站"
+      ],
+      "nagasaki-goshinji": [
+        "悟真寺",
+        "悟真寺国際墓地"
+      ],
+      "dalyanskiy-universitet-inyaz": [
+        "大连外国语大学"
+      ],
+      "staryy-gorod-port-artura": [
+        "旅顺老城区"
+      ],
+      "redut-1": [
+        "盘龙山东堡垒",
+        "东盘龙山"
+      ],
+      "redut-2": [
+        "盘龙山西堡垒",
+        "西盘龙山"
+      ],
+      "ukreplenie-4": [
+        "大案子山堡垒",
+        "大案子山"
+      ],
+      "fort-4": [
+        "第4号堡垒",
+        "椅子山堡垒",
+        "椅子山"
+      ],
+      "batareya-d": [],
+      "morskoe-sobranie": [],
+      "yamato-lyuyshun": [
+        "旅顺大和旅馆旧址"
+      ],
+      "russkaya-shkola": [],
+      "yaponskie-kvartaly-lyuyshunya": [
+        "太阳沟历史街区"
+      ],
+      "gospital-krasnogo-kresta": [
+        "旅顺红十字医院旧址"
+      ],
+      "dom-kondratenko": [
+        "康特拉琴柯旧居"
+      ],
+      "mayak-laoteshan": [],
+      "dahei-shan": [],
+      "blagoveshchensk": [
+        "布拉戈维申斯克",
+        "海兰泡"
+      ],
+      "chemulpo": [
+        "济物浦",
+        "仁川"
+      ],
+      "dalnii": [
+        "达里尼",
+        "大连",
+        "旅大"
+      ],
+      "golubinaya-buhta": [],
+      "harbin": [],
+      "koreya": [],
+      "kvantun": [
+        "关东州"
+      ],
+      "kvzhd": [],
+      "lyaodun": [
+        "辽东"
+      ],
+      "lyaoyan": [],
+      "manchzhuriya": [],
+      "mukden": [
+        "奉天",
+        "沈阳"
+      ],
+      "otsu": [],
+      "pekin": [],
+      "port-artur": [
+        "旅顺",
+        "亚瑟港",
+        "旅顺口"
+      ],
+      "portsmut": [
+        "朴次茅斯"
+      ],
+      "sahalin": [
+        "萨哈林岛",
+        "萨哈林",
+        "库页岛"
+      ],
+      "shahe": [],
+      "shanhaiguan": [],
+      "sopka-putilovskaya": [],
+      "tsusima": [
+        "对马"
+      ],
+      "tszinchzhou": [],
+      "uglovaya-gora": [],
+      "ulsan": [],
+      "vafangou": [
+        "瓦房沟",
+        "瓦房店"
+      ],
+      "vladivostok": [
+        "海参崴",
+        "符拉迪沃斯托克"
+      ],
+      "volchi-gory": [],
+      "yalu": [],
+      "zheltoe-more": [
+        "黄海"
+      ],
+      "moskva": [
+        "莫斯科",
+        "霍登卡广场",
+        "霍登卡"
+      ],
+      "ekaterinburg": [],
+      "nikko": [],
+      "transsib": [
+        "西伯利亚铁路"
+      ],
+      "iokogama": [],
+      "svistov": [
+        "斯维什托夫",
+        "锡斯托夫"
+      ]
+    }
+  }
+}

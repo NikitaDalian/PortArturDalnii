@@ -1,5 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import LinkedText from '../../../components/LinkedText.astro';
+import { mentionContext } from '../../../lib/mentions';
 import Coast from '../../../components/Coast.astro';
 import Crumbs from '../../../components/Crumbs.astro';
 import ArticleCard from '../../../components/ArticleCard.astro';
@@ -20,6 +22,7 @@ const cover = imgCrop(b.cover, '4x5');
 const notes = articlesOf(b.articles);
 const firstPost = b.review_post?.[0] ?? null;
 const personSlugs = peopleOf(b.articles);
+const mentions = mentionContext([], personSlugs.map(slug => `person/${slug}`));
 const withPage = personSlugs.filter((s) => personBySlug.has(s)).map((s) => personBySlug.get(s)!);
 // Автор книги без своей страницы не считается «человеком в книге».
 const plainPeople = personSlugs.filter((s) => !personBySlug.has(s)).map((s) => entity('person', s).label).filter((l) => l !== b.author);
@@ -62,13 +65,13 @@ const description = b.verdict || b.annotation?.slice(0, 160);
         {b.verdict && (
           <div class="stack" style="--stack-gap:10px">
             <p class="eyebrow">Наша оценка</p>
-            <p class="quote book-verdict">{b.verdict}</p>
+            <p class="quote book-verdict"><LinkedText text={b.verdict} context={mentions} /></p>
           </div>
         )}
         {b.annotation && (
           <div class="stack" style="--stack-gap:12px">
             <h2 class="h3">О книге</h2>
-            <div class="prose"><p>{b.annotation}</p></div>
+            <div class="prose"><p><LinkedText text={b.annotation} context={mentions} limit={6} /></p></div>
           </div>
         )}
         {b.links?.length > 0 && (
