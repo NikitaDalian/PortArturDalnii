@@ -22,8 +22,8 @@ const chronology = LAYERS.flatMap((l) =>
   layerText[l.key].dates.filter((d) => d.key).map((d) => ({ ...d, layer: l.key })),
 ).sort((a, b) => a.year - b.year);
 
-const title = 'Слои истории';
-const lead = 'Пять периодов истории южной оконечности Ляодуна: китайский Люйшунькоу, русские Порт-Артур и Дальний, японские Рёдзюн и Дайрен, советская база и сегодняшний Далянь.';
+const title = 'Эпохи';
+const lead = 'Пять исторических периодов Порт-Артура и Дальнего: от Люйшунькоу до 1898 года до современного Даляня. В каждом — события, материалы для чтения и места на карте. Люди связаны с эпохами через события и публикации о них.';
 ---
 <Base searchable={false} title={title} description={lead} section="layers">
   <PageHero
@@ -40,7 +40,7 @@ const lead = 'Пять периодов истории южной оконечн
 
   <section class="container section" aria-labelledby="layers-h">
     <div class="section-head">
-      <h2 id="layers-h" class="h2">Пять слоёв</h2>
+      <h2 id="layers-h" class="h2">Пять исторических периодов</h2>
       <a class="link" href="#chrono">Хронология</a>
     </div>
     <ol class="lb-list">
@@ -59,7 +59,7 @@ const lead = 'Пять периодов истории южной оконечн
             <p class="lb__text">{text.card}</p>
             <p class="meta">{count} {plural(count, 'заметка', 'заметки', 'заметок')}</p>
             {people.length > 0 && (
-              <p class="lb__rel"><span class="lb__label">Лица:</span>{' '}
+              <p class="lb__rel"><span class="lb__label">Люди:</span>{' '}
                 {people.map((p, j) => <><a class="text-link" href={href.person(p.slug)}>{p.short || p.name}</a>{j < people.length - 1 ? ', ' : ''}</>)}
               </p>
             )}
@@ -71,9 +71,9 @@ const lead = 'Пять периодов истории южной оконечн
                 })}
               </p>
             )}
-            <a class="text-link lb__map" href={href.mapLayer(l.key)}>Места слоя на карте</a>
+            <a class="text-link lb__map" href={href.mapLayer(l.key)}>Места этого периода на карте</a>
           </div>
-          <a class="btn btn--outline btn--sm lb__go" href={href.layer(l.key)} aria-label={`Открыть слой «${l.title}»`}>Открыть слой →</a>
+          <a class="btn btn--outline btn--sm lb__go" href={href.layer(l.key)} aria-label={`Читать об эпохе «${l.title}»`}>Читать об эпохе →</a>
         </li>
       ))}
     </ol>

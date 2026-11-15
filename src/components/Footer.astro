@@ -2,6 +2,7 @@
 import { href, TG_CHANNEL } from '../lib/data';
 import { t } from '../i18n/ru';
 import LanguageSwitch from './LanguageSwitch.astro';
+import { primaryNavigation } from '../lib/navigation';
 ---
 <footer class="site-footer dark" data-pagefind-ignore>
   <div class="container site-footer__grid">
@@ -11,15 +12,12 @@ import LanguageSwitch from './LanguageSwitch.astro';
       <p class="site-footer__authors">Автор канала — Виктория, историк и преподаватель истории.</p>
     </div>
     <nav class="stack" style="--stack-gap:10px" aria-label="Разделы">
-      <a href={href.layers()}>{t.nav.layers}</a>
-      <a href={href.people()}>{t.nav.people}</a>
-      <a href={href.map()}>Карта</a>
-      <a href={href.routes()}>Маршруты</a>
-      <a href={href.seasons()}>Сезоны</a>
+      {primaryNavigation().map(item => <a href={item.href}>{item.label}</a>)}
     </nav>
     <nav class="stack" style="--stack-gap:10px" aria-label="Материалы">
-      <a href={href.library()}>{t.nav.library}</a>
-      <a href={href.notes()}>{t.nav.notes}</a>
+      <a href={href.map()}>Карта</a>
+      <a href={href.routes()}>Готовые маршруты</a>
+      <a href={href.seasons()}>Сезоны</a>
       <a href={href.seriesList()}>Серии</a>
       <a href={href.index()}>Указатель А–Я</a>
       <a href={href.search()}>Поиск</a>

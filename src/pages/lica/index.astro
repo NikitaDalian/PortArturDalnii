@@ -9,15 +9,15 @@ import { mentionedNames } from '../../components/people/relations';
 
 const n = people.length;
 const extra = mentionedNames().length;
-const lead = 'Русские, японцы, китайцы и один британский лейтенант: строители городов, участники обороны и осады, авторы мемуаров и исследований.';
+const lead = 'Строители городов, военные, жители и авторы воспоминаний. Биографии и связи помогают увидеть одну историю с разных сторон.';
 ---
-<Base searchable={false} title="Лица Порт-Артура" description={`${n} ${plural(n, 'персона', 'персоны', 'персон')} из истории Порт-Артура и Дальнего: биографии, цитаты, заметки канала, места и книги.`} section="people">
+<Base searchable={false} title="Люди Порт-Артура и Дальнего" description={`${n} ${plural(n, 'персона', 'персоны', 'персон')} из истории Порт-Артура и Дальнего: биографии, цитаты, заметки канала, места и книги.`} section="people">
   <section class="dark lica-hero page-top">
     <div class="container">
       <div class="stack lica-hero__head" style="--stack-gap:16px">
-        <Crumbs items={[{ label: 'Главная', href: href.home() }, { label: 'Лица' }]} />
+        <Crumbs items={[{ label: 'Главная', href: href.home() }, { label: 'Люди' }]} />
         <p class="eyebrow eyebrow--accent">Россия · Япония · Китай</p>
-        <h1 class="h1">Лица Порт-Артура</h1>
+        <h1 class="h1">Люди Порт-Артура и Дальнего</h1>
         <p class="lead">{lead}</p>
         <p class="meta">{n} {plural(n, 'биография', 'биографии', 'биографий')} и {extra} {plural(extra, 'краткая справка', 'краткие справки', 'кратких справок')}</p>
       </div>

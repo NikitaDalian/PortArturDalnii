@@ -11,7 +11,7 @@ const minutes = Math.max(1, Math.ceil(locale === 'zh' ? readingText.replace(/\s/
 ---
 <header class="guide-head dark">
   <div class="container">
-    <Crumbs items={[{ label: 'Главная', href: href.home() }, { label: city, href: href.map(d.place) }]} />
+    <Crumbs items={[{ label: 'Главная', href: href.home() }, { label: 'Статьи и заметки', href: href.notes() }, { label: city, href: href.places() }]} />
     <div class="guide-head__text">
       <p class="guide-head__meta">История места <span>{minutes} мин чтения</span></p>
       <h1 id="guide-title" data-pagefind-meta="title">{d.title}</h1>

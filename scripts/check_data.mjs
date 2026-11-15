@@ -14,6 +14,23 @@ const known = {
   books: new Set([...maps.books.keys(), ...maps.sources.keys(), ...Object.keys(terms.books_unmatched)]),
 };
 const errors = [];
+const editorialPeriods = read('editorial_periods');
+const validPeriods = new Set(Object.keys(read('layers')));
+if (!editorialPeriods || Array.isArray(editorialPeriods) || typeof editorialPeriods !== 'object') {
+  errors.push('editorial_periods: expected an object keyed by article slug');
+} else {
+  for (const [slug, periods] of Object.entries(editorialPeriods)) {
+    if (!maps.articles.has(slug)) errors.push(`editorial_periods/${slug}: unknown article`);
+    if (!Array.isArray(periods) || periods.length === 0) {
+      errors.push(`editorial_periods/${slug}: expected a nonempty period list`);
+      continue;
+    }
+    if (new Set(periods).size !== periods.length) errors.push(`editorial_periods/${slug}: duplicate period`);
+    for (const period of periods) {
+      if (!validPeriods.has(period)) errors.push(`editorial_periods/${slug}: unknown period ${String(period)}`);
+    }
+  }
+}
 const descriptions = read('reference_descriptions');
 for (const kind of ['people', 'geo']) {
   for (const slug of Object.keys(terms[kind])) {

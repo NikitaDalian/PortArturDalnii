@@ -2,19 +2,14 @@
 import { href } from '../lib/data';
 import { t } from '../i18n/ru';
 import LanguageSwitch from './LanguageSwitch.astro';
+import { primaryNavigation, navigationSection } from '../lib/navigation';
 interface Props { section?: string | null }
 const { section = null } = Astro.props;
-const items = [
-  { key: 'layers', label: t.nav.layers, href: href.layers() },
-  { key: 'people', label: t.nav.people, href: href.people() },
-  { key: 'map', label: 'Карта', href: href.map() },
-  { key: 'routes', label: 'Маршруты', href: href.routes() },
-  { key: 'library', label: t.nav.library, href: href.library() },
-  { key: 'notes', label: t.nav.notes, href: href.notes() },
-  { key: 'about', label: t.nav.about, href: href.about() },
-];
+const items = primaryNavigation();
+const activeSection = navigationSection(section);
 // Второстепенные разделы — в мобильном меню (на десктопе они в «Заметках» и подвале)
 const extra = [
+  { label: 'О проекте', href: href.about() },
   { label: 'Сезоны', href: href.seasons() },
   { label: 'Указатель А–Я', href: href.index() },
 ];
@@ -27,7 +22,7 @@ const extra = [
     </a>
     <nav class="site-nav" aria-label="Основная навигация">
       {items.map((i) => (
-        <a href={i.href} aria-current={section === i.key ? 'page' : undefined}>{i.label}</a>
+        <a href={i.href} aria-current={activeSection === i.key ? 'page' : undefined}>{i.label}</a>
       ))}
     </nav>
     <div class="site-header__tools">
@@ -43,7 +38,7 @@ const extra = [
   <nav id="mobile-nav" class="mobile-nav" aria-label="Меню" hidden>
     <div class="container">
       {items.map((i, n) => (
-        <a href={i.href} style={`--i:${n}`} aria-current={section === i.key ? 'page' : undefined}>{i.label}</a>
+        <a href={i.href} style={`--i:${n}`} aria-current={activeSection === i.key ? 'page' : undefined}>{i.label}</a>
       ))}
       {extra.map((i, n) => (
         <a class="mobile-nav__sub" href={i.href} style={`--i:${items.length + n}`}>{i.label}</a>

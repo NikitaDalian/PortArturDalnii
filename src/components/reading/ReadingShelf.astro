@@ -1,0 +1,42 @@
+---
+import { dossiers } from '../places/dossiers';
+import readings from '../../data/document_readings.json';
+import { href, imgCrop } from '../../lib/data';
+interface Props { id?: string; title?: string }
+const { id = 'full-articles', title = 'Читать целиком на сайте' } = Astro.props;
+const cards = [
+  ...dossiers.map(d => ({ title: d.title, intro: d.intro, cover: d.cover, url: href.place(d.place), kind: 'История места' })),
+  ...Object.entries(readings).map(([slug, d]) => ({ title: d.title, intro: d.intro, cover: d.photo, url: href.source(slug) + '#document-reading', kind: 'Читаем документ' })),
+];
+---
+<section class="section paper" id={id} aria-labelledby={`${id}-title`}>
+  <div class="container">
+    <div class="section-head"><div class="stack" style="--stack-gap:12px">
+      <h2 class="h2" id={`${id}-title`}>{title}</h2>
+      <p class="lead">История города, гавани и укреплений. Полные статьи с иллюстрациями, пояснениями и источниками.</p>
+    </div></div>
+    <div class="reading-shelf">
+      {cards.map(c => <article class="reading-story">
+        <a href={c.url} class="reading-story__image" tabindex="-1" aria-hidden="true"><img src={imgCrop(c.cover, '3x2', 640)!} alt="" loading="lazy" decoding="async" width="640" height="427" /></a>
+        <div class="reading-story__body">
+          <p class="meta">{c.kind}</p>
+          <h3 class="h3"><a href={c.url}>{c.title}</a></h3>
+          <p>{c.intro}</p>
+          <a class="text-link" href={c.url}>Читать статью</a>
+        </div>
+      </article>)}
+    </div>
+  </div>
+</section>
+<style>
+  .reading-shelf { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:40px 32px; }
+  .reading-story { display:grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr); gap:24px; align-items:start; }
+  .reading-story__image img { width:100%; height:auto; aspect-ratio:3/2; object-fit:cover; }
+  .reading-story__body { display:flex; flex-direction:column; gap:12px; }
+  .reading-story__body > p:not(.meta) { font-size:16px; line-height:1.65; }
+  .reading-story h3 { font-size:24px; line-height:1.25; }
+  .reading-story h3 a:hover { text-decoration:underline; }
+  .reading-story .text-link { align-self:flex-start; min-height:44px; display:inline-flex; align-items:center; }
+  @media(max-width:960px) { .reading-shelf { grid-template-columns:1fr; } }
+  @media(max-width:520px) { .reading-story { grid-template-columns:1fr; gap:16px; } .reading-story__image img { aspect-ratio:16/7; } }
+</style>

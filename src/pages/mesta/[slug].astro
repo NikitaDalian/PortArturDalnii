@@ -38,12 +38,12 @@ const conf: Record<string, string> = { high: 'точная', medium: 'приме
 const seasons = ((p.season || []) as string[]).filter((s) => SEASONS[s]);
 const city = CITIES[p.city] ?? '';
 ---
-<Base title={dossier?.title ?? p.name} description={(dossier?.intro ?? p.summary).slice(0, 180)} image={img(cover)} section="map">
+<Base title={dossier?.title ?? p.name} description={(dossier?.intro ?? p.summary).slice(0, 180)} image={img(cover)} section={dossier ? "notes" : "places"}>
   {dossier ? <DossierHero dossier={dossier} city={city} /> : <PageHero
     title={dossier?.title ?? p.name}
     eyebrow={`${city} · ${KINDS[p.kind] ?? p.kind}`}
     lead={p.name_now ?? undefined}
-    crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Карта', href: href.map() }, { label: p.name }]}
+    crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Места и маршруты', href: href.places() }, { label: p.name }]}
     image={imgCrop(cover, '3x2')}
     imageAlt={cover ? photoCaption(cover) || p.name : ''}
     caption={cover ? photoCaption(cover) : undefined}

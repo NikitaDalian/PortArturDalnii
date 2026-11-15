@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import MapApp from '../../components/map/MapApp.astro';
+import ExploreNav from '../../components/map/ExploreNav.astro';
 import PlaceCard from '../../components/PlaceCard.astro';
 import { places, href, plural } from '../../lib/data';
 import { CITIES, sortedRoutes, routeAuthor, TRANSPORT } from '../../components/map/places';
@@ -9,6 +10,7 @@ const rs = sortedRoutes();
 ---
 <Base searchable={false} title="Карта" description="Карта мест Порт-Артура и Дальнего: форты, вокзалы, кладбища, улицы. Фильтры по слоям истории, старый план крепости 1904 года и конструктор своего маршрута." section="map">
   <h1 class="sr-only">Карта мест Порт-Артура и Дальнего</h1>
+  <div class="container"><ExploreNav current="map" /></div>
   <MapApp />
 
   <section class="section section--tight" aria-labelledby="k-routes">

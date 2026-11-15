@@ -6,7 +6,7 @@
       "The harbour at Liaodong’s southern tip had a Chinese name long before Europeans arrived. Tradition says a Ming commander named it Lüshunkou, “bay of smooth sailing”, in 1371. The English name Port Arthur appeared during the Second Opium War, given by John Ward, captain of HMS Actaeon, in August 1860. The Russians later retained it.",
       "In the 1880s Li Hongzhang, governor of the capital province of Zhili for almost a quarter-century, was building the Beiyang Fleet, with Lüshunkou as its base. Coastal batteries stood on Golden Hill under the Qing; the Russians later rebuilt them. An 1898 booklet describes Port Arthur in the 1870s as a village of 60–80 houses, and Dalianwan as ruined forts and one pier.",
       "During the Sino-Japanese War of 1894–1895, Japan took the fortress in one day. Shimonoseki awarded Liaodong to Japan, but six days later Russia, Germany and France demanded its return: the Triple Intervention. Three years later Russia leased the peninsula itself.",
-      "This layer also includes the developments preparing the lease: the Franco-Russian alliance, the Russo-Chinese Bank established with French capital, the Moscow treaty of 1896 and the Chinese Eastern Railway concession, Tsarevich Nicholas’s Eastern journey and the Ōtsu attack."
+      "The lease was preceded by the Franco-Russian alliance, the establishment of the Russo-Chinese Bank with French capital, the Moscow treaty of 1896 and the Chinese Eastern Railway concession. Tsarevich Nicholas’s Eastern journey and the Ōtsu attack also belong to this period."
     ],
     "image": 96,
     "imageAlt": "Li Hongzhang seated beside a column, wearing a robe and an order’s star",
@@ -70,7 +70,8 @@
     "gallery": [
       342,
       343
-    ]
+    ],
+    "introTitle": "Lüshunkou before the Russian lease"
   },
   "russian": {
     "card": "The Kwantung lease, a city built from scratch in four years, a fortress and a siege.",
@@ -79,7 +80,7 @@
       "On 15 (27) March 1898, Russia leased southern Liaodong for twenty-five years: Kwantung, an area of around 3,200 sq km. The navy needed Port Arthur because Vladivostok froze in winter. In 1899, nearby Dalny was founded as a commercial port and railway terminus.",
       "The Chinese Eastern Railway Company built Dalny under Witte. Engineer Vladimir Sakharov designed the port and became city governor. Architect Kazimierz Skolimowski planned the city around circular Nikolayevskaya Square and ten radiating avenues. Within three years of its foundation, Dalny ranked second in China for port cargo. In summer 1903 Port Arthur became the capital of Admiral Alekseyev’s Far Eastern viceroyalty.",
       "The war began during the night of 27 January (9 February) 1904, with Japanese destroyers attacking the squadron off Port Arthur. The fortress’s land defence lasted 221 days. General Kondratenko died on 2 (15) December 1904; surrender followed on 20 December 1904 (2 January 1905). Some 23,000–25,000 became prisoners, almost half Russia’s prisoners in that war.",
-      "The two cities spent less than seven years under the Russian flag; Kwantung cost the treasury at least 110 million rubles. Most channel notes concern this period: its people, books, fortress sites and Dalny."
+      "The two cities spent less than seven years under the Russian flag; the Kwantung project cost the treasury at least 110 million rubles."
     ],
     "image": 100,
     "imageAlt": "Panorama of Port Arthur harbour: the Old Town, Golden Hill and the basins",
@@ -149,7 +150,8 @@
         "text": "Port Arthur fortress surrenders to Japan.",
         "key": true
       }
-    ]
+    ],
+    "introTitle": "A port, a city and a fortress in seven years"
   },
   "japanese": {
     "card": "The Kwantung Leased Territory, South Manchuria Railway, Ōhiroba Square and the 1937 station.",
@@ -158,7 +160,7 @@
       "Under the Treaty of Portsmouth, 23 August (5 September) 1905, Japan acquired the Kwantung lease and the railway’s southern branch. Dalny became Dairen; Port Arthur, Ryojun. The Japanese read Kwantung’s characters as Kantō-shū, hence the Kwantung Army, formed from the territory’s garrison in 1919. The Twenty-One Demands extended the lease to 99 years in 1915.",
       "The Japanese kept Dairen’s Russian plan and built around it. Nikolayevskaya Square, laid out but not developed by the Russians, became Ōhiroba. Between 1908 and 1936, police headquarters, a post office, city hall, banks and the South Manchuria Railway’s Yamato Hotel rose around the circle. Eight pre-war buildings survive. A new Dairen station opened in 1937.",
       "Ryojun remained a military and administrative town. Japanese authorities landscaped the Russian military cemetery as a memorial to the fortress’s defenders. The Kwantung Government-General’s museum, now Lüshun Museum, opened in 1917. Japanese rule ended in August 1945 when Soviet troops entered both cities.",
-      "The channel has relatively few notes on these forty years so far. Japanese-era history is better represented by map sites: Ōhiroba’s buildings, the station, museum and cherry garden at Longwangtang Reservoir."
+      "The map includes places from the Japanese period: the buildings around Ōhiroba Square, the station, the museum and the cherry garden at Longwangtang Reservoir."
     ],
     "image": 320,
     "imageAlt": "Ōhiroba Square in Dairen from above: flowerbeds around the circle and a domed building in the centre",
@@ -222,7 +224,8 @@
       321,
       327,
       328
-    ]
+    ],
+    "introTitle": "Dairen and Ryojun under Japanese administration"
   },
   "soviet": {
     "card": "A naval base, joint administration and transfer to China.",
@@ -291,15 +294,16 @@
         "text": "Soviet troops withdraw; the Port Arthur base passes to the People’s Republic of China.",
         "key": true
       }
-    ]
+    ],
+    "introTitle": "A joint base and the return to China"
   },
   "modern": {
     "card": "What survived, what was demolished and where to find traces of the old city.",
-    "lead": "Lüshun and Dalian after 1955: what remains of Russian and Japanese rule, and how the war is studied and remembered today.",
+    "lead": "Lüshun and Dalian after 1955: surviving buildings and fortifications, and a changing city. The remembrance of war and the study of the past form a separate theme.",
     "intro": [
       "From 1955 Port Arthur was Chinese Lüshun. It belonged with Dalian to Lüda, renamed Dalian in 1981. Both former cities now form parts of Dalian, with almost seven million inhabitants.",
       "Much survives: in Dalian, the circle of Nikolayevskaya, now Zhongshan Square, with eight pre-war buildings, the 1937 station and Yamato Hotel; in Lüshun, the land-front forts and intermediate works, Russian military cemetery and Lüshun Museum. Part of Lüshun remains an active naval base; the harbour is viewed from Quail Hill. The British consulate on the square was demolished in 1995.",
-      "This layer gathers notes on studying and remembering the war today: the archive guide, reviews of research and alternative history, lectures and videos, explanations of paired dates and tsarist-ruble conversions, and the author’s reports from Lüshun’s fortifications."
+      "The remembrance of earlier periods is a theme of its own: the military cemetery, museums, monuments and fortifications that can be visited today. This section also brings together material on how this heritage is preserved and studied."
     ],
     "image": 115,
     "imageAlt": "A 10-inch coastal gun at Fortification No. 5 in Lüshun",
@@ -328,30 +332,16 @@
         "text": "Russian specialists restore Lüshun’s Russian military cemetery."
       },
       {
-        "year": 2002,
-        "date": "2002",
-        "text": "Tsentrpoligraf publishes engineer Mikhail Lilje’s Diary of the Siege of Port Arthur."
-      },
-      {
         "year": 2004,
         "date": "2004",
         "text": "Japanese archives publish an online war-centenary exhibition."
       },
       {
-        "year": 2010,
-        "date": "2010",
-        "text": "The Military Historical Journal publishes research showing that A. Stepanov had not been at Port Arthur."
-      },
-      {
         "year": 2016,
         "date": "2016",
         "text": "The Russian Orthodox Church canonises Yevgeny Botkin, doctor and author of Light and Shadows of the Russo-Japanese War."
-      },
-      {
-        "year": 2019,
-        "date": "2019",
-        "text": "Alexander Lysev’s book on everyday life in besieged Port Arthur appears."
       }
-    ]
+    ],
+    "introTitle": "The city after 1955 and the memory of its past"
   }
 }

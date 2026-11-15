@@ -1,0 +1,18 @@
+---
+import { href } from '../../lib/data';
+interface Props { current?: 'places' | 'routes' | 'map' }
+const { current } = Astro.props;
+const links = [
+  { key: 'places', label: 'Места', url: href.places() },
+  { key: 'routes', label: 'Готовые маршруты', url: href.routes() },
+  { key: 'map', label: 'Карта', url: href.map() },
+];
+---
+<nav class="explore-nav" aria-label="Места и маршруты">
+  {links.map(link => <a href={link.url} aria-current={current === link.key ? 'page' : undefined}>{link.label}</a>)}
+</nav>
+<style>
+  .explore-nav { display:flex; flex-wrap:wrap; gap:8px 24px; margin-top:12px; }
+  .explore-nav a { display:inline-flex; align-items:center; min-height:44px; border-bottom:2px solid transparent; font-weight:600; }
+  .explore-nav a:hover, .explore-nav a[aria-current] { border-color:var(--accent); }
+</style>

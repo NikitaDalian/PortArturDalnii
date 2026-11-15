@@ -1,6 +1,7 @@
 ---
 import { routeArt } from '../../lib/art';
 import Base from '../../layouts/Base.astro';
+import ExploreNav from '../../components/map/ExploreNav.astro';
 import PageHero from '../../components/PageHero.astro';
 import { href, imgCrop, plural } from '../../lib/data';
 import { sortedRoutes, routeAuthor, routeCover, TRANSPORT, SEASONS } from '../../components/map/places';
@@ -18,12 +19,13 @@ const km = (n: number) => `${String(n).replace('.', ',')} км`;
     title="Маршруты"
     eyebrow="Карта и маршруты"
     lead={`${rs.length} ${plural(rs.length, 'маршрут', 'маршрута', 'маршрутов')} пешком и на машине: остановки по порядку, время на месте и практические советы. Любой маршрут открывается на карте и в Яндекс.Картах.`}
-    crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Маршруты' }]}
+    crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Места и маршруты', href: href.places() }, { label: 'Маршруты' }]}
   >
     <div class="cluster">
       <a class="btn btn--primary" href={href.map()}>Открыть карту</a>
       <a class="btn btn--outline" href={href.mapBuild()}>Собрать свой маршрут</a>
     </div>
+    <ExploreNav current="routes" />
   </PageHero>
 
   {groups.map((g, gi) => (

@@ -6,8 +6,8 @@ import { href, imgCrop } from '../../lib/data';
   <div class="container">
     <div class="section-head"><div class="stack" style="--stack-gap:10px">
       <h2 class="h2" id="read-first-title">Город, гавань и крепость</h2>
-      <p class="lead">Три статьи по материалам канала: история мест, фотографии и ссылки на источники.</p>
-    </div></div>
+      <p class="lead">История мест, фотографии и ссылки на источники. Полные статьи для первого знакомства с городом.</p>
+    </div><a class="link" href={href.notes()}>Статьи и заметки</a></div>
     <div class="reading-grid">
       {dossiers.map((d) => <a class="reading-card" href={href.place(d.place)}>
         <img src={imgCrop(d.cover, '3x2')!} alt="" loading="lazy" decoding="async" width="960" height="640" />

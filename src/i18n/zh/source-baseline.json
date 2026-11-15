@@ -1,16 +1,149 @@
 {
   "version": 1,
   "locale": "zh",
-  "commit": "66e30cc4bfca447ce53e9cc2caadbbc21d882beb",
-  "reviewedAt": "2026-11-15T09:37:29.601Z",
-  "reviewedPacket": "7be4f4099e4c7699608e42157488e8f134661fb55351d39fbb80c0a5be867531",
+  "commit": "2e0d006f0ddb20f2edc4b48b9748a6602a9faa0e",
+  "reviewedAt": "2026-11-15T11:24:08.858Z",
+  "reviewedPacket": "5ed37bd4eb7397338ffa0c345e6cf344d5461e9e9957f015cc9370a9ee19e3b8",
   "reviewedItems": [
     {
-      "id": "857f195a85a00469e240",
+      "id": "82a19716e7328af7e736",
+      "file": "data/layers.json",
+      "path": "/pre1898/intro/3",
+      "action": "translated",
+      "note": "Compared the revised causal framing with Russian: replaced the site classification with events preceding the lease; retained bank, treaty, railway concession and Nicholas/Otsu names."
+    },
+    {
+      "id": "b2ee82904217185542c8",
+      "file": "data/layers.json",
+      "path": "/pre1898/introTitle",
+      "action": "translated",
+      "note": "Translated the new period-specific heading using the established Chinese name 旅顺口 and the Russian lease qualifier."
+    },
+    {
+      "id": "7e56f69d119ee0d8322d",
+      "file": "data/layers.json",
+      "path": "/russian/intro/3",
+      "action": "translated",
+      "note": "Removed the deleted channel-content sentence; retained the less-than-seven-years qualification and 110 million rouble figure."
+    },
+    {
+      "id": "876798b0791c5bd1e7b2",
+      "file": "data/layers.json",
+      "path": "/russian/introTitle",
+      "action": "translated",
+      "note": "Translated the new seven-year port/city/fortress heading in natural Chinese, preserving all three subjects."
+    },
+    {
+      "id": "dac048a48a5f94c18d0a",
+      "file": "data/layers.json",
+      "path": "/japanese/intro/3",
+      "action": "translated",
+      "note": "Removed the deleted comparison about channel coverage; preserved the map entry and all four listed places."
+    },
+    {
+      "id": "87665c7b528e8f9d2940",
+      "file": "data/layers.json",
+      "path": "/japanese/introTitle",
+      "action": "translated",
+      "note": "Translated using the established Chinese names 大连 and 旅顺; the paragraph below preserves their historical Japanese readings."
+    },
+    {
+      "id": "977fadf859fb8b1390fd",
+      "file": "data/layers.json",
+      "path": "/soviet/introTitle",
+      "action": "translated",
+      "note": "Translated both the shared naval base and return to China, consistent with the surrounding 1945–1955 introduction."
+    },
+    {
+      "id": "0478d83417681fa930fb",
+      "file": "data/layers.json",
+      "path": "/modern/lead",
+      "action": "translated",
+      "note": "Translated the revised emphasis on surviving buildings, fortifications and urban change, with war memory and research as a separate theme."
+    },
+    {
+      "id": "81fb1bc99235bbae6e78",
+      "file": "data/layers.json",
+      "path": "/modern/intro/2",
+      "action": "translated",
+      "note": "Replaced the earlier list of methodological posts with the new heritage paragraph; retained cemetery, museums, monuments, fortifications, preservation and study."
+    },
+    {
+      "id": "f9df6603768e70c5ef01",
+      "file": "data/layers.json",
+      "path": "/modern/dates/4/year",
+      "action": "metadata",
+      "note": "Aligned the shortened chronological array with Russian: retained the existing 2004 archive exhibition event at its new index."
+    },
+    {
+      "id": "267ee894ea3128b45d9a",
+      "file": "data/layers.json",
+      "path": "/modern/dates/4/date",
+      "action": "metadata",
+      "note": "Preserved the 2004 date of the retained archive exhibition, with the Chinese year suffix, after the array was shortened."
+    },
+    {
+      "id": "65a89c681ff67a407b61",
+      "file": "data/layers.json",
+      "path": "/modern/dates/4/text",
+      "action": "translated",
+      "note": "Moved the existing Chinese archive-exhibition translation from its previous index to match the retained Russian 2004 event; removed the 2002 publication event."
+    },
+    {
+      "id": "d23732a06dfde14ec6e8",
+      "file": "data/layers.json",
+      "path": "/modern/dates/5/year",
+      "action": "metadata",
+      "note": "Aligned the shortened chronological array with Russian: retained the 2016 Botkin event at its new index."
+    },
+    {
+      "id": "45e26c9a50cd4319e088",
+      "file": "data/layers.json",
+      "path": "/modern/dates/5/date",
+      "action": "metadata",
+      "note": "Preserved the 2016 date of the retained Botkin event, with the Chinese year suffix, after the array was shortened."
+    },
+    {
+      "id": "76c9abb99c1b0219a09e",
+      "file": "data/layers.json",
+      "path": "/modern/dates/5/text",
+      "action": "translated",
+      "note": "Moved the existing Chinese Botkin canonization translation to the new index; preserved his name, book title and attribution to the Russian Orthodox Church."
+    },
+    {
+      "id": "6899ba60f174a56cc703",
+      "file": "data/layers.json",
+      "path": "/modern/dates/6",
+      "action": "deleted",
+      "note": "Removed the 2010 book-authorship research item from the modern-period chronology, matching the Russian deletion."
+    },
+    {
+      "id": "97541b647258382f460f",
+      "file": "data/layers.json",
+      "path": "/modern/dates/7",
+      "action": "deleted",
+      "note": "Removed the obsolete array slot; its 2016 Botkin event remains correctly at index 5 in both languages."
+    },
+    {
+      "id": "f4f01162c150aed1cfbb",
+      "file": "data/layers.json",
+      "path": "/modern/dates/8",
+      "action": "deleted",
+      "note": "Removed the 2019 research-book publication item from the modern-period chronology, matching Russian."
+    },
+    {
+      "id": "9fd54ec5cb70f20cbcc3",
+      "file": "data/layers.json",
+      "path": "/modern/introTitle",
+      "action": "translated",
+      "note": "Translated the new heading with both the post-1955 city and memory of the past, rather than a generic period label."
+    },
+    {
+      "id": "1928dbaa8124788ee4d4",
       "file": "UI source files",
       "path": "",
-      "action": "unchanged",
-      "note": "Removed redundant Next heading from WalkNavigation: the translated nextLeg sentence already introduces the next stop. No source prose added, translations remain correct; all prior route, photo, about and footer review remains valid."
+      "action": "translated",
+      "note": "Language agent compared all changed and new UI templates and translated the five navigation entries, reading catalogue, source guidance, place directory and period labels. Root checked rendered desktop and mobile pages in all three languages. Final source changes adjust image sizing, preserve catalogue anchors and open shared filter results; they introduce no new reader-visible strings."
     }
   ],
   "sources": {
@@ -12495,13 +12628,14 @@
     },
     "data/layers.json": {
       "pre1898": {
+        "introTitle": "Люйшунькоу до русской аренды",
         "card": "Люйшунькоу — база Бэйянского флота, японо-китайская война и Тройственная интервенция.",
         "lead": "Китайская гавань Люйшунькоу и бухта Даляньвань до русской аренды: флот Ли Хунчжана, война 1894–1895 годов и дипломатия, которая привела Россию на Ляодун.",
         "intro": [
           "У гавани на южной оконечности Ляодуна было китайское имя задолго до европейцев. По преданию, в 1371 году минский военачальник назвал её Люйшунькоу, «залив спокойного плавания». Английское название Port Arthur появилось во время Второй опиумной войны: в августе 1860 года его дал командир HMS Actaeon Джон Уорд. Русские потом сохранили это имя.",
           "В 1880-е годы Ли Хунчжан, почти четверть века управлявший столичной провинцией Чжили, строил Бэйянский флот, и Люйшунькоу стал его базой. Береговые батареи на Золотой горе поставили ещё при Цинах, русские их потом перестроили. Брошюра 1898 года описывает Порт-Артур 1870-х как деревню из 60–80 фанз, а Даляньвань — с разорёнными фортами и одной пристанью.",
           "В японо-китайской войне 1894–1895 годов японцы взяли крепость за один день. По Симоносекскому договору Ляодун отходил Японии, но через шесть дней Россия, Германия и Франция потребовали его вернуть. Это Тройственная интервенция. Через три года Россия сама взяла полуостров в аренду.",
-          "К этому слою канал относит и то, что подготовило аренду: франко-русский союз и созданный на французском капитале Русско-Китайский банк, московский договор 1896 года и концессию на КВЖД, путешествие цесаревича Николая на Восток и покушение в Оцу."
+          "Аренде предшествовали франко-русский союз и создание на французском капитале Русско-Китайского банка, московский договор 1896 года и концессия на КВЖД. К этому же времени относятся путешествие цесаревича Николая на Восток и покушение в Оцу."
         ],
         "image": 96,
         "imageAlt": "Ли Хунчжан сидит у колонны, в халате со звездой ордена",
@@ -12568,13 +12702,14 @@
         ]
       },
       "russian": {
+        "introTitle": "Порт, город и крепость за семь лет",
         "card": "Аренда Квантуна, город с нуля за четыре года, крепость и осада.",
         "lead": "Семь лет под российским флагом: аренда Квантуна, строительство Дальнего, база Тихоокеанской эскадры и осада Порт-Артура в 1904 году.",
         "intro": [
           "15 (27) марта 1898 года Россия взяла в аренду на 25 лет южную часть Ляодуна — Квантунскую область площадью около 3 200 кв. км. Порт-Артур нужен был флоту: Владивосток зимой замерзал. В 1899 году рядом заложили Дальний — коммерческий порт и конечную станцию железной дороги.",
           "Дальний строило Общество КВЖД под началом Витте. Порт проектировал инженер Владимир Сахаров, он же стал градоначальником. План города с круглой Николаевской площадью и десятью проспектами-лучами сделал архитектор Казимир Сколимовский. Через три года после закладки Дальний стал вторым в Китае портом по грузообороту. Летом 1903 года Порт-Артур стал столицей Дальневосточного наместничества во главе с адмиралом Алексеевым.",
           "Война началась в ночь на 27 января (9 февраля) 1904 года атакой японских миноносцев на эскадру у Порт-Артура. Сухопутная оборона крепости длилась 221 день. 2 (15) декабря 1904 года погиб генерал Кондратенко, 20 декабря 1904 (2 января 1905) года крепость сдали. В плен попали 23–25 тысяч человек, почти половина всех русских пленных той войны.",
-          "Под российским флагом оба города пробыли меньше семи лет; Квантунский проект обошёлся казне не менее чем в 110 млн рублей. Этому периоду посвящена большая часть заметок канала: люди, книги, места крепости и Дальнего."
+          "Под российским флагом оба города пробыли меньше семи лет; Квантунский проект обошёлся казне не менее чем в 110 млн рублей."
         ],
         "image": 100,
         "imageAlt": "Панорама гавани Порт-Артура: Старый город, Золотая гора и бассейны",
@@ -12647,13 +12782,14 @@
         ]
       },
       "japanese": {
+        "introTitle": "Дайрен и Рёдзюн под японским управлением",
         "card": "Квантунская арендованная область, ЮМЖД, площадь Охироба и вокзал 1937 года.",
         "lead": "Сорок лет японской аренды: Дальний стал Дайреном, Порт-Артур — Рёдзюном, а русский план города застроили банки и конторы ЮМЖД.",
         "intro": [
           "По Портсмутскому миру 23 августа (5 сентября) 1905 года Япония получила аренду Квантуна и южную ветку дороги. Дальний стал Дайреном, Порт-Артур — Рёдзюном. Японцы прочитали иероглифы названия «Квантун» как Канто-сю; отсюда имя Квантунской армии, которая выросла из гарнизона области в 1919 году. В 1915 году по «Двадцати одному требованию» срок аренды продлили до 99 лет.",
           "Русский план Дайрена японцы сохранили и застроили. Николаевскую площадь, которую русские успели заложить, но не застроить, назвали Охироба. В 1908–1936 годах по кругу встали полицейское управление, почтамт, мэрия, банки и гостиница «Ямато» Южно-Маньчжурской железной дороги. Восемь довоенных зданий площади стоят до сих пор. В 1937 году открылся новый вокзал Дайрена.",
           "Рёдзюн остался военным и административным городом. Японские власти обустроили русское воинское кладбище как мемориал защитникам крепости. В 1917 году открылся музей Квантунского генерал-губернаторства — нынешний Музей Люйшуня. Закончился японский период в августе 1945 года, когда в оба города вошли советские войска.",
-          "Заметок об этих сорока годах в канале пока немного. Японское время лучше представлено местами на карте: здания Охироба, вокзал, музей, сад сакуры у водохранилища Лунвантан."
+          "На карте можно найти места японского периода: здания Охироба, вокзал, музей, сад сакуры у водохранилища Лунвантан."
         ],
         "image": 320,
         "imageAlt": "Площадь Охироба в Дайрене сверху: клумбы вокруг круглой площади, в центре здание с куполом",
@@ -12720,6 +12856,7 @@
         ]
       },
       "soviet": {
+        "introTitle": "Совместная база и возвращение Китаю",
         "card": "Военно-морская база, совместное управление и передача Китаю.",
         "lead": "Десять лет совместной советско-китайской базы: от десантов августа 1945 года до вывода войск в 1955-м.",
         "intro": [
@@ -12789,12 +12926,13 @@
         ]
       },
       "modern": {
+        "introTitle": "Город после 1955 года и память о прошлом",
         "card": "Что сохранилось, что снесли и где искать следы старого города.",
-        "lead": "Люйшунь и Далянь после 1955 года: что уцелело от русского и японского времени и как войну изучают и вспоминают сегодня.",
+        "lead": "Люйшунь и Далянь после 1955 года: сохранившиеся здания, укрепления и перемены в городе. Отдельная тема раздела — память о войне и изучение прошлого.",
         "intro": [
           "С 1955 года Порт-Артур — китайский Люйшунь. Вместе с Далянем он входил в город Люйда, который в 1981 году переименовали в Далянь. Сегодня оба бывших города — части Даляня с населением почти семь миллионов.",
           "Многое сохранилось до сих пор. В Даляне это круг Николаевской площади, теперь Чжуншань, с восемью довоенными зданиями, вокзал 1937 года и гостиница «Ямато». В Люйшуне — форты и укрепления сухопутного фронта, русское воинское кладбище, Музей Люйшуня. Часть Люйшуня остаётся действующей военной базой, гавань смотрят с Перепелиной горы. Британское консульство на площади снесли в 1995 году.",
-          "В этом слое заметки о том, как войну изучают и вспоминают сейчас: путеводитель по архивам, рецензии на исследования и альтернативную историю, лекции и видео, объяснения двойных дат и пересчёта царского рубля, репортажи автора с укреплений Люйшуня."
+          "Память о более ранних эпохах — отдельная тема: воинское кладбище, музеи, памятники и укрепления, которые можно увидеть сегодня. В разделе собраны и материалы о том, как сохраняют и изучают это наследие."
         ],
         "image": 115,
         "imageAlt": "10-дюймовое береговое орудие на Укреплении № 5 в Люйшуне",
@@ -12823,29 +12961,14 @@
             "text": "Российские специалисты реставрируют русское воинское кладбище в Люйшуне."
           },
           {
-            "year": 2002,
-            "date": "2002",
-            "text": "«Центрполиграф» издаёт «Дневник осады Порт-Артура» инженера Михаила Лилье."
-          },
-          {
             "year": 2004,
             "date": "2004",
             "text": "Японские архивы выкладывают в сеть выставку к столетию войны."
           },
           {
-            "year": 2010,
-            "date": "2010",
-            "text": "«Военно-исторический журнал» публикует статью о том, что А. Степанов в Порт-Артуре не был."
-          },
-          {
             "year": 2016,
             "date": "2016",
             "text": "Русская православная церковь причисляет к лику святых врача Евгения Боткина, автора писем «Свет и тени русско-японской войны»."
-          },
-          {
-            "year": 2019,
-            "date": "2019",
-            "text": "Выходит книга Александра Лысева о повседневности осаждённого Порт-Артура."
           }
         ]
       }
@@ -25793,7 +25916,7 @@
           "早在欧洲人到来之前，辽东南端的这处港湾已有中文名称。相传，1371年一位明朝将领将其命名为旅顺口，寓意“航行平顺的港湾”。英文名Port Arthur则出现于第二次鸦片战争期间：1860年8月，英国“阿克泰翁”号舰长约翰·沃德为它取了这个名字。后来，俄国人沿用了这一名称。",
           "19世纪80年代，在直隶任职近四分之一个世纪的李鸿章筹建北洋海军，旅顺口成为舰队基地。黄金山上的岸防炮台始建于清朝，后来由俄国人改建。1898年的一本小册子，将19世纪70年代的旅顺描写为仅有六十至八十间民房的村落，而大连湾则只有残破的炮台和一座码头。",
           "1894—1895年的甲午战争中，日军仅用一天便攻占要塞。《马关条约》将辽东割让给日本，但六天后，俄国、德国与法国要求日本归还，这便是三国干涉还辽。三年后，俄国自己租借了半岛南部。",
-          "本站也将促成租借的前史归入这一时期：俄法同盟、以法国资本创办的华俄道胜银行、1896年莫斯科条约及中东铁路特许权，还有皇储尼古拉的东方之旅与大津遇袭事件。"
+          "租借之前，已有俄法同盟、以法国资本创办的华俄道胜银行、1896年莫斯科条约及中东铁路特许权。这一时期，皇储尼古拉也曾前往东方旅行，并在大津遭遇袭击。"
         ],
         "image": 96,
         "imageAlt": "李鸿章身着袍服，佩戴星形勋章，坐在柱子旁",
@@ -25857,7 +25980,8 @@
         "gallery": [
           342,
           343
-        ]
+        ],
+        "introTitle": "俄国租借前的旅顺口"
       },
       "russian": {
         "card": "关东租借，四年间从无到有的城市，以及要塞与围城。",
@@ -25866,7 +25990,7 @@
           "1898年3月15日（公历27日），俄国租借辽东南部25年，即面积约3200平方公里的关东地区。旅顺是舰队所需的港口，因为海参崴冬季会结冰。1899年，附近又开始建设达里尼，作为商港和铁路终点。",
           "达里尼由维特主导的中东铁路公司兴建。工程师弗拉基米尔·萨哈罗夫负责港口设计，后来也担任市长。建筑师卡齐米日·斯科利莫夫斯基制定了城市规划，以圆形尼古拉广场为中心，向外伸展十条放射状大街。开工三年后，达里尼便成为中国货物吞吐量第二大港。1903年夏，旅顺成为阿列克谢耶夫海军上将领导的远东总督区首府。",
           "1904年1月27日（公历2月9日）前夜，日本鱼雷艇袭击旅顺外的俄国舰队，战争由此开始。要塞的陆上防御持续了221天。1904年12月2日（公历15日），康德拉坚科将军阵亡；同年12月20日（公历1905年1月2日），要塞投降。约2.3万至2.5万人被俘，接近整场战争俄军被俘人数的一半。",
-          "两座城市在俄国国旗下的时间不足七年，关东计划却使国库支出至少1.1亿卢布。本站大部分札记围绕这一时期展开，涉及人物、书籍、要塞遗址与达里尼。"
+          "两座城市在俄国国旗下的时间不足七年，关东计划却使国库支出至少1.1亿卢布。"
         ],
         "image": 100,
         "imageAlt": "旅顺港全景：旧市街、黄金山与港池",
@@ -25936,7 +26060,8 @@
             "text": "旅顺要塞向日军投降。",
             "key": true
           }
-        ]
+        ],
+        "introTitle": "七年间的港口、城市与要塞"
       },
       "japanese": {
         "card": "关东租借地、南满洲铁道、大广场与1937年的火车站。",
@@ -25945,7 +26070,7 @@
           "根据1905年8月23日（公历9月5日）签订的《朴次茅斯和约》，日本获得关东租借权及铁路南段。达里尼改称大连，日语读作Dairen；旅顺读作Ryojun。“关东州”在日语中读作Kanto-shu，关东军的名称也由此而来，这支军队于1919年由当地驻军发展而成。1915年，日本通过“二十一条”将租期延长至99年。",
           "日本沿用达里尼的俄国规划，并在此基础上建设大连。俄国人已辟出、尚未完成周边建设的尼古拉广场，被改称大广场。1908—1936年间，广场四周陆续建起警察署、邮局、市政厅、银行与南满洲铁道的大和旅馆。广场上八座战前建筑至今仍在。1937年，大连新火车站启用。",
           "旅顺仍是一座军事与行政城市。日本当局将俄军公墓整理为要塞守军的纪念地。1917年，关东都督府博物馆开馆，即今天的旅顺博物馆。1945年8月，苏军进入两城，日本统治时期结束。",
-          "频道目前关于这四十年的札记还不多。日治时期更多通过地图上的地点呈现：大广场建筑群、火车站、博物馆，以及龙王塘水库旁的樱花园。"
+          "在地图上可以找到日治时期留下的地点：大广场建筑群、火车站、博物馆，以及龙王塘水库旁的樱花园。"
         ],
         "image": 320,
         "imageAlt": "俯瞰大连大广场：圆形广场周围的花坛，画面中央为带圆顶的建筑",
@@ -26009,7 +26134,8 @@
           321,
           327,
           328
-        ]
+        ],
+        "introTitle": "日本统治下的大连与旅顺"
       },
       "soviet": {
         "card": "海军基地、共同管理与移交中国。",
@@ -26078,15 +26204,16 @@
             "text": "苏军撤离，旅顺基地移交中华人民共和国。",
             "key": true
           }
-        ]
+        ],
+        "introTitle": "共用基地与归还中国"
       },
       "modern": {
         "card": "哪些留存，哪些已拆除，又该去哪里寻找旧城的痕迹。",
-        "lead": "1955年以后的旅顺与大连：俄国和日本时期留下了什么，以及今天人们如何研究和纪念这场战争。",
+        "lead": "1955年以后的旅顺与大连：留存的建筑、防御工事与城市变迁。本栏目也关注战争记忆与历史研究。",
         "intro": [
           "1955年以后，旅顺归中国管理。它与大连一同组成旅大市，1981年更名为大连市。今天，这两座曾经各自独立的城市，均是人口近七百万的大连的一部分。",
           "许多旧迹至今仍在。大连有尼古拉广场留下的圆形布局，即今天的中山广场，周围保留八座战前建筑；还有1937年建成的火车站和大和旅馆。旅顺则有陆上防线的堡垒与工事、俄军公墓和旅顺博物馆。部分旅顺地区仍是现役军事基地，游客可从白玉山俯瞰港湾。广场上的英国领事馆于1995年拆除。",
-          "这一时期的札记关注今天如何研究和记忆战争：档案查阅指南、学术著作与架空历史书评、讲座和视频、双日期与沙皇卢布价值换算的解释，以及作者走访旅顺工事的记录。"
+          "对更早时期的记忆也是一个独立主题：军人公墓、博物馆、纪念碑，以及今天仍能看到的防御工事。本栏目还汇集了有关这些历史遗产如何得到保护与研究的资料。"
         ],
         "image": 115,
         "imageAlt": "旅顺第5号防御工事上的10英寸岸炮",
@@ -26115,31 +26242,17 @@
             "text": "俄罗斯专家修复旅顺俄军公墓。"
           },
           {
-            "year": 2002,
-            "date": "2002年",
-            "text": "中央印刷出版社出版工程师米哈伊尔·利利耶的《旅顺围城日记》。"
-          },
-          {
             "year": 2004,
             "date": "2004年",
             "text": "日本档案机构在网上推出战争百年纪念展。"
           },
           {
-            "year": 2010,
-            "date": "2010年",
-            "text": "《军事历史杂志》刊文指出，阿·斯捷潘诺夫并未到过旅顺。"
-          },
-          {
             "year": 2016,
             "date": "2016年",
             "text": "俄罗斯东正教会将医生叶夫根尼·博特金封为圣徒，他是书信集《日俄战争的光与影》的作者。"
-          },
-          {
-            "year": 2019,
-            "date": "2019年",
-            "text": "亚历山大·雷谢夫关于被围旅顺日常生活的著作出版。"
           }
-        ]
+        ],
+        "introTitle": "1955年以后的城市与历史记忆"
       }
     },
     "src/i18n/zh/guide_evidence.json": {
@@ -27894,7 +28007,53 @@
       "канал": "频道",
       ". Для материалов сторонних архивов и собраний действуют условия оригинала. Сведения об авторах, источниках и лицензиях — на странице": "。其他档案机构与收藏提供的资料须遵守原出处的使用条件。作者、来源及许可信息详见",
       "К этой остановке в Amap": "高德步行至本站",
-      "К следующей остановке в Amap": "高德步行至下一站"
+      "К следующей остановке в Amap": "高德步行至下一站",
+      "Статьи и заметки": "文章与札记",
+      "Эпохи": "历史时期",
+      "Места и маршруты": "地点与路线",
+      "Готовые маршруты": "推荐路线",
+      "Два города Ляодунского полуострова: их жители, войны, торговля и повседневная жизнь. Статьи и источники для чтения, исторические места и маршруты для прогулок.": "辽东半岛两座城市的居民、战争、贸易与日常生活。通过文章与史料了解往事，循着历史地点与路线走进城市。",
+      "Выбрать статью": "选择文章",
+      "История по эпохам": "按时期读历史",
+      "История мест, фотографии и ссылки на источники. Полные статьи для первого знакомства с городом.": "从地点的历史、照片与史料链接开始，用完整文章初识这座城市。",
+      "Книги для первого знакомства и углублённого чтения, исторические документы, архивы и исследования. От каждой темы можно перейти к источникам и связанным статьям.": "从入门到深入阅读的书籍，以及历史文献、档案与研究。每个主题都可引向相关资料与文章。",
+      "Как работать с источниками": "如何阅读与使用史料",
+      "Найдите документ, разберитесь в его датах и сравните свидетельства. Эти материалы помогут читать историю внимательнее.": "寻找文献，厘清日期，对照不同记述。这些内容帮助您更仔细地阅读历史。",
+      "Читаем план Дальнего: от подписи к истории площади": "读懂达里尼规划图：从图题走向广场的历史",
+      "Где искать документы о русско-японской войне": "到哪里寻找日俄战争文献",
+      "Как понимать старый и новый стиль": "如何理解旧历与新历",
+      "Как избежать знания задним числом": "如何避免用后见之明判断历史",
+      "Места этой эпохи": "这一时期的地点",
+      "Что читать о городе и его прошлом": "阅读城市与往事",
+      "Что читать об этой эпохе": "这一时期的相关阅读",
+      "Люди в материалах раздела": "本栏目涉及的人物",
+      "Люди этой эпохи": "这一时期的人物",
+      "Люди, упомянутые в материалах раздела: участники событий и авторы, которые о них писали.": "本栏目提及的人物，包括事件亲历者及记述这些事件的作者。",
+      "Показать эти места на карте": "在地图上查看这些地点",
+      "Переходы между эпохами": "浏览前后时期",
+      "← Предыдущая эпоха": "← 上一时期",
+      "Следующая эпоха": "下一时期",
+      "Все эпохи →": "全部时期 →",
+      "Пять исторических периодов Порт-Артура и Дальнего: от Люйшунькоу до 1898 года до современного Даляня. В каждом — события, материалы для чтения и места на карте. Люди связаны с эпохами через события и публикации о них.": "旅顺与达里尼的五个历史时期：从1898年以前的旅顺口，到今天的大连。每个时期都有事件、相关阅读与地图上的地点；人物则通过所参与的事件及相关著述与这些时期相连。",
+      "Пять исторических периодов": "五个历史时期",
+      "Люди:": "人物：",
+      "Места этого периода на карте": "在地图上查看这一时期的地点",
+      "Читать об эпохе": "了解这一时期",
+      "Читать об эпохе →": "了解这一时期 →",
+      "Строители городов, военные, жители и авторы воспоминаний. Биографии и связи помогают увидеть одну историю с разных сторон.": "城市建设者、军人、居民与回忆录作者。通过他们的生平与相互联系，从不同角度理解同一段历史。",
+      "Люди Порт-Артура и Дальнего": "旅顺与达里尼的人物",
+      "Полные статьи об истории Порт-Артура и Дальнего и каталог заметок канала. Выберите рассказ, эпоху, человека или место.": "旅顺与达里尼历史的完整文章与频道札记目录。可从故事、时期、人物或地点开始阅读。",
+      "Начните с большой статьи или найдите интересующую тему среди заметок канала. У каждого материала есть связи с людьми, местами и источниками.": "可以先读一篇长文，也可以在频道札记中寻找感兴趣的主题。每篇内容都关联着人物、地点与资料来源。",
+      "Полные статьи": "完整文章",
+      "Заметки канала": "频道札记",
+      "Краткие пересказы с фактами и связями. Полный авторский текст каждой заметки доступен в Telegram.": "札记以摘要形式呈现事实与相关线索。每篇的作者俄文全文均可在 Telegram 阅读。",
+      "Читать целиком на сайте": "在本站阅读全文",
+      "История города, гавани и укреплений. Полные статьи с иллюстрациями, пояснениями и источниками.": "城市、港湾与防御工事的历史。完整文章附有配图、解说与资料来源。",
+      "Исторические места Даляня и Люйшуня: рассказы о зданиях и укреплениях, карта и маршруты для самостоятельной прогулки.": "大连与旅顺的历史地点：建筑与防御工事的故事，以及供自行探访的地图与路线。",
+      "Выберите место, чтобы прочитать его историю, или маршрут для прогулки. На карте можно увидеть, что находится рядом, и собрать свой путь.": "选择一个地点阅读它的历史，或选择一条路线出游。地图上可以查看附近的地点，也可以规划自己的路线。",
+      "Выбрать маршрут": "选择路线",
+      "Выбрать город": "选择城市",
+      "Один город хранит следы нескольких эпох. На страницах мест собраны прежние названия, фотографии, связанные статьи и сведения для посещения.": "一座城市留存着不同时期的痕迹。各地点页面汇集旧称、照片、相关文章与探访信息。"
     }
   },
   "ui": {
@@ -27903,8 +28062,8 @@
     "src/components/Coast.astro": "8cfb683da959ded0d37aa08618f5c4177b2ba7f1feb63ce4a773c70bb86fbcce",
     "src/components/Crumbs.astro": "3b57f937c751d60b68297ea466992807aaefb057ad0cb451f853466b706c66c4",
     "src/components/EntityPreviews.astro": "a4ed4de42edc58d885a6fccac9879dc4bc252f69dc559826d0b32e4515d56856",
-    "src/components/Footer.astro": "98657a0b4f479b479556192b6669076e2bf5dbad91a09774f396c6ca0f726a79",
-    "src/components/Header.astro": "eaf79e7bf915948534969e558ad93d6fdeadd9b97e786a1a4968d0c93cfd484d",
+    "src/components/Footer.astro": "21b27b0e92bc50ec90d81fe7e6f1cf51d508419d1ffd3abeb3eca3d3bb817e85",
+    "src/components/Header.astro": "4bc4af26fb58a5d5db4df84db11fab7456653da6d79a0703b5b32cddbfa172c9",
     "src/components/LanguageSwitch.astro": "277109875a0a7d546d13dcca8816bd05be4249b8e08ba4b155026fee3968f376",
     "src/components/LinkedText.astro": "398ae85ff7e16e1793cb7f3f5382d79d278e01cc721a1474a9a00810c3ae1cd8",
     "src/components/MapFigure.astro": "b8a5160be96edde56c777a5cae37a22e406d45b202b1305ea7f4f27e4108de90",
@@ -27917,21 +28076,22 @@
     "src/components/Unsure.astro": "6760377b0448c1a049bbc9c072e4bb701bcf16f14e23bbe24aa242a4acc5a35a",
     "src/components/about/SiteGuide.astro": "ff703b9b898cc0e7fcde34832adb1c78fc7ba51b2755aaa55a2657295c7c848e",
     "src/components/home/Authors.astro": "96ec1b69d71c69b64f99725cda5d77a71a7d60125edb5d6a3fd8782a5464ad1b",
-    "src/components/home/Hero.astro": "51db1b78a4308698ec42bca6db87a6caf342ca3d707d0db9df578cb5f111e4a9",
-    "src/components/home/LayersGrid.astro": "c003578152dc050df1fd8639e70bc8081c93baf02757249de001297ecf481767",
+    "src/components/home/Hero.astro": "12a9b39f8350b4fea5eb735b6ba30a1727f9ebe554d19ec0fa6149422df6498e",
+    "src/components/home/LayersGrid.astro": "ded9953d8551740709bb1e2de7179fbfc3230d3b3b56eb7e4799911d8342111e",
     "src/components/home/MapTeaser.astro": "34cbf73ed46461ad7981687f1a633a8728acf31f5def8c1596c217699fe031d4",
     "src/components/home/PeopleTeaser.astro": "ad3d7f334c3041260094aa223dba333cdd87a677f9a9669449eefbbb548c3c99",
-    "src/components/home/ReadFirst.astro": "08387abb52d4a6517c8c000fed1df3bd05360baeacf49171765458936e394bd7",
+    "src/components/home/ReadFirst.astro": "935bfd9a7499c093fbfc23996400a473a8650a9d0fb8d817cec7afe4a7597a02",
     "src/components/home/SeasonsGrid.astro": "b26088c69b2c4c672f096f9aa26761cbe29cde105ac7bc54ab677a8ff07656ed",
     "src/components/home/SeriesStrip.astro": "092029e4be5ada046e638bb3d28fd78b6480308be8bbcf7b24d3b8b8a0f6c0a0",
     "src/components/layers/KeyDates.astro": "dbfdf52cb0312bd5a9fc471919f4a0c5f2a9b0f5a2c18c447fd43370840e0c16",
     "src/components/layers/Timeline.astro": "865c1f28bb64e26b6bd57d956faa0de7f0532ced5fdc03bad12e073b086d437c",
-    "src/components/layers/layers.ts": "ca6f64773f0107d5d97f85c4307858d5122f2faf92b9e3a3509371c4a7daa7fe",
+    "src/components/layers/layers.ts": "7bdd6501b93271a46c5bc40276379fda886306305f804c7292bf4c22af961358",
     "src/components/library/BookCatalog.astro": "fd8cac7f63a93aa0d291018e2e111659c0841de8955a9c4022156892ca84ab39",
     "src/components/library/BookFeature.astro": "5a0a51e01bc62aedb2b6e360207f4b365a41a8859e8930592ad93bd32a177725",
     "src/components/library/DocumentReading.astro": "37fef53b996051b6b87ee004bdc3c3ef7f9de4337725601e0482027459bab188",
     "src/components/library/SourceCard.astro": "4be1ccf12e2fd3a31d4cd2c6906f434f65c491804aa526fdd4f8a26fedae5b4c",
     "src/components/library/labels.ts": "3fe59ddf05995fcaa7b522a8d26ff8a39f828776c8715b40d0c43284b86173f5",
+    "src/components/map/ExploreNav.astro": "58c40d0c185c33762b22c59ea2430f79cb4d932f5021d9f4eba2e383e8f1eb88",
     "src/components/map/Gallery.astro": "2a95d25faea04e1e1e5e4314748c18fa66ef054ee0842704df758220dcd2b16f",
     "src/components/map/MapApp.astro": "bf952bb2defec26d3627877bb9c241d3a277ab5f87f4c249cf34f59ab6a83d85",
     "src/components/map/MiniMap.astro": "68777c2369864734790df69c51993111b25d90d84512544200db24e3fc0dd5b5",
@@ -27949,35 +28109,38 @@
     "src/components/people/PersonNav.astro": "36aa527df1b68fd44961e69414f44fe91743bd42641ee9a64953df320821084d",
     "src/components/people/Portrait.astro": "aac47bd2e2c883ba9f3b7b3f68765717ed896842b79147528c6747ef9f332f1f",
     "src/components/people/relations.ts": "9c96c05dd9390ab0698b0ec9f808f5ed853e5f599cf9f4ead53987c40379d81b",
-    "src/components/places/DossierHero.astro": "b62faf533a167bcc9b733c7d2f3be30c206950127e36b5d1e1eb9d2e0d78dcc4",
+    "src/components/places/DossierHero.astro": "ac46a8467190b822b78833301bb00a5dea42a0f9b52d40c46932258323686004",
     "src/components/places/DossierLinks.astro": "d0555f7b0d10894b08fdd9aa80c79f64ccc142b33e0959a1d322c75e40996185",
     "src/components/places/GuideEvidence.astro": "b51e8c10605381694e20a9e4540601a8289a71f7319270f6310450394de73e9a",
     "src/components/places/PlaceDossier.astro": "ed236aab57a0dfadae507172fccc9823e09a5717a23338b02b39e32b7141f33d",
     "src/components/places/SourceAssessment.astro": "14c1fe79eac21983bb6b184614a198a7810660f085881a8ffbfa2b91fe95bc82",
+    "src/components/reading/ReadingShelf.astro": "f6895b9848805a18875fcd415593247eb83f0b354aaccc375fb78c4fc92fe211",
     "src/components/routes/WalkNavigation.astro": "5ca65c5a14d2d6fe9c5ebe5919802e69d8022be953cca6b770bb96e6a6382a6c",
     "src/components/routes/WalkOverview.astro": "008921fe555609bd7849dae3b9020b0ca14912cef4e8e62f4e5d37dfb10fb6a6",
     "src/components/search/fallbackData.ts": "28536aaba32db92333d8d005c739d5dcb15d27319b21f0cebcb190325fbc063a",
     "src/components/search/indexEntries.ts": "94ac180f8d9500d0c12b9cbec4492ab43713bee645a9ac5443dabe98889e2c52",
     "src/layouts/Base.astro": "dcafb1a37483ac7d2b015d8b7bb5e1adde8b5bed70dfc260687d9f27d8defa66",
     "src/lib/art.ts": "39492c4be05988c568b4e0e226dafe8bb4287d3a5cfa662e1240b4e5bbae33cd",
-    "src/lib/data.ts": "f7b731ced414314042d34803eab99b960c15281b5e997d0c381a22073521ab72",
+    "src/lib/data.ts": "91427586e8af9d94814149ccc6cf88a0d52a30716b29b60da4ab709aeff2d0e9",
     "src/lib/evidence.ts": "7e268c863ef29957ed3be7df0baf5fd1d7fa357b3ea374983e4cae931845b0b7",
     "src/lib/mentionMatcher.ts": "1bedd5530e4a1cb6c87bc6ced24c2e72a80c36d56ffb3329391fca259a4e1ff8",
     "src/lib/mentions.ts": "bea0de38d54d69b55e48b3dfa8ac248eaea270a22ba841e00c2d26888ae1aea8",
+    "src/lib/navigation.ts": "35d9a9aa4326bffa6648abf185256e96e8e24ddc7eeab9ae1ed2a97400635743",
     "src/lib/walks.ts": "53d1c7e1bfe806999502f4f4762a13bc4cd7c7dbba0f064713d2c24ae7e9be5e",
     "src/pages/404.astro": "c2c7933f237cd66b0b34b9bad408caca74fcf0772d5710f317df9b6c26de3532",
-    "src/pages/biblioteka/index.astro": "937fd8ca884df395b990b6b120d0b44793f22d9e26b09f23960c18c8eafa4ab1",
+    "src/pages/biblioteka/index.astro": "955f4fbfbdb4d337578027107b0e1a009af83c20578b96ae4e90150a5ddf1d02",
     "src/pages/biblioteka/istochniki/[slug].astro": "f6494dacafd8f746b06175f9e5583ab20509586f46d9578da97be1f744451f43",
     "src/pages/biblioteka/knigi/[slug].astro": "ca7d623d77eb0cca89722dc598746cd4d38e37a80b93ccf74b6921295c34239f",
     "src/pages/index.astro": "1f440565dfba7e8b0db9803cb1f7e7547ce338c8e706488bdc6094a42cd956bb",
-    "src/pages/istoriya/[layer].astro": "8e99df8cb7dad98442b85a66c450f31274adcc8b41aa4b0c890ee300e2b26a75",
-    "src/pages/istoriya/index.astro": "8c91059c494e60a87f1f91e0634632744aa89f9320572c65e6ef5be960c42727",
-    "src/pages/karta/index.astro": "bed43e79dbf4348157380f2b540a68a6899926c1f7cb515d090618132359a482",
+    "src/pages/istoriya/[layer].astro": "158cc5a954fbca1cdcdbbab36b53daf44cf63b665f5783838738fa1678e831a6",
+    "src/pages/istoriya/index.astro": "5d7aa3c72fd6a398059e40a197068cd817710fd2dfcfab0f829f66ee14a5527c",
+    "src/pages/karta/index.astro": "b166b5102b321d47661ee977ff6aab96e606dab51e49739609e69171112454c3",
     "src/pages/lica/[slug].astro": "42fdcba4e3329ad53f6865b1647cf7cd9d10105a5934ffff54b0edd7bc468670",
-    "src/pages/lica/index.astro": "b3bd3961918436e4bed2902368ae62293624044c2c719a5079a8d7e693b2ba7a",
+    "src/pages/lica/index.astro": "5a6443a4d5d7479773588548464f79953992a5b5d4fe8bfca1d1ed4d64a3a8b2",
     "src/pages/marshruty/[slug].astro": "14986fa1e203b71d6cd25909be7cbe38d464a4d02c024f95b8f7d6cb192281f9",
-    "src/pages/marshruty/index.astro": "6ad547f44e2069c47e1b6f0daae91cb67cb0bb13cc7da7b4d9df99be6f313d37",
-    "src/pages/mesta/[slug].astro": "47b0886a9770dcebf040e47ffa24bdfad5d58685814610241963e15c4e414fc9",
+    "src/pages/marshruty/index.astro": "80add3abcb36c2b739d65c2f4d425869fd872f0233909a8771092777d810cdc2",
+    "src/pages/mesta/[slug].astro": "1841bc2c478279d9e3c6187fdaccbaa27c8e8ef8fbd72e39468ed7d3b94d608a",
+    "src/pages/mesta/index.astro": "8a97aaba538fc9eff685af4167f45d40f3747b0dedd3cea3b8dbee9e2d5bfbd4",
     "src/pages/o-proekte/illyustratsii/index.astro": "30e83435689ea281e76e02e1d57bc69bd67f5b77da7fe769bc6ad6550c4e1a99",
     "src/pages/o-proekte/index.astro": "2d25caf6c87ad08b57e499c9d6df7e44d0e967b0fd1e84dc51ab1fffc6b13d1a",
     "src/pages/poisk/index.astro": "c928a2433f47bbbf0f502d31111b2c2b0642f981248434e06b5350115c3081cf",
@@ -27985,7 +28148,7 @@
     "src/pages/spravochnik/[kind]/[slug].astro": "a49cbb7b95b3bbbde7314dad04a8b8eb67b8a4dce30bed66f05a99b847b4844f",
     "src/pages/ukazatel/index.astro": "c664d0ca1b09a6e72ea12815f8c26409286cb05adcb95f15396788063a1e517c",
     "src/pages/zametki/[slug].astro": "c3ec3e9a7241eede46029b08b2fccb71bb70b1c0e43888fd7451c65f379968c1",
-    "src/pages/zametki/index.astro": "0c3c5e81a670f394c372a4c66b2218800193f2629c1fdae820e989f29f0831c4",
+    "src/pages/zametki/index.astro": "f29ecb9c1beb972ca51da30eb11e7ac537ddcd29f45d230d4737b01a36a465a7",
     "src/pages/zametki/serii/[slug].astro": "a49a411cc993f8fba0ddb5cb443ee4da1a6d6ff8b14cc92d849d782da8b036e3",
     "src/pages/zametki/serii/index.astro": "6c340e023b28d27fc27243696e60b7b4a934a6b2b7cbd6327634244373f95cd8"
   }

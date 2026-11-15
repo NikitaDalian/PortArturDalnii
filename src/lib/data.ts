@@ -1,6 +1,7 @@
 // Единая точка доступа к данным и адресам сайта.
 // ВСЕ ссылки внутри сайта строятся через функции этого файла (учёт base-пути GitHub Pages).
 import articlesJson from '../data/articles.json';
+import editorialPeriods from '../data/editorial_periods.json';
 import peopleJson from '../data/people.json';
 import placesJson from '../data/places.json';
 import booksJson from '../data/books.json';
@@ -24,7 +25,10 @@ export type Source = (typeof sourcesJson)[number];
 export type Route = (typeof routesJson)[number];
 export type Series = (typeof seriesJson)[number];
 
-export const articles = articlesJson as Article[];
+// Imported labels may describe the publication era. Public filters describe the
+// historical subject; publication dates and source records remain independent.
+const periodOverrides = editorialPeriods as Record<string, LayerKey[]>;
+export const articles: Article[] = articlesJson.map(a => ({ ...a, layer: periodOverrides[a.slug] ?? a.layer }));
 export const people = peopleJson as Person[];
 export const places = placesJson as Place[];
 export const books = booksJson as Book[];
@@ -109,6 +113,7 @@ export const href = {
   mapPts: (slugs: string[]) => url(`/karta/?pts=${[...new Set(slugs)].map(encodeURIComponent).join(',')}`),
   /** Пустой конструктор своего маршрута */
   mapBuild: () => url('/karta/?build=1'),
+  places: () => url('/mesta/'),
   place: (s: string) => url(`/mesta/${s}/`),
   routes: () => url('/marshruty/'),
   route: (s: string) => url(`/marshruty/${s}/`),

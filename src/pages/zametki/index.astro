@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import PageHero from '../../components/PageHero.astro';
+import ReadingShelf from '../../components/reading/ReadingShelf.astro';
 import NoteItem from '../../components/notes/NoteItem.astro';
 import { articles, series, LAYERS, TYPES, href, url, plural } from '../../lib/data';
 import { byDate, facet } from '../../components/notes/lib';
@@ -14,21 +15,28 @@ const persons = facet('person', (a) => a.people);
 const placesF = facet('place', (a) => a.places);
 const total = articles.length;
 ---
-<Base searchable={false} title="Заметки" description={`Каталог всех ${total} заметок канала: события, люди, книги и источники о Порт-Артуре и Дальнем, с фильтрами по эпохе, серии, человеку и месту.`} section="notes">
+<Base searchable={false} title="Статьи и заметки" description="Полные статьи об истории Порт-Артура и Дальнего и каталог заметок канала. Выберите рассказ, эпоху, человека или место." section="notes">
   <PageHero
-    title="Заметки"
+    title="Статьи и заметки"
     eyebrow={`${total} ${plural(total, 'заметка', 'заметки', 'заметок')} канала`}
-    lead="Краткие пересказы постов канала с фактами и связями. Полный текст каждой заметки — в Telegram."
-    crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Заметки' }]}
+    lead="Начните с большой статьи или найдите интересующую тему среди заметок канала. У каждого материала есть связи с людьми, местами и источниками."
+    crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Статьи и заметки' }]}
   >
     <div class="cluster" style="--cluster-gap:20px; margin-top:4px">
+      <a class="link" href="#full-articles">Полные статьи</a>
+      <a class="link" href="#notes-catalog">Заметки канала</a>
       <a class="link" href={href.seriesList()}>Все серии</a>
       <a class="link" href={href.index()}>Указатель А–Я</a>
       <a class="link" href={href.search()}>Поиск по сайту</a>
     </div>
   </PageHero>
 
-  <div class="container section--tight nc" data-pagefind-ignore="all">
+  <ReadingShelf />
+  <div class="container section--tight nc" id="notes-catalog" data-pagefind-ignore="all">
+    <div class="stack" style="--stack-gap:12px; margin-bottom:28px">
+      <h2 class="h2">Заметки канала</h2>
+      <p class="lead">Краткие пересказы с фактами и связями. Полный авторский текст каждой заметки доступен в Telegram.</p>
+    </div>
     <form class="nc-filters stack" style="--stack-gap:14px" role="search" aria-label="Фильтры заметок" onsubmit="return false">
       <div class="nc-top">
         <label class="nc-search">
@@ -236,7 +244,7 @@ const total = articles.length;
       const p = new URLSearchParams();
       KEYS.forEach((k) => { if (st[k] && st[k] !== DEFAULTS[k]) p.set(k, st[k]); });
       const qs = p.toString();
-      history.replaceState(history.state, '', location.pathname + (qs ? '?' + qs : ''));
+      history.replaceState(history.state, '', location.pathname + (qs ? '?' + qs : '') + location.hash);
       const active = (['q', 'type', 'layer', 'series', 'person', 'place'] as const).filter((k) => st[k]).length;
       resetBtn.hidden = active === 0;
       shareBtn.hidden = active === 0;
@@ -336,6 +344,10 @@ const total = articles.length;
       selectsBox.classList.add('is-open');
     }
     apply(false);
+    // A shared filtered selection should open its results, not the article shelf.
+    if (!location.hash && (['q', 'type', 'layer', 'series', 'person', 'place'] as const).some(k => params.get(k))) {
+      requestAnimationFrame(() => root.scrollIntoView({ block: 'start', behavior: 'instant' }));
+    }
   }
   document.addEventListener('astro:page-load', initCatalog);
 </script>

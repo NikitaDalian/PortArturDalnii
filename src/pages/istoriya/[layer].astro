@@ -38,7 +38,7 @@ const typesPresent = Object.keys(TYPES)
   .map((t) => ({ t, n: notes.filter((a) => a.type === t).length }))
   .filter((x) => x.n > 0);
 const dates = [...text.dates].sort((a, b) => a.year - b.year);
-const placesTitle = key === 'modern' ? 'Где искать следы сегодня' : 'Места слоя';
+const placesTitle = key === 'modern' ? 'Где искать следы сегодня' : 'Места этой эпохи';
 ---
 <Base title={`${layer.title} (${layer.years})`} description={text.lead} image={heroImg} section="layers">
   <div class="lh" data-layer={key}>
@@ -46,7 +46,7 @@ const placesTitle = key === 'modern' ? 'Где искать следы сего�
       title={layer.title}
       eyebrow={layer.years}
       lead={text.lead}
-      crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Слои истории', href: href.layers() }, { label: layer.title }]}
+      crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Эпохи', href: href.layers() }, { label: layer.title }]}
       image={heroImg}
       imageAlt={cover ? '' : text.imageAlt}
       caption={cover ? undefined : (text.caption || undefined)}
@@ -60,7 +60,7 @@ const placesTitle = key === 'modern' ? 'Где искать следы сего�
   <section class="container section" aria-labelledby="intro-h">
     <div class="split">
       <div class="stack reveal" style="--stack-gap:20px">
-        <h2 id="intro-h" class="h2">О слое</h2>
+        <h2 id="intro-h" class="h2">{text.introTitle}</h2>
         <div class="prose">
           {text.intro.map((p) => <p><LinkedText text={p} context={mentions} /></p>)}
         </div>
@@ -86,7 +86,7 @@ const placesTitle = key === 'modern' ? 'Где искать следы сего�
   <section class="paper section" aria-labelledby="notes-h" data-filter-root>
     <div class="container">
       <div class="section-head">
-        <h2 id="notes-h" class="h2">Заметки слоя</h2>
+        <h2 id="notes-h" class="h2">{key === 'modern' ? 'Что читать о городе и его прошлом' : 'Что читать об этой эпохе'}</h2>
         <p class="meta" aria-live="polite" data-count>{notes.length} {plural(notes.length, 'заметка', 'заметки', 'заметок')}</p>
       </div>
       {typesPresent.length > 1 && (
@@ -109,10 +109,10 @@ const placesTitle = key === 'modern' ? 'Где искать следы сего�
     <section class="dark section-dark" aria-labelledby="people-h">
       <div class="container section">
         <div class="section-head">
-          <h2 id="people-h" class="h2">Люди слоя</h2>
-          <a class="link" href={href.people()}>Все лица</a>
+          <h2 id="people-h" class="h2">{key === 'modern' ? 'Люди в материалах раздела' : 'Люди этой эпохи'}</h2>
+          <a class="link" href={href.people()}>Все люди</a>
         </div>
-        <p class="lead" style="margin-bottom:24px">Те, о ком идёт речь в заметках этого слоя.</p>
+        <p class="lead" style="margin-bottom:24px">Люди, упомянутые в материалах раздела: участники событий и авторы, которые о них писали.</p>
         <div class="grid people-grid" style="--min:320px; --grid-gap:0 32px">
           {persons.map((p) => <PersonRow p={p} />)}
         </div>
@@ -125,7 +125,7 @@ const placesTitle = key === 'modern' ? 'Где искать следы сего�
     <section class="container section" aria-labelledby="places-h">
       <div class="section-head">
         <h2 id="places-h" class="h2">{placesTitle}</h2>
-        <a class="link" href={href.mapLayer(key)}>Все места слоя на карте</a>
+        <a class="link" href={href.mapLayer(key)}>Показать эти места на карте</a>
       </div>
       {key === 'modern' && <p class="lead" style="margin-bottom:24px">Места, куда можно прийти сейчас, — с подсказками для посещения на их страницах.</p>}
       <div class="grid" style="--min:240px; --grid-gap:32px 24px">
@@ -134,21 +134,21 @@ const placesTitle = key === 'modern' ? 'Где искать следы сего�
     </section>
   )}
 
-  <nav class="container section--tight layer-nav" aria-label="Соседние слои">
+  <nav class="container section--tight layer-nav" aria-label="Переходы между эпохами">
     {prev ? (
       <a class="layer-nav__a" href={href.layer(prev.key)} rel="prev">
-        <span class="meta">← Предыдущий слой · {prev.years}</span>
+        <span class="meta">← Предыдущая эпоха · {prev.years}</span>
         <span class="h3">{prev.title}</span>
       </a>
     ) : <span></span>}
     {next ? (
       <a class="layer-nav__a layer-nav__a--next" href={href.layer(next.key)} rel="next">
-        <span class="meta">Следующий слой · {next.years} →</span>
+        <span class="meta">Следующая эпоха · {next.years} →</span>
         <span class="h3">{next.title}</span>
       </a>
     ) : <a class="layer-nav__a layer-nav__a--next" href={href.layers()}>
-        <span class="meta">Все слои →</span>
-        <span class="h3">Слои истории</span>
+        <span class="meta">Все эпохи →</span>
+        <span class="h3">Эпохи</span>
       </a>}
   </nav>
 </Base>

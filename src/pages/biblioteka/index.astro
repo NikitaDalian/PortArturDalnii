@@ -9,7 +9,7 @@ import { books, sources, href, plural } from '../../lib/data';
 
 const starters = books.filter((b) => b.level === 'start').slice(0, 2);
 const sourceGroups = SOURCE_KINDS.map((k) => ({ ...k, items: sources.filter((s) => s.kind === k.key) })).filter((g) => g.items.length);
-const lead = 'Книги, разобранные в канале. У каждой есть аннотация, оценка автора и ссылка на рецензию в Telegram.';
+const lead = 'Книги для первого знакомства и углублённого чтения, исторические документы, архивы и исследования. От каждой темы можно перейти к источникам и связанным статьям.';
 ---
 <Base searchable={false} title="Библиотека" description={lead} section="library">
   <PageHero
@@ -22,6 +22,7 @@ const lead = 'Книги, разобранные в канале. У каждо�
       <a class="btn btn--outline btn--sm" href="#start">С чего начать</a>
       <a class="btn btn--outline btn--sm" href="#katalog">Каталог книг</a>
       <a class="btn btn--outline btn--sm" href="#istochniki">Источники</a>
+      <a class="btn btn--outline btn--sm" href="#read-sources">Как работать с источниками</a>
     </nav>
   </PageHero>
 
@@ -43,6 +44,17 @@ const lead = 'Книги, разобранные в канале. У каждо�
       </div>
     </section>
   )}
+
+  <section class="container section--tight" id="read-sources" aria-labelledby="read-sources-h">
+    <div class="stack" style="--stack-gap:18px; max-width:72ch">
+      <h2 class="h2" id="read-sources-h">Как работать с источниками</h2>
+      <p class="lead">Найдите документ, разберитесь в его датах и сравните свидетельства. Эти материалы помогут читать историю внимательнее.</p>
+      <a class="text-link" href={href.source('zodchiy-plan-dalnego-1904')}>Читаем план Дальнего: от подписи к истории площади</a>
+      <a class="text-link" href={href.note('arhivy-russko-yaponskoi-voiny')}>Где искать документы о русско-японской войне</a>
+      <a class="text-link" href={href.note('dvoinye-daty-staryi-i-novyi-stil')}>Как понимать старый и новый стиль</a>
+      <a class="text-link" href={href.note('posleznanie-kak-sudit-o-port-arture')}>Как избежать знания задним числом</a>
+    </div>
+  </section>
 
   <section class="section section--tight" id="katalog" aria-labelledby="katalog-h">
     <div class="container">
