@@ -1,0 +1,64 @@
+{
+  "chzhunshan-za-chas": {
+    "checkedAt": "2026-11-15",
+    "start": "中山广场 — begin on the outer pavement on whichever side is convenient. If arriving by metro, follow signs for 中山广场; no particular station exit is prescribed.",
+    "finish": "中国银行大连市分行（横滨正金银行大连支店旧址）, 中山广场9号 — view the former Yokohama Specie Bank from the street.",
+    "walkingMinutes": [
+      15,
+      25
+    ],
+    "visitMinutes": [
+      30,
+      35
+    ],
+    "distanceNote": "Walking and viewing times are editorial estimates. Roughly 1 km including detours and crossings: an editorial estimate of the walk’s scale. The distance has not been measured along the current pedestrian network; check the route in Amap’s “步行” mode.",
+    "access": "This walk uses public pavements to view exteriors. It makes no claim about opening hours, prices or permission to enter buildings. Temporary barriers and the availability of crossings have not been checked on site; follow signs and current walking navigation.",
+    "stops": [
+      {
+        "place": "nikolaevskaya-ploshchad",
+        "navigationName": "中山广场",
+        "navigationAddress": "辽宁省大连市中山区中山广场",
+        "nextLeg": "Next: 大连宾馆, 中山广场4号, on the south side of the square. The Amap walking link routes to the hotel along the pedestrian network. Follow marked crossings; if the app changes mode, select “步行”. Do not walk straight across the roundabout."
+      },
+      {
+        "place": "gostinitsa-yamato",
+        "navigationName": "大连宾馆（大和旅馆旧址）",
+        "navigationAddress": "辽宁省大连市中山区中山广场4号",
+        "nextLeg": "Continue to 中国银行大连市分行, 中山广场9号, on the north side. Use the outer pavements, following signs and the Amap walking link for crossings. Walk around the square rather than straight across the carriageway."
+      },
+      {
+        "place": "bank-yokohama",
+        "navigationName": "中国银行大连市分行（横滨正金银行大连支店旧址）",
+        "navigationAddress": "辽宁省大连市中山区中山广场9号",
+        "nextLeg": ""
+      }
+    ],
+    "sources": [
+      {
+        "title": "Urban memory: Dalian’s historic buildings in Lüshun Museum photographs",
+        "url": "https://lvshunmuseum.cn/Exhibition/ProductDetail.aspx?ID=238",
+        "note": "The museum explains the continuity between Russian planning and Japanese construction; this is historical context, not crossing guidance."
+      },
+      {
+        "title": "Zhongshan Square architectural ensemble — Liaoning Department of Culture and Tourism",
+        "url": "https://whly.ln.gov.cn/whly/wlzt/lnww/zdwwbhdw/851036343A2D4CCBB6CE68CDB7890470/index.shtml",
+        "note": "Former hotel: No. 4 address, completion in 1914 and façade details. Repair information belongs to the publication date, 27 August 2020."
+      },
+      {
+        "title": "Bank of China: main institutions in mainland China",
+        "url": "https://www.boc.cn/aboutboc/ab6/200812/t20081211_143780.html",
+        "note": "The “大连市分行” entry gives 中山广场9号. It establishes neither visitor access nor opening hours."
+      },
+      {
+        "title": "Dalian historic buildings — article in the municipal library’s digital collection",
+        "url": "https://www.dl-library.net.cn/wenxian/dlnet/content.php?id=210387",
+        "note": "A reprinted 2011 article dates the bank to 1909. This is secondary material hosted by the library, not a building file."
+      },
+      {
+        "title": "Liaoning heritage authority’s response on protecting historic trading-port sites",
+        "url": "https://whly.ln.gov.cn/whly/zfxxgk/fdzdgknr/jyta/szxta/szxsejschy2021n/EEEBA14210114756836636060CD80742/index.shtml",
+        "note": "The official response of 28 October 2021 names 横滨正金银行大连支店旧址 as a protected site; it does not establish interior access."
+      }
+    ]
+  }
+}

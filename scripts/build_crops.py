@@ -192,7 +192,7 @@ def render(pid, meta, src_im):
         else:
             box = window(w, h, tw, th, f['x'] / 100, f['y'] / 100, face, f.get('ty', 0.36))
             out = im.crop(box).resize((tw, th), Image.LANCZOS)
-        if kind not in NO_MARK_KINDS:
+        if kind not in NO_MARK_KINDS and AL.CFG.get(str(pid), {}).get('watermark', True):
             out = watermark(out)
         res[name] = out
     return res, (face is not None, fit_mode)

@@ -7,6 +7,10 @@ import PageHero from '../../components/PageHero.astro';
 import Unsure from '../../components/Unsure.astro';
 import MapFigure from '../../components/MapFigure.astro';
 import MiniMap from '../../components/map/MiniMap.astro';
+import WalkOverview from '../../components/routes/WalkOverview.astro';
+import WalkNavigation from '../../components/routes/WalkNavigation.astro';
+import { walkGuide } from '../../lib/walks';
+import { fmtKm } from '../../components/map/geo';
 import { routeArt } from '../../lib/art';
 import { intlLocale } from '../../i18n/locale';
 import { routes, href, img, imgCrop, plural, type Route } from '../../lib/data';
@@ -17,6 +21,7 @@ export function getStaticPaths() {
 }
 interface Props { r: Route }
 const { r } = Astro.props;
+const walk = walkGuide(r);
 const author = routeAuthor(r);
 const stops = routeStops(r);
 const cover = routeCover(r);
@@ -29,7 +34,7 @@ const points = stops.filter((s) => s.p).map((s, i) => ({ lat: s.p!.lat, lng: s.p
 const others = sortedRoutes().filter((x) => x.slug !== r.slug).slice(0, 4);
 const mapHref = href.mapRoute(r.slug);
 const routeMap = ({ 'russkiy-dalniy-peshkom': 68, 'vostochnyy-front': 32, 'zapadnyy-front': 32 } as Record<string, number>)[r.slug] ?? null;
-const km = `${String(r.distance_km).replace('.', ',')} км`;
+const km = fmtKm(r.distance_km);
 ---
 <Base title={r.title} description={r.dek} image={artUrl ?? img(cover)} section="routes">
   <PageHero
@@ -37,7 +42,7 @@ const km = `${String(r.distance_km).replace('.', ',')} км`;
     eyebrow={author ? `Маршрут от авторов · ${author}` : 'Маршрут'}
     lead={r.dek}
     crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Маршруты', href: href.routes() }, { label: r.title }]}
-    image={artUrl}
+    image={artUrl ?? imgCrop(cover, '3x2')}
     transitionName={`route-${r.slug}`}
   >
     <dl class="rt-facts">
@@ -58,7 +63,9 @@ const km = `${String(r.distance_km).replace('.', ',')} км`;
     </div>
   </PageHero>
 
-  <section class="section section--tight" aria-labelledby="rt-map">
+  {walk && <WalkOverview guide={walk} />}
+
+  <section class="section section--tight rt-map-section" aria-labelledby="rt-map">
     <div class="container stack" style="--stack-gap:16px">
       <div class="section-head" style="margin-bottom:0">
         <h2 class="h2" id="rt-map">Схема</h2>
@@ -86,7 +93,7 @@ const km = `${String(r.distance_km).replace('.', ',')} км`;
         </div>
         <ol class="rt-list" role="list">
           {stops.map((s, i) => (
-            <li class="rt-stop reveal" style={`--d:${Math.min(i, 5) * 70}ms`}>
+            <li class:list={['rt-stop reveal', { 'rt-stop--walk': !!walk }]} style={`--d:${Math.min(i, 5) * 70}ms`}>
               <span class="rt-stop__n" aria-hidden="true">{i + 1}</span>
               <div class="rt-stop__body">
                 {s.p ? (
@@ -105,6 +112,7 @@ const km = `${String(r.distance_km).replace('.', ',')} км`;
                   </h3>
                   {s.p?.name_zh && s.p.name_zh !== '—' && <span class="rt-stop__zh" lang="zh">{s.p.name_zh.split(';')[0]}</span>}
                   {s.note && <p class="rt-stop__note"><LinkedText text={s.note} context={mentions} /></p>}
+                  {walk && s.p && <WalkNavigation stop={walk.stops[i]} lat={s.p.lat} lng={s.p.lng} index={i} next={stops[i + 1]?.p ? { lat: stops[i + 1].p!.lat, lng: stops[i + 1].p!.lng, name: walk.stops[i + 1].navigationName } : undefined} />}
                   {s.p && isUncertain(s.p) && <Unsure text={s.p.coord_confidence === 'low' ? 'точка приблизительная, уточняется' : 'сведения уточняются'} />}
                 </div>
               </div>
@@ -113,11 +121,20 @@ const km = `${String(r.distance_km).replace('.', ',')} км`;
         </ol>
       </div>
       <aside class="stack rt-aside" style="--stack-gap:16px">
-        {r.practical && (
+        {r.practical && !walk && (
           <div class="panel panel--frost stack" style="--stack-gap:10px">
             <h2 class="h3">Практические советы</h2>
             <p><LinkedText text={r.practical} context={mentions} /></p>
             <p class="meta">Часы работы и цены меняются — уточните перед поездкой.</p>
+          </div>
+        )}
+        {walk && (
+          <div class="panel stack walk-sources" style="--stack-gap:12px">
+            <h2 class="h3">Сведения о маршруте</h2>
+            <p class="meta">Проверено по источникам · <time datetime={walk.checkedAt}>{new Intl.DateTimeFormat(intlLocale, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(walk.checkedAt))}</time></p>
+            <ol class="walk-sources__list">
+              {walk.sources.map(source => <li><a class="link" href={source.url} target="_blank" rel="noopener">{source.title} ↗</a><p>{source.note}</p></li>)}
+            </ol>
           </div>
         )}
         <div class="panel stack rt-own" style="--stack-gap:10px">
@@ -172,6 +189,7 @@ const km = `${String(r.distance_km).replace('.', ',')} км`;
   .rt-facts dt { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--steel); }
   .rt-facts dd { margin: 2px 0 0; font-size: 17px; font-weight: 600; color: #fff; }
   .rt-actions { margin-top: 8px; }
+  .rt-actions button { background:transparent; }
   .rt-copied { color: var(--steel); }
   .rt-split > :last-child { flex: 1 1 320px; }
   .rt-aside { align-self: flex-start; }
@@ -188,6 +206,20 @@ const km = `${String(r.distance_km).replace('.', ',')} км`;
   .rt-stop__title a:hover { text-decoration-color: var(--accent); }
   .rt-stop__zh { font-size: 14px; color: var(--ink-3); }
   .rt-stop__note { font-size: 16px; line-height: 1.55; color: var(--ink-2); }
+  .rt-stop--walk .rt-stop__body { flex-direction: column; }
+  .rt-stop--walk .rt-stop__media { flex-basis:auto; width:100%; }
+  .rt-stop--walk .rt-stop__media img { width:100%; aspect-ratio:2/1; }
+  .walk-sources__list { margin:0; padding-left:18px; display:grid; gap:16px; font-size:14px; line-height:1.55; }
+  .walk-sources__list p { margin:4px 0 0; color:var(--ink-3); }
+  @media print {
+    :global(.reveal) { opacity:1 !important; transform:none !important; animation:none !important; transition:none !important; }
+    :global(header), :global(footer), :global(.floating-actions), .rt-actions, .rt-more, .rt-own, .rt-stop__media, .rt-map-section { display:none !important; }
+    .rt-split { display:block; }
+    .rt-aside { position:static; margin-top:24px; }
+    .rt-stop { break-inside:avoid; opacity:1 !important; transform:none !important; }
+    .rt-stop__body { display:block; }
+    .rt-stop__n { color:#111; border:1px solid #111; }
+  }
   @media (max-width: 560px) {
     .rt-stop__body { flex-direction: column; }
     .rt-stop__media { flex-basis: auto; width: 100%; }

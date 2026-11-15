@@ -8,9 +8,13 @@
   "scripts": {
     "dev": "astro dev",
     "build": "node scripts/build_multilingual.mjs",
-    "check": "node scripts/check_data.mjs && node scripts/check_i18n.mjs && node scripts/check_mentions.mjs && node scripts/check_links.mjs",
+    "check": "node --test scripts/translation_workflow.test.mjs && node scripts/check_data.mjs && node scripts/check_i18n.mjs && node scripts/check_mentions.mjs && node scripts/check_links.mjs",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "translations:status": "node scripts/translation_workflow.mjs status",
+    "translations:prepare": "node scripts/translation_workflow.mjs prepare",
+    "translations:review": "node scripts/translation_workflow.mjs review",
+    "translations:test": "node --test scripts/translation_workflow.test.mjs"
   },
   "dependencies": {
     "astro": "^7.4.7",

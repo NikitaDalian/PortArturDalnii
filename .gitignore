@@ -4,3 +4,5 @@ dist/
 ../.builds/
 .DS_Store
 __pycache__/
+
+.translation-work/

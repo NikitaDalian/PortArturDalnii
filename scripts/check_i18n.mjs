@@ -1,12 +1,13 @@
 // Translation must never change routing, geography, relationships or source links.
 import fs from 'node:fs';
 import { translatedFiles, translationSources } from './translation_sources.mjs';
+import { reviewedBaselineStatus } from './translation_workflow.mjs';
 const root = new URL('../src/', import.meta.url);
 const read = (path) => JSON.parse(fs.readFileSync(new URL(path, root), 'utf8'));
 const files = translatedFiles;
 const invariant = new Set(['slug', 'series_slug', 'type', 'kind', 'country', 'group', 'city', 'coord_confidence', 'era', 'crop', 'level', 'layer', 'layers', 'season', 'articles', 'people', 'place', 'places', 'books', 'photos', 'cover', 'portrait', 'image', 'file', 'posts', 'review_post', 'tg_ids', 'lat', 'lng', 'polyline']);
 const errors = [];
-for (const key of ['id', 'section', 'status', 'ref', 'refs', 'checkedAt', 'photo', 'guide', 'original', 'originalLanguage']) invariant.add(key);
+for (const key of ['id', 'section', 'status', 'ref', 'refs', 'checkedAt', 'photo', 'guide', 'original', 'originalLanguage', 'navigationName', 'navigationAddress']) invariant.add(key);
 const releases = read('i18n/releases.json');
 function compare(original, translated, path, key = '') {
   if (original === null || typeof original !== 'object') {
@@ -35,6 +36,7 @@ function compare(original, translated, path, key = '') {
 }
 for (const language of ['en', 'zh']) {
   if (!releases[language]) continue;
+  errors.push(...reviewedBaselineStatus(language).errors);
   try {
     const reviewed = read(`i18n/${language}/source-manifest.json`);
     for (const [file, hash] of Object.entries(translationSources())) {

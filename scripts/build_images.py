@@ -87,7 +87,7 @@ def save_pair(pid, im, kind):
     c = AL.cap(pid, kind)
     if max(full.size) > c:
         full.thumbnail((c, c), Image.LANCZOS)
-    if kind not in NO_MARK_KINDS:
+    if kind not in NO_MARK_KINDS and AL.CFG.get(str(pid), {}).get('watermark', True):
         full = watermark(full)
     full.save(OUT / f'{pid}.webp', 'WEBP', quality=82, method=6)
     small = full.copy()
@@ -107,7 +107,7 @@ for p in json.loads((ROOT / 'src' / 'data' / 'photos.json').read_text(encoding='
     if big:  # увеличенная версия для просмотрщика
         b = im.copy()
         b.thumbnail((big, big), Image.LANCZOS)
-        if p['kind'] not in NO_MARK_KINDS:
+        if p['kind'] not in NO_MARK_KINDS and AL.CFG.get(str(pid), {}).get('watermark', True):
             b = watermark(b)
         b.save(OUT / f'{pid}-big.webp', 'WEBP', quality=80, method=6)
     save_pair(pid, im, p['kind'])

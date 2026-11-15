@@ -4976,5 +4976,24 @@
     "hero": false,
     "crop": "portrait",
     "notes": ""
+  },
+  {
+    "file": "photos/photo_392@archive.jpg",
+    "post_id": null,
+    "w": 1990,
+    "h": 2271,
+    "kind": "archival-photo",
+    "era": "russian",
+    "place": "port-arthur",
+    "people": [],
+    "quality": 4,
+    "hero": false,
+    "crop": "portrait",
+    "license": "Public domain",
+    "record_url": "https://commons.wikimedia.org/wiki/File:Desolation_of_the_terrible_siege_-_from_wrecked_home_looking_over_doomed_harbor_-_Port_Arthur_LCCN2005678309.jpg",
+    "subject": "Ruined home overlooking Port Arthur harbour, circa 1905",
+    "notes": "Left image of a stereograph. The publisher’s title is “Desolation of the terrible siege - from wrecked home looking over doomed harbor - Port Arthur”. The building and ship have not been identified; circa 1905 follows the LOC catalogue. The original scan is preserved unchanged; margins and the second view are cropped for the website. No channel watermark.",
+    "source": "Library of Congress / Underwood & Underwood (publisher); Wikimedia Commons copy",
+    "credit": "Underwood & Underwood (publisher), circa 1905. Library of Congress, LCCN 2005678309, ppmsca.07935. Commons: Public domain / Public Domain Mark 1.0; LOC: No known restrictions on publication. No renewal in Copyright office. https://www.loc.gov/pictures/item/2005678309/"
   }
 ]

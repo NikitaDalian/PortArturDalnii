@@ -625,5 +625,38 @@
         121.2517
       ]
     ]
-  }
+  },
+ {
+  "slug": "chzhunshan-za-chas",
+  "title": "Zhongshan in an hour",
+  "dek": "A circular square, the Yamato Hotel and Yokohama Specie Bank: a short self-guided walk in central Dalian, with all three stops viewed from outside.",
+  "duration": "45–60 min",
+  "distance_km": 1,
+  "transport": "walk",
+  "season": [
+   "spring",
+   "summer",
+   "autumn",
+   "winter"
+  ],
+  "difficulty": "easy",
+  "stops": [
+   {
+    "place": "nikolaevskaya-ploshchad",
+    "note": "Begin with the shape of the square: the circle and streets radiating from it. The layout comes from Russian Dalny; the hotel and bank ahead belong to Japanese Dairen.",
+    "minutes": 10
+   },
+   {
+    "place": "gostinitsa-yamato",
+    "note": "Find the arched canopy above the entrance, then follow the rhythm of columns across the façade. The former Yamato Hotel, now 大连宾馆, was completed in 1914.",
+    "minutes": 10
+   },
+   {
+    "place": "bank-yokohama",
+    "note": "Look up at the three domes and compare the bank’s strict symmetry with the hotel’s longer façade. This is the former Yokohama Specie Bank, built in 1909.",
+    "minutes": 10
+   }
+  ],
+  "practical": "A self-guided walk viewing buildings from outside. Start at 中山广场 and finish at 中国银行大连市分行, 中山广场9号. Allow about an hour for walking, crossings and three stops. The Amap walking link leads to the next stop; if the app changes mode, select “步行” (walking). Use marked crossings."
+ }
 ]

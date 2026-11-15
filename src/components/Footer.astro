@@ -7,8 +7,8 @@ import LanguageSwitch from './LanguageSwitch.astro';
   <div class="container site-footer__grid">
     <div class="stack" style="--stack-gap:10px">
       <span class="site-footer__brand">{t.site}</span>
-      <p class="muted" style="max-width:420px">{t.footer.about}</p>
-      <p class="site-footer__authors">Авторы: Виктория, историк, автор канала; Оксана, Русский клуб Даляня.</p>
+      <p class="muted" style="max-width:420px">Исторический Далянь и Порт-Артур: события, люди, книги, карта и маршруты. Три версии сайта — на русском, английском и китайском.</p>
+      <p class="site-footer__authors">Автор канала — Виктория, историк и преподаватель истории.</p>
     </div>
     <nav class="stack" style="--stack-gap:10px" aria-label="Разделы">
       <a href={href.layers()}>{t.nav.layers}</a>
@@ -31,7 +31,7 @@ import LanguageSwitch from './LanguageSwitch.astro';
       <LanguageSwitch />
     </div>
   </div>
-  <div class="container site-footer__bottom">{t.footer.rights}</div>
+  <div class="container site-footer__bottom">При использовании текстов и фотографий автора просим указывать ссылку на <a href={TG_CHANNEL} rel="noopener">канал</a>. Для материалов сторонних архивов и собраний действуют условия оригинала. Сведения об авторах, источниках и лицензиях — на странице <a href={href.credits()}>«Иллюстрации и источники»</a>.</div>
 </footer>
 
 <style>

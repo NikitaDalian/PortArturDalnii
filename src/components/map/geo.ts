@@ -101,9 +101,9 @@ export const amapMarker = (lat: number, lng: number, name: string) => {
   return `https://uri.amap.com/marker?position=${h.toFixed(6)},${g.toFixed(6)}&name=${encodeURIComponent(name)}&coordinate=gaode&callnative=1`;
 };
 /** Навигация Amap до точки (мультиточечные маршруты uri.amap.com не поддерживает) */
-export const amapNav = (lat: number, lng: number, name: string) => {
+export const amapNav = (lat: number, lng: number, name: string, mode: 'car' | 'walk' = 'car') => {
   const [g, h] = wgsToGcj(lat, lng);
-  return `https://uri.amap.com/navigation?to=${h.toFixed(6)},${g.toFixed(6)},${encodeURIComponent(name)}&mode=car&policy=1&coordinate=gaode&callnative=1`;
+  return `https://uri.amap.com/navigation?to=${h.toFixed(6)},${g.toFixed(6)},${encodeURIComponent(name)}&mode=${mode}${mode === 'car' ? '&policy=1' : ''}&coordinate=gaode&callnative=1`;
 };
 export const yandexPoint = (lat: number, lng: number) => `https://yandex.ru/maps/?pt=${lng},${lat}&z=16&l=map`;
 /** Маршрут через все точки в Яндекс.Картах */

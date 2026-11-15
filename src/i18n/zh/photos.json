@@ -4976,5 +4976,24 @@
     "hero": false,
     "crop": "portrait",
     "notes": ""
+  },
+  {
+    "file": "photos/photo_392@archive.jpg",
+    "post_id": null,
+    "w": 1990,
+    "h": 2271,
+    "kind": "archival-photo",
+    "era": "russian",
+    "place": "port-arthur",
+    "people": [],
+    "quality": 4,
+    "hero": false,
+    "crop": "portrait",
+    "license": "Public domain",
+    "record_url": "https://commons.wikimedia.org/wiki/File:Desolation_of_the_terrible_siege_-_from_wrecked_home_looking_over_doomed_harbor_-_Port_Arthur_LCCN2005678309.jpg",
+    "subject": "俯瞰旅顺港的毁损房屋，约1905年",
+    "notes": "立体照片的左幅。出版者原题为“Desolation of the terrible siege - from wrecked home looking over doomed harbor - Port Arthur”。房屋及画面中的舰船尚未确认；约1905年的年代依据美国国会图书馆目录。原始扫描件完整保留；网站图片裁去边框及右幅，未添加频道水印。",
+    "source": "美国国会图书馆 / Underwood & Underwood（出版者）；维基共享资源副本",
+    "credit": "Underwood & Underwood（出版者），约1905年。美国国会图书馆，LCCN 2005678309，ppmsca.07935。维基共享资源：公有领域 / Public Domain Mark 1.0；馆方声明：未发现出版限制，版权局无续展记录。https://www.loc.gov/pictures/item/2005678309/"
   }
 ]

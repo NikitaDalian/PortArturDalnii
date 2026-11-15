@@ -42,7 +42,7 @@ export const sortedRoutes = () => [...routes].sort((a, b) => Number(!!routeAutho
 
 export const routeStops = (r: Route) => (r.stops as any[]).map((s) => ({ ...s, p: placeBySlug.get(s.place) as Place | undefined }));
 export const routePoints = (r: Route): LL[] => routeStops(r).filter((s) => s.p).map((s) => [s.p!.lat, s.p!.lng] as LL);
-export const routeYandex = (r: Route) => yandexRoute(routePoints(r));
+export const routeYandex = (r: Route) => yandexRoute(routePoints(r), r.transport === 'walk' ? 'pd' : 'auto');
 export const routeCover = (r: Route) => {
   for (const s of routeStops(r)) {
     const f = s.p?.photos?.[0];

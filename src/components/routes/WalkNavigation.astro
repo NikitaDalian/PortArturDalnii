@@ -1,0 +1,49 @@
+---
+import type { WalkStop } from '../../lib/walks';
+import { amapNav } from '../map/geo';
+interface Props { stop: WalkStop; lat: number; lng: number; index: number; next?: { lat: number; lng: number; name: string } }
+const { stop, lat, lng, index, next } = Astro.props;
+const id = `walk-address-${index}`;
+---
+<div class="walk-nav">
+  <label class="meta" for={id}>Адрес для навигатора</label>
+  <p class="walk-nav__name" lang="zh-Hans">{stop.navigationName}</p>
+  <textarea id={id} class="walk-nav__address" lang="zh-Hans" readonly rows="2">{stop.navigationAddress}</textarea>
+  <div class="walk-nav__actions">
+    <a class="link" href={amapNav(lat, lng, stop.navigationName, 'walk')} target="_blank" rel="noopener">К этой остановке в Amap ↗</a>
+    <button class="walk-nav__copy" type="button" data-copy-address={id}>Скопировать адрес</button>
+  </div>
+  <span class="walk-nav__status meta" role="status" aria-live="polite"></span>
+  {stop.nextLeg && <div class="walk-nav__next"><p>{stop.nextLeg}</p>{next && <a class="link" href={amapNav(next.lat, next.lng, next.name, 'walk')} target="_blank" rel="noopener"><span>К следующей остановке в Amap</span> → <span lang="zh-Hans">{next.name}</span></a>}</div>}
+</div>
+<script>
+  function initWalkAddresses() {
+    document.querySelectorAll<HTMLButtonElement>('[data-copy-address]:not([data-ready])').forEach(button => {
+      button.dataset.ready = '1';
+      button.addEventListener('click', async () => {
+        const field = document.getElementById(button.dataset.copyAddress!) as HTMLTextAreaElement | null;
+        const status = button.closest('.walk-nav')?.querySelector('.walk-nav__status');
+        if (!field || !status) return;
+        try {
+          await navigator.clipboard.writeText(field.value);
+          status.textContent = 'Адрес скопирован';
+        } catch {
+          field.focus(); field.select();
+          status.textContent = 'Выделите и скопируйте адрес';
+        }
+      });
+    });
+  }
+  document.addEventListener('astro:page-load', initWalkAddresses);
+</script>
+<style>
+  .walk-nav { margin-top:14px; padding-top:16px; border-top:1px solid var(--line); }
+  .walk-nav__name { font-weight:600; margin:6px 0 4px; }
+  .walk-nav__address { display:block; width:100%; min-width:0; resize:none; padding:8px 10px; color:var(--ink-2); background:var(--paper); border:1px solid var(--line); border-radius:0; font:inherit; font-size:14px; line-height:1.5; }
+  .walk-nav__actions { display:flex; align-items:center; flex-wrap:wrap; gap:8px 20px; margin-top:8px; }
+  .walk-nav__copy { appearance:none; background:none; border:0; padding:8px 0; font:inherit; font-size:13px; text-decoration:underline; text-underline-offset:3px; cursor:pointer; color:var(--ink-2); }
+  .walk-nav__status:not(:empty) { display:block; margin-top:8px; }
+  .walk-nav__next { margin:12px 0 0; font-size:14px; line-height:1.65; color:var(--ink-2); }
+  .walk-nav__next strong { color:var(--navy); margin-right:.35em; }
+  @media print { .walk-nav__actions, .walk-nav__status { display:none; } .walk-nav__address { border:0; padding:0; } }
+</style>

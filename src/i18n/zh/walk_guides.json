@@ -1,0 +1,64 @@
+{
+  "chzhunshan-za-chas": {
+    "checkedAt": "2026-11-15",
+    "start": "中山广场：从方便到达的一侧外围人行道开始。乘地铁到达后，按“中山广场”指示前往；本路线不指定车站出口。",
+    "finish": "中国银行大连市分行（横滨正金银行大连支店旧址），中山广场9号：在街边欣赏银行旧址外观。",
+    "walkingMinutes": [
+      15,
+      25
+    ],
+    "visitMinutes": [
+      30,
+      35
+    ],
+    "distanceNote": "步行与停留时间均为编辑估算。连同绕行和过街，按约1公里安排。这是编辑对步行规模的估算，未经现行步行路网测距；具体走法请以高德地图“步行”导航为准。",
+    "access": "本路线仅安排沿公共人行道欣赏外观，不涉及建筑内部参观，也不提供开放时间、门票或入内许可信息。临时围挡与过街设施的现状未作实地核查，请留意现场标示及实时步行导航。",
+    "stops": [
+      {
+        "place": "nikolaevskaya-ploshchad",
+        "navigationName": "中山广场",
+        "navigationAddress": "辽宁省大连市中山区中山广场",
+        "nextLeg": "下一站是广场南侧的大连宾馆，中山广场4号。高德步行链接会按步行路网导航至宾馆，请沿标示的过街设施前往；若应用切换了出行方式，请重新选择“步行”。不要沿直线穿越环形车道。"
+      },
+      {
+        "place": "gostinitsa-yamato",
+        "navigationName": "大连宾馆（大和旅馆旧址）",
+        "navigationAddress": "辽宁省大连市中山区中山广场4号",
+        "nextLeg": "随后前往广场北侧的中国银行大连市分行，中山广场9号。继续沿外围人行道走，按现场标示和高德步行链接选择过街处；这段路需要绕行广场，并非直穿车道。"
+      },
+      {
+        "place": "bank-yokohama",
+        "navigationName": "中国银行大连市分行（横滨正金银行大连支店旧址）",
+        "navigationAddress": "辽宁省大连市中山区中山广场9号",
+        "nextLeg": ""
+      }
+    ],
+    "sources": [
+      {
+        "title": "旅顺博物馆：城市记忆——馆藏老照片中的大连市内老建筑",
+        "url": "https://lvshunmuseum.cn/Exhibition/ProductDetail.aspx?ID=238",
+        "note": "介绍俄国城市规划与日本殖民时期续建的关系，提供历史背景，不提供过街路线。"
+      },
+      {
+        "title": "辽宁省文化和旅游厅：中山广场建筑群",
+        "url": "https://whly.ln.gov.cn/whly/wlzt/lnww/zdwwbhdw/851036343A2D4CCBB6CE68CDB7890470/index.shtml",
+        "note": "记载大和旅馆旧址位于中山广场4号、1914年竣工，并描述立面细节。维修情况为2020年8月27日发布时的信息。"
+      },
+      {
+        "title": "中国银行：中国内地主要机构名录",
+        "url": "https://www.boc.cn/aboutboc/ab6/200812/t20081211_143780.html",
+        "note": "“大连市分行”条目列明中山广场9号地址，不能据此推定游客可入内或营业时间。"
+      },
+      {
+        "title": "大连图书馆地方文献：伤疤今犹在警钟需长鸣",
+        "url": "https://www.dl-library.net.cn/wenxian/dlnet/content.php?id=210387",
+        "note": "转载2011年文章，记载横滨正金银行建于1909年。属图书馆收录的二手文献，并非建筑档案。"
+      },
+      {
+        "title": "辽宁省文化和旅游厅：关于辽宁商埠文化遗址保护与利用提案的答复",
+        "url": "https://whly.ln.gov.cn/whly/zfxxgk/fdzdgknr/jyta/szxta/szxsejschy2021n/EEEBA14210114756836636060CD80742/index.shtml",
+        "note": "2021年10月28日官方答复将横滨正金银行大连支店旧址列为保护对象，未说明内部参观条件。"
+      }
+    ]
+  }
+}
