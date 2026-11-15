@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Crumbs from '../../components/Crumbs.astro';
 import LinkedText from '../../components/LinkedText.astro';
 import EssayIllustration from '../../components/reading/EssayIllustration.astro';
+import HardwareLinks from '../../components/hardware/HardwareLinks.astro';
 import { mentionContext } from '../../lib/mentions';
 import { essays, type Essay } from '../../lib/essays';
 import { href, articleBySlug, placeBySlug, sourceBySlug, layerByKey, fmtDate } from '../../lib/data';
@@ -46,6 +47,7 @@ const periods = e.periods.map(layerByKey).filter(Boolean);
         <div class="prose">{s.paragraphs.map(p=><p><LinkedText text={p} context={mentions} /></p>)}</div>
         <p class="meta essay-refs">Источники: {s.refs.map((ref,i)=><>{i>0&&', '}<a href={`#source-${ref}`}>[{ref}]</a></>)}</p>
       </section>)}
+      <HardwareLinks kind="essays" slug={e.slug} />
       <section class="essay-section essay-sources" id="essay-sources" aria-labelledby="sources-title">
         <h2 id="sources-title">Источники</h2>
         <details class="essay-limits" data-pagefind-ignore>

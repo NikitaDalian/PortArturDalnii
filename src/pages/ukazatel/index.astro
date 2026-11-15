@@ -12,13 +12,13 @@ const byLetter = letters.map((l) => ({ l, items: entries.filter((e) => e.letter 
 const groups = Object.keys(GROUP_LABELS) as Group[];
 const groupCount = (g: Group) => entries.filter((e) => e.group === g).length;
 const id = (l: string) => 'b-' + encodeURIComponent(l).replace(/%/g, '');
-const SHORT: Record<Group, string> = { people: 'Люди', places: 'Места', books: 'Книги', series: 'Серии' };
+const SHORT: Record<Group, string> = { people: 'Люди', places: 'Места', books: 'Книги', series: 'Серии', ships:'Корабли', weapons:'Вооружение' };
 ---
-<Base searchable={false} title="Указатель А–Я" description={`Указатель имён, мест, книг и серий: ${entries.length} записей со ссылками на заметки канала.`} section="notes">
+<Base searchable={false} title="Указатель А–Я" description="Люди, места, книги, серии, корабли и вооружение — алфавитный указатель сайта." section="notes">
   <PageHero
     title="Указатель А–Я"
     eyebrow={`${entries.length} ${plural(entries.length, 'запись', 'записи', 'записей')}`}
-    lead="Как в конце книги: люди, места, книги и серии по алфавиту. У каждой записи — число заметок и ссылки на них."
+    lead="Как в конце книги: люди, места, книги, серии, корабли и вооружение по алфавиту. Отсюда можно открыть справку и связанные с ней заметки."
     crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Заметки', href: href.notes() }, { label: 'Указатель' }]}
   />
 

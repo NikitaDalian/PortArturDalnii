@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import EssayCards from '../../components/reading/EssayCards.astro';
+import HardwareLinks from '../../components/hardware/HardwareLinks.astro';
 import { essays } from '../../lib/essays';
 import LinkedText from '../../components/LinkedText.astro';
 import { mentionContext } from '../../lib/mentions';
@@ -63,6 +64,7 @@ const placeEssays = essays.filter(e => e.relatedPlaces.includes(p.slug));
   </PageHero>}
 
   {dossier && <PlaceDossier dossier={dossier} />}
+  <div class="container"><HardwareLinks kind="places" slug={p.slug} /></div>
 
   <section class="section section--tight" id="na-meste">
     {dossier && <div class="container"><h2 class="h2 pl-practical-title">На месте</h2></div>}

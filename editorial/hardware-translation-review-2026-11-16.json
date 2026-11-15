@@ -1,0 +1,57 @@
+[
+  {
+    "language": "en",
+    "review": {
+      "status": "accepted",
+      "sha256": "176ddfeff825d3a4804000ea3bec46402905cca13d8da66dcc4797907387b783",
+      "reviewer": "hardware_guns (independent of EN author)",
+      "records": 11,
+      "reviewedAt": "2026-11-16",
+      "notes": [
+        "Полностью прочитаны все 11 EN карточек и повторно прочитана исправленная версия указанного SHA.",
+        "Исправлены неестественная фраза о защите Bayan и перечень задач Novik.",
+        "Имена, числовые значения, календарные даты, оговорки о боеприпасах, установках и пределах проверки сопоставлены с принятой RU коллекцией. Читаемые поля переведены; архивный шифр сохранён.",
+        "Проверены неизменность структуры, идентификаторов, связей, URL, изображений и числовых листьев."
+      ],
+      "issues": []
+    }
+  },
+  {
+    "language": "zh",
+    "review": {
+      "verdict": "accepted",
+      "sha256": "b28b3acce052a6c2a80b0626cf9994fd869e4c2937dbfba93e7bff9d9d747685",
+      "reviewer": "hardware_other_ships",
+      "author": "hardware_guns",
+      "scope": "Independent complete reading of all eleven records against accepted Russian, including prose, specifications, timelines, crew, armament, source metadata, limitations and image metadata.",
+      "assessment": "No other historical, numerical, naming or readability blockers found during full reading. Re-read corrected exact file before acceptance.",
+      "resolvedFindings": [
+        {
+          "severity": "required",
+          "path": "mikasa.images[1].caption / credit",
+          "finding": "Southsea is rendered as 南海城, an unsupported place name. Preserve 英国Southsea."
+        },
+        {
+          "severity": "required",
+          "path": "varyag.sections creation, paragraph 2",
+          "finding": "炮手无懈可击 means impeccable rather than invulnerable. Use 火力强大并不意味着炮手就能免受伤害 or equivalent."
+        },
+        {
+          "severity": "required",
+          "path": "japanese-280-howitzer.sources[5].locator",
+          "finding": "Preserve the archival identifier 戦役-写真-43 exactly; translate descriptive wording only."
+        },
+        {
+          "severity": "minor",
+          "path": "bayan.sources[4].note",
+          "finding": "Remove accidental space in 未用于 确定."
+        }
+      ],
+      "notes": [
+        "Author corrected all three required translations and the accidental space. Corrected wording and surrounding context re-read against Russian; historical distinctions retained.",
+        "Complete independent reading covered all eleven records and readable metadata. Recursive structure and invariant validation passed. No remaining factual or readability blockers."
+      ],
+      "validationErrors": []
+    }
+  }
+]

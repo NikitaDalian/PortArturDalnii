@@ -9,6 +9,7 @@ const items = primaryNavigation();
 const activeSection = navigationSection(section);
 // Второстепенные разделы — в мобильном меню (на десктопе они в «Заметках» и подвале)
 const extra = [
+  { label: 'Корабли и вооружение', href: href.hardwareIndex() },
   { label: 'О проекте', href: href.about() },
   { label: 'Сезоны', href: href.seasons() },
   { label: 'Указатель А–Я', href: href.index() },

@@ -1,5 +1,6 @@
 // Semantic tags and reciprocal links must resolve before rendering pages.
 import { readFileSync, existsSync } from 'node:fs';
+import { validateHardware } from './hardware_validation.mjs';
 const read = (name) => JSON.parse(readFileSync(new URL(`../src/data/${name}.json`, import.meta.url), 'utf8'));
 const names = ['articles', 'people', 'places', 'books', 'sources', 'series'];
 const data = Object.fromEntries(names.map((name) => [name, read(name)]));
@@ -114,6 +115,10 @@ for (const [slug, reading] of Object.entries(read('document_readings'))) {
   const sectionIds = reading.sections.map(section => section.id);
   if (new Set(sectionIds).size !== sectionIds.length) errors.push(`${slug}: duplicate document sections`);
 }
+errors.push(...validateHardware(read('hardware'),{
+  assetsExist:file=>existsSync(new URL(`../public${file}`,import.meta.url)),
+  people:maps.people,places:maps.places,notes:maps.articles,essays:new Set(essays.map(item=>item.slug)),sources:maps.sources,periods:validPeriods,
+}));
 if (errors.length) {
   console.error(errors.join('\n'));
   process.exit(1);

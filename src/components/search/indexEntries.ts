@@ -4,8 +4,9 @@ import {
 } from '../../lib/data';
 import { invertName, byDate } from '../notes/lib';
 import { locale, intlLocale } from '../../i18n/locale';
+import { hardware } from '../../lib/hardware';
 
-export type Group = 'people' | 'places' | 'books' | 'series';
+export type Group = 'people' | 'places' | 'books' | 'series' | 'ships' | 'weapons';
 export interface Entry {
   group: Group;
   label: string;        // как печатается в указателе
@@ -18,7 +19,7 @@ export interface Entry {
 }
 
 export const GROUP_LABELS: Record<Group, string> = {
-  people: 'Люди', places: 'Места', books: 'Книги и источники', series: 'Серии',
+  people: 'Люди', places: 'Места', books: 'Книги и источники', series: 'Серии', ships:'Корабли', weapons:'Вооружение',
 };
 
 const clean = (s: string) =>
@@ -43,6 +44,7 @@ function make(group: Group, label: string, sortBase: string, link: string | null
 
 export function buildIndex(): Entry[] {
   const out: Entry[] = [];
+  hardware.forEach(item=>out.push(make(item.kind==='ship'?'ships':'weapons',item.shortName,item.shortName,href.hardware(item.slug),notesOf(note=>item.relatedNotes.includes(note.slug)),item.category)));
 
   // люди
   people.forEach((p) => {

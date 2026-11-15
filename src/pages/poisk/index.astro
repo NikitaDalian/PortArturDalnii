@@ -6,18 +6,18 @@ import { href, url, TYPES } from '../../lib/data';
 import { fallbackItems } from '../../components/search/fallbackData';
 
 const POPULAR = ['Витте', 'Кондратенко', 'Укрепление № 5', 'Пикуль', 'Дальний'];
-const TABS = ['Статьи', 'Заметки', 'Лица', 'Места', 'Книги'];
+const TABS = ['Статьи', 'Заметки', 'Лица', 'Места', 'Книги', 'Корабли', 'Вооружение'];
 const typeColors = Object.fromEntries(Object.entries(TYPES).map(([k, v]) => [k, { label: v.label, color: v.color }]));
 const cfg = { base: url('/'), pagefind: url('/pagefind/pagefind.js'), types: typeColors,
-  tabs: { essays: 'Статьи', notes: 'Заметки', people: 'Лица', places: 'Места', books: 'Книги' },
+  tabs: { essays: 'Статьи', notes: 'Заметки', people: 'Лица', places: 'Места', books: 'Книги', ships:'Корабли', weapons:'Вооружение' },
 };
 ---
-<Base searchable={false} title="Поиск" description="Поиск по заметкам, людям, местам и книгам сайта «Портъ-Артуръ и Дальнiй»." section={null}>
+<Base searchable={false} title="Поиск" description="Поиск по статьям, заметкам, людям, местам, книгам, кораблям и вооружению." section={null}>
   <div class="sp" data-pagefind-ignore="all">
     <section class="dark sp-head page-top">
       <div class="container sp-head__inner">
         <Crumbs items={[{ label: 'Главная', href: href.home() }, { label: 'Поиск' }]} />
-        <p class="eyebrow eyebrow--accent">Заметки, лица, места и книги</p>
+        <p class="eyebrow eyebrow--accent">По всем разделам сайта</p>
         <h1 class="h1">Поиск</h1>
         <form class="sp-form" role="search" action={href.search()} method="get">
           <label class="sp-field">

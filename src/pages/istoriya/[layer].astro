@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import HardwareLinks from '../../components/hardware/HardwareLinks.astro';
 import LinkedText from '../../components/LinkedText.astro';
 import EssayCards from '../../components/reading/EssayCards.astro';
 import { essaysForPeriod } from '../../lib/essays';
@@ -137,6 +138,7 @@ const placesTitle = key === 'modern' ? 'Где искать следы сего�
     </section>
   )}
 
+  <div class="container section--tight"><HardwareLinks kind="periods" slug={key} /></div>
   <nav class="container section--tight layer-nav" aria-label="Переходы между эпохами">
     {prev ? (
       <a class="layer-nav__a" href={href.layer(prev.key)} rel="prev">

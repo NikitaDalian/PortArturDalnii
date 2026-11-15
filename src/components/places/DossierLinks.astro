@@ -2,6 +2,7 @@
 import { dossiers } from './dossiers';
 import { href } from '../../lib/data';
 import { essayLinks } from '../../lib/essays';
+import HardwareLinks from '../hardware/HardwareLinks.astro';
 interface Props { kind: 'notes' | 'people' | 'library'; slug: string }
 const { kind, slug } = Astro.props;
 const items = [
@@ -13,6 +14,7 @@ const items = [
   <h2 class="h3">Статьи по теме</h2>
   <ul>{items.map((d) => <li><a class="link" href={d.url}>{d.title}</a></li>)}</ul>
 </nav>}
+<HardwareLinks kind={kind} slug={slug} />
 <style>
   .dossier-links { --stack-gap: 12px; }
   ul { list-style: none; padding: 0; margin: 0; }

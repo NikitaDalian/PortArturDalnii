@@ -1,0 +1,25 @@
+---
+import type { Hardware } from '../../lib/hardware';
+import { href } from '../../lib/data';
+import { assetUrl } from '../../i18n/locale';
+interface Props { item: Hardware }
+const { item } = Astro.props;
+const photo = item.images[0];
+---
+<article class="hardware-row">
+  {photo && <a class="hardware-row__image" href={href.hardware(item.slug)} tabindex="-1" aria-hidden="true"><img src={assetUrl(photo.file)} alt="" width={photo.width} height={photo.height} loading="lazy" decoding="async" /></a>}
+  <div>
+    <p class="meta">{item.category}</p>
+    <h3><a href={href.hardware(item.slug)}>{item.name}</a></h3>
+    <p class="hardware-row__summary">{item.summary}</p>
+  </div>
+</article>
+<style>
+  .hardware-row { display:grid; grid-template-columns:minmax(160px,1fr) minmax(0,2fr); gap:28px; padding-block:28px; border-bottom:1px solid var(--line); align-items:center; }
+  .hardware-row__image { display:block; background:var(--frost); }
+  img { width:100%; height:auto; max-height:240px; display:block; object-fit:contain; }
+  h3 { font-size:clamp(23px,2.1vw,30px); line-height:1.2; margin:8px 0 12px; }
+  h3 a:hover { text-decoration:underline; text-underline-offset:4px; }
+  .hardware-row__summary { font-size:17px; line-height:1.65; color:var(--ink-2); max-width:65ch; }
+  @media(max-width:600px) { .hardware-row { grid-template-columns:1fr; gap:18px; } img { max-height:280px; } }
+</style>

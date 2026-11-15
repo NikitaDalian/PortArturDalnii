@@ -3,6 +3,8 @@ import Base from '../../../layouts/Base.astro';
 import PageHero from '../../../components/PageHero.astro';
 import { href, photos, tgPost, plural, TG_CHANNEL } from '../../../lib/data';
 import { AI_NOTE } from '../../../lib/art';
+import { hardware } from '../../../lib/hardware';
+import { essays } from '../../../lib/essays';
 
 const MARK = 'Портъ-Артуръ и Дальнiй · t.me/portartur_dalnii';
 const idOf = (p: any) => String(p.file).match(/photo_(\d+)@/)?.[1] ?? '';
@@ -71,6 +73,18 @@ const n = (x: number, a: string, b: string, c: string) => `${x} ${plural(x, a, b
         </ul>
       </div>
     ))}
+  </section>
+
+  <section class="section container cr" aria-labelledby="hardware-images-title">
+    <h2 id="hardware-images-title" class="h2">Корабли, вооружение и новые статьи</h2>
+    <p class="prose">Источники иллюстраций на справочных страницах и в самостоятельных статьях. Подписи и условия использования также приведены рядом с каждым изображением.</p>
+    <ul class="cr__list">
+      {hardware.flatMap(item=>item.images.map((picture,index)=><li class="cr__item" id={`hardware-${item.slug}-${index+1}`}>
+        <p><a class="link" href={href.hardware(item.slug)}>{item.name}</a> — {picture.caption}</p>
+        <p>{picture.credit}</p><p class="meta">{picture.license}</p><a class="link" href={picture.sourceUrl} target="_blank" rel="noopener">Запись в архиве</a>
+      </li>))}
+      {essays.filter(item=>item.illustration).map(item=><li class="cr__item"><p><a class="link" href={href.essay(item.slug)}>{item.title}</a> — {item.illustration!.caption}</p><p>{item.illustration!.credit}</p><a class="link" href={item.illustration!.sourceUrl} target="_blank" rel="noopener">Запись в архиве</a></li>)}
+    </ul>
   </section>
 
   <section class="paper section" aria-labelledby="tg-h">

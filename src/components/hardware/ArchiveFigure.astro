@@ -1,0 +1,26 @@
+---
+import { assetUrl } from '../../i18n/locale';
+import type { HardwareImage } from '../../lib/hardware';
+interface Props { picture: HardwareImage; eager?: boolean }
+const { picture:p, eager=false } = Astro.props;
+---
+<figure class="archive-figure">
+  <a href={assetUrl(p.file)} target="_blank" rel="noopener" aria-label="Открыть изображение крупнее">
+    <img src={assetUrl(p.file)} alt={p.alt} width={p.width} height={p.height} loading={eager ? 'eager' : 'lazy'} decoding="async" />
+  </a>
+  <figcaption>
+    <p>{p.caption}</p>
+    <details><summary>Источник и права</summary><p>{p.credit}</p><p>{p.license}</p><a href={p.sourceUrl} target="_blank" rel="noopener">Запись в архиве</a></details>
+  </figcaption>
+</figure>
+<style>
+  .archive-figure { margin:0; }
+  img { display:block; width:100%; height:auto; max-height:680px; object-fit:contain; background:var(--frost); }
+  figcaption { margin-top:12px; font-size:15px; line-height:1.65; color:var(--ink-2); }
+  details { margin-top:8px; font-size:13px; }
+  summary { cursor:pointer; width:fit-content; min-height:32px; }
+  details p { margin-block:8px; }
+  details a { text-decoration:underline; overflow-wrap:anywhere; }
+  a:focus-visible, summary:focus-visible { outline:2px solid var(--accent); outline-offset:4px; }
+  @media print { figure { break-inside:avoid; } }
+</style>

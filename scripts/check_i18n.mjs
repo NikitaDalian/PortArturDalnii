@@ -8,9 +8,14 @@ const files = translatedFiles;
 const invariant = new Set(['slug', 'series_slug', 'type', 'kind', 'country', 'group', 'city', 'coord_confidence', 'era', 'crop', 'level', 'layer', 'layers', 'season', 'articles', 'people', 'place', 'places', 'books', 'photos', 'cover', 'portrait', 'image', 'file', 'posts', 'review_post', 'tg_ids', 'lat', 'lng', 'polyline']);
 const errors = [];
 for (const key of ['id', 'section', 'status', 'ref', 'refs', 'checkedAt', 'photo', 'guide', 'original', 'originalLanguage', 'navigationName', 'navigationAddress']) invariant.add(key);
-for (const key of ['periods','sourceLanguages','relatedNotes','relatedPlaces','relatedPeople','relatedSources']) invariant.add(key);
+for (const key of ['periods','sourceLanguages','relatedNotes','relatedEssays','relatedPlaces','relatedPeople','relatedSources','weaponSlug','personSlug','countries','updatedAt']) invariant.add(key);
 const releases = read('i18n/releases.json');
 function compare(original, translated, path, key = '') {
+  // Local name aliases have different inflections and counts across languages.
+  if (key === 'aliases' && Array.isArray(original)) {
+    if (!Array.isArray(translated) || !translated.length || translated.some(value=>typeof value!=='string'||!value.trim()||value.length>90) || new Set(translated).size!==translated.length) errors.push(`${path}: invalid localized aliases`);
+    return;
+  }
   if (original === null || typeof original !== 'object') {
     if (typeof translated !== typeof original || (original === null && translated !== null)) errors.push(`${path}: changed value type`);
     else if ((typeof original !== 'string' || invariant.has(key) || /^(https?:\/\/|photos\/)/.test(original)) && original !== translated) errors.push(`${path}: changed invariant`);

@@ -1,0 +1,75 @@
+---
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import HardwareRow from '../../components/hardware/HardwareRow.astro';
+import { hardware } from '../../lib/hardware';
+import { href, COUNTRIES } from '../../lib/data';
+const groups = [{ kind:'ship', title:'Корабли' }, { kind:'weapon', title:'Вооружение' }];
+const countries = Object.keys(COUNTRIES).filter(country => hardware.some(item => item.countries.includes(country)));
+---
+<Base searchable={false} title="Корабли и вооружение" description="Корабли, орудия и их история: создание, служба, люди, основные характеристики и проверенные источники." section="notes">
+  <header class="dark hardware-head">
+    <div class="container">
+      <Crumbs items={[{label:'Главная',href:href.home()},{label:'Корабли и вооружение'}]} />
+      <h1 class="h1">Корабли и вооружение</h1>
+      <p class="lead">Как были устроены корабли и орудия, кто с ними служил и какую роль они сыграли в истории Порт-Артура и Дальнего. От замысла и первых испытаний до последнего похода.</p>
+      <nav class="cluster" aria-label="В этом разделе"><a href="#ship">Корабли</a><a href="#weapon">Вооружение</a></nav>
+    </div>
+  </header>
+  <div class="container hardware-catalog" data-hardware-catalog>
+    <form class="hardware-filters" role="search" onsubmit="return false">
+      <label><span>Найти в разделе</span><input type="search" name="q" placeholder="Название корабля или орудия" autocomplete="off" /></label>
+      <label><span>Страна службы</span><select name="country"><option value="">Все страны</option>{countries.map(country => <option value={country}>{COUNTRIES[country].label}</option>)}</select></label>
+    </form>
+    <p class="meta hardware-count" aria-live="polite"><span>Найдено записей:</span> <b data-count>{hardware.length}</b></p>
+    {groups.map(group => <section id={group.kind} class="hardware-group" data-group>
+      <h2 class="h2">{group.title}</h2>
+      {hardware.filter(item => item.kind === group.kind).map(item => <div data-record data-search={[item.name,item.shortName,item.category,...item.aliases].join(' ').toLocaleLowerCase()} data-countries={item.countries.join(' ')}><HardwareRow item={item} /></div>)}
+    </section>)}
+    <p class="hardware-empty" hidden>Ничего не найдено. Попробуйте другое название или выберите все страны.</p>
+  </div>
+</Base>
+<style>
+  .hardware-head { padding:32px 0 52px; }
+  h1 { margin:30px 0 22px; }
+  .lead { max-width:68ch; color:var(--mist); line-height:1.7; }
+  header nav { gap:28px; margin-top:24px; } header nav a { text-decoration:underline; text-underline-offset:5px; padding-block:8px; }
+  .hardware-catalog { max-width:1100px; padding-block:32px 80px; }
+  .hardware-filters { display:grid; grid-template-columns:2fr 1fr; gap:20px; }
+  label { display:flex; flex-direction:column; gap:8px; font-size:15px; }
+  input, select { min-width:0; width:100%; min-height:48px; border:1px solid var(--line-2); background:var(--paper); color:var(--ink); padding:10px 12px; font:inherit; }
+  input:focus-visible, select:focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
+  .hardware-count { margin-top:18px; }
+  .hardware-group { padding-top:44px; scroll-margin-top:100px; }
+  [hidden] { display:none !important; }
+  .hardware-empty { padding-block:48px; }
+  @media(max-width:550px) { .hardware-filters { grid-template-columns:1fr; } }
+</style>
+<script>
+  function initHardwareCatalog() {
+    const root = document.querySelector<HTMLElement>('[data-hardware-catalog]');
+    if (!root || root.dataset.ready) return;
+    root.dataset.ready='true';
+    const input=root.querySelector<HTMLInputElement>('input[name=q]')!;
+    const country=root.querySelector<HTMLSelectElement>('select[name=country]')!;
+    const normalize=(text:string)=>text.toLocaleLowerCase().replace(/ё/g,'е').trim();
+    const params=new URLSearchParams(location.search);
+    input.value=params.get('q')??'';
+    if ([...country.options].some(option=>option.value===params.get('country'))) country.value=params.get('country')!;
+    function apply(){
+      const words=normalize(input.value).split(/\s+/).filter(Boolean);
+      let count=0;
+      root!.querySelectorAll<HTMLElement>('[data-record]').forEach(item=>{
+        const visible=words.every(word=>normalize(item.dataset.search??'').includes(word))&&(!country.value||(item.dataset.countries??'').split(' ').includes(country.value));
+        item.hidden=!visible; if(visible) count++;
+      });
+      root!.querySelectorAll<HTMLElement>('[data-group]').forEach(group=>group.hidden=!group.querySelector('[data-record]:not([hidden])'));
+      root!.querySelector('[data-count]')!.textContent=String(count);
+      root!.querySelector<HTMLElement>('.hardware-empty')!.hidden=count>0;
+      const params=new URLSearchParams(); if(input.value.trim())params.set('q',input.value.trim());if(country.value)params.set('country',country.value);
+      history.replaceState(history.state,'',location.pathname+(params.size?'?'+params.toString():'')+location.hash);
+    }
+    input.addEventListener('input',apply);country.addEventListener('change',apply);apply();
+  }
+  document.addEventListener('astro:page-load',initHardwareCatalog);
+</script>

@@ -22,6 +22,18 @@ for (const text of ['Витте и Безобразов; Port Arthur.', '«维�
   assert.equal(match(text).map(p => p.text).join(''), text, 'Linking must preserve the exact original text');
 }
 const read = name => JSON.parse(readFileSync(new URL(`../src/data/${name}.json`, import.meta.url), 'utf8'));
+const shipRegistry = new Map(['ship/mikasa','ship/petropavlovsk','place/petropavlovsk'].map(id=>[id,{id}]));
+const shipNames = new Map([['Микаса',new Set(['ship/mikasa'])],['Mikasa',new Set(['ship/mikasa'])],['三笠',new Set(['ship/mikasa'])],['Петропавловск',new Set(['ship/petropavlovsk','place/petropavlovsk'])]]);
+const shipMatch=createMentionMatcher(shipNames,shipRegistry,{quotedEntities:new Set(['ship/mikasa','ship/petropavlovsk'])});
+assert.deepEqual(links(shipMatch('Броненосец «Микаса» вышел в море.')),['ship/mikasa']);
+assert.deepEqual(links(shipMatch('Книга «Микаса» лежала на столе.')),[]);
+assert.deepEqual(links(shipMatch('The novel "Mikasa" and the ship "Mikasa".')),['ship/mikasa']);
+assert.deepEqual(links(shipMatch('«Микаса вышла в море» — цитата.')),[]);
+assert.deepEqual(links(shipMatch('“三笠”号与三笠。')),['ship/mikasa']);
+assert.deepEqual(links(shipMatch('Петропавловск')),[],'Unquoted city/ship ambiguity is not guessed');
+assert.deepEqual(links(shipMatch('Броненосец «Петропавловск»')),['ship/petropavlovsk']);
+assert.deepEqual(links(shipMatch('Микаса',mentionContext(['ship/mikasa']))),[]);
+for(const text of ['«Микаса», корабль «Петропавловск».','“三笠”号与三笠。','Книга «Микаса».'])assert.equal(shipMatch(text).map(p=>p.text).join(''),text);
 const aliases = read('entity_aliases'); const terms = read('index_terms');
 const valid = {
   people: new Set([...read('people').map(p => p.slug), ...Object.keys(terms.people)]),

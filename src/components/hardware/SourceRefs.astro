@@ -1,0 +1,6 @@
+---
+interface Props { refs: number[] }
+const { refs } = Astro.props;
+---
+<span class="source-refs" aria-label="Ссылки на источники">{refs.map((ref,i) => <>{i>0 && ' '}<a href={`#source-${ref}`}>[{ref}]</a></>)}</span>
+<style>.source-refs { font-size:13px; white-space:nowrap; color:var(--ink-3); }.source-refs a { text-decoration:underline; padding:3px; }</style>

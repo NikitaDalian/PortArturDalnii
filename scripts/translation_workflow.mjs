@@ -16,7 +16,7 @@ const json = file => JSON.parse(read(file));
 const sourceFiles = () => [...translatedFiles.map(x => `data/${x}.json`), 'components/places/dossiers.ts'];
 const metadata = new Set('id slug place places people books articles photos cover portrait image file url href lat lng polyline coords coordinates date year years author_years checkedAt ref refs section status guide original originalLanguage kind type era layer layers country city group crop level season series_slug posts tg_ids review_post coord_confidence navigationName navigationAddress'.split(' '));
 const escape = value => String(value).replaceAll('~', '~0').replaceAll('/', '~1');
-for (const key of ['periods','sourceLanguages','relatedNotes','relatedPlaces','relatedPeople','relatedSources']) metadata.add(key);
+for (const key of ['periods','sourceLanguages','relatedNotes','relatedEssays','relatedPlaces','relatedPeople','relatedSources','weaponSlug','personSlug','countries','updatedAt']) metadata.add(key);
 function keyed(array) {
   if (!Array.isArray(array)) return null;
   if(!array.length)return new Map();

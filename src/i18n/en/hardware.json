@@ -1,0 +1,3259 @@
+[
+  {
+    "slug": "petropavlovsk",
+    "kind": "ship",
+    "name": "Battleship Petropavlovsk",
+    "shortName": "Petropavlovsk",
+    "category": "Pre-dreadnought battleship",
+    "countries": [
+      "russia"
+    ],
+    "periods": [
+      "russian"
+    ],
+    "aliases": [
+      "Petropavlovsk"
+    ],
+    "summary": "Petropavlovsk was a Russian Poltava-class battleship and one of the principal ships of the Port Arthur squadron. On 31 March (13 April) 1904 she struck Japanese mines and sank with Vice Admiral Stepan Makarov, members of his staff and most of those aboard.",
+    "intro": [
+      "The final morning of Petropavlovsk has overshadowed the rest of her story. Before becoming the ship on which Makarov died, she was one of three new battleships built in St Petersburg for fleet combat. Her fate helps explain why heavy shells were not the only threat to the Port Arthur squadron: the waters around its own base could be turned into a minefield."
+    ],
+    "sections": [
+      {
+        "id": "creation",
+        "title": "Three battleships for the battle line",
+        "paragraphs": [
+          "Petropavlovsk was built at Galerny Island in St Petersburg. Laid down in 1892 and launched in 1894, she still needed fitting out, armament and trials. Together with Poltava and Sevastopol she formed a class of three ships. Reference books call it either the Poltava or the Petropavlovsk class: these are two names for the same group, not two different designs.",
+          "A squadron battleship was intended to fight other heavily armed ships as part of a formation. The squadron steamed in line ahead, one ship following another, so that its commander could direct its movement and gunfire. Armour, armament and the ability to keep station therefore mattered as much as an individual ship’s speed. Around the turn of the century Petropavlovsk was sent to the Far East; by the outbreak of war she was an established member of the Port Arthur squadron."
+        ],
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "design",
+        "title": "Thick armour and two heavy turrets",
+        "paragraphs": [
+          "The main battery comprised four 305-mm guns, two in the forward turret and two aft. The figure 305 gives the diameter of the bore in millimetres. The secondary battery included twelve 152-mm Canet guns: eight in four twin turrets and another four in a broadside battery. Small 47-mm and 37-mm guns were intended chiefly to repel torpedo boats, the small, fast vessels that carried torpedoes.",
+          "Petropavlovsk’s main belt of nickel-steel armour reached 406 mm at its thickest point. This did not mean that a forty-centimetre wall enclosed the whole ship. The belt protected a particular section of the side near the waterline; the deck, turrets, ends and underwater hull had different protection. Comparing battleships by their greatest armour thickness alone is therefore misleading, especially when the blow came from below, beyond the belt’s protection."
+        ],
+        "refs": [
+          2
+        ]
+      },
+      {
+        "id": "port-arthur",
+        "title": "A flagship in the opening weeks",
+        "paragraphs": [
+          "At the start of the war Petropavlovsk carried the flag of the squadron commander, Vice Admiral Oskar Stark. The Japanese night attack of 26–27 January (8–9 February) 1904 damaged Retvizan, Tsesarevich and Pallada. Petropavlovsk remained operational and took part in the ensuing daylight engagement. With two powerful battleships immediately out of action, preserving the squadron’s remaining heavy ships became particularly important.",
+          "Stepan Osipovich Makarov arrived on 24 February (8 March) and pressed for more active operations: sorties, reconnaissance and crew training. He soon raised his flag in Petropavlovsk. The battleship herself remained under Captain Nikolai Matveyevich Yakovlev. The admiral directed the fleet, while the captain was responsible for his own ship: two distinct duties came together on the flagship’s deck."
+        ],
+        "refs": [
+          1,
+          3
+        ]
+      },
+      {
+        "id": "last-sortie",
+        "title": "The morning of 31 March",
+        "paragraphs": [
+          "On 31 March (13 April) Petropavlovsk left Port Arthur following a clash between Russian and Japanese torpedo craft. The cruiser Bayan was already operating near the place where the destroyer Strashny had been lost. Makarov brought out part of the squadron, then turned back towards the base when the main Japanese force appeared. The previous night the Japanese had laid mines across a route the Russian ships used when manoeuvring off the roadstead.",
+          "On the return leg the flagship entered the minefield. An underwater explosion was followed by further explosions inside the ship, and she quickly went down by the bow. Technical reconstructions debate which magazines and charges exploded first. What matters when looking out over the roadstead is the scale of the disaster: a large battleship sank within minutes, leaving almost no time for an organised evacuation. Her side armour could not contain the spreading internal catastrophe."
+        ],
+        "refs": [
+          1,
+          4
+        ]
+      },
+      {
+        "id": "people-and-memory",
+        "title": "More than sailors aboard",
+        "paragraphs": [
+          "The dead included Makarov, his chief of staff Rear Admiral Mikhail Pavlovich Molas, and the artist Vasily Vasilyevich Vereshchagin. The painter had come to the theatre of war as a visitor, not as a regular member of the crew. His naval education had linked him to the fleet since his youth, but by 1904 he was a world-famous artist who had come to see the war for himself. His presence placed the ship in the history of Russian art as well as naval warfare.",
+          "The Central Naval Museum gives approximately 650 dead and 80 survivors. Captain Yakovlev and Grand Duke Kirill Vladimirovich were among those rescued. Other totals appear in the literature, depending on whether crew, staff and additional people aboard are counted; a rounded museum figure should not be treated as a definitive roll of names. The ship never returned to service. In a single catastrophe, long before the siege ended, Port Arthur lost a battleship, its fleet commander and part of his staff. In 1909–1913 an expedition organised by the Japanese businessman Tsunenosuke Sakurai examined the wreck. According to A. V. Okorokov’s research, divers recovered the remains of six Russian sailors, buried in Port Arthur’s military cemetery in 1913. Documents found with the remains identified Molas among them. Makarov was not among those identified. The ship’s underwater history continued, but the claim that she was subsequently broken up completely remains a theory, not proof that the wreck site has been fully investigated."
+        ],
+        "refs": [
+          1,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Displacement",
+        "value": "10 960 t",
+        "note": "Normal displacement quoted for the class; Petropavlovsk’s full displacement is given separately as 11 354 t.",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "label": "Length and beam",
+        "value": "114.3 × 21.3 m",
+        "note": "Length overall; waterline length 112.5 m.",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "label": "Machinery",
+        "value": "2 triple-expansion steam engines, 14 cylindrical boilers",
+        "note": "Two shafts; stated power 10 600 hp.",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "label": "Speed",
+        "value": "About 16.5 knots",
+        "note": "Stated maximum, not the formation’s speed on every sortie.",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "label": "Main armour belt",
+        "value": "Up to 406 mm",
+        "note": "Nickel steel; maximum thickness in the central belt.",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "label": "Principal armament",
+        "value": "4 × 305 mm; 12 × 152 mm",
+        "note": "At the beginning of the war; small-calibre guns are counted separately.",
+        "refs": [
+          2
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1892,
+        "date": "1892",
+        "title": "Laid down",
+        "text": "Construction began at Galerny Island in St Petersburg.",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "year": 1894,
+        "date": "1894",
+        "title": "Launched",
+        "text": "Several years of fitting out and trials followed.",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "27 January (9 February) 1904",
+        "title": "First daylight action",
+        "text": "Took part in the squadron’s engagement with the Japanese fleet off Port Arthur.",
+        "refs": [
+          3
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "31 March (13 April) 1904",
+        "title": "Lost near the base",
+        "text": "Struck mines and sank with most of those aboard.",
+        "refs": [
+          1,
+          4
+        ]
+      }
+    ],
+    "crew": [
+      {
+        "name": "Stepan Osipovich Makarov",
+        "role": "Commander of the Pacific Fleet; aboard his flagship when she sank.",
+        "personSlug": "makarov",
+        "refs": [
+          1,
+          4
+        ]
+      },
+      {
+        "name": "Nikolai Matveyevich Yakovlev",
+        "role": "Captain at the start of the war; rescued after the disaster.",
+        "personSlug": null,
+        "refs": [
+          1,
+          3
+        ]
+      },
+      {
+        "name": "Mikhail Pavlovich Molas",
+        "role": "Chief of staff to the fleet commander; died aboard the flagship.",
+        "personSlug": null,
+        "refs": [
+          1,
+          6
+        ]
+      },
+      {
+        "name": "Vasily Vasilyevich Vereshchagin",
+        "role": "Artist visiting the theatre of war; aboard as a visitor and lost with the ship.",
+        "personSlug": "vereshchagin",
+        "refs": [
+          4,
+          5
+        ]
+      }
+    ],
+    "armament": [
+      {
+        "weaponSlug": "obukhov-305-40",
+        "count": 4,
+        "period": "Beginning of the Russo-Japanese War, 1904",
+        "note": "Two twin main-battery turrets. English-language tables sometimes use a different convention for measuring barrel length.",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "weaponSlug": "canet-152-45",
+        "count": 12,
+        "period": "Beginning of the Russo-Japanese War, 1904",
+        "note": "Four twin turrets and four single broadside guns.",
+        "refs": [
+          2
+        ]
+      }
+    ],
+    "images": [
+      {
+        "file": "/images/hardware/petropavlovsk-1.webp",
+        "alt": "The battleship Petropavlovsk before her loss in 1904.",
+        "caption": "The battleship Petropavlovsk before her loss in 1904.",
+        "credit": "Jean Geiser (1848–1923), according to NHHC attribution, NH 84769-A. The catalogue dates the photograph to 1899 and places it in Algiers; another digital copy is labelled Kronstadt. Location not independently established.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Petropavlovsk_-_NH_84769-A.jpg",
+        "license": "Public domain — the photographer died in 1923; the life-plus-70 term has expired; publication before 1931, PD-US-expired.",
+        "width": 1800,
+        "height": 1139
+      }
+    ],
+    "relatedNotes": [
+      "pervaya-tihookeanskaya-eskadra",
+      "vereshchagin-hudozhnik-na-voyne",
+      "voina-na-more-osada-mukden-tsusima"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [
+      "makarov",
+      "vereshchagin"
+    ],
+    "relatedPlaces": [
+      "gavan-port-artura",
+      "kladbishche-lushun"
+    ],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "The Disaster of 31 March 1904: The Loss of the Battleship Petropavlovsk",
+        "author": "V. Yu. Gribovsky",
+        "date": "1992, Gangut, no. 4",
+        "url": "https://keu-ocr.narod.ru/Petropavlovsk_sunk/",
+        "locator": "Entire article: sequence of the sortie, rescue and casualties",
+        "note": "Specialist study based on archival holdings; the HTML transcription was read, not the archival files themselves."
+      },
+      {
+        "id": 2,
+        "title": "POLTAVA battleships (1896–1898)",
+        "author": "Navypedia",
+        "date": "2007–2026",
+        "url": "https://www.navypedia.org/ships/russia/ru_bb_poltava.htm",
+        "locator": "Technical data; Ship protection Petropavlovsk",
+        "note": "Secondary technical reference. Completion dates differ from other publications; the article does not establish an exact commissioning date. The designations 305/38 and 152/44 reflect a different convention for measuring barrel length."
+      },
+      {
+        "id": 3,
+        "title": "Report on Operations off Port Arthur, 26–27 January 1904",
+        "author": "Viceroy Ye. I. Alekseyev; published in Razvedchik",
+        "date": "1904, no. 695",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Разведчик_1904-0695.pdf",
+        "locator": "List of participating ships and commanding officers",
+        "note": "The available indexed text of the historical publication was checked; the full PDF was not saved locally."
+      },
+      {
+        "id": 4,
+        "title": "Battleship Petropavlovsk Strikes a Mine and Sinks near Port Arthur",
+        "author": "Central Naval Museum",
+        "date": "Calendar: 13 April 1904",
+        "url": "https://special.navalmuseum.ru/news/memorable?id=649",
+        "locator": "Commemorative-date entry",
+        "note": "Museum account used for the loss and rounded casualty figures; an inaccurate description of Alekseyev’s later rank was not carried over."
+      },
+      {
+        "id": 5,
+        "title": "The Battleship Petropavlovsk",
+        "author": "State Historical Museum of the Southern Urals",
+        "date": "2022-06-26",
+        "url": "https://chelmuseum.ru/istoriya-v-predmetah/bronenosets-petropavlovsk/",
+        "locator": "Text on Vereshchagin and his presence aboard",
+        "note": "The available online publication was checked; printed pagination was not reconstructed."
+      },
+      {
+        "id": 6,
+        "title": "Russian Burials in China",
+        "author": "A. V. Okorokov",
+        "date": "2023",
+        "url": "https://heritage-institute.ru/wp-content/uploads/2023/04/russkie-zahoroneniya-v-kitae.pdf",
+        "locator": "pp. 368–369, “Ships as Mass Graves”: Petropavlovsk",
+        "note": "PDF pages 368–369 and publication details checked. Recovery and burial are described on p. 368; the breaking up of the ship in 1943 on p. 369 is presented as the expedition leader’s theory, not an established fact."
+      }
+    ],
+    "limitations": [
+      "The death toll is approximate: the museum account and specialist study give 650; no independent reconstruction of everyone aboard has been made.",
+      "The precise sequence of internal explosions remains a matter of reconstruction, not an established frame-by-frame account.",
+      "Two digital publications label the same 1899 photograph as Algiers and Kronstadt. Location was not independently established; one copy with a neutral caption is retained rather than publishing the same frame twice."
+    ],
+    "updatedAt": "2026-11-15"
+  },
+  {
+    "slug": "retvizan",
+    "kind": "ship",
+    "name": "Battleship Retvizan",
+    "shortName": "Retvizan",
+    "category": "Pre-dreadnought battleship",
+    "countries": [
+      "russia",
+      "japan"
+    ],
+    "periods": [
+      "russian",
+      "japanese"
+    ],
+    "aliases": [
+      "Retvizan",
+      "Retvisan",
+      "Hizen",
+      "Hizén"
+    ],
+    "summary": "Retvizan was built for Russia in Philadelphia and reached Port Arthur in 1903. She survived a torpedo hit on the first night of the war and the Battle of the Yellow Sea, then sank in the harbour under siege fire. Raised by Japan, she served again as Hizen.",
+    "intro": [
+      "In the opening weeks of the war Retvizan found herself in an unusual position: a battleship aground at the entrance to her own harbour, yet still fighting. Her heavy guns helped defend the channel through which she herself would eventually have to return. It was hardly the start envisaged when one of the squadron’s newest battleships was ordered."
+    ],
+    "sections": [
+      {
+        "id": "creation",
+        "title": "An American hull with Russian guns",
+        "paragraphs": [
+          "The contract went to William Cramp & Sons of Philadelphia. Construction began in 1899, and the ship was launched in 1900, but delivery and final adjustments took longer. Retvizan was not a standard American battleship simply repainted for Russia: the design combined the requirements of Russia’s Naval Technical Committee with solutions adopted by Cramp’s yard. Her artillery was manufactured in Russia.",
+          "The trials dispel any notion that a new ship was necessarily a finished machine. Captain Eduard Nikolayevich Shchensnovich’s report discussed unfinished work, calculation of the final payment and difficulties achieving the contracted 18 knots. In October 1901 the New-York Tribune separately reported Retvizan’s arrival at the Brooklyn Navy Yard for further hull work. Outwardly the battleship looked complete, but acceptance involved many specific checks."
+        ],
+        "refs": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "design",
+        "title": "The battleship’s armament",
+        "paragraphs": [
+          "Four Obukhov 305-mm guns, with barrels 40 calibres long, formed the main battery in two twin turrets. Twelve 152-mm Canet guns occupied casemates, protected compartments in the broadside battery. Twenty 75-mm guns and smaller weapons were intended primarily against torpedo boats. This was the outfit at the start of the war. Later, guns and men were sent ashore for the land defences, so the nominal armament no longer matched what remained aboard.",
+          "The armour belt reached 229 mm at its thickest, as did the turret armour. Two steam engines and 24 Niclausse water-tube boilers provided propulsion. Trials examined more than power and speed: they tested the foundations under heavy-turret firing and the ship’s behaviour when damaged. Substantial armour did not remove the need to detect flooding promptly, isolate damaged compartments and keep the pumps supplied with power."
+        ],
+        "refs": [
+          1,
+          4
+        ]
+      },
+      {
+        "id": "first-night",
+        "title": "A torpedo hit and an improvised battery",
+        "paragraphs": [
+          "After crossing the Atlantic and serving in the Baltic, Retvizan reached Port Arthur in spring 1903. On the first night of the war, 26–27 January (8–9 February) 1904, a Japanese torpedo struck the port bow. Contemporary Russian documents often called a torpedo a “self-propelled mine”; this was not the stationary moored mine that would later sink Petropavlovsk. The damaged battleship grounded near the harbour entrance.",
+          "There she became a forward floating battery. On the night preceding 11 (24) February, Japanese steamers attempted to sink themselves in the channel and bottle up the Russian squadron. Retvizan helped repel the attack. Stark’s report of 18 February describes her gunfire, the positions of the sunken steamers and the scuttling equipment found aboard them. Success had a practical meaning: the exit remained open to Russian ships. Shchensnovich received the Order of St George, fourth class."
+        ],
+        "refs": [
+          1,
+          2,
+          5
+        ]
+      },
+      {
+        "id": "yellow-sea",
+        "title": "Turning towards the Japanese line",
+        "paragraphs": [
+          "After repairs Retvizan resumed operations with the squadron. On 28 July (10 August) 1904 she took part in the attempted breakout to Vladivostok and the Battle of the Yellow Sea, following the flagship Tsesarevich. When Rear Admiral Wilgelm Vitgeft was killed and damage to the flagship’s steering disrupted the Russian column, Shchensnovich turned his battleship towards the Japanese ships.",
+          "The captain later explained that he intended to ram the enemy. This is a participant’s account of his intention, not a description of a completed ramming attack: the approach did not end in a collision. Shchensnovich was concussed, and Retvizan turned away and returned to Port Arthur. The episode is often presented as a spectacular victory in its own right. Its actual outcome was more limited and more painful: the battleship survived the gunnery action, but the squadron’s breakout failed and its ships were back in their besieged base."
+        ],
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "hizen",
+        "title": "A second career under another name",
+        "paragraphs": [
+          "In autumn the ship supported the fortress’s defenders with gunfire, men and weapons transferred ashore. Japanese siege artillery badly damaged her in December 1904, and she settled on the harbour bottom. Sinking in shallow water did not necessarily mean that hull and machinery were lost for ever. Before the surrender Russian sailors inflicted further damage on essential equipment to make the ship harder for the enemy to use.",
+          "The Japanese raised her in 1905 and, after extensive reconstruction, commissioned her in 1908 as Hizen. Early in the First World War she joined the search for Admiral Spee’s German squadron; later she appeared at Vladivostok during the Japanese intervention. Reclassified as a coast-defence ship in 1921, she was subsequently disarmed and removed from the navy list. Her final role was as a floating target: in July 1924 the former Retvizan was sunk during exercises in the Bungo Strait. She had outlived Russian Port Arthur by almost twenty years."
+        ],
+        "refs": [
+          1,
+          6
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Design displacement",
+        "value": "12 745.6 t",
+        "note": "Design figure according to S. A. Balakin, not actual full-load displacement with stores.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Dimensions",
+        "value": "117.9 × 22 m",
+        "note": "Length overall and beam.",
+        "refs": [
+          4
+        ]
+      },
+      {
+        "label": "Machinery",
+        "value": "2 steam engines, 24 Niclausse boilers",
+        "note": "Two shafts; triple-expansion steam engines.",
+        "refs": [
+          4
+        ]
+      },
+      {
+        "label": "Speed",
+        "value": "About 18 knots",
+        "note": "Contracted maximum; trial results varied slightly.",
+        "refs": [
+          2,
+          4
+        ]
+      },
+      {
+        "label": "Main armour belt",
+        "value": "Up to 229 mm",
+        "note": "Central belt; Krupp armour.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Armament at the start of the war",
+        "value": "4 × 305 mm; 12 × 152 mm; 20 × 75 mm",
+        "note": "Excluding smaller guns and machine guns; the outfit subsequently changed.",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1899,
+        "date": "1899",
+        "title": "Construction in Philadelphia",
+        "text": "Work began at Cramp’s yard.",
+        "refs": [
+          4
+        ]
+      },
+      {
+        "year": 1900,
+        "date": "10 (23) October 1900",
+        "title": "Launched",
+        "text": "Fitting out and preparations for acceptance trials began.",
+        "refs": [
+          4
+        ]
+      },
+      {
+        "year": 1903,
+        "date": "21 April (4 May) 1903",
+        "title": "Arrival at Port Arthur",
+        "text": "Reinforced the Pacific squadron.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "26–27 January (8–9 February) 1904",
+        "title": "Torpedo hit",
+        "text": "The war began; the damaged battleship grounded near the harbour entrance.",
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "28 July (10 August) 1904",
+        "title": "Battle of the Yellow Sea",
+        "text": "Participated in the unsuccessful attempt to reach Vladivostok.",
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "year": 1908,
+        "date": "1908",
+        "title": "Recommissioned as Hizen",
+        "text": "Rebuilt after capture by Japan.",
+        "refs": [
+          6
+        ]
+      },
+      {
+        "year": 1924,
+        "date": "July 1924",
+        "title": "Final sinking",
+        "text": "Sunk as a target in the Bungo Strait.",
+        "refs": [
+          6
+        ]
+      }
+    ],
+    "crew": [
+      {
+        "name": "Eduard Nikolayevich Shchensnovich",
+        "role": "Captain in Russian service; involved in supervising construction and defending Port Arthur.",
+        "personSlug": null,
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Kazimir Filippovich Ketlinsky",
+        "role": "Senior gunnery officer; helped repel the blockship attack.",
+        "personSlug": null,
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Alexander Vasilyevich Razvozov",
+        "role": "Torpedo officer; beside the captain during the action of 28 July.",
+        "personSlug": null,
+        "refs": [
+          2
+        ]
+      }
+    ],
+    "armament": [
+      {
+        "weaponSlug": "obukhov-305-40",
+        "count": 4,
+        "period": "Beginning of the Russo-Japanese War, 1904",
+        "note": "Two twin turrets; guns manufactured by the Obukhov Works.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "weaponSlug": "canet-152-45",
+        "count": 12,
+        "period": "Beginning of the Russo-Japanese War, 1904",
+        "note": "Single casemate mounts. Some guns were absent in July: the figure refers to the complete original outfit.",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "images": [
+      {
+        "file": "/images/hardware/retvizan-1.webp",
+        "alt": "Retvizan on the Delaware River, 1902.",
+        "caption": "Retvizan on the Delaware River, 1902.",
+        "credit": "Photographer unidentified; digital copy via Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Retvizan1902DelawareRiver.jpg",
+        "license": "Public domain — Commons record: PD-RusEmpire; publication before 1931, PD-US-expired.",
+        "width": 1800,
+        "height": 1080
+      },
+      {
+        "file": "/images/hardware/retvizan-2.webp",
+        "alt": "The battleship Retvizan, 1902.",
+        "caption": "The battleship Retvizan, 1902.",
+        "credit": "Photographer unidentified; digital copy via Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Retvizan.jpg",
+        "license": "Public domain — Commons record: PD-RusEmpire, PD-old; publication before 1931, PD-US-expired.",
+        "width": 1014,
+        "height": 791
+      }
+    ],
+    "relatedNotes": [
+      "pervaya-tihookeanskaya-eskadra",
+      "voina-na-more-osada-mukden-tsusima"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [
+      "vitgeft"
+    ],
+    "relatedPlaces": [
+      "gavan-port-artura"
+    ],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "The Battleship Retvizan",
+        "author": "S. A. Balakin",
+        "date": "1999, Morskaya Kollektsiya, no. 4",
+        "url": "https://tsushima.su/RU/libru/i/Page_6/page_15/balakin-retvizan/balakin-retvizan-06/",
+        "locator": "“Service” section: voyage, torpedo damage, action of 28 July, final stage of the siege and Japanese service",
+        "note": "HTML transcription read. Design and armament also checked in section 04 of the same publication: https://tsushima.su/RU/libru/i/Page_6/page_15/balakin-retvizan/balakin-retvizan-04/ . Accounts differ on the day of the final sinking in 1924; only the month is given."
+      },
+      {
+        "id": 2,
+        "title": "Russia’s First Submarine Admiral: E. N. Shchensnovich",
+        "author": "Military History Journal",
+        "date": "Online publication",
+        "url": "https://history.milportal.ru/pervyj-v-rossii-admiral-podvodnik-e-n-shhensnovich/?print=print",
+        "locator": "Passages on Retvizan’s acceptance and Shchensnovich’s account of the action of 28 July",
+        "note": "Article with archival references; attributed testimony by the captain is used. Its dates for the blockship attack and some geographical descriptions require cross-checking and were not adopted."
+      },
+      {
+        "id": 3,
+        "title": "The Retvizan at Brooklyn",
+        "author": "New-York Daily Tribune",
+        "date": "1901-10-12",
+        "url": "https://tile.loc.gov/storage-services/service/ndnp/dlc/batch_dlc_austria_ver01/data/sn83030214/00175041096/1901101201/0204.pdf",
+        "locator": "Newspaper p. 7: report of the docking",
+        "note": "The text of “The Retvizan at Brooklyn”, returned by web search from this newspaper page, was read; the page image itself was not inspected. Direct PDF download returned HTTP 403. Only the docking confirmed by the report is used, not its promotional assessments or specifications."
+      },
+      {
+        "id": 4,
+        "title": "RETVIZAN battleship (1901)",
+        "author": "Navypedia",
+        "date": "2007–2026",
+        "url": "https://www.navypedia.org/ships/russia/ru_bb_retvizan.htm",
+        "locator": "Ships; Technical data",
+        "note": "Additional technical reference; its original small-calibre outfit and acceptance date differ from Balakin’s account."
+      },
+      {
+        "id": 5,
+        "title": "Stark’s Report to the Viceroy, 18 February 1904, no. 87",
+        "author": "O. V. Stark",
+        "date": "1904-02-18, Old Style",
+        "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/doc_stark/doc_stark_091/",
+        "locator": "Description of the attempt to block the harbour and the positions of the steamers",
+        "note": "Primary document in electronic transcription. The report reflects the Russian command’s information and assessments; the archival original was not examined."
+      },
+      {
+        "id": 6,
+        "title": "HIZEN battleship (1901 / 1908)",
+        "author": "Navypedia",
+        "date": "2007–2026",
+        "url": "https://www.navypedia.org/ships/japan/jap_bb_hizen.htm",
+        "locator": "Project history; Naval service",
+        "note": "Japanese service and final fate checked; disputed details of rearmament are not included in the narrative."
+      }
+    ],
+    "limitations": [
+      "Design, normal and full-load displacement are often confused in reference books; the design figure here is labelled explicitly.",
+      "The intention to ram a Japanese ship is presented as Shchensnovich’s own explanation; no collision took place.",
+      "A complete replacement of the Russian heavy guns by Japanese weapons during reconstruction has not been reliably established; weapon links refer only to Russian service."
+    ],
+    "updatedAt": "2026-11-15"
+  },
+  {
+    "slug": "bayan",
+    "kind": "ship",
+    "name": "Armoured cruiser Bayan",
+    "shortName": "Bayan",
+    "category": "Armoured cruiser",
+    "countries": [
+      "russia",
+      "japan"
+    ],
+    "periods": [
+      "russian",
+      "japanese"
+    ],
+    "aliases": [
+      "Bayan",
+      "Baian",
+      "Aso"
+    ],
+    "summary": "The first armoured cruiser Bayan, built in France, served at Port Arthur in 1903–1904. She carried out reconnaissance, covered light forces and supported the fortress’s defence. Sunk in the harbour, she was raised by Japan and continued her career as Aso.",
+    "intro": [
+      "Bayan had two distinct naval careers, and another Russian ship later bore the same name. The defender of Port Arthur was the first, French-built cruiser; the Baltic Bayan of the First World War came later. By then the former Port Arthur ship was already sailing under the Japanese flag. A name without a date and place of service can easily lead into somebody else’s biography."
+    ],
+    "sections": [
+      {
+        "id": "creation",
+        "title": "A scout with armour",
+        "paragraphs": [
+          "The requirements for a new cruiser took shape in 1897. She was to serve with the battleship squadron: scouting, supporting its light forces and joining the general action when necessary. Speed alone would not suffice. She was given a side armour belt and protected heavy guns. Such vessels were called armoured cruisers: unlike protected cruisers, they carried armour on the sides as well as the deck.",
+          "The order went to Forges et Chantiers de la Méditerranée at La Seyne, near Toulon. Work began late in 1898; the formal laying-down ceremony took place only after the hull had already risen substantially on the slipway. Launch followed in 1900, but trials and correction of defects continued until the end of 1902. Ordering abroad did not eliminate delays: drawings changed, components and armour were tested and rejected, machinery adjusted. Operational service was still some way off."
+        ],
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "design",
+        "title": "Two eight-inch guns and eight six-inch guns",
+        "paragraphs": [
+          "The main armament comprised two Obukhov 203-mm guns with barrels 45 calibres long, one in the forward turret and one aft. “Eight inches” and “203 millimetres” describe the same calibre. Eight 152-mm Canet guns were mounted along the sides. There were also twenty 75-mm guns, smaller weapons and torpedo tubes. This was a small main battery for heavy combat, but the cruiser’s task differed from a battleship’s.",
+          "Design speed was about 21 knots, or approximately 39 kilometres an hour. Twenty-six Belleville boilers supplied steam to two triple-expansion engines. The main belt was up to 200 mm thick and the turrets had 150 mm of armour. This protection allowed her to accept the risks of operating close to the enemy, but did not turn the cruiser into a small battleship. Every sortie also depended on the range, the nature of any hits and the ability to keep moving."
+        ],
+        "refs": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "port-arthur",
+        "title": "In time for the war",
+        "paragraphs": [
+          "In 1903 Bayan visited the Baltic before sailing to the Far East with the battleship Tsesarevich. Both reached Port Arthur in autumn. The cruiser was commanded by Captain Robert Nikolayevich Viren. Her crew had little time to become familiar with the new theatre before the Russo-Japanese War began.",
+          "In the opening weeks Bayan was already scouting with Askold and Novik. The fleet had to investigate reports of enemy ships and possible landings, cover destroyers and watch the approaches to its base. Not every sortie ended in combat: sometimes an alarm proved false. This was nevertheless the scout’s everyday work. The cruiser was there to bring information to the command, rather than seek a fight at any price and leave the squadron without eyes at sea."
+        ],
+        "refs": [
+          1,
+          2,
+          4
+        ]
+      },
+      {
+        "id": "rescue-and-mine",
+        "title": "Two mornings near the harbour entrance",
+        "paragraphs": [
+          "On 31 March (13 April) 1904 Bayan went to the scene of the destroyer Strashny’s last action. She exchanged fire and rescued five sailors still in the water. Petropavlovsk sank with Makarov that same day. The two events formed part of one operation off Port Arthur, but they were separate episodes: the cruiser did not strike a mine with the flagship and returned to base.",
+          "Her own encounter with a mine came on 14 (27) July, when a detachment was returning after supporting troops ashore. Bayan took on water but remained able to steam and reached the harbour under her own power. Dockyard repairs followed, keeping her out of the force that attempted to break through to Vladivostok on 28 July (10 August). Some guns removed during repairs were used to reinforce other ships: in a besieged base a working gun was needed immediately, even if its own ship was still in dock."
+        ],
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "siege",
+        "title": "Still part of the defence",
+        "paragraphs": [
+          "Bayan’s crew also helped defend Port Arthur on land. Sailors manned guns transferred ashore, worked on the fortifications and served in the garrison. In the final months of the siege the distinction between a ship’s company and the defenders of the forts grew increasingly blurred. Even when unable to put to sea, the cruiser continued to supply the fortress with artillery, ammunition and men.",
+          "In late November Old Style, already December in the Gregorian calendar, Japanese siege guns badly damaged her in the Eastern Basin. She settled on the bottom after the bombardments; her crew continued removing whatever equipment and ammunition remained accessible. Before the fortress surrendered, further damage was inflicted on the cruiser’s machinery and equipment. This interrupted her service for a long time, but the shallow harbour gave the victor the prospect of raising her. Bayan’s history did not end with Russian Port Arthur."
+        ],
+        "refs": [
+          1,
+          5
+        ]
+      },
+      {
+        "id": "aso",
+        "title": "From cruiser to minelayer",
+        "paragraphs": [
+          "The Japanese raised the ship in 1905 and rebuilt her at Maizuru. In 1908 she returned to service as the armoured cruiser Aso. Boilers and armament were replaced during reconstruction, so specifications for her Russian guns cannot automatically be applied to photographs bearing the new name. Her superstructure and gun arrangement also changed later.",
+          "In 1920 Aso was converted into a minelayer, a ship equipped to lay naval minefields. She was removed from the navy list in 1930 and sunk as a gunnery target in 1932. A cruiser that had ended the Russo-Japanese War on the bottom of Port Arthur harbour thus served another state for more than two further decades. Her later career is particularly clear when two photographs are compared: the Russian four-funnel scout and the reconstructed Japanese ship."
+        ],
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Displacement",
+        "value": "About 7.8 thousand t",
+        "note": "Approximate normal displacement. Technical tables give 7 725–7 805 t, depending on the load and design stage.",
+        "refs": [
+          1,
+          3
+        ]
+      },
+      {
+        "label": "Dimensions",
+        "value": "137 × 17.5 m",
+        "note": "Length overall and beam.",
+        "refs": [
+          3
+        ]
+      },
+      {
+        "label": "Machinery",
+        "value": "2 steam engines; 26 Belleville boilers",
+        "note": "Russian service; triple-expansion engines and two shafts.",
+        "refs": [
+          1,
+          3
+        ]
+      },
+      {
+        "label": "Speed",
+        "value": "About 21 knots",
+        "note": "Design and trial figure, not a constant combat speed.",
+        "refs": [
+          1,
+          3
+        ]
+      },
+      {
+        "label": "Armour",
+        "value": "Belt up to 200 mm; turrets 150 mm",
+        "note": "Maximum thicknesses; protection varied across the ship.",
+        "refs": [
+          1,
+          3
+        ]
+      },
+      {
+        "label": "Armament at the start of the war",
+        "value": "2 × 203 mm; 8 × 152 mm; 20 × 75 mm",
+        "note": "Excluding smaller guns; subsequent Japanese rearmament is not included.",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1898,
+        "date": "Late 1898",
+        "title": "Work begins at La Seyne",
+        "text": "The French yard built the cruiser to a Russian order.",
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "year": 1900,
+        "date": "1900",
+        "title": "Launched",
+        "text": "The start of a lengthy period of fitting out and trials.",
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "year": 1903,
+        "date": "Autumn 1903",
+        "title": "Arrival at Port Arthur",
+        "text": "Reached the Far East with Tsesarevich.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "31 March (13 April) 1904",
+        "title": "Assisting Strashny",
+        "text": "Five sailors from the lost destroyer were rescued.",
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "14 (27) July 1904",
+        "title": "Mine damage",
+        "text": "Reached harbour under her own power and then entered dock.",
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "26 November (9 December) 1904",
+        "title": "Sunk in the harbour",
+        "text": "Settled on the bottom of the Eastern Basin after heavy siege bombardment.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1908,
+        "date": "1908",
+        "title": "Service as Aso",
+        "text": "Japanese reconstruction completed.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1920,
+        "date": "1920",
+        "title": "Conversion to a minelayer",
+        "text": "Given a new task: laying naval mines.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1932,
+        "date": "1932",
+        "title": "Sunk during exercises",
+        "text": "The former cruiser was sunk as a target.",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "crew": [
+      {
+        "name": "Robert Nikolayevich Viren",
+        "role": "Commanded the cruiser on the voyage to the Far East and in the actions of 1904; later led the ships remaining at Port Arthur.",
+        "personSlug": null,
+        "refs": [
+          1,
+          5
+        ]
+      },
+      {
+        "name": "Alexander Romanovich Rodionov",
+        "role": "First captain during construction; involved in supervising the ship’s preparation.",
+        "personSlug": null,
+        "refs": [
+          1
+        ]
+      },
+      {
+        "name": "Ivan Konstantinovich Grigorovich",
+        "role": "Supervised construction of the ships ordered in France; this did not make him a member of Bayan’s crew.",
+        "personSlug": null,
+        "refs": [
+          2
+        ]
+      }
+    ],
+    "armament": [
+      {
+        "weaponSlug": "obukhov-203-45",
+        "count": 2,
+        "period": "Beginning of the Russo-Japanese War, 1904",
+        "note": "Two Obukhov eight-inch guns of the 1892 design, each in a separate turret.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "weaponSlug": "canet-152-45",
+        "count": 8,
+        "period": "Beginning of the Russo-Japanese War, 1904",
+        "note": "Single broadside six-inch Canet guns.",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "images": [
+      {
+        "file": "/images/hardware/bayan-1.webp",
+        "alt": "Bayan at Kronstadt, summer 1903.",
+        "caption": "Bayan at Kronstadt, summer 1903.",
+        "credit": "Photographer unidentified; digital copy via Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bayan1903Kronstadt.jpg",
+        "license": "Public domain — Commons record: PD-Russia (anonymous publication with expired copyright) and PD-1996.",
+        "width": 1280,
+        "height": 821
+      },
+      {
+        "file": "/images/hardware/bayan-2.webp",
+        "alt": "The Japanese cruiser Aso, formerly the Russian Bayan, in Australia; the Commons record dates the photograph to 1915.",
+        "caption": "The Japanese cruiser Aso, formerly the Russian Bayan, in Australia; the Commons record dates the photograph to 1915.",
+        "credit": "Allan C. Green (1878–1954); State Library Victoria, H91.325/1235",
+        "sourceUrl": "https://handle.slv.vic.gov.au/10381/33917",
+        "license": "Public domain — State Library Victoria: This work is out of copyright. Australian photograph taken before 1955.",
+        "width": 1800,
+        "height": 1327
+      }
+    ],
+    "relatedNotes": [
+      "pervaya-tihookeanskaya-eskadra"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [
+      "makarov"
+    ],
+    "relatedPlaces": [
+      "gavan-port-artura"
+    ],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "The Armoured Cruiser Bayan",
+        "author": "S. Ye. Vinogradov, A. D. Fedechkin",
+        "date": "2005",
+        "url": "https://keu-ocr.narod.ru/Bayan/",
+        "locator": "Ch. 2, “Design and Layout”; ch. 3, “Construction and Trials”; ch. 4, “Across Seas and Oceans”; ch. 5, “Port Arthur”; appendix 2, “Bayan in the Japanese Navy”",
+        "note": "Locally saved HTML transcriptions chap04–07 and chap10 read. Printed pagination not checked. The OCR contains errors; precise launch dates and some figures are not repeated without further verification."
+      },
+      {
+        "id": 2,
+        "title": "Bayan: Lead Ship of an Armoured Cruiser Class",
+        "author": "R. M. Melnikov",
+        "date": "1980, Sudostroyeniye, no. 6",
+        "url": "https://tsushima.su/RU/libru/i/Page_6/page_13/biblmelbayanru/",
+        "locator": "Entire article: conception, construction and service in 1904",
+        "note": "Independent specialist study in electronic transcription."
+      },
+      {
+        "id": 3,
+        "title": "BAYAN armoured cruisers (1902–1911)",
+        "author": "Navypedia",
+        "date": "2007–2026",
+        "url": "https://www.navypedia.org/ships/russia/ru_cr_bayan.htm",
+        "locator": "Technical data; Ship protection Bayan (i)",
+        "note": "Technical figures used only for the first cruiser. The reference dates for launching and sinking differ from other publications."
+      },
+      {
+        "id": 4,
+        "title": "Stark’s Report to the Viceroy, 18 February 1904, no. 87",
+        "author": "O. V. Stark",
+        "date": "1904, Old Style",
+        "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/doc_stark/doc_stark_091/",
+        "locator": "Sorties by Bayan, Askold and Novik",
+        "note": "Primary document in transcription; the archival original was not independently examined."
+      },
+      {
+        "id": 5,
+        "title": "“We Cannot Shield Ourselves from Constant Interference…”: Letters of a Naval Officer aboard the Battleship Imperator Aleksandr III, 1898–1905",
+        "author": "Russian Research Institute for Cultural and Natural Heritage",
+        "date": "2021",
+        "url": "https://heritage-institute.ru/wp-content/uploads/2021/08/pisma-oficzera-flota.pdf",
+        "locator": "p. 19, editorial notes 26–27 on Bayan and Viren",
+        "note": "PDF downloaded; printed p. 19 (PDF p. 20), notes 26–27 and publication details checked directly. Launch and early appointment dates in the editorial notes differ from the detailed monograph and are not used to resolve those dates."
+      }
+    ],
+    "limitations": [
+      "This is the first Bayan, launched in 1900. The later Russian cruiser of the same name and her 1916 rearmament are outside this article.",
+      "Available transcriptions differ on the precise launch date; only the year is given. For the sinking, 26 November (9 December) is adopted from the detailed siege account; 8 December is also encountered.",
+      "The ship carried different armament in Russian and Japanese service. Links to weapon articles refer to the beginning of 1904."
+    ],
+    "updatedAt": "2026-11-15"
+  },
+  {
+    "slug": "mikasa",
+    "kind": "ship",
+    "name": "Battleship Mikasa",
+    "shortName": "Mikasa",
+    "category": "Pre-dreadnought battleship",
+    "countries": [
+      "japan"
+    ],
+    "periods": [
+      "russian",
+      "japanese",
+      "modern"
+    ],
+    "aliases": [
+      "Mikasa",
+      "Mikasa memorial ship"
+    ],
+    "summary": "A British-built Japanese battleship and Admiral Heihachirō Tōgō’s flagship in the war of 1904–1905. Mikasa fought against the Port Arthur squadron and at Tsushima; after a long career and two restorations she became a memorial ship at Yokosuka.",
+    "intro": [
+      "Mikasa survived the war with Russia, sank after peace had been signed, returned to service and then nearly disappeared after becoming a memorial. Today she can be visited at Yokosuka, a Japanese naval port south of Tokyo. Yet half a century of history separates Tōgō’s bridge from the present museum: an explosion, repairs, an earthquake and the reconstruction of an almost vanished silhouette."
+    ],
+    "sections": [
+      {
+        "id": "creation",
+        "title": "A Japanese order at a British yard",
+        "paragraphs": [
+          "The battleship was built in Britain by Vickers at Barrow-in-Furness. She was laid down on 24 January 1899, launched on 8 November 1900 and commissioned on 1 March 1902. These dates use the Gregorian, or New Style, calendar followed in Japan and Britain. Mikasa completed Japan’s programme of six battleships ordered from British yards. Together with armoured cruisers, they formed the core of the fleet with which Japan entered the war against Russia.",
+          "The order illustrates how the naval arms race worked. Japan strengthened its fleet through British industry; Russia also bought warships abroad. The rivals were preparing for war in East Asia, but many of their future ships were taking shape on European and American slipways. A national flag at the stern did not necessarily mean a nationally built hull and machinery."
+        ],
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "design",
+        "title": "Four heavy guns and a battery between them",
+        "paragraphs": [
+          "Mikasa belonged to the generation of battleships that preceded the dreadnoughts. Her main battery consisted of four 305-mm guns in two twin turrets, one forward and one aft. Between them stood a battery of fourteen 152-mm guns. A casemate was a protected compartment with an opening in the ship’s side, allowing a gun to fire out while sheltering its crew. Armour protected the sides and vital internal areas: this was a ship intended to fight in line alongside other battleships.",
+          "Twenty-five Belleville boilers supplied steam to two triple-expansion engines driving two propellers. The museum gives a power of 15 000 horsepower and a speed of 18 knots. A knot is one nautical mile per hour. For a heavy ship of the period this was part of her fighting capability, but not a promise that she could maintain it regardless of machinery condition, coal load or sea state. A specification describes the ship under stated conditions, not every day of her service."
+        ],
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "port-arthur",
+        "title": "The flagship off Port Arthur",
+        "paragraphs": [
+          "At the end of December 1903 Mikasa became flagship of the Combined Fleet, carrying Tōgō and his staff. The captain was responsible for the battleship and her crew, while the admiral commanded the fleet: two different chains of responsibility met on one deck. In 1904–1905 Mikasa’s captain was Hikojirō Ijichi; Tōgō’s staff included Tomosaburō Katō and the operations officer Saneyuki Akiyama.",
+          "Mikasa’s connection with Port Arthur was direct: she operated against the Russian squadron based there. On 27 January (9 February) 1904 she took part in the daylight action off the fortress, and on 28 July (10 August) in the Battle of the Yellow Sea. The Russian ships were attempting to break out from Port Arthur to Vladivostok; the Japanese fleet sought to stop them. Mikasa was no observation post safely in the distance. The Japanese flagship came under fire, sustained damage and needed repairs."
+        ],
+        "refs": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": "service",
+        "title": "Life between battles",
+        "paragraphs": [
+          "Keeping a fleet almost continuously off an enemy coast required fuel, maintenance and food. Military historian Akinori Ishihara uses Japanese records to examine Mikasa’s menu for 30 May 1904. The ship was then at an island forward base south of the Liaodong Peninsula, not inside Port Arthur harbour. Lunch included rice and barley with canned salmon and hijiki seaweed; supper comprised hardtack and beef with potatoes.",
+          "According to Ishihara, spoiled canned salmon caused food poisoning in 156 people. That is a figure for illness, not deaths. It is a thoroughly naval detail: fighting efficiency also depended on those who loaded food, monitored its storage and prepared meals. A battle could be decided upon on the flagship’s bridge, but several hundred people had to be fed every day, whatever the admiral’s plans."
+        ],
+        "refs": [
+          5
+        ]
+      },
+      {
+        "id": "tsushima-and-after",
+        "title": "Victory, an explosion and a return to service",
+        "paragraphs": [
+          "On 14–15 (27–28) May 1905 Tōgō commanded the Japanese fleet from Mikasa at the Battle of Tsushima. His opponent was the Russian squadron that had sailed from the Baltic. This was a different stage of the war: Port Arthur had already surrendered, and Vladivostok remained the Russian fleet’s intended destination. Mikasa was hit again but survived. Her later importance as a national memorial was linked above all to Tsushima.",
+          "A few days after the Treaty of Portsmouth was signed, on 12 September 1905 New Style, a fire and magazine explosion sank the battleship at anchor in Sasebo. A U.S. Naval Institute article gives 251 crew members killed; early newspaper reports offered other, provisional totals. Raised in 1906, she returned to service after repairs in 1908. During the First World War she served in coastal defence; later she helped support Japan’s presence off Siberia. The victor of Tsushima continued to age like any other warship."
+        ],
+        "refs": [
+          3,
+          4,
+          6
+        ]
+      },
+      {
+        "id": "memorial",
+        "title": "The memorial needed saving too",
+        "paragraphs": [
+          "The Washington Naval Treaty of 1922 limited the major powers’ battle fleets. The old battleship was removed from naval service, and preserving her as a memorial required the treaty signatories’ consent. After damage in the Great Kantō Earthquake, she was moved to her present site in 1925. The memorial was formally opened on 12 November 1926.",
+          "After the Second World War Mikasa lost her turrets, guns, bridges, funnels and masts. Entertainment facilities were installed inside, then fell into decline themselves. A surviving hull did not mean a surviving ship. A new restoration was completed on 27 May 1961. Today’s Mikasa is therefore a historical hull with reconstructed parts of her appearance and a museum exhibition. She was never renamed or transferred to another navy: the name survived with the hull, although her purpose changed completely."
+        ],
+        "refs": [
+          7,
+          8,
+          9
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Displacement",
+        "value": "15 140 t",
+        "note": "Labelled Std. Disp. in the museum table; should not be confused with full-load displacement or the later treaty category of standard displacement.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Length and beam",
+        "value": "122 × 23.2 m",
+        "note": "Length as given in the official museum table, not length overall.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Machinery",
+        "value": "2 triple-expansion steam engines; 25 Belleville boilers; 2 propellers",
+        "note": "The museum table gives 15 000 hp.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Speed",
+        "value": "18 knots",
+        "note": "Museum specification, not speed in every action.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Principal armament",
+        "value": "4 × 305-mm/40; 14 × 152-mm/40",
+        "note": "Two twin main-battery turrets. Barrel lengths in calibres; the museum’s imperial figures are 12 and 6 inches.",
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "label": "Torpedo armament",
+        "value": "4 tubes of 457-mm calibre",
+        "note": "18-inch tubes in the museum table.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Complement",
+        "value": "860 people",
+        "note": "Museum establishment figure; actual numbers varied over time.",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1902,
+        "date": "1 March 1902 (New Style)",
+        "title": "Commissioned",
+        "text": "The British yard delivered the ship to the Japanese navy.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "28 July / 10 August 1904",
+        "title": "Battle of the Yellow Sea",
+        "text": "Tōgō’s flagship fought the Port Arthur squadron.",
+        "refs": [
+          4
+        ]
+      },
+      {
+        "year": 1905,
+        "date": "14–15 / 27–28 May 1905",
+        "title": "Tsushima",
+        "text": "Tōgō commanded the fleet from Mikasa.",
+        "refs": [
+          3
+        ]
+      },
+      {
+        "year": 1905,
+        "date": "12 September 1905 (New Style)",
+        "title": "Fire at Sasebo",
+        "text": "A magazine explosion sank the ship after the war ended.",
+        "refs": [
+          4
+        ]
+      },
+      {
+        "year": 1926,
+        "date": "12 November 1926 (New Style)",
+        "title": "A memorial ship",
+        "text": "The preserved battleship opened at Yokosuka.",
+        "refs": [
+          7
+        ]
+      },
+      {
+        "year": 1961,
+        "date": "27 May 1961 (New Style)",
+        "title": "Restoration completed",
+        "text": "Missing parts of the ship’s appearance were recreated.",
+        "refs": [
+          9
+        ]
+      }
+    ],
+    "crew": [
+      {
+        "name": "Heihachirō Tōgō",
+        "role": "Commander of the Combined Fleet; flew his flag in Mikasa during the war of 1904–1905.",
+        "personSlug": null,
+        "refs": [
+          3
+        ]
+      },
+      {
+        "name": "Hikojirō Ijichi",
+        "role": "Captain during the Russo-Japanese War, not commander of the whole fleet.",
+        "personSlug": null,
+        "refs": [
+          3
+        ]
+      },
+      {
+        "name": "Saneyuki Akiyama",
+        "role": "Operations officer on Tōgō’s staff aboard the flagship.",
+        "personSlug": null,
+        "refs": [
+          3
+        ]
+      }
+    ],
+    "armament": [
+      {
+        "weaponSlug": "armstrong-305-40",
+        "count": 4,
+        "period": "Russo-Japanese War, 1904–1905",
+        "note": "Two twin turrets. Fred Jane’s contemporary reference book identifies Elswick 12-inch/40 guns on Japanese battleships up to and including Mikasa. The name Type 41 came after the war.",
+        "refs": [
+          1,
+          10
+        ]
+      }
+    ],
+    "images": [
+      {
+        "file": "/images/essays/mikasa.webp",
+        "alt": "Mikasa afloat, with two funnels and two masts; a printed caption appears below.",
+        "caption": "Mikasa, Admiral Tōgō’s flagship. Illustration in the report of U.S. naval surgeon William C. Braisted, published in 1906. The precise date and place of photography are not given.",
+        "credit": "Photographer unidentified. William C. Braisted, Report on the Japanese Naval Medical and Sanitary Features of the Russo-Japanese War. Washington: Government Printing Office, 1906. GovInfo.",
+        "sourceUrl": "https://www.govinfo.gov/app/details/SERIALSET-04915_00_00-002-0328-0000",
+        "license": "Public domain (USA) — published in 1906; full verified provenance in work/essay-visuals/proposal.json.",
+        "width": 1800,
+        "height": 1096
+      },
+      {
+        "file": "/images/hardware/mikasa-west.webp",
+        "alt": "Mikasa in light paint, seen broadside, with banded funnels.",
+        "caption": "The battleship Mikasa. Photograph by West & Son, Southsea, reproduced in Cassell’s History of the Russo-Japanese War. This page does not establish the precise date of photography.",
+        "credit": "West & Son, Southsea. Cassell’s History of the Russo-Japanese War; Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Battleship_mikasa.jpg",
+        "license": "Public domain — early twentieth-century publication with expired copyright; Commons PD-old. In the USA: publication before 1931.",
+        "width": 754,
+        "height": 526
+      }
+    ],
+    "relatedNotes": [
+      "pervaya-tihookeanskaya-eskadra",
+      "voina-na-more-osada-mukden-tsusima"
+    ],
+    "relatedEssays": [
+      "mikasa-obed-i-snabzhenie"
+    ],
+    "relatedPeople": [],
+    "relatedPlaces": [
+      "gavan-port-artura"
+    ],
+    "relatedSources": [
+      "nids-flot-snabzhenie-2024"
+    ],
+    "sources": [
+      {
+        "id": 1,
+        "title": "Build of MIKASA / Mikasa Statistics",
+        "author": "Mikasa Preservation Society",
+        "date": "Undated",
+        "url": "https://www.kinenkan-mikasa.or.jp/en/mikasa/index.html",
+        "locator": "Mikasa Statistics table; paragraphs on construction",
+        "note": "Official museum. The term Std. Disp. and the abbreviated length of 122 m are retained with a qualification."
+      },
+      {
+        "id": 2,
+        "title": "Museum Report: The World’s Oldest Battleship",
+        "author": "Robert S. Bolia",
+        "date": "2009-12",
+        "url": "https://www.usni.org/magazines/naval-history-magazine/2009/december/museum-report",
+        "locator": "Sections on design and museum spaces",
+        "note": "U.S. Naval Institute; used for the design and surviving spaces, not all the author’s generalisations about naval warfare."
+      },
+      {
+        "id": 3,
+        "title": "Battle of TSUSHIMA",
+        "author": "Mikasa Preservation Society",
+        "date": "Undated",
+        "url": "https://www.kinenkan-mikasa.or.jp/en/mikasa/battle_of_soj.html",
+        "locator": "Battle account and identification of those shown on the bridge",
+        "note": "Official museum; names of staff officers and captain."
+      },
+      {
+        "id": 4,
+        "title": "The Mikasa: New Dawn in the Pacific",
+        "author": "William Twaddell",
+        "date": "2022-10",
+        "url": "https://www.usni.org/magazines/naval-history-magazine/2022/october/mikasa-new-dawn-pacific",
+        "locator": "Main text: Port Arthur, the Yellow Sea, Sasebo and later service",
+        "note": "Independent naval publication; disputed exact hit counts are not repeated."
+      },
+      {
+        "id": 5,
+        "title": "Ship Logistics During the Russo-Japanese War — Rice Balls Were Served for a Post-Victory Dinner",
+        "author": "ISHIHARA Akinori",
+        "date": "2024-05-28",
+        "url": "https://www.nids.mod.go.jp/english/publication/commentary/pdf/commentary324e.pdf",
+        "locator": "English version, pp. 8–9; Japanese version, pp. 7–8",
+        "note": "NIDS Commentary no. 324. Verification limits and the archival primary source are described in work/publication/mikasa-factcheck.json; the original medical volume was not independently read."
+      },
+      {
+        "id": 6,
+        "title": "Japanese Battleship Sunk",
+        "author": "Woodville Examiner / Papers Past, National Library of New Zealand",
+        "date": "1905-09-15",
+        "url": "https://paperspast.natlib.govt.nz/newspapers/WOODEX19050915.2.14",
+        "locator": "p. 3; telegrams dated 13 September",
+        "note": "Contemporary press: early casualties are provisional and include missing men and rescuers."
+      },
+      {
+        "id": 7,
+        "title": "Preservation",
+        "author": "Mikasa Preservation Society",
+        "date": "Undated",
+        "url": "https://www.kinenkan-mikasa.or.jp/en/mikasa/preservation.html",
+        "locator": "Main text",
+        "note": "Official history of the memorial."
+      },
+      {
+        "id": 8,
+        "title": "Devastation after WW II",
+        "author": "Mikasa Preservation Society",
+        "date": "Undated",
+        "url": "https://www.kinenkan-mikasa.or.jp/en/mikasa/devastation_after_ww2.html",
+        "locator": "Main text",
+        "note": "Used for physical changes to the ship; the society’s evaluative language is not adopted."
+      },
+      {
+        "id": 9,
+        "title": "Restoration Ceremony",
+        "author": "Mikasa Preservation Society",
+        "date": "Undated",
+        "url": "https://www.kinenkan-mikasa.or.jp/en/mikasa/restoration.html",
+        "locator": "Ceremony date: 27 May 1961",
+        "note": "Official museum."
+      },
+      {
+        "id": 10,
+        "title": "The Imperial Japanese Navy",
+        "author": "Fred T. Jane",
+        "date": "1904",
+        "url": "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm",
+        "locator": "Chapter XXII, Guns, pp. 313–314; “12-in. Guns of the Mikasa” drawing on p. 314",
+        "note": "Contemporary technical reference confirming Elswick 12-inch/40 guns through Mikasa inclusive. These pages were read, not the entire book."
+      }
+    ],
+    "limitations": [
+      "The museum table gives an abbreviated length of 122 m and the label Std. Disp.; these figures cannot be compared without qualification with other ships’ overall lengths and full-load displacements.",
+      "For the Sasebo disaster, the figure of 251 comes from the USNI article; early press reports gave provisional and conflicting totals. The cause of the initial fire is not established here."
+    ],
+    "updatedAt": "2026-11-15"
+  },
+  {
+    "slug": "novik",
+    "kind": "ship",
+    "name": "Cruiser Novik",
+    "shortName": "Novik",
+    "category": "Second-class protected cruiser",
+    "countries": [
+      "russia",
+      "japan"
+    ],
+    "periods": [
+      "russian",
+      "japanese"
+    ],
+    "aliases": [
+      "Novik",
+      "Nowik",
+      "Suzuya"
+    ],
+    "summary": "A fast Russian second-class cruiser built in Germany and one of the most active ships of the Port Arthur squadron. After escaping from Port Arthur she was scuttled off Sakhalin, then raised by Japan and served as Suzuya until her removal from the navy list in 1913.",
+    "intro": [
+      "Novik was meant to see farther than the squadron and reach places a heavy battleship could not reach in time. That was why her engines and boilers occupied so much of the design. At Port Arthur the small cruiser was constantly in demand for reconnaissance, fighting torpedo craft and supporting troops near the coast. Yet her story ended far from the fortress, and her Russian name was followed by a Japanese one."
+    ],
+    "sections": [
+      {
+        "id": "creation",
+        "title": "A scout for the Far East",
+        "paragraphs": [
+          "The ship was ordered under the naval programme of 1898, adopted to strengthen Russia’s fleet in the Far East. It called for a cruiser of about 3000 tonnes to scout for the squadron, support friendly torpedo craft and fight enemy boats. This was a distinct role; comparing her artillery with a battleship’s without considering her purpose would make little sense. Novik was designed above all for speed and the ability to operate frequently on detached duties for the squadron.",
+          "The contract went to the German firm Schichau. The hull was built at Danzig, now Gdańsk, and the machinery at Elbing, now Elbląg. Actual construction preceded the ceremonial laying down: by the official date the hull had already reached the armoured deck. Launched in 1900, the cruiser then underwent lengthy trials and correction of defects. Final acceptance was completed in spring 1902. In May she reached Kronstadt, sailed for the Pacific in autumn and arrived at Port Arthur in April 1903."
+        ],
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "design",
+        "title": "The price of speed in weight and space",
+        "paragraphs": [
+          "Three steam engines drove three propellers; twelve water-tube boilers supplied their steam. Over five runs at the end of her trials, the cruiser averaged 25.08 knots at approximately 17 800 horsepower. Figures of 26 knots also appear in the literature for individual trials. These are different measures. The highest cannot simply be selected and treated as a speed the cruiser was obliged to sustain after months of war without a proper refit.",
+          "The term “protected cruiser” describes her armour arrangement. There was no belt along the ship’s side; instead, an internal armoured deck with sloping sides shielded the engines and other vital spaces. Her main weapons were six 120-mm guns, supplemented by small-calibre artillery and torpedo tubes. Against torpedo craft this was a much heavier armament than a boat’s own. Against a large cruiser armed with six-inch guns, it meant a significant disadvantage."
+        ],
+        "refs": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "port-arthur",
+        "title": "A cruiser always in demand",
+        "paragraphs": [
+          "At the start of the war Novik was commanded by Commander Nikolai Ottovich Essen. In the daylight battle of 27 January (9 February) 1904 he closed with the Japanese ships. A 203-mm shell damaged the stern and steering compartment, forcing the cruiser out of action and into dock. Lieutenant Andrey Shter, who served aboard, observed plainly that courage did not turn a light scout into a ship fit for a fleet gunnery battle.",
+          "Admiral Stepan Makarov’s arrival brought more active fleet operations. On one sortie Makarov raised his flag in Novik in an attempt to help the destroyer Steregushchy. This did not make the admiral a permanent member of her ship’s company. In March Maximilian Fyodorovich Schultz took over the cruiser, while Essen moved to the battleship Sevastopol. Novik continued putting to sea, escorting destroyers and firing on Japanese troops along the coast. Tahe Bay, east of Port Arthur, became one of the places where she supported the land front."
+        ],
+        "refs": [
+          1,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "breakout",
+        "title": "From the Yellow Sea around Japan",
+        "paragraphs": [
+          "On 28 July (10 August) 1904 the Port Arthur squadron sailed in an attempt to reach Vladivostok. Its formation broke down after the Battle of the Yellow Sea. Novik followed the cruiser Askold south and escaped the action. But engines and boilers already needed attention, and coal was short. Instead of a direct voyage to the Russian base, she had to put into Qingdao, a German-held port on the Chinese coast.",
+          "Staying in a neutral port risked internment: disarmament and withdrawal from the war until its end. Schultz decided to continue. The cruiser rounded Japan on its eastern side, hoping to reach Vladivostok through the La Pérouse Strait between Hokkaido and Sakhalin. First she needed another supply of coal. Her next stop was therefore Korsakov Post on southern Sakhalin. Speed had helped her escape one battle; it did not cancel fuel consumption or the wear on machinery during the voyage that followed."
+        ],
+        "refs": [
+          1,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "korsakov",
+        "title": "The final action and the crew’s journey",
+        "paragraphs": [
+          "On 7 (20) August near Korsakov Post, Novik fought the Japanese cruiser Tsushima. Damage forced her back. Water was entering the after compartments, damaged machinery limited her speed and another Japanese cruiser, Chitose, was nearby. Schultz ordered his ship scuttled in shallow water. There was still hope of raising her later, since Korsakov Post remained Russian. The next day Chitose shelled the already submerged hull.",
+          "The men outlived the ship. Some remained on Sakhalin to salvage equipment and remove guns, while the main body headed north towards Alexandrovsk Post. According to Shter’s diary, eight officers and 270 ratings set out on 17 (30) August. The ship’s musicians refused to abandon their instruments and carried them along. Sorties from Port Arthur had given way to a long journey overland: officers now had to arrange packs, food and a route for men who no longer had a ship."
+        ],
+        "refs": [
+          1,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "suzuya",
+        "title": "Suzuya and another Novik",
+        "paragraphs": [
+          "The Treaty of Portsmouth transferred southern Sakhalin to Japan. The Japanese raised the cruiser in 1906, repaired her and commissioned her as Suzuya, rendered in more than one way in Russian literature. During reconstruction the first boiler room was not restored to its original condition, and the forward funnel was removed. The armament changed too. A photograph of a two-funnel Japanese ship therefore shows a later stage in the same hull’s life, not the appearance of Novik at Port Arthur.",
+          "The former Russian cruiser remained on the Japanese navy list until 1913 and was then sold for scrap. She never returned to the Russian fleet. In Russia, a new turbine-powered destroyer associated with Essen and the Baltic Fleet received the name Novik. That was a different ship, later renamed Yakov Sverdlov. The Port Arthur cruiser’s sequence of names is shorter: Novik—Suzuya. Keeping them distinct matters in both texts and photographs: the celebrated service of one must not quietly extend the biography of the other."
+        ],
+        "refs": [
+          1,
+          7
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Displacement",
+        "value": "3080 t normal; 3180 t full load",
+        "note": "According to Alliluyev’s summary; the design brief specified 3000 t.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Dimensions",
+        "value": "106 m between perpendiculars; beam 12.2 m; draught about 5 m",
+        "note": "106 m is not length overall.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Machinery",
+        "value": "3 triple-expansion steam engines, 3 propellers, 12 boilers",
+        "note": "Combined output in the final trials: 17 789 hp.",
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "label": "Trial speed",
+        "value": "25.08 knots",
+        "note": "Average of five runs; separate reports of 26 knots concern other trial conditions.",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "label": "Protection",
+        "value": "Deck 30 mm, slopes 51 mm; conning tower 30 mm",
+        "note": "Figures from Alliluyev’s summary. Not a continuous side armour belt.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Armament in Russian service",
+        "value": "6 × 120-mm; 6 × 47-mm; 2 × 37-mm; 5 torpedo tubes",
+        "note": "Outfit according to Alliluyev; does not describe the reconstructed Suzuya.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Established complement",
+        "value": "12 officers and 316 warrant officers and ratings",
+        "note": "328 people in the summary, not the number aboard on every voyage.",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1900,
+        "date": "1900",
+        "title": "Launched",
+        "text": "Built by Schichau at Danzig.",
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "year": 1902,
+        "date": "Spring 1902",
+        "title": "Acceptance completed",
+        "text": "After trials the cruiser sailed to Russia.",
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "year": 1903,
+        "date": "April 1903",
+        "title": "At Port Arthur",
+        "text": "Began service with the Far Eastern squadron.",
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "28 July / 10 August 1904",
+        "title": "Departure from Port Arthur",
+        "text": "After the Battle of the Yellow Sea, the cruiser went to Qingdao.",
+        "refs": [
+          4
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "7 / 20 August 1904",
+        "title": "Action off Korsakov Post",
+        "text": "Scuttled by her crew after fighting Tsushima.",
+        "refs": [
+          5
+        ]
+      },
+      {
+        "year": 1906,
+        "date": "1906",
+        "title": "Raised by Japan",
+        "text": "Subsequently rebuilt as Suzuya.",
+        "refs": [
+          1,
+          7
+        ]
+      },
+      {
+        "year": 1913,
+        "date": "1913",
+        "title": "Removed from the Japanese navy list",
+        "text": "The former Novik’s service ended.",
+        "refs": [
+          1,
+          7
+        ]
+      }
+    ],
+    "crew": [
+      {
+        "name": "Nikolai Ottovich Essen",
+        "role": "Captain of the cruiser at the beginning of the Russo-Japanese War; later commanded Sevastopol.",
+        "personSlug": null,
+        "refs": [
+          1,
+          3
+        ]
+      },
+      {
+        "name": "Maximilian Fyodorovich Schultz",
+        "role": "Captain during the breakout from Port Arthur and final action off Sakhalin.",
+        "personSlug": null,
+        "refs": [
+          1,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Andrey Petrovich Shter",
+        "role": "A lieutenant aboard the cruiser, participant in the events and author of the diary Aboard the Cruiser Novik.",
+        "personSlug": null,
+        "refs": [
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "Stepan Osipovich Makarov",
+        "role": "Temporarily raised his flag in Novik on the sortie to assist Steregushchy; he was not the cruiser’s captain.",
+        "personSlug": "makarov",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "armament": [],
+    "images": [
+      {
+        "file": "/images/hardware/novik-port-arthur.webp",
+        "alt": "The three-funnel cruiser Novik near buildings on Port Arthur’s hilly shoreline.",
+        "caption": "Novik at Port Arthur, 1904, according to the photograph’s catalogue attribution. The precise day is unknown.",
+        "credit": "Photographer unidentified. Archive of Photographs of Russian and Soviet Naval Ships / Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Novik1904Port-Artur.jpg",
+        "license": "Public domain — Commons PD-RusEmpire and PD-old; historical photograph from the early twentieth century.",
+        "width": 1600,
+        "height": 899
+      },
+      {
+        "file": "/images/hardware/novik-profile.webp",
+        "alt": "Novik in light paint, seen from the stern, with three funnels and one mast.",
+        "caption": "Novik in Russian service. The precise date and location of this photograph are unknown.",
+        "credit": "Photographer unidentified. Wikimedia Commons, File:Novik01.jpg.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Novik01.jpg",
+        "license": "Public domain — Commons PD-RusEmpire and PD-old; historical photograph from the early twentieth century.",
+        "width": 1600,
+        "height": 1073
+      }
+    ],
+    "relatedNotes": [
+      "pervaya-tihookeanskaya-eskadra",
+      "voina-na-more-osada-mukden-tsusima"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [
+      "makarov"
+    ],
+    "relatedPlaces": [
+      "gavan-port-artura"
+    ],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "The Cruiser Novik",
+        "author": "A. A. Alliluyev",
+        "date": "Gangut, nos. 2–3",
+        "url": "https://keu-ocr.narod.ru/Novik/",
+        "locator": "Main article; “Brief Historical Summary and Tactical and Technical Data”; concluding passages on Japanese service",
+        "note": "Specialist archival study; electronic transcription read, but scanned journal pagination was not checked."
+      },
+      {
+        "id": 2,
+        "title": "Cruisers of the Imperial Russian Navy, Part 1, Chapter 5: Novik",
+        "author": "V. Ya. Krestyaninov",
+        "date": "Electronic transcription without publication-details page",
+        "url": "https://keu-ocr.narod.ru/Cruisers/chap06.html",
+        "locator": "“Novik” subsection: trials and voyage to Port Arthur",
+        "note": "Specialist work; this copy does not establish the precise edition. Author checked against the contents at https://keu-ocr.narod.ru/Cruisers/."
+      },
+      {
+        "id": 3,
+        "title": "Aboard the Cruiser Novik, Chapter 2: The Action of 27 January 1904",
+        "author": "A. P. Shter",
+        "date": "1908; electronic version based on the 2001 edition",
+        "url": "https://militera.lib.ru/memo/russian/shter_ap/02.html",
+        "locator": "Chapter 2",
+        "note": "Primary testimony by an officer; assessments of the enemy are not accepted automatically."
+      },
+      {
+        "id": 4,
+        "title": "Aboard the Cruiser Novik, Chapter 7: The Action of 28 July",
+        "author": "A. P. Shter",
+        "date": "1908; electronic version based on the 2001 edition",
+        "url": "https://militera.lib.ru/memo/russian/shter_ap/07.html",
+        "locator": "Chapter 7",
+        "note": "Primary testimony; source dates are Old Style."
+      },
+      {
+        "id": 5,
+        "title": "Aboard the Cruiser Novik, Chapter 8: The End of Novik",
+        "author": "A. P. Shter",
+        "date": "1908; electronic version based on the 2001 edition",
+        "url": "https://militera.lib.ru/memo/russian/shter_ap/08.html",
+        "locator": "Chapter 8",
+        "note": "Saved HTML read; account of the final action compared with Alliluyev."
+      },
+      {
+        "id": 6,
+        "title": "Aboard the Cruiser Novik, Chapter 9: Across Sakhalin",
+        "author": "A. P. Shter",
+        "date": "1908; electronic version based on the 2001 edition",
+        "url": "https://militera.lib.ru/memo/russian/shter_ap/09.html",
+        "locator": "Opening: the party’s departure on 17 August, eight officers and 270 men",
+        "note": "Primary testimony; the marching party’s strength is not the cruiser’s complete complement."
+      },
+      {
+        "id": 7,
+        "title": "The Cruiser Novik: Japanese Service",
+        "author": "Archive of Photographs of Russian and Soviet Naval Ships",
+        "date": "Undated",
+        "url": "https://navsource.narod.ru/photos/02/056/index.html",
+        "locator": "Chronological summary, renaming and removal from the navy list",
+        "note": "Supplementary photographic chronology, checked against Alliluyev rather than replacing him."
+      }
+    ],
+    "limitations": [
+      "The 26 knots recorded in individual trials and the five-run average of 25.08 knots are different measures; the latter is used for comparison.",
+      "29 February 1900 appears as the formal laying-down date in the Russian calendar: 1900 was a leap year in the Julian calendar. The general chronology gives the year only, to distinguish the ceremony from the actual start of construction.",
+      "Brief references place completion in either 1901 or 1902; early trials and final acceptance in spring 1902 are distinguished here. Completion of Japanese reconstruction is not dated merely from the year the hull was raised."
+    ],
+    "updatedAt": "2026-11-15"
+  },
+  {
+    "slug": "varyag",
+    "kind": "ship",
+    "name": "Cruiser Varyag",
+    "shortName": "Varyag",
+    "category": "First-class protected cruiser",
+    "countries": [
+      "russia",
+      "japan",
+      "other"
+    ],
+    "periods": [
+      "russian",
+      "japanese"
+    ],
+    "aliases": [
+      "Varyag",
+      "Variag",
+      "Varyag cruiser",
+      "Sōya",
+      "Soya"
+    ],
+    "summary": "An American-built Russian protected cruiser that served with the squadron based at Port Arthur. Her famous battle took place elsewhere, at Chemulpo in Korea on 27 January (9 February) 1904. She later served Japan as Sōya, returned to Russia and ended her career off Scotland.",
+    "intro": [
+      "“Varyag” and “scuttled by her crew” are usually placed together, as though the ship vanished after Chemulpo. Yet the hull was raised, repaired and used for many more years under another flag. Her story connects an American yard, a Russian base in China, a Korean port, Japanese training service and a final voyage towards the Scottish coast. The song preserved one day; the ship had a history before and after it."
+    ],
+    "sections": [
+      {
+        "id": "creation",
+        "title": "An American cruiser for a Russian squadron",
+        "paragraphs": [
+          "Varyag was built by William Cramp & Sons in Philadelphia. The order formed part of Russia’s 1898 programme to strengthen its fleet in the Far East. The ship was launched in 1899, and the St Andrew’s ensign was raised early in 1901. After trials and correction of defects, she sailed to Kronstadt and then towards the Pacific. She reached Port Arthur in 1902.",
+          "She was a large scout and a cruiser for operations on sea communications, not a battleship. With a normal displacement of approximately 6500 tonnes, she carried twelve 152-mm Canet guns. An armoured deck protected vital spaces internally, but there was no armour belt along the waterline. The main guns stood in open positions without turret protection: fragments could strike their crews even when no hole threatened the ship’s buoyancy. A strong cruiser battery did not make its men invulnerable."
+        ],
+        "refs": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "machinery",
+        "title": "Speed in the tables and at sea",
+        "paragraphs": [
+          "Two triple-expansion steam engines drove two propellers, supplied by thirty Niclausse boilers. During acceptance trials the cruiser achieved about 23 knots. Combined with twelve six-inch guns, this promised a powerful and fast ship. The auxiliary battery included twelve 75-mm guns, smaller pieces, Baranovsky landing guns and six torpedo tubes. The landing guns could also be used by a party put ashore.",
+          "In service the boilers and engines repeatedly needed repairs. Recorded trial speed was not the same as the speed a worn installation could sustain at sea. Historian Andrey Gushchin emphasises this difference when comparing specialist studies and participants’ recollections. In his account, technical condition restricted the cruiser’s capabilities. But a general history of defects cannot establish one exact speed for every minute of the subsequent battle, or explain its entire outcome solely through boiler design."
+        ],
+        "refs": [
+          1,
+          3
+        ]
+      },
+      {
+        "id": "port-arthur",
+        "title": "From Port Arthur to duty with the envoy",
+        "paragraphs": [
+          "Before the war Varyag belonged to the Russian squadron based at Port Arthur. Her service included voyages, repairs and visits to foreign ports. Vsevolod Fyodorovich Rudnev, who took command, had previously served as senior assistant to the chief of Port Arthur’s naval port. The cruiser’s links with the fortress were therefore both organisational and personal. Her best-known battle, however, belongs on another map.",
+          "At the outbreak of war Varyag and the gunboat Koreets were at Chemulpo, now Incheon, on Korea’s west coast. They were station ships: warships posted to a foreign port to represent their country and support its diplomatic mission. Ships of other powers were there too. The neutral roadstead was not a Russian naval base. Returning to Port Arthur required following the channel out to sea, while a Japanese squadron under Rear Admiral Sotokichi Uriū already controlled the approaches."
+        ],
+        "refs": [
+          1,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "chemulpo",
+        "title": "Battle off a Korean port",
+        "paragraphs": [
+          "On 27 January (9 February) 1904 Rudnev received a demand to leave the roadstead; otherwise Uriū threatened to attack in the port. The Russian ships sailed out and fought. Facing them was a force of six cruisers and eight torpedo boats, including the armoured cruiser Asama. The narrow, difficult channel restricted freedom to manoeuvre. Varyag was hit, fires broke out, the hull was holed and men were killed and wounded. The breakout failed.",
+          "In his report Rudnev described the death of rangefinding officer Alexei Nirod and the wounding of Pavel Gubonin, who continued to command his gun division. Rangefinders measured the distance to the enemy; their work was as necessary for accurate fire as the operation of the guns themselves. Rudnev was also concussed. The Russian ships returned to the roadstead, and their crews were transferred to neutral vessels. Koreets was blown up; Varyag was scuttled by opening sea valves. This prevented the ship from passing immediately into enemy hands, but did not destroy the hull beyond recovery."
+        ],
+        "refs": [
+          4,
+          5
+        ]
+      },
+      {
+        "id": "soya",
+        "title": "Raised and renamed Sōya",
+        "paragraphs": [
+          "The Japanese raised Varyag in 1905. After repairs she entered their navy as Sōya, a name rendered in several ways in Russian, and served as a training cruiser. A new flag and name continued the life of the same hull. Training service required the engines and shipboard systems to be maintained; this was more than keeping a trophy tied to a quay.",
+          "During the First World War Russia and Japan were allies. In 1916 the Russian government bought the cruiser back together with two other former Russian warships. Her name Varyag was restored. She made the long passage from Vladivostok to Kola Bay and joined the Arctic Ocean Flotilla. A ship built for the Pacific was needed at the opposite end of the country. In February 1917 she sailed to Britain for repairs, but never returned to her former service."
+        ],
+        "refs": [
+          2,
+          4,
+          6
+        ]
+      },
+      {
+        "id": "last-years",
+        "title": "The final shore was Scottish",
+        "paragraphs": [
+          "After the revolution the ship came under British control. The Central Naval Museum dates her requisition to December 1917; sale for breaking up followed. While being towed to the breakers, Varyag grounded on rocks off the Scottish coast. She was broken up at the wreck site in the 1920s. Popular accounts often merge the grounding, destruction of the hull and completion of dismantling into a single “date of loss”, producing different years.",
+          "Material remains later became museum objects and memorial relics. Savino in the Tula region has a museum devoted to Captain Rudnev, bringing together family possessions and fragments of the ship found off Scotland. For Port Arthur, Varyag remains part of the story of the squadron that went to war in 1904. But the battle at Chemulpo, Japanese service and voyage north have geographies of their own. Preserving those distinctions restores the full biography of a ship that one famous song could never encompass."
+        ],
+        "refs": [
+          4,
+          7
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Displacement",
+        "value": "About 6500 t normal",
+        "note": "Not to be confused with full-load displacement, which reached approximately 7000 t.",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "label": "Dimensions",
+        "value": "Length overall about 129.8 m; beam 15.9 m",
+        "note": "The literature also gives 127.9 m for a different measure of length; these figures are not interchangeable.",
+        "refs": [
+          2,
+          3
+        ]
+      },
+      {
+        "label": "Machinery",
+        "value": "2 triple-expansion steam engines; 30 Niclausse boilers; 2 propellers",
+        "note": "Original installation, not an account of every Japanese alteration.",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "label": "Speed",
+        "value": "About 23 knots in acceptance trials",
+        "note": "Not a guaranteed speed during the Chemulpo action.",
+        "refs": [
+          1,
+          3
+        ]
+      },
+      {
+        "label": "Main battery",
+        "value": "12 × 152-mm Canet guns",
+        "note": "Open single mounts; original armament.",
+        "refs": [
+          2,
+          3
+        ]
+      },
+      {
+        "label": "Other armament",
+        "value": "12 × 75-mm; 8 × 47-mm; 2 × 37-mm; 2 × 63.5-mm; 6 torpedo tubes",
+        "note": "Includes Baranovsky landing guns. The outfit changed during Japanese and later Russian service.",
+        "refs": [
+          3
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1899,
+        "date": "1899",
+        "title": "Launched",
+        "text": "Built in Philadelphia by William Cramp & Sons.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1901,
+        "date": "Early 1901",
+        "title": "Russian ensign raised",
+        "text": "The ship sailed to Russia after trials.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1902,
+        "date": "1902",
+        "title": "Arrival at Port Arthur",
+        "text": "Joined the Far Eastern squadron.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "27 January / 9 February 1904",
+        "title": "Battle of Chemulpo",
+        "text": "Scuttled in the roadstead after the failed breakout.",
+        "refs": [
+          4,
+          5
+        ]
+      },
+      {
+        "year": 1905,
+        "date": "1905",
+        "title": "Raised by Japan",
+        "text": "Served as Sōya after repairs.",
+        "refs": [
+          4,
+          6
+        ]
+      },
+      {
+        "year": 1916,
+        "date": "1916",
+        "title": "Returned to Russia",
+        "text": "The name Varyag was restored and the ship transferred north.",
+        "refs": [
+          4,
+          6
+        ]
+      },
+      {
+        "year": 1917,
+        "date": "February 1917",
+        "title": "Departure for Britain",
+        "text": "Sent for repairs; no further combat service followed.",
+        "refs": [
+          4
+        ]
+      },
+      {
+        "year": 1920,
+        "date": "1920s",
+        "title": "Broken up off Scotland",
+        "text": "The hull that grounded during towing was dismantled at the site.",
+        "refs": [
+          4
+        ]
+      }
+    ],
+    "crew": [
+      {
+        "name": "Vsevolod Fyodorovich Rudnev",
+        "role": "Captain of Varyag at Chemulpo; previously served in the administration of Port Arthur’s naval port.",
+        "personSlug": null,
+        "refs": [
+          3,
+          5
+        ]
+      },
+      {
+        "name": "Alexei Alexeyevich Nirod",
+        "role": "Midshipman and rangefinding officer; killed at Chemulpo.",
+        "personSlug": null,
+        "refs": [
+          5
+        ]
+      },
+      {
+        "name": "Pavel Nikolayevich Gubonin",
+        "role": "Midshipman commanding a gun division; wounded in the action.",
+        "personSlug": null,
+        "refs": [
+          5
+        ]
+      }
+    ],
+    "armament": [
+      {
+        "weaponSlug": "canet-152-45",
+        "count": 12,
+        "period": "Russian service before the Battle of Chemulpo",
+        "note": "Open single deck mounts. The total does not mean that all guns could fire simultaneously on one broadside.",
+        "refs": [
+          2,
+          3
+        ]
+      }
+    ],
+    "images": [
+      {
+        "file": "/images/hardware/varyag-1901.webp",
+        "alt": "Varyag in light paint, seen broadside, with four funnels and two masts.",
+        "caption": "Varyag in June 1901, according to the photograph’s catalogue attribution. The precise location is unknown.",
+        "credit": "Photographer unidentified. Archive of Photographs of Russian and Soviet Naval Ships / Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Varyag1901.jpg",
+        "license": "Public domain — Commons PD-RusEmpire and PD-old; in the USA, public domain as a publication before 1931.",
+        "width": 1280,
+        "height": 806
+      },
+      {
+        "file": "/images/hardware/varyag-jane-1904.webp",
+        "alt": "Drawing of Varyag: four-funnel profile and a plan showing the gun arrangement.",
+        "caption": "Diagram of Varyag from Fred T. Jane’s The Imperial Japanese Navy, 1904, p. 341. A contemporary reference drawing, not a photograph of the Chemulpo action.",
+        "credit": "Fred T. Jane. The Imperial Japanese Navy. London: W. Thacker & Co., 1904, p. 341. Project Gutenberg.",
+        "sourceUrl": "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm#P_341",
+        "license": "Public domain — published in 1904; Fred T. Jane died in 1916; Project Gutenberg (USA).",
+        "width": 600,
+        "height": 320
+      }
+    ],
+    "relatedNotes": [
+      "pervaya-tihookeanskaya-eskadra",
+      "voina-na-more-osada-mukden-tsusima",
+      "molodyakov-rossiya-i-yaponiya-zolotoy-vek",
+      "lektsiya-nazarenko-russko-yaponskaya-voina"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [],
+    "relatedPlaces": [
+      "gavan-port-artura"
+    ],
+    "relatedSources": [
+      "nazarenko-lektsiya-russko-yaponskaya-voyna"
+    ],
+    "sources": [
+      {
+        "id": 1,
+        "title": "Cruisers of the Imperial Russian Navy, Part 1, Chapter 5: Varyag",
+        "author": "V. Ya. Krestyaninov",
+        "date": "Electronic transcription without publication-details page",
+        "url": "https://keu-ocr.narod.ru/Cruisers/chap06.html",
+        "locator": "“Varyag” subsection: contract, trials and voyage",
+        "note": "Specialist work; the relevant subsection was read, but this copy does not establish the precise edition. Author checked against the contents at https://keu-ocr.narod.ru/Cruisers/."
+      },
+      {
+        "id": 2,
+        "title": "VARYAG 1st class cruiser (1901)",
+        "author": "Ivan Gogin / Navypedia",
+        "date": "2014",
+        "url": "https://www.navypedia.org/ships/russia/ru_cr_varyag.htm",
+        "locator": "Technical data; Project history; Naval service",
+        "note": "Supplementary specialist reference. Length is given approximately as length overall; its barrel-length designation 152/44 is not mechanically substituted for the Russian name 152/45."
+      },
+      {
+        "id": 3,
+        "title": "The Russian Army in the War of 1904–1905, Appendix 3: The Chemulpo Action of Varyag and Koreets as a Microcosm of Naval Warfare",
+        "author": "A. V. Gushchin",
+        "date": "2014",
+        "url": "https://militera.org/books/pdf/research/guschin_av01.pdf",
+        "locator": "Printed pp. 183–200 (PDF pp. 193–210), especially pp. 187–191",
+        "note": "The appendix was read, not the entire book. Its inaccurate commissioning date of 1900 is not adopted here."
+      },
+      {
+        "id": 4,
+        "title": "Hall 3: The Russo-Japanese War, 1904–1905. The Action of the Cruiser Varyag",
+        "author": "Central Naval Museum",
+        "date": "Undated",
+        "url": "https://special.navalmuseum.ru/exposition?id=31",
+        "locator": "Two historical paragraphs; exhibit catalogue",
+        "note": "Official museum account; its assessment of the legality of British requisition is not adopted as a legal finding."
+      },
+      {
+        "id": 5,
+        "title": "Report of the Captain of the First-Class Cruiser Varyag to His Imperial Majesty’s Viceroy",
+        "author": "V. F. Rudnev",
+        "date": "1904-02-06 (Old Style); published 1911",
+        "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/biblchemulpodoc/chemulpo_002/",
+        "locator": "Report no. 103 and “Description of the Battle”",
+        "note": "Primary document in electronic transcription of the official collection Naval Operations: Documents, section III, book I, issue I. Claims about Japanese losses at the end of the report have not been independently confirmed and are not included in the narrative."
+      },
+      {
+        "id": 6,
+        "title": "VARYAG 1st class cruiser (1901): Naval service",
+        "author": "Ivan Gogin / Navypedia",
+        "date": "2014",
+        "url": "https://www.navypedia.org/ships/russia/ru_cr_varyag.htm",
+        "locator": "Japanese service as Soya and sale to Russia",
+        "note": "Supplements the museum account with the Japanese name; not treated as independent of source 2."
+      },
+      {
+        "id": 7,
+        "title": "Tula Historical and Cultural Encyclopaedia: Museum of the Captain of Varyag",
+        "author": "Tula Regional Universal Scientific Library",
+        "date": "Undated",
+        "url": "https://data.tularlic.ru/books/Tul%27skaya_istoriko-kul%27turnaya_entsiklopediya/378/",
+        "locator": "p. 378: museum, family possessions and ship fragments",
+        "note": "Library publication; information on the 2003 finds and museum holdings."
+      },
+      {
+        "id": 8,
+        "title": "The Imperial Japanese Navy: Variag",
+        "author": "Fred T. Jane",
+        "date": "1904",
+        "url": "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm#P_341",
+        "locator": "Cruiser diagram on p. 341",
+        "note": "Illustration source. The drawing is not treated as an exact working plan or evidence of the ship’s condition on the day of battle."
+      }
+    ],
+    "limitations": [
+      "Reference works differ on the dates of laying down, completion of trials, delivery and commissioning. Verified years are given here, with the raising of the Russian ensign early in 1901 identified separately.",
+      "Exact speed during the Chemulpo action, the effectiveness of Russian gunfire and Japanese casualties are not inferred from one side’s report. Russian deaths are likewise not quantified without a separate comparison of named individuals.",
+      "Grounding and subsequent dismantling occurred at different times. Following the museum account, the cautious wording “in the 1920s” is used rather than a false precise date for a single final loss.",
+      "Other in countries denotes British control after requisition, not confirmed full operational service in the Royal Navy."
+    ],
+    "updatedAt": "2026-11-15"
+  },
+  {
+    "slug": "obukhov-305-40",
+    "kind": "weapon",
+    "name": "Obukhov 305-mm/40 gun, Pattern 1895",
+    "shortName": "305-mm/40 gun",
+    "category": "Naval gun",
+    "countries": [
+      "russia"
+    ],
+    "periods": [
+      "russian",
+      "soviet"
+    ],
+    "aliases": [
+      "305-mm/40 gun",
+      "12-inch/40",
+      "305/40",
+      "Obukhov Pattern 1895"
+    ],
+    "summary": "The main battery of many Russian pre-dreadnought battleships, including Petropavlovsk and Retvizan. Developed in the early 1890s, the gun continued its career in Soviet coastal defence after its service at sea.",
+    "intro": [
+      "In photographs of a battleship, the eye is often drawn to its two large turrets, one forward and one aft. They housed the weapons with which the ship was expected to face an enemy battleship. For Russian ships of the Port Arthur squadron, this often meant the twelve-inch gun of 40 calibres in length. The compact designation “305/40” stands for an entire generation of the fleet."
+    ],
+    "sections": [
+      {
+        "id": "creation",
+        "title": "Why twelve inches was retained",
+        "paragraphs": [
+          "In 1891 the Naval Technical Committee considered a practical question: could the main calibre of new ships be reduced? Lighter guns promised lighter mountings and faster fire. The committee decided, however, that too much projectile power would be lost. Twelve inches was retained, but a new gun had to be designed.",
+          "The principal designer was artillery engineer Alexander Brink, and the manufacturer the Obukhov Steel Works. The design took shape in winter 1891–1892, with trials in 1895. The French Canet system helped the Russians develop a new breech mechanism, but this did not make the whole gun a French licensed model. It had its own design history."
+        ],
+        "refs": [
+          1
+        ]
+      },
+      {
+        "id": "numbers",
+        "title": "What 305 and 40 mean",
+        "paragraphs": [
+          "The exact calibre was 304.8 mm, or twelve British inches. “40 calibres” expresses length as a multiple of the bore diameter: about 12.2 m. This is not the gun’s full external length with all projecting parts. The convention allows the proportions of guns of different calibres to be compared, but by itself says nothing about range or fighting value.",
+          "During the Russo-Japanese War the gun used shells weighing 331.7 kg, relatively light for this calibre. The later Pattern 1911 shell weighed 470.9 kg. Both figures appear in references for the same gun, but the second must not be carried back into an account of a battle in 1904. A ship’s weapons changed over time, and so did their ammunition."
+        ],
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "arthur",
+        "title": "The heavy guns of the Port Arthur squadron",
+        "paragraphs": [
+          "Petropavlovsk, Poltava, Sevastopol, Retvizan and Tsesarevich each carried four in two twin turrets. The same main gun thus appeared on ships differing considerably in age, protection and layout. They shared the gun, but not necessarily the turrets or ammunition-handling machinery.",
+          "That distinction matters for the rate of fire. Time passed while heavy ammunition came up from the magazines and the mounting returned to its loading position. A gun’s quoted firing rate is not the number of aimed rounds a ship could actually fire in battle. Judging the squadron’s performance by one specification would be convenient, but misleading."
+        ],
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "afterlife",
+        "title": "After the battleships",
+        "paragraphs": [
+          "The Russo-Japanese War did not end the design’s history. The guns remained aboard ships that fought in the First World War; improvements to their mountings shortened the loading cycle. Later, removed barrels were stored, and some found a new use in coastal defence.",
+          "In the USSR six 305-mm/40 guns were fitted to TM-2-12 railway mountings and sent to the Far East. A photograph is easily miscaptioned here: the railway carriage belongs to another era and another mounting, although its barrel originated with late nineteenth-century battleships. The ships went to the breakers, while their main guns remained in service."
+        ],
+        "refs": [
+          1,
+          2
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Calibre",
+        "value": "304.8 mm",
+        "note": "The exact equivalent of twelve inches, usually rounded to 305 mm.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Relative length",
+        "value": "40 calibres",
+        "note": "About 12.19 m under the model’s designation; not full external length.",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "label": "Shell weight in 1904",
+        "value": "331.7 kg",
+        "note": "Older armour-piercing and high-explosive types; later ammunition is not substituted here.",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "label": "Gun weight",
+        "value": "About 42.8 t",
+        "note": "The gun, not the complete turret mounting.",
+        "refs": [
+          2
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1891,
+        "date": "1891–1892",
+        "title": "A new gun designed",
+        "text": "Alexander Brink and specialists of the Naval Technical Committee developed the new main battery weapon.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1895,
+        "date": "1895",
+        "title": "Trials and acceptance",
+        "text": "Following trials, the new twelve-inch/40 entered naval service.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "1904",
+        "title": "Port Arthur squadron",
+        "text": "The guns formed the main batteries of several Russian battleships.",
+        "refs": [
+          1,
+          2
+        ]
+      }
+    ],
+    "crew": [],
+    "armament": [],
+    "images": [
+      {
+        "file": "/images/hardware/obukhov-305-40.webp",
+        "alt": "Replacing the twelve-inch guns aboard Tsesarevich",
+        "caption": "Replacing Tsesarevich’s twelve-inch guns, 1906–1917 according to the photograph’s record. A post-war photograph, not Port Arthur in 1904.",
+        "credit": "Photographer unidentified; Archive of Photographs of Russian and Soviet Naval Ships, via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsesarevich1906-1917gun.jpg",
+        "license": "Public domain — Commons: PD-RusEmpire, PD-old; public domain in the USA as a publication before 1931.",
+        "width": 1800,
+        "height": 1483
+      }
+    ],
+    "relatedNotes": [
+      "pervaya-tihookeanskaya-eskadra"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [],
+    "relatedPlaces": [],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "A. F. Brink, Designer of the Twelve-Inch Naval Gun of 40 Calibres for the Russian Fleet",
+        "author": "S. Ye. Vinogradov",
+        "date": "Date not stated",
+        "url": "https://www.reenactor.ru/ARH/PDF/Vinogradov_11.pdf",
+        "locator": "pp. 469–481, especially 469–470, 473–478 and 480",
+        "note": "Study based on Russian State Naval Archive documents and Naval Technical Committee reports; PDF downloaded and read. The date of the collection was not established from this copy."
+      },
+      {
+        "id": 2,
+        "title": "Russia / USSR 12\"/40 Pattern 1895",
+        "author": "Tony DiGiulian / NavWeaps",
+        "date": "Date not stated",
+        "url": "https://www.navweaps.com/Weapons/WNRussian_12-40_m1895.php",
+        "locator": "Description; Gun Characteristics; Ammunition; Mountings",
+        "note": "Specialist reference separating later shells and mountings from the 1904 outfit."
+      }
+    ],
+    "limitations": [
+      "No single range is quoted: it depended on the shell, charge and mounting. Total production is not given because accounts cover different combinations of pre-war and later orders."
+    ],
+    "updatedAt": "2026-11-15"
+  },
+  {
+    "slug": "canet-152-45",
+    "kind": "weapon",
+    "name": "Canet 152-mm/45 gun, Pattern 1892",
+    "shortName": "Canet 152-mm/45 gun",
+    "category": "Naval and coastal gun",
+    "countries": [
+      "russia",
+      "other"
+    ],
+    "periods": [
+      "russian",
+      "soviet"
+    ],
+    "aliases": [
+      "Canet 152-mm/45 gun",
+      "Canet gun",
+      "152/45",
+      "6-inch/45 Canet"
+    ],
+    "summary": "A French-designed six-inch gun that became a widespread weapon of the Russian fleet and coastal batteries. At Port Arthur it connected the squadron at sea with the defence of the fortress.",
+    "intro": [
+      "Canet’s name appears constantly in lists of Port Arthur’s armament. Familiarity can obscure the object itself: a long barrel, a shell weighing more than forty kilograms and a crew repeatedly serving a heavy weapon. It was one of the Russian squadron’s most familiar modern guns. It was needed ashore as well."
+    ],
+    "sections": [
+      {
+        "id": "creation",
+        "title": "A French design made in Russia",
+        "paragraphs": [
+          "In 1891 a Russian delegation was shown quick-firing guns by the French engineer Gustave Canet. The navy purchased a licence, and production began at the Obukhov Works in 1892. The French surname remained the system’s name, although most Russian sailors handled domestically manufactured guns.",
+          "Rapid fire depended on the whole system: breech, recoil mechanism, mounting and ammunition supply. After a shot, the moving part of the gun recoiled and returned, rather than the entire heavy mounting with its crew. For contemporaries, this arrangement mattered as much as an increase in calibre."
+        ],
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "numbers",
+        "title": "Six inches does not identify the model",
+        "paragraphs": [
+          "Six inches equals 152.4 mm. A length of 45 calibres corresponds to approximately 6.86 m, helping to convey the gun’s proportions. But “six-inch” alone is not enough: Port Arthur also had older guns of that calibre which differed considerably from the Canet.",
+          "A typical older shell weighed 41.4 kg. On Bayan, 152-mm guns occupied casemates, armoured compartments with firing ports. Other ships used different mountings. These differences affected crew protection, available elevation and ammunition handling; the same barrel could have different capabilities on two ships."
+        ],
+        "refs": [
+          1,
+          3
+        ]
+      },
+      {
+        "id": "arthur",
+        "title": "One system afloat and ashore",
+        "paragraphs": [
+          "Canet guns formed the secondary batteries of Russian battleships and the principal armament of several cruisers. On Varyag they were the main battery; on Bayan they supplemented eight-inch turrets. “Main” and “secondary” describe a weapon’s place in a particular ship’s armament, not an immutable quality of the gun itself.",
+          "At the outbreak of war Port Arthur had twenty coastal six-inch Canet guns, but A. Denisov and Yu. Perechnev’s table lists only fifteen mounted in batteries. The remaining five were intended for Battery No. 16, armed in late February 1904. Guns delivered were therefore not automatically guns ready for action. The same list has a separate entry for older six-inch guns weighing 190 poods: the two rows must not be combined."
+        ],
+        "refs": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": "limits",
+        "title": "A long life with alterations",
+        "paragraphs": [
+          "Record firing rates in a handbook do not describe hours of combat. Shells had to come up from the magazines, crews tired and machinery suffered damage. Ammunition and loading arrangements changed over the years too. The range of a later coastal mounting should not be attributed to a ship of 1904.",
+          "Guns of this family served in the First World War and the Russian Civil War, and remained in Soviet coastal defence. A separate branch continued in Finland, where inherited Russian guns were modified to improve the mountings’ capabilities and later received new barrels. A Finnish museum Canet can therefore look noticeably different from the gun served by sailors at Port Arthur. The origins are shared, but these are different stages in the system’s life."
+        ],
+        "refs": [
+          1,
+          5
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Calibre",
+        "value": "152.4 mm",
+        "note": "Six inches; not to be confused with other six-inch systems.",
+        "refs": [
+          1,
+          3
+        ]
+      },
+      {
+        "label": "Barrel length",
+        "value": "45 calibres; about 6.86 m",
+        "note": "Not a measure of range.",
+        "refs": [
+          3
+        ]
+      },
+      {
+        "label": "Older shell",
+        "value": "41.4 kg",
+        "note": "Weight of the projectile, not a complete round.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Coastal Canet guns at Port Arthur",
+        "value": "20 present; 15 mounted in batteries",
+        "note": "Table dated 9 February 1904, New Style. The armament changed later.",
+        "refs": [
+          4
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1891,
+        "date": "1891",
+        "title": "Licence purchased",
+        "text": "The Russian navy acquired the right to manufacture the Canet system.",
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "year": 1892,
+        "date": "1892",
+        "title": "Production in Russia",
+        "text": "Manufacture began at the Obukhov Works.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "1904",
+        "title": "Ships and coastal batteries",
+        "text": "Canet guns served on both fronts of Port Arthur’s defence.",
+        "refs": [
+          3,
+          4
+        ]
+      }
+    ],
+    "crew": [],
+    "armament": [],
+    "images": [
+      {
+        "file": "/images/hardware/canet-152-45.webp",
+        "alt": "Museum model of a Canet gun with Finnish modifications",
+        "caption": "Model of the 152-mm/45 Canet at the Finnish Military Museum, 3 January 2010. It shows a Finnish modification with recoil equipment above the barrel, not the original Port Arthur mounting.",
+        "credit": "MKFI; Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scale_model_of_152_mm_45_caliber_Canet_gun_1.JPG",
+        "license": "Public domain — MKFI dedicated the photographer’s own image to the public domain without conditions.",
+        "width": 960,
+        "height": 1280
+      }
+    ],
+    "relatedNotes": [
+      "pervaya-tihookeanskaya-eskadra"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [],
+    "relatedPlaces": [],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "Russia / USSR 6\"/45 Pattern 1892",
+        "author": "Tony DiGiulian / NavWeaps",
+        "date": "Date not stated",
+        "url": "https://www.navweaps.com/Weapons/WNRussian_6-45_m1892.php",
+        "locator": "Description; Gun Characteristics; Ammunition",
+        "note": "Reference compilation. Demonstration firing rates are not treated as combat performance."
+      },
+      {
+        "id": 2,
+        "title": "A. F. Brink, Designer of the Twelve-Inch Naval Gun of 40 Calibres for the Russian Fleet",
+        "author": "S. Ye. Vinogradov",
+        "date": "Date not stated",
+        "url": "https://www.reenactor.ru/ARH/PDF/Vinogradov_11.pdf",
+        "locator": "pp. 475–476: Canet licence and development of the interrupted-screw breech",
+        "note": "Study based on Russian State Naval Archive documents and Naval Technical Committee reports; PDF downloaded and read. The date of the collection was not established from this copy."
+      },
+      {
+        "id": 3,
+        "title": "The Armoured Cruiser Bayan",
+        "author": "S. Ye. Vinogradov, A. D. Fedechkin",
+        "date": "2005",
+        "url": "https://keu-ocr.narod.ru/Bayan/chap04.html",
+        "locator": "Chapter 2, “Design and Layout”, “Artillery” section and comparative table",
+        "note": "Digitised monograph: St Petersburg, Galeya-Print, 2005. Title and authors checked against the contents."
+      },
+      {
+        "id": 4,
+        "title": "Russian Coastal Artillery",
+        "author": "A. P. Denisov, Yu. G. Perechnev",
+        "date": "1956",
+        "url": "https://militera.lib.ru/tw/denisov_perechnev/06.html",
+        "locator": "Chapter 2, pp. 166–168: two armament tables",
+        "note": "Soviet military-historical study; the specific tables are used, not the ideological introductory passages."
+      },
+      {
+        "id": 5,
+        "title": "Finnish Army 1918–1945: Heavy Coastal Guns",
+        "author": "Jarkko Vihavainen",
+        "date": "Date not stated",
+        "url": "https://www.jaegerplatoon.net/COASTAL_ARTILLERY2.htm",
+        "locator": "152/45 C",
+        "note": "Specialist study of Finnish service; later performance figures are not carried back into 1904."
+      }
+    ],
+    "limitations": [
+      "French trial rates are not treated as sustained combat performance. Naval and coastal mountings, and later Finnish modifications, are distinguished."
+    ],
+    "updatedAt": "2026-11-15"
+  },
+  {
+    "slug": "obukhov-203-45",
+    "kind": "weapon",
+    "name": "Obukhov 203-mm/45 gun",
+    "shortName": "203-mm/45 gun",
+    "category": "Naval gun",
+    "countries": [
+      "russia"
+    ],
+    "periods": [
+      "russian"
+    ],
+    "aliases": [
+      "203-mm/45 gun",
+      "203/45",
+      "8-inch/45",
+      "Obukhov eight-inch gun"
+    ],
+    "summary": "An eight-inch gun designed by Alexander Brink and used on Russian armoured cruisers. In the Port Arthur squadron it formed Bayan’s main battery.",
+    "intro": [
+      "Bayan had only two large turrets, each with one eight-inch gun. Beside a battleship’s four heavy guns, that may look modest. But the cruiser was built for a different role: scouting for the squadron, supporting light forces and fighting cruisers. Her main battery needs to be considered alongside that purpose."
+    ],
+    "sections": [
+      {
+        "id": "creation",
+        "title": "A Russian eight-inch gun",
+        "paragraphs": [
+          "In 1892 Alexander Brink designed a new eight-inch gun at the Obukhov Works, drawing on experience gained with the six-inch Canet. That connection does not justify giving every Russian gun of the period the same French name. The eight-inch system had its own design and breech mechanism.",
+          "“Pattern 1892” is a common designation in the literature, while 1895 appears as the year it entered service. These refer to different stages and need not contradict each other; NavWeaps places both dates side by side. The designation “203-mm/45” remains the same whichever stage of development a reference book’s compiler means."
+        ],
+        "refs": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "numbers",
+        "title": "Between six and twelve inches",
+        "paragraphs": [
+          "The exact calibre was 203.2 mm. Forty-five calibres gives a length of about 9.14 m. Barrel and breech weighed approximately 12.18 tonnes: the gun itself, not its turret with armour, drives and ammunition handling. A ship carried a much larger and heavier system around the gun to make it work.",
+          "The older eight-inch shell weighed 87.8 kg, more than twice the weight of the older six-inch Canet shell. This helps explain why the cruiser needed different calibres. Yet weight alone is not a ready-made assessment of a hit: shell construction, fuze, the obstacle struck and the circumstances of firing also matter."
+        ],
+        "refs": [
+          1,
+          3
+        ]
+      },
+      {
+        "id": "arthur",
+        "title": "Bayan’s turrets",
+        "paragraphs": [
+          "On the first Bayan, which arrived at Port Arthur in 1903, two 203-mm guns occupied single turrets forward and aft. This protected the crews and preserved heavy fire ahead and astern. Beneath the turrets were magazines and machinery to bring up ammunition.",
+          "The speed of that supply was discussed during design. According to Rafail Melnikov’s study, in March 1898 the Naval Technical Committee objected to an ammunition hoist taking 30–40 seconds instead of the expected 10–15, and required at least two rounds per minute. This was a design requirement, not proof of Bayan’s sustained firing rate in the battles of 1904. The distinction matters: the committee’s wish still had to be made to work in machinery."
+        ],
+        "refs": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": "afterlife",
+        "title": "Cruiser guns after 1905",
+        "paragraphs": [
+          "The model also armed Rossiya and Gromoboi, which operated from Vladivostok. Their deck mounts were not identical to Bayan’s turrets. A shared barrel type did not give ships the same number of guns, crew protection or broadside capability.",
+          "Production continued for the later Bayan-class cruisers. During the First World War, eight-inch guns were used to reinforce older ships and coastal batteries. New, heavier shells appeared. Thus one system acquires different entries for range and projectile weight. Port Arthur concerns its early form; later service demonstrates the design’s longevity, but does not allow the armament of 1904 to be improved retrospectively."
+        ],
+        "refs": [
+          1,
+          5
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Calibre",
+        "value": "203.2 mm",
+        "note": "Eight inches.",
+        "refs": [
+          3
+        ]
+      },
+      {
+        "label": "Barrel length",
+        "value": "45 calibres; 9.144 m",
+        "note": "According to the table in the account of Bayan.",
+        "refs": [
+          3
+        ]
+      },
+      {
+        "label": "Gun weight including breech",
+        "value": "12 183 kg",
+        "note": "Not turret weight.",
+        "refs": [
+          3
+        ]
+      },
+      {
+        "label": "Older shell",
+        "value": "87.8 kg",
+        "note": "Distinct from Pattern 1907 and Pattern 1915 shells.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "On Bayan in 1904",
+        "value": "2 × 1",
+        "note": "Two single-gun turrets.",
+        "refs": [
+          3,
+          4
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1892,
+        "date": "1892",
+        "title": "Designed",
+        "text": "Alexander Brink created an eight-inch gun drawing on experience with the Canet system.",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "1904",
+        "title": "Bayan’s main battery",
+        "text": "Two guns in single turrets took part in the Port Arthur squadron’s operations.",
+        "refs": [
+          3,
+          4
+        ]
+      },
+      {
+        "year": 1915,
+        "date": "1915",
+        "title": "Older cruisers reinforced",
+        "text": "The number of 203-mm guns on Rossiya and Gromoboi was increased.",
+        "refs": [
+          5
+        ]
+      }
+    ],
+    "crew": [],
+    "armament": [],
+    "images": [
+      {
+        "file": "/images/hardware/obukhov-203-45.webp",
+        "alt": "A 203-mm gun on the deck of the cruiser Rossiya",
+        "caption": "A 203-mm/45 gun aboard Rossiya. The precise date is unknown. A deck mounting, not a Bayan turret.",
+        "credit": "Photographer unidentified; Archive of Photographs of Russian and Soviet Naval Ships, via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rossiya1895-1922maingun.jpg",
+        "license": "Public domain — Commons: PD-RusEmpire, PD-old; public domain in the USA as a publication before 1931.",
+        "width": 1800,
+        "height": 1181
+      }
+    ],
+    "relatedNotes": [
+      "pervaya-tihookeanskaya-eskadra"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [],
+    "relatedPlaces": [],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "Russia / USSR 8\"/45 Pattern 1892",
+        "author": "Tony DiGiulian / NavWeaps",
+        "date": "Date not stated",
+        "url": "https://www.navweaps.com/Weapons/WNRussian_8-45_m1892.php",
+        "locator": "Description; Gun Characteristics; Ammunition; Range",
+        "note": "Reference compilation; later shells’ ranges are excluded."
+      },
+      {
+        "id": 2,
+        "title": "A. F. Brink, Designer of the Twelve-Inch Naval Gun of 40 Calibres for the Russian Fleet",
+        "author": "S. Ye. Vinogradov",
+        "date": "Date not stated",
+        "url": "https://www.reenactor.ru/ARH/PDF/Vinogradov_11.pdf",
+        "locator": "p. 480: Brink’s development of the 8\"/45 in 1892",
+        "note": "Study based on Russian State Naval Archive documents and Naval Technical Committee reports; PDF downloaded and read. The date of the collection was not established from this copy."
+      },
+      {
+        "id": 3,
+        "title": "The Armoured Cruiser Bayan",
+        "author": "S. Ye. Vinogradov, A. D. Fedechkin",
+        "date": "2005",
+        "url": "https://keu-ocr.narod.ru/Bayan/chap04.html",
+        "locator": "Chapter 2, “Design and Layout”, “Artillery” section and comparative table",
+        "note": "Digitised monograph: St Petersburg, Galeya-Print, 2005. Title and authors checked against the contents."
+      },
+      {
+        "id": 4,
+        "title": "Bayan: Lead Ship of an Armoured Cruiser Class",
+        "author": "R. M. Melnikov",
+        "date": "1980",
+        "url": "https://tsushima.su/RU/libru/i/Page_6/page_13/biblmelbayanru/",
+        "locator": "Discussion of the Naval Technical Committee’s comments on the design in March 1898",
+        "note": "Reprint of an article in Sudostroyeniye, no. 6."
+      },
+      {
+        "id": 5,
+        "title": "Rurik Was the First",
+        "author": "R. M. Melnikov",
+        "date": "1989",
+        "url": "https://militera.lib.ru/tw/melnikov1/09.html",
+        "locator": "Chapter 9, rearmament in 1915",
+        "note": "Used for the increase in the number of 203-mm guns aboard Rossiya and Gromoboi."
+      }
+    ],
+    "limitations": [
+      "The dates “1892” and “1895” refer to different stages of development and service. The design requirement of two rounds per minute is not presented as a measured combat firing rate."
+    ],
+    "updatedAt": "2026-11-15"
+  },
+  {
+    "slug": "armstrong-305-40",
+    "kind": "weapon",
+    "name": "Elswick (Armstrong) 305-mm/40 gun",
+    "shortName": "Elswick 305-mm/40 gun",
+    "category": "Naval gun",
+    "countries": [
+      "japan"
+    ],
+    "periods": [
+      "russian",
+      "japanese"
+    ],
+    "aliases": [
+      "Elswick 305-mm/40",
+      "Armstrong 12-inch/40",
+      "EOC Pattern G",
+      "EOC Pattern G¹",
+      "Type 41 30-cm/40"
+    ],
+    "summary": "A British twelve-inch system carried by Japanese battleships, including Mikasa during the Russo-Japanese War. The family later received the Japanese designation 41st Year Type, which should not be applied as a contemporary name in 1904.",
+    "intro": [
+      "Mikasa was built by Vickers, but that does not mean every part of her armament came from the same firm. A warship brought together the products of different manufacturers. Her four principal guns belonged to the Elswick family, British weapons that became the basis of Japan’s new battleship armament."
+    ],
+    "sections": [
+      {
+        "id": "creation",
+        "title": "A British gun for Japan",
+        "paragraphs": [
+          "Elswick was the centre of Armstrong’s artillery manufacturing. Fred Jane’s naval reference book, published in 1904, describes Japan’s adoption of Elswick guns and explicitly includes Mikasa among the ships with twelve-inch guns of 40 calibres in length. Contemporary testimony thus helps distinguish the shipbuilder from the origin of the weapon.",
+          "Specialist literature identifies the family as EOC Patterns G and G¹. Resemblance to the British twelve-inch Mark IX does not make them the same model: the export weapon had features of its own. “British twelve-inch gun” is therefore too broad for precise comparison, just as a turret’s silhouette alone cannot establish the model."
+        ],
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "numbers",
+        "title": "Four barrels in two turrets",
+        "paragraphs": [
+          "Twelve inches equals 304.8 mm, usually rounded to 305 mm. “40 calibres” describes the barrel’s proportions, not the number of shots or range. The distinction is particularly important here: Mikasa later carried longer twelve-inch guns which must not be substituted in an account of the Russo-Japanese War.",
+          "During the war she had two twin mountings, one forward and one aft. The Mikasa museum confirms four main guns of 40 calibres. The shell weighed about 386 kg; the museum’s popular explanation rounds this to 400 kg. Specifying the precision is more useful than arguing over a few kilograms: the museum’s rounded figure and the reference weight describe the same scale, not two different shell models."
+        ],
+        "refs": [
+          2,
+          3
+        ]
+      },
+      {
+        "id": "arthur",
+        "title": "The flagship’s main battery",
+        "paragraphs": [
+          "In 1904 Mikasa was Admiral Tōgō’s flagship and took part in operations off Port Arthur and the Battle of the Yellow Sea. Her large turrets formed the ship’s principal striking force. They are clearly visible at the ends of the hull in the museum’s plan, while the more numerous six-inch guns line the sides.",
+          "Behind that apparently simple arrangement lay magazines, hoists and hydraulic machinery. A barrel could not fight without its mounting and crew. Comparing Russian and Japanese armament by shell weight alone is therefore insufficient: the ship had to find the target, transmit data, supply ammunition and keep all these systems working under fire."
+        ],
+        "refs": [
+          1,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "limits",
+        "title": "Type 41: a name from a later period",
+        "paragraphs": [
+          "The war also exposed the danger of heavy guns being damaged when a shell exploded prematurely in the bore. Such incidents are recorded for the Elswick family during the Russo-Japanese War. They are a reminder that the outcome depended on the combination of gun and ammunition, not the superiority of a calibre alone.",
+          "The designation “41st Year Type” was adopted on 25 December 1908, referring to the forty-first year of Emperor Meiji’s reign. On Mikasa herself, the twelve-inch/40 guns were replaced by more powerful twelve-inch/45 weapons during post-war reconstruction. That is a later chapter. A present-day museum caption, a later Japanese designation and the ship’s armament in 1904 need to be read separately, or a single battleship quietly acquires guns from several different periods."
+        ],
+        "refs": [
+          2,
+          5
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Calibre",
+        "value": "304.8 mm (12 inches)",
+        "note": "Usually rounded to 305 mm.",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "label": "Type",
+        "value": "EOC Patterns G / G¹",
+        "note": "Elswick/Armstrong family; the specific variant of each Mikasa barrel has not been established.",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "label": "Relative length",
+        "value": "40 calibres",
+        "note": "Nominal designation; the reference gives an actual bore length of 40.4 calibres.",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "label": "Shell weight",
+        "value": "About 386 kg",
+        "note": "Reference weight of 850 British pounds; rounded to 400 kg in the museum’s children’s section.",
+        "refs": [
+          2,
+          3
+        ]
+      },
+      {
+        "label": "On Mikasa in 1904–1905",
+        "value": "4 guns",
+        "note": "Two twin mountings.",
+        "refs": [
+          1,
+          3
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1904,
+        "date": "1904–1905",
+        "title": "The flagship’s guns",
+        "text": "Four twelve-inch/40 guns formed Mikasa’s main battery during the war.",
+        "refs": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "year": 1908,
+        "date": "1908",
+        "title": "Mikasa’s main battery replaced",
+        "text": "During post-war reconstruction she received longer twelve-inch/45 guns.",
+        "refs": [
+          5
+        ]
+      },
+      {
+        "year": 1908,
+        "date": "25 December 1908",
+        "title": "A later Japanese designation",
+        "text": "The twelve-inch/40 family was redesignated 41st Year Type.",
+        "refs": [
+          2
+        ]
+      }
+    ],
+    "crew": [],
+    "armament": [],
+    "images": [
+      {
+        "file": "/images/hardware/armstrong-305-40.webp",
+        "alt": "Drawing of Mikasa’s main gun mounting from a book published in 1904",
+        "caption": "Mikasa’s twelve-inch guns. Drawing in Fred Jane’s The Imperial Japanese Navy, 1904, p. 314.",
+        "credit": "Illustrator unidentified; Fred T. Jane, The Imperial Japanese Navy, 1904; digital copy Project Gutenberg.",
+        "sourceUrl": "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm#Page_314",
+        "license": "Public domain — published in 1904; Fred T. Jane died in 1916. Illustration from the original edition, without Project Gutenberg’s presentation.",
+        "width": 500,
+        "height": 463
+      }
+    ],
+    "relatedNotes": [
+      "voina-na-more-osada-mukden-tsusima"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [],
+    "relatedPlaces": [],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "The Imperial Japanese Navy",
+        "author": "Fred T. Jane",
+        "date": "1904",
+        "url": "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm",
+        "locator": "Chapter XXII, pp. 313–314; illustration “12-in. Guns of the Mikasa” on p. 314",
+        "note": "Contemporary naval reference. Text and drawing checked; not used to assess events after publication."
+      },
+      {
+        "id": 2,
+        "title": "Japan 12\"/40 EOC Patterns G and G¹",
+        "author": "Tony DiGiulian / NavWeaps",
+        "date": "Date not stated",
+        "url": "https://www.navweaps.com/Weapons/WNJAP_12-40_EOC.php",
+        "locator": "Description; Gun Characteristics; Ammunition",
+        "note": "Reference compilation distinguishing 40- and 45-calibre models and later designations."
+      },
+      {
+        "id": 3,
+        "title": "What Kind of Ship Is Mikasa? Arrangement of the Main Equipment",
+        "author": "Mikasa Preservation Society",
+        "date": "Date not stated",
+        "url": "https://www.kinenkan-mikasa.or.jp/kids/mikasa/sobi.html",
+        "locator": "Principal specifications; main battery of four 30-cm guns",
+        "note": "Official Japanese-language museum material; figures rounded for a general audience."
+      },
+      {
+        "id": 4,
+        "title": "The History of Mikasa",
+        "author": "Mikasa Preservation Society",
+        "date": "Date not stated",
+        "url": "https://www.kinenkan-mikasa.or.jp/mikasa/",
+        "locator": "“Battleship Mikasa”; “The Imperial Family and Mikasa”",
+        "note": "Official museum: construction by Vickers, flagship role and participation in the Battle of the Yellow Sea."
+      },
+      {
+        "id": 5,
+        "title": "Japan 12\"/45 Armstrong, Vickers and 41st Year Type",
+        "author": "Tony DiGiulian / NavWeaps",
+        "date": "Date not stated",
+        "url": "https://www.navweaps.com/Weapons/WNJAP_12-45_EA.php",
+        "locator": "Description; Gun Characteristics, note 2",
+        "note": "Used only to distinguish post-war rearmament from the outfit of 1904–1905."
+      }
+    ],
+    "limitations": [
+      "“Type 41” is a later redesignation, not a name used in 1904. Patterns G/G¹ identify the family; factory numbers and the variant of each of Mikasa’s four barrels are not established here."
+    ],
+    "updatedAt": "2026-11-15"
+  },
+  {
+    "slug": "japanese-280-howitzer",
+    "kind": "weapon",
+    "name": "Japanese 28-cm siege howitzer",
+    "shortName": "Japanese 28-cm howitzer",
+    "category": "Siege and coastal howitzer",
+    "countries": [
+      "japan"
+    ],
+    "periods": [
+      "russian",
+      "japanese"
+    ],
+    "aliases": [
+      "Japanese 28-cm howitzer",
+      "280-mm howitzer",
+      "11-inch howitzer",
+      "Osaka howitzer"
+    ],
+    "summary": "A heavy Osaka Arsenal howitzer originally designed for coastal defence and brought to Port Arthur. In 1904 it became one of the most prominent weapons used to bombard the fortifications and ships in the inner harbour.",
+    "intro": [
+      "The gun most often associated with the siege of Port Arthur was originally intended to protect Japan’s coasts. Its short, thick barrel looks quite different from the long naval guns. A shell weighing approximately two hundred and twenty kilograms helps explain why moving this coastal weapon inland was such a significant development."
+    ],
+    "sections": [
+      {
+        "id": "creation",
+        "title": "From a coastal fortress to a besieged one",
+        "paragraphs": [
+          "Japan’s 28-cm howitzer emerged from Osaka Artillery Arsenal’s work adapting European models. Researcher Yasufumi Kunimoto links its origins to an Italian design and the work of foreign specialists, dating completion of development and formal adoption to 1892. Reference books give other dates for individual stages. Development extended from the 1880s into the early 1890s.",
+          "A Japanese War Ministry file for October 1896 already contains an order for Osaka Arsenal to manufacture and deliver a 28-cm howitzer. It is a small but useful document, showing the weapon’s ordinary production history well before the famous siege. The gun was not invented specifically for Port Arthur."
+        ],
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "numbers",
+        "title": "Weight that shaped its service",
+        "paragraphs": [
+          "A calibre of 28 cm means a bore diameter of about 280 mm. This was a howitzer: a relatively short barrel and steep trajectory distinguished it from long naval guns intended for high muzzle velocity. In siege warfare this allowed targets behind obstacles to be attacked, though the capability did not guarantee a hit or destruction.",
+          "An American account of the siege gives a shell weight of 220 kg. It counts the barrel, carriage and metal platform separately: together they weighed far more than the gun alone. Moving a coastal weapon required transport and engineering work. Being placed near the infantry did not turn it into ordinary field artillery."
+        ],
+        "refs": [
+          3
+        ]
+      },
+      {
+        "id": "arthur",
+        "title": "Why the howitzers came to Port Arthur",
+        "paragraphs": [
+          "According to Japanese military historian Hisayuki Yokoyama, after the unsuccessful general assault in August 1904 howitzers were brought to the siege from coastal fortresses, including the Tokyo Bay area. The artillery originally available had not provided enough firepower to take the Russian defences quickly. The heavy weapons were intended to change that, but did not remove the siege’s difficulties by themselves.",
+          "The howitzers fired at fortifications and ships in the inner harbour. The American report also mentions shelling of Vysokaya, or 203-Metre Hill. A Japanese archive preserves a photograph of a 28-cm howitzer’s trial firing near Wangjiadian, published in the Third Army’s album in April 1905. Behind the familiar image of the “siege gun” lay individual batteries and lengthy preparations."
+        ],
+        "refs": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "limits",
+        "title": "Not every shell, not a single cause",
+        "paragraphs": [
+          "The American report notes unexploded 28-cm shells and distinguishes ordinary cast-iron from high-explosive ammunition. The familiar notion that every heavy shell necessarily contained a huge charge of Shimose, Japan’s picric-acid-based explosive, and inevitably destroyed everything around it cannot describe all the firing. Ammunition type mattered as much as the impressive diameter.",
+          "The system’s history continued after Port Arthur. An American survey of Japanese coastal artillery compiled in February 1946 gave it a separate section: substantial numbers of these old howitzers remained in Japanese fortifications. New models and longer ranges had appeared over the intervening decades, but the old heavy guns still occupied their positions. Their fame at Port Arthur far outshone the everyday service that followed."
+        ],
+        "refs": [
+          3,
+          6
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Calibre",
+        "value": "280 mm",
+        "note": "28 cm in historical documents; the approximate Russian name was “eleven-inch”.",
+        "refs": [
+          2,
+          3
+        ]
+      },
+      {
+        "label": "Shell in the American siege report",
+        "value": "220 kg",
+        "note": "The observer’s stated figure, not a universal weight for every later projectile.",
+        "refs": [
+          3
+        ]
+      },
+      {
+        "label": "Barrel weight in the same report",
+        "value": "10 730 kg",
+        "note": "Separate from the 5310-kg carriage and 8444-kg metal platform.",
+        "refs": [
+          3
+        ]
+      },
+      {
+        "label": "Original role",
+        "value": "Coastal defence",
+        "note": "Siege use involved moving an existing system to the land front.",
+        "refs": [
+          1,
+          4
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1896,
+        "date": "26 October 1896",
+        "title": "Production order",
+        "text": "An archival document records manufacture and delivery by Osaka Arsenal.",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "1904",
+        "title": "Used at Port Arthur",
+        "text": "Coastal howitzers were brought into the siege.",
+        "refs": [
+          3,
+          4
+        ]
+      },
+      {
+        "year": 1946,
+        "date": "1 February 1946",
+        "title": "Post-war survey",
+        "text": "An American report described surviving Japanese 28-cm coastal howitzers.",
+        "refs": [
+          6
+        ]
+      }
+    ],
+    "crew": [],
+    "armament": [],
+    "images": [
+      {
+        "file": "/images/hardware/japanese-280-howitzer.webp",
+        "alt": "A Japanese 28-cm howitzer during the siege of Port Arthur",
+        "caption": "A Japanese 28-cm howitzer at Port Arthur. The photograph’s record gives 1904; the precise day and battery are unknown.",
+        "credit": "Photographer unidentified; P. F. Collier & Son publication, via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japanese_28_cm_Howitzer_during_the_Siege_of_Port_Arthur.jpg",
+        "license": "Public domain (USA) — image from Russo-Japanese War: A Photographic and Descriptive Review, published before 1931; Commons PD-US.",
+        "width": 1440,
+        "height": 909
+      }
+    ],
+    "relatedNotes": [
+      "posleznanie-kak-sudit-o-port-arture",
+      "pervaya-tihookeanskaya-eskadra",
+      "voina-na-more-osada-mukden-tsusima"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [],
+    "relatedPlaces": [
+      "gavan-port-artura",
+      "vysokaya-gora"
+    ],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "The Dawn of Modern Japanese Weapons, Part 1: The 28-cm Howitzer",
+        "author": "Yasufumi Kunimoto",
+        "date": "2008",
+        "url": "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=200902254138746767",
+        "locator": "JST abstract of an article in Defense Technology Journal, vol. 28, no. 4, pp. 18–19",
+        "note": "The available JST abstract was read, not the complete article. Used only for origins and the 1892 stage of development."
+      },
+      {
+        "id": 2,
+        "title": "Manufacture and Delivery of a 28-cm Howitzer",
+        "author": "Japanese War Ministry; JACAR / NIDS",
+        "date": "1896",
+        "url": "https://www.jacar.archives.go.jp/das/meta/C06082349100",
+        "locator": "Ref. C06082349100; 26 October 1896; catalogue description and transcription",
+        "note": "Primary archival catalogue entry for an Osaka Arsenal production order; scans of the file were not separately examined."
+      },
+      {
+        "id": 3,
+        "title": "Reports of Military Observers Attached to the Armies in Manchuria during the Russo-Japanese War: Port Arthur",
+        "author": "United States War Department",
+        "date": "Date not stated",
+        "url": "https://cgsc.contentdm.oclc.org/digital/api/collection/p4013coll7/id/33/download",
+        "locator": "Printed p. 182: 28-cm howitzers, weights, ammunition and bombardment targets",
+        "note": "Verified indexed text of the page available; no local PDF obtained from this endpoint. Technical operating instructions are not reproduced."
+      },
+      {
+        "id": 4,
+        "title": "The Russo-Japanese War as a Technological War: The Japanese Army’s Response to an Era of Innovation",
+        "author": "Hisayuki Yokoyama",
+        "date": "Date not stated",
+        "url": "https://dl.ndl.go.jp/view/prepareDownload?contentNo=1&itemId=info%3Andljp%2Fpid%2F1283012",
+        "locator": "pp. 121–123, “Converting Coastal Fortress Guns into Siege Artillery”",
+        "note": "Study by a Japanese military historian; full PDF saved and the section read."
+      },
+      {
+        "id": 5,
+        "title": "Trial Firing of a 28-cm Howitzer in a Hollow Southwest of Wangjiadian",
+        "author": "JACAR; National Institute for Defense Studies, Japan",
+        "date": "Date not stated",
+        "url": "https://www.jacar.go.jp/exhibition/nichiro/28cm_02.htm",
+        "locator": "戦役-写真-43; Russo-Japanese War Photograph Album, Third Army, no. 3, Meiji 38.4, image no. 56",
+        "note": "Official archival photograph description; the album date is not substituted for the date of photography."
+      },
+      {
+        "id": 6,
+        "title": "Survey of Japanese Seacoast Artillery",
+        "author": "Headquarters, United States Army Forces, Pacific",
+        "date": "1946",
+        "url": "https://www.bulletpicker.com/pdf/Japanese-Seacoast-Artillery.pdf",
+        "locator": "1 February 1946; §§63 and 66, printed pp. 43, 47–48 (PDF pp. 63, 67–68)",
+        "note": "Primary post-war survey; its label “(1890)” is not adopted as an undisputed date of Japanese acceptance."
+      }
+    ],
+    "limitations": [
+      "The literature differs on the dates of first trials, adoption and final standardisation; no unverified single model year is asserted. Different shells are not given one universal range. For the siege report, the indexed text of p. 182 was checked; the whole volume is not claimed to have been read."
+    ],
+    "updatedAt": "2026-11-15"
+  }
+]

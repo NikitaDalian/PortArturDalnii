@@ -2,10 +2,11 @@ import { createMentionMatcher } from './mentionMatcher';
 export { mentionContext, type MentionContext } from './mentionMatcher';
 import { people, places, terms, referenceDescriptions, href, img, imgCrop, photoMeta, referencePhoto } from './data';
 import aliases from '../data/entity_aliases.json';
-import { locale, intlLocale } from '../i18n/locale';
+import { locale, intlLocale, assetUrl } from '../i18n/locale';
+import { hardware } from './hardware';
 
 export interface EntityPreview {
-  id: string; kind: 'person' | 'place'; title: string; description: string;
+  id: string; kind: 'person' | 'place' | 'ship' | 'weapon'; title: string; description: string;
   href: string; image: string | null; alt: string;
 }
 export interface MentionPart { text: string; entity?: EntityPreview }
@@ -61,4 +62,9 @@ for (const kind of ['people', 'places'] as const) {
     variants.forEach(value => addName(value, id));
   }
 }
-export const linkMentions = createMentionMatcher(names, registry);
+for (const item of hardware) {
+  const picture = item.images[0];
+  register({id:`${item.kind}/${item.slug}`,kind:item.kind,title:item.name,description:excerpt(item.summary),
+    href:href.hardware(item.slug),image:picture ? assetUrl(picture.file) : null,alt:picture?.alt??''},[item.shortName,...item.aliases]);
+}
+export const linkMentions = createMentionMatcher(names, registry, { quotedEntities:new Set(hardware.filter(item=>item.kind==='ship').map(item=>`ship/${item.slug}`)) });
