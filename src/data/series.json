@@ -44,6 +44,15 @@
   ]
  },
  {
+  "slug": "dalniy-plan-i-arhitektory",
+  "title": "Дальний: план и архитекторы",
+  "articles": [
+   "dalnii-gorod-s-nulya",
+   "skolimovsky-chelovek-kotoryy-narisoval-dalnii",
+   "zodchiy-1904-plan-goroda-dalnego"
+  ]
+ },
+ {
   "slug": "graf-polusahalinskiy",
   "title": "Граф Полусахалинский",
   "articles": [
@@ -61,11 +70,20 @@
   ]
  },
  {
+  "slug": "sekrety-druzhby",
+  "title": "Секреты дружбы",
+  "articles": [
+   "molodyakov-rossiya-i-frantsiya",
+   "molodyakov-rossiya-i-yaponiya-zolotoy-vek"
+  ]
+ },
+ {
   "slug": "krepost-port-artur",
   "title": "Крепость Порт-Артур",
   "articles": [
    "ukreplenie-5-yahutszui",
-   "kak-ustroen-fort"
+   "kak-ustroen-fort",
+   "tsena-port-artura-v-tsifrah"
   ]
  },
  {

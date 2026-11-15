@@ -30,14 +30,16 @@
   "verify": true,
   "articles": [
    "voina-na-more-osada-mukden-tsusima",
-   "port-artur-poslednyaya-zamorskaya-koloniya",
    "stepanov-port-artur-retsenziya",
+   "port-artur-poslednyaya-zamorskaya-koloniya",
    "pervaya-tihookeanskaya-eskadra",
    "ukreplenie-5-yahutszui",
    "dnevnik-kapitana-lile",
    "gaolyan-i-sopki",
    "kondratenko-dusha-oborony",
-   "posleznanie-kak-sudit-o-port-arture"
+   "posleznanie-kak-sudit-o-port-arture",
+   "oborona-port-artura-vrachi-i-sestry",
+   "tsena-port-artura-v-tsifrah"
   ]
  },
  {
@@ -78,7 +80,8 @@
    "kak-ustroen-fort",
    "kondratenko-put-k-port-arturu",
    "kondratenko-dusha-oborony",
-   "kulichkin-kondratenko-zhzl"
+   "kulichkin-kondratenko-zhzl",
+   "general-fok-geroy-dunaya-i-port-artur"
   ]
  },
  {
@@ -373,7 +376,9 @@
   "articles": [
    "port-artur-poslednyaya-zamorskaya-koloniya",
    "otkuda-nazvanie-port-artur",
-   "pervaya-tihookeanskaya-eskadra"
+   "pervaya-tihookeanskaya-eskadra",
+   "vereshchagin-hudozhnik-na-voyne",
+   "tsena-port-artura-v-tsifrah"
   ]
  },
  {
@@ -641,12 +646,15 @@
   "photos": [
    "photos/photo_320@archive.jpg",
    "photos/photo_67@11-10-2026_14-03-01.jpg",
-   "photos/photo_68@11-10-2026_14-03-01.jpg"
+   "photos/photo_68@11-10-2026_14-03-01.jpg",
+   "photos/photo_366@11-11-2026_10-19-57.jpg"
   ],
   "verify": false,
   "articles": [
    "dalnii-gorod-s-nulya",
-   "port-artur-i-dalnii-dva-goroda"
+   "port-artur-i-dalnii-dva-goroda",
+   "skolimovsky-chelovek-kotoryy-narisoval-dalnii",
+   "zodchiy-1904-plan-goroda-dalnego"
   ]
  },
  {
@@ -680,7 +688,9 @@
   ],
   "verify": true,
   "articles": [
-   "dalnii-gorod-s-nulya"
+   "dalnii-gorod-s-nulya",
+   "skolimovsky-chelovek-kotoryy-narisoval-dalnii",
+   "zodchiy-1904-plan-goroda-dalnego"
   ]
  },
  {
@@ -709,12 +719,16 @@
    114
   ],
   "photos": [
-   "photos/photo_66@11-10-2026_14-03-01.jpg"
+   "photos/photo_66@11-10-2026_14-03-01.jpg",
+   "photos/photo_361@11-11-2026_10-18-04.jpg",
+   "photos/photo_362@11-11-2026_10-18-05.jpg"
   ],
   "verify": true,
   "articles": [
    "dalnii-gorod-s-nulya",
-   "port-artur-i-dalnii-dva-goroda"
+   "port-artur-i-dalnii-dva-goroda",
+   "skolimovsky-chelovek-kotoryy-narisoval-dalnii",
+   "zodchiy-1904-plan-goroda-dalnego"
   ]
  },
  {
@@ -847,7 +861,8 @@
   "articles": [
    "dalnii-gorod-s-nulya",
    "port-artur-i-dalnii-dva-goroda",
-   "vitte-chast-2-ministr-kotoryi-otdaval"
+   "vitte-chast-2-ministr-kotoryi-otdaval",
+   "skolimovsky-chelovek-kotoryy-narisoval-dalnii"
   ]
  },
  {

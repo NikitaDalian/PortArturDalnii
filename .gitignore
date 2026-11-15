@@ -3,3 +3,4 @@ dist/
 .astro/
 ../.builds/
 .DS_Store
+__pycache__/

@@ -43,7 +43,9 @@
    "zheltorossiya-koloniya-kotoruyu-ne-pridumali",
    "poselyagin-poruchiki-po-admiralteistvu",
    "botkin-svet-i-teni-russko-yaponskoi-voiny",
-   "balmont-nash-tsar-mukden-tsusima"
+   "balmont-nash-tsar-mukden-tsusima",
+   "hodynka-1896-i-doroga-v-port-artur",
+   "ipatevskiy-dom-tsarskaya-semya-i-botkin"
   ]
  },
  {
@@ -98,7 +100,8 @@
    "zheltorossiya-koloniya-kotoruyu-ne-pridumali",
    "vitte-posleslovie-reputatsiya",
    "lektsiya-nazarenko-russko-yaponskaya-voina",
-   "plehve-malenkaya-pobedonosnaya-voina"
+   "plehve-malenkaya-pobedonosnaya-voina",
+   "hodynka-1896-i-doroga-v-port-artur"
   ]
  },
  {
@@ -131,8 +134,8 @@
    "port-artur-poslednyaya-zamorskaya-koloniya",
    "nikolai-ii-i-russko-yaponskaya-voina",
    "admiral-alekseev-namestnik",
-   "port-artur-i-dalnii-dva-goroda",
    "kvantun-proishozhdenie-nazvaniya",
+   "port-artur-i-dalnii-dva-goroda",
    "pervaya-tihookeanskaya-eskadra",
    "aleksandr-bezobrazov-kavalergard",
    "panishchev-krizis-nravstvennogo-soznaniya"
@@ -165,7 +168,8 @@
    "vitte-chast-1-ministr-kotoryi-stroil",
    "skolko-eto-v-nyneshnih-dengah",
    "li-hunchzhan-soyuznik-kotoryi-sdaval-kreposti",
-   "bokserskoe-vosstanie-ihetuani"
+   "bokserskoe-vosstanie-ihetuani",
+   "hodynka-1896-i-doroga-v-port-artur"
   ]
  },
  {
@@ -260,8 +264,8 @@
    "mukden"
   ],
   "articles": [
-   "albom-shtaba-glavnokomanduyushchego-1905",
    "voina-na-more-osada-mukden-tsusima",
+   "albom-shtaba-glavnokomanduyushchego-1905",
    "neolurk-russko-yaponskaya-voina",
    "arhivy-russko-yaponskoi-voiny",
    "vitte-chast-2-ministr-kotoryi-otdaval",
@@ -304,8 +308,8 @@
   ],
   "articles": [
    "voina-na-more-osada-mukden-tsusima",
-   "port-artur-poslednyaya-zamorskaya-koloniya",
    "stepanov-port-artur-retsenziya",
+   "port-artur-poslednyaya-zamorskaya-koloniya",
    "port-artur-i-dalnii-dva-goroda",
    "veresaev-na-yaponskoi-voine",
    "dnevnik-kapitana-lile",
@@ -314,7 +318,8 @@
    "kondratenko-dusha-oborony",
    "posleznanie-kak-sudit-o-port-arture",
    "kulichkin-kondratenko-zhzl",
-   "yaroslavskii-bolsheviki-i-russko-yaponskaya-voina"
+   "yaroslavskii-bolsheviki-i-russko-yaponskaya-voina",
+   "general-fok-geroy-dunaya-i-port-artur"
   ]
  },
  {
@@ -346,17 +351,19 @@
   ],
   "portrait_note": "Личность определена по подписи архива.",
   "articles": [
-   "anekdoty-rossiiskoi-imperii-shevchenko",
    "voina-na-more-osada-mukden-tsusima",
-   "port-artur-poslednyaya-zamorskaya-koloniya",
+   "anekdoty-rossiiskoi-imperii-shevchenko",
    "stepanov-port-artur-retsenziya",
+   "port-artur-poslednyaya-zamorskaya-koloniya",
    "neolurk-russko-yaponskaya-voina",
    "port-artur-i-dalnii-dva-goroda",
    "poselyagin-praporshchiki-po-admiralteistvu",
    "panishchev-krizis-nravstvennogo-soznaniya",
    "kondratenko-dusha-oborony",
    "posleznanie-kak-sudit-o-port-arture",
-   "kulichkin-kondratenko-zhzl"
+   "kulichkin-kondratenko-zhzl",
+   "ipatevskiy-dom-tsarskaya-semya-i-botkin",
+   "general-fok-geroy-dunaya-i-port-artur"
   ]
  },
  {
@@ -395,7 +402,9 @@
    "dnevnik-kapitana-lile",
    "vladivostokskii-otryad-kreiserov",
    "panishchev-krizis-nravstvennogo-soznaniya",
-   "lektsiya-nazarenko-russko-yaponskaya-voina"
+   "lektsiya-nazarenko-russko-yaponskaya-voina",
+   "ayrapetov-na-puti-k-krahu",
+   "vereshchagin-hudozhnik-na-voyne"
   ]
  },
  {
@@ -479,30 +488,40 @@
   ],
   "articles": [
    "dalnii-gorod-s-nulya",
-   "port-artur-i-dalnii-dva-goroda"
+   "port-artur-i-dalnii-dva-goroda",
+   "skolimovsky-chelovek-kotoryy-narisoval-dalnii",
+   "zodchiy-1904-plan-goroda-dalnego"
   ]
  },
  {
   "slug": "skolimovsky",
-  "name": "Казимир Эдмундович Сколимовский",
+  "name": "Казимир Гелиодорович Сколимовский",
   "short": "архитектор Сколимовский",
-  "years": null,
+  "years": "1862–1923",
   "country": "russia",
   "role": "Архитектор, автор генерального плана Дальнего",
   "group": "engineers",
-  "bio": "Архитектор, составивший план Дальнего. Генпланы порта и города рассмотрело Особое совещание в апреле 1899 года. Сколимовский отказался от модной тогда американской прямоугольной сетки кварталов и выбрал радиальную схему по образцу парижской площади Звезды: в центре круглая Николаевская площадь диаметром 213 метров, от неё расходятся десять проспектов-лучей. Город рассчитывали на 100 тысяч жителей. На месте будущего Дальнего стояли два десятка деревень и городок Талиенван на полторы тысячи человек; массовая застройка началась в 1901 году. К приезду Витте в 1902 году административная часть была уже отстроена: мастерские железной дороги, Русско-Китайский банк, управление порта, Морское собрание, гостиница «Дальний». После 1905 года японцы сорок лет развивали Дайрен по русскому плану. Николаевская площадь сегодня — площадь Чжуншань, а радиальная схема Сколимовского по-прежнему определяет рисунок улиц старого центра Даляня.",
+  "bio": "Польский архитектор, автор генерального плана Дальнего. Родился в 1862 году в Бродне под Лодзью, учился в петербургской Академии художеств, Берлине и Мюнхене. В 1899 году по рекомендации Александра Померанцева приглашён проектировать Дальний. Отказался от прямоугольной сетки кварталов и предложил радиальную схему: круглая Николаевская площадь диаметром 213 метров и десять проспектов. Новый генплан представил в 1900 году, детальный проект — в 1903-м. Учитывал рельеф, виды улиц и условия жизни жителей; границей Европейского и Китайского города служил парк. Доклад «О проектировании плана города Дальнего» прочитал 3 (16) февраля 1904 года; текст напечатан в № 12–14 журнала «Зодчий». После возвращения в Польшу стал городским архитектором Калиша. Погиб 28 декабря 1923 года при осмотре обледенелой крыши строящейся ратуши. Радиальная планировка по-прежнему определяет центр Даляня.",
   "quote": null,
   "posts": [
    93,
-   114
+   114,
+   269,
+   276
   ],
-  "portrait": "photos/photo_65@11-10-2026_14-03-01.jpg",
+  "portrait": "photos/photo_358@11-11-2026_10-18-04.jpg",
   "places": [
-   "dalnii"
+   "dalnii",
+   "nikolaevskaya-ploshchad",
+   "russkaya-ulitsa",
+   "upravlenie-dalnego"
   ],
+  "portrait_note": "Портрет из нового поста канала. Отчество и годы жизни уточнены по публикации от 11 ноября 2026 года.",
   "articles": [
    "dalnii-gorod-s-nulya",
-   "port-artur-i-dalnii-dva-goroda"
+   "port-artur-i-dalnii-dva-goroda",
+   "skolimovsky-chelovek-kotoryy-narisoval-dalnii",
+   "zodchiy-1904-plan-goroda-dalnego"
   ]
  },
  {
@@ -718,7 +737,8 @@
    "mukden"
   ],
   "articles": [
-   "botkin-svet-i-teni-russko-yaponskoi-voiny"
+   "botkin-svet-i-teni-russko-yaponskoi-voiny",
+   "ipatevskiy-dom-tsarskaya-semya-i-botkin"
   ]
  },
  {
@@ -824,8 +844,8 @@
    "mukden"
   ],
   "articles": [
-   "albom-shtaba-glavnokomanduyushchego-1905",
-   "kto-fotografiroval-russko-yaponskuyu-voinu"
+   "kto-fotografiroval-russko-yaponskuyu-voinu",
+   "albom-shtaba-glavnokomanduyushchego-1905"
   ]
  },
  {
@@ -869,6 +889,57 @@
   ],
   "articles": [
    "misha-iz-nagasaki-myulberg"
+  ]
+ },
+ {
+  "slug": "vereshchagin",
+  "name": "Василий Васильевич Верещагин",
+  "short": "Василий Верещагин",
+  "years": "1842–1904",
+  "country": "russia",
+  "role": "Художник-баталист, погиб на «Петропавловске» вместе с адмиралом Макаровым",
+  "group": "culture",
+  "bio": "Родился в Череповце, окончил Морской кадетский корпус, но вместо службы на флоте выбрал Академию художеств. В картинах показывал войну через смерть и страдания людей; «Апофеоз войны» написал в 1871 году. В 1874 году отказался от звания профессора Академии художеств. Осенью 1903 года работал в Японии, писал храмы Никко и предупреждал о неподготовленности России к войне. Весной 1904 года приехал в Порт-Артур. Погиб 31 марта (13 апреля) 1904 года при подрыве броненосца «Петропавловск» на мине. Тело художника не нашли.",
+  "quote": null,
+  "posts": [
+   285
+  ],
+  "portrait": "photos/photo_374@12-11-2026_14-20-00.jpg",
+  "places": [
+   "port-artur",
+   "gavan-port-artura",
+   "nikko"
+  ],
+  "articles": [
+   "voina-na-more-osada-mukden-tsusima",
+   "vereshchagin-hudozhnik-na-voyne"
+  ]
+ },
+ {
+  "slug": "fok",
+  "name": "Александр Викторович Фок",
+  "short": "генерал Фок",
+  "years": "1843–1926",
+  "country": "russia",
+  "role": "Командир 4-й Восточно-Сибирской стрелковой дивизии, после Кондратенко возглавил сухопутную оборону крепости",
+  "group": "military",
+  "bio": "Окончил Новгородский Аракчеевский кадетский корпус и Константиновское военное училище. За переправу через Дунай у Систова в 1877 году получил орден Святого Георгия 4-й степени. Участвовал в Китайском походе 1900–1901 годов. В русско-японскую войну командовал 4-й Восточно-Сибирской стрелковой дивизией; его действия у Цзиньчжоу и неиспользованные резервы стали предметом споров. Во время осады рассылал штабные «заметки» с советами и резкой критикой сослуживцев. После гибели Кондратенко Стессель назначил его начальником сухопутной обороны. На суде 1908 года по главным обвинениям оправдан; выговор за «заметки» сняли за давностью. На дуэли ранил коменданта Смирнова. В 1912–1913 годах воевал в болгарской армии, после революции жил в Болгарии. Умер в 1926 году, похоронен под Свиштовым.",
+  "quote": null,
+  "posts": [
+   299
+  ],
+  "portrait": "photos/photo_388@14-11-2026_22-48-22.jpg",
+  "places": [
+   "port-artur",
+   "tszinchzhou",
+   "kvantun",
+   "fort-2",
+   "svistov"
+  ],
+  "articles": [
+   "stepanov-port-artur-retsenziya",
+   "poselyagin-praporshchiki-po-admiralteistvu",
+   "general-fok-geroy-dunaya-i-port-artur"
   ]
  }
 ]

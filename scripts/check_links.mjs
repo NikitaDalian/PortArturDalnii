@@ -6,11 +6,11 @@
 //  5) доступность: ровно один <h1>, у каждой <img> есть атрибут alt.
 // Запуск: npm run check  (после npm run build)
 import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
-import { join, relative, sep } from 'node:path';
+import { join, relative, sep, resolve as absolutePath } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const BASE = '/PortArturDalnii/';
-const root = fileURLToPath(new URL('../dist/', import.meta.url));
+const root = process.argv[2] ? absolutePath(process.argv[2]) : fileURLToPath(new URL('../dist/', import.meta.url));
 if (!existsSync(root)) {
   console.error('Нет папки dist — сначала выполните npm run build');
   process.exit(2);
@@ -92,6 +92,17 @@ for (const file of files) {
       continue;
     }
     if (!load(target).ids.has(id)) broken.push({ page: here, href, why: `нет id «${id}» на целевой странице` });
+  }
+
+  // Проверяем также изображения и srcset: правильная ссылка без самого файла
+  // оставляет пустую карточку и не обнаруживается проверкой href.
+  for (const m of body.matchAll(/\s(src|srcset)="([^"]*)"/g)) {
+    const urls = m[1] === 'srcset' ? decode(m[2]).split(',').map((s) => s.trim().split(/\s+/)[0]) : [decode(m[2])];
+    for (const src of urls) {
+      if (!src.startsWith(BASE)) continue;
+      checked++;
+      if (!resolve(src.split(/[?#]/)[0])) broken.push({ page: here, href: src, why: 'нет файла изображения или ресурса' });
+    }
   }
 
   // доступность

@@ -60,8 +60,8 @@
   ],
   "image": "photos/photo_15@05-10-2026_20-16-00.jpg",
   "articles": [
-   "albom-shtaba-glavnokomanduyushchego-1905",
-   "kto-fotografiroval-russko-yaponskuyu-voinu"
+   "kto-fotografiroval-russko-yaponskuyu-voinu",
+   "albom-shtaba-glavnokomanduyushchego-1905"
   ]
  },
  {
@@ -290,6 +290,68 @@
   "image": "photos/photo_212@08-11-2026_12-10-01.jpg",
   "articles": [
    "balmont-nash-tsar-mukden-tsusima"
+  ]
+ },
+ {
+  "slug": "rodina-hodynka-1896",
+  "title": "«Это просто жесть»: Ходынка 1896 года",
+  "kind": "other",
+  "author": "Артём Локалов",
+  "annotation": "Статья журнала «Родина» о давке на Ходынском поле во время коронационных торжеств Николая II. В канале служит дополнительным чтением к посту о трагедии и русско-китайском договоре 1896 года. Опубликована 30 мая 2026 года.",
+  "url": "https://rodina-history.ru/2026/05/30/eto-prosto-zhest.html",
+  "posts": [
+   256
+  ],
+  "image": "photos/photo_345@09-11-2026_12-40-02.jpg",
+  "articles": [
+   "hodynka-1896-i-doroga-v-port-artur"
+  ]
+ },
+ {
+  "slug": "rodina-ispolniteli-1918",
+  "title": "«Родина»: судьбы исполнителей расстрела царской семьи",
+  "kind": "other",
+  "author": "Журнал «Родина»",
+  "annotation": "Материал от 17 июля 2018 года о дальнейших судьбах участников расстрела. Ссылка приведена в посте об Ипатьевском доме, Николае II и докторе Боткине.",
+  "url": "https://rodina-history.ru/2018/07/17/rodina-ispolniteli.html",
+  "posts": [
+   263
+  ],
+  "image": "photos/photo_355@10-11-2026_16-55-55.jpg",
+  "articles": [
+   "ipatevskiy-dom-tsarskaya-semya-i-botkin"
+  ]
+ },
+ {
+  "slug": "zodchiy-plan-dalnego-1904",
+  "title": "«Зодчий», 1904: «О проектировании плана города Дальнего»",
+  "kind": "other",
+  "author": "Казимир Сколимовский",
+  "annotation": "Доклад архитектора в № 12–14 за 1904 год: выбор планировки Дальнего, деление на части, Николаевская площадь, чертежи и фотографии первых домов. Доклад прочитан 3 (16) февраля 1904 года. По ссылке — годовой архив из 52 номеров; в посте указан PDF около 810 МБ.",
+  "url": "https://books.totalarch.com/magazines/architect/1904",
+  "posts": [
+   269,
+   276
+  ],
+  "image": "photos/photo_365@11-11-2026_10-19-57.jpg",
+  "articles": [
+   "skolimovsky-chelovek-kotoryy-narisoval-dalnii",
+   "zodchiy-1904-plan-goroda-dalnego"
+  ]
+ },
+ {
+  "slug": "mandryka-oborona-port-artura",
+  "title": "Оборона Порт-Артура в 1904–1905 гг.: врачи и сёстры милосердия",
+  "kind": "other",
+  "author": "Центральный военный клинический госпиталь имени П. В. Мандрыка",
+  "annotation": "История медицинской помощи в осаждённой крепости: работа хирурга Виктора фон Гюббенета, нехватка персонала и перевязочных материалов, госпитальное судно «Монголия» и помощь сестры Вильгельмины Криг на Высокой горе.",
+  "url": "https://2cvkg.ru/o-gospitale/istoriya/iz-istorii-voennoj-mediczinyi/oborona-port-artura-v-1904-1905-gg.-vrachi-i-sestr.html",
+  "posts": [
+   281
+  ],
+  "image": "photos/photo_370@12-11-2026_09-50-06.jpg",
+  "articles": [
+   "oborona-port-artura-vrachi-i-sestry"
   ]
  }
 ]

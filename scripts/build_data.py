@@ -97,11 +97,12 @@ def backrefs(field):
 art_by_person, art_by_place, art_by_book = backrefs('people'), backrefs('places'), backrefs('books')
 # посты → статьи (для people.posts / books.review_post / places.posts, где хранятся tg id)
 tg2art = {i: a['slug'] for a in articles for i in a['tg_ids']}
+article_order = {a['slug']: (a['date'], a['tg_ids'][0]) for a in articles}
 for coll, key in ((people, 'posts'), (places, 'posts'), (books, 'review_post'), (sources, 'posts')):
     for x in coll:
         arts = {tg2art[i] for i in (x.get(key) or []) if i in tg2art}
         arts |= set((art_by_person if coll is people else art_by_place if coll is places else art_by_book).get(x['slug'], []))
-        x['articles'] = sorted(arts, key=lambda s: next(a['date'] for a in articles if a['slug'] == s))
+        x['articles'] = sorted(arts, key=article_order.__getitem__)
 
 # серии
 series = {}
@@ -119,7 +120,7 @@ for a in articles:
 def dump(name, obj):
     (OUT / name).write_text(json.dumps(obj, ensure_ascii=False, indent=1), encoding='utf-8')
 
-dump('articles.json', sorted(articles, key=lambda a: a['date'], reverse=True))
+dump('articles.json', sorted(articles, key=lambda a: article_order[a['slug']], reverse=True))
 dump('people.json', people)
 dump('places.json', places)
 dump('books.json', books)
