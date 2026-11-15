@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Hero from '../components/home/Hero.astro';
+import ReadFirst from '../components/home/ReadFirst.astro';
 import LayersGrid from '../components/home/LayersGrid.astro';
 import MapTeaser from '../components/home/MapTeaser.astro';
 import PeopleTeaser from '../components/home/PeopleTeaser.astro';
@@ -26,6 +27,7 @@ const latest = [...articles].sort((a, b) => b.date.localeCompare(a.date)).slice(
 ---
 <Base searchable={false}>
   <Hero />
+  <ReadFirst />
   <LayersGrid />
   <MapTeaser />
   <PeopleTeaser />

@@ -1,0 +1,119 @@
+---
+import { href, img } from '../../lib/data';
+import { editionDate, type Dossier } from './dossiers';
+interface Props { dossier: Dossier }
+const { dossier: d } = Astro.props;
+const canonical = new URL(href.place(d.place), Astro.site).href;
+const citation = `${d.title}. Портъ-Артуръ и Дальнiй. Редакция от 15.11.2026. ${canonical}#istoriya-mesta`;
+---
+<article class="section paper dossier" id="istoriya-mesta" aria-labelledby="dossier-title">
+  <div class="container dossier-layout">
+    <aside class="dossier-aside" data-pagefind-ignore>
+      <nav aria-label="Содержание статьи">
+        <p class="eyebrow">В статье</p>
+        <ol>
+          <li><a href="#nazvaniya">Названия</a></li>
+          {d.sections.map((s) => <li><a href={`#${s.id}`}>{s.title}</a></li>)}
+          <li><a href="#istochniki-stati">Источники и ссылка на статью</a></li>
+        </ol>
+      </nav>
+      <p class="meta">Подготовлено по материалам канала.<br /><time datetime={editionDate}>Редакция от 15 ноября 2026</time></p>
+    </aside>
+    <div class="dossier-text">
+      <h2 class="h2" id="dossier-title">{d.title}</h2>
+      <section id="nazvaniya" class="dossier-section" aria-labelledby="names-title">
+        <h3 class="h3" id="names-title">Названия</h3>
+        <dl class="dossier-names">
+          {d.names.map((n) => <div><dt>{n.name}</dt><dd>{n.meaning}</dd></div>)}
+        </dl>
+      </section>
+      {d.sections.map((s) => (
+        <section id={s.id} class="dossier-section" aria-labelledby={`${s.id}-title`}>
+          <h3 class="h3" id={`${s.id}-title`}>{s.title}</h3>
+          <div class="prose">{s.paragraphs.map((p) => <p>{p}</p>)}</div>
+          <p class="dossier-refs meta">Источники: {s.refs.map((ref, i) => <>{i > 0 && ', '}<a href={`#istochnik-${ref}`} aria-label={`Источник ${ref}: ${d.sources[ref - 1].title}`}>[{ref}]</a></>)}</p>
+          {s.figure && (
+            <figure class="dossier-figure">
+              <a href={img(s.figure.id)!} target="_blank" rel="noopener" aria-label={`Открыть изображение: ${s.figure.caption}`}>
+                <img src={img(s.figure.id)!} alt={s.figure.caption} loading="lazy" decoding="async" />
+              </a>
+              <figcaption class="meta">{s.figure.caption} <a class="link" href={`#istochnik-${s.figure.source}`}>Источник [{s.figure.source}]</a></figcaption>
+            </figure>
+          )}
+        </section>
+      ))}
+      <section class="dossier-section dossier-sources" id="istochniki-stati" aria-labelledby="sources-title">
+        <h3 class="h3" id="sources-title">Источники</h3>
+        <ol>
+          {d.sources.map((s, i) => <li id={`istochnik-${i + 1}`}><a class="link" href={s.url} target="_blank" rel="noopener">{s.title}</a><p class="meta">{s.note}</p></li>)}
+        </ol>
+        <p class="meta">У изображений могут быть отдельные условия использования. Сведения о происхождении архивных снимков собраны на странице <a class="link" href={href.credits()}>иллюстраций</a>.</p>
+        <div class="dossier-citation" data-citation data-pagefind-ignore>
+          <label for="article-citation" class="h3">Ссылка на статью</label>
+          <textarea id="article-citation" readonly rows="4" aria-describedby="citation-help">{citation}</textarea>
+          <p class="meta" id="citation-help">Для ссылки на документ используйте его описание из списка источников выше.</p>
+          <button class="btn btn--outline btn--sm" type="button" data-copy-citation hidden>Скопировать ссылку с названием</button>
+          <p class="meta" role="status" data-copy-status></p>
+        </div>
+      </section>
+      <nav class="dossier-section" aria-label="Связанные материалы">
+        <h3 class="h3">Продолжить чтение</h3>
+        <ul class="dossier-related">{d.related.map((r) => <li><a class="link" href={r.url}>{r.label}</a></li>)}</ul>
+      </nav>
+    </div>
+  </div>
+</article>
+<script>
+  function initCitations() {
+    document.querySelectorAll<HTMLElement>('[data-citation]').forEach((box) => {
+      if (box.dataset.ready) return;
+      box.dataset.ready = 'true';
+      const button = box.querySelector<HTMLButtonElement>('[data-copy-citation]')!;
+      const field = box.querySelector<HTMLTextAreaElement>('textarea')!;
+      const status = box.querySelector<HTMLElement>('[data-copy-status]')!;
+      button.hidden = false;
+      button.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(field.value);
+          status.textContent = 'Ссылка с названием скопирована.';
+        } catch {
+          field.focus(); field.select();
+          status.textContent = 'Текст выделен. Скопируйте его через меню браузера или сочетанием Ctrl+C / ⌘C.';
+        }
+      });
+    });
+  }
+  document.addEventListener('astro:page-load', initCitations);
+</script>
+<style>
+  .dossier { border-block: 1px solid var(--line); }
+  .dossier-layout { display: grid; grid-template-columns: minmax(180px, 240px) minmax(0, 760px); gap: clamp(24px, 5vw, 80px); justify-content: center; }
+  .dossier-aside { align-self: start; position: sticky; top: calc(var(--header-h) + 24px); }
+  .dossier-aside ol { list-style: none; padding: 0; margin: 14px 0 24px; }
+  .dossier-aside a { display: block; padding: 11px 0; min-height: 44px; border-bottom: 1px solid var(--line); font-size: 15px; line-height: 1.5; }
+  .dossier-aside a:hover { color: var(--accent-on-light); }
+  .dossier-text { min-width: 0; }
+  .dossier-section { margin-top: 36px; scroll-margin-top: calc(var(--header-h) + 24px); }
+  .dossier-section > .h3 { margin-bottom: 18px; }
+  .dossier-names { margin: 0; }
+  .dossier-names > div { padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .dossier-names dt { font-weight: 650; margin-bottom: 5px; }
+  .dossier-names dd { margin: 0; color: var(--ink-2); line-height: 1.65; }
+  .dossier-refs { margin-top: 10px; }
+  .dossier-refs a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; text-decoration: underline; }
+  .dossier-figure { margin: 24px 0 0; }
+  .dossier-figure img { display: block; width: 100%; max-height: 640px; object-fit: contain; background: var(--ice); }
+  .dossier-figure figcaption { margin-top: 12px; line-height: 1.65; }
+  .dossier-sources { border-top: 1px solid var(--line); padding-top: 28px; }
+  .dossier-sources ol { padding-left: 24px; }
+  .dossier-sources li { padding: 8px 0; scroll-margin-top: calc(var(--header-h) + 24px); }
+  .dossier-sources li > a { display: inline-block; padding-block: 10px; }
+  .dossier-sources li p { margin-top: 4px; }
+  .dossier-citation { margin-top: 28px; display: grid; gap: 12px; }
+  .dossier-citation textarea { width: 100%; min-height: 120px; resize: vertical; border: 1px solid var(--line); background: var(--ice); color: var(--navy); padding: 14px; font: inherit; font-size: 15px; line-height: 1.6; }
+  .dossier-citation button { justify-self: start; }
+  .dossier-citation button[hidden] { display: none; }
+  .dossier-related { padding: 0; list-style: none; }
+  .dossier-related a { display: inline-block; padding: 11px 0; min-height: 44px; }
+  @media (max-width: 800px) { .dossier-layout { grid-template-columns: minmax(0, 1fr); } .dossier-aside { position: static; } }
+</style>

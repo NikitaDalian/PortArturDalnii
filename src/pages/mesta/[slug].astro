@@ -1,5 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
+import PlaceDossier from '../../components/places/PlaceDossier.astro';
+import { dossierFor } from '../../components/places/dossiers';
 import PageHero from '../../components/PageHero.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import PersonRow from '../../components/PersonRow.astro';
@@ -18,6 +20,7 @@ export function getStaticPaths() {
 }
 interface Props { p: Place }
 const { p } = Astro.props;
+const dossier = dossierFor(p.slug);
 const placeMap = ({ 'nikolaevskaya-ploshchad': 68, 'fort-2': 120, 'ukreplenie-3': 120, 'ukreplenie-5': 114, 'yaponskie-kvartaly-lyuyshunya': 315 } as Record<string, number>)[p.slug] ?? null;
 const photos = ((p.photos || []) as string[]).filter((f) => !placeMap || !String(f).includes(`photo_${placeMap}@`));
 const cover = photos[0] ?? null;
@@ -31,9 +34,9 @@ const conf: Record<string, string> = { high: 'точная', medium: 'приме
 const seasons = ((p.season || []) as string[]).filter((s) => SEASONS[s]);
 const city = CITIES[p.city] ?? '';
 ---
-<Base title={p.name} description={p.summary.slice(0, 180)} image={img(cover)} section="map">
+<Base title={dossier?.title ?? p.name} description={(dossier?.intro ?? p.summary).slice(0, 180)} image={img(cover)} section="map">
   <PageHero
-    title={p.name}
+    title={dossier?.title ?? p.name}
     eyebrow={`${city} · ${KINDS[p.kind] ?? p.kind}`}
     lead={p.name_now ?? undefined}
     crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Карта', href: href.map() }, { label: p.name }]}
@@ -56,9 +59,10 @@ const city = CITIES[p.city] ?? '';
     <div class="container split pl-split">
       <div class="stack" style="--stack-gap:28px">
         <div class="prose reveal">
-          <p>{p.summary}</p>
+          <p>{dossier?.intro ?? p.summary}</p>
+          {dossier && <p><a class="link" href="#istoriya-mesta">Читать историю места</a> · <a class="link" href="#istochniki-stati">Источники</a></p>}
         </div>
-        {placeMap && <div class="reveal"><MapFigure id={placeMap} /></div>}
+        {placeMap && !dossier && <div class="reveal"><MapFigure id={placeMap} /></div>}
         {unsure && (
           <Unsure block text={p.coord_confidence === 'low'
             ? 'Положение точки на карте приблизительное. Сведения о месте ещё проверяются; если вы были здесь и знаете точнее, напишите нам.'
@@ -99,6 +103,9 @@ const city = CITIES[p.city] ?? '';
       </aside>
     </div>
   </section>
+
+  {dossier && <PlaceDossier dossier={dossier} />}
+  {dossier && placeMap && <section class="section section--tight"><div class="container"><MapFigure id={placeMap} /></div></section>}
 
   {photos.length > 0 && (
     <section class="section section--tight paper" aria-labelledby="pl-photos">

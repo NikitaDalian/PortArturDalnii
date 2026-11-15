@@ -1,0 +1,29 @@
+---
+import { dossiers } from '../places/dossiers';
+import { href, imgCrop } from '../../lib/data';
+---
+<section class="section paper" id="chitat" aria-labelledby="read-first-title">
+  <div class="container">
+    <div class="section-head"><div class="stack" style="--stack-gap:10px">
+      <h2 class="h2" id="read-first-title">Город, гавань и крепость</h2>
+      <p class="lead">Три статьи по материалам канала: история мест, фотографии и ссылки на источники.</p>
+    </div></div>
+    <div class="reading-grid">
+      {dossiers.map((d) => <a class="reading-card" href={href.place(d.place)}>
+        <img src={imgCrop(d.cover, '3x2')!} alt="" loading="lazy" decoding="async" width="960" height="640" />
+        <div class="reading-card__body"><h3 class="h3">{d.title}</h3><p>{d.intro}</p><span class="reading-card__link">Читать статью <span aria-hidden="true">→</span></span></div>
+      </a>)}
+    </div>
+  </div>
+</section>
+<style>
+  .reading-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+  .reading-card { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--ice); }
+  .reading-card:hover { border-color: var(--navy); }
+  .reading-card img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+  .reading-card__body { display: flex; flex-direction: column; flex: 1; gap: 16px; padding: 24px; }
+  .reading-card__body p { line-height: 1.65; color: var(--ink-2); }
+  .reading-card__link { margin-top: auto; padding-top: 8px; font-weight: 600; color: var(--accent-on-light); }
+  @media (max-width: 900px) { .reading-grid { grid-template-columns: minmax(0, 1fr); } .reading-card { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); } .reading-card img { height: 100%; } }
+  @media (max-width: 540px) { .reading-card { display: flex; } .reading-card img { height: auto; } .reading-card__body { padding: 20px; } }
+</style>

@@ -1,5 +1,6 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import DossierLinks from '../../../components/places/DossierLinks.astro';
 import Coast from '../../../components/Coast.astro';
 import Crumbs from '../../../components/Crumbs.astro';
 import ArticleCard from '../../../components/ArticleCard.astro';
@@ -65,6 +66,7 @@ const description = s.annotation ? s.annotation.slice(0, 180) : `${kind}: ${s.ti
             <div class="prose"><p>{s.annotation}</p></div>
           </div>
         )}
+        <DossierLinks kind="library" slug={s.slug} />
         <div class="cluster" style="--cluster-gap:12px">
           {s.url && (
             <a class="btn btn--outline btn--sm" href={s.url} target="_blank" rel="noopener">

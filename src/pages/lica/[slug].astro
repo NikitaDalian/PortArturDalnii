@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import DossierLinks from '../../components/places/DossierLinks.astro';
 import Coast from '../../components/Coast.astro';
 import Crumbs from '../../components/Crumbs.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
@@ -64,6 +65,7 @@ const portraitArchive = (p.portrait && photoMeta(p.portrait as string)?.record_u
       <div class="stack ps-main" style="--stack-gap:28px">
         <h2 class="sr-only">Биография</h2>
         {p.bio && <div class="prose reveal"><p>{p.bio}</p></div>}
+        <DossierLinks kind="people" slug={p.slug} />
         {quote && (
           <blockquote class="quote ps-quote reveal" style="--d:80ms">
             <p>{quote.text}</p>

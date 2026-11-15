@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import DossierLinks from '../../components/places/DossierLinks.astro';
 import Coast from '../../components/Coast.astro';
 import NoteCover from '../../components/NoteCover.astro';
 import Crumbs from '../../components/Crumbs.astro';
@@ -94,6 +95,7 @@ const hasRelated = rel.people.length + rel.places.length + rel.books.length > 0;
         </section>
       )}
 
+      <DossierLinks kind="notes" slug={a.slug} />
       {noteMap && <div data-pagefind-ignore><MapFigure id={noteMap} /></div>}
 
       <section class="nb__tg panel panel--frost stack" style="--stack-gap:14px" data-pagefind-ignore>

@@ -1,0 +1,16 @@
+---
+import { dossiers } from './dossiers';
+import { href } from '../../lib/data';
+interface Props { kind: 'notes' | 'people' | 'library'; slug: string }
+const { kind, slug } = Astro.props;
+const items = dossiers.filter((d) => d[kind].includes(slug));
+---
+{items.length > 0 && <nav class="dossier-links panel panel--frost stack" aria-label="Статьи по теме" data-pagefind-ignore>
+  <h2 class="h3">Статьи по теме</h2>
+  <ul>{items.map((d) => <li><a class="link" href={`${href.place(d.place)}#istoriya-mesta`}>{d.title}</a></li>)}</ul>
+</nav>}
+<style>
+  .dossier-links { --stack-gap: 12px; }
+  ul { list-style: none; padding: 0; margin: 0; }
+  a { display: inline-block; padding: 11px 0; min-height: 44px; }
+</style>
