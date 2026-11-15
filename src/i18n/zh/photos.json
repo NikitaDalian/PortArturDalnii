@@ -3443,17 +3443,17 @@
     "h": 1693,
     "kind": "archival-photo",
     "era": "russian",
-    "subject": "1905年投降后，从黄金山俯瞰旅顺内港：舰队残骸",
+    "subject": "旅顺陷落后从黄金山拍摄的西港；拍摄年份1905年据Commons目录",
     "place": "port-arthur",
     "people": [],
     "quality": 4,
     "hero": true,
     "crop": "landscape",
-    "notes": "日本海军军令部，1905年；2437×1693",
-    "source": "Wikimedia Commons / Imperial Japanese Navy General Staff",
+    "notes": "图注已与原书核对：日本国立国会图书馆第2卷、第136幅扫描。1905年为Commons标注的拍摄年份；该卷出版于1909年（NDL将全书出版期列为1909—1910年）。",
+    "source": "日本国立国会图书馆／日本海军军令部；Wikimedia Commons亦藏副本",
     "license": "Public domain",
-    "credit": "投降后从黄金山俯瞰旅顺。日本海军军令部，1905年。《明治三十七八年海战史》第2卷，经Wikimedia Commons获取。公有领域。 https://commons.wikimedia.org/wiki/File:Port_Arthur_from_Gold_Hill.jpg",
-    "record_url": "https://commons.wikimedia.org/wiki/File:Port_Arthur_from_Gold_Hill.jpg"
+    "credit": "旅顺陷落后从黄金山拍摄的西港。日本海军军令部编，《明治三十七八年海战史》第2卷，东京：春阳堂，1909年；NDL第136幅扫描。1905年拍摄日期据Commons。Commons：Public domain；NDL：pdm。https://commons.wikimedia.org/wiki/File:Port_Arthur_from_Gold_Hill.jpg https://dl.ndl.go.jp/pid/774490/1/136",
+    "record_url": "https://dl.ndl.go.jp/pid/774490/1/136"
   },
   {
     "file": "photos/photo_301@archive.jpg",

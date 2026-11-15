@@ -3443,17 +3443,17 @@
     "h": 1693,
     "kind": "archival-photo",
     "era": "russian",
-    "subject": "Port Arthur’s inner harbour from Golden Hill after surrender, 1905: wrecks of squadron ships",
+    "subject": "Port Arthur’s western harbour from Golden Hill after capitulation; photographed in 1905 according to the Commons catalogue",
     "place": "port-arthur",
     "people": [],
     "quality": 4,
     "hero": true,
     "crop": "landscape",
-    "notes": "Imperial Japanese Navy General Staff, 1905, 2437×1693",
-    "source": "Wikimedia Commons / Imperial Japanese Navy General Staff",
+    "notes": "Caption checked against the original: NDL, vol. 2, scan 136. The photograph’s 1905 date comes from Commons; the volume appeared in 1909 (NDL dates the series 1909–1910).",
+    "source": "National Diet Library / Imperial Japanese Navy General Staff; also on Wikimedia Commons",
     "license": "Public domain",
-    "credit": "Port Arthur from Golden Hill after surrender. Imperial Japanese Navy General Staff, 1905. Records of Naval Battles in Meiji 37th, 38th, vol. 2, via Wikimedia Commons. Public domain. https://commons.wikimedia.org/wiki/File:Port_Arthur_from_Gold_Hill.jpg",
-    "record_url": "https://commons.wikimedia.org/wiki/File:Port_Arthur_from_Gold_Hill.jpg"
+    "credit": "Port Arthur’s Western Harbour from Golden Hill after the Fortress Fell. Imperial Japanese Navy General Staff. 明治三十七八年海戦史, vol. 2, Tokyo: Shunyōdō, 1909; NDL, scan 136. Photograph dated 1905 by Commons. Commons: Public domain; NDL: pdm. https://commons.wikimedia.org/wiki/File:Port_Arthur_from_Gold_Hill.jpg https://dl.ndl.go.jp/pid/774490/1/136",
+    "record_url": "https://dl.ndl.go.jp/pid/774490/1/136"
   },
   {
     "file": "photos/photo_301@archive.jpg",

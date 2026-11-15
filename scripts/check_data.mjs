@@ -53,6 +53,19 @@ for (const item of [...data.articles, ...data.people, ...data.places, ...data.bo
     for (const file of files) if (file && !photoFiles.has(file)) errors.push(`${item.slug}: unknown photo ${file}`);
   }
 }
+const reviews = read('guide_evidence');
+for (const [slug, review] of Object.entries(reviews)) {
+  if (!maps.places.has(slug) || !review.checks?.length || !review.sources?.length) errors.push(`${slug}: incomplete guide review`);
+  if (review.sources.some(source => !['primary', 'catalogue', 'field', 'secondary'].includes(source.kind))) errors.push(`${slug}: unknown source kind`);
+  if (review.checks.some(check => !['confirmed', 'attributed', 'unresolved'].includes(check.status))) errors.push(`${slug}: unknown evidence status`);
+}
+for (const [slug, reading] of Object.entries(read('document_readings'))) {
+  if (!maps.sources.has(slug) || !maps.places.has(reading.guide)) errors.push(`${slug}: orphan document reading`);
+  if (!photoIds.includes(String(reading.photo))) errors.push(`${slug}: unknown document image`);
+  if (!reading.original || !reading.translation || !reading.transcriptionNote || !reading.sections?.length) errors.push(`${slug}: incomplete document reading`);
+  const sectionIds = reading.sections.map(section => section.id);
+  if (new Set(sectionIds).size !== sectionIds.length) errors.push(`${slug}: duplicate document sections`);
+}
 if (errors.length) {
   console.error(errors.join('\n'));
   process.exit(1);

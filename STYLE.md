@@ -23,16 +23,20 @@
 `/` · `/istoriya/` и `/istoriya/{do-1898|1898-1905|1905-1945|1945-1955|segodnya}/` · `/lica/` и `/lica/{slug}/` · `/biblioteka/`, `/biblioteka/knigi/{slug}/`, `/biblioteka/istochniki/{slug}/` · `/zametki/`, `/zametki/{slug}/`, `/zametki/serii/{slug}/` · `/karta/` (якорь `#slug` открывает место) · `/mesta/{slug}/` · `/marshruty/`, `/marshruty/{slug}/` · `/sezony/` · `/ukazatel/` · `/poisk/?q=` · `/o-proekte/`.
 Каждая страница сущности обязана ссылаться на связанные: заметка → люди, места, книги, серия, слой; человек → заметки, места, книги; место → заметки, люди, маршруты, карта; книга → заметки-рецензии, люди. Сущность без своей страницы (`entity().href === null`) выводится текстом, не ссылкой.
 
-## Данные (`src/data/*.json`, собраны скриптом `scripts/build_data.py`)
-- `articles` (60): slug, tg_ids, tg_url, date (дата поста), title, dek, summary, facts[], type, layer[], people[], places[], books[], photos[], cover, read_min, series, series_slug, + обратные связи считаются через data.ts.
-- `people` (30): slug, name, short, years, country, role, group, bio, quote, posts, portrait, places[], articles[].
-- `places` (45): slug, name, name_zh, name_now, city, layers, kind, lat, lng, coord_confidence, summary, visit, season, posts, photos, verify, articles[].
-- `books` (24), `sources` (19), `routes` (8), `seasons`, `series` (10), `photos` (каталог 215 фото), `index_terms` (имена/места без страниц).
+## Данные (`src/data/*.json`)
+
+Основной каталог собирает `scripts/build_data.py`; редакционные проверки и разборы документов обновляются отдельно по правилам `README.md`.
+- Число записей на 15 ноября 2026 года: `articles` — 71, `people` — 32, `places` — 46, `books` — 28, `sources` — 23, `routes` — 8, `series` — 12, `photos` — 303. При изменении состава сверяй числа с JSON, не используй их как ограничения схемы.
+- `articles`: slug, tg_ids, tg_url, date (дата поста), title, dek, summary, facts[], type, layer[], people[], places[], books[], photos[], cover, read_min, series, series_slug, + обратные связи считаются через data.ts.
+- `people`: slug, name, short, years, country, role, group, bio, quote, posts, portrait, places[], articles[].
+- `places`: slug, name, name_zh, name_now, city, layers, kind, lat, lng, coord_confidence, summary, visit, season, posts, photos, verify, articles[].
+- `seasons` сгруппированы по четырём сезонам; `index_terms` содержит 64 справочных имени, 35 географических названий и 3 книги без отдельной карточки. Для людей и географии есть 99 страниц со сведениями из `reference_descriptions`.
+- `guide_evidence` — проверки трёх статей о местах; `document_readings` — один разбор документа. Типы и правила обновления — в `src/lib/evidence.ts` и `README.md`. Не выдавай каталог или научную библиографию за просмотр оригинала.
 - Фото: `img(path_or_id)` → WebP с водяным знаком; `img(x, 640)` — превью. Портрет Виктории: `authorImg('viktoriia')`.
 - Поле `verify: true` или `coord_confidence: low` — показывай аккуратную пометку «уточняется», не выдавай за факт.
 
 ## Движение и интерактив
-- Переходы между страницами уже включены. Для «морфинга» картинки из списка в страницу ставь одинаковый `transition:name`: `person-{slug}`, `book-{slug}`, `place-{slug}`, `note-{slug}` (общие карточки уже ставят их — повтори на детальной странице у главной картинки).
+- Переходы между страницами включены, но именованный морфинг изображений не используется. Не добавляй `transition:name` к изображениям и их медиаконтейнерам и не связывай таким способом карточку с большой картинкой страницы: это вызывало подмену изображения при возврате назад. Используй обычные изображения с заданными размерами; после изменения переходов проверяй переход вперёд, назад и вперёд в истории браузера, в том числе между разными биографиями.
 - Появление при скролле: `class="reveal"` (+ `style="--d:120ms"` для лесенки), не больше одного уровня вложенности.
 - Клиентские скрипты: `<script>` в .astro, инициализация в `document.addEventListener('astro:page-load', ...)` (иначе сломается после перехода). Никаких тяжёлых библиотек, кроме `maplibre-gl` (карта) и `pagefind` (поиск) — уже установлены.
 - Уважать `prefers-reduced-motion` (глобально уже учтено для .reveal и переходов).

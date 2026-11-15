@@ -6,6 +6,7 @@ const read = (path) => JSON.parse(fs.readFileSync(new URL(path, root), 'utf8'));
 const files = translatedFiles;
 const invariant = new Set(['slug', 'series_slug', 'type', 'kind', 'country', 'group', 'city', 'coord_confidence', 'era', 'crop', 'level', 'layer', 'layers', 'season', 'articles', 'people', 'place', 'places', 'books', 'photos', 'cover', 'portrait', 'image', 'file', 'posts', 'review_post', 'tg_ids', 'lat', 'lng', 'polyline']);
 const errors = [];
+for (const key of ['id', 'section', 'status', 'ref', 'refs', 'checkedAt', 'photo', 'guide', 'original', 'originalLanguage']) invariant.add(key);
 const releases = read('i18n/releases.json');
 function compare(original, translated, path, key = '') {
   if (original === null || typeof original !== 'object') {

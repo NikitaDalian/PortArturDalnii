@@ -3443,17 +3443,17 @@
   "h": 1693,
   "kind": "archival-photo",
   "era": "russian",
-  "subject": "Внутренняя гавань Порт-Артура с Золотой горы после капитуляции, 1905: остовы кораблей эскадры",
+  "subject": "Западная гавань Порт-Артура с Золотой горы после капитуляции; съёмка 1905 года по каталогу Commons",
   "place": "port-arthur",
   "people": [],
   "quality": 4,
   "hero": true,
   "crop": "landscape",
-  "notes": "Японский морской генштаб, 1905; 2437×1693",
-  "source": "Wikimedia Commons / Imperial Japanese Navy General Staff",
+  "notes": "Подпись сверена по оригиналу: NDL, том 2, скан 136. Год съёмки 1905 указан в Commons; том издан в 1909 году (в каталоге NDL серия датирована 1909–1910).",
+  "source": "Национальная парламентская библиотека Японии / Морской генеральный штаб Японии; копия также в Wikimedia Commons",
   "license": "Public domain",
-  "credit": "Порт-Артур, вид с Золотой горы после капитуляции. Imperial Japanese Navy General Staff, 1905. «Records of Naval Battles in Meiji 37th, 38th», т. 2, через Wikimedia Commons. Public domain. https://commons.wikimedia.org/wiki/File:Port_Arthur_from_Gold_Hill.jpg",
-  "record_url": "https://commons.wikimedia.org/wiki/File:Port_Arthur_from_Gold_Hill.jpg"
+  "credit": "Западная гавань Порт-Артура с Золотой горы после падения крепости. Морской генеральный штаб Японии. 明治三十七八年海戦史, т. 2, Токио: 春陽堂, 1909; NDL, скан 136. Год съёмки 1905 — по Commons. Commons: Public domain; NDL: pdm. https://commons.wikimedia.org/wiki/File:Port_Arthur_from_Gold_Hill.jpg https://dl.ndl.go.jp/pid/774490/1/136",
+  "record_url": "https://dl.ndl.go.jp/pid/774490/1/136"
  },
  {
   "file": "photos/photo_301@archive.jpg",

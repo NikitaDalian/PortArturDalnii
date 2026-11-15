@@ -29,7 +29,8 @@
         ],
         "refs": [
           1,
-          2
+          2,
+          6
         ],
         "figure": {
           "id": 366,
@@ -48,7 +49,9 @@
         "takeaway": "The square’s layout and its buildings belong to different periods. Each building’s history needs to be read separately.",
         "refs": [
           1,
-          2
+          2,
+          6,
+          7
         ]
       },
       {
@@ -56,11 +59,12 @@
         "title": "Back to the Architect’s Idea",
         "paragraphs": [
           "Skolimowski explained his design in a report, “On Designing the Plan of the City of Dalny”, published in issues 12–14 of Zodchiy in 1904. It traces his reasoning: why he rejected a rectangular grid, how he divided the city into European, Chinese and Administrative districts, and how he arranged squares and streets.",
-          "The channel reproduces illustrations from the report and links to the journal’s annual volume. For an exact quotation, open the relevant issue: page numbers have not been established from the available export. The plan explains the architect’s intentions; a house’s construction date must be checked against other documents."
+          "The channel shares images from the paper and a link to the annual volume. S. S. Levoshko gives these page ranges: no. 12, pp. 141–144; no. 13, pp. 153–155; no. 14, pp. 161–166. They have been checked against the scholarly bibliography, but the original pages have not yet been inspected here, and the page containing the illustrated plan detail remains unidentified. The drawing helps explain the proposal; the surrounding buildings need separate construction records."
         ],
         "refs": [
           3,
-          4
+          4,
+          5
         ]
       },
       {
@@ -96,6 +100,21 @@
         "title": "Skolimowski, K. G. On Designing the Plan of the City of Dalny. Zodchiy, 1904, Nos. 12–14",
         "url": "https://books.totalarch.com/magazines/architect/1904",
         "note": "The annual volume’s page. The post gives the complete PDF’s size as about 810 MB."
+      },
+      {
+        "title": "S. S. Levoshko. The Polish-Russian architect Kazimierz Skolimowski (1862–1923) in his time",
+        "url": "https://bazhum.muzhp.pl/media/texts/sztuka-europy-wschodniej-b-art-of-eastern-europe/2015-tom-3/sztuka_europy_wschodniej_b_art_of_eastern_europe-r2015-t3-s145-157.pdf",
+        "note": "Scholarly article, 2015, pp. 145–157. Its bibliography on p. 156 lists no. 12, pp. 141–144; no. 13, pp. 153–155; no. 14, pp. 161–166. These locators have not been checked against the original journal pages here."
+      },
+      {
+        "title": "Lüshun Museum: City Memories — Dalian's Old Buildings in Collection Photographs",
+        "url": "https://lvshunmuseum.cn/Exhibition/ProductDetail.aspx?ID=238",
+        "note": "Institutional exhibition description. Relevant entries concern Nikolayevskaya Square, the Great Square and Yamato Hotel. Individual claims are assessed separately."
+      },
+      {
+        "title": "Liaoning Department of Culture and Tourism: Zhongshan Square Buildings",
+        "url": "https://whly.ln.gov.cn/whly/wlzt/lnww/zdwwbhdw/851036343A2D4CCBB6CE68CDB7890470/index.shtml",
+        "note": "Heritage administration article dated 27 August 2020, with separate entries for Yamato Hotel and the Bank of Korea."
       }
     ],
     "notes": [
@@ -128,6 +147,10 @@
       {
         "label": "Skolimowski’s report in the library",
         "url": "/PortArturDalnii/biblioteka/istochniki/zodchiy-plan-dalnego-1904/"
+      },
+      {
+        "label": "Reading the plan: a Russian caption and Chinese sources",
+        "url": "/PortArturDalnii/biblioteka/istochniki/zodchiy-plan-dalnego-1904/#document-reading"
       }
     ]
   },
@@ -159,18 +182,20 @@
         "id": "harbour",
         "title": "Two Basins behind a Narrow Entrance",
         "paragraphs": [
-          "Port Arthur’s inner harbour consists of the Eastern and Western basins. The sea entrance passes between Golden Hill and Tiger’s Tail peninsula. Find that passage first in the old panorama: it makes the position of the town, shore installations and ships easier to understand.",
+          "Port Arthur’s inner harbour consists of the Eastern and Western basins. The sea entrance passes between Golden Hill and Tiger’s Tail peninsula. Use a map to locate the entrance and basins. The panorama below shows the western harbour and sunken ships after the fortress fell.",
           "The Pacific Squadron was based in Russian Port Arthur. Its base occupied sheltered waters, but defence extended beyond the entrance from the sea. Coastal batteries and land fortifications formed a single system around the harbour."
         ],
         "refs": [
           2,
           3,
-          5
+          5,
+          6,
+          7
         ],
         "figure": {
           "id": 300,
-          "caption": "Port Arthur from Golden Hill in 1905, after the siege. Published in a Japanese account of the naval battles of 1904–1905.",
-          "source": 5
+          "caption": "Port Arthur’s western harbour from Golden Hill after the fortress fell. Caption checked against the original publication, vol. 2, scan 136 at Japan’s National Diet Library. Commons dates the photograph to 1905; the volume was published in 1909.",
+          "source": 6
         }
       },
       {
@@ -178,12 +203,14 @@
         "title": "When the Heights Threatened the Fleet",
         "paragraphs": [
           "Once the Japanese captured 203 Metre Hill, they could observe the harbour and direct the fire of siege guns. Ships beside the quays became visible targets. Waters protected against a direct attack from the sea could no longer shelter them.",
-          "The battleship Sevastopol, commanded by Nikolai von Essen, moved to White Wolf Bay and repelled destroyer attacks. Her crew scuttled her before the fortress surrendered. The fate of the harbour’s ships now depended on more than naval operations: the base was being lost from the land."
+          "The battleship Sevastopol, commanded by Nikolai von Essen, moved to White Wolf Bay and repelled destroyer attacks. Her crew scuttled her during the capitulation on 20 December 1904 (2 January 1905). The fate of the harbour’s ships now depended on more than naval operations: the base was being lost from the land."
         ],
         "takeaway": "The ships’ safety also depended on who held the heights around the harbour.",
         "refs": [
           2,
-          3
+          3,
+          8,
+          11
         ]
       },
       {
@@ -191,11 +218,13 @@
         "title": "How the Harbour Acquired Its English Name",
         "paragraphs": [
           "The Chinese name Lüshun predates the European one. The channel recounts a tradition about a Ming commander’s safe voyage in 1371, connecting it with Lüshunkou, the “bay of smooth sailing”. This is a legend about the name’s origin.",
-          "The post connects Port Arthur with the British lieutenant William Arthur, commander of the gunboat HMS Algerine. In this account, his damaged ship sheltered here and Arthur charted the area. In August 1860, John Ward, captain of HMS Actaeon, named the harbour in his honour.",
-          "Russia retained the English name after the lease of 1898. The channel identifies the supposed dedication to Prince Arthur as unconfirmed. The post gives no archival reference for the act of naming, so the account here follows that source’s version."
+          "The name Port Arthur is associated with Lieutenant William Arthur, commander of HMS Algerine. A 1957 US Naval Institute account places his arrival during a coastal survey in 1860 and credits Captain John Ward of HMS Actaeon with naming the harbour. The damaged-ship story and exact month of naming have not been verified here against a document from 1860.",
+          "Russia retained the English name after the lease of 1898. The channel describes the proposed dedication to Prince Arthur as unconfirmed. No original naming record was inspected in this review: a later historical account does not replace a document from 1860."
         ],
         "refs": [
-          1
+          1,
+          9,
+          10
         ]
       },
       {
@@ -232,9 +261,39 @@
         "note": "The distinction between naval and commercial ports, and changing names."
       },
       {
-        "title": "Port Arthur from Gold Hill",
+        "title": "Port Arthur from Gold Hill — Commons Record",
         "url": "https://commons.wikimedia.org/wiki/File:Port_Arthur_from_Gold_Hill.jpg",
-        "note": "Historical photograph record. The site catalogue credits the Imperial Japanese Navy General Staff, 1905; Records of Naval Battles in Meiji 37th, 38th, vol. 2. Public domain."
+        "note": "Commons dates the post-capitulation photograph to 1905 and credits the Imperial Japanese Navy General Staff. The original volume 2 was published in 1909; its scan is source 6. Commons marks the image public domain."
+      },
+      {
+        "title": "Meiji 37–38 Naval War History, Vol. 2: The Western Harbour Photograph",
+        "url": "https://dl.ndl.go.jp/pid/774490/1/136",
+        "note": "National Diet Library scan 136. The original caption identifies the western harbour from Golden Hill after the fortress fell. Published in 1909–1910; Commons dates the photograph to 1905."
+      },
+      {
+        "title": "Geographical Fieldwork Report: Lüshun Harbour",
+        "url": "https://geo.ecnu.edu.cn/7a/bc/c42633a555708/page.htm",
+        "note": "East China Normal University geography report, 17 August 2023, section 旅顺军港. A modern description of the enclosed bay and Tiger’s Tail spit."
+      },
+      {
+        "title": "Ryuji Hirano: The Russo-Japanese War as a Maritime Limited War",
+        "url": "https://www.nids.mod.go.jp/english/publication/briefing/pdf/2015/briefing_e201506.pdf",
+        "note": "NIDS News, June 2015, p. 4: capture of Hill 203 and destruction of the squadron by fire from land. Institutional historical interpretation, rather than an operational diary."
+      },
+      {
+        "title": "A Century of Port Arthur",
+        "url": "https://www.usni.org/magazines/proceedings/1957/may/century-port-arthur",
+        "note": "US Naval Institute, Proceedings, May 1957, Vol. 83/5/651. Accessible indexed text connects Arthur, Algerine, Ward and Actaeon in 1860. The full page returned 403; no naming record from 1860 was inspected."
+      },
+      {
+        "title": "地名探源之旅顺口: The Origin of Lüshunkou’s Name",
+        "url": "https://www.zhongguodiqing.cn/dmty/201801/t20180109_4341798.shtml",
+        "note": "China’s local-history office website, crediting Liaoning provincial local history. Repeats the 1371 account without identifying a Ming-period document."
+      },
+      {
+        "title": "Andrei Smirnov: The Battleship Sevastopol",
+        "url": "https://rodina-history.ru/2024/11/26/kto-s-koltom-kto-s-kinzhalom-kto-v-slezah-my-pokidali-tonushchij-korabl.html",
+        "note": "Rodina, No. 12, 2024; page dated 1 December 2024. Sections on White Wolf Bay, torpedo attacks and scuttling on 20 December 1904 (2 January 1905). A secondary study with documentary references."
       }
     ],
     "notes": [
@@ -307,16 +366,19 @@
       },
       {
         "id": "position",
-        "title": "The Fortification the Trenches Never Reached",
+        "title": "The Western Flank and the Capitulation",
         "paragraphs": [
-          "Fortification No. 5 lies west of the harbour. In Konstantin Velichko’s land-defence system, forts were the principal strongpoints, while intermediate works covered the gaps. The plan shows Forts V and VI nearby, though construction of Fort VI never began.",
-          "According to the channel, Qing troops began work here. After 1898, the Russians rebuilt it in concrete and finished before the war. Japanese siege trenches never reached it. It was handed over under the capitulation terms, without a separate assault.",
+          "Fortification No. 5 stands west of the harbour. In Konstantin Velichko’s land-defence system, forts were the main strongpoints and intermediate works covered the gaps. The published readiness memo dated 1 December 1903 distinguishes Fortification No. 5, listed as complete, from unfinished Fort V and Fort VI, where construction had only just begun.",
+          "According to the channel, Qing works preceded the Russian rebuilding after 1898; the relationship between these stages and individual surviving structures still needs verification. The channel describes a handover without a separate assault. This does not mean an absence of combat: G. S. Pilsudski’s published diary for 12–14 December 1904 records the work’s fire and Japanese shelling. It was handed over with the other positions at the capitulation.",
           "The number matters: Fortification No. 5 and Fort V were different sites. Arabic numerals designated intermediate works; Roman numerals, forts. A matching number alone is no basis for treating them as the same place."
         ],
-        "takeaway": "The surviving ditch tells us about preparations for defence. This fortification was never separately assaulted.",
+        "takeaway": "Handover at the capitulation does not mean an absence of combat: the work had fired its guns.",
         "refs": [
           1,
-          3
+          3,
+          4,
+          5,
+          6
         ]
       },
       {
@@ -335,7 +397,7 @@
         "title": "What the Walls Themselves Reveal",
         "paragraphs": [
           "After seeing the display, return to the ditch: where do the loopholes point, what does the rampart shelter, and how are the rooms connected? The channel’s explanation of a typical fort diagram helps. The diagram explains the terms, but is not a plan of Fortification No. 5; even its ditch is filled with water, whereas this one is dry.",
-          "Here the siege’s history offers a rare advantage: the position’s design can be examined with your own eyes. Ditch, rampart and directions of fire explain how it was meant to be defended. The absence of a separate assault helps explain why these structures have survived in this condition."
+          "The site offers something rare in a story of siege: the position’s structure can be seen directly. The ditch, rampart and direction of the embrasures explain how it was meant to be defended. But its present survival cannot be explained solely by the absence of a separate assault, or automatically treated as an unchanged view of 1904."
         ],
         "refs": [
           1,
@@ -358,7 +420,22 @@
       {
         "title": "Video about Fortification No. 5",
         "url": "https://t.me/portartur_dalnii/174",
-        "note": "A supplement to the first post: Fort VI was never built, and the fortification was surrendered without fighting. The video was made from the author’s text and explanations."
+        "note": "A reconstruction of the work’s layout, based on the channel author’s text and explanations, supplementing the field report. Fort VI’s construction and the fortification’s combat service have been checked separately against the published documents below."
+      },
+      {
+        "title": "Port Arthur readiness memorandum dated 1 December 1903",
+        "url": "https://militera.lib.ru/h/sorokin_ai/16.html",
+        "note": "Reproduced in Appendix I of A. I. Sorokin’s book, identified by the website as the 1952 edition. Engineering section: Fortification No. 5 and Forts V and VI. The original memo was not inspected."
+      },
+      {
+        "title": "G. S. Pilsudski’s diary of Port Arthur’s final days",
+        "url": "https://www.regiment.ru/Lib/C/251.htm",
+        "note": "Entries for 9 and 12–14 December 1904 distinguish Fort V from Fortification No. 5 and describe artillery action. Web transcription consulted; its heading gives an erroneous publication year, and the journal scan was not checked."
+      },
+      {
+        "title": "Order for handing over positions after the capitulation",
+        "url": "https://militera.lib.ru/db/larenko_pn/09.html",
+        "note": "P. N. Larenko, The Ordeal of Port Arthur, Chapter IX, Order No. 975. HTML reproduction of a published document; the signed original was not inspected."
       }
     ],
     "notes": [

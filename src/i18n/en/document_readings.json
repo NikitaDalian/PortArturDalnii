@@ -1,0 +1,77 @@
+{
+  "zodchiy-plan-dalnego-1904": {
+    "title": "Two words beneath a plan: Nikolayevskaya Square",
+    "intro": "An old name, a circle and radiating streets: a few details on this plan offer a way into today’s Zhongshan Square.",
+    "checkedAt": "2026-11-15",
+    "photo": 366,
+    "caption": "Plan of Nikolayevskaya Square, reproduced in the channel post.",
+    "original": "Николаевская площадь.",
+    "originalLanguage": "ru",
+    "translation": "Nikolayevskaya Square.",
+    "transcriptionNote": "Only the clear caption is transcribed. Small annotations and the central outline have not been decoded. Attribution to the paper follows the channel post; the original page is not yet checked. A plan records a proposal, not completed construction.",
+    "sections": [
+      {
+        "id": "read-the-caption",
+        "title": "Start with the name",
+        "paragraphs": [
+          "“Николаевская площадь” translates as “Nikolayevskaya Square”; its Chinese equivalent is 尼古拉广场. The drawing preserves the Russian name of the place now known as 中山广场, Zhongshan Square. The old caption is a first clue to a familiar urban space."
+        ],
+        "refs": [
+          1,
+          3
+        ]
+      },
+      {
+        "id": "read-the-drawing",
+        "title": "A circle and ten directions",
+        "paragraphs": [
+          "The square has a recognisable framework: a circle with streets radiating outwards. The museum describes a diameter of 213 metres and ten roads. Follow the streets towards the ring, and notice the planting groups between them. The drawing invites you to look beyond an individual building to the connections across the city."
+        ],
+        "refs": [
+          1,
+          3
+        ]
+      },
+      {
+        "id": "compare-the-names",
+        "title": "The plan and the city that followed",
+        "paragraphs": [
+          "The Chinese museum account distinguishes the Russian layout from Japanese-period construction. The familiar circle and the façades around it belong to different stages.",
+          "Yamato Hotel offers a comparison: the government heritage entry dates its construction to 1909–1914. At Zhongshan Square today, look from one façade to the whole circle; on the old plan, follow that circle into the radiating streets. The sources offer two ways of reading the same place."
+        ],
+        "refs": [
+          3,
+          4
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Plan reproduction in the channel post",
+        "url": "https://t.me/portartur_dalnii/276",
+        "locator": "Post 276; caption beneath the plan detail",
+        "note": "The published plan detail and its caption."
+      },
+      {
+        "title": "S. S. Levoshko's study of Skolimowski",
+        "url": "https://bazhum.muzhp.pl/media/texts/sztuka-europy-wschodniej-b-art-of-eastern-europe/2015-tom-3/sztuka_europy_wschodniej_b_art_of_eastern_europe-r2015-t3-s145-157.pdf",
+        "locator": "2015, p. 156, bibliography",
+        "note": "Bibliographic locator: no. 12, pp. 141–144; no. 13, pp. 153–155; no. 14, pp. 161–166."
+      },
+      {
+        "title": "Lüshun Museum: City Memories",
+        "url": "https://lvshunmuseum.cn/Exhibition/ProductDetail.aspx?ID=238",
+        "locator": "Entries for Nikolayevskaya Square and the Great Square",
+        "note": "Chinese institutional material for comparing the names."
+      },
+      {
+        "title": "Liaoning Department of Culture and Tourism: Zhongshan Square",
+        "url": "https://whly.ln.gov.cn/whly/wlzt/lnww/zdwwbhdw/851036343A2D4CCBB6CE68CDB7890470/index.shtml",
+        "locator": "Yamato Hotel entry, 27 August 2020",
+        "note": "Dates for an individual building."
+      }
+    ],
+    "guide": "nikolaevskaya-ploshchad",
+    "rights": "Uses the reproduction already published on this site, retaining its watermark. Only the short caption is quoted, not the full paper. Digital-reproduction rights have not been separately assessed."
+  }
+}

@@ -1,0 +1,312 @@
+{
+  "nikolaevskaya-ploshchad": {
+    "checkedAt": "2026-11-15",
+    "editor": "网站编辑部",
+    "scope": "查看已刊出的规划图局部，核对学术书目，并与两份中国机构资料对读。未通览《建筑师》全年扫描本。",
+    "checks": [
+      {
+        "id": "plan-caption",
+        "section": "plan",
+        "title": "图上能读到什么",
+        "finding": "所刊图面上的“Николаевская площадь.”清晰可读，可见圆环与放射街道；裁图中没有原刊日期和页码。",
+        "status": "confirmed",
+        "refs": [
+          3
+        ]
+      },
+      {
+        "id": "journal-locator",
+        "section": "zodchiy",
+        "title": "学术书目提供的页码",
+        "finding": "列沃什科列出：第12期141–144页，第13期153–155页，第14期161–166页。这是书目互证，尚非原刊逐页核验；Totalarch提供的是全年资料镜像。",
+        "status": "attributed",
+        "refs": [
+          4,
+          5
+        ]
+      },
+      {
+        "id": "square-and-buildings",
+        "section": "project-and-buildings",
+        "title": "先有布局，后有楼宇",
+        "finding": "博物馆资料确认旧名、213米直径、十条道路及后来营建。省级文物资料另将大和旅馆的工期记为1909–1914年。",
+        "status": "confirmed",
+        "refs": [
+          6,
+          7
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "ref": 3,
+        "kind": "secondary",
+        "locator": "频道第276帖；规划图局部及图题",
+        "inspection": "已查看所刊图面及其题名。",
+        "note": "出自《建筑师》的说法仍据频道，尚未确定原刊版面。",
+        "url": "https://t.me/portartur_dalnii/276"
+      },
+      {
+        "ref": 4,
+        "kind": "catalogue",
+        "locator": "1904年全年资料条目",
+        "inspection": "已打开网页，未下载压缩包。",
+        "note": "条目记载第1–52期、1182页、810 MB；这是镜像，并非原出版机构档案。",
+        "url": "https://books.totalarch.com/magazines/architect/1904"
+      },
+      {
+        "ref": 5,
+        "kind": "secondary",
+        "locator": "列沃什科，2015年，第156页书目",
+        "inspection": "已在可访问的PDF文本中读到书目记录。",
+        "note": "托管于波兰历史博物馆的数字收藏；这是2015年研究，不是1904年原刊。",
+        "url": "https://bazhum.muzhp.pl/media/texts/sztuka-europy-wschodniej-b-art-of-eastern-europe/2015-tom-3/sztuka_europy_wschodniej_b_art_of_eastern_europe-r2015-t3-s145-157.pdf"
+      },
+      {
+        "ref": 6,
+        "kind": "secondary",
+        "locator": "展览中的“尼古拉广场”“大广场”条目",
+        "inspection": "已打开博物馆正文。",
+        "note": "采用具体条目，不将综述中的旅顺投降日期移用于达里尼。",
+        "url": "https://lvshunmuseum.cn/Exhibition/ProductDetail.aspx?ID=238"
+      },
+      {
+        "ref": 7,
+        "kind": "secondary",
+        "locator": "“大和旅馆”条目",
+        "inspection": "已打开政府网站正文。",
+        "note": "所记为单栋建筑年代，不能代替整个广场的建设史。",
+        "url": "https://whly.ln.gov.cn/whly/wlzt/lnww/zdwwbhdw/851036343A2D4CCBB6CE68CDB7890470/index.shtml"
+      }
+    ],
+    "revisions": [
+      {
+        "date": "2026-11-15",
+        "note": "区分复制图所见、学术书目与机构所述建设史。"
+      }
+    ]
+  },
+  "gavan-port-artura": {
+    "checkedAt": "2026-11-15",
+    "editor": "网站编辑部",
+    "scope": "核对全景照片的原说明与来源、203高地对舰队命运的影响，以及港口名称的现有依据。",
+    "checks": [
+      {
+        "id": "panorama",
+        "section": "harbour",
+        "title": "照片显示什么",
+        "finding": "原图说明确认：这是旅顺陷落后从黄金山拍摄的西港，并非出海口的照片；1905年拍摄日期来自Commons目录。",
+        "status": "confirmed",
+        "refs": [
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "id": "fleet-land-fire",
+        "section": "heights",
+        "title": "来自陆地的炮火",
+        "finding": "日本防卫研究所将203高地失守与舰队遭陆上炮火重创联系起来。“塞瓦斯托波尔”号出港、受袭与投降时自沉据《祖国》研究核对，未查阅原始报告。",
+        "status": "attributed",
+        "refs": [
+          8,
+          11
+        ]
+      },
+      {
+        "id": "english-name",
+        "section": "names",
+        "title": "英文名称",
+        "finding": "研究机构的叙述将名称与1860年的Arthur和Ward联系起来。命名原件、确切月份及舰船受损的故事，尚未据一手文献核实。",
+        "status": "unresolved",
+        "refs": [
+          9
+        ]
+      },
+      {
+        "id": "chinese-name",
+        "section": "names",
+        "title": "1371年得名之说",
+        "finding": "中国地方志网站记载1371年渡海平顺而得名，但未列出具体明代文献。这里保留为有出处的叙述，并非已核实的更名文书。",
+        "status": "attributed",
+        "refs": [
+          10
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "ref": 5,
+        "kind": "catalogue",
+        "locator": "Commons记录：说明、日期、来源、作者及权利标注",
+        "inspection": "查看现有Commons记录及网站图片，未查验原始底片。",
+        "note": "日期与地点依据现有记录；上传历史曾误标为203高地。",
+        "rights": "Commons：在日本和美国属公有领域；NDL记录：pdm。见所附来源链接。",
+        "url": "https://commons.wikimedia.org/wiki/File:Port_Arthur_from_Gold_Hill.jpg"
+      },
+      {
+        "ref": 6,
+        "kind": "primary",
+        "locator": "NDL文献774490，第136幅扫描；书目R100000039-I774490",
+        "inspection": "查看NDL书目、IIIF清单与第136幅扫描，并与照片作视觉比对；未转录章节正文。",
+        "note": "日本国立国会图书馆第136幅扫描。原图说明为旅顺陷落后从黄金山拍摄的西港。书出版于1909—1910年；1905年拍摄日期来自Commons目录。",
+        "rights": "Commons：在日本和美国属公有领域；NDL记录：pdm。见所附来源链接。",
+        "url": "https://dl.ndl.go.jp/pid/774490/1/136"
+      },
+      {
+        "ref": 7,
+        "kind": "field",
+        "locator": "旅顺军港一节，图7—9旁的文字",
+        "inspection": "阅读大学实习报告中的军港一节；本次审核未实地考察。",
+        "note": "华东师范大学地理科学学院，2023年8月17日，旅顺军港一节。介绍封闭海湾与老虎尾沙嘴的现代地理形态。",
+        "url": "https://geo.ecnu.edu.cn/7a/bc/c42633a555708/page.htm"
+      },
+      {
+        "ref": 8,
+        "kind": "secondary",
+        "locator": "《NIDS News》2015年6月，第4页，203高地段落",
+        "inspection": "阅读英文PDF第4页；未查阅其依据的作战原件。",
+        "note": "《NIDS News》，2015年6月，第4页：攻占203高地及从陆上炮击旅顺舰队。属研究机构的历史论述，并非作战日志。",
+        "url": "https://www.nids.mod.go.jp/english/publication/briefing/pdf/2015/briefing_e201506.pdf"
+      },
+      {
+        "ref": 9,
+        "kind": "secondary",
+        "locator": "首个历史叙述段落，可检索正文片段",
+        "inspection": "阅读搜索索引中的正文片段；完整页面返回403。",
+        "note": "美国海军学会《Proceedings》，1957年5月，第83/5/651卷期。可检索正文将1860年的Arthur、Algerine、Ward与Actaeon联系起来。完整网页返回403，未查阅1860年的命名原件。",
+        "url": "https://www.usni.org/magazines/proceedings/1957/may/century-port-arthur"
+      },
+      {
+        "ref": 10,
+        "kind": "secondary",
+        "locator": "1371年段落及“辽宁省地方志”来源说明",
+        "inspection": "阅读网页全文与来源说明；网页未展示1371年文书。",
+        "note": "中国地方志工作办公室网站，注明来源为辽宁省地方志。叙述1371年得名之说，但未列出具体明代文献。",
+        "url": "https://www.zhongguodiqing.cn/dmty/201801/t20180109_4341798.shtml"
+      },
+      {
+        "ref": 11,
+        "kind": "secondary",
+        "locator": "白狼湾与自沉各节，以12月20日开头的段落",
+        "inspection": "阅读文章与注释，未查阅注释所引一手版本。",
+        "note": "《祖国》2024年第12期；网页标注2024年12月1日。涉及白狼湾、鱼雷攻击及1904年12月20日（1905年1月2日）自沉，属附文献出处的二手研究。",
+        "url": "https://rodina-history.ru/2024/11/26/kto-s-koltom-kto-s-kinzhalom-kto-v-slezah-my-pokidali-tonushchij-korabl.html"
+      }
+    ],
+    "revisions": [
+      {
+        "date": "2026-11-15",
+        "note": "厘清全景照片来源，区分目录所列1905年拍摄日期与书卷1909年出版日期。"
+      }
+    ]
+  },
+  "ukreplenie-5": {
+    "checkedAt": "2026-11-15",
+    "editor": "本站编辑",
+    "scope": "第5号防御工事：编号、战前完工情况、作战经历，以及现存设施身份判断的限度。",
+    "checks": [
+      {
+        "id": "identity-readiness",
+        "section": "position",
+        "title": "防御工事与堡垒是两处阵地",
+        "finding": "公开刊载的1903年12月1日备战报告将第5号防御工事列为已完工，第V号堡垒列为未完工，第VI号堡垒列为刚开工。本次未查阅原件。",
+        "status": "confirmed",
+        "refs": [
+          4
+        ]
+      },
+      {
+        "id": "artillery-action",
+        "section": "position",
+        "title": "按投降条件移交不等于从未参战",
+        "finding": "皮尔苏茨基公开发表的日记记述，1904年12月12—14日第5号防御工事曾开炮并遭炮击。移交命令说明投降程序，不能证明整个围城期间从未发生单独强攻。",
+        "status": "attributed",
+        "refs": [
+          5,
+          6
+        ]
+      },
+      {
+        "id": "fabric-and-gun",
+        "section": "attribution",
+        "title": "可见结构与火炮来源",
+        "finding": "现代照片显示壕沟与一门大型火炮。型号仍是实地文章作者的判断；照片不能确定火炮来源、清代遗构或设施尺寸。",
+        "status": "unresolved",
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "survival-and-assault",
+        "section": "look-again",
+        "title": "保存状况仍需谨慎解释",
+        "finding": "未遭单独强攻的说法，目前仍依据频道记述。仅凭现状，无法区分1904年的建筑与后来的改动、修复。",
+        "status": "unresolved",
+        "refs": [
+          1,
+          3
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "ref": 1,
+        "kind": "field",
+        "locator": "2026年10月21日实地文章",
+        "inspection": "查阅了本地元数据及壕沟、火炮的两张照片，未另行打开原文。",
+        "note": "用于描述可见设施，以及说明火炮型号判断出自作者。",
+        "rights": "单张图片未注明开放许可，照片带频道水印。",
+        "url": "https://t.me/portartur_dalnii/144"
+      },
+      {
+        "ref": 2,
+        "kind": "secondary",
+        "locator": "频道第154篇，堡垒结构说明",
+        "inspection": "检查了目录记录，图的原始出版物尚未确定。",
+        "note": "解释一般术语，并非第5号防御工事平面图。",
+        "url": "https://t.me/portartur_dalnii/154"
+      },
+      {
+        "ref": 3,
+        "kind": "secondary",
+        "locator": "Telegram第174篇",
+        "inspection": "检查了本地链接与简介，未将视频视为独立史证。",
+        "note": "依据作者文字制作的复原，未遭强攻的说法需要注明出处。",
+        "url": "https://t.me/portartur_dalnii/174"
+      },
+      {
+        "ref": 4,
+        "kind": "primary",
+        "locator": "附录I，工程部分第1、3、4组；显示原书244—245页标记",
+        "inspection": "阅读了1903年报告的HTML转载。网站书目注明为索罗金1952年Voenizdat版，未查原件或核验书页扫描。",
+        "note": "区分三处设施及报告所述完工程度，不是现代实地勘测。",
+        "url": "https://militera.lib.ru/h/sorokin_ai/16.html"
+      },
+      {
+        "ref": 5,
+        "kind": "primary",
+        "locator": "1904年12月9日、12—14日日记；13日条目附近有原书25页标记",
+        "inspection": "阅读转录文本，未查期刊扫描；不采信网页标题中明显有误的1873年。",
+        "note": "有日期的记述区分第V号堡垒、第5号防御工事与Д炮台，并记录炮战。",
+        "url": "https://www.regiment.ru/Lib/C/251.htm"
+      },
+      {
+        "ref": 6,
+        "kind": "primary",
+        "locator": "第IX章投降命令，第975号，原书535页标记之后",
+        "inspection": "阅读已刊命令的HTML转载，网站注明为2005年重印本；未查编年记初版或签署原件。",
+        "note": "说明驻军与阵地的移交程序，不能概括此前全部战事。",
+        "url": "https://militera.lib.ru/db/larenko_pn/09.html"
+      }
+    ],
+    "revisions": [
+      {
+        "date": "2026-11-15",
+        "note": "修订第VI号堡垒开工情况与第5号防御工事炮战经历，区分文献记述与作者判断。"
+      }
+    ]
+  }
+}

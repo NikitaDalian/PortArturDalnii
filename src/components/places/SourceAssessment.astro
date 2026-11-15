@@ -1,0 +1,24 @@
+---
+import type { SourceAssessment } from '../../lib/evidence';
+interface Props { assessment: SourceAssessment; citationNote?: string }
+const { assessment: source, citationNote } = Astro.props;
+const kinds = { primary: 'Исторический документ', catalogue: 'Каталожная запись', field: 'Отчёт о посещении', secondary: 'Исследование или обзор' };
+---
+<div class="source-assessment">
+  <p class="source-kind">{kinds[source.kind]}</p>
+  {source.locator && <p class="source-locator">{source.locator}</p>}
+  <details>
+    <summary>Что проверено в этом источнике</summary>
+    <p>{source.inspection}</p>
+    {source.note && source.note !== citationNote && <p>{source.note}</p>}
+    {source.rights && <p><strong>Изображение и использование.</strong> {source.rights}</p>}
+  </details>
+</div>
+<style>
+  .source-assessment { font-size: 14px; line-height: 1.7; }
+  .source-kind { font-size: 12px; font-weight: 650; color: var(--ink-3); margin-top: 8px; }
+  .source-locator { color: var(--ink-2); }
+  summary { cursor: pointer; padding: 10px 0; min-height: 44px; text-decoration: underline; text-underline-offset: 3px; }
+  details p + p { margin-top: 8px; }
+  details p:last-child { margin-bottom: 12px; }
+</style>

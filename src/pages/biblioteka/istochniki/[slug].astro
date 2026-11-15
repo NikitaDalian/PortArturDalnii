@@ -8,6 +8,8 @@ import ArticleCard from '../../../components/ArticleCard.astro';
 import TgButton from '../../../components/TgButton.astro';
 import Related from '../../../components/Related.astro';
 import SourceCard from '../../../components/library/SourceCard.astro';
+import DocumentReading from '../../../components/library/DocumentReading.astro';
+import { documentReading } from '../../../lib/evidence';
 import { sourceKindLabel, peopleOf, similarSources } from '../../../components/library/labels';
 import { sources, href, imgCrop, articlesOf, type Source } from '../../../lib/data';
 
@@ -16,6 +18,7 @@ export function getStaticPaths() {
 }
 interface Props { s: Source }
 const { s } = Astro.props;
+const reading = documentReading(s.slug);
 
 const pic = imgCrop(s.image, '3x2');
 const kind = sourceKindLabel(s.kind);
@@ -85,6 +88,8 @@ const description = s.annotation ? s.annotation.slice(0, 180) : `${kind}: ${s.ti
       )}
     </div>
   </section>
+
+  {reading && <DocumentReading reading={reading} />}
 
   {notes.length > 0 && (
     <section class="section section--tight paper src-sec" aria-labelledby="notes-h">

@@ -1,0 +1,77 @@
+{
+  "zodchiy-plan-dalnego-1904": {
+    "title": "从图下两个词，读懂尼古拉广场",
+    "intro": "旧地名、圆环、向外延伸的街道：从图上几处看得见的细节，可以走近今天熟悉的中山广场。",
+    "checkedAt": "2026-11-15",
+    "photo": 366,
+    "caption": "尼古拉广场规划图，复制图见频道文章。",
+    "original": "Николаевская площадь.",
+    "originalLanguage": "ru",
+    "translation": "尼古拉广场。",
+    "transcriptionNote": "只转录清晰可读的图题，不补写细小标记或中央轮廓的用途。图与报告的联系据频道文章，尚未核对原刊所在页。规划图表达设计构想，不等于竣工记录。",
+    "sections": [
+      {
+        "id": "read-the-caption",
+        "title": "从旧地名读起",
+        "paragraphs": [
+          "Николаевская площадь译作“尼古拉广场”。图上保留的俄文旧名，指向今天的中山广场。先认出这个名字，陌生的俄文图纸便与眼前的城市接上了关系。"
+        ],
+        "refs": [
+          1,
+          3
+        ]
+      },
+      {
+        "id": "read-the-drawing",
+        "title": "一个圆环，十个方向",
+        "paragraphs": [
+          "广场的骨架很容易辨认：圆环居中，街道向外放射。博物馆说明记载，广场直径213米，向外连接十条道路。循着图上的街道走向圆环，还能看到道路之间安排的植栽。图纸让人暂时放下对单栋建筑的关注，转而看城市各部分如何相连。"
+        ],
+        "refs": [
+          1,
+          3
+        ]
+      },
+      {
+        "id": "compare-the-names",
+        "title": "布局之后，楼宇陆续到来",
+        "paragraphs": [
+          "中文博物馆说明区分了俄国时期的规划与日治时期的营建。今天熟悉的圆环，与环绕它的立面，并不出自同一个建设阶段。",
+          "可以选大和旅馆作一处对照：省级文物资料将其工期记为1909–1914年。站在今天的中山广场，从一栋楼望向整个圆环；回到旧图，再沿圆环看向放射街道。两种资料，帮助我们读懂同一处地方。"
+        ],
+        "refs": [
+          3,
+          4
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "频道文章中的规划图复制件",
+        "url": "https://t.me/portartur_dalnii/276",
+        "locator": "频道第276帖；规划图局部及图题",
+        "note": "所刊规划图局部及其题名。"
+      },
+      {
+        "title": "S. S. 列沃什科关于斯科利莫夫斯基的研究",
+        "url": "https://bazhum.muzhp.pl/media/texts/sztuka-europy-wschodniej-b-art-of-eastern-europe/2015-tom-3/sztuka_europy_wschodniej_b_art_of_eastern_europe-r2015-t3-s145-157.pdf",
+        "locator": "2015年，第156页，参考书目",
+        "note": "书目所列：第12期141–144页，第13期153–155页，第14期161–166页。"
+      },
+      {
+        "title": "旅顺博物馆：《城市记忆》",
+        "url": "https://lvshunmuseum.cn/Exhibition/ProductDetail.aspx?ID=238",
+        "locator": "“尼古拉广场”“大广场”条目",
+        "note": "用于对照地名的中文机构资料。"
+      },
+      {
+        "title": "辽宁省文化和旅游厅：《中山广场建筑群》",
+        "url": "https://whly.ln.gov.cn/whly/wlzt/lnww/zdwwbhdw/851036343A2D4CCBB6CE68CDB7890470/index.shtml",
+        "locator": "“大和旅馆”条目，2020年8月27日",
+        "note": "单栋建筑的年代资料。"
+      }
+    ],
+    "guide": "nikolaevskaya-ploshchad",
+    "rights": "采用本站已有复制图，保留水印。此处只引录简短图题，不转载报告全文；未另行核定数字复制件的权利状况。"
+  }
+}

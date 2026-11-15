@@ -1,0 +1,312 @@
+{
+  "nikolaevskaya-ploshchad": {
+    "checkedAt": "2026-11-15",
+    "editor": "Site editors",
+    "scope": "Visual reading of the published plan detail, a bibliographic check and comparison with two Chinese institutional publications. The complete annual journal scan was not inspected.",
+    "checks": [
+      {
+        "id": "plan-caption",
+        "section": "plan",
+        "title": "What is legible on the plan",
+        "finding": "The published detail clearly reads “Николаевская площадь.” A circle and radial streets are visible; no journal date or page number appears in the crop.",
+        "status": "confirmed",
+        "refs": [
+          3
+        ]
+      },
+      {
+        "id": "journal-locator",
+        "section": "zodchiy",
+        "title": "Page ranges in a scholarly bibliography",
+        "finding": "Levoshko lists no. 12: 141–144; no. 13: 153–155; no. 14: 161–166. This corroborates the citation, not the original pages. Totalarch is an annual-volume mirror.",
+        "status": "attributed",
+        "refs": [
+          4,
+          5
+        ]
+      },
+      {
+        "id": "square-and-buildings",
+        "section": "project-and-buildings",
+        "title": "The layout and its buildings",
+        "finding": "The museum confirms historical names, a 213 m diameter, ten roads and later construction. A separate government entry dates Yamato Hotel to 1909–1914.",
+        "status": "confirmed",
+        "refs": [
+          6,
+          7
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "ref": 3,
+        "kind": "secondary",
+        "locator": "Post 276; the published plan detail",
+        "inspection": "Viewed the published plan detail and its caption.",
+        "note": "The attribution to Zodchiy still follows the channel; the original journal page has not been identified.",
+        "url": "https://t.me/portartur_dalnii/276"
+      },
+      {
+        "ref": 4,
+        "kind": "catalogue",
+        "locator": "1904 annual-volume listing",
+        "inspection": "Opened the listing; did not download the archive.",
+        "note": "Lists issues 1–52, 1182 pages and 810 MB. A mirror, not the publisher's archive.",
+        "url": "https://books.totalarch.com/magazines/architect/1904"
+      },
+      {
+        "ref": 5,
+        "kind": "secondary",
+        "locator": "Levoshko, 2015, bibliography, p. 156",
+        "inspection": "Read the bibliographic entry in the accessible PDF text.",
+        "note": "Hosted by the Polish History Museum's collection; a 2015 study, not the 1904 journal.",
+        "url": "https://bazhum.muzhp.pl/media/texts/sztuka-europy-wschodniej-b-art-of-eastern-europe/2015-tom-3/sztuka_europy_wschodniej_b_art_of_eastern_europe-r2015-t3-s145-157.pdf"
+      },
+      {
+        "ref": 6,
+        "kind": "secondary",
+        "locator": "Exhibition entries for Nikolayevskaya Square and the Great Square",
+        "inspection": "Opened the museum's text.",
+        "note": "Used selected entries; the general narrative must not transfer Port Arthur's surrender date to Dalny.",
+        "url": "https://lvshunmuseum.cn/Exhibition/ProductDetail.aspx?ID=238"
+      },
+      {
+        "ref": 7,
+        "kind": "secondary",
+        "locator": "Yamato Hotel / 大和旅馆 entry",
+        "inspection": "Opened the government page.",
+        "note": "Dates an individual building, not the entire ensemble.",
+        "url": "https://whly.ln.gov.cn/whly/wlzt/lnww/zdwwbhdw/851036343A2D4CCBB6CE68CDB7890470/index.shtml"
+      }
+    ],
+    "revisions": [
+      {
+        "date": "2026-11-15",
+        "note": "Distinguished the observed reproduction, scholarly bibliography and institutional account of construction."
+      }
+    ]
+  },
+  "gavan-port-artura": {
+    "checkedAt": "2026-11-15",
+    "editor": "Site Editors",
+    "scope": "Reviewed the panorama’s caption and provenance, Hill 203’s connection with the fleet’s fate, and available evidence for the harbour’s names.",
+    "checks": [
+      {
+        "id": "panorama",
+        "section": "harbour",
+        "title": "What the Photograph Shows",
+        "finding": "The original caption confirms the western harbour from Golden Hill after the fortress fell. It does not show the sea entrance; the photograph’s 1905 date comes from the Commons catalogue.",
+        "status": "confirmed",
+        "refs": [
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "id": "fleet-land-fire",
+        "section": "heights",
+        "title": "The Fleet under Land-Based Fire",
+        "finding": "NIDS connects Hill 203’s capture with the squadron’s destruction by fire from land. Sevastopol’s move, attacks and scuttling during capitulation were checked against Rodina’s study, rather than original reports.",
+        "status": "attributed",
+        "refs": [
+          8,
+          11
+        ]
+      },
+      {
+        "id": "english-name",
+        "section": "names",
+        "title": "The English Name",
+        "finding": "An institutional account connects the name with Arthur and Ward in 1860. The naming record, exact month and damaged-ship story remain unchecked against a primary document.",
+        "status": "unresolved",
+        "refs": [
+          9
+        ]
+      },
+      {
+        "id": "chinese-name",
+        "section": "names",
+        "title": "The Account of1371",
+        "finding": "China’s local-history website repeats the account of a safe crossing in 1371. It identifies no specific Ming-period document; this remains an attributed account rather than a verified renaming record.",
+        "status": "attributed",
+        "refs": [
+          10
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "ref": 5,
+        "kind": "catalogue",
+        "locator": "Commons record: description, date, source, author and rights notices",
+        "inspection": "Viewed the current Commons record and the site image, not an original negative.",
+        "note": "Date and identification follow the current record; upload history contains an earlier erroneous attribution to Hill203.",
+        "rights": "Commons: public domain in Japan and the US; NDL record: pdm. See the linked records.",
+        "url": "https://commons.wikimedia.org/wiki/File:Port_Arthur_from_Gold_Hill.jpg"
+      },
+      {
+        "ref": 6,
+        "kind": "primary",
+        "locator": "NDL item 774490, scan 136; catalogue R100000039-I774490",
+        "inspection": "Inspected the NDL record, scan 136; visually matched the photograph. The chapter was not transcribed.",
+        "note": "National Diet Library scan 136. The original caption identifies the western harbour from Golden Hill after the fortress fell. Published in 1909–1910; Commons dates the photograph to 1905.",
+        "rights": "Commons: public domain in Japan and the US; NDL record: pdm. See the linked records.",
+        "url": "https://dl.ndl.go.jp/pid/774490/1/136"
+      },
+      {
+        "ref": 7,
+        "kind": "field",
+        "locator": "Section 旅顺军港, paragraphs beside figures 7–9",
+        "inspection": "Read the university report’s harbour section; no field visit was made by this reviewer.",
+        "note": "East China Normal University geography report, 17 August 2023, section 旅顺军港. A modern description of the enclosed bay and Tiger’s Tail spit.",
+        "url": "https://geo.ecnu.edu.cn/7a/bc/c42633a555708/page.htm"
+      },
+      {
+        "ref": 8,
+        "kind": "secondary",
+        "locator": "NIDS News, June 2015, p. 4, paragraph on Hill 203",
+        "inspection": "Read the English PDF, p. 4; underlying operational records were not inspected.",
+        "note": "NIDS News, June 2015, p. 4: capture of Hill 203 and destruction of the squadron by fire from land. Institutional historical interpretation, rather than an operational diary.",
+        "url": "https://www.nids.mod.go.jp/english/publication/briefing/pdf/2015/briefing_e201506.pdf"
+      },
+      {
+        "ref": 9,
+        "kind": "secondary",
+        "locator": "Opening historical paragraph, accessible indexed excerpt",
+        "inspection": "Read an indexed search excerpt; opening the complete page returned 403.",
+        "note": "US Naval Institute, Proceedings, May 1957, Vol. 83/5/651. Accessible indexed text connects Arthur, Algerine, Ward and Actaeon in 1860. The full page returned 403; no naming record from 1860 was inspected.",
+        "url": "https://www.usni.org/magazines/proceedings/1957/may/century-port-arthur"
+      },
+      {
+        "ref": 10,
+        "kind": "secondary",
+        "locator": "Paragraph on 1371; credit to Liaoning provincial local history",
+        "inspection": "Read the full web article and source credit; it presents no document from 1371.",
+        "note": "China’s local-history office website, crediting Liaoning provincial local history. Repeats the 1371 account without identifying a Ming-period document.",
+        "url": "https://www.zhongguodiqing.cn/dmty/201801/t20180109_4341798.shtml"
+      },
+      {
+        "ref": 11,
+        "kind": "secondary",
+        "locator": "White Wolf Bay and scuttling sections; paragraph beginning 20 December",
+        "inspection": "Read the article and notes, but not the primary editions cited there.",
+        "note": "Rodina, No. 12, 2024; page dated 1 December 2024. Sections on White Wolf Bay, torpedo attacks and scuttling on 20 December 1904 (2 January 1905). A secondary study with documentary references.",
+        "url": "https://rodina-history.ru/2024/11/26/kto-s-koltom-kto-s-kinzhalom-kto-v-slezah-my-pokidali-tonushchij-korabl.html"
+      }
+    ],
+    "revisions": [
+      {
+        "date": "2026-11-15",
+        "note": "Clarified the panorama’s provenance and distinguished its catalogue photograph date, 1905, from the volume’s publication in 1909."
+      }
+    ]
+  },
+  "ukreplenie-5": {
+    "checkedAt": "2026-11-15",
+    "editor": "Site editors",
+    "scope": "Fortification No. 5: numbering, pre-war readiness, combat service and the limits of identifying surviving structures.",
+    "checks": [
+      {
+        "id": "identity-readiness",
+        "section": "position",
+        "title": "The fortification and the fort were separate positions",
+        "finding": "The published readiness memo dated 1 December 1903 lists Fortification No. 5 as complete, Fort V as unfinished and Fort VI as newly begun. The original document has not been inspected.",
+        "status": "confirmed",
+        "refs": [
+          4
+        ]
+      },
+      {
+        "id": "artillery-action",
+        "section": "position",
+        "title": "Surrender does not mean an absence of combat",
+        "finding": "Pilsudski’s published diary records Fortification No. 5 firing and receiving fire on 12–14 December 1904. The handover order establishes the surrender procedure, but does not prove that no separate assault occurred during the siege.",
+        "status": "attributed",
+        "refs": [
+          5,
+          6
+        ]
+      },
+      {
+        "id": "fabric-and-gun",
+        "section": "attribution",
+        "title": "Visible structures and the gun’s provenance",
+        "finding": "Modern photographs show a ditch and a large gun. Its model remains the field report author’s attribution; the photographs do not establish its provenance, Qing fabric or the structures’ dimensions.",
+        "status": "unresolved",
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "survival-and-assault",
+        "section": "look-again",
+        "title": "Survival needs a cautious explanation",
+        "finding": "The absence of a separate assault remains attributed to the channel. Present appearances alone cannot separate 1904 structures from later changes and restoration.",
+        "status": "unresolved",
+        "refs": [
+          1,
+          3
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "ref": 1,
+        "kind": "field",
+        "locator": "Field report dated 21 October 2026",
+        "inspection": "Local metadata and two photographs of the ditch and gun inspected; the original post was not opened separately.",
+        "note": "Supports descriptions of visible structures and the author’s identification of the gun.",
+        "rights": "No individual open licence is recorded; the photographs bear the channel’s watermark.",
+        "url": "https://t.me/portartur_dalnii/144"
+      },
+      {
+        "ref": 2,
+        "kind": "secondary",
+        "locator": "The channel’s explanation of fort design, post 154",
+        "inspection": "Catalogue entry checked; the diagram’s original publication is unidentified.",
+        "note": "Explains general terminology, not the plan of Fortification No. 5.",
+        "url": "https://t.me/portartur_dalnii/154"
+      },
+      {
+        "ref": 3,
+        "kind": "secondary",
+        "locator": "Telegram post 174",
+        "inspection": "Local link and annotation checked; the video was not treated as independent historical evidence.",
+        "note": "A reconstruction based on the author’s text. The no-assault claim needs attribution.",
+        "url": "https://t.me/portartur_dalnii/174"
+      },
+      {
+        "ref": 4,
+        "kind": "primary",
+        "locator": "Appendix I, engineering section, groups 1, 3 and 4; printed-page markers 244–245",
+        "inspection": "HTML reproduction of the 1903 memo in Sorokin’s edition identified by the website as Voenizdat, 1952; neither the original nor a verified scan.",
+        "note": "Distinguishes the three works and their reported readiness; not a modern site survey.",
+        "url": "https://militera.lib.ru/h/sorokin_ai/16.html"
+      },
+      {
+        "ref": 5,
+        "kind": "primary",
+        "locator": "diary entries for 9 and 12–14 December 1904; printed-page marker 25 near the 13 December entry",
+        "inspection": "Transcription read; the journal scan was not inspected. The web heading’s erroneous year, 1873, is not accepted.",
+        "note": "Dated entries distinguish Fort V, Fortification No. 5 and Battery D and record artillery action.",
+        "url": "https://www.regiment.ru/Lib/C/251.htm"
+      },
+      {
+        "ref": 6,
+        "kind": "primary",
+        "locator": "Chapter IX, surrender orders; No. 975, after printed-page marker 535",
+        "inspection": "HTML reproduction of the published order; the website identifies a 2005 reprint. Neither the chronicle’s first edition nor the signed original was inspected.",
+        "note": "Establishes the handover procedure, not the full history of combat at the position.",
+        "url": "https://militera.lib.ru/db/larenko_pn/09.html"
+      }
+    ],
+    "revisions": [
+      {
+        "date": "2026-11-15",
+        "note": "Clarified the start of work on Fort VI and Fortification No. 5’s artillery service; distinguished documentary evidence from attributed identifications."
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+---
+import { href, img, fmtDate } from '../../lib/data';
+import type { DocumentReading } from '../../lib/evidence';
+import LinkedText from '../LinkedText.astro';
+import { mentionContext } from '../../lib/mentions';
+interface Props { reading: DocumentReading }
+const { reading: d } = Astro.props;
+for (const section of d.sections) {
+  if (!section.refs.length || section.refs.some(ref => !Number.isInteger(ref) || ref < 1 || ref > d.sources.length)) throw new Error(`Invalid document source: ${section.id}`);
+}
+const mentions = mentionContext();
+---
+<article class="section paper document-reading" id="document-reading" aria-labelledby="document-reading-title">
+  <div class="container document-width">
+    <header class="document-intro">
+      <p class="eyebrow">Читаем документ</p>
+      <h2 class="h2" id="document-reading-title">{d.title}</h2>
+      <p class="lead">{d.intro}</p>
+    </header>
+    <div class="document-grid">
+      <figure>
+        <a href={img(d.photo)!} target="_blank" rel="noopener" aria-label={`Открыть изображение: ${d.caption}`}><img src={img(d.photo)!} alt={d.caption} loading="lazy" decoding="async" /></a>
+        <figcaption>{d.caption}</figcaption>
+      </figure>
+      <div class="document-excerpt">
+        <p class="eyebrow">Надпись на документе</p>
+        <blockquote lang={d.originalLanguage}>{d.original}</blockquote>
+        <p class="eyebrow">Чтение и перевод</p>
+        <p class="document-translation">{d.translation}</p>
+        <p class="meta">{d.transcriptionNote}</p>
+      </div>
+    </div>
+    <div class="document-body">
+      {d.sections.map(section => <section id={`document-${section.id}`}>
+        <h3 class="h3">{section.title}</h3>
+        <div class="prose">{section.paragraphs.map(p => <p><LinkedText text={p} context={mentions} /></p>)}</div>
+        <p class="meta document-refs">Источники: {section.refs.map(ref => <a href={`#document-source-${ref}`}>[{ref}]</a>)}</p>
+      </section>)}
+      <section class="document-sources" aria-labelledby="document-sources-title">
+        <h3 class="h3" id="document-sources-title">Источники разбора</h3>
+        <ol>{d.sources.map((source, i) => <li id={`document-source-${i + 1}`}>
+          <a class="link" href={source.url} target="_blank" rel="noopener">{source.title}</a>
+          <p class="meta">{source.locator}</p><p>{source.note}</p>
+        </li>)}</ol>
+        <p class="meta">{d.rights}</p>
+        <p class="meta document-date">Проверено: <time datetime={d.checkedAt}>{fmtDate(d.checkedAt)}</time></p>
+      </section>
+      <a class="link document-back" href={`${href.place(d.guide)}#istoriya-mesta`}>К истории места</a>
+    </div>
+  </div>
+</article>
+<style>
+  .document-reading { border-block: 1px solid var(--line); scroll-margin-top: calc(var(--header-h) + 20px); }
+  .document-width { max-width: 1160px; }
+  .document-intro { max-width: 760px; margin-bottom: 36px; }
+  .document-intro .eyebrow { margin-bottom: 12px; }
+  .document-intro h2 { margin-bottom: 22px; }
+  .document-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 40px; align-items: center; }
+  figure { margin: 0; }
+  figure a { display: block; }
+  figure img { display: block; width: 100%; max-height: 620px; object-fit: contain; background: var(--ice); }
+  figcaption { font-size: 13px; line-height: 1.7; color: var(--ink-3); margin-top: 12px; }
+  .document-excerpt { padding: 28px; border-left: 2px solid var(--accent); background: var(--ice); }
+  blockquote { margin: 12px 0 32px; font-size: clamp(23px, 2.7vw, 32px); line-height: 1.45; }
+  .document-translation { margin: 12px 0 24px; font-size: 20px; line-height: 1.65; }
+  .document-body { max-width: 720px; margin: 48px auto 0; }
+  .document-body > section { margin-top: 40px; scroll-margin-top: calc(var(--header-h) + 20px); }
+  .document-body h3 { margin-bottom: 20px; }
+  .document-body :global(.prose) { font-size: 19px; line-height: 1.85; }
+  .document-body :global(.prose p + p) { margin-top: 1.2em; }
+  .document-refs { margin-top: 12px; }
+  .document-refs a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; text-decoration: underline; }
+  .document-sources { padding-top: 28px; border-top: 1px solid var(--line); }
+  .document-sources ol { padding-left: 24px; }
+  .document-sources li { padding: 12px 0; font-size: 15px; line-height: 1.7; scroll-margin-top: calc(var(--header-h) + 20px); }
+  .document-sources li a { display: inline-block; padding-block: 8px; }
+  .document-date { margin-top: 16px; }
+  .document-back { display: inline-flex; align-items: center; min-height: 44px; margin-top: 28px; }
+  @media (max-width: 720px) { .document-grid { grid-template-columns: 1fr; gap: 24px; } .document-excerpt { padding: 24px; } }
+</style>

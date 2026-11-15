@@ -1,13 +1,18 @@
 ---
-import { href, img } from '../../lib/data';
+import { href, img, fmtDate } from '../../lib/data';
+import { guideReview, validateReview } from '../../lib/evidence';
+import GuideEvidence from './GuideEvidence.astro';
+import SourceAssessment from './SourceAssessment.astro';
 import LinkedText from '../LinkedText.astro';
 import { mentionContext } from '../../lib/mentions';
 import { editionDate, type Dossier } from './dossiers';
 interface Props { dossier: Dossier }
 const { dossier: d } = Astro.props;
+const review = guideReview(d.place);
+if (review) validateReview(review, d);
 const mentions = mentionContext([`place/${d.place}`], d.people.map(slug => `person/${slug}`));
 const canonical = new URL(href.place(d.place), Astro.site).href;
-const citation = `${d.title}. Портъ-Артуръ и Дальнiй. Редакция от 15.11.2026. ${canonical}#istoriya-mesta`;
+const citation = `${d.title}. Портъ-Артуръ и Дальнiй. ${fmtDate(review?.checkedAt ?? editionDate)}. ${canonical}#istoriya-mesta`;
 ---
 <article class="section paper dossier" id="istoriya-mesta" aria-labelledby="guide-title">
   <div class="container dossier-layout">
@@ -17,10 +22,11 @@ const citation = `${d.title}. Портъ-Артуръ и Дальнiй. Реда
         <ol>
           {d.sections.map((s) => <li><a href={`#${s.id}`}>{s.title}</a></li>)}
           <li><a href="#nazvaniya">Справка о названиях</a></li>
+          {review && <li><a href="#proverka-istochnikov">Что удалось проверить</a></li>}
           <li><a href="#istochniki-stati">Источники и ссылка на статью</a></li>
         </ol>
       </nav>
-      <p class="meta">Подготовлено по материалам канала.<br /><time datetime={editionDate}>Редакция от 15 ноября 2026</time></p>
+      <p class="meta">{review?.editor ?? 'Подготовлено по материалам канала.'}<br /><time datetime={review?.checkedAt ?? editionDate}>{fmtDate(review?.checkedAt ?? editionDate)}</time></p>
     </aside>
     <div class="dossier-text">
       {d.sections.map((s) => (
@@ -45,10 +51,11 @@ const citation = `${d.title}. Портъ-Артуръ и Дальнiй. Реда
           {d.names.map((n) => <div><dt>{n.name}</dt><dd>{n.meaning}</dd></div>)}
         </dl>
       </section>
+      {review && <GuideEvidence review={review} />}
       <section class="dossier-section dossier-sources" id="istochniki-stati" aria-labelledby="sources-title">
         <h2 class="h3" id="sources-title">Источники</h2>
         <ol>
-          {d.sources.map((s, i) => <li id={`istochnik-${i + 1}`}><a class="link" href={s.url} target="_blank" rel="noopener">{s.title}</a><p class="meta">{s.note}</p></li>)}
+          {d.sources.map((s, i) => <li id={`istochnik-${i + 1}`}><a class="link" href={s.url} target="_blank" rel="noopener">{s.title}</a><p class="meta">{s.note}</p>{review?.sources.find(source => source.ref === i + 1) && <SourceAssessment assessment={review.sources.find(source => source.ref === i + 1)!} citationNote={s.note} />}</li>)}
         </ol>
         <p class="meta">У изображений могут быть отдельные условия использования. Сведения о происхождении архивных снимков собраны на странице <a class="link" href={href.credits()}>иллюстраций</a>.</p>
         <div class="dossier-citation" data-citation data-pagefind-ignore>

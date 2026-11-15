@@ -3,11 +3,12 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from '@babel/parser';
 import MagicString from 'magic-string';
+import { translatedFiles } from './translation_sources.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const normalized = (value) => value.replaceAll('\\', '/');
 const sourceRoot = normalized(path.join(root, 'src')) + '/';
-const translatedData = new Set(['articles', 'people', 'places', 'books', 'sources', 'routes', 'seasons', 'series', 'photos', 'index_terms', 'reference_descriptions', 'layers']);
+const translatedData = new Set(translatedFiles);
 const escapeRegex = (text) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 // The original templates are shared by all three builds. Data is selected before
