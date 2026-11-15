@@ -7,6 +7,7 @@ export interface Essay {
   limitations: string[];
   sources: { id: number; title: string; author: string; date: string; url: string; locator: string; note: string }[];
   relatedNotes: string[]; relatedPlaces: string[]; relatedPeople: string[]; relatedSources: string[];
+  illustration?: { image: string; alt: string; caption: string; credit: string; sourceUrl: string };
 }
 export const essays = data as Essay[];
 export const essaysForPeriod = (period: string) => essays.filter(e => e.periods.includes(period as LayerKey));

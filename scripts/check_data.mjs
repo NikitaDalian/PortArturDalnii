@@ -1,5 +1,5 @@
 // Semantic tags and reciprocal links must resolve before rendering pages.
-import { readFileSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
 const read = (name) => JSON.parse(readFileSync(new URL(`../src/data/${name}.json`, import.meta.url), 'utf8'));
 const names = ['articles', 'people', 'places', 'books', 'sources', 'series'];
 const data = Object.fromEntries(names.map((name) => [name, read(name)]));
@@ -39,6 +39,12 @@ for (const essay of essays) {
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(essay.slug) || essaySlugs.has(essay.slug)) errors.push(`${name}: invalid or duplicate slug`);
   essaySlugs.add(essay.slug);
   for (const field of ['title','dek','perspective']) if (!essay[field]?.trim()) errors.push(`${name}: missing ${field}`);
+  if (essay.illustration) {
+    const illustration = essay.illustration;
+    for (const field of ['alt','caption','credit']) if (!illustration[field]?.trim()) errors.push(`${name}: missing illustration ${field}`);
+    if (!/^https:\/\//.test(illustration.sourceUrl)) errors.push(`${name}: missing illustration source URL`);
+    if (!/^\/images\/essays\/[a-z0-9-]+\.webp$/.test(illustration.image) || !existsSync(new URL(`../public${illustration.image}`, import.meta.url))) errors.push(`${name}: missing or invalid illustration asset`);
+  }
   if (!/^\d{4}-\d{2}-\d{2}$/.test(essay.date)) errors.push(`${name}: invalid publication date`);
   if (!essay.periods?.length || essay.periods.some(k=>!validPeriods.has(k))) errors.push(`${name}: invalid subject periods`);
   if (!essay.sourceLanguages?.length || essay.sourceLanguages.some(k=>!['ru','en','ja','zh'].includes(k))) errors.push(`${name}: invalid source language`);

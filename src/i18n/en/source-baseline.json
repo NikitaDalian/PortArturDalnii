@@ -1,247 +1,219 @@
 {
   "version": 1,
   "locale": "en",
-  "commit": "6dc7cd311d3f00336cc249b4e488104f29fbcdb1",
-  "reviewedAt": "2026-11-15T13:14:27.835Z",
-  "reviewedPacket": "dcb3f96a754e035f3f077e819110e53b8b9040240aeb27f9df7cf7c9ac412ae8",
+  "commit": "c8cb12bc8a29b570c72b6c032daeab10fbc2f6fc",
+  "reviewedAt": "2026-11-15T14:17:32.245Z",
+  "reviewedPacket": "b97460d1bd364a3045fabcd3b6a609d9c7c129698e0c09b272a2eaafd6d39426",
   "reviewedItems": [
     {
-      "id": "8c1bc5fa5eb6ac68aee0",
+      "id": "f910bc1dcd5d0c985a0e",
       "file": "data/essays.json",
       "path": "/@slug=mikasa-obed-i-snabzhenie/title",
       "action": "translated",
-      "note": "Translated the revised concrete headline, keeping the menu and 156 people taken ill as its focus."
+      "note": "Translated the new flagship-and-supply title without retaining the superseded menu-question headline."
     },
     {
-      "id": "0ebfa32b9f93f9f0505c",
+      "id": "12dfe08e6eee0fffb349",
       "file": "data/essays.json",
       "path": "/@slug=mikasa-obed-i-snabzhenie/dek",
       "action": "translated",
-      "note": "Translated the new menu-led introduction, retaining the date, three food groups and the spoiled canned salmon."
+      "note": "Translated the 156 illnesses, recognised shortage and 1924 dedicated food supply ship, keeping the distinction between auxiliary transports and later specialised vessels."
     },
     {
-      "id": "b8752ccfbef67e5aed28",
+      "id": "c4b3b368bd04451dc604",
       "file": "data/essays.json",
       "path": "/@slug=mikasa-obed-i-snabzhenie/sections/@id=menu/title",
       "action": "translated",
-      "note": "Translated the new heading around lunch at the forward base."
+      "note": "Translated the new heading identifying Mikasa as the flagship off Port Arthur."
     },
     {
-      "id": "f8e0a858891618750c89",
+      "id": "6b9356b58e5e6df053f0",
       "file": "data/essays.json",
       "path": "/@slug=mikasa-obed-i-snabzhenie/sections/@id=menu/paragraphs/0",
       "action": "translated",
-      "note": "Translated all three meals, including the newly specified pickles, barley tea, hardtack and beef with potatoes; kept the date and natural conversational rhythm."
+      "note": "Translated the expanded explanation of battleship and flagship, the opposing bases and maintenance from 10 May 1904 south of Liaodong in China."
     },
     {
-      "id": "7673635f3e02fe1f25cc",
+      "id": "80f9605fa089e67e247c",
       "file": "data/essays.json",
       "path": "/@slug=mikasa-obed-i-snabzhenie/sections/@id=menu/paragraphs/1",
       "action": "translated",
-      "note": "Translated the revised concise setting and source attribution, preserving the island base, maintenance from 10 May and Ishihara’s 2024 study."
+      "note": "Translated the ship’s continued stay on 30 May and natural attribution of the lunch/illness account to Ishihara’s naval supply study."
     },
     {
-      "id": "eef45b9b4eb9eba447a5",
+      "id": "4e076e5369811bd11ffc",
+      "file": "data/essays.json",
+      "path": "/@slug=mikasa-obed-i-snabzhenie/sections/@id=menu/paragraphs/2",
+      "action": "translated",
+      "note": "Translated the relocated three-meal menu and Ishihara’s attributed assessment of its ordinariness at a base short of fresh food; retained the source’s simpler food names."
+    },
+    {
+      "id": "429d2959e366261c27ef",
       "file": "data/essays.json",
       "path": "/@slug=mikasa-obed-i-snabzhenie/sections/@id=illness/title",
       "action": "translated",
-      "note": "Translated the conversational heading about canned food also spoiling."
+      "note": "Translated the revised simple heading After lunch."
     },
     {
-      "id": "e87fcb20718b476a3f34",
+      "id": "88f3721828b243a3d75f",
       "file": "data/essays.json",
       "path": "/@slug=mikasa-obed-i-snabzhenie/sections/@id=illness/paragraphs/0",
       "action": "translated",
-      "note": "Translated the 156 illnesses and Ishihara’s explanation of exceeded storage life; preserved the plain explanation of the limits of stored food without adding a medical diagnosis."
+      "note": "Translated spoiled salmon beyond its storage life, 156 illnesses and the flagship’s own forward base, without adding deaths or a diagnosis."
     },
     {
-      "id": "14913f1ae76a5d71ede6",
+      "id": "164f28f5d129a4cac495",
       "file": "data/essays.json",
       "path": "/@slug=mikasa-obed-i-snabzhenie/sections/@id=illness/paragraphs/1",
       "action": "translated",
-      "note": "Translated the shortened account of other ships, possible food causes and cooked meals aboard Mikasa without restoring the removed report-like commentary."
+      "note": "Translated other ships’ illnesses, including the newly stated fried tofu with a plain explanation, uncertainty of food identification and the daily need for cooked meals."
     },
     {
-      "id": "d7a5ab03ec80de13bda5",
+      "id": "fc4d75539d9a9d0ebe59",
       "file": "data/essays.json",
       "path": "/@slug=mikasa-obed-i-snabzhenie/sections/@id=supply/title",
       "action": "translated",
-      "note": "Translated the revised direct heading stating that two supply ships were insufficient."
+      "note": "Translated the expanded heading to anticipate the long gap before dedicated supply ships."
     },
     {
-      "id": "75f04fd1dfc85d8245c9",
+      "id": "88cb871f6c44d9d35570",
       "file": "data/essays.json",
       "path": "/@slug=mikasa-obed-i-snabzhenie/sections/@id=supply/paragraphs/0",
       "action": "translated",
-      "note": "Translated the two named supply ships, roughly six-day interval and dispersed operations, preserving the source’s sequence."
+      "note": "Translated auxiliary status, both initial ship names, six-day planned interval, dispersed operations and additions from August 1904."
     },
     {
-      "id": "b9dba66e9a4a659d478b",
+      "id": "f48c713843189fb35605",
       "file": "data/essays.json",
       "path": "/@slug=mikasa-obed-i-snabzhenie/sections/@id=supply/paragraphs/1",
       "action": "translated",
-      "note": "Translated the August additions and storage-equipment limit, ending with the concrete need to deliver edible food rather than adding an abstract summary."
+      "note": "Translated inadequate preservation equipment, insufficient carriage and the Sasebo voyage; retained that refrigeration existed but shipboard installation was only beginning."
     },
     {
-      "id": "1ca79f32897015e6d648",
+      "id": "84c79f84b1441f40b9ef",
+      "file": "data/essays.json",
+      "path": "/@slug=mikasa-obed-i-snabzhenie/sections/@id=supply/paragraphs/2",
+      "action": "translated",
+      "note": "Translated the auxiliary/dedicated distinction and exact commissioning dates for Mamiya and Irako: 1924 and 5 December 1941."
+    },
+    {
+      "id": "fdab1114e368b8d4678b",
+      "file": "data/essays.json",
+      "path": "/@slug=mikasa-obed-i-snabzhenie/sections/@id=supply/paragraphs/3",
+      "action": "translated",
+      "note": "Translated Ishihara’s attributed policy judgement, Tsushima in 1905 and the approximate twenty- and seventeen-year gaps without presenting interpretation as independent fact."
+    },
+    {
+      "id": "9b1bc189d73bc5c468ac",
       "file": "data/essays.json",
       "path": "/@slug=mikasa-obed-i-snabzhenie/limitations/0",
       "action": "translated",
-      "note": "Translated the condensed source limitation: the 2024 study was read, the archival volume was not checked separately, and 156 counts illnesses rather than deaths."
+      "note": "Translated the revised compact caveat: 2024 study used, original volume not checked, 156 illnesses rather than deaths, no established causal link between this batch and shortage."
     },
     {
-      "id": "d0c1631d9d0057d06e5d",
+      "id": "51415cacba8af72ba9f2",
       "file": "data/essays.json",
       "path": "/@slug=mikasa-obed-i-snabzhenie/limitations/1",
       "action": "translated",
-      "note": "Translated the distinct uncertainty over this batch’s storage and the unproven connection to the supply-ship shortage."
+      "note": "Translated the explanation that the dates concern dedicated fleet food supply ships and that auxiliaries already worked in 1904; retained attribution of the broader judgement to Ishihara."
     },
     {
-      "id": "c19324bdbf40101e4c01",
+      "id": "ea8e9804b1df240e01ea",
       "file": "data/essays.json",
-      "path": "/@slug=mikasa-obed-i-snabzhenie/limitations/2",
-      "action": "deleted",
-      "note": "Removed this superseded paragraph/limitation slot to match the final Russian structure. Relevant remaining cautions and facts are translated in their revised positions; the old editorial commentary was not reintroduced."
-    },
-    {
-      "id": "bf94536f06d65f4ec2af",
-      "file": "data/essays.json",
-      "path": "/@slug=mikasa-obed-i-snabzhenie/limitations/3",
-      "action": "deleted",
-      "note": "Removed this superseded paragraph/limitation slot to match the final Russian structure. Relevant remaining cautions and facts are translated in their revised positions; the old editorial commentary was not reintroduced."
-    },
-    {
-      "id": "813b4766599837e596d3",
-      "file": "data/essays.json",
-      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/title",
+      "path": "/@slug=mikasa-obed-i-snabzhenie/sources/@id=1/locator",
       "action": "translated",
-      "note": "Translated the new lending-focused title as a direct question in natural English."
+      "note": "Translated every expanded page locator for refrigeration, Sasebo, supply ships, flagship status, menu, illnesses and note 13."
     },
     {
-      "id": "54773491c44186a67ccf",
+      "id": "4b6e5eaa617cdf74a3c6",
+      "file": "data/essays.json",
+      "path": "/@slug=mikasa-obed-i-snabzhenie/sources/@id=1/note",
+      "action": "translated",
+      "note": "Translated the revised full-study reading scope and comparison with page images/official English version; kept the original Japanese title and unverified primary medical documents."
+    },
+    {
+      "id": "3d9d13ba91dd4de60d6c",
+      "file": "data/essays.json",
+      "path": "/@slug=mikasa-obed-i-snabzhenie/illustration",
+      "action": "translated",
+      "note": "Translated all visible image fields, keeping unknown photographer and unknown scene date/location distinct from the verified 1906 publication. Preserved image path and GovInfo source URL."
+    },
+    {
+      "id": "bc0da2544709b1a07b9b",
       "file": "data/essays.json",
       "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/dek",
       "action": "translated",
-      "note": "Translated the concrete lead with the two named portraits, banknotes and credit firms, retaining Sun’s position as the recollecting bank clerk."
+      "note": "Translated the revised lead using generic silver coins; removed the portrait names excluded by the final Russian source."
     },
     {
-      "id": "8efe42b3ce113f6a23f7",
+      "id": "811bb8b3fc61a7998982",
       "file": "data/essays.json",
       "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/sections/@id=clerk/title",
       "action": "translated",
-      "note": "Translated the short heading about establishing the money before converting a sum."
+      "note": "Translated the new heading identifying a Dairen bank clerk."
     },
     {
-      "id": "0e4f1e98e8966f7109b5",
+      "id": "4c251b861e5c08235cc4",
       "file": "data/essays.json",
       "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/sections/@id=clerk/paragraphs/0",
       "action": "translated",
-      "note": "Translated the connection to the existing ruble note and the several kinds of money used in Japanese-period Dairen; no conversion figures were added."
+      "note": "Translated the self-contained Dairen/Dalian naming explanation and Sun’s account of money and access to loans; removed the superseded dependence on the ruble post."
     },
     {
-      "id": "a964eea5101b705ca7e9",
+      "id": "ebdf1cdddf9605f92c97",
       "file": "data/essays.json",
       "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/sections/@id=clerk/paragraphs/1",
       "action": "translated",
-      "note": "Translated Sun’s childhood residence, entry into banking in 1930 and progression from apprentice and clerk to senior posts in a direct narrative voice."
+      "note": "Translated the revised pronoun-led biographical paragraph with childhood residence, 1930 entry into banking and progression from junior to senior work."
     },
     {
-      "id": "b2c0db62419966fa7304",
+      "id": "5d3163e6bcb4b57a48bd",
       "file": "data/essays.json",
       "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/sections/@id=clerk/paragraphs/2",
       "action": "translated",
-      "note": "Translated the named joint bank, historically situated street name, mergers and second-issue memoir context, without inventing a present-day address."
+      "note": "Translated the shortened joint-bank/address/merger paragraph and removed the superseded closing sentence about money and lending."
     },
     {
-      "id": "3b7179a2ccd1eeb2d3dd",
+      "id": "3608561249540fec5a88",
       "file": "data/essays.json",
       "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/sections/@id=currency/title",
       "action": "translated",
-      "note": "Translated the new image-led heading, retaining the contrast between silver portraits and paper gold."
+      "note": "Translated the revised Silver and paper gold heading without retaining unverified portraits."
     },
     {
-      "id": "ca0b5403f2e9ce305c49",
+      "id": "492f0aeb406986f6a9d1",
       "file": "data/essays.json",
       "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/sections/@id=currency/paragraphs/0",
       "action": "translated",
-      "note": "Translated the silver portraits, small silver, copper money and banknotes, retaining jinpiao/金票 and the explicit distinction from gold coins."
+      "note": "Translated generic silver coins, small silver, copper money and banknotes; preserved jinpiao/金票 and its distinction from gold coins while removing portrait names."
     },
     {
-      "id": "cce2330d0cba76b8c219",
-      "file": "data/essays.json",
-      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/sections/@id=currency/paragraphs/1",
-      "action": "translated",
-      "note": "Translated Sun’s account of Japanese banknotes predominating and permission-dependent temporary Chinese issues, keeping the attribution."
-    },
-    {
-      "id": "64436e8af99591abc58f",
-      "file": "data/essays.json",
-      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/sections/@id=currency/paragraphs/2",
-      "action": "deleted",
-      "note": "Removed this superseded paragraph/limitation slot to match the final Russian structure. Relevant remaining cautions and facts are translated in their revised positions; the old editorial commentary was not reintroduced."
-    },
-    {
-      "id": "b30fb80515213503f6d7",
-      "file": "data/essays.json",
-      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/sections/@id=credit/title",
-      "action": "translated",
-      "note": "Translated the distinction between money circulating in the city and an individual resident’s access to it."
-    },
-    {
-      "id": "c7813b80c72d733cddc4",
+      "id": "910c4a2a511951d55a38",
       "file": "data/essays.json",
       "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/sections/@id=credit/paragraphs/0",
       "action": "translated",
-      "note": "Translated Sun’s description of manufacturing, trade and difficult access to collateral-backed loans for ordinary Chinese residents."
+      "note": "Translated the added plain explanation of collateral as repayment security, retaining Sun’s attribution and ordinary Chinese residents’ restricted access."
     },
     {
-      "id": "955fa61c8dd7145e88b9",
+      "id": "bdf08fe08b407dec22c1",
       "file": "data/essays.json",
       "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/sections/@id=credit/paragraphs/1",
       "action": "translated",
-      "note": "Translated qianzhuang and the separate private moneylenders, retaining Sun’s relative-interest claim and judgement about ruin without supplying unverified exact rates."
+      "note": "Translated the revised direct attribution of the ruin judgement to Sun; retained qianzhuang, collateral and relative interest without inventing rates."
     },
     {
-      "id": "740e4eae800d521f986f",
+      "id": "4f1b820e3b967853ecc0",
       "file": "data/essays.json",
-      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/sections/@id=credit/paragraphs/2",
-      "action": "deleted",
-      "note": "Removed this superseded paragraph/limitation slot to match the final Russian structure. Relevant remaining cautions and facts are translated in their revised positions; the old editorial commentary was not reintroduced."
-    },
-    {
-      "id": "fcb37362b1557cedf42f",
-      "file": "data/essays.json",
-      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/limitations/0",
+      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/illustration",
       "action": "translated",
-      "note": "Translated the condensed checked-page range, unknown issue date and unresolved exact building, preserving the memoirist’s street-name attribution."
+      "note": "Translated all visible bank image fields, keeping the exact-date uncertainty and explicit distinction from Longkou Bank and Sun’s workplace. Preserved the shared image path and Commons record URL."
     },
     {
-      "id": "d6fb829277b55f13df32",
-      "file": "data/essays.json",
-      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/limitations/1",
-      "action": "translated",
-      "note": "Translated the limited representativeness and ideological framing of the later memoir, absent verified rate calculations, and the ban on applying Japanese-period conditions to Russian Dalny or 1913 Russia."
-    },
-    {
-      "id": "b6231e64099cf3bbf2ff",
-      "file": "data/essays.json",
-      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/limitations/2",
-      "action": "deleted",
-      "note": "Removed this superseded paragraph/limitation slot to match the final Russian structure. Relevant remaining cautions and facts are translated in their revised positions; the old editorial commentary was not reintroduced."
-    },
-    {
-      "id": "28d7d5c3f454a9fe75d5",
-      "file": "data/essays.json",
-      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/limitations/3",
-      "action": "deleted",
-      "note": "Removed this superseded paragraph/limitation slot to match the final Russian structure. Relevant remaining cautions and facts are translated in their revised positions; the old editorial commentary was not reintroduced."
-    },
-    {
-      "id": "1f40c6ea80a9c70226ed",
+      "id": "4f1e8838e92b0d543b5d",
       "file": "UI source files",
       "path": "",
-      "action": "translated",
-      "note": "Reviewed the revised essay-page details/summary presentation and added the English summary About the source and fact-checking. Existing source labels remain translated; no identifiers, links or data relationships were changed."
+      "action": "unchanged",
+      "note": "Reviewed the new EssayIllustration component, optional illustration type and pre-section rendering. The component displays translated dataset fields with the existing locale-aware asset helper and adds no fixed reader-visible text. No English UI dictionary changes are required."
     }
   ],
   "sources": {
@@ -3308,8 +3280,8 @@
     "data/essays.json": [
       {
         "slug": "mikasa-obed-i-snabzhenie",
-        "title": "Что ели на «Микасе» и почему заболели 156 человек",
-        "dek": "30 мая 1904 года в меню «Микасы» были рис с ячменём, лосось и говядина с картофелем. Лососевые консервы оказались испорченными.",
+        "title": "«Микаса»: обед на флагмане и трудности снабжения",
+        "dek": "Во время блокады Порт-Артура на «Микасе» отравились 156 человек. Нехватку продовольственных судов признали проблемой той войны, но первый специализированный корабль продовольственного снабжения флота появился только в 1924 году.",
         "date": "2026-11-15",
         "periods": [
           "russian"
@@ -3318,10 +3290,11 @@
         "sections": [
           {
             "id": "menu",
-            "title": "Обед на передовой базе",
+            "title": "Флагман у Порт-Артура",
             "paragraphs": [
-              "На завтрак рис с ячменём, мисо-суп с сушёным дайконом и чай. В обед снова рис, а к нему тушёный консервированный лосось с водорослями хидзики, соленья и ячменный чай. На ужин полагались сухари и жаркое из говядины с картофелем. Так выглядело меню «Микасы» на 30 мая 1904 года.",
-              "В это время корабль стоял на передовой базе у островов южнее Ляодуна. После участия в блокаде Порт-Артура он с 10 мая проходил техническое обслуживание. Об этом эпизоде рассказал японский историк Акинори Исихара в исследовании о снабжении флота, опубликованном в 2024 году."
+              "Во время русско-японской войны броненосец «Микаса» участвовал в блокадных операциях у Порт-Артура. Это был японский бронированный боевой корабль и флагман Объединённого флота — корабль командующего. Русская эскадра находилась в своей базе, японские корабли действовали снаружи. Им тоже требовалась стоянка, где можно было обслужить корабль и пополнить запасы. С 10 мая 1904 года «Микаса» проходила техническое обслуживание на передовой базе у островов южнее Ляодунского полуострова в Китае.",
+              "Там корабль находился и 30 мая. Обед этого дня и последовавшее пищевое отравление описал японский историк Акинори Исихара в исследовании о снабжении флота.",
+              "На завтрак в меню были рис с ячменём, суп с сушёной редькой и чай. На обед снова рис, а к нему тушёный консервированный лосось с водорослями, соленья и ячменный чай. Вечером полагались сухари и жаркое из говядины с картофелем. На стоянке, где свежих продуктов недоставало, такой рацион был, по оценке Исихары, вполне обычным."
             ],
             "refs": [
               1
@@ -3329,10 +3302,10 @@
           },
           {
             "id": "illness",
-            "title": "Консервы тоже портятся",
+            "title": "После обеда",
             "paragraphs": [
-              "После этого обеда на корабле заболели 156 человек. Исихара связывает отравление с лососевыми консервами: срок хранения был превышен, содержимое испортилось. Консервы удобны тем, что их можно надолго убрать в запас. Но и у этого запаса был свой предел.",
-              "И это был не единственный случай. В мае и июне 1904 года отравления происходили и на других японских кораблях. Среди причин встречаются испорченные консервы и заплесневевший хлеб; иногда установить виновный продукт не удавалось. На «Микасе» старались подавать пищу с тепловой обработкой."
+              "Лососевые консервы оказались испорченными: срок их хранения был превышен. После обеда на «Микасе» заболели 156 человек. Случай произошёл на флагмане, стоявшем на собственной передовой базе, и причиной стала еда из корабельного меню.",
+              "В мае и июне отравления случались и на других японских кораблях. Среди названных причин были консервы, жареный тофу (соевый сыр) и заплесневевший хлеб; иногда установить виновный продукт не удавалось. На «Микасе» старались подавать блюда с тепловой обработкой: тушёные, жареные, варёные. Экипаж нужно было кормить каждый день, при всех трудностях доставки и хранения."
             ],
             "refs": [
               1
@@ -3340,10 +3313,12 @@
           },
           {
             "id": "supply",
-            "title": "Двух снабженцев не хватило",
+            "title": "Два судна снабжения и долгое продолжение",
             "paragraphs": [
-              "Обеспечивать флот собирались с помощью двух судов, «Мацуяма-мару» и «Фукуока-мару». Расчёт был на снабжение передовых сил примерно раз в шесть дней. На деле корабли действовали рассредоточенно, и двух снабженцев для них оказалось мало.",
-              "В августе 1904 года привлекли «Котохира-мару» и другие суда. Но добавить судно ещё не значит получить полноценный продовольственный транспорт. Для хранения продуктов нужно оборудование; его нехватка ограничивала, сколько продовольствия можно было взять на борт. Доставить груз к нужному кораблю было только частью работы. Требовалось ещё довезти его съедобным."
+              "В начале войны для продовольственного снабжения подготовили два вспомогательных судна, «Мацуяма-мару» и «Фукуока-мару». Планировали подвозить продукты к передовым силам примерно раз в шесть дней. Но корабли часто действовали рассредоточенно, и двух снабженцев оказалось мало. С августа 1904 года к этой работе привлекли «Котохира-мару» и другие суда.",
+              "Дополнительные суда помогали с перевозкой, однако оборудования для сохранения продуктов у них недоставало. Взять достаточный объём продовольствия они не могли. Даже несколько дней пути из японской военно-морской базы Сасебо к передовой базе создавали трудности с сохранностью хлеба, овощей, мяса и рыбы. Холодильная техника уже существовала, но её установка на кораблях только начиналась.",
+              "Нехватку продовольственных судов признали одним из недостатков снабжения в русско-японскую войну. Вспомогательные транспорты 1904 года, однако, ещё не были теми специализированными кораблями продовольственного снабжения флота, которые появились позднее. Первый такой корабль японского флота, «Мамия», вступил в строй в 1924 году. Второй, «Ирако», — 5 декабря 1941 года.",
+              "Исихара считает, что на фоне победы японского флота в Цусимском сражении 1905 года выявленные недостатки снабжения не получили должного отражения в последующей политике флота. Даты у этого вывода вполне конкретные: от войны, показавшей нехватку судов снабжения, до «Мамии» прошло около двадцати лет; между вводом в строй первого и второго специализированных кораблей — ещё около семнадцати."
             ],
             "refs": [
               1
@@ -3351,8 +3326,8 @@
           }
         ],
         "limitations": [
-          "Сведения о меню и заболевших взяты из исследования Исихары 2024 года. Указанный им медицинский архивный том отдельно не сверялся; 156 — число случаев отравления, не погибших.",
-          "Источник не устанавливает, как именно хранилась эта партия консервов. Связывать её порчу с нехваткой снабженцев можно только после дополнительной проверки."
+          "Сведения об обеде и заболевших взяты из исследования Исихары 2024 года. Первичный медицинский том отдельно не сверялся; 156 — заболевшие, не погибшие. Причинная связь между порчей этой партии консервов и нехваткой судов не установлена.",
+          "Даты появления «Мамии» и «Ирако» относятся к специализированным кораблям продовольственного снабжения флота. Вспомогательные суда выполняли продовольственные задачи уже в 1904 году. Оценка того, как флот усвоил уроки войны, принадлежит Исихаре."
         ],
         "sources": [
           {
@@ -3361,8 +3336,8 @@
             "author": "Акинори Исихара (石原明徳), Национальный институт оборонных исследований Японии",
             "date": "2024-05-28",
             "url": "https://www.nids.mod.go.jp/publication/commentary/pdf/commentary324.pdf",
-            "locator": "NIDS Commentary, № 324. С. 7–8; примечание 13 на с. 10. Номера печатных страниц совпадают с номерами страниц PDF.",
-            "note": "Оригинальное название: 日露戦争における艦のロジスティクス―勝ち戦の夕食は握飯. Современное исследование по военно-морским документам. Сведения о меню, отравлении и судах снабжения пересказаны с атрибуцией автору; первичный медицинский том отдельно не проверен."
+            "locator": "NIDS Commentary, № 324. С. 4 — холодильное оборудование; с. 6 — сохранность продуктов при доставке из Сасебо; с. 7 — суда снабжения, «Мамия» и «Ирако», статус флагмана, стоянка и меню; с. 8 — заболевшие. Примечание 13 на с. 10.",
+            "note": "Оригинальное название: 日露戦争における艦のロジスティクス―勝ち戦の夕食は握飯. Исследование прочитано целиком; ключевые страницы сверены с изображениями и официальной английской версией. Первичные медицинские документы отдельно не проверены."
           }
         ],
         "relatedNotes": [
@@ -3377,12 +3352,19 @@
         "relatedPeople": [],
         "sourceLanguages": [
           "ja"
-        ]
+        ],
+        "illustration": {
+          "image": "/images/essays/mikasa.webp",
+          "alt": "«Микаса» на воде: две трубы, две мачты и вынесенные за борт шесты противоторпедных сетей; внизу печатная подпись с названием корабля.",
+          "caption": "Броненосец «Микаса», флагман адмирала Того. Иллюстрация к отчёту американского военно-морского врача Уильяма К. Брейстеда, изданному в 1906 году. Точные дата и место съёмки на листе не указаны.",
+          "credit": "Фотограф не указан. Из отчёта Уильяма К. Брейстеда, ВМС США. Вашингтон: Government Printing Office, 1906, Senate Document No. 328. Цифровая копия GovInfo. Public domain (США, издание 1906 года).",
+          "sourceUrl": "https://www.govinfo.gov/app/details/SERIALSET-04915_00_00-002-0328-0000"
+        }
       },
       {
         "slug": "bankovskiy-sluzhashchiy-dayrena",
         "title": "Деньги Дайрена: кому давали взаймы",
-        "dek": "Серебро с портретами Юань Шикая и Сунь Ятсена, японские банкноты и частные кредитные конторы. Банковский служащий Сунь Яотин вспоминал город, где деньги были разными, а получить заём удавалось далеко не каждому.",
+        "dek": "Серебряные монеты, японские банкноты и частные кредитные конторы. Банковский служащий Сунь Яотин вспоминал город, где деньги были разными, а получить заём удавалось далеко не каждому.",
         "date": "2026-11-15",
         "periods": [
           "japanese"
@@ -3391,11 +3373,11 @@
         "sections": [
           {
             "id": "clerk",
-            "title": "Прежде чем пересчитывать",
+            "title": "Банковский служащий Дайрена",
             "paragraphs": [
-              "Сколько это в нынешних деньгах? В заметке о царском рубле ответы получались разными в зависимости от способа счёта. Но прежде чем браться за пересчёт, нужно разобраться, какими деньгами платили. В Дайрене японского периода в ходу было сразу несколько их видов.",
-              "О них рассказывает Сунь Яотин, который с детства жил в Даляне и работал в банковской сфере с 1930 года. Начинал учеником и служащим, со временем дослужился до руководящих должностей. Банковскую жизнь города знал изнутри.",
-              "Своим местом работы он называет Лункоу, совместный японско-китайский банк. Адрес тоже оставил: Тяньцзиньская улица, как она называлась во время записи его рассказа. Затем были слияния и новые названия банка. Позднее Сунь описал всё это во втором выпуске сборника «Материалы по истории Даляня». И рассказал, какими деньгами пользовались горожане и кому их давали взаймы."
+              "Дайреном называли Далянь под японским управлением. В этом торговом городе обращались разные деньги, а обычному китайскому горожанину было трудно получить банковскую ссуду. О том, чем рассчитывались и кому давали взаймы, вспоминал Сунь Яотин.",
+              "Он с детства жил в Даляне и работал в банковской сфере с 1930 года. Начинал учеником и служащим, со временем дослужился до руководящих должностей. Банковскую жизнь города знал изнутри.",
+              "Своим местом работы он называет Лункоу, совместный японско-китайский банк. Адрес тоже оставил: Тяньцзиньская улица, как она называлась во время записи его рассказа. Затем были слияния и новые названия банка. Позднее Сунь описал всё это во втором выпуске сборника «Материалы по истории Даляня»."
             ],
             "refs": [
               1
@@ -3403,9 +3385,9 @@
           },
           {
             "id": "currency",
-            "title": "Серебряные портреты и бумажное золото",
+            "title": "Серебро и бумажное золото",
             "paragraphs": [
-              "В его перечне рядом стоят серебряные монеты с портретами Юань Шикая и Сунь Ятсена, мелкое серебро, медные деньги и банкноты. Японские бумажные деньги он называет «цзиньпяо», 金票. В названии есть золото, но речь идёт о бумажных деньгах, а не о золотых монетах.",
+              "В его перечне рядом стоят серебряные монеты, мелкое серебро, медные деньги и банкноты. Японские бумажные деньги он называет «цзиньпяо», 金票. В названии есть золото, но речь идёт о бумажных деньгах, а не о золотых монетах.",
               "Главное место, по словам Суня, занимали японские банкноты. Китайские банки тоже выпускали бумажные деньги, однако местные выпуски требовали разрешения японских властей и могли служить лишь временными платёжными средствами."
             ],
             "refs": [
@@ -3416,8 +3398,8 @@
             "id": "credit",
             "title": "Деньги в городе и деньги для горожанина",
             "paragraphs": [
-              "Сунь описывает Дайрен как город производства и торговли, которому постоянно нужны были деньги. За займами обращались в банки. Но обычному китайскому горожанину, вспоминал он, получить банковскую ссуду было трудно: без достаточного обеспечения рассчитывать на неё не приходилось.",
-              "Займы выдавали и цяньчжуаны, 钱庄, традиционные частные кредитные конторы. Они тоже требовали обеспечения, а проценты, по словам Суня, брали выше банковских. Отдельно он пишет о частных ростовщиках, действовавших вне банков и цяньчжуанов. Здесь его рассказ становится особенно резким: дорогой заём мог за короткий срок закончиться разорением."
+              "Сунь описывает Дайрен как город производства и торговли, которому постоянно нужны были деньги. За займами обращались в банки. Но обычному китайскому горожанину, вспоминал он, получить банковскую ссуду было трудно: без достаточного обеспечения, то есть гарантий возврата денег, рассчитывать на неё не приходилось.",
+              "Займы выдавали и цяньчжуаны, 钱庄, традиционные частные кредитные конторы. Они тоже требовали обеспечения, а проценты, по словам Суня, брали выше банковских. Отдельно он пишет о частных ростовщиках, действовавших вне банков и цяньчжуанов. По его оценке, дорогой заём мог за короткий срок закончиться разорением."
             ],
             "refs": [
               1
@@ -3449,7 +3431,14 @@
         "relatedPeople": [],
         "sourceLanguages": [
           "zh"
-        ]
+        ],
+        "illustration": {
+          "image": "/images/essays/dairen-bank.webp",
+          "alt": "Каменное здание банка в Дайрене с большим центральным куполом и двумя меньшими боковыми; на улице стоят несколько человек.",
+          "caption": "Отделение Йокогамского банка Сёкин в Дайрене. Снимок из альбома «Адзиа тайкан», точная дата не указана. Это другой банк, не Лункоу; место работы Сунь Яотина на снимке не показано.",
+          "credit": "Фотограф не указан. Альбом «亜細亜大観» (Asia Taikan), т. 1, лист 004; Общество Чёрного дракона (Kokuryūkai). Через Wikimedia Commons. Public domain (PD-Japan-oldphoto, PD-1996).",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E4%BA%9C%E7%B4%B0%E4%BA%9C%E5%A4%A7%E8%A6%B3_01_004_%22%E6%AD%A3%E9%87%91%E9%8A%80%E8%A1%8C%E6%94%AF%E5%BA%97_%EF%BC%88%E5%A4%A7%E9%80%A3%EF%BC%89%22.jpg"
+        }
       }
     ],
     "data/books.json": [
@@ -16759,8 +16748,8 @@
     "src/i18n/en/essays.json": [
       {
         "slug": "mikasa-obed-i-snabzhenie",
-        "title": "What was on Mikasa’s menu—and why 156 people fell ill",
-        "dek": "Rice and barley, salmon, and beef with potatoes were on Mikasa’s menu on 30 May 1904. The canned salmon had spoiled.",
+        "title": "Mikasa: lunch aboard the flagship and the problem of supply",
+        "dek": "During the blockade of Port Arthur, 156 people aboard Mikasa suffered food poisoning. The shortage of food supply ships was recognised as a problem of that war, yet the fleet’s first dedicated food supply ship did not enter service until 1924.",
         "date": "2026-11-15",
         "periods": [
           "russian"
@@ -16769,10 +16758,11 @@
         "sections": [
           {
             "id": "menu",
-            "title": "Lunch at a forward base",
+            "title": "The flagship off Port Arthur",
             "paragraphs": [
-              "Rice and barley, miso soup with dried daikon and tea for breakfast. More rice for lunch, this time with stewed canned salmon and hijiki seaweed, pickles and barley tea. For dinner, hardtack and roast beef with potatoes. That was Mikasa’s menu on 30 May 1904.",
-              "The ship was then at a forward base among the islands south of Liaodong. After taking part in the blockade of Port Arthur, she had been undergoing maintenance there since 10 May. Japanese historian Akinori Ishihara described the episode in his 2024 study of naval supply."
+              "During the Russo-Japanese War, the battleship Mikasa took part in blockade operations off Port Arthur. She was an armoured Japanese warship and the flagship of the Combined Fleet—the ship carrying its commander. The Russian squadron was in its base; the Japanese ships operated outside it. They too needed an anchorage where they could undergo maintenance and replenish supplies. From 10 May 1904, Mikasa was undergoing maintenance at a forward base among the islands south of China’s Liaodong Peninsula.",
+              "The ship was still there on 30 May. Japanese historian Akinori Ishihara described that day’s lunch and the food poisoning that followed in his study of naval supply.",
+              "Rice and barley, soup with dried radish and tea were on the breakfast menu. More rice for lunch, with stewed canned salmon and seaweed, pickles and barley tea. For dinner, hardtack and roast beef with potatoes. At an anchorage where fresh food was scarce, Ishihara considers this a fairly ordinary menu."
             ],
             "refs": [
               1
@@ -16780,10 +16770,10 @@
           },
           {
             "id": "illness",
-            "title": "Even canned food can spoil",
+            "title": "After lunch",
             "paragraphs": [
-              "After that lunch, 156 people aboard fell ill. Ishihara attributes the food poisoning to the canned salmon: its storage life had been exceeded and the contents had spoiled. Canned food was useful because it could be kept in reserve for a long time. But even those reserves had their limits.",
-              "Nor was this an isolated case. Food poisoning occurred aboard other Japanese ships in May and June 1904. Spoiled canned food and mouldy bread were among the causes; sometimes the offending food could not be identified. Aboard Mikasa, efforts were made to serve cooked food."
+              "The canned salmon had spoiled: its storage life had been exceeded. After lunch, 156 people aboard Mikasa fell ill. This happened on the flagship, at its own forward base, and the cause was food from the ship’s menu.",
+              "Food poisoning also occurred aboard other Japanese ships in May and June. Among the reported causes were canned goods, fried tofu (soybean curd) and mouldy bread; sometimes the offending food could not be identified. Aboard Mikasa, efforts were made to serve food that had been cooked: stewed, fried or boiled. The crew had to eat every day, despite all the difficulties of delivery and storage."
             ],
             "refs": [
               1
@@ -16791,10 +16781,12 @@
           },
           {
             "id": "supply",
-            "title": "Two supply ships were not enough",
+            "title": "Two supply ships and a long aftermath",
             "paragraphs": [
-              "Two ships, Matsuyama Maru and Fukuoka Maru, were to supply the fleet. The plan was to deliver provisions to the forward forces roughly every six days. In practice, the warships operated in dispersed groups, and two supply ships proved too few.",
-              "Kotohira Maru and other vessels were brought in during August 1904. But adding a ship did not automatically make it a fully equipped food transport. Storing provisions required equipment, and the lack of it limited how much food could be carried. Getting the cargo to the right warship was only part of the job. It also had to arrive fit to eat."
+              "At the start of the war, two auxiliary vessels, Matsuyama Maru and Fukuoka Maru, were prepared to supply food. Deliveries to the forward forces were planned roughly every six days. But the warships often operated in dispersed groups, and two supply vessels proved too few. From August 1904, Kotohira Maru and other ships were brought into this work.",
+              "The additional ships helped with transport, but they lacked enough equipment to preserve the food. They could not carry sufficient provisions. Even the few days’ voyage from the Japanese naval base at Sasebo to a forward base made it difficult to keep bread, vegetables, meat and fish fresh. Refrigeration technology already existed, but its installation aboard ships was only beginning.",
+              "The shortage of food supply vessels was recognised as one of the weaknesses of supply during the Russo-Japanese War. The auxiliary transports of 1904, however, were not yet the dedicated fleet food supply ships that appeared later. The first such ship in the Japanese navy, Mamiya, entered service in 1924. The second, Irako, followed on 5 December 1941.",
+              "Ishihara argues that, against the backdrop of the Japanese fleet’s victory at Tsushima in 1905, the supply shortcomings exposed by the war were not adequately reflected in subsequent naval policy. The dates behind that judgement are quite concrete: about twenty years passed between the war that revealed the shortage and Mamiya; another seventeen or so separated the commissioning of the first and second dedicated ships."
             ],
             "refs": [
               1
@@ -16802,8 +16794,8 @@
           }
         ],
         "limitations": [
-          "The menu and number of people taken ill come from Ishihara’s 2024 study. The archival medical volume he cites has not been checked separately; 156 is the number of food-poisoning cases, not deaths.",
-          "The source does not establish exactly how this batch of canned salmon was stored. Linking its spoilage to the shortage of supply ships would require further investigation."
+          "The lunch and number of people taken ill are described in Ishihara’s 2024 study. The original medical volume has not been checked separately; 156 counts people taken ill, not deaths. No causal link has been established between the spoilage of this batch of canned salmon and the shortage of ships.",
+          "The dates for Mamiya and Irako refer to dedicated fleet food supply ships. Auxiliary vessels were already supplying food in 1904. The assessment of how the navy absorbed the war’s lessons is Ishihara’s."
         ],
         "sources": [
           {
@@ -16812,8 +16804,8 @@
             "author": "Akinori Ishihara (石原明徳), National Institute for Defense Studies, Japan",
             "date": "2024-05-28",
             "url": "https://www.nids.mod.go.jp/publication/commentary/pdf/commentary324.pdf",
-            "locator": "NIDS Commentary, No. 324. Pages 7–8; note 13 on page 10. Printed page numbers match the PDF page numbers.",
-            "note": "Original title: 日露戦争における艦のロジスティクス―勝ち戦の夕食は握飯. A modern study based on naval documents. The menu, food-poisoning episode and supply ships are described with attribution to the author; the original medical volume has not been checked separately."
+            "locator": "NIDS Commentary, No. 324. Page 4: refrigeration equipment; page 6: keeping food fresh during delivery from Sasebo; page 7: supply ships, Mamiya and Irako, Mikasa’s flagship status, anchorage and menu; page 8: those taken ill. Note 13 is on page 10.",
+            "note": "Original title: 日露戦争における艦のロジスティクス―勝ち戦の夕食は握飯. The study was read in full; the key pages were checked against page images and the official English version. The original medical documents have not been checked separately."
           }
         ],
         "relatedNotes": [
@@ -16828,12 +16820,19 @@
         "relatedPeople": [],
         "sourceLanguages": [
           "ja"
-        ]
+        ],
+        "illustration": {
+          "image": "/images/essays/mikasa.webp",
+          "alt": "Mikasa afloat, with two funnels, two masts and extended torpedo-net booms; the printed caption below identifies the ship.",
+          "caption": "The battleship Mikasa, Admiral Tōgō’s flagship. A photograph reproduced in U.S. naval surgeon William C. Braisted’s report, published in 1906. The plate gives no exact date or location.",
+          "credit": "Photographer not identified. From William C. Braisted’s report, U.S. Navy. Washington: Government Printing Office, 1906, Senate Document No. 328. Digitised by GovInfo. Public domain (United States, 1906 publication).",
+          "sourceUrl": "https://www.govinfo.gov/app/details/SERIALSET-04915_00_00-002-0328-0000"
+        }
       },
       {
         "slug": "bankovskiy-sluzhashchiy-dayrena",
         "title": "Money in Dairen: who could get a loan?",
-        "dek": "Silver bearing portraits of Yuan Shikai and Sun Yat-sen, Japanese banknotes and private credit firms. Bank clerk Sun Yaoting recalled a city with many kinds of money, where getting a loan was far from easy.",
+        "dek": "Silver coins, Japanese banknotes and private credit firms. Bank clerk Sun Yaoting recalled a city with many kinds of money, where getting a loan was far from easy.",
         "date": "2026-11-15",
         "periods": [
           "japanese"
@@ -16842,11 +16841,11 @@
         "sections": [
           {
             "id": "clerk",
-            "title": "Before converting the sum",
+            "title": "A bank clerk in Dairen",
             "paragraphs": [
-              "How much would that be in today’s money? In our note on the tsarist ruble, the answers varied with the method of calculation. But before converting a sum, we need to know what people paid with. In Dairen under Japanese rule, several kinds of money were in use at once.",
-              "Sun Yaoting tells us about them. He had lived in Dalian since childhood and worked in banking from 1930. Starting as an apprentice and clerk, he eventually rose to senior positions. He knew the city’s banking life from the inside.",
-              "He names his workplace as Longkou, a joint Japanese-Chinese bank. He left an address too: Tianjin Street, as it was called when his account was recorded. Mergers and new bank names followed. Sun later described all this in the second issue of Materials on the History of Dalian. He also recalled which money the townspeople used—and who could borrow it."
+              "Dairen was the name of Dalian under Japanese rule. Different kinds of money circulated in this trading city, yet an ordinary Chinese resident found it difficult to obtain a bank loan. Sun Yaoting recalled what people paid with, and who could borrow.",
+              "He had lived in Dalian since childhood and worked in banking from 1930. Starting as an apprentice and clerk, he eventually rose to senior positions. He knew the city’s banking life from the inside.",
+              "He names his workplace as Longkou, a joint Japanese-Chinese bank. He left an address too: Tianjin Street, as it was called when his account was recorded. Mergers and new bank names followed. Sun later described all this in the second issue of Materials on the History of Dalian."
             ],
             "refs": [
               1
@@ -16854,9 +16853,9 @@
           },
           {
             "id": "currency",
-            "title": "Silver portraits and paper gold",
+            "title": "Silver and paper gold",
             "paragraphs": [
-              "His list includes silver coins bearing portraits of Yuan Shikai and Sun Yat-sen, small silver coins, copper money and banknotes. He calls the Japanese paper money jinpiao, 金票. There is gold in the name, but these were notes, not gold coins.",
+              "His list includes silver coins, small silver coins, copper money and banknotes. He calls the Japanese paper money jinpiao, 金票. There is gold in the name, but these were notes, not gold coins.",
               "Japanese banknotes predominated, Sun says. Chinese banks also issued paper money, but local issues required permission from the Japanese authorities and could serve only as temporary means of payment."
             ],
             "refs": [
@@ -16867,8 +16866,8 @@
             "id": "credit",
             "title": "Money in the city, money for its people",
             "paragraphs": [
-              "Sun describes Dairen as a city of manufacturing and trade with a constant need for money. Those seeking loans turned to the banks. But for an ordinary Chinese resident, he recalled, getting a bank loan was difficult: without enough collateral, there was little chance.",
-              "Loans were also available from qianzhuang, 钱庄, traditional private credit firms. They too required collateral and, Sun says, charged more interest than the banks. He writes separately about private moneylenders operating outside both banks and qianzhuang. Here his account grows particularly sharp: an expensive loan could bring ruin in a short time."
+              "Sun describes Dairen as a city of manufacturing and trade with a constant need for money. Those seeking loans turned to the banks. But for an ordinary Chinese resident, he recalled, getting a bank loan was difficult: without adequate security—guarantees that the money would be repaid—there was little chance.",
+              "Loans were also available from qianzhuang, 钱庄, traditional private credit firms. They too required security and, Sun says, charged more interest than the banks. He writes separately about private moneylenders operating outside both banks and qianzhuang. In his judgement, an expensive loan could bring ruin in a short time."
             ],
             "refs": [
               1
@@ -16900,7 +16899,14 @@
         "relatedPeople": [],
         "sourceLanguages": [
           "zh"
-        ]
+        ],
+        "illustration": {
+          "image": "/images/essays/dairen-bank.webp",
+          "alt": "A stone bank building in Dairen with a large central dome and two smaller side domes; several people stand in the street.",
+          "caption": "The Yokohama Specie Bank branch in Dairen. Photograph from Asia Taikan; the exact date is not given. This is a different bank, not Longkou, and the photograph does not show Sun Yaoting’s workplace.",
+          "credit": "Photographer not identified. 亜細亜大観 (Asia Taikan), volume 1, plate 004; Black Dragon Society (Kokuryūkai). Via Wikimedia Commons. Public domain (PD-Japan-oldphoto, PD-1996).",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E4%BA%9C%E7%B4%B0%E4%BA%9C%E5%A4%A7%E8%A6%B3_01_004_%22%E6%AD%A3%E9%87%91%E9%8A%80%E8%A1%8C%E6%94%AF%E5%BA%97_%EF%BC%88%E5%A4%A7%E9%80%A3%EF%BC%89%22.jpg"
+        }
       }
     ],
     "src/i18n/en/books.json": [
@@ -28525,6 +28531,7 @@
     "src/components/places/PlaceDossier.astro": "ed236aab57a0dfadae507172fccc9823e09a5717a23338b02b39e32b7141f33d",
     "src/components/places/SourceAssessment.astro": "14c1fe79eac21983bb6b184614a198a7810660f085881a8ffbfa2b91fe95bc82",
     "src/components/reading/EssayCards.astro": "bc853e4fc3a20e6b670aec2dce148e79594e4f7542e57333a529c5182818bcb0",
+    "src/components/reading/EssayIllustration.astro": "e1e97d05d4acb66fbdc3c212310f82a7112361a8c27dd7000a85fe119bbd369b",
     "src/components/reading/ReadingShelf.astro": "7c4f434cc0d388feabd924338e6a4cd8057c6e0f114c3ff53aee8760da343c0c",
     "src/components/routes/WalkNavigation.astro": "5ca65c5a14d2d6fe9c5ebe5919802e69d8022be953cca6b770bb96e6a6382a6c",
     "src/components/routes/WalkOverview.astro": "008921fe555609bd7849dae3b9020b0ca14912cef4e8e62f4e5d37dfb10fb6a6",
@@ -28533,7 +28540,7 @@
     "src/layouts/Base.astro": "dcafb1a37483ac7d2b015d8b7bb5e1adde8b5bed70dfc260687d9f27d8defa66",
     "src/lib/art.ts": "39492c4be05988c568b4e0e226dafe8bb4287d3a5cfa662e1240b4e5bbae33cd",
     "src/lib/data.ts": "7501f47261f002ad62f9242b34331b9b9d714db617dacdc8861dd062f01a0c55",
-    "src/lib/essays.ts": "b33f09bc94a62ab2b31b97f3a120b22d6ed0c8454800f1282fcbce4f17e6a588",
+    "src/lib/essays.ts": "4f23bd8d2f903f0d0c923b4abf783e6acfc32482da4c00aad51af63d9cb03265",
     "src/lib/evidence.ts": "7e268c863ef29957ed3be7df0baf5fd1d7fa357b3ea374983e4cae931845b0b7",
     "src/lib/mentionMatcher.ts": "1bedd5530e4a1cb6c87bc6ced24c2e72a80c36d56ffb3329391fca259a4e1ff8",
     "src/lib/mentions.ts": "bea0de38d54d69b55e48b3dfa8ac248eaea270a22ba841e00c2d26888ae1aea8",
@@ -28558,7 +28565,7 @@
     "src/pages/poisk/index.astro": "fdde9bf78c937271ae3cbf30acb2b1c5d67dbcb1baf8bb408d223e544f3f3a77",
     "src/pages/sezony/index.astro": "471d41d84d22c8483b55c417662ea451df8f223412bfe9651a4ac063792c3911",
     "src/pages/spravochnik/[kind]/[slug].astro": "a49cbb7b95b3bbbde7314dad04a8b8eb67b8a4dce30bed66f05a99b847b4844f",
-    "src/pages/stati/[slug].astro": "e3336541bb197c76b72dbc6578d6857a15e80f757c3b1ced09b21393e602e810",
+    "src/pages/stati/[slug].astro": "6bd1171265ab156fa9f6f55395b61c93a560eb0e26ca9aef07223e9221acf0df",
     "src/pages/ukazatel/index.astro": "c664d0ca1b09a6e72ea12815f8c26409286cb05adcb95f15396788063a1e517c",
     "src/pages/zametki/[slug].astro": "c3ec3e9a7241eede46029b08b2fccb71bb70b1c0e43888fd7451c65f379968c1",
     "src/pages/zametki/index.astro": "f29ecb9c1beb972ca51da30eb11e7ac537ddcd29f45d230d4737b01a36a465a7",

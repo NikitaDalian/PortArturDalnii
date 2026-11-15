@@ -1,0 +1,29 @@
+---
+import { assetUrl } from '../../i18n/locale';
+
+interface Props {
+  image: string;
+  alt: string;
+  caption: string;
+  credit: string;
+  sourceUrl: string;
+}
+const { image, alt, caption, credit, sourceUrl } = Astro.props;
+---
+<figure class="essay-illustration">
+  <img src={assetUrl(image)} alt={alt} width="1800" loading="eager" decoding="async" />
+  <figcaption>
+    <p>{caption}</p>
+    <p class="essay-illustration__credit"><a href={sourceUrl} target="_blank" rel="noopener">{credit}</a></p>
+  </figcaption>
+</figure>
+<style>
+  .essay-illustration { width:100%; margin:0 0 40px; }
+  .essay-illustration img { display:block; width:100%; height:auto; }
+  .essay-illustration figcaption { margin-top:14px; color:var(--ink-2); font-size:15px; line-height:1.65; }
+  .essay-illustration__credit { margin-top:8px; font-size:13px; }
+  .essay-illustration__credit a { text-decoration:underline; text-underline-offset:3px; overflow-wrap:anywhere; }
+  .essay-illustration__credit a:hover { color:var(--ink); }
+  .essay-illustration__credit a:focus-visible { outline:2px solid var(--accent); outline-offset:4px; }
+  @media print { .essay-illustration { break-inside:avoid; } }
+</style>
