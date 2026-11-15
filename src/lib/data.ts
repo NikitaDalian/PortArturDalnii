@@ -103,6 +103,7 @@ export const href = {
   source: (s: string) => url(`/biblioteka/istochniki/${s}/`),
   notes: () => url('/zametki/'),
   note: (s: string) => url(`/zametki/${s}/`),
+  essay: (s: string) => url(`/stati/${s}/`),
   seriesList: () => url('/zametki/serii/'),
   series: (s: string) => url(`/zametki/serii/${s}/`),
   map: (place?: string) => url('/karta/' + (place ? `#${place}` : '')),

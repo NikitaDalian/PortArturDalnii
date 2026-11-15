@@ -340,7 +340,7 @@
   "Справка о названиях": "A Guide to the Names",
   "Источники и ссылка на статью": "Sources & Article Link",
   "Редакция от": "Updated",
-  "Продолжить чтение": "Continue Reading",
+  "Продолжить чтение": "Read on",
   "Порт-Артур и Дальний": "Port Arthur and Dalny",
   "Порт-Артура и Дальнего": "Port Arthur and Dalny",
   "История Порт-Артура и Даляня": "The history of Port Arthur and Dalian",
@@ -848,5 +848,9 @@
   "Выбрать маршрут": "Choose a route",
   "Выбрать город": "Choose a city",
   "Один город хранит следы нескольких эпох. На страницах мест собраны прежние названия, фотографии, связанные статьи и сведения для посещения.": "A single city holds traces of several periods. Each place page brings together former names, photographs, related articles and practical information for a visit.",
-  "Хотите по-своему?": "Prefer your own route?"
+  "Хотите по-своему?": "Prefer your own route?",
+  "Статьи": "Articles",
+  "Статьи по источникам": "Articles from the sources",
+  "Что позволяет сказать источник": "What the source can tell us",
+  "В библиотеке сайта": "In the site library"
 }

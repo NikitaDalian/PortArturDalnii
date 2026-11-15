@@ -32,6 +32,31 @@ if (!editorialPeriods || Array.isArray(editorialPeriods) || typeof editorialPeri
   }
 }
 const descriptions = read('reference_descriptions');
+const essays = read('essays');
+const essaySlugs = new Set();
+for (const essay of essays) {
+  const name = `essay/${essay.slug}`;
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(essay.slug) || essaySlugs.has(essay.slug)) errors.push(`${name}: invalid or duplicate slug`);
+  essaySlugs.add(essay.slug);
+  for (const field of ['title','dek','perspective']) if (!essay[field]?.trim()) errors.push(`${name}: missing ${field}`);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(essay.date)) errors.push(`${name}: invalid publication date`);
+  if (!essay.periods?.length || essay.periods.some(k=>!validPeriods.has(k))) errors.push(`${name}: invalid subject periods`);
+  if (!essay.sourceLanguages?.length || essay.sourceLanguages.some(k=>!['ru','en','ja','zh'].includes(k))) errors.push(`${name}: invalid source language`);
+  const sectionIds=new Set();
+  if (!essay.sections?.length || !essay.sources?.length || !essay.limitations?.length) errors.push(`${name}: incomplete sourced essay`);
+  for (const section of essay.sections ?? []) {
+    if (!/^[a-z][a-z0-9-]*$/.test(section.id) || sectionIds.has(section.id) || ['essay-sources','sources-title','limits-title'].includes(section.id)) errors.push(`${name}: invalid section id`);
+    sectionIds.add(section.id);
+    if (!section.title?.trim() || !section.paragraphs?.length || section.paragraphs.some(p=>!p.trim())) errors.push(`${name}/${section.id}: missing prose`);
+    if (!section.refs?.length || section.refs.some(ref=>!Number.isInteger(ref)||ref<1||ref>essay.sources.length)) errors.push(`${name}/${section.id}: missing source reference`);
+  }
+  for (const [index,source] of (essay.sources ?? []).entries()) {
+    if (source.id!==index+1 || !/^https:\/\//.test(source.url) || !source.title?.trim() || !source.locator?.trim() || !source.note?.trim()) errors.push(`${name}: incomplete or misnumbered source`);
+  }
+  for (const [field,target] of Object.entries({relatedNotes:maps.articles,relatedPlaces:maps.places,relatedPeople:maps.people,relatedSources:maps.sources})) {
+    if (!Array.isArray(essay[field]) || essay[field].some(slug=>!target.has(slug))) errors.push(`${name}: invalid ${field} relationship`);
+  }
+}
 for (const kind of ['people', 'geo']) {
   for (const slug of Object.keys(terms[kind])) {
     if (!descriptions[kind]?.[slug]?.trim()) errors.push(`${kind}/${slug}: missing reference description`);

@@ -1,6 +1,7 @@
 // Небольшой запасной индекс для страницы поиска: используется, только если Pagefind
 // недоступен (режим разработки или индекс не собран).
 import { articles, people, places, books, sources, terms, referenceDescriptions, entity, href, img, imgCrop, fmtDateShort, TYPES } from '../../lib/data';
+import { essays } from '../../lib/essays';
 
 const CITY: Record<string, string> = { lushun: 'Люйшунь', dalian: 'Далянь', other: 'Другое' };
 
@@ -10,6 +11,8 @@ const hay = (...xs: (string | null | undefined)[]) => xs.filter(Boolean).join(' 
 
 export function fallbackItems(): FbItem[] {
   const out: FbItem[] = [];
+  essays.forEach(e => out.push({ tab:'Статьи', url:href.essay(e.slug), title:e.title, text:e.dek, meta:e.perspective,
+    hay:hay(e.title,e.dek,e.sections.flatMap(s=>[s.title,...s.paragraphs]).join(' ')) }));
   articles.forEach((a) => {
     const t = TYPES[a.type] ?? TYPES.event;
     const names = [...a.people.map((s) => entity('person', s).label), ...a.places.map((s) => entity('place', s).label)];

@@ -1,149 +1,16 @@
 {
   "version": 1,
   "locale": "zh",
-  "commit": "2e0d006f0ddb20f2edc4b48b9748a6602a9faa0e",
-  "reviewedAt": "2026-11-15T11:24:08.858Z",
-  "reviewedPacket": "5ed37bd4eb7397338ffa0c345e6cf344d5461e9e9957f015cc9370a9ee19e3b8",
+  "commit": "38c2387234579db72161c7bb27ea3661349d469d",
+  "reviewedAt": "2026-11-15T13:00:29.086Z",
+  "reviewedPacket": "da3fcbf8caf19e6169effc9f91a1e3c3a7c7990cf02c05bfbd42b2ae282b5eaa",
   "reviewedItems": [
     {
-      "id": "82a19716e7328af7e736",
-      "file": "data/layers.json",
-      "path": "/pre1898/intro/3",
-      "action": "translated",
-      "note": "Compared the revised causal framing with Russian: replaced the site classification with events preceding the lease; retained bank, treaty, railway concession and Nicholas/Otsu names."
-    },
-    {
-      "id": "b2ee82904217185542c8",
-      "file": "data/layers.json",
-      "path": "/pre1898/introTitle",
-      "action": "translated",
-      "note": "Translated the new period-specific heading using the established Chinese name 旅顺口 and the Russian lease qualifier."
-    },
-    {
-      "id": "7e56f69d119ee0d8322d",
-      "file": "data/layers.json",
-      "path": "/russian/intro/3",
-      "action": "translated",
-      "note": "Removed the deleted channel-content sentence; retained the less-than-seven-years qualification and 110 million rouble figure."
-    },
-    {
-      "id": "876798b0791c5bd1e7b2",
-      "file": "data/layers.json",
-      "path": "/russian/introTitle",
-      "action": "translated",
-      "note": "Translated the new seven-year port/city/fortress heading in natural Chinese, preserving all three subjects."
-    },
-    {
-      "id": "dac048a48a5f94c18d0a",
-      "file": "data/layers.json",
-      "path": "/japanese/intro/3",
-      "action": "translated",
-      "note": "Removed the deleted comparison about channel coverage; preserved the map entry and all four listed places."
-    },
-    {
-      "id": "87665c7b528e8f9d2940",
-      "file": "data/layers.json",
-      "path": "/japanese/introTitle",
-      "action": "translated",
-      "note": "Translated using the established Chinese names 大连 and 旅顺; the paragraph below preserves their historical Japanese readings."
-    },
-    {
-      "id": "977fadf859fb8b1390fd",
-      "file": "data/layers.json",
-      "path": "/soviet/introTitle",
-      "action": "translated",
-      "note": "Translated both the shared naval base and return to China, consistent with the surrounding 1945–1955 introduction."
-    },
-    {
-      "id": "0478d83417681fa930fb",
-      "file": "data/layers.json",
-      "path": "/modern/lead",
-      "action": "translated",
-      "note": "Translated the revised emphasis on surviving buildings, fortifications and urban change, with war memory and research as a separate theme."
-    },
-    {
-      "id": "81fb1bc99235bbae6e78",
-      "file": "data/layers.json",
-      "path": "/modern/intro/2",
-      "action": "translated",
-      "note": "Replaced the earlier list of methodological posts with the new heritage paragraph; retained cemetery, museums, monuments, fortifications, preservation and study."
-    },
-    {
-      "id": "f9df6603768e70c5ef01",
-      "file": "data/layers.json",
-      "path": "/modern/dates/4/year",
-      "action": "metadata",
-      "note": "Aligned the shortened chronological array with Russian: retained the existing 2004 archive exhibition event at its new index."
-    },
-    {
-      "id": "267ee894ea3128b45d9a",
-      "file": "data/layers.json",
-      "path": "/modern/dates/4/date",
-      "action": "metadata",
-      "note": "Preserved the 2004 date of the retained archive exhibition, with the Chinese year suffix, after the array was shortened."
-    },
-    {
-      "id": "65a89c681ff67a407b61",
-      "file": "data/layers.json",
-      "path": "/modern/dates/4/text",
-      "action": "translated",
-      "note": "Moved the existing Chinese archive-exhibition translation from its previous index to match the retained Russian 2004 event; removed the 2002 publication event."
-    },
-    {
-      "id": "d23732a06dfde14ec6e8",
-      "file": "data/layers.json",
-      "path": "/modern/dates/5/year",
-      "action": "metadata",
-      "note": "Aligned the shortened chronological array with Russian: retained the 2016 Botkin event at its new index."
-    },
-    {
-      "id": "45e26c9a50cd4319e088",
-      "file": "data/layers.json",
-      "path": "/modern/dates/5/date",
-      "action": "metadata",
-      "note": "Preserved the 2016 date of the retained Botkin event, with the Chinese year suffix, after the array was shortened."
-    },
-    {
-      "id": "76c9abb99c1b0219a09e",
-      "file": "data/layers.json",
-      "path": "/modern/dates/5/text",
-      "action": "translated",
-      "note": "Moved the existing Chinese Botkin canonization translation to the new index; preserved his name, book title and attribution to the Russian Orthodox Church."
-    },
-    {
-      "id": "6899ba60f174a56cc703",
-      "file": "data/layers.json",
-      "path": "/modern/dates/6",
-      "action": "deleted",
-      "note": "Removed the 2010 book-authorship research item from the modern-period chronology, matching the Russian deletion."
-    },
-    {
-      "id": "97541b647258382f460f",
-      "file": "data/layers.json",
-      "path": "/modern/dates/7",
-      "action": "deleted",
-      "note": "Removed the obsolete array slot; its 2016 Botkin event remains correctly at index 5 in both languages."
-    },
-    {
-      "id": "f4f01162c150aed1cfbb",
-      "file": "data/layers.json",
-      "path": "/modern/dates/8",
-      "action": "deleted",
-      "note": "Removed the 2019 research-book publication item from the modern-period chronology, matching Russian."
-    },
-    {
-      "id": "9fd54ec5cb70f20cbcc3",
-      "file": "data/layers.json",
-      "path": "/modern/introTitle",
-      "action": "translated",
-      "note": "Translated the new heading with both the post-1955 city and memory of the past, rather than a generic period label."
-    },
-    {
-      "id": "1928dbaa8124788ee4d4",
+      "id": "9b185ec350d1d0b7394d",
       "file": "UI source files",
       "path": "",
-      "action": "translated",
-      "note": "Language agent compared all changed and new UI templates and translated the five navigation entries, reading catalogue, source guidance, place directory and period labels. Root checked rendered desktop and mobile pages in all three languages. Final source changes adjust image sizing, preserve catalogue anchors and open shared filter results; they introduce no new reader-visible strings."
+      "action": "unchanged",
+      "note": "Inspected the search fallback color fix: h.color and TAB_COLOR[h.tab] now fall back to the CSS variable var(--sea), preventing an undefined value before replace. This only changes presentation logic and adds no reader-facing text. Existing Chinese translations remain valid."
     }
   ],
   "sources": {
@@ -3205,6 +3072,159 @@
         "series": "Русско-японская война за пять постов",
         "tg_url": "https://t.me/portartur_dalnii/6",
         "series_slug": "russko-yaponskaya-voyna-za-pyat-postov"
+      }
+    ],
+    "data/essays.json": [
+      {
+        "slug": "mikasa-obed-i-snabzhenie",
+        "title": "Обед на «Микасе»: снабжение и болезнь за линией блокады",
+        "dek": "Меню 30 мая 1904 года связывает историю японского корабля с работой снабженцев. Эпизод известен по исследованию Акинори Исихары, опубликованному в 2024 году.",
+        "date": "2026-11-15",
+        "periods": [
+          "russian"
+        ],
+        "perspective": "По японскому исследованию Акинори Исихары",
+        "sections": [
+          {
+            "id": "menu",
+            "title": "Один день на корабле",
+            "paragraphs": [
+              "На завтрак рис с ячменём, мисо-суп с сушёным дайконом и чай; в обед тушёный консервированный лосось с водорослями хидзики. Такое меню «Микасы» на 30 мая 1904 года приводит исследователь Акинори Исихара в статье о снабжении японского флота. Через перечень продуктов в историю блокады Порт-Артура входит повседневная корабельная жизнь, которую трудно разглядеть за описаниями боевых выходов.",
+              "По изложению Исихары, после участия в блокадных операциях «Микаса» с 10 мая проходила техническое обслуживание на передовой базе у островов южнее Ляодуна. Здесь, вне порт-артурской гавани, и разворачивается история обеда."
+            ],
+            "refs": [
+              1
+            ]
+          },
+          {
+            "id": "illness",
+            "title": "После обеда заболели 156 человек",
+            "paragraphs": [
+              "Исихара связывает 156 случаев пищевого отравления на «Микасе» с лососевыми консервами, поданными на этот обед: они испортились после превышения срока хранения. В его статье меню становится частью медицинской истории флота.",
+              "В мае и июне 1904 года, пишет Исихара, отравления происходили и на других японских кораблях. В приведённых им сведениях встречаются консервы, испорченные продукты и заплесневевший хлеб. В отдельных случаях причину установить не удалось. Автор также отмечает стремление готовить на «Микасе» пищу с тепловой обработкой."
+            ],
+            "refs": [
+              1
+            ]
+          },
+          {
+            "id": "supply",
+            "title": "Флоту требовались снабженцы",
+            "paragraphs": [
+              "Доставка и хранение продуктов были частью более широкой задачи. По исследованию Исихары, первоначально флот обслуживали два судна снабжения, «Мацуяма-мару» и «Фукуока-мару». Расчёт предполагал передовое снабжение примерно раз в шесть дней. Для рассредоточенных кораблей двух судов оказалось недостаточно. В августе 1904 года к ним добавили «Котохира-мару»; привлекали и другие суда, которым, однако, недоставало оснащения для хранения продовольствия.",
+              "Историю блокады обычно читают со стороны Порт-Артура: русские корабли в гавани, японские снаружи. Обед на «Микасе» добавляет к этой картине другой масштаб. Корабль, участвовавший в блокаде, сам нуждался в обслуживании и безопасной пище. За возможностью выходить в море стояли повторяющиеся работы. Исследование Исихары позволяет проследить их через доставку продовольствия и случай, когда обычный приём пищи закончился массовым заболеванием."
+            ],
+            "refs": [
+              1
+            ]
+          }
+        ],
+        "limitations": [
+          "Рассказ основан на статье Исихары 2024 года, а не на непосредственном чтении первичного медицинского тома. Указанный им источник: 極秘 明治37.8年海戦史, часть 7 医務衛生, том 7; шифр NIDS ⑨その他－千代田-536.",
+          "156 — число случаев отравления на «Микасе», не погибших и не потерь всего флота. Сопоставление с голодом или смертностью в осаждённом Порт-Артуре потребовало бы других данных.",
+          "Техническое обслуживание не позволяет заключить, что корабль ремонтировали после боевых повреждений. Причинная связь между нехваткой снабженцев и порчей конкретной партии консервов не установлена.",
+          "Меню 30 мая 1904 года отделено от боевых пайков Цусимского сражения 27 мая 1905 года, рассмотренных в той же статье. Иллюстрации и готовая таблица современной статьи здесь не воспроизводятся."
+        ],
+        "sources": [
+          {
+            "id": 1,
+            "title": "Корабельная логистика в русско-японской войне: рисовые колобки на победный ужин",
+            "author": "Акинори Исихара (石原明徳), Национальный институт оборонных исследований Японии",
+            "date": "2024-05-28",
+            "url": "https://www.nids.mod.go.jp/publication/commentary/pdf/commentary324.pdf",
+            "locator": "NIDS Commentary, № 324. С. 7–8; примечание 13 на с. 10. Номера печатных страниц совпадают с номерами страниц PDF.",
+            "note": "Оригинальное название: 日露戦争における艦のロジスティクス―勝ち戦の夕食は握飯. Современное исследование по военно-морским документам. Сведения о меню, отравлении и судах снабжения пересказаны с атрибуцией автору; первичный медицинский том отдельно не проверен."
+          }
+        ],
+        "relatedNotes": [
+          "pervaya-tihookeanskaya-eskadra"
+        ],
+        "relatedSources": [
+          "nids-flot-snabzhenie-2024"
+        ],
+        "relatedPlaces": [
+          "gavan-port-artura"
+        ],
+        "relatedPeople": [],
+        "sourceLanguages": [
+          "ja"
+        ]
+      },
+      {
+        "slug": "bankovskiy-sluzhashchiy-dayrena",
+        "title": "Деньги Дайрена глазами банковского служащего",
+        "dek": "В поздних воспоминаниях Сунь Яотина история денег складывается из банков, разных платёжных средств и трудностей с получением займа.",
+        "date": "2026-11-15",
+        "periods": [
+          "japanese"
+        ],
+        "perspective": "По китайским воспоминаниям Сунь Яотина",
+        "sections": [
+          {
+            "id": "clerk",
+            "title": "Банк на Тяньцзиньской улице",
+            "paragraphs": [
+              "Сунь Яотин оставил в своих воспоминаниях адрес, с которого удобно начать историю денег Дайрена: Тяньцзиньская улица, как она называлась на момент его рассказа. По его словам, здесь находился совместный японско-китайский банк Лункоу, где он работал. О банковской жизни города рассказывает человек, знакомый с ней изнутри.",
+              "Сунь пишет, что жил в Даляне с детства и пришёл в банковское дело в 1930 году. Он вспоминает свою работу, изменения банков и слияния, путь от ученика и служащего к руководящим должностям. Так у общего разговора о городских финансах появляется определённая точка наблюдения: рабочий опыт внутри банковской конторы.",
+              "Позднее его рассказ о японском периоде города вошёл во второй выпуск сборника «Материалы по истории Даляня». Сунь смотрит на город из банковской среды: учреждения и платёжные средства здесь соседствуют с вопросом о положении заёмщика."
+            ],
+            "refs": [
+              1
+            ]
+          },
+          {
+            "id": "currency",
+            "title": "Название денег ещё не объясняет сделку",
+            "paragraphs": [
+              "В описании Сунь Яотина в городе обращались разные платёжные средства. Он пишет о японских банкнотах, называя их «цзиньпяо» (金票), серебряных деньгах и бумажных выпусках китайских банков. Уже это перечисление мешает свести денежную жизнь Дайрена к одной сумме без указания валюты и времени.",
+              "Различалось и положение учреждений, выпускавших деньги. По словам Сунь Яотина, выпуски местных китайских банков зависели от разрешения японских властей и служили временными платёжными средствами. Он описывает преобладание японских банкнот. В его рассказе рядом с вопросом о том, чем рассчитывались, возникает вопрос о том, кто мог выпускать деньги и на каких условиях.",
+              "Термин «цзиньпяо» требует осторожности. Речь идёт о банкнотах, и переводить его просто как золотую монету нельзя. Чтобы разобрать конкретную покупку или заём, понадобится установить денежный выпуск, дату и условия приёма. Воспоминание даёт названия и различия, с которых начинается такая проверка."
+            ],
+            "refs": [
+              1
+            ]
+          },
+          {
+            "id": "credit",
+            "title": "Кому давали взаймы",
+            "paragraphs": [
+              "Когда Сунь Яотин переходит к кредиту, денежная история становится вопросом доступа. По его воспоминанию, обычному человеку было трудно получить банковскую ссуду. Для займа у банка или денежного дома требовалось достаточное обеспечение. Автор пишет о традиционных частных кредитных конторах, 钱庄, и отдельно о ростовщическом кредите вне этих учреждений. Для заёмщика было существенно, удастся ли вообще получить нужную сумму и каковы будут условия её возврата.",
+              "Это свидетельство человека, знавшего банковскую работу, но его обобщения нельзя автоматически считать статистикой всего города. Текст использует антиколониальные и классовые оценки; японские финансовые учреждения представлены как часть эксплуатации. Такой язык тоже сообщает о позиции автора и о том, как он позднее осмыслял свой опыт.",
+              "Воспоминание Сунь Яотина позволяет поставить более точный вопрос о деньгах Дайрена. Прежде чем пересчитывать старую сумму в современные рубли, нужно установить, когда происходила сделка, какими деньгами рассчитывались и какие возможности были у её участников. Банковский служащий оставил для этого поиска профессию, адрес и круг учреждений."
+            ],
+            "refs": [
+              1
+            ]
+          }
+        ],
+        "limitations": [
+          "Использованы страницы 49–53 библиотечного PDF. Статья продолжается далее; её полное прочтение не заявляется. Дата издания второго выпуска сборника не установлена.",
+          "Поздний личный рассказ не представляет всех китайских жителей Даляня. Обобщения автора о денежном обращении и кредитовании нуждаются в проверке по банковской отчётности и договорам.",
+          "Ставки кредита не приведены: единицы расчёта, сроки и условия в проверенном фрагменте установлены недостаточно уверенно. Описанные условия японского периода не переносятся на русский Дальний начала века или российские цены 1913 года.",
+          "Тяньцзиньская улица названа «нынешней» для автора воспоминания; современное название отдельно не сверялось. Конкретное здание и его сохранность не установлены."
+        ],
+        "sources": [
+          {
+            "id": 1,
+            "title": "Финансы колониального Даляня под японским управлением. «Материалы по истории Даляня», выпуск 2",
+            "author": "Сунь Яотин (孙耀庭)",
+            "date": "Дата издания выпуска не установлена",
+            "url": "https://www.dl-library.net.cn/wenxian/wszl/2.pdf",
+            "locator": "Страницы 49–53 библиотечного PDF: заголовок — 49; сведения об авторе и начале службы — 50; банк и валюты — 52; кредит — 52–53. На страницах 49, 51 и 53 видны номера; 50 и 52 определяются по последовательности.",
+            "note": "Оригинальное название: 孙耀庭：日寇统治下的大连殖民地金融业 // 大连文史资料 第二辑. Поздние воспоминания банковского служащего, цифровая копия Даляньской городской библиотеки. Это набранный библиотечный PDF; дата выпуска сборника не подтверждена. Проверенный фрагмент не охватывает всю статью."
+          }
+        ],
+        "relatedNotes": [
+          "skolko-eto-v-nyneshnih-dengah"
+        ],
+        "relatedSources": [
+          "sun-yaoting-bank-dayren"
+        ],
+        "relatedPlaces": [],
+        "relatedPeople": [],
+        "sourceLanguages": [
+          "zh"
+        ]
       }
     ],
     "data/books.json": [
@@ -7271,6 +7291,28 @@
         "articles": [
           "oborona-port-artura-vrachi-i-sestry"
         ]
+      },
+      {
+        "slug": "nids-flot-snabzhenie-2024",
+        "title": "Корабельная логистика в русско-японской войне: рисовые колобки на победный ужин",
+        "kind": "other",
+        "author": "Акинори Исихара (石原明徳)",
+        "annotation": "Исследование Национального института оборонных исследований Японии, NIDS Commentary № 324, опубликовано 28 мая 2024 года. На страницах 7–8 рассмотрены суда снабжения, меню «Микасы» 30 мая 1904 года и случаи пищевых отравлений. Это современная работа по военно-морским документам; первичный медицинский том отдельно не проверен.",
+        "url": "https://www.nids.mod.go.jp/publication/commentary/pdf/commentary324.pdf",
+        "posts": [],
+        "image": null,
+        "articles": []
+      },
+      {
+        "slug": "sun-yaoting-bank-dayren",
+        "title": "Финансы колониального Даляня под японским управлением",
+        "kind": "other",
+        "author": "Сунь Яотин (孙耀庭)",
+        "annotation": "Поздние воспоминания банковского служащего во втором выпуске сборника «Материалы по истории Даляня». Дата издания выпуска не установлена. На проверенных страницах 49–53 библиотечного PDF автор сообщает о начале работы в банковском деле в 1930 году, описывает денежное обращение и доступ к кредиту. Статья продолжается далее; весь текст не проверен. Цифровая копия Даляньской городской библиотеки.",
+        "url": "https://www.dl-library.net.cn/wenxian/wszl/2.pdf",
+        "posts": [],
+        "image": null,
+        "articles": []
       }
     ],
     "data/photos.json": [
@@ -16489,6 +16531,159 @@
         "series_slug": "russko-yaponskaya-voyna-za-pyat-postov"
       }
     ],
+    "src/i18n/zh/essays.json": [
+      {
+        "slug": "mikasa-obed-i-snabzhenie",
+        "title": "“三笠”号的一顿午餐：封锁线外的补给与疾病",
+        "dek": "1904年5月30日的菜单，将这艘日本军舰的经历与补给工作联系起来。这一事件见于石原明徳2024年发表的研究。",
+        "date": "2026-11-15",
+        "periods": [
+          "russian"
+        ],
+        "perspective": "据日本研究者石原明徳的研究",
+        "sections": [
+          {
+            "id": "menu",
+            "title": "军舰上的一天",
+            "paragraphs": [
+              "早餐是大米混大麦饭、干萝卜味噌汤和茶；午餐是罐头鲑鱼炖羊栖菜。研究者石原明徳在讨论日本舰队补给的文章中，列出了“三笠”号1904年5月30日的这份菜单。随着食物清单，旅顺封锁战的叙事中出现了舰上日常生活——这些细节在战斗出航的记述中往往难以看见。",
+              "据石原介绍，参与封锁行动后，“三笠”号自5月10日起在辽东以南岛屿的前进基地接受维护。这顿午餐的故事，就发生在旅顺港之外。"
+            ],
+            "refs": [
+              1
+            ]
+          },
+          {
+            "id": "illness",
+            "title": "午餐后，156人食物中毒",
+            "paragraphs": [
+              "石原将“三笠”号的156例食物中毒与午餐所用的鲑鱼罐头联系起来：这些罐头超过保存期限，已经变质。在他的文章中，菜单也成了舰队医疗史的一部分。",
+              "石原写道，1904年5月至6月，其他日本军舰也发生过食物中毒。他列举的资料涉及罐头、变质食品与发霉的面包，部分病例的原因未能查明。他还提到，“三笠”号曾尽量采用加热烹调的食物。"
+            ],
+            "refs": [
+              1
+            ]
+          },
+          {
+            "id": "supply",
+            "title": "舰队需要补给船",
+            "paragraphs": [
+              "食品的运输与储存，属于更大的补给问题。据石原研究，舰队最初由“松山丸”和“福冈丸”两艘补给船服务，计划约每六天向前方补给一次。但军舰分散部署，两艘船不敷使用。1904年8月，又加入“琴平丸”；此外也征用了其他船只，但它们缺乏储存食品所需的设备。",
+              "读旅顺封锁战的历史，视线通常从港内望向港外：俄国军舰在港内，日本军舰在外。“三笠”号的午餐带来了另一个观察尺度。参与封锁的军舰，自身也需要维护和安全的食物。一次次出海背后，是反复进行的日常工作。石原的研究让我们沿着食品运输，看到一次普通用餐如何演变成集体患病。"
+            ],
+            "refs": [
+              1
+            ]
+          }
+        ],
+        "limitations": [
+          "本文依据石原2024年的文章，未直接查阅原始医疗卷册。他引用的文献为《極秘 明治37.8年海戦史》第7部《医務衛生》第7卷；NIDS档号：⑨その他－千代田-536。",
+          "156是“三笠”号食物中毒的病例数，不是死亡人数，也不是整个舰队的损失。若要与被围旅顺的饥饿或死亡情况比较，还需要其他资料。",
+          "接受维护并不能证明该舰在修复战损。补给船不足与这批罐头变质之间的因果关系尚未确立。",
+          "1904年5月30日的菜单，与同一研究讨论的1905年5月27日对马海战战斗口粮有所区别。本文未转载这篇现代研究的插图与现成表格。"
+        ],
+        "sources": [
+          {
+            "id": 1,
+            "title": "日俄战争中的舰船后勤：胜仗晚餐吃饭团",
+            "author": "石原明徳，日本防卫研究所",
+            "date": "2024-05-28",
+            "url": "https://www.nids.mod.go.jp/publication/commentary/pdf/commentary324.pdf",
+            "locator": "NIDS Commentary，第324号，第7—8页；第10页注13。原文页码与PDF页码一致。",
+            "note": "原题：日露戦争における艦のロジスティクス―勝ち戦の夕食は握飯。这是一篇依据海军文献撰写的现代研究。菜单、食物中毒与补给船的资料均据作者转述，未另行核对原始医疗卷册。"
+          }
+        ],
+        "relatedNotes": [
+          "pervaya-tihookeanskaya-eskadra"
+        ],
+        "relatedSources": [
+          "nids-flot-snabzhenie-2024"
+        ],
+        "relatedPlaces": [
+          "gavan-port-artura"
+        ],
+        "relatedPeople": [],
+        "sourceLanguages": [
+          "ja"
+        ]
+      },
+      {
+        "slug": "bankovskiy-sluzhashchiy-dayrena",
+        "title": "银行职员眼中的大连货币往事",
+        "dek": "在孙耀庭后来的回忆中，货币史由银行、不同的支付工具，以及借贷的困难交织而成。",
+        "date": "2026-11-15",
+        "periods": [
+          "japanese"
+        ],
+        "perspective": "据中国银行从业者孙耀庭的回忆",
+        "sections": [
+          {
+            "id": "clerk",
+            "title": "天津街上的银行",
+            "paragraphs": [
+              "孙耀庭在回忆中留下了一个地址，可以作为认识日治时期大连货币史的起点：天津街，这是他写下回忆时的街名。据他说，他曾任职的日中合办龙口银行就在那里。讲述城市金融生活的，是一位熟悉银行内部运作的人。",
+              "孙耀庭写道，他自幼生活在大连，1930年进入银行业。他回顾了自己的工作、银行的变迁与合并，以及从练习生、雇员升至管理职位的经历。关于城市金融的讨论，由此有了明确的观察位置：银行内部的工作经验。",
+              "后来，他对日治时期大连的回忆收入《大连文史资料》第二辑。他从银行业内部看这座城市，既讲机构与支付工具，也关注借款人的处境。"
+            ],
+            "refs": [
+              1
+            ]
+          },
+          {
+            "id": "currency",
+            "title": "知道货币名称，还不足以读懂一笔交易",
+            "paragraphs": [
+              "孙耀庭笔下的大连，流通着多种支付工具。他提到日本纸币，称之为“金票”，也谈到银币和中国银行机构发行的纸币。仅这份清单就说明，若不交代币种与年代，很难用一个金额概括大连的货币生活。",
+              "发行货币的机构，地位也各不相同。据孙耀庭所述，当地中国银行机构发行纸币，须获日本当局批准，而且只能作为临时支付工具。他描述了日本纸币占主导的局面。在他的记述中，“用什么付款”的问题，也牵出了“谁有权发行、在什么条件下发行”的问题。",
+              "“金票”一词需要谨慎理解。这里指的是纸币，不能直接等同于金币。要分析某次购买或借款，仍须查明具体的货币发行种类、日期与收付条件。这篇回忆提供了名称与区别，核对可以由此开始。"
+            ],
+            "refs": [
+              1
+            ]
+          },
+          {
+            "id": "credit",
+            "title": "谁能借到钱",
+            "paragraphs": [
+              "孙耀庭谈到借贷时，货币史便成了能否获得贷款的问题。据他回忆，一般人很难向银行借款；向银行或钱庄借贷，需要足够的担保。他写到钱庄这种传统民间金融机构，也另行提到银行和钱庄之外的高利贷。对借款人来说，关键在于能否借到所需款项，以及须按什么条件偿还。",
+              "这是一位熟悉银行业务者的见证，但他的概括不能直接视为全城的统计结论。文章带有反殖民与阶级分析的评价语言，将日本金融机构置于剥削机制之中。这种语言也呈现了作者的立场，以及他后来如何理解自己的经历。",
+              "孙耀庭的回忆，让我们能够更准确地追问大连的货币生活。在把一笔旧金额换算成今天的卢布之前，需要先确定交易发生在何时、使用什么货币，以及参与者有哪些选择。这位银行职员为后续查找留下了职业、地址与相关机构。"
+            ],
+            "refs": [
+              1
+            ]
+          }
+        ],
+        "limitations": [
+          "本文使用图书馆PDF的第49—53页。文章后面还有内容，此次未通读全文；《大连文史资料》第二辑的出版日期尚未查明。",
+          "这份事后个人回忆不能代表大连所有中国居民。作者对货币流通与信贷的概括，仍须通过银行报表和契约核实。",
+          "本文未引用利率：所核对片段中的计息单位、期限与条件尚不足以准确确定。日治时期的情况不能直接套用于俄国时期的达里尼，或1913年俄国的物价。",
+          "天津街是回忆作者所称的“现在”的街名，今日名称未另行核对。具体建筑及其是否留存，尚未确定。"
+        ],
+        "sources": [
+          {
+            "id": 1,
+            "title": "日治时期大连的殖民地金融业，载《大连文史资料》第二辑",
+            "author": "孙耀庭",
+            "date": "本辑出版日期未详",
+            "url": "https://www.dl-library.net.cn/wenxian/wszl/2.pdf",
+            "locator": "图书馆PDF第49—53页：篇名见第49页；作者与入行经历见第50页；银行与货币见第52页；借贷见第52—53页。第49、51、53页可见页码，50、52页按顺序确定。",
+            "note": "原题：孙耀庭：日寇统治下的大连殖民地金融业 // 大连文史资料 第二辑。银行职员的事后回忆，数字版本由大连市图书馆提供。这是一份文字排版的图书馆PDF，本辑出版日期尚未确认。所核对片段未涵盖全文。"
+          }
+        ],
+        "relatedNotes": [
+          "skolko-eto-v-nyneshnih-dengah"
+        ],
+        "relatedSources": [
+          "sun-yaoting-bank-dayren"
+        ],
+        "relatedPlaces": [],
+        "relatedPeople": [],
+        "sourceLanguages": [
+          "zh"
+        ]
+      }
+    ],
     "src/i18n/zh/books.json": [
       {
         "slug": "martin-russko-yaponskaya-voyna",
@@ -20553,6 +20748,28 @@
         "articles": [
           "oborona-port-artura-vrachi-i-sestry"
         ]
+      },
+      {
+        "slug": "nids-flot-snabzhenie-2024",
+        "title": "日俄战争中的舰船后勤：胜仗晚餐吃饭团",
+        "kind": "other",
+        "author": "石原明徳",
+        "annotation": "日本防卫研究所研究文章，刊于NIDS Commentary第324号，2024年5月28日发表。第7—8页讨论补给船、“三笠”号1904年5月30日的菜单与食物中毒事件。这是一篇依据海军文献撰写的现代研究，未另行核对其引用的原始医疗卷册。",
+        "url": "https://www.nids.mod.go.jp/publication/commentary/pdf/commentary324.pdf",
+        "posts": [],
+        "image": null,
+        "articles": []
+      },
+      {
+        "slug": "sun-yaoting-bank-dayren",
+        "title": "日治时期大连的殖民地金融业",
+        "kind": "other",
+        "author": "孙耀庭",
+        "annotation": "银行职员的事后回忆，收入《大连文史资料》第二辑，本辑出版日期未详。在已核对的图书馆PDF第49—53页中，作者自述1930年进入银行业，并介绍货币流通与借贷情况。文章后面还有内容，未核对全文。数字版本由大连市图书馆提供。",
+        "url": "https://www.dl-library.net.cn/wenxian/wszl/2.pdf",
+        "posts": [],
+        "image": null,
+        "articles": []
       }
     ],
     "src/i18n/zh/photos.json": [
@@ -28053,7 +28270,11 @@
       "Выберите место, чтобы прочитать его историю, или маршрут для прогулки. На карте можно увидеть, что находится рядом, и собрать свой путь.": "选择一个地点阅读它的历史，或选择一条路线出游。地图上可以查看附近的地点，也可以规划自己的路线。",
       "Выбрать маршрут": "选择路线",
       "Выбрать город": "选择城市",
-      "Один город хранит следы нескольких эпох. На страницах мест собраны прежние названия, фотографии, связанные статьи и сведения для посещения.": "一座城市留存着不同时期的痕迹。各地点页面汇集旧称、照片、相关文章与探访信息。"
+      "Один город хранит следы нескольких эпох. На страницах мест собраны прежние названия, фотографии, связанные статьи и сведения для посещения.": "一座城市留存着不同时期的痕迹。各地点页面汇集旧称、照片、相关文章与探访信息。",
+      "Статьи по источникам": "循着史料读历史",
+      "Статьи": "文章",
+      "Что позволяет сказать источник": "这份资料能说明什么",
+      "В библиотеке сайта": "本站资料库"
     }
   },
   "ui": {
@@ -28110,18 +28331,20 @@
     "src/components/people/Portrait.astro": "aac47bd2e2c883ba9f3b7b3f68765717ed896842b79147528c6747ef9f332f1f",
     "src/components/people/relations.ts": "9c96c05dd9390ab0698b0ec9f808f5ed853e5f599cf9f4ead53987c40379d81b",
     "src/components/places/DossierHero.astro": "ac46a8467190b822b78833301bb00a5dea42a0f9b52d40c46932258323686004",
-    "src/components/places/DossierLinks.astro": "d0555f7b0d10894b08fdd9aa80c79f64ccc142b33e0959a1d322c75e40996185",
+    "src/components/places/DossierLinks.astro": "c1a25ed60b057ccda2083bb3b733dae4dd78575091b52f3ee3798de71ded7ff9",
     "src/components/places/GuideEvidence.astro": "b51e8c10605381694e20a9e4540601a8289a71f7319270f6310450394de73e9a",
     "src/components/places/PlaceDossier.astro": "ed236aab57a0dfadae507172fccc9823e09a5717a23338b02b39e32b7141f33d",
     "src/components/places/SourceAssessment.astro": "14c1fe79eac21983bb6b184614a198a7810660f085881a8ffbfa2b91fe95bc82",
-    "src/components/reading/ReadingShelf.astro": "f6895b9848805a18875fcd415593247eb83f0b354aaccc375fb78c4fc92fe211",
+    "src/components/reading/EssayCards.astro": "bc853e4fc3a20e6b670aec2dce148e79594e4f7542e57333a529c5182818bcb0",
+    "src/components/reading/ReadingShelf.astro": "7c4f434cc0d388feabd924338e6a4cd8057c6e0f114c3ff53aee8760da343c0c",
     "src/components/routes/WalkNavigation.astro": "5ca65c5a14d2d6fe9c5ebe5919802e69d8022be953cca6b770bb96e6a6382a6c",
     "src/components/routes/WalkOverview.astro": "008921fe555609bd7849dae3b9020b0ca14912cef4e8e62f4e5d37dfb10fb6a6",
-    "src/components/search/fallbackData.ts": "28536aaba32db92333d8d005c739d5dcb15d27319b21f0cebcb190325fbc063a",
+    "src/components/search/fallbackData.ts": "cbcbc158a2f780fae72690404632b6796312743295d8fa12226ea8cc8c07a48a",
     "src/components/search/indexEntries.ts": "94ac180f8d9500d0c12b9cbec4492ab43713bee645a9ac5443dabe98889e2c52",
     "src/layouts/Base.astro": "dcafb1a37483ac7d2b015d8b7bb5e1adde8b5bed70dfc260687d9f27d8defa66",
     "src/lib/art.ts": "39492c4be05988c568b4e0e226dafe8bb4287d3a5cfa662e1240b4e5bbae33cd",
-    "src/lib/data.ts": "91427586e8af9d94814149ccc6cf88a0d52a30716b29b60da4ab709aeff2d0e9",
+    "src/lib/data.ts": "7501f47261f002ad62f9242b34331b9b9d714db617dacdc8861dd062f01a0c55",
+    "src/lib/essays.ts": "b33f09bc94a62ab2b31b97f3a120b22d6ed0c8454800f1282fcbce4f17e6a588",
     "src/lib/evidence.ts": "7e268c863ef29957ed3be7df0baf5fd1d7fa357b3ea374983e4cae931845b0b7",
     "src/lib/mentionMatcher.ts": "1bedd5530e4a1cb6c87bc6ced24c2e72a80c36d56ffb3329391fca259a4e1ff8",
     "src/lib/mentions.ts": "bea0de38d54d69b55e48b3dfa8ac248eaea270a22ba841e00c2d26888ae1aea8",
@@ -28131,21 +28354,22 @@
     "src/pages/biblioteka/index.astro": "955f4fbfbdb4d337578027107b0e1a009af83c20578b96ae4e90150a5ddf1d02",
     "src/pages/biblioteka/istochniki/[slug].astro": "f6494dacafd8f746b06175f9e5583ab20509586f46d9578da97be1f744451f43",
     "src/pages/biblioteka/knigi/[slug].astro": "ca7d623d77eb0cca89722dc598746cd4d38e37a80b93ccf74b6921295c34239f",
-    "src/pages/index.astro": "1f440565dfba7e8b0db9803cb1f7e7547ce338c8e706488bdc6094a42cd956bb",
-    "src/pages/istoriya/[layer].astro": "158cc5a954fbca1cdcdbbab36b53daf44cf63b665f5783838738fa1678e831a6",
+    "src/pages/index.astro": "bf9ff6be0fc339d59ea40c03f14e0fa26ef1fac43e219282a30d93e00ff5b293",
+    "src/pages/istoriya/[layer].astro": "035064d171420a432f78098139cc372daf7b30d021fa5286499c2a776bc34ff3",
     "src/pages/istoriya/index.astro": "5d7aa3c72fd6a398059e40a197068cd817710fd2dfcfab0f829f66ee14a5527c",
     "src/pages/karta/index.astro": "b166b5102b321d47661ee977ff6aab96e606dab51e49739609e69171112454c3",
     "src/pages/lica/[slug].astro": "42fdcba4e3329ad53f6865b1647cf7cd9d10105a5934ffff54b0edd7bc468670",
     "src/pages/lica/index.astro": "5a6443a4d5d7479773588548464f79953992a5b5d4fe8bfca1d1ed4d64a3a8b2",
     "src/pages/marshruty/[slug].astro": "14986fa1e203b71d6cd25909be7cbe38d464a4d02c024f95b8f7d6cb192281f9",
     "src/pages/marshruty/index.astro": "80add3abcb36c2b739d65c2f4d425869fd872f0233909a8771092777d810cdc2",
-    "src/pages/mesta/[slug].astro": "1841bc2c478279d9e3c6187fdaccbaa27c8e8ef8fbd72e39468ed7d3b94d608a",
+    "src/pages/mesta/[slug].astro": "b946a1dfeea9fc57cb884af57b9e8fae77758258110e4418743b515b3bb8dd19",
     "src/pages/mesta/index.astro": "8a97aaba538fc9eff685af4167f45d40f3747b0dedd3cea3b8dbee9e2d5bfbd4",
     "src/pages/o-proekte/illyustratsii/index.astro": "30e83435689ea281e76e02e1d57bc69bd67f5b77da7fe769bc6ad6550c4e1a99",
     "src/pages/o-proekte/index.astro": "2d25caf6c87ad08b57e499c9d6df7e44d0e967b0fd1e84dc51ab1fffc6b13d1a",
-    "src/pages/poisk/index.astro": "c928a2433f47bbbf0f502d31111b2c2b0642f981248434e06b5350115c3081cf",
+    "src/pages/poisk/index.astro": "fdde9bf78c937271ae3cbf30acb2b1c5d67dbcb1baf8bb408d223e544f3f3a77",
     "src/pages/sezony/index.astro": "471d41d84d22c8483b55c417662ea451df8f223412bfe9651a4ac063792c3911",
     "src/pages/spravochnik/[kind]/[slug].astro": "a49cbb7b95b3bbbde7314dad04a8b8eb67b8a4dce30bed66f05a99b847b4844f",
+    "src/pages/stati/[slug].astro": "c1ccf9d64a19ac8849814eaa207d2a8d99fc2926d1232f27ffeff17b0d044da7",
     "src/pages/ukazatel/index.astro": "c664d0ca1b09a6e72ea12815f8c26409286cb05adcb95f15396788063a1e517c",
     "src/pages/zametki/[slug].astro": "c3ec3e9a7241eede46029b08b2fccb71bb70b1c0e43888fd7451c65f379968c1",
     "src/pages/zametki/index.astro": "f29ecb9c1beb972ca51da30eb11e7ac537ddcd29f45d230d4737b01a36a465a7",

@@ -6,10 +6,10 @@ import { href, url, TYPES } from '../../lib/data';
 import { fallbackItems } from '../../components/search/fallbackData';
 
 const POPULAR = ['Витте', 'Кондратенко', 'Укрепление № 5', 'Пикуль', 'Дальний'];
-const TABS = ['Заметки', 'Лица', 'Места', 'Книги'];
+const TABS = ['Статьи', 'Заметки', 'Лица', 'Места', 'Книги'];
 const typeColors = Object.fromEntries(Object.entries(TYPES).map(([k, v]) => [k, { label: v.label, color: v.color }]));
 const cfg = { base: url('/'), pagefind: url('/pagefind/pagefind.js'), types: typeColors,
-  tabs: { notes: 'Заметки', people: 'Лица', places: 'Места', books: 'Книги' },
+  tabs: { essays: 'Статьи', notes: 'Заметки', people: 'Лица', places: 'Места', books: 'Книги' },
 };
 ---
 <Base searchable={false} title="Поиск" description="Поиск по заметкам, людям, местам и книгам сайта «Портъ-Артуръ и Дальнiй»." section={null}>
@@ -273,7 +273,7 @@ const cfg = { base: url('/'), pagefind: url('/pagefind/pagefind.js'), types: typ
         hits.forEach((h) => { counts[h.tab] = (counts[h.tab] ?? 0) + 1; });
         total = hits.length;
         pending = hits.filter((h) => !tab || h.tab === tab).map((h) => async () => ({
-          url: h.url, title: h.title, excerpt: highlight(h.text, q), meta: h.meta, color: h.color ?? TAB_COLOR[h.tab], image: h.image,
+          url: h.url, title: h.title, excerpt: highlight(h.text, q), meta: h.meta, color: h.color ?? TAB_COLOR[h.tab] ?? 'var(--sea)', image: h.image,
         }));
       }
       setTabs(counts, total);

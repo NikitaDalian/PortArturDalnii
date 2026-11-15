@@ -1,0 +1,96 @@
+---
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import LinkedText from '../../components/LinkedText.astro';
+import { mentionContext } from '../../lib/mentions';
+import { essays, type Essay } from '../../lib/essays';
+import { href, articleBySlug, placeBySlug, sourceBySlug, layerByKey, fmtDate } from '../../lib/data';
+import { locale } from '../../i18n/locale';
+export function getStaticPaths() { return essays.map(essay => ({ params: { slug: essay.slug }, props: { essay } })); }
+const { essay: e } = Astro.props as { essay: Essay };
+const mentions = mentionContext();
+const text = e.sections.flatMap(s=>s.paragraphs).join(' ');
+const minutes = Math.max(1,Math.ceil(locale === 'zh' ? text.replace(/\s/g,'').length / 350 : text.split(/\s+/).length / 170));
+const notes = e.relatedNotes.map(s=>articleBySlug.get(s)).filter(Boolean);
+const places = e.relatedPlaces.map(s=>placeBySlug.get(s)).filter(Boolean);
+const records = e.relatedSources.map(s=>sourceBySlug.get(s)).filter(Boolean);
+const periods = e.periods.map(layerByKey).filter(Boolean);
+---
+<Base title={e.title} description={e.dek} section="notes">
+  <header class="essay-head dark">
+    <div class="container">
+      <Crumbs items={[{label:'Главная',href:href.home()},{label:'Статьи и заметки',href:href.notes()}]} />
+      <div class="essay-head__text">
+        <p class="meta">{e.perspective}</p>
+        <h1 data-pagefind-meta="title">{e.title}</h1>
+        <p class="essay-dek">{e.dek}</p>
+        <p class="essay-meta"><span>{minutes} мин чтения</span><time datetime={e.date}>{fmtDate(e.date)}</time></p>
+        <span hidden data-pagefind-filter="type:Статьи"></span>
+        <span hidden data-pagefind-meta={`sub:${e.perspective}`}></span>
+      </div>
+    </div>
+  </header>
+  <article class="container section essay-layout">
+    <aside class="essay-aside" data-pagefind-ignore>
+      <nav aria-label="Содержание статьи">
+        <p class="essay-nav-title">В статье</p>
+        <ol>{e.sections.map(s=><li><a href={`#${s.id}`}>{s.title}</a></li>)}<li><a href="#essay-sources">Источники</a></li></ol>
+      </nav>
+      <div class="essay-periods">{periods.map(p=><a class="text-link" href={href.layer(p!.key)}>{p!.title}</a>)}</div>
+    </aside>
+    <div class="essay-body">
+      {e.sections.map(s=><section class="essay-section" id={s.id} aria-labelledby={`${s.id}-title`}>
+        <h2 id={`${s.id}-title`}>{s.title}</h2>
+        <div class="prose">{s.paragraphs.map(p=><p><LinkedText text={p} context={mentions} /></p>)}</div>
+        <p class="meta essay-refs">Источники: {s.refs.map((ref,i)=><>{i>0&&', '}<a href={`#source-${ref}`}>[{ref}]</a></>)}</p>
+      </section>)}
+      <aside class="essay-limits" aria-labelledby="limits-title">
+        <h2 id="limits-title">Что позволяет сказать источник</h2>
+        {e.limitations.map(p=><p>{p}</p>)}
+      </aside>
+      <section class="essay-section essay-sources" id="essay-sources" aria-labelledby="sources-title">
+        <h2 id="sources-title">Источники</h2>
+        <ol>{e.sources.map(s=><li id={`source-${s.id}`}>
+          <a class="text-link" href={s.url} target="_blank" rel="noopener">{s.title}</a>
+          <p>{s.author} · {s.date}</p><p>{s.locator}</p><p class="meta">{s.note}</p>
+        </li>)}</ol>
+        {records.length>0&&<div class="essay-library"><h3>В библиотеке сайта</h3>{records.map(s=><a class="text-link" href={href.source(s!.slug)}>{s!.title}</a>)}</div>}
+      </section>
+      {(notes.length>0||places.length>0)&&<nav class="essay-related" aria-label="Продолжить чтение" data-pagefind-ignore>
+        <h2>Продолжить чтение</h2>
+        {notes.map(a=><a class="text-link" href={href.note(a!.slug)}>{a!.title}</a>)}
+        {places.map(p=><a class="text-link" href={href.place(p!.slug)}>{p!.name}</a>)}
+      </nav>}
+    </div>
+  </article>
+</Base>
+<style>
+  .essay-head { padding:32px 0 52px; }
+  .essay-head__text { max-width:900px; padding-top:32px; }
+  .essay-head h1 { font-size:clamp(36px,5vw,66px); line-height:1.1; letter-spacing:-.025em; margin:18px 0 24px; text-wrap:balance; }
+  .essay-dek { max-width:64ch; font-size:clamp(19px,1.8vw,23px); line-height:1.6; color:var(--mist); }
+  .essay-meta { display:flex; flex-wrap:wrap; gap:10px 24px; margin-top:24px; font-size:14px; color:var(--steel); }
+  .essay-layout { display:grid; grid-template-columns:minmax(180px,1fr) minmax(0,3fr); gap:40px 64px; align-items:start; }
+  .essay-aside { position:sticky; top:calc(var(--header-h) + 28px); font-size:15px; }
+  .essay-nav-title { font-weight:650; margin-bottom:12px; }
+  .essay-aside ol { padding:0; list-style:none; }
+  .essay-aside li a { display:block; padding:8px 0; line-height:1.5; }
+  .essay-aside a:hover { text-decoration:underline; }
+  .essay-periods { display:flex; flex-direction:column; gap:12px; margin-top:24px; padding-top:20px; border-top:1px solid var(--line); }
+  .essay-body { max-width:72ch; }
+  .essay-section + .essay-section { margin-top:48px; }
+  .essay-body h2 { font-size:clamp(25px,2.4vw,32px); line-height:1.25; margin-bottom:24px; }
+  .essay-body :global(.prose) { font-size:clamp(18px,1.5vw,20px); line-height:1.8; }
+  .essay-refs { margin-top:16px; }
+  .essay-limits { margin:48px 0; border-left:3px solid var(--accent); padding-left:24px; font-size:16px; line-height:1.7; }
+  .essay-limits h2 { font-size:22px; margin-bottom:14px; }
+  .essay-limits p + p { margin-top:12px; }
+  .essay-sources { border-top:1px solid var(--line); padding-top:32px; font-size:16px; line-height:1.65; }
+  .essay-sources ol { padding-left:22px; }
+  .essay-sources li + li { margin-top:24px; }
+  .essay-sources p { margin-top:8px; }
+  .essay-library, .essay-related { display:flex; flex-direction:column; gap:16px; margin-top:32px; }
+  .essay-related { border-top:1px solid var(--line); padding-top:32px; }
+  @media(max-width:850px) { .essay-layout { grid-template-columns:1fr; gap:32px; }.essay-aside{position:static}.essay-aside nav{padding-bottom:18px;border-bottom:1px solid var(--line)}.essay-periods{border:0;margin-top:12px;padding:0}.essay-head{padding-bottom:36px} }
+  @media print { .essay-aside{display:none}.essay-layout{display:block}.essay-head{background:white;color:#183448}.essay-dek,.essay-meta{color:#34444f}.essay-body{max-width:none}.essay-body section{break-inside:auto}.essay-body h2{break-after:avoid}.essay-body p{orphans:3;widows:3} }
+</style>

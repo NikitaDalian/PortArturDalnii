@@ -1,11 +1,12 @@
 {
   "data/articles.json": "e4c02d970facf9cf1d69b0f9baa0819f25708e3a1becffc0f4ae6449b6d78419",
+  "data/essays.json": "6b9ea8db7d25b42f2099aa541e1d7fe91ad6d4208db1d18e81280e05e05c82e6",
   "data/books.json": "f22f91c113300c2d02564e7664459c2cb4c99f5672d4840aa234ab1292cf828b",
   "data/people.json": "85244753efdd01808a7e72a3acd3bc104922ec0632dac051b509df383dd5a429",
   "data/places.json": "46a14a874ea1c415269013a64e74ffddd6c0af489bad7676290638c23ab82949",
   "data/routes.json": "1f5cb8bfb4fa30f94671e09edb717cb4a56551d7214ff527552f4ecc2bb2dc06",
   "data/series.json": "227b07cbf9c16302f3e743a58984e93ffd4e2c4076426f9c11dc088d2a2ae65f",
-  "data/sources.json": "d4379986065b42f44cf41bd76c236880a72f8d6c9dcf7304c8877ea2ac218f06",
+  "data/sources.json": "1399bd468122a4196355a88d710620be3cac0cf241a61922b66ad52f6ebe5ce7",
   "data/photos.json": "7f7babb7401eb96fee4464c3dd3e5925782d82967d5442ae9cb8d4268bc17e05",
   "data/seasons.json": "255b80af6cb222943564cb29369d7af4470baed57828e170185064bfced18359",
   "data/index_terms.json": "8a9ff02e962aa0145b124e16cde71d70c8eb8d6d1a92493feb916dbb885b2965",

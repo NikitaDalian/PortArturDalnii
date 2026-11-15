@@ -1,5 +1,7 @@
 ---
 import { dossiers } from '../places/dossiers';
+import { essays } from '../../lib/essays';
+import EssayCards from './EssayCards.astro';
 import readings from '../../data/document_readings.json';
 import { href, imgCrop } from '../../lib/data';
 interface Props { id?: string; title?: string }
@@ -11,6 +13,7 @@ const cards = [
 ---
 <section class="section paper" id={id} aria-labelledby={`${id}-title`}>
   <div class="container">
+    <EssayCards items={essays} />
     <div class="section-head"><div class="stack" style="--stack-gap:12px">
       <h2 class="h2" id={`${id}-title`}>{title}</h2>
       <p class="lead">История города, гавани и укреплений. Полные статьи с иллюстрациями, пояснениями и источниками.</p>
@@ -30,6 +33,7 @@ const cards = [
 </section>
 <style>
   .reading-shelf { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:40px 32px; }
+  .container > :global(.essay-selection) { margin-bottom:48px; }
   .reading-story { display:grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr); gap:24px; align-items:start; }
   .reading-story__image img { width:100%; height:auto; aspect-ratio:3/2; object-fit:cover; }
   .reading-story__body { display:flex; flex-direction:column; gap:12px; }

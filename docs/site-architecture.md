@@ -12,9 +12,11 @@ existing URLs and share navigation with the places catalogue.
 The reading catalogue distinguishes complete on-site articles from summaries of
 Telegram posts. `ReadingShelf` selects existing place essays and document
 readings from their canonical records. It never copies their text to another
-URL. Add future standalone essays to a dedicated content collection and the
-reading index rather than forcing them into a place record. Existing links and
-canonical URLs must continue to work.
+URL. Standalone essays live in the translated `essays.json` collection and at
+`/stati/{slug}/`. Their own source references, provenance and limitations are
+required; they are not imported channel posts. `lib/essays.ts` connects them to
+period pages, the reading catalogue and existing notes/source records. Existing
+links and canonical URLs must continue to work.
 
 ## Period, publication date, source and perspective
 

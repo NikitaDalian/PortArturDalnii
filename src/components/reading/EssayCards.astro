@@ -1,0 +1,27 @@
+---
+import { href } from '../../lib/data';
+import type { Essay } from '../../lib/essays';
+interface Props { items: Essay[]; title?: string }
+const { items, title = 'Статьи по источникам' } = Astro.props;
+---
+{items.length > 0 && <div class="essay-selection">
+  <h2 class="h2">{title}</h2>
+  <div class="essay-cards">
+    {items.map(e => <article class="essay-card">
+      <p class="meta">{e.perspective}</p>
+      <h3><a href={href.essay(e.slug)}>{e.title}</a></h3>
+      <p>{e.dek}</p>
+      <a class="text-link" href={href.essay(e.slug)}>Читать статью</a>
+    </article>)}
+  </div>
+</div>}
+<style>
+  .essay-selection > h2 { margin-bottom:28px; }
+  .essay-cards { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:32px; }
+  .essay-card { border-top:3px solid var(--accent); padding:24px 0 12px; display:flex; flex-direction:column; gap:16px; }
+  .essay-card h3 { font-size:clamp(25px,2.3vw,32px); line-height:1.2; }
+  .essay-card h3 a:hover { text-decoration:underline; }
+  .essay-card > p:not(.meta) { line-height:1.7; max-width:60ch; }
+  .essay-card .text-link { align-self:flex-start; margin-top:auto; display:inline-flex; align-items:center; min-height:44px; }
+  @media(max-width:680px) { .essay-cards { grid-template-columns:1fr; gap:24px; } }
+</style>

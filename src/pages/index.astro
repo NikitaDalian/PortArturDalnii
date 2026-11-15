@@ -1,5 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
+import EssayCards from '../components/reading/EssayCards.astro';
+import { essays } from '../lib/essays';
 import Hero from '../components/home/Hero.astro';
 import ReadFirst from '../components/home/ReadFirst.astro';
 import LayersGrid from '../components/home/LayersGrid.astro';
@@ -27,6 +29,7 @@ const latest = [...articles].sort((a, b) => b.date.localeCompare(a.date)).slice(
 ---
 <Base searchable={false}>
   <Hero />
+  {essays.length > 0 && <section class="container section"><EssayCards items={essays} /></section>}
   <ReadFirst />
   <LayersGrid />
   <MapTeaser />

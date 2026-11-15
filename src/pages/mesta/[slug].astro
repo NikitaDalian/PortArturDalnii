@@ -1,5 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
+import EssayCards from '../../components/reading/EssayCards.astro';
+import { essays } from '../../lib/essays';
 import LinkedText from '../../components/LinkedText.astro';
 import { mentionContext } from '../../lib/mentions';
 import DossierHero from '../../components/places/DossierHero.astro';
@@ -37,6 +39,7 @@ const unsure = isUncertain(p);
 const conf: Record<string, string> = { high: 'точная', medium: 'примерная', low: 'приблизительная, уточняется' };
 const seasons = ((p.season || []) as string[]).filter((s) => SEASONS[s]);
 const city = CITIES[p.city] ?? '';
+const placeEssays = essays.filter(e => e.relatedPlaces.includes(p.slug));
 ---
 <Base title={dossier?.title ?? p.name} description={(dossier?.intro ?? p.summary).slice(0, 180)} image={img(cover)} section={dossier ? "notes" : "places"}>
   {dossier ? <DossierHero dossier={dossier} city={city} /> : <PageHero
@@ -119,6 +122,7 @@ const city = CITIES[p.city] ?? '';
     </section>
   )}
 
+  {placeEssays.length > 0 && <section class="container section--tight"><EssayCards items={placeEssays} /></section>}
   {notes.length > 0 && (
     <section class="section section--tight" aria-labelledby="pl-notes">
       <div class="container">

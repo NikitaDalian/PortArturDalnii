@@ -1,6 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
 import LinkedText from '../../components/LinkedText.astro';
+import EssayCards from '../../components/reading/EssayCards.astro';
+import { essaysForPeriod } from '../../lib/essays';
 import { mentionContext } from '../../lib/mentions';
 const mentions = mentionContext();
 import PageHero from '../../components/PageHero.astro';
@@ -83,6 +85,7 @@ const placesTitle = key === 'modern' ? 'Где искать следы сего�
     </div>
   </section>
 
+  {essaysForPeriod(key).length > 0 && <section class="container section"><EssayCards items={essaysForPeriod(key)} /></section>}
   <section class="paper section" aria-labelledby="notes-h" data-filter-root>
     <div class="container">
       <div class="section-head">
