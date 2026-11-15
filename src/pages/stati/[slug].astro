@@ -44,12 +44,12 @@ const periods = e.periods.map(layerByKey).filter(Boolean);
         <div class="prose">{s.paragraphs.map(p=><p><LinkedText text={p} context={mentions} /></p>)}</div>
         <p class="meta essay-refs">Источники: {s.refs.map((ref,i)=><>{i>0&&', '}<a href={`#source-${ref}`}>[{ref}]</a></>)}</p>
       </section>)}
-      <aside class="essay-limits" aria-labelledby="limits-title">
-        <h2 id="limits-title">Что позволяет сказать источник</h2>
-        {e.limitations.map(p=><p>{p}</p>)}
-      </aside>
       <section class="essay-section essay-sources" id="essay-sources" aria-labelledby="sources-title">
         <h2 id="sources-title">Источники</h2>
+        <details class="essay-limits" data-pagefind-ignore>
+          <summary>Об источнике и проверке фактов</summary>
+          {e.limitations.map(p=><p>{p}</p>)}
+        </details>
         <ol>{e.sources.map(s=><li id={`source-${s.id}`}>
           <a class="text-link" href={s.url} target="_blank" rel="noopener">{s.title}</a>
           <p>{s.author} · {s.date}</p><p>{s.locator}</p><p class="meta">{s.note}</p>
@@ -82,8 +82,9 @@ const periods = e.periods.map(layerByKey).filter(Boolean);
   .essay-body h2 { font-size:clamp(25px,2.4vw,32px); line-height:1.25; margin-bottom:24px; }
   .essay-body :global(.prose) { font-size:clamp(18px,1.5vw,20px); line-height:1.8; }
   .essay-refs { margin-top:16px; }
-  .essay-limits { margin:48px 0; border-left:3px solid var(--accent); padding-left:24px; font-size:16px; line-height:1.7; }
-  .essay-limits h2 { font-size:22px; margin-bottom:14px; }
+  .essay-limits { margin:0 0 28px; border-left:3px solid var(--accent); padding-left:20px; font-size:16px; line-height:1.7; }
+  .essay-limits summary { cursor:pointer; font-weight:600; padding:8px 0; }
+  .essay-limits summary:focus-visible { outline:2px solid var(--accent); outline-offset:4px; }
   .essay-limits p + p { margin-top:12px; }
   .essay-sources { border-top:1px solid var(--line); padding-top:32px; font-size:16px; line-height:1.65; }
   .essay-sources ol { padding-left:22px; }

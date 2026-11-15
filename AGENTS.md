@@ -1,3 +1,11 @@
+## Editorial writing
+
+For new historical posts and substantial prose rewrites, use
+`editorial/viktoria-posts/SKILL.md` and its original-post examples. Victoria's
+existing channel voice is the reference; internal research briefs are not
+publication-ready articles. Keep factual checks and source attribution while
+writing for readers. Do not invent the author's personal experiences.
+
 ## Development
 
 When starting the dev server, use background mode:

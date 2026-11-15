@@ -1,16 +1,247 @@
 {
   "version": 1,
   "locale": "zh",
-  "commit": "38c2387234579db72161c7bb27ea3661349d469d",
-  "reviewedAt": "2026-11-15T13:00:29.086Z",
-  "reviewedPacket": "da3fcbf8caf19e6169effc9f91a1e3c3a7c7990cf02c05bfbd42b2ae282b5eaa",
+  "commit": "6dc7cd311d3f00336cc249b4e488104f29fbcdb1",
+  "reviewedAt": "2026-11-15T13:14:28.159Z",
+  "reviewedPacket": "dcb3f96a754e035f3f077e819110e53b8b9040240aeb27f9df7cf7c9ac412ae8",
   "reviewedItems": [
     {
-      "id": "9b185ec350d1d0b7394d",
+      "id": "8c1bc5fa5eb6ac68aee0",
+      "file": "data/essays.json",
+      "path": "/@slug=mikasa-obed-i-snabzhenie/title",
+      "action": "translated",
+      "note": "Rewrote the Chinese title around the same concrete reader-facing question as the final Russian, rather than retaining the earlier research-summary title."
+    },
+    {
+      "id": "0ebfa32b9f93f9f0505c",
+      "file": "data/essays.json",
+      "path": "/@slug=mikasa-obed-i-snabzhenie/dek",
+      "action": "translated",
+      "note": "Translated the new concrete opening summary, keeping the named food or currencies and the same factual emphasis without adding an invented scene."
+    },
+    {
+      "id": "b8752ccfbef67e5aed28",
+      "file": "data/essays.json",
+      "path": "/@slug=mikasa-obed-i-snabzhenie/sections/@id=menu/title",
+      "action": "translated",
+      "note": "Translated the new heading around lunch at the forward base."
+    },
+    {
+      "id": "f8e0a858891618750c89",
+      "file": "data/essays.json",
+      "path": "/@slug=mikasa-obed-i-snabzhenie/sections/@id=menu/paragraphs/0",
+      "action": "translated",
+      "note": "Rewrote the full breakfast/lunch/dinner sequence, including rice at lunch, pickles, barley tea, rusks and beef with potatoes; retained 30May1904."
+    },
+    {
+      "id": "7673635f3e02fe1f25cc",
+      "file": "data/essays.json",
+      "path": "/@slug=mikasa-obed-i-snabzhenie/sections/@id=menu/paragraphs/1",
+      "action": "translated",
+      "note": "Translated the location and maintenance sequence naturally, retaining10May, the islands south of Liaodong and attribution to Ishihara2024."
+    },
+    {
+      "id": "eef45b9b4eb9eba447a5",
+      "file": "data/essays.json",
+      "path": "/@slug=mikasa-obed-i-snabzhenie/sections/@id=illness/title",
+      "action": "translated",
+      "note": "Translated the conversational point that canned food can also spoil."
+    },
+    {
+      "id": "e87fcb20718b476a3f34",
+      "file": "data/essays.json",
+      "path": "/@slug=mikasa-obed-i-snabzhenie/sections/@id=illness/paragraphs/0",
+      "action": "translated",
+      "note": "Translated156 sick after lunch and Ishihara attribution, expired salmon cans and the limit of long-term storage; did not turn cases into deaths."
+    },
+    {
+      "id": "14913f1ae76a5d71ede6",
+      "file": "data/essays.json",
+      "path": "/@slug=mikasa-obed-i-snabzhenie/sections/@id=illness/paragraphs/1",
+      "action": "translated",
+      "note": "Translated other May–June1904 poisonings, spoiled cans and mouldy bread, unresolved food attribution in some cases and heated food on Mikasa."
+    },
+    {
+      "id": "d7a5ab03ec80de13bda5",
+      "file": "data/essays.json",
+      "path": "/@slug=mikasa-obed-i-snabzhenie/sections/@id=supply/title",
+      "action": "translated",
+      "note": "Translated the concrete shortage of two supply vessels."
+    },
+    {
+      "id": "75f04fd1dfc85d8245c9",
+      "file": "data/essays.json",
+      "path": "/@slug=mikasa-obed-i-snabzhenie/sections/@id=supply/paragraphs/0",
+      "action": "translated",
+      "note": "Translated the two named supply ships, approximately six-day plan and dispersed operations in direct Chinese prose."
+    },
+    {
+      "id": "b9dba66e9a4a659d478b",
+      "file": "data/essays.json",
+      "path": "/@slug=mikasa-obed-i-snabzhenie/sections/@id=supply/paragraphs/1",
+      "action": "translated",
+      "note": "Translated the August1904 additions, storage-equipment limit and delivery ending without asserting that vessel shortages caused this particular poisoning."
+    },
+    {
+      "id": "1ca79f32897015e6d648",
+      "file": "data/essays.json",
+      "path": "/@slug=mikasa-obed-i-snabzhenie/limitations/0",
+      "action": "translated",
+      "note": "Translated the condensed source limitation: Ishihara2024 is the account used, the medical archive was not independently checked, and156 means poisoning cases, not deaths."
+    },
+    {
+      "id": "d0c1631d9d0057d06e5d",
+      "file": "data/essays.json",
+      "path": "/@slug=mikasa-obed-i-snabzhenie/limitations/1",
+      "action": "translated",
+      "note": "Translated the condensed source limitation: Storage of this batch remains unknown; shortage of supply vessels is not an established cause of its spoilage."
+    },
+    {
+      "id": "c19324bdbf40101e4c01",
+      "file": "data/essays.json",
+      "path": "/@slug=mikasa-obed-i-snabzhenie/limitations/2",
+      "action": "deleted",
+      "note": "Removed the obsolete limitations entry from the Chinese array to match the final Russian reduction; retained only the current narrative or the two substantial source limitations."
+    },
+    {
+      "id": "bf94536f06d65f4ec2af",
+      "file": "data/essays.json",
+      "path": "/@slug=mikasa-obed-i-snabzhenie/limitations/3",
+      "action": "deleted",
+      "note": "Removed the obsolete limitations entry from the Chinese array to match the final Russian reduction; retained only the current narrative or the two substantial source limitations."
+    },
+    {
+      "id": "813b4766599837e596d3",
+      "file": "data/essays.json",
+      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/title",
+      "action": "translated",
+      "note": "Rewrote the Chinese title around the same concrete reader-facing question as the final Russian, rather than retaining the earlier research-summary title."
+    },
+    {
+      "id": "54773491c44186a67ccf",
+      "file": "data/essays.json",
+      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/dek",
+      "action": "translated",
+      "note": "Translated the new concrete opening summary, keeping the named food or currencies and the same factual emphasis without adding an invented scene."
+    },
+    {
+      "id": "8efe42b3ce113f6a23f7",
+      "file": "data/essays.json",
+      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/sections/@id=clerk/title",
+      "action": "translated",
+      "note": "Translated the new reader-oriented heading about identifying money before converting amounts."
+    },
+    {
+      "id": "0e4f1e98e8966f7109b5",
+      "file": "data/essays.json",
+      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/sections/@id=clerk/paragraphs/0",
+      "action": "translated",
+      "note": "Rebuilt the familiar present-value question in conversational Chinese, preserving the earlier rouble article and simultaneous currency types in Japanese-era Dalian."
+    },
+    {
+      "id": "a964eea5101b705ca7e9",
+      "file": "data/essays.json",
+      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/sections/@id=clerk/paragraphs/1",
+      "action": "translated",
+      "note": "Translated Sun childhood, banking career from1930 and progression to management; did not imply1930 was his Longkou Bank start date."
+    },
+    {
+      "id": "b2c0db62419966fa7304",
+      "file": "data/essays.json",
+      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/sections/@id=clerk/paragraphs/2",
+      "action": "translated",
+      "note": "Translated龙口银行, joint Japanese-Chinese institution,天津街 as the memoir-time name, mergers and volume2, retaining the narrative focus on money and borrowing."
+    },
+    {
+      "id": "3b7179a2ccd1eeb2d3dd",
+      "file": "data/essays.json",
+      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/sections/@id=currency/title",
+      "action": "translated",
+      "note": "Translated the silver portraits/paper gold heading through the Chinese金 term without suggesting actual gold coins."
+    },
+    {
+      "id": "ca0b5403f2e9ce305c49",
+      "file": "data/essays.json",
+      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/sections/@id=currency/paragraphs/0",
+      "action": "translated",
+      "note": "Translated Yuan Shikai/Sun Yat-sen silver portraits, small silver, copper and paper notes, explicitly preserving金票 as paper money."
+    },
+    {
+      "id": "cce2330d0cba76b8c219",
+      "file": "data/essays.json",
+      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/sections/@id=currency/paragraphs/1",
+      "action": "translated",
+      "note": "Retained Sun attribution, predominance of Japanese notes, local Chinese issuance permission and temporary-payment status without adding an issuer identity."
+    },
+    {
+      "id": "64436e8af99591abc58f",
+      "file": "data/essays.json",
+      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/sections/@id=currency/paragraphs/2",
+      "action": "deleted",
+      "note": "Removed the obsolete paragraphs entry from the Chinese array to match the final Russian reduction; retained only the current narrative or the two substantial source limitations."
+    },
+    {
+      "id": "b30fb80515213503f6d7",
+      "file": "data/essays.json",
+      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/sections/@id=credit/title",
+      "action": "translated",
+      "note": "Translated the turn from city finance to residents access to borrowing as a natural Chinese question."
+    },
+    {
+      "id": "c7813b80c72d733cddc4",
+      "file": "data/essays.json",
+      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/sections/@id=credit/paragraphs/0",
+      "action": "translated",
+      "note": "Translated the industrial/trading city, borrowing demand, ordinary Chinese residents difficulty and sufficient guarantee, with Sun attribution."
+    },
+    {
+      "id": "955fa61c8dd7145e88b9",
+      "file": "data/essays.json",
+      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/sections/@id=credit/paragraphs/1",
+      "action": "translated",
+      "note": "Translated钱庄 as traditional private lending institutions, guarantees and higher-than-bank rates; kept external private moneylenders separate and attributed the sharp ruin judgement to Sun."
+    },
+    {
+      "id": "740e4eae800d521f986f",
+      "file": "data/essays.json",
+      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/sections/@id=credit/paragraphs/2",
+      "action": "deleted",
+      "note": "Removed the obsolete paragraphs entry from the Chinese array to match the final Russian reduction; retained only the current narrative or the two substantial source limitations."
+    },
+    {
+      "id": "fcb37362b1557cedf42f",
+      "file": "data/essays.json",
+      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/limitations/0",
+      "action": "translated",
+      "note": "Translated the condensed memoir limitation: only PDF49–53 checked, volume2 publication date unknown, Tianjin Street is the memoir author name and the building is unidentified."
+    },
+    {
+      "id": "d6fb829277b55f13df32",
+      "file": "data/essays.json",
+      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/limitations/1",
+      "action": "translated",
+      "note": "Translated the condensed memoir limitation: retrospective personal and class/anticolonial viewpoint, no exact rates, no extrapolation to all residents or Russian-period money."
+    },
+    {
+      "id": "b6231e64099cf3bbf2ff",
+      "file": "data/essays.json",
+      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/limitations/2",
+      "action": "deleted",
+      "note": "Removed the obsolete limitations entry from the Chinese array to match the final Russian reduction; retained only the current narrative or the two substantial source limitations."
+    },
+    {
+      "id": "28d7d5c3f454a9fe75d5",
+      "file": "data/essays.json",
+      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/limitations/3",
+      "action": "deleted",
+      "note": "Removed the obsolete limitations entry from the Chinese array to match the final Russian reduction; retained only the current narrative or the two substantial source limitations."
+    },
+    {
+      "id": "1f40c6ea80a9c70226ed",
       "file": "UI source files",
       "path": "",
-      "action": "unchanged",
-      "note": "Inspected the search fallback color fix: h.color and TAB_COLOR[h.tab] now fall back to the CSS variable var(--sea), preventing an undefined value before replace. This only changes presentation logic and adds no reader-facing text. Existing Chinese translations remain valid."
+      "action": "translated",
+      "note": "Checked the essay template change moving limits into details. Added Chinese 关于资料与事实核对 for the new summary Об источнике и проверке фактов; the prior label can remain for compatibility. Root handles rendered QA before final review."
     }
   ],
   "sources": {
@@ -3077,8 +3308,8 @@
     "data/essays.json": [
       {
         "slug": "mikasa-obed-i-snabzhenie",
-        "title": "Обед на «Микасе»: снабжение и болезнь за линией блокады",
-        "dek": "Меню 30 мая 1904 года связывает историю японского корабля с работой снабженцев. Эпизод известен по исследованию Акинори Исихары, опубликованному в 2024 году.",
+        "title": "Что ели на «Микасе» и почему заболели 156 человек",
+        "dek": "30 мая 1904 года в меню «Микасы» были рис с ячменём, лосось и говядина с картофелем. Лососевые консервы оказались испорченными.",
         "date": "2026-11-15",
         "periods": [
           "russian"
@@ -3087,10 +3318,10 @@
         "sections": [
           {
             "id": "menu",
-            "title": "Один день на корабле",
+            "title": "Обед на передовой базе",
             "paragraphs": [
-              "На завтрак рис с ячменём, мисо-суп с сушёным дайконом и чай; в обед тушёный консервированный лосось с водорослями хидзики. Такое меню «Микасы» на 30 мая 1904 года приводит исследователь Акинори Исихара в статье о снабжении японского флота. Через перечень продуктов в историю блокады Порт-Артура входит повседневная корабельная жизнь, которую трудно разглядеть за описаниями боевых выходов.",
-              "По изложению Исихары, после участия в блокадных операциях «Микаса» с 10 мая проходила техническое обслуживание на передовой базе у островов южнее Ляодуна. Здесь, вне порт-артурской гавани, и разворачивается история обеда."
+              "На завтрак рис с ячменём, мисо-суп с сушёным дайконом и чай. В обед снова рис, а к нему тушёный консервированный лосось с водорослями хидзики, соленья и ячменный чай. На ужин полагались сухари и жаркое из говядины с картофелем. Так выглядело меню «Микасы» на 30 мая 1904 года.",
+              "В это время корабль стоял на передовой базе у островов южнее Ляодуна. После участия в блокаде Порт-Артура он с 10 мая проходил техническое обслуживание. Об этом эпизоде рассказал японский историк Акинори Исихара в исследовании о снабжении флота, опубликованном в 2024 году."
             ],
             "refs": [
               1
@@ -3098,10 +3329,10 @@
           },
           {
             "id": "illness",
-            "title": "После обеда заболели 156 человек",
+            "title": "Консервы тоже портятся",
             "paragraphs": [
-              "Исихара связывает 156 случаев пищевого отравления на «Микасе» с лососевыми консервами, поданными на этот обед: они испортились после превышения срока хранения. В его статье меню становится частью медицинской истории флота.",
-              "В мае и июне 1904 года, пишет Исихара, отравления происходили и на других японских кораблях. В приведённых им сведениях встречаются консервы, испорченные продукты и заплесневевший хлеб. В отдельных случаях причину установить не удалось. Автор также отмечает стремление готовить на «Микасе» пищу с тепловой обработкой."
+              "После этого обеда на корабле заболели 156 человек. Исихара связывает отравление с лососевыми консервами: срок хранения был превышен, содержимое испортилось. Консервы удобны тем, что их можно надолго убрать в запас. Но и у этого запаса был свой предел.",
+              "И это был не единственный случай. В мае и июне 1904 года отравления происходили и на других японских кораблях. Среди причин встречаются испорченные консервы и заплесневевший хлеб; иногда установить виновный продукт не удавалось. На «Микасе» старались подавать пищу с тепловой обработкой."
             ],
             "refs": [
               1
@@ -3109,10 +3340,10 @@
           },
           {
             "id": "supply",
-            "title": "Флоту требовались снабженцы",
+            "title": "Двух снабженцев не хватило",
             "paragraphs": [
-              "Доставка и хранение продуктов были частью более широкой задачи. По исследованию Исихары, первоначально флот обслуживали два судна снабжения, «Мацуяма-мару» и «Фукуока-мару». Расчёт предполагал передовое снабжение примерно раз в шесть дней. Для рассредоточенных кораблей двух судов оказалось недостаточно. В августе 1904 года к ним добавили «Котохира-мару»; привлекали и другие суда, которым, однако, недоставало оснащения для хранения продовольствия.",
-              "Историю блокады обычно читают со стороны Порт-Артура: русские корабли в гавани, японские снаружи. Обед на «Микасе» добавляет к этой картине другой масштаб. Корабль, участвовавший в блокаде, сам нуждался в обслуживании и безопасной пище. За возможностью выходить в море стояли повторяющиеся работы. Исследование Исихары позволяет проследить их через доставку продовольствия и случай, когда обычный приём пищи закончился массовым заболеванием."
+              "Обеспечивать флот собирались с помощью двух судов, «Мацуяма-мару» и «Фукуока-мару». Расчёт был на снабжение передовых сил примерно раз в шесть дней. На деле корабли действовали рассредоточенно, и двух снабженцев для них оказалось мало.",
+              "В августе 1904 года привлекли «Котохира-мару» и другие суда. Но добавить судно ещё не значит получить полноценный продовольственный транспорт. Для хранения продуктов нужно оборудование; его нехватка ограничивала, сколько продовольствия можно было взять на борт. Доставить груз к нужному кораблю было только частью работы. Требовалось ещё довезти его съедобным."
             ],
             "refs": [
               1
@@ -3120,10 +3351,8 @@
           }
         ],
         "limitations": [
-          "Рассказ основан на статье Исихары 2024 года, а не на непосредственном чтении первичного медицинского тома. Указанный им источник: 極秘 明治37.8年海戦史, часть 7 医務衛生, том 7; шифр NIDS ⑨その他－千代田-536.",
-          "156 — число случаев отравления на «Микасе», не погибших и не потерь всего флота. Сопоставление с голодом или смертностью в осаждённом Порт-Артуре потребовало бы других данных.",
-          "Техническое обслуживание не позволяет заключить, что корабль ремонтировали после боевых повреждений. Причинная связь между нехваткой снабженцев и порчей конкретной партии консервов не установлена.",
-          "Меню 30 мая 1904 года отделено от боевых пайков Цусимского сражения 27 мая 1905 года, рассмотренных в той же статье. Иллюстрации и готовая таблица современной статьи здесь не воспроизводятся."
+          "Сведения о меню и заболевших взяты из исследования Исихары 2024 года. Указанный им медицинский архивный том отдельно не сверялся; 156 — число случаев отравления, не погибших.",
+          "Источник не устанавливает, как именно хранилась эта партия консервов. Связывать её порчу с нехваткой снабженцев можно только после дополнительной проверки."
         ],
         "sources": [
           {
@@ -3152,8 +3381,8 @@
       },
       {
         "slug": "bankovskiy-sluzhashchiy-dayrena",
-        "title": "Деньги Дайрена глазами банковского служащего",
-        "dek": "В поздних воспоминаниях Сунь Яотина история денег складывается из банков, разных платёжных средств и трудностей с получением займа.",
+        "title": "Деньги Дайрена: кому давали взаймы",
+        "dek": "Серебро с портретами Юань Шикая и Сунь Ятсена, японские банкноты и частные кредитные конторы. Банковский служащий Сунь Яотин вспоминал город, где деньги были разными, а получить заём удавалось далеко не каждому.",
         "date": "2026-11-15",
         "periods": [
           "japanese"
@@ -3162,11 +3391,11 @@
         "sections": [
           {
             "id": "clerk",
-            "title": "Банк на Тяньцзиньской улице",
+            "title": "Прежде чем пересчитывать",
             "paragraphs": [
-              "Сунь Яотин оставил в своих воспоминаниях адрес, с которого удобно начать историю денег Дайрена: Тяньцзиньская улица, как она называлась на момент его рассказа. По его словам, здесь находился совместный японско-китайский банк Лункоу, где он работал. О банковской жизни города рассказывает человек, знакомый с ней изнутри.",
-              "Сунь пишет, что жил в Даляне с детства и пришёл в банковское дело в 1930 году. Он вспоминает свою работу, изменения банков и слияния, путь от ученика и служащего к руководящим должностям. Так у общего разговора о городских финансах появляется определённая точка наблюдения: рабочий опыт внутри банковской конторы.",
-              "Позднее его рассказ о японском периоде города вошёл во второй выпуск сборника «Материалы по истории Даляня». Сунь смотрит на город из банковской среды: учреждения и платёжные средства здесь соседствуют с вопросом о положении заёмщика."
+              "Сколько это в нынешних деньгах? В заметке о царском рубле ответы получались разными в зависимости от способа счёта. Но прежде чем браться за пересчёт, нужно разобраться, какими деньгами платили. В Дайрене японского периода в ходу было сразу несколько их видов.",
+              "О них рассказывает Сунь Яотин, который с детства жил в Даляне и работал в банковской сфере с 1930 года. Начинал учеником и служащим, со временем дослужился до руководящих должностей. Банковскую жизнь города знал изнутри.",
+              "Своим местом работы он называет Лункоу, совместный японско-китайский банк. Адрес тоже оставил: Тяньцзиньская улица, как она называлась во время записи его рассказа. Затем были слияния и новые названия банка. Позднее Сунь описал всё это во втором выпуске сборника «Материалы по истории Даляня». И рассказал, какими деньгами пользовались горожане и кому их давали взаймы."
             ],
             "refs": [
               1
@@ -3174,11 +3403,10 @@
           },
           {
             "id": "currency",
-            "title": "Название денег ещё не объясняет сделку",
+            "title": "Серебряные портреты и бумажное золото",
             "paragraphs": [
-              "В описании Сунь Яотина в городе обращались разные платёжные средства. Он пишет о японских банкнотах, называя их «цзиньпяо» (金票), серебряных деньгах и бумажных выпусках китайских банков. Уже это перечисление мешает свести денежную жизнь Дайрена к одной сумме без указания валюты и времени.",
-              "Различалось и положение учреждений, выпускавших деньги. По словам Сунь Яотина, выпуски местных китайских банков зависели от разрешения японских властей и служили временными платёжными средствами. Он описывает преобладание японских банкнот. В его рассказе рядом с вопросом о том, чем рассчитывались, возникает вопрос о том, кто мог выпускать деньги и на каких условиях.",
-              "Термин «цзиньпяо» требует осторожности. Речь идёт о банкнотах, и переводить его просто как золотую монету нельзя. Чтобы разобрать конкретную покупку или заём, понадобится установить денежный выпуск, дату и условия приёма. Воспоминание даёт названия и различия, с которых начинается такая проверка."
+              "В его перечне рядом стоят серебряные монеты с портретами Юань Шикая и Сунь Ятсена, мелкое серебро, медные деньги и банкноты. Японские бумажные деньги он называет «цзиньпяо», 金票. В названии есть золото, но речь идёт о бумажных деньгах, а не о золотых монетах.",
+              "Главное место, по словам Суня, занимали японские банкноты. Китайские банки тоже выпускали бумажные деньги, однако местные выпуски требовали разрешения японских властей и могли служить лишь временными платёжными средствами."
             ],
             "refs": [
               1
@@ -3186,11 +3414,10 @@
           },
           {
             "id": "credit",
-            "title": "Кому давали взаймы",
+            "title": "Деньги в городе и деньги для горожанина",
             "paragraphs": [
-              "Когда Сунь Яотин переходит к кредиту, денежная история становится вопросом доступа. По его воспоминанию, обычному человеку было трудно получить банковскую ссуду. Для займа у банка или денежного дома требовалось достаточное обеспечение. Автор пишет о традиционных частных кредитных конторах, 钱庄, и отдельно о ростовщическом кредите вне этих учреждений. Для заёмщика было существенно, удастся ли вообще получить нужную сумму и каковы будут условия её возврата.",
-              "Это свидетельство человека, знавшего банковскую работу, но его обобщения нельзя автоматически считать статистикой всего города. Текст использует антиколониальные и классовые оценки; японские финансовые учреждения представлены как часть эксплуатации. Такой язык тоже сообщает о позиции автора и о том, как он позднее осмыслял свой опыт.",
-              "Воспоминание Сунь Яотина позволяет поставить более точный вопрос о деньгах Дайрена. Прежде чем пересчитывать старую сумму в современные рубли, нужно установить, когда происходила сделка, какими деньгами рассчитывались и какие возможности были у её участников. Банковский служащий оставил для этого поиска профессию, адрес и круг учреждений."
+              "Сунь описывает Дайрен как город производства и торговли, которому постоянно нужны были деньги. За займами обращались в банки. Но обычному китайскому горожанину, вспоминал он, получить банковскую ссуду было трудно: без достаточного обеспечения рассчитывать на неё не приходилось.",
+              "Займы выдавали и цяньчжуаны, 钱庄, традиционные частные кредитные конторы. Они тоже требовали обеспечения, а проценты, по словам Суня, брали выше банковских. Отдельно он пишет о частных ростовщиках, действовавших вне банков и цяньчжуанов. Здесь его рассказ становится особенно резким: дорогой заём мог за короткий срок закончиться разорением."
             ],
             "refs": [
               1
@@ -3198,10 +3425,8 @@
           }
         ],
         "limitations": [
-          "Использованы страницы 49–53 библиотечного PDF. Статья продолжается далее; её полное прочтение не заявляется. Дата издания второго выпуска сборника не установлена.",
-          "Поздний личный рассказ не представляет всех китайских жителей Даляня. Обобщения автора о денежном обращении и кредитовании нуждаются в проверке по банковской отчётности и договорам.",
-          "Ставки кредита не приведены: единицы расчёта, сроки и условия в проверенном фрагменте установлены недостаточно уверенно. Описанные условия японского периода не переносятся на русский Дальний начала века или российские цены 1913 года.",
-          "Тяньцзиньская улица названа «нынешней» для автора воспоминания; современное название отдельно не сверялось. Конкретное здание и его сохранность не установлены."
+          "Использованы с. 49–53 библиотечного PDF, не вся статья. Дата издания второго выпуска сборника не установлена. Тяньцзиньская улица названа так самим мемуаристом; конкретное здание не определено.",
+          "Это поздний рассказ банковского служащего с выраженными антиколониальными и классовыми оценками, а не общая картина опыта всех китайских жителей. Точные ставки здесь не приведены: условия их расчёта не проверены. Денежное обращение японского периода нельзя переносить на русский Дальний или российские цены 1913 года."
         ],
         "sources": [
           {
@@ -16534,8 +16759,8 @@
     "src/i18n/zh/essays.json": [
       {
         "slug": "mikasa-obed-i-snabzhenie",
-        "title": "“三笠”号的一顿午餐：封锁线外的补给与疾病",
-        "dek": "1904年5月30日的菜单，将这艘日本军舰的经历与补给工作联系起来。这一事件见于石原明徳2024年发表的研究。",
+        "title": "“三笠”号吃了什么，156人为何中毒",
+        "dek": "1904年5月30日，“三笠”号的菜单上有大米混大麦饭、鲑鱼和牛肉炖土豆。那批鲑鱼罐头已经变质。",
         "date": "2026-11-15",
         "periods": [
           "russian"
@@ -16544,10 +16769,10 @@
         "sections": [
           {
             "id": "menu",
-            "title": "军舰上的一天",
+            "title": "前进基地的一顿午餐",
             "paragraphs": [
-              "早餐是大米混大麦饭、干萝卜味噌汤和茶；午餐是罐头鲑鱼炖羊栖菜。研究者石原明徳在讨论日本舰队补给的文章中，列出了“三笠”号1904年5月30日的这份菜单。随着食物清单，旅顺封锁战的叙事中出现了舰上日常生活——这些细节在战斗出航的记述中往往难以看见。",
-              "据石原介绍，参与封锁行动后，“三笠”号自5月10日起在辽东以南岛屿的前进基地接受维护。这顿午餐的故事，就发生在旅顺港之外。"
+              "早餐是大米混大麦饭、干萝卜味噌汤和茶。午餐又是米饭，配罐头鲑鱼炖羊栖菜、腌菜和麦茶。晚餐则是面包干与牛肉炖土豆。这就是“三笠”号1904年5月30日的菜单。",
+              "当时，这艘军舰停在辽东以南岛屿的前进基地。参与封锁旅顺后，它自5月10日起在那里接受维护。日本历史学者石原明徳在2024年发表的一篇舰队补给研究中，讲述了这件事。"
             ],
             "refs": [
               1
@@ -16555,10 +16780,10 @@
           },
           {
             "id": "illness",
-            "title": "午餐后，156人食物中毒",
+            "title": "罐头也会变质",
             "paragraphs": [
-              "石原将“三笠”号的156例食物中毒与午餐所用的鲑鱼罐头联系起来：这些罐头超过保存期限，已经变质。在他的文章中，菜单也成了舰队医疗史的一部分。",
-              "石原写道，1904年5月至6月，其他日本军舰也发生过食物中毒。他列举的资料涉及罐头、变质食品与发霉的面包，部分病例的原因未能查明。他还提到，“三笠”号曾尽量采用加热烹调的食物。"
+              "这顿午餐后，舰上156人病倒。石原将食物中毒与鲑鱼罐头联系起来：保存期限已过，里面的鱼肉变质了。罐头的方便之处，在于可以长期储备。但这种储备，也有期限。",
+              "这并非孤例。1904年5月至6月，其他日本军舰也发生过食物中毒。原因包括变质的罐头和发霉的面包，有时则未能查明是哪种食物出了问题。“三笠”号曾尽量供应经过加热烹调的食物。"
             ],
             "refs": [
               1
@@ -16566,10 +16791,10 @@
           },
           {
             "id": "supply",
-            "title": "舰队需要补给船",
+            "title": "两艘补给船不够用",
             "paragraphs": [
-              "食品的运输与储存，属于更大的补给问题。据石原研究，舰队最初由“松山丸”和“福冈丸”两艘补给船服务，计划约每六天向前方补给一次。但军舰分散部署，两艘船不敷使用。1904年8月，又加入“琴平丸”；此外也征用了其他船只，但它们缺乏储存食品所需的设备。",
-              "读旅顺封锁战的历史，视线通常从港内望向港外：俄国军舰在港内，日本军舰在外。“三笠”号的午餐带来了另一个观察尺度。参与封锁的军舰，自身也需要维护和安全的食物。一次次出海背后，是反复进行的日常工作。石原的研究让我们沿着食品运输，看到一次普通用餐如何演变成集体患病。"
+              "舰队原计划由“松山丸”和“福冈丸”两艘船提供补给，约每六天向前方部队运送一次。实际作战中，军舰分散部署，两艘补给船不够用。",
+              "1904年8月，又征用了“琴平丸”和其他船只。但多一艘船，还不等于多了一艘合用的食品运输船。储存食物需要设备，设备不足，就限制了能装载的食品数量。把货送到需要补给的军舰，只是工作的一部分；送到时，还得能吃。"
             ],
             "refs": [
               1
@@ -16577,10 +16802,8 @@
           }
         ],
         "limitations": [
-          "本文依据石原2024年的文章，未直接查阅原始医疗卷册。他引用的文献为《極秘 明治37.8年海戦史》第7部《医務衛生》第7卷；NIDS档号：⑨その他－千代田-536。",
-          "156是“三笠”号食物中毒的病例数，不是死亡人数，也不是整个舰队的损失。若要与被围旅顺的饥饿或死亡情况比较，还需要其他资料。",
-          "接受维护并不能证明该舰在修复战损。补给船不足与这批罐头变质之间的因果关系尚未确立。",
-          "1904年5月30日的菜单，与同一研究讨论的1905年5月27日对马海战战斗口粮有所区别。本文未转载这篇现代研究的插图与现成表格。"
+          "菜单与患病人数据石原2024年的研究，他引用的医疗档案卷册未另行核对。156是食物中毒病例数，并非死亡人数。",
+          "资料未说明这批罐头的具体储存情况。要将其变质与补给船不足联系起来，还需要进一步核实。"
         ],
         "sources": [
           {
@@ -16609,8 +16832,8 @@
       },
       {
         "slug": "bankovskiy-sluzhashchiy-dayrena",
-        "title": "银行职员眼中的大连货币往事",
-        "dek": "在孙耀庭后来的回忆中，货币史由银行、不同的支付工具，以及借贷的困难交织而成。",
+        "title": "日治大连：谁能借到钱",
+        "dek": "袁世凯和孙中山头像的银币、日本纸币，以及民间借贷机构。银行职员孙耀庭回忆的大连，货币种类不少，钱却不是人人都借得到。",
         "date": "2026-11-15",
         "periods": [
           "japanese"
@@ -16619,11 +16842,11 @@
         "sections": [
           {
             "id": "clerk",
-            "title": "天津街上的银行",
+            "title": "换算之前，先看用的是什么钱",
             "paragraphs": [
-              "孙耀庭在回忆中留下了一个地址，可以作为认识日治时期大连货币史的起点：天津街，这是他写下回忆时的街名。据他说，他曾任职的日中合办龙口银行就在那里。讲述城市金融生活的，是一位熟悉银行内部运作的人。",
-              "孙耀庭写道，他自幼生活在大连，1930年进入银行业。他回顾了自己的工作、银行的变迁与合并，以及从练习生、雇员升至管理职位的经历。关于城市金融的讨论，由此有了明确的观察位置：银行内部的工作经验。",
-              "后来，他对日治时期大连的回忆收入《大连文史资料》第二辑。他从银行业内部看这座城市，既讲机构与支付工具，也关注借款人的处境。"
+              "换成今天的钱，值多少？此前那篇讨论沙皇卢布的札记，用不同算法，得出的答案也不同。不过，换算之前还得先弄清：当时用的是什么钱？日治时期的大连，同时流通着好几种货币。",
+              "讲述这些货币的孙耀庭，自幼生活在大连，1930年进入银行业。他从练习生、雇员做起，逐渐升至管理职位，对银行内部的事很熟悉。",
+              "他写下了自己任职的银行：日中合办的龙口银行。还留下了地址——天津街，这是他撰写回忆时的街名。后来，银行经历了合并和更名。孙耀庭将这些往事写进了《大连文史资料》第二辑，也讲到市民用什么钱，以及谁能借到钱。"
             ],
             "refs": [
               1
@@ -16631,11 +16854,10 @@
           },
           {
             "id": "currency",
-            "title": "知道货币名称，还不足以读懂一笔交易",
+            "title": "银币上的人像，纸币上的“金”",
             "paragraphs": [
-              "孙耀庭笔下的大连，流通着多种支付工具。他提到日本纸币，称之为“金票”，也谈到银币和中国银行机构发行的纸币。仅这份清单就说明，若不交代币种与年代，很难用一个金额概括大连的货币生活。",
-              "发行货币的机构，地位也各不相同。据孙耀庭所述，当地中国银行机构发行纸币，须获日本当局批准，而且只能作为临时支付工具。他描述了日本纸币占主导的局面。在他的记述中，“用什么付款”的问题，也牵出了“谁有权发行、在什么条件下发行”的问题。",
-              "“金票”一词需要谨慎理解。这里指的是纸币，不能直接等同于金币。要分析某次购买或借款，仍须查明具体的货币发行种类、日期与收付条件。这篇回忆提供了名称与区别，核对可以由此开始。"
+              "他的清单中，有袁世凯和孙中山头像的银币，也有小额银币、铜钱与纸币。他把日本纸币称为“金票”。名称里有“金”，说的却是纸币，并不是金币。",
+              "据孙耀庭所述，日本纸币占着主导地位。中国银行机构也发行纸币，但当地发行须获日本当局批准，而且只能充作临时支付工具。"
             ],
             "refs": [
               1
@@ -16643,11 +16865,10 @@
           },
           {
             "id": "credit",
-            "title": "谁能借到钱",
+            "title": "城里有钱，市民能借到吗",
             "paragraphs": [
-              "孙耀庭谈到借贷时，货币史便成了能否获得贷款的问题。据他回忆，一般人很难向银行借款；向银行或钱庄借贷，需要足够的担保。他写到钱庄这种传统民间金融机构，也另行提到银行和钱庄之外的高利贷。对借款人来说，关键在于能否借到所需款项，以及须按什么条件偿还。",
-              "这是一位熟悉银行业务者的见证，但他的概括不能直接视为全城的统计结论。文章带有反殖民与阶级分析的评价语言，将日本金融机构置于剥削机制之中。这种语言也呈现了作者的立场，以及他后来如何理解自己的经历。",
-              "孙耀庭的回忆，让我们能够更准确地追问大连的货币生活。在把一笔旧金额换算成今天的卢布之前，需要先确定交易发生在何时、使用什么货币，以及参与者有哪些选择。这位银行职员为后续查找留下了职业、地址与相关机构。"
+              "在孙耀庭笔下，大连既是生产城市，也是贸易城市，总有地方需要资金。借款要找银行。但他回忆，一般中国市民很难借到银行贷款，没有足够的担保，就很难指望拿到钱。",
+              "钱庄也放贷。这些传统民间借贷机构同样要求担保，据孙耀庭说，利率还比银行高。他另行写到银行和钱庄之外的私人高利贷者。说到这里，他的措辞尤其尖锐：一笔利息高昂的借款，可能在短时间内就让人倾家荡产。"
             ],
             "refs": [
               1
@@ -16655,10 +16876,8 @@
           }
         ],
         "limitations": [
-          "本文使用图书馆PDF的第49—53页。文章后面还有内容，此次未通读全文；《大连文史资料》第二辑的出版日期尚未查明。",
-          "这份事后个人回忆不能代表大连所有中国居民。作者对货币流通与信贷的概括，仍须通过银行报表和契约核实。",
-          "本文未引用利率：所核对片段中的计息单位、期限与条件尚不足以准确确定。日治时期的情况不能直接套用于俄国时期的达里尼，或1913年俄国的物价。",
-          "天津街是回忆作者所称的“现在”的街名，今日名称未另行核对。具体建筑及其是否留存，尚未确定。"
+          "本文使用图书馆PDF第49—53页，并未通读整篇文章。《大连文史资料》第二辑的出版日期尚未查明。天津街是回忆作者使用的街名，具体建筑未能确定。",
+          "这是银行职员事后的回忆，带有鲜明的反殖民与阶级评价，不能代表所有中国居民的经历。本文未列出具体利率，其计算条件尚未核实。日治时期的货币流通情况，不能套用于俄国时期的达里尼或1913年俄国的物价。"
         ],
         "sources": [
           {
@@ -28274,7 +28493,8 @@
       "Статьи по источникам": "循着史料读历史",
       "Статьи": "文章",
       "Что позволяет сказать источник": "这份资料能说明什么",
-      "В библиотеке сайта": "本站资料库"
+      "В библиотеке сайта": "本站资料库",
+      "Об источнике и проверке фактов": "关于资料与事实核对"
     }
   },
   "ui": {
@@ -28369,7 +28589,7 @@
     "src/pages/poisk/index.astro": "fdde9bf78c937271ae3cbf30acb2b1c5d67dbcb1baf8bb408d223e544f3f3a77",
     "src/pages/sezony/index.astro": "471d41d84d22c8483b55c417662ea451df8f223412bfe9651a4ac063792c3911",
     "src/pages/spravochnik/[kind]/[slug].astro": "a49cbb7b95b3bbbde7314dad04a8b8eb67b8a4dce30bed66f05a99b847b4844f",
-    "src/pages/stati/[slug].astro": "c1ccf9d64a19ac8849814eaa207d2a8d99fc2926d1232f27ffeff17b0d044da7",
+    "src/pages/stati/[slug].astro": "e3336541bb197c76b72dbc6578d6857a15e80f757c3b1ced09b21393e602e810",
     "src/pages/ukazatel/index.astro": "c664d0ca1b09a6e72ea12815f8c26409286cb05adcb95f15396788063a1e517c",
     "src/pages/zametki/[slug].astro": "c3ec3e9a7241eede46029b08b2fccb71bb70b1c0e43888fd7451c65f379968c1",
     "src/pages/zametki/index.astro": "f29ecb9c1beb972ca51da30eb11e7ac537ddcd29f45d230d4737b01a36a465a7",

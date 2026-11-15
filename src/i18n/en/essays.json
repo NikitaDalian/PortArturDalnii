@@ -1,8 +1,8 @@
 [
   {
     "slug": "mikasa-obed-i-snabzhenie",
-    "title": "Lunch aboard Mikasa: supply and illness behind the blockade",
-    "dek": "A menu from 30 May 1904 connects life aboard a Japanese warship with the work of its supply ships. The episode is described in Akinori Ishihara’s 2024 study.",
+    "title": "What was on Mikasa’s menu—and why 156 people fell ill",
+    "dek": "Rice and barley, salmon, and beef with potatoes were on Mikasa’s menu on 30 May 1904. The canned salmon had spoiled.",
     "date": "2026-11-15",
     "periods": [
       "russian"
@@ -11,10 +11,10 @@
     "sections": [
       {
         "id": "menu",
-        "title": "A day aboard ship",
+        "title": "Lunch at a forward base",
         "paragraphs": [
-          "Rice and barley, miso soup with dried daikon and tea for breakfast; stewed canned salmon with hijiki seaweed for lunch. This was Mikasa’s menu for 30 May 1904, as reported by researcher Akinori Ishihara in his article on Japanese naval supply. A list of provisions brings everyday life aboard ship into the history of the Port Arthur blockade—a side of the war easily lost among accounts of combat operations.",
-          "According to Ishihara, after taking part in blockade operations, Mikasa underwent maintenance from 10 May at a forward base among the islands south of Liaodong. The story of this lunch takes place there, outside Port Arthur harbour."
+          "Rice and barley, miso soup with dried daikon and tea for breakfast. More rice for lunch, this time with stewed canned salmon and hijiki seaweed, pickles and barley tea. For dinner, hardtack and roast beef with potatoes. That was Mikasa’s menu on 30 May 1904.",
+          "The ship was then at a forward base among the islands south of Liaodong. After taking part in the blockade of Port Arthur, she had been undergoing maintenance there since 10 May. Japanese historian Akinori Ishihara described the episode in his 2024 study of naval supply."
         ],
         "refs": [
           1
@@ -22,10 +22,10 @@
       },
       {
         "id": "illness",
-        "title": "156 people fell ill after lunch",
+        "title": "Even canned food can spoil",
         "paragraphs": [
-          "Ishihara links 156 cases of food poisoning aboard Mikasa to the canned salmon served at this lunch: it had spoiled after exceeding its storage life. In his article, the menu becomes part of the fleet’s medical history.",
-          "Food poisoning also occurred aboard other Japanese ships in May and June 1904, Ishihara writes. The records he cites mention canned goods, spoiled food and mouldy bread. In some cases the cause could not be established. He also notes the efforts made aboard Mikasa to serve cooked food."
+          "After that lunch, 156 people aboard fell ill. Ishihara attributes the food poisoning to the canned salmon: its storage life had been exceeded and the contents had spoiled. Canned food was useful because it could be kept in reserve for a long time. But even those reserves had their limits.",
+          "Nor was this an isolated case. Food poisoning occurred aboard other Japanese ships in May and June 1904. Spoiled canned food and mouldy bread were among the causes; sometimes the offending food could not be identified. Aboard Mikasa, efforts were made to serve cooked food."
         ],
         "refs": [
           1
@@ -33,10 +33,10 @@
       },
       {
         "id": "supply",
-        "title": "The fleet needed supply ships",
+        "title": "Two supply ships were not enough",
         "paragraphs": [
-          "Delivering and storing food formed part of a wider task. According to Ishihara’s study, two supply ships initially served the fleet: Matsuyama Maru and Fukuoka Maru. The plan called for supplies to reach the forward bases roughly every six days. Two ships proved insufficient for a fleet operating in dispersed groups. Kotohira Maru joined them in August 1904; other vessels were also used, although they lacked adequate food-storage facilities.",
-          "The blockade is usually seen from Port Arthur: Russian ships inside the harbour, Japanese ships outside. Lunch aboard Mikasa adds another scale to this picture. A ship taking part in the blockade itself needed maintenance and safe food. Repeated, routine tasks made its operations at sea possible. Ishihara’s study traces them through food deliveries and an occasion when an ordinary meal left many people ill."
+          "Two ships, Matsuyama Maru and Fukuoka Maru, were to supply the fleet. The plan was to deliver provisions to the forward forces roughly every six days. In practice, the warships operated in dispersed groups, and two supply ships proved too few.",
+          "Kotohira Maru and other vessels were brought in during August 1904. But adding a ship did not automatically make it a fully equipped food transport. Storing provisions required equipment, and the lack of it limited how much food could be carried. Getting the cargo to the right warship was only part of the job. It also had to arrive fit to eat."
         ],
         "refs": [
           1
@@ -44,10 +44,8 @@
       }
     ],
     "limitations": [
-      "This account draws on Ishihara’s 2024 article, rather than a direct reading of the original medical volume. The source he lists is 極秘 明治37.8年海戦史, Part 7, 医務衛生, Volume 7; NIDS reference ⑨その他－千代田-536.",
-      "156 is the number of food-poisoning cases aboard Mikasa, not deaths or losses across the fleet. Any comparison with hunger or mortality in besieged Port Arthur would require other evidence.",
-      "Maintenance does not establish that the ship was undergoing repairs for battle damage. No causal link has been established between the shortage of supply ships and the spoilage of this particular batch of canned salmon.",
-      "The menu of 30 May 1904 is distinct from the combat rations served at the Battle of Tsushima on 27 May 1905, discussed in the same article. The modern article’s illustrations and prepared table are not reproduced here."
+      "The menu and number of people taken ill come from Ishihara’s 2024 study. The archival medical volume he cites has not been checked separately; 156 is the number of food-poisoning cases, not deaths.",
+      "The source does not establish exactly how this batch of canned salmon was stored. Linking its spoilage to the shortage of supply ships would require further investigation."
     ],
     "sources": [
       {
@@ -76,8 +74,8 @@
   },
   {
     "slug": "bankovskiy-sluzhashchiy-dayrena",
-    "title": "Dairen’s money through the eyes of a bank clerk",
-    "dek": "In Sun Yaoting’s later recollections, the history of money unfolds through banks, different means of payment and the difficulty of obtaining a loan.",
+    "title": "Money in Dairen: who could get a loan?",
+    "dek": "Silver bearing portraits of Yuan Shikai and Sun Yat-sen, Japanese banknotes and private credit firms. Bank clerk Sun Yaoting recalled a city with many kinds of money, where getting a loan was far from easy.",
     "date": "2026-11-15",
     "periods": [
       "japanese"
@@ -86,11 +84,11 @@
     "sections": [
       {
         "id": "clerk",
-        "title": "A bank on Tianjin Street",
+        "title": "Before converting the sum",
         "paragraphs": [
-          "Sun Yaoting left an address in his memoir that offers a starting point for the history of money in Dairen: Tianjin Street, as it was called when he wrote. Here, he says, stood the joint Japanese-Chinese Longkou Bank where he worked. His account of the city’s banking life comes from someone who knew it from the inside.",
-          "Sun writes that he had lived in Dalian since childhood and entered banking in 1930. He recalls his work, changes at banks and mergers, and his progress from apprentice and clerk to senior positions. A broad discussion of urban finance thus acquires a particular vantage point: working experience inside a bank office.",
-          "His account of the city’s Japanese period later appeared in the second issue of Materials on the History of Dalian. Sun sees the city from within banking circles: institutions and means of payment sit alongside the question of the borrower’s position."
+          "How much would that be in today’s money? In our note on the tsarist ruble, the answers varied with the method of calculation. But before converting a sum, we need to know what people paid with. In Dairen under Japanese rule, several kinds of money were in use at once.",
+          "Sun Yaoting tells us about them. He had lived in Dalian since childhood and worked in banking from 1930. Starting as an apprentice and clerk, he eventually rose to senior positions. He knew the city’s banking life from the inside.",
+          "He names his workplace as Longkou, a joint Japanese-Chinese bank. He left an address too: Tianjin Street, as it was called when his account was recorded. Mergers and new bank names followed. Sun later described all this in the second issue of Materials on the History of Dalian. He also recalled which money the townspeople used—and who could borrow it."
         ],
         "refs": [
           1
@@ -98,11 +96,10 @@
       },
       {
         "id": "currency",
-        "title": "The name of a currency does not explain a transaction",
+        "title": "Silver portraits and paper gold",
         "paragraphs": [
-          "In Sun Yaoting’s account, different means of payment circulated in the city. He describes Japanese banknotes, calling them jinpiao (金票), silver money and paper issues from Chinese banks. Even this list makes it difficult to reduce Dairen’s monetary life to a single sum without specifying the currency and period.",
-          "The institutions issuing money also occupied different positions. According to Sun, issues by local Chinese banks depended on permission from the Japanese authorities and served as temporary means of payment. He describes the predominance of Japanese banknotes. Alongside the question of what people paid with comes another: who was allowed to issue money, and on what terms?",
-          "The term jinpiao needs care. It refers to banknotes and cannot simply be translated as gold coins. To examine a particular purchase or loan, we would need to establish the currency issue, date and terms of acceptance. The memoir supplies names and distinctions from which that investigation can begin."
+          "His list includes silver coins bearing portraits of Yuan Shikai and Sun Yat-sen, small silver coins, copper money and banknotes. He calls the Japanese paper money jinpiao, 金票. There is gold in the name, but these were notes, not gold coins.",
+          "Japanese banknotes predominated, Sun says. Chinese banks also issued paper money, but local issues required permission from the Japanese authorities and could serve only as temporary means of payment."
         ],
         "refs": [
           1
@@ -110,11 +107,10 @@
       },
       {
         "id": "credit",
-        "title": "Who could borrow?",
+        "title": "Money in the city, money for its people",
         "paragraphs": [
-          "When Sun Yaoting turns to credit, monetary history becomes a question of access. In his recollection, an ordinary person found it difficult to obtain a bank loan. Borrowing from a bank or money house required adequate collateral. He writes about traditional private credit firms, qianzhuang (钱庄), and separately about usurious lending outside these institutions. What mattered to a borrower was whether the money could be obtained at all, and on what repayment terms.",
-          "This is testimony from someone familiar with banking, but his generalisations cannot automatically be treated as statistics for the whole city. The text uses anticolonial and class-based judgements; Japanese financial institutions are presented as instruments of exploitation. That language also reveals the author’s position and how he later understood his experience.",
-          "Sun Yaoting’s memoir helps us ask a more precise question about Dairen’s money. Before converting an old sum into modern rubles, we need to establish when the transaction took place, which money was used and what choices its participants had. For that inquiry, the bank clerk left us an occupation, an address and a set of institutions."
+          "Sun describes Dairen as a city of manufacturing and trade with a constant need for money. Those seeking loans turned to the banks. But for an ordinary Chinese resident, he recalled, getting a bank loan was difficult: without enough collateral, there was little chance.",
+          "Loans were also available from qianzhuang, 钱庄, traditional private credit firms. They too required collateral and, Sun says, charged more interest than the banks. He writes separately about private moneylenders operating outside both banks and qianzhuang. Here his account grows particularly sharp: an expensive loan could bring ruin in a short time."
         ],
         "refs": [
           1
@@ -122,10 +118,8 @@
       }
     ],
     "limitations": [
-      "Pages 49–53 of the library PDF were used. The article continues beyond this extract; no claim is made to have read it in full. The publication date of the collection’s second issue has not been established.",
-      "A later personal account does not represent all Chinese residents of Dalian. The author’s generalisations about currency circulation and lending need to be checked against bank reports and contracts.",
-      "Interest rates are not given: the units of calculation, loan periods and terms in the checked extract could not be established with sufficient confidence. The conditions described for the Japanese period are not applied to Russian Dalny at the start of the century or to Russian prices in 1913.",
-      "Tianjin Street is described as current at the time the memoir was written; its present-day name has not been checked separately. The exact building and whether it survives have not been established."
+      "Pages 49–53 of the library PDF were used, not the whole article. The publication date of the collection’s second issue has not been established. Tianjin Street is the name given by the memoirist; the exact building has not been identified.",
+      "This is a bank clerk’s later account, with pronounced anticolonial and class-based judgements, rather than a picture of all Chinese residents’ experience. Exact interest rates are not given here: their basis of calculation has not been checked. Currency circulation under Japanese rule cannot be applied to Russian Dalny or to Russian prices in 1913."
     ],
     "sources": [
       {
