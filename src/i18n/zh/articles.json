@@ -1,0 +1,3060 @@
+[
+ {
+  "slug": "general-fok-geroy-dunaya-i-port-artur",
+  "title": "福克将军：多瑙河、旅顺与审判",
+  "dek": "战功勋章、金州撤退、与斯米尔诺夫的冲突，以及1908年审判的结局。",
+  "summary": "亚历山大·福克因1877年横渡多瑙河获圣乔治勋章，参加侵华作战，并在对日战争中指挥一个师。文章讨论他在金州的行动、向司令部散发的“意见书”，以及康德拉坚科阵亡后接掌陆地防御的经过。1908年审判中，主要指控获判无罪；因讥讽同僚而受的纪律申斥，也因时效撤销。此后他与斯米尔诺夫决斗，又在保加利亚军队服役。他的一生，不能归结为后来叙事中的叛徒形象。",
+  "facts": [
+   "福克指挥东西伯利亚第4步枪师。",
+   "1908年3月，他在决斗中击伤斯米尔诺夫将军。",
+   "1912–1913年在保加利亚军队参加巴尔干战争。",
+   "1926年去世，葬于斯维什托夫附近。"
+  ],
+  "type": "person",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "fok",
+   "kondratenko",
+   "stessel",
+   "smirnov",
+   "tretyakov",
+   "grigorovich"
+  ],
+  "places": [
+   "port-artur",
+   "tszinchzhou",
+   "kvantun",
+   "fort-2",
+   "svistov"
+  ],
+  "books": [],
+  "cover": "photos/photo_388@14-11-2026_22-48-22.jpg",
+  "series": null,
+  "tg_ids": [
+   299
+  ],
+  "date": "2026-11-14",
+  "photos": [
+   "photos/photo_388@14-11-2026_22-48-22.jpg",
+   "photos/photo_389@14-11-2026_22-48-22.jpg",
+   "photos/photo_390@14-11-2026_22-48-22.jpg",
+   "photos/photo_391@14-11-2026_22-48-22.jpg"
+  ],
+  "read_min": 4,
+  "tg_url": "https://t.me/portartur_dalnii/299",
+  "series_slug": null
+ },
+ {
+  "slug": "tsena-port-artura-v-tsifrah",
+  "title": "旅顺的代价：数字所见",
+  "dek": "依据克里沃舍耶夫主编的统计研究，比较驻军、武器、损失与战俘。",
+  "summary": "文章对照开战时与围城开始时的要塞状况，梳理203高地损失及投降前守军人数。依据为G. F. 克里沃舍耶夫主编的《20世纪战争中的俄国与苏联》。该书依据不同登记资料，提出若干俄军损失估计，不能合并为同一个数字。文中另行讨论水兵、坏血病患者与战俘。所引日方损失超过11万的估计，包括阵亡、负伤和患病，并非全为死亡人数。",
+  "facts": [
+   "开战时116门火炮中，只有8门朝向陆地。",
+   "1904年7月17（30）日围城开始时，要塞有646门火炮、62挺机枪。",
+   "投降协议签于1904年12月20日（1905年1月2日）。",
+   "研究分别列出9 578、约10 421及12 657等俄军损失估计，统计类别各不相同。"
+  ],
+  "type": "explainer",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "krivosheev",
+   "gyubbenet"
+  ],
+  "places": [
+   "port-artur",
+   "vysokaya-gora",
+   "gavan-port-artura"
+  ],
+  "books": [
+   "krivosheev-rossiya-sssr-poteri-2001"
+  ],
+  "cover": "photos/photo_385@14-11-2026_13-15-04.jpg",
+  "series": "旅顺要塞",
+  "tg_ids": [
+   295
+  ],
+  "date": "2026-11-14",
+  "photos": [
+   "photos/photo_384@14-11-2026_13-15-04.jpg",
+   "photos/photo_385@14-11-2026_13-15-04.jpg",
+   "photos/photo_386@14-11-2026_13-15-04.jpg",
+   "photos/photo_387@14-11-2026_13-15-04.jpg"
+  ],
+  "read_min": 3,
+  "tg_url": "https://t.me/portartur_dalnii/295",
+  "series_slug": "krepost-port-artur"
+ },
+ {
+  "slug": "akunin-almaznaya-kolesnitsa",
+  "title": "《金刚战车》：方多林与两个时代的日本",
+  "dek": "1905年西伯利亚铁路破坏案，与方多林在横滨的青春往事。",
+  "summary": "鲍里斯·阿库宁的小说连接两个年代。《捕蜻蜓者》中，1905年的方多林对抗准备破坏铁路的日本情报机关；《字里行间》则将读者带回1878年横滨，回到主人公最初的日本印象、与阿政相识，以及二十七年后仍会产生回响的往事。频道作者推荐这部小说，作为走近日俄战争与日本文化的文学入口。但侦探故事仍需与情报史的文献记录分开。",
+  "facts": [
+   "小说两部分分别发生于1905年和1878年。",
+   "第一部名为《捕蜻蜓者》，第二部为《字里行间》。",
+   "原帖讨论的是附有日本事物注释的版本。"
+  ],
+  "type": "book",
+  "layer": [
+   "pre1898",
+   "russian"
+  ],
+  "people": [
+   "akunin"
+  ],
+  "places": [
+   "transsib",
+   "manchzhuriya",
+   "iokogama"
+  ],
+  "books": [
+   "akunin-almaznaya-kolesnitsa"
+  ],
+  "cover": "photos/photo_383@13-11-2026_22-35-14.jpg",
+  "series": null,
+  "tg_ids": [
+   294
+  ],
+  "date": "2026-11-13",
+  "photos": [
+   "photos/photo_383@13-11-2026_22-35-14.jpg"
+  ],
+  "read_min": 3,
+  "tg_url": "https://t.me/portartur_dalnii/294",
+  "series_slug": null
+ },
+ {
+  "slug": "vereshchagin-hudozhnik-na-voyne",
+  "title": "韦列夏金：战场上的画家",
+  "dek": "从海军学校、《战争的礼赞》，到“彼得罗巴甫洛夫斯克”号最后一次出海。",
+  "summary": "瓦西里·韦列夏金毕业于海军军官学校，却选择了绘画。他以死亡、伤痛和士兵的孤独呈现战争，最知名的表达是《战争的礼赞》。1903年秋，他居于日本，描绘日光寺院，并警告俄国尚未做好战争准备。1904年春来到旅顺，3月31日（4月13日）早晨随马卡罗夫乘“彼得罗巴甫洛夫斯克”号出海，战列舰触雷后与舰同沉。原帖相册收录肖像和画作复制图。",
+  "facts": [
+   "韦列夏金1842年生于切列波韦茨。",
+   "《战争的礼赞》作于1871年。",
+   "1904年3月31日（4月13日）遇难，遗体未被寻获。"
+  ],
+  "type": "culture",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "vereshchagin",
+   "makarov"
+  ],
+  "places": [
+   "port-artur",
+   "gavan-port-artura",
+   "nikko"
+  ],
+  "books": [],
+  "cover": "photos/photo_374@12-11-2026_14-20-00.jpg",
+  "series": null,
+  "tg_ids": [
+   285
+  ],
+  "date": "2026-11-12",
+  "photos": [
+   "photos/photo_374@12-11-2026_14-20-00.jpg",
+   "photos/photo_375@12-11-2026_14-20-00.jpg",
+   "photos/photo_376@12-11-2026_14-20-00.jpg",
+   "photos/photo_377@12-11-2026_14-20-00.jpg",
+   "photos/photo_378@12-11-2026_14-20-00.jpg",
+   "photos/photo_379@12-11-2026_14-20-00.jpg",
+   "photos/photo_380@12-11-2026_14-20-00.jpg",
+   "photos/photo_381@12-11-2026_14-20-00.jpg",
+   "photos/photo_382@12-11-2026_14-20-00.jpg"
+  ],
+  "read_min": 3,
+  "tg_url": "https://t.me/portartur_dalnii/285",
+  "series_slug": null
+ },
+ {
+  "slug": "oborona-port-artura-vrachi-i-sestry",
+  "title": "医生与护士眼中的旅顺防御战",
+  "dek": "炮火下的外科手术、敷料短缺，以及“蒙古”号医院船。",
+  "summary": "曼德里卡医院网站的文章介绍被围旅顺的医疗服务。原帖着重谈到护士与绷带短缺、外科医生维克托·冯·许布内特的工作，以及由中东铁路轮船改装的“蒙古”号医院船。另有一段写威廉明娜·克里格在203高地激战期间冒火赶到包扎站救护。这份材料从要塞内部的医疗史，补充博特金和魏列萨耶夫的著作。",
+  "facts": [
+   "据原文数据，到9月每名护士需照料一百多名伤员。",
+   "“蒙古”号设有X光室。",
+   "威廉明娜·克里格获佩圣乔治绶带的“勇敢”银质奖章。"
+  ],
+  "type": "source",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "gyubbenet",
+   "krig"
+  ],
+  "places": [
+   "port-artur",
+   "dalnii",
+   "vysokaya-gora",
+   "kvzhd"
+  ],
+  "books": [
+   "mandryka-oborona-port-artura"
+  ],
+  "cover": "photos/photo_370@12-11-2026_09-50-06.jpg",
+  "series": null,
+  "tg_ids": [
+   281
+  ],
+  "date": "2026-11-12",
+  "photos": [
+   "photos/photo_370@12-11-2026_09-50-06.jpg",
+   "photos/photo_371@12-11-2026_09-50-06.jpg",
+   "photos/photo_372@12-11-2026_09-50-06.jpg",
+   "photos/photo_373@12-11-2026_09-50-06.jpg"
+  ],
+  "read_min": 1,
+  "tg_url": "https://t.me/portartur_dalnii/281",
+  "series_slug": null
+ },
+ {
+  "slug": "molodyakov-rossiya-i-yaponiya-zolotoy-vek",
+  "title": "莫洛季亚科夫：《俄国与日本：黄金时代》",
+  "dek": "朴次茅斯之后，昔日敌手怎样签订协约，走向近乎结盟的关系。",
+  "summary": "瓦西里·莫洛季亚科夫研究俄日1905–1916年的接近。战后双方签订1907、1910、1912年协约，划分满洲利益范围。一战期间，日本向俄国供应武器，1916年又售回缴获军舰。书评将这段历史与战前“满韩交换”方案及日治时期大连相联系。频道作者建议在读过战争史后阅读，但不完全认同“黄金时代”之名：这份友谊建立在瓜分他国领土利益之上。",
+  "facts": [
+   "全书涵盖1905–1916年。",
+   "莫斯科，展望出版社，2025年；271页，“友谊的秘密”系列。",
+   "1916年俄国购回“波尔塔瓦”号、“佩列斯韦特”号和“瓦良格”号。"
+  ],
+  "type": "book",
+  "layer": [
+   "japanese"
+  ],
+  "people": [
+   "molodyakov"
+  ],
+  "places": [
+   "portsmut",
+   "manchzhuriya",
+   "koreya",
+   "port-artur",
+   "dalnii",
+   "kvzhd",
+   "harbin"
+  ],
+  "books": [
+   "molodyakov-rossiya-i-yaponiya-zolotoy-vek"
+  ],
+  "cover": "photos/photo_369@12-11-2026_09-25-06.jpg",
+  "series": "友谊的秘密",
+  "tg_ids": [
+   280
+  ],
+  "date": "2026-11-12",
+  "photos": [
+   "photos/photo_369@12-11-2026_09-25-06.jpg"
+  ],
+  "read_min": 3,
+  "tg_url": "https://t.me/portartur_dalnii/280",
+  "series_slug": "sekrety-druzhby"
+ },
+ {
+  "slug": "zodchiy-1904-plan-goroda-dalnego",
+  "title": "《建筑师》：达里尼规划的第一手资料",
+  "dek": "斯科利莫夫斯基1904年的报告，附城市早期建筑图纸与照片。",
+  "summary": "1904年《建筑师》杂志全年开放档案中，收有K. G. 斯科利莫夫斯基《达里尼城市规划设计》报告，刊于第12、13、14期。建筑师解释为何放弃矩形街区网格，如何划分欧洲区、中国区、行政区，以及圆形尼古拉广场的布局。这是研究他的生平与达里尼建设史的第一手资料。原帖附杂志档案链接、规划图和历史影像。",
+  "facts": [
+   "报告宣读于1904年2月3（16）日。",
+   "刊于1904年3月21日、28日及4月4日出版的第12、13、14期。",
+   "全年档案共52期，原帖注明文件约810 MB。"
+  ],
+  "type": "source",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "skolimovsky",
+   "saharov"
+  ],
+  "places": [
+   "dalnii",
+   "nikolaevskaya-ploshchad",
+   "russkaya-ulitsa",
+   "upravlenie-dalnego"
+  ],
+  "books": [
+   "zodchiy-plan-dalnego-1904"
+  ],
+  "cover": "photos/photo_365@11-11-2026_10-19-57.jpg",
+  "series": "达里尼：城市规划与建筑师",
+  "tg_ids": [
+   276
+  ],
+  "date": "2026-11-11",
+  "photos": [
+   "photos/photo_365@11-11-2026_10-19-57.jpg",
+   "photos/photo_366@11-11-2026_10-19-57.jpg",
+   "photos/photo_367@11-11-2026_10-19-57.jpg",
+   "photos/photo_368@11-11-2026_10-19-57.jpg"
+  ],
+  "read_min": 1,
+  "tg_url": "https://t.me/portartur_dalnii/276",
+  "series_slug": "dalniy-plan-i-arhitektory"
+ },
+ {
+  "slug": "skolimovsky-chelovek-kotoryy-narisoval-dalnii",
+  "title": "斯科利莫夫斯基：画出达里尼的人",
+  "dek": "波兰建筑师、圆形尼古拉广场，以及至今仍塑造大连中心的规划。",
+  "summary": "新帖修订了卡齐米日·赫利奥多罗维奇·斯科利莫夫斯基的生平：1862年生于罗兹附近，曾在圣彼得堡、柏林和慕尼黑求学，1899年受邀规划达里尼。他以圆形尼古拉广场和十条大道的放射状布局取代矩形网格，兼顾地形、交通、林荫大道视野和居民生活。归国后任卡利什市建筑师，1923年检查在建市政厅屋顶时遇难。有关达里尼规划的报告发表于《建筑师》。",
+  "facts": [
+   "新总体规划1900年提交，详细方案1903年完成。",
+   "尼古拉广场直径213米，十条街道由此放射而出。",
+   "1923年12月28日遇难于卡利什。"
+  ],
+  "type": "person",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "skolimovsky",
+   "saharov"
+  ],
+  "places": [
+   "dalnii",
+   "nikolaevskaya-ploshchad",
+   "russkaya-ulitsa",
+   "upravlenie-dalnego",
+   "port-dalniy"
+  ],
+  "books": [
+   "zodchiy-plan-dalnego-1904"
+  ],
+  "cover": "photos/photo_358@11-11-2026_10-18-04.jpg",
+  "series": "达里尼：城市规划与建筑师",
+  "tg_ids": [
+   269
+  ],
+  "date": "2026-11-11",
+  "photos": [
+   "photos/photo_358@11-11-2026_10-18-04.jpg",
+   "photos/photo_359@11-11-2026_10-18-04.jpg",
+   "photos/photo_360@11-11-2026_10-18-04.jpg",
+   "photos/photo_361@11-11-2026_10-18-04.jpg",
+   "photos/photo_362@11-11-2026_10-18-05.jpg",
+   "photos/photo_363@11-11-2026_10-18-05.jpg",
+   "photos/photo_364@11-11-2026_10-18-05.jpg"
+  ],
+  "read_min": 3,
+  "tg_url": "https://t.me/portartur_dalnii/269",
+  "series_slug": "dalniy-plan-i-arhitektory"
+ },
+ {
+  "slug": "ipatevskiy-dom-tsarskaya-semya-i-botkin",
+  "title": "伊帕季耶夫宅邸：沙皇一家与博特金医生",
+  "dek": "1918年7月的事件，以及与日俄战争相关人物的命运。",
+  "summary": "1918年7月17日凌晨，尼古拉二世一家及四名随行人员，在叶卡捷琳堡伊帕季耶夫宅邸被枪决。死者包括满洲红十字会医生、《日俄战争的光与影》作者叶夫根尼·博特金。文章追索乌拉尔苏维埃的决定、枪决过程，以及宅邸和墓葬的后续历史。尚未发现莫斯科直接下达的书面命令，行刑队确切成员也存在争议。相册最后一张为照片拼贴，并非历史现场照片。",
+  "facts": [
+   "宅邸中共有11人遇害，包括博特金医生。",
+   "宅邸1977年被拆，原址的滴血教堂2003年祝圣。",
+   "皇储阿列克谢生于旅顺围城期间，远东军人被宣布为其教父。"
+  ],
+  "type": "memory",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "nikolai-ii",
+   "botkin",
+   "stessel",
+   "yurovsky",
+   "beloborodov",
+   "goloschekin",
+   "sverdlov",
+   "lenin"
+  ],
+  "places": [
+   "ekaterinburg",
+   "port-artur",
+   "manchzhuriya"
+  ],
+  "books": [
+   "botkin-svet-i-teni-russko-yaponskoy-voyny",
+   "rodina-ispolniteli-1918"
+  ],
+  "cover": "photos/photo_352@10-11-2026_16-55-55.jpg",
+  "series": null,
+  "tg_ids": [
+   263
+  ],
+  "date": "2026-11-10",
+  "photos": [
+   "photos/photo_352@10-11-2026_16-55-55.jpg",
+   "photos/photo_353@10-11-2026_16-55-55.jpg",
+   "photos/photo_354@10-11-2026_16-55-55.jpg",
+   "photos/photo_355@10-11-2026_16-55-55.jpg",
+   "photos/photo_356@10-11-2026_16-55-55.jpg",
+   "photos/photo_357@10-11-2026_16-55-55.jpg"
+  ],
+  "read_min": 4,
+  "tg_url": "https://t.me/portartur_dalnii/263",
+  "series_slug": null
+ },
+ {
+  "slug": "hodynka-1896-i-doroga-v-port-artur",
+  "title": "霍登卡：加冕庆典与通向旅顺的道路",
+  "dek": "1896年5月，莫斯科惨剧、李鸿章与未来的中东铁路如何交织。",
+  "summary": "数十万人参加尼古拉二世加冕后的民众庆典。礼物不足的传闻在坑洼的霍登卡广场引发踩踏，官方统计死亡1 389人。文章讨论庆典组织、宫廷反应及弗拉基米尔·吉利亚罗夫斯基的见证。李鸿章当时也在莫斯科；惨剧四天后，他与俄国签订秘密同盟条约，为中东铁路建设打开道路。两年后，俄国租借旅顺和达里尼。",
+  "facts": [
+   "踩踏发生于1896年5月18（30）日。",
+   "中俄同盟条约签于1896年5月22日（6月3日）。",
+   "原帖链接至阿尔乔姆·洛卡洛夫发表于《祖国》的文章。"
+  ],
+  "type": "event",
+  "layer": [
+   "pre1898",
+   "russian"
+  ],
+  "people": [
+   "nikolai-ii",
+   "li-hunchzhan",
+   "vitte",
+   "gilyarovsky"
+  ],
+  "places": [
+   "moskva",
+   "kvzhd",
+   "manchzhuriya",
+   "port-artur",
+   "dalnii"
+  ],
+  "books": [
+   "rodina-hodynka-1896"
+  ],
+  "cover": "photos/photo_345@09-11-2026_12-40-02.jpg",
+  "series": null,
+  "tg_ids": [
+   256
+  ],
+  "date": "2026-11-09",
+  "photos": [
+   "photos/photo_345@09-11-2026_12-40-02.jpg",
+   "photos/photo_346@09-11-2026_12-40-02.jpg",
+   "photos/photo_347@09-11-2026_12-40-02.jpg",
+   "photos/photo_348@09-11-2026_12-40-02.jpg",
+   "photos/photo_349@09-11-2026_12-40-02.jpg",
+   "photos/photo_350@09-11-2026_12-40-02.jpg",
+   "photos/photo_351@09-11-2026_12-40-03.jpg"
+  ],
+  "read_min": 4,
+  "tg_url": "https://t.me/portartur_dalnii/256",
+  "series_slug": null
+ },
+ {
+  "slug": "ayrapetov-na-puti-k-krahu",
+  "title": "艾拉佩托夫：《走向崩溃》",
+  "dek": "从远东扩张到军队返乡，一部日俄战争军事政治史。",
+  "summary": "奥列格·艾拉佩托夫将战争视为俄罗斯帝国一系列外交、财政和军事决策的结果。第一部分解释俄国向远东推进、朝鲜利益之争及占领满洲；第二部分经旅顺、辽阳、奉天和对马，写到朴次茅斯和约，以及军队返回革命中的俄国。要塞始终置于圣彼得堡决策的背景中，论断依据文献、回忆录与书信。频道作者推荐此书，用以认识整场战争。",
+  "facts": [
+   "莫斯科，算法出版社，2014年；496页，34章。",
+   "叙事延续至朴次茅斯和约之后，涵盖1906年军队返乡。"
+  ],
+  "type": "book",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "ayrapetov",
+   "makarov"
+  ],
+  "places": [
+   "port-artur",
+   "kvantun",
+   "lyaoyan",
+   "shahe",
+   "mukden",
+   "tsusima",
+   "portsmut",
+   "manchzhuriya",
+   "koreya"
+  ],
+  "books": [
+   "ayrapetov-na-puti-k-krahu"
+  ],
+  "cover": "photos/photo_344@08-11-2026_20-45-11.jpg",
+  "series": null,
+  "tg_ids": [
+   255
+  ],
+  "date": "2026-11-08",
+  "photos": [
+   "photos/photo_344@08-11-2026_20-45-11.jpg"
+  ],
+  "read_min": 2,
+  "tg_url": "https://t.me/portartur_dalnii/255",
+  "series_slug": null
+ },
+ {
+  "slug": "balmont-nash-tsar-mukden-tsusima",
+  "tg_ids": [
+   251
+  ],
+  "date": "2026-11-08",
+  "title": "巴尔蒙特：“我们的沙皇是奉天，我们的沙皇是对马”",
+  "dek": "以战争结果审视皇帝的象征主义诗人。",
+  "summary": "俄国象征主义代表康斯坦丁·巴尔蒙特自青年时代便与当局冲突，先后遭中学和大学开除，1901年又因《小苏丹》被禁止居住两座首都。日俄战争与革命使他与当局彻底决裂。1905年底逃往巴黎，1906年写下《我们的沙皇》，以奉天、对马两词概括战争。诗作收入《复仇者之歌》，未能在俄国刊行。他借罗曼诺夫王朝300周年大赦归国，1916年赴日，后来翻译短歌与俳句。原帖附全诗。",
+  "facts": [
+   "《复仇者之歌》1907年在巴黎出版。",
+   "巴尔蒙特借大赦于1913年5月5日归国。",
+   "1942年12月23日卒于巴黎附近的大努瓦西。"
+  ],
+  "type": "culture",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "balmont",
+   "nikolai-ii"
+  ],
+  "places": [
+   "mukden",
+   "tsusima"
+  ],
+  "books": [
+   "balmont-nash-tsar"
+  ],
+  "photos": [
+   "photos/photo_212@08-11-2026_12-10-01.jpg",
+   "photos/photo_213@08-11-2026_12-10-01.jpg",
+   "photos/photo_214@08-11-2026_12-10-01.jpg",
+   "photos/photo_215@08-11-2026_12-10-01.jpg"
+  ],
+  "cover": "photos/photo_212@08-11-2026_12-10-01.jpg",
+  "read_min": 3,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/251",
+  "series_slug": null
+ },
+ {
+  "slug": "yaroslavskii-bolsheviki-i-russko-yaponskaya-voina",
+  "tg_ids": [
+   250
+  ],
+  "date": "2026-11-07",
+  "title": "作为序幕的旅顺：雅罗斯拉夫斯基笔下的布尔什维克与战争",
+  "dek": "党史学者的小册子，将战败视为有利于革命的前提。",
+  "summary": "评叶梅利扬·雅罗斯拉夫斯基《日俄战争与布尔什维克对它的态度》。论点直白：战败“使人民群众革命化”，布尔什维克“主张战败”。列宁将要塞投降称为沙皇制度投降的序幕。在这一视角下，旅顺防御战只是更重要事件的开场。讽刺在于，1945年9月2日，斯大林又将1904年的失败称为老一辈等待四十年才洗去的“黑色污点”。书评认为，它无助于了解战争本身，却能见证苏联如何重写这场战争。",
+  "facts": [
+   "雅罗斯拉夫斯基（米涅伊·古别尔曼）著有1600余篇文章及书籍，1943年去世。",
+   "列宁就要塞投降撰写《旅顺口的陷落》。",
+   "再版：URSS，2020年，48页。"
+  ],
+  "type": "book",
+  "layer": [
+   "soviet"
+  ],
+  "people": [
+   "yaroslavskii",
+   "lenin",
+   "stalin",
+   "kondratenko"
+  ],
+  "places": [
+   "port-artur"
+  ],
+  "books": [
+   "yaroslavskiy-russko-yaponskaya-voyna-i-bolsheviki",
+   "lenin-padenie-port-artura"
+  ],
+  "photos": [
+   "photos/photo_211@07-11-2026_10-20-08.jpg"
+  ],
+  "cover": "photos/photo_211@07-11-2026_10-20-08.jpg",
+  "read_min": 3,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/250",
+  "series_slug": null
+ },
+ {
+  "slug": "botkin-svet-i-teni-russko-yaponskoi-voiny",
+  "tg_ids": [
+   244
+  ],
+  "date": "2026-11-06",
+  "title": "叶夫根尼·博特金：《日俄战争的光与影》",
+  "dek": "一名红十字会医生写给妻子的信，他后来成为尼古拉二世的御医。",
+  "summary": "著名内科医生之子叶夫根尼·博特金自愿赴满洲，主持作战部队的红十字医疗事务，致妻子书信于1908年出版。他尽量写“光”，但信中仍有沉重段落：记录中国礼仪、民居、戏剧和奉天皇陵，也写在瓦房沟——今属大连的瓦房店——冒霰弹亲自背负伤员，以及使医生和护士也丧生的伤寒。同在1908年，他成为御医，1918年与沙皇一家一同被枪决。",
+  "facts": [
+   "书信1908年刊于《欧洲通报》，后单行出版。",
+   "博特金获佩剑三等及二等圣弗拉基米尔勋章。",
+   "2016年，俄罗斯东正教会将博特金封为圣人。"
+  ],
+  "type": "book",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "botkin",
+   "nikolai-ii"
+  ],
+  "places": [
+   "manchzhuriya",
+   "vafangou",
+   "mukden",
+   "shahe"
+  ],
+  "books": [
+   "botkin-svet-i-teni-russko-yaponskoy-voyny"
+  ],
+  "photos": [
+   "photos/photo_205@06-11-2026_10-55-02.jpg",
+   "photos/photo_206@06-11-2026_10-55-02.jpg",
+   "photos/photo_207@06-11-2026_10-55-02.jpg",
+   "photos/photo_208@06-11-2026_10-55-02.jpg",
+   "photos/photo_209@06-11-2026_10-55-02.jpg",
+   "photos/photo_210@06-11-2026_10-55-02.jpg"
+  ],
+  "cover": "photos/photo_205@06-11-2026_10-55-02.jpg",
+  "read_min": 3,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/244",
+  "series_slug": null
+ },
+ {
+  "slug": "menshikov-pisma-k-blizhnim",
+  "tg_ids": [
+   242
+  ],
+  "date": "2026-11-05",
+  "title": "米哈伊尔·缅希科夫：“必须有战争的雷声”",
+  "dek": "《新时代》政论家，将战争视为整个国家的考试。",
+  "summary": "曾任领航员和海洋测量员的米哈伊尔·缅希科夫，成为20世纪初重要政论家。他在苏沃林《新时代》上的《致近人书》每周刊出两三次，直至1917年，订户自行装订为年度文集。1902–1904年卷恰逢日俄战争。《内部防御》写道，和平时期爱国心低落，“必须有战争的雷声，才能唤醒我们的意识”。在他看来，满洲的失败首先发生于国内。频道作者坦言文字难读，但问题仍很熟悉。1918年，他未经审判便遭枪决。",
+  "facts": [
+   "缅希科夫生卒年为1859–1918。",
+   "1918年9月19日在瓦尔代被捕，次日遭枪决。",
+   "文集由AST出版社“回忆录、日记、书信”系列出版，550页。"
+  ],
+  "type": "book",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "menshikov",
+   "suvorin"
+  ],
+  "places": [
+   "manchzhuriya"
+  ],
+  "books": [
+   "menshikov-pisma-k-blizhnim-1902-1904"
+  ],
+  "photos": [
+   "photos/photo_203@05-11-2026_11-05-03.jpg",
+   "photos/photo_204@05-11-2026_11-05-03.jpg"
+  ],
+  "cover": "photos/photo_203@05-11-2026_11-05-03.jpg",
+  "read_min": 3,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/242",
+  "series_slug": null
+ },
+ {
+  "slug": "kulichkin-kondratenko-zhzl",
+  "tg_ids": [
+   241
+  ],
+  "date": "2026-11-04",
+  "title": "“杰出人物传记”中的《康德拉坚科》：上校眼中的将军",
+  "dek": "1989年的传记，一名军人写另一名军人，满怀敬意，少有疑问。",
+  "summary": "评谢尔盖·库利奇金《康德拉坚科》（“杰出人物传记”系列，1989）。作者是职业军人、上校，此前写过《在旅顺》。他像写军中前辈一样写将军，立场笃定，少有追问；与斯捷潘诺夫一样，将投降首责归于斯特塞尔，延续了苏联叙事中“正确的”沙皇将军形象。频道作者仍建议一读：书中的喜爱可感，偏好加烈葡萄酒而非伏特加等细节，也让人物更具体。读完可去旅顺第II号堡垒看看。",
+  "facts": [
+   "青年近卫军出版社1989年出版，“杰出人物传记”第702辑。",
+   "谢尔盖·库利奇金生于1949年。"
+  ],
+  "type": "book",
+  "layer": [
+   "russian",
+   "soviet"
+  ],
+  "people": [
+   "kulichkin",
+   "kondratenko",
+   "stessel",
+   "stepanov"
+  ],
+  "places": [
+   "fort-2",
+   "port-artur"
+  ],
+  "books": [
+   "kulichkin-kondratenko",
+   "stepanov-port-artur"
+  ],
+  "photos": [
+   "photos/photo_202@04-11-2026_21-50-08.jpg"
+  ],
+  "cover": "photos/photo_202@04-11-2026_21-50-08.jpg",
+  "read_min": 2,
+  "series": "康德拉坚科将军",
+  "tg_url": "https://t.me/portartur_dalnii/241",
+  "series_slug": "general-kondratenko"
+ },
+ {
+  "slug": "plehve-malenkaya-pobedonosnaya-voina",
+  "tg_ids": [
+   235
+  ],
+  "date": "2026-11-04",
+  "title": "普列韦与“小小的胜利战争”：一句名言的来历",
+  "dek": "这句话从何而来，以及被归名者为何未能看到战争结局。",
+  "summary": "检察官、警察局长维亚切斯拉夫·普列韦1902年成为内务大臣，支持别佐布拉佐夫集团，与维特竞争。“为了遏止革命，我们需要一场小小的胜利战争”据说是他回答库罗帕特金的话，但只见于转述。它最早出现于1907年署名A. 莫尔斯科伊的书，当时便有人怀疑来自维特授意；后来又收入维特回忆录，尽管维特本人从未亲耳听见。没有独立证据。1904年7月15日，社会革命党人叶戈尔·索佐诺夫投弹将其炸死。两天后，日军逼近旅顺。",
+  "facts": [
+   "普列韦1846年生于卡卢加省梅晓夫斯克。",
+   "收录此话的维特回忆录于其身后1922年出版。",
+   "行动由后来证实为警察密探的叶夫诺·阿泽夫策划，现场由鲍里斯·萨文科夫指挥。"
+  ],
+  "type": "person",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "plehve",
+   "vitte",
+   "kuropatkin",
+   "bezobrazov",
+   "sozonov"
+  ],
+  "places": [
+   "port-artur"
+  ],
+  "books": [
+   "vitte-vospominaniya"
+  ],
+  "photos": [
+   "photos/photo_196@04-11-2026_10-34-59.jpg",
+   "photos/photo_197@04-11-2026_10-34-59.jpg",
+   "photos/photo_198@04-11-2026_10-34-59.jpg",
+   "photos/photo_199@04-11-2026_10-34-59.jpg",
+   "photos/photo_200@04-11-2026_10-34-59.jpg",
+   "photos/photo_201@04-11-2026_10-34-59.jpg"
+  ],
+  "cover": "photos/photo_196@04-11-2026_10-34-59.jpg",
+  "read_min": 3,
+  "series": "俄国远东政策的设计者",
+  "tg_url": "https://t.me/portartur_dalnii/235",
+  "series_slug": "arhitektory-dalnevostochnoy-politiki"
+ },
+ {
+  "slug": "posleznanie-kak-sudit-o-port-arture",
+  "tg_ids": [
+   234
+  ],
+  "date": "2026-11-03",
+  "title": "后见之明：为何我们如此容易评判旅顺",
+  "dek": "事后偏见，以及1904年要塞守军当时能够知道什么。",
+  "summary": "延伸纳扎连科讲座中的思考。心理学家巴鲁赫·菲施霍夫1975年指出，人得知结果后，便容易觉得结果原本显而易见。作者用史事检验：谈判仍在进行时，维特格夫特“不会有战争”的话，含义与今天听来不同；韦利奇科的堡垒线按11 300名驻军和舰队保护设计；混凝土按抵御6英寸炮弹计算，而日方直到8月强攻失败后才决定运来280毫米榴弹炮。但后见之明也有边界：1904年9月18日，康德拉坚科已警告不可指望援救，斯特塞尔仍将信搁置。",
+  "facts": [
+   "日本280毫米火炮从1904年9月底开始向要塞射击。",
+   "要塞以西的鸽子湾被认为适合日军登陆。",
+   "康德拉坚科致斯特塞尔信日期为1904年9月18日。"
+  ],
+  "type": "explainer",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "nazarenko",
+   "vitgeft",
+   "velichko",
+   "kondratenko",
+   "stessel"
+  ],
+  "places": [
+   "port-artur",
+   "vysokaya-gora",
+   "golubinaya-buhta"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_100@17-10-2026_15-14-01.jpg",
+   "photos/photo_195@03-11-2026_22-32-58.jpg"
+  ],
+  "cover": "photos/photo_100@17-10-2026_15-14-01.jpg",
+  "read_min": 3,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/234",
+  "series_slug": null
+ },
+ {
+  "slug": "kondratenko-dusha-oborony",
+  "tg_ids": [
+   227
+  ],
+  "date": "2026-11-02",
+  "title": "“防御之魂”：康德拉坚科在旅顺",
+  "dek": "将军如何在炮火下赶修要塞，他的阵亡为何成为转折。",
+  "summary": "康德拉坚科传记第二篇。斯特塞尔将整条陆地防线交给他，而开战时没有一座堡垒完工，陆向仅有8门要塞炮。到7月围城开始，已有546门火炮。狼山失利后，他用直白的命令向士兵解释败因，组织制造手榴弹、改装旧式中国火炮，谢梅季洛、波德古尔斯基和戈比亚托也随之开展发明。这些办法后来被视为20世纪堑壕战的早期经验。203高地伤亡已威胁整体防御时，他停止向那里增派预备队。1904年12月2日，在第II号堡垒掩蔽部阵亡。",
+  "facts": [
+   "截至1904年5月1日，舰队向要塞移交188门舰炮。",
+   "与康德拉坚科同时阵亡的8名军官中，有瑙缅科和拉舍夫斯基。",
+   "1905年9月，遗骸迁葬亚历山大·涅夫斯基修道院尼古拉公墓。",
+   "第II号堡垒留有日方所立的纪念标志。"
+  ],
+  "type": "person",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "kondratenko",
+   "stessel",
+   "velichko"
+  ],
+  "places": [
+   "port-artur",
+   "fort-2",
+   "vysokaya-gora",
+   "volchi-gory",
+   "uglovaya-gora"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_188@02-11-2026_09-35-08.jpg",
+   "photos/photo_189@02-11-2026_09-35-08.jpg",
+   "photos/photo_190@02-11-2026_09-35-08.jpg",
+   "photos/photo_191@02-11-2026_09-35-08.jpg",
+   "photos/photo_192@02-11-2026_09-35-08.jpg",
+   "photos/photo_193@02-11-2026_09-35-09.jpg",
+   "photos/photo_194@02-11-2026_09-35-09.jpg"
+  ],
+  "cover": "photos/photo_188@02-11-2026_09-35-08.jpg",
+  "read_min": 4,
+  "series": "康德拉坚科将军",
+  "tg_url": "https://t.me/portartur_dalnii/227",
+  "series_slug": "general-kondratenko"
+ },
+ {
+  "slug": "gaolyan-i-sopki",
+  "tg_ids": [
+   219
+  ],
+  "date": "2026-11-01",
+  "title": "高粱与山岗：满洲战争中的两个新经验",
+  "dek": "俄军条令之外的事物，怎样留在战后的语言和音乐中。",
+  "summary": "俄军原为欧洲平原作战做准备，到了满洲却遇见高粱与连绵山岗。1904年夏，辽阳四周高达三米的高粱像一堵墙，一个连距人二十步便会消失。日军1894–1895年在此作战，知道如何利用，俄军则不得不砍掉阵地前的庄稼。高粱也用来酿制俄军所称“汉烧”的酒。俄语сопка一词来自俄国西北，原指土冢，战后成为山岗的常用称呼；每场战斗都变成争夺高地。山岗还留在沙特罗夫《在满洲的山岗上》的旋律里。",
+  "facts": [
+   "高粱有时可长至三米。",
+   "沙河的普季洛夫高地于1904年10月被攻占，以率军夺取它的将军命名。"
+  ],
+  "type": "explainer",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "shatrov"
+  ],
+  "places": [
+   "manchzhuriya",
+   "lyaoyan",
+   "vysokaya-gora",
+   "uglovaya-gora",
+   "volchi-gory",
+   "sopka-putilovskaya",
+   "shahe"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_180@01-11-2026_20-10-06.jpg",
+   "photos/photo_181@01-11-2026_20-10-06.jpg",
+   "photos/photo_182@01-11-2026_20-10-06.jpg",
+   "photos/photo_183@01-11-2026_20-10-06.jpg",
+   "photos/photo_184@01-11-2026_20-10-06.jpg",
+   "photos/photo_185@01-11-2026_20-10-06.jpg",
+   "photos/photo_186@01-11-2026_20-10-06.jpg",
+   "photos/photo_187@01-11-2026_20-10-07.jpg"
+  ],
+  "cover": "photos/photo_185@01-11-2026_20-10-06.jpg",
+  "read_min": 2,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/219",
+  "series_slug": null
+ },
+ {
+  "slug": "lektsiya-nazarenko-russko-yaponskaya-voina",
+  "tg_ids": [
+   216
+  ],
+  "date": "2026-10-31",
+  "title": "基里尔·纳扎连科的日俄战争讲座",
+  "dek": "约一个半小时，从战争起因讲到后世记忆，并辨析相关传说。",
+  "summary": "推荐海军史学者、历史学博士、圣彼得堡国立大学教授基里尔·纳扎连科的讲座。讲座在俄罗斯政治历史博物馆举行，由“数字历史”频道发布。1小时20分钟，从开战原因讲到记忆中的痕迹。对本频道读者尤其相关的是俄国取得旅顺、关东基地的利弊、别佐布拉佐夫集团与普列韦名言、夜袭、“瓦良格”号和“守护”号、黄海海战、要塞投降，以及“后见之明”如何妨碍评判防御战。作者认为讲解清楚，既不煽情，也不刻意贬低。",
+  "facts": [
+   "讲座长1小时20分钟。",
+   "举办地为俄罗斯政治历史博物馆。"
+  ],
+  "type": "source",
+  "layer": [
+   "russian",
+   "modern"
+  ],
+  "people": [
+   "nazarenko",
+   "vitte",
+   "plehve",
+   "bezobrazov"
+  ],
+  "places": [
+   "port-artur",
+   "kvantun",
+   "zheltoe-more"
+  ],
+  "books": [],
+  "photos": [],
+  "cover": null,
+  "read_min": 2,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/216",
+  "series_slug": null
+ },
+ {
+  "slug": "poselyagin-poruchiki-po-admiralteistvu",
+  "tg_ids": [
+   214
+  ],
+  "date": "2026-10-31",
+  "title": "《海军部中尉们》：“双胞胎”第二部",
+  "dek": "波谢利亚金穿越故事的续篇，以及黄海海战的历史对照。",
+  "summary": "应订阅读者要求听完波谢利亚金三部曲第二部的记录。书中俄日打成平手，维特格夫特将舰队带往海参崴，成为海军大臣。频道作者随即提醒真实经过：1904年7月28日（8月10日），“皇太子”号舰桥中弹，舰队失去指挥，部分舰只返回旅顺，部分被中立港扣留，没有一艘抵达海参崴。小说随后让兄弟十年间打遍各场战争，拥有夜视能力，一战中替代整支舰队。书评的疑问是：既然不想阻止任何事情，知道未来又有什么用？",
+  "facts": [
+   "1904年7月28日（8月10日）海战后，被扣留的军舰驶往青岛、上海和西贡。",
+   "全书十三章。"
+  ],
+  "type": "book",
+  "layer": [
+   "russian",
+   "modern"
+  ],
+  "people": [
+   "poselyagin",
+   "vitgeft",
+   "nikolai-ii"
+  ],
+  "places": [
+   "zheltoe-more",
+   "port-artur"
+  ],
+  "books": [
+   "poselyagin-poruchiki-po-admiralteystvu"
+  ],
+  "photos": [
+   "photos/photo_179@31-10-2026_13-39-36.jpg"
+  ],
+  "cover": "photos/photo_179@31-10-2026_13-39-36.jpg",
+  "read_min": 3,
+  "series": "波谢利亚金的双胞胎系列",
+  "tg_url": "https://t.me/portartur_dalnii/214",
+  "series_slug": "bliznetsy-poselyagina"
+ },
+ {
+  "slug": "kondratenko-put-k-port-arturu",
+  "tg_ids": [
+   210
+  ],
+  "date": "2026-10-30",
+  "title": "康德拉坚科将军：走向旅顺",
+  "dek": "拮据家庭中的第十个孩子，两所学院的毕业生，教士兵识字的指挥官。",
+  "summary": "“旅顺防御之魂”罗曼·康德拉坚科传记第一篇。1857年生于第比利斯，是退役少校的第十个孩子，公费求学，以一等成绩先后毕业于尼古拉工程学院和总参谋部学院。筑城与参谋训练汇于一身，后来派上用场。任连长时，他便在自家教士兵识字。1900年随团赴中国，首次见到旅顺；1903年11月接掌当地东西伯利亚第7步枪旅。文章另叙家庭与子女命运。",
+  "facts": [
+   "1857年9月30日（10月12日）生于第比利斯。",
+   "1895年在苏瓦乌基接掌第20步枪团。",
+   "幼子安德烈1917年夏阵亡于塔尔诺波尔附近。"
+  ],
+  "type": "person",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "kondratenko"
+  ],
+  "places": [
+   "port-artur"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_175@30-10-2026_10-20-05.jpg",
+   "photos/photo_176@30-10-2026_10-20-06.jpg",
+   "photos/photo_332@archive.jpg",
+   "photos/photo_178@30-10-2026_10-20-06.jpg"
+  ],
+  "cover": "photos/photo_332@archive.jpg",
+  "read_min": 3,
+  "series": "康德拉坚科将军",
+  "tg_url": "https://t.me/portartur_dalnii/210",
+  "series_slug": "general-kondratenko"
+ },
+ {
+  "slug": "pikul-kreisera-retsenziya",
+  "tg_ids": [
+   200
+  ],
+  "date": "2026-10-29",
+  "title": "皮库尔的《巡洋舰》：海参崴与军人荣誉",
+  "dek": "38天写成的小说，以及真实甲板上虚构人物的问题。",
+  "summary": "评皮库尔1985年为纪念对马海战周年、38天写成的《巡洋舰》。海军少尉帕纳菲金从“勇士”号调至“留里克”号，随海参崴支队经历出击、与上村交战、沉舰和被俘。虚构人物身旁是真实的舰长与将领，史料基础为叶戈里耶夫1939年的专著。频道作者欣赏短促有力的语言，主要疑虑却是：虚构海军少尉随真实“留里克”号沉没，没有参考书，读者难以分辨史料与想象。它不是专著，但能讲出比学校课程更多的支队故事。",
+  "facts": [
+   "小说1985年用38天写成，三年后获俄罗斯苏维埃联邦社会主义共和国国家奖。",
+   "依据为V. E. 叶戈里耶夫《1904–1905年日俄战争中海参崴巡洋舰的行动》（1939）。"
+  ],
+  "type": "book",
+  "layer": [
+   "russian",
+   "soviet"
+  ],
+  "people": [
+   "pikul",
+   "trusov",
+   "iessen",
+   "bezobrazov-pyotr",
+   "reitsenshtein",
+   "kamimura"
+  ],
+  "places": [
+   "vladivostok",
+   "ulsan"
+  ],
+  "books": [
+   "pikul-kreysera",
+   "egorev-operatsii"
+  ],
+  "photos": [
+   "photos/photo_165@29-10-2026_16-40-08.jpg",
+   "photos/photo_166@29-10-2026_16-40-08.jpg",
+   "photos/photo_167@29-10-2026_16-40-08.jpg",
+   "photos/photo_168@29-10-2026_16-40-08.jpg",
+   "photos/photo_169@29-10-2026_16-40-09.jpg",
+   "photos/photo_170@29-10-2026_16-40-09.jpg",
+   "photos/photo_171@29-10-2026_16-40-09.jpg",
+   "photos/photo_172@29-10-2026_16-40-09.jpg",
+   "photos/photo_173@29-10-2026_16-40-09.jpg",
+   "photos/photo_174@29-10-2026_16-40-09.jpg"
+  ],
+  "cover": "photos/photo_165@29-10-2026_16-40-08.jpg",
+  "read_min": 3,
+  "series": "海参崴巡洋舰支队与《巡洋舰》",
+  "tg_url": "https://t.me/portartur_dalnii/200",
+  "series_slug": "vladivostokskiy-otryad-i-kreysera"
+ },
+ {
+  "slug": "panishchev-krizis-nravstvennogo-soznaniya",
+  "tg_ids": [
+   199
+  ],
+  "date": "2026-10-28",
+  "title": "道德对下濑火药：帕尼谢夫的专著",
+  "dek": "评一部以“道德意识危机”解释战败的著作。",
+  "summary": "评A. L. 帕尼谢夫《俄国道德意识危机与1904–1905年日俄战争》（2022）。该书认为民族道德意识决定战争结果。频道作者质疑这一方法：“道德退步”无法测量，却足以解释任何事情，于是下濑火药、测距仪、单线西伯利亚铁路及指挥决策退居次要。到第50页才讲到战争，旅顺防御约十页，日本文化仅三页。作者认为，这更像带插图的布道，而非分析；想争辩时可以一读。",
+  "facts": [
+   "INFRA-M于2022年出版，200页。",
+   "要塞防御约占十页，马卡罗夫占17页。"
+  ],
+  "type": "book",
+  "layer": [
+   "russian",
+   "modern"
+  ],
+  "people": [
+   "panishchev",
+   "makarov",
+   "kondratenko",
+   "stessel"
+  ],
+  "places": [
+   "port-artur",
+   "tsusima"
+  ],
+  "books": [
+   "panishchev-krizis-nravstvennogo-soznaniya"
+  ],
+  "photos": [
+   "photos/photo_164@28-10-2026_23-02-47.jpg"
+  ],
+  "cover": "photos/photo_164@28-10-2026_23-02-47.jpg",
+  "read_min": 3,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/199",
+  "series_slug": null
+ },
+ {
+  "slug": "posle-tri-pali-razvlecheniya-na-pozitsiyah",
+  "tg_ids": [
+   189
+  ],
+  "date": "2026-10-28",
+  "title": "“数到三，开火！”：旅顺阵地上如何消遣",
+  "dek": "敌方战壕里的掌声、押注炮弹，以及胸墙上的危险游戏。",
+  "summary": "阵地战单调，士兵寻找消遣，有时甚至与敌人一起。许多日本人战前在满洲生活，会说俄语，战斗间隙双方隔着胸墙聊天，直到言语变成交火。满洲前线还出现过日军为俄军战壕中的男高音鼓掌。旅顺陆地防线最流行“数到三，开火！”：双方齐声数三下，俄军跳出战壕，日军射击，有时真的打中。另有押注下一发炮弹将落在哪个街区、口径多大的“赌局”。文章依据雷谢夫的书，照片取自日本图册。",
+  "facts": [
+   "“数到三，开火！”由俄军步枪兵发明，日军也乐于参与。",
+   "押注炮弹落点被称为“旅顺轮盘赌”。",
+   "照片来自日本国立国会图书馆藏《日露戦役寫眞帖》。"
+  ],
+  "type": "culture",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "lysev"
+  ],
+  "places": [
+   "port-artur"
+  ],
+  "books": [
+   "lysev-russkiy-port-artur-v-1904-godu",
+   "nitiro-senyeki-syasincho"
+  ],
+  "photos": [
+   "photos/photo_154@28-10-2026_08-55-08.jpg",
+   "photos/photo_155@28-10-2026_08-55-08.jpg",
+   "photos/photo_156@28-10-2026_08-55-08.jpg",
+   "photos/photo_157@28-10-2026_08-55-08.jpg",
+   "photos/photo_158@28-10-2026_08-55-08.jpg",
+   "photos/photo_159@28-10-2026_08-55-08.jpg",
+   "photos/photo_160@28-10-2026_08-55-08.jpg",
+   "photos/photo_161@28-10-2026_08-55-08.jpg",
+   "photos/photo_162@28-10-2026_08-55-09.jpg",
+   "photos/photo_163@28-10-2026_08-55-09.jpg"
+  ],
+  "cover": "photos/photo_154@28-10-2026_08-55-08.jpg",
+  "read_min": 2,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/189",
+  "series_slug": null
+ },
+ {
+  "slug": "albom-mandzhuriya-1906",
+  "tg_ids": [
+   183
+  ],
+  "date": "2026-10-27",
+  "title": "《满洲》：1906年的艺术图册",
+  "dek": "战后一年出版的战争图册，如今可在线翻阅。",
+  "summary": "介绍Internet Archive上的《满洲：日俄战争艺术图册》，1906年在圣彼得堡由R. 戈利克与A. 维尔博尔格公司印刷，共122页插图。作者提醒留意出版时点：朴次茅斯和约刚签订，出版者正在展示他们希望人们记住的战争模样。它不是专著，而是当时人的目光。俄罗斯国家公共历史图书馆完成数字化，可免费、免注册阅读。",
+  "facts": [
+   "1906年出版，A. V. 马尔丁诺夫主编。",
+   "共122页插图。"
+  ],
+  "type": "source",
+  "layer": [
+   "russian"
+  ],
+  "people": [],
+  "places": [
+   "manchzhuriya",
+   "port-artur"
+  ],
+  "books": [
+   "albom-mandzhuriya-1906"
+  ],
+  "photos": [
+   "photos/photo_148@27-10-2026_22-10-09.jpg",
+   "photos/photo_149@27-10-2026_22-10-09.jpg",
+   "photos/photo_150@27-10-2026_22-10-09.jpg",
+   "photos/photo_151@27-10-2026_22-10-09.jpg",
+   "photos/photo_152@27-10-2026_22-10-09.jpg",
+   "photos/photo_153@27-10-2026_22-10-09.jpg"
+  ],
+  "cover": "photos/photo_151@27-10-2026_22-10-09.jpg",
+  "read_min": 1,
+  "series": "镜头中的战争",
+  "tg_url": "https://t.me/portartur_dalnii/183",
+  "series_slug": "fotoletopis-voyny"
+ },
+ {
+  "slug": "vitte-posleslovie-reputatsiya",
+  "tg_ids": [
+   180
+  ],
+  "date": "2026-10-27",
+  "title": "“半个萨哈林伯爵”后记：维特的声名",
+  "dek": "依据埃拉·萨吉纳泽的研究，看报纸、沙龙与戏剧怎样塑造退休的维特。",
+  "summary": "维特系列最后一篇，以埃拉·萨吉纳泽《改革之后的改革家》（新文学评论出版社，2017）为基础。维特同时惹恼各方：右翼称其人民之敌，列宁说他是“小丑大臣”，皇后怪罪宣言，自由派则认为那不是真正宪法。交易所关系、想当“总统”等恐惧都与他相连。然而他也可能是俄国首位善于与报界合作的公共政治人物。退休伯爵成为科雷什科剧作角色，藏于法国银行的回忆录则在1920年代初于柏林问世。帖末附维特学术传记书单。",
+  "facts": [
+   "科雷什科《大人物》（1908）在首都上演，场场满座。",
+   "1911年与斯托雷平、古奇科夫的论争被称为“十月十七日的尸体”。",
+   "维特没有纪念像，仅在他创办的圣彼得堡理工学院门厅有一尊胸像。"
+  ],
+  "type": "book",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "vitte",
+   "saginadze",
+   "lenin",
+   "suvorin"
+  ],
+  "places": [],
+  "books": [
+   "saginadze-reformator-posle-reform",
+   "vitte-vospominaniya",
+   "ananich-ganelin-vitte-i-ego-vremya",
+   "ilyin-vitte-zhzl",
+   "ananich-rossiya-i-mezhdunarodnyy-kapital",
+   "korelin-stepanov-vitte-finansist-politik-diplomat",
+   "ignatyev-vitte-diplomat"
+  ],
+  "photos": [
+   "photos/photo_145@27-10-2026_17-20-06.jpg",
+   "photos/photo_146@27-10-2026_17-20-07.jpg",
+   "photos/photo_147@27-10-2026_17-20-07.jpg"
+  ],
+  "cover": "photos/photo_145@27-10-2026_17-20-06.jpg",
+  "read_min": 4,
+  "series": "“半个萨哈林伯爵”",
+  "tg_url": "https://t.me/portartur_dalnii/180",
+  "series_slug": "graf-polusahalinskiy"
+ },
+ {
+  "slug": "valentin-pikul-biografiya",
+  "tg_ids": [
+   175
+  ],
+  "date": "2026-10-26",
+  "title": "瓦连京·皮库尔：向俄国讲述本国历史的海军少年",
+  "dek": "《巡洋舰》作者的生平，以及小说能否当真的争论。",
+  "summary": "皮库尔1928年生于列宁格勒，经历围城第一个冬天，毕业于索洛韦茨基海军少年学校，在“格罗兹尼”号驱逐舰服役。他未受高等教育，靠自学成才。1962年起居里加，写成《穆恩海峡》《宠臣》《巡洋舰》等。据2007年统计，作品出版500余次，总印量约5亿册。文学研究者将其归为大众文学，认为作品倾向英雄化，缺乏对文献的批判使用。争议最大的是拉斯普京题材《邪恶势力》，作者身后却因此获肖洛霍夫奖。",
+  "facts": [
+   "1988年凭《巡洋舰》获俄罗斯苏维埃联邦社会主义共和国高尔基国家奖。",
+   "1990年7月16日卒于里加。",
+   "拉斯普京小说1979年以《最后的界线》删节出版，1989年才出全本。"
+  ],
+  "type": "person",
+  "layer": [
+   "soviet"
+  ],
+  "people": [
+   "pikul"
+  ],
+  "places": [],
+  "books": [
+   "pikul-kreysera"
+  ],
+  "photos": [
+   "photos/photo_140@26-10-2026_16-15-07.jpg",
+   "photos/photo_141@26-10-2026_16-15-07.jpg",
+   "photos/photo_142@26-10-2026_16-15-07.jpg",
+   "photos/photo_143@26-10-2026_16-15-07.jpg",
+   "photos/photo_144@26-10-2026_16-15-07.jpg"
+  ],
+  "cover": "photos/photo_140@26-10-2026_16-15-07.jpg",
+  "read_min": 3,
+  "series": "海参崴巡洋舰支队与《巡洋舰》",
+  "tg_url": "https://t.me/portartur_dalnii/175",
+  "series_slug": "vladivostokskiy-otryad-i-kreysera"
+ },
+ {
+  "slug": "vladivostokskii-otryad-kreiserov",
+  "tg_ids": [
+   167
+  ],
+  "date": "2026-10-25",
+  "title": "海参崴巡洋舰支队：日俄战争中的破交舰队",
+  "dek": "四艘巡洋舰，从朝鲜海峡到东京湾搜寻日本运输船。",
+  "summary": "支队于1903年6月7日组建，任务是打击日本海上贸易，包括“俄罗斯”号、“雷霆”号、“留里克”号、“勇士”号及辅助巡洋舰“勒拿”号。最大战果在1904年6月2（15）日：朝鲜海峡截击运送旅顺攻城用280毫米榴弹炮的船队，击沉“常陆丸”，“佐渡丸”搁浅。7月耶森在东京湾口附近炸沉英国“骑士司令”号，伦敦捕获法庭认可其合法性。8月1（14）日蔚山海战遇上村舰队，“留里克”号由舰员自沉。结果难以一概而论：未切断日本交通，却阻断一批攻城炮的运输。",
+  "facts": [
+   "“常陆丸”和“佐渡丸”共载18门阿姆斯特朗280毫米攻城榴弹炮。",
+   "蔚山海战后，日方救起约625名“留里克”号水兵。",
+   "1906年3月30日支队在利巴瓦解散。"
+  ],
+  "type": "event",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "iessen",
+   "kamimura",
+   "bezobrazov-pyotr",
+   "trusov",
+   "ivanov-13",
+   "reitsenshtein",
+   "makarov",
+   "pikul"
+  ],
+  "places": [
+   "vladivostok",
+   "ulsan",
+   "port-artur"
+  ],
+  "books": [
+   "pikul-kreysera"
+  ],
+  "photos": [
+   "photos/photo_133@25-10-2026_09-54-01.jpg",
+   "photos/photo_134@25-10-2026_09-54-01.jpg",
+   "photos/photo_135@25-10-2026_09-54-01.jpg",
+   "photos/photo_136@25-10-2026_09-54-01.jpg",
+   "photos/photo_137@25-10-2026_09-54-01.jpg",
+   "photos/photo_138@25-10-2026_09-54-01.jpg",
+   "photos/photo_139@25-10-2026_09-54-01.jpg"
+  ],
+  "cover": "photos/photo_135@25-10-2026_09-54-01.jpg",
+  "read_min": 4,
+  "series": "海参崴巡洋舰支队与《巡洋舰》",
+  "tg_url": "https://t.me/portartur_dalnii/167",
+  "series_slug": "vladivostokskiy-otryad-i-kreysera"
+ },
+ {
+  "slug": "dnevnik-kapitana-lile",
+  "tg_ids": [
+   164
+  ],
+  "date": "2026-10-24",
+  "title": "利利耶上尉日记：工程师眼中的旅顺",
+  "dek": "先建设要塞、再守卫它十一个月的军事工程师。",
+  "summary": "米哈伊尔·利利耶1900年起主持关东工程局施工，建设了后来自己守卫的工事。日记涵盖1904年1月至1905年1月的围城。观察出自工程师，评价尖锐：首夜舰队“完全未作战斗准备”，后来又写上层争斗、坏血病和拥挤医院，称203高地为“旅顺的各各他”。文章还叙手稿命运：流亡、经信使送苏联、藏于列宁图书馆、1992年出版前散失，最终靠副本保存。频道作者建议将其尖锐判断与其他见证对读。",
+  "facts": [
+   "1868年出生，1898年受派赴旅顺。",
+   "日记2002年由中央印刷出版社出版。",
+   "1917年后流亡法国，1941年去世。"
+  ],
+  "type": "book",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "lilie",
+   "kondratenko"
+  ],
+  "places": [
+   "port-artur",
+   "vysokaya-gora"
+  ],
+  "books": [
+   "lilye-dnevnik-osady-port-artura"
+  ],
+  "photos": [
+   "photos/photo_130@24-10-2026_19-45-02.jpg",
+   "photos/photo_131@24-10-2026_19-45-02.jpg",
+   "photos/photo_132@24-10-2026_19-45-02.jpg"
+  ],
+  "cover": "photos/photo_130@24-10-2026_19-45-02.jpg",
+  "read_min": 3,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/164",
+  "series_slug": null
+ },
+ {
+  "slug": "zheltorossiya-koloniya-kotoruyu-ne-pridumali",
+  "tg_ids": [
+   161
+  ],
+  "date": "2026-10-24",
+  "title": "“黄俄罗斯”：始终未想清楚的殖民地",
+  "dek": "将军们关于满洲未来的方案，以及始终缺席的明确计划。",
+  "summary": "记者伊利亚·列维托夫提出“黄俄罗斯”，设想从贝加尔湖到大洋的缓冲殖民地，报告宣读于对马海战翌日。本文依据历史学者米哈伊尔·霍佳科夫对军方秘密备忘录的研究。巴拉巴什1887年便主张攻满洲、进北京；格罗杰科夫建议使当地脱离北京，但不直接吞并；苏博蒂奇1903年主张将南满连同达里尼、旅顺归还中国，交换北满；邓尼金则称中东铁路战略价值“更偏负面”。霍佳科夫的结论是：吞并仿佛已成定局，却无人想清楚俄国远东应是什么样。",
+  "facts": [
+   "列维托夫《作为缓冲殖民地的黄俄罗斯》宣读于1905年5月16日。",
+   "中东铁路每俄里造价15.2万卢布，比外贝加尔高8万。",
+   "库罗帕特金1913年主张将边界移至戈壁沙漠。"
+  ],
+  "type": "explainer",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "levitov",
+   "hodyakov",
+   "barabash",
+   "grodekov",
+   "subotich",
+   "denikin",
+   "kuropatkin",
+   "vitte",
+   "nikolai-ii"
+  ],
+  "places": [
+   "manchzhuriya",
+   "kvzhd",
+   "dalnii",
+   "port-artur"
+  ],
+  "books": [
+   "hodyakov-zheltorossiya"
+  ],
+  "photos": [
+   "photos/photo_127@24-10-2026_09-11-01.jpg",
+   "photos/photo_128@24-10-2026_09-11-01.jpg",
+   "photos/photo_129@24-10-2026_09-11-01.jpg"
+  ],
+  "cover": "photos/photo_127@24-10-2026_09-11-01.jpg",
+  "read_min": 4,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/161",
+  "series_slug": null
+ },
+ {
+  "slug": "lysev-russkii-port-artur-v-1904-godu",
+  "tg_ids": [
+   159
+  ],
+  "date": "2026-10-23",
+  "title": "被围旅顺的日常：亚历山大·雷谢夫的著作",
+  "dek": "《1904年的俄国旅顺》中的面包、浴室和炮火下的菜园。",
+  "summary": "对雷谢夫《1904年的俄国旅顺：战时日常生活史》（2019）的肯定书评。强攻和背叛已有许多著述，他却问城中怎样生活：吃什么、睡哪里、炮击间隙做什么。频道作者尤其赞许资料基础：海军档案馆和国家历史档案馆12个全宗83卷案卷，包括口粮、浴室、面包房、自来水、偷运食品与军队菜园文件。官方记录旁还有高尔察克笔记、里姆斯基-科萨科夫日记和水兵回忆。读来如同被围城中的现场报道。",
+  "facts": [
+   "雷谢夫使用12个档案全宗中的83卷案卷。",
+   "播种出版社2019年出版，336页。"
+  ],
+  "type": "book",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "lysev",
+   "kolchak"
+  ],
+  "places": [
+   "port-artur"
+  ],
+  "books": [
+   "lysev-russkiy-port-artur-v-1904-godu"
+  ],
+  "photos": [
+   "photos/photo_125@23-10-2026_21-41-01.jpg",
+   "photos/photo_126@23-10-2026_21-41-01.jpg"
+  ],
+  "cover": "photos/photo_125@23-10-2026_21-41-01.jpg",
+  "read_min": 2,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/159",
+  "series_slug": null
+ },
+ {
+  "slug": "aleksandr-bezobrazov-kavalergard",
+  "tg_ids": [
+   158
+  ],
+  "date": "2026-10-23",
+  "title": "亚历山大·别佐布拉佐夫：“促成战争”的近卫骑兵",
+  "dek": "鸭绿江森林特许权、宫廷小集团，以及他们究竟负多大责任。",
+  "summary": "退役近卫骑兵上尉别佐布拉佐夫1898年获引荐给尼古拉二世，提出仿东印度公司“和平征服”朝鲜，以尤利·布林纳的鸭绿江、图们江森林特许权为基础。股东包括亚历山大·米哈伊洛维奇大公及显贵，穿便衣的“伐木工”在鸭绿江修筑工事。1903年集团达到顶峰：别佐布拉佐夫任国务秘书，维特失去财政大臣职位，半年内国库为特许事业投入200万卢布。文章引学者意见：文献中有时夸大集团作用，战争责任仍需讨论。",
+  "facts": [
+   "1896年取得特许权的尤利·布林纳，是演员尤·伯连纳的祖父。",
+   "1903年5月6日成为国务秘书。",
+   "十月革命后流亡，1931年卒于巴黎。"
+  ],
+  "type": "person",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "bezobrazov",
+   "nikolai-ii",
+   "vitte",
+   "briner",
+   "abaza",
+   "alekseev",
+   "plehve",
+   "kuropatkin"
+  ],
+  "places": [
+   "yalu",
+   "koreya"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_124@23-10-2026_10-15-05.jpg"
+  ],
+  "cover": "photos/photo_124@23-10-2026_10-15-05.jpg",
+  "read_min": 4,
+  "series": "俄国远东政策的设计者",
+  "tg_url": "https://t.me/portartur_dalnii/158",
+  "series_slug": "arhitektory-dalnevostochnoy-politiki"
+ },
+ {
+  "slug": "veresaev-na-yaponskoi-voine",
+  "tg_ids": [
+   155
+  ],
+  "date": "2026-10-22",
+  "title": "魏列萨耶夫：医生眼中的战争",
+  "dek": "当年被视为“不爱国”的《在日俄战争中》。",
+  "summary": "到1904年，魏列萨耶夫已凭坦言俄国医疗状况的《医生札记》成名。以预备役身份被征召后，随野战医院经历包括奉天在内的整场战争，再穿过革命中的西伯利亚回家。札记几乎是目击日记，主要敌人在后方：衙门、军需官、报表。医院没有伤员，伤员却在途中被漫无目的运送数周。最有力的篇章写奉天战后混乱撤退，结尾是西伯利亚铁路车站集会。频道作者视其为出色的战争纪实文学：并未否认勇敢，却也让人看到代价。",
+  "facts": [
+   "本姓斯米多维奇，1867年生于图拉。",
+   "《在日俄战争中》直到1928年才完整出版。",
+   "1945年6月卒于莫斯科。"
+  ],
+  "type": "book",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "veresaev",
+   "kuropatkin"
+  ],
+  "places": [
+   "mukden",
+   "manchzhuriya"
+  ],
+  "books": [
+   "veresaev-na-yaponskoy-voyne"
+  ],
+  "photos": [
+   "photos/photo_121@22-10-2026_13-38-01.jpg",
+   "photos/photo_122@22-10-2026_13-38-01.jpg",
+   "photos/photo_123@22-10-2026_13-38-01.jpg"
+  ],
+  "cover": "photos/photo_121@22-10-2026_13-38-01.jpg",
+  "read_min": 3,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/155",
+  "series_slug": null
+ },
+ {
+  "slug": "kak-ustroen-fort",
+  "tg_ids": [
+   154
+  ],
+  "date": "2026-10-21",
+  "title": "堡垒怎样构成：看图解释",
+  "dek": "壕沟、内壕壁、侧射堡与地下交通廊道：19世纪末筑城术语。",
+  "summary": "第5号防御工事文章的补充。作者依据19世纪末典型堡垒示意图，逐项解释战壕、外壕壁与内壕壁、土垒、侧射堡与半侧射堡、中央营房、内院及入口火力点。重点是侧射堡：位于壕沟中的混凝土设施沿沟射击，从野外看不见，炮兵也很难将其摧毁。另介绍图中未画出的地下交通廊道和吊桥。旅顺的壕沟是从岩石中凿出的干壕。作用可概括为：壕沟阻止接近，土垒掩护射手，侧射堡射击进入沟内者。",
+  "facts": [
+   "旅顺堡垒壕沟为从岩石中凿出的干壕。",
+   "“向野侧”侧射堡朝向野外，即敌军方向。"
+  ],
+  "type": "explainer",
+  "layer": [
+   "russian"
+  ],
+  "people": [],
+  "places": [
+   "ukreplenie-5",
+   "port-artur"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_120@21-10-2026_09-32-53.jpg",
+   "photos/photo_337@archive.jpg"
+  ],
+  "cover": "photos/photo_120@21-10-2026_09-32-53.jpg",
+  "read_min": 2,
+  "series": "旅顺要塞",
+  "tg_url": "https://t.me/portartur_dalnii/154",
+  "series_slug": "krepost-port-artur"
+ },
+ {
+  "slug": "ukreplenie-5-yahutszui",
+  "tg_ids": [
+   144,
+   174
+  ],
+  "date": "2026-10-21",
+  "title": "第5号防御工事：常被叫作“堡垒”的另一类设施",
+  "dek": "探访旅顺要塞保存较好的防御设施之一。",
+  "summary": "作者实地探访旅顺鸦户嘴第5号防御工事。这里叠加了多段历史：清军始建，俄军改建，其后日军、苏军和解放军先后驻守。文章说明韦利奇科方案中防御工事与堡垒的区别，以及防线为何离市区过近。日军战壕未推进至此，工事未经战斗移交，因此保存较好。场地上的10英寸海岸炮采用杜尔拉赫尔式炮架，但其真实性尚未确认，馆内另有要塞模型。“西部战线指挥所”的说法未获文献支持。第二篇附工事还原视频。",
+  "facts": [
+   "位于要塞西部防线第V、第VI号堡垒之间。",
+   "第VI号堡垒已画入规划，却从未开工。",
+   "坐标：38.7970, 121.1933。"
+  ],
+  "type": "place",
+  "layer": [
+   "russian",
+   "japanese",
+   "soviet",
+   "modern"
+  ],
+  "people": [
+   "velichko"
+  ],
+  "places": [
+   "ukreplenie-5",
+   "port-artur",
+   "vysokaya-gora",
+   "elektricheskiy-utes"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_114@21-10-2026_09-30-12.jpg",
+   "photos/photo_115@21-10-2026_09-30-12.jpg",
+   "photos/photo_116@21-10-2026_09-30-12.jpg",
+   "photos/photo_117@21-10-2026_09-30-12.jpg",
+   "photos/photo_118@21-10-2026_09-30-12.jpg",
+   "photos/photo_119@21-10-2026_09-30-12.jpg"
+  ],
+  "cover": "photos/photo_115@21-10-2026_09-30-12.jpg",
+  "read_min": 5,
+  "series": "旅顺要塞",
+  "tg_url": "https://t.me/portartur_dalnii/144",
+  "series_slug": "krepost-port-artur"
+ },
+ {
+  "slug": "misha-iz-nagasaki-myulberg",
+  "tg_ids": [
+   143
+  ],
+  "date": "2026-10-20",
+  "title": "年纪最小的旅顺人：长崎的一座婴儿墓",
+  "dek": "出生于被围要塞的婴儿，以及他的家族故事。",
+  "summary": "长崎悟真寺俄国人墓地有一块石碑，刻着婴儿米哈伊尔·米尔贝格之名。他1904年11月13日生于被围旅顺，投降次日受洗，只活了52天。历史学者德米特里·尼古拉耶夫依据教会登记簿和档案重建家族经历。父亲叶夫根尼少尉在防御战中负伤，获圣乔治勋章；祖母整个围城期间都在医院工作，并成为孙子的教母。原帖简要介绍《祖国》杂志《来自长崎的米沙》，并附原文链接。",
+  "facts": [
+   "1904年11月13日出生，仅活了52天。",
+   "葬于长崎悟真寺旁俄国人墓地。",
+   "D. 尼古拉耶夫《来自长崎的米沙》发表于《祖国》。"
+  ],
+  "type": "memory",
+  "layer": [
+   "russian",
+   "modern"
+  ],
+  "people": [
+   "myulberg",
+   "myulberg-evgenii",
+   "nikolaev-dk"
+  ],
+  "places": [
+   "port-artur",
+   "nagasaki-goshinji"
+  ],
+  "books": [
+   "nikolaev-misha-iz-nagasaki"
+  ],
+  "photos": [
+   "photos/photo_113@20-10-2026_21-45-06.jpg"
+  ],
+  "cover": "photos/photo_113@20-10-2026_21-45-06.jpg",
+  "read_min": 1,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/143",
+  "series_slug": null
+ },
+ {
+  "slug": "molodyakov-rossiya-i-frantsiya",
+  "tg_ids": [
+   142
+  ],
+  "date": "2026-10-20",
+  "title": "俄国与法国：利益的婚姻——瓦西里·莫洛季亚科夫的书",
+  "dek": "法俄同盟如何将法国资金带到满洲。",
+  "summary": "评日本史研究者、历史学者莫洛季亚科夫《俄国与法国：诚挚协约（1889–1900）》。专制帝国与共和国结交：亚历山大三世在喀琅施塔得脱帽听《马赛曲》，巴黎方面欢迎抵达土伦的俄国水兵。浪漫背后是利益：法国需要抗德盟友，俄国需要钱。1895年法国资本参与创建华俄道胜银行，资助中东铁路，进而支持达里尼与旅顺。讽刺的是1904年法国保持中立，并在战争期间与日本盟友英国签订了自己的“诚挚协约”。",
+  "facts": [
+   "华俄道胜银行于1895年以法国资本参与设立。",
+   "1896年尼古拉二世在巴黎为亚历山大三世桥奠基。",
+   "1904年4月，法国与英国签订Entente cordiale。"
+  ],
+  "type": "book",
+  "layer": [
+   "pre1898",
+   "russian"
+  ],
+  "people": [
+   "molodyakov",
+   "aleksandr-iii",
+   "nikolai-ii"
+  ],
+  "places": [
+   "kvzhd",
+   "dalnii",
+   "port-artur",
+   "lyaodun"
+  ],
+  "books": [
+   "molodyakov-rossiya-i-frantsiya"
+  ],
+  "photos": [
+   "photos/photo_112@20-10-2026_12-32-50.jpg"
+  ],
+  "cover": "photos/photo_112@20-10-2026_12-32-50.jpg",
+  "read_min": 2,
+  "series": "友谊的秘密",
+  "tg_url": "https://t.me/portartur_dalnii/142",
+  "series_slug": "sekrety-druzhby"
+ },
+ {
+  "slug": "bokserskoe-vosstanie-ihetuani",
+  "tg_ids": [
+   138
+  ],
+  "date": "2026-10-19",
+  "title": "义和之拳：义和团运动",
+  "dek": "义和团运动如何引来俄军占领满洲，并进一步通向对日战争。",
+  "summary": "前因从鸦片战争和列强瓜分中国讲起，俄国先取得滨海地区，后租借旅顺与达里尼；又有车夫失业、传教冲突、黄河泛滥和旱灾。义和团相信刀枪不入，喊出“扶清灭洋”。慈禧向列强宣战，使馆区被围55天，连涅维奇俄军最先进攻北京城墙。满洲起事者袭击中东铁路、围攻哈尔滨，海兰泡则将中国人驱入黑龙江。到1900年10月，俄军占领整个满洲。",
+  "facts": [
+   "使馆区围攻期间，222名东正教中国信徒遇害，后来被封为殉道者。",
+   "海兰泡有3000至5000名中国人溺亡。",
+   "1901年9月7日议定书规定赔款4.5亿两，俄国分得约29%。"
+  ],
+  "type": "event",
+  "layer": [
+   "pre1898",
+   "russian"
+  ],
+  "people": [
+   "tsysi",
+   "li-hunchzhan",
+   "linevich",
+   "kuropatkin",
+   "vitte"
+  ],
+  "places": [
+   "pekin",
+   "manchzhuriya",
+   "harbin",
+   "blagoveshchensk",
+   "kvzhd"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_108@19-10-2026_18-32-01.jpg",
+   "photos/photo_109@19-10-2026_18-32-01.jpg",
+   "photos/photo_110@19-10-2026_18-32-01.jpg",
+   "photos/photo_111@19-10-2026_18-32-01.jpg"
+  ],
+  "cover": "photos/photo_108@19-10-2026_18-32-01.jpg",
+  "read_min": 4,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/138",
+  "series_slug": null
+ },
+ {
+  "slug": "vitte-chast-2-ministr-kotoryi-otdaval",
+  "tg_ids": [
+   137
+  ],
+  "date": "2026-10-18",
+  "title": "“半个萨哈林伯爵”第二篇：作出让步的大臣",
+  "dek": "战争与革命中的维特：离任、朴次茅斯、十月宣言与法国贷款。",
+  "summary": "维特系列第二篇。他主张用卢布而非刺刀进入满洲，却输给库罗帕特金、普列韦和别佐布拉佐夫集团。1903年8月被转至体面却无实权的职位。对马战败后，又由失势的他赴日议和。维特争取公众和报界，免除赔款，却让出南萨哈林、朝鲜和关东利益。随后起草《十月十七日宣言》，出任首相，并取得一战前最大外债。作者呈现他的矛盾处境：帝国在危机时求助，危机一过又将他排除。",
+  "facts": [
+   "1906年4月贷款22.5亿法郎，约合8.43亿卢布。",
+   "1907年黑色百人团在维特家烟囱安放炸弹，未能引爆。",
+   "1915年2月28日（3月13日）去世。"
+  ],
+  "type": "person",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "vitte",
+   "kuropatkin",
+   "plehve",
+   "bezobrazov",
+   "nikolai-ii",
+   "ruzvelt"
+  ],
+  "places": [
+   "portsmut",
+   "dalnii",
+   "sahalin",
+   "kvantun",
+   "manchzhuriya"
+  ],
+  "books": [
+   "vitte-vospominaniya"
+  ],
+  "photos": [
+   "photos/photo_107@18-10-2026_16-42-01.jpg"
+  ],
+  "cover": "photos/photo_107@18-10-2026_16-42-01.jpg",
+  "read_min": 4,
+  "series": "“半个萨哈林伯爵”",
+  "tg_url": "https://t.me/portartur_dalnii/137",
+  "series_slug": "graf-polusahalinskiy"
+ },
+ {
+  "slug": "pervaya-tihookeanskaya-eskadra",
+  "tg_ids": [
+   127
+  ],
+  "date": "2026-10-17",
+  "title": "第一太平洋舰队：一支舰队的命运",
+  "dek": "旅顺舰队有哪些军舰，谁曾指挥，为何最终沉没在码头旁。",
+  "summary": "俄国军舰原在长崎越冬，1897年日本关闭该锚地后，寻找自有基地的舰队来到旅顺。1903年夏已有66艘舰只。作者列出开战时编制，追踪斯塔尔克、仅指挥36天的马卡罗夫、谨慎的维特格夫特、乌赫托姆斯基和维连等司令更迭。7月28日（8月10日）突围失败后，舰队转战陆地：拆舰炮装备堡垒，水兵进入战壕。203高地失守后，攻城榴弹炮将舰只击沉在码头旁。只有埃森的“塞瓦斯托波尔”号驶往白狼湾，抵御鱼雷艇。",
+  "facts": [
+   "1901–1903年拨1690万卢布建设旅顺海军基地。",
+   "开战时港内有七艘战列舰。",
+   "“彼得罗巴甫洛夫斯克”号沉没时约650人罹难、约80人获救。",
+   "多数沉舰被日方打捞，编入日本海军。"
+  ],
+  "type": "event",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "stark",
+   "makarov",
+   "vitgeft",
+   "alekseev",
+   "uhtomskii",
+   "viren",
+   "essen"
+  ],
+  "places": [
+   "port-artur",
+   "nagasaki-goshinji",
+   "zheltoe-more",
+   "vysokaya-gora",
+   "chemulpo",
+   "vladivostok"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_97@17-10-2026_15-14-01.jpg",
+   "photos/photo_98@17-10-2026_15-14-01.jpg",
+   "photos/photo_99@17-10-2026_15-14-01.jpg",
+   "photos/photo_100@17-10-2026_15-14-01.jpg",
+   "photos/photo_101@17-10-2026_15-14-01.jpg",
+   "photos/photo_102@17-10-2026_15-14-01.jpg",
+   "photos/photo_103@17-10-2026_15-14-01.jpg",
+   "photos/photo_104@17-10-2026_15-14-01.jpg",
+   "photos/photo_105@17-10-2026_15-14-01.jpg",
+   "photos/photo_106@17-10-2026_15-14-01.jpg"
+  ],
+  "cover": "photos/photo_97@17-10-2026_15-14-01.jpg",
+  "read_min": 4,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/127",
+  "series_slug": null
+ },
+ {
+  "slug": "minaev-live-video-o-voine",
+  "tg_ids": [
+   126
+  ],
+  "date": "2026-10-16",
+  "title": "视频：MINAEV LIVE谈日俄战争",
+  "dek": "一小时的通俗战争讲述，内容经历史学者核对。",
+  "summary": "推荐MINAEV LIVE频道的日俄战争节目。一小时介绍帝国战前状况、起因、旅顺、奉天、对马、朴次茅斯和约，以及核心问题：俄国为何战败。频道作者称历史学者参与准备，史实经过核对。主持人受过历史与档案学训练，讲述富于感情、能抓住注意力。适合想用一晚了解这场战争的读者，只须对大量广告有所准备。",
+  "facts": [
+   "节目约一小时。",
+   "主持人专业背景为历史与档案学。"
+  ],
+  "type": "source",
+  "layer": [
+   "modern"
+  ],
+  "people": [
+   "minaev"
+  ],
+  "places": [
+   "port-artur",
+   "mukden",
+   "tsusima",
+   "portsmut"
+  ],
+  "books": [],
+  "photos": [],
+  "cover": null,
+  "read_min": 1,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/126",
+  "series_slug": null
+ },
+ {
+  "slug": "li-hunchzhan-soyuznik-kotoryi-sdaval-kreposti",
+  "tg_ids": [
+   124
+  ],
+  "date": "2026-10-16",
+  "title": "李鸿章：交出要塞的盟友",
+  "dek": "建设旅顺、又两度将它交出的清朝重臣。",
+  "summary": "俄国主要中国合作者的生平。李鸿章在镇压太平天国中崛起，任直隶总督近四分之一个世纪，建设以旅顺口为基地的北洋舰队。1894–1895年战争中，日军一天攻占要塞。马关议和时，日本狂热分子开枪击中他的面部，日方随后降低赔款。李转而倚重俄国：1896年在莫斯科签同盟条约、同意中东铁路，取得300万卢布；1898年签关东租借条约。义和团后参与议定《辛丑条约》，1901年11月去世，未签俄方要求的满洲协定。",
+  "facts": [
+   "马关枪击后，赔款从3亿两减至2亿两。",
+   "1898年因签署关东租借条约，李鸿章获50万卢布。",
+   "1901年《辛丑条约》赔款4.5亿两。"
+  ],
+  "type": "person",
+  "layer": [
+   "pre1898",
+   "russian"
+  ],
+  "people": [
+   "li-hunchzhan",
+   "vitte",
+   "tsysi",
+   "nikolai-ii"
+  ],
+  "places": [
+   "port-artur",
+   "kvantun",
+   "kvzhd",
+   "manchzhuriya"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_95@16-10-2026_17-12-01.jpg",
+   "photos/photo_96@16-10-2026_17-12-01.jpg"
+  ],
+  "cover": "photos/photo_95@16-10-2026_17-12-01.jpg",
+  "read_min": 4,
+  "series": "俄国远东政策的设计者",
+  "tg_url": "https://t.me/portartur_dalnii/124",
+  "series_slug": "arhitektory-dalnevostochnoy-politiki"
+ },
+ {
+  "slug": "aleksandr-stepanov-hrabrets-s-drugoi-voiny",
+  "tg_ids": [
+   123
+  ],
+  "date": "2026-10-15",
+  "title": "亚历山大·斯捷潘诺夫：另一场战争中的勇士",
+  "dek": "《旅顺口》作者未经历旅顺围城，却上过一战前线，参加过喀琅施塔得战斗。",
+  "summary": "延续《旅顺口》的讨论，转向作者。斯捷潘诺夫始终自称童年曾在父亲的炮台经历围城，尼古拉耶夫和奇斯佳科夫2010年却查明父子均未到过要塞。他真实的经历同样严酷：炮兵之子，1914年以近卫炮兵军官身份上前线，三年内获几乎全部战功奖项，包括圣乔治武器。1921年进攻喀琅施塔得时跌入冰水。后来在克拉斯诺达尔，他对过去缄默，依据老兵回忆录和书信书写另一场战争。",
+  "facts": [
+   "1892年生于敖德萨。",
+   "1915年2月因鲁德卡-斯克鲁达村附近战斗获圣乔治武器。",
+   "小说先后17次出版，1946年获斯大林一等奖。"
+  ],
+  "type": "person",
+  "layer": [
+   "soviet"
+  ],
+  "people": [
+   "stepanov",
+   "nikolaev-dk"
+  ],
+  "places": [
+   "port-artur"
+  ],
+  "books": [
+   "stepanov-port-artur",
+   "stepanov-semya-zvonaryovyh",
+   "nikolaev-chistyakov-port-artur-arhivnyy-poisk"
+  ],
+  "photos": [
+   "photos/photo_94@15-10-2026_21-46-01.jpg"
+  ],
+  "cover": "photos/photo_94@15-10-2026_21-46-01.jpg",
+  "read_min": 3,
+  "series": "斯捷潘诺夫与他的《旅顺口》",
+  "tg_url": "https://t.me/portartur_dalnii/123",
+  "series_slug": "stepanov-i-ego-port-artur"
+ },
+ {
+  "slug": "skolko-eto-v-nyneshnih-dengah",
+  "tg_ids": [
+   122
+  ],
+  "date": "2026-10-15",
+  "title": "折合今天是多少钱：如何换算沙皇卢布",
+  "dek": "将维特时代金额折算为现代卢布的四种办法，结果为何相差十三倍。",
+  "summary": "回应读者常问的问题。沙皇卢布没有统一的现代汇率：与1913年之间隔着恶性通胀和多次货币改革，各类价格相互比例也已改变。作者以面包、工资、黄金和财政预算份额四种方法估算，每卢布分别约合今天1 750、5 000、9 400和23 700卢布。李鸿章的300万卢布相当于50亿至710亿，关东计划1.1亿则相当于0.2万亿至2.6万亿。文章另列1913年从清扫工到教授的薪金，教授约相当于二十名清扫工。",
+  "facts": [
+   "维特金卢布含纯金0.774克。",
+   "1900年国库收入17亿卢布。",
+   "约1913年，清扫工月薪18卢布，莫斯科大学教授350卢布。"
+  ],
+  "type": "explainer",
+  "layer": [
+   "russian",
+   "modern"
+  ],
+  "people": [
+   "vitte",
+   "li-hunchzhan"
+  ],
+  "places": [
+   "dalnii",
+   "port-artur",
+   "kvantun"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_93@15-10-2026_13-05-08.jpg"
+  ],
+  "cover": "photos/photo_93@15-10-2026_13-05-08.jpg",
+  "read_min": 4,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/122",
+  "series_slug": null
+ },
+ {
+  "slug": "poselyagin-praporshchiki-po-admiralteistvu",
+  "tg_ids": [
+   120
+  ],
+  "date": "2026-10-14",
+  "title": "《海军部准尉们》：缺少历史的架空历史",
+  "dek": "评波谢利亚金三部曲第一部：穿越者在旅顺。",
+  "summary": "评弗拉基米尔·波谢利亚金“双胞胎”三部曲第一部。现代人的意识进入双胞胎，海军学校毕业时已成全能战士。在英国杀银行家，阻止日本借款；在旅顺成批击沉鱼雷艇，得到马卡罗夫握手赞赏。按此类小说惯例，斯特塞尔又为日元叛变。频道作者讨论套路、毫无阻碍的主角、反犹意味，以及像“疲惫四十多岁大叔”说话的语言。结论是不如重读战争史，真历史情节更强；而波谢利亚金已出版182本书。",
+  "facts": [
+   "这是“双胞胎”三部曲第一部。",
+   "小说中的马卡罗夫并非死于“彼得罗巴甫洛夫斯克”号沉没，而是死于叛徒之手。"
+  ],
+  "type": "book",
+  "layer": [
+   "russian",
+   "modern"
+  ],
+  "people": [
+   "poselyagin",
+   "makarov",
+   "stessel",
+   "fok",
+   "stark"
+  ],
+  "places": [
+   "port-artur"
+  ],
+  "books": [
+   "poselyagin-praporshchiki-po-admiralteystvu"
+  ],
+  "photos": [
+   "photos/photo_92@14-10-2026_21-20-10.jpg"
+  ],
+  "cover": "photos/photo_92@14-10-2026_21-20-10.jpg",
+  "read_min": 3,
+  "series": "波谢利亚金的双胞胎系列",
+  "tg_url": "https://t.me/portartur_dalnii/120",
+  "series_slug": "bliznetsy-poselyagina"
+ },
+ {
+  "slug": "vitte-chast-1-ministr-kotoryi-stroil",
+  "tg_ids": [
+   115
+  ],
+  "date": "2026-10-14",
+  "title": "“半个萨哈林伯爵”第一篇：建设的大臣",
+  "dek": "谢尔盖·维特从铁路售票处到财政大臣、中东铁路创建者的道路。",
+  "summary": "维特系列开篇。1849年生于第比利斯，是海伦娜·布拉瓦茨基的表兄弟；亲属认为贵族不宜谋大学教职，他便进入铁路。1888年沙皇专列在博尔基脱轨，维特因事先预见风险而获得赏识。任财政大臣后，实行酒类专卖、金本位，并建设西伯利亚铁路。1896年与李鸿章谈判，取得中东铁路修筑权；历史学者罗曼诺夫在档案中找到曾许诺支付300万卢布的记录。维特反对占领旅顺，但决策既定，仍执行并创建达里尼。",
+  "facts": [
+   "因1875年季利古尔铁路事故被判拘禁四个月，实际服刑两周。",
+   "1889年任铁路局长后薪资降低，沙皇补足差额。",
+   "1897年实行金本位时，标“10卢布”的帝国金币按15卢布计价。"
+  ],
+  "type": "person",
+  "layer": [
+   "pre1898",
+   "russian"
+  ],
+  "people": [
+   "vitte",
+   "aleksandr-iii",
+   "nikolai-ii",
+   "li-hunchzhan"
+  ],
+  "places": [
+   "kvzhd",
+   "port-artur",
+   "dalnii"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_87@14-10-2026_11-14-01.jpg",
+   "photos/photo_88@14-10-2026_11-14-01.jpg",
+   "photos/photo_89@14-10-2026_11-14-01.jpg",
+   "photos/photo_90@14-10-2026_11-14-01.jpg",
+   "photos/photo_91@14-10-2026_11-14-01.jpg"
+  ],
+  "cover": "photos/photo_87@14-10-2026_11-14-01.jpg",
+  "read_min": 4,
+  "series": "“半个萨哈林伯爵”",
+  "tg_url": "https://t.me/portartur_dalnii/115",
+  "series_slug": "graf-polusahalinskiy"
+ },
+ {
+  "slug": "port-artur-i-dalnii-dva-goroda",
+  "tg_ids": [
+   114
+  ],
+  "date": "2026-10-13",
+  "title": "旅顺与达里尼：同一计划中的两座城市",
+  "dek": "关东的要塞与商港：为何建设，由谁主持，最终如何。",
+  "summary": "梳理关东两座俄国城市。海参崴冬季结冰，旅顺因而成为军事基地，1903年舰队达到66艘。达里尼则拟作西伯利亚铁路终点和自由港，建城三年即为中国第二大货港。文章列举从杜巴索夫、苏博蒂奇到阿列克谢耶夫、萨哈罗夫、斯科利莫夫斯基、维特的负责人及战时指挥者，再追踪日治时期旅顺与大连、1945年苏军抵达及移交中国。如今两地均属人口近七百万的大连市。",
+  "facts": [
+   "两城由俄国统治均不足七年。",
+   "1903年夏，旅顺成为远东总督区首府。",
+   "达里尼1950年移交中国，旅顺则在1955年。"
+  ],
+  "type": "place",
+  "layer": [
+   "russian",
+   "japanese",
+   "soviet",
+   "modern"
+  ],
+  "people": [
+   "dubasov",
+   "subotich",
+   "alekseev",
+   "saharov",
+   "skolimovsky",
+   "vitte",
+   "stessel",
+   "kondratenko",
+   "makarov"
+  ],
+  "places": [
+   "port-artur",
+   "dalnii",
+   "kvantun"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_86@13-10-2026_11-02-05.jpg"
+  ],
+  "cover": "photos/photo_86@13-10-2026_11-02-05.jpg",
+  "read_min": 4,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/114",
+  "series_slug": null
+ },
+ {
+  "slug": "kvantun-proishozhdenie-nazvaniya",
+  "tg_ids": [
+   111
+  ],
+  "date": "2026-10-13",
+  "title": "关东：以远方关隘命名的半岛",
+  "dek": "“宽东”一名如何而来，为何在大连会同时遇上五种地域称呼。",
+  "summary": "辨析半岛地名。俄语Квантун音译自“关东”，即山海关以东；山海关是长城入海处，中国原以此称整个满洲。1898年俄国租借，使广阔地域之名缩至辽东一角。日方将同样汉字读作Kantō-shū，关东军也由此得名；加“州”以区别东京周边的关东地区。朝鲜也有自己的“关东”。英文Kwantung又易与广东混淆。中文曾将原租借地区称“旅大”，取旅顺、大连首字。",
+  "facts": [
+   "俄国于1898年3月15（27）日租借，关东州面积约3 200平方公里。",
+   "关东军1919年由日本驻军发展而来。",
+   "1915年通过“二十一条”将租期延长至99年。",
+   "1950至1981年，城市名为旅大。"
+  ],
+  "type": "explainer",
+  "layer": [
+   "pre1898",
+   "russian",
+   "japanese",
+   "modern"
+  ],
+  "people": [
+   "alekseev"
+  ],
+  "places": [
+   "kvantun",
+   "lyaodun",
+   "shanhaiguan",
+   "port-artur",
+   "dalnii",
+   "tszinchzhou"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_83@13-10-2026_10-34-49.jpg",
+   "photos/photo_84@13-10-2026_10-34-49.jpg",
+   "photos/photo_85@13-10-2026_10-34-49.jpg"
+  ],
+  "cover": "photos/photo_83@13-10-2026_10-34-49.jpg",
+  "read_min": 3,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/111",
+  "series_slug": null
+ },
+ {
+  "slug": "kotvich-borodovskii-lyaodun-i-ego-porty",
+  "tg_ids": [
+   109
+  ],
+  "date": "2026-10-12",
+  "title": "达里尼之前的大连湾：1898年的辽东小册子",
+  "dek": "建城前一年，科特维奇和博罗多夫斯基如何描述这片海湾。",
+  "summary": "1898年夏、租借后五个月，圣彼得堡出版47页《辽东及其港口：旅顺口与大连湾》。东方学者科特维奇与博罗多夫斯基写给“俄国社会”，纠正报纸有关新领地的误报。频道摘录的细节有：1870年代旅顺只有60–80间民居，大连湾炮台荒废、仅有码头一处，生活成本为海参崴三分之一，却毫无娱乐。两位作者主张俄语按中文“关东”拼写而非“宽东”，并预言大连湾将成为北方中国的上海。俄罗斯国家电子图书馆可查阅。",
+  "facts": [
+   "小册子1898年夏出版，47页。",
+   "1894年日军一天内攻占清军旅顺。",
+   "作者预言大连湾之于中国北方，将如上海之于华中。"
+  ],
+  "type": "book",
+  "layer": [
+   "pre1898",
+   "russian"
+  ],
+  "people": [
+   "kotvich",
+   "borodovskii"
+  ],
+  "places": [
+   "lyaodun",
+   "port-artur",
+   "dalnii",
+   "kvantun"
+  ],
+  "books": [
+   "kotvich-borodovskiy-lyao-dun-i-ego-porty"
+  ],
+  "photos": [
+   "photos/photo_81@12-10-2026_17-06-01.jpg",
+   "photos/photo_82@12-10-2026_17-06-01.jpg"
+  ],
+  "cover": "photos/photo_82@12-10-2026_17-06-01.jpg",
+  "read_min": 2,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/109",
+  "series_slug": null
+ },
+ {
+  "slug": "arhivy-russko-yaponskoi-voiny",
+  "tg_ids": [
+   102
+  ],
+  "date": "2026-10-12",
+  "title": "日俄战争存于何处：档案查阅指南",
+  "dek": "俄日文献收藏机构，以及哪些资料可在线阅读。",
+  "summary": "实用档案概览。陆战文献主要在俄罗斯国家军事历史档案馆，第487全宗“1904–1905年日俄战争”近1500卷；另有库罗帕特金1915年亲自交存日记的个人全宗。海战资料在国家海军档案馆，后方资料在远东国家历史档案馆，那里曾发现1904年要求将约60名日本人逐出哈巴罗夫斯克的匿名信。日本主要入口是JACAR，数字化三个机构的资料，包括“日露战役”作战报告。作者提醒，许多私人文献仍由后人保存。",
+  "facts": [
+   "俄罗斯国家军事历史档案馆第487全宗近1500卷。",
+   "编纂战争史的军事历史委员会成立于1906年9月。",
+   "库罗帕特金1904–1906年日记于1922–1935年陆续刊于《红色档案》。",
+   "日方2004年将战争百年展览上线。"
+  ],
+  "type": "source",
+  "layer": [
+   "russian",
+   "modern"
+  ],
+  "people": [
+   "kuropatkin"
+  ],
+  "places": [
+   "port-artur"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_74@12-10-2026_10-25-10.jpg",
+   "photos/photo_75@12-10-2026_10-25-10.jpg",
+   "photos/photo_76@12-10-2026_10-25-10.jpg",
+   "photos/photo_77@12-10-2026_10-25-10.jpg",
+   "photos/photo_78@12-10-2026_10-25-10.jpg",
+   "photos/photo_79@12-10-2026_10-25-10.jpg",
+   "photos/photo_80@12-10-2026_10-25-10.jpg"
+  ],
+  "cover": "photos/photo_80@12-10-2026_10-25-10.jpg",
+  "read_min": 3,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/102",
+  "series_slug": null
+ },
+ {
+  "slug": "dalnii-gorod-s-nulya",
+  "tg_ids": [
+   93
+  ],
+  "date": "2026-10-11",
+  "title": "达里尼：从零开始的城市",
+  "dek": "四年间，渔村如何发展成中国货运规模仅次上海的港口。",
+  "summary": "达里尼建设史。城市并非临时起意：总体规划经特别会议审议，地区治理受138条条例规范。中东铁路公司在维特主持下建设，萨哈罗夫工程师设计港口并出任市长，斯科利莫夫斯基规划圆形尼古拉广场——今中山广场——及十条放射大道。这里建起满洲第一座发电厂、自来水和电话网络。作者核算费用，追踪日治时期大连、1945年苏军登陆，以及1950年移交中国。历经政权更迭，街道布局仍保存至今。",
+  "facts": [
+   "尼古拉广场直径213米。",
+   "1901–1903年城市及港口耗资超过3000万金卢布。",
+   "萨哈罗夫志愿赴旅顺，1904年10月因斑疹伤寒去世。",
+   "1945年8月22日，苏军空降部队抵达旅顺与达里尼。"
+  ],
+  "type": "place",
+  "layer": [
+   "russian",
+   "japanese",
+   "soviet",
+   "modern"
+  ],
+  "people": [
+   "vitte",
+   "saharov",
+   "skolimovsky",
+   "stalin"
+  ],
+  "places": [
+   "dalnii",
+   "kvantun",
+   "port-artur",
+   "nikolaevskaya-ploshchad",
+   "kvzhd"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_65@11-10-2026_14-03-01.jpg",
+   "photos/photo_66@11-10-2026_14-03-01.jpg",
+   "photos/photo_67@11-10-2026_14-03-01.jpg",
+   "photos/photo_68@11-10-2026_14-03-01.jpg",
+   "photos/photo_69@11-10-2026_14-03-01.jpg",
+   "photos/photo_70@11-10-2026_14-03-01.jpg",
+   "photos/photo_71@11-10-2026_14-03-01.jpg",
+   "photos/photo_72@11-10-2026_14-03-01.jpg",
+   "photos/photo_73@11-10-2026_14-03-01.jpg"
+  ],
+  "cover": "photos/photo_70@11-10-2026_14-03-01.jpg",
+  "read_min": 4,
+  "series": "达里尼：城市规划与建筑师",
+  "tg_url": "https://t.me/portartur_dalnii/93",
+  "series_slug": "dalniy-plan-i-arhitektory"
+ },
+ {
+  "slug": "neolurk-russko-yaponskaya-voina",
+  "tg_ids": [
+   92
+  ],
+  "date": "2026-10-11",
+  "title": "互联网口吻讲战争：Neolurk条目",
+  "dek": "最粗口的日俄战争通俗文章，有什么用，又有什么问题。",
+  "summary": "有所保留地推荐Neolurk“日俄战争”条目。结构不逊教科书：前因、夜袭、“瓦良格”号、金州、围城、辽阳、奉天、罗日杰斯特文斯基远征、对马、朴次茅斯，甚至无线电战，区别在用语。可一口气读完，比笔记更易记住，另有专节列罗日杰斯特文斯基的辩解。作者也直言缺点：消遣而非史料，部分数字大胆，充斥粗口与粗俗笑话，18岁以上。宜当历史脱口秀，再去读马丁。插图为开战初的爱国民间宣传画。",
+  "facts": [
+   "条目设无线电与无线电对抗专节。",
+   "配图为“俄罗斯印刷出版公司”第15号海报。"
+  ],
+  "type": "source",
+  "layer": [
+   "russian",
+   "modern"
+  ],
+  "people": [
+   "kuropatkin",
+   "stessel",
+   "rozhestvenskii"
+  ],
+  "places": [
+   "port-artur",
+   "tsusima"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_64@11-10-2026_09-18-01.jpg"
+  ],
+  "cover": "photos/photo_64@11-10-2026_09-18-01.jpg",
+  "read_min": 2,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/92",
+  "series_slug": null
+ },
+ {
+  "slug": "otkuda-nazvanie-port-artur",
+  "tg_ids": [
+   91
+  ],
+  "date": "2026-10-10",
+  "title": "“亚瑟港”中的阿瑟是谁",
+  "dek": "一名英国中尉如何为三个帝国争夺的城市留下名字。",
+  "summary": "欧洲人来临之前，城市早有中文名称。据传1371年明朝将领将此地命名旅顺口，寓意航行平顺。英文名称始于第二次鸦片战争：1858年，威廉·阿瑟中尉指挥HMS Algerine炮舰，受损后在渔港避风并绘制周边海图。但命名者并非他本人，而是1860年8月HMS Actaeon舰长约翰·沃德。俄国沿用这一英文地名，1898年租借后也未更改，尽管尼古拉二世为邻近港口取了俄语名。以维多利亚女王之子阿瑟王子命名的说法，未获文献支持。",
+  "facts": [
+   "“旅顺口”寓意航行平顺的港湾。",
+   "1860年8月，HMS Actaeon舰长约翰·沃德为港湾命名。",
+   "威廉·阿瑟1886年去世，比围城战早18年。"
+  ],
+  "type": "explainer",
+  "layer": [
+   "pre1898"
+  ],
+  "people": [
+   "artur",
+   "nikolai-ii"
+  ],
+  "places": [
+   "port-artur"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_63@10-10-2026_21-53-29.jpg"
+  ],
+  "cover": "photos/photo_63@10-10-2026_21-53-29.jpg",
+  "read_min": 2,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/91",
+  "series_slug": null
+ },
+ {
+  "slug": "martin-russko-yaponskaya-voina-kniga",
+  "tg_ids": [
+   89
+  ],
+  "date": "2026-10-10",
+  "title": "从哪本开始：克里斯托弗·马丁《1904–1905年日俄战争》",
+  "dek": "以1960年代英国学者的综述作为入门。",
+  "summary": "给初读者的建议：若尚未读过日俄战争，不妨从英国学者克里斯托弗·马丁开始。频道作者为朋友准备导览时，自己也是从这本入手。优点是局外视角，不偏袒任何一支军队，也不淹没在细节里。马丁抓住主要事件，解释战争怎样影响远东格局直至1945年。局限在年代：依据的是1960年代西方学者可取得的资料，部分判断已被修正。总体适合作为第一本书，先建立时间线，再深入阅读或步行旅顺。",
+  "facts": [
+   "写于半个多世纪前的1960年代。",
+   "马丁追踪战争影响直至1945年。"
+  ],
+  "type": "book",
+  "layer": [
+   "russian",
+   "modern"
+  ],
+  "people": [
+   "martin-kristofer"
+  ],
+  "places": [
+   "port-artur"
+  ],
+  "books": [
+   "martin-russko-yaponskaya-voyna"
+  ],
+  "photos": [
+   "photos/photo_62@10-10-2026_14-02-46.jpg"
+  ],
+  "cover": "photos/photo_62@10-10-2026_14-02-46.jpg",
+  "read_min": 2,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/89",
+  "series_slug": null
+ },
+ {
+  "slug": "admiral-alekseev-namestnik",
+  "tg_ids": [
+   84
+  ],
+  "date": "2026-10-09",
+  "title": "阿列克谢耶夫：我们从对手口中认识的总督",
+  "dek": "关东首任最高长官，以及维特的评价究竟可信几分。",
+  "summary": "远东政策设计者系列开篇。叶夫根尼·阿列克谢耶夫传为亚历山大二世私生子，在海军元帅阿列克谢·亚历山德罗维奇庇护下晋升。1899年起管理关东，1900年指挥镇压义和团，1903年8月任远东总督。关于他的著名评价多出自直接竞争者维特，后者曾在远东权力争夺中败给他。作者指出，这些是利益相关者的证词，并引当代学者意见：总督属于多头决策的体制，并非战争的唯一主要责任人。",
+  "facts": [
+   "阿列克谢耶夫生于1843年。",
+   "1904年10月沙河会战后被免总司令，1905年总督区撤销。",
+   "1917年5月27日（6月9日）卒于雅尔塔。"
+  ],
+  "type": "person",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "alekseev",
+   "vitte",
+   "nikolai-ii",
+   "bezobrazov"
+  ],
+  "places": [
+   "port-artur",
+   "kvantun",
+   "manchzhuriya"
+  ],
+  "books": [
+   "vitte-vospominaniya"
+  ],
+  "photos": [
+   "photos/photo_59@09-10-2026_12-01-23.jpg",
+   "photos/photo_60@09-10-2026_12-01-23.jpg",
+   "photos/photo_61@09-10-2026_12-01-23.jpg",
+   "photos/photo_339@archive.jpg"
+  ],
+  "cover": "photos/photo_59@09-10-2026_12-01-23.jpg",
+  "read_min": 4,
+  "series": "俄国远东政策的设计者",
+  "tg_url": "https://t.me/portartur_dalnii/84",
+  "series_slug": "arhitektory-dalnevostochnoy-politiki"
+ },
+ {
+  "slug": "port-arturka-peterburgskaya-shutka",
+  "tg_ids": [
+   83
+  ],
+  "date": "2026-10-09",
+  "title": "“小旅顺”：一套始终“交不出去”的房子",
+  "dek": "围城战催生的彼得堡俚语。",
+  "summary": "一则城市民俗小记。1917年前，彼得堡房东称数月租不出去的公寓为“小旅顺”。俄语сдаваться既可指房屋出租，也可指要塞投降，笑话便来自双关。作者计算比较的依据：旅顺陆地防御自1904年5月13（26）日金州战斗后开始，至1904年12月20日（1905年1月2日）投降结束，共221天。因此空置半年的房子，确实也够资格称为要塞。",
+  "facts": [
+   "这一说法在1917年前的彼得堡流行。",
+   "旅顺陆地防御持续221天。"
+  ],
+  "type": "culture",
+  "layer": [
+   "russian"
+  ],
+  "people": [],
+  "places": [
+   "port-artur",
+   "tszinchzhou"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_195@03-11-2026_22-32-58.jpg"
+  ],
+  "cover": "photos/photo_195@03-11-2026_22-32-58.jpg",
+  "read_min": 1,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/83",
+  "series_slug": null
+ },
+ {
+  "slug": "tolstoi-odumaites-1904",
+  "tg_ids": [
+   79
+  ],
+  "date": "2026-10-08",
+  "title": "《醒悟吧！》：未能在俄国刊登的托尔斯泰文章",
+  "dek": "75岁的作家如何回应1904年的爱国热潮。",
+  "summary": "1904年初，全国爱国情绪高涨，曾在塞瓦斯托波尔作战的托尔斯泰却写文章反战。原帖梳理主要观点：农民被送往万里外赴死，神父祝福武器，鼓动热情者自己却安全无虞。文章中心是“还能怎么办呢？”——赴战者疲惫的顺从。俄国报纸不愿刊登，切尔特科夫将它转往英国，最热烈的回应却来自日本。与此同时，托尔斯泰之子安德烈自愿参战。原帖附全文链接。",
+  "facts": [
+   "1904年6月27日（7月9日）刊于伦敦《泰晤士报》。",
+   "《莫斯科新闻》以《雅斯纳亚波良纳的疯子》回应。",
+   "1904年8月，日本《平民新闻》译载此文。"
+  ],
+  "type": "culture",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "tolstoy",
+   "chertkov",
+   "nikolai-ii"
+  ],
+  "places": [
+   "port-artur"
+  ],
+  "books": [
+   "tolstoy-odumaytes"
+  ],
+  "photos": [
+   "photos/photo_56@08-10-2026_15-57-52.jpg",
+   "photos/photo_57@08-10-2026_15-57-52.jpg",
+   "photos/photo_58@08-10-2026_15-57-52.jpg"
+  ],
+  "cover": "photos/photo_56@08-10-2026_15-57-52.jpg",
+  "read_min": 3,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/79",
+  "series_slug": null
+ },
+ {
+  "slug": "otsu-1891-pokushenie-na-tsesarevicha",
+  "tg_ids": [
+   74
+  ],
+  "date": "2026-10-07",
+  "title": "大津，1891：劈向皇储的军刀",
+  "dek": "尼古拉皇储的东方之旅，以及俄日两国都记住的刺杀事件。",
+  "summary": "1890年秋，尼古拉皇储经埃及、印度、暹罗和中国出访，计划在海参崴为西伯利亚铁路开工。他在长崎刺上龙纹身。1891年5月11日，大津警察津田三藏两度挥刀砍向其头部，礼帽减轻伤势。日本震动，明治天皇亲自送客上船，大臣引咎辞职。最高法院负责人拒绝以针对皇室成员的条款审判津田，这次审判被视为日本司法独立的起点。尼古拉写信称不怨恨日本人，但维特后来将其对日态度与大津联系起来。",
+  "facts": [
+   "右耳上方伤口约9厘米。",
+   "救下皇储的车夫获得俄国终身年金。",
+   "1891年5月23日，尼古拉在海参崴为乌苏里铁路奠基。",
+   "全程行走51 000俄里。"
+  ],
+  "type": "event",
+  "layer": [
+   "pre1898"
+  ],
+  "people": [
+   "nikolai-ii",
+   "tsuda-sandzo",
+   "meidzi",
+   "aleksandr-iii",
+   "vitte",
+   "georg-grecheskii"
+  ],
+  "places": [
+   "otsu",
+   "nagasaki-goshinji",
+   "vladivostok"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_51@07-10-2026_12-42-36.jpg",
+   "photos/photo_52@07-10-2026_12-42-36.jpg",
+   "photos/photo_53@07-10-2026_12-42-36.jpg",
+   "photos/photo_54@07-10-2026_12-42-36.jpg",
+   "photos/photo_55@07-10-2026_12-42-36.jpg"
+  ],
+  "cover": "photos/photo_54@07-10-2026_12-42-36.jpg",
+  "read_min": 4,
+  "series": "尼古拉二世与日本",
+  "tg_url": "https://t.me/portartur_dalnii/74",
+  "series_slug": "nikolay-ii-i-yaponiya"
+ },
+ {
+  "slug": "nikolai-ii-i-russko-yaponskaya-voina",
+  "tg_ids": [
+   68
+  ],
+  "date": "2026-10-07",
+  "title": "尼古拉二世：不想开战，却走向战争",
+  "dek": "皇帝在那些使对日战争几乎不可避免的决策中扮演了什么角色。",
+  "summary": "形式上由日本开战，但此前十年的关键决策出自圣彼得堡，而且常由皇帝本人作出。作者勾勒尼古拉的性格：礼貌、宿命感、不喜强势大臣，唯独坚守专制。远东从西伯利亚铁路到旅顺租借，都是他的个人计划。1903年，他实际排除大臣参与远东政策，支持别佐布拉佐夫，设立总督区。他不愿战争，直到最后仍相信日本不敢动手。文章比较维特、科科夫佐夫的评价、苏联解释与当代学者卢科亚诺夫、菲尔索夫的观点。",
+  "facts": [
+   "1868年5月6（18）日出生，26岁即位。",
+   "战后俄日秘密划分满洲，安排与东京1903年提出的方案大致相近。",
+   "有学者认为，1903年底沙皇已准备让步，但东京已经决定开战。"
+  ],
+  "type": "person",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "nikolai-ii",
+   "aleksandr-iii",
+   "bezobrazov",
+   "alekseev",
+   "vitte",
+   "plehve",
+   "kokovtsov"
+  ],
+  "places": [
+   "port-artur",
+   "manchzhuriya",
+   "koreya"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_45@07-10-2026_10-12-42.jpg",
+   "photos/photo_46@07-10-2026_10-12-42.jpg",
+   "photos/photo_47@07-10-2026_10-12-42.jpg",
+   "photos/photo_48@07-10-2026_10-12-42.jpg",
+   "photos/photo_49@07-10-2026_10-12-42.jpg",
+   "photos/photo_50@07-10-2026_10-12-42.jpg"
+  ],
+  "cover": "photos/photo_48@07-10-2026_10-12-42.jpg",
+  "read_min": 4,
+  "series": "尼古拉二世与日本",
+  "tg_url": "https://t.me/portartur_dalnii/68",
+  "series_slug": "nikolay-ii-i-yaponiya"
+ },
+ {
+  "slug": "vals-na-sopkah-manchzhurii-shatrov",
+  "tg_ids": [
+   64,
+   67
+  ],
+  "date": "2026-10-06",
+  "title": "《在满洲的山岗上》：军乐队长沙特罗夫的圆舞曲",
+  "dek": "为奉天附近阵亡的摩克沙团官兵所写的音乐。",
+  "summary": "伊利亚·沙特罗夫任第214摩克沙步兵团军乐队长。1905年2月奉天附近部队被围，波贝瓦涅茨上校命军旗与乐队向前。乐手在胸墙上冒火演奏进行曲，部队以刺刀突围。4000人仅700人脱身，61名乐手仅7人生还。一年后，沙特罗夫在兹拉托乌斯特写曲纪念同伴。1908年萨马拉首演反响平平，随后乐谱再版数十次。第二篇追踪歌词、唱片、流亡中的传播及今日经典地位，最初歌词由“流浪者”所作。",
+  "facts": [
+   "三年内乐谱再版82次。",
+   "约1906年，流浪者（斯捷潘·彼得罗夫）写出第一版歌词。",
+   "沙特罗夫1952年5月2日去世，两周前刚获近卫少校军衔。"
+  ],
+  "type": "culture",
+  "layer": [
+   "russian",
+   "soviet"
+  ],
+  "people": [
+   "shatrov",
+   "skitalets"
+  ],
+  "places": [
+   "mukden",
+   "manchzhuriya"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_42@06-10-2026_21-12-08.jpg",
+   "photos/photo_43@06-10-2026_21-12-08.jpg",
+   "photos/photo_44@06-10-2026_21-12-09.jpg"
+  ],
+  "cover": "photos/photo_44@06-10-2026_21-12-09.jpg",
+  "read_min": 4,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/64",
+  "series_slug": null
+ },
+ {
+  "slug": "port-artur-poslednyaya-zamorskaya-koloniya",
+  "tg_ids": [
+   50
+  ],
+  "date": "2026-10-06",
+  "title": "旅顺：帝国最后的海外殖民地",
+  "dek": "从黄金山升旗到投降，以数字梳理俄国旅顺史。",
+  "summary": "俄国旅顺概览。1898年3月16（28）日，基里尔·弗拉基米罗维奇大公在黄金山升旗，俄国未发一枪便取得不冻港。文章介绍关东地理：适合筑城，却不适合扩展贸易，因而另在大连湾建设商港。1903年城内有1.8万俄国臣民和2.35万中国人。要塞进展不顺：韦利奇科1500万卢布预算战前仅拨425万，到1904年1月六座陆地堡垒仅一座完工。随后概述围城、损失和投降条件。",
+  "facts": [
+   "租借地约3200平方公里，居民约25万。",
+   "关东事业耗费国库至少1.1亿卢布，约占国家平均年度支出的6%。",
+   "围城开始时，驻军约5.05万人，火炮646门。",
+   "2.3万–2.5万人被俘，接近该战全部俄国战俘的一半。"
+  ],
+  "type": "place",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "kirill-vladimirovich",
+   "li-hunchzhan",
+   "alekseev",
+   "velichko",
+   "vitte",
+   "stessel",
+   "smirnov",
+   "kondratenko",
+   "makarov",
+   "nogi"
+  ],
+  "places": [
+   "port-artur",
+   "zolotaya-gora",
+   "kvantun",
+   "tszinchzhou",
+   "dalnii",
+   "vysokaya-gora",
+   "fort-2"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_32@06-10-2026_17-18-17.jpg",
+   "photos/photo_33@06-10-2026_17-18-17.jpg",
+   "photos/photo_34@06-10-2026_17-18-17.jpg",
+   "photos/photo_35@06-10-2026_17-18-17.jpg",
+   "photos/photo_36@06-10-2026_17-18-17.jpg",
+   "photos/photo_37@06-10-2026_17-18-17.jpg",
+   "photos/photo_38@06-10-2026_17-18-17.jpg",
+   "photos/photo_39@06-10-2026_17-18-18.jpg",
+   "photos/photo_40@06-10-2026_17-18-18.jpg",
+   "photos/photo_41@06-10-2026_17-18-18.jpg"
+  ],
+  "cover": "photos/photo_34@06-10-2026_17-18-17.jpg",
+  "read_min": 4,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/50",
+  "series_slug": null
+ },
+ {
+  "slug": "stepanov-port-artur-retsenziya",
+  "tg_ids": [
+   45,
+   46
+  ],
+  "date": "2026-10-06",
+  "title": "八十年后重读斯捷潘诺夫《旅顺口》",
+  "dek": "这部苏联代表性围城小说为何在历史上过时，又有哪些史实问题。",
+  "summary": "带讽刺的书评，讨论先后17次出版、总印量百万以上、获1946年斯大林奖的《旅顺口》。它是完整的1940年代苏联小说标本，却已不是可靠历史叙述。斯特塞尔与福克被写成收五百万卖城，但法庭审的是投降，判决未提卖城；康德拉坚科被奉为圣人，高尔察克的服役军舰写错。2010年研究又表明作者及其父未参加防御战。书评也批评爱情线，尤其续篇《兹沃纳廖夫一家》。第二篇展示不同版本封面。",
+  "facts": [
+   "小说1946年获斯大林奖。",
+   "斯特塞尔1909年5月获赦，福克因证据不足获判无罪。",
+   "日俄战争中，高尔察克指挥“愤怒”号鱼雷艇，并非在“狄安娜”号服役。",
+   "2010年《军事历史杂志》刊载D. K. 尼古拉耶夫、O. V. 奇斯佳科夫文章，指出斯捷潘诺夫未到过旅顺。"
+  ],
+  "type": "book",
+  "layer": [
+   "russian",
+   "soviet"
+  ],
+  "people": [
+   "stepanov",
+   "stessel",
+   "fok",
+   "kondratenko",
+   "kolchak",
+   "nikolaev-dk"
+  ],
+  "places": [
+   "port-artur",
+   "elektricheskiy-utes",
+   "vysokaya-gora"
+  ],
+  "books": [
+   "stepanov-port-artur",
+   "stepanov-semya-zvonaryovyh",
+   "nikolaev-chistyakov-port-artur-arhivnyy-poisk"
+  ],
+  "photos": [
+   "photos/photo_27@06-10-2026_00-40-51.jpg",
+   "photos/photo_28@06-10-2026_01-48-04.jpg",
+   "photos/photo_29@06-10-2026_01-48-04.jpg",
+   "photos/photo_30@06-10-2026_01-48-04.jpg",
+   "photos/photo_31@06-10-2026_01-48-04.jpg"
+  ],
+  "cover": "photos/photo_27@06-10-2026_00-40-51.jpg",
+  "read_min": 5,
+  "series": "斯捷潘诺夫与他的《旅顺口》",
+  "tg_url": "https://t.me/portartur_dalnii/45",
+  "series_slug": "stepanov-i-ego-port-artur"
+ },
+ {
+  "slug": "anekdoty-rossiiskoi-imperii-shevchenko",
+  "tg_ids": [
+   43
+  ],
+  "date": "2026-10-05",
+  "title": "日俄战争笑话：A. V. 舍甫琴科的辑录",
+  "dek": "1905年的社会怎样嘲讽斯特塞尔、朴次茅斯和将军们。",
+  "summary": "简评舍甫琴科《俄罗斯帝国笑话：日俄战争》。频道作者特别赞许注释：百年前笑话通常加了脚注便失去笑意，这里解释却让它重新成立。读者弄清斯特塞尔是谁、朴次茅斯签了什么，便能与当年晨报读者一起会心。原帖举例从“糟糕的将军圈子”到斯特塞尔“发牌／投降”的俄语双关。笑话让人看见社会不信任谁，以及人们比官方战报更早明白什么。",
+  "facts": [
+   "每则笑话均附详细注释。",
+   "一则笑话用俄语сдавать“发牌／投降”双关，牌桌上的斯特塞尔说“我已经交出了”。"
+  ],
+  "type": "book",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "stessel",
+   "shevchenko-av"
+  ],
+  "places": [
+   "portsmut",
+   "manchzhuriya"
+  ],
+  "books": [
+   "shevchenko-anekdoty-rossiyskoy-imperii-russko-yaponskaya-voyna"
+  ],
+  "photos": [
+   "photos/photo_26@05-10-2026_22-33-55.jpg"
+  ],
+  "cover": "photos/photo_26@05-10-2026_22-33-55.jpg",
+  "read_min": 2,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/43",
+  "series_slug": null
+ },
+ {
+  "slug": "albom-shtaba-glavnokomanduyushchego-1905",
+  "tg_ids": [
+   30
+  ],
+  "date": "2026-10-05",
+  "title": "1905年图册：镜头中的陆地战争",
+  "dek": "常被误归为普罗库金-戈尔斯基作品的总司令部图册，究竟记录了什么。",
+  "summary": "介绍总司令部出版的《1904–1905年日俄战争》。这是满洲军司令部的目光，不含旅顺与海军。核心为1904年10月沙河战斗和普季洛夫高地，甚至拍到下濑火药弹爆炸。其后是第17军用高粱搭棚的阵地生活、马君屯村的中国新年，以及官方出版物中颇出意料的奉天战后撤退：铁岭道路、医疗列车和休息点。作者认为照片比战争画更有力量，因为画面中的人还不知道前面等待的是对马、朴次茅斯和革命。全部300页可在线查看。",
+  "facts": [
+   "图册涵盖1904年秋至1905年春满洲战争。",
+   "一组照片记录以普季洛夫少将命名的普季洛夫高地。",
+   "其中有1905年2月28日奉天撤退后的铁岭照片。"
+  ],
+  "type": "source",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "prokudin-gorsky",
+   "kuropatkin",
+   "rennenkampf"
+  ],
+  "places": [
+   "shahe",
+   "sopka-putilovskaya",
+   "mukden",
+   "manchzhuriya"
+  ],
+  "books": [
+   "albom-russko-yaponskaya-voyna-shtab-1905"
+  ],
+  "photos": [
+   "photos/photo_15@05-10-2026_20-16-00.jpg",
+   "photos/photo_16@05-10-2026_20-56-08.jpg",
+   "photos/photo_17@05-10-2026_20-56-08.jpg",
+   "photos/photo_18@05-10-2026_20-56-08.jpg",
+   "photos/photo_19@05-10-2026_20-56-08.jpg",
+   "photos/photo_20@05-10-2026_20-56-09.jpg",
+   "photos/photo_21@05-10-2026_20-56-09.jpg",
+   "photos/photo_22@05-10-2026_20-56-09.jpg",
+   "photos/photo_23@05-10-2026_20-56-09.jpg",
+   "photos/photo_24@05-10-2026_20-56-09.jpg",
+   "photos/photo_25@05-10-2026_20-56-09.jpg"
+  ],
+  "cover": "photos/photo_15@05-10-2026_20-16-00.jpg",
+  "read_min": 4,
+  "series": "镜头中的战争",
+  "tg_url": "https://t.me/portartur_dalnii/30",
+  "series_slug": "fotoletopis-voyny"
+ },
+ {
+  "slug": "kto-fotografiroval-russko-yaponskuyu-voinu",
+  "tg_ids": [
+   28
+  ],
+  "date": "2026-10-05",
+  "title": "谁拍摄了战争，普罗库金-戈尔斯基又做了什么",
+  "dek": "1904–1905年的摄影，以及摄影师亲拍战争的长久误传。",
+  "summary": "日俄战争是最早被大规模摄影记录的战争之一：轻便胶卷相机进入军官、医生和护士手中，网目制版使照片能刊入杂志。作者介绍乃木军中的记者，以及乘中国帆船抵达旅顺、直接前往阵地的美国人。后半篇辨析误传：普罗库金-戈尔斯基未拍摄战争，1905年总司令部图册中担任编纂、印刷工作，照片来自他人。第XVII军图册同样由他的工坊印制，军事测绘队编纂。",
+  "facts": [
+   "总司令部1905年出版《1904–05年日俄战争》，约300页。",
+   "第XVII军图册共54页、231幅照片复制图。",
+   "美国国会图书馆1948年向其儿子们购得主要摄影收藏。"
+  ],
+  "type": "source",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "prokudin-gorsky",
+   "nogi"
+  ],
+  "places": [
+   "port-artur",
+   "manchzhuriya"
+  ],
+  "books": [
+   "albom-russko-yaponskaya-voyna-shtab-1905",
+   "albom-boevoy-zhizni-xvii-korpusa"
+  ],
+  "photos": [
+   "photos/photo_14@05-10-2026_20-16-00.jpg",
+   "photos/photo_15@05-10-2026_20-16-00.jpg"
+  ],
+  "cover": "photos/photo_14@05-10-2026_20-16-00.jpg",
+  "read_min": 4,
+  "series": "镜头中的战争",
+  "tg_url": "https://t.me/portartur_dalnii/28",
+  "series_slug": "fotoletopis-voyny"
+ },
+ {
+  "slug": "dvoinye-daty-staryi-i-novyi-stil",
+  "tg_ids": [
+   12
+  ],
+  "date": "2026-10-05",
+  "title": "为何日期成双：旧历与新历",
+  "dek": "儒略历与格里高利历如何使日俄战争日期看起来互相矛盾。",
+  "summary": "解释战争史中日期为何成对出现。文章简述儒略历、1582年教皇格里高利十三世改革及世纪闰年规则。关键是历差并不固定：18世纪差11天、19世纪差12天，1900至2100年为13天，不能给彼得大帝时代日期一律加13。战争期间，俄国文件用旧历，日本和欧洲用新历，日本另以明治纪年，所以对马海战有时写5月14日，有时写27日。本频道统一先列旧历，括号内为新历。",
+  "facts": [
+   "日本1873年改用格里高利历，中国官方于1912年采用。",
+   "俄国1918年1月31日之后直接跳至2月14日。",
+   "日本将战争年份记为明治37年、38年。"
+  ],
+  "type": "explainer",
+  "layer": [
+   "russian",
+   "modern"
+  ],
+  "people": [],
+  "places": [
+   "tsusima"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_1@05-10-2026_00-36-09.jpg"
+  ],
+  "cover": "photos/photo_1@05-10-2026_00-36-09.jpg",
+  "read_min": 3,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/12",
+  "series_slug": null
+ },
+ {
+  "slug": "mir-i-itogi-voiny",
+  "tg_ids": [
+   10
+  ],
+  "date": "2026-10-05",
+  "title": "朴次茅斯和约与战争代价",
+  "dek": "双方的战争结局：财政、革命和失去的关东。",
+  "summary": "概述系列最后一篇。1905年夏两国均已疲惫，日本耗资17亿–20亿日元，为年度预算数倍，靠外债支撑；俄国失去两支舰队和关东全部投入，直到1906年法国贷款才稳定财政。第一次俄国革命在旅顺失守消息传来一周后开始。依朴次茅斯和约，日本获得关东租借权、铁路南部支线及南萨哈林，却未获赔款。东京将此视为屈辱，城中实行戒严。结尾讲达里尼如何成为日治时期大连，以及后来满洲国的建立。",
+  "facts": [
+   "西奥多·罗斯福调停下，1905年8月23日（9月5日）在朴次茅斯签约。",
+   "1906年22.5亿法郎法国贷款，是俄罗斯帝国史上最大外债。",
+   "估计俄方阵亡及死亡约5万，日本约8万–9万，大部分死于疾病。",
+   "维特因和约获封伯爵，也得名“半个萨哈林伯爵”。"
+  ],
+  "type": "event",
+  "layer": [
+   "russian",
+   "japanese"
+  ],
+  "people": [
+   "vitte",
+   "ruzvelt",
+   "takahasi"
+  ],
+  "places": [
+   "portsmut",
+   "kvantun",
+   "port-artur",
+   "dalnii",
+   "sahalin",
+   "koreya",
+   "manchzhuriya"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_163@28-10-2026_08-55-09.jpg",
+   "photos/photo_340@archive.jpg"
+  ],
+  "cover": "photos/photo_340@archive.jpg",
+  "read_min": 3,
+  "series": "五篇文章读懂日俄战争",
+  "tg_url": "https://t.me/portartur_dalnii/10",
+  "series_slug": "russko-yaponskaya-voyna-za-pyat-postov"
+ },
+ {
+  "slug": "voina-na-more-osada-mukden-tsusima",
+  "tg_ids": [
+   8,
+   9
+  ],
+  "date": "2026-10-05",
+  "title": "战争进程：从夜袭到对马",
+  "dek": "1904–1905年海上、旅顺及满洲战事简史。",
+  "summary": "概述系列第二篇。从1904年1月27日（2月9日）凌晨日本鱼雷艇袭击旅顺外港及仁川“瓦良格”号战斗讲起，继而是马卡罗夫随“彼得罗巴甫洛夫斯克”号遇难、达里尼几乎不战而失、向海参崴突围失败、乃木第3军强攻、203高地失守、康德拉坚科阵亡及要塞投降。后半写满洲不断撤退直至奉天，以及最终毁于对马海峡的罗日杰斯特文斯基远征。作者提醒，被戏称“多余城”的达里尼，反成日军围城的主要补给基地。",
+  "facts": [
+   "1904年3月31日（4月13日），马卡罗夫、600余名官兵及画家韦列夏金随“彼得罗巴甫洛夫斯克”号遇难。",
+   "1904年11月22日（12月5日），日军夺取203高地，开始炮击港内舰只。",
+   "1905年2–3月奉天会战参战者超过50万，是一战前规模最大的陆战。",
+   "1905年5月14–15日（27–28日）对马海战后，仅“金刚石”号巡洋舰与两艘鱼雷艇抵达海参崴。"
+  ],
+  "type": "event",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "makarov",
+   "vereshchagin",
+   "vitgeft",
+   "nogi",
+   "kondratenko",
+   "stessel",
+   "kuropatkin",
+   "rozhestvenskii",
+   "togo"
+  ],
+  "places": [
+   "port-artur",
+   "chemulpo",
+   "dalnii",
+   "tszinchzhou",
+   "zheltoe-more",
+   "vysokaya-gora",
+   "mukden",
+   "lyaoyan",
+   "shahe",
+   "tsusima"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_98@17-10-2026_15-14-01.jpg"
+  ],
+  "cover": "photos/photo_98@17-10-2026_15-14-01.jpg",
+  "read_min": 3,
+  "series": "五篇文章读懂日俄战争",
+  "tg_url": "https://t.me/portartur_dalnii/8",
+  "series_slug": "russko-yaponskaya-voyna-za-pyat-postov"
+ },
+ {
+  "slug": "kak-vse-nachinalos-predposylki-voiny",
+  "tg_ids": [
+   6,
+   7
+  ],
+  "date": "2026-10-05",
+  "title": "如何走到战争：从马关到断交",
+  "dek": "日俄战争前十年：朝鲜、辽东、中东铁路和鸭绿江森林特许权。",
+  "summary": "概述系列第一篇，从明治改革和1894–1895年甲午战争，写到1904年1月24日（2月6日）断交。日本依《马关条约》取得辽东，六天后在俄德法压力下归还；三年后俄国却自行租借。与此同时，中东铁路和达里尼开建，朝鲜高宗逃入俄国使馆，义和团之后俄军占领满洲，别佐布拉佐夫集团在鸭绿江展开冒险。作者另提醒，普列韦所谓“小小的胜利战争”只见于维特回忆录的转述。",
+  "facts": [
+   "1895年《马关条约》规定中国赔付日本2亿两白银，约合清朝三年财政预算。",
+   "1898年3月，俄国租借关东25年。",
+   "高宗1896年逃入首尔俄国使馆，从那里执政约一年。",
+   "1904年1月24日（2月6日），日本与俄国断交。"
+  ],
+  "type": "event",
+  "layer": [
+   "pre1898",
+   "russian"
+  ],
+  "people": [
+   "vitte",
+   "nikolai-ii",
+   "bezobrazov",
+   "alekseev",
+   "plehve"
+  ],
+  "places": [
+   "lyaodun",
+   "kvantun",
+   "port-artur",
+   "dalnii",
+   "kvzhd",
+   "koreya",
+   "manchzhuriya",
+   "yalu"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_33@06-10-2026_17-18-17.jpg"
+  ],
+  "cover": "photos/photo_33@06-10-2026_17-18-17.jpg",
+  "read_min": 5,
+  "series": "五篇文章读懂日俄战争",
+  "tg_url": "https://t.me/portartur_dalnii/6",
+  "series_slug": "russko-yaponskaya-voyna-za-pyat-postov"
+ }
+]

@@ -1,0 +1,629 @@
+[
+  {
+    "slug": "port-artur-za-den",
+    "title": "Port Arthur in a Day",
+    "dek": "Car excursion No. 1: the Chinese Eastern Railway station, Baiyushan panorama, Old Town, Russian cemetery, Fort No. 2 and the Great Eagle’s Nest.",
+    "duration": "All day; meet around 09:00",
+    "distance_km": 22.9,
+    "transport": "car",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "difficulty": "Moderate",
+    "author": "Russian Club of Dalian",
+    "excursion": 1,
+    "stops": [
+      {
+        "place": "dalyanskiy-universitet-inyaz",
+        "time": "09:00",
+        "note": "Meet outside the campus and arrange seats in the cars.",
+        "minutes": 15
+      },
+      {
+        "place": "vokzal-lushun",
+        "note": "The Russian-built station where the Chinese Eastern Railway’s southern branch began. Viewed from outside.",
+        "minutes": 20
+      },
+      {
+        "place": "perepelinaya-gora",
+        "note": "Baiyushan, or Quail Hill, and the tower erected by Tōgō and Nogi to commemorate the capture of the fortress. The best panorama of the harbour.",
+        "minutes": 50
+      },
+      {
+        "place": "staryy-gorod-port-artura",
+        "note": "Central Port Arthur: streets where squadron officers and sailors lived, alongside Japanese-era buildings. Lunch in a café afterwards.",
+        "minutes": 120
+      },
+      {
+        "place": "kladbishche-lushun",
+        "note": "The Russian military cemetery, burial place of the fortress’s defenders.",
+        "minutes": 50
+      },
+      {
+        "place": "fort-2",
+        "note": "Fort No. 2, where General Kondratenko was killed on 2 (15) December 1904.",
+        "minutes": 60
+      },
+      {
+        "place": "bolshoe-orlinoe-gnezdo",
+        "note": "The final stop: one of the last heights to fall before the surrender. Transfer back to the university afterwards, provisionally.",
+        "minutes": 40
+      }
+    ],
+    "practical": "A guided excursion devised by the Russian Club of Dalian; timings at each stop are approximate. Meet around 09:00 at the foreign languages university campus in Lüshun, with a return transfer to the same place. Travel between stops is by car. Baiyushan and the forts are windy; wear comfortable footwear for Fort No. 2 and the Eagle’s Nest. Dongjiguanshan, which includes Fort No. 2, charges admission; check opening hours. Do not photograph military sites by the harbour. Confirm dates, prices and group arrangements with the organisers.",
+    "polyline": [
+      [
+        38.8098,
+        121.3057
+      ],
+      [
+        38.8068,
+        121.2473
+      ],
+      [
+        38.8106,
+        121.2517
+      ],
+      [
+        38.8075,
+        121.256
+      ],
+      [
+        38.8294,
+        121.24
+      ],
+      [
+        38.8349,
+        121.2798
+      ],
+      [
+        38.8342,
+        121.2728
+      ],
+      [
+        38.8098,
+        121.3057
+      ]
+    ]
+  },
+  {
+    "slug": "vostochnyy-front",
+    "title": "The Eastern Front",
+    "dek": "Fort No. 2, the Great Eagle’s Nest, Fort No. 3, the Panlongshan redoubts and Fortification No. 3: eastern-front positions that fell in 1904.",
+    "duration": "4–5 hours",
+    "distance_km": 5.3,
+    "transport": "car",
+    "season": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "difficulty": "Moderate",
+    "author": "Russian Club of Dalian",
+    "stops": [
+      {
+        "place": "fort-2",
+        "note": "The fort’s casemates and the stone marking Kondratenko’s death. Begin at the museum by the entrance.",
+        "minutes": 60
+      },
+      {
+        "place": "bolshoe-orlinoe-gnezdo",
+        "note": "The height fell on 19 December 1904 (1 January 1905). It overlooks the whole Eastern Front.",
+        "minutes": 30
+      },
+      {
+        "place": "fort-3",
+        "note": "The fort on Erlongshan, captured on 15 (28) December after its parapet was blown up.",
+        "minutes": 40
+      },
+      {
+        "place": "redut-1",
+        "note": "The Panlongshan redoubts fell during the August 1904 assault. Locations are approximate, taken from the 1904 plan.",
+        "minutes": 20
+      },
+      {
+        "place": "redut-2",
+        "note": "The second redoubt, farther west. Check the plan: not every site has a sign.",
+        "minutes": 20
+      },
+      {
+        "place": "ukreplenie-3",
+        "note": "The work on Songshushan, blown up by a Japanese mine on 18 (31) December 1904. The crater remains visible.",
+        "minutes": 40
+      }
+    ],
+    "practical": "The sites are close together, but hills and few paths make a car more convenient. Before visiting, read the channel’s explanation of a fort’s ditch, escarp, caponier and postern. Late autumn or early spring offers the clearest view of the terrain, without foliage. Bring a torch for the posterns. Redoubt coordinates are approximate and need checking on the ground.",
+    "polyline": [
+      [
+        38.8349,
+        121.2798
+      ],
+      [
+        38.8342,
+        121.2728
+      ],
+      [
+        38.8373,
+        121.2654
+      ],
+      [
+        38.8389,
+        121.2741
+      ],
+      [
+        38.8401,
+        121.2703
+      ],
+      [
+        38.8374,
+        121.254
+      ]
+    ]
+  },
+  {
+    "slug": "zapadnyy-front",
+    "title": "The Western Front",
+    "dek": "Fortification No. 5, Battery D, Fortification No. 4 and Fort No. 4: the sector the Japanese never assaulted.",
+    "duration": "3–4 hours",
+    "distance_km": 6.1,
+    "transport": "car",
+    "season": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "difficulty": "Moderate",
+    "author": "Russian Club of Dalian",
+    "stops": [
+      {
+        "place": "ukreplenie-5",
+        "note": "The fortress’s best-preserved defensive work: ditch, caponiers, posterns and a small museum room with a model.",
+        "minutes": 75
+      },
+      {
+        "place": "batareya-d",
+        "note": "A lettered battery between Fortification No. 5 and Fort No. V. Its approximate position is taken from the 1904 plan.",
+        "minutes": 20
+      },
+      {
+        "place": "ukreplenie-4",
+        "note": "The fortification on Great Anzishan, above the New Town.",
+        "minutes": 40
+      },
+      {
+        "place": "fort-4",
+        "note": "The fort on Yizishan, on the northern flank of the Western Front. There is a view of 203 Metre Hill.",
+        "minutes": 40
+      }
+    ],
+    "practical": "The Western Front receives few visitors and has little signage: save the coordinates in advance. Fortification No. 5 stands in woodland; use 38.7970, 121.1933 for navigation. Battery D’s position comes from the 1904 plan; compare it with satellite imagery. The route combines easily with nearby 203 Metre Hill.",
+    "polyline": [
+      [
+        38.797,
+        121.1933
+      ],
+      [
+        38.8048,
+        121.2042
+      ],
+      [
+        38.8197,
+        121.2207
+      ],
+      [
+        38.8285,
+        121.2247
+      ]
+    ]
+  },
+  {
+    "slug": "progulka-po-lyuyshunyu",
+    "title": "A Walk through Lüshun",
+    "dek": "The station, Baiyushan, the New Town’s Japanese quarters, the Old Town and General Kondratenko’s house.",
+    "duration": "4–5 hours",
+    "distance_km": 11.7,
+    "transport": "mixed",
+    "season": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "difficulty": "Easy",
+    "author": "Russian Club of Dalian",
+    "stops": [
+      {
+        "place": "vokzal-lushun",
+        "note": "The terminus of the Chinese Eastern Railway’s southern branch. The walk begins here.",
+        "minutes": 15
+      },
+      {
+        "place": "perepelinaya-gora",
+        "note": "Climb Baiyushan, or Quail Hill, for the tower and harbour panorama.",
+        "minutes": 50
+      },
+      {
+        "place": "muzey-lushun",
+        "note": "Lüshun Museum and the square in front, at the beginning of the New Town.",
+        "minutes": 40
+      },
+      {
+        "place": "morskoe-sobranie",
+        "note": "The Naval Assembly, the squadron officers’ club. A guide will identify the building; its map position is provisional.",
+        "minutes": 10
+      },
+      {
+        "place": "yamato-lyuyshun",
+        "note": "The Lüshun Yamato Hotel, a former mansion built in 1903. Distinguish it from the Dalian hotel.",
+        "minutes": 10
+      },
+      {
+        "place": "russkaya-shkola",
+        "note": "The Russian school. The map position is provisional; a guide will identify the building.",
+        "minutes": 10
+      },
+      {
+        "place": "yaponskie-kvartaly-lyuyshunya",
+        "note": "The New Town’s Japanese quarters: Kwantung administration buildings, gendarmerie and villas.",
+        "minutes": 45
+      },
+      {
+        "place": "gospital-krasnogo-kresta",
+        "note": "The former Red Cross hospital in the Old Town, best reached by taxi.",
+        "minutes": 15
+      },
+      {
+        "place": "dom-kondratenko",
+        "note": "The final stop: General Kondratenko’s house in the New Town.",
+        "minutes": 15
+      }
+    ],
+    "practical": "A walking route with short taxi journeys: the harbour and Quail Hill separate the New and Old Towns, about 3 km apart. Baiyushan can be climbed by road or reached by cable car from the station. The Naval Assembly and Russian school are provisionally marked on the map; a guide will show the buildings. Many houses can only be viewed from outside. Stop timings are approximate.",
+    "polyline": [
+      [
+        38.8068,
+        121.2473
+      ],
+      [
+        38.8106,
+        121.2517
+      ],
+      [
+        38.8075,
+        121.2297
+      ],
+      [
+        38.8066,
+        121.2292
+      ],
+      [
+        38.8045,
+        121.2252
+      ],
+      [
+        38.8098,
+        121.2262
+      ],
+      [
+        38.8082,
+        121.2295
+      ],
+      [
+        38.813,
+        121.2621
+      ],
+      [
+        38.8121,
+        121.2328
+      ]
+    ]
+  },
+  {
+    "slug": "bayyushan-i-mayak",
+    "title": "Baiyushan and the Lighthouse",
+    "dek": "Quail Hill, Lüshun Prison, the historic centre, the Russian cemetery and Laotieshan Lighthouse where two seas meet.",
+    "duration": "All day",
+    "distance_km": 29.5,
+    "transport": "car",
+    "season": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "difficulty": "Easy",
+    "author": "Russian Club of Dalian",
+    "stops": [
+      {
+        "place": "perepelinaya-gora",
+        "note": "Baiyushan: the tower and views of the harbour, Golden Hill and Tiger’s Tail.",
+        "minutes": 50
+      },
+      {
+        "place": "tyurma-lushun",
+        "note": "Lüshun Prison: grey brick marks the Russian building, red brick the Japanese blocks.",
+        "minutes": 60
+      },
+      {
+        "place": "novy-gorod-taiyangou",
+        "note": "A walk through Lüshun’s historic centre along the New Town streets.",
+        "minutes": 60
+      },
+      {
+        "place": "kladbishche-lushun",
+        "note": "The Russian military cemetery, where the fortress’s defenders are buried.",
+        "minutes": 45
+      },
+      {
+        "place": "mayak-laoteshan",
+        "note": "The lighthouse on Cape Laotieshan, where the Yellow and Bohai seas meet.",
+        "minutes": 60
+      }
+    ],
+    "practical": "A car is needed between stops: Laotieshan Lighthouse is about 20 km from central Lüshun. Travel agencies report that the prison closes on Mondays, so choose another day. Lighthouse admission is paid; check opening hours. The cape and Baiyushan are windy. Stop timings are approximate.",
+    "polyline": [
+      [
+        38.8106,
+        121.2517
+      ],
+      [
+        38.8246,
+        121.2599
+      ],
+      [
+        38.81,
+        121.2281
+      ],
+      [
+        38.8294,
+        121.24
+      ],
+      [
+        38.727,
+        121.1348
+      ]
+    ]
+  },
+  {
+    "slug": "russkiy-dalniy-peshkom",
+    "title": "Russian Dalny on Foot",
+    "dek": "From Skolimowski’s circular square, across the bridge to Dalny’s first district and Sakharov’s port.",
+    "duration": "2–3 hours",
+    "distance_km": 4.9,
+    "transport": "walk",
+    "season": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "difficulty": "Easy",
+    "stops": [
+      {
+        "place": "nikolaevskaya-ploshchad",
+        "note": "Stand at the centre and find the ten radiating streets: the 1899 plan remains legible on the ground. The surrounding buildings are Japanese-era.",
+        "minutes": 25
+      },
+      {
+        "place": "most-pobedy",
+        "note": "The bridge over the railway separated the Russian administrative quarter from the rest of the city. It offers views of the buildings on the north side.",
+        "minutes": 10
+      },
+      {
+        "place": "zdanie-kvzhd-1902",
+        "note": "A Russian building from 1902. Look at its turrets and roofs, then visit the exhibition if it is open.",
+        "minutes": 20
+      },
+      {
+        "place": "russkaya-ulitsa",
+        "note": "Formerly Inzhenernaya Street. Distinguish original buildings from replicas by their masonry and window proportions.",
+        "minutes": 40
+      },
+      {
+        "place": "upravlenie-dalnego",
+        "note": "The city administration building at the end of the street, from which Sakharov governed Dalny.",
+        "minutes": 15
+      },
+      {
+        "place": "port-dalniy",
+        "note": "The port for which the city was built. Victoria Bay’s quays can be seen from the passenger terminal.",
+        "minutes": 30
+      }
+    ],
+    "practical": "The most convenient start is Zhongshan Square metro station. Russian Street is about a kilometre away on foot across Victory Bridge. The roughly 2 km stretch from Russian Street to the port is less rewarding as a walk and can be covered by taxi. Russian Street has many souvenir shops; original buildings are concentrated near its northern end and around the administration building. Traffic around the square is busy: use the underpasses. May, when black locust trees flower, and September–October are the best months.",
+    "polyline": [
+      [
+        38.9208,
+        121.6388
+      ],
+      [
+        38.9235,
+        121.6366
+      ],
+      [
+        38.9257,
+        121.6334
+      ],
+      [
+        38.9266,
+        121.6326
+      ],
+      [
+        38.927,
+        121.6307
+      ],
+      [
+        38.9281,
+        121.6279
+      ],
+      [
+        38.9268,
+        121.64
+      ],
+      [
+        38.9285,
+        121.65
+      ],
+      [
+        38.93,
+        121.6578
+      ]
+    ]
+  },
+  {
+    "slug": "yaponskiy-dairen",
+    "title": "Japanese Dairen",
+    "dek": "The city of 1905–1945, built on the Russian plan: the station, banks on Ōhiroba Square, the Yamato Hotel and the port.",
+    "duration": "2–3 hours",
+    "distance_km": 4.7,
+    "transport": "walk",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "difficulty": "Easy",
+    "stops": [
+      {
+        "place": "vokzal-dalian",
+        "note": "The 1937 station, designed to separate passenger flows by floor.",
+        "minutes": 15
+      },
+      {
+        "place": "politsiya-dajrena",
+        "note": "The square’s first building, dating from 1908.",
+        "minutes": 10
+      },
+      {
+        "place": "bank-yokohama",
+        "note": "The Yokohama Specie Bank’s three domes, 1909.",
+        "minutes": 10
+      },
+      {
+        "place": "nikolaevskaya-ploshchad",
+        "note": "Walk around the circle: the 1917 post office, the 1920 Bank of Korea and the 1936 Oriental Development Company building.",
+        "minutes": 30
+      },
+      {
+        "place": "merija-dajrena",
+        "note": "The 1919 city hall with its corner tower.",
+        "minutes": 10
+      },
+      {
+        "place": "gostinitsa-yamato",
+        "note": "The South Manchuria Railway’s hotel, opened in 1914 and still operating.",
+        "minutes": 15
+      },
+      {
+        "place": "port-dalniy",
+        "note": "The port for which Japan held Kwantung for forty years.",
+        "minutes": 30
+      }
+    ],
+    "practical": "The station is about a kilometre from Zhongshan Square along Zhongshan Road. The buildings on the square are working banks: you can enter during business hours, but photography in banking halls is usually prohibited. The façades are illuminated at night, making this a possible dusk walk. Luxun Road (鲁迅路) leads towards the port and still has pre-war buildings. If you have energy left, add Labour Park, the Japanese-era Central Park.",
+    "polyline": [
+      [
+        38.9213,
+        121.6282
+      ],
+      [
+        38.9194,
+        121.6343
+      ],
+      [
+        38.9197,
+        121.6374
+      ],
+      [
+        38.9218,
+        121.6383
+      ],
+      [
+        38.9208,
+        121.6388
+      ],
+      [
+        38.9199,
+        121.6403
+      ],
+      [
+        38.9195,
+        121.6395
+      ],
+      [
+        38.92,
+        121.646
+      ],
+      [
+        38.919,
+        121.6505
+      ],
+      [
+        38.9255,
+        121.655
+      ],
+      [
+        38.93,
+        121.6578
+      ]
+    ]
+  },
+  {
+    "slug": "sakura-lushunya",
+    "title": "Lüshun Cherry Blossom",
+    "dek": "A seasonal route for the second half of April: Longwangtang Reservoir’s garden, the garden at 203 Metre Hill and the view from Quail Hill.",
+    "duration": "5–7 hours",
+    "distance_km": 31.7,
+    "transport": "car",
+    "season": [
+      "spring"
+    ],
+    "difficulty": "Easy",
+    "stops": [
+      {
+        "place": "longwangtang",
+        "note": "The best-known cherry garden near Dalian. Single-flowered varieties bloom around mid-April; double-flowered varieties follow a week later.",
+        "minutes": 90
+      },
+      {
+        "place": "vysokaya-gora",
+        "note": "The garden at the foot of the hill flowers roughly a week later than Longwangtang. Climb to the summit monument.",
+        "minutes": 90
+      },
+      {
+        "place": "novy-gorod-taiyangou",
+        "note": "Lunch and a walk in the New Town.",
+        "minutes": 60
+      },
+      {
+        "place": "perepelinaya-gora",
+        "note": "Sunset over the harbour.",
+        "minutes": 45
+      }
+    ],
+    "practical": "Flowering dates shift each year. Tourism reports for 2026 placed the start at Longwangtang around 14–15 April and the peak around 19–28 April; 203 Metre Hill followed a week later, into early May. Peak weekends bring traffic and queues; weekdays are noticeably quieter. Longwangtang admission cost 20 yuan in 2025; seasonal prices at 203 Metre Hill may differ. Excursion buses run from Dalian during blossom season. If the blossom has finished, the route also works in May, when black locust trees flower in the New Town.",
+    "polyline": [
+      [
+        38.854,
+        121.386
+      ],
+      [
+        38.842,
+        121.32
+      ],
+      [
+        38.8286,
+        121.1935
+      ],
+      [
+        38.81,
+        121.2281
+      ],
+      [
+        38.8106,
+        121.2517
+      ]
+    ]
+  }
+]

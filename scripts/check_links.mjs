@@ -51,13 +51,17 @@ function load(file) {
 }
 
 /** путь сайта → файл в dist или null */
+const resolvedFiles = new Map();
 function resolve(path) {
+  if (resolvedFiles.has(path)) return resolvedFiles.get(path);
   let p = decodeURIComponent(path.slice(BASE.length));
   const cands = [];
   if (p === '' || p.endsWith('/')) cands.push(join(root, p, 'index.html'));
   else if (/\.[a-z0-9]+$/i.test(p)) cands.push(join(root, p));
   else cands.push(join(root, p, 'index.html'), join(root, p + '.html'));
-  return cands.find((c) => existsSync(c) && statSync(c).isFile()) ?? null;
+  const result = cands.find((c) => existsSync(c) && statSync(c).isFile()) ?? null;
+  resolvedFiles.set(path, result);
+  return result;
 }
 
 const placeExists = (slug) => existsSync(join(root, 'mesta', slug, 'index.html'));

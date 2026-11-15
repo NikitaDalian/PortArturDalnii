@@ -18,9 +18,10 @@ export default function i18nIntegration(language) {
   const dictionaryPath = path.join(root, 'src', 'i18n', language, 'ui.json');
   if (!fs.existsSync(dictionaryPath)) throw new Error(`Missing ${language} UI translations`);
   const dictionary = JSON.parse(fs.readFileSync(dictionaryPath, 'utf8'));
-  const keys = Object.keys(dictionary).filter((key) => key.length > 2).sort((a, b) => b.length - a.length);
-  const pattern = new RegExp(keys.map((key) => `(?<![\\p{L}\\p{N}_])${escapeRegex(key)}(?![\\p{L}\\p{N}_])`).join('|'), 'gu');
-  const translate = (text) => dictionary[text] ?? (dictionary[text.trim()] ? text.replace(text.trim(), dictionary[text.trim()]) : text.replace(pattern, (match) => dictionary[match]));
+  const fragments = Object.fromEntries(Object.entries(dictionary).filter(([key]) => key.trim()).map(([key, value]) => [key.trim(), value.trim()]));
+  const keys = Object.keys(fragments).sort((a, b) => b.length - a.length);
+  const pattern = new RegExp(keys.map((key) => `${/^[\p{L}\p{N}_]/u.test(key) ? '(?<![\\p{L}\\p{N}_])' : ''}${escapeRegex(key)}${/[\p{L}\p{N}_]$/u.test(key) ? '(?![\\p{L}\\p{N}_])' : ''}`).join('|'), 'gu');
+  const translate = (text) => dictionary[text] ?? (fragments[text.trim()] ? text.replace(text.trim(), fragments[text.trim()]) : text.replace(pattern, (match) => fragments[match]));
   return {
     name: 'project-i18n',
     hooks: {

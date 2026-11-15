@@ -1,0 +1,945 @@
+[
+  {
+    "slug": "nikolai-ii",
+    "name": "Nicholas II Alexandrovich",
+    "short": "Nicholas II",
+    "years": "1868–1918",
+    "country": "russia",
+    "role": "Emperor under whom Russia leased Kwantung, founded Dalny and lost the war with Japan",
+    "group": "politics",
+    "bio": "Born on 6 (18) May 1868 at Tsarskoye Selo, he came to the throne in 1894. As heir, he made his Eastern journey in 1890–1891; at Ōtsu on 11 May 1891 New Style, the policeman Tsuda Sanzō wounded his head with a sabre. On the return journey he inaugurated the Ussuri Railway at Vladivostok, the beginning of the Trans-Siberian. He directed Far Eastern policy personally: the Chinese Eastern Railway, the Kwantung lease in 1898, the Russian name Dalny for the new port, and the occupation of Manchuria in 1900. In 1903 he effectively removed ministers from Far Eastern affairs, establishing Alekseyev’s viceroyalty, backing Bezobrazov’s group and retiring Witte to an honorary post. He did not want war and long doubted Japan would dare fight, but the failure to withdraw from Manchuria and prolonged negotiations made it almost inevitable. The Treaty of Portsmouth transferred Kwantung, with Port Arthur and Dalny, to Japan. Nicholas pardoned Stessel in May 1909. He was executed with his family in Yekaterinburg in July 1918.",
+    "quote": "“God grant that the fears expressed here do not come true!” — annotation on N. I. Grodekov’s memorandum about another war with Japan",
+    "posts": [
+      6,
+      7,
+      68,
+      74,
+      79,
+      84,
+      91,
+      137,
+      158,
+      161,
+      251
+    ],
+    "portrait": "photos/photo_48@07-10-2026_10-12-42.jpg",
+    "places": [
+      "port-artur",
+      "dalnii",
+      "kvantun"
+    ],
+    "articles": [
+      "kak-vse-nachinalos-predposylki-voiny",
+      "nikolai-ii-i-russko-yaponskaya-voina",
+      "otsu-1891-pokushenie-na-tsesarevicha",
+      "tolstoi-odumaites-1904",
+      "admiral-alekseev-namestnik",
+      "otkuda-nazvanie-port-artur",
+      "vitte-chast-1-ministr-kotoryi-stroil",
+      "li-hunchzhan-soyuznik-kotoryi-sdaval-kreposti",
+      "vitte-chast-2-ministr-kotoryi-otdaval",
+      "molodyakov-rossiya-i-frantsiya",
+      "aleksandr-bezobrazov-kavalergard",
+      "zheltorossiya-koloniya-kotoruyu-ne-pridumali",
+      "poselyagin-poruchiki-po-admiralteistvu",
+      "botkin-svet-i-teni-russko-yaponskoi-voiny",
+      "balmont-nash-tsar-mukden-tsusima",
+      "hodynka-1896-i-doroga-v-port-artur",
+      "ipatevskiy-dom-tsarskaya-semya-i-botkin"
+    ]
+  },
+  {
+    "slug": "vitte",
+    "name": "Sergei Yulyevich Witte",
+    "short": "Witte",
+    "years": "1849–1915",
+    "country": "russia",
+    "role": "Finance minister, architect of the Chinese Eastern Railway project and founder of Dalny; signed the Treaty of Portsmouth",
+    "group": "politics",
+    "bio": "Born in Tiflis in 1849, Witte graduated in physics and mathematics from Novorossiysk University and by 1886 managed the Southwestern Railways. In 1892 he became transport minister, then finance minister for eleven years: the state spirits monopoly, the gold ruble of 1897 and Trans-Siberian construction. In 1896 he negotiated with Li Hongzhang and secured the Chinese Eastern Railway concession. He opposed taking Port Arthur but arranged the lease once the decision was made. In Kwantung his main concern was Dalny, built with its port by the railway company using Finance Ministry money, while Port Arthur’s defences lacked funds. He toured Manchuria and visited Dalny in 1902. Removed as minister in August 1903, he negotiated at Portsmouth in 1905, avoiding an indemnity but conceding southern Sakhalin and the Kwantung lease to Japan. He gained a count’s title and the nickname “Count Half-Sakhalin”, and drafted the October Manifesto. He died on 28 February (13 March) 1915.",
+    "quote": "“That madman Bezobrazov has vanished, gone under” — Witte to Kuropatkin, 1904",
+    "posts": [
+      6,
+      7,
+      10,
+      50,
+      84,
+      93,
+      114,
+      115,
+      122,
+      124,
+      137,
+      138,
+      158,
+      161,
+      180,
+      235
+    ],
+    "portrait": "photos/photo_89@14-10-2026_11-14-01.jpg",
+    "places": [
+      "dalnii",
+      "port-artur",
+      "kvantun"
+    ],
+    "articles": [
+      "kak-vse-nachinalos-predposylki-voiny",
+      "mir-i-itogi-voiny",
+      "port-artur-poslednyaya-zamorskaya-koloniya",
+      "nikolai-ii-i-russko-yaponskaya-voina",
+      "otsu-1891-pokushenie-na-tsesarevicha",
+      "admiral-alekseev-namestnik",
+      "dalnii-gorod-s-nulya",
+      "port-artur-i-dalnii-dva-goroda",
+      "vitte-chast-1-ministr-kotoryi-stroil",
+      "skolko-eto-v-nyneshnih-dengah",
+      "li-hunchzhan-soyuznik-kotoryi-sdaval-kreposti",
+      "vitte-chast-2-ministr-kotoryi-otdaval",
+      "bokserskoe-vosstanie-ihetuani",
+      "aleksandr-bezobrazov-kavalergard",
+      "zheltorossiya-koloniya-kotoruyu-ne-pridumali",
+      "vitte-posleslovie-reputatsiya",
+      "lektsiya-nazarenko-russko-yaponskaya-voina",
+      "plehve-malenkaya-pobedonosnaya-voina",
+      "hodynka-1896-i-doroga-v-port-artur"
+    ]
+  },
+  {
+    "slug": "alekseev",
+    "name": "Yevgeny Ivanovich Alekseyev",
+    "short": "Admiral Alekseyev",
+    "years": "1843–1917",
+    "country": "russia",
+    "role": "First chief administrator of Kwantung; from 1903, Viceroy of the Far East, based in Port Arthur",
+    "group": "politics",
+    "bio": "Born in 1843, officially the son of Lieutenant Commander Ivan Alekseyev, he was dogged by rumours that Alexander II was his father. After naval college he sailed around the world and served as naval attaché in Paris in the 1880s. He commanded the Pacific Fleet from 1895. In 1899 he became Kwantung’s first chief administrator, combining army, navy and civilian authority. The territory was divided into five districts, with Chinese officials retained as intermediaries. He directed Russian forces against the Boxers in 1900. As Far Eastern viceroy from August 1903, he oversaw negotiations with Japan, China and Korea. His instruction to avoid risks and preserve the squadron restricted the fleet at Port Arthur. He lost supreme command after the Shahe in October 1904; the viceroyalty was abolished in 1905. His rival Witte’s memoirs did much to shape his reputation. He died in Yalta on 27 May (9 June) 1917.",
+    "quote": "“He had sound judgment and a strong will” — naval historian V. Gribovsky on Alekseyev",
+    "posts": [
+      7,
+      50,
+      84,
+      111,
+      114,
+      127,
+      158,
+      199
+    ],
+    "portrait": "photos/photo_61@09-10-2026_12-01-23.jpg",
+    "places": [
+      "port-artur",
+      "kvantun"
+    ],
+    "articles": [
+      "kak-vse-nachinalos-predposylki-voiny",
+      "port-artur-poslednyaya-zamorskaya-koloniya",
+      "nikolai-ii-i-russko-yaponskaya-voina",
+      "admiral-alekseev-namestnik",
+      "kvantun-proishozhdenie-nazvaniya",
+      "port-artur-i-dalnii-dva-goroda",
+      "pervaya-tihookeanskaya-eskadra",
+      "aleksandr-bezobrazov-kavalergard",
+      "panishchev-krizis-nravstvennogo-soznaniya"
+    ]
+  },
+  {
+    "slug": "li-hunchzhan",
+    "name": "Li Hongzhang (李鸿章)",
+    "short": "Li Hongzhang",
+    "years": "1823–1901",
+    "country": "china",
+    "role": "Qing statesman who developed the Beiyang Fleet base at Lüshunkou and signed the Chinese Eastern Railway and Kwantung lease agreements",
+    "group": "politics",
+    "bio": "Born in Hefei, Anhui, in 1823. From 1870 he spent almost a quarter-century governing the capital province of Zhili and overseeing northern ports, building arsenals, telegraphs, steamship companies and the Beiyang Fleet. In the 1880s, the fishing village of Lüshunkou became its base, with docks and batteries: the future Port Arthur, captured by Japan in a single day in 1894. At Shimonoseki, while negotiating peace in 1895, Li was wounded by a Japanese extremist, and Japan reduced the indemnity from 300 to 200 million taels. At Nicholas II’s coronation in 1896 he signed an alliance against Japan and agreed to the Chinese Eastern Railway; he was promised 3 million rubles. In spring 1898 he signed the Kwantung lease convention and received 500,000 rubles. As governor in Canton in 1900 he refused Cixi’s order to wage war on the powers; in 1901 he signed the Boxer Protocol. He died in Beijing in November 1901 without signing the Manchurian agreement sought by St Petersburg.",
+    "quote": "“Use barbarians to control barbarians” — a principle Li Hongzhang followed throughout his life",
+    "posts": [
+      50,
+      115,
+      122,
+      124,
+      138
+    ],
+    "portrait": "photos/photo_96@16-10-2026_17-12-01.jpg",
+    "places": [
+      "port-artur",
+      "kvantun"
+    ],
+    "articles": [
+      "port-artur-poslednyaya-zamorskaya-koloniya",
+      "vitte-chast-1-ministr-kotoryi-stroil",
+      "skolko-eto-v-nyneshnih-dengah",
+      "li-hunchzhan-soyuznik-kotoryi-sdaval-kreposti",
+      "bokserskoe-vosstanie-ihetuani",
+      "hodynka-1896-i-doroga-v-port-artur"
+    ]
+  },
+  {
+    "slug": "bezobrazov",
+    "name": "Alexander Mikhailovich Bezobrazov",
+    "short": "Bezobrazov",
+    "years": "1853–1931",
+    "country": "russia",
+    "role": "State secretary, leader of the “Bezobrazov circle” and the Yalu timber venture",
+    "group": "politics",
+    "bio": "Born in 1853, or 1855 according to other sources, he retired as a captain in the Cavalier Guards. Grand Duke Alexander Mikhailovich introduced him to Nicholas II in 1898. Bezobrazov proposed a “peaceful conquest” of Korea through private enterprise modelled on the British East India Company. Its foundation was a timber concession on the Yalu and Tumen rivers, obtained by Vladivostok merchant Julius Briner in 1896 and purchased in 1898 against Witte’s opposition. Soldiers disguised as loggers went to the Yalu and built fortifications. Grand dukes, the dowager empress and the treasury supplied funds: 2 million rubles went to the concession in the first half of 1903. Bezobrazov became state secretary on 6 May 1903. That August Witte lost the Finance Ministry and Viceroy Alekseyev was instructed to discuss economic matters with Bezobrazov. He left for Switzerland in early 1904 and held no further role after 1905. He died in exile in Paris in 1931. Historians dispute whether he was a principal cause of the war or a convenient scapegoat.",
+    "quote": "“A great fantasist” with boundless self-confidence — V. I. Gurko on Bezobrazov",
+    "posts": [
+      7,
+      68,
+      84,
+      137,
+      158,
+      216,
+      235
+    ],
+    "portrait": "photos/photo_124@23-10-2026_10-15-05.jpg",
+    "places": [
+      "yalu"
+    ],
+    "articles": [
+      "kak-vse-nachinalos-predposylki-voiny",
+      "nikolai-ii-i-russko-yaponskaya-voina",
+      "admiral-alekseev-namestnik",
+      "vitte-chast-2-ministr-kotoryi-otdaval",
+      "aleksandr-bezobrazov-kavalergard",
+      "lektsiya-nazarenko-russko-yaponskaya-voina",
+      "plehve-malenkaya-pobedonosnaya-voina"
+    ]
+  },
+  {
+    "slug": "plehve",
+    "name": "Vyacheslav Konstantinovich von Plehve",
+    "short": "Plehve",
+    "years": "1846–1904",
+    "country": "russia",
+    "role": "Interior minister in 1902–1904 and ally of Bezobrazov’s circle; the remark about a “small victorious war” is attributed to him",
+    "group": "politics",
+    "bio": "Born in Meshchovsk, Kaluga province, in 1846, he graduated in law from Moscow University and worked in the prosecution service. After Alexander II’s assassination he headed the Police Department and crushed Narodnaya Volya, later serving as state secretary and pursuing Russification in Finland. He became interior minister in April 1902 after Sipyagin’s assassination. A rival of Witte, he supported Bezobrazov’s group; some historians regard him as its inspiration. The remark “we need a small victorious war” survives only at second hand, in a 1907 book under the pseudonym A. Morskoy and Witte’s memoirs, published in 1922. Witte had not heard it himself, quoting Kuropatkin; no independent confirmation exists. Plehve was killed by Socialist Revolutionary Yegor Sozonov’s bomb on Izmailovsky Avenue, St Petersburg, on 15 July 1904. Yevno Azef and Boris Savinkov directed the Combat Organisation’s operation. Two days later Japanese troops reached Port Arthur’s immediate approaches and the siege began.",
+    "quote": "“To hold back the revolution, we need a small victorious war” — words attributed to Plehve in Witte’s memoirs; authenticity unproven",
+    "posts": [
+      7,
+      68,
+      137,
+      158,
+      216,
+      235
+    ],
+    "portrait": "photos/photo_196@04-11-2026_10-34-59.jpg",
+    "places": [
+      "port-artur"
+    ],
+    "articles": [
+      "kak-vse-nachinalos-predposylki-voiny",
+      "nikolai-ii-i-russko-yaponskaya-voina",
+      "vitte-chast-2-ministr-kotoryi-otdaval",
+      "aleksandr-bezobrazov-kavalergard",
+      "lektsiya-nazarenko-russko-yaponskaya-voina",
+      "plehve-malenkaya-pobedonosnaya-voina"
+    ]
+  },
+  {
+    "slug": "kuropatkin",
+    "name": "Alexei Nikolayevich Kuropatkin",
+    "short": "Kuropatkin",
+    "years": "1848–1925",
+    "country": "russia",
+    "role": "War minister in 1898–1904, then commander of the Manchurian Army and commander-in-chief",
+    "group": "military",
+    "bio": "War minister from 1898 to 1904, Kuropatkin opposed Witte’s policy of withdrawal from Manchuria. According to Witte, he welcomed the Boxer Rebellion as a pretext for occupation. In 1903 General D. I. Subotich wrote to him that Vladivostok was enough for Russia and its Manchurian policy would bring ruin. Kuropatkin took command of the Manchurian Army at the outbreak of war and succeeded Alekseyev as commander-in-chief after the Shahe in October 1904. The army retreated through the Yalu, Liaoyang, Shahe, Sandepu and Mukden in February–March 1905, after which he was removed. The headquarters’ 1905 album shows him thanking Putilov Hill’s heroes and inspecting a hospital train. His papers are in the Russian State Military Historical Archive, Collection 165. He deposited his diary for 1904–1906 in the military archive in autumn 1915 before leaving for the front; Krasny Arkhiv published it in 1922–1935. In 1913 he proposed moving the border so that the Gobi Desert would separate Russia from China.",
+    "quote": "“I am very glad. This will give us a pretext to seize Manchuria” — Kuropatkin on the Boxer Rebellion, as reported by Witte",
+    "posts": [
+      9,
+      30,
+      92,
+      102,
+      137,
+      138,
+      161,
+      199,
+      235
+    ],
+    "portrait": "photos/photo_107@18-10-2026_16-42-01.jpg",
+    "places": [
+      "lyaoyan",
+      "shahe",
+      "mukden"
+    ],
+    "articles": [
+      "voina-na-more-osada-mukden-tsusima",
+      "albom-shtaba-glavnokomanduyushchego-1905",
+      "neolurk-russko-yaponskaya-voina",
+      "arhivy-russko-yaponskoi-voiny",
+      "vitte-chast-2-ministr-kotoryi-otdaval",
+      "bokserskoe-vosstanie-ihetuani",
+      "veresaev-na-yaponskoi-voine",
+      "aleksandr-bezobrazov-kavalergard",
+      "zheltorossiya-koloniya-kotoruyu-ne-pridumali",
+      "panishchev-krizis-nravstvennogo-soznaniya",
+      "plehve-malenkaya-pobedonosnaya-voina"
+    ]
+  },
+  {
+    "slug": "kondratenko",
+    "name": "Roman Isidorovich Kondratenko",
+    "short": "General Kondratenko",
+    "years": "1857–1904",
+    "country": "russia",
+    "role": "Commander of Port Arthur’s land defences, the “soul of the defence”",
+    "group": "military",
+    "bio": "Born in Tiflis on 30 September (12 October) 1857, the tenth child of a retired major. He graduated from the Nikolayev Engineering School, Nikolayev Engineering Academy and General Staff Academy, finishing both academies in the first category. He commanded the 20th Rifle Regiment, with which he first saw Port Arthur in 1900. In November 1903 he took over the 7th East Siberian Rifle Brigade there; from the war’s start Stessel entrusted him with the entire land front. He completed defences under fire, installed guns from stores and ships, organised hand-grenade manufacture and supported inventors of mine throwers. On 18 September 1904 he warned Stessel not to expect timely relief; his letter went no further. He died with eight officers in Fort No. II’s officers’ casemate on 2 (15) December 1904, struck by an 11-inch shell. His remains were moved to the Alexander Nevsky Monastery in 1905. A Japanese memorial marks his death.",
+    "quote": "“No assault can be terrifying if we resolve to fulfil the oath we have sworn to the very end” — Kondratenko’s order after the fighting at the Wolf Hills, July 1904",
+    "posts": [
+      8,
+      25,
+      45,
+      50,
+      114,
+      155,
+      210,
+      227,
+      234,
+      241,
+      250
+    ],
+    "portrait": "photos/photo_332@archive.jpg",
+    "places": [
+      "port-artur",
+      "fort-2",
+      "vysokaya-gora"
+    ],
+    "articles": [
+      "voina-na-more-osada-mukden-tsusima",
+      "stepanov-port-artur-retsenziya",
+      "port-artur-poslednyaya-zamorskaya-koloniya",
+      "port-artur-i-dalnii-dva-goroda",
+      "veresaev-na-yaponskoi-voine",
+      "dnevnik-kapitana-lile",
+      "panishchev-krizis-nravstvennogo-soznaniya",
+      "kondratenko-put-k-port-arturu",
+      "kondratenko-dusha-oborony",
+      "posleznanie-kak-sudit-o-port-arture",
+      "kulichkin-kondratenko-zhzl",
+      "yaroslavskii-bolsheviki-i-russko-yaponskaya-voina",
+      "general-fok-geroy-dunaya-i-port-artur"
+    ]
+  },
+  {
+    "slug": "stessel",
+    "name": "Anatoly Mikhailovich Stessel",
+    "short": "Stessel",
+    "years": "1848–1915",
+    "country": "russia",
+    "role": "Commander of the Kwantung Fortified Region; signed Port Arthur’s surrender",
+    "group": "military",
+    "bio": "During the war, Stessel commanded the Kwantung Fortified Region; K. N. Smirnov commanded the fortress, and R. I. Kondratenko led the land defences, entrusted with the whole land front from the first days. During the first assault Stessel wrote that Kondratenko should not accompany individual companies and asked him by telephone not to go into combat personally. He took no action on Kondratenko’s letter of 18 September 1904 proposing a truthful report to the tsar. On 20 December 1904 (2 January 1905), he signed the surrender against the military council’s decision to hold out. Around 23,000–25,000 men became prisoners. Sentenced to death for surrendering the fortress, he received a commuted sentence of ten years and was pardoned by Nicholas II in May 1909. The verdict contained no charge of selling the fortress, central to Stepanov’s Port Arthur. The defence’s most disputed figure, he inspired a 1905 joke: “Your turn to deal! — I’ve already surrendered.”",
+    "quote": "“He must not be sent with individual companies. His loss would be irreplaceable” — Stessel on Kondratenko during the first assault",
+    "posts": [
+      8,
+      25,
+      43,
+      45,
+      50,
+      114,
+      120,
+      227,
+      234,
+      241
+    ],
+    "portrait": "photos/photo_329@archive.jpg",
+    "places": [
+      "port-artur",
+      "kvantun"
+    ],
+    "portrait_note": "Identified from the archive caption.",
+    "articles": [
+      "voina-na-more-osada-mukden-tsusima",
+      "anekdoty-rossiiskoi-imperii-shevchenko",
+      "stepanov-port-artur-retsenziya",
+      "port-artur-poslednyaya-zamorskaya-koloniya",
+      "neolurk-russko-yaponskaya-voina",
+      "port-artur-i-dalnii-dva-goroda",
+      "poselyagin-praporshchiki-po-admiralteistvu",
+      "panishchev-krizis-nravstvennogo-soznaniya",
+      "kondratenko-dusha-oborony",
+      "posleznanie-kak-sudit-o-port-arture",
+      "kulichkin-kondratenko-zhzl",
+      "ipatevskiy-dom-tsarskaya-semya-i-botkin",
+      "general-fok-geroy-dunaya-i-port-artur"
+    ]
+  },
+  {
+    "slug": "makarov",
+    "name": "Stepan Osipovich Makarov",
+    "short": "Admiral Makarov",
+    "years": "1849–1904",
+    "country": "russia",
+    "role": "Fleet commander at Port Arthur in February–March 1904; died aboard Petropavlovsk",
+    "group": "navy",
+    "bio": "Vice admiral, oceanographer and ship designer who initiated the icebreaker Yermak. He arrived at Port Arthur in late February 1904, replacing Vice Admiral O. V. Stark, under whom the squadron had been caught by the Japanese night attack. In 36 days of command he restored confidence and began taking the squadron to sea. On 10 March 1904 he appointed Rear Admiral K. P. Jessen to command the Vladivostok Cruiser Detachment. On 31 March (13 April), his flagship Petropavlovsk struck a mine and sank. Captain Lilje, who witnessed it, wrote that she disappeared “within some three minutes”. The admiral, around 650 crew and the painter Vasily Vereshchagin, aboard to make sketches, died; around 80 survived. Vitgeft succeeded him, and the squadron returned to the caution prescribed by the viceroy. In time-travel novels, Makarov usually survives.",
+    "quote": null,
+    "posts": [
+      8,
+      50,
+      114,
+      120,
+      127,
+      155,
+      164,
+      167,
+      199,
+      216
+    ],
+    "portrait": null,
+    "places": [
+      "port-artur"
+    ],
+    "articles": [
+      "voina-na-more-osada-mukden-tsusima",
+      "port-artur-poslednyaya-zamorskaya-koloniya",
+      "port-artur-i-dalnii-dva-goroda",
+      "poselyagin-praporshchiki-po-admiralteistvu",
+      "pervaya-tihookeanskaya-eskadra",
+      "veresaev-na-yaponskoi-voine",
+      "dnevnik-kapitana-lile",
+      "vladivostokskii-otryad-kreiserov",
+      "panishchev-krizis-nravstvennogo-soznaniya",
+      "lektsiya-nazarenko-russko-yaponskaya-voina",
+      "ayrapetov-na-puti-k-krahu",
+      "vereshchagin-hudozhnik-na-voyne"
+    ]
+  },
+  {
+    "slug": "vitgeft",
+    "name": "Wilhelm Karlovich Vitgeft",
+    "short": "Admiral Vitgeft",
+    "years": "1847–1904",
+    "country": "russia",
+    "role": "The viceroy’s naval chief of staff; commanded the First Squadron after Makarov and died in the Yellow Sea battle",
+    "group": "navy",
+    "bio": "Rear admiral and naval chief of staff to Viceroy Alekseyev. Leaving a meeting on the evening of 26 January 1904, hours before the Japanese attack, he said extensive precautions for the squadron were unnecessary. Negotiations were still under way and war without a declaration seemed unthinkable. After Makarov’s death in April 1904 he effectively took command. An experienced staff officer, he did not consider himself a fleet commander; the viceroy’s injunction to avoid risk and preserve the squadron reinforced his caution. On 28 July (10 August) 1904, directly ordered from St Petersburg, he attempted to break through to Vladivostok. A Japanese shell struck the bridge of his flagship Tsesarevich during the Yellow Sea battle and killed him. With damaged steering, Tsesarevich circled and broke the formation, leaving the squadron without effective command. Some ships were interned at Qingdao, Shanghai and Saigon; the main force returned to Port Arthur to be destroyed later by siege howitzers. None reached Vladivostok.",
+    "quote": "“…since there will be no war” — Vitgeft on the evening of 26 January 1904, hours before the Japanese destroyer attack",
+    "posts": [
+      8,
+      127,
+      214,
+      234
+    ],
+    "portrait": "photos/photo_330@archive.jpg",
+    "places": [
+      "port-artur"
+    ],
+    "portrait_note": "Identified from the archive caption.",
+    "articles": [
+      "voina-na-more-osada-mukden-tsusima",
+      "pervaya-tihookeanskaya-eskadra",
+      "poselyagin-poruchiki-po-admiralteistvu",
+      "posleznanie-kak-sudit-o-port-arture"
+    ]
+  },
+  {
+    "slug": "velichko",
+    "name": "Konstantin Ivanovich Velichko",
+    "short": "Velichko",
+    "years": "1856–1927",
+    "country": "russia",
+    "role": "Military engineer who designed Port Arthur’s land defences",
+    "group": "engineers",
+    "bio": "Military engineer, fortification specialist and professor at the Nikolayev Engineering Academy. In 1898–1900 he designed Port Arthur’s system of forts and intermediate works, approved on 18 January 1900. It included six forts, I–VI, as heavily armed strongpoints with garrisons of up to two companies, and five intermediate fortifications held mainly by infantry. Only about 4.25 million of the budgeted 15 million rubles was provided before the war. Velichko reduced concrete thickness: shelter vaults reached 0.9 metres, designed against 6-inch shells. Planning for a garrison no larger than 11,300, he placed the line a few kilometres from town, leaving several heights outside it, including 203 Metre Hill. The land-front forts were unfinished when war began; Fort VI remained on paper. The design was later criticised, but in 1900 neither a months-long siege nor 280 mm howitzers had been anticipated.",
+    "quote": null,
+    "posts": [
+      50,
+      122,
+      144,
+      174,
+      227,
+      234
+    ],
+    "portrait": null,
+    "places": [
+      "port-artur",
+      "ukreplenie-5",
+      "vysokaya-gora"
+    ],
+    "articles": [
+      "port-artur-poslednyaya-zamorskaya-koloniya",
+      "skolko-eto-v-nyneshnih-dengah",
+      "ukreplenie-5-yahutszui",
+      "kondratenko-dusha-oborony",
+      "posleznanie-kak-sudit-o-port-arture"
+    ]
+  },
+  {
+    "slug": "saharov",
+    "name": "Vladimir Vasilyevich Sakharov",
+    "short": "Engineer Sakharov",
+    "years": "c. 1859–1904",
+    "country": "russia",
+    "role": "Engineer who built Dalny’s port and became its first city governor",
+    "group": "engineers",
+    "bio": "A harbour engineer who built Vladivostok’s commercial port before coming to Kwantung. From 1899 he designed and built the port in Victoria Bay, within Dalian Bay, then became Dalny’s city governor. The Chinese Eastern Railway Company built port and city; the first harbour phase cost 10.8 million rubles, and within three years Dalny ranked second in China for cargo turnover, after Shanghai. The city gained Manchuria’s first power station, water mains and a telephone network. At the outbreak of war, State Councillor Sakharov volunteered for Port Arthur. A caption to his 1904 magazine portrait says he served as a captain under General Fok and contributed much to the defence through his ingenuity. He died of typhus in the fortress in October 1904, aged 45. The Japanese captured his port almost intact in May 1904 and used it to supply the siege army, then developed Dairen along the Russian plan for forty years.",
+    "quote": null,
+    "posts": [
+      93,
+      114
+    ],
+    "portrait": "photos/photo_66@11-10-2026_14-03-01.jpg",
+    "places": [
+      "dalnii",
+      "port-artur"
+    ],
+    "articles": [
+      "dalnii-gorod-s-nulya",
+      "port-artur-i-dalnii-dva-goroda",
+      "skolimovsky-chelovek-kotoryy-narisoval-dalnii",
+      "zodchiy-1904-plan-goroda-dalnego"
+    ]
+  },
+  {
+    "slug": "skolimovsky",
+    "name": "Kazimierz Geliodorovich Skolimowski",
+    "short": "Architect Skolimowski",
+    "years": "1862–1923",
+    "country": "russia",
+    "role": "Architect of Dalny’s general plan",
+    "group": "engineers",
+    "bio": "Polish architect who designed Dalny’s general plan. Born in Brodnia near Łódź in 1862, he studied at St Petersburg’s Academy of Arts and in Berlin and Munich. In 1899, on Alexander Pomerantsev’s recommendation, he was invited to design Dalny. Rejecting a rectangular grid, he proposed a radial layout: circular Nikolayevskaya Square, 213 metres across, with ten avenues. He presented a new general plan in 1900 and detailed design in 1903, considering terrain, street views and living conditions. A park separated the European and Chinese towns. His report “On Designing the Plan of the City of Dalny” was delivered on 3 (16) February 1904 and published in Zodchiy, Nos. 12–14. Returning to Poland, he became Kalisz’s city architect. He died on 28 December 1923 while inspecting the icy roof of the town hall under construction. His radial layout still shapes central Dalian.",
+    "quote": null,
+    "posts": [
+      93,
+      114,
+      269,
+      276
+    ],
+    "portrait": "photos/photo_358@11-11-2026_10-18-04.jpg",
+    "places": [
+      "dalnii",
+      "nikolaevskaya-ploshchad",
+      "russkaya-ulitsa",
+      "upravlenie-dalnego"
+    ],
+    "portrait_note": "Portrait from the channel’s new post. Patronymic and life dates updated from the publication of 11 November 2026.",
+    "articles": [
+      "dalnii-gorod-s-nulya",
+      "port-artur-i-dalnii-dva-goroda",
+      "skolimovsky-chelovek-kotoryy-narisoval-dalnii",
+      "zodchiy-1904-plan-goroda-dalnego"
+    ]
+  },
+  {
+    "slug": "lilie",
+    "name": "Mikhail Ivanovich Lilje",
+    "short": "Captain Lilje",
+    "years": "1868–1941",
+    "country": "russia",
+    "role": "Military engineer who built Kwantung’s fortifications and wrote the Diary of the Siege of Port Arthur",
+    "group": "engineers",
+    "bio": "Born into a noble family in 1868, Lilje graduated from the Nikolayev Engineering Academy and was posted to Port Arthur in 1898. From 1900 he directed construction for the Kwantung Engineering Administration, building the works he would later defend. He kept a diary throughout the siege, from January 1904 to January 1905. On the first night he wrote that the squadron was “completely unprepared for battle”; on 31 March he witnessed Petropavlovsk’s sinking. In November he recorded scurvy and command disputes, calling 203 Metre Hill “Arthur’s Calvary”. On 20 December he explained the night’s explosions: “Our sailors were blowing up all our ships, cranes, and so on.” Decorated after the war with the Orders of St Anne and St Vladimir with swords, he became a lieutenant colonel and built defences in Finland during the First World War. He emigrated to France after 1917 and died in 1941. He sent his manuscript to the USSR, where it was held in the Lenin Library, nearly lost during preparations for a 1992 edition and finally published from a surviving copy in 2002.",
+    "quote": "“All this muddle vividly illustrates our order and preparedness for war” — diary, 28 January 1904",
+    "posts": [
+      164
+    ],
+    "portrait": "photos/photo_130@24-10-2026_19-45-02.jpg",
+    "places": [
+      "port-artur",
+      "vysokaya-gora"
+    ],
+    "articles": [
+      "dnevnik-kapitana-lile"
+    ]
+  },
+  {
+    "slug": "nogi",
+    "name": "Nogi Maresuke",
+    "short": "General Nogi",
+    "years": "1849–1912",
+    "country": "japan",
+    "role": "Commander of the Japanese Third Army, which besieged Port Arthur",
+    "group": "military",
+    "bio": "Japanese general commanding the Third Army, which conducted Port Arthur’s land siege from summer 1904. Foreign war correspondents worked at his headquarters: on the first assault’s morning he received them and asked an interpreter to state each man’s nationality and credentials. The army made four general assaults; Russian estimates put Japan’s losses at Port Arthur above 110,000. Nogi lost both sons in the campaign. After the failed August assault, 280 mm howitzers were brought from Japanese coastal fortresses and began firing in late September 1904. On 22 November (5 December), the army took 203 Metre Hill, enabling siege artillery to destroy the squadron in the harbour’s inner basins. The fortress surrendered on 20 December 1904 (2 January 1905). Nogi and his wife died by suicide on the day of Emperor Meiji’s funeral in 1912.",
+    "quote": null,
+    "posts": [
+      8,
+      28,
+      50
+    ],
+    "portrait": "photos/photo_334@archive.jpg",
+    "places": [
+      "port-artur",
+      "vysokaya-gora"
+    ],
+    "portrait_note": "Identified from the archive caption.",
+    "articles": [
+      "voina-na-more-osada-mukden-tsusima",
+      "kto-fotografiroval-russko-yaponskuyu-voinu",
+      "port-artur-poslednyaya-zamorskaya-koloniya"
+    ]
+  },
+  {
+    "slug": "iessen",
+    "name": "Karl Petrovich Jessen",
+    "short": "Admiral Jessen",
+    "years": "1852–1918",
+    "country": "russia",
+    "role": "Commander of the Vladivostok Cruiser Detachment, whose raids interrupted the delivery of siege howitzers to Port Arthur",
+    "group": "navy",
+    "bio": "Rear admiral appointed by Makarov on 10 March 1904 to command the Vladivostok Cruiser Detachment: Rossiya, Gromoboi, Rurik and Bogatyr. Its task was to attack Japanese trade and communications with Korea. On 2 (15) June, under temporary commander Vice Admiral P. A. Bezobrazov, the cruisers sank Hitachi Maru and Izumi Maru in the Korea Strait; Sado Maru ran aground. Hitachi Maru and Sado Maru carried 18 siege howitzers of 280 mm for Port Arthur. In July Jessen raided Japan’s eastern coast and sank the British steamer Knight Commander 15 miles from the entrance to Tokyo Bay; a London prize court upheld the capture. On 1 (14) August off Ulsan, the detachment, sailing to meet the squadron attempting to escape Port Arthur, encountered Kamimura’s cruisers and lost Rurik. Jessen received the Order of St George, 4th Class, and brought the surviving ships to the Baltic after the war. He was subsequently reprimanded, faced trial and retired in 1908.",
+    "quote": null,
+    "posts": [
+      167,
+      200
+    ],
+    "portrait": "photos/photo_138@25-10-2026_09-54-01.jpg",
+    "places": [
+      "vladivostok"
+    ],
+    "articles": [
+      "vladivostokskii-otryad-kreiserov",
+      "pikul-kreisera-retsenziya"
+    ]
+  },
+  {
+    "slug": "kamimura",
+    "name": "Kamimura Hikonojō",
+    "short": "Admiral Kamimura",
+    "years": "1849–1916",
+    "country": "japan",
+    "role": "Japanese vice admiral who commanded the cruisers opposing the Vladivostok detachment",
+    "group": "navy",
+    "bio": "Japanese vice admiral commanding an armoured-cruiser squadron. His main task in 1904 was to counter the Vladivostok cruisers, which attacked Japanese transports in the Sea of Japan and off Japan’s Pacific coast. On 2 (15) June, Russian cruisers sank transports carrying 280 mm siege howitzers for the army at Port Arthur; the Japanese navy had to commit an entire squadron against Vladivostok. On 1 (14) August off Ulsan, Kamimura intercepted Jessen’s force as it sailed to meet the squadron breaking out of Port Arthur. Hits to Rurik’s stern disabled her steering; she fell behind and was scuttled. More than 200 died, while the Japanese rescued around 625 sailors. Rossiya and Gromoboi returned to Vladivostok badly damaged, effectively ending the cruiser campaign. Kamimura is a historical character in Valentin Pikul’s Cruisers.",
+    "quote": null,
+    "posts": [
+      167,
+      200
+    ],
+    "portrait": "photos/photo_139@25-10-2026_09-54-01.jpg",
+    "places": [
+      "vladivostok"
+    ],
+    "articles": [
+      "vladivostokskii-otryad-kreiserov",
+      "pikul-kreisera-retsenziya"
+    ]
+  },
+  {
+    "slug": "subotich",
+    "name": "Dean Ivanovich Subotich",
+    "short": "General Subotich",
+    "years": "1852–1920",
+    "country": "russia",
+    "role": "An early administrator of Kwantung, later Governor-General of the Amur region; proposed returning Dalny and Port Arthur to China",
+    "group": "military",
+    "bio": "A general of Serbian origin. In the first year of the Russian lease he headed Kwantung after Admiral F. V. Dubasov, until authority passed to Y. I. Alekseyev in 1899. He later succeeded N. I. Grodekov as Governor-General of the Amur region. In 1903, months before the war, he sent War Minister Kuropatkin a memorandum historian M. V. Khodyakov considers the most clear-headed of the generals’ Manchurian plans. Subotich argued that Russia was a land power and Vladivostok was sufficient. A verst of the Chinese Eastern Railway cost 152,000 rubles, 80,000 more than in Transbaikalia; at least a billion had been invested in Manchuria. He proposed a deal modelled on the sale of Alaska: return southern Manchuria, including Dalny and Port Arthur, to China in exchange for northern Manchuria. Two years later Russia lost Dalny and Port Arthur to Japan under the Treaty of Portsmouth.",
+    "quote": "Russia is heading “rather towards ruin and exhaustion” — Subotich’s memorandum to Kuropatkin, 1903",
+    "posts": [
+      114,
+      161
+    ],
+    "portrait": null,
+    "places": [
+      "kvantun",
+      "port-artur",
+      "dalnii"
+    ],
+    "articles": [
+      "port-artur-i-dalnii-dva-goroda",
+      "zheltorossiya-koloniya-kotoruyu-ne-pridumali"
+    ]
+  },
+  {
+    "slug": "stepanov",
+    "name": "Alexander Nikolayevich Stepanov",
+    "short": "Stepanov",
+    "years": "1892–1965",
+    "country": "russia",
+    "role": "Author of Port Arthur, awarded the Stalin Prize in 1946",
+    "group": "writers",
+    "bio": "Born in Odessa in 1892 into a family of hereditary artillerymen. He graduated from the Sumy Cadet Corps and Mikhailovsky Artillery School, serving in the First World War with the Life Guards Rifle Artillery Battalion. He received six orders and, in February 1915, the St George Sword for fighting near Rudka-Skruda. He assembled Port Arthur from memoirs, veterans’ letters and his own front-line experience. The novel ran to 17 editions and over a million copies, receiving the Stalin Prize, First Class, in 1946. Stessel and Fok are traitors selling the fortress; Kondratenko is its last support. This scheme shaped popular views of the defence for decades. Stepanov claimed to have survived the siege as a boy at his father’s Electric Cliff battery, but in 2010 D. K. Nikolayev and O. V. Chistyakov demonstrated from archives that neither had been in the fortress. He died in 1965 and was buried at Novodevichy Cemetery.",
+    "quote": null,
+    "posts": [
+      45,
+      46,
+      123,
+      241
+    ],
+    "portrait": "photos/photo_27@06-10-2026_00-40-51.jpg",
+    "places": [
+      "port-artur",
+      "elektricheskiy-utes"
+    ],
+    "articles": [
+      "stepanov-port-artur-retsenziya",
+      "aleksandr-stepanov-hrabrets-s-drugoi-voiny",
+      "kulichkin-kondratenko-zhzl"
+    ]
+  },
+  {
+    "slug": "pikul",
+    "name": "Valentin Savvich Pikul",
+    "short": "Pikul",
+    "years": "1928–1990",
+    "country": "russia",
+    "role": "Author of Cruisers, a novel about the Vladivostok Cruiser Detachment",
+    "group": "writers",
+    "bio": "Born in Leningrad on 13 July 1928, Pikul survived the siege’s first winter, graduated from the Solovki naval boys’ school in 1943 and served on the Northern Fleet destroyer Grozny until the war ended. Apart from a year at a naval preparatory school, he received no further education. He lived in Riga from 1962. His historical novels appeared in more than 500 editions, totalling around half a billion copies. Cruisers, written in 38 days for the Tsushima anniversary in 1985, received the Gorky State Prize of the RSFSR in 1988. It drew on V. Ye. Yegoryev’s 1939 study of Vladivostok cruiser operations. Historical figures Trusov, Dabich, Stemman, Jessen, P. A. Bezobrazov, Reitzenstein and Kamimura appear beside the invented midshipman Panafidin, who sinks with the real Rurik. Historians criticise this blending of fiction and documentary material. Pikul died in Riga on 16 July 1990.",
+    "quote": null,
+    "posts": [
+      167,
+      175,
+      200
+    ],
+    "portrait": "photos/photo_141@26-10-2026_16-15-07.jpg",
+    "places": [
+      "vladivostok"
+    ],
+    "articles": [
+      "vladivostokskii-otryad-kreiserov",
+      "valentin-pikul-biografiya",
+      "pikul-kreisera-retsenziya"
+    ]
+  },
+  {
+    "slug": "veresaev",
+    "name": "Vikenty Vikentyevich Veresayev (Smidovich)",
+    "short": "Veresayev",
+    "years": "1867–1945",
+    "country": "russia",
+    "role": "Military doctor in Manchuria and author of In the Russo-Japanese War",
+    "group": "writers",
+    "bio": "Born in Tula in 1867, he graduated in history and philology from St Petersburg University and in medicine from Dorpat. His 1901 Notes of a Doctor caused a scandal through its frank account of medical errors and experiments on patients. Called from the reserve in 1904, he went to Manchuria as an army doctor and followed a field hospital through the whole war, including Mukden and the retreat, returning through revolutionary Siberia. In the Russo-Japanese War describes hospitals without patients, wounded men transported aimlessly for weeks, bureaucracy, the Mukden retreat and rallies at Trans-Siberian stations. Contemporaries accused him of being unpatriotic. Chapters appeared soon after the war; the full book in 1928. During the First World War he headed a military medical unit. Later he compiled Pushkin in Life and Gogol in Life and translated the Iliad and Odyssey. He received the Stalin Prize in 1943 and died in Moscow in June 1945.",
+    "quote": null,
+    "posts": [
+      155
+    ],
+    "portrait": "photos/photo_122@22-10-2026_13-38-01.jpg",
+    "places": [
+      "mukden"
+    ],
+    "articles": [
+      "veresaev-na-yaponskoi-voine"
+    ]
+  },
+  {
+    "slug": "botkin",
+    "name": "Yevgeny Sergeyevich Botkin",
+    "short": "Dr Botkin",
+    "years": "1865–1918",
+    "country": "russia",
+    "role": "Red Cross doctor with the Manchurian Army and author of Light and Shadows of the Russo-Japanese War",
+    "group": "medicine",
+    "bio": "Son of the physician S. P. Botkin, a doctor of medicine and lecturer at the Military Medical Academy. At the war’s outbreak he volunteered for Manchuria and headed the Red Cross medical service with the army in the field. Under shrapnel at Wafangou, now Wafangdian within Dalian, he carried wounded men and gave them his horse. For courage under fire he received military orders, including St Vladimir, 3rd and 2nd Class with swords. His letters to his wife appeared in Vestnik Evropy in 1908 and then as a book. Alongside dressing stations, typhus and dysentery that killed doctors and nurses, they contain observations of Manchurian life: counting and etiquette, houses, theatre and Mukden’s imperial tombs. In 1908 he became Nicholas II’s physician, followed the family into exile and was executed with them at the Ipatiev House in July 1918. The Russian Orthodox Church canonised him in 2016.",
+    "quote": "“Now we feel war around us as one feels death in the house of a hopelessly ill patient” — letters to his wife",
+    "posts": [
+      244
+    ],
+    "portrait": "photos/photo_205@06-11-2026_10-55-02.jpg",
+    "places": [
+      "vafangou",
+      "shahe",
+      "mukden"
+    ],
+    "articles": [
+      "botkin-svet-i-teni-russko-yaponskoi-voiny",
+      "ipatevskiy-dom-tsarskaya-semya-i-botkin"
+    ]
+  },
+  {
+    "slug": "tolstoy",
+    "name": "Leo Nikolayevich Tolstoy",
+    "short": "Leo Tolstoy",
+    "years": "1828–1910",
+    "country": "russia",
+    "role": "Author of the anti-war essay Bethink Yourselves! (1904)",
+    "group": "writers",
+    "bio": "In early 1904, as prayers and patriotic demonstrations greeted the war, the 75-year-old Tolstoy, who had defended Sevastopol’s Fourth Bastion in his youth, began Bethink Yourselves! It was ready by May. He wrote of peasants sent ten thousand versts to die for foreign land, priests blessing weapons, those stirring enthusiasm while remaining safe, and the soldier explaining his choice with “what else can you do?” The tsar appears more as an unhappy young man trapped in his own power. Tolstoy’s answer was for each person to heed their conscience and refuse to take part in killing. Russian newspapers rejected the essay. V. G. Chertkov sent it to England and The Times published it on 27 June (9 July) 1904. Moskovskiye Vedomosti replied with “The Maniac of Yasnaya Polyana”; Japan’s Heimin Shimbun translated it in August. The writer’s son Andrei volunteered for the war.",
+    "quote": "“War again. Again sufferings needless and unprovoked, again lies, again universal stupefaction and the brutalisation of men” — opening of Bethink Yourselves!",
+    "posts": [
+      79
+    ],
+    "portrait": "photos/photo_56@08-10-2026_15-57-52.jpg",
+    "places": [],
+    "articles": [
+      "tolstoi-odumaites-1904"
+    ]
+  },
+  {
+    "slug": "balmont",
+    "name": "Konstantin Dmitriyevich Balmont",
+    "short": "Balmont",
+    "years": "1867–1942",
+    "country": "russia",
+    "role": "Poet whose Our Tsar (1906) reduces the reign to Mukden and Tsushima",
+    "group": "writers",
+    "bio": "Born in Vladimir province on 15 June 1867, Balmont was expelled from Shuya Gymnasium and Moscow University for involvement in political circles. In Boundlessness (1895), Burning Buildings (1900) and Let Us Be Like the Sun (1903) made him a leading Russian Symbolist. His poem “The Little Sultan” brought a two-year ban from capitals and university towns in 1901. The Japanese war and the 1905 revolution completed his politicisation. He left illegally for Paris in late 1905 and wrote “Our Tsar” in 1906. The reign is reduced to Mukden and Tsushima, beginning at Khodynka and destined to end on the scaffold. The poem appeared in Songs of an Avenger, Paris, 1907, but not in Russia. Balmont returned on 5 May 1913 under the Romanov tercentenary amnesty, visited Japan in 1916 and translated much tanka and haiku. Rejecting the October Revolution, he left for France in 1920 and died at Noisy-le-Grand near Paris on 23 December 1942.",
+    "quote": "“Our tsar is Mukden, our tsar is Tsushima, / Our tsar is a bloody stain” — Our Tsar, 1906",
+    "posts": [
+      251
+    ],
+    "portrait": "photos/photo_213@08-11-2026_12-10-01.jpg",
+    "places": [
+      "mukden"
+    ],
+    "articles": [
+      "balmont-nash-tsar-mukden-tsusima"
+    ]
+  },
+  {
+    "slug": "menshikov",
+    "name": "Mikhail Osipovich Menshikov",
+    "short": "Menshikov",
+    "years": "1859–1918",
+    "country": "russia",
+    "role": "Novoye Vremya journalist who wrote of the war as a test of the whole country",
+    "group": "writers",
+    "bio": "A graduate of Kronstadt’s naval technical school, Menshikov served as navigator and hydrographer, compiling sailing directions before turning to journalism. When Nedelya closed, A. S. Suvorin recruited him to Novoye Vremya. His Letters to My Neighbours appeared two or three times weekly until spring 1917; subscribers received monthly booklets to bind into annual volumes. The 1902–1904 collection spans the Russo-Japanese War. In “Internal Defence” (1904), he wrote about the country’s condition rather than manoeuvres near Liaoyang: peacetime patriotism had fallen dangerously low, though it had not died. National existence, he argued, “must be defended beyond the fields of Manchuria”; defeats began at home, in offices, schools and taverns. He regarded the war as an examination the country had failed. Arrested at Valdai on 19 September 1918, he was shot without trial the next day.",
+    "quote": "“The thunder of war was needed to wake our consciousness” — Internal Defence, 1904",
+    "posts": [
+      242
+    ],
+    "portrait": "photos/photo_204@05-11-2026_11-05-03.jpg",
+    "places": [],
+    "articles": [
+      "menshikov-pisma-k-blizhnim"
+    ]
+  },
+  {
+    "slug": "shatrov",
+    "name": "Ilya Alexeyevich Shatrov",
+    "short": "Shatrov",
+    "years": "1879–1952",
+    "country": "russia",
+    "role": "Bandmaster of the Mokshan Regiment and composer of On the Hills of Manchuria",
+    "group": "culture",
+    "bio": "Son of a retired non-commissioned officer from Zemlyansk, Voronezh province; sources give his birth year as either 1879 or 1885. Bandmaster of the 214th Mokshan Infantry Regiment. In February 1905 near Mukden, with the regiment surrounded and ammunition running low, Colonel Pobyvanets ordered the colours and band forward. Shatrov led the musicians onto the parapet; they played a march under fire as the regiment broke through with bayonets. Seven hundred of four thousand men escaped; seven of 61 musicians survived, and Pobyvanets died. A year later at Zlatoust, Shatrov wrote The Mokshan Regiment on the Hills of Manchuria in their memory. Its first performance in Samara in spring 1908 met a cool response, but the score was reprinted 82 times in three years. Skitalets, S. Petrov, wrote the first lyrics. Shatrov later served with Red Army bands, returned to uniform in March 1945 and spent his final years conducting at Tambov’s Suvorov Military School. Promoted to Guards major on 20 April 1952, he died on 2 May that year.",
+    "quote": "“Colours and band to the front!” — Colonel Pobyvanets’s order near Mukden, February 1905",
+    "posts": [
+      64,
+      67,
+      219
+    ],
+    "portrait": "photos/photo_42@06-10-2026_21-12-08.jpg",
+    "places": [
+      "mukden"
+    ],
+    "articles": [
+      "vals-na-sopkah-manchzhurii-shatrov",
+      "gaolyan-i-sopki"
+    ]
+  },
+  {
+    "slug": "prokudin-gorsky",
+    "name": "Sergei Mikhailovich Prokudin-Gorsky",
+    "short": "Prokudin-Gorsky",
+    "years": "1863–1944",
+    "country": "russia",
+    "role": "Photographer and printer who compiled and printed The Russo-Japanese War, 1904–1905 album",
+    "group": "culture",
+    "bio": "A pioneer of Russian colour photography, producing more than 2,600 images in 1905–1915. The US Library of Congress acquired most from his sons in 1948. His connection with the Russo-Japanese War is often misunderstood: he is widely believed to have photographed Manchuria himself in 1904. In fact, on a General Staff commission, he prepared for printing The Russo-Japanese War, 1904–1905, published by the commander-in-chief’s headquarters in 1905: around 300 plates photographed by others. It shows the war from Manchurian army headquarters: Shahe fighting, Putilov Hill, XVII Corps positions, Rennenkampf’s detachment and the retreat from Mukden to Tieling. His workshops also printed the Album of the Wartime Life of the XVII Army Corps, 54 plates and 231 photographic reproductions, compiled by the Corps of Military Topographers. His contribution to both was printing; others took the pictures.",
+    "quote": null,
+    "posts": [
+      28,
+      30
+    ],
+    "portrait": "photos/photo_14@05-10-2026_20-16-00.jpg",
+    "places": [
+      "shahe",
+      "mukden"
+    ],
+    "articles": [
+      "kto-fotografiroval-russko-yaponskuyu-voinu",
+      "albom-shtaba-glavnokomanduyushchego-1905"
+    ]
+  },
+  {
+    "slug": "artur",
+    "name": "William Arthur",
+    "short": "Lieutenant Arthur",
+    "years": "d. 1886",
+    "country": "other",
+    "role": "British naval officer after whom Lüshunkou harbour was named Port Arthur",
+    "group": "navy",
+    "bio": "A Royal Navy lieutenant who took command of the gunboat HMS Algerine in June 1858 during the Second Opium War. The damaged vessel was towed into a small, unfortified fishing harbour where Arthur found shelter and charted the area. He did not name it himself: in August 1860 John Ward, commanding HMS Actaeon, named it after the lieutenant whose Algerine had been the first British ship to enter. The name took hold among the British and was adopted by Russia and other Western powers. After the lease of 1898 the fortress remained Port Arthur, although Nicholas II gave the neighbouring port the Russian name Dalny. The Chinese name Lüshunkou, “bay of smooth sailing”, traditionally dates to 1371. Arthur died in 1886, eighteen years before the siege. The claim that the port honoured Queen Victoria’s son Prince Arthur is not supported by documents.",
+    "quote": null,
+    "posts": [
+      91
+    ],
+    "portrait": null,
+    "places": [
+      "port-artur"
+    ],
+    "articles": [
+      "otkuda-nazvanie-port-artur"
+    ]
+  },
+  {
+    "slug": "myulberg",
+    "name": "Mikhail Yevgenyevich Mühlberg",
+    "short": "Misha Mühlberg",
+    "years": "1904–1905",
+    "country": "russia",
+    "role": "“Port Arthur’s smallest child”, born in the besieged fortress",
+    "group": "other",
+    "bio": "Born in besieged Port Arthur on 13 November 1904, baptised the day after the surrender, Mikhail lived 52 days. He was buried in the Russian cemetery at Goshinji Temple, Nagasaki, where an unassuming grey stone still bears his inscription. His father, Second Lieutenant Yevgeny Mühlberg, was wounded in the defence and received the Order of St George. His grandmother worked in a hospital throughout the siege and became his godmother. Historian Dmitry Nikolayev reconstructed the family’s life through parish registers and archives in “Misha from Nagasaki”, Rodina, 2016, following its later history too. Officers’ families lived beside the garrison inside the fortress: women worked in hospitals and children were born under fire.",
+    "quote": null,
+    "posts": [
+      143
+    ],
+    "portrait": null,
+    "places": [
+      "port-artur",
+      "nagasaki-goshinji"
+    ],
+    "articles": [
+      "misha-iz-nagasaki-myulberg"
+    ]
+  },
+  {
+    "slug": "vereshchagin",
+    "name": "Vasily Vasilyevich Vereshchagin",
+    "short": "Vasily Vereshchagin",
+    "years": "1842–1904",
+    "country": "russia",
+    "role": "Battle painter who died aboard Petropavlovsk with Admiral Makarov",
+    "group": "culture",
+    "bio": "Born in Cherepovets, Vereshchagin graduated from the Naval Cadet Corps but chose the Academy of Arts over naval service. His paintings showed war through death and human suffering; he painted The Apotheosis of War in 1871. In 1874 he declined a professorship at the Academy. Working in Japan in autumn 1903, he painted Nikkō’s temples and warned of Russia’s unreadiness for war. He arrived at Port Arthur in spring 1904 and died on 31 March (13 April) when Petropavlovsk struck a mine. His body was not found.",
+    "quote": null,
+    "posts": [
+      285
+    ],
+    "portrait": "photos/photo_374@12-11-2026_14-20-00.jpg",
+    "places": [
+      "port-artur",
+      "gavan-port-artura",
+      "nikko"
+    ],
+    "articles": [
+      "voina-na-more-osada-mukden-tsusima",
+      "vereshchagin-hudozhnik-na-voyne"
+    ]
+  },
+  {
+    "slug": "fok",
+    "name": "Alexander Viktorovich Fok",
+    "short": "General Fok",
+    "years": "1843–1926",
+    "country": "russia",
+    "role": "Commander of the 4th East Siberian Rifle Division; succeeded Kondratenko as head of the fortress’s land defences",
+    "group": "military",
+    "bio": "A graduate of the Novgorod Arakcheyev Cadet Corps and Konstantinovsky Military School. He received the Order of St George, 4th Class, for crossing the Danube at Sistova in 1877 and served in the Chinese campaign of 1900–1901. In the Russo-Japanese War he commanded the 4th East Siberian Rifle Division; his actions at Jinzhou and unused reserves became disputed. During the siege he circulated staff “notes” offering advice and sharply criticising colleagues. After Kondratenko’s death, Stessel appointed him commander of the land defences. At the 1908 trial he was acquitted of the principal charges; a reprimand over the notes was dropped under the statute of limitations. He wounded Commandant Smirnov in a duel. He served with the Bulgarian army in 1912–1913 and lived in Bulgaria after the revolution. He died in 1926 and was buried near Svishtov.",
+    "quote": null,
+    "posts": [
+      299
+    ],
+    "portrait": "photos/photo_388@14-11-2026_22-48-22.jpg",
+    "places": [
+      "port-artur",
+      "tszinchzhou",
+      "kvantun",
+      "fort-2",
+      "svistov"
+    ],
+    "articles": [
+      "stepanov-port-artur-retsenziya",
+      "poselyagin-praporshchiki-po-admiralteistvu",
+      "general-fok-geroy-dunaya-i-port-artur"
+    ]
+  }
+]

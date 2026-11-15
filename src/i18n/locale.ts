@@ -13,5 +13,6 @@ export const languages = [
 export function languagePath(pathname: string, target: Locale): string {
   let suffix = pathname.startsWith(siteBase + '/') ? pathname.slice(siteBase.length) : pathname;
   suffix = suffix.replace(/^\/(en|zh)(?=\/|$)/, '') || '/';
+  if (/^\/404\/?$/.test(suffix)) suffix = '/404.html';
   return siteBase + (target === 'ru' ? '' : '/' + target) + suffix;
 }

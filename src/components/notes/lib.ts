@@ -37,8 +37,8 @@ export function nameKey(name: string): string {
   return invertName(name).toLowerCase().replace(/ё/g, 'е').replace(/[«»"„“().,]/g, '');
 }
 
-const EAST_ASIAN_FIRST = new Set(['Ноги', 'Камимура', 'Такахаси', 'Того', 'Цуда', 'Ли']);
-const TITLES = ['Великий князь', 'Императрица', 'Император', 'Принц'];
+const EAST_ASIAN_FIRST = new Set(['Ноги', 'Камимура', 'Такахаси', 'Того', 'Цуда', 'Ли', 'Nogi', 'Kamimura', 'Takahashi', 'Tōgō', 'Togo', 'Tsuda', 'Li']);
+const TITLES = locale === 'en' ? ['Grand Duke', 'Empress', 'Emperor', 'Prince'] : ['Великий князь', 'Императрица', 'Император', 'Принц'];
 
 /** Имя в порядке указателя: «Витте, Сергей Юльевич»; японские и китайские имена — как есть. */
 export function invertName(name: string): string {
@@ -55,8 +55,9 @@ export function invertName(name: string): string {
   // инициалы: «А. Л. Панищев» → «Панищев А. Л.»
   if (w.slice(0, -1).every((x) => /^[А-ЯЁA-Z]\.$/.test(x))) return `${w[w.length - 1]} ${w.slice(0, -1).join(' ')}${paren}`;
   // «Вячеслав Константинович фон Плеве»
-  const fon = w.indexOf('фон');
-  if (fon > 0 && fon === w.length - 2) return `${w[w.length - 1]}, ${w.slice(0, fon).join(' ')} фон${paren}`;
+  const particle = locale === 'en' ? 'von' : 'фон';
+  const fon = w.indexOf(particle);
+  if (fon > 0 && fon === w.length - 2) return `${w[w.length - 1]}, ${w.slice(0, fon).join(' ')} ${particle}${paren}`;
   return `${w[w.length - 1]}, ${w.slice(0, -1).join(' ')}${paren}`;
 }
 

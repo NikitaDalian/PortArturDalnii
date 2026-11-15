@@ -1,0 +1,387 @@
+{
+  "nikolaevskaya-ploshchad": {
+    "place": "nikolaevskaya-ploshchad",
+    "title": "Zhongshan Square and the Plan of Dalny",
+    "intro": "Zhongshan Square has two ages. Its circle and radiating streets belong to the Russian plan for Dalny; most of the familiar buildings around them were built later, in Japanese Dairen. Both histories can be read in a single square.",
+    "cover": 320,
+    "names": [
+      {
+        "name": "Nikolayevskaya Square",
+        "meaning": "The name used in the Russian plan for Dalny."
+      },
+      {
+        "name": "Ōhiroba",
+        "meaning": "The Japanese-era name, translated in the channel’s material as “Great Square”."
+      },
+      {
+        "name": "中山广场 · Zhōngshān guǎngchǎng",
+        "meaning": "Zhongshan Square. Use the Chinese name to find it on a modern map."
+      }
+    ],
+    "sections": [
+      {
+        "id": "plan",
+        "title": "A City Begins with a Port",
+        "paragraphs": [
+          "Dalny was built for its commercial port. Sea cargo would travel from here along the Chinese Eastern Railway into Manchuria and onwards to Russia’s railway network. Neighbouring Port Arthur had a different purpose: a naval base was being developed there. Two cities with different functions grew at the same time on the southern end of one peninsula.",
+          "In 1899, the architect Kazimierz Skolimowski was invited to design Dalny. A rectangular grid fitted the hilly ground poorly, so he proposed another layout. A general plan appeared in 1900, followed by a detailed design in 1903.",
+          "At its centre stood circular Nikolayevskaya Square, 213 metres across, with ten streets radiating from it. The channel compares the idea with Paris’s Place de l’Étoile. On the drawing, the circle connects the districts; on the ground, it is the starting point of central Dalian’s familiar pattern."
+        ],
+        "refs": [
+          1,
+          2
+        ],
+        "figure": {
+          "id": 366,
+          "caption": "Circular Nikolayevskaya Square and its radiating streets. Detail of a plan reproduced in the post about Skolimowski’s report in Zodchiy.",
+          "source": 3
+        }
+      },
+      {
+        "id": "project-and-buildings",
+        "title": "The Plan Outlived Its Patrons",
+        "paragraphs": [
+          "Skolimowski intended the centre of the square to hold a stock exchange with a dome and an electric lantern. On the drawing it completed the scheme: the streets converged on the commercial city’s principal building. But the exchange was never built here.",
+          "Japanese troops occupied Dalny in May 1904. After the war it developed as Dairen. Banks, administrative buildings and the Yamato Hotel rose around the existing circle. The Russian plan continued to shape movement through the city as its façades became Japanese.",
+          "Two questions about the square therefore have different answers: who devised its shape, and who built the surrounding houses? The distinction is easily lost when an old photograph is captioned simply “Dalny”."
+        ],
+        "takeaway": "The square’s layout and its buildings belong to different periods. Each building’s history needs to be read separately.",
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "zodchiy",
+        "title": "Back to the Architect’s Idea",
+        "paragraphs": [
+          "Skolimowski explained his design in a report, “On Designing the Plan of the City of Dalny”, published in issues 12–14 of Zodchiy in 1904. It traces his reasoning: why he rejected a rectangular grid, how he divided the city into European, Chinese and Administrative districts, and how he arranged squares and streets.",
+          "The channel reproduces illustrations from the report and links to the journal’s annual volume. For an exact quotation, open the relevant issue: page numbers have not been established from the available export. The plan explains the architect’s intentions; a house’s construction date must be checked against other documents."
+        ],
+        "refs": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": "read-the-square",
+        "title": "On the Square Today",
+        "paragraphs": [
+          "Begin with the square’s shape. Find the circle, follow the radiating streets, then choose a building: the Yamato Hotel, Yokohama Specie Bank or Dairen City Hall. Each has its own page on the site.",
+          "From one façade, look back across the whole circle. The buildings speak of Dairen’s development; the radiating streets return you to Dalny’s earlier plan. Both cities remain here, within the space of a single square."
+        ],
+        "refs": [
+          1,
+          2
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Dalny: Building the City and Port",
+        "url": "https://t.me/portartur_dalnii/93",
+        "note": "An overview from the channel: the project, the layout and the transition to Japanese rule."
+      },
+      {
+        "title": "Kazimierz Skolimowski",
+        "url": "https://t.me/portartur_dalnii/269",
+        "note": "A post on the architect’s work, supplying information on the plans of 1900 and 1903 and the square’s design."
+      },
+      {
+        "title": "The Report Published in Zodchiy",
+        "url": "https://t.me/portartur_dalnii/276",
+        "note": "A post with illustrations and the relevant issue numbers."
+      },
+      {
+        "title": "Skolimowski, K. G. On Designing the Plan of the City of Dalny. Zodchiy, 1904, Nos. 12–14",
+        "url": "https://books.totalarch.com/magazines/architect/1904",
+        "note": "The annual volume’s page. The post gives the complete PDF’s size as about 810 MB."
+      }
+    ],
+    "notes": [
+      "dalnii-gorod-s-nulya",
+      "port-artur-i-dalnii-dva-goroda",
+      "skolimovsky-chelovek-kotoryy-narisoval-dalnii",
+      "zodchiy-1904-plan-goroda-dalnego"
+    ],
+    "people": [
+      "skolimovsky",
+      "saharov",
+      "vitte"
+    ],
+    "library": [
+      "zodchiy-plan-dalnego-1904"
+    ],
+    "related": [
+      {
+        "label": "Yamato Hotel",
+        "url": "/PortArturDalnii/mesta/gostinitsa-yamato/"
+      },
+      {
+        "label": "Yokohama Specie Bank",
+        "url": "/PortArturDalnii/mesta/bank-yokohama/"
+      },
+      {
+        "label": "Dairen City Hall",
+        "url": "/PortArturDalnii/mesta/merija-dajrena/"
+      },
+      {
+        "label": "Skolimowski’s report in the library",
+        "url": "/PortArturDalnii/biblioteka/istochniki/zodchiy-plan-dalnego-1904/"
+      }
+    ]
+  },
+  "gavan-port-artura": {
+    "place": "gavan-port-artura",
+    "title": "Port Arthur Harbour: Names and Layout",
+    "intro": "The squadron sheltered behind Port Arthur harbour’s narrow entrance. During the siege, however, the ships’ fate depended on the heights above the water. To understand the connection, begin by tracing the shoreline in an old panorama.",
+    "cover": 300,
+    "names": [
+      {
+        "name": "Lüshun · 旅顺",
+        "meaning": "The Chinese name of the town. Lüshunkou · 旅顺口 appears in the names of the harbour and the modern district."
+      },
+      {
+        "name": "Port Arthur",
+        "meaning": "The European name, also adopted in Russian sources."
+      },
+      {
+        "name": "Ryojun",
+        "meaning": "The Japanese reading of Lüshun, found in Japanese-era material."
+      },
+      {
+        "name": "旅顺港 · Lǚshùn gǎng",
+        "meaning": "Lüshun Port. Use this harbour name on a Chinese map."
+      }
+    ],
+    "sections": [
+      {
+        "id": "harbour",
+        "title": "Two Basins behind a Narrow Entrance",
+        "paragraphs": [
+          "Port Arthur’s inner harbour consists of the Eastern and Western basins. The sea entrance passes between Golden Hill and Tiger’s Tail peninsula. Find that passage first in the old panorama: it makes the position of the town, shore installations and ships easier to understand.",
+          "The Pacific Squadron was based in Russian Port Arthur. Its base occupied sheltered waters, but defence extended beyond the entrance from the sea. Coastal batteries and land fortifications formed a single system around the harbour."
+        ],
+        "refs": [
+          2,
+          3,
+          5
+        ],
+        "figure": {
+          "id": 300,
+          "caption": "Port Arthur from Golden Hill in 1905, after the siege. Published in a Japanese account of the naval battles of 1904–1905.",
+          "source": 5
+        }
+      },
+      {
+        "id": "heights",
+        "title": "When the Heights Threatened the Fleet",
+        "paragraphs": [
+          "Once the Japanese captured 203 Metre Hill, they could observe the harbour and direct the fire of siege guns. Ships beside the quays became visible targets. Waters protected against a direct attack from the sea could no longer shelter them.",
+          "The battleship Sevastopol, commanded by Nikolai von Essen, moved to White Wolf Bay and repelled destroyer attacks. Her crew scuttled her before the fortress surrendered. The fate of the harbour’s ships now depended on more than naval operations: the base was being lost from the land."
+        ],
+        "takeaway": "The ships’ safety also depended on who held the heights around the harbour.",
+        "refs": [
+          2,
+          3
+        ]
+      },
+      {
+        "id": "names",
+        "title": "How the Harbour Acquired Its English Name",
+        "paragraphs": [
+          "The Chinese name Lüshun predates the European one. The channel recounts a tradition about a Ming commander’s safe voyage in 1371, connecting it with Lüshunkou, the “bay of smooth sailing”. This is a legend about the name’s origin.",
+          "The post connects Port Arthur with the British lieutenant William Arthur, commander of the gunboat HMS Algerine. In this account, his damaged ship sheltered here and Arthur charted the area. In August 1860, John Ward, captain of HMS Actaeon, named the harbour in his honour.",
+          "Russia retained the English name after the lease of 1898. The channel identifies the supposed dedication to Prince Arthur as unconfirmed. The post gives no archival reference for the act of naming, so the account here follows that source’s version."
+        ],
+        "refs": [
+          1
+        ]
+      },
+      {
+        "id": "two-ports",
+        "title": "Two Ports to Keep Distinct",
+        "paragraphs": [
+          "Dalny was built on Dalian Bay as a commercial port and railway hub. It was not another name for Port Arthur. Under Japanese rule, the same pair of towns appear as Dairen and Ryojun; today both lie within Dalian.",
+          "Each city has its own appearance in old photographs. For Dalny, look for commercial quays and the railway; for Port Arthur, the entrance between the headlands, inner basins and heights above them. These landmarks remain legible through every change of name."
+        ],
+        "refs": [
+          4
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "The Origin of the Name Port Arthur",
+        "url": "https://t.me/portartur_dalnii/91",
+        "note": "The channel’s post on the Chinese and English names. The naming account follows this publication."
+      },
+      {
+        "title": "An Overview of Port Arthur’s History",
+        "url": "https://t.me/portartur_dalnii/50",
+        "note": "Geography, the fortress’s layout and the siege."
+      },
+      {
+        "title": "The First Pacific Squadron",
+        "url": "https://t.me/portartur_dalnii/127",
+        "note": "The squadron’s composition, history and the fate of its ships."
+      },
+      {
+        "title": "Port Arthur and Dalny",
+        "url": "https://t.me/portartur_dalnii/114",
+        "note": "The distinction between naval and commercial ports, and changing names."
+      },
+      {
+        "title": "Port Arthur from Gold Hill",
+        "url": "https://commons.wikimedia.org/wiki/File:Port_Arthur_from_Gold_Hill.jpg",
+        "note": "Historical photograph record. The site catalogue credits the Imperial Japanese Navy General Staff, 1905; Records of Naval Battles in Meiji 37th, 38th, vol. 2. Public domain."
+      }
+    ],
+    "notes": [
+      "otkuda-nazvanie-port-artur",
+      "port-artur-poslednyaya-zamorskaya-koloniya",
+      "pervaya-tihookeanskaya-eskadra",
+      "port-artur-i-dalnii-dva-goroda"
+    ],
+    "people": [
+      "artur",
+      "makarov"
+    ],
+    "library": [],
+    "related": [
+      {
+        "label": "Golden Hill",
+        "url": "/PortArturDalnii/mesta/zolotaya-gora/"
+      },
+      {
+        "label": "Quail Hill",
+        "url": "/PortArturDalnii/mesta/perepelinaya-gora/"
+      },
+      {
+        "label": "Dalny Port",
+        "url": "/PortArturDalnii/mesta/port-dalniy/"
+      },
+      {
+        "label": "History of the Pacific Squadron",
+        "url": "/PortArturDalnii/zametki/pervaya-tihookeanskaya-eskadra/"
+      }
+    ]
+  },
+  "ukreplenie-5": {
+    "place": "ukreplenie-5",
+    "title": "Fortification No. 5: Design and History",
+    "intro": "In Fortification No. 5’s dry ditch, the fortress’s design is easier to grasp than on a general siege map. Rampart, loopholes and underground passages form a defensive system. The surviving structures let us examine it, while the museum labels need a careful reading.",
+    "cover": 118,
+    "names": [
+      {
+        "name": "Fortification No. 5",
+        "meaning": "An intermediate work in the land defences. Russian plans numbered these works with Arabic numerals."
+      },
+      {
+        "name": "Fort V",
+        "meaning": "A separate neighbouring site. Its Roman numeral V should not be mistaken for Fortification No. 5’s number."
+      },
+      {
+        "name": "鸦户嘴 · Yāhùzuǐ",
+        "meaning": "The name given in the visit report. Local signs also use “Russian Army Command Fort”."
+      }
+    ],
+    "sections": [
+      {
+        "id": "structure",
+        "title": "Down into the Ditch",
+        "paragraphs": [
+          "In October 2026, the channel’s author visited the fortification and photographed its dry ditch, high walls and concrete structures. The ditch was meant to delay the enemy before the rampart. Behind the rampart, defenders sheltered from fire coming from the field.",
+          "The ditch’s inner wall is the escarp; its outer wall, the counterscarp. Caponier loopholes point along the ditch, allowing fire to sweep the space attackers had to cross. A demi-caponier delivered that fire in one direction.",
+          "The concrete barracks sheltered the garrison, while underground passages, or posterns, connected parts of the work. The terms become clearer on site: each element had a purpose, and together they made the approach to the position more difficult."
+        ],
+        "refs": [
+          1,
+          2
+        ],
+        "figure": {
+          "id": 118,
+          "caption": "Fortification No. 5’s dry ditch. Photograph by the channel’s author, from the October 2026 visit report.",
+          "source": 1
+        }
+      },
+      {
+        "id": "position",
+        "title": "The Fortification the Trenches Never Reached",
+        "paragraphs": [
+          "Fortification No. 5 lies west of the harbour. In Konstantin Velichko’s land-defence system, forts were the principal strongpoints, while intermediate works covered the gaps. The plan shows Forts V and VI nearby, though construction of Fort VI never began.",
+          "According to the channel, Qing troops began work here. After 1898, the Russians rebuilt it in concrete and finished before the war. Japanese siege trenches never reached it. It was handed over under the capitulation terms, without a separate assault.",
+          "The number matters: Fortification No. 5 and Fort V were different sites. Arabic numerals designated intermediate works; Roman numerals, forts. A matching number alone is no basis for treating them as the same place."
+        ],
+        "takeaway": "The surviving ditch tells us about preparations for defence. This fortification was never separately assaulted.",
+        "refs": [
+          1,
+          3
+        ]
+      },
+      {
+        "id": "attribution",
+        "title": "The Gun and Questions about the Display",
+        "paragraphs": [
+          "A large coastal gun stands on the site. From its appearance, the post’s author identifies it as a 10-inch, or 254 mm, model 1891 gun on a Durlacher mounting. The sloping frame and curved traversing rail are important to that identification.",
+          "The exhibit’s own origins remain unknown; the author allows that it may have been restored. A photograph does not prove that this gun stood here in 1904. Likewise, the local name “Russian Army Command Fort” does not establish that the defence of 203 Metre Hill was directed from here. No documents cited support that conclusion."
+        ],
+        "refs": [
+          1
+        ]
+      },
+      {
+        "id": "look-again",
+        "title": "What the Walls Themselves Reveal",
+        "paragraphs": [
+          "After seeing the display, return to the ditch: where do the loopholes point, what does the rampart shelter, and how are the rooms connected? The channel’s explanation of a typical fort diagram helps. The diagram explains the terms, but is not a plan of Fortification No. 5; even its ditch is filled with water, whereas this one is dry.",
+          "Here the siege’s history offers a rare advantage: the position’s design can be examined with your own eyes. Ditch, rampart and directions of fire explain how it was meant to be defended. The absence of a separate assault helps explain why these structures have survived in this condition."
+        ],
+        "refs": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "A Visit to Fortification No. 5",
+        "url": "https://t.me/portartur_dalnii/144",
+        "note": "The author’s report with photographs and coordinates, the basis for the description of the surviving work and museum exhibits."
+      },
+      {
+        "title": "How a Fort Worked: Explaining the Diagram",
+        "url": "https://t.me/portartur_dalnii/154",
+        "note": "An explanation of terms. The diagram shows a typical fort rather than a particular site."
+      },
+      {
+        "title": "Video about Fortification No. 5",
+        "url": "https://t.me/portartur_dalnii/174",
+        "note": "A supplement to the first post: Fort VI was never built, and the fortification was surrendered without fighting. The video was made from the author’s text and explanations."
+      }
+    ],
+    "notes": [
+      "ukreplenie-5-yahutszui",
+      "kak-ustroen-fort"
+    ],
+    "people": [
+      "velichko"
+    ],
+    "library": [],
+    "related": [
+      {
+        "label": "Diagram of a Typical Fort",
+        "url": "/PortArturDalnii/zametki/kak-ustroen-fort/"
+      },
+      {
+        "label": "Konstantin Velichko",
+        "url": "/PortArturDalnii/lica/velichko/"
+      },
+      {
+        "label": "Electric Cliff Battery",
+        "url": "/PortArturDalnii/mesta/elektricheskiy-utes/"
+      }
+    ]
+  }
+}

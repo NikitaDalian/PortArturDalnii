@@ -1,0 +1,3060 @@
+[
+  {
+    "slug": "general-fok-geroy-dunaya-i-port-artur",
+    "title": "General Fok: The Danube, Port Arthur and the Trial",
+    "dek": "Military honours, the retreat from Jinzhou, the dispute with Smirnov and the outcome of the 1908 trial.",
+    "summary": "Alexander Fok received the Cross of St George for crossing the Danube in 1877, served in the Chinese campaign and commanded a division against Japan. The post examines his actions at Jinzhou, his staff “notes” and his appointment to command the land defences after Kondratenko’s death. At the 1908 trial he was acquitted of the main charges; a disciplinary reprimand for mocking criticism of colleagues was dropped under the statute of limitations. A duel with Smirnov and service in the Bulgarian army followed. His life cannot be reduced to the traitor of later retellings.",
+    "facts": [
+      "Fok commanded the 4th East Siberian Rifle Division.",
+      "He wounded General Smirnov in a duel in March 1908.",
+      "He served with the Bulgarian army in the Balkan Wars of 1912–1913.",
+      "He died in 1926 and was buried near Svishtov."
+    ],
+    "type": "person",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "fok",
+      "kondratenko",
+      "stessel",
+      "smirnov",
+      "tretyakov",
+      "grigorovich"
+    ],
+    "places": [
+      "port-artur",
+      "tszinchzhou",
+      "kvantun",
+      "fort-2",
+      "svistov"
+    ],
+    "books": [],
+    "cover": "photos/photo_388@14-11-2026_22-48-22.jpg",
+    "series": null,
+    "tg_ids": [
+      299
+    ],
+    "date": "2026-11-14",
+    "photos": [
+      "photos/photo_388@14-11-2026_22-48-22.jpg",
+      "photos/photo_389@14-11-2026_22-48-22.jpg",
+      "photos/photo_390@14-11-2026_22-48-22.jpg",
+      "photos/photo_391@14-11-2026_22-48-22.jpg"
+    ],
+    "read_min": 4,
+    "tg_url": "https://t.me/portartur_dalnii/299",
+    "series_slug": null
+  },
+  {
+    "slug": "tsena-port-artura-v-tsifrah",
+    "title": "The Cost of Port Arthur in Numbers",
+    "dek": "Garrison, weapons, casualties and captivity in the statistical study edited by Krivosheev.",
+    "summary": "The post compares the fortress at the outbreak of war and the beginning of the siege, losses on 203 Metre Hill and garrison numbers before surrender. Its source is Russia and the USSR in the Wars of the Twentieth Century, edited by G. F. Krivosheev. The study gives different estimates of Russian losses based on different accounting records; they cannot be reduced to one figure. Sailors, scurvy patients and prisoners of war are considered separately. Its estimate of more than 110,000 Japanese losses includes killed, wounded and sick, rather than deaths alone.",
+    "facts": [
+      "At the war’s outset, eight of 116 guns faced inland.",
+      "By the siege’s beginning on 17 (30) July 1904, the fortress had 646 guns and 62 machine guns.",
+      "The surrender was signed on 20 December 1904 (2 January 1905).",
+      "The study separately gives Russian losses of 9,578, around 10,421 and 12,657, using different categories."
+    ],
+    "type": "explainer",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "krivosheev",
+      "gyubbenet"
+    ],
+    "places": [
+      "port-artur",
+      "vysokaya-gora",
+      "gavan-port-artura"
+    ],
+    "books": [
+      "krivosheev-rossiya-sssr-poteri-2001"
+    ],
+    "cover": "photos/photo_385@14-11-2026_13-15-04.jpg",
+    "series": "The Fortress of Port Arthur",
+    "tg_ids": [
+      295
+    ],
+    "date": "2026-11-14",
+    "photos": [
+      "photos/photo_384@14-11-2026_13-15-04.jpg",
+      "photos/photo_385@14-11-2026_13-15-04.jpg",
+      "photos/photo_386@14-11-2026_13-15-04.jpg",
+      "photos/photo_387@14-11-2026_13-15-04.jpg"
+    ],
+    "read_min": 3,
+    "tg_url": "https://t.me/portartur_dalnii/295",
+    "series_slug": "krepost-port-artur"
+  },
+  {
+    "slug": "akunin-almaznaya-kolesnitsa",
+    "title": "The Diamond Chariot: Fandorin between Two Japans",
+    "dek": "A detective story of sabotage on the Trans-Siberian in 1905 and Fandorin’s youth in Yokohama.",
+    "summary": "Boris Akunin’s novel joins two periods. In The Dragonfly Catcher, Fandorin confronts Japanese intelligence preparing railway sabotage in 1905. Between the Lines takes readers back to Yokohama in 1878, his first experiences of Japan, his meeting with Masa and events that echo twenty-seven years later. The channel’s author recommends the novel as a fictional introduction to the war and Japanese culture. The detective plot should be distinguished from the documentary history of intelligence.",
+    "facts": [
+      "The novel’s two parts are set in 1905 and 1878.",
+      "Part One is The Dragonfly Catcher; Part Two is Between the Lines.",
+      "The post discusses an edition with explanations of Japanese life and culture."
+    ],
+    "type": "book",
+    "layer": [
+      "pre1898",
+      "russian"
+    ],
+    "people": [
+      "akunin"
+    ],
+    "places": [
+      "transsib",
+      "manchzhuriya",
+      "iokogama"
+    ],
+    "books": [
+      "akunin-almaznaya-kolesnitsa"
+    ],
+    "cover": "photos/photo_383@13-11-2026_22-35-14.jpg",
+    "series": null,
+    "tg_ids": [
+      294
+    ],
+    "date": "2026-11-13",
+    "photos": [
+      "photos/photo_383@13-11-2026_22-35-14.jpg"
+    ],
+    "read_min": 3,
+    "tg_url": "https://t.me/portartur_dalnii/294",
+    "series_slug": null
+  },
+  {
+    "slug": "vereshchagin-hudozhnik-na-voyne",
+    "title": "Vereshchagin: An Artist at War",
+    "dek": "From naval college and The Apotheosis of War to Petropavlovsk’s final voyage.",
+    "summary": "Vasily Vereshchagin graduated from the Naval Cadet Corps but chose painting. His work presented war through death, wounds and a soldier’s loneliness; The Apotheosis of War became his best-known statement. In autumn 1903 he lived in Japan, painted Nikkō’s temples and warned that Russia was unprepared for war. He came to Port Arthur in spring 1904. On the morning of 31 March (13 April), he sailed with Admiral Makarov aboard Petropavlovsk and died when the battleship struck a mine. The post’s album contains portraits and reproductions of his paintings.",
+    "facts": [
+      "Vereshchagin was born in Cherepovets in 1842.",
+      "The Apotheosis of War was painted in 1871.",
+      "He died on 31 March (13 April) 1904; his body was not found."
+    ],
+    "type": "culture",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "vereshchagin",
+      "makarov"
+    ],
+    "places": [
+      "port-artur",
+      "gavan-port-artura",
+      "nikko"
+    ],
+    "books": [],
+    "cover": "photos/photo_374@12-11-2026_14-20-00.jpg",
+    "series": null,
+    "tg_ids": [
+      285
+    ],
+    "date": "2026-11-12",
+    "photos": [
+      "photos/photo_374@12-11-2026_14-20-00.jpg",
+      "photos/photo_375@12-11-2026_14-20-00.jpg",
+      "photos/photo_376@12-11-2026_14-20-00.jpg",
+      "photos/photo_377@12-11-2026_14-20-00.jpg",
+      "photos/photo_378@12-11-2026_14-20-00.jpg",
+      "photos/photo_379@12-11-2026_14-20-00.jpg",
+      "photos/photo_380@12-11-2026_14-20-00.jpg",
+      "photos/photo_381@12-11-2026_14-20-00.jpg",
+      "photos/photo_382@12-11-2026_14-20-00.jpg"
+    ],
+    "read_min": 3,
+    "tg_url": "https://t.me/portartur_dalnii/285",
+    "series_slug": null
+  },
+  {
+    "slug": "oborona-port-artura-vrachi-i-sestry",
+    "title": "The Defence of Port Arthur through Doctors’ and Nurses’ Eyes",
+    "dek": "Surgery under fire, shortages of dressings and the hospital ship Mongolia.",
+    "summary": "An article on the Mandryka Hospital website recounts medical care in besieged Port Arthur. The post highlights shortages of nurses and bandages, surgeon Viktor von Hübbenet’s work and treatment aboard the hospital ship Mongolia, formerly a Chinese Eastern Railway steamer. One episode concerns Wilhelmina Krieg, who reached a dressing station under fire during the fighting for 203 Metre Hill. It complements Botkin and Veresayev with a history of medicine inside the fortress itself.",
+    "facts": [
+      "According to the article’s figures, by September there were over a hundred wounded for every nurse.",
+      "Mongolia had an X-ray room.",
+      "Wilhelmina Krieg received the silver Medal for Bravery on the St George ribbon."
+    ],
+    "type": "source",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "gyubbenet",
+      "krig"
+    ],
+    "places": [
+      "port-artur",
+      "dalnii",
+      "vysokaya-gora",
+      "kvzhd"
+    ],
+    "books": [
+      "mandryka-oborona-port-artura"
+    ],
+    "cover": "photos/photo_370@12-11-2026_09-50-06.jpg",
+    "series": null,
+    "tg_ids": [
+      281
+    ],
+    "date": "2026-11-12",
+    "photos": [
+      "photos/photo_370@12-11-2026_09-50-06.jpg",
+      "photos/photo_371@12-11-2026_09-50-06.jpg",
+      "photos/photo_372@12-11-2026_09-50-06.jpg",
+      "photos/photo_373@12-11-2026_09-50-06.jpg"
+    ],
+    "read_min": 1,
+    "tg_url": "https://t.me/portartur_dalnii/281",
+    "series_slug": null
+  },
+  {
+    "slug": "molodyakov-rossiya-i-yaponiya-zolotoy-vek",
+    "title": "Molodyakov: Russia and Japan, The Golden Age",
+    "dek": "How former enemies moved from Portsmouth towards agreements and almost an alliance.",
+    "summary": "Vasily Molodyakov’s book examines Russian-Japanese rapprochement in 1905–1916. After the war, the countries signed conventions in 1907, 1910 and 1912 and divided spheres of interest in Manchuria. During the First World War, Japan supplied Russia with weapons and in 1916 sold it captured warships. The review connects this history with the pre-war Man-Kan kōkan proposal and Japanese Dairen. The channel’s author recommends reading the book after the war histories but disputes the title: the rapprochement rested on dividing interests in other people’s territory.",
+    "facts": [
+      "The book covers 1905–1916.",
+      "Moscow: Prospekt, 2025; 271 pages, Secrets of Friendship series.",
+      "In 1916 Russia bought back Poltava, Peresvet and Varyag."
+    ],
+    "type": "book",
+    "layer": [
+      "japanese"
+    ],
+    "people": [
+      "molodyakov"
+    ],
+    "places": [
+      "portsmut",
+      "manchzhuriya",
+      "koreya",
+      "port-artur",
+      "dalnii",
+      "kvzhd",
+      "harbin"
+    ],
+    "books": [
+      "molodyakov-rossiya-i-yaponiya-zolotoy-vek"
+    ],
+    "cover": "photos/photo_369@12-11-2026_09-25-06.jpg",
+    "series": "Secrets of Friendship",
+    "tg_ids": [
+      280
+    ],
+    "date": "2026-11-12",
+    "photos": [
+      "photos/photo_369@12-11-2026_09-25-06.jpg"
+    ],
+    "read_min": 3,
+    "tg_url": "https://t.me/portartur_dalnii/280",
+    "series_slug": "sekrety-druzhby"
+  },
+  {
+    "slug": "zodchiy-1904-plan-goroda-dalnego",
+    "title": "Zodchiy: Dalny’s Plan at First Hand",
+    "dek": "Skolimowski’s 1904 report, with drawings and photographs of the city’s first buildings.",
+    "summary": "The freely available 1904 annual volume of Zodchiy contains K. G. Skolimowski’s “On Designing the Plan of the City of Dalny”, in issues 12, 13 and 14. The architect explains his rejection of a rectangular grid, the European, Chinese and Administrative districts, and circular Nikolayevskaya Square. It is a primary source for his biography and Dalny’s construction. The post links to the journal archive and reproduces plans and historical views.",
+    "facts": [
+      "The report was delivered on 3 (16) February 1904.",
+      "Published in issues 12, 13 and 14, dated 21 and 28 March and 4 April 1904.",
+      "The annual archive contains 52 issues; the post gives its size as about 810 MB."
+    ],
+    "type": "source",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "skolimovsky",
+      "saharov"
+    ],
+    "places": [
+      "dalnii",
+      "nikolaevskaya-ploshchad",
+      "russkaya-ulitsa",
+      "upravlenie-dalnego"
+    ],
+    "books": [
+      "zodchiy-plan-dalnego-1904"
+    ],
+    "cover": "photos/photo_365@11-11-2026_10-19-57.jpg",
+    "series": "Dalny: Plans and Architects",
+    "tg_ids": [
+      276
+    ],
+    "date": "2026-11-11",
+    "photos": [
+      "photos/photo_365@11-11-2026_10-19-57.jpg",
+      "photos/photo_366@11-11-2026_10-19-57.jpg",
+      "photos/photo_367@11-11-2026_10-19-57.jpg",
+      "photos/photo_368@11-11-2026_10-19-57.jpg"
+    ],
+    "read_min": 1,
+    "tg_url": "https://t.me/portartur_dalnii/276",
+    "series_slug": "dalniy-plan-i-arhitektory"
+  },
+  {
+    "slug": "skolimovsky-chelovek-kotoryy-narisoval-dalnii",
+    "title": "Skolimowski: The Man Who Drew Dalny",
+    "dek": "A Polish architect, circular Nikolayevskaya Square and a plan that still shapes central Dalian.",
+    "summary": "A new post clarifies Kazimierz Geliodorovich Skolimowski’s life: born near Łódź in 1862, educated in St Petersburg, Berlin and Munich, he was invited to design Dalny in 1899. He replaced a rectangular grid with a radial layout centred on circular Nikolayevskaya Square and ten avenues. His design considered terrain, traffic, boulevard views and living conditions. Back in Poland, he became Kalisz’s city architect and died in 1923 while inspecting the roof of its town hall under construction. His report on Dalny’s plan appeared in Zodchiy.",
+    "facts": [
+      "The new general plan was presented in 1900; the detailed design in 1903.",
+      "Nikolayevskaya Square is 213 metres across, with ten radiating streets.",
+      "Skolimowski died in Kalisz on 28 December 1923."
+    ],
+    "type": "person",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "skolimovsky",
+      "saharov"
+    ],
+    "places": [
+      "dalnii",
+      "nikolaevskaya-ploshchad",
+      "russkaya-ulitsa",
+      "upravlenie-dalnego",
+      "port-dalniy"
+    ],
+    "books": [
+      "zodchiy-plan-dalnego-1904"
+    ],
+    "cover": "photos/photo_358@11-11-2026_10-18-04.jpg",
+    "series": "Dalny: Plans and Architects",
+    "tg_ids": [
+      269
+    ],
+    "date": "2026-11-11",
+    "photos": [
+      "photos/photo_358@11-11-2026_10-18-04.jpg",
+      "photos/photo_359@11-11-2026_10-18-04.jpg",
+      "photos/photo_360@11-11-2026_10-18-04.jpg",
+      "photos/photo_361@11-11-2026_10-18-04.jpg",
+      "photos/photo_362@11-11-2026_10-18-05.jpg",
+      "photos/photo_363@11-11-2026_10-18-05.jpg",
+      "photos/photo_364@11-11-2026_10-18-05.jpg"
+    ],
+    "read_min": 3,
+    "tg_url": "https://t.me/portartur_dalnii/269",
+    "series_slug": "dalniy-plan-i-arhitektory"
+  },
+  {
+    "slug": "ipatevskiy-dom-tsarskaya-semya-i-botkin",
+    "title": "The Ipatiev House: The Imperial Family and Dr Botkin",
+    "dek": "The events of July 1918 and the fate of people connected with the Russo-Japanese War.",
+    "summary": "Nicholas II, his family and four companions were shot in the Ipatiev House, Yekaterinburg, during the night of 17 July 1918. Among them was Yevgeny Botkin, a Red Cross doctor in Manchuria and author of Light and Shadows of the Russo-Japanese War. The post traces the Ural Soviet’s decision, the execution and the later history of the house and graves. No direct written order from Moscow has been found; the execution squad’s exact membership remains disputed. The album’s final image is a photomontage, not a historical photograph.",
+    "facts": [
+      "Eleven people died in the house, including Dr Botkin.",
+      "The Ipatiev House was demolished in 1977; the Church on the Blood was consecrated on its site in 2003.",
+      "Tsarevich Alexei was born during the siege of Port Arthur; the armed forces in the Far East were named his godparents."
+    ],
+    "type": "memory",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "nikolai-ii",
+      "botkin",
+      "stessel",
+      "yurovsky",
+      "beloborodov",
+      "goloschekin",
+      "sverdlov",
+      "lenin"
+    ],
+    "places": [
+      "ekaterinburg",
+      "port-artur",
+      "manchzhuriya"
+    ],
+    "books": [
+      "botkin-svet-i-teni-russko-yaponskoy-voyny",
+      "rodina-ispolniteli-1918"
+    ],
+    "cover": "photos/photo_352@10-11-2026_16-55-55.jpg",
+    "series": null,
+    "tg_ids": [
+      263
+    ],
+    "date": "2026-11-10",
+    "photos": [
+      "photos/photo_352@10-11-2026_16-55-55.jpg",
+      "photos/photo_353@10-11-2026_16-55-55.jpg",
+      "photos/photo_354@10-11-2026_16-55-55.jpg",
+      "photos/photo_355@10-11-2026_16-55-55.jpg",
+      "photos/photo_356@10-11-2026_16-55-55.jpg",
+      "photos/photo_357@10-11-2026_16-55-55.jpg"
+    ],
+    "read_min": 4,
+    "tg_url": "https://t.me/portartur_dalnii/263",
+    "series_slug": null
+  },
+  {
+    "slug": "hodynka-1896-i-doroga-v-port-artur",
+    "title": "Khodynka: A Coronation and the Road to Port Arthur",
+    "dek": "How the days of May 1896 connected a Moscow tragedy, Li Hongzhang and the future Chinese Eastern Railway.",
+    "summary": "Hundreds of thousands attended the public festivities after Nicholas II’s coronation. A rumour of gift shortages caused a crush on uneven Khodynka Field; officially, 1,389 people died. The post examines the organisation, the court’s response and Vladimir Gilyarovsky’s testimony. Li Hongzhang was in Moscow at the same time. Four days after the tragedy he signed a secret alliance with Russia, opening the way to the Chinese Eastern Railway. Two years later Russia leased Port Arthur and Dalny.",
+    "facts": [
+      "The crush occurred on 18 (30) May 1896.",
+      "The Russian-Chinese alliance was signed on 22 May (3 June) 1896.",
+      "The post links to Artyom Lokalov’s article in Rodina."
+    ],
+    "type": "event",
+    "layer": [
+      "pre1898",
+      "russian"
+    ],
+    "people": [
+      "nikolai-ii",
+      "li-hunchzhan",
+      "vitte",
+      "gilyarovsky"
+    ],
+    "places": [
+      "moskva",
+      "kvzhd",
+      "manchzhuriya",
+      "port-artur",
+      "dalnii"
+    ],
+    "books": [
+      "rodina-hodynka-1896"
+    ],
+    "cover": "photos/photo_345@09-11-2026_12-40-02.jpg",
+    "series": null,
+    "tg_ids": [
+      256
+    ],
+    "date": "2026-11-09",
+    "photos": [
+      "photos/photo_345@09-11-2026_12-40-02.jpg",
+      "photos/photo_346@09-11-2026_12-40-02.jpg",
+      "photos/photo_347@09-11-2026_12-40-02.jpg",
+      "photos/photo_348@09-11-2026_12-40-02.jpg",
+      "photos/photo_349@09-11-2026_12-40-02.jpg",
+      "photos/photo_350@09-11-2026_12-40-02.jpg",
+      "photos/photo_351@09-11-2026_12-40-03.jpg"
+    ],
+    "read_min": 4,
+    "tg_url": "https://t.me/portartur_dalnii/256",
+    "series_slug": null
+  },
+  {
+    "slug": "ayrapetov-na-puti-k-krahu",
+    "title": "Airapetov: On the Road to Collapse",
+    "dek": "A military and political history from Far Eastern expansion to the army’s return home.",
+    "summary": "Oleg Airapetov examines the war as the product of the Russian Empire’s diplomatic, financial and military decisions. The first part explains Russia’s advance east, competing interests in Korea and the occupation of Manchuria. The second follows Port Arthur, Liaoyang, Mukden and Tsushima to Portsmouth and the army’s return to revolutionary Russia. The fortress is connected with decisions in St Petersburg, and conclusions rest on documents, memoirs and correspondence. The channel recommends the book as an introduction to the war as a whole.",
+    "facts": [
+      "Moscow: Algoritm, 2014; 496 pages, 34 chapters.",
+      "The narrative continues beyond Portsmouth to the army’s return in 1906."
+    ],
+    "type": "book",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "ayrapetov",
+      "makarov"
+    ],
+    "places": [
+      "port-artur",
+      "kvantun",
+      "lyaoyan",
+      "shahe",
+      "mukden",
+      "tsusima",
+      "portsmut",
+      "manchzhuriya",
+      "koreya"
+    ],
+    "books": [
+      "ayrapetov-na-puti-k-krahu"
+    ],
+    "cover": "photos/photo_344@08-11-2026_20-45-11.jpg",
+    "series": null,
+    "tg_ids": [
+      255
+    ],
+    "date": "2026-11-08",
+    "photos": [
+      "photos/photo_344@08-11-2026_20-45-11.jpg"
+    ],
+    "read_min": 2,
+    "tg_url": "https://t.me/portartur_dalnii/255",
+    "series_slug": null
+  },
+  {
+    "slug": "balmont-nash-tsar-mukden-tsusima",
+    "tg_ids": [
+      251
+    ],
+    "date": "2026-11-08",
+    "title": "Balmont: “Our Tsar Is Mukden, Our Tsar Is Tsushima”",
+    "dek": "A Symbolist poet who judged the emperor by the war’s outcome.",
+    "summary": "Konstantin Balmont, a leading Russian Symbolist, clashed with authority from youth: expelled from school and university, he was banned from the capitals in 1901 for “The Little Sultan”. The war and revolution completed his break with the regime. He fled to Paris in late 1905 and wrote “Our Tsar” in 1906, reducing the war to two words: Mukden and Tsushima. It appeared in Songs of an Avenger but was not printed in Russia. He returned under the Romanov tercentenary amnesty, visited Japan in 1916 and later translated tanka and haiku. The post gives the complete poem.",
+    "facts": [
+      "Songs of an Avenger appeared in Paris in 1907.",
+      "Balmont returned to Russia under an amnesty on 5 May 1913.",
+      "He died at Noisy-le-Grand near Paris on 23 December 1942."
+    ],
+    "type": "culture",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "balmont",
+      "nikolai-ii"
+    ],
+    "places": [
+      "mukden",
+      "tsusima"
+    ],
+    "books": [
+      "balmont-nash-tsar"
+    ],
+    "photos": [
+      "photos/photo_212@08-11-2026_12-10-01.jpg",
+      "photos/photo_213@08-11-2026_12-10-01.jpg",
+      "photos/photo_214@08-11-2026_12-10-01.jpg",
+      "photos/photo_215@08-11-2026_12-10-01.jpg"
+    ],
+    "cover": "photos/photo_212@08-11-2026_12-10-01.jpg",
+    "read_min": 3,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/251",
+    "series_slug": null
+  },
+  {
+    "slug": "yaroslavskii-bolsheviki-i-russko-yaponskaya-voina",
+    "tg_ids": [
+      250
+    ],
+    "date": "2026-11-07",
+    "title": "Port Arthur as a Prologue: Yaroslavsky on the Bolsheviks and the War",
+    "dek": "A party historian’s booklet treating defeat as a useful precondition for revolution.",
+    "summary": "A review of Yemelyan Yaroslavsky’s The Russo-Japanese War and the Bolsheviks’ Attitude towards It. Its thesis is explicit: defeat “revolutionised the masses”, and the Bolsheviks “favoured defeat”. Lenin called the fortress’s fall a prologue to tsarism’s capitulation. In this reading, Port Arthur’s defence becomes merely a prelude to something more important. The irony lies in the book’s later reception: on 2 September 1945 Stalin called the defeat of 1904 a “black stain” the older generation had waited forty years to erase. The verdict: little help on the war itself, but revealing evidence of how the USSR rewrote it.",
+    "facts": [
+      "Yaroslavsky, born Minei Gubelman, wrote over 1,600 articles and books and died in 1943.",
+      "Lenin wrote The Fall of Port Arthur on the surrender.",
+      "Reprint: URSS, 2020, 48 pages."
+    ],
+    "type": "book",
+    "layer": [
+      "soviet"
+    ],
+    "people": [
+      "yaroslavskii",
+      "lenin",
+      "stalin",
+      "kondratenko"
+    ],
+    "places": [
+      "port-artur"
+    ],
+    "books": [
+      "yaroslavskiy-russko-yaponskaya-voyna-i-bolsheviki",
+      "lenin-padenie-port-artura"
+    ],
+    "photos": [
+      "photos/photo_211@07-11-2026_10-20-08.jpg"
+    ],
+    "cover": "photos/photo_211@07-11-2026_10-20-08.jpg",
+    "read_min": 3,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/250",
+    "series_slug": null
+  },
+  {
+    "slug": "botkin-svet-i-teni-russko-yaponskoi-voiny",
+    "tg_ids": [
+      244
+    ],
+    "date": "2026-11-06",
+    "title": "Yevgeny Botkin: Light and Shadows of the Russo-Japanese War",
+    "dek": "Letters to his wife from a Red Cross doctor who later became Nicholas II’s physician.",
+    "summary": "Yevgeny Botkin, son of the renowned physician, volunteered for Manchuria and headed Red Cross medical services with the army in the field. His letters to his wife appeared in 1908. He tried to write of the “light”, but difficult passages break through. Botkin records Chinese etiquette, houses, theatre and the Mukden tombs. At Wafangou, now Wafangdian within Dalian, he came under shrapnel and carried wounded men himself. He describes typhus killing doctors and nurses. In the same year, 1908, he became the emperor’s physician; in 1918 he was executed with the imperial family.",
+    "facts": [
+      "The letters appeared in Vestnik Evropy in 1908, then as a book.",
+      "Botkin received the Order of St Vladimir, 3rd and 2nd Class with swords.",
+      "The Russian Orthodox Church canonised him in 2016."
+    ],
+    "type": "book",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "botkin",
+      "nikolai-ii"
+    ],
+    "places": [
+      "manchzhuriya",
+      "vafangou",
+      "mukden",
+      "shahe"
+    ],
+    "books": [
+      "botkin-svet-i-teni-russko-yaponskoy-voyny"
+    ],
+    "photos": [
+      "photos/photo_205@06-11-2026_10-55-02.jpg",
+      "photos/photo_206@06-11-2026_10-55-02.jpg",
+      "photos/photo_207@06-11-2026_10-55-02.jpg",
+      "photos/photo_208@06-11-2026_10-55-02.jpg",
+      "photos/photo_209@06-11-2026_10-55-02.jpg",
+      "photos/photo_210@06-11-2026_10-55-02.jpg"
+    ],
+    "cover": "photos/photo_205@06-11-2026_10-55-02.jpg",
+    "read_min": 3,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/244",
+    "series_slug": null
+  },
+  {
+    "slug": "menshikov-pisma-k-blizhnim",
+    "tg_ids": [
+      242
+    ],
+    "date": "2026-11-05",
+    "title": "Mikhail Menshikov: “The Thunder of War Was Needed”",
+    "dek": "A Novoye Vremya journalist on war as an examination of the whole country.",
+    "summary": "A former navigator and hydrographer, Mikhail Menshikov became a leading early-twentieth-century journalist. His Letters to My Neighbours appeared in Suvorin’s Novoye Vremya two or three times weekly until 1917; subscribers bound them into annual volumes. The 1902–1904 collection spans the Russo-Japanese War. In “Internal Defence”, he argues that peacetime patriotism had declined and “the thunder of war was needed to wake our consciousness”. Defeats in Manchuria, in his view, began at home. The channel’s author finds the prose demanding but the questions familiar. Menshikov was shot without trial in 1918.",
+    "facts": [
+      "Menshikov lived from 1859 to 1918.",
+      "He was arrested at Valdai on 19 September 1918 and shot the following day.",
+      "Published by AST in the Memoirs, Diaries, Letters series, 550 pages."
+    ],
+    "type": "book",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "menshikov",
+      "suvorin"
+    ],
+    "places": [
+      "manchzhuriya"
+    ],
+    "books": [
+      "menshikov-pisma-k-blizhnim-1902-1904"
+    ],
+    "photos": [
+      "photos/photo_203@05-11-2026_11-05-03.jpg",
+      "photos/photo_204@05-11-2026_11-05-03.jpg"
+    ],
+    "cover": "photos/photo_203@05-11-2026_11-05-03.jpg",
+    "read_min": 3,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/242",
+    "series_slug": null
+  },
+  {
+    "slug": "kulichkin-kondratenko-zhzl",
+    "tg_ids": [
+      241
+    ],
+    "date": "2026-11-04",
+    "title": "Kondratenko in Lives of Remarkable People: A General through a Colonel’s Eyes",
+    "dek": "A 1989 biography by one soldier about another, written with affection and few doubts.",
+    "summary": "A review of Sergei Kulichkin’s Kondratenko, published in the Lives of Remarkable People series in 1989. Its author, a professional soldier and colonel, had already written In Port Arthur. He portrays the general as a senior comrade, asking few questions and certain who was right. As in Stepanov, Stessel bears the chief blame for surrender. The book continues the Soviet tradition of Kondratenko as the “right kind” of tsarist general. The channel still recommends it: the hero is described with affection, and details such as fortified wine instead of vodka make him more concrete. Afterwards, the author suggests visiting Fort No. II in Lüshun.",
+    "facts": [
+      "Published by Molodaya Gvardiya in 1989, volume 702 of Lives of Remarkable People.",
+      "Sergei Kulichkin was born in 1949."
+    ],
+    "type": "book",
+    "layer": [
+      "russian",
+      "soviet"
+    ],
+    "people": [
+      "kulichkin",
+      "kondratenko",
+      "stessel",
+      "stepanov"
+    ],
+    "places": [
+      "fort-2",
+      "port-artur"
+    ],
+    "books": [
+      "kulichkin-kondratenko",
+      "stepanov-port-artur"
+    ],
+    "photos": [
+      "photos/photo_202@04-11-2026_21-50-08.jpg"
+    ],
+    "cover": "photos/photo_202@04-11-2026_21-50-08.jpg",
+    "read_min": 2,
+    "series": "General Kondratenko",
+    "tg_url": "https://t.me/portartur_dalnii/241",
+    "series_slug": "general-kondratenko"
+  },
+  {
+    "slug": "plehve-malenkaya-pobedonosnaya-voina",
+    "tg_ids": [
+      235
+    ],
+    "date": "2026-11-04",
+    "title": "Plehve and the “Small Victorious War”: The History of a Quotation",
+    "dek": "Where the famous phrase came from, and why its supposed author never learned how the war ended.",
+    "summary": "Vyacheslav von Plehve, prosecutor and head of the Police Department, became interior minister in 1902. He supported Bezobrazov’s circle and rivalled Witte. “To hold back the revolution, we need a small victorious war” is known at second hand, supposedly as Plehve’s reply to Kuropatkin. It first appeared in 1907 in a book under the pseudonym A. Morskoy, suspected of being inspired by Witte, and later in Witte’s own memoirs, though he had not heard it. No independent confirmation exists. On 15 July 1904, Socialist Revolutionary Yegor Sozonov killed Plehve with a bomb. Two days later Japanese troops reached Port Arthur’s immediate approaches.",
+    "facts": [
+      "Plehve was born in Meshchovsk, Kaluga province, in 1846.",
+      "Witte’s memoirs containing the remark were published posthumously in 1922.",
+      "Yevno Azef, later exposed as a police agent, directed the assassination; Boris Savinkov commanded on the ground."
+    ],
+    "type": "person",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "plehve",
+      "vitte",
+      "kuropatkin",
+      "bezobrazov",
+      "sozonov"
+    ],
+    "places": [
+      "port-artur"
+    ],
+    "books": [
+      "vitte-vospominaniya"
+    ],
+    "photos": [
+      "photos/photo_196@04-11-2026_10-34-59.jpg",
+      "photos/photo_197@04-11-2026_10-34-59.jpg",
+      "photos/photo_198@04-11-2026_10-34-59.jpg",
+      "photos/photo_199@04-11-2026_10-34-59.jpg",
+      "photos/photo_200@04-11-2026_10-34-59.jpg",
+      "photos/photo_201@04-11-2026_10-34-59.jpg"
+    ],
+    "cover": "photos/photo_196@04-11-2026_10-34-59.jpg",
+    "read_min": 3,
+    "series": "The Architects of Far Eastern Policy",
+    "tg_url": "https://t.me/portartur_dalnii/235",
+    "series_slug": "arhitektory-dalnevostochnoy-politiki"
+  },
+  {
+    "slug": "posleznanie-kak-sudit-o-port-arture",
+    "tg_ids": [
+      234
+    ],
+    "date": "2026-11-03",
+    "title": "Hindsight: Why Port Arthur Is Easy to Judge",
+    "dek": "Hindsight bias and what the fortress’s defenders could know in 1904.",
+    "summary": "Developing a theme from Nazarenko’s lecture. In 1975 psychologist Baruch Fischhoff showed that once people learn an outcome, they begin to regard it as obvious. The author tests this against examples. Vitgeft’s “there will be no war” sounded different while negotiations continued. Velichko’s fort line assumed an 11,300-man garrison and naval protection. Concrete was designed against 6-inch shells; the Japanese decided to bring 280 mm howitzers only after the August assault. Yet hindsight has limits: on 18 September 1904, Kondratenko warned Stessel not to count on relief, and Stessel shelved the letter.",
+    "facts": [
+      "Japanese 280 mm guns began firing at the fortress in late September 1904.",
+      "Pigeon Bay west of the fortress was considered suitable for a Japanese landing.",
+      "Kondratenko’s letter to Stessel is dated 18 September 1904."
+    ],
+    "type": "explainer",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "nazarenko",
+      "vitgeft",
+      "velichko",
+      "kondratenko",
+      "stessel"
+    ],
+    "places": [
+      "port-artur",
+      "vysokaya-gora",
+      "golubinaya-buhta"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_100@17-10-2026_15-14-01.jpg",
+      "photos/photo_195@03-11-2026_22-32-58.jpg"
+    ],
+    "cover": "photos/photo_100@17-10-2026_15-14-01.jpg",
+    "read_min": 3,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/234",
+    "series_slug": null
+  },
+  {
+    "slug": "kondratenko-dusha-oborony",
+    "tg_ids": [
+      227
+    ],
+    "date": "2026-11-02",
+    "title": "The “Soul of the Defence”: Kondratenko at Port Arthur",
+    "dek": "How the general completed the fortress under fire, and why his death became a turning point.",
+    "summary": "The second part of Kondratenko’s biography. Stessel entrusted him with the whole land front, where no fort had been completed and only eight fortress guns were installed when war began. By the siege’s start in July, the fortress had 546 guns. After the setback at the Wolf Hills, Kondratenko explained the defeat to his soldiers in plain language. He organised hand-grenade production and adapted old Chinese guns; Shemetillo, Podgursky and Gobyato followed with inventions of their own. These methods would later be described as the twentieth century’s first experience of trench warfare. On 203 Metre Hill he stopped sending reserves when losses began threatening the whole defence. He died in Fort No. II’s casemate on 2 December 1904.",
+    "facts": [
+      "By 1 May 1904, the navy had transferred 188 ship guns to the fortress.",
+      "Eight officers died with Kondratenko, including Naumenko and Rashevsky.",
+      "His remains were reburied at the Alexander Nevsky Monastery’s Nikolskoye Cemetery in September 1905.",
+      "A Japanese memorial stands at Fort No. II."
+    ],
+    "type": "person",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "kondratenko",
+      "stessel",
+      "velichko"
+    ],
+    "places": [
+      "port-artur",
+      "fort-2",
+      "vysokaya-gora",
+      "volchi-gory",
+      "uglovaya-gora"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_188@02-11-2026_09-35-08.jpg",
+      "photos/photo_189@02-11-2026_09-35-08.jpg",
+      "photos/photo_190@02-11-2026_09-35-08.jpg",
+      "photos/photo_191@02-11-2026_09-35-08.jpg",
+      "photos/photo_192@02-11-2026_09-35-08.jpg",
+      "photos/photo_193@02-11-2026_09-35-09.jpg",
+      "photos/photo_194@02-11-2026_09-35-09.jpg"
+    ],
+    "cover": "photos/photo_188@02-11-2026_09-35-08.jpg",
+    "read_min": 4,
+    "series": "General Kondratenko",
+    "tg_url": "https://t.me/portartur_dalnii/227",
+    "series_slug": "general-kondratenko"
+  },
+  {
+    "slug": "gaolyan-i-sopki",
+    "tg_ids": [
+      219
+    ],
+    "date": "2026-11-01",
+    "title": "Sorghum and Hills: Two Discoveries of the Manchurian War",
+    "dek": "What Russian army manuals had overlooked, and what remained in language and music.",
+    "summary": "The Russian army prepared to fight on European plains, but encountered sorghum and steep hills in Manchuria. Chinese sorghum, or gaoliang, up to three metres tall, formed a wall around Liaoyang in summer 1904: a company vanished twenty paces into it. Japanese troops, who had fought here in 1894–1895, knew how to use it; Russians had to cut it down in front of their positions. It also supplied the spirit hanshin. The Russian word sopka came from the northwest, where it meant a burial mound, and became established after the war. Every battle turned into a struggle for heights. The hills also survived in music, in Shatrov’s On the Hills of Manchuria.",
+    "facts": [
+      "Gaoliang can reach three metres in height.",
+      "Putilov Hill on the Shahe was captured in October 1904 and named for the general who took it."
+    ],
+    "type": "explainer",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "shatrov"
+    ],
+    "places": [
+      "manchzhuriya",
+      "lyaoyan",
+      "vysokaya-gora",
+      "uglovaya-gora",
+      "volchi-gory",
+      "sopka-putilovskaya",
+      "shahe"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_180@01-11-2026_20-10-06.jpg",
+      "photos/photo_181@01-11-2026_20-10-06.jpg",
+      "photos/photo_182@01-11-2026_20-10-06.jpg",
+      "photos/photo_183@01-11-2026_20-10-06.jpg",
+      "photos/photo_184@01-11-2026_20-10-06.jpg",
+      "photos/photo_185@01-11-2026_20-10-06.jpg",
+      "photos/photo_186@01-11-2026_20-10-06.jpg",
+      "photos/photo_187@01-11-2026_20-10-07.jpg"
+    ],
+    "cover": "photos/photo_185@01-11-2026_20-10-06.jpg",
+    "read_min": 2,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/219",
+    "series_slug": null
+  },
+  {
+    "slug": "lektsiya-nazarenko-russko-yaponskaya-voina",
+    "tg_ids": [
+      216
+    ],
+    "date": "2026-10-31",
+    "title": "Kirill Nazarenko’s Lecture on the Russo-Japanese War",
+    "dek": "An hour and a half from the causes of war to remembrance, with myths examined along the way.",
+    "summary": "A recommendation of a lecture by naval historian Kirill Nazarenko, professor at St Petersburg State University. Delivered at the Museum of Political History of Russia and published by Digital History, it runs from the war’s causes to its place in memory in 1 hour 20 minutes. Of particular interest here are the acquisition of Port Arthur and the advantages and drawbacks of a Kwantung base, the “Bezobrazov clique” and Plehve’s remark, the night attack, Varyag and Steregushchy, the Yellow Sea battle, surrender and the way hindsight distorts judgments of the defence. The author finds it clear, free of grand rhetoric and blanket condemnation.",
+    "facts": [
+      "The lecture lasts 1 hour 20 minutes.",
+      "It was delivered at the Museum of Political History of Russia."
+    ],
+    "type": "source",
+    "layer": [
+      "russian",
+      "modern"
+    ],
+    "people": [
+      "nazarenko",
+      "vitte",
+      "plehve",
+      "bezobrazov"
+    ],
+    "places": [
+      "port-artur",
+      "kvantun",
+      "zheltoe-more"
+    ],
+    "books": [],
+    "photos": [],
+    "cover": null,
+    "read_min": 2,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/216",
+    "series_slug": null
+  },
+  {
+    "slug": "poselyagin-poruchiki-po-admiralteistvu",
+    "tg_ids": [
+      214
+    ],
+    "date": "2026-10-31",
+    "title": "Lieutenants of the Admiralty: The Twins, Book Two",
+    "dek": "Poselyagin’s time-travel saga continues, with a historical note on the Yellow Sea battle.",
+    "summary": "An account of the second volume of Poselyagin’s trilogy, listened to at subscribers’ request. Russia and Japan settle for a draw; Vitgeft takes the squadron to Vladivostok and becomes naval minister. The channel recalls the reality: on 28 July (10 August) 1904, a shell hit Tsesarevich’s bridge and the squadron lost command. Some ships returned to Port Arthur, others were interned; none reached Vladivostok. In the novel, the brothers spend ten years fighting every war, see in the dark and replace the entire fleet in the First World War. The reviewer’s question: what is their knowledge of the future for, if they try to prevent nothing?",
+    "facts": [
+      "Ships interned after the battle of 28 July (10 August) 1904 went to Qingdao, Shanghai and Saigon.",
+      "The book has thirteen chapters."
+    ],
+    "type": "book",
+    "layer": [
+      "russian",
+      "modern"
+    ],
+    "people": [
+      "poselyagin",
+      "vitgeft",
+      "nikolai-ii"
+    ],
+    "places": [
+      "zheltoe-more",
+      "port-artur"
+    ],
+    "books": [
+      "poselyagin-poruchiki-po-admiralteystvu"
+    ],
+    "photos": [
+      "photos/photo_179@31-10-2026_13-39-36.jpg"
+    ],
+    "cover": "photos/photo_179@31-10-2026_13-39-36.jpg",
+    "read_min": 3,
+    "series": "Poselyagin’s Twins",
+    "tg_url": "https://t.me/portartur_dalnii/214",
+    "series_slug": "bliznetsy-poselyagina"
+  },
+  {
+    "slug": "kondratenko-put-k-port-arturu",
+    "tg_ids": [
+      210
+    ],
+    "date": "2026-10-30",
+    "title": "General Kondratenko: The Road to Port Arthur",
+    "dek": "The tenth child of a modest family, graduate of two academies and a commander who taught his soldiers to read.",
+    "summary": "The first part of the biography of Roman Kondratenko, the “soul of Port Arthur’s defence”. Born in Tiflis in 1857, the tenth child of a retired major, he studied at state expense and graduated in the first category from both the Nikolayev Engineering Academy and the General Staff Academy. The combination of fortification specialist and staff officer would later prove valuable. As a company commander, he taught soldiers to read in his own flat. He first saw Port Arthur in 1900 when his regiment went to China, returning in November 1903 to command the 7th East Siberian Rifle Brigade. The post also follows his family and children.",
+    "facts": [
+      "Kondratenko was born in Tiflis on 30 September (12 October) 1857.",
+      "In 1895 he took command of the 20th Rifle Regiment in Suwałki.",
+      "His younger son Andrei died near Tarnopol in summer 1917."
+    ],
+    "type": "person",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "kondratenko"
+    ],
+    "places": [
+      "port-artur"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_175@30-10-2026_10-20-05.jpg",
+      "photos/photo_176@30-10-2026_10-20-06.jpg",
+      "photos/photo_332@archive.jpg",
+      "photos/photo_178@30-10-2026_10-20-06.jpg"
+    ],
+    "cover": "photos/photo_332@archive.jpg",
+    "read_min": 3,
+    "series": "General Kondratenko",
+    "tg_url": "https://t.me/portartur_dalnii/210",
+    "series_slug": "general-kondratenko"
+  },
+  {
+    "slug": "pikul-kreisera-retsenziya",
+    "tg_ids": [
+      200
+    ],
+    "date": "2026-10-29",
+    "title": "Pikul’s Cruisers: Vladivostok and the Honour of the Uniform",
+    "dek": "A novel written in 38 days, and the question of an invented hero on a real deck.",
+    "summary": "A review of Cruisers, written by Pikul in 38 days in 1985 for the Tsushima anniversary. Midshipman Panafidin transfers from Bogatyr to Rurik, following the Vladivostok detachment through raids, the battle with Kamimura, the cruiser’s loss and captivity. Real commanders and admirals appear beside fictional characters. Pikul drew on Yegoryev’s 1939 study. The channel praises his clipped prose, but its main objection lies elsewhere: the invented midshipman sinks with the real Rurik, and a reader without a reference book cannot separate Yegoryev from Pikul. The verdict: no scholarly study, but more about the Vladivostok detachment than the school curriculum offers.",
+    "facts": [
+      "Written in 38 days in 1985, the novel received the RSFSR State Prize three years later.",
+      "Its source was V. Ye. Yegoryev’s Operations of the Vladivostok Cruisers in the Russo-Japanese War of 1904–1905 (1939)."
+    ],
+    "type": "book",
+    "layer": [
+      "russian",
+      "soviet"
+    ],
+    "people": [
+      "pikul",
+      "trusov",
+      "iessen",
+      "bezobrazov-pyotr",
+      "reitsenshtein",
+      "kamimura"
+    ],
+    "places": [
+      "vladivostok",
+      "ulsan"
+    ],
+    "books": [
+      "pikul-kreysera",
+      "egorev-operatsii"
+    ],
+    "photos": [
+      "photos/photo_165@29-10-2026_16-40-08.jpg",
+      "photos/photo_166@29-10-2026_16-40-08.jpg",
+      "photos/photo_167@29-10-2026_16-40-08.jpg",
+      "photos/photo_168@29-10-2026_16-40-08.jpg",
+      "photos/photo_169@29-10-2026_16-40-09.jpg",
+      "photos/photo_170@29-10-2026_16-40-09.jpg",
+      "photos/photo_171@29-10-2026_16-40-09.jpg",
+      "photos/photo_172@29-10-2026_16-40-09.jpg",
+      "photos/photo_173@29-10-2026_16-40-09.jpg",
+      "photos/photo_174@29-10-2026_16-40-09.jpg"
+    ],
+    "cover": "photos/photo_165@29-10-2026_16-40-08.jpg",
+    "read_min": 3,
+    "series": "The Vladivostok Detachment and Cruisers",
+    "tg_url": "https://t.me/portartur_dalnii/200",
+    "series_slug": "vladivostokskiy-otryad-i-kreysera"
+  },
+  {
+    "slug": "panishchev-krizis-nravstvennogo-soznaniya",
+    "tg_ids": [
+      199
+    ],
+    "date": "2026-10-28",
+    "title": "Morality against Shimose: Panishchev’s Study",
+    "dek": "A critical review of a book explaining defeat through a “crisis of moral consciousness”.",
+    "summary": "A review of A. L. Panishchev’s The Crisis of Moral Consciousness in Russia and the Russo-Japanese War of 1904–1905, published in 2022. Its thesis makes the nation’s moral consciousness decisive. The channel’s author finds the method weak: “moral decline” cannot be measured but can explain anything, while Shimose explosive, rangefinders, the single-track Trans-Siberian and command decisions recede. The war arrives around page 50; Port Arthur’s defence gets about ten pages, Japanese culture three. The reviewer sees a sermon with illustrations rather than analysis. Read it if you want an argument.",
+    "facts": [
+      "Published by INFRA-M in 2022, 200 pages.",
+      "About ten pages concern the defence, and seventeen Makarov."
+    ],
+    "type": "book",
+    "layer": [
+      "russian",
+      "modern"
+    ],
+    "people": [
+      "panishchev",
+      "makarov",
+      "kondratenko",
+      "stessel"
+    ],
+    "places": [
+      "port-artur",
+      "tsusima"
+    ],
+    "books": [
+      "panishchev-krizis-nravstvennogo-soznaniya"
+    ],
+    "photos": [
+      "photos/photo_164@28-10-2026_23-02-47.jpg"
+    ],
+    "cover": "photos/photo_164@28-10-2026_23-02-47.jpg",
+    "read_min": 3,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/199",
+    "series_slug": null
+  },
+  {
+    "slug": "posle-tri-pali-razvlecheniya-na-pozitsiyah",
+    "tg_ids": [
+      189
+    ],
+    "date": "2026-10-28",
+    "title": "“After Three, Fire!”: Entertainment in Port Arthur’s Trenches",
+    "dek": "Applause from enemy trenches, bets on shells and a dangerous game on the parapets.",
+    "summary": "Positional warfare was monotonous, and soldiers sought entertainment, sometimes with the enemy. Many Japanese knew Russian from pre-war life in Manchuria; during lulls, opponents talked across the parapets until conversation turned into gunfire. In Manchuria, Japanese soldiers applauded a tenor in a Russian trench. The most popular game on the fortress’s land front was “After three, fire!” Both sides counted to three; Russian soldiers jumped out of the trench and the Japanese fired. Sometimes they hit. A “totalisator” took bets on the district and calibre of the next shell. The post draws on Lysev’s book, with photographs from a Japanese album.",
+    "facts": [
+      "Russian riflemen invented “After three, fire!”, which the Japanese also enjoyed.",
+      "Betting on where a shell would fall was called Port Arthur roulette.",
+      "Photographs come from Nichiro Sen’eki Shashinchō at Japan’s National Diet Library."
+    ],
+    "type": "culture",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "lysev"
+    ],
+    "places": [
+      "port-artur"
+    ],
+    "books": [
+      "lysev-russkiy-port-artur-v-1904-godu",
+      "nitiro-senyeki-syasincho"
+    ],
+    "photos": [
+      "photos/photo_154@28-10-2026_08-55-08.jpg",
+      "photos/photo_155@28-10-2026_08-55-08.jpg",
+      "photos/photo_156@28-10-2026_08-55-08.jpg",
+      "photos/photo_157@28-10-2026_08-55-08.jpg",
+      "photos/photo_158@28-10-2026_08-55-08.jpg",
+      "photos/photo_159@28-10-2026_08-55-08.jpg",
+      "photos/photo_160@28-10-2026_08-55-08.jpg",
+      "photos/photo_161@28-10-2026_08-55-08.jpg",
+      "photos/photo_162@28-10-2026_08-55-09.jpg",
+      "photos/photo_163@28-10-2026_08-55-09.jpg"
+    ],
+    "cover": "photos/photo_154@28-10-2026_08-55-08.jpg",
+    "read_min": 2,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/189",
+    "series_slug": null
+  },
+  {
+    "slug": "albom-mandzhuriya-1906",
+    "tg_ids": [
+      183
+    ],
+    "date": "2026-10-27",
+    "title": "Manchuria: An Illustrated Album from 1906",
+    "dek": "An illustrated war album, published a year after the fighting and available online.",
+    "summary": "A short note on an Internet Archive album: Manchuria: The Russo-Japanese War, published in St Petersburg in 1906. Its 122 plates were printed by R. Golike and A. Wilborg. The author draws attention to its timing: with Portsmouth just signed, publishers were showing how they wanted the war remembered immediately afterwards. This is a contemporary view rather than a scholarly history. The State Public Historical Library digitised it; it can be viewed free without registration.",
+    "facts": [
+      "Published in 1906, edited by A. V. Martynov.",
+      "The album contains 122 illustrated plates."
+    ],
+    "type": "source",
+    "layer": [
+      "russian"
+    ],
+    "people": [],
+    "places": [
+      "manchzhuriya",
+      "port-artur"
+    ],
+    "books": [
+      "albom-mandzhuriya-1906"
+    ],
+    "photos": [
+      "photos/photo_148@27-10-2026_22-10-09.jpg",
+      "photos/photo_149@27-10-2026_22-10-09.jpg",
+      "photos/photo_150@27-10-2026_22-10-09.jpg",
+      "photos/photo_151@27-10-2026_22-10-09.jpg",
+      "photos/photo_152@27-10-2026_22-10-09.jpg",
+      "photos/photo_153@27-10-2026_22-10-09.jpg"
+    ],
+    "cover": "photos/photo_151@27-10-2026_22-10-09.jpg",
+    "read_min": 1,
+    "series": "A Photographic Chronicle of the War",
+    "tg_url": "https://t.me/portartur_dalnii/183",
+    "series_slug": "fotoletopis-voyny"
+  },
+  {
+    "slug": "vitte-posleslovie-reputatsiya",
+    "tg_ids": [
+      180
+    ],
+    "date": "2026-10-27",
+    "title": "Count Half-Sakhalin, Afterword: Witte’s Reputation",
+    "dek": "How newspapers, drawing rooms and the theatre saw the retired Witte, through Ella Saginadze’s book.",
+    "summary": "The final Witte article draws on Ella Saginadze’s A Reformer after the Reforms, NLO, 2017. Witte irritated everyone: the right called him an enemy of the people; Lenin, a “clown minister”. The empress blamed him for the manifesto; liberals objected that it was no real constitution. Fears attached themselves to him, from stock-exchange connections to ambitions to become “president”. Yet he was perhaps Russia’s first politician to cultivate the press publicly. The retired count became a character in Kolyshko’s play, while memoirs hidden in a French bank appeared in Berlin in the early 1920s. The post ends with scholarly biographies.",
+    "facts": [
+      "Kolyshko’s The Great Man (1908) played to full houses in the capital.",
+      "The 1911 polemic with Stolypin and Guchkov was dubbed the “corpse of 17 October”.",
+      "There is no monument to Witte, but a bust stands in the foyer of the St Petersburg Polytechnic Institute he founded."
+    ],
+    "type": "book",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "vitte",
+      "saginadze",
+      "lenin",
+      "suvorin"
+    ],
+    "places": [],
+    "books": [
+      "saginadze-reformator-posle-reform",
+      "vitte-vospominaniya",
+      "ananich-ganelin-vitte-i-ego-vremya",
+      "ilyin-vitte-zhzl",
+      "ananich-rossiya-i-mezhdunarodnyy-kapital",
+      "korelin-stepanov-vitte-finansist-politik-diplomat",
+      "ignatyev-vitte-diplomat"
+    ],
+    "photos": [
+      "photos/photo_145@27-10-2026_17-20-06.jpg",
+      "photos/photo_146@27-10-2026_17-20-07.jpg",
+      "photos/photo_147@27-10-2026_17-20-07.jpg"
+    ],
+    "cover": "photos/photo_145@27-10-2026_17-20-06.jpg",
+    "read_min": 4,
+    "series": "Count Half-Sakhalin",
+    "tg_url": "https://t.me/portartur_dalnii/180",
+    "series_slug": "graf-polusahalinskiy"
+  },
+  {
+    "slug": "valentin-pikul-biografiya",
+    "tg_ids": [
+      175
+    ],
+    "date": "2026-10-26",
+    "title": "Valentin Pikul: The Naval Boy Who Retold Russia’s History",
+    "dek": "The life of Cruisers’ author, and arguments over trusting his novels.",
+    "summary": "Born in Leningrad in 1928, Valentin Pikul survived the siege’s first winter, graduated from the Solovki naval boys’ school and served on the destroyer Grozny. He had no higher education, relying on his own reading. From 1962 he lived in Riga, writing Moonzund, The Favourite, Cruisers and other novels. By 2007 his books had appeared in over 500 editions totalling around half a billion copies. Literary scholars place them within popular fiction, noting heroic idealisation and an uncritical use of documents. The greatest controversy surrounded his Rasputin novel, Unclean Power, which posthumously won him the Sholokhov Prize.",
+    "facts": [
+      "Cruisers won the Gorky State Prize of the RSFSR in 1988.",
+      "Pikul died in Riga on 16 July 1990.",
+      "The Rasputin novel appeared abridged as At the Final Boundary in 1979 and in full in 1989."
+    ],
+    "type": "person",
+    "layer": [
+      "soviet"
+    ],
+    "people": [
+      "pikul"
+    ],
+    "places": [],
+    "books": [
+      "pikul-kreysera"
+    ],
+    "photos": [
+      "photos/photo_140@26-10-2026_16-15-07.jpg",
+      "photos/photo_141@26-10-2026_16-15-07.jpg",
+      "photos/photo_142@26-10-2026_16-15-07.jpg",
+      "photos/photo_143@26-10-2026_16-15-07.jpg",
+      "photos/photo_144@26-10-2026_16-15-07.jpg"
+    ],
+    "cover": "photos/photo_140@26-10-2026_16-15-07.jpg",
+    "read_min": 3,
+    "series": "The Vladivostok Detachment and Cruisers",
+    "tg_url": "https://t.me/portartur_dalnii/175",
+    "series_slug": "vladivostokskiy-otryad-i-kreysera"
+  },
+  {
+    "slug": "vladivostokskii-otryad-kreiserov",
+    "tg_ids": [
+      167
+    ],
+    "date": "2026-10-25",
+    "title": "The Vladivostok Cruiser Detachment: Raiders of the Russo-Japanese War",
+    "dek": "Four cruisers hunting Japanese transports from the Korea Strait to Tokyo Bay.",
+    "summary": "Formed on 7 June 1903 to raid Japanese trade, the detachment comprised Rossiya, Gromoboi, Rurik, Bogatyr and auxiliary cruiser Lena. Its greatest success came on 2 (15) June 1904, intercepting transports carrying 280 mm siege howitzers for Port Arthur in the Korea Strait: Hitachi Maru sank and Sado Maru ran aground. In July Jessen blew up the British steamer Knight Commander near Tokyo Bay’s entrance; a London prize court upheld his action. On 1 (14) August off Ulsan, the detachment met Kamimura’s squadron and Rurik was scuttled. The result was mixed: Japan’s communications remained open, but delivery of siege artillery was disrupted.",
+    "facts": [
+      "Hitachi Maru and Sado Maru carried eighteen 280 mm Armstrong siege howitzers.",
+      "The Japanese rescued around 625 Rurik sailors after Ulsan.",
+      "The detachment was disbanded at Libau on 30 March 1906."
+    ],
+    "type": "event",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "iessen",
+      "kamimura",
+      "bezobrazov-pyotr",
+      "trusov",
+      "ivanov-13",
+      "reitsenshtein",
+      "makarov",
+      "pikul"
+    ],
+    "places": [
+      "vladivostok",
+      "ulsan",
+      "port-artur"
+    ],
+    "books": [
+      "pikul-kreysera"
+    ],
+    "photos": [
+      "photos/photo_133@25-10-2026_09-54-01.jpg",
+      "photos/photo_134@25-10-2026_09-54-01.jpg",
+      "photos/photo_135@25-10-2026_09-54-01.jpg",
+      "photos/photo_136@25-10-2026_09-54-01.jpg",
+      "photos/photo_137@25-10-2026_09-54-01.jpg",
+      "photos/photo_138@25-10-2026_09-54-01.jpg",
+      "photos/photo_139@25-10-2026_09-54-01.jpg"
+    ],
+    "cover": "photos/photo_135@25-10-2026_09-54-01.jpg",
+    "read_min": 4,
+    "series": "The Vladivostok Detachment and Cruisers",
+    "tg_url": "https://t.me/portartur_dalnii/167",
+    "series_slug": "vladivostokskiy-otryad-i-kreysera"
+  },
+  {
+    "slug": "dnevnik-kapitana-lile",
+    "tg_ids": [
+      164
+    ],
+    "date": "2026-10-24",
+    "title": "Captain Lilje’s Diary: Port Arthur through an Engineer’s Eyes",
+    "dek": "An engineer who built the fortress, then spent eleven months defending it.",
+    "summary": "From 1900 Mikhail Lilje directed works for the Kwantung Engineering Administration, building the defences he would later defend. His diary covers January 1904 to January 1905. The eye is an engineer’s, the judgments sharp: on the first night the squadron was “completely unprepared for battle”; later come command disputes, scurvy and overcrowded hospitals. He calls 203 Metre Hill “Arthur’s Calvary”. The manuscript’s story is told separately: emigration, a courier to the USSR, the Lenin Library, disappearance before a planned 1992 edition and rescue through a copy. The channel advises checking his harsh judgments against other testimony.",
+    "facts": [
+      "Born in 1868, Lilje was posted to Port Arthur in 1898.",
+      "The diary was published by Tsentrpoligraf in 2002.",
+      "He emigrated to France after 1917 and died in 1941."
+    ],
+    "type": "book",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "lilie",
+      "kondratenko"
+    ],
+    "places": [
+      "port-artur",
+      "vysokaya-gora"
+    ],
+    "books": [
+      "lilye-dnevnik-osady-port-artura"
+    ],
+    "photos": [
+      "photos/photo_130@24-10-2026_19-45-02.jpg",
+      "photos/photo_131@24-10-2026_19-45-02.jpg",
+      "photos/photo_132@24-10-2026_19-45-02.jpg"
+    ],
+    "cover": "photos/photo_130@24-10-2026_19-45-02.jpg",
+    "read_min": 3,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/164",
+    "series_slug": null
+  },
+  {
+    "slug": "zheltorossiya-koloniya-kotoruyu-ne-pridumali",
+    "tg_ids": [
+      161
+    ],
+    "date": "2026-10-24",
+    "title": "Yellow Russia: A Colony Never Thought Through",
+    "dek": "Generals’ plans for Manchuria’s future, and the absence of a clear policy.",
+    "summary": "Journalist Ilya Levitov coined “Yellow Russia” for a buffer colony stretching from Baikal to the ocean; he delivered his report the day after Tsushima. The post draws on historian Mikhail Khodyakov’s study of secret military memoranda. In 1887 Barabash proposed attacking Manchuria and advancing on Beijing. Grodekov favoured freeing it from Beijing without annexation. In 1903 Subotich proposed returning southern Manchuria, Dalny and Port Arthur to China in exchange for northern Manchuria. Denikin called the Chinese Eastern Railway’s strategic value “rather negative”. Khodyakov concludes that annexation seemed settled, but no one knew what Russia’s Far East should become.",
+    "facts": [
+      "Levitov delivered “Yellow Russia as a Buffer Colony” on 16 May 1905.",
+      "A verst of the Chinese Eastern Railway cost 152,000 rubles, 80,000 more than in Transbaikalia.",
+      "In 1913 Kuropatkin proposed moving the border to the Gobi Desert."
+    ],
+    "type": "explainer",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "levitov",
+      "hodyakov",
+      "barabash",
+      "grodekov",
+      "subotich",
+      "denikin",
+      "kuropatkin",
+      "vitte",
+      "nikolai-ii"
+    ],
+    "places": [
+      "manchzhuriya",
+      "kvzhd",
+      "dalnii",
+      "port-artur"
+    ],
+    "books": [
+      "hodyakov-zheltorossiya"
+    ],
+    "photos": [
+      "photos/photo_127@24-10-2026_09-11-01.jpg",
+      "photos/photo_128@24-10-2026_09-11-01.jpg",
+      "photos/photo_129@24-10-2026_09-11-01.jpg"
+    ],
+    "cover": "photos/photo_127@24-10-2026_09-11-01.jpg",
+    "read_min": 4,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/161",
+    "series_slug": null
+  },
+  {
+    "slug": "lysev-russkii-port-artur-v-1904-godu",
+    "tg_ids": [
+      159
+    ],
+    "date": "2026-10-23",
+    "title": "Everyday Life in Besieged Port Arthur: Alexander Lysev’s Book",
+    "dek": "Bread, bathhouses and vegetable gardens under fire in Russian Port Arthur in 1904.",
+    "summary": "A favourable review of Alexander Lysev’s Russian Port Arthur in 1904: A History of Everyday Military Life, 2019. Much has been written about assaults and betrayal; Lysev asks how people lived, ate, slept and spent time between bombardments. The channel highlights his sources: 83 files from 12 collections in the Russian State Naval Archive and Russian State Historical Archive. Ration returns accompany records of bathhouse, bakery and water-main construction, food smuggling and military vegetable plots. Kolchak’s notebook, Rimsky-Korsakov’s diary and sailors’ memoirs sit beside official papers. The book reads like reportage from a besieged city.",
+    "facts": [
+      "Lysev used 83 files from 12 archival collections.",
+      "Published by Posev in 2019, 336 pages."
+    ],
+    "type": "book",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "lysev",
+      "kolchak"
+    ],
+    "places": [
+      "port-artur"
+    ],
+    "books": [
+      "lysev-russkiy-port-artur-v-1904-godu"
+    ],
+    "photos": [
+      "photos/photo_125@23-10-2026_21-41-01.jpg",
+      "photos/photo_126@23-10-2026_21-41-01.jpg"
+    ],
+    "cover": "photos/photo_125@23-10-2026_21-41-01.jpg",
+    "read_min": 2,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/159",
+    "series_slug": null
+  },
+  {
+    "slug": "aleksandr-bezobrazov-kavalergard",
+    "tg_ids": [
+      158
+    ],
+    "date": "2026-10-23",
+    "title": "Alexander Bezobrazov: The Cavalier Guard Who “Arranged a War”",
+    "dek": "The Yalu timber concession, a court circle and the question of its actual responsibility.",
+    "summary": "Retired Cavalier Guards captain Alexander Bezobrazov met Nicholas II in 1898 and proposed a “peaceful conquest” of Korea modelled on the East India Company. It rested on the Yalu and Tumen timber concession obtained by Julius Briner. Shareholders included Grand Duke Alexander Mikhailovich and prominent courtiers; civilian-clothed “loggers” on the Yalu built fortifications. The circle peaked in 1903: Bezobrazov became state secretary and Witte lost the Finance Ministry. Two million rubles of treasury money went into the concession in six months. The author cites historians who find the circle’s role exaggerated in literature; responsibility for the war remains an open question.",
+    "facts": [
+      "Julius Briner, who obtained the concession in 1896, was actor Yul Brynner’s grandfather.",
+      "Bezobrazov became state secretary on 6 May 1903.",
+      "He emigrated after the October Revolution and died in Paris in 1931."
+    ],
+    "type": "person",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "bezobrazov",
+      "nikolai-ii",
+      "vitte",
+      "briner",
+      "abaza",
+      "alekseev",
+      "plehve",
+      "kuropatkin"
+    ],
+    "places": [
+      "yalu",
+      "koreya"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_124@23-10-2026_10-15-05.jpg"
+    ],
+    "cover": "photos/photo_124@23-10-2026_10-15-05.jpg",
+    "read_min": 4,
+    "series": "The Architects of Far Eastern Policy",
+    "tg_url": "https://t.me/portartur_dalnii/158",
+    "series_slug": "arhitektory-dalnevostochnoy-politiki"
+  },
+  {
+    "slug": "veresaev-na-yaponskoi-voine",
+    "tg_ids": [
+      155
+    ],
+    "date": "2026-10-22",
+    "title": "Veresayev: War through a Doctor’s Eyes",
+    "dek": "In the Russo-Japanese War, the notes contemporaries condemned as unpatriotic.",
+    "summary": "By 1904 Vikenty Veresayev was known for Notes of a Doctor, a frank account of Russian medicine. Called from the reserve, he followed a field hospital through the war, including Mukden, returning through revolutionary Siberia. His notes are almost an eyewitness diary. Their principal enemies are behind the lines: offices, supply officials and reporting. Hospitals stand empty while wounded men travel aimlessly for weeks. The strongest pages describe the chaotic retreat after Mukden; the ending follows rallies at Trans-Siberian stations. The channel considers it the best literary eyewitness book about the war: heroism remains, but its price is visible.",
+    "facts": [
+      "Veresayev’s real surname was Smidovich; he was born in Tula in 1867.",
+      "The complete In the Russo-Japanese War appeared only in 1928.",
+      "He died in Moscow in June 1945."
+    ],
+    "type": "book",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "veresaev",
+      "kuropatkin"
+    ],
+    "places": [
+      "mukden",
+      "manchzhuriya"
+    ],
+    "books": [
+      "veresaev-na-yaponskoy-voyne"
+    ],
+    "photos": [
+      "photos/photo_121@22-10-2026_13-38-01.jpg",
+      "photos/photo_122@22-10-2026_13-38-01.jpg",
+      "photos/photo_123@22-10-2026_13-38-01.jpg"
+    ],
+    "cover": "photos/photo_121@22-10-2026_13-38-01.jpg",
+    "read_min": 3,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/155",
+    "series_slug": null
+  },
+  {
+    "slug": "kak-ustroen-fort",
+    "tg_ids": [
+      154
+    ],
+    "date": "2026-10-21",
+    "title": "How a Fort Worked: Reading a Diagram",
+    "dek": "Ditch, escarp, caponier and postern: the vocabulary of late-nineteenth-century fortification.",
+    "summary": "A companion to the post on Fortification No. 5. Using a typical fort diagram, the author explains the trench, ditch, counterscarp and escarp, earthen rampart, caponiers and demi-caponiers, central barracks, courtyards and entrance firing position. The caponier receives special attention: a concrete structure in the ditch, firing along it, invisible from the field and almost impossible to destroy with artillery. Posterns and a drawbridge, absent from the diagram, are discussed separately. Port Arthur’s ditches were dry and cut into rock. In essence: the ditch blocks approach, the rampart shelters riflemen and the caponiers strike those who descend into the ditch.",
+    "facts": [
+      "Port Arthur’s fort ditches were dry and cut into rock.",
+      "A field-facing caponier points towards the enemy."
+    ],
+    "type": "explainer",
+    "layer": [
+      "russian"
+    ],
+    "people": [],
+    "places": [
+      "ukreplenie-5",
+      "port-artur"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_120@21-10-2026_09-32-53.jpg",
+      "photos/photo_337@archive.jpg"
+    ],
+    "cover": "photos/photo_120@21-10-2026_09-32-53.jpg",
+    "read_min": 2,
+    "series": "The Fortress of Port Arthur",
+    "tg_url": "https://t.me/portartur_dalnii/154",
+    "series_slug": "krepost-port-artur"
+  },
+  {
+    "slug": "ukreplenie-5-yahutszui",
+    "tg_ids": [
+      144,
+      174
+    ],
+    "date": "2026-10-21",
+    "title": "Fortification No. 5: The “Fort” That Wasn’t a Fort",
+    "dek": "A visit to one of Port Arthur’s best-preserved defensive works.",
+    "summary": "The channel author’s report from Fortification No. 5 in Lüshun, called Yahuzui in Chinese. Its history has several layers: begun by Qing troops, rebuilt by Russians, then occupied by Japanese, Soviet and PLA garrisons. The author explains the distinction between fort and intermediate work in Velichko’s design, and why the defence line lay too close to town. Japanese trenches never reached No. 5; surrendered without fighting, it survives well. A 10-inch coastal gun on a Durlacher mounting stands on the site, though its authenticity is unestablished. A museum contains a fortress model. Documents do not support the “Western Front command post” claim. A second post offers a video reconstruction.",
+    "facts": [
+      "It stands between Forts V and VI on the fortress’s western front.",
+      "Fort VI appeared on the plan, but construction never began.",
+      "Coordinates: 38.7970, 121.1933."
+    ],
+    "type": "place",
+    "layer": [
+      "russian",
+      "japanese",
+      "soviet",
+      "modern"
+    ],
+    "people": [
+      "velichko"
+    ],
+    "places": [
+      "ukreplenie-5",
+      "port-artur",
+      "vysokaya-gora",
+      "elektricheskiy-utes"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_114@21-10-2026_09-30-12.jpg",
+      "photos/photo_115@21-10-2026_09-30-12.jpg",
+      "photos/photo_116@21-10-2026_09-30-12.jpg",
+      "photos/photo_117@21-10-2026_09-30-12.jpg",
+      "photos/photo_118@21-10-2026_09-30-12.jpg",
+      "photos/photo_119@21-10-2026_09-30-12.jpg"
+    ],
+    "cover": "photos/photo_115@21-10-2026_09-30-12.jpg",
+    "read_min": 5,
+    "series": "The Fortress of Port Arthur",
+    "tg_url": "https://t.me/portartur_dalnii/144",
+    "series_slug": "krepost-port-artur"
+  },
+  {
+    "slug": "misha-iz-nagasaki-myulberg",
+    "tg_ids": [
+      143
+    ],
+    "date": "2026-10-20",
+    "title": "Port Arthur’s Smallest Child: A Grave in Nagasaki",
+    "dek": "An infant born inside the besieged fortress, and his family’s history.",
+    "summary": "A stone in the Russian cemetery at Goshinji Temple, Nagasaki, bears the name of the infant Mikhail Mühlberg. Born in besieged Port Arthur on 13 November 1904 and baptised the day after surrender, he lived 52 days. Historian Dmitry Nikolayev reconstructed the family through parish registers and archives. His father, Second Lieutenant Yevgeny Mühlberg, was wounded in the defence and received the Order of St George. His grandmother worked in a hospital throughout the siege and became his godmother. The post briefly introduces and links to “Misha from Nagasaki” in Rodina.",
+    "facts": [
+      "Mikhail Mühlberg was born on 13 November 1904 and lived 52 days.",
+      "He was buried in the Russian cemetery at Goshinji Temple, Nagasaki.",
+      "D. Nikolayev’s “Misha from Nagasaki” appeared in Rodina."
+    ],
+    "type": "memory",
+    "layer": [
+      "russian",
+      "modern"
+    ],
+    "people": [
+      "myulberg",
+      "myulberg-evgenii",
+      "nikolaev-dk"
+    ],
+    "places": [
+      "port-artur",
+      "nagasaki-goshinji"
+    ],
+    "books": [
+      "nikolaev-misha-iz-nagasaki"
+    ],
+    "photos": [
+      "photos/photo_113@20-10-2026_21-45-06.jpg"
+    ],
+    "cover": "photos/photo_113@20-10-2026_21-45-06.jpg",
+    "read_min": 1,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/143",
+    "series_slug": null
+  },
+  {
+    "slug": "molodyakov-rossiya-i-frantsiya",
+    "tg_ids": [
+      142
+    ],
+    "date": "2026-10-20",
+    "title": "Russia and France: A Marriage of Convenience. Vasily Molodyakov’s Book",
+    "dek": "How the Franco-Russian alliance brought French money into Manchuria.",
+    "summary": "A review of historian and Japan specialist Vasily Molodyakov’s Russia and France: An Entente Cordiale, 1889–1900. An autocratic empire befriends a republic: Alexander III listens bareheaded to the Marseillaise at Kronstadt; France welcomes Russian sailors at Toulon. Behind the romance lies calculation: France needs an ally against Germany, Russia needs money. Kwantung’s connection is direct: French capital established the Russo-Chinese Bank in 1895, financing the Chinese Eastern Railway and through it Dalny and Port Arthur. The irony is that France remained neutral in 1904 and, during the war, signed its own entente cordiale with Britain, Japan’s ally.",
+    "facts": [
+      "French capital established the Russo-Chinese Bank in 1895.",
+      "Nicholas II laid the foundation stone of Paris’s Pont Alexandre III in 1896.",
+      "France signed the Entente cordiale with Britain in April 1904."
+    ],
+    "type": "book",
+    "layer": [
+      "pre1898",
+      "russian"
+    ],
+    "people": [
+      "molodyakov",
+      "aleksandr-iii",
+      "nikolai-ii"
+    ],
+    "places": [
+      "kvzhd",
+      "dalnii",
+      "port-artur",
+      "lyaodun"
+    ],
+    "books": [
+      "molodyakov-rossiya-i-frantsiya"
+    ],
+    "photos": [
+      "photos/photo_112@20-10-2026_12-32-50.jpg"
+    ],
+    "cover": "photos/photo_112@20-10-2026_12-32-50.jpg",
+    "read_min": 2,
+    "series": "Secrets of Friendship",
+    "tg_url": "https://t.me/portartur_dalnii/142",
+    "series_slug": "sekrety-druzhby"
+  },
+  {
+    "slug": "bokserskoe-vosstanie-ihetuani",
+    "tg_ids": [
+      138
+    ],
+    "date": "2026-10-19",
+    "title": "Fists of Righteousness and Harmony: The Boxer Rebellion",
+    "dek": "How the Boxer uprising brought Russian troops into Manchuria and closer to war with Japan.",
+    "summary": "The background begins with the Opium Wars and China’s partition, through which Russia gained Primorye, then Port Arthur and Dalny. Unemployment among carters, missionary disputes, Yellow River floods and drought added pressure. The Boxers believed bullets could not harm them and called to “Support the Qing, destroy the foreigners”. Empress Dowager Cixi declared war on the powers; the Legation Quarter endured a 55-day siege. Linevich’s Russian force was first to assault Beijing’s walls. In Manchuria, rebels attacked the railway and besieged Harbin, while in Blagoveshchensk Chinese residents were driven into the Amur. By October 1900 the Russian army occupied all Manchuria.",
+    "facts": [
+      "During the Legation Quarter siege, 222 Orthodox Chinese died and were later canonised as martyrs.",
+      "Between 3,000 and 5,000 Chinese drowned at Blagoveshchensk.",
+      "The 7 September 1901 protocol imposed 450 million taels in indemnity; Russia received about 29%."
+    ],
+    "type": "event",
+    "layer": [
+      "pre1898",
+      "russian"
+    ],
+    "people": [
+      "tsysi",
+      "li-hunchzhan",
+      "linevich",
+      "kuropatkin",
+      "vitte"
+    ],
+    "places": [
+      "pekin",
+      "manchzhuriya",
+      "harbin",
+      "blagoveshchensk",
+      "kvzhd"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_108@19-10-2026_18-32-01.jpg",
+      "photos/photo_109@19-10-2026_18-32-01.jpg",
+      "photos/photo_110@19-10-2026_18-32-01.jpg",
+      "photos/photo_111@19-10-2026_18-32-01.jpg"
+    ],
+    "cover": "photos/photo_108@19-10-2026_18-32-01.jpg",
+    "read_min": 4,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/138",
+    "series_slug": null
+  },
+  {
+    "slug": "vitte-chast-2-ministr-kotoryi-otdaval",
+    "tg_ids": [
+      137
+    ],
+    "date": "2026-10-18",
+    "title": "Count Half-Sakhalin, Part Two: The Minister Who Gave Things Away",
+    "dek": "Witte in war and revolution: retirement, Portsmouth, the October Manifesto and a French loan.",
+    "summary": "The second Witte article. He urged penetration of Manchuria by the ruble rather than the bayonet and lost to Kuropatkin, Plehve and Bezobrazov’s circle. In August 1903 he was moved to an honourable but powerless post. After Tsushima, the disgraced Witte was sent to make peace. Through public diplomacy and the press he avoided an indemnity but conceded southern Sakhalin, Korea and Kwantung. He then drafted the October Manifesto, became prime minister and secured the largest foreign loan before the First World War. The author shows his contradictory position: the empire summoned him in crises and sidelined him once they passed.",
+    "facts": [
+      "The April 1906 loan totalled 2.25 billion francs, around 843 million rubles.",
+      "In 1907 Black Hundred members placed bombs in Witte’s chimneys; they failed to explode.",
+      "Witte died on 28 February (13 March) 1915."
+    ],
+    "type": "person",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "vitte",
+      "kuropatkin",
+      "plehve",
+      "bezobrazov",
+      "nikolai-ii",
+      "ruzvelt"
+    ],
+    "places": [
+      "portsmut",
+      "dalnii",
+      "sahalin",
+      "kvantun",
+      "manchzhuriya"
+    ],
+    "books": [
+      "vitte-vospominaniya"
+    ],
+    "photos": [
+      "photos/photo_107@18-10-2026_16-42-01.jpg"
+    ],
+    "cover": "photos/photo_107@18-10-2026_16-42-01.jpg",
+    "read_min": 4,
+    "series": "Count Half-Sakhalin",
+    "tg_url": "https://t.me/portartur_dalnii/137",
+    "series_slug": "graf-polusahalinskiy"
+  },
+  {
+    "slug": "pervaya-tihookeanskaya-eskadra",
+    "tg_ids": [
+      127
+    ],
+    "date": "2026-10-17",
+    "title": "The First Pacific: A Squadron’s History",
+    "dek": "Port Arthur’s squadron, its commanders and why it died beside the quays.",
+    "summary": "Russian ships wintered at Nagasaki until Japan closed the roadstead in 1897; the search for a base brought them to Port Arthur. By summer 1903 the squadron had 66 vessels. The author lists its wartime composition and commanders: Stark, Makarov, whose command lasted only 36 days, the cautious Vitgeft, Ukhtomsky and Viren. After the failed breakout of 28 July (10 August), the fleet fought ashore: guns moved to forts and sailors to trenches. Once 203 Metre Hill fell, siege howitzers sank the ships beside the quays. Only Essen’s Sevastopol moved to White Wolf Bay and fought off destroyers.",
+    "facts": [
+      "Port Arthur received 16.9 million rubles for naval-base development in 1901–1903.",
+      "Seven squadron battleships were in the harbour at the war’s outset.",
+      "Around 650 died when Petropavlovsk sank; around 80 survived.",
+      "The Japanese raised most sunken ships and commissioned them into their fleet."
+    ],
+    "type": "event",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "stark",
+      "makarov",
+      "vitgeft",
+      "alekseev",
+      "uhtomskii",
+      "viren",
+      "essen"
+    ],
+    "places": [
+      "port-artur",
+      "nagasaki-goshinji",
+      "zheltoe-more",
+      "vysokaya-gora",
+      "chemulpo",
+      "vladivostok"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_97@17-10-2026_15-14-01.jpg",
+      "photos/photo_98@17-10-2026_15-14-01.jpg",
+      "photos/photo_99@17-10-2026_15-14-01.jpg",
+      "photos/photo_100@17-10-2026_15-14-01.jpg",
+      "photos/photo_101@17-10-2026_15-14-01.jpg",
+      "photos/photo_102@17-10-2026_15-14-01.jpg",
+      "photos/photo_103@17-10-2026_15-14-01.jpg",
+      "photos/photo_104@17-10-2026_15-14-01.jpg",
+      "photos/photo_105@17-10-2026_15-14-01.jpg",
+      "photos/photo_106@17-10-2026_15-14-01.jpg"
+    ],
+    "cover": "photos/photo_97@17-10-2026_15-14-01.jpg",
+    "read_min": 4,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/127",
+    "series_slug": null
+  },
+  {
+    "slug": "minaev-live-video-o-voine",
+    "tg_ids": [
+      126
+    ],
+    "date": "2026-10-16",
+    "title": "Video: MINAEV LIVE on the Russo-Japanese War",
+    "dek": "An hour-long popular account checked by historians.",
+    "summary": "A recommendation of MINAEV LIVE’s Russo-Japanese War episode. In an hour it covers the empire’s pre-war condition, causes, Port Arthur, Mukden, Tsushima, Portsmouth and the central question: why did Russia lose? According to the channel’s author, historians worked on it and checked the detail. The presenter, trained as a historian and archivist, tells the story with feeling and holds attention. Recommended for anyone wanting to understand the war in one evening. One caveat: there is plenty of advertising.",
+    "facts": [
+      "The episode lasts around an hour.",
+      "The presenter trained as a historian and archivist."
+    ],
+    "type": "source",
+    "layer": [
+      "modern"
+    ],
+    "people": [
+      "minaev"
+    ],
+    "places": [
+      "port-artur",
+      "mukden",
+      "tsusima",
+      "portsmut"
+    ],
+    "books": [],
+    "photos": [],
+    "cover": null,
+    "read_min": 1,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/126",
+    "series_slug": null
+  },
+  {
+    "slug": "li-hunchzhan-soyuznik-kotoryi-sdaval-kreposti",
+    "tg_ids": [
+      124
+    ],
+    "date": "2026-10-16",
+    "title": "Li Hongzhang: The Ally Who Gave Up Fortresses",
+    "dek": "The Qing statesman who built Port Arthur and twice surrendered it.",
+    "summary": "A biography of Russia’s principal Chinese partner. Li Hongzhang rose during the Taiping war, governed Zhili for almost a quarter-century and built the Beiyang Fleet, based at Lüshunkou. In 1894–1895, Japan captured that fortress in a day. At Shimonoseki an extremist shot Li in the face, prompting an embarrassed Japan to reduce the indemnity. Li turned to Russia: in Moscow in 1896 he signed an alliance and agreed to the Chinese Eastern Railway, receiving 3 million rubles, then signed the Kwantung lease in 1898. After the Boxer Rebellion he negotiated the final protocol and died in November 1901 without signing the Manchurian agreement.",
+    "facts": [
+      "After the Shimonoseki shooting, the indemnity fell from 300 to 200 million taels.",
+      "Li received 500,000 rubles for signing the Kwantung lease in 1898.",
+      "The Boxer Protocol of 1901 imposed a 450 million tael indemnity."
+    ],
+    "type": "person",
+    "layer": [
+      "pre1898",
+      "russian"
+    ],
+    "people": [
+      "li-hunchzhan",
+      "vitte",
+      "tsysi",
+      "nikolai-ii"
+    ],
+    "places": [
+      "port-artur",
+      "kvantun",
+      "kvzhd",
+      "manchzhuriya"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_95@16-10-2026_17-12-01.jpg",
+      "photos/photo_96@16-10-2026_17-12-01.jpg"
+    ],
+    "cover": "photos/photo_95@16-10-2026_17-12-01.jpg",
+    "read_min": 4,
+    "series": "The Architects of Far Eastern Policy",
+    "tg_url": "https://t.me/portartur_dalnii/124",
+    "series_slug": "arhitektory-dalnevostochnoy-politiki"
+  },
+  {
+    "slug": "aleksandr-stepanov-hrabrets-s-drugoi-voiny",
+    "tg_ids": [
+      123
+    ],
+    "date": "2026-10-15",
+    "title": "Alexander Stepanov: A Brave Man from Another War",
+    "dek": "Port Arthur’s author was never inside the siege, but fought in the First World War and at Kronstadt.",
+    "summary": "Continuing the discussion of Port Arthur, this time through its author. Stepanov spent his life claiming to have survived the siege as a boy at his father’s battery. In 2010 historians Nikolayev and Chistyakov established that neither had been in the fortress. The post then follows his real life. An artilleryman’s son, he went to the front in 1914 as a Guards artillery officer and in three years earned almost every combat decoration, including the St George Sword. During the 1921 Kronstadt assault he fell through the ice. In Krasnodar he kept his past quiet and wrote of another war, reconstructing it from veterans’ memoirs and letters.",
+    "facts": [
+      "Stepanov was born in Odessa in 1892.",
+      "He received the St George Sword for fighting near Rudka-Skruda in February 1915.",
+      "The novel ran to 17 editions and won the Stalin Prize, First Class, in 1946."
+    ],
+    "type": "person",
+    "layer": [
+      "soviet"
+    ],
+    "people": [
+      "stepanov",
+      "nikolaev-dk"
+    ],
+    "places": [
+      "port-artur"
+    ],
+    "books": [
+      "stepanov-port-artur",
+      "stepanov-semya-zvonaryovyh",
+      "nikolaev-chistyakov-port-artur-arhivnyy-poisk"
+    ],
+    "photos": [
+      "photos/photo_94@15-10-2026_21-46-01.jpg"
+    ],
+    "cover": "photos/photo_94@15-10-2026_21-46-01.jpg",
+    "read_min": 3,
+    "series": "Stepanov and His Port Arthur",
+    "tg_url": "https://t.me/portartur_dalnii/123",
+    "series_slug": "stepanov-i-ego-port-artur"
+  },
+  {
+    "slug": "skolko-eto-v-nyneshnih-dengah",
+    "tg_ids": [
+      122
+    ],
+    "date": "2026-10-15",
+    "title": "What Is That Worth Today? Converting the Tsarist Ruble",
+    "dek": "Four ways to express Witte-era sums in modern rubles, with results differing thirteenfold.",
+    "summary": "An answer to a frequent reader question. No single conversion rate exists: hyperinflation and several reforms separate us from 1913, while relative prices have changed. The author uses four measures: bread, about 1,750 modern rubles to one old ruble; wages, about 5,000; gold, about 9,400; and a share of the budget, about 23,700. Thus Li Hongzhang’s 3 million rubles become 5–71 billion, and the 110 million Kwantung project becomes 0.2–2.6 trillion. Salaries in 1913 are listed separately, from caretaker to professor. A professor earned roughly as much as twenty caretakers.",
+    "facts": [
+      "Witte’s ruble contained 0.774 grams of pure gold.",
+      "Treasury revenue in 1900 was 1.7 billion rubles.",
+      "Around 1913 a caretaker earned 18 rubles monthly; a Moscow University professor, 350."
+    ],
+    "type": "explainer",
+    "layer": [
+      "russian",
+      "modern"
+    ],
+    "people": [
+      "vitte",
+      "li-hunchzhan"
+    ],
+    "places": [
+      "dalnii",
+      "port-artur",
+      "kvantun"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_93@15-10-2026_13-05-08.jpg"
+    ],
+    "cover": "photos/photo_93@15-10-2026_13-05-08.jpg",
+    "read_min": 4,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/122",
+    "series_slug": null
+  },
+  {
+    "slug": "poselyagin-praporshchiki-po-admiralteistvu",
+    "tg_ids": [
+      120
+    ],
+    "date": "2026-10-14",
+    "title": "Ensigns of the Admiralty: Alternative History without History",
+    "dek": "A review of Vladimir Poselyagin’s first Twins novel, set in Port Arthur.",
+    "summary": "A review of the opening volume of Vladimir Poselyagin’s Twins trilogy. A modern person’s mind enters twins who become universal soldiers before graduating from naval school. In Britain they kill bankers to deprive Japan of loans; at Port Arthur they sink destroyers by the dozen and receive Makarov’s handshake. As the genre demands, Stessel betrays the fortress for Japanese money. The channel examines clichés, heroes without obstacles, antisemitic motifs and the voice of a “tired man over forty”. The verdict: reread war histories instead; their plots are stronger. By then Poselyagin had already published 182 books.",
+    "facts": [
+      "The novel opens The Twins trilogy.",
+      "In the novel, Makarov dies at traitors’ hands rather than aboard Petropavlovsk."
+    ],
+    "type": "book",
+    "layer": [
+      "russian",
+      "modern"
+    ],
+    "people": [
+      "poselyagin",
+      "makarov",
+      "stessel",
+      "fok",
+      "stark"
+    ],
+    "places": [
+      "port-artur"
+    ],
+    "books": [
+      "poselyagin-praporshchiki-po-admiralteystvu"
+    ],
+    "photos": [
+      "photos/photo_92@14-10-2026_21-20-10.jpg"
+    ],
+    "cover": "photos/photo_92@14-10-2026_21-20-10.jpg",
+    "read_min": 3,
+    "series": "Poselyagin’s Twins",
+    "tg_url": "https://t.me/portartur_dalnii/120",
+    "series_slug": "bliznetsy-poselyagina"
+  },
+  {
+    "slug": "vitte-chast-1-ministr-kotoryi-stroil",
+    "tg_ids": [
+      115
+    ],
+    "date": "2026-10-14",
+    "title": "Count Half-Sakhalin, Part One: The Minister Who Built",
+    "dek": "Sergei Witte’s rise from railway accounts to the Finance Ministry and the Chinese Eastern Railway.",
+    "summary": "The opening Witte article. Born in Tiflis in 1849 and a cousin of Helena Blavatsky, he entered railway work because his family considered an academic chair unsuitable for a nobleman. A disaster he predicted made his career: the imperial train derailed at Borki in 1888. As finance minister he introduced a spirits monopoly and the gold standard and began the Trans-Siberian. In 1896 he negotiated with Li Hongzhang for the Chinese Eastern Railway concession; historian Romanov found the promised 3 million rubles in the archives. Witte opposed taking Port Arthur, but after losing the argument implemented the decision and founded Dalny.",
+    "facts": [
+      "Sentenced to four months’ detention after the 1875 Tiligul disaster, Witte served two weeks.",
+      "On becoming Railway Department director in 1889, he lost salary; the tsar paid the difference.",
+      "Under the 1897 gold standard, an imperial coin marked “10 rubles” became worth 15."
+    ],
+    "type": "person",
+    "layer": [
+      "pre1898",
+      "russian"
+    ],
+    "people": [
+      "vitte",
+      "aleksandr-iii",
+      "nikolai-ii",
+      "li-hunchzhan"
+    ],
+    "places": [
+      "kvzhd",
+      "port-artur",
+      "dalnii"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_87@14-10-2026_11-14-01.jpg",
+      "photos/photo_88@14-10-2026_11-14-01.jpg",
+      "photos/photo_89@14-10-2026_11-14-01.jpg",
+      "photos/photo_90@14-10-2026_11-14-01.jpg",
+      "photos/photo_91@14-10-2026_11-14-01.jpg"
+    ],
+    "cover": "photos/photo_87@14-10-2026_11-14-01.jpg",
+    "read_min": 4,
+    "series": "Count Half-Sakhalin",
+    "tg_url": "https://t.me/portartur_dalnii/115",
+    "series_slug": "graf-polusahalinskiy"
+  },
+  {
+    "slug": "port-artur-i-dalnii-dva-goroda",
+    "tg_ids": [
+      114
+    ],
+    "date": "2026-10-13",
+    "title": "Port Arthur and Dalny: Two Cities, One Project",
+    "dek": "A fortress and a commercial port in Kwantung: their purpose, leaders and outcome.",
+    "summary": "A concluding account of Kwantung’s two Russian cities. Port Arthur became a naval base because Vladivostok froze in winter; by 1903 its squadron had 66 vessels. Dalny was conceived as the Trans-Siberian terminus and a free port, ranking second in China for cargo within three years of its foundation. The author lists leaders from Dubasov and Subotich to Alekseyev, Sakharov, Skolimowski and Witte, and the wartime commanders. The cities’ later history follows: Japanese Ryojun and Dairen, Soviet troops’ return in 1945 and transfer to China. Both now belong to Dalian, with almost seven million inhabitants.",
+    "facts": [
+      "Both cities spent less than seven years under the Russian flag.",
+      "Port Arthur became the Far Eastern viceroyalty’s capital in summer 1903.",
+      "Dalny passed to China in 1950; Port Arthur in 1955."
+    ],
+    "type": "place",
+    "layer": [
+      "russian",
+      "japanese",
+      "soviet",
+      "modern"
+    ],
+    "people": [
+      "dubasov",
+      "subotich",
+      "alekseev",
+      "saharov",
+      "skolimovsky",
+      "vitte",
+      "stessel",
+      "kondratenko",
+      "makarov"
+    ],
+    "places": [
+      "port-artur",
+      "dalnii",
+      "kvantun"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_86@13-10-2026_11-02-05.jpg"
+    ],
+    "cover": "photos/photo_86@13-10-2026_11-02-05.jpg",
+    "read_min": 4,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/114",
+    "series_slug": null
+  },
+  {
+    "slug": "kvantun-proishozhdenie-nazvaniya",
+    "tg_ids": [
+      111
+    ],
+    "date": "2026-10-13",
+    "title": "Kwantung: A Peninsula Named for a Distant Pass",
+    "dek": "Where “Kwantung” came from, and how Dalian can belong to five regions at once.",
+    "summary": "The peninsula’s names explained. Kwantung is a Russian rendering of 关东, “east of the pass”: Shanhaiguan, where the Great Wall meets the sea. In China the term referred to all Manchuria; the name of a vast region narrowed to Liaodong’s tip through Russia’s 1898 lease. The Japanese read the same characters as Kantō-shū, hence the Kwantung Army, adding shū to distinguish it from the Kantō region around Tokyo. Korea also has its own “east of the pass”. English Kwantung is easily confused with Guangdong province. Chinese usage called the former leased territory Lüda, combining the first syllables of Lüshun and Dalian.",
+    "facts": [
+      "Russia leased Kwantung on 15 (27) March 1898; the territory covered around 3,200 sq km.",
+      "The Kwantung Army grew out of the Japanese garrison in 1919.",
+      "The Twenty-One Demands extended the lease to 99 years in 1915.",
+      "The city was called Lüda from 1950 to 1981."
+    ],
+    "type": "explainer",
+    "layer": [
+      "pre1898",
+      "russian",
+      "japanese",
+      "modern"
+    ],
+    "people": [
+      "alekseev"
+    ],
+    "places": [
+      "kvantun",
+      "lyaodun",
+      "shanhaiguan",
+      "port-artur",
+      "dalnii",
+      "tszinchzhou"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_83@13-10-2026_10-34-49.jpg",
+      "photos/photo_84@13-10-2026_10-34-49.jpg",
+      "photos/photo_85@13-10-2026_10-34-49.jpg"
+    ],
+    "cover": "photos/photo_83@13-10-2026_10-34-49.jpg",
+    "read_min": 3,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/111",
+    "series_slug": null
+  },
+  {
+    "slug": "kotvich-borodovskii-lyaodun-i-ego-porty",
+    "tg_ids": [
+      109
+    ],
+    "date": "2026-10-12",
+    "title": "Dalian before Dalny: An 1898 Booklet on Liaodong",
+    "dek": "How Kotwicz and Borodovsky described the bay a year before the city’s foundation.",
+    "summary": "In summer 1898, five months after the lease, the 47-page Liaodong and Its Ports: Port Arthur and Dalianwan appeared in St Petersburg. Orientalists Władysław Kotwicz and Leonid Borodovsky wrote for a Russian public receiving error-filled newspaper accounts of its new possessions. The channel quotes details: Port Arthur in the 1870s as 60–80 houses; Dalianwan with ruined forts and one pier; living costs a third of Vladivostok’s but no entertainment. The authors insisted on “Guan-dong” instead of “Kwantung” and predicted a northern Chinese Shanghai. Available in the National Electronic Library.",
+    "facts": [
+      "The booklet appeared in summer 1898, with 47 pages.",
+      "Japan captured Chinese Port Arthur in a single day in 1894.",
+      "The authors predicted Dalianwan would serve northern China as Shanghai served central China."
+    ],
+    "type": "book",
+    "layer": [
+      "pre1898",
+      "russian"
+    ],
+    "people": [
+      "kotvich",
+      "borodovskii"
+    ],
+    "places": [
+      "lyaodun",
+      "port-artur",
+      "dalnii",
+      "kvantun"
+    ],
+    "books": [
+      "kotvich-borodovskiy-lyao-dun-i-ego-porty"
+    ],
+    "photos": [
+      "photos/photo_81@12-10-2026_17-06-01.jpg",
+      "photos/photo_82@12-10-2026_17-06-01.jpg"
+    ],
+    "cover": "photos/photo_82@12-10-2026_17-06-01.jpg",
+    "read_min": 2,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/109",
+    "series_slug": null
+  },
+  {
+    "slug": "arhivy-russko-yaponskoi-voiny",
+    "tg_ids": [
+      102
+    ],
+    "date": "2026-10-12",
+    "title": "Where the Russo-Japanese War Is Kept: A Guide to the Archives",
+    "dek": "Russian and Japanese document collections, and what can be read online.",
+    "summary": "A practical archive survey. Most land-war records are in the Russian State Military Historical Archive, Collection 487, “The Russo-Japanese War, 1904–1905”, nearly 1,500 files. It also holds Kuropatkin’s papers and the diary he deposited in 1915. Naval records are in the Russian State Naval Archive; rear-area material in the Russian State Historical Archive of the Far East, where an anonymous 1904 letter demanded the expulsion of around sixty Japanese from Khabarovsk. Japan’s principal resource is JACAR, digitising three institutions’ records, including Nichiro Sen’eki operational reports. Many participants’ personal papers remain with descendants.",
+    "facts": [
+      "Collection 487 contains almost 1,500 files.",
+      "The Military Historical Commission to describe the war was established in September 1906.",
+      "Kuropatkin’s 1904–1906 diary appeared in Krasny Arkhiv from 1922 to 1935.",
+      "Japan published an online centenary exhibition in 2004."
+    ],
+    "type": "source",
+    "layer": [
+      "russian",
+      "modern"
+    ],
+    "people": [
+      "kuropatkin"
+    ],
+    "places": [
+      "port-artur"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_74@12-10-2026_10-25-10.jpg",
+      "photos/photo_75@12-10-2026_10-25-10.jpg",
+      "photos/photo_76@12-10-2026_10-25-10.jpg",
+      "photos/photo_77@12-10-2026_10-25-10.jpg",
+      "photos/photo_78@12-10-2026_10-25-10.jpg",
+      "photos/photo_79@12-10-2026_10-25-10.jpg",
+      "photos/photo_80@12-10-2026_10-25-10.jpg"
+    ],
+    "cover": "photos/photo_80@12-10-2026_10-25-10.jpg",
+    "read_min": 3,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/102",
+    "series_slug": null
+  },
+  {
+    "slug": "dalnii-gorod-s-nulya",
+    "tg_ids": [
+      93
+    ],
+    "date": "2026-10-11",
+    "title": "Dalny: A City from Scratch",
+    "dek": "How fishing villages became a port second only to Shanghai in China within four years.",
+    "summary": "The building of Dalny. This was no improvisation: a Special Conference examined general plans, and a 138-article statute governed the territory. The Chinese Eastern Railway Company built the city under Witte. Engineer Vladimir Sakharov designed the port and became city governor. Kazimierz Skolimowski planned the city around circular Nikolayevskaya Square, now Zhongshan Square, and ten radiating avenues. Manchuria’s first power station, water mains and telephones followed. The author calculates costs and traces Japanese Dairen, the Soviet landing in 1945 and transfer to China in 1950. The layout survived every change of government.",
+    "facts": [
+      "Nikolayevskaya Square measured 213 metres across.",
+      "City and port cost over 30 million gold rubles in 1901–1903.",
+      "Sakharov volunteered for Port Arthur and died there of typhus in October 1904.",
+      "Soviet airborne detachments landed in Port Arthur and Dalny on 22 August 1945."
+    ],
+    "type": "place",
+    "layer": [
+      "russian",
+      "japanese",
+      "soviet",
+      "modern"
+    ],
+    "people": [
+      "vitte",
+      "saharov",
+      "skolimovsky",
+      "stalin"
+    ],
+    "places": [
+      "dalnii",
+      "kvantun",
+      "port-artur",
+      "nikolaevskaya-ploshchad",
+      "kvzhd"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_65@11-10-2026_14-03-01.jpg",
+      "photos/photo_66@11-10-2026_14-03-01.jpg",
+      "photos/photo_67@11-10-2026_14-03-01.jpg",
+      "photos/photo_68@11-10-2026_14-03-01.jpg",
+      "photos/photo_69@11-10-2026_14-03-01.jpg",
+      "photos/photo_70@11-10-2026_14-03-01.jpg",
+      "photos/photo_71@11-10-2026_14-03-01.jpg",
+      "photos/photo_72@11-10-2026_14-03-01.jpg",
+      "photos/photo_73@11-10-2026_14-03-01.jpg"
+    ],
+    "cover": "photos/photo_70@11-10-2026_14-03-01.jpg",
+    "read_min": 4,
+    "series": "Dalny: Plans and Architects",
+    "tg_url": "https://t.me/portartur_dalnii/93",
+    "series_slug": "dalniy-plan-i-arhitektory"
+  },
+  {
+    "slug": "neolurk-russko-yaponskaya-voina",
+    "tg_ids": [
+      92
+    ],
+    "date": "2026-10-11",
+    "title": "The Internet Tells the War: Neolurk’s Article",
+    "dek": "The uses and dangers of the bluntest popular account of the Russo-Japanese War.",
+    "summary": "A qualified recommendation of Neolurk’s “Russo-Japanese War”. Its structure rivals a textbook: background, night attack, Varyag, Jinzhou, the siege, Liaoyang, Mukden, Rozhestvensky’s voyage, Tsushima, Portsmouth and even electronic warfare. The vocabulary differs. Read in one sitting, it is more memorable than notes, with a separate section for Rozhestvensky’s justifications. The author names its shortcomings: entertainment rather than a source, adventurous figures, swearing and crude jokes, adults only. Read it as historical stand-up, then pick up Martin. The illustration is a patriotic popular print from the war’s beginning.",
+    "facts": [
+      "The article has a separate section on radio and electronic warfare.",
+      "The illustration is poster No. 15 of the Russian Printing and Publishing Association."
+    ],
+    "type": "source",
+    "layer": [
+      "russian",
+      "modern"
+    ],
+    "people": [
+      "kuropatkin",
+      "stessel",
+      "rozhestvenskii"
+    ],
+    "places": [
+      "port-artur",
+      "tsusima"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_64@11-10-2026_09-18-01.jpg"
+    ],
+    "cover": "photos/photo_64@11-10-2026_09-18-01.jpg",
+    "read_min": 2,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/92",
+    "series_slug": null
+  },
+  {
+    "slug": "otkuda-nazvanie-port-artur",
+    "tg_ids": [
+      91
+    ],
+    "date": "2026-10-10",
+    "title": "Who Was the Arthur in Port Arthur?",
+    "dek": "How a British lieutenant gave his name to a city fought over by three empires.",
+    "summary": "The town had a Chinese name long before Europeans arrived. Tradition says a Ming commander named it Lüshunkou, “bay of smooth sailing”, in 1371. Its English name appeared during the Second Opium War. In 1858 Lieutenant William Arthur commanded HMS Algerine, sheltered his damaged gunboat in the fishing harbour and charted the area. He did not name it himself: John Ward, captain of HMS Actaeon, did so in August 1860. Russia adopted and retained the English name after the lease of 1898, although Nicholas II gave the neighbouring port a Russian name. The claim that it honoured Queen Victoria’s son Prince Arthur is not supported by documents.",
+    "facts": [
+      "Lüshunkou (旅顺口) means “bay of smooth sailing”.",
+      "John Ward, captain of HMS Actaeon, named the harbour in August 1860.",
+      "William Arthur died in 1886, eighteen years before the siege."
+    ],
+    "type": "explainer",
+    "layer": [
+      "pre1898"
+    ],
+    "people": [
+      "artur",
+      "nikolai-ii"
+    ],
+    "places": [
+      "port-artur"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_63@10-10-2026_21-53-29.jpg"
+    ],
+    "cover": "photos/photo_63@10-10-2026_21-53-29.jpg",
+    "read_min": 2,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/91",
+    "series_slug": null
+  },
+  {
+    "slug": "martin-russko-yaponskaya-voina-kniga",
+    "tg_ids": [
+      89
+    ],
+    "date": "2026-10-10",
+    "title": "Start Here: Christopher Martin’s Russo-Japanese War, 1904–1905",
+    "dek": "A British overview from the 1960s as a first book on the war.",
+    "summary": "Advice for newcomers: if you have read nothing on the Russo-Japanese War, begin with Christopher Martin. The channel’s author did so herself while preparing excursions for friends. Its strengths are an outside perspective, without favouring either army, and an ability to avoid drowning in detail. Martin follows the main events and shows how the war shaped the Far East until 1945. Age is its weakness: it draws on what a Western historian could access in the 1960s, and some judgments have since been revised. A suitable first book, offering a chronology for further reading and walks around Lüshun.",
+    "facts": [
+      "The book was written over half a century ago, in the 1960s.",
+      "Martin follows the consequences of the war to 1945."
+    ],
+    "type": "book",
+    "layer": [
+      "russian",
+      "modern"
+    ],
+    "people": [
+      "martin-kristofer"
+    ],
+    "places": [
+      "port-artur"
+    ],
+    "books": [
+      "martin-russko-yaponskaya-voyna"
+    ],
+    "photos": [
+      "photos/photo_62@10-10-2026_14-02-46.jpg"
+    ],
+    "cover": "photos/photo_62@10-10-2026_14-02-46.jpg",
+    "read_min": 2,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/89",
+    "series_slug": null
+  },
+  {
+    "slug": "admiral-alekseev-namestnik",
+    "tg_ids": [
+      84
+    ],
+    "date": "2026-10-09",
+    "title": "Admiral Alekseyev: A Viceroy Known through His Enemy’s Words",
+    "dek": "Kwantung’s first chief administrator, and the question of how far to trust Witte.",
+    "summary": "The opening of a series on the architects of Far Eastern policy. Yevgeny Alekseyev, rumoured to be Alexander II’s illegitimate son, rose in the navy under Admiral-General Alexei Alexandrovich’s patronage. He governed Kwantung from 1899, directed troops against the Boxers in 1900 and became Far Eastern viceroy in August 1903. Witte, his direct rival who lost the struggle for the region, supplied the best-known judgments of him. The author treats those as testimony from an interested party and cites modern historians: the viceroy belonged to a system with several centres of decision, rather than being the war’s principal culprit.",
+    "facts": [
+      "Alekseyev was born in 1843.",
+      "He lost supreme command after the Shahe in October 1904; the viceroyalty was abolished in 1905.",
+      "He died in Yalta on 27 May (9 June) 1917."
+    ],
+    "type": "person",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "alekseev",
+      "vitte",
+      "nikolai-ii",
+      "bezobrazov"
+    ],
+    "places": [
+      "port-artur",
+      "kvantun",
+      "manchzhuriya"
+    ],
+    "books": [
+      "vitte-vospominaniya"
+    ],
+    "photos": [
+      "photos/photo_59@09-10-2026_12-01-23.jpg",
+      "photos/photo_60@09-10-2026_12-01-23.jpg",
+      "photos/photo_61@09-10-2026_12-01-23.jpg",
+      "photos/photo_339@archive.jpg"
+    ],
+    "cover": "photos/photo_59@09-10-2026_12-01-23.jpg",
+    "read_min": 4,
+    "series": "The Architects of Far Eastern Policy",
+    "tg_url": "https://t.me/portartur_dalnii/84",
+    "series_slug": "arhitektory-dalnevostochnoy-politiki"
+  },
+  {
+    "slug": "port-arturka-peterburgskaya-shutka",
+    "tg_ids": [
+      83
+    ],
+    "date": "2026-10-09",
+    "title": "“Port Arthur”: The Flat That Would Not Surrender",
+    "dek": "A St Petersburg expression born of the siege.",
+    "summary": "A short note on urban folklore. Before 1917, St Petersburg landlords called a flat that remained empty for months a “Port Arthur”. The joke depends on the Russian verb sdavat, which means both to let a flat and surrender a fortress. The author counts the days behind the comparison. Port Arthur’s land defence began after the battle of Jinzhou on 13 (26) May 1904 and ended with surrender on 20 December 1904 (2 January 1905): 221 days. A flat without a tenant for six months had earned its fortress title.",
+    "facts": [
+      "The expression circulated in St Petersburg before 1917.",
+      "Port Arthur’s land defence lasted 221 days."
+    ],
+    "type": "culture",
+    "layer": [
+      "russian"
+    ],
+    "people": [],
+    "places": [
+      "port-artur",
+      "tszinchzhou"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_195@03-11-2026_22-32-58.jpg"
+    ],
+    "cover": "photos/photo_195@03-11-2026_22-32-58.jpg",
+    "read_min": 1,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/83",
+    "series_slug": null
+  },
+  {
+    "slug": "tolstoi-odumaites-1904",
+    "tg_ids": [
+      79
+    ],
+    "date": "2026-10-08",
+    "title": "Bethink Yourselves! The Tolstoy Essay Russia Would Not Print",
+    "dek": "How the 75-year-old writer answered the patriotic fervour of 1904.",
+    "summary": "As patriotic enthusiasm swept the country in early 1904, Leo Tolstoy, himself a veteran of Sevastopol, wrote against the war. The post follows his arguments: peasants carried ten thousand versts to die, priests blessing weapons, and those stirring enthusiasm staying safely behind. At the essay’s centre is “what else can you do?”, the weary submission of someone going to war. Russian papers rejected the text and Chertkov sent it to England. Its warmest response came from Japan. Meanwhile Tolstoy’s son Andrei volunteered for the war. The post links to the full essay.",
+    "facts": [
+      "The Times in London published it on 27 June (9 July) 1904.",
+      "Moskovskiye Vedomosti replied with “The Maniac of Yasnaya Polyana”.",
+      "Japan’s Heimin Shimbun translated it in August 1904."
+    ],
+    "type": "culture",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "tolstoy",
+      "chertkov",
+      "nikolai-ii"
+    ],
+    "places": [
+      "port-artur"
+    ],
+    "books": [
+      "tolstoy-odumaytes"
+    ],
+    "photos": [
+      "photos/photo_56@08-10-2026_15-57-52.jpg",
+      "photos/photo_57@08-10-2026_15-57-52.jpg",
+      "photos/photo_58@08-10-2026_15-57-52.jpg"
+    ],
+    "cover": "photos/photo_56@08-10-2026_15-57-52.jpg",
+    "read_min": 3,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/79",
+    "series_slug": null
+  },
+  {
+    "slug": "otsu-1891-pokushenie-na-tsesarevicha",
+    "tg_ids": [
+      74
+    ],
+    "date": "2026-10-07",
+    "title": "Ōtsu, 1891: A Sabre Attack on the Heir",
+    "dek": "Tsarevich Nicholas’s Eastern journey and an attack remembered in both countries.",
+    "summary": "In autumn 1890, Tsarevich Nicholas set out through Egypt, India, Siam and China to inaugurate Trans-Siberian construction at Vladivostok. In Nagasaki he acquired a dragon tattoo. At Ōtsu on 11 May 1891, policeman Tsuda Sanzō struck his head twice with a sabre; his bowler hat softened the blow. Japan was shaken: Emperor Meiji escorted the guest to his ship and ministers resigned. The Supreme Court president refused to apply the law on attacks against the imperial family to Tsuda; the trial is seen as a starting point for judicial independence in Japan. Nicholas wrote that he bore the Japanese no ill will, but Witte later linked his attitude to Japan with Ōtsu.",
+    "facts": [
+      "The wound above his right ear measured about 9 cm.",
+      "Russia granted lifetime pensions to the rickshaw men who saved him.",
+      "Nicholas laid the Ussuri Railway’s foundation stone in Vladivostok on 23 May 1891.",
+      "The heir travelled 51,000 versts on the journey."
+    ],
+    "type": "event",
+    "layer": [
+      "pre1898"
+    ],
+    "people": [
+      "nikolai-ii",
+      "tsuda-sandzo",
+      "meidzi",
+      "aleksandr-iii",
+      "vitte",
+      "georg-grecheskii"
+    ],
+    "places": [
+      "otsu",
+      "nagasaki-goshinji",
+      "vladivostok"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_51@07-10-2026_12-42-36.jpg",
+      "photos/photo_52@07-10-2026_12-42-36.jpg",
+      "photos/photo_53@07-10-2026_12-42-36.jpg",
+      "photos/photo_54@07-10-2026_12-42-36.jpg",
+      "photos/photo_55@07-10-2026_12-42-36.jpg"
+    ],
+    "cover": "photos/photo_54@07-10-2026_12-42-36.jpg",
+    "read_min": 4,
+    "series": "Nicholas II and Japan",
+    "tg_url": "https://t.me/portartur_dalnii/74",
+    "series_slug": "nikolay-ii-i-yaponiya"
+  },
+  {
+    "slug": "nikolai-ii-i-russko-yaponskaya-voina",
+    "tg_ids": [
+      68
+    ],
+    "date": "2026-10-07",
+    "title": "Nicholas II: He Wanted No War, Yet Led Russia towards It",
+    "dek": "The emperor’s part in decisions that made war with Japan almost inevitable.",
+    "summary": "Japan formally began the war, but the preceding decade’s key decisions were made in St Petersburg, often by the emperor personally. The author sketches Nicholas II’s character: courtesy, fatalism, dislike of strong ministers and firmness on one point, preserving autocracy. The Far East was his personal project, from the Trans-Siberian to the Port Arthur lease. In 1903 he effectively excluded ministers from Far Eastern policy, backed Bezobrazov and established the viceroyalty. He wanted no war and believed to the end that Japan would not dare. The article compares Witte and Kokovtsov, the Soviet interpretation and modern historians Lukoyanov and Firsov.",
+    "facts": [
+      "Nicholas II was born on 6 (18) May 1868 and became emperor at twenty-six.",
+      "After the war Russia secretly divided Manchuria with Japan, roughly as Tokyo had proposed in 1903.",
+      "Historians suggest the tsar was ready for concessions by late 1903, but Tokyo had already decided."
+    ],
+    "type": "person",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "nikolai-ii",
+      "aleksandr-iii",
+      "bezobrazov",
+      "alekseev",
+      "vitte",
+      "plehve",
+      "kokovtsov"
+    ],
+    "places": [
+      "port-artur",
+      "manchzhuriya",
+      "koreya"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_45@07-10-2026_10-12-42.jpg",
+      "photos/photo_46@07-10-2026_10-12-42.jpg",
+      "photos/photo_47@07-10-2026_10-12-42.jpg",
+      "photos/photo_48@07-10-2026_10-12-42.jpg",
+      "photos/photo_49@07-10-2026_10-12-42.jpg",
+      "photos/photo_50@07-10-2026_10-12-42.jpg"
+    ],
+    "cover": "photos/photo_48@07-10-2026_10-12-42.jpg",
+    "read_min": 4,
+    "series": "Nicholas II and Japan",
+    "tg_url": "https://t.me/portartur_dalnii/68",
+    "series_slug": "nikolay-ii-i-yaponiya"
+  },
+  {
+    "slug": "vals-na-sopkah-manchzhurii-shatrov",
+    "tg_ids": [
+      64,
+      67
+    ],
+    "date": "2026-10-06",
+    "title": "On the Hills of Manchuria: Bandmaster Shatrov’s Waltz",
+    "dek": "Music written for the Mokshan Regiment’s dead at Mukden.",
+    "summary": "Ilya Shatrov led the 214th Mokshan Infantry Regiment’s band. Surrounded near Mukden in February 1905, the regiment received Colonel Pobyvanets’s order to bring forward the colours and band. Musicians played a march under fire on the parapet as the regiment broke out with bayonets. Seven hundred of four thousand men escaped; seven of sixty-one musicians survived. A year later at Zlatoust, Shatrov composed a memorial waltz. Its first Samara performance in 1908 was coolly received, but the score was then reprinted dozens of times. A second post follows its lyrics, first written by Skitalets, gramophone recordings, emigrant life and present status as a classic.",
+    "facts": [
+      "The score was reprinted 82 times in three years.",
+      "Skitalets, Stepan Petrov, wrote the first lyrics around 1906.",
+      "Shatrov died on 2 May 1952, two weeks after promotion to Guards major."
+    ],
+    "type": "culture",
+    "layer": [
+      "russian",
+      "soviet"
+    ],
+    "people": [
+      "shatrov",
+      "skitalets"
+    ],
+    "places": [
+      "mukden",
+      "manchzhuriya"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_42@06-10-2026_21-12-08.jpg",
+      "photos/photo_43@06-10-2026_21-12-08.jpg",
+      "photos/photo_44@06-10-2026_21-12-09.jpg"
+    ],
+    "cover": "photos/photo_44@06-10-2026_21-12-09.jpg",
+    "read_min": 4,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/64",
+    "series_slug": null
+  },
+  {
+    "slug": "port-artur-poslednyaya-zamorskaya-koloniya",
+    "tg_ids": [
+      50
+    ],
+    "date": "2026-10-06",
+    "title": "Port Arthur: The Empire’s Last Overseas Colony",
+    "dek": "From the flag on Golden Hill to surrender: Russian Port Arthur in numbers.",
+    "summary": "An overview of Russian Port Arthur. On 16 (28) March 1898, Grand Duke Kirill Vladimirovich raised the flag on Golden Hill, and Russia gained an ice-free port without a shot. The author describes Kwantung’s geography, suitable for a fortress but cramped for commerce, prompting a separate commercial port at Dalian Bay. By 1903 the town held 18,000 Russian subjects and 23,500 Chinese residents. The fortress fared worse: only 4.25 million of Velichko’s 15 million ruble budget was provided before war, and by January 1904 one of six land-front forts was complete. The siege, casualties and surrender terms follow.",
+    "facts": [
+      "The leased territory covered about 3,200 sq km, with roughly 250,000 inhabitants.",
+      "The Kwantung venture cost at least 110 million rubles, around 6% of average annual state expenditure.",
+      "At the siege’s start the garrison had about 50,500 men and 646 guns.",
+      "Some 23,000–25,000 became prisoners, almost half Russia’s prisoners in that war."
+    ],
+    "type": "place",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "kirill-vladimirovich",
+      "li-hunchzhan",
+      "alekseev",
+      "velichko",
+      "vitte",
+      "stessel",
+      "smirnov",
+      "kondratenko",
+      "makarov",
+      "nogi"
+    ],
+    "places": [
+      "port-artur",
+      "zolotaya-gora",
+      "kvantun",
+      "tszinchzhou",
+      "dalnii",
+      "vysokaya-gora",
+      "fort-2"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_32@06-10-2026_17-18-17.jpg",
+      "photos/photo_33@06-10-2026_17-18-17.jpg",
+      "photos/photo_34@06-10-2026_17-18-17.jpg",
+      "photos/photo_35@06-10-2026_17-18-17.jpg",
+      "photos/photo_36@06-10-2026_17-18-17.jpg",
+      "photos/photo_37@06-10-2026_17-18-17.jpg",
+      "photos/photo_38@06-10-2026_17-18-17.jpg",
+      "photos/photo_39@06-10-2026_17-18-18.jpg",
+      "photos/photo_40@06-10-2026_17-18-18.jpg",
+      "photos/photo_41@06-10-2026_17-18-18.jpg"
+    ],
+    "cover": "photos/photo_34@06-10-2026_17-18-17.jpg",
+    "read_min": 4,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/50",
+    "series_slug": null
+  },
+  {
+    "slug": "stepanov-port-artur-retsenziya",
+    "tg_ids": [
+      45,
+      46
+    ],
+    "date": "2026-10-06",
+    "title": "Stepanov’s Port Arthur: A Review Eighty Years Later",
+    "dek": "Why the principal Soviet siege novel is outdated as history, and where it departs from the facts.",
+    "summary": "An ironic review of Alexander Stepanov’s novel, published in seventeen editions totalling over a million copies and awarded the 1946 Stalin Prize. Exemplary as Soviet prose of the 1940s, it has aged poorly as history. The author lists departures from fact: Stessel and Fok sell the fortress for five million, though the trial concerned surrender and the verdict says nothing of a sale. Kondratenko is canonised, Kolchak serves on the wrong ship. Research in 2010 also found that neither writer nor father took part in the defence. The romance draws criticism too, especially in the sequel, The Zvonaryov Family. A second post shows different editions’ covers.",
+    "facts": [
+      "The novel received the Stalin Prize in 1946.",
+      "Stessel was pardoned in May 1909; Fok was acquitted for lack of proof.",
+      "During the war Kolchak commanded the destroyer Serdity, rather than serving on Diana.",
+      "In 2010 the Military Historical Journal published D. K. Nikolayev and O. V. Chistyakov’s article establishing that Stepanov had not been at Port Arthur."
+    ],
+    "type": "book",
+    "layer": [
+      "russian",
+      "soviet"
+    ],
+    "people": [
+      "stepanov",
+      "stessel",
+      "fok",
+      "kondratenko",
+      "kolchak",
+      "nikolaev-dk"
+    ],
+    "places": [
+      "port-artur",
+      "elektricheskiy-utes",
+      "vysokaya-gora"
+    ],
+    "books": [
+      "stepanov-port-artur",
+      "stepanov-semya-zvonaryovyh",
+      "nikolaev-chistyakov-port-artur-arhivnyy-poisk"
+    ],
+    "photos": [
+      "photos/photo_27@06-10-2026_00-40-51.jpg",
+      "photos/photo_28@06-10-2026_01-48-04.jpg",
+      "photos/photo_29@06-10-2026_01-48-04.jpg",
+      "photos/photo_30@06-10-2026_01-48-04.jpg",
+      "photos/photo_31@06-10-2026_01-48-04.jpg"
+    ],
+    "cover": "photos/photo_27@06-10-2026_00-40-51.jpg",
+    "read_min": 5,
+    "series": "Stepanov and His Port Arthur",
+    "tg_url": "https://t.me/portartur_dalnii/45",
+    "series_slug": "stepanov-i-ego-port-artur"
+  },
+  {
+    "slug": "anekdoty-rossiiskoi-imperii-shevchenko",
+    "tg_ids": [
+      43
+    ],
+    "date": "2026-10-05",
+    "title": "Jokes about the Russo-Japanese War: A. V. Shevchenko’s Collection",
+    "dek": "How society in 1905 laughed at Stessel, Portsmouth and the generals.",
+    "summary": "A short review of A. V. Shevchenko’s Anecdotes of the Russian Empire: The Russo-Japanese War. The channel highlights its commentary. A century-old joke usually needs a footnote and stops being funny afterwards; here the explanation restores its meaning. Readers learn who Stessel was and what was signed at Portsmouth, then laugh with contemporary newspaper readers. Examples range from the “bad company of generals” to the double meaning of “deal” and “surrender” around Stessel. Jokes reveal whom society distrusted and what it understood before official reports caught up.",
+    "facts": [
+      "Every joke has detailed commentary.",
+      "One joke plays on sdavat, meaning both to deal cards and surrender: at the card table, Stessel has “already surrendered”."
+    ],
+    "type": "book",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "stessel",
+      "shevchenko-av"
+    ],
+    "places": [
+      "portsmut",
+      "manchzhuriya"
+    ],
+    "books": [
+      "shevchenko-anekdoty-rossiyskoy-imperii-russko-yaponskaya-voyna"
+    ],
+    "photos": [
+      "photos/photo_26@05-10-2026_22-33-55.jpg"
+    ],
+    "cover": "photos/photo_26@05-10-2026_22-33-55.jpg",
+    "read_min": 2,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/43",
+    "series_slug": null
+  },
+  {
+    "slug": "albom-shtaba-glavnokomanduyushchego-1905",
+    "tg_ids": [
+      30
+    ],
+    "date": "2026-10-05",
+    "title": "The 1905 Album: The Land War in Photographs",
+    "dek": "What the headquarters album shows, and why it is wrongly attributed to Prokudin-Gorsky.",
+    "summary": "An overview of The Russo-Japanese War, 1904–1905, published by the commander-in-chief’s headquarters. It offers the Manchurian army headquarters’ perspective, without Port Arthur or the fleet. Central are the Shahe fighting of October 1904 and Putilov Hill, down to a photograph of a Shimose explosion. Then come XVII Corps life in sorghum shelters, Chinese New Year in Matsyundan village and, unexpectedly for an official publication, the retreat from Mukden: the Tieling road, a hospital train and halts. The author finds these photographs stronger than battle paintings: their subjects do not yet know Tsushima, Portsmouth and revolution lie ahead. All 300 plates are online.",
+    "facts": [
+      "The album covers Manchuria from autumn 1904 to spring 1905.",
+      "One series shows Putilov Hill, named after Major General Putilov.",
+      "Images include Tieling on 28 February 1905 after the Mukden retreat."
+    ],
+    "type": "source",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "prokudin-gorsky",
+      "kuropatkin",
+      "rennenkampf"
+    ],
+    "places": [
+      "shahe",
+      "sopka-putilovskaya",
+      "mukden",
+      "manchzhuriya"
+    ],
+    "books": [
+      "albom-russko-yaponskaya-voyna-shtab-1905"
+    ],
+    "photos": [
+      "photos/photo_15@05-10-2026_20-16-00.jpg",
+      "photos/photo_16@05-10-2026_20-56-08.jpg",
+      "photos/photo_17@05-10-2026_20-56-08.jpg",
+      "photos/photo_18@05-10-2026_20-56-08.jpg",
+      "photos/photo_19@05-10-2026_20-56-08.jpg",
+      "photos/photo_20@05-10-2026_20-56-09.jpg",
+      "photos/photo_21@05-10-2026_20-56-09.jpg",
+      "photos/photo_22@05-10-2026_20-56-09.jpg",
+      "photos/photo_23@05-10-2026_20-56-09.jpg",
+      "photos/photo_24@05-10-2026_20-56-09.jpg",
+      "photos/photo_25@05-10-2026_20-56-09.jpg"
+    ],
+    "cover": "photos/photo_15@05-10-2026_20-16-00.jpg",
+    "read_min": 4,
+    "series": "A Photographic Chronicle of the War",
+    "tg_url": "https://t.me/portartur_dalnii/30",
+    "series_slug": "fotoletopis-voyny"
+  },
+  {
+    "slug": "kto-fotografiroval-russko-yaponskuyu-voinu",
+    "tg_ids": [
+      28
+    ],
+    "date": "2026-10-05",
+    "title": "Who Photographed the War, and Where Does Prokudin-Gorsky Fit?",
+    "dek": "Photography in 1904–1905 and the persistent belief that Prokudin-Gorsky took the pictures.",
+    "summary": "The Russo-Japanese War was among the first photographed on a large scale: officers, doctors and nurses acquired light film cameras, while halftone printing brought photographs into magazines. The author describes correspondents with Nogi’s army and an American who sailed to Port Arthur in a junk and walked straight to the positions. The second half examines the myth. Prokudin-Gorsky did not photograph the war. For the headquarters’ 1905 album he was compiler and printer; others took the pictures. The same applies to the XVII Corps album: his workshops printed it, the Corps of Military Topographers compiled it.",
+    "facts": [
+      "The headquarters published The Russo-Japanese War, 1904–05 in 1905, with around 300 plates.",
+      "The XVII Corps album contains 54 plates and 231 photographic reproductions.",
+      "The US Library of Congress acquired most of Prokudin-Gorsky’s collection from his sons in 1948."
+    ],
+    "type": "source",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "prokudin-gorsky",
+      "nogi"
+    ],
+    "places": [
+      "port-artur",
+      "manchzhuriya"
+    ],
+    "books": [
+      "albom-russko-yaponskaya-voyna-shtab-1905",
+      "albom-boevoy-zhizni-xvii-korpusa"
+    ],
+    "photos": [
+      "photos/photo_14@05-10-2026_20-16-00.jpg",
+      "photos/photo_15@05-10-2026_20-16-00.jpg"
+    ],
+    "cover": "photos/photo_14@05-10-2026_20-16-00.jpg",
+    "read_min": 4,
+    "series": "A Photographic Chronicle of the War",
+    "tg_url": "https://t.me/portartur_dalnii/28",
+    "series_slug": "fotoletopis-voyny"
+  },
+  {
+    "slug": "dvoinye-daty-staryi-i-novyi-stil",
+    "tg_ids": [
+      12
+    ],
+    "date": "2026-10-05",
+    "title": "Why Dates Come in Pairs: Old and New Style",
+    "dek": "How Julian and Gregorian calendars cause confusion in the Russo-Japanese War’s history.",
+    "summary": "Why war dates appear in pairs. The author briefly explains the Julian calendar, Pope Gregory XIII’s reform in 1582 and the rule for leap years at the turn of centuries. The practical point is that the gap changes: eleven days in the eighteenth century, twelve in the nineteenth, thirteen from 1900 to 2100. Adding thirteen days to Peter the Great’s dates is therefore wrong. Russian wartime documents used Old Style; Japanese and European ones New Style, with Japan also counting years of the Meiji era. Hence Tsushima on either 14 or 27 May. The channel’s convention is Old Style first, New Style in brackets.",
+    "facts": [
+      "Japan adopted the Gregorian calendar in 1873; China officially did so in 1912.",
+      "In Russia, 31 January 1918 was followed immediately by 14 February.",
+      "In Japanese dating, the war took place in Meiji years 37 and 38."
+    ],
+    "type": "explainer",
+    "layer": [
+      "russian",
+      "modern"
+    ],
+    "people": [],
+    "places": [
+      "tsusima"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_1@05-10-2026_00-36-09.jpg"
+    ],
+    "cover": "photos/photo_1@05-10-2026_00-36-09.jpg",
+    "read_min": 3,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/12",
+    "series_slug": null
+  },
+  {
+    "slug": "mir-i-itogi-voiny",
+    "tg_ids": [
+      10
+    ],
+    "date": "2026-10-05",
+    "title": "The Treaty of Portsmouth and the Price of War",
+    "dek": "What the war cost both sides: money, revolution and the loss of Kwantung.",
+    "summary": "The overview series concludes. By summer 1905 both countries were exhausted. Japan had spent 1.7–2 billion yen, several annual budgets, relying on foreign loans. Russia lost two fleets and its entire Kwantung investment, repairing its finances only with the French loan of 1906. War coincided with the first Russian revolution, beginning a week after news of Port Arthur’s fall. At Portsmouth Japan received Kwantung, the railway’s southern branch and southern Sakhalin, but no indemnity. Tokyo saw humiliation, and martial law followed. The post ends with Dalny becoming Dairen and Manchukuo’s later emergence in Manchuria.",
+    "facts": [
+      "Peace was signed at Portsmouth on 23 August (5 September) 1905, mediated by Theodore Roosevelt.",
+      "The 1906 French loan of 2.25 billion francs was the Russian Empire’s largest foreign loan.",
+      "Deaths are estimated at around 50,000 on the Russian side and 80,000–90,000 on the Japanese; disease accounted for most.",
+      "Portsmouth earned Witte a count’s title and the nickname “Count Half-Sakhalin”."
+    ],
+    "type": "event",
+    "layer": [
+      "russian",
+      "japanese"
+    ],
+    "people": [
+      "vitte",
+      "ruzvelt",
+      "takahasi"
+    ],
+    "places": [
+      "portsmut",
+      "kvantun",
+      "port-artur",
+      "dalnii",
+      "sahalin",
+      "koreya",
+      "manchzhuriya"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_163@28-10-2026_08-55-09.jpg",
+      "photos/photo_340@archive.jpg"
+    ],
+    "cover": "photos/photo_340@archive.jpg",
+    "read_min": 3,
+    "series": "The Russo-Japanese War in Five Posts",
+    "tg_url": "https://t.me/portartur_dalnii/10",
+    "series_slug": "russko-yaponskaya-voyna-za-pyat-postov"
+  },
+  {
+    "slug": "voina-na-more-osada-mukden-tsusima",
+    "tg_ids": [
+      8,
+      9
+    ],
+    "date": "2026-10-05",
+    "title": "The Course of the War: From the Night Attack to Tsushima",
+    "dek": "A brief chronicle of 1904–1905 at sea, around Port Arthur and in Manchuria.",
+    "summary": "Part Two of the overview series begins with the Japanese destroyer attack on Port Arthur’s outer roadstead during the night of 27 January (9 February) 1904 and Varyag’s battle at Chemulpo. It follows Makarov’s death aboard Petropavlovsk, Dalny’s almost unopposed surrender, the failed Vladivostok breakout, Nogi’s Third Army assaults, 203 Metre Hill’s capture, Kondratenko’s death and surrender. The second half covers Manchuria’s retreats to Mukden and Rozhestvensky’s voyage ending in the Tsushima Strait. The author notes that Dalny, nicknamed “the Superfluous”, became Japan’s principal siege supply base.",
+    "facts": [
+      "Makarov, over 600 crew and painter Vasily Vereshchagin died aboard Petropavlovsk on 31 March (13 April) 1904.",
+      "On 22 November (5 December) 1904 Japan captured 203 Metre Hill and began shelling ships in the harbour.",
+      "Mukden, February–March 1905, involved over half a million men and was the largest land battle before the First World War.",
+      "After Tsushima on 14–15 (27–28) May 1905, only the cruiser Almaz and two destroyers reached Vladivostok."
+    ],
+    "type": "event",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "makarov",
+      "vereshchagin",
+      "vitgeft",
+      "nogi",
+      "kondratenko",
+      "stessel",
+      "kuropatkin",
+      "rozhestvenskii",
+      "togo"
+    ],
+    "places": [
+      "port-artur",
+      "chemulpo",
+      "dalnii",
+      "tszinchzhou",
+      "zheltoe-more",
+      "vysokaya-gora",
+      "mukden",
+      "lyaoyan",
+      "shahe",
+      "tsusima"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_98@17-10-2026_15-14-01.jpg"
+    ],
+    "cover": "photos/photo_98@17-10-2026_15-14-01.jpg",
+    "read_min": 3,
+    "series": "The Russo-Japanese War in Five Posts",
+    "tg_url": "https://t.me/portartur_dalnii/8",
+    "series_slug": "russko-yaponskaya-voyna-za-pyat-postov"
+  },
+  {
+    "slug": "kak-vse-nachinalos-predposylki-voiny",
+    "tg_ids": [
+      6,
+      7
+    ],
+    "date": "2026-10-05",
+    "title": "How War Came: From Shimonoseki to the Diplomatic Break",
+    "dek": "Ten years of background: Korea, Liaodong, the Chinese Eastern Railway and Yalu timber concessions.",
+    "summary": "The overview series opens with the Meiji reforms and Sino-Japanese War of 1894–1895, leading to the diplomatic break on 24 January (6 February) 1904. At Shimonoseki Japan gained Liaodong, returning it six days later under pressure from Russia, Germany and France. Three years later Russia leased the peninsula itself. Alongside came railway and Dalny construction, King Gojong’s flight to the Russian legation, Manchuria’s occupation after the Boxer Rebellion and the “Bezobrazov clique” adventure on the Yalu. The author cautions that Plehve’s “small victorious war” remark is known only through Witte’s memoirs.",
+    "facts": [
+      "Under the 1895 Treaty of Shimonoseki, China paid Japan 200 million silver taels, around three Qing annual budgets.",
+      "Russia leased Kwantung for twenty-five years in March 1898.",
+      "King Gojong fled to the Russian legation in Seoul in 1896 and ruled from there for about a year.",
+      "Japan severed diplomatic relations with Russia on 24 January (6 February) 1904."
+    ],
+    "type": "event",
+    "layer": [
+      "pre1898",
+      "russian"
+    ],
+    "people": [
+      "vitte",
+      "nikolai-ii",
+      "bezobrazov",
+      "alekseev",
+      "plehve"
+    ],
+    "places": [
+      "lyaodun",
+      "kvantun",
+      "port-artur",
+      "dalnii",
+      "kvzhd",
+      "koreya",
+      "manchzhuriya",
+      "yalu"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_33@06-10-2026_17-18-17.jpg"
+    ],
+    "cover": "photos/photo_33@06-10-2026_17-18-17.jpg",
+    "read_min": 5,
+    "series": "The Russo-Japanese War in Five Posts",
+    "tg_url": "https://t.me/portartur_dalnii/6",
+    "series_slug": "russko-yaponskaya-voyna-za-pyat-postov"
+  }
+]

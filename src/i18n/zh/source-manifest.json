@@ -1,0 +1,15 @@
+{
+  "data/articles.json": "bc08af9eb4f83c0ab3a5d1b06e92d275a6d4b3292fef9c92f29b3003dc2f87d8",
+  "data/books.json": "f22f91c113300c2d02564e7664459c2cb4c99f5672d4840aa234ab1292cf828b",
+  "data/people.json": "85244753efdd01808a7e72a3acd3bc104922ec0632dac051b509df383dd5a429",
+  "data/places.json": "f5769294c0385df92ca62567a4bd5aae0d8cd2bd84e1723eff25919b12e323fb",
+  "data/routes.json": "86c1d9853b985571d8476211c8b2cd242c5a66a4d728dd9d74aa932803e4afa7",
+  "data/series.json": "227b07cbf9c16302f3e743a58984e93ffd4e2c4076426f9c11dc088d2a2ae65f",
+  "data/sources.json": "500e66257dd3735249abd8d5c0c12fd66419ad29cf863de69a3744267f349441",
+  "data/photos.json": "dbdf4572a91134fa7911f68e7c3321da44dc54faa431dddd452e729ff91dcb16",
+  "data/seasons.json": "255b80af6cb222943564cb29369d7af4470baed57828e170185064bfced18359",
+  "data/index_terms.json": "8a9ff02e962aa0145b124e16cde71d70c8eb8d6d1a92493feb916dbb885b2965",
+  "data/reference_descriptions.json": "ab705210e5bbc0341f818afdf5346c2a588b0f847e228a34bfbc4a4b11dc60c1",
+  "data/layers.json": "93a3bc421d6c5ccfea38ceb3c7ac3c2d51422929b80d273d86d2c03d3a43361c",
+  "components/places/dossiers.ts": "9bcc1c0d223f0a7c5da421af75684edbcc62ceae2f8dd9b3ba735d208382b76a"
+}

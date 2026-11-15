@@ -1,0 +1,1439 @@
+[
+  {
+    "slug": "vysokaya-gora",
+    "name": "203 Metre Hill",
+    "name_zh": "203高地 (203 Gāodì); Japanese monument: 尔灵山 (Ěrlíngshān)",
+    "name_now": "The 203 memorial area on the fortress’s western front, with a cherry garden at its foot",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "fort",
+    "lat": 38.8286,
+    "lng": 121.1935,
+    "coord_confidence": "high",
+    "summary": "A height behind the main line of forts, left without permanent defences in Velichko’s plan. Japanese troops assaulted it for a week from 15 November 1904. Its garrison lost around 5,000 men before abandoning it on 22 November (5 December). The summit overlooked the inner basins, allowing siege howitzers to sink the squadron at its moorings within days. Today a Japanese rifle-bullet-shaped monument, Erlingshan, whose name echoes “203”, stands on top. Sections of trenches survive, and the place where General Nogi’s son died is marked. Views extend over the harbour and western Lüshun.",
+    "visit": "There is parking at the entrance (203景区停车场). Admission is paid; check prices and hours locally. Travel agencies quoted 30 yuan in 2025. Prices may differ during the spring cherry-blossom season.",
+    "season": [
+      "spring",
+      "autumn"
+    ],
+    "posts": [
+      50,
+      127,
+      227
+    ],
+    "photos": [
+      "photos/photo_341@archive.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "voina-na-more-osada-mukden-tsusima",
+      "stepanov-port-artur-retsenziya",
+      "port-artur-poslednyaya-zamorskaya-koloniya",
+      "pervaya-tihookeanskaya-eskadra",
+      "ukreplenie-5-yahutszui",
+      "dnevnik-kapitana-lile",
+      "gaolyan-i-sopki",
+      "kondratenko-dusha-oborony",
+      "posleznanie-kak-sudit-o-port-arture",
+      "oborona-port-artura-vrachi-i-sestry",
+      "tsena-port-artura-v-tsifrah"
+    ]
+  },
+  {
+    "slug": "fort-2",
+    "name": "Fort No. II (North Fort of East Jiguan Shan)",
+    "name_zh": "东鸡冠山北堡垒 (Dōng Jīguānshān běi bǎolěi)",
+    "name_now": "Dongjiguanshan visitor area, with the fort ruins and the Lüshun Russo-Japanese War Exhibition Hall (旅顺日俄战争陈列馆)",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "fort",
+    "lat": 38.8349,
+    "lng": 121.2798,
+    "coord_confidence": "medium",
+    "summary": "A strongpoint on the northeastern front, where fighting for the counterscarp gallery continued for weeks, including underground. On 2 (15) December 1904, an 11-inch howitzer shell struck the officers’ casemate where General Roman Kondratenko was present; eight officers died with him. Three days later, on 18 December New Style, the Japanese blew up the parapet and captured the fort. The shattered casemates, ditch and caponiers remain visible. A stone erected by the Japanese marks the general’s death: “Place where Russian Major General Kondratenko fell.” A small museum stands nearby.",
+    "visit": "Ctrip gives opening hours of 07:30–17:00. Admission is paid; travel agencies quote 25 yuan. Parking is at the entrance (东鸡冠山停车场). Check hours before travelling.",
+    "season": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "posts": [
+      50,
+      227,
+      210,
+      154
+    ],
+    "photos": [
+      "photos/photo_160@28-10-2026_08-55-08.jpg",
+      "photos/photo_191@02-11-2026_09-35-08.jpg",
+      "photos/photo_335@archive.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "port-artur-poslednyaya-zamorskaya-koloniya",
+      "kak-ustroen-fort",
+      "kondratenko-put-k-port-arturu",
+      "kondratenko-dusha-oborony",
+      "kulichkin-kondratenko-zhzl",
+      "general-fok-geroy-dunaya-i-port-artur"
+    ]
+  },
+  {
+    "slug": "bolshoe-orlinoe-gnezdo",
+    "name": "The Great Eagle’s Nest",
+    "name_zh": "望台炮台 (Wàngtái pàotái)",
+    "name_now": "A height with a Japanese memorial marker and viewpoint beside Jiguan Shan Road",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "battery",
+    "lat": 38.8342,
+    "lng": 121.2728,
+    "coord_confidence": "high",
+    "summary": "A hilltop battery between Forts II and III on the northeastern front. Its fall on 19 December 1904 (1 January 1905 New Style) was the defence’s last major event: that same day Stessel sent the Japanese an offer to surrender. Old guns and a memorial marker now stand on the summit, with views along the hills from Jiguan Shan to Erlongshan. The identification of the Russian name with the Chinese Wangtai is generally accepted, but should be checked against the 1904 fortress plan.",
+    "visit": null,
+    "season": [
+      "autumn",
+      "winter"
+    ],
+    "posts": [
+      227
+    ],
+    "photos": [
+      "photos/photo_159@28-10-2026_08-55-08.jpg",
+      "photos/photo_336@archive.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "kondratenko-dusha-oborony"
+    ]
+  },
+  {
+    "slug": "fort-3",
+    "name": "Fort No. III",
+    "name_zh": "二龙山堡垒 (Èrlóngshān bǎolěi)",
+    "name_now": "Fort ruins on Erlongshan",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "fort",
+    "lat": 38.8373,
+    "lng": 121.2654,
+    "coord_confidence": "medium",
+    "summary": "A fort on the northern front, on Erlongshan west of the Great Eagle’s Nest. Japanese troops drove mine galleries towards it and captured it on 15 (28) December 1904 after blowing up the parapet. Parts of the ditch and concrete structures survive. The coordinates mark the hilltop; the fort itself lies on the slope, so its exact position needs checking on site.",
+    "visit": null,
+    "season": [
+      "autumn",
+      "winter"
+    ],
+    "posts": [
+      227
+    ],
+    "photos": [
+      "photos/photo_161@28-10-2026_08-55-08.jpg",
+      "photos/photo_338@archive.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "kondratenko-dusha-oborony"
+    ]
+  },
+  {
+    "slug": "ukreplenie-3",
+    "name": "Fortification No. 3",
+    "name_zh": "松树山堡垒 (Sōngshùshān bǎolěi)",
+    "name_now": "Fortification ruins on Songshushan",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "fort",
+    "lat": 38.8374,
+    "lng": 121.254,
+    "coord_confidence": "high",
+    "summary": "An intermediate work between the northern-front forts, built to the same basic scheme: rampart, dry ditch, caponiers and barracks. It fell on 18 (31) December 1904 after a Japanese mine beneath the parapet brought down a casemate. Ruins among pine trees and the explosion crater remain. It receives noticeably fewer visitors than 203 Metre Hill or Dongjiguanshan.",
+    "visit": null,
+    "season": [
+      "spring",
+      "autumn"
+    ],
+    "posts": [
+      144,
+      154
+    ],
+    "photos": [
+      "photos/photo_158@28-10-2026_08-55-08.jpg",
+      "photos/photo_162@28-10-2026_08-55-09.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "ukreplenie-5-yahutszui",
+      "kak-ustroen-fort"
+    ]
+  },
+  {
+    "slug": "ukreplenie-5",
+    "name": "Fortification No. 5",
+    "name_zh": "鸦户嘴 (Yāhùzuǐ); signs call it the “Russian Army Command Fort”",
+    "name_now": "A surviving fortification in woodland, with a museum room, fortress model and coastal gun",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese",
+      "soviet"
+    ],
+    "kind": "fort",
+    "lat": 38.797,
+    "lng": 121.1933,
+    "coord_confidence": "high",
+    "summary": "An intermediate work on the western front between Forts V and VI, though construction of VI never began. Started by Qing troops, it was rebuilt in concrete by the Russians after 1898. Japanese trenches never reached it; surrendered without a fight under the capitulation terms, it survives better than many works: rampart, dry ditch, caponiers, barracks and underground passages. A 10-inch coastal gun on a Durlacher mounting, probably restored, stands on the site. A small museum room displays a fortress model and soldiers’ everyday life. The claim that 203 Metre Hill was commanded from here is not supported by documents.",
+    "visit": "A quiet site that is not yet a regular tourist stop. The channel gives 38.7970, 121.1933 for navigation. Check access arrangements and whether a ticket is needed in advance.",
+    "season": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "posts": [
+      144,
+      154,
+      174
+    ],
+    "photos": [
+      "photos/photo_114@21-10-2026_09-30-12.jpg",
+      "photos/photo_115@21-10-2026_09-30-12.jpg",
+      "photos/photo_116@21-10-2026_09-30-12.jpg",
+      "photos/photo_117@21-10-2026_09-30-12.jpg",
+      "photos/photo_118@21-10-2026_09-30-12.jpg",
+      "photos/photo_119@21-10-2026_09-30-12.jpg"
+    ],
+    "verify": false,
+    "articles": [
+      "ukreplenie-5-yahutszui",
+      "kak-ustroen-fort"
+    ]
+  },
+  {
+    "slug": "elektricheskiy-utes",
+    "name": "Electric Cliff Battery",
+    "name_zh": "电岩炮台 (Diànyán pàotái)",
+    "name_now": "A coastal battery memorial above the Yellow Sea",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "battery",
+    "lat": 38.7918,
+    "lng": 121.264,
+    "coord_confidence": "high",
+    "summary": "A coastal battery on a cliff east of Golden Hill, named after a searchlight stationed there. It held 10-inch guns on Durlacher mountings, like the gun at Fortification No. 5. The battery covered the harbour entrance and fired on the Japanese fleet from the war’s first days. Today its concrete gun emplacements overlook the sea and the entrance to Lüshun harbour.",
+    "visit": "One travel-agency account says foreigners cannot visit; other sources describe a normal paid attraction costing about 15 yuan. Check before travelling.",
+    "season": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "posts": [
+      144,
+      127
+    ],
+    "photos": [],
+    "verify": true,
+    "articles": [
+      "stepanov-port-artur-retsenziya",
+      "pervaya-tihookeanskaya-eskadra",
+      "ukreplenie-5-yahutszui"
+    ]
+  },
+  {
+    "slug": "zolotaya-gora",
+    "name": "Golden Hill",
+    "name_zh": "黄金山 (Huángjīnshān)",
+    "name_now": "Hill at the entrance to Lüshun harbour, partly within a military zone",
+    "city": "lushun",
+    "layers": [
+      "chinese",
+      "russian",
+      "japanese",
+      "soviet"
+    ],
+    "kind": "viewpoint",
+    "lat": 38.7961,
+    "lng": 121.2615,
+    "coord_confidence": "high",
+    "summary": "The eastern side of the harbour entrance, sheltering the inner basins from the sea together with Tiger’s Tail peninsula. Grand Duke Kirill Vladimirovich raised the Russian flag above Golden Hill on 16 (28) March 1898. Coastal batteries built under the Qing and rebuilt by the Russians stood here. Below it, on the outer roadstead, the squadron was attacked by Japanese destroyers on 27 January (9 February) 1904. A town beach is now at its foot; military installations occupy the summit.",
+    "visit": null,
+    "season": [
+      "summer"
+    ],
+    "posts": [
+      50,
+      127
+    ],
+    "photos": [
+      "photos/photo_302@archive.jpg",
+      "photos/photo_308@archive.jpg",
+      "photos/photo_304@archive.jpg",
+      "photos/photo_342@archive.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "port-artur-poslednyaya-zamorskaya-koloniya",
+      "pervaya-tihookeanskaya-eskadra"
+    ]
+  },
+  {
+    "slug": "perepelinaya-gora",
+    "name": "Quail Hill (Baiyushan)",
+    "name_zh": "白玉山 (Báiyùshān)",
+    "name_now": "Hilltop park with a Japanese tower from 1909 (白玉山塔), harbour views and a cable car",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese",
+      "soviet"
+    ],
+    "kind": "viewpoint",
+    "lat": 38.8106,
+    "lng": 121.2517,
+    "coord_confidence": "high",
+    "summary": "The hill above the Eastern Basin between the Old and New Towns, from which panoramas of Russian Port Arthur were photographed. After the war, at Nogi and Tōgō’s initiative, the Japanese built the roughly 67 m Hyōchūtō, or “Loyalty Tower”, now 白玉山塔. The viewpoint overlooks the inner harbour, Golden Hill, Tiger’s Tail and the land-front hills, making it a useful place to begin a visit to Lüshun.",
+    "visit": "A road and cable car (白玉山索道) reach the summit. Ticket reports differ: travel agencies variously quote 40 yuan admission or a free tower with a paid cable car. Check locally.",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [
+      50,
+      127
+    ],
+    "photos": [
+      "photos/photo_34@06-10-2026_17-18-17.jpg",
+      "photos/photo_100@17-10-2026_15-14-01.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "port-artur-poslednyaya-zamorskaya-koloniya",
+      "pervaya-tihookeanskaya-eskadra"
+    ]
+  },
+  {
+    "slug": "gavan-port-artura",
+    "name": "Port Arthur’s Inner Harbour (Eastern and Western Basins)",
+    "name_zh": "旅顺港 (Lǚshùn gǎng); 旅顺口 (Lǚshùnkǒu)",
+    "name_now": "An active PLA Navy base, with a public waterfront and viewpoints beside the town",
+    "city": "lushun",
+    "layers": [
+      "chinese",
+      "russian",
+      "japanese",
+      "soviet"
+    ],
+    "kind": "port",
+    "lat": 38.802,
+    "lng": 121.255,
+    "coord_confidence": "medium",
+    "summary": "Russia leased Kwantung for this harbour. Its narrow, deep entrance lies between Golden Hill and Tiger’s Tail, with two basins inside. The First Pacific Squadron was based here: seven battleships, cruisers and destroyers. After the loss of 203 Metre Hill, siege howitzers sank the ships beside the quays; only Sevastopol escaped, taken by Essen to White Wolf Bay. Today this is an active naval base. The civilian town reaches the water; the rest is viewed from Quail Hill. The coordinate is a representative point over the Eastern Basin.",
+    "visit": "The base is closed to visitors. Photographing warships is not recommended.",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [
+      50,
+      127,
+      91
+    ],
+    "photos": [
+      "photos/photo_36@06-10-2026_17-18-17.jpg",
+      "photos/photo_113@20-10-2026_21-45-06.jpg",
+      "photos/photo_97@17-10-2026_15-14-01.jpg",
+      "photos/photo_101@17-10-2026_15-14-01.jpg",
+      "photos/photo_35@06-10-2026_17-18-17.jpg",
+      "photos/photo_300@archive.jpg",
+      "photos/photo_306@archive.jpg",
+      "photos/photo_301@archive.jpg",
+      "photos/photo_303@archive.jpg",
+      "photos/photo_307@archive.jpg",
+      "photos/photo_342@archive.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "port-artur-poslednyaya-zamorskaya-koloniya",
+      "otkuda-nazvanie-port-artur",
+      "pervaya-tihookeanskaya-eskadra",
+      "vereshchagin-hudozhnik-na-voyne",
+      "tsena-port-artura-v-tsifrah"
+    ]
+  },
+  {
+    "slug": "vokzal-lushun",
+    "name": "Port Arthur Railway Station",
+    "name_zh": "旅顺站 (Lǚshùn zhàn)",
+    "name_now": "A Russian-style wooden station on the waterfront; regular services have ended",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "station",
+    "lat": 38.8068,
+    "lng": 121.2473,
+    "coord_confidence": "high",
+    "summary": "Terminus of the Chinese Eastern Railway’s southern branch. Construction began around 1900 and the station opened in 1903. The wooden building with its green tented roof stands beside the Western Basin, one of Lüshun’s most photographed sights. The building’s history is tangled: some sources describe a Japanese rebuilding in 1905–1908, others a reconstruction from old drawings in the 2000s. Trains no longer run here. Metro Line 12 serves a different station, Lüshun, north of the centre.",
+    "visit": "View the building from outside. The waterfront and the Quail Hill cable-car entrance are nearby.",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [
+      50
+    ],
+    "photos": [],
+    "verify": true,
+    "articles": [
+      "port-artur-poslednyaya-zamorskaya-koloniya"
+    ]
+  },
+  {
+    "slug": "tyurma-lushun",
+    "name": "Port Arthur Prison",
+    "name_zh": "旅顺日俄监狱旧址 (Lǚshùn Rì-É jiānyù jiùzhǐ)",
+    "name_now": "The Former Russo-Japanese Prison museum",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "museum",
+    "lat": 38.8246,
+    "lng": 121.2599,
+    "coord_confidence": "high",
+    "summary": "The Russians began building the prison in 1902; the Japanese enlarged it in 1907. Brickwork reveals the difference: the grey blocks by the entrance are Russian, the large red blocks Japanese. Under Japanese rule it held Chinese, Korean and Japanese prisoners. Korean independence activist An Jung-geun, who killed Itō Hirobumi, was executed here in 1910. The prison operated until 1945 and became a museum in 1971. Cells, workshops and the execution site survive.",
+    "visit": "Travel agencies in 2026 report free admission and Monday closure. We have not found official confirmation; check before visiting.",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "kladbishche-lushun",
+    "name": "Port Arthur Russian and Soviet Military Cemetery",
+    "name_zh": "旅顺苏军烈士陵园 (Lǚshùn Sūjūn lièshì língyuán)",
+    "name_now": "Soviet military memorial cemetery in Sanliqiao, with burials from 1904–1905 in the older section",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese",
+      "soviet"
+    ],
+    "kind": "cemetery",
+    "lat": 38.8294,
+    "lng": 121.24,
+    "coord_confidence": "high",
+    "summary": "One of the largest Russian military cemeteries outside Russia. Founded during the Russian period, it was landscaped by the Japanese authorities after the war as a memorial to the fortress’s fallen defenders. The older section consists mainly of mass graves from 1904, with a chapel and monument. From 1945, Soviet servicemen who died in Port Arthur were buried here, followed by casualties of the Korean War. A 1955 Soviet military monument stands at the entrance. Russian specialists restored the cemetery in the 2000s. General Kondratenko is not buried here: his remains were taken to St Petersburg in 1905.",
+    "visit": null,
+    "season": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "posts": [
+      227,
+      114
+    ],
+    "photos": [],
+    "verify": true,
+    "articles": [
+      "port-artur-i-dalnii-dva-goroda",
+      "kondratenko-dusha-oborony"
+    ]
+  },
+  {
+    "slug": "muzey-lushun",
+    "name": "Lüshun Museum",
+    "name_zh": "旅顺博物馆 (Lǚshùn bówùguǎn)",
+    "name_now": "A state museum in the New Town (Taiyanggou)",
+    "city": "lushun",
+    "layers": [
+      "japanese",
+      "soviet"
+    ],
+    "kind": "museum",
+    "lat": 38.8075,
+    "lng": 121.2297,
+    "coord_confidence": "high",
+    "summary": "Opened under Japanese administration in 1915 as an exhibition of local products and in 1917 as the Kwantung Government-General’s Museum of Manchurian and Mongolian Products. Its eclectic building combines European forms with Eastern details. Soviet troops transferred the museum to China on 1 February 1951. Collections now include archaeology, bronzes, calligraphy and material from Xinjiang. Local tradition says construction began under Russian rule; we have not found documentary confirmation.",
+    "visit": null,
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "novy-gorod-taiyangou",
+    "name": "Port Arthur’s New Town",
+    "name_zh": "太阳沟 (Tàiyánggōu)",
+    "name_now": "The historic Taiyanggou district: quiet streets of Russian and Japanese villas",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese",
+      "soviet"
+    ],
+    "kind": "street",
+    "lat": 38.81,
+    "lng": 121.2281,
+    "coord_confidence": "medium",
+    "summary": "The Russians laid out the New Town west of the harbour with straight, European-style streets; the channel mentions Morskaya and Pushkinskaya. Japanese administrative buildings followed. Russian villas, including one marked as a senior official’s residence (俄式高官住宅), now stand beside the former Kwantung Army headquarters, Lüshun Museum and the Soviet friendship tower. Trees line the streets, with black locust blossom in May.",
+    "visit": "Allow 1–1.5 hours to walk the district’s streets from Lüshun Museum.",
+    "season": [
+      "spring",
+      "autumn"
+    ],
+    "posts": [
+      50
+    ],
+    "photos": [
+      "photos/photo_37@06-10-2026_17-18-17.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "port-artur-poslednyaya-zamorskaya-koloniya"
+    ]
+  },
+  {
+    "slug": "bashnya-druzhby",
+    "name": "Sino-Soviet Friendship Tower",
+    "name_zh": "中苏友谊纪念塔 (Zhōng-Sū yǒuyì jìniàntǎ)",
+    "name_now": "A monument on the square beside Lüshun Museum",
+    "city": "lushun",
+    "layers": [
+      "soviet"
+    ],
+    "kind": "monument",
+    "lat": 38.8085,
+    "lng": 121.2291,
+    "coord_confidence": "high",
+    "summary": "A monument of the 1950s, begun in 1955 and completed later according to differing sources. It commemorates Sino-Soviet friendship during the years when Port Arthur was a joint naval base, until 1955. It stands on a circular square beside Lüshun Museum in the New Town. Reliefs depict episodes from the two countries’ shared history.",
+    "visit": "The square is open; view the monument from outside.",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [
+      93,
+      114
+    ],
+    "photos": [],
+    "verify": true,
+    "articles": [
+      "dalnii-gorod-s-nulya",
+      "port-artur-i-dalnii-dva-goroda"
+    ]
+  },
+  {
+    "slug": "shuishiying",
+    "name": "The Meeting House at Shuishiying",
+    "name_zh": "水师营会见所旧址 (Shuǐshīyíng huìjiànsuǒ jiùzhǐ)",
+    "name_now": "A memorial house on Lüshun’s northern outskirts",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "building",
+    "lat": 38.8528,
+    "lng": 121.2388,
+    "coord_confidence": "high",
+    "summary": "A farmhouse in Shuishiying village where Generals Stessel and Nogi met on 23 December 1904 (5 January 1905 New Style), after the surrender had been signed. According to a familiar account, the horse Stessel gave Nogi was tied to a tree in the yard. The meeting entered a Japanese school song. The present house appears to be a reconstruction; its fidelity to the original needs checking.",
+    "visit": null,
+    "season": [
+      "winter",
+      "spring",
+      "autumn"
+    ],
+    "posts": [
+      50
+    ],
+    "photos": [],
+    "verify": true,
+    "articles": [
+      "port-artur-poslednyaya-zamorskaya-koloniya"
+    ]
+  },
+  {
+    "slug": "longwangtang",
+    "name": "Longwangtang: The Reservoir Cherry Garden",
+    "name_zh": "龙王塘樱花园 (Lóngwángtáng yīnghuā yuán)",
+    "name_now": "A cherry-blossom park beside Longwangtang Reservoir (龙王塘水库)",
+    "city": "lushun",
+    "layers": [
+      "japanese"
+    ],
+    "kind": "park",
+    "lat": 38.854,
+    "lng": 121.386,
+    "coord_confidence": "low",
+    "summary": "A park beside a reservoir built under Japanese rule between Dalian and Lüshun. Japanese settlers planted cherry trees here; it is now the best-known blossom spot near Dalian. Single-flowered varieties open around mid-April, doubles roughly a week later, with flowering continuing to the end of the month. The garden at 203 Metre Hill blooms about a week later. The coordinate is approximate: the park is below the dam at the reservoir’s southern end.",
+    "visit": "A seasonal park with paid admission: travel agencies quoted 20 yuan in 2025. Excursion buses run from Dalian during the blossom season.",
+    "season": [
+      "spring"
+    ],
+    "posts": [],
+    "photos": [],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "nikolaevskaya-ploshchad",
+    "name": "Nikolayevskaya Square",
+    "name_zh": "中山广场 (Zhōngshān guǎngchǎng)",
+    "name_now": "Zhongshan Square in central Dalian, a circular square surrounded by Japanese-era banks and a hotel",
+    "city": "dalian",
+    "layers": [
+      "russian",
+      "japanese",
+      "soviet"
+    ],
+    "kind": "square",
+    "lat": 38.9208,
+    "lng": 121.6388,
+    "coord_confidence": "high",
+    "summary": "The centre of Kazimierz Skolimowski’s plan: a circle 213 m across, with ten radiating streets, modelled on Paris’s Place de l’Étoile. The Russians laid out the square but did not build around it. The Japanese called it Ōhiroba, “Great Square”, and added banks, city hall, police headquarters and the Yamato Hotel between 1908 and 1936. Eight pre-war buildings survive; the British consulate was demolished in 1995. After 1945 the square was named for Sun Yat-sen.",
+    "visit": "Metro: Zhongshan Square station (中山广场站). The square is open around the clock; buildings are illuminated in the evening.",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [
+      93,
+      114
+    ],
+    "photos": [
+      "photos/photo_320@archive.jpg",
+      "photos/photo_67@11-10-2026_14-03-01.jpg",
+      "photos/photo_68@11-10-2026_14-03-01.jpg",
+      "photos/photo_366@11-11-2026_10-19-57.jpg"
+    ],
+    "verify": false,
+    "articles": [
+      "dalnii-gorod-s-nulya",
+      "port-artur-i-dalnii-dva-goroda",
+      "skolimovsky-chelovek-kotoryy-narisoval-dalnii",
+      "zodchiy-1904-plan-goroda-dalnego"
+    ]
+  },
+  {
+    "slug": "russkaya-ulitsa",
+    "name": "Russian Street (Formerly Inzhenernaya)",
+    "name_zh": "团结街 / 俄罗斯风情街 (Tuánjié jiē / Éluósī fēngqíng jiē)",
+    "name_now": "A pedestrian tourist street in the former Russian administrative quarter",
+    "city": "dalian",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "street",
+    "lat": 38.927,
+    "lng": 121.6307,
+    "coord_confidence": "high",
+    "summary": "A street in Dalny’s earliest district, north of the railway, where the administrative quarter was built in 1899–1902. The channel identifies former Inzhenernaya Street with today’s Russian Street. Some houses are original; much was added or restored in an “old-fashioned” style when the street became a tourist attraction. Souvenir shops occupy ground floors. Dalny’s city administration building stands at the far end.",
+    "visit": "A 15–20 minute walk from Zhongshan Square across Victory Bridge. The street is always open.",
+    "season": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "posts": [
+      93
+    ],
+    "photos": [
+      "photos/photo_70@11-10-2026_14-03-01.jpg",
+      "photos/photo_71@11-10-2026_14-03-01.jpg",
+      "photos/photo_317@archive.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "dalnii-gorod-s-nulya",
+      "skolimovsky-chelovek-kotoryy-narisoval-dalnii",
+      "zodchiy-1904-plan-goroda-dalnego"
+    ]
+  },
+  {
+    "slug": "upravlenie-dalnego",
+    "name": "Dalny City Administration Building",
+    "name_zh": "达里尼市政厅旧址 (Dálǐní shìzhèngtīng jiùzhǐ)",
+    "name_now": "A historic building at the northern end of Russian Street",
+    "city": "dalian",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "building",
+    "lat": 38.9281,
+    "lng": 121.6279,
+    "coord_confidence": "high",
+    "summary": "One of Dalny’s first masonry buildings, erected for the city administration in the early 1900s. Vladimir Sakharov, engineer, port builder and first city governor, administered Dalny from here. He volunteered for Port Arthur in 1904 and died there of typhus. Japanese institutions occupied the building after 1905; it later housed Dalian’s Natural History Museum for many years. It is now a protected monument, though the museum inside may be closed.",
+    "visit": null,
+    "season": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "posts": [
+      93,
+      114
+    ],
+    "photos": [
+      "photos/photo_66@11-10-2026_14-03-01.jpg",
+      "photos/photo_361@11-11-2026_10-18-04.jpg",
+      "photos/photo_362@11-11-2026_10-18-05.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "dalnii-gorod-s-nulya",
+      "port-artur-i-dalnii-dva-goroda",
+      "skolimovsky-chelovek-kotoryy-narisoval-dalnii",
+      "zodchiy-1904-plan-goroda-dalnego"
+    ]
+  },
+  {
+    "slug": "zdanie-kvzhd-1902",
+    "name": "The 1902 Building by the Bridge (Chinese Eastern Railway Office)",
+    "name_zh": "大连艺术展览馆 / 大连美术馆 (Dàlián yìshù zhǎnlǎnguǎn / Dàlián měishùguǎn)",
+    "name_now": "Dalian Art Museum",
+    "city": "dalian",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "building",
+    "lat": 38.9266,
+    "lng": 121.6326,
+    "coord_confidence": "high",
+    "summary": "A turreted building with tall roofs at the northern end of Victory Bridge, dating from 1902. Sources differ on its first occupant: the Chinese Eastern Railway Company office, Dalny’s Russian administration or, later, a Japanese shipping company. They also disagree on its architect, naming either a German or Skolimowski. It became a nationally protected monument in 2001. A replica stands in the Japanese port of Moji as the Dalian Friendship Memorial. The original now hosts exhibitions.",
+    "visit": null,
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [
+      93
+    ],
+    "photos": [],
+    "verify": true,
+    "articles": [
+      "dalnii-gorod-s-nulya"
+    ]
+  },
+  {
+    "slug": "most-pobedy",
+    "name": "Victory Bridge",
+    "name_zh": "胜利桥 (Shènglì qiáo)",
+    "name_now": "A bridge over the railway between Russian Street and the city centre",
+    "city": "dalian",
+    "layers": [
+      "russian",
+      "japanese",
+      "soviet"
+    ],
+    "kind": "street",
+    "lat": 38.9257,
+    "lng": 121.6334,
+    "coord_confidence": "high",
+    "summary": "A bridge linking the Russian administrative quarter with the rest of Dalny across the railway tracks. Called Nipponbashi under Japanese rule, it became Victory Bridge after 1945. It offers views of the buildings north of the tracks. Sources disagree on the first bridge’s construction and later rebuilding; a Japanese reconstruction in the late 1900s is often mentioned.",
+    "visit": "The pedestrian crossing is always open.",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [
+      93
+    ],
+    "photos": [],
+    "verify": true,
+    "articles": [
+      "dalnii-gorod-s-nulya"
+    ]
+  },
+  {
+    "slug": "gorodskoy-sad",
+    "name": "Western Park (City Garden?)",
+    "name_zh": "劳动公园 (Láodòng gōngyuán)",
+    "name_now": "Labour Park, the largest park in central Dalian",
+    "city": "dalian",
+    "layers": [
+      "russian",
+      "japanese",
+      "soviet"
+    ],
+    "kind": "park",
+    "lat": 38.9105,
+    "lng": 121.6302,
+    "coord_confidence": "high",
+    "summary": "According to Chinese sources, the Russians founded the park in 1898 on what was then the western edge of town and called it Western Park. The Japanese expanded it with sumo, golf and a swimming pool, renaming it Central Park in 1926. It became Lenin Park in 1947 and Labour Park in 1949. The channel has a photograph captioned “City Garden” in Dalny, but whether it shows this park has not been established. Ginkgo trees turn yellow here in autumn.",
+    "visit": "Admission is free. The east entrance (劳动公园东门) is a 10–15 minute walk from Zhongshan Square.",
+    "season": [
+      "spring",
+      "autumn"
+    ],
+    "posts": [
+      93
+    ],
+    "photos": [
+      "photos/photo_69@11-10-2026_14-03-01.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "dalnii-gorod-s-nulya"
+    ]
+  },
+  {
+    "slug": "port-dalniy",
+    "name": "Dalny Port (Victoria Bay)",
+    "name_zh": "大连港 (Dàlián gǎng)",
+    "name_now": "Dalian Port, with its passenger terminal (大连港客运站) and Gangwan Square",
+    "city": "dalian",
+    "layers": [
+      "russian",
+      "japanese",
+      "soviet"
+    ],
+    "kind": "port",
+    "lat": 38.93,
+    "lng": 121.6578,
+    "coord_confidence": "high",
+    "summary": "The city was built for this port, designed by Vladimir Sakharov, who had previously built Vladivostok’s commercial harbour. The first phase cost 10.8 million rubles and immediately made Dalny China’s second-busiest cargo port after Shanghai. In May 1904, Japanese troops captured the nearly completed port and used it to supply the army besieging Port Arthur. It remains a major working port; its passenger terminal faces the city. The coordinate marks the terminal.",
+    "visit": "The passenger terminal is open to ferry passengers; the cargo port is closed.",
+    "season": [
+      "summer",
+      "autumn"
+    ],
+    "posts": [
+      93,
+      114,
+      137
+    ],
+    "photos": [
+      "photos/photo_73@11-10-2026_14-03-01.jpg",
+      "photos/photo_324@archive.jpg",
+      "photos/photo_319@archive.jpg"
+    ],
+    "verify": false,
+    "articles": [
+      "dalnii-gorod-s-nulya",
+      "port-artur-i-dalnii-dva-goroda",
+      "vitte-chast-2-ministr-kotoryi-otdaval",
+      "skolimovsky-chelovek-kotoryy-narisoval-dalnii"
+    ]
+  },
+  {
+    "slug": "gostinitsa-yamato",
+    "name": "Yamato Hotel",
+    "name_zh": "大连宾馆 (Dàlián bīnguǎn), formerly 大和旅馆",
+    "name_now": "A hotel on Zhongshan Square",
+    "city": "dalian",
+    "layers": [
+      "japanese",
+      "soviet"
+    ],
+    "kind": "building",
+    "lat": 38.9195,
+    "lng": 121.6395,
+    "coord_confidence": "high",
+    "summary": "A South Manchuria Railway hotel opened in 1914 on the south side of Ōhiroba. The railway operated Yamato hotels in the principal cities of Manchuria and Kwantung, including Port Arthur; Dalian’s is the best known. Its colonnaded façade survives and it still operates as a hotel, one of the few pre-war buildings on the square where visitors can stay overnight.",
+    "visit": "A working hotel; view its façade from the square.",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [
+      "photos/photo_325@archive.jpg",
+      "photos/photo_322@archive.jpg"
+    ],
+    "verify": false,
+    "articles": []
+  },
+  {
+    "slug": "bank-yokohama",
+    "name": "Yokohama Specie Bank Branch",
+    "name_zh": "横滨正金银行大连支店旧址 (Héngbīn Zhèngjīn yínháng), now 中国银行",
+    "name_now": "A Bank of China branch",
+    "city": "dalian",
+    "layers": [
+      "japanese"
+    ],
+    "kind": "building",
+    "lat": 38.9218,
+    "lng": 121.6383,
+    "coord_confidence": "high",
+    "summary": "A three-domed building from 1909, designed by Tsumaki Yorinaka, a leading Meiji-era Japanese architect, and his pupil Ōta Satoshi. The Yokohama Specie Bank financed foreign trade; Manchurian soybeans and soybean cake passed through Dairen. A Bank of China branch now occupies the building, with a 2005 extension behind it.",
+    "visit": "A working bank.",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [
+      "photos/photo_326@archive.jpg"
+    ],
+    "verify": false,
+    "articles": []
+  },
+  {
+    "slug": "merija-dajrena",
+    "name": "Dairen City Hall",
+    "name_zh": "大连市役所旧址 (Dàlián shìyìsuǒ), now 中国工商银行",
+    "name_now": "An ICBC branch",
+    "city": "dalian",
+    "layers": [
+      "japanese"
+    ],
+    "kind": "building",
+    "lat": 38.9199,
+    "lng": 121.6403,
+    "coord_confidence": "high",
+    "summary": "Dairen’s city hall, built in 1919 to a design by Matsumuro Shigemitsu’s team, with a tower above the entrance. It stands on the circular square alongside the 1908 police headquarters, 1920 Bank of Korea, 1917 post office and 1936 Oriental Development Company office. Over thirty years, the Japanese built around the square laid out by the Russians. It now houses ICBC.",
+    "visit": "A working bank.",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [],
+    "verify": false,
+    "articles": []
+  },
+  {
+    "slug": "politsiya-dajrena",
+    "name": "Dairen Police Headquarters",
+    "name_zh": "大连警察署旧址 (Dàlián jǐngchá shǔ)",
+    "name_now": "An office building on Zhongshan Square",
+    "city": "dalian",
+    "layers": [
+      "japanese"
+    ],
+    "kind": "building",
+    "lat": 38.9197,
+    "lng": 121.6374,
+    "coord_confidence": "high",
+    "summary": "The first building on Ōhiroba, completed in 1908 to a design by Maeda Shōin’s team in the Kwantung Government-General’s construction department. Red brick with white bands and corner towers. In 1908, the Russian square was still an empty circle with radiating streets marked out; this building established the scale and style of what followed. It now houses offices, including a Citibank branch.",
+    "visit": "Offices; no public access inside.",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [],
+    "verify": false,
+    "articles": []
+  },
+  {
+    "slug": "vokzal-dalian",
+    "name": "Dairen Railway Station",
+    "name_zh": "大连站 (Dàlián zhàn)",
+    "name_now": "Dalian’s main railway station",
+    "city": "dalian",
+    "layers": [
+      "japanese",
+      "soviet"
+    ],
+    "kind": "station",
+    "lat": 38.9213,
+    "lng": 121.6282,
+    "coord_confidence": "high",
+    "summary": "Opened in 1937, the station separated passenger flows by level: departing passengers ascended ramps to the upper floor, while arrivals left below. Its exterior is often compared with Tokyo’s Ueno Station. Built by the Japanese for the expanding city, it is a different building from Russian Dalny’s station. It remains in use, with a large forecourt.",
+    "visit": "An operating station. Metro: Dalian Railway Station.",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "nagasaki-goshinji",
+    "name": "Russian Cemetery at Goshinji Temple, Nagasaki",
+    "name_zh": "悟真寺国際墓地 (Japanese: Goshinji kokusai bochi; Chinese: Wùzhēnsì)",
+    "name_now": "Inasa International Cemetery at the Buddhist Goshinji Temple",
+    "city": "other",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "cemetery",
+    "lat": 32.753,
+    "lng": 129.8603,
+    "coord_confidence": "high",
+    "summary": "The Russian Pacific Squadron wintered in Nagasaki until 1897, and a Russian sailors’ cemetery grew up at Goshinji Temple in Inasa. The infant Mikhail Mühlberg lies here: born in besieged Port Arthur on 13 November 1904, baptised the day after the surrender, he lived 52 days. Historian Dmitry Nikolayev reconstructed his family’s story from parish registers in “Misha from Nagasaki”, published in Rodina.",
+    "visit": "The temple is in Inasa on the western shore of Nagasaki Bay, near Goshinji-mae bus stop (悟真寺前).",
+    "season": [
+      "spring",
+      "autumn"
+    ],
+    "posts": [
+      143,
+      127
+    ],
+    "photos": [],
+    "verify": false,
+    "articles": [
+      "otsu-1891-pokushenie-na-tsesarevicha",
+      "pervaya-tihookeanskaya-eskadra",
+      "misha-iz-nagasaki-myulberg"
+    ]
+  },
+  {
+    "slug": "dalyanskiy-universitet-inyaz",
+    "name": "Dalian University of Foreign Languages, Lüshun Campus",
+    "name_zh": "大连外国语大学（旅顺校区）",
+    "name_now": "A working university; Russian Club of Dalian excursions meet outside the campus gates",
+    "city": "lushun",
+    "layers": [
+      "modern"
+    ],
+    "kind": "meeting",
+    "lat": 38.8098,
+    "lng": 121.3057,
+    "coord_confidence": "high",
+    "summary": "Meeting point for the Russian Club of Dalian’s guided Port Arthur excursions, usually around 09:00, with a return transfer here. The campus stands in the new university district east of Lüshun, about 5 km in a straight line from the historic centre and station. The campus itself has no connection with the fortress: it is a convenient meeting point with parking and an address taxis can find. The group continues by car, beginning at Port Arthur station.",
+    "visit": "The organisers will specify the exact meeting point at the campus gates and the time; confirm the day before. Search for 大连外国语大学 旅顺校区.",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "staryy-gorod-port-artura",
+    "name": "Port Arthur’s Old Town",
+    "name_zh": "旅顺老城区（黄河路一带）",
+    "name_now": "Central Lüshun east of Quail Hill, with Russian and Japanese houses beside the Eastern Basin",
+    "city": "lushun",
+    "layers": [
+      "pre1898",
+      "russian",
+      "japanese",
+      "soviet"
+    ],
+    "kind": "street",
+    "lat": 38.8075,
+    "lng": 121.256,
+    "coord_confidence": "medium",
+    "summary": "The town beside the Eastern Basin, below Golden and Quail hills, grew up in the days of the Qing fleet. During Russian rule, Pacific Squadron officers and sailors lived here among port offices, shops and restaurants, while the New Town on the western shore was still being built. The Japanese remodelled the centre after 1905, and many buildings visible today are Japanese-era. The map point represents the district, which is best explored on foot.",
+    "visit": "Walk from the railway station or the lower Quail Hill cable-car station. Do not photograph military installations beside the harbour. Check locally which buildings are open.",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [
+      "photos/photo_104@17-10-2026_15-14-01.jpg",
+      "photos/photo_63@10-10-2026_21-53-29.jpg",
+      "photos/photo_305@archive.jpg"
+    ],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "redut-1",
+    "name": "Redoubt No. 1 (East Panlongshan)",
+    "name_zh": "盘龙山东堡垒 (Pánlóngshān dōng bǎolěi)",
+    "name_now": "Remains of a fieldwork in front of the fort line, north of the Great Eagle’s Nest",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "fort",
+    "lat": 38.8389,
+    "lng": 121.2741,
+    "coord_confidence": "low",
+    "summary": "One of two redoubts on Panlongshan, forward of the Eastern Front’s main line between Forts II and III. During the first general assault, 6–11 (19–24) August 1904, the Japanese captured both at great cost, their only gains in that attack. The main line held, and the siege turned to engineering operations. Which redoubt was No. 1 and which No. 2, and what survives, needs checking against the plan and on the ground.",
+    "visit": "There is no separate visitor area. The approximate point comes from the 1904 fortress plan. Look for earthwork remains north of Jiguan Shan Road.",
+    "season": [
+      "autumn",
+      "winter",
+      "spring"
+    ],
+    "posts": [],
+    "photos": [],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "redut-2",
+    "name": "Redoubt No. 2 (West Panlongshan)",
+    "name_zh": "盘龙山西堡垒 (Pánlóngshān xī bǎolěi)",
+    "name_now": "Remains of a fieldwork in front of the fort line, east of Erlongshan",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "fort",
+    "lat": 38.8401,
+    "lng": 121.2703,
+    "coord_confidence": "low",
+    "summary": "The second Panlongshan redoubt, west of the first and closer to Fort No. III. Both covered approaches to the Eastern Front’s main line and fell during the August 1904 assault. Japanese trenches then advanced from here towards the main defences. On the 1904 fortress plan, the redoubts already lie behind the Japanese trench line. Their numbering and exact positions need checking against the plan and on site.",
+    "visit": "The approximate position comes from the 1904 plan. Any signs are in Chinese only.",
+    "season": [
+      "autumn",
+      "winter",
+      "spring"
+    ],
+    "posts": [],
+    "photos": [],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "ukreplenie-4",
+    "name": "Fortification No. 4",
+    "name_zh": "大案子山堡垒 (Dà Ànzishān bǎolěi)",
+    "name_now": "A fortification on Great Anzishan north of the New Town, marked as a viewpoint on OpenStreetMap",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "fort",
+    "lat": 38.8197,
+    "lng": 121.2207,
+    "coord_confidence": "medium",
+    "summary": "An intermediate work on the Western Front between Forts IV and V, directly above the New Town. It is red on the 1904 fortress plan: these positions remained Russian on 19 December. The Japanese did not assault the Western Front, concentrating on 203 Metre Hill and the northeast, and received the work after the surrender. Its design resembles No. 5: rampart, dry ditch and caponiers. The ruins’ condition needs checking on site.",
+    "visit": "Approach from the New Town streets (民泰街). Check access and ticket arrangements in advance.",
+    "season": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "fort-4",
+    "name": "Fort No. IV",
+    "name_zh": "椅子山堡垒 (Yǐzishān bǎolěi)",
+    "name_now": "A fort on Yizishan northwest of the New Town",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "fort",
+    "lat": 38.8285,
+    "lng": 121.2247,
+    "coord_confidence": "medium",
+    "summary": "A Western Front fort on Yizishan, or “Chair Hill”, on the northern flank and closest to 203 Metre Hill among this sector’s forts. On the 1904 plan, it remains Russian until the siege ends, like all the western forts: after taking 203 Metre Hill on 22 November (5 December), the Japanese did not advance farther west. The fortress surrendered on 20 December 1904 (2 January 1905), and the fort was occupied without fighting. The OpenStreetMap position agrees with the 1904 plan.",
+    "visit": "Approach along Chuncheng Road (春城路). We have no ticket information; check locally.",
+    "season": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "batareya-d",
+    "name": "Battery D",
+    "name_zh": "—",
+    "name_now": "Site of a permanent battery between Fort No. V and Fortification No. 5",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "battery",
+    "lat": 38.8048,
+    "lng": 121.2042,
+    "coord_confidence": "low",
+    "summary": "A permanent Western Front battery. Port Arthur’s land-front batteries were designated by letters. On the 1904 plan, Battery D stands south of Fort V, halfway to Fortification No. 5, covering the valley towards the New Town. There was no fighting here. Surviving remains and access have not been checked: the point was taken from the plan and may be off by a hundred or two hundred metres.",
+    "visit": "An approximate point from the 1904 plan. Compare it with satellite imagery before visiting.",
+    "season": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "morskoe-sobranie",
+    "name": "Naval Assembly",
+    "name_zh": "—",
+    "name_now": "Building not yet identified; the map point is provisional",
+    "city": "lushun",
+    "layers": [
+      "russian"
+    ],
+    "kind": "building",
+    "lat": 38.8066,
+    "lng": 121.2292,
+    "coord_confidence": "low",
+    "summary": "The naval officers’ club, a meeting place and centre of leisure for Pacific Squadron officers in Russian Port Arthur. A Naval Assembly was a regular feature of Russian naval-base life and appears in siege memoirs and diaries. We have not yet identified its building in modern Lüshun or established whether it survives. The point is therefore provisionally placed near Lüshun Museum. We will check the 1904 town plans and the guide’s account.",
+    "visit": "Shown on the guided excursion. For independent visits, follow the guide’s description. The map position is provisional.",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "yamato-lyuyshun",
+    "name": "Yamato Hotel, Lüshun",
+    "name_zh": "旅顺大和旅馆旧址 (Lǚshùn Dàhé lǚguǎn jiùzhǐ), 文化路30号",
+    "name_now": "A two-storey mansion of 1903 on Wenhua Road, reported by the press to be in poor condition",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "building",
+    "lat": 38.8045,
+    "lng": 121.2252,
+    "coord_confidence": "low",
+    "summary": "Distinguish it from Dalian’s Yamato Hotel on Zhongshan Square. The protected-building plaque dates it to 1903. Chinese press reports identify it as the mansion of Ji Fengtai, a Chinese merchant with Russian nationality, converted after the war into a South Manchuria Railway Yamato hotel. The same reports say Puyi stayed here in 1931. In the late 2010s, journalists described cracks in the walls and a construction fence around the house.",
+    "visit": "Address: 旅顺口区文化路30号, west of Lüshun Museum. The map point marks the street rather than the house; access inside is unlikely.",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "russkaya-shkola",
+    "name": "Russian School",
+    "name_zh": "—",
+    "name_now": "Building not yet identified; the map point in the New Town is provisional",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "building",
+    "lat": 38.8098,
+    "lng": 121.2262,
+    "coord_confidence": "low",
+    "summary": "Officers, officials and employees lived with their families in Russian Port Arthur, and schools opened for their children. We have not yet checked which building is shown as the “Russian School” or its use after 1905. The point is provisionally placed among the New Town’s old streets, where several Japanese-era school buildings survive. We will check town plans and sources before supplying a precise address.",
+    "visit": "Shown on the guided excursion. The map position is provisional.",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "yaponskie-kvartaly-lyuyshunya",
+    "name": "Lüshun’s Japanese Quarters",
+    "name_zh": "太阳沟历史街区 (中央大街、新华大街一带)",
+    "name_now": "Taiyanggou streets with administrative buildings and villas from 1905–1945",
+    "city": "lushun",
+    "layers": [
+      "japanese",
+      "soviet"
+    ],
+    "kind": "street",
+    "lat": 38.8082,
+    "lng": 121.2295,
+    "coord_confidence": "medium",
+    "summary": "After 1905, the Japanese made Lüshun, or Ryojun, the capital of Kwantung and developed the New Town begun by the Russians. Buildings include the former Kwantung administration, gendarmerie headquarters, the mansion of Manchu Prince Su, who lived here after the Qing fell, schools and Japanese officials’ houses. Many have protected-monument plaques; some are abandoned. The point represents the district, easily explored on foot from the museum.",
+    "visit": "Allow 1–1.5 hours to walk from Lüshun Museum along Zhongyang Avenue and Xinhua Avenue. Building plaques are in Chinese.",
+    "season": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "posts": [],
+    "photos": [],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "gospital-krasnogo-kresta",
+    "name": "Red Cross Hospital",
+    "name_zh": "旅顺红十字医院旧址 (Lǚshùn Hóngshízì yīyuàn jiùzhǐ)",
+    "name_now": "An old building in the Old Town, in a lane off Huanghe Road, listed as a historic site",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "building",
+    "lat": 38.813,
+    "lng": 121.2621,
+    "coord_confidence": "medium",
+    "summary": "During the siege of 1904, Red Cross hospitals in Port Arthur employed nurses who had come from Russia. Casualties were so numerous that other buildings were also taken over as wards. This Old Town building is listed as a former Red Cross hospital. Which Russian hospital it housed, and its use under the Japanese, need checking against sources. The point comes from OpenStreetMap.",
+    "visit": "In the lane north of Huanghe Road (黄河路北一巷), beside the district hospital. Viewed from outside.",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "dom-kondratenko",
+    "name": "General Kondratenko’s House",
+    "name_zh": "康特拉琴柯旧居 (Kāngtèlāqínkē jiùjū)",
+    "name_now": "A mansion on Ningbo Street in the New Town",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "building",
+    "lat": 38.8121,
+    "lng": 121.2328,
+    "coord_confidence": "high",
+    "summary": "A New Town house presented locally as the residence of Major General Roman Kondratenko, commander of the fortress’s land defences. He was killed at Fort No. II on 2 (15) December 1904, and his remains were taken to St Petersburg in 1905, making this house the routes’ only “peacetime” site associated with him. The attribution comes from a local plaque and map; we have not yet seen documentary confirmation.",
+    "visit": "Ningbo Street (宁波街), New Town. Viewed from outside.",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "mayak-laoteshan",
+    "name": "Laotieshan Lighthouse",
+    "name_zh": "老铁山灯塔 (Lǎotiěshān dēngtǎ)",
+    "name_now": "An operating lighthouse and viewpoint at the southern tip of the Liaodong peninsula",
+    "city": "lushun",
+    "layers": [
+      "pre1898",
+      "russian",
+      "japanese",
+      "soviet",
+      "modern"
+    ],
+    "kind": "viewpoint",
+    "lat": 38.727,
+    "lng": 121.1348,
+    "coord_confidence": "high",
+    "summary": "The lighthouse stands at Liaodong’s southernmost point, southwest of Lüshun. The notional boundary between the Yellow and Bohai seas runs here; on clear days the viewpoint reveals a band where differently coloured waters meet. The lighthouse was built under the Qing in the late nineteenth century, before the Russians arrived. Check the exact date and equipment’s origins on site. Every ship approaching Port Arthur from the west and Bohai Bay passed this cape, about 13 km in a straight line from the harbour entrance.",
+    "visit": "About 20 km from central Lüshun, by car or taxi. Travel agencies report paid admission to the viewing area; check hours. The cape is very windy.",
+    "season": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "posts": [],
+    "photos": [],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "dahei-shan",
+    "name": "Great Black Mountain (Dahei Shan)",
+    "name_zh": "大黑山 (Dàhēishān)",
+    "name_now": "The highest mountain in Dalian’s six districts, 663 m",
+    "city": "dalian",
+    "layers": [
+      "modern"
+    ],
+    "kind": "viewpoint",
+    "lat": 39.0945,
+    "lng": 121.7866,
+    "coord_confidence": "medium",
+    "summary": "A 663 m mountain in Jinzhou district, part of the Qianshan range, with Dalian University’s campus at its foot. It has no direct connection with Port Arthur or Dalny: it is a place for a countryside walk. Rhododendrons and other flowers bloom on the slopes and near the summit in spring.",
+    "visit": null,
+    "season": [
+      "spring",
+      "autumn"
+    ],
+    "posts": [],
+    "photos": [],
+    "verify": true,
+    "articles": []
+  }
+]

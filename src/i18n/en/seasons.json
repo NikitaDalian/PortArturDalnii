@@ -1,0 +1,139 @@
+{
+  "spring": [
+    {
+      "title": "Cherry blossom at Longwangtang",
+      "place": "longwangtang",
+      "when": "mid to late April",
+      "note": "Single-flowered varieties bloom around mid-April; double-flowered varieties follow roughly a week later.",
+      "verify": true
+    },
+    {
+      "title": "Cherry blossom at 203 Metre Hill",
+      "place": "vysokaya-gora",
+      "when": "late April to early May",
+      "note": "The garden at the foot of 203 Metre Hill blooms about a week later than Longwangtang.",
+      "verify": true
+    },
+    {
+      "title": "Spring flowers on Dahei Shan",
+      "place": "dahei-shan",
+      "when": "late April to early May",
+      "note": "Rhododendrons flower near the summit, with other spring flowers on the slopes. The ridge is often windy, so choose a calm day.",
+      "verify": true
+    },
+    {
+      "title": "Dalian Acacia Festival",
+      "place": "nikolaevskaya-ploshchad",
+      "when": "late May",
+      "note": "The black locust blossom festival has been held since 1990; in 2011 it ran from 25 to 31 May. Venues change from year to year.",
+      "verify": true
+    },
+    {
+      "title": "Blossom in the New Town",
+      "place": "novy-gorod-taiyangou",
+      "when": "mid to late May",
+      "note": "Black locust trees line the streets of Taiyanggou in Lüshun.",
+      "verify": true
+    },
+    {
+      "title": "The forts before the leaves return",
+      "place": "ukreplenie-5",
+      "when": "March to April",
+      "note": "Before the trees leaf out, the fortifications’ ditches and earthworks are easiest to see."
+    }
+  ],
+  "summer": [
+    {
+      "title": "Sweet cherries in Lüshun",
+      "place": null,
+      "when": "early June; from late May in warm years",
+      "note": "Since 2009, the district has held the title of China’s home of large sweet cherries. Trees grown outdoors flower in mid-April, and the fruit ripens 42 days later."
+    },
+    {
+      "title": "Swimming season",
+      "place": null,
+      "when": "late July to August",
+      "note": "Some beaches remain closed in mid-July. In August 2026, water temperatures ranged from 24–30 °C in bulletins from China’s Ministry of Ecology and Environment.",
+      "verify": true
+    },
+    {
+      "title": "The sea below Golden Hill",
+      "place": "zolotaya-gora",
+      "when": "July to August",
+      "note": "Lüshun’s town beach lies at the foot of the hill, beside Electric Cliff Battery.",
+      "verify": true
+    },
+    {
+      "title": "Shade at Fortification No. 5",
+      "place": "ukreplenie-5",
+      "when": "June to August",
+      "note": "The fortification stands in woodland, cooler in hot weather than the exposed hills."
+    },
+    {
+      "title": "Dalian’s port and waterfront",
+      "place": "port-dalniy",
+      "when": "June to September",
+      "note": "Gangwan Square and the passenger terminal offer convenient views of the port."
+    }
+  ],
+  "autumn": [
+    {
+      "title": "The fishing season opens",
+      "place": null,
+      "when": "1 September",
+      "note": "The fishing ban in the Yellow and Bohai seas runs from 1 May until 12:00 on 1 September. Dalian marks its end with celebrations as boats leave the ports."
+    },
+    {
+      "title": "Ginkgo trees in Labour Park",
+      "place": "gorodskoy-sad",
+      "when": "late October to early November",
+      "note": "The park is described as one of Dalian’s best places to see golden ginkgo leaves.",
+      "verify": true
+    },
+    {
+      "title": "The land front on a clear day",
+      "place": "fort-2",
+      "when": "October to November",
+      "note": "The weather is dry, the leaves are falling, and the heights offer views along the whole line of hills."
+    },
+    {
+      "title": "The view from Quail Hill",
+      "place": "perepelinaya-gora",
+      "when": "September to November",
+      "note": "In autumn, views across the harbour and hills reach farther than in the humid summer."
+    }
+  ],
+  "winter": [
+    {
+      "title": "The Russian cemetery in winter",
+      "place": "kladbishche-lushun",
+      "when": "December to February",
+      "note": "Visitors bring flowers on anniversaries of the defence; there are few people.",
+      "verify": true
+    },
+    {
+      "title": "5 December: the loss of 203 Metre Hill",
+      "place": "vysokaya-gora",
+      "when": "22 November (5 December)",
+      "note": "On this day in 1904, Russian troops abandoned 203 Metre Hill, giving the enemy a view into the harbour."
+    },
+    {
+      "title": "15 December: Kondratenko’s death",
+      "place": "fort-2",
+      "when": "2 (15) December",
+      "note": "A stone at Fort No. II marks the place where the general was killed."
+    },
+    {
+      "title": "2 January: the fortress surrenders",
+      "place": "shuishiying",
+      "when": "20 December (2 January)",
+      "note": "The surrender was signed on 20 December 1904 (2 January 1905). Stessel met Nogi at Shuishiying on 23 December (5 January)."
+    },
+    {
+      "title": "9 February: the war begins",
+      "place": "gavan-port-artura",
+      "when": "27 January (9 February)",
+      "note": "Japanese destroyers attacked the squadron off Port Arthur at night. Quail Hill offers the best view of the harbour."
+    }
+  ]
+}

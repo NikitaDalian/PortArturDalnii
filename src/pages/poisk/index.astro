@@ -265,7 +265,7 @@ const cfg = { base: url('/'), pagefind: url('/pagefind/pagefind.js'), types: typ
         pending = res.results.map(pfToItem);
       } else {
         note.hidden = false;
-        note.textContent = 'Полнотекстовый индекс недоступен: он создаётся при сборке сайта (npm run build). Пока ищем по заголовкам и аннотациям.';
+        note.textContent = 'Полнотекстовый поиск сейчас недоступен. Ищем по названиям и кратким описаниям.';
         if (!fallback) fallback = JSON.parse(document.getElementById('sp-fallback')!.textContent!);
         const words = norm(q).split(/\s+/).filter(Boolean);
         const hits = fallback!.filter((f) => words.every((w) => f.hay.includes(w)))

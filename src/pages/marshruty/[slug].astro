@@ -5,6 +5,7 @@ import Unsure from '../../components/Unsure.astro';
 import MapFigure from '../../components/MapFigure.astro';
 import MiniMap from '../../components/map/MiniMap.astro';
 import { routeArt } from '../../lib/art';
+import { intlLocale } from '../../i18n/locale';
 import { routes, href, img, imgCrop, plural, type Route } from '../../lib/data';
 import { sortedRoutes, routeAuthor, routeCover, routeStops, routeYandex, TRANSPORT, SEASONS, KINDS, isUncertain, photoCaption } from '../../components/map/places';
 
@@ -18,7 +19,8 @@ const stops = routeStops(r);
 const cover = routeCover(r);
 const artUrl = routeArt(r.slug, 1280);
 const total = stops.reduce((s, x) => s + (x.minutes || 0), 0);
-const fmtMin = (m: number) => (m >= 60 ? `${Math.floor(m / 60)} ч${m % 60 ? ` ${m % 60} мин` : ''}` : `${m} мин`);
+const unit = (n: number, kind: 'hour' | 'minute') => new Intl.NumberFormat(intlLocale, { style: 'unit', unit: kind, unitDisplay: 'short' }).format(n);
+const fmtMin = (m: number) => (m >= 60 ? [unit(Math.floor(m / 60), 'hour'), m % 60 ? unit(m % 60, 'minute') : ''].filter(Boolean).join(' ') : unit(m, 'minute'));
 const line = ((r as any).polyline as [number, number][] | undefined) ?? null;
 const points = stops.filter((s) => s.p).map((s, i) => ({ lat: s.p!.lat, lng: s.p!.lng, n: i + 1, name: s.p!.name, href: href.place(s.p!.slug) }));
 const others = sortedRoutes().filter((x) => x.slug !== r.slug).slice(0, 4);

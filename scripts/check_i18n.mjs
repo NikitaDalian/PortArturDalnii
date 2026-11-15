@@ -12,7 +12,19 @@ function compare(original, translated, path, key = '') {
     if (typeof translated !== typeof original || (original === null && translated !== null)) errors.push(`${path}: changed value type`);
     else if ((typeof original !== 'string' || invariant.has(key) || /^(https?:\/\/|photos\/)/.test(original)) && original !== translated) errors.push(`${path}: changed invariant`);
     else if (typeof original === 'string' && original.trim() && !translated.trim()) errors.push(`${path}: empty translation`);
-    else if (typeof original === 'string' && ['year', 'years', 'author_years', 'date'].includes(key) && JSON.stringify(original.match(/\d+/g)) !== JSON.stringify(translated.match(/\d+/g))) errors.push(`${path}: changed date numbers`);
+    else if (typeof original === 'string' && ['year', 'years', 'author_years', 'date'].includes(key)) {
+      if (/^\d{4}-\d{2}-\d{2}$/.test(original) && original !== translated) errors.push(`${path}: changed ISO date`);
+      // Timeline display dates may say "19th-century 1880s" in Chinese;
+      // their separate numeric year is checked as an invariant above.
+      if (key === 'date') return;
+      // Chinese dates put the year first and spell months as numbers.
+      const available = (translated.match(/\d+/g) ?? []).map(Number);
+      for (const number of (original.match(/\d+/g) ?? []).map(Number)) {
+        const index = available.indexOf(number);
+        if (index < 0) errors.push(`${path}: lost date number ${number}`);
+        else available.splice(index, 1);
+      }
+    }
     return;
   }
   if (!translated || typeof translated !== 'object' || Array.isArray(original) !== Array.isArray(translated)) { errors.push(`${path}: changed structure`); return; }
