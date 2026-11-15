@@ -1,0 +1,37 @@
+---
+import Crumbs from '../Crumbs.astro';
+import { href, url } from '../../lib/data';
+import { assetUrl, locale } from '../../i18n/locale';
+import type { Dossier } from './dossiers';
+interface Props { dossier: Dossier; city: string }
+const { dossier: d, city } = Astro.props;
+const art = ({ 'nikolaevskaya-ploshchad': 'city', 'gavan-port-artura': 'harbor', 'ukreplenie-5': 'fort' } as Record<string, string>)[d.place];
+const readingText = d.sections.flatMap(s => s.paragraphs).join(' ');
+const minutes = Math.max(1, Math.ceil(locale === 'zh' ? readingText.replace(/\s/g, '').length / 350 : readingText.split(/\s+/).length / 170));
+---
+<header class="guide-head dark">
+  <div class="container">
+    <Crumbs items={[{ label: 'Главная', href: href.home() }, { label: city, href: href.map(d.place) }]} />
+    <div class="guide-head__text">
+      <p class="guide-head__meta">История места <span>{minutes} мин чтения</span></p>
+      <h1 id="guide-title" data-pagefind-meta="title">{d.title}</h1>
+      <p class="guide-head__intro">{d.intro}</p>
+      <span hidden data-pagefind-filter="type:Места"></span>
+      <span hidden data-pagefind-meta={`sub:${city} · История места`}></span>
+    </div>
+    <figure class="guide-head__art">
+      <img src={assetUrl(`/img/guides/${art}.webp`)} srcset={`${assetUrl(`/img/guides/${art}-800.webp`)} 800w, ${assetUrl(`/img/guides/${art}.webp`)} 1600w`} sizes="(max-width: 1320px) 100vw, 1272px" width="1600" height={art === 'harbor' ? '800' : '640'} alt="" loading="eager" decoding="async" fetchpriority="high" />
+      <figcaption>Редакционная иллюстрация, созданная с помощью ИИ. Художественный образ, не историческая реконструкция.</figcaption>
+    </figure>
+  </div>
+</header>
+<style>
+  .guide-head { padding: clamp(24px, 4vw, 48px) 0 24px; }
+  .guide-head__text { max-width: 920px; padding: 32px 0 clamp(28px, 4vw, 48px); }
+  .guide-head__meta { display: flex; flex-wrap: wrap; gap: 12px 24px; color: var(--steel); font-size: 15px; margin-bottom: 18px; }
+  .guide-head h1 { font-size: clamp(34px, 4.8vw, 64px); line-height: 1.08; letter-spacing: -.035em; font-weight: 750; text-wrap: balance; }
+  .guide-head__intro { margin-top: 24px; max-width: 64ch; font-size: clamp(18px, 1.7vw, 22px); line-height: 1.65; color: var(--mist); }
+  .guide-head__art img { width: 100%; height: auto; max-height: 500px; object-fit: cover; display: block; }
+  .guide-head__art figcaption { font-size: 12px; line-height: 1.6; max-width: 90ch; }
+  @media (max-width: 600px) { .guide-head__text { padding-top: 24px; } .guide-head__art img { aspect-ratio: 2 / 1; object-fit: cover; } }
+</style>

@@ -111,8 +111,8 @@ const portraitArchive = (p.portrait && photoMeta(p.portrait as string)?.record_u
         )}
         {placeText.length > 0 && (
           <p class="muted ps-also">
-            {placePages.length > 0 ? 'Также: ' : 'Связанные места, у которых пока нет своей страницы: '}
-            {placeText.map((t, i) => <>{t.label}{i < placeText.length - 1 ? ', ' : ''}</>)}
+            {placePages.length > 0 ? 'Также: ' : 'География: '}
+            {placeText.map((t, i) => <>{t.href ? <a class="link" href={t.href}>{t.label}</a> : t.label}{i < placeText.length - 1 ? ', ' : ''}</>)}
           </p>
         )}
       </div>

@@ -1,6 +1,7 @@
 ---
 import { href, TG_CHANNEL } from '../lib/data';
 import { t } from '../i18n/ru';
+import LanguageSwitch from './LanguageSwitch.astro';
 ---
 <footer class="site-footer dark" data-pagefind-ignore>
   <div class="container site-footer__grid">
@@ -27,9 +28,7 @@ import { t } from '../i18n/ru';
       <a href={TG_CHANNEL} rel="noopener">Telegram-канал</a>
     </nav>
     <div class="stack" style="--stack-gap:10px">
-      <span style="color:#fff;font-weight:600">{t.lang.ru}</span>
-      <span class="site-footer__soon">{t.lang.en} — {t.footer.soon}</span>
-      <span class="site-footer__soon">{t.lang.zh} — {t.footer.soon}</span>
+      <LanguageSwitch />
     </div>
   </div>
   <div class="container site-footer__bottom">{t.footer.rights}</div>

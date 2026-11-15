@@ -1,0 +1,33 @@
+---
+import { languages, locale, languagePath } from '../i18n/locale';
+interface Props { compact?: boolean }
+const { compact = false } = Astro.props;
+---
+{languages.length > 1 && <nav class:list={['language-switch', { compact }]} aria-label="Language / Язык / 语言">
+  {languages.map((language) => <a href={languagePath(Astro.url.pathname, language.code)} hreflang={language.hreflang} lang={language.hreflang} aria-current={locale === language.code ? 'page' : undefined} data-language-link data-astro-reload>{compact ? language.short : language.label}</a>)}
+</nav>}
+<script>
+  document.addEventListener('click', (event) => {
+    const link = (event.target as Element)?.closest<HTMLAnchorElement>('[data-language-link]');
+    if (!link) return;
+    const target = new URL(link.href);
+    target.search = location.search;
+    target.hash = location.hash;
+    link.href = target.href;
+  }, true);
+  document.addEventListener('astro:page-load', () => {
+    document.querySelectorAll<HTMLAnchorElement>('[data-language-link]').forEach((link) => {
+      const target = new URL(link.href);
+      target.search = location.search;
+      target.hash = location.hash;
+      link.href = target.href;
+    });
+  });
+</script>
+<style>
+  .language-switch { display: flex; flex-wrap: wrap; gap: 4px 12px; }
+  .language-switch a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; color: var(--mist); font-size: 14px; }
+  .language-switch a[aria-current] { color: #fff; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 6px; }
+  .compact { gap: 0; }
+  .compact a { min-width: 34px; font-size: 12px; }
+</style>

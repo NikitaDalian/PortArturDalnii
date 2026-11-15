@@ -3,9 +3,10 @@ import Base from '../../layouts/Base.astro';
 import PageHero from '../../components/PageHero.astro';
 import { href, plural } from '../../lib/data';
 import { buildIndex, GROUP_LABELS, type Group } from '../../components/search/indexEntries';
+import { locale } from '../../i18n/locale';
 
 const entries = buildIndex();
-const ALPHABET = 'АБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЩЭЮЯ'.split('');
+const ALPHABET = (locale === 'ru' ? 'АБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЩЭЮЯ' : locale === 'en' ? 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' : '').split('');
 const letters = [...ALPHABET, ...new Set(entries.map((e) => e.letter).filter((l) => !ALPHABET.includes(l)))];
 const byLetter = letters.map((l) => ({ l, items: entries.filter((e) => e.letter === l) }));
 const groups = Object.keys(GROUP_LABELS) as Group[];

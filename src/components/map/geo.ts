@@ -1,4 +1,5 @@
 // Геометрия и ссылки для карт. Без импорта данных: файл попадает в клиентский бандл.
+import { intlLocale } from '../../i18n/locale';
 
 export type LL = [number, number]; // [lat, lng]
 
@@ -109,7 +110,10 @@ export const yandexPoint = (lat: number, lng: number) => `https://yandex.ru/maps
 export const yandexRoute = (pts: LL[], mode: 'auto' | 'pd' = 'auto') =>
   `https://yandex.ru/maps/?rtext=${pts.map((p) => `${p[0].toFixed(5)},${p[1].toFixed(5)}`).join('~')}&rtt=${mode}`;
 
-export const fmtKm = (km: number) => (km < 1 ? `${Math.round(km * 1000)} м` : `${km.toFixed(km < 10 ? 1 : 0).replace('.', ',')} км`);
+export const fmtKm = (km: number) => new Intl.NumberFormat(intlLocale, {
+  style: 'unit', unit: km < 1 ? 'meter' : 'kilometer', unitDisplay: 'short',
+  maximumFractionDigits: km >= 1 && km < 10 ? 1 : 0,
+}).format(km < 1 ? km * 1000 : km);
 
 // Подложка OpenStreetMap: простой стиль-объект
 export const OSM_ATTR = '© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">участники OpenStreetMap</a>';

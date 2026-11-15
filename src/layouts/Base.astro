@@ -4,20 +4,21 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { t } from '../i18n/ru';
 import '../styles/global.css';
+import { locale, htmlLang, languages, languagePath, assetUrl } from '../i18n/locale';
 
 interface Props {
   title?: string;          // заголовок страницы без названия сайта
   description?: string;
   image?: string | null;   // абсолютный или внутренний адрес картинки для превью
   section?: 'layers' | 'people' | 'map' | 'routes' | 'library' | 'notes' | 'about' | null; // подсветка пункта меню
-  lang?: 'ru' | 'en' | 'zh';
+  lang?: 'ru' | 'en' | 'zh' | 'zh-Hans';
   /** false — страница-список: не попадает в поисковый индекс Pagefind (чтобы не дублировать карточки) */
   searchable?: boolean;
 }
-const { title, description = t.description, image = null, section = null, lang = 'ru', searchable = true } = Astro.props;
+const { title, description = t.description, image = null, section = null, lang = htmlLang, searchable = true } = Astro.props;
 const fullTitle = title ? `${title} — ${t.site}` : `${t.site} — ${t.tagline}`;
-const ogImage = image ? new URL(image, Astro.site).href : new URL(import.meta.env.BASE_URL + 'img/p/98.webp', Astro.site).href;
-const fontUrl = import.meta.env.BASE_URL + 'fonts/Onest-var.woff2';
+const ogImage = new URL(image || assetUrl('img/p/98.webp'), Astro.site).href;
+const fontUrl = assetUrl('fonts/Onest-var.woff2');
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 ---
 <!doctype html>
@@ -28,13 +29,15 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
   <title>{fullTitle}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonical} />
+  {languages.map((language) => <link rel="alternate" hreflang={language.hreflang} href={new URL(languagePath(Astro.url.pathname, language.code), Astro.site).href} />)}
+  <link rel="alternate" hreflang="x-default" href={new URL(languagePath(Astro.url.pathname, 'ru'), Astro.site).href} />
   <meta property="og:type" content="website" />
   <meta property="og:title" content={fullTitle} />
   <meta property="og:description" content={description} />
   <meta property="og:image" content={ogImage} />
-  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:locale" content={locale === 'zh' ? 'zh_CN' : locale === 'en' ? 'en_US' : 'ru_RU'} />
   <meta name="theme-color" content="#0B2238" />
-  <link rel="icon" href={import.meta.env.BASE_URL + 'favicon.svg'} type="image/svg+xml" />
+  <link rel="icon" href={assetUrl('favicon.svg')} type="image/svg+xml" />
   <!-- Шрифт Onest (лицензия OFL) отдаём с самого сайта: Google Fonts из материкового Китая обычно недоступны -->
   <link rel="preload" href={fontUrl} as="font" type="font/woff2" crossorigin />
   <style is:inline set:html={`@font-face{font-family:'Onest';src:url(${fontUrl}) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}`}></style>

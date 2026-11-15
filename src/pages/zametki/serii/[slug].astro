@@ -54,7 +54,7 @@ const others = series.filter((x) => x.slug !== s.slug);
           </div>
           {a.cover && (
             <a class="ss__media" href={href.note(a.slug)} tabindex="-1" aria-hidden="true">
-              <img src={imgCrop(a.cover, '3x2', 640)} alt="" loading="lazy" decoding="async" transition:name={`note-${a.slug}`} />
+              <img src={imgCrop(a.cover, '3x2', 640)} alt="" loading="lazy" decoding="async" />
             </a>
           )}
         </li>

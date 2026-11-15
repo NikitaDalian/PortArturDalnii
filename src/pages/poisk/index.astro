@@ -8,7 +8,9 @@ import { fallbackItems } from '../../components/search/fallbackData';
 const POPULAR = ['Витте', 'Кондратенко', 'Укрепление № 5', 'Пикуль', 'Дальний'];
 const TABS = ['Заметки', 'Лица', 'Места', 'Книги'];
 const typeColors = Object.fromEntries(Object.entries(TYPES).map(([k, v]) => [k, { label: v.label, color: v.color }]));
-const cfg = { base: url('/'), pagefind: url('/pagefind/pagefind.js'), types: typeColors };
+const cfg = { base: url('/'), pagefind: url('/pagefind/pagefind.js'), types: typeColors,
+  tabs: { notes: 'Заметки', people: 'Лица', places: 'Места', books: 'Книги' },
+};
 ---
 <Base searchable={false} title="Поиск" description="Поиск по заметкам, людям, местам и книгам сайта «Портъ-Артуръ и Дальнiй»." section={null}>
   <div class="sp" data-pagefind-ignore="all">
@@ -115,7 +117,7 @@ const cfg = { base: url('/'), pagefind: url('/pagefind/pagefind.js'), types: typ
 </style>
 
 <script>
-  type Cfg = { base: string; pagefind: string; types: Record<string, { label: string; color: string }> };
+  type Cfg = { base: string; pagefind: string; types: Record<string, { label: string; color: string }>; tabs: Record<string, string> };
   type Item = { url: string; title: string; excerpt: string; meta: string; color: string; image?: string | null };
   type FbItem = { tab: string; url: string; title: string; text: string; meta: string; color?: string; image?: string | null; hay: string };
 
@@ -170,7 +172,8 @@ const cfg = { base: url('/'), pagefind: url('/pagefind/pagefind.js'), types: typ
 
     const params = new URLSearchParams(location.search);
     let q = params.get('q') ?? '';
-    let tab = params.get('tab') ?? '';
+    const requestedTab = params.get('tab') ?? '';
+    let tab = cfg.tabs[requestedTab] ?? requestedTab;
     if (!tabs.some((t) => t.dataset.tab === tab)) tab = '';
     input.value = q;
 
@@ -181,7 +184,7 @@ const cfg = { base: url('/'), pagefind: url('/pagefind/pagefind.js'), types: typ
     const writeUrl = () => {
       const p = new URLSearchParams();
       if (q) p.set('q', q);
-      if (tab) p.set('tab', tab);
+      if (tab) p.set('tab', Object.entries(cfg.tabs).find(([, label]) => label === tab)?.[0] ?? tab);
       const qs = p.toString();
       history.replaceState(history.state, '', location.pathname + (qs ? '?' + qs : ''));
     };

@@ -29,7 +29,7 @@ const { title, eyebrow, lead, crumbs = [], image = null, imageAlt = '', caption,
     </div>
     {image && (
       <figure class="page-hero__fig">
-        <img src={image} alt={imageAlt} style={imageStyle} transition:name={transitionName} loading="eager" decoding="async" data-pagefind-meta={imageMeta ? 'image[src], image_alt[alt]' : undefined} />
+        <img src={image} alt={imageAlt} style={imageStyle} loading="eager" decoding="async" data-pagefind-meta={imageMeta ? 'image[src], image_alt[alt]' : undefined} />
         {caption && <figcaption>{caption}</figcaption>}
       </figure>
     )}
@@ -38,9 +38,9 @@ const { title, eyebrow, lead, crumbs = [], image = null, imageAlt = '', caption,
 </section>
 
 <style>
-  .page-hero__inner { display: flex; flex-wrap: wrap; gap: 32px 48px; align-items: flex-end; }
+  .page-hero__inner { display: flex; flex-wrap: wrap; gap: 32px 48px; align-items: center; }
   .page-hero__text { flex: 1 1 520px; min-width: 0; }
   .page-hero__title { overflow-wrap: break-word; hyphens: auto; }
-  .page-hero__fig { flex: 0 1 420px; min-width: 0; }
-  .page-hero__fig img { width: 100%; max-height: 420px; object-fit: cover; background: var(--navy-2); }
+  .page-hero__fig { flex: 1 1 420px; min-width: 0; }
+  .page-hero__fig img { display: block; width: 100%; height: auto; max-height: 420px; object-fit: cover; background: var(--navy-2); }
 </style>

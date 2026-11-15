@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import DossierHero from '../../components/places/DossierHero.astro';
 import PlaceDossier from '../../components/places/PlaceDossier.astro';
 import { dossierFor } from '../../components/places/dossiers';
 import PageHero from '../../components/PageHero.astro';
@@ -35,7 +36,7 @@ const seasons = ((p.season || []) as string[]).filter((s) => SEASONS[s]);
 const city = CITIES[p.city] ?? '';
 ---
 <Base title={dossier?.title ?? p.name} description={(dossier?.intro ?? p.summary).slice(0, 180)} image={img(cover)} section="map">
-  <PageHero
+  {dossier ? <DossierHero dossier={dossier} city={city} /> : <PageHero
     title={dossier?.title ?? p.name}
     eyebrow={`${city} · ${KINDS[p.kind] ?? p.kind}`}
     lead={p.name_now ?? undefined}
@@ -53,15 +54,15 @@ const city = CITIES[p.city] ?? '';
       {layers.map((l) => <a class="chip" href={href.layer(l)}>{layerByKey(l)?.years}</a>)}
       {unsure && <Unsure />}
     </div>
-  </PageHero>
+  </PageHero>}
 
-  <section class="section section--tight">
+  {dossier && <PlaceDossier dossier={dossier} />}
+
+  <section class="section section--tight" id="na-meste">
+    {dossier && <div class="container"><h2 class="h2 pl-practical-title">На месте</h2></div>}
     <div class="container split pl-split">
       <div class="stack" style="--stack-gap:28px">
-        <div class="prose reveal">
-          <p>{dossier?.intro ?? p.summary}</p>
-          {dossier && <p><a class="link" href="#istoriya-mesta">Читать историю места</a> · <a class="link" href="#istochniki-stati">Источники</a></p>}
-        </div>
+        {!dossier && <div class="prose"><p>{p.summary}</p></div>}
         {placeMap && !dossier && <div class="reveal"><MapFigure id={placeMap} /></div>}
         {unsure && (
           <Unsure block text={p.coord_confidence === 'low'
@@ -104,7 +105,6 @@ const city = CITIES[p.city] ?? '';
     </div>
   </section>
 
-  {dossier && <PlaceDossier dossier={dossier} />}
   {dossier && placeMap && <section class="section section--tight"><div class="container"><MapFigure id={placeMap} /></div></section>}
 
   {photos.length > 0 && (
@@ -186,6 +186,7 @@ const city = CITIES[p.city] ?? '';
 </Base>
 
 <style>
+  .pl-practical-title { margin-bottom: 32px; }
   .pl-zh { font-size: 17px; color: var(--mist); }
   .pl-tags { --cluster-gap: 8px; }
   .pl-split > :last-child { flex: 1 1 360px; }

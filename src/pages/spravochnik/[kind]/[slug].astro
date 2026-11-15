@@ -1,0 +1,63 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Crumbs from '../../../components/Crumbs.astro';
+import Related from '../../../components/Related.astro';
+import { articles, terms, referenceDescriptions, href, tgPost } from '../../../lib/data';
+export function getStaticPaths() {
+  return (['people', 'geo'] as const).flatMap((kind) => Object.entries(terms[kind]).map(([slug, name]) => ({ params: { kind, slug }, props: { kind, slug, name } })));
+}
+const { kind, slug, name } = Astro.props as { kind: 'people' | 'geo'; slug: string; name: string };
+const description = referenceDescriptions[kind][slug];
+if (!description) throw new Error(`Missing reference description: ${kind}/${slug}`);
+const field = kind === 'people' ? 'people' : 'places';
+const notes = articles.filter((a) => (a[field] as string[]).includes(slug));
+const related = {
+  people: [...new Set(notes.flatMap((a) => a.people))].filter((s) => s !== slug).slice(0, 10),
+  places: [...new Set(notes.flatMap((a) => a.places))].filter((s) => s !== slug).slice(0, 10),
+  books: [...new Set(notes.flatMap((a) => a.books))].slice(0, 8),
+};
+---
+<Base title={name} description={description.slice(0,180)} section={kind === 'people' ? 'people' : 'map'}>
+  <header class="reference-head dark">
+    <div class="container reference-width">
+      <Crumbs items={[{ label: 'Главная', href: href.home() }, { label: 'Указатель А–Я', href: href.index() }]} />
+      <p class="reference-type">{kind === 'people' ? 'Люди' : 'География'}</p>
+      <h1 data-pagefind-meta="title">{name}</h1>
+      <span hidden data-pagefind-filter={`type:${kind === 'people' ? 'Лица' : 'Места'}`}></span>
+      <span hidden data-pagefind-meta={`sub:${kind === 'people' ? 'Биографическая справка' : 'Географическая справка'}`}></span>
+    </div>
+  </header>
+  <article class="container reference-width section section--tight">
+    <div class="prose reference-description"><p>{description}</p></div>
+    <section class="reference-notes" aria-labelledby="reference-sources">
+      <h2 class="h3" id="reference-sources">Материалы и источники</h2>
+      <p class="reference-note meta">Справка подготовлена по публикациям канала. Подробности и использованные авторами источники — в материалах ниже.</p>
+      <ul>
+        {notes.map((a) => <li>
+          <h3><a class="link" href={href.note(a.slug)}>{a.title}</a></h3>
+          <p>{a.dek || a.summary}</p>
+          <div class="reference-originals">{a.tg_ids.map((id, i) => <a href={tgPost(id)} target="_blank" rel="noopener">{a.tg_ids.length > 1 ? `Публикация в Telegram · ${i + 1}` : 'Публикация в Telegram'}</a>)}</div>
+        </li>)}
+      </ul>
+    </section>
+    <Related people={related.people} places={related.places} books={related.books} title="Связанные люди и места" />
+    <p class="reference-back"><a class="link" href={href.index()}>Вернуться к указателю</a></p>
+  </article>
+</Base>
+<style>
+  .reference-width { max-width: 880px; }
+  .reference-head { padding: 32px 0 48px; }
+  .reference-type { margin: 24px 0 12px; color: var(--steel); }
+  .reference-head h1 { font-size: clamp(30px, 4.3vw, 52px); line-height: 1.15; text-wrap: balance; }
+  .reference-description { font-size: 20px; line-height: 1.85; }
+  .reference-notes { margin: 48px 0; }
+  .reference-note { margin-top: 12px; max-width: 68ch; }
+  .reference-notes ul { list-style: none; padding: 0; margin-top: 24px; }
+  .reference-notes li { border-top: 1px solid var(--line); padding: 24px 0; }
+  .reference-notes h3 { font-size: 20px; line-height: 1.4; margin-bottom: 12px; }
+  .reference-notes li p { line-height: 1.7; color: var(--ink-2); }
+  .reference-originals { display: flex; flex-wrap: wrap; gap: 12px; }
+  .reference-originals a { display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; text-decoration: underline; }
+  .reference-back { margin-top: 36px; }
+  @media (max-width: 540px) { .reference-description { font-size: 18px; } }
+</style>

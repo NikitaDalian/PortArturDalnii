@@ -7,7 +7,7 @@ const names = mentionedNames();
 <ul class="mc" role="list">
   {names.map((n) => (
     <li>
-      <a class="mc__link" href={href.search(n.query)}>
+      <a class="mc__link" href={href.reference('people', n.slug)}>
         <span class="mc__name">{n.label}</span>
         {n.count > 0 && <span class="mc__n" aria-label={`${n.count} ${plural(n.count, 'заметка', 'заметки', 'заметок')}`}>{n.count}</span>}
       </a>

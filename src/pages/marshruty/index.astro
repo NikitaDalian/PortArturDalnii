@@ -41,7 +41,7 @@ const km = (n: number) => `${String(n).replace('.', ',')} км`;
               <a href={href.route(r.slug)} class="card rcard reveal" style={`--d:${Math.min(i, 5) * 70}ms`}>
                 <div class="card__media rcard__media">
                   {artUrl
-                    ? <img class="card__img" src={artUrl} alt="" loading="lazy" decoding="async" transition:name={`route-${r.slug}`} />
+                    ? <img class="card__img" src={artUrl} alt="" loading="lazy" decoding="async" />
                     : cover
                     ? <img class="card__img" src={imgCrop(cover, '3x2', 640)} alt="" loading="lazy" decoding="async" />
                     : <div class="card__img rcard__ph" aria-hidden="true"></div>}

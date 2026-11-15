@@ -49,8 +49,8 @@ const description = b.verdict || b.annotation?.slice(0, 160);
       </div>
       <figure class="book-hero__fig">
         {cover
-          ? <img class="book-hero__cover" src={cover} alt={`Обложка книги «${b.title}»`} transition:name={`book-${b.slug}`} loading="eager" decoding="async" data-pagefind-meta="image[src], image_alt[alt]" />
-          : <span class="book-hero__cover book-hero__ph" aria-hidden="true" transition:name={`book-${b.slug}`}><span>{b.title}</span></span>}
+          ? <img class="book-hero__cover" src={cover} alt={`Обложка книги «${b.title}»`} loading="eager" decoding="async" data-pagefind-meta="image[src], image_alt[alt]" />
+          : <span class="book-hero__cover book-hero__ph" aria-hidden="true"><span>{b.title}</span></span>}
       </figure>
     </div>
     <Coast />

@@ -1,5 +1,6 @@
 // Связи персоны: заметки, книги, соседи по заметкам. Только для раздела «Лица».
 import { articles, books, people, terms, type Article, type Book, type Person } from '../../lib/data';
+import { intlLocale } from '../../i18n/locale';
 
 const norm = (s: string) => s.toLowerCase().replace(/ё/g, 'е');
 const words = (s: string) => norm(s.replace(/\([^)]*\)/g, ' ')).split(/[\s,]+/).filter(Boolean);
@@ -37,7 +38,7 @@ export function personBooks(p: Person): { authored: Book[]; reviewed: Book[] } {
   const isAuthor = (b: Book) =>
     String(b.author || '').split(/\s*,\s*/).some((au) => {
       const w = words(au);
-      return w.length >= 2 && !w.some((x) => x.endsWith('.')) && w.every((x) => nameWords.has(x));
+      return (w.length >= 2 || (w.length === 1 && /\p{Script=Han}/u.test(w[0]))) && !w.some((x) => x.endsWith('.')) && w.every((x) => nameWords.has(x));
     });
   const tg = new Set(personArticles(p).flatMap((a) => a.tg_ids as number[]));
   const authored = books.filter(isAuthor);
@@ -69,5 +70,5 @@ export function mentionedNames(): { slug: string; label: string; query: string; 
       query: label.replace(/\s*\([^)]*\)/g, '').trim(),
       count: articles.filter((a) => (a.people as string[]).includes(slug)).length,
     }))
-    .sort((a, b) => a.label.localeCompare(b.label, 'ru'));
+    .sort((a, b) => a.label.localeCompare(b.label, intlLocale));
 }

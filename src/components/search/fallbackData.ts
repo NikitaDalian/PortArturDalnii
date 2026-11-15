@@ -1,6 +1,6 @@
 // Небольшой запасной индекс для страницы поиска: используется, только если Pagefind
 // недоступен (режим разработки или индекс не собран).
-import { articles, people, places, books, sources, entity, href, img, imgCrop, fmtDateShort, TYPES } from '../../lib/data';
+import { articles, people, places, books, sources, terms, referenceDescriptions, entity, href, img, imgCrop, fmtDateShort, TYPES } from '../../lib/data';
 
 const CITY: Record<string, string> = { lushun: 'Люйшунь', dalian: 'Далянь', other: 'Другое' };
 
@@ -35,5 +35,13 @@ export function fallbackItems(): FbItem[] {
     tab: 'Книги', url: href.source(s.slug), title: s.title, text: (s.annotation ?? '').slice(0, 180), meta: `Источники${(s as any).author ? ' · ' + (s as any).author : ''}`,
     color: 'var(--t-source)', image: null, hay: hay(s.title, (s as any).author, s.annotation),
   }));
+  for (const kind of ['people', 'geo'] as const) {
+    for (const [slug, title] of Object.entries(terms[kind])) {
+      const text = referenceDescriptions[kind][slug];
+      out.push({ tab: kind === 'people' ? 'Лица' : 'Места', url: href.reference(kind, slug), title,
+        text, meta: kind === 'people' ? 'Биографическая справка' : 'Географическая справка',
+        color: kind === 'people' ? 'var(--t-person)' : 'var(--t-place)', hay: hay(title, text) });
+    }
+  }
   return out;
 }

@@ -29,7 +29,7 @@ const text = `${a.title} ${a.dek} ${allNames}`.toLowerCase().replace(/ё/g, 'е'
   <a href={href.note(a.slug)} class="nc-link" style={`--tc:${t.color}`}>
     <span class="nc-media">
       {cover
-        ? <img src={cover} alt="" loading="lazy" decoding="async" transition:name={`note-${a.slug}`} />
+        ? <img src={cover} alt="" loading="lazy" decoding="async" />
         : <NoteCover a={a} />}
     </span>
     <span class="nc-bar" aria-hidden="true"></span>

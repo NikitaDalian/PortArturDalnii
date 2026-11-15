@@ -3,9 +3,10 @@
 import BookRow from '../BookRow.astro';
 import { BOOK_LEVELS, plural, type Book } from '../../lib/data';
 import { BOOK_KINDS, levelRank, firstYear, authorKey } from './labels';
+import { intlLocale } from '../../i18n/locale';
 interface Props { books: Book[] }
 const { books } = Astro.props;
-const sorted = [...books].sort((a, b) => levelRank(a.level) - levelRank(b.level) || authorKey(a.author).localeCompare(authorKey(b.author), 'ru'));
+const sorted = [...books].sort((a, b) => levelRank(a.level) - levelRank(b.level) || authorKey(a.author).localeCompare(authorKey(b.author), intlLocale));
 const levelCount = (k: string) => books.filter((b) => b.level === k).length;
 const kinds = Object.keys(BOOK_KINDS).filter((k) => books.some((b) => b.kind === k));
 const kindCount = (k: string) => books.filter((b) => b.kind === k).length;
@@ -123,7 +124,7 @@ const total = books.length;
         const yb = b.dataset.year ? num(b, 'year') : Infinity;
         return ya - yb || num(a, 'i') - num(b, 'i');
       },
-      author: (a, b) => (a.dataset.author ?? '').localeCompare(b.dataset.author ?? '', 'ru') || num(a, 'i') - num(b, 'i'),
+      author: (a, b) => (a.dataset.author ?? '').localeCompare(b.dataset.author ?? '', document.documentElement.lang) || num(a, 'i') - num(b, 'i'),
     };
 
     function syncUrl() {

@@ -1,5 +1,6 @@
 // Вспомогательные выборки раздела «Заметки».
 import { articles, entity, type Article } from '../../lib/data';
+import { locale, intlLocale } from '../../i18n/locale';
 
 /** Заметки по дате поста: от старых к новым (при равной дате — по номеру поста). */
 export const byDate: Article[] = [...articles].sort(
@@ -41,6 +42,7 @@ const TITLES = ['Великий князь', 'Императрица', 'Импе
 
 /** Имя в порядке указателя: «Витте, Сергей Юльевич»; японские и китайские имена — как есть. */
 export function invertName(name: string): string {
+  if (locale === 'zh') return name;
   const m = name.match(/^(.*?)\s*(\([^)]*\))?$/);
   const core = (m?.[1] ?? name).trim();
   const paren = m?.[2] ? ' ' + m[2] : '';
@@ -67,5 +69,5 @@ export function facet(kind: 'person' | 'place', pick: (a: Article) => string[]) 
       const label = entity(kind, slug).label;
       return { slug, count, label: kind === 'person' ? invertName(label) : label };
     })
-    .sort((a, b) => a.label.localeCompare(b.label, 'ru'));
+    .sort((a, b) => a.label.localeCompare(b.label, intlLocale));
 }

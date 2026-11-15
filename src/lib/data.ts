@@ -11,6 +11,8 @@ import seriesJson from '../data/series.json';
 import photosJson from '../data/photos.json';
 import termsJson from '../data/index_terms.json';
 import focusJson from '../data/focus.json';
+import descriptionsJson from '../data/reference_descriptions.json';
+import { assetUrl, locale, intlLocale } from '../i18n/locale';
 
 export type LayerKey = 'pre1898' | 'russian' | 'japanese' | 'soviet' | 'modern';
 export type Article = (typeof articlesJson)[number];
@@ -31,6 +33,7 @@ export const seasons = seasonsJson as Record<'spring' | 'summer' | 'autumn' | 'w
 export const series = seriesJson as Series[];
 export const photos = photosJson as any[];
 export const terms = termsJson as { people: Record<string, string>; geo: Record<string, string>; books_unmatched: Record<string, string> };
+export const referenceDescriptions = descriptionsJson as { people: Record<string, string>; geo: Record<string, string> };
 
 export const TG_CHANNEL = 'https://t.me/portartur_dalnii';
 export const tgPost = (id: number | string) => `${TG_CHANNEL}/${id}`;
@@ -110,6 +113,7 @@ export const href = {
   route: (s: string) => url(`/marshruty/${s}/`),
   seasons: () => url('/sezony/'),
   index: () => url('/ukazatel/'),
+  reference: (kind: 'people' | 'geo', slug: string) => url(`/spravochnik/${kind}/${slug}/`),
   search: (q?: string) => url('/poisk/' + (q ? `?q=${encodeURIComponent(q)}` : '')),
   about: () => url('/o-proekte/'),
   credits: () => url('/o-proekte/illyustratsii/'),
@@ -129,11 +133,11 @@ export const seriesBySlug = by(series);
 export function entity(kind: 'person' | 'place' | 'book', slug: string): { href: string | null; label: string } {
   if (kind === 'person') {
     const p = personBySlug.get(slug);
-    return p ? { href: href.person(slug), label: p.name } : { href: null, label: terms.people[slug] ?? slug };
+    return p ? { href: href.person(slug), label: p.name } : { href: referenceDescriptions.people[slug] ? href.reference('people', slug) : null, label: terms.people[slug] ?? slug };
   }
   if (kind === 'place') {
     const p = placeBySlug.get(slug);
-    return p ? { href: href.place(slug), label: p.name } : { href: null, label: terms.geo[slug] ?? slug };
+    return p ? { href: href.place(slug), label: p.name } : { href: referenceDescriptions.geo[slug] ? href.reference('geo', slug) : null, label: terms.geo[slug] ?? slug };
   }
   const b = bookBySlug.get(slug);
   if (b) return { href: href.book(slug), label: `${b.author} — «${b.title}»` };
@@ -162,13 +166,13 @@ export function img(file: string | number | null | undefined, size: 'full' | 640
   if (file === null || file === undefined) return null;
   const id = typeof file === 'number' ? file : (String(file).match(/photo_(\d+)@/)?.[1] ?? null);
   if (!id) return null;
-  return url(`/img/p/${id}${size === 640 ? '-640' : ''}.webp`);
+  return assetUrl(`/img/p/${id}${size === 640 ? '-640' : ''}.webp`);
 }
 /** Увеличенная версия для просмотрщика карты (3600 px по ширине); у остальных фото нет — вернётся null. */
 const BIG_IDS = new Set(['312']);
 export const imgBig = (file: string | number | null | undefined): string | null => {
   const id = photoId(file);
-  return id && BIG_IDS.has(id) ? url(`/img/p/${id}-big.webp`) : null;
+  return id && BIG_IDS.has(id) ? assetUrl(`/img/p/${id}-big.webp`) : null;
 };
 export type CropRatio = '3x2' | '4x5' | '16x9' | '1x1';
 /** Заранее нарезанный кадр под пропорцию (scripts/build_crops.py): лица в верхней трети, неподходящее по форме вписано на размытый фон,
@@ -177,7 +181,7 @@ export type CropRatio = '3x2' | '4x5' | '16x9' | '1x1';
 export function imgCrop(file: string | number | null | undefined, ratio: CropRatio, size: 'full' | 640 = 'full'): string | null {
   const id = photoId(file);
   if (!id || !(id in (focusJson as Record<string, unknown>))) return img(file, size);
-  return url(`/img/p/${id}-${ratio}.webp`);
+  return assetUrl(`/img/p/${id}-${ratio}.webp`);
 }
 const photoId = (file: string | number | null | undefined): string | null =>
   file === null || file === undefined ? null : typeof file === 'number' ? String(file) : (String(file).match(/photo_(\d+)@/)?.[1] ?? (/^\d+$/.test(String(file)) ? String(file) : null));
@@ -192,19 +196,23 @@ export const focusStyle = (file: string | number | null | undefined) => {
   return `object-position:${f.position};object-fit:${f.fit}`;
 };
 export const photoMeta = (file: string) => photos.find((p) => p.file === file);
-export const authorImg = (name: string) => url(`/img/authors/${name}.webp`);
+export const authorImg = (name: string) => assetUrl(`/img/authors/${name}.webp`);
 
 // ---------- форматирование ----------
 const MONTHS = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
 export const fmtDate = (iso: string) => {
+  if (locale !== 'ru') return new Intl.DateTimeFormat(intlLocale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(iso + 'T12:00:00Z'));
   const [y, m, d] = iso.split('-').map(Number);
   return `${d} ${MONTHS[m - 1]} ${y}`;
 };
 export const fmtDateShort = (iso: string) => {
+  if (locale !== 'ru') return new Intl.DateTimeFormat(intlLocale, { day: 'numeric', month: 'short', timeZone: 'UTC' }).format(new Date(iso + 'T12:00:00Z'));
   const [, m, d] = iso.split('-').map(Number);
   return `${d} ${MONTHS[m - 1]}`;
 };
 export const plural = (n: number, one: string, few: string, many: string) => {
+  if (locale === 'zh') return one;
+  if (locale === 'en') return n === 1 ? one : many;
   const m10 = n % 10, m100 = n % 100;
   return m10 === 1 && m100 !== 11 ? one : m10 >= 2 && m10 <= 4 && (m100 < 10 || m100 >= 20) ? few : many;
 };

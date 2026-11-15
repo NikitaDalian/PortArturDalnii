@@ -1,8 +1,9 @@
 ---
 // Первый экран главной: широкая иллюстрация гавани (на десктопе — тихая видеопетля), заголовок в «небе», мягкий параллакс.
 import { href, url } from '../../lib/data';
-const gen = (s: string) => url(`/img/gen/${s}.webp`);
-const vid = (s: string) => url(`/video/${s}`);
+import { assetUrl } from '../../i18n/locale';
+const gen = (s: string) => assetUrl(`/img/gen/${s}.webp`);
+const vid = (s: string) => assetUrl(`/video/${s}`);
 ---
 <section class="hero">
   <div class="hero__art" data-parallax aria-hidden="true">

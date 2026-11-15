@@ -1,5 +1,6 @@
 // Подписи и вспомогательные функции раздела «Библиотека».
 import { BOOK_LEVELS, articlesOf, type Book, type Source } from '../../lib/data';
+import { intlLocale } from '../../i18n/locale';
 
 export const BOOK_KINDS: Record<string, string> = {
   history: 'История',
@@ -38,9 +39,9 @@ export const firstYear = (y: string | null | undefined) => {
 /** Фамилия первого автора для сортировки: «Кристофер Мартин» → «Мартин». */
 export const authorKey = (a: string | null | undefined) => {
   if (!a) return '';
-  const first = a.split(/,|\sи\s/)[0].trim();
+  const first = a.split(/,|、|\s(?:и|and)\s/)[0].trim();
   const words = first.split(/\s+/);
-  return (words[words.length - 1] || first).toLocaleLowerCase('ru');
+  return (words[words.length - 1] || first).toLocaleLowerCase(intlLocale);
 };
 
 /** Люди, упомянутые в заметках о книге/источнике (по частоте). */

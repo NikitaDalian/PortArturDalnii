@@ -45,7 +45,7 @@ export { LAYERS, people, placeBySlug };
 // Файл проверяется при сборке: если иллюстрации слоя нет, карточки и шапка выглядят законченными без неё.
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
-import { url } from '../../lib/data';
+import { assetUrl } from '../../i18n/locale';
 const ART_FILE: Record<LayerKey, string> = {
   pre1898: 'layer-pre1898', russian: 'layer-1898-1905', japanese: 'layer-1905-1945', soviet: 'layer-1945-1955', modern: 'layer-today',
 };
@@ -53,6 +53,6 @@ export interface LayerArt { src: string; srcset: string; large: string }
 export function layerArt(k: LayerKey): LayerArt | null {
   const name = ART_FILE[k];
   if (!name || !existsSync(join(process.cwd(), 'public', 'img', 'gen', `${name}-720.webp`))) return null;
-  const u = (suffix: string) => url(`/img/gen/${name}${suffix}.webp`);
+  const u = (suffix: string) => assetUrl(`/img/gen/${name}${suffix}.webp`);
   return { src: u('-720'), srcset: `${u('-720')} 720w, ${u('-1280')} 1280w`, large: u('-1280') };
 }

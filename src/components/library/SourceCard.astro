@@ -9,7 +9,7 @@ const pic = imgCrop(s.image, '3x2', 640);
 <a href={href.source(s.slug)} class="card src-card">
   <div class="card__media">
     {pic
-      ? <img class="card__img" src={pic} alt="" loading="lazy" decoding="async" transition:name={`source-${s.slug}`} />
+      ? <img class="card__img" src={pic} alt="" loading="lazy" decoding="async" />
       : <div class="card__img src-card__ph" aria-hidden="true"><span>{sourceKindLabel(s.kind)}</span></div>}
   </div>
   <span class="meta">{sourceKindLabel(s.kind)}{s.author ? ` · ${s.author}` : ''}</span>

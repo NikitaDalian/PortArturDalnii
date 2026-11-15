@@ -20,7 +20,7 @@ import { href, imgCrop } from '../../lib/data';
   .reading-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
   .reading-card { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--ice); }
   .reading-card:hover { border-color: var(--navy); }
-  .reading-card img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+  .reading-card img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
   .reading-card__body { display: flex; flex-direction: column; flex: 1; gap: 16px; padding: 24px; }
   .reading-card__body p { line-height: 1.65; color: var(--ink-2); }
   .reading-card__link { margin-top: auto; padding-top: 8px; font-weight: 600; color: var(--accent-on-light); }

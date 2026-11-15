@@ -87,7 +87,7 @@ for (const file of files) {
     if (!target) { broken.push({ page: here, href, why: 'нет страницы' }); continue; }
     if (!hash) continue;
     const id = decodeURIComponent(hash);
-    if (path === BASE + 'karta/') {
+    if (/^(?:en\/|zh\/)?karta\/$/.test(path.slice(BASE.length))) {
       if (!placeExists(id)) broken.push({ page: here, href, why: 'на карте нет такого места' });
       continue;
     }

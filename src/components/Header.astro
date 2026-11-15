@@ -1,6 +1,7 @@
 ---
 import { href } from '../lib/data';
 import { t } from '../i18n/ru';
+import LanguageSwitch from './LanguageSwitch.astro';
 interface Props { section?: string | null }
 const { section = null } = Astro.props;
 const items = [
@@ -33,7 +34,7 @@ const extra = [
       <a href={href.search()} class="icon-btn" aria-label={t.search}>
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>
       </a>
-      <span class="lang" title="English и 中文 появятся позже">RU</span>
+      <div class="header-languages"><LanguageSwitch compact /></div>
       <button class="icon-btn menu-btn" aria-label={t.menu} aria-expanded="false" aria-controls="mobile-nav">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path class="l1" d="M4 7h16"></path><path class="l2" d="M4 12h16"></path><path class="l3" d="M4 17h16"></path></svg>
       </button>
@@ -48,6 +49,7 @@ const extra = [
         <a class="mobile-nav__sub" href={i.href} style={`--i:${items.length + n}`}>{i.label}</a>
       ))}
       <a class="mobile-nav__sub" href={href.search()} style={`--i:${items.length + extra.length}`}>{t.search}</a>
+      <LanguageSwitch />
     </div>
   </nav>
 </header>
@@ -79,7 +81,7 @@ const extra = [
   .mobile-nav a.mobile-nav__sub { min-height: 48px; font-size: 17px; font-weight: 600; color: var(--mist); }
   @keyframes navIn { from { opacity: 0; transform: translateY(10px); } }
   @media (max-width: 1180px) {
-    .site-nav, .lang { display: none; }
+    .site-nav, .header-languages { display: none; }
     .menu-btn { display: inline-flex; }
     .brand__name { font-size: 18px; }
     .brand__tag { font-size: 10px; }

@@ -10,10 +10,11 @@ import TgButton from '../../components/TgButton.astro';
 import TypeTag from '../../components/notes/TypeTag.astro';
 import MapFigure from '../../components/MapFigure.astro';
 import PhotoGallery from '../../components/notes/PhotoGallery.astro';
+import MiniMap from '../../components/map/MiniMap.astro';
 import { prevNext, readAlso } from '../../components/notes/lib';
 import {
   articles, articleBySlug, seriesBySlug, articlesOf, layerByKey, href, img, imgCrop, tgPost, fmtDate,
-  TYPES, photoMeta, noteRelations, type Article,
+  TYPES, photoMeta, noteRelations, placeBySlug, type Article,
 } from '../../lib/data';
 
 export function getStaticPaths() {
@@ -43,6 +44,7 @@ const also = readAlso(a, 3);
 const { prev, next } = prevNext(a.slug);
 const rel = noteRelations(a);
 const hasRelated = rel.people.length + rel.places.length + rel.books.length > 0;
+const mapPlaces = rel.places.map((slug) => placeBySlug.get(slug)).filter((place) => place && Number.isFinite(place.lat) && Number.isFinite(place.lng));
 ---
 <Base title={a.title} description={a.dek || a.summary.slice(0, 160)} image={img(a.cover)} section="notes">
   <section class="dark nh page-top" data-pagefind-filter="type:Заметки">
@@ -72,7 +74,7 @@ const hasRelated = rel.people.length + rel.places.length + rel.books.length > 0;
       )}
       {cover && (
         <figure class="nh__fig">
-          <img src={cover} alt={coverAlt} transition:name={`note-${a.slug}`} loading="eager" decoding="async" data-pagefind-meta="image[src], image_alt[alt]" />
+          <img src={cover} alt={coverAlt} loading="eager" decoding="async" data-pagefind-meta="image[src], image_alt[alt]" />
         </figure>
       )}
     </div>
@@ -113,6 +115,11 @@ const hasRelated = rel.people.length + rel.places.length + rel.books.length > 0;
     </article>
 
     <aside class="nb__side stack" style="--stack-gap:36px" aria-label="Связи заметки">
+      {mapPlaces.length > 0 && <section class="stack" style="--stack-gap:12px" aria-labelledby="note-map-title">
+        <h2 class="h3" id="note-map-title">Места из заметки</h2>
+        <MiniMap label="Места из заметки на карте" height="360px" points={mapPlaces.map((p, index) => ({ lat: p!.lat, lng: p!.lng, name: p!.name, href: href.place(p!.slug), n: index + 1 }))} />
+        <p class="meta">Нажмите на точку, чтобы прочитать справку.</p>
+      </section>}
       {hasRelated && <Related people={rel.people} places={rel.places} books={rel.books} title="Кто и что в заметке" />}
 
       {layers.length > 0 && (
@@ -180,13 +187,13 @@ const hasRelated = rel.people.length + rel.places.length + rel.books.length > 0;
 </Base>
 
 <style>
-  .nh__inner { display: flex; flex-wrap: wrap; gap: 28px 48px; align-items: flex-end; }
+  .nh__inner { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 32px 48px; align-items: center; }
   .nh__text { flex: 1 1 520px; min-width: 0; }
   .nh__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
   .nh__title { overflow-wrap: break-word; hyphens: auto; }
   .nh__fig { flex: 0 1 460px; min-width: 0; }
-  .nh__fig img { width: 100%; max-height: 440px; object-fit: cover; background: var(--navy-2); }
-  @media (max-width: 720px) { .nh__fig { flex-basis: 100%; } .nh__fig img { max-height: 320px; } }
+  .nh__fig img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; max-height: 440px; object-fit: cover; background: var(--navy-2); }
+  @media (max-width: 900px) { .nh__inner { grid-template-columns: 1fr; } .nh__fig { flex-basis: 100%; } .nh__fig img { max-height: 320px; } }
 
   .nb { display: flex; flex-wrap: wrap; gap: 48px 64px; align-items: flex-start; }
   .nb__main { flex: 1 1 560px; min-width: 0; max-width: 760px; }

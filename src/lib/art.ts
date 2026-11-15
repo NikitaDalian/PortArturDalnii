@@ -2,7 +2,7 @@
 // Только для серверного кода страниц: проверяет наличие файла при сборке.
 import fs from 'node:fs';
 import path from 'node:path';
-import { url } from './data';
+import { assetUrl } from '../i18n/locale';
 
 const pub = (p: string) => path.join(process.cwd(), 'public', p);
 
@@ -10,14 +10,14 @@ const pub = (p: string) => path.join(process.cwd(), 'public', p);
 export function art(name: string | null | undefined, size: 'full' | 1280 | 720 = 1280): string | null {
   if (!name) return null;
   const file = size === 'full' ? `${name}.webp` : `${name}-${size}.webp`;
-  if (fs.existsSync(pub(`img/gen/${file}`))) return url(`/img/gen/${file}`);
-  return fs.existsSync(pub(`img/gen/${name}.webp`)) ? url(`/img/gen/${name}.webp`) : null;
+  if (fs.existsSync(pub(`img/gen/${file}`))) return assetUrl(`/img/gen/${file}`);
+  return fs.existsSync(pub(`img/gen/${name}.webp`)) ? assetUrl(`/img/gen/${name}.webp`) : null;
 }
 
 /** Видеопетля: {webm, mp4} или null */
 export function loop(name: string): { webm: string; mp4: string } | null {
   if (!fs.existsSync(pub(`video/${name}.mp4`))) return null;
-  return { webm: url(`/video/${name}.webm`), mp4: url(`/video/${name}.mp4`) };
+  return { webm: assetUrl(`/video/${name}.webm`), mp4: assetUrl(`/video/${name}.mp4`) };
 }
 
 export const ROUTE_ART: Record<string, string> = {

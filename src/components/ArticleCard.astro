@@ -17,14 +17,14 @@ const meta = `${type.label} · ${fmtDateShort(a.date)} · ${a.read_min} мин`;
       {showSummary && <span class="muted art-row__dek">{a.dek}</span>}
     </span>
     {cover
-      ? <img class="art-row__img" src={cover} alt="" loading="lazy" decoding="async" transition:name={`note-${a.slug}`} />
+      ? <img class="art-row__img" src={cover} alt="" loading="lazy" decoding="async" />
       : <NoteCover a={a} compact class="art-row__img art-row__cover" />}
   </a>
 ) : (
   <a href={href.note(a.slug)} class:list={['card', { 'card--feature': variant === 'feature' }]}>
     <div class="card__media">
       {cover
-        ? <img class="card__img" src={cover} alt="" loading="lazy" decoding="async" transition:name={`note-${a.slug}`} />
+        ? <img class="card__img" src={cover} alt="" loading="lazy" decoding="async" />
         : <NoteCover a={a} class="card__img" />}
     </div>
     <span class="meta">{meta}</span>

@@ -14,6 +14,15 @@ const known = {
   books: new Set([...maps.books.keys(), ...maps.sources.keys(), ...Object.keys(terms.books_unmatched)]),
 };
 const errors = [];
+const descriptions = read('reference_descriptions');
+for (const kind of ['people', 'geo']) {
+  for (const slug of Object.keys(terms[kind])) {
+    if (!descriptions[kind]?.[slug]?.trim()) errors.push(`${kind}/${slug}: missing reference description`);
+  }
+  for (const slug of Object.keys(descriptions[kind] ?? {})) {
+    if (!terms[kind][slug]) errors.push(`${kind}/${slug}: orphan reference description`);
+  }
+}
 for (const name of names) {
   if (maps[name].size !== data[name].length) errors.push(`${name}: duplicate slug`);
 }

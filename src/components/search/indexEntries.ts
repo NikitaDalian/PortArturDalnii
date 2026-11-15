@@ -3,6 +3,7 @@ import {
   articles, people, places, books, sources, series, terms, href, type Article,
 } from '../../lib/data';
 import { invertName, byDate } from '../notes/lib';
+import { locale, intlLocale } from '../../i18n/locale';
 
 export type Group = 'people' | 'places' | 'books' | 'series';
 export interface Entry {
@@ -24,6 +25,8 @@ const clean = (s: string) =>
   s.toLowerCase().replace(/ё/g, 'е').replace(/^[«"„(\s]+/, '').replace(/[«»"„“().,:—–-]/g, ' ').replace(/\s+/g, ' ').trim();
 const firstLetter = (key: string) => {
   const c = key.charAt(0).toUpperCase();
+  if (locale !== 'ru' && /[A-Z]/.test(c)) return c;
+  if (locale === 'zh' && /\p{Script=Han}/u.test(c)) return '中文';
   if (/[А-ЯЁ]/.test(c)) return c === 'Ё' ? 'Е' : c;
   if (/[A-Z]/.test(c)) return 'A–Z';
   return '#';
@@ -48,8 +51,7 @@ export function buildIndex(): Entry[] {
   });
   Object.entries(terms.people).forEach(([slug, name]) => {
     const inv = invertName(name);
-    const e = make('people', inv, inv, null, notesOf((a) => a.people.includes(slug)));
-    e.href = href.search(name.replace(/\s*\(.*\)$/, ''));
+    const e = make('people', inv, inv, href.reference('people', slug), notesOf((a) => a.people.includes(slug)));
     out.push(e);
   });
 
@@ -59,8 +61,7 @@ export function buildIndex(): Entry[] {
     out.push(make('places', p.name, p.name, href.place(p.slug), notesOf((a) => a.places.includes(p.slug)), sub));
   });
   Object.entries(terms.geo).forEach(([slug, name]) => {
-    const e = make('places', name, name, null, notesOf((a) => a.places.includes(slug)));
-    e.href = href.search(name.replace(/\s*\(.*\)$/, ''));
+    const e = make('places', name, name, href.reference('geo', slug), notesOf((a) => a.places.includes(slug)));
     out.push(e);
   });
 
@@ -84,5 +85,5 @@ export function buildIndex(): Entry[] {
     out.push(make('series', s.title, s.title, href.series(s.slug), notesOf((a) => a.series_slug === s.slug), 'серия заметок'));
   });
 
-  return out.sort((a, b) => a.key.localeCompare(b.key, 'ru'));
+  return out.sort((a, b) => a.key.localeCompare(b.key, intlLocale));
 }
