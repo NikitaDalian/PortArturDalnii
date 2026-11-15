@@ -1,7 +1,7 @@
 export interface MentionContext { seen: Set<string>; exclude: Set<string>; preferred: Set<string> }
 export const mentionContext = (exclude: string[] = [], preferred: string[] = []): MentionContext => ({ seen: new Set(), exclude: new Set(exclude), preferred: new Set(preferred) });
 
-export function createMentionMatcher<T>(names: Map<string, Set<string>>, registry: Map<string, T>, options: { quotedEntities?: Set<string> } = {}) {
+export function createMentionMatcher<T>(names: Map<string, Set<string>>, registry: Map<string, T>, options: { quotedEntities?: Set<string>; contextualNames?: Map<string, Set<string>> } = {}) {
 const escape = (text: string) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const candidates = [...names.keys()].sort((a, b) => b.length - a.length);
 const pattern = new RegExp(candidates.map(name => {
@@ -25,6 +25,7 @@ return function linkMentions(text: string, context = mentionContext(), limit = 4
       if (/(?:книг[а-яё]*|роман[а-яё]*|повест[а-яё]*|рассказ[а-яё]*|песн[а-яё]*|book|novel|memoir|song|著作|小説|小说|書名|书名|一书)\s*(?:[«“"'\wА-Яа-яёЁ.,:—–-]+\s+){0,3}$/iu.test(prefix)) continue;
       ids = ids.filter(id => options.quotedEntities?.has(id));
     }
+    if (!quote) ids = ids.filter(id => !options.contextualNames?.get(match[0])?.has(id) || context.preferred.has(id));
     const preferred = ids.filter(id => context.preferred.has(id));
     const id = ids.length === 1 ? ids[0] : preferred.length === 1 ? preferred[0] : null;
     if (!id || context.exclude.has(id) || context.seen.has(id)) continue;

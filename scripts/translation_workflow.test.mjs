@@ -8,6 +8,14 @@ test('one changed prose field yields one stable task',()=>{
  assert.equal(tasks.length,1);assert.equal(tasks[0].path,'/@slug=a/title');assert.equal(tasks[0].classification,'prose');assert.equal(tasks[0].currentTranslation,'First');
 });
 test('entity reorder creates no prose or metadata tasks',()=>assert.deepEqual(diffValues(a,[a[1],a[0]],a),[]));
+test('fleet rows and installations keep identities when reordered',()=>{
+ for(const field of ['shipSlug','weaponSlug']){
+  const rows=[{[field]:'a',note:'Первый'},{[field]:'b',note:'Второй'}];
+  assert.deepEqual(diffValues(rows,[rows[1],rows[0]],rows),[]);
+  const next=structuredClone(rows);next[0].note='Новый';
+  assert.equal(diffValues(rows,next,rows)[0].path,`/@${field}=a/note`);
+ }
+});
 test('coordinate change is metadata',()=>{
  const next=structuredClone(a);next[0].lat=40;const tasks=diffValues(a,next,a);assert.equal(tasks.length,1);assert.equal(tasks[0].classification,'metadata');
 });

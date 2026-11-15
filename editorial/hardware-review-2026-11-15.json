@@ -183,5 +183,202 @@
       "armstrong-305-40",
       "japanese-280-howitzer"
     ]
+  },
+  {
+    "group": "squadron-battleships",
+    "review": {
+      "status": "accepted",
+      "verdict": "accepted",
+      "author": "hardware_russian_ships",
+      "reviewer": "hardware_other_ships",
+      "file": "work/hardware/squadron-battleships.json",
+      "sha256": "f42dd68e8fa591ce1a1f57562e451b84eff7058779c50ee5fb8f2811e8efb700",
+      "reviewScope": "Complete independent reading of all five records: opening, all thirty sections, specifications, timelines, people, armament, sources, limitations, image captions/credits/rights and relations. Complete narrative re-read of corrected final; corrected openings and specification verified. Evidence and manifest read, all ten images viewed in contact sheet and their saved description/rights records inspected.",
+      "resolvedFindings": [
+        "Peresvet, Poltava and Sevastopol openings now contain explicit chronological context.",
+        "Peresvet 254-mm specification no longer tells the reader about the website catalogue implementation."
+      ],
+      "readerGate": [
+        "Ship identities, Russian/Japanese renamings and later namesakes are clearly separated. Openings and following creation sections establish subject, place and period.",
+        "Technical terms needed by a general reader are explained in context: caisson, casemate, internment, hulk and indirect fire. No invented eyewitness scenes or thoughts.",
+        "Each biography develops construction, technical distinctions, campaign, people and later fate; endings reach concrete outcomes rather than empty summaries."
+      ],
+      "sourceChecks": [
+        "Gribovsky saved full article: 13,105-tonne preliminary specification, French contract and German Qingdao internment checked. Navypedia live table independently confirms 118.5 m overall, 23.2 m beam, 20 Belleville boilers, 16,300 hp and 1925 striking; its erroneous Chinese internment attribution is explicitly rejected.",
+        "Melnikov saved chapter 1 checked for 12,674-tonne design, 14,500 hp and thirty Belleville boilers. Bibliographic disagreement with Navypedia is preserved rather than silently merged.",
+        "Poltava monograph chapter 2 checked for 114.3 m overall and explicit English-ton units; chapter 3 for 368-mm main belt and Krupp armour; chapter 5 for 16.29-knot trial average and 16.5 maximum. Article correctly says approximately 16.5 reached, not sustained combat speed.",
+        "Primary Pobeda damage list checked for displaced armour, bolts/rivets and coal-bunker damage; primary Sevastopol list for ammunition equipment and repair of a turret gun in fifteen minutes.",
+        "Essen report no.635 read: three shots on 2 April, third-shot recoil-system accident at 15 degrees, immediate warning to Poltava. Text accurately explains the event without transferring tower characteristics to the gun alone.",
+        "Poltava monograph chapter 10 checked for 22 November loss, Silach firefighting, Sevastopol night sortie, final tow and approximately fifty-metre depth. SHM saved catalogue confirms night of 26 November and S. Korsakov attribution; protected museum image is not reused.",
+        "Belov Suwo chapter read, including explicit competing 1922/1945–46 hull outcomes. Navypedia Japanese table checked for 1908 recommissioning and 1922 disarmament. Belyakov notes checked for December 1916/January 1917 calendar context and unresolved contemporary investigation."
+      ],
+      "imageChecks": [
+        "All ten are real historical photographs of the stated ships, not generated reconstructions. Saved frames match captions and dimensions.",
+        "Marius Bar Peresvet attribution, 1930 death and June 1902 printed publication are present in saved Commons record. NH63232 Tsesarevich record supplies Toulon/1903; photographer is correctly left unknown.",
+        "Other Commons cards support the stated subjects and public-domain tags. Exact day is appropriately omitted where calendar is unclear; broad Poltava-Chesma dating is not turned into a fabricated 1916 caption.",
+        "Pobeda first image has weaker provenance: unknown photographer and PD-old-100 declaration, not a demonstrated individual biography; second has NH100045 provenance via Commons only. These limitations are disclosed in evidence. Acceptance relies on the linked repository declaration, not an independent legal reconstruction."
+      ],
+      "limitations": [
+        "This review spot-checked key claims in saved full sources and primary transcripts; it does not claim a fresh complete reading of every cited monograph or inspection of archival originals.",
+        "Live web attempts for Essen and SHM did not return content; their preserved local records were read. No site or source-access restriction was bypassed."
+      ],
+      "validationErrors": [],
+      "remainingBlockers": []
+    },
+    "integratedSlugs": [
+      "tsesarevich",
+      "peresvet",
+      "pobeda",
+      "poltava",
+      "sevastopol"
+    ]
+  },
+  {
+    "group": "guns-next",
+    "review": {
+      "reviewer": "hardware_other_ships",
+      "reviewDate": "2026-11-16",
+      "method": "Complete independent initial reading of every record and metadata field; full corrected narrative re-read, with changed metadata rechecked. Key source claims spot-checked in preserved source texts and official live records; not a fresh complete reading of all cited books. All images viewed and saved rights/description records checked. No site edits.",
+      "author": "hardware_guns",
+      "status": "accepted",
+      "verdict": "accepted",
+      "file": "work/hardware/guns-next.json",
+      "sha256": "32475c55ac9d24b95c1d2484dba8af45d0f95b324a949756b1812b8e25b065b4",
+      "resolvedFindings": [
+        "All three openings now explicitly establish Port Arthur and 1904.",
+        "Missing spaces in Hotchkiss timeline/source notes/limitations and licence abbreviation corrected."
+      ],
+      "readerGate": [
+        "Three explanations develop the origin, numerical meaning, regional use and later changes of their respective systems. Unitary cartridge, gun/mount and one-/five-barrel distinctions are explained.",
+        "No invented scenes or universalised maximum range/rate of fire. Later Finnish mount, Japanese repair and ammunition eras remain distinct from 1904. Endings reach later service and surviving objects."
+      ],
+      "sourceChecks": [
+        "120-mm NavWeaps table read: 1891 demonstration, Russian production 1892, 2.952 metric-ton gun, 20.47-kg early shell versus 28.97-kg 1911 shell; Novik and Boyarin explicitly listed. The historical Brockhaus row is corroboration, not a loading recipe.",
+        "254-mm NavWeaps table checked: 225.2-kg shell, Peresvet approximately 693 and Pobeda 777 m/s, ten naval guns on 1917 charts including four Rostislav. Melnikov variation/strengthening context and Cherkasov appendix IV damage to forward turret checked; death of Saltanov and two gunners supports general casualties wording.",
+        "47-mm official CVMM card independently opened: Obukhov 1892 item, 43.5-calibre length, 1888 hydraulic mount and 15 rpm; its linked Wikipedia historical digest is not silently promoted to archival research. NavWeaps table separates one/five barrel and confirms 235.5 kg, 1.5-kg projectile and later service. Cherkasov appendix III point 18 supports attributed assessment."
+      ],
+      "imageChecks": [
+        "120-mm MKFI photo: 2 August 2009, Kuivasaari, modified Finnish mount, own work, dual licence; CC BY-SA 3.0 selected with author/link. Caption explicitly distinguishes Novik mounting.",
+        "47-mm Ain92 photo: 24 November 2012, field carriage at St Petersburg artillery museum, CC BY-SA 3.0; uploader crop accurately disclosed, not claimed as original ship mounting.",
+        "254-mm NDL pid774275 IIIF manifest directly supplies 1906, editor, publisher and PDM. Structure item21/canvas31 matches forward Peresvet turret; photograph viewed and publication date not used as exposure date. Live ordinary reader endpoint did not yield content; official saved IIIF record and scan were examined."
+      ],
+      "overlays": {
+        "status": "accepted",
+        "verdict": "accepted",
+        "file": "work/hardware/guns-next-armament-overlays.json",
+        "sha256": "c02446e5ea982826cbab54069814ef224ea8bdca010c830dba356ed043a538b4",
+        "checks": [
+          "Novik six 120/45 and six single-barrel 47-mm guns at beginning of 1904; source1 is its own Alliluyev record; append8 NavWeaps and append9 Navypedia are unique and refs belong to combined Novik bibliography.",
+          "Peresvet/Pobeda four 254/45 guns each, two twin turrets, early-1904 period; refs1 are the respective ships’ own Melnikov bibliography, not gun-record numbering. Early/reinforced ballistics are distinguished.",
+          "No automatic claim about later Japanese barrels. Base SHA is an integration precondition; if the whole canonical collection changes, root must rebase/verify source numbering before append. Source identity and IDs checked against current ships."
+        ],
+        "validationErrors": []
+      },
+      "validationErrors": [],
+      "remainingBlockers": []
+    },
+    "integratedSlugs": [
+      "canet-120-45",
+      "obukhov-254-45",
+      "hotchkiss-47-single"
+    ]
+  },
+  {
+    "group": "cruisers-next",
+    "review": {
+      "reviewer": "hardware_other_ships",
+      "reviewDate": "2026-11-16",
+      "method": "Complete independent initial reading of every record and metadata field; full corrected narrative re-read, with changed metadata rechecked. Key source claims spot-checked in preserved source texts and official live records; not a fresh complete reading of all cited books. All images viewed and saved rights/description records checked. No site edits.",
+      "author": "hardware_russian_ships",
+      "status": "accepted",
+      "verdict": "accepted",
+      "file": "work/hardware/cruisers-next.json",
+      "sha256": "00a87520f265dffe650faa17453e2abc4e1b80e76c24e8c7cd52c43ab71de374",
+      "resolvedFindings": [
+        "Missing spaces after punctuation in Boyarin narrative/captions, ship specifications and source locators corrected. No historical rewrite required."
+      ],
+      "readerGate": [
+        "All four openings establish subject, period, geography and situation. Protected versus armoured cruiser, bilge keel, station service and collision patch are explained where needed.",
+        "Ship identities and different Palladas/Aurora are separated. Creation, technical design, people, campaign and final fate develop coherently. Boyarin commander’s explanation is distinguished from fact; no invented scenes or unquestioned combat victory claims.",
+        "Diana original eight six-inch guns, six at Yellow Sea and later ten 130-mm guns are clearly distinguished. Boyarin first explosion, abandonment and final loss are separate events."
+      ],
+      "sourceChecks": [
+        "Krestyaninov Boyarin section checked: April1899 contract, progression to3200 tonnes,21.75-knot revised contract and22.6-knot six-hour trial. NavWeaps independently identifies Boyarin120/45 model; counts supported separately.",
+        "Skvortsov chapter2 checked for6731-tonne design,126.8/16.76m,11610hp,38/63.5mm deck; chapter9 for1915 130-mm rearmament; chapter10 for1922 removals and Tsugaru aviation-target sinking1924.",
+        "Primary Askold report read: accompanying damaged Bayan then second sortie, dusk withdrawal and reduction to ten knots to reduce smoke/sparks. Official CVMM model record confirms construction and1902 flag; its summary does not replace full ship biography. Navypedia table checked for nineteen Schultz-Thornycroft boilers, three shafts and waterline130m.",
+        "Primary Sarychev report checked: flooding, loss of steam, removal of people/documents, unopened scuttling valves and provisional nine missing. Narrative does not adopt his initial bottom-mine identification or conflate abandonment with final sinking.",
+        "Liven excerpts checked for artillery handed to Retvizan; primary excerpts and Skvortsov travel account support fuel/damage explanation. Official Sudostroenie extract p77/PDF78 confirms Boyarin replaced by Varyag at Chemulpo.",
+        "Preserved Askold late book extracts support four executions with absence of direct evidence, Ketlinsky,1917 Kola arrival, GloryIV accommodation use and Krylov commission/scrap decision. JACAR local official caption supports Pallada/refloating/Tsugaru identity; live fetch had decoding error."
+      ],
+      "imageChecks": [
+        "Seven actual ship photographs viewed; pairs are distinct frames. Saved description records support subject, stated dating/place and public-domain tags.",
+        "Askold1901 Kiel and former Askold GloryIV are separate periods;1918–1922 range retained rather than inferred exact year. British photograph provenance is explicitly book/Commons, photographer unknown.",
+        "Pallada Russian image cautiously dated early1900s; Tsugaru1912 museum provenance is attributed to Commons, not claimed as independently visited museum record.",
+        "Diana before1903 Kronstadt image subject and card checked. Boyarin Danish trial flag is a shipyard trial condition, not Danish naval service;1903 Far East photo dating is attributed to description.",
+        "Rights acceptance uses linked repository declarations. Unknown photographers are not invented from compilers or present holders; modern research text downloads are not treated as reusable publications."
+      ],
+      "validationErrors": [],
+      "remainingBlockers": []
+    },
+    "integratedSlugs": [
+      "askold",
+      "pallada",
+      "diana",
+      "boyarin"
+    ]
+  },
+  {
+    "group": "armament-overlays",
+    "review": {
+      "status": "accepted",
+      "verdict": "accepted",
+      "file": "work/hardware/guns-next-armament-overlays.json",
+      "sha256": "c02446e5ea982826cbab54069814ef224ea8bdca010c830dba356ed043a538b4",
+      "checks": [
+        "Novik six 120/45 and six single-barrel 47-mm guns at beginning of 1904; source1 is its own Alliluyev record; append8 NavWeaps and append9 Navypedia are unique and refs belong to combined Novik bibliography.",
+        "Peresvet/Pobeda four 254/45 guns each, two twin turrets, early-1904 period; refs1 are the respective ships’ own Melnikov bibliography, not gun-record numbering. Early/reinforced ballistics are distinguished.",
+        "No automatic claim about later Japanese barrels. Base SHA is an integration precondition; if the whole canonical collection changes, root must rebase/verify source numbering before append. Source identity and IDs checked against current ships."
+      ],
+      "validationErrors": []
+    }
+  },
+  {
+    "group": "japanese-next",
+    "review": {
+      "status": "accepted",
+      "file": "work\\hardware\\japanese-next.json",
+      "sha256": "9ba5ec46e41043c06971d9cebca8d7960f24fa4bef2a6cc4a0c74142dd8e0af9",
+      "reviewer": "hardware_russian_ships",
+      "author": "hardware_other_ships",
+      "records": 2,
+      "fullRead": true,
+      "rereadAfterCorrections": true,
+      "checks": [
+        "??? ?????? ? ??? ?????????? ????????? ??????? ?? ?????? ? ???????? ????? ???.",
+        "???????? ??? ??????? ? ???????????? Navypedia, ???????? ?????/????? ? ??????/???????? ?????????.",
+        "?????????????19,227 ?17,35 ???? ????????? ????????? ?? PDF-?.34 ?????????? ?????? S.Sasow.",
+        "??????15???1904 ? ??????? ?????????? ??????? ? ??????????? ???????????? ???????1907, ?????????.143/PDF149; ?????????????? ???????????? JACAR ????????? ? ??????????? ????????.",
+        "???????? ????????? web-?????? USNIJuly1905 ? ???????? Sakamoto ? PapersPast3June1905 ? ????????? ??????. ???????? ???? ?? ????????? ???? ??????.",
+        "????? armstrong-305-40 ??????? ??? ?????: ????? Armstrong G ?? ????? Navypedia-?????????; NavWeaps ????????????? ????? ???????? Fuji-class ? ????????? EOC G/G?, ???????? ??????????? ????????? ?????????. ?????????????? ??????????? ? ?????? ?? ?????????????.",
+        "??? ??????????? ??????? ? ?????????, ??? ????? ????????? ???????? CommonsNH58968; ??????? ????????? ? ?????????????? ?????????.",
+        "????????? ???? ? ??????? manifest ?????????; refs ??????????."
+      ],
+      "corrections": [
+        "???????? ??????????? ??????? ?????????.",
+        "?????????? ?????????? ???????????.",
+        "????????? ????? PapersPast212???? ?????? ????????? ????????? ??????, web-?????? ???????? ?? ??????????."
+      ],
+      "limitations": [
+        "???49???????? ?????? JACAR ?????????? ?? ?????????; ????????? ?????????????? ????????????.",
+        "????????? ????????? NHHC ??????????????? Commons; ??????????????? ???????? ?????????? NHHC-????? ??????? ?? ???????.",
+        "????? ????????? ????????? ????? ? ?????? ?????????? ????????????? ?? ???????????."
+      ],
+      "manifestFilesChecked": 14,
+      "errors": []
+    },
+    "integratedSlugs": [
+      "hatsuse",
+      "yashima"
+    ]
   }
 ]

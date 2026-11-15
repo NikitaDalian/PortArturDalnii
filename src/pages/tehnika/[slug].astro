@@ -39,6 +39,7 @@ const connections=[
   <article class="container hardware-layout">
     <aside class="hardware-aside" data-pagefind-ignore>
       <nav aria-label="Содержание страницы">
+        {e.kind==='ship'&&<a href={href.fleetOverview()}>Сравнить с другими кораблями</a>}
         <a href="#story">История</a>
         <a href="#specifications">Характеристики</a>
         {e.armament.length>0 && <a href="#armament">Вооружение корабля</a>}

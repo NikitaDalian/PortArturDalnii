@@ -34,6 +34,12 @@ assert.deepEqual(links(shipMatch('Петропавловск')),[],'Unquoted cit
 assert.deepEqual(links(shipMatch('Броненосец «Петропавловск»')),['ship/petropavlovsk']);
 assert.deepEqual(links(shipMatch('Микаса',mentionContext(['ship/mikasa']))),[]);
 for(const text of ['«Микаса», корабль «Петропавловск».','“三笠”号与三笠。','Книга «Микаса».'])assert.equal(shipMatch(text).map(p=>p.text).join(''),text);
+const victoryNames=new Map([['Победа',new Set(['ship/pobeda'])],['броненосец «Победа»',new Set(['ship/pobeda'])]]);
+const victoryMatch=createMentionMatcher(victoryNames,new Map([['ship/pobeda',{id:'ship/pobeda'}]]),{quotedEntities:new Set(['ship/pobeda']),contextualNames:new Map([['Победа',new Set(['ship/pobeda'])]])});
+assert.deepEqual(links(victoryMatch('Победа досталась дорого.')),[],'Ordinary victory is not a ship');
+assert.deepEqual(links(victoryMatch('«Победа» вышла в море.')),['ship/pobeda']);
+assert.deepEqual(links(victoryMatch('В море вышел броненосец «Победа».')),['ship/pobeda']);
+assert.deepEqual(links(victoryMatch('Победа',mentionContext([],['ship/pobeda']))),['ship/pobeda']);
 const aliases = read('entity_aliases'); const terms = read('index_terms');
 const valid = {
   people: new Set([...read('people').map(p => p.slug), ...Object.keys(terms.people)]),

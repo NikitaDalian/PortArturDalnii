@@ -67,4 +67,8 @@ for (const item of hardware) {
   register({id:`${item.kind}/${item.slug}`,kind:item.kind,title:item.name,description:excerpt(item.summary),
     href:href.hardware(item.slug),image:picture ? assetUrl(picture.file) : null,alt:picture?.alt??''},[item.shortName,...item.aliases]);
 }
-export const linkMentions = createMentionMatcher(names, registry, { quotedEntities:new Set(hardware.filter(item=>item.kind==='ship').map(item=>`ship/${item.slug}`)) });
+// These bare names also mean a city or an ordinary victory. Explicit aliases
+// such as “броненосец «Победа»” and exact quoted names remain eligible.
+const ambiguousShips = new Set(['pobeda','poltava','sevastopol']);
+const contextualNames = new Map(hardware.filter(item=>ambiguousShips.has(item.slug)).map(item=>[item.shortName,new Set([`ship/${item.slug}`])]));
+export const linkMentions = createMentionMatcher(names, registry, { quotedEntities:new Set(hardware.filter(item=>item.kind==='ship').map(item=>`ship/${item.slug}`)), contextualNames });

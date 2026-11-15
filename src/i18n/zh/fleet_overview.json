@@ -1,0 +1,433 @@
+{
+  "title": "同一比例看军舰",
+  "dek": "把军舰并排放在一起，看看它们有多大、担负什么任务，以及在旅顺战事中各自的位置。",
+  "intro": [
+    "舰身长，并不一定战力更强。1904年初，俄国驻旅顺舰队中，有些巡洋舰比战列舰还长；然而，最重的舰炮和最厚的舷侧装甲，仍在战列舰上。差别在于造舰时赋予它们的任务：列阵迎战、搜索敌舰、护卫鱼雷艇，或是远离基地独立行动。",
+    "这里可以把军舰放在同一比例下比较。最先展示的是开战前旅顺的主要作战舰艇；还可以单独查看当时驻泊仁川的“瓦良格”号，以及几艘日本对手。示意轮廓只表示舰体长度，照片和文章则呈现每艘军舰真正的外形与经历。借此再看那些熟悉的舰名，会更容易理解：小小的“诺维克”号为何频频出海，“巴扬”号与其他巡洋舰有何不同，以及七艘各具特点的战列舰承担着哪些共同任务。"
+  ],
+  "sections": [
+    {
+      "id": "roles",
+      "title": "迎战与侦察",
+      "paragraphs": [
+        "战列舰组成舰队的重型战列线。舷侧装甲保护舰体的重要部位，大型炮塔中的舰炮则用于同敌方重型军舰交战。旅顺的五艘战列舰以305毫米炮为主炮，“佩列斯韦特”号和“胜利”号则使用254毫米炮。即使同属一类，武备、防护和动力装置的组合也各不相同。",
+        "巡洋舰需要速度，也需要独立行动的能力：侦察敌情、支援轻型舰艇、袭扰海上交通线。“巴扬”号有舷侧装甲带；防护巡洋舰则主要依靠舰内的装甲甲板保护动力装置，甲板两侧向下倾斜，接向舷侧。因此，仅凭“巡洋舰”这个统称，还无法判断一艘军舰的防护水平。"
+      ],
+      "refs": [
+        1,
+        2,
+        3,
+        7
+      ]
+    },
+    {
+      "id": "ports",
+      "title": "同一场战争，不同的驻泊地",
+      "paragraphs": [
+        "战争爆发时，旅顺有七艘战列舰，以及这里介绍的六艘巡洋舰：“巴扬”“阿斯科尔德”“帕拉达”“狄安娜”“诺维克”和“博雅林”。“瓦良格”号当时在朝鲜的济物浦，即今天的仁川。海参崴巡洋舰分队的基地还要更远；本次比较没有列入该分队的军舰。",
+        "鱼雷艇、炮舰、布雷运输舰和辅助舰船，同样是舰队不可缺少的部分。这幅示意图选取的是部分大型军舰，并未涵盖所有舰艇。日本的“三笠”“初濑”和“八岛”号展示了不同设计的对手，也不代表日军战列线的全貌。"
+      ],
+      "refs": [
+        1,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "squadron-name",
+      "title": "舰队何时有了“第一”这个序号",
+      "paragraphs": [
+        "讲述整场战役时，使用“第一太平洋舰队”这个名称很方便，但1904年初，这支舰队还没有序号。斯塔尔克在报告首次夜袭时，署衔仍是太平洋舰队司令。战争期间，指挥权限和部队名称都有变化；随着波罗的海开始筹建第二舰队，“第一”的称呼才逐渐固定下来。第二舰队原本要赶往远东增援。因此，今天熟悉的历史名称，并不等于当年1月的正式称谓。"
+      ],
+      "refs": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "reading-scale",
+      "title": "轮廓之外，还要看什么",
+      "paragraphs": [
+        "图中比较的是舰体全长。书中还常列出水线长和垂线间长，它们采用不同的测量端点。若拿其中一种替代另一种，军舰即使没有改造，在图上也会凭空缩短。这里的轮廓只是示意，并不复原炮塔、烟囱和上层建筑。",
+        "长度无法反映煤炭储备、机器状况、舰员训练或战损。即使火炮口径相同，炮架和供弹装置也未必一样。可以选两艘长度相近的军舰，打开各自的文章：看看动力装置占去了多少舰体空间，装甲保护了什么，以及军舰在某一场具体战斗中究竟带着哪些武器出航。"
+      ],
+      "refs": [
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "relatedNotes": [
+    "pervaya-tihookeanskaya-eskadra",
+    "voina-na-more-osada-mukden-tsusima"
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "俄罗斯帝国海军巡洋舰，第一部",
+      "author": "V. Ya. 克列斯季亚尼诺夫",
+      "date": "圣彼得堡：Galeya Print出版社，2003年",
+      "url": "https://keu-ocr.narod.ru/Cruisers/chap06.html",
+      "locator": "第5章：侦察巡洋舰，“阿斯科尔德”“诺维克”和“博雅林”号的设计、试航与武备。",
+      "note": "已阅读电子转录本中的相关章节；网址中的chap06对应书中第5章。舰种与俄国军舰资料已同本网站经审读通过的条目核对。"
+    },
+    {
+      "id": 2,
+      "title": "波尔塔瓦级战列舰",
+      "author": "S. V. 苏利加、S. A. 巴拉金",
+      "date": "《海军收藏》，1999年，第2期",
+      "url": "https://tsushima.su/RU/libru/i/Page_6/page_15/suliga-balakin-poltava/",
+      "locator": "舰体结构与武备部分；尺寸、主炮与中口径火炮的配置。",
+      "note": "相关研究章节此前已阅读并保存；此处用于解释军舰结构，不作为整个舰队编成的唯一依据。"
+    },
+    {
+      "id": 3,
+      "title": "佩列斯韦特级战列舰",
+      "author": "R. M. 梅利尼科夫",
+      "date": "《汉古特》，第11、12及12-bis期",
+      "url": "https://keu-ocr.narod.ru/Peresvet/",
+      "locator": "第1章：设计构想、动力装置与254毫米火炮；第4—5章：武备变化与战争。",
+      "note": "已阅读的章节保存在squadron-battleships资料库；未阅读的第2章不列作依据。"
+    },
+    {
+      "id": 4,
+      "title": "太平洋舰队司令斯塔尔克海军中将致总督第628号报告",
+      "author": "O. V. 斯塔尔克",
+      "date": "1904年2月6日，俄历",
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/doc_stark/doc_stark_006/",
+      "locator": "标题及全文：驻泊情况、首次袭击、舰艇损伤与救援。",
+      "note": "已完整阅读这份原始报告的电子转录本。部队名称依原文使用；对敌方的评价未直接采信。"
+    },
+    {
+      "id": 5,
+      "title": "《“留里克”号是第一艘》，附录3：海参崴巡洋舰分队",
+      "author": "R. M. 梅利尼科夫",
+      "date": "1989年；电子转录本",
+      "url": "https://militera.lib.ru/tw/melnikov1/12.html",
+      "locator": "附录3：1903年的兵力分配、独立驻泊海参崴的分队，以及1903—1904年的名称变化。",
+      "note": "仅阅读附录3，未通读全书。没有把某个分队改名的日期推作整个舰队改名的确切日期；序号由来不依赖有争议的具体日期。"
+    },
+    {
+      "id": 6,
+      "title": "第3展厅：1904—1905年日俄战争。“瓦良格”号巡洋舰之战",
+      "author": "中央海军博物馆",
+      "date": "未注明日期",
+      "url": "https://special.navalmuseum.ru/exposition?id=31",
+      "locator": "首段历史说明：济物浦，即今仁川；1904年1月27日（2月9日）。",
+      "note": "已核对博物馆官方说明，用于确认“瓦良格”号当时所在地点；其中关于日后征用的评价性表述未予沿用。"
+    },
+    {
+      "id": 7,
+      "title": "首舰“巴扬”号装甲巡洋舰",
+      "author": "R. M. 梅利尼科夫",
+      "date": "《造船》，1980年，第6期",
+      "url": "https://tsushima.su/RU/libru/i/Page_6/page_13/biblmelbayanru/",
+      "locator": "巡洋舰在战列舰舰队中的任务，以及两条舷侧装甲带的说明。",
+      "note": "已核对文章的电子转录本。“巴扬”号的设计考虑较为复杂，不能用“独立巡航”一句话概括。"
+    }
+  ],
+  "ships": [
+    {
+      "shipSlug": "petropavlovsk",
+      "group": "port-arthur",
+      "profile": "battleship",
+      "lengthOverallM": 114.3,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "波尔塔瓦级舰体全长114.3米，水线长112.5米，垂线间长108.7米。未填排水量：10960英吨是设计正常排水量，各舰建成后的实际数值不同，相关数值的装载状态也没有同样明确的定义。",
+      "sources": [
+        {
+          "url": "https://tsushima.su/RU/libru/i/Page_6/page_15/suliga-balakin-poltava/suliga-balakin-poltava-2/",
+          "title": "S. 苏利加、S. 巴拉金：《波尔塔瓦级战列舰》",
+          "locator": "“舰体”章，“舰体主要尺寸”段；设计与实际排水量"
+        },
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_bb_poltava.htm",
+          "title": "Navypedia：波尔塔瓦级战列舰（1897—1899）",
+          "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
+        }
+      ]
+    },
+    {
+      "shipSlug": "poltava",
+      "group": "port-arthur",
+      "profile": "battleship",
+      "lengthOverallM": 114.3,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "波尔塔瓦级舰体全长114.3米，水线长112.5米，垂线间长108.7米。未填排水量：10960英吨是设计正常排水量，各舰建成后的实际数值不同，相关数值的装载状态也没有同样明确的定义。",
+      "sources": [
+        {
+          "url": "https://tsushima.su/RU/libru/i/Page_6/page_15/suliga-balakin-poltava/suliga-balakin-poltava-2/",
+          "title": "S. 苏利加、S. 巴拉金：《波尔塔瓦级战列舰》",
+          "locator": "“舰体”章，“舰体主要尺寸”段；设计与实际排水量"
+        },
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_bb_poltava.htm",
+          "title": "Navypedia：波尔塔瓦级战列舰（1897—1899）",
+          "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
+        }
+      ]
+    },
+    {
+      "shipSlug": "sevastopol",
+      "group": "port-arthur",
+      "profile": "battleship",
+      "lengthOverallM": 114.3,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "波尔塔瓦级舰体全长114.3米，水线长112.5米，垂线间长108.7米。未填排水量：10960英吨是设计正常排水量，各舰建成后的实际数值不同，相关数值的装载状态也没有同样明确的定义。",
+      "sources": [
+        {
+          "url": "https://tsushima.su/RU/libru/i/Page_6/page_15/suliga-balakin-poltava/suliga-balakin-poltava-2/",
+          "title": "S. 苏利加、S. 巴拉金：《波尔塔瓦级战列舰》",
+          "locator": "“舰体”章，“舰体主要尺寸”段；设计与实际排水量"
+        },
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_bb_poltava.htm",
+          "title": "Navypedia：波尔塔瓦级战列舰（1897—1899）",
+          "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
+        }
+      ]
+    },
+    {
+      "shipSlug": "retvizan",
+      "group": "port-arthur",
+      "profile": "battleship",
+      "lengthOverallM": 117.9,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "117.9米为全长，116.5米为水线长。Navypedia的俄国舰艇条目未说明长度定义，但同一舰体在日本改名“肥前”后的条目明确标有oa。这里没有采用日本服役时期的武备与排水量数据。正常排水量留空：巴拉金所列建造时的实际值和设计值，与后来的12900吨参考值不同，须另行核对单位和装载状态。",
+      "sources": [
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_bb_retvizan.htm",
+          "title": "Navypedia：“列特维赞”号战列舰（1901）",
+          "locator": "“技术数据”：“长度，米”117.9，未说明测量定义"
+        },
+        {
+          "url": "https://www.navypedia.org/ships/japan/jap_bb_hizen.htm",
+          "title": "Navypedia：“肥前”号战列舰（1901／1908）",
+          "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
+        },
+        {
+          "url": "https://tsushima.su/RU/libru/i/Page_6/page_15/balakin-retvizan/balakin-retvizan-04/",
+          "title": "S. 巴拉金：《“列特维赞”号战列舰》",
+          "locator": "建造与试航部分：实际正常排水量12409.9吨，设计值12745.6吨"
+        }
+      ]
+    },
+    {
+      "shipSlug": "bayan",
+      "group": "port-arthur",
+      "profile": "armored-cruiser",
+      "lengthOverallM": 137,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "137.0米oa专指参加1904年战争的第一艘“巴扬”号（Bayan i），135.0米为垂线间长。未套用同级后续舰的尺寸。未填正常排水量：参考表中的7725只标为t，没有明确区分公吨与英吨。",
+      "sources": [
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_cr_bayan.htm",
+          "title": "Navypedia：巴扬级装甲巡洋舰（1903—1911）",
+          "locator": "“技术数据”中的“长度，米”：Bayan (i)、Bayan (ii)，135.0 pp、137.0 oa；“正常排水量，t”：Bayan (i)，7725"
+        }
+      ]
+    },
+    {
+      "shipSlug": "mikasa",
+      "group": "japanese",
+      "profile": "battleship",
+      "lengthOverallM": 131.7,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "131.7米为全长，126.5米为水线长，122.0米为垂线间长。博物馆简介中的约122米没有用来代替全长（LOA）。此处仅采用参考表中定义明确的长度数据；其中其他数据，包括错误的建造船厂归属，均未采纳。未填正常排水量：15140后所标的t不足以判定是公吨还是长吨，尚需其他依据。",
+      "sources": [
+        {
+          "url": "https://www.navypedia.org/ships/japan/jap_bb_mikasa.htm",
+          "title": "Navypedia：“三笠”号战列舰（1902）",
+          "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
+        }
+      ]
+    },
+    {
+      "shipSlug": "novik",
+      "group": "port-arthur",
+      "profile": "protected-cruiser",
+      "lengthOverallM": 110.5,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "110.5米为全长，109.9米为水线长，106.0米为垂线间长。未填正常排水量：设计值3000与专著所列实际正常排水量3080吨不能混用；参考表对这些数值所对应装载状态的划分不同，原始单位也未说明。",
+      "sources": [
+        {
+          "url": "https://navypedia.org/ships/russia/ru_cr_novik.htm",
+          "title": "Navypedia：“诺维克”号二等巡洋舰（1901）",
+          "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
+        },
+        {
+          "url": "https://keu-ocr.narod.ru/Novik/",
+          "title": "A. A. 阿利卢耶夫、M. A. 博格丹诺夫：《“诺维克”号巡洋舰》",
+          "locator": "“历史简述与战术技术要素”部分"
+        }
+      ]
+    },
+    {
+      "shipSlug": "varyag",
+      "group": "chemulpo",
+      "profile": "protected-cruiser",
+      "lengthOverallM": 129.56,
+      "normalDisplacementTonnes": 6604,
+      "measurementNote": "129.56米为梅利尼科夫所收舰体型线图注中明确注明的全长。相较Navypedia未说明定义的129.8米，此处优先采用定义明确的数值。梅利尼科夫引用的重量明细表列正常排水量6500英制长吨；按书中每吨1016千克的取整换算值，6500×1.016＝6604公吨。这是载煤770.7英吨的正常装载状态，不是7022的满载状态。分组依据为开战时该舰单独驻泊济物浦。",
+      "sources": [
+        {
+          "url": "https://djvu.online/file/RQMlDBfTxvHzU",
+          "title": "R. M. 梅利尼科夫：《“瓦良格”号巡洋舰》，1982年",
+          "locator": "第44—45页，舰体型线图注；第83页，重量明细表及说明英吨为1016千克的注1；注2所列档案出处：中央国家海军档案馆（ЦГА ВМФ），全宗445，目录1，卷43，页392"
+        },
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_cr_varyag.htm",
+          "title": "Navypedia：“瓦良格”号一等巡洋舰（1901）",
+          "locator": "“技术数据”中的“长度，米”：129.8，未说明定义；“服役经历”：济物浦"
+        }
+      ]
+    },
+    {
+      "shipSlug": "tsesarevich",
+      "group": "port-arthur",
+      "profile": "battleship",
+      "lengthOverallM": 118.5,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "118.5米为全长，117.3米为水线长，113.4米为垂线间长。未填正常排水量：参考表中12915后所标的t未明确说明原始单位，不能直接当作公吨。",
+      "sources": [
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_bb_tsesarevich.htm",
+          "title": "Navypedia：“皇太子”号战列舰（1903）",
+          "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
+        }
+      ]
+    },
+    {
+      "shipSlug": "peresvet",
+      "group": "port-arthur",
+      "profile": "battleship",
+      "lengthOverallM": 132.4,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "132.4米是梅利尼科夫对照表中该舰的全长，130.0米为设计水线长，122.3米为垂线间长。未填排水量：表中12674吨明确指正常载煤量下的设计排水量，但未说明单位，也未说明1904年的实际装载状态。",
+      "sources": [
+        {
+          "url": "https://keu-ocr.narod.ru/Peresvet/chap01.html",
+          "title": "R. M. 梅利尼科夫：《佩列斯韦特级战列舰》",
+          "locator": "第1章，表1“佩列斯韦特级战列舰战术技术要素”；“长度，米”及“设计排水量（正常载煤量下），吨”两栏"
+        }
+      ]
+    },
+    {
+      "shipSlug": "pobeda",
+      "group": "port-arthur",
+      "profile": "battleship",
+      "lengthOverallM": 132.4,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "132.4米是梅利尼科夫对照表中该舰的全长，130.0米为设计水线长，122.3米为垂线间长。未填排水量：表中12674吨明确指正常载煤量下的设计排水量，但未说明单位，也未说明1904年的实际装载状态。",
+      "sources": [
+        {
+          "url": "https://keu-ocr.narod.ru/Peresvet/chap01.html",
+          "title": "R. M. 梅利尼科夫：《佩列斯韦特级战列舰》",
+          "locator": "第1章，表1“佩列斯韦特级战列舰战术技术要素”；“长度，米”及“设计排水量（正常载煤量下），吨”两栏"
+        }
+      ]
+    },
+    {
+      "shipSlug": "askold",
+      "group": "port-arthur",
+      "profile": "protected-cruiser",
+      "lengthOverallM": null,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "全长尚未采用确定值：Navypedia列132.1米oa，1996年专著的“战术技术要素”表则列131.2米；两者均另列载重水线长130米。在核对原始图纸前，没有取平均值，也没有擅自调换数字。正常排水量也未填写：Navypedia的5860与专著的6000，尚须核对装载状态和单位。",
+      "sources": [
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_cr_askold.htm",
+          "title": "Navypedia：“阿斯科尔德”号一等巡洋舰（1901）",
+          "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
+        },
+        {
+          "url": "https://djvu.online/file/1VhPY1sNDqpU5",
+          "title": "V. Ya. 克列斯季亚尼诺夫、S. V. 莫洛德佐夫：《“阿斯科尔德”号巡洋舰》，《海军收藏》，1996年",
+          "locator": "“舰船动力装置与系统”之后的“‘阿斯科尔德’号一等巡洋舰战术技术要素”表：全长131.2米，载重水线长130米"
+        }
+      ]
+    },
+    {
+      "shipSlug": "pallada",
+      "group": "port-arthur",
+      "profile": "protected-cruiser",
+      "lengthOverallM": 126.8,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "帕拉达级全长126.8米，水线长123.5米，垂线间长122.0米。这里指防护巡洋舰“帕拉达”号，并非后来同名的装甲巡洋舰。未填正常排水量：参考表中6731后所标的t未明确区分公吨与英吨；也未套用各姊妹舰的满载数值。",
+      "sources": [
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_cr_pallada.htm",
+          "title": "Navypedia：帕拉达级一等巡洋舰（1901—1903）",
+          "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
+        }
+      ]
+    },
+    {
+      "shipSlug": "diana",
+      "group": "port-arthur",
+      "profile": "protected-cruiser",
+      "lengthOverallM": 126.8,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "帕拉达级全长126.8米，水线长123.5米，垂线间长122.0米。这里指防护巡洋舰“帕拉达”号，并非后来同名的装甲巡洋舰。未填正常排水量：参考表中6731后所标的t未明确区分公吨与英吨；也未套用各姊妹舰的满载数值。",
+      "sources": [
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_cr_pallada.htm",
+          "title": "Navypedia：帕拉达级一等巡洋舰（1901—1903）",
+          "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
+        }
+      ]
+    },
+    {
+      "shipSlug": "boyarin",
+      "group": "port-arthur",
+      "profile": "protected-cruiser",
+      "lengthOverallM": 108.3,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "参考表将108.3米分别标为wl和oa，105.2米则是垂线间长。水线长与全长的近似值相同，此处保留原表数值，没有自行推算更长的舰体。未填正常排水量：3200后的t未说明原始单位；3274属于满载状态。",
+      "sources": [
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_cr_boyarin.htm",
+          "title": "Navypedia：“博雅林”号二等巡洋舰（1902）",
+          "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
+        }
+      ]
+    },
+    {
+      "shipSlug": "hatsuse",
+      "group": "japanese",
+      "profile": "battleship",
+      "lengthOverallM": 134,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "134.0米oa是“初濑”号自身的数值，不是同级“敷岛”号的133.5米；126.5米为水线长，121.9米为垂线间长。未填正常排水量：参考表中15000后所标的t未说明原始单位。分组依据为开战时属于日本舰队，尽管该舰不久后便在1904年5月沉没。",
+      "sources": [
+        {
+          "url": "https://www.navypedia.org/ships/japan/jap_bb_shikishima.htm",
+          "title": "Navypedia：敷岛级战列舰（1900）",
+          "locator": "“技术数据”中“初濑”号的单独一栏；长度121.9 pp、126.5 wl、134.0 oa"
+        }
+      ]
+    },
+    {
+      "shipSlug": "yashima",
+      "group": "japanese",
+      "profile": "battleship",
+      "lengthOverallM": 125.5,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "125.5米oa出自“富士”号与“八岛”号共用的长度栏；118.8米为水线长，114.0米为垂线间长。简氏1904年的早期近似数值，包括400英尺的全长，与这张表不符，此处没有混用。未填正常排水量：参考表中12320后所标的t未说明原始单位。",
+      "sources": [
+        {
+          "url": "https://www.navypedia.org/ships/japan/jap_bb_fuji.htm",
+          "title": "Navypedia：富士级战列舰（1897）",
+          "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
+        },
+        {
+          "url": "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm",
+          "title": "Fred T. 简：《日本帝国海军》，1904年",
+          "locator": "第172页，“富士”号与“八岛”号的主要数据；早期所列全长400英尺作为差异注明，未采用"
+        }
+      ]
+    }
+  ]
+}

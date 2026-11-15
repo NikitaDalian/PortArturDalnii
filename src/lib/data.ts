@@ -105,6 +105,7 @@ export const href = {
   note: (s: string) => url(`/zametki/${s}/`),
   essay: (s: string) => url(`/stati/${s}/`),
   hardwareIndex: () => url('/tehnika/'),
+  fleetOverview: () => url('/tehnika/v-masshtabe/'),
   hardware: (s: string) => url(`/tehnika/${s}/`),
   seriesList: () => url('/zametki/serii/'),
   series: (s: string) => url(`/zametki/serii/${s}/`),

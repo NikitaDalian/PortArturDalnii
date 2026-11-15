@@ -6,7 +6,7 @@ export function validateHardware(records, { assetsExist, people, places, notes, 
   const present=value=>typeof value==='string'&&value.trim().length>0;
   for(const item of records){
     const name=`hardware/${item.slug}`;
-    if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.slug))errors.push(`${name}: invalid slug`);
+    if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.slug)||item.slug==='v-masshtabe')errors.push(`${name}: invalid or reserved slug`);
     if(!['ship','weapon'].includes(item.kind))errors.push(`${name}: invalid kind`);
     for(const field of ['lat','lng','coordinates','polyline','map'])if(field in item)errors.push(`${name}: hardware must not contain map geometry`);
     for(const field of ['name','shortName','category','summary'])if(!present(item[field]))errors.push(`${name}: missing ${field}`);

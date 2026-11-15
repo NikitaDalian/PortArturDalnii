@@ -13,7 +13,7 @@ const countries = Object.keys(COUNTRIES).filter(country => hardware.some(item =>
       <Crumbs items={[{label:'Главная',href:href.home()},{label:'Корабли и вооружение'}]} />
       <h1 class="h1">Корабли и вооружение</h1>
       <p class="lead">Как были устроены корабли и орудия, кто с ними служил и какую роль они сыграли в истории Порт-Артура и Дальнего. От замысла и первых испытаний до последнего похода.</p>
-      <nav class="cluster" aria-label="В этом разделе"><a href="#ship">Корабли</a><a href="#weapon">Вооружение</a></nav>
+      <nav class="cluster" aria-label="В этом разделе"><a href={href.fleetOverview()}>Корабли в масштабе</a><a href="#ship">Корабли</a><a href="#weapon">Вооружение</a></nav>
     </div>
   </header>
   <div class="container hardware-catalog" data-hardware-catalog>

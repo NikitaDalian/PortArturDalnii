@@ -1,7 +1,8 @@
 {
   "data/articles.json": "e4c02d970facf9cf1d69b0f9baa0819f25708e3a1becffc0f4ae6449b6d78419",
   "data/essays.json": "613368b0dae042444b652041df8964b80115242f04ce1defa01f88f9435b8b37",
-  "data/hardware.json": "ec33ba2f306d39a9c346826985bce7a5aed967452576ef17acb8511e1fb695e0",
+  "data/hardware.json": "cc8ef5c8fd1b405f9e40e55878c27ff909ff0523f7c771eeaf3ddc591d7363a1",
+  "data/fleet_overview.json": "1fe48ccc647ac02a7e4f083f780e784cd6caa709e3d8019a4bb7097f04619e19",
   "data/books.json": "f22f91c113300c2d02564e7664459c2cb4c99f5672d4840aa234ab1292cf828b",
   "data/people.json": "85244753efdd01808a7e72a3acd3bc104922ec0632dac051b509df383dd5a429",
   "data/places.json": "46a14a874ea1c415269013a64e74ffddd6c0af489bad7676290638c23ab82949",

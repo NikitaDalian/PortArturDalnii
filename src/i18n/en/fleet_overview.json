@@ -1,0 +1,433 @@
+{
+  "title": "Ships to scale",
+  "dek": "Set the ships side by side to understand their size, roles and place in the war off Port Arthur.",
+  "intro": [
+    "A longer ship is not necessarily a stronger one. In the Russian squadron at Port Arthur in early 1904, some cruisers were longer than certain battleships, although the battleships carried the heaviest guns and thickest side armour. The difference lay in what each ship was built to do: fight in the battle line, find the enemy, accompany torpedo boats or operate far from base.",
+    "Here you can place the ships side by side at a common scale. The opening view shows Port Arthur’s principal warships on the eve of war; you can also look separately at Varyag, stationed at Chemulpo, and several Japanese opponents. The outlines convey hull length, while photographs and articles restore each ship’s actual appearance and history. Familiar names become easier to understand: why the small Novik was constantly putting to sea, how Bayan differed from the other cruisers, and what tasks united seven different battleships."
+  ],
+  "sections": [
+    {
+      "id": "roles",
+      "title": "For battle and reconnaissance",
+      "paragraphs": [
+        "Battleships formed the heavy battle line. Side armour protected vital parts of the hull, while large turret guns were intended to engage enemy heavy warships. Five of Port Arthur’s battleships had 305 mm main guns; Peresvet and Pobeda had 254 mm guns. Even within one category, weapons, protection and machinery came in different combinations.",
+        "Cruisers needed speed and the ability to act independently: to reconnoitre, support light forces and attack enemy shipping. Bayan had a side armour belt. In protected cruisers, an internal armoured deck, sloping down towards the sides, covered the principal machinery. The word “cruiser” alone therefore tells us little about a ship’s protection."
+      ],
+      "refs": [
+        1,
+        2,
+        3,
+        7
+      ]
+    },
+    {
+      "id": "ports",
+      "title": "One war, different stations",
+      "paragraphs": [
+        "At the outbreak of war, Port Arthur had seven battleships and the six cruisers shown here: Bayan, Askold, Pallada, Diana, Novik and Boyarin. Varyag was then at the Korean port of Chemulpo, now Incheon. The Vladivostok cruiser detachment was based farther away; its ships are not included in this comparison.",
+        "Torpedo boats, gunboats, minelayers and auxiliary vessels were also essential to the fleet. The diagram presents selected large warships rather than every vessel. Japan’s Mikasa, Hatsuse and Yashima illustrate different designs; they do not represent the entire Japanese battle line either."
+      ],
+      "refs": [
+        1,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "squadron-name",
+      "title": "When the squadron became the First",
+      "paragraphs": [
+        "“First Pacific Squadron” is a convenient name for an account of the whole campaign, but in early 1904 it had no number. In his report on the first night attack, Stark was styled commander of the Pacific Squadron. Command powers and formation names changed during the war; “First” became established as the Second Squadron was prepared in the Baltic to reinforce the forces in the Far East. The familiar historical name should therefore not be mistaken for the precise designation used in January."
+      ],
+      "refs": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "reading-scale",
+      "title": "What the outline leaves out",
+      "paragraphs": [
+        "The diagram compares length overall. Books also give waterline length and length between perpendiculars, measured between different points. Substituting one for another can make a ship shorter on the diagram without any rebuilding. The outline itself is schematic: it does not reconstruct turrets, funnels or superstructures.",
+        "Length does not reveal coal reserves, machinery condition, crew training or damage. Even a shared calibre does not guarantee identical mountings and ammunition supply arrangements. Choose two ships of similar size and open their articles: compare how much hull space their machinery occupied, what the armour protected, and what weapons each ship actually took into a particular battle."
+      ],
+      "refs": [
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "relatedNotes": [
+    "pervaya-tihookeanskaya-eskadra",
+    "voina-na-more-osada-mukden-tsusima"
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Cruisers of the Russian Imperial Navy. Part I",
+      "author": "V. Ya. Krestyaninov",
+      "date": "St Petersburg: Galeya Print, 2003",
+      "url": "https://keu-ocr.narod.ru/Cruisers/chap06.html",
+      "locator": "Chapter 5: scouts, the designs of Askold, Novik and Boyarin, trials and armament.",
+      "note": "Relevant sections of the electronic transcription were read; chap06 contains chapter 5. Classes and Russian ships were checked against the accepted reference entries."
+    },
+    {
+      "id": 2,
+      "title": "Poltava-class Battleships",
+      "author": "S. V. Suliga, S. A. Balakin",
+      "date": "Morskaya Kollektsiya, 1999, no. 2",
+      "url": "https://tsushima.su/RU/libru/i/Page_6/page_15/suliga-balakin-poltava/",
+      "locator": "Construction and armament sections; dimensions and main and secondary batteries.",
+      "note": "Previously read and saved sections of the study; used to explain construction, rather than as the sole source for the entire squadron’s composition."
+    },
+    {
+      "id": 3,
+      "title": "Peresvet-class Battleships",
+      "author": "R. M. Melnikov",
+      "date": "Gangut, nos. 11, 12 and 12-bis",
+      "url": "https://keu-ocr.narod.ru/Peresvet/",
+      "locator": "Chapter 1: concept, machinery and 254 mm guns; chapters 4–5: changes to armament and wartime service.",
+      "note": "The chapters read are preserved in the squadron-battleships research library; unread chapter 2 is not claimed as evidence."
+    },
+    {
+      "id": 4,
+      "title": "Report No. 628 from Vice Admiral Stark, Commander of the Pacific Squadron, to the Viceroy",
+      "author": "O. V. Stark",
+      "date": "6 February 1904, Old Style",
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/doc_stark/doc_stark_006/",
+      "locator": "Heading and complete text: anchorage, first attack, damage and assistance to ships.",
+      "note": "The complete electronic transcription of the primary report was read. The formation’s name follows the document; assessments of the enemy are not adopted automatically."
+    },
+    {
+      "id": 5,
+      "title": "Rurik Was the First. Appendix 3: The Vladivostok Cruiser Detachment",
+      "author": "R. M. Melnikov",
+      "date": "1989; electronic transcription",
+      "url": "https://militera.lib.ru/tw/melnikov1/12.html",
+      "locator": "Appendix 3: deployment in 1903, the separate Vladivostok detachment and changing designations in 1903–1904.",
+      "note": "Appendix 3 was read, not the entire book. The date when the detachment’s name changed is not used to infer the exact date when the whole squadron was renamed. Numbering is explained without a disputed precise date."
+    },
+    {
+      "id": 6,
+      "title": "Gallery 3: The Russo-Japanese War, 1904–1905. The Cruiser Varyag’s Battle",
+      "author": "Central Naval Museum",
+      "date": "Undated",
+      "url": "https://special.navalmuseum.ru/exposition?id=31",
+      "locator": "First historical paragraph: Chemulpo, now Incheon, 27 January (9 February) 1904.",
+      "note": "The official museum account was checked for Varyag’s location; evaluative wording about her later requisition is not adopted."
+    },
+    {
+      "id": 7,
+      "title": "The Lead Armoured Cruiser Bayan",
+      "author": "R. M. Melnikov",
+      "date": "Sudostroyeniye, 1980, no. 6",
+      "url": "https://tsushima.su/RU/libru/i/Page_6/page_13/biblmelbayanru/",
+      "locator": "The cruiser’s intended role alongside the battleship squadron and description of both side armour belts.",
+      "note": "The article’s electronic transcription was checked. Bayan’s complex design concept is not reduced to a single formula about independent cruising."
+    }
+  ],
+  "ships": [
+    {
+      "shipSlug": "petropavlovsk",
+      "group": "port-arthur",
+      "profile": "battleship",
+      "lengthOverallM": 114.3,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "The Poltava class’s hull length overall is 114.3 m; waterline length is 112.5 m and length between perpendiculars 108.7 m. Displacement is omitted: 10,960 long tons is the designed normal figure, whereas actual completed figures differed by ship and their loading condition is not defined as clearly.",
+      "sources": [
+        {
+          "url": "https://tsushima.su/RU/libru/i/Page_6/page_15/suliga-balakin-poltava/suliga-balakin-poltava-2/",
+          "title": "S. Suliga, S. Balakin. Poltava-class Battleships",
+          "locator": "Hull chapter: “Principal hull dimensions” paragraph; designed and actual displacement"
+        },
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_bb_poltava.htm",
+          "title": "Navypedia: POLTAVA battleships (1897–1899)",
+          "locator": "Technical data, Length, m row; oa = overall, wl = waterline, pp = between perpendiculars"
+        }
+      ]
+    },
+    {
+      "shipSlug": "poltava",
+      "group": "port-arthur",
+      "profile": "battleship",
+      "lengthOverallM": 114.3,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "The Poltava class’s hull length overall is 114.3 m; waterline length is 112.5 m and length between perpendiculars 108.7 m. Displacement is omitted: 10,960 long tons is the designed normal figure, whereas actual completed figures differed by ship and their loading condition is not defined as clearly.",
+      "sources": [
+        {
+          "url": "https://tsushima.su/RU/libru/i/Page_6/page_15/suliga-balakin-poltava/suliga-balakin-poltava-2/",
+          "title": "S. Suliga, S. Balakin. Poltava-class Battleships",
+          "locator": "Hull chapter: “Principal hull dimensions” paragraph; designed and actual displacement"
+        },
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_bb_poltava.htm",
+          "title": "Navypedia: POLTAVA battleships (1897–1899)",
+          "locator": "Technical data, Length, m row; oa = overall, wl = waterline, pp = between perpendiculars"
+        }
+      ]
+    },
+    {
+      "shipSlug": "sevastopol",
+      "group": "port-arthur",
+      "profile": "battleship",
+      "lengthOverallM": 114.3,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "The Poltava class’s hull length overall is 114.3 m; waterline length is 112.5 m and length between perpendiculars 108.7 m. Displacement is omitted: 10,960 long tons is the designed normal figure, whereas actual completed figures differed by ship and their loading condition is not defined as clearly.",
+      "sources": [
+        {
+          "url": "https://tsushima.su/RU/libru/i/Page_6/page_15/suliga-balakin-poltava/suliga-balakin-poltava-2/",
+          "title": "S. Suliga, S. Balakin. Poltava-class Battleships",
+          "locator": "Hull chapter: “Principal hull dimensions” paragraph; designed and actual displacement"
+        },
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_bb_poltava.htm",
+          "title": "Navypedia: POLTAVA battleships (1897–1899)",
+          "locator": "Technical data, Length, m row; oa = overall, wl = waterline, pp = between perpendiculars"
+        }
+      ]
+    },
+    {
+      "shipSlug": "retvizan",
+      "group": "port-arthur",
+      "profile": "battleship",
+      "lengthOverallM": 117.9,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "117.9 m is length overall; 116.5 m is waterline length. The Russian Navypedia entry does not define its length figure; the entry for the same hull as the Japanese Hizen confirms oa. Japanese armament and displacement data are not transferred here. Normal displacement is left blank: Balakin’s actual as-built and designed figures differ from the later reference figure of 12,900 t; units and loading conditions require separate reconciliation.",
+      "sources": [
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_bb_retvizan.htm",
+          "title": "Navypedia: RETVIZAN battleship (1901)",
+          "locator": "Technical data: Length, m 117.9 (measurement not defined)"
+        },
+        {
+          "url": "https://www.navypedia.org/ships/japan/jap_bb_hizen.htm",
+          "title": "Navypedia: HIZEN battleship (1901 / 1908)",
+          "locator": "Technical data, Length, m row; oa = overall, wl = waterline, pp = between perpendiculars"
+        },
+        {
+          "url": "https://tsushima.su/RU/libru/i/Page_6/page_15/balakin-retvizan/balakin-retvizan-04/",
+          "title": "S. Balakin. The Battleship Retvizan",
+          "locator": "Construction and trials section; actual normal displacement 12,409.9 t and designed 12,745.6 t"
+        }
+      ]
+    },
+    {
+      "shipSlug": "bayan",
+      "group": "port-arthur",
+      "profile": "armored-cruiser",
+      "lengthOverallM": 137,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "137.0 m oa applies specifically to the first Bayan (Bayan i), which served in the 1904 war; 135.0 m is length between perpendiculars. Dimensions of later ships of the class are not substituted. Normal displacement is omitted: the reference labels 7725 merely t, without explicitly distinguishing metric tonnes from long tons.",
+      "sources": [
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_cr_bayan.htm",
+          "title": "Navypedia: BAYAN armoured cruisers (1903–1911)",
+          "locator": "Technical data, Length, m: Bayan (i), Bayan (ii) 135.0 pp 137.0 oa; Displacement normal, t: Bayan (i) 7725"
+        }
+      ]
+    },
+    {
+      "shipSlug": "mikasa",
+      "group": "japanese",
+      "profile": "battleship",
+      "lengthOverallM": 131.7,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "131.7 m is length overall; 126.5 m is waterline length and 122.0 m length between perpendiculars. The museum’s brief specification of about 122 m is not substituted for LOA. The reference is used here for its explicit definition of length; other claims, including its incorrect attribution of the shipyard, are not adopted. Normal displacement is omitted: the label t beside 15,140 does not establish whether these are metric tonnes or long tons without further evidence.",
+      "sources": [
+        {
+          "url": "https://www.navypedia.org/ships/japan/jap_bb_mikasa.htm",
+          "title": "Navypedia: MIKASA battleship (1902)",
+          "locator": "Technical data, Length, m row; oa = overall, wl = waterline, pp = between perpendiculars"
+        }
+      ]
+    },
+    {
+      "shipSlug": "novik",
+      "group": "port-arthur",
+      "profile": "protected-cruiser",
+      "lengthOverallM": 110.5,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "110.5 m is length overall; 109.9 m is waterline length and 106.0 m length between perpendiculars. Normal displacement is omitted: the designed 3000 and the monograph’s actual normal 3080 t should not be conflated; the reference assigns these figures to loading conditions differently, and the original unit is not specified.",
+      "sources": [
+        {
+          "url": "https://navypedia.org/ships/russia/ru_cr_novik.htm",
+          "title": "Navypedia: NOVIK 2nd class cruiser (1901)",
+          "locator": "Technical data, Length, m row; oa = overall, wl = waterline, pp = between perpendiculars"
+        },
+        {
+          "url": "https://keu-ocr.narod.ru/Novik/",
+          "title": "A. A. Alliluyev, M. A. Bogdanov. The Cruiser Novik",
+          "locator": "“Brief historical account and tactical and technical characteristics” panel"
+        }
+      ]
+    },
+    {
+      "shipSlug": "varyag",
+      "group": "chemulpo",
+      "profile": "protected-cruiser",
+      "lengthOverallM": 129.56,
+      "normalDisplacementTonnes": 6604,
+      "measurementNote": "129.56 m is length overall in Melnikov’s lines-plan caption. This explicitly defined measurement is preferred to Navypedia’s undefined 129.8 m. Normal displacement is 6500 long tons in the weight ledger reproduced by Melnikov: 6500 × 1.016 = 6604 metric tonnes, using the book’s rounded equivalent of 1016 kg per ton. This is normal loading with 770.7 long tons of coal, rather than full load of 7022. The group reflects her separate station at Chemulpo at the outbreak of war.",
+      "sources": [
+        {
+          "url": "https://djvu.online/file/RQMlDBfTxvHzU",
+          "title": "R. M. Melnikov. The Cruiser Varyag. 1982",
+          "locator": "Pp. 44–45, lines-plan caption; p. 83, weight ledger and note 1 defining a long ton as 1016 kg; note 2 with archive reference TsGA VMF, fond 445, inventory 1, file 43, leaf 392"
+        },
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_cr_varyag.htm",
+          "title": "Navypedia: VARYAG 1st class cruiser (1901)",
+          "locator": "Technical data, Length, m: 129.8, undefined; Naval service: Chemulpo"
+        }
+      ]
+    },
+    {
+      "shipSlug": "tsesarevich",
+      "group": "port-arthur",
+      "profile": "battleship",
+      "lengthOverallM": 118.5,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "118.5 m is length overall; 117.3 m is waterline length and 113.4 m length between perpendiculars. Normal displacement is omitted: 12,915 in the reference’s t column does not explicitly define the original unit and is not automatically treated as metric tonnes.",
+      "sources": [
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_bb_tsesarevich.htm",
+          "title": "Navypedia: TSESAREVICH battleship (1903)",
+          "locator": "Technical data, Length, m row; oa = overall, wl = waterline, pp = between perpendiculars"
+        }
+      ]
+    },
+    {
+      "shipSlug": "peresvet",
+      "group": "port-arthur",
+      "profile": "battleship",
+      "lengthOverallM": 132.4,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "132.4 m is this ship’s length overall in Melnikov’s comparative table; 130.0 m is length on the designed waterline and 122.3 m length between perpendiculars. Displacement is omitted: the table explicitly identifies 12,674 t as designed displacement with a normal coal supply, but does not define the unit or describe actual loading in 1904.",
+      "sources": [
+        {
+          "url": "https://keu-ocr.narod.ru/Peresvet/chap01.html",
+          "title": "R. M. Melnikov. Peresvet-class Battleships",
+          "locator": "Chapter 1, table 1, “Tactical and technical characteristics of Peresvet-class battleships”; rows “Length, m” and “Designed displacement (with normal coal supply), t”"
+        }
+      ]
+    },
+    {
+      "shipSlug": "pobeda",
+      "group": "port-arthur",
+      "profile": "battleship",
+      "lengthOverallM": 132.4,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "132.4 m is this ship’s length overall in Melnikov’s comparative table; 130.0 m is length on the designed waterline and 122.3 m length between perpendiculars. Displacement is omitted: the table explicitly identifies 12,674 t as designed displacement with a normal coal supply, but does not define the unit or describe actual loading in 1904.",
+      "sources": [
+        {
+          "url": "https://keu-ocr.narod.ru/Peresvet/chap01.html",
+          "title": "R. M. Melnikov. Peresvet-class Battleships",
+          "locator": "Chapter 1, table 1, “Tactical and technical characteristics of Peresvet-class battleships”; rows “Length, m” and “Designed displacement (with normal coal supply), t”"
+        }
+      ]
+    },
+    {
+      "shipSlug": "askold",
+      "group": "port-arthur",
+      "profile": "protected-cruiser",
+      "lengthOverallM": null,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "Length overall has not yet been accepted: Navypedia gives 132.1 m oa, while the “Tactical and technical characteristics” table in the 1996 monograph gives 131.2 m; both explicitly distinguish 130 m on the load waterline. No average is chosen and no digits transposed without checking the original drawing. Normal displacement is also omitted: Navypedia’s 5860 and the monograph’s 6000 require reconciliation of loading conditions and units.",
+      "sources": [
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_cr_askold.htm",
+          "title": "Navypedia: ASKOLD 1st class cruiser (1901)",
+          "locator": "Technical data, Length, m row; oa = overall, wl = waterline, pp = between perpendiculars"
+        },
+        {
+          "url": "https://djvu.online/file/1VhPY1sNDqpU5",
+          "title": "V. Ya. Krestyaninov, S. V. Molodtsov. The Cruiser Askold. Morskaya Kollektsiya, 1996",
+          "locator": "“Tactical and technical characteristics of the first-class cruiser Askold” table after “Ship machinery and systems”: length overall 131.2 m, load waterline 130 m"
+        }
+      ]
+    },
+    {
+      "shipSlug": "pallada",
+      "group": "port-arthur",
+      "profile": "protected-cruiser",
+      "lengthOverallM": 126.8,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "126.8 m is the Pallada class’s length overall; 123.5 m is waterline length and 122.0 m length between perpendiculars. This is the protected Pallada, not the later armoured cruiser of the same name. Normal displacement is omitted: 6731 in the reference’s t column does not explicitly distinguish metric tonnes from long tons; the sister ships’ full-load figures are not transferred here.",
+      "sources": [
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_cr_pallada.htm",
+          "title": "Navypedia: PALLADA 1st class cruisers (1901–1903)",
+          "locator": "Technical data, Length, m row; oa = overall, wl = waterline, pp = between perpendiculars"
+        }
+      ]
+    },
+    {
+      "shipSlug": "diana",
+      "group": "port-arthur",
+      "profile": "protected-cruiser",
+      "lengthOverallM": 126.8,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "126.8 m is the Pallada class’s length overall; 123.5 m is waterline length and 122.0 m length between perpendiculars. This is the protected Pallada, not the later armoured cruiser of the same name. Normal displacement is omitted: 6731 in the reference’s t column does not explicitly distinguish metric tonnes from long tons; the sister ships’ full-load figures are not transferred here.",
+      "sources": [
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_cr_pallada.htm",
+          "title": "Navypedia: PALLADA 1st class cruisers (1901–1903)",
+          "locator": "Technical data, Length, m row; oa = overall, wl = waterline, pp = between perpendiculars"
+        }
+      ]
+    },
+    {
+      "shipSlug": "boyarin",
+      "group": "port-arthur",
+      "profile": "protected-cruiser",
+      "lengthOverallM": 108.3,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "The reference labels 108.3 m separately as both wl and oa; 105.2 m is length between perpendiculars. The coincidence of rounded waterline and overall lengths is retained as published; no longer hull is invented. Normal displacement is omitted: 3200 in the t column does not identify the original unit; 3274 refers to full load.",
+      "sources": [
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_cr_boyarin.htm",
+          "title": "Navypedia: BOYARIN 2nd class cruiser (1902)",
+          "locator": "Technical data, Length, m row; oa = overall, wl = waterline, pp = between perpendiculars"
+        }
+      ]
+    },
+    {
+      "shipSlug": "hatsuse",
+      "group": "japanese",
+      "profile": "battleship",
+      "lengthOverallM": 134,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "134.0 m oa is Hatsuse’s individual figure, rather than her sister Shikishima’s 133.5 m; 126.5 m is waterline length and 121.9 m length between perpendiculars. Normal displacement is omitted: 15,000 in the reference’s t column does not identify the original unit. The ship belongs to the Japanese fleet at the outbreak of war, despite being lost soon afterwards in May 1904.",
+      "sources": [
+        {
+          "url": "https://www.navypedia.org/ships/japan/jap_bb_shikishima.htm",
+          "title": "Navypedia: SHIKISHIMA battleships (1900)",
+          "locator": "Technical data: individual Hatsuse entries; Length 121.9 pp 126.5 wl 134.0 oa"
+        }
+      ]
+    },
+    {
+      "shipSlug": "yashima",
+      "group": "japanese",
+      "profile": "battleship",
+      "lengthOverallM": 125.5,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "125.5 m oa is the shared length entry for Fuji/Yashima; 118.8 m is waterline length and 114.0 m length between perpendiculars. Jane’s early rounded figures (1904), including length over all of 400 feet, differ from this table and are not combined with it. Normal displacement is omitted: 12,320 in the reference’s t column does not identify the original unit.",
+      "sources": [
+        {
+          "url": "https://www.navypedia.org/ships/japan/jap_bb_fuji.htm",
+          "title": "Navypedia: FUJI battleships (1897)",
+          "locator": "Technical data, Length, m row; oa = overall, wl = waterline, pp = between perpendiculars"
+        },
+        {
+          "url": "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm",
+          "title": "Fred T. Jane. The Imperial Japanese Navy. 1904",
+          "locator": "P. 172: Fuji/Yashima particulars; the early over all figure of 400 ft is noted as a discrepancy and not adopted"
+        }
+      ]
+    }
+  ]
+}

@@ -16,13 +16,13 @@ const json = file => JSON.parse(read(file));
 const sourceFiles = () => [...translatedFiles.map(x => `data/${x}.json`), 'components/places/dossiers.ts'];
 const metadata = new Set('id slug place places people books articles photos cover portrait image file url href lat lng polyline coords coordinates date year years author_years checkedAt ref refs section status guide original originalLanguage kind type era layer layers country city group crop level season series_slug posts tg_ids review_post coord_confidence navigationName navigationAddress'.split(' '));
 const escape = value => String(value).replaceAll('~', '~0').replaceAll('/', '~1');
-for (const key of ['periods','sourceLanguages','relatedNotes','relatedEssays','relatedPlaces','relatedPeople','relatedSources','weaponSlug','personSlug','countries','updatedAt']) metadata.add(key);
+for (const key of ['periods','sourceLanguages','relatedNotes','relatedEssays','relatedPlaces','relatedPeople','relatedSources','weaponSlug','personSlug','shipSlug','profile','countries','updatedAt']) metadata.add(key);
 function keyed(array) {
   if (!Array.isArray(array)) return null;
   if(!array.length)return new Map();
   // A shared unique field is safer than selecting a different key per row.
   // Photo metadata has no numeric id: its invariant asset file is the stable identity.
-  for(const field of ['slug','id','place','file']) {
+  for(const field of ['slug','id','place','file','shipSlug','weaponSlug']) {
     if(!array.every(x=>x && typeof x==='object' && !Array.isArray(x) && ['string','number'].includes(typeof x[field])))continue;
     const ids=array.map(x=>`${field}=${x[field]}`);
     if(new Set(ids).size===ids.length)return new Map(array.map((x,i)=>[ids[i],x]));

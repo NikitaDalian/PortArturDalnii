@@ -1,0 +1,17 @@
+{
+  "correctionsAfterIntegration": [
+    {"shipSlug":"poltava","field":"sections[].id","before":"crew","after":"crew-on-board","reason":"Avoid collision with the reserved crew section anchor; accepted historical prose unchanged."},
+    {"shipSlug":"hotchkiss-47-single","field":"images[].credit and sources[].author","before":"Ain 92","after":"Ain92","reason":"Correct Commons username as verified by independent translation reviewer; already correct in accepted English and Chinese versions."}
+  ],
+  "validation": {
+    "hardwareRecords":25,
+    "ships":17,
+    "weaponModels":8,
+    "illustrations":38,
+    "automatedTests":23,
+    "builtPages":1113,
+    "checkedInternalLinks":98331,
+    "browser":"RU/EN/ZH catalogue, overview, search, filters, diagram/table, persisted query, desktop and 390px touch layout; no document overflow. Inline ship preview keyboard/hover/touch checked in initial release. Ship-to-gun and reverse links checked.",
+    "scope":"Generic length diagram, not reconstructed ship profiles. No ship map markers. Disputed Askold overall length remains null with source explanation."
+  }
+}
