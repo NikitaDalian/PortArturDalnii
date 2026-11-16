@@ -23,6 +23,9 @@ export function validateFleetOverview(overview,hardware,notes){
     if(!['port-arthur','chemulpo','japanese'].includes(row.group)||!['battleship','armored-cruiser','protected-cruiser'].includes(row.profile))errors.push(`fleet_overview/${row.shipSlug}: invalid historical group or profile`);
     for(const field of ['lengthOverallM','normalDisplacementTonnes'])if(row[field]!==null&&(typeof row[field]!=='number'||!Number.isFinite(row[field])||row[field]<=0))errors.push(`fleet_overview/${row.shipSlug}: invalid comparable measurement ${field}`);
     if(!present(row.measurementNote)||!row.sources?.length||row.sources.some(source=>!/^https:\/\//.test(source.url)||!present(source.title)||!present(source.locator)))errors.push(`fleet_overview/${row.shipSlug}: missing measurement provenance`);
+    const art=row.illustration;
+    if(!art||art.file!==`images/fleet/${row.shipSlug}.svg`||!present(art.note)||!art.sourceUrls?.length||art.sourceUrls.some(url=>!/^https:\/\//.test(url)))errors.push(`fleet_overview/${row.shipSlug}: missing illustration provenance`);
+    if(!art||![art.hullStart,art.hullEnd].every(Number.isFinite)||art.hullStart<0||art.hullEnd>1200||art.hullEnd<=art.hullStart)errors.push(`fleet_overview/${row.shipSlug}: invalid hull bounds for scale`);
   }
   return errors;
 }

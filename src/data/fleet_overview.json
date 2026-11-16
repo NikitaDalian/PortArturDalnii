@@ -147,7 +147,16 @@
           "title": "Navypedia: POLTAVA battleships (1897–1899)",
           "locator": "Technical data, строка Length, m; oa = overall, wl = waterline, pp = between perpendiculars"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/petropavlovsk.svg",
+        "hullStart": 57.375,
+        "hullEnd": 1147,
+        "note": "Две трубы между мачтами и низкие тяжёлые башни в носу и корме.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Petropavlovsk_-_NH_84769-A.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "poltava",
@@ -167,7 +176,16 @@
           "title": "Navypedia: POLTAVA battleships (1897–1899)",
           "locator": "Technical data, строка Length, m; oa = overall, wl = waterline, pp = between perpendiculars"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/poltava.svg",
+        "hullStart": 57.375,
+        "hullEnd": 1150,
+        "note": "Две трубы, высокая боевая площадка на передней мачте и небольшие башни по бортам.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Poltava-Chesma.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "sevastopol",
@@ -187,7 +205,16 @@
           "title": "Navypedia: POLTAVA battleships (1897–1899)",
           "locator": "Technical data, строка Length, m; oa = overall, wl = waterline, pp = between perpendiculars"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/sevastopol.svg",
+        "hullStart": 53.375,
+        "hullEnd": 1146,
+        "note": "Две трубы в середине, низкий борт и тяжёлые башни в носу и корме.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Sevastopol1900Kronshtadt.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "retvizan",
@@ -212,7 +239,16 @@
           "title": "С. Балакин. Броненосец «Ретвизан»",
           "locator": "Раздел о постройке и испытаниях; фактическое нормальное водоизмещение 12 409,9 т и проектное 12 745,6 т"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/retvizan.svg",
+        "hullStart": 51.375,
+        "hullEnd": 1151,
+        "note": "Три высокие трубы тесной группой и две массивные боевые мачты.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Retvizan1902DelawareRiver.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "bayan",
@@ -227,7 +263,16 @@
           "title": "Navypedia: BAYAN armoured cruisers (1903–1911)",
           "locator": "Technical data, Length, m: Bayan (i), Bayan (ii) 135.0 pp 137.0 oa; Displacement normal, t: Bayan (i) 7725"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/bayan.svg",
+        "hullStart": 45.375,
+        "hullEnd": 1154,
+        "note": "Четыре трубы и две одиночные башни на длинном крейсерском корпусе.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Bayan1903Kronstadt.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "mikasa",
@@ -242,7 +287,16 @@
           "title": "Navypedia: MIKASA battleship (1902)",
           "locator": "Technical data, строка Length, m; oa = overall, wl = waterline, pp = between perpendiculars"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/mikasa.svg",
+        "hullStart": 55.375,
+        "hullEnd": 1151,
+        "note": "Две широкие трубы с тёмными кольцами и высокие боевые мачты.",
+        "sourceUrls": [
+          "https://www.govinfo.gov/app/details/SERIALSET-04915_00_00-002-0328-0000"
+        ]
+      }
     },
     {
       "shipSlug": "novik",
@@ -262,7 +316,16 @@
           "title": "А. А. Аллилуев, М. А. Богданов. Крейсер «Новик»",
           "locator": "Блок «Краткая историческая справка и тактико-технические элементы»"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/novik.svg",
+        "hullStart": 50.375,
+        "hullEnd": 1152,
+        "note": "Одна высокая мачта, три трубы и короткая приподнятая носовая палуба.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Novik1904Port-Artur.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "varyag",
@@ -282,7 +345,17 @@
           "title": "Navypedia: VARYAG 1st class cruiser (1901)",
           "locator": "Technical data, Length, m: 129.8, без определения; Naval service: Chemulpo"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/varyag.svg",
+        "hullStart": 47.375,
+        "hullEnd": 1153,
+        "note": "Четыре одинаково стройные трубы в ряд и две высокие тонкие мачты.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Varyag1901.jpg",
+          "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm#P_341"
+        ]
+      }
     },
     {
       "shipSlug": "tsesarevich",
@@ -297,7 +370,16 @@
           "title": "Navypedia: TSESAREVICH battleship (1903)",
           "locator": "Technical data, строка Length, m; oa = overall, wl = waterline, pp = between perpendiculars"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/tsesarevich.svg",
+        "hullStart": 60.375,
+        "hullEnd": 1150,
+        "note": "Массивные мачты с двумя ярусами боевых площадок и две широкие трубы.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Tsesarevich1903Toulon.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "peresvet",
@@ -312,7 +394,17 @@
           "title": "Р. М. Мельников. Броненосцы типа «Пересвет»",
           "locator": "Глава 1, таблица 1 «Тактико-технические элементы эскадренных броненосцев типа Пересвет»; строки «Длина, м» и «Водоизмещение проектное (с нормальным запасом угля), т»"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/peresvet.svg",
+        "hullStart": 54.375,
+        "hullEnd": 1150,
+        "note": "Приподнятая носовая палуба, три трубы и боевые площадки на обеих мачтах.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Peresvet1901.jpg",
+          "https://keu-ocr.narod.ru/Peresvet/chap01.html"
+        ]
+      }
     },
     {
       "shipSlug": "pobeda",
@@ -327,7 +419,18 @@
           "title": "Р. М. Мельников. Броненосцы типа «Пересвет»",
           "locator": "Глава 1, таблица 1 «Тактико-технические элементы эскадренных броненосцев типа Пересвет»; строки «Длина, м» и «Водоизмещение проектное (с нормальным запасом угля), т»"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/pobeda.svg",
+        "hullStart": 54.375,
+        "hullEnd": 1151,
+        "note": "Три трубы и высокий нос, но задняя мачта легче, чем у «Пересвета».",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Pobeda_1900-1904.jpg",
+          "https://commons.wikimedia.org/wiki/File:Pobeda1904Port-Artur.jpg",
+          "https://keu-ocr.narod.ru/Peresvet/chap01.html"
+        ]
+      }
     },
     {
       "shipSlug": "askold",
@@ -347,7 +450,16 @@
           "title": "В. Я. Крестьянинов, С. В. Молодцов. Крейсер «Аскольд». Морская коллекция, 1996",
           "locator": "Таблица «Тактико-технические элементы крейсера I ранга Аскольд» после раздела «Корабельные механизмы и системы»: наибольшая длина 131,2 м, ГВЛ 130 м"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/askold.svg",
+        "hullStart": 42.375,
+        "hullEnd": 1154,
+        "note": "Пять высоких тонких труб — самый легко узнаваемый силуэт крейсера.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Askold1901Kiel.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "pallada",
@@ -362,7 +474,16 @@
           "title": "Navypedia: PALLADA 1st class cruisers (1901–1903)",
           "locator": "Technical data, строка Length, m; oa = overall, wl = waterline, pp = between perpendiculars"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/pallada.svg",
+        "hullStart": 48.375,
+        "hullEnd": 1153,
+        "note": "Три стройные трубы между двумя мачтами на гладком длинном корпусе.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Pallada1897-1905.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "diana",
@@ -377,7 +498,16 @@
           "title": "Navypedia: PALLADA 1st class cruisers (1901–1903)",
           "locator": "Technical data, строка Length, m; oa = overall, wl = waterline, pp = between perpendiculars"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/diana.svg",
+        "hullStart": 49.375,
+        "hullEnd": 1153,
+        "note": "Три трубы, две тонкие мачты и высокий носовой мостик.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Diana1897-1922MalyyKronshatadskiyReyd.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "boyarin",
@@ -392,7 +522,16 @@
           "title": "Navypedia: BOYARIN 2nd class cruiser (1902)",
           "locator": "Technical data, строка Length, m; oa = overall, wl = waterline, pp = between perpendiculars"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/boyarin.svg",
+        "hullStart": 51.375,
+        "hullEnd": 1152,
+        "note": "Три короткие трубы, две мачты и приподнятая носовая палуба.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Boyarin1902.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "hatsuse",
@@ -407,7 +546,16 @@
           "title": "Navypedia: SHIKISHIMA battleships (1900)",
           "locator": "Technical data: индивидуальные строки Hatsuse; Length 121.9 pp 126.5 wl 134.0 oa"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/hatsuse.svg",
+        "hullStart": 56.375,
+        "hullEnd": 1150,
+        "note": "Три трубы между двумя боевыми мачтами и тяжёлые башни в носу и корме.",
+        "sourceUrls": [
+          "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm#P_179"
+        ]
+      }
     },
     {
       "shipSlug": "yashima",
@@ -427,7 +575,16 @@
           "title": "Fred T. Jane. The Imperial Japanese Navy. 1904",
           "locator": "С. 172: particulars Fuji/Yashima; раннее over all 400 ft отмечено как расхождение, не принято"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/yashima.svg",
+        "hullStart": 58.375,
+        "hullEnd": 1150,
+        "note": "Компактный двухтрубный броненосец с двумя мачтами и низкими тяжёлыми башнями.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Yashima_NH_58968.jpg"
+        ]
+      }
     }
   ]
 }

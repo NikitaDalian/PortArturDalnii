@@ -1,0 +1,30 @@
+{
+  "status": "accepted",
+  "reviewer": "old_text_links",
+  "reviewDate": "2026-11-16",
+  "fullRead": true,
+  "notes": "All17visualNote translations and14UIstrings in each language read against frozen RU. Public explanations avoid unexplained Russian technical terms; conditional colors and non-engineering status preserved. Novik mast correction does not change these public notes. This accepts the translations, not the author’sSVGartwork.",
+  "files": [
+    {
+      "file": "work/fleet-visuals/notes-en.json",
+      "sha256": "b0a8b1e48a87737a2a99894f86b7bc6a2f5b24680b0410995bb6cf97c7e4384d",
+      "status": "accepted"
+    },
+    {
+      "file": "work/fleet-visuals/ui-en.json",
+      "sha256": "4bf5a65ce8904b39e747dcec7bb6ac1f28b0891bdc847e7b12fc0c15d95109c4",
+      "status": "accepted"
+    },
+    {
+      "file": "work/fleet-visuals/notes-zh.json",
+      "sha256": "6332d1e6fad4838c175977e069ecee85216357e3196cc868d1721416fed58e43",
+      "status": "accepted"
+    },
+    {
+      "file": "work/fleet-visuals/ui-zh.json",
+      "sha256": "b6c7bfbc6e9abc34d6323cf7c695ebf7303bec36b8372de2048b7d72cb9bb02a",
+      "status": "accepted"
+    }
+  ],
+  "issues": []
+}

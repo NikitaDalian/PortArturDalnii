@@ -2,6 +2,7 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { validateHardware } from './hardware_validation.mjs';
 import { validateFleetOverview } from './fleet_validation.mjs';
+import { validateReadingNotes } from './reading_notes_validation.mjs';
 const read = (name) => JSON.parse(readFileSync(new URL(`../src/data/${name}.json`, import.meta.url), 'utf8'));
 const names = ['articles', 'people', 'places', 'books', 'sources', 'series'];
 const data = Object.fromEntries(names.map((name) => [name, read(name)]));
@@ -117,6 +118,9 @@ for (const [slug, reading] of Object.entries(read('document_readings'))) {
   if (new Set(sectionIds).size !== sectionIds.length) errors.push(`${slug}: duplicate document sections`);
 }
 errors.push(...validateFleetOverview(read('fleet_overview'),read('hardware'),maps.articles));
+for(const row of read('fleet_overview').ships)if(!row.illustration?.file||!existsSync(new URL(`../public/${row.illustration.file}`,import.meta.url)))errors.push(`fleet_overview/${row.shipSlug}: missing profile image`);
+errors.push(...validateReadingNotes(read('reading_notes'),data.articles,essays));
+for(const [slug,limit] of Object.entries(read('reading_note_limits')))if(!maps.articles.has(slug)||!Number.isInteger(limit)||limit<1||limit>8)errors.push(`reading_note_limits/${slug}: invalid reviewed summary budget`);
 errors.push(...validateHardware(read('hardware'),{
   assetsExist:file=>existsSync(new URL(`../public${file}`,import.meta.url)),
   people:maps.people,places:maps.places,notes:maps.articles,essays:new Set(essays.map(item=>item.slug)),sources:maps.sources,periods:validPeriods,

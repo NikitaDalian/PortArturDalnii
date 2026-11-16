@@ -1,10 +1,13 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Crumbs from '../../components/Crumbs.astro';
+import FleetFilters from '../../components/hardware/FleetFilters.astro';
+import { fleetOverview } from '../../lib/fleet';
 import HardwareRow from '../../components/hardware/HardwareRow.astro';
 import { hardware } from '../../lib/hardware';
 import { href, COUNTRIES } from '../../lib/data';
 const groups = [{ kind:'ship', title:'Корабли' }, { kind:'weapon', title:'Вооружение' }];
+const fleetByShip=new Map(fleetOverview.ships.map(row=>[row.shipSlug,row.group]));
 const countries = Object.keys(COUNTRIES).filter(country => hardware.some(item => item.countries.includes(country)));
 ---
 <Base searchable={false} title="Корабли и вооружение" description="Корабли, орудия и их история: создание, служба, люди, основные характеристики и проверенные источники." section="notes">
@@ -17,6 +20,7 @@ const countries = Object.keys(COUNTRIES).filter(country => hardware.some(item =>
     </div>
   </header>
   <div class="container hardware-catalog" data-hardware-catalog>
+    <FleetFilters catalog />
     <form class="hardware-filters" role="search" onsubmit="return false">
       <label><span>Найти в разделе</span><input type="search" name="q" placeholder="Название корабля или орудия" autocomplete="off" /></label>
       <label><span>Страна службы</span><select name="country"><option value="">Все страны</option>{countries.map(country => <option value={country}>{COUNTRIES[country].label}</option>)}</select></label>
@@ -24,9 +28,9 @@ const countries = Object.keys(COUNTRIES).filter(country => hardware.some(item =>
     <p class="meta hardware-count" aria-live="polite"><span>Найдено записей:</span> <b data-count>{hardware.length}</b></p>
     {groups.map(group => <section id={group.kind} class="hardware-group" data-group>
       <h2 class="h2">{group.title}</h2>
-      {hardware.filter(item => item.kind === group.kind).map(item => <div data-record data-search={[item.name,item.shortName,item.category,...item.aliases].join(' ').toLocaleLowerCase()} data-countries={item.countries.join(' ')}><HardwareRow item={item} /></div>)}
+      {hardware.filter(item => item.kind === group.kind).map(item => <div data-record data-kind={item.kind} data-fleet={fleetByShip.get(item.slug)??''} data-search={[item.name,item.shortName,item.category,...item.aliases].join(' ').toLocaleLowerCase()} data-countries={item.countries.join(' ')}><HardwareRow item={item} /></div>)}
     </section>)}
-    <p class="hardware-empty" hidden>Ничего не найдено. Попробуйте другое название или выберите все страны.</p>
+    <div class="hardware-empty" hidden><p>Ничего не найдено. Сбросьте фильтры или измените запрос.</p><button type="button" data-reset>Сбросить фильтры</button></div>
   </div>
 </Base>
 <style>
@@ -43,6 +47,7 @@ const countries = Object.keys(COUNTRIES).filter(country => hardware.some(item =>
   .hardware-group { padding-top:44px; scroll-margin-top:100px; }
   [hidden] { display:none !important; }
   .hardware-empty { padding-block:48px; }
+  [data-reset]{margin-top:16px;padding:12px 18px;min-height:44px;background:var(--paper);border:1px solid var(--line-2);color:var(--ink);font:inherit;cursor:pointer}
   @media(max-width:550px) { .hardware-filters { grid-template-columns:1fr; } }
 </style>
 <script>
@@ -56,19 +61,26 @@ const countries = Object.keys(COUNTRIES).filter(country => hardware.some(item =>
     const params=new URLSearchParams(location.search);
     input.value=params.get('q')??'';
     if ([...country.options].some(option=>option.value===params.get('country'))) country.value=params.get('country')!;
+    const filters=[...root.querySelectorAll<HTMLButtonElement>('[data-fleet-filter]')];
+    let fleet=params.get('fleet')??'';
+    if(!filters.some(button=>button.dataset.fleetFilter===fleet))fleet='';
     function apply(){
       const words=normalize(input.value).split(/\s+/).filter(Boolean);
       let count=0;
       root!.querySelectorAll<HTMLElement>('[data-record]').forEach(item=>{
-        const visible=words.every(word=>normalize(item.dataset.search??'').includes(word))&&(!country.value||(item.dataset.countries??'').split(' ').includes(country.value));
+        const fleetMatch=!fleet||(fleet==='ships'?item.dataset.kind==='ship':fleet==='weapons'?item.dataset.kind==='weapon':item.dataset.fleet===fleet);
+        const visible=fleetMatch&&words.every(word=>normalize(item.dataset.search??'').includes(word))&&(!country.value||(item.dataset.countries??'').split(' ').includes(country.value));
         item.hidden=!visible; if(visible) count++;
       });
       root!.querySelectorAll<HTMLElement>('[data-group]').forEach(group=>group.hidden=!group.querySelector('[data-record]:not([hidden])'));
       root!.querySelector('[data-count]')!.textContent=String(count);
       root!.querySelector<HTMLElement>('.hardware-empty')!.hidden=count>0;
-      const params=new URLSearchParams(); if(input.value.trim())params.set('q',input.value.trim());if(country.value)params.set('country',country.value);
+      filters.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.fleetFilter===fleet)));
+      const params=new URLSearchParams(); if(fleet)params.set('fleet',fleet); if(input.value.trim())params.set('q',input.value.trim());if(country.value)params.set('country',country.value);
       history.replaceState(history.state,'',location.pathname+(params.size?'?'+params.toString():'')+location.hash);
     }
+    filters.forEach(button=>button.addEventListener('click',()=>{fleet=button.dataset.fleetFilter!;country.value='';apply();}));
+    root.querySelector('[data-reset]')!.addEventListener('click',()=>{input.value='';country.value='';fleet='';apply();input.focus();});
     input.addEventListener('input',apply);country.addEventListener('change',apply);apply();
   }
   document.addEventListener('astro:page-load',initHardwareCatalog);

@@ -1,0 +1,22 @@
+---
+interface Props { catalog?: boolean }
+const { catalog=false }=Astro.props;
+const choices=[
+  ...(catalog?[{key:'',label:'Все материалы'}]:[]),
+  {key:'port-arthur',label:'Первая Тихоокеанская эскадра'},
+  {key:'japanese',label:'Японский флот'},
+  {key:'chemulpo',label:'Чемульпо'},
+  {key:catalog?'ships':'',label:'Все корабли'},
+  ...(catalog?[{key:'weapons',label:'Вооружение'}]:[]),
+];
+---
+<div class="fleet-filters" role="group" aria-label="Быстрые фильтры">
+  {choices.map(choice=><button type="button" data-fleet-filter={choice.key} aria-pressed="false">{choice.label}</button>)}
+</div>
+<style>
+  .fleet-filters{display:flex;flex-wrap:wrap;gap:8px;margin-block:20px}
+  button{min-height:44px;padding:10px 17px;border:1px solid var(--line-2);border-radius:4px;background:var(--paper);color:var(--ink);font:inherit;font-size:15px;line-height:1.4;cursor:pointer;text-align:left}
+  button:hover{border-color:var(--sea)}button[aria-pressed=true]{background:var(--navy);border-color:var(--navy);color:white}
+  button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+  @media(max-width:550px){button{padding-inline:12px;font-size:14px}}
+</style>

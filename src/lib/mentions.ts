@@ -4,10 +4,12 @@ import { people, places, terms, referenceDescriptions, href, img, imgCrop, photo
 import aliases from '../data/entity_aliases.json';
 import { locale, intlLocale, assetUrl } from '../i18n/locale';
 import { hardware } from './hardware';
+import { readingNotes } from './readingNotes';
 
 export interface EntityPreview {
-  id: string; kind: 'person' | 'place' | 'ship' | 'weapon'; title: string; description: string;
+  id: string; kind: 'person' | 'place' | 'ship' | 'weapon' | 'term'; title: string; description: string;
   href: string; image: string | null; alt: string;
+  linkLabel?: string; linkTitle?: string;
 }
 export interface MentionPart { text: string; entity?: EntityPreview }
 const registry = new Map<string, EntityPreview>();
@@ -67,8 +69,20 @@ for (const item of hardware) {
   register({id:`${item.kind}/${item.slug}`,kind:item.kind,title:item.name,description:excerpt(item.summary),
     href:href.hardware(item.slug),image:picture ? assetUrl(picture.file) : null,alt:picture?.alt??''},[item.shortName,...item.aliases]);
 }
-// These bare names also mean a city or an ordinary victory. Explicit aliases
-// such as “броненосец «Победа»” and exact quoted names remain eligible.
-const ambiguousShips = new Set(['pobeda','poltava','sevastopol']);
-const contextualNames = new Map(hardware.filter(item=>ambiguousShips.has(item.slug)).map(item=>[item.shortName,new Set([`ship/${item.slug}`])]));
-export const linkMentions = createMentionMatcher(names, registry, { quotedEntities:new Set(hardware.filter(item=>item.kind==='ship').map(item=>`ship/${item.slug}`)), contextualNames });
+for (const note of readingNotes) {
+  register({id:`term/${note.slug}`,kind:'term',title:note.label,description:note.description,
+    href:note.sources[0].url,image:null,alt:'',linkLabel:'Источник пояснения',linkTitle:note.sources[0].title},note.aliases);
+}
+// City names, personal names and the title “Цесаревич” need ship context.
+// Exact quotes and descriptive aliases such as “броненосец «Победа»” remain eligible.
+const ambiguousShips = new Set(['pobeda','poltava','sevastopol','tsesarevich','diana','pallada']);
+const contextualNames = new Map<string,Set<string>>();
+for(const item of hardware.filter(item=>ambiguousShips.has(item.slug))){
+  const bare=[item.shortName,...item.aliases.filter(alias=>!/[\s«»"“”]/u.test(alias)&&!/[号號]$/u.test(alias))];
+  for(const name of bare){const ids=contextualNames.get(name)??new Set<string>();ids.add(`ship/${item.slug}`);contextualNames.set(name,ids);}
+}
+// A definition is eligible only in an article explicitly reviewed for that term.
+for (const [name,ids] of names) for (const id of ids) if (id.startsWith('term/')) {
+  const restricted=contextualNames.get(name)??new Set<string>();restricted.add(id);contextualNames.set(name,restricted);
+}
+export const linkMentions = createMentionMatcher(names, registry, { quotedEntities:new Set(hardware.filter(item=>item.kind==='ship').map(item=>`ship/${item.slug}`)), contextualNames, annotationEntities:new Set(readingNotes.map(note=>`term/${note.slug}`)) });

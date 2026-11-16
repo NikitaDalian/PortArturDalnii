@@ -40,6 +40,29 @@ assert.deepEqual(links(victoryMatch('Победа досталась дорог�
 assert.deepEqual(links(victoryMatch('«Победа» вышла в море.')),['ship/pobeda']);
 assert.deepEqual(links(victoryMatch('В море вышел броненосец «Победа».')),['ship/pobeda']);
 assert.deepEqual(links(victoryMatch('Победа',mentionContext([],['ship/pobeda']))),['ship/pobeda']);
+const termNames=new Map([['рейде',new Set(['term/roadstead'])]]);
+const termMatch=createMentionMatcher(termNames,new Map([['term/roadstead',{id:'term/roadstead'}]]),{contextualNames:termNames});
+assert.deepEqual(links(termMatch('На рейде.')),[],'A definition is absent outside its reviewed scope');
+const termContext=mentionContext([],['term/roadstead']);
+assert.deepEqual(links(termMatch('На рейде, на рейде.',termContext)),['term/roadstead']);
+assert.deepEqual(links(termMatch('Ещё раз на рейде.',termContext)),[],'A definition is linked once across paragraphs');
+assert.deepEqual(links(termMatch('Книга «На рейде».',mentionContext([],['term/roadstead']))),[],'Definitions do not invade quoted titles');
+assert.equal(termMatch('На рейде, на рейде.',mentionContext([],['term/roadstead'])).map(part=>part.text).join(''),'На рейде, на рейде.');
+const heirNames=new Map([['Цесаревич',new Set(['ship/tsesarevich'])],['Цесаревича',new Set(['ship/tsesarevich'])],['броненосец «Цесаревич»',new Set(['ship/tsesarevich'])]]);
+const heirMatch=createMentionMatcher(heirNames,new Map([['ship/tsesarevich',{id:'ship/tsesarevich'}]]),{quotedEntities:new Set(['ship/tsesarevich']),contextualNames:new Map([...heirNames].filter(([name])=>!name.includes(' ')))});
+assert.deepEqual(links(heirMatch('Цесаревич Алексей родился; портрет Цесаревича.')),[],'An imperial title is not a ship');
+assert.deepEqual(links(heirMatch('В море вышел броненосец «Цесаревич».')),['ship/tsesarevich']);
+assert.deepEqual(links(heirMatch('Повреждения «Цесаревича».')),['ship/tsesarevich']);
+const budgetIds=['person/a','term/a','person/b','term/b','term/c'];
+const budgetNames=new Map(budgetIds.map((id,i)=>[`Word${i}`,new Set([id])]));
+const budgetMatch=createMentionMatcher(budgetNames,new Map(budgetIds.map(id=>[id,{id}])),{annotationEntities:new Set(budgetIds.filter(id=>id.startsWith('term/')))});
+assert.deepEqual(links(budgetMatch('Word0 Word1 Word2 Word3 Word4',mentionContext(),2)),['person/a','term/a','person/b','term/b'],'At most two annotations supplement, without displacing the entity budget');
+const pageBudget=mentionContext();
+budgetMatch('Word1 Word3',pageBudget);
+assert.deepEqual(links(budgetMatch('Word4 Word2',pageBudget)),['person/b'],'The two-note budget is shared across the whole article');
+const numberedCjk=createMentionMatcher(new Map([['66艘',new Set(['term/fleet-count'])]]),new Map([['term/fleet-count',{id:'term/fleet-count'}]]));
+assert.deepEqual(links(numberedCjk('舰队达到66艘。')),['term/fleet-count'],'Numeric Chinese aliases do not require a space after Han text');
+assert.deepEqual(links(numberedCjk('共有166艘，编号A66艘。')),[],'Numeric Chinese aliases cannot match the tail of another number or identifier');
 const aliases = read('entity_aliases'); const terms = read('index_terms');
 const valid = {
   people: new Set([...read('people').map(p => p.slug), ...Object.keys(terms.people)]),

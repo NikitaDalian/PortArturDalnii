@@ -147,7 +147,16 @@
           "title": "Navypedia: POLTAVA battleships (1897–1899)",
           "locator": "Technical data, Length, m row; oa = overall, wl = waterline, pp = between perpendiculars"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/petropavlovsk.svg",
+        "hullStart": 57.375,
+        "hullEnd": 1147,
+        "note": "Two funnels between the masts, with low, heavy turrets forward and aft.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Petropavlovsk_-_NH_84769-A.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "poltava",
@@ -167,7 +176,16 @@
           "title": "Navypedia: POLTAVA battleships (1897–1899)",
           "locator": "Technical data, Length, m row; oa = overall, wl = waterline, pp = between perpendiculars"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/poltava.svg",
+        "hullStart": 57.375,
+        "hullEnd": 1150,
+        "note": "Two funnels, a high fighting platform on the forward mast and small turrets along the sides.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Poltava-Chesma.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "sevastopol",
@@ -187,7 +205,16 @@
           "title": "Navypedia: POLTAVA battleships (1897–1899)",
           "locator": "Technical data, Length, m row; oa = overall, wl = waterline, pp = between perpendiculars"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/sevastopol.svg",
+        "hullStart": 53.375,
+        "hullEnd": 1146,
+        "note": "Two funnels amidships, low sides and heavy turrets forward and aft.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Sevastopol1900Kronshtadt.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "retvizan",
@@ -212,7 +239,16 @@
           "title": "S. Balakin. The Battleship Retvizan",
           "locator": "Construction and trials section; actual normal displacement 12,409.9 t and designed 12,745.6 t"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/retvizan.svg",
+        "hullStart": 51.375,
+        "hullEnd": 1151,
+        "note": "Three tall funnels in a close group and two heavy military masts.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Retvizan1902DelawareRiver.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "bayan",
@@ -227,7 +263,16 @@
           "title": "Navypedia: BAYAN armoured cruisers (1903–1911)",
           "locator": "Technical data, Length, m: Bayan (i), Bayan (ii) 135.0 pp 137.0 oa; Displacement normal, t: Bayan (i) 7725"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/bayan.svg",
+        "hullStart": 45.375,
+        "hullEnd": 1154,
+        "note": "Four funnels and two single-gun turrets on a long cruiser hull.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Bayan1903Kronstadt.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "mikasa",
@@ -242,7 +287,16 @@
           "title": "Navypedia: MIKASA battleship (1902)",
           "locator": "Technical data, Length, m row; oa = overall, wl = waterline, pp = between perpendiculars"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/mikasa.svg",
+        "hullStart": 55.375,
+        "hullEnd": 1151,
+        "note": "Two broad funnels with dark bands and tall military masts.",
+        "sourceUrls": [
+          "https://www.govinfo.gov/app/details/SERIALSET-04915_00_00-002-0328-0000"
+        ]
+      }
     },
     {
       "shipSlug": "novik",
@@ -262,7 +316,16 @@
           "title": "A. A. Alliluyev, M. A. Bogdanov. The Cruiser Novik",
           "locator": "“Brief historical account and tactical and technical characteristics” panel"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/novik.svg",
+        "hullStart": 50.375,
+        "hullEnd": 1152,
+        "note": "One tall mast, three funnels and a short, raised foredeck.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Novik1904Port-Artur.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "varyag",
@@ -282,7 +345,17 @@
           "title": "Navypedia: VARYAG 1st class cruiser (1901)",
           "locator": "Technical data, Length, m: 129.8, undefined; Naval service: Chemulpo"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/varyag.svg",
+        "hullStart": 47.375,
+        "hullEnd": 1153,
+        "note": "Four equally slender funnels in a row and two tall, thin masts.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Varyag1901.jpg",
+          "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm#P_341"
+        ]
+      }
     },
     {
       "shipSlug": "tsesarevich",
@@ -297,7 +370,16 @@
           "title": "Navypedia: TSESAREVICH battleship (1903)",
           "locator": "Technical data, Length, m row; oa = overall, wl = waterline, pp = between perpendiculars"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/tsesarevich.svg",
+        "hullStart": 60.375,
+        "hullEnd": 1150,
+        "note": "Heavy masts with two tiers of fighting platforms and two broad funnels.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Tsesarevich1903Toulon.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "peresvet",
@@ -312,7 +394,17 @@
           "title": "R. M. Melnikov. Peresvet-class Battleships",
           "locator": "Chapter 1, table 1, “Tactical and technical characteristics of Peresvet-class battleships”; rows “Length, m” and “Designed displacement (with normal coal supply), t”"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/peresvet.svg",
+        "hullStart": 54.375,
+        "hullEnd": 1150,
+        "note": "A raised foredeck, three funnels and fighting platforms on both masts.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Peresvet1901.jpg",
+          "https://keu-ocr.narod.ru/Peresvet/chap01.html"
+        ]
+      }
     },
     {
       "shipSlug": "pobeda",
@@ -327,7 +419,18 @@
           "title": "R. M. Melnikov. Peresvet-class Battleships",
           "locator": "Chapter 1, table 1, “Tactical and technical characteristics of Peresvet-class battleships”; rows “Length, m” and “Designed displacement (with normal coal supply), t”"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/pobeda.svg",
+        "hullStart": 54.375,
+        "hullEnd": 1151,
+        "note": "Three funnels and a high bow, but a lighter after mast than Peresvet’s.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Pobeda_1900-1904.jpg",
+          "https://commons.wikimedia.org/wiki/File:Pobeda1904Port-Artur.jpg",
+          "https://keu-ocr.narod.ru/Peresvet/chap01.html"
+        ]
+      }
     },
     {
       "shipSlug": "askold",
@@ -347,7 +450,16 @@
           "title": "V. Ya. Krestyaninov, S. V. Molodtsov. The Cruiser Askold. Morskaya Kollektsiya, 1996",
           "locator": "“Tactical and technical characteristics of the first-class cruiser Askold” table after “Ship machinery and systems”: length overall 131.2 m, load waterline 130 m"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/askold.svg",
+        "hullStart": 42.375,
+        "hullEnd": 1154,
+        "note": "Five tall, slender funnels make this cruiser easy to recognise.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Askold1901Kiel.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "pallada",
@@ -362,7 +474,16 @@
           "title": "Navypedia: PALLADA 1st class cruisers (1901–1903)",
           "locator": "Technical data, Length, m row; oa = overall, wl = waterline, pp = between perpendiculars"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/pallada.svg",
+        "hullStart": 48.375,
+        "hullEnd": 1153,
+        "note": "Three slender funnels between two masts on a long, clean-lined hull.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Pallada1897-1905.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "diana",
@@ -377,7 +498,16 @@
           "title": "Navypedia: PALLADA 1st class cruisers (1901–1903)",
           "locator": "Technical data, Length, m row; oa = overall, wl = waterline, pp = between perpendiculars"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/diana.svg",
+        "hullStart": 49.375,
+        "hullEnd": 1153,
+        "note": "Three funnels, two thin masts and a high forward bridge.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Diana1897-1922MalyyKronshatadskiyReyd.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "boyarin",
@@ -392,7 +522,16 @@
           "title": "Navypedia: BOYARIN 2nd class cruiser (1902)",
           "locator": "Technical data, Length, m row; oa = overall, wl = waterline, pp = between perpendiculars"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/boyarin.svg",
+        "hullStart": 51.375,
+        "hullEnd": 1152,
+        "note": "Three short funnels, two masts and a raised foredeck.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Boyarin1902.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "hatsuse",
@@ -407,7 +546,16 @@
           "title": "Navypedia: SHIKISHIMA battleships (1900)",
           "locator": "Technical data: individual Hatsuse entries; Length 121.9 pp 126.5 wl 134.0 oa"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/hatsuse.svg",
+        "hullStart": 56.375,
+        "hullEnd": 1150,
+        "note": "Three funnels between two military masts, with heavy turrets forward and aft.",
+        "sourceUrls": [
+          "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm#P_179"
+        ]
+      }
     },
     {
       "shipSlug": "yashima",
@@ -427,7 +575,16 @@
           "title": "Fred T. Jane. The Imperial Japanese Navy. 1904",
           "locator": "P. 172: Fuji/Yashima particulars; the early over all figure of 400 ft is noted as a discrepancy and not adopted"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/yashima.svg",
+        "hullStart": 58.375,
+        "hullEnd": 1150,
+        "note": "A compact battleship with two funnels, two masts and low, heavy turrets.",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Yashima_NH_58968.jpg"
+        ]
+      }
     }
   ]
 }

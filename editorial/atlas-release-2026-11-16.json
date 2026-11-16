@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-16",
+  "status": "verified locally before publication",
+  "scope": ["17 individually sourced ship profiles", "Historical fleet quick filters in overview and catalogue", "Scoped reading notes in 17 contexts", "Substantial bank essay rewrite", "Concrete Mikasa ending", "English and Chinese parity"],
+  "visualReview": {
+    "review": "fleet-illustrations-review-2026-11-16.json",
+    "manifestSha256": "d3a0aa1ca85982f923c03d523b8ad7df50549fad6f0799b47eee97fce608a70f",
+    "note": "Profiles are original stylized illustrations grounded in archival photographs, with simplified details and editorial colors. Only hull length shares a physical scale. Individual SVG hull bounds remove transparent margins from length calculations. Askold is explicitly outside the comparison scale pending a comparable measurement."
+  },
+  "checks": {"unitTestsPassed": 27, "data": "passed", "i18n": "passed", "mentionRegression": "passed, including numeric CJK boundaries and page-wide two-note budget", "pagesBuilt": 1113, "internalLinksChecked": 98561, "brokenInternalLinks": 0},
+  "browser": {
+    "engine": "project-restricted Playwright",
+    "viewports": ["1440x1000 desktop", "390x844 touch"],
+    "languages": ["ru", "en", "zh"],
+    "verified": ["All 17 profile images decode", "Expanded archival photograph decodes without navigating away", "Fleet counts 13/3/1/17", "Catalogue counts 13/3/1/17 ships, 8 weapons, 25 total", "URL restoration and reset", "Diagram/table modes", "No document horizontal overflow", "Two scoped explanations visible in first-squadron note in all languages", "Desktop hover, click and Escape; mobile tap keeps current article", "Term-to-ship preview restores image and internal destination", "Bank and Mikasa revised text rendered in all languages"]
+  },
+  "editorialReviews": ["bank-rewrite-review-2026-11-16.json", "bank-rewrite-translations-review-2026-11-16.json", "mikasa-ending-review-2026-11-16.json", "mikasa-ending-translations-review-2026-11-16.json", "reading-notes-review-2026-11-16.json", "reading-notes-translations-review-2026-11-16.json", "fleet-illustrations-translations-review-2026-11-16.json"],
+  "readingNoteAudit": {"pagesReviewedPerLanguage": 73, "assignedContextsPerLanguage": 17, "maxNotesPerPage": 2, "originalArticleProsePreserved": true, "note": "Audit concerns mention destinations and definitions, not a new factual review of every old article. Bank and Mikasa prose were changed separately under the listed editorial gates."}
+}

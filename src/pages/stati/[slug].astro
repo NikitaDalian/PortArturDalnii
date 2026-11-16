@@ -5,12 +5,13 @@ import LinkedText from '../../components/LinkedText.astro';
 import EssayIllustration from '../../components/reading/EssayIllustration.astro';
 import HardwareLinks from '../../components/hardware/HardwareLinks.astro';
 import { mentionContext } from '../../lib/mentions';
+import { readingNoteIdsFor } from '../../lib/readingNotes';
 import { essays, type Essay } from '../../lib/essays';
 import { href, articleBySlug, placeBySlug, sourceBySlug, layerByKey, fmtDate } from '../../lib/data';
 import { locale } from '../../i18n/locale';
 export function getStaticPaths() { return essays.map(essay => ({ params: { slug: essay.slug }, props: { essay } })); }
 const { essay: e } = Astro.props as { essay: Essay };
-const mentions = mentionContext();
+const mentions = mentionContext([],readingNoteIdsFor('essays',e.slug));
 const text = e.sections.flatMap(s=>s.paragraphs).join(' ');
 const minutes = Math.max(1,Math.ceil(locale === 'zh' ? text.replace(/\s/g,'').length / 350 : text.split(/\s+/).length / 170));
 const notes = e.relatedNotes.map(s=>articleBySlug.get(s)).filter(Boolean);

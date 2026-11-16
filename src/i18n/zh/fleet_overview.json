@@ -147,7 +147,16 @@
           "title": "Navypedia：波尔塔瓦级战列舰（1897—1899）",
           "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/petropavlovsk.svg",
+        "hullStart": 57.375,
+        "hullEnd": 1147,
+        "note": "两根桅杆之间有两座烟囱，首尾是低矮厚重的炮塔。",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Petropavlovsk_-_NH_84769-A.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "poltava",
@@ -167,7 +176,16 @@
           "title": "Navypedia：波尔塔瓦级战列舰（1897—1899）",
           "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/poltava.svg",
+        "hullStart": 57.375,
+        "hullEnd": 1150,
+        "note": "两座烟囱，前桅上有高高的战斗平台，舷侧设小炮塔。",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Poltava-Chesma.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "sevastopol",
@@ -187,7 +205,16 @@
           "title": "Navypedia：波尔塔瓦级战列舰（1897—1899）",
           "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/sevastopol.svg",
+        "hullStart": 53.375,
+        "hullEnd": 1146,
+        "note": "两座烟囱位于中部，舰舷较低，首尾设厚重炮塔。",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Sevastopol1900Kronshtadt.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "retvizan",
@@ -212,7 +239,16 @@
           "title": "S. 巴拉金：《“列特维赞”号战列舰》",
           "locator": "建造与试航部分：实际正常排水量12409.9吨，设计值12745.6吨"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/retvizan.svg",
+        "hullStart": 51.375,
+        "hullEnd": 1151,
+        "note": "三座高烟囱紧密排列，两根粗壮的战斗桅杆分列前后。",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Retvizan1902DelawareRiver.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "bayan",
@@ -227,7 +263,16 @@
           "title": "Navypedia：巴扬级装甲巡洋舰（1903—1911）",
           "locator": "“技术数据”中的“长度，米”：Bayan (i)、Bayan (ii)，135.0 pp、137.0 oa；“正常排水量，t”：Bayan (i)，7725"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/bayan.svg",
+        "hullStart": 45.375,
+        "hullEnd": 1154,
+        "note": "修长的巡洋舰舰体上有四座烟囱和两座单装炮塔。",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Bayan1903Kronstadt.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "mikasa",
@@ -242,7 +287,16 @@
           "title": "Navypedia：“三笠”号战列舰（1902）",
           "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/mikasa.svg",
+        "hullStart": 55.375,
+        "hullEnd": 1151,
+        "note": "两座宽烟囱带深色环纹，战斗桅杆高耸。",
+        "sourceUrls": [
+          "https://www.govinfo.gov/app/details/SERIALSET-04915_00_00-002-0328-0000"
+        ]
+      }
     },
     {
       "shipSlug": "novik",
@@ -262,7 +316,16 @@
           "title": "A. A. 阿利卢耶夫、M. A. 博格丹诺夫：《“诺维克”号巡洋舰》",
           "locator": "“历史简述与战术技术要素”部分"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/novik.svg",
+        "hullStart": 50.375,
+        "hullEnd": 1152,
+        "note": "一根高桅杆、三座烟囱，以及一段较短的抬高舰艏甲板。",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Novik1904Port-Artur.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "varyag",
@@ -282,7 +345,17 @@
           "title": "Navypedia：“瓦良格”号一等巡洋舰（1901）",
           "locator": "“技术数据”中的“长度，米”：129.8，未说明定义；“服役经历”：济物浦"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/varyag.svg",
+        "hullStart": 47.375,
+        "hullEnd": 1153,
+        "note": "四座同样细长的烟囱排成一列，另有两根高而细的桅杆。",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Varyag1901.jpg",
+          "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm#P_341"
+        ]
+      }
     },
     {
       "shipSlug": "tsesarevich",
@@ -297,7 +370,16 @@
           "title": "Navypedia：“皇太子”号战列舰（1903）",
           "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/tsesarevich.svg",
+        "hullStart": 60.375,
+        "hullEnd": 1150,
+        "note": "粗壮桅杆上设两层战斗平台，另有两座宽烟囱。",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Tsesarevich1903Toulon.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "peresvet",
@@ -312,7 +394,17 @@
           "title": "R. M. 梅利尼科夫：《佩列斯韦特级战列舰》",
           "locator": "第1章，表1“佩列斯韦特级战列舰战术技术要素”；“长度，米”及“设计排水量（正常载煤量下），吨”两栏"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/peresvet.svg",
+        "hullStart": 54.375,
+        "hullEnd": 1150,
+        "note": "舰艏甲板抬高，三座烟囱，两根桅杆均设战斗平台。",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Peresvet1901.jpg",
+          "https://keu-ocr.narod.ru/Peresvet/chap01.html"
+        ]
+      }
     },
     {
       "shipSlug": "pobeda",
@@ -327,7 +419,18 @@
           "title": "R. M. 梅利尼科夫：《佩列斯韦特级战列舰》",
           "locator": "第1章，表1“佩列斯韦特级战列舰战术技术要素”；“长度，米”及“设计排水量（正常载煤量下），吨”两栏"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/pobeda.svg",
+        "hullStart": 54.375,
+        "hullEnd": 1151,
+        "note": "三座烟囱，舰艏高起，后桅比“佩列斯韦特”号轻巧。",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Pobeda_1900-1904.jpg",
+          "https://commons.wikimedia.org/wiki/File:Pobeda1904Port-Artur.jpg",
+          "https://keu-ocr.narod.ru/Peresvet/chap01.html"
+        ]
+      }
     },
     {
       "shipSlug": "askold",
@@ -347,7 +450,16 @@
           "title": "V. Ya. 克列斯季亚尼诺夫、S. V. 莫洛德佐夫：《“阿斯科尔德”号巡洋舰》，《海军收藏》，1996年",
           "locator": "“舰船动力装置与系统”之后的“‘阿斯科尔德’号一等巡洋舰战术技术要素”表：全长131.2米，载重水线长130米"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/askold.svg",
+        "hullStart": 42.375,
+        "hullEnd": 1154,
+        "note": "五座高而细的烟囱，让这艘巡洋舰的侧影格外好认。",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Askold1901Kiel.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "pallada",
@@ -362,7 +474,16 @@
           "title": "Navypedia：帕拉达级一等巡洋舰（1901—1903）",
           "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/pallada.svg",
+        "hullStart": 48.375,
+        "hullEnd": 1153,
+        "note": "平顺修长的舰体上，两根桅杆之间有三座细长烟囱。",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Pallada1897-1905.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "diana",
@@ -377,7 +498,16 @@
           "title": "Navypedia：帕拉达级一等巡洋舰（1901—1903）",
           "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/diana.svg",
+        "hullStart": 49.375,
+        "hullEnd": 1153,
+        "note": "三座烟囱、两根细桅杆，以及高起的舰艏舰桥。",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Diana1897-1922MalyyKronshatadskiyReyd.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "boyarin",
@@ -392,7 +522,16 @@
           "title": "Navypedia：“博雅林”号二等巡洋舰（1902）",
           "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/boyarin.svg",
+        "hullStart": 51.375,
+        "hullEnd": 1152,
+        "note": "三座较短的烟囱、两根桅杆，舰艏甲板抬高。",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Boyarin1902.jpg"
+        ]
+      }
     },
     {
       "shipSlug": "hatsuse",
@@ -407,7 +546,16 @@
           "title": "Navypedia：敷岛级战列舰（1900）",
           "locator": "“技术数据”中“初濑”号的单独一栏；长度121.9 pp、126.5 wl、134.0 oa"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/hatsuse.svg",
+        "hullStart": 56.375,
+        "hullEnd": 1150,
+        "note": "两根战斗桅杆之间有三座烟囱，首尾设厚重炮塔。",
+        "sourceUrls": [
+          "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm#P_179"
+        ]
+      }
     },
     {
       "shipSlug": "yashima",
@@ -427,7 +575,16 @@
           "title": "Fred T. 简：《日本帝国海军》，1904年",
           "locator": "第172页，“富士”号与“八岛”号的主要数据；早期所列全长400英尺作为差异注明，未采用"
         }
-      ]
+      ],
+      "illustration": {
+        "file": "images/fleet/yashima.svg",
+        "hullStart": 58.375,
+        "hullEnd": 1150,
+        "note": "紧凑的双烟囱战列舰，两根桅杆，厚重炮塔低置。",
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Yashima_NH_58968.jpg"
+        ]
+      }
     }
   ]
 }

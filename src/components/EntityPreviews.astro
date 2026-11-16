@@ -5,11 +5,11 @@
     <p class="entity-preview__eyebrow">Краткая справка</p>
     <h2 id="entity-preview-title"></h2>
     <p id="entity-preview-description"></p>
-    <a class="entity-preview__link" href="#">Открыть полную страницу <span aria-hidden="true">→</span></a>
+    <a class="entity-preview__link" href="#"><span data-preview-link-label>Открыть полную страницу</span> <span aria-hidden="true">→</span></a>
   </div>
 </aside>
 <script>
-  type Preview = { title: string; description: string; href: string; image?: string; alt?: string; kind: string };
+  type Preview = { title: string; description: string; href: string; image?: string; alt?: string; kind: string; linkLabel?:string; linkTitle?:string };
   let active: HTMLAnchorElement | null = null;
   let openTimer = 0, closeTimer = 0;
   let restoringFocus = false;
@@ -45,7 +45,13 @@
     close(); active = link;
     card.querySelector('h2')!.textContent = data.title;
     card.querySelector('#entity-preview-description')!.textContent = data.description;
-    (card.querySelector('.entity-preview__link') as HTMLAnchorElement).href = data.href;
+    const destination=card.querySelector('.entity-preview__link') as HTMLAnchorElement;
+    destination.href=data.href;
+    destination.title=data.linkTitle??'';
+    card.querySelector('[data-preview-link-label]')!.textContent=data.linkLabel??'Открыть полную страницу';
+    card.querySelector('.entity-preview__eyebrow')!.textContent=data.kind==='term'?'Пояснение к тексту':'Краткая справка';
+    if(data.kind==='term'){destination.target='_blank';destination.rel='noopener';}
+    else{destination.removeAttribute('target');destination.removeAttribute('rel');}
     const picture = card.querySelector('img')!;
     picture.hidden = !data.image; picture.alt = data.alt ?? '';
     picture.classList.toggle('is-person', data.kind === 'person');
@@ -88,7 +94,7 @@
   });
   document.addEventListener('click', event => {
     const link = linkAt(event.target);
-    if (link && touchLayout() && !event.ctrlKey && !event.metaKey && !event.shiftKey && event.button === 0) {
+    if (link && (touchLayout() || link.dataset.entityKind==='term') && !event.ctrlKey && !event.metaKey && !event.shiftKey && event.button === 0) {
       event.preventDefault(); open(link); return;
     }
     if ((event.target as Element)?.closest('.entity-preview__close')) { close(true); return; }

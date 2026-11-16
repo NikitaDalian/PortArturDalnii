@@ -1,191 +1,16 @@
 {
   "version": 1,
   "locale": "zh",
-  "commit": "10742456b731b3e4c5a8e1e45ade32a37ac3d4af",
-  "reviewedAt": "2026-11-15T23:47:51.421Z",
-  "reviewedPacket": "36a4946a321a192b574cfd6ccd9c24190a927b3b4265ec8a28c4cc91eeabc1a7",
+  "commit": "97c4dfc65d24b77df1fd64fbe19f2aeb311f3511",
+  "reviewedAt": "2026-11-16T00:26:15.202Z",
+  "reviewedPacket": "8234fb3691a60a0c1e6b442e03c229bc991ff5471e4121cd6bc1c6e58035acc3",
   "reviewedItems": [
     {
-      "id": "487672228a5980018f68",
-      "file": "data/hardware.json",
-      "path": "/@slug=novik/armament/@weaponSlug=canet-120-45",
-      "action": "translated",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "992c854a3083b9daa042",
-      "file": "data/hardware.json",
-      "path": "/@slug=novik/armament/@weaponSlug=hotchkiss-47-single",
-      "action": "translated",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "4437160ccb2bf9ef29f6",
-      "file": "data/hardware.json",
-      "path": "/@slug=novik/sources/@id=8",
-      "action": "translated",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "ecbe29b17ccdc651e667",
-      "file": "data/hardware.json",
-      "path": "/@slug=novik/sources/@id=9",
-      "action": "translated",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "c7005ad622794bea859f",
-      "file": "data/hardware.json",
-      "path": "/@slug=tsesarevich",
-      "action": "translated",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "b76f5d877840e7cd00f0",
-      "file": "data/hardware.json",
-      "path": "/@slug=peresvet",
-      "action": "translated",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "5f3586369e8f5466edcf",
-      "file": "data/hardware.json",
-      "path": "/@slug=pobeda",
-      "action": "translated",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "c4b11cf9dc9cb589b667",
-      "file": "data/hardware.json",
-      "path": "/@slug=poltava",
-      "action": "translated",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "e5cc50f160b4bb57ecc5",
-      "file": "data/hardware.json",
-      "path": "/@slug=sevastopol",
-      "action": "translated",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "5d3ec8a3e6330236d9fb",
-      "file": "data/hardware.json",
-      "path": "/@slug=canet-120-45",
-      "action": "translated",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "4f8b901c4b30dfea6396",
-      "file": "data/hardware.json",
-      "path": "/@slug=obukhov-254-45",
-      "action": "translated",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "8074c246201f6a4a2d47",
-      "file": "data/hardware.json",
-      "path": "/@slug=hotchkiss-47-single",
-      "action": "translated",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "8001613867bb01346006",
-      "file": "data/hardware.json",
-      "path": "/@slug=askold",
-      "action": "translated",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "94e3537b2cf51572e4c7",
-      "file": "data/hardware.json",
-      "path": "/@slug=pallada",
-      "action": "translated",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "56f49c0774d980c990ca",
-      "file": "data/hardware.json",
-      "path": "/@slug=diana",
-      "action": "translated",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "5368ff194ceebf191025",
-      "file": "data/hardware.json",
-      "path": "/@slug=boyarin",
-      "action": "translated",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "fa3368b7a96ff47df0ff",
-      "file": "data/hardware.json",
-      "path": "/@slug=hatsuse",
-      "action": "translated",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "f0b576d7fb700a04f848",
-      "file": "data/hardware.json",
-      "path": "/@slug=yashima",
-      "action": "translated",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "8f41bbfdfe23cc0f0661",
-      "file": "data/fleet_overview.json",
-      "path": "/title",
-      "action": "translated",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "c6f04b8df5afaa04e721",
-      "file": "data/fleet_overview.json",
-      "path": "/dek",
-      "action": "translated",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "e5d4561e3ea8eb865828",
-      "file": "data/fleet_overview.json",
-      "path": "/intro",
-      "action": "translated",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "483d34df3ce2a6d55bfe",
-      "file": "data/fleet_overview.json",
-      "path": "/sections",
-      "action": "translated",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "6dd512682c2617f69a88",
-      "file": "data/fleet_overview.json",
-      "path": "/relatedNotes",
-      "action": "metadata",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "c00130d76c546093e1fc",
-      "file": "data/fleet_overview.json",
-      "path": "/sources",
-      "action": "translated",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "40438985404c598e4c59",
-      "file": "data/fleet_overview.json",
-      "path": "/ships",
-      "action": "translated",
-      "note": "Accepted Russian expansion, dated installations and fleet overview translated completely; separate reader checked full translation, corrections and exact file SHA. See editorial/hardware-translation-review-2026-11-16.json and editorial/fleet-overview-review-2026-11-16.json. Source numbering, identities, dates, measurements and captions preserved."
-    },
-    {
-      "id": "bcd5d410eefff898e16f",
+      "id": "b1cc8327abe7d02543f6",
       "file": "UI source files",
       "path": "",
-      "action": "translated",
-      "note": "Fleet comparison controls, measurement explanations, catalogue/detail entry links and accessibility labels translated. Diagram/table, historical groups, narrow screens and rendered source links verified in browser. Ambiguous bare ship names require quotation or explicit entity context; this matching change introduces no extra prose."
+      "action": "unchanged",
+      "note": "Only the mention-matching boundary algorithm changed: numeric CJK aliases can follow Han text without spaces, while embedded numbers and Latin identifiers remain protected. No UI text or translated content changed; dedicated regression checks and full Chinese scope audit verify the fix."
     }
   ],
   "sources": {
@@ -3285,12 +3110,13 @@
           },
           {
             "id": "supply",
-            "title": "Два судна снабжения и долгое продолжение",
+            "title": "От транспорта до корабельного обеда",
             "paragraphs": [
               "В начале войны для продовольственного снабжения подготовили два вспомогательных судна, «Мацуяма-мару» и «Фукуока-мару». Планировали подвозить продукты к передовым силам примерно раз в шесть дней. Но корабли часто действовали рассредоточенно, и двух снабженцев оказалось мало. С августа 1904 года к этой работе привлекли «Котохира-мару» и другие суда.",
               "Дополнительные суда помогали с перевозкой, однако оборудования для сохранения продуктов у них недоставало. Взять достаточный объём продовольствия они не могли. Даже несколько дней пути из японской военно-морской базы Сасебо к передовой базе создавали трудности с сохранностью хлеба, овощей, мяса и рыбы. Холодильная техника уже существовала, но её установка на кораблях только начиналась.",
-              "Нехватку продовольственных судов признали одним из недостатков снабжения в русско-японскую войну. Вспомогательные транспорты 1904 года, однако, ещё не были теми специализированными кораблями продовольственного снабжения флота, которые появились позднее. Первый такой корабль японского флота, «Мамия», вступил в строй в 1924 году. Второй, «Ирако», — 5 декабря 1941 года.",
-              "Исихара считает, что на фоне победы японского флота в Цусимском сражении 1905 года выявленные недостатки снабжения не получили должного отражения в последующей политике флота. Даты у этого вывода вполне конкретные: от войны, показавшей нехватку судов снабжения, до «Мамии» прошло около двадцати лет; между вводом в строй первого и второго специализированных кораблей — ещё около семнадцати."
+              "Нехватку продовольственных судов признали одним из недостатков снабжения в русско-японскую войну. Вспомогательные транспорты 1904 года, однако, ещё не были теми специализированными кораблями продовольственного снабжения флота, которые появились позднее. Первый такой корабль японского флота, «Мамия», вступил в строй в 1924 году. Второй, «Ирако», — 5 декабря 1941 года. Исихара считает, что на фоне победы японского флота в Цусимском сражении 1905 года выявленные недостатки снабжения не получили должного отражения в последующей политике флота.",
+              "В бою кормить экипаж приходилось иначе. 27 мая 1905 года, в первый день Цусимского сражения, на верхней, средней и нижней палубах «Микасы» держали наготове сухари и напиток из крахмала кудзу; морякам разрешали есть и пить по мере надобности. В пять часов вечера на ужин раздали рисовые колобки.",
+              "К обычному порядку питания вернулись в восемь вечера, когда бой прервался на ночь. Тяжелораненым выдавали отдельную пищу: яйца, сгущённое молоко и кашу."
             ],
             "refs": [
               1
@@ -3308,7 +3134,7 @@
             "author": "Акинори Исихара (石原明徳), Национальный институт оборонных исследований Японии",
             "date": "2024-05-28",
             "url": "https://www.nids.mod.go.jp/publication/commentary/pdf/commentary324.pdf",
-            "locator": "NIDS Commentary, № 324. С. 4 — холодильное оборудование; с. 6 — сохранность продуктов при доставке из Сасебо; с. 7 — суда снабжения, «Мамия» и «Ирако», статус флагмана, стоянка и меню; с. 8 — заболевшие. Примечание 13 на с. 10.",
+            "locator": "NIDS Commentary, № 324. С. 4 — холодильное оборудование; с. 6 — сохранность продуктов при доставке из Сасебо; с. 7 — суда снабжения, «Мамия» и «Ирако», статус флагмана, стоянка и меню; с. 8 — заболевшие и питание в Цусимском бою 27 мая 1905 года (включая пищу для тяжелораненых). Примечание 13 на с. 10.",
             "note": "Оригинальное название: 日露戦争における艦のロジスティクス―勝ち戦の夕食は握飯. Исследование прочитано целиком; ключевые страницы сверены с изображениями и официальной английской версией. Первичные медицинские документы отдельно не проверены."
           }
         ],
@@ -3335,62 +3161,102 @@
       },
       {
         "slug": "bankovskiy-sluzhashchiy-dayrena",
-        "title": "Деньги Дайрена: кому давали взаймы",
-        "dek": "Серебряные монеты, японские банкноты и частные кредитные конторы. Банковский служащий Сунь Яотин вспоминал город, где деньги были разными, а получить заём удавалось далеко не каждому.",
-        "date": "2026-11-15",
+        "title": "Кому давали взаймы в Дайрене",
+        "dek": "Зерновому торговцу — под железнодорожную накладную, знакомому предпринимателю — иногда по телефонному звонку. Как китайские денежные дома связывали торговлю, сбережения и банковский кредит.",
+        "date": "2026-11-16",
         "periods": [
           "japanese"
         ],
-        "perspective": "По китайским воспоминаниям Сунь Яотина",
+        "perspective": "По воспоминаниям банковского служащего Сунь Яотина и рассказу Го Сипу и Суня о денежных домах Даляня",
         "sections": [
           {
-            "id": "clerk",
-            "title": "Банковский служащий Дайрена",
+            "id": "grain-and-credit",
+            "title": "Заёмщик, который мог выручить банк",
             "paragraphs": [
-              "Дайреном называли Далянь под японским управлением. В этом торговом городе обращались разные деньги, а обычному китайскому горожанину было трудно получить банковскую ссуду. О том, чем рассчитывались и кому давали взаймы, вспоминал Сунь Яотин.",
-              "Он с детства жил в Даляне и работал в банковской сфере с 1930 года. Начинал учеником и служащим, со временем дослужился до руководящих должностей. Банковскую жизнь города знал изнутри.",
-              "Своим местом работы он называет Лункоу, совместный японско-китайский банк. Адрес тоже оставил: Тяньцзиньская улица, как она называлась во время записи его рассказа. Затем были слияния и новые названия банка. Позднее Сунь описал всё это во втором выпуске сборника «Материалы по истории Даляня»."
+              "В Дайрене 1920–1930-х годов, как называли Далянь под японским управлением, крупный торговец зерном мог не только занять у банка, но и сам помочь ему деньгами. Банковский служащий Сунь Яотин называл две такие фирмы: «Синцзи» с управляющим Синь Бофэнем и «Ифахэ» с управляющим Ван Синьчжаем. Они входили в число крупных кредитных клиентов банков и частных денежных домов. При необходимости те же торговые фирмы поддерживали своих кредиторов, когда им не хватало средств для текущих расчётов.",
+              "Сам Сунь работал в банковской сфере с 1930 года, в том числе в совместном японско-китайском банке Лункоу. За этими кредитными связями стояло вполне определённое дело: зерновая торговля и маслобойное производство. В порт шли соя и гаолян; деньги требовались, пока товар находился в пути. В другом рассказе о даляньских финансах Сунь и Го Сипу описали удобное для торговца обеспечение: купить зерно, передать банку железнодорожную накладную и получить под неё наличные. По их оценке, документ на перевозимое зерно банк принимал охотнее, чем залог недвижимости.",
+              "Такой заём был связан с конкретным грузом и торговой операцией. Другому заёмщику требовались свои гарантии возврата. Сунь вспоминал, что без достаточного обеспечения обычному горожанину получить ссуду было трудно. Но между большим иностранным банком и частным ростовщиком существовал ещё один путь — цяньчжуан, денежный дом."
             ],
             "refs": [
-              1
+              1,
+              2
             ]
           },
           {
-            "id": "currency",
-            "title": "Серебро и бумажное золото",
+            "id": "money-house",
+            "title": "Недвижимость банку, доверие клиенту",
             "paragraphs": [
-              "В его перечне рядом стоят серебряные монеты, мелкое серебро, медные деньги и банкноты. Японские бумажные деньги он называет «цзиньпяо», 金票. В названии есть золото, но речь идёт о бумажных деньгах, а не о золотых монетах.",
-              "Главное место, по словам Суня, занимали японские банкноты. Китайские банки тоже выпускали бумажные деньги, однако местные выпуски требовали разрешения японских властей и могли служить лишь временными платёжными средствами."
+              "Цяньчжуаны принимали вклады, выдавали займы, обменивали деньги и переводили их в другие города. Это не ломбарды: их дело не ограничивалось вещами, принесёнными в залог. В 1920-х — начале 1930-х годов они обслуживали прежде всего китайские торговые и промышленные предприятия. По рассказу Суня и Го, небольшой предприниматель нередко предпочитал заплатить им больше, чем добиваться кредита в иностранном банке с его сложными процедурами и трудным доступом.",
+              "У самих денежных домов тоже были кредиторы. Они обычно закладывали банку недвижимость и оформляли возможность перерасходовать средства на текущем счёте — овердрафт. Собственных денег не хватало: купцы держали вклады недолго, а вкладов от жителей поступало мало. Когда суммы поступлений и выплат не совпадали, требовалась банковская поддержка.",
+              "Зато своему надёжному клиенту денежный дом мог выдать заём после телефонного обращения. Единой ставки и одинаковых условий для всех не было: смотрели на человека и на то, свободны ли сейчас деньги на рынке. Сунь приводит один пример цены краткосрочной ссуды: за тысячу юаней брали ежедневно две цзяо, то есть две десятых юаня. Он не уточняет кредитора и продолжительность займа; превращать этот пример в среднюю ставку всего города было бы неверно."
             ],
             "refs": [
-              1
+              1,
+              2
             ]
           },
           {
-            "id": "credit",
-            "title": "Деньги в городе и деньги для горожанина",
+            "id": "trust-and-deposits",
+            "title": "Откуда брались деньги",
             "paragraphs": [
-              "Сунь описывает Дайрен как город производства и торговли, которому постоянно нужны были деньги. За займами обращались в банки. Но обычному китайскому горожанину, вспоминал он, получить банковскую ссуду было трудно: без достаточного обеспечения, то есть гарантий возврата денег, рассчитывать на неё не приходилось.",
-              "Займы выдавали и цяньчжуаны, 钱庄, традиционные частные кредитные конторы. Они тоже требовали обеспечения, а проценты, по словам Суня, брали выше банковских. Отдельно он пишет о частных ростовщиках, действовавших вне банков и цяньчжуанов. По его оценке, дорогой заём мог за короткий срок закончиться разорением."
+              "В таблице денежных домов на 1931 год у «Ифахэ» стоят имя Ван Синьчжая, капитал 300 тысяч юаней в банкнотах и год открытия — 1923-й. Рядом встречаются заведения с капиталом всего в пять тысяч. При этом суммы записаны в разных видах денег: серебре, «золотых» банкнотах, крупных и мелких серебряных денежных единицах. Складывать их как одинаковые юани нельзя.",
+              "Репутация владельца и пайщиков приводила вкладчиков, а вклады позволяли выдавать займы. Связи часто строились вокруг землячества. У выходцев из Шаньдуна важными клиентами были предприниматели из той же провинции. «Ифахэ» относилась к сильной группе выходцев из Лаотина в Хэбэе. Однако Сунь оговаривал: объединяла людей не одна родина, но и общая выгода; состав групп мог меняться.",
+              "За сбережения горожан боролись и более занятным способом. Сунь описывает «Ваньго чусюй хуэй» — сберегательную схему с розыгрышем: вносить по три юаня ежемесячно, а в конце года получить шанс на главный приз в 30 тысяч. Однажды его выиграл печатник газеты «Тайдун жибао». Имени счастливца и года выигрыша Сунь не оставил, зато запомнил результат рекламы: такие вклады стали распространяться среди китайских банков. Маленькие взносы многих людей собирали деньги для банковского оборота."
             ],
             "refs": [
-              1
+              1,
+              2
+            ]
+          },
+          {
+            "id": "trade-and-risk",
+            "title": "Накладная могла вести и на биржу",
+            "paragraphs": [
+              "Зерновой груз связывал банковскую кассу с железной дорогой, но не гарантировал спокойной торговли. Сунь и Го вспоминали, что сильные агентские денежные дома, получив наличные под накладные, могли идти с ними на денежную биржу. Там торговали не только наличной валютой, но и сделками на будущую поставку. В их рассказе одни участники быстро богатели, другие разорялись. Само наличие обеспечения ещё не означало, что заёмщик употребит деньги только на очередную партию зерна.",
+              "Торговцы и финансисты вместе защищали и привычный порядок расчётов. Когда японские власти пытались отменить серебряную основу обращения в пользу золотой, представители денежных домов, зерновых фирм и маслобоен подали совместное прошение. Сунь вспоминал обращения к властям Квантунской области и поездку представителей в Токио. Года он не указал. Даже японские банки не были едины: Йокогамский банк Сёкин, выпускавший серебряные банкноты, тоже возражал против отмены серебряной системы."
+            ],
+            "refs": [
+              1,
+              2
+            ]
+          },
+          {
+            "id": "war-controls",
+            "title": "Когда телефонного звонка стало недостаточно",
+            "paragraphs": [
+              "В рассказе Суня спор закончился разрешением пользоваться обеими системами, но китайские финансисты должны были ежемесячно отчитываться о своих операциях. После этого они укрепляли связи уже за общим столом: руководители банков приглашали представителей торговой палаты на еженедельные обеды в гостинице «Ямато». Собрания назывались «Суйёкай», «Общество среды». Обсуждать дела и поддерживать друг друга было практической необходимостью.",
+              "Война постепенно сужала возможности этой сети. В очерке Суня и Го говорится, что контроль над зерном подорвал дела торговых посредников, а зарубежные переводы денежных домов прекратились. В описании военных ограничений названы суммы, начиная с которых требовалось предварительное разрешение японской администрации: промышленная ссуда от 100 тысяч юаней, торговая — от 50 тысяч, овердрафт — от 30 тысяч. К 1944 году, по этому очерку, китайских денежных домов в Даляне осталось восемь.",
+              "Раньше доступ к деньгам мог начинаться с накладной на зерно, репутации пайщика или звонка знакомому кредитору. Теперь поверх этих отношений всё плотнее ложились разрешения, отчёты и ограничения торговли. Фирма, прежде способная выручить банк, зависела уже не только от собственного товара и доверия вкладчиков: сами операции, на которых держался её кредит, могли оказаться закрыты."
+            ],
+            "refs": [
+              1,
+              2
             ]
           }
         ],
         "limitations": [
-          "Использованы с. 49–53 библиотечного PDF, не вся статья. Дата издания второго выпуска сборника не установлена. Тяньцзиньская улица названа так самим мемуаристом; конкретное здание не определено.",
-          "Это поздний рассказ банковского служащего с выраженными антиколониальными и классовыми оценками, а не общая картина опыта всех китайских жителей. Точные ставки здесь не приведены: условия их расчёта не проверены. Денежное обращение японского периода нельзя переносить на русский Дальний или российские цены 1913 года."
+          "Это ретроспективные рассказы участников финансовой жизни, записанные и обработанные Хуан Бэньжэнем. Первый текст прочитан целиком, с. 49–62 библиотечного PDF; второй — печатные с. 91–106 (PDF с. 93–108). Сунь участвует в обоих рассказах: они не считаются двумя полностью независимыми свидетельствами.",
+          "Суммы и условия приведены в пределах этих рассказов. Индивидуальные кредитные договоры, счета названных фирм и оригиналы японских нормативных актов не проверены. Ставка в две цзяо дана без пересчёта в годовую; вид денежных знаков в этом примере не определён. Капитал денежных домов в разных валютах не суммируется.",
+          "Точный год спора о золотой и серебряной системах в первом рассказе пропущен самим автором. Не приняты его ошибочные обобщения о российских деньгах и преемственности банков. Название, руководитель и кредитные связи «Ифахэ» не означают, что каждая фирма с похожим названием была тем же юридическим лицом."
         ],
         "sources": [
           {
             "id": 1,
             "title": "Финансы колониального Даляня под японским управлением. «Материалы по истории Даляня», выпуск 2",
-            "author": "Сунь Яотин (孙耀庭)",
+            "author": "Сунь Яотин (孙耀庭); записал и обработал Хуан Бэньжэнь (黄本仁)",
             "date": "Дата издания выпуска не установлена",
             "url": "https://www.dl-library.net.cn/wenxian/wszl/2.pdf",
-            "locator": "Страницы 49–53 библиотечного PDF: заголовок — 49; сведения об авторе и начале службы — 50; банк и валюты — 52; кредит — 52–53. На страницах 49, 51 и 53 видны номера; 50 и 52 определяются по последовательности.",
-            "note": "Оригинальное название: 孙耀庭：日寇统治下的大连殖民地金融业 // 大连文史资料 第二辑. Поздние воспоминания банковского служащего, цифровая копия Даляньской городской библиотеки. Это набранный библиотечный PDF; дата выпуска сборника не подтверждена. Проверенный фрагмент не охватывает всю статью."
+            "locator": "Вся статья: PDF с. 49–62. С. 52–53: обеспечение и ставка; с. 55: «Синцзи», Синь Бофэнь, «Ифахэ», Ван Синьчжай; с. 58: земляческие связи; с. 61–62: денежная система, отчётность, «Суйёкай» и призовые вклады.",
+            "note": "Библиотечный текстовый PDF, не факсимиле первого издания. Номера и ключевые места проверены визуально. В конце статьи назван обработчик записи. Политические и классовые оценки мемуариста не выдаются за общую позицию всех жителей."
+          },
+          {
+            "id": 2,
+            "title": "Краткий очерк денежных домов Даляня. «Материалы по истории Даляня», выпуск 6",
+            "author": "Го Сипу (郭习朴), Сунь Яотин (孙耀庭), устные рассказы; обработал Хуан Бэньжэнь (黄本仁)",
+            "date": "Декабрь 1988",
+            "url": "https://www.dl-library.net.cn/wenxian/wszl/6.pdf",
+            "locator": "Вся статья: печатные с. 91–106, PDF с. 93–108. С. 93: таблица «Ифахэ»; с. 94–95: вкладчики, землячества, банковский залог и телефонный кредит; с. 98: железнодорожные накладные; с. 101–104: военные ограничения и восемь домов к 1944 году.",
+            "note": "Новый полный PDF скачан из Даляньской городской библиотеки; титул и выходные данные проверены. Таблица ссылается на справочник Даляньской торгово-промышленной палаты 1935 года, оригинал справочника не осмотрен. Технические подробности передаются как поздний рассказ, а не как самостоятельно проверенный комплект договоров."
           }
         ],
         "relatedNotes": [
@@ -3407,8 +3273,8 @@
         "illustration": {
           "image": "/images/essays/dairen-bank.webp",
           "alt": "Каменное здание банка в Дайрене с большим центральным куполом и двумя меньшими боковыми; на улице стоят несколько человек.",
-          "caption": "Отделение Йокогамского банка Сёкин в Дайрене. Снимок из альбома «Адзиа тайкан», точная дата не указана. Это другой банк, не Лункоу; место работы Сунь Яотина на снимке не показано.",
-          "credit": "Фотограф не указан. Альбом «亜細亜大観» (Asia Taikan), т. 1, лист 004; Общество Чёрного дракона (Kokuryūkai). Через Wikimedia Commons. Public domain (PD-Japan-oldphoto, PD-1996).",
+          "caption": "Йокогамский банк Сёкин в Дайрене, один из участников спора о денежной системе, описанного Сунь Яотином. Альбом «Адзиа тайкан», т. 1, лист 004; точная дата съёмки не установлена. Это не банк Лункоу, где работал Сунь.",
+          "credit": "Фотограф не указан. Альбом «亜細亜大観» (Asia Taikan), т. 1, лист 004; составитель — Общество Чёрного дракона (Kokuryūkai), не установленный фотограф. Wikimedia Commons: Public domain, PD-Japan-oldphoto и PD-1996.",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E4%BA%9C%E7%B4%B0%E4%BA%9C%E5%A4%A7%E8%A6%B3_01_004_%22%E6%AD%A3%E9%87%91%E9%8A%80%E8%A1%8C%E6%94%AF%E5%BA%97_%EF%BC%88%E5%A4%A7%E9%80%A3%EF%BC%89%22.jpg"
         }
       }
@@ -7880,7 +7746,8 @@
           "броненосца «Танго»",
           "линкор «Чесма»",
           "линкора «Чесма»",
-          "линкоре «Чесма»"
+          "линкоре «Чесма»",
+          "Полтаву"
         ],
         "summary": "Броненосец порт-артурской эскадры, потопленный осадной артиллерией в гавани. Поднятый японцами, служил как «Танго»; выкупленный Россией в 1916 году, стал «Чесмой» и дошёл до Северного Ледовитого океана.",
         "intro": [
@@ -10003,7 +9870,8 @@
           "крейсером «Диана»",
           "крейсере «Диана»",
           "бронепалубная «Диана»",
-          "бронепалубной «Дианы»"
+          "бронепалубной «Дианы»",
+          "Диане"
         ],
         "summary": "Бронепалубный крейсер порт-артурской эскадры, после боя в Жёлтом море ушедший во французский Сайгон. Вернулся на Балтику, участвовал в Первой мировой войне и был разобран в 1920-е годы; однотипная «Аврора» — отдельный корабль.",
         "intro": [
@@ -11503,7 +11371,16 @@
               "title": "Navypedia: POLTAVA battleships (1897–1899)",
               "locator": "Technical data, строка Length, m; oa = overall, wl = waterline, pp = between perpendiculars"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/petropavlovsk.svg",
+            "hullStart": 57.375,
+            "hullEnd": 1147,
+            "note": "Две трубы между мачтами и низкие тяжёлые башни в носу и корме.",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Petropavlovsk_-_NH_84769-A.jpg"
+            ]
+          }
         },
         {
           "shipSlug": "poltava",
@@ -11523,7 +11400,16 @@
               "title": "Navypedia: POLTAVA battleships (1897–1899)",
               "locator": "Technical data, строка Length, m; oa = overall, wl = waterline, pp = between perpendiculars"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/poltava.svg",
+            "hullStart": 57.375,
+            "hullEnd": 1150,
+            "note": "Две трубы, высокая боевая площадка на передней мачте и небольшие башни по бортам.",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Poltava-Chesma.jpg"
+            ]
+          }
         },
         {
           "shipSlug": "sevastopol",
@@ -11543,7 +11429,16 @@
               "title": "Navypedia: POLTAVA battleships (1897–1899)",
               "locator": "Technical data, строка Length, m; oa = overall, wl = waterline, pp = between perpendiculars"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/sevastopol.svg",
+            "hullStart": 53.375,
+            "hullEnd": 1146,
+            "note": "Две трубы в середине, низкий борт и тяжёлые башни в носу и корме.",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Sevastopol1900Kronshtadt.jpg"
+            ]
+          }
         },
         {
           "shipSlug": "retvizan",
@@ -11568,7 +11463,16 @@
               "title": "С. Балакин. Броненосец «Ретвизан»",
               "locator": "Раздел о постройке и испытаниях; фактическое нормальное водоизмещение 12 409,9 т и проектное 12 745,6 т"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/retvizan.svg",
+            "hullStart": 51.375,
+            "hullEnd": 1151,
+            "note": "Три высокие трубы тесной группой и две массивные боевые мачты.",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Retvizan1902DelawareRiver.jpg"
+            ]
+          }
         },
         {
           "shipSlug": "bayan",
@@ -11583,7 +11487,16 @@
               "title": "Navypedia: BAYAN armoured cruisers (1903–1911)",
               "locator": "Technical data, Length, m: Bayan (i), Bayan (ii) 135.0 pp 137.0 oa; Displacement normal, t: Bayan (i) 7725"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/bayan.svg",
+            "hullStart": 45.375,
+            "hullEnd": 1154,
+            "note": "Четыре трубы и две одиночные башни на длинном крейсерском корпусе.",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Bayan1903Kronstadt.jpg"
+            ]
+          }
         },
         {
           "shipSlug": "mikasa",
@@ -11598,7 +11511,16 @@
               "title": "Navypedia: MIKASA battleship (1902)",
               "locator": "Technical data, строка Length, m; oa = overall, wl = waterline, pp = between perpendiculars"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/mikasa.svg",
+            "hullStart": 55.375,
+            "hullEnd": 1151,
+            "note": "Две широкие трубы с тёмными кольцами и высокие боевые мачты.",
+            "sourceUrls": [
+              "https://www.govinfo.gov/app/details/SERIALSET-04915_00_00-002-0328-0000"
+            ]
+          }
         },
         {
           "shipSlug": "novik",
@@ -11618,7 +11540,16 @@
               "title": "А. А. Аллилуев, М. А. Богданов. Крейсер «Новик»",
               "locator": "Блок «Краткая историческая справка и тактико-технические элементы»"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/novik.svg",
+            "hullStart": 50.375,
+            "hullEnd": 1152,
+            "note": "Одна высокая мачта, три трубы и короткая приподнятая носовая палуба.",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Novik1904Port-Artur.jpg"
+            ]
+          }
         },
         {
           "shipSlug": "varyag",
@@ -11638,7 +11569,17 @@
               "title": "Navypedia: VARYAG 1st class cruiser (1901)",
               "locator": "Technical data, Length, m: 129.8, без определения; Naval service: Chemulpo"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/varyag.svg",
+            "hullStart": 47.375,
+            "hullEnd": 1153,
+            "note": "Четыре одинаково стройные трубы в ряд и две высокие тонкие мачты.",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Varyag1901.jpg",
+              "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm#P_341"
+            ]
+          }
         },
         {
           "shipSlug": "tsesarevich",
@@ -11653,7 +11594,16 @@
               "title": "Navypedia: TSESAREVICH battleship (1903)",
               "locator": "Technical data, строка Length, m; oa = overall, wl = waterline, pp = between perpendiculars"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/tsesarevich.svg",
+            "hullStart": 60.375,
+            "hullEnd": 1150,
+            "note": "Массивные мачты с двумя ярусами боевых площадок и две широкие трубы.",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Tsesarevich1903Toulon.jpg"
+            ]
+          }
         },
         {
           "shipSlug": "peresvet",
@@ -11668,7 +11618,17 @@
               "title": "Р. М. Мельников. Броненосцы типа «Пересвет»",
               "locator": "Глава 1, таблица 1 «Тактико-технические элементы эскадренных броненосцев типа Пересвет»; строки «Длина, м» и «Водоизмещение проектное (с нормальным запасом угля), т»"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/peresvet.svg",
+            "hullStart": 54.375,
+            "hullEnd": 1150,
+            "note": "Приподнятая носовая палуба, три трубы и боевые площадки на обеих мачтах.",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Peresvet1901.jpg",
+              "https://keu-ocr.narod.ru/Peresvet/chap01.html"
+            ]
+          }
         },
         {
           "shipSlug": "pobeda",
@@ -11683,7 +11643,18 @@
               "title": "Р. М. Мельников. Броненосцы типа «Пересвет»",
               "locator": "Глава 1, таблица 1 «Тактико-технические элементы эскадренных броненосцев типа Пересвет»; строки «Длина, м» и «Водоизмещение проектное (с нормальным запасом угля), т»"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/pobeda.svg",
+            "hullStart": 54.375,
+            "hullEnd": 1151,
+            "note": "Три трубы и высокий нос, но задняя мачта легче, чем у «Пересвета».",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Pobeda_1900-1904.jpg",
+              "https://commons.wikimedia.org/wiki/File:Pobeda1904Port-Artur.jpg",
+              "https://keu-ocr.narod.ru/Peresvet/chap01.html"
+            ]
+          }
         },
         {
           "shipSlug": "askold",
@@ -11703,7 +11674,16 @@
               "title": "В. Я. Крестьянинов, С. В. Молодцов. Крейсер «Аскольд». Морская коллекция, 1996",
               "locator": "Таблица «Тактико-технические элементы крейсера I ранга Аскольд» после раздела «Корабельные механизмы и системы»: наибольшая длина 131,2 м, ГВЛ 130 м"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/askold.svg",
+            "hullStart": 42.375,
+            "hullEnd": 1154,
+            "note": "Пять высоких тонких труб — самый легко узнаваемый силуэт крейсера.",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Askold1901Kiel.jpg"
+            ]
+          }
         },
         {
           "shipSlug": "pallada",
@@ -11718,7 +11698,16 @@
               "title": "Navypedia: PALLADA 1st class cruisers (1901–1903)",
               "locator": "Technical data, строка Length, m; oa = overall, wl = waterline, pp = between perpendiculars"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/pallada.svg",
+            "hullStart": 48.375,
+            "hullEnd": 1153,
+            "note": "Три стройные трубы между двумя мачтами на гладком длинном корпусе.",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Pallada1897-1905.jpg"
+            ]
+          }
         },
         {
           "shipSlug": "diana",
@@ -11733,7 +11722,16 @@
               "title": "Navypedia: PALLADA 1st class cruisers (1901–1903)",
               "locator": "Technical data, строка Length, m; oa = overall, wl = waterline, pp = between perpendiculars"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/diana.svg",
+            "hullStart": 49.375,
+            "hullEnd": 1153,
+            "note": "Три трубы, две тонкие мачты и высокий носовой мостик.",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Diana1897-1922MalyyKronshatadskiyReyd.jpg"
+            ]
+          }
         },
         {
           "shipSlug": "boyarin",
@@ -11748,7 +11746,16 @@
               "title": "Navypedia: BOYARIN 2nd class cruiser (1902)",
               "locator": "Technical data, строка Length, m; oa = overall, wl = waterline, pp = between perpendiculars"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/boyarin.svg",
+            "hullStart": 51.375,
+            "hullEnd": 1152,
+            "note": "Три короткие трубы, две мачты и приподнятая носовая палуба.",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Boyarin1902.jpg"
+            ]
+          }
         },
         {
           "shipSlug": "hatsuse",
@@ -11763,7 +11770,16 @@
               "title": "Navypedia: SHIKISHIMA battleships (1900)",
               "locator": "Technical data: индивидуальные строки Hatsuse; Length 121.9 pp 126.5 wl 134.0 oa"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/hatsuse.svg",
+            "hullStart": 56.375,
+            "hullEnd": 1150,
+            "note": "Три трубы между двумя боевыми мачтами и тяжёлые башни в носу и корме.",
+            "sourceUrls": [
+              "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm#P_179"
+            ]
+          }
         },
         {
           "shipSlug": "yashima",
@@ -11783,10 +11799,214 @@
               "title": "Fred T. Jane. The Imperial Japanese Navy. 1904",
               "locator": "С. 172: particulars Fuji/Yashima; раннее over all 400 ft отмечено как расхождение, не принято"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/yashima.svg",
+            "hullStart": 58.375,
+            "hullEnd": 1150,
+            "note": "Компактный двухтрубный броненосец с двумя мачтами и низкими тяжёлыми башнями.",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Yashima_NH_58968.jpg"
+            ]
+          }
         }
       ]
     },
+    "data/reading_notes.json": [
+      {
+        "slug": "internment",
+        "label": "Интернирование кораблей",
+        "aliases": [
+          "интернировалась",
+          "Интернированные"
+        ],
+        "description": "Нейтральный порт мог дать кораблю убежище, но не позволял бесконечно пользоваться им как военной базой. Интернированный корабль задерживали, а его экипаж лишался возможности вернуться к боевым действиям. Для эскадры это означало потерю корабля до конца войны, даже если он оставался цел.",
+        "sources": [
+          {
+            "title": "А. В. Кудашкин. Интернирование — Большая российская энциклопедия",
+            "url": "https://old.bigenc.ru/law/text/2014763"
+          }
+        ],
+        "relatedNotes": [
+          "poselyagin-poruchiki-po-admiralteistvu"
+        ],
+        "relatedEssays": []
+      },
+      {
+        "slug": "roadstead",
+        "label": "Рейд — место стоянки кораблей",
+        "aliases": [
+          "рейд",
+          "внешнем рейде"
+        ],
+        "description": "Рейдом моряки называют водное пространство, где корабли стоят на якоре. Внутренний рейд находится в ограждённой части порта, внешний — на подходах к нему. Поэтому стоять на внешнем рейде и укрываться внутри гавани — разные условия, хотя речь идёт об одной базе.",
+        "sources": [
+          {
+            "title": "В. А. Дыгало. Российский флот: некоторые морские термины",
+            "url": "https://flot.com/publications/books/shelf/russianfleet/40.htm"
+          }
+        ],
+        "relatedNotes": [
+          "pervaya-tihookeanskaya-eskadra",
+          "voina-na-more-osada-mukden-tsusima"
+        ],
+        "relatedEssays": []
+      },
+      {
+        "slug": "pennant-count",
+        "label": "Вымпелы при подсчёте кораблей",
+        "aliases": [
+          "66 вымпелов"
+        ],
+        "description": "Вымпел — длинный узкий корабельный флаг. Но в выражении «эскадра насчитывала 66 вымпелов» считают сами корабли: один вымпел означает один корабль. О составе и силе эскадры такое число само по себе не говорит: броненосец и небольшой миноносец входят в счёт каждый за единицу.",
+        "sources": [
+          {
+            "title": "Малый академический словарь: вымпел",
+            "url": "https://gufo.me/dict/mas/вымпел"
+          }
+        ],
+        "relatedNotes": [
+          "pervaya-tihookeanskaya-eskadra",
+          "port-artur-i-dalnii-dva-goroda"
+        ],
+        "relatedEssays": []
+      },
+      {
+        "slug": "shrapnel",
+        "label": "Шрапнель",
+        "aliases": [
+          "шрапнелью"
+        ],
+        "description": "Шрапнельный снаряд был начинён пулями. Дистанционная трубка позволяла раскрыть его в воздухе, после чего пули поражали людей на открытом месте. Поэтому у мемуариста «попасть под шрапнель» означает оказаться под артиллерийским огнём, особенно опасным для тех, кто не успел укрыться.",
+        "sources": [
+          {
+            "title": "Шрапнель — Большая советская энциклопедия, первое издание, т. LXII, стлб. 654",
+            "url": "https://ru.wikisource.org/wiki/БСЭ1/Шрапнель"
+          }
+        ],
+        "relatedNotes": [
+          "botkin-svet-i-teni-russko-yaponskoi-voiny"
+        ],
+        "relatedEssays": []
+      },
+      {
+        "slug": "breastwork",
+        "label": "Бруствер",
+        "aliases": [
+          "бруствер",
+          "бруствере"
+        ],
+        "description": "Земляная насыпь перед окопом или траншеей, которая прикрывает стрелка от огня и наблюдения противника. Поверх неё можно вести огонь, используя край как упор для оружия. Человек, поднявшийся на бруствер во весь рост, выходит из-за этого прикрытия.",
+        "sources": [
+          {
+            "title": "Бруствер — Большая российская энциклопедия",
+            "url": "https://old.bigenc.ru/world_history/text/1885500"
+          }
+        ],
+        "relatedNotes": [
+          "posle-tri-pali-razvlecheniya-na-pozitsiyah",
+          "vals-na-sopkah-manchzhurii-shatrov"
+        ],
+        "relatedEssays": []
+      },
+      {
+        "slug": "casemate",
+        "label": "Каземат в форту",
+        "aliases": [
+          "каземате"
+        ],
+        "description": "Защищённое помещение внутри укрепления. Казематы устраивали для гарнизона, запасов, орудий и стрелков: их стены и перекрытия должны были выдерживать неприятельский огонь. В рассказе об обороне форта слово означает такое укрытие, а не тюремную камеру — другое значение этого слова.",
+        "sources": [
+          {
+            "title": "Казематы — Энциклопедический словарь Брокгауза и Ефрона, т. XIIIa, с. 924–925",
+            "url": "https://ru.wikisource.org/wiki/ЭСБЕ/Казематы"
+          }
+        ],
+        "relatedNotes": [
+          "kondratenko-dusha-oborony"
+        ],
+        "relatedEssays": []
+      },
+      {
+        "slug": "fanza",
+        "label": "Фанза",
+        "aliases": [
+          "фанзы",
+          "фанз"
+        ],
+        "description": "Так в русских описаниях Китая называли деревенский дом. Стены часто делали с применением глины, крышу крыли соломой или тростником. Внутри могла быть широкая лежанка, которую согревал проходивший под ней дымовой канал от печи. Упоминание фанз говорит о жилищах, а не о военных постройках.",
+        "sources": [
+          {
+            "title": "Фанза — Большая советская энциклопедия, первое издание, т. LVI, стлб. 609",
+            "url": "https://ru.wikisource.org/wiki/БСЭ1/Фанза"
+          }
+        ],
+        "relatedNotes": [
+          "botkin-svet-i-teni-russko-yaponskoi-voiny",
+          "kotvich-borodovskii-lyaodun-i-ego-porty"
+        ],
+        "relatedEssays": []
+      },
+      {
+        "slug": "concession",
+        "label": "Концессия",
+        "aliases": [
+          "концессия",
+          "концессию"
+        ],
+        "description": "Государство разрешало предпринимателю на оговорённых условиях пользоваться природными богатствами или строить и эксплуатировать хозяйственный объект. Такое право оформляли договором на определённый срок. В этих текстах речь идёт о лесных разработках и железной дороге; получить концессию ещё не означало получить саму территорию в собственность.",
+        "sources": [
+          {
+            "title": "Е. Э. Чуковская. Концессия — Большая российская энциклопедия",
+            "url": "https://old.bigenc.ru/law/text/2094412"
+          }
+        ],
+        "relatedNotes": [
+          "aleksandr-bezobrazov-kavalergard",
+          "vitte-chast-1-ministr-kotoryi-stroil"
+        ],
+        "relatedEssays": []
+      },
+      {
+        "slug": "war-indemnity",
+        "label": "Контрибуция",
+        "aliases": [
+          "контрибуцию",
+          "Контрибуция"
+        ],
+        "description": "Денежная выплата, которую победитель требовал с побеждённого государства после войны. В мирных переговорах спорили не только о границах и портах, но и о том, будет ли такая выплата и какова её сумма. В другом значении контрибуцией называли принудительные поборы с населения занятой территории.",
+        "sources": [
+          {
+            "title": "Контрибуция — Большая российская энциклопедия",
+            "url": "https://old.bigenc.ru/military_science/text/2093544"
+          }
+        ],
+        "relatedNotes": [
+          "bokserskoe-vosstanie-ihetuani",
+          "li-hunchzhan-soyuznik-kotoryi-sdaval-kreposti",
+          "mir-i-itogi-voiny"
+        ],
+        "relatedEssays": []
+      },
+      {
+        "slug": "halftone-printing",
+        "label": "Автотипия",
+        "aliases": [
+          "автотипия"
+        ],
+        "description": "Способ подготовить фотографию к типографской печати: плавные переходы света и тени превращают в множество мелких точек. С такого изображения делают печатную форму. На бумаге точки вместе создают впечатление полутонов — благодаря этому фотографию можно воспроизвести в обычном печатном тираже.",
+        "sources": [
+          {
+            "title": "Автотипия — Большая советская энциклопедия",
+            "url": "https://gufo.me/dict/bse/Автотипия"
+          }
+        ],
+        "relatedNotes": [
+          "kto-fotografiroval-russko-yaponskuyu-voinu"
+        ],
+        "relatedEssays": []
+      }
+    ],
     "data/books.json": [
       {
         "slug": "martin-russko-yaponskaya-voyna",
@@ -25127,12 +25347,13 @@
           },
           {
             "id": "supply",
-            "title": "两艘补给船，漫长的后续",
+            "title": "从运输船到舰员的饭食",
             "paragraphs": [
               "战争开始时，日本为食品补给准备了“松山丸”和“福冈丸”两艘辅助船，计划约每六天向前方运送一次食品。但军舰经常分散行动，两艘补给船不够用。自1904年8月起，又让“琴平丸”和其他船只承担这项工作。",
               "增派的船只帮助运送食品，却缺乏保鲜设备，无法装载足够的食品。即便从日本佐世保海军基地驶往前进基地只需几天，面包、蔬菜、肉和鱼的保存也很困难。制冷技术当时已经存在，但在军舰上安装这类设备才刚刚起步。",
-              "食品补给船不足，被视为日俄战争中补给工作的一项缺陷。不过，1904年的辅助运输船，与后来舰队的专用食品补给舰还有区别。日本舰队的第一艘此类舰艇“间宫”号于1924年服役，第二艘“伊良湖”号则到1941年12月5日才服役。",
-              "石原认为，日本舰队1905年在对马海战中获胜，补给方面暴露的不足未能在此后的舰队政策中得到应有的重视。这一判断对应着具体的时间：从那场暴露补给船不足的战争，到“间宫”号服役，约过了二十年；第一艘与第二艘专用补给舰服役之间，又相隔约十七年。"
+              "食品补给船不足，被视为日俄战争中补给工作的一项缺陷。不过，1904年的辅助运输船，与后来舰队的专用食品补给舰还有区别。日本舰队的第一艘此类舰艇“间宫”号于1924年服役，第二艘“伊良湖”号则于1941年12月5日服役。石原认为，日本舰队1905年在对马海战中获胜，补给方面暴露的不足未能在此后的舰队政策中得到应有的重视。",
+              "战斗时，舰员的吃饭方式有所不同。1905年5月27日，对马海战第一天，“三笠”号上、中、下层甲板都备好了面包干和葛粉饮料，舰员可按需要随时取食饮用。下午五点，晚餐发放饭团。",
+              "晚上八点，战斗暂歇，才恢复平时的供餐安排。重伤员另有专门的食物：鸡蛋、炼乳和粥。"
             ],
             "refs": [
               1
@@ -25150,7 +25371,7 @@
             "author": "石原明徳，日本防卫研究所",
             "date": "2024-05-28",
             "url": "https://www.nids.mod.go.jp/publication/commentary/pdf/commentary324.pdf",
-            "locator": "NIDS Commentary，第324号。第4页：制冷设备；第6页：从佐世保运送食品时的保鲜困难；第7页：补给船、“间宫”号与“伊良湖”号、旗舰身份、停泊与菜单；第8页：患病情况。第10页注13。",
+            "locator": "NIDS Commentary，第324号。第4页：制冷设备；第6页：从佐世保运送食品时的保鲜困难；第7页：补给船、“间宫”号与“伊良湖”号、旗舰身份、停泊与菜单；第8页：患病情况与1905年5月27日对马海战中的供餐，包括重伤员的食物。第10页注13。",
             "note": "原题：日露戦争における艦のロジスティクス―勝ち戦の夕食は握飯。研究已通读，关键页面已对照图像及官方英文版核对。未另行查阅原始医疗文献。"
           }
         ],
@@ -25178,61 +25399,101 @@
       {
         "slug": "bankovskiy-sluzhashchiy-dayrena",
         "title": "日治大连：谁能借到钱",
-        "dek": "银币、日本纸币，以及民间借贷机构。银行职员孙耀庭回忆的大连，货币种类不少，钱却不是人人都借得到。",
-        "date": "2026-11-15",
+        "dek": "粮商可以凭铁路运单押得现款，信用好的商户有时打个电话就能借款。中国人经营的钱庄，如何把贸易、储蓄与银行信贷连在一起？",
+        "date": "2026-11-16",
         "periods": [
           "japanese"
         ],
-        "perspective": "据中国银行从业者孙耀庭的回忆",
+        "perspective": "据银行从业者孙耀庭的回忆，以及郭习朴、孙耀庭关于大连钱庄业的口述",
         "sections": [
           {
-            "id": "clerk",
-            "title": "日治大连的银行职员",
+            "id": "grain-and-credit",
+            "title": "也能接济银行的借款人",
             "paragraphs": [
-              "大连在日本统治时期，日语读作Dairen。在这座贸易城市，不同货币同时流通，一般中国市民却很难借到银行贷款。孙耀庭回忆了市民用什么钱，以及谁能借到钱。",
-              "他自幼生活在大连，1930年进入银行业。从练习生、雇员做起，逐渐升至管理职位，对银行内部的事很熟悉。",
-              "他写下了自己任职的银行：日中合办的龙口银行。还留下了地址——天津街，这是他撰写回忆时的街名。后来，银行经历了合并和更名。孙耀庭将这些往事写进了《大连文史资料》第二辑。"
+              "20世纪20—30年代，在日本统治下的大连，大粮商既向银行借钱，有时也能反过来接济银行。银行从业者孙耀庭提到两家这样的商号：忻伯芬任经理的“兴记号”，以及王信斋任经理的“益发合”。它们是银行和钱庄的信贷大户，必要时还能支援自己的债权人，帮助它们周转资金。",
+              "孙耀庭自1930年起在银行业工作，曾任职于中日合办的龙口银行。这些信贷关系背后，是实实在在的粮食贸易与榨油生意。大豆、高粱运往港口，货物还在路上，资金却已要先行周转。在另一篇口述中，孙耀庭和郭习朴介绍了一种方便粮商的担保方式：买下粮食，将铁路运单送交银行，便可押得现款。据他们说，银行甚至比起不动产，更愿接受这种粮运凭据。",
+              "这样的借款依托一批具体货物和一项交易。其他借款人，也得拿出自己的还款保证。孙耀庭回忆，普通市民若没有足够担保，很难借到钱。不过，在大外国银行与私人放债者之间，还存在另一条路：钱庄。"
             ],
             "refs": [
-              1
+              1,
+              2
             ]
           },
           {
-            "id": "currency",
-            "title": "银币与纸上的“金”",
+            "id": "money-house",
+            "title": "向银行抵押房产，对客户则看信用",
             "paragraphs": [
-              "他的清单中，有银币、小额银币、铜钱与纸币。他把日本纸币称为“金票”。名称里有“金”，说的却是纸币，并不是金币。",
-              "据孙耀庭所述，日本纸币占着主导地位。中国银行机构也发行纸币，但当地发行须获日本当局批准，而且只能充作临时支付工具。"
+              "钱庄吸收存款、发放贷款，也兑换货币、向外地汇款，并非只收抵押物的当铺。20世纪20年代至30年代初，它们主要服务于中国人经营的工商业。孙耀庭和郭习朴说，小企业到外国银行借款，手续繁杂，也不容易借到，因而宁愿多付利息，转向钱庄。",
+              "钱庄自身也有债权人。它们通常将不动产抵押给银行，再办理往来透支手续，也就是获准在往来账户余额不足时继续支用资金。仅凭自己的钱不够：客商的存款期限短，吸收的居民存款又少。当收进与付出的金额对不上时，就需要银行支持。",
+              "对信用好的熟客，钱庄有时通过电话联系就能放款。它们没有对所有人统一的利率与条件，要看借款人，也要看市场资金松紧。孙耀庭举过一种短期借款的价格：每借一千元，每天付两角利息，即0.2元。他没有交代具体放款人和借款期限，不能把这个例子当作全市平均利率。"
             ],
             "refs": [
-              1
+              1,
+              2
             ]
           },
           {
-            "id": "credit",
-            "title": "城里有钱，市民能借到吗",
+            "id": "trust-and-deposits",
+            "title": "钱从哪里来",
             "paragraphs": [
-              "在孙耀庭笔下，大连既是生产城市，也是贸易城市，总有地方需要资金。人们向银行借款。但他回忆，一般中国市民很难借到银行贷款，没有足够的担保，也就是还款保证，就很难指望拿到钱。",
-              "钱庄也放贷。这些传统民间借贷机构同样要求担保，据孙耀庭说，利率还比银行高。他另行写到银行和钱庄之外的私人高利贷者。据他判断，一笔利息高昂的借款，可能在短时间内就让人倾家荡产。"
+              "一张列为1931年的钱庄表中，“益发合”名下写着经理王信斋、资金30万元（钞票），开设于1923年。相邻条目里，也有资金仅五千元的店号。不过，表中金额分属不同货币：银、金票、钞票、大洋、小洋，不能把这些“元”全当作同一种钱相加。",
+              "老板和股东的信誉吸引存户，存款又让钱庄能够放贷。这些关系常以同乡为纽带：山东人经营的钱庄，重要客户包括山东籍工商业者；益发合则属于实力雄厚的河北乐亭一派。不过孙耀庭也提醒，连结各方的并不只是籍贯，还有共同利益，群体构成会随之变化。",
+              "争取市民储蓄，还有更吸引眼球的办法。孙耀庭讲过“万国储蓄会”：每月存三元，年底揭奖，头奖三万元。有一年，《泰东日报》的一名印刷工人中了头奖。他没留下这位幸运者的姓名和中奖年份，却记得宣传带来的结果：中国人办的银行陆续开展类似有奖储蓄。许多人交来的小额存款，汇成了银行周转的资金。"
             ],
             "refs": [
-              1
+              1,
+              2
+            ]
+          },
+          {
+            "id": "trade-and-risk",
+            "title": "运单也可能通向交易所",
+            "paragraphs": [
+              "粮运凭据把银行柜台与铁路连在一起，却不保证交易就此平稳。孙耀庭和郭习朴回忆，实力较强的代理店钱庄，凭运单拿到现款后，还可能转向钱钞交易所。那里既有货币现货交易，也有约定日后交付的期货买卖。在他们的叙述中，有人迅速致富，也有人破产。借款有担保，不等于借来的钱只会用来购买下一批粮食。",
+              "商人与金融业者，也曾共同维护习惯的结算方式。日本当局试图取消银本位、改行金本位时，钱庄、粮食代理店和油坊的代表联合请愿。孙耀庭回忆，他们向关东州当局提出诉求，又派人赴东京交涉，但未注明年份。连日本银行也意见不一：发行银本位钞票的横滨正金银行，同样反对取消银本位。"
+            ],
+            "refs": [
+              1,
+              2
+            ]
+          },
+          {
+            "id": "war-controls",
+            "title": "一个电话不再够用",
+            "paragraphs": [
+              "据孙耀庭叙述，争议最终以“金银并用”暂告解决，但中国金融业者此后必须按月报送业务情况。他们也在饭桌上加强联系：银行高层邀请商会代表，每周在大和旅馆聚餐，称为“水曜会”，即星期三聚会。互通业务、相互支援，是实际经营的需要。",
+              "战争逐渐压缩了这套关系网的活动空间。孙耀庭和郭习朴的口述说，粮食管制打击了代理商业务，钱庄的国外汇兑也停顿了。讲到战时限制时，他们列出需要事先获得日本行政当局批准的金额：工业贷款10万元及以上、商业贷款5万元及以上、透支3万元及以上。据这篇口述，到1944年，大连华商钱庄只剩八家。",
+              "此前，一张粮运单、股东的信誉，或向熟悉的放款人打个电话，都可能成为取得资金的起点。后来，这些关系之上，越来越密地叠加着许可、报表与贸易限制。曾能接济银行的商号，已不能只靠货物和存户信任维持生意：支撑它取得信贷的那些交易本身，也可能被叫停。"
+            ],
+            "refs": [
+              1,
+              2
             ]
           }
         ],
         "limitations": [
-          "本文使用图书馆PDF第49—53页，并未通读整篇文章。《大连文史资料》第二辑的出版日期尚未查明。天津街是回忆作者使用的街名，具体建筑未能确定。",
-          "这是银行职员事后的回忆，带有鲜明的反殖民与阶级评价，不能代表所有中国居民的经历。本文未列出具体利率，其计算条件尚未核实。日治时期的货币流通情况，不能套用于俄国时期的达里尼或1913年俄国的物价。"
+          "两文都是金融从业者的事后回忆，由黄本仁记录整理。第一篇全文已读，见图书馆PDF第49—62页；第二篇为印本第91—106页（PDF第93—108页）。孙耀庭参与两篇口述，不能把它们视作两份完全独立的证言。",
+          "金额与条件只按口述所及列出。未核对具名商号的逐笔借款合同、账簿或日本法令原件。每日两角的例子不换算成年利率，所用货币种类亦未确定。不同货币下的钱庄资本不相加。",
+          "第一篇口述本身省略了金、银本位争议的具体年份。未沿用其中关于俄国货币和银行沿革的错误概括。益发合的名称、经理及信贷关系，不表示各地所有近似名称商号都是同一法人。"
         ],
         "sources": [
           {
             "id": 1,
-            "title": "日治时期大连的殖民地金融业，载《大连文史资料》第二辑",
-            "author": "孙耀庭",
-            "date": "本辑出版日期未详",
+            "title": "日本统治下的大连殖民地金融业，《大连文史资料》第二辑",
+            "author": "孙耀庭口述；黄本仁记录整理",
+            "date": "本辑出版日期未确定",
             "url": "https://www.dl-library.net.cn/wenxian/wszl/2.pdf",
-            "locator": "图书馆PDF第49—53页：篇名见第49页；作者与入行经历见第50页；银行与货币见第52页；借贷见第52—53页。第49、51、53页可见页码，50、52页按顺序确定。",
-            "note": "原题：孙耀庭：日寇统治下的大连殖民地金融业 // 大连文史资料 第二辑。银行职员的事后回忆，数字版本由大连市图书馆提供。这是一份文字排版的图书馆PDF，本辑出版日期尚未确认。所核对片段未涵盖全文。"
+            "locator": "全文：PDF第49—62页。第52—53页：担保及利息；第55页：兴记号、忻伯芬、益发合、王信斋；第58页：同乡关系；第61—62页：货币制度、报表、水曜会及有奖储蓄。",
+            "note": "图书馆排印文字PDF，并非初版影印本。页码和关键段落已目视核对，文末注明记录整理者。不将叙述者的政治、阶级评价视作所有居民的共同立场。"
+          },
+          {
+            "id": 2,
+            "title": "大连钱庄业述略，《大连文史资料》第六辑",
+            "author": "郭习朴、孙耀庭口述；黄本仁整理",
+            "date": "1988年12月",
+            "url": "https://www.dl-library.net.cn/wenxian/wszl/6.pdf",
+            "locator": "全文：印本第91—106页，PDF第93—108页。第93页：益发合表项；第94—95页：存户、同乡群体、银行抵押与电话借款；第98页：铁路运单；第101—104页：战时限制及1944年只余八家钱庄。",
+            "note": "新下载的完整PDF来自大连市图书馆，已核对扉页与出版信息。表格引1935年大连商工会议所《工商案内》，未另阅该书原件。业务细节作为事后口述呈现，并非一套独立核验过的合同档案。"
           }
         ],
         "relatedNotes": [
@@ -25248,9 +25509,9 @@
         ],
         "illustration": {
           "image": "/images/essays/dairen-bank.webp",
-          "alt": "大连的一座石砌银行大楼，中央为大穹顶，两侧各有一座较小的穹顶；街上站着几个人。",
-          "caption": "横滨正金银行大连支店。照片出自《亚细亚大观》图册，确切日期未注明。这是另一家银行，并非龙口银行；照片没有展示孙耀庭工作的地方。",
-          "credit": "摄影者未注明。《亜細亜大観》（Asia Taikan）第1卷，第004图版；黑龙会（Kokuryūkai）。经由Wikimedia Commons。公有领域（PD-Japan-oldphoto、PD-1996）。",
+          "alt": "大连正金银行的石造建筑，一座中央大穹顶与两座较小侧穹顶，街上站着几个人。",
+          "caption": "大连横滨正金银行支店，孙耀庭所述货币制度争议的参与者之一。《亚细亚大观》第1册，第004幅；具体拍摄日期未确定。这不是孙耀庭任职的龙口银行。",
+          "credit": "摄影者不详。《亜細亜大観》（Asia Taikan）第1册，第004幅；编纂机构为黑龙会（Kokuryūkai），未认定其为摄影者。维基共享资源：公有领域，PD-Japan-oldphoto、PD-1996。",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E4%BA%9C%E7%B4%B0%E4%BA%9C%E5%A4%A7%E8%A6%B3_01_004_%22%E6%AD%A3%E9%87%91%E9%8A%80%E8%A1%8C%E6%94%AF%E5%BA%97_%EF%BC%88%E5%A4%A7%E9%80%A3%EF%BC%89%22.jpg"
         }
       }
@@ -33212,7 +33473,16 @@
               "title": "Navypedia：波尔塔瓦级战列舰（1897—1899）",
               "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/petropavlovsk.svg",
+            "hullStart": 57.375,
+            "hullEnd": 1147,
+            "note": "两根桅杆之间有两座烟囱，首尾是低矮厚重的炮塔。",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Petropavlovsk_-_NH_84769-A.jpg"
+            ]
+          }
         },
         {
           "shipSlug": "poltava",
@@ -33232,7 +33502,16 @@
               "title": "Navypedia：波尔塔瓦级战列舰（1897—1899）",
               "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/poltava.svg",
+            "hullStart": 57.375,
+            "hullEnd": 1150,
+            "note": "两座烟囱，前桅上有高高的战斗平台，舷侧设小炮塔。",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Poltava-Chesma.jpg"
+            ]
+          }
         },
         {
           "shipSlug": "sevastopol",
@@ -33252,7 +33531,16 @@
               "title": "Navypedia：波尔塔瓦级战列舰（1897—1899）",
               "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/sevastopol.svg",
+            "hullStart": 53.375,
+            "hullEnd": 1146,
+            "note": "两座烟囱位于中部，舰舷较低，首尾设厚重炮塔。",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Sevastopol1900Kronshtadt.jpg"
+            ]
+          }
         },
         {
           "shipSlug": "retvizan",
@@ -33277,7 +33565,16 @@
               "title": "S. 巴拉金：《“列特维赞”号战列舰》",
               "locator": "建造与试航部分：实际正常排水量12409.9吨，设计值12745.6吨"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/retvizan.svg",
+            "hullStart": 51.375,
+            "hullEnd": 1151,
+            "note": "三座高烟囱紧密排列，两根粗壮的战斗桅杆分列前后。",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Retvizan1902DelawareRiver.jpg"
+            ]
+          }
         },
         {
           "shipSlug": "bayan",
@@ -33292,7 +33589,16 @@
               "title": "Navypedia：巴扬级装甲巡洋舰（1903—1911）",
               "locator": "“技术数据”中的“长度，米”：Bayan (i)、Bayan (ii)，135.0 pp、137.0 oa；“正常排水量，t”：Bayan (i)，7725"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/bayan.svg",
+            "hullStart": 45.375,
+            "hullEnd": 1154,
+            "note": "修长的巡洋舰舰体上有四座烟囱和两座单装炮塔。",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Bayan1903Kronstadt.jpg"
+            ]
+          }
         },
         {
           "shipSlug": "mikasa",
@@ -33307,7 +33613,16 @@
               "title": "Navypedia：“三笠”号战列舰（1902）",
               "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/mikasa.svg",
+            "hullStart": 55.375,
+            "hullEnd": 1151,
+            "note": "两座宽烟囱带深色环纹，战斗桅杆高耸。",
+            "sourceUrls": [
+              "https://www.govinfo.gov/app/details/SERIALSET-04915_00_00-002-0328-0000"
+            ]
+          }
         },
         {
           "shipSlug": "novik",
@@ -33327,7 +33642,16 @@
               "title": "A. A. 阿利卢耶夫、M. A. 博格丹诺夫：《“诺维克”号巡洋舰》",
               "locator": "“历史简述与战术技术要素”部分"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/novik.svg",
+            "hullStart": 50.375,
+            "hullEnd": 1152,
+            "note": "一根高桅杆、三座烟囱，以及一段较短的抬高舰艏甲板。",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Novik1904Port-Artur.jpg"
+            ]
+          }
         },
         {
           "shipSlug": "varyag",
@@ -33347,7 +33671,17 @@
               "title": "Navypedia：“瓦良格”号一等巡洋舰（1901）",
               "locator": "“技术数据”中的“长度，米”：129.8，未说明定义；“服役经历”：济物浦"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/varyag.svg",
+            "hullStart": 47.375,
+            "hullEnd": 1153,
+            "note": "四座同样细长的烟囱排成一列，另有两根高而细的桅杆。",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Varyag1901.jpg",
+              "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm#P_341"
+            ]
+          }
         },
         {
           "shipSlug": "tsesarevich",
@@ -33362,7 +33696,16 @@
               "title": "Navypedia：“皇太子”号战列舰（1903）",
               "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/tsesarevich.svg",
+            "hullStart": 60.375,
+            "hullEnd": 1150,
+            "note": "粗壮桅杆上设两层战斗平台，另有两座宽烟囱。",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Tsesarevich1903Toulon.jpg"
+            ]
+          }
         },
         {
           "shipSlug": "peresvet",
@@ -33377,7 +33720,17 @@
               "title": "R. M. 梅利尼科夫：《佩列斯韦特级战列舰》",
               "locator": "第1章，表1“佩列斯韦特级战列舰战术技术要素”；“长度，米”及“设计排水量（正常载煤量下），吨”两栏"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/peresvet.svg",
+            "hullStart": 54.375,
+            "hullEnd": 1150,
+            "note": "舰艏甲板抬高，三座烟囱，两根桅杆均设战斗平台。",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Peresvet1901.jpg",
+              "https://keu-ocr.narod.ru/Peresvet/chap01.html"
+            ]
+          }
         },
         {
           "shipSlug": "pobeda",
@@ -33392,7 +33745,18 @@
               "title": "R. M. 梅利尼科夫：《佩列斯韦特级战列舰》",
               "locator": "第1章，表1“佩列斯韦特级战列舰战术技术要素”；“长度，米”及“设计排水量（正常载煤量下），吨”两栏"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/pobeda.svg",
+            "hullStart": 54.375,
+            "hullEnd": 1151,
+            "note": "三座烟囱，舰艏高起，后桅比“佩列斯韦特”号轻巧。",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Pobeda_1900-1904.jpg",
+              "https://commons.wikimedia.org/wiki/File:Pobeda1904Port-Artur.jpg",
+              "https://keu-ocr.narod.ru/Peresvet/chap01.html"
+            ]
+          }
         },
         {
           "shipSlug": "askold",
@@ -33412,7 +33776,16 @@
               "title": "V. Ya. 克列斯季亚尼诺夫、S. V. 莫洛德佐夫：《“阿斯科尔德”号巡洋舰》，《海军收藏》，1996年",
               "locator": "“舰船动力装置与系统”之后的“‘阿斯科尔德’号一等巡洋舰战术技术要素”表：全长131.2米，载重水线长130米"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/askold.svg",
+            "hullStart": 42.375,
+            "hullEnd": 1154,
+            "note": "五座高而细的烟囱，让这艘巡洋舰的侧影格外好认。",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Askold1901Kiel.jpg"
+            ]
+          }
         },
         {
           "shipSlug": "pallada",
@@ -33427,7 +33800,16 @@
               "title": "Navypedia：帕拉达级一等巡洋舰（1901—1903）",
               "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/pallada.svg",
+            "hullStart": 48.375,
+            "hullEnd": 1153,
+            "note": "平顺修长的舰体上，两根桅杆之间有三座细长烟囱。",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Pallada1897-1905.jpg"
+            ]
+          }
         },
         {
           "shipSlug": "diana",
@@ -33442,7 +33824,16 @@
               "title": "Navypedia：帕拉达级一等巡洋舰（1901—1903）",
               "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/diana.svg",
+            "hullStart": 49.375,
+            "hullEnd": 1153,
+            "note": "三座烟囱、两根细桅杆，以及高起的舰艏舰桥。",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Diana1897-1922MalyyKronshatadskiyReyd.jpg"
+            ]
+          }
         },
         {
           "shipSlug": "boyarin",
@@ -33457,7 +33848,16 @@
               "title": "Navypedia：“博雅林”号二等巡洋舰（1902）",
               "locator": "“技术数据”中的“长度，米”一栏；oa为全长，wl为水线长，pp为垂线间长"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/boyarin.svg",
+            "hullStart": 51.375,
+            "hullEnd": 1152,
+            "note": "三座较短的烟囱、两根桅杆，舰艏甲板抬高。",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Boyarin1902.jpg"
+            ]
+          }
         },
         {
           "shipSlug": "hatsuse",
@@ -33472,7 +33872,16 @@
               "title": "Navypedia：敷岛级战列舰（1900）",
               "locator": "“技术数据”中“初濑”号的单独一栏；长度121.9 pp、126.5 wl、134.0 oa"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/hatsuse.svg",
+            "hullStart": 56.375,
+            "hullEnd": 1150,
+            "note": "两根战斗桅杆之间有三座烟囱，首尾设厚重炮塔。",
+            "sourceUrls": [
+              "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm#P_179"
+            ]
+          }
         },
         {
           "shipSlug": "yashima",
@@ -33492,10 +33901,212 @@
               "title": "Fred T. 简：《日本帝国海军》，1904年",
               "locator": "第172页，“富士”号与“八岛”号的主要数据；早期所列全长400英尺作为差异注明，未采用"
             }
-          ]
+          ],
+          "illustration": {
+            "file": "images/fleet/yashima.svg",
+            "hullStart": 58.375,
+            "hullEnd": 1150,
+            "note": "紧凑的双烟囱战列舰，两根桅杆，厚重炮塔低置。",
+            "sourceUrls": [
+              "https://commons.wikimedia.org/wiki/File:Yashima_NH_58968.jpg"
+            ]
+          }
         }
       ]
     },
+    "src/i18n/zh/reading_notes.json": [
+      {
+        "slug": "internment",
+        "label": "中立国扣留军舰",
+        "aliases": [
+          "被中立港扣留",
+          "被扣留的军舰"
+        ],
+        "description": "中立港口可以让军舰避难，却不能任其长期充当作战基地。被扣留的军舰无法离港，舰员也不能重返战斗。因此，对舰队而言，即使舰体完好，这艘船在战争结束前也已无法参战。",
+        "sources": [
+          {
+            "title": "A. V. 库达什金：中立国扣留——《俄罗斯大百科全书》",
+            "url": "https://old.bigenc.ru/law/text/2014763"
+          }
+        ],
+        "relatedNotes": [
+          "poselyagin-poruchiki-po-admiralteistvu"
+        ],
+        "relatedEssays": []
+      },
+      {
+        "slug": "roadstead",
+        "label": "锚地：军舰停泊的水域",
+        "aliases": [
+          "锚地",
+          "外港"
+        ],
+        "description": "锚地是船舶抛锚停泊的水域。内锚地位于港口受到遮护的部分，外锚地则在港外入口附近。因此，同一座基地中，停在外锚地与躲入港湾，所处条件并不相同。",
+        "sources": [
+          {
+            "title": "V. A. 德加洛：《俄国海军》——部分海事术语",
+            "url": "https://flot.com/publications/books/shelf/russianfleet/40.htm"
+          }
+        ],
+        "relatedNotes": [
+          "pervaya-tihookeanskaya-eskadra",
+          "voina-na-more-osada-mukden-tsusima"
+        ],
+        "relatedEssays": []
+      },
+      {
+        "slug": "pennant-count",
+        "label": "舰只如何计数",
+        "aliases": [
+          "66艘舰只",
+          "66艘"
+        ],
+        "description": "长旒旗原是一种狭长的舰旗。俄文说一支舰队有“66面长旒旗”时，实际数的是军舰，一面旗代表一艘船。不过，这个总数本身还不能说明舰队组成与实力：一艘战列舰和一艘小鱼雷艇，都各算一艘。",
+        "sources": [
+          {
+            "title": "《小型学术词典》：长旒旗",
+            "url": "https://gufo.me/dict/mas/вымпел"
+          }
+        ],
+        "relatedNotes": [
+          "pervaya-tihookeanskaya-eskadra",
+          "port-artur-i-dalnii-dva-goroda"
+        ],
+        "relatedEssays": []
+      },
+      {
+        "slug": "shrapnel",
+        "label": "榴霰弹",
+        "aliases": [
+          "霰弹"
+        ],
+        "description": "榴霰弹内部装有弹丸，定时引信使炮弹在空中散开，再由弹丸杀伤暴露在外的人员。因此，回忆录中说“遭霰弹射击”，指的是遭到炮火，对来不及隐蔽的人尤其危险。",
+        "sources": [
+          {
+            "title": "《苏联大百科全书》第一版，第LXII卷，第654栏：榴霰弹",
+            "url": "https://ru.wikisource.org/wiki/БСЭ1/Шрапнель"
+          }
+        ],
+        "relatedNotes": [
+          "botkin-svet-i-teni-russko-yaponskoi-voiny"
+        ],
+        "relatedEssays": []
+      },
+      {
+        "slug": "breastwork",
+        "label": "胸墙",
+        "aliases": [
+          "胸墙"
+        ],
+        "description": "筑在战壕前方的土堤，用来遮挡敌方火力与观察。射手可以越过胸墙开火，也可利用其边缘支撑武器。若站到胸墙上直起身，就离开了这道掩护。",
+        "sources": [
+          {
+            "title": "《俄罗斯大百科全书》：胸墙",
+            "url": "https://old.bigenc.ru/world_history/text/1885500"
+          }
+        ],
+        "relatedNotes": [
+          "posle-tri-pali-razvlecheniya-na-pozitsiyah",
+          "vals-na-sopkah-manchzhurii-shatrov"
+        ],
+        "relatedEssays": []
+      },
+      {
+        "slug": "casemate",
+        "label": "堡垒中的掩蔽室",
+        "aliases": [
+          "掩蔽部"
+        ],
+        "description": "筑在防御工事内部、有防护的房间，可供守军、物资、火炮或射手使用，墙壁与顶盖应能承受敌方炮火。讲述堡垒防御时，这个词指的是这样的掩蔽空间，并非它在俄语中的另一种含义——牢房。",
+        "sources": [
+          {
+            "title": "《布罗克豪斯与叶夫龙百科辞典》，第XIIIa卷，第924—925页：掩蔽室",
+            "url": "https://ru.wikisource.org/wiki/ЭСБЕ/Казематы"
+          }
+        ],
+        "relatedNotes": [
+          "kondratenko-dusha-oborony"
+        ],
+        "relatedEssays": []
+      },
+      {
+        "slug": "fanza",
+        "label": "俄文中的“fanza”：中国乡村民居",
+        "aliases": [
+          "民居"
+        ],
+        "description": "俄国人描述中国时，常用“fanza”称呼乡村房屋。墙体往往使用泥土，屋顶铺秸秆或芦苇。室内可能有宽大的火炕，炉烟沿炕下烟道通过，为炕面加热。文中提到的是住宅，并非军事建筑。",
+        "sources": [
+          {
+            "title": "《苏联大百科全书》第一版，第LVI卷，第609栏：中国乡村民居",
+            "url": "https://ru.wikisource.org/wiki/БСЭ1/Фанза"
+          }
+        ],
+        "relatedNotes": [
+          "botkin-svet-i-teni-russko-yaponskoi-voiny",
+          "kotvich-borodovskii-lyaodun-i-ego-porty"
+        ],
+        "relatedEssays": []
+      },
+      {
+        "slug": "concession",
+        "label": "特许权",
+        "aliases": [
+          "特许权",
+          "修筑权"
+        ],
+        "description": "国家按约定条件，准许经营者开采自然资源，或建设、经营某项设施。这种权利通常由有期限的合同确定。这里谈到的是伐木与铁路；取得特许权，并不等于取得那片土地的所有权。",
+        "sources": [
+          {
+            "title": "E. E. 丘科夫斯卡娅：特许权——《俄罗斯大百科全书》",
+            "url": "https://old.bigenc.ru/law/text/2094412"
+          }
+        ],
+        "relatedNotes": [
+          "aleksandr-bezobrazov-kavalergard",
+          "vitte-chast-1-ministr-kotoryi-stroil"
+        ],
+        "relatedEssays": []
+      },
+      {
+        "slug": "war-indemnity",
+        "label": "战争赔款",
+        "aliases": [
+          "赔款"
+        ],
+        "description": "战后，战胜国向战败国索取的金钱。和谈争论的不只是疆界与港口，也包括是否赔款，以及赔多少。俄语中的同一词还可指占领军向被占地区居民强征的钱物。",
+        "sources": [
+          {
+            "title": "《俄罗斯大百科全书》：战争赔款",
+            "url": "https://old.bigenc.ru/military_science/text/2093544"
+          }
+        ],
+        "relatedNotes": [
+          "bokserskoe-vosstanie-ihetuani",
+          "li-hunchzhan-soyuznik-kotoryi-sdaval-kreposti",
+          "mir-i-itogi-voiny"
+        ],
+        "relatedEssays": []
+      },
+      {
+        "slug": "halftone-printing",
+        "label": "网目制版",
+        "aliases": [
+          "网目制版"
+        ],
+        "description": "将照片用于印刷的方法：把连续变化的明暗转为许多细小网点，再据此制成印版。网点在纸上共同形成层次丰富的明暗效果，使照片能够随普通印刷品大量复制。",
+        "sources": [
+          {
+            "title": "《苏联大百科全书》：网目制版",
+            "url": "https://gufo.me/dict/bse/Автотипия"
+          }
+        ],
+        "relatedNotes": [
+          "kto-fotografiroval-russko-yaponskuyu-voinu"
+        ],
+        "relatedEssays": []
+      }
+    ],
     "src/i18n/zh/books.json": [
       {
         "slug": "martin-russko-yaponskaya-voyna",
@@ -45145,7 +45756,21 @@
       "Схема сравнения": "对比示意图",
       "Сравнение по длине корпуса": "舰体长度对比",
       "Здесь представлены корабли, о которых уже есть подробные страницы. Полный состав флотов был значительно шире. Условия измерения раскрыты в данных к каждой строке; прочерк означает, что сопоставимая длина не подтверждена.": "此处展示本站已有详细介绍的舰船，实际舰队规模远不止这些。各行的数据说明列出测量条件；破折号表示尚未核实可供比较的长度。",
-      "Как читать сравнение": "如何阅读这张对比图"
+      "Как читать сравнение": "如何阅读这张对比图",
+      "Все материалы": "全部资料",
+      "Первая Тихоокеанская эскадра": "第一太平洋舰队",
+      "Японский флот": "日本舰队",
+      "Чемульпо": "仁川",
+      "Все корабли": "全部舰船",
+      "Быстрые фильтры": "快捷筛选",
+      "Профили кораблей": "舰船侧影",
+      "Вне масштаба": "非统一比例",
+      "Фотография и история": "照片与历史",
+      "Читать историю корабля": "阅读舰船历史",
+      "У каждого корабля свой облик. Сравните трубы, мачты и башни, затем откройте фотографию и его историю. Профили стилизованы по архивным снимкам; в общем масштабе показана длина корпуса, мелкие детали упрощены.": "每艘军舰都有自己的模样。比较烟囱、桅杆与炮塔，再打开照片，阅读它的历史。侧影依据历史照片绘制并作简化；舰体长度采用统一比例，小部件仅作示意。",
+      "Пояснение к тексту": "阅读注释",
+      "Источник пояснения": "注释来源",
+      "Цвета условны; это иллюстрации, а не технические чертежи.": "配色仅作示意；这些是插画，并非工程图纸。"
     }
   },
   "ui": {
@@ -45153,11 +45778,11 @@
     "src/components/BookRow.astro": "d4efd59d99e8edf2a1d60ab31a93a522f9356ee8ce03ab5f2cea282ebb2a7b85",
     "src/components/Coast.astro": "8cfb683da959ded0d37aa08618f5c4177b2ba7f1feb63ce4a773c70bb86fbcce",
     "src/components/Crumbs.astro": "3b57f937c751d60b68297ea466992807aaefb057ad0cb451f853466b706c66c4",
-    "src/components/EntityPreviews.astro": "0818c578a60bc258aab08e6f5e422cddb4dc96e2590c5422ad52ae426f8d50a1",
+    "src/components/EntityPreviews.astro": "62e408e080fd1314c6b10f71cd37e3e15ff9e786588287ad9f0ea32547f91880",
     "src/components/Footer.astro": "3b420989716ff81f897e61ef0af0b41e79c3f0beab6c8a17f69ca6791b8c37e8",
     "src/components/Header.astro": "c35f1f39699883771cc9f4191b2f106ebdd4501d0911771add72a2d120584a6a",
     "src/components/LanguageSwitch.astro": "277109875a0a7d546d13dcca8816bd05be4249b8e08ba4b155026fee3968f376",
-    "src/components/LinkedText.astro": "398ae85ff7e16e1793cb7f3f5382d79d278e01cc721a1474a9a00810c3ae1cd8",
+    "src/components/LinkedText.astro": "428fa428ef44651cf558c8badad67a6c764810efbd20702b72bf860e6a4c3b35",
     "src/components/MapFigure.astro": "b8a5160be96edde56c777a5cae37a22e406d45b202b1305ea7f4f27e4108de90",
     "src/components/NoteCover.astro": "763f5e1520e807713eae6ab7f64a97313b17a800dd7ad6796d6e018289cf0cba",
     "src/components/PageHero.astro": "4e0c1e0b2fd047dc3a8548db9dca609ca60aa3329a2652dc8645454162b494c1",
@@ -45168,6 +45793,7 @@
     "src/components/Unsure.astro": "6760377b0448c1a049bbc9c072e4bb701bcf16f14e23bbe24aa242a4acc5a35a",
     "src/components/about/SiteGuide.astro": "ff703b9b898cc0e7fcde34832adb1c78fc7ba51b2755aaa55a2657295c7c848e",
     "src/components/hardware/ArchiveFigure.astro": "fbd76dbff2fab3b76abb771d4a1fca60821174791ecf9577e35fed3545a36736",
+    "src/components/hardware/FleetFilters.astro": "88ffa7a1b6516570a6d3912c2367f34c524bbfc92405c9b321a60be9e0fd5f02",
     "src/components/hardware/HardwareLinks.astro": "888cb113fe1070376dce8ea0f31ad555aef37845d3caecea866eda35e2dbfa0f",
     "src/components/hardware/HardwareRow.astro": "f00a3ba9d107e09f03625bb1de48f293fbe7fa26c00950a2e4c16bceb5151346",
     "src/components/hardware/SourceRefs.astro": "95a75eeee636ab872194bc65e1293abdc517cd2392493a1125875ae82354ceb8",
@@ -45222,11 +45848,12 @@
     "src/lib/data.ts": "4b44b33f530f92548e54f0a4de88fc9b80ccfea9e26d3489de5279cf5150915f",
     "src/lib/essays.ts": "4f23bd8d2f903f0d0c923b4abf783e6acfc32482da4c00aad51af63d9cb03265",
     "src/lib/evidence.ts": "7e268c863ef29957ed3be7df0baf5fd1d7fa357b3ea374983e4cae931845b0b7",
-    "src/lib/fleet.ts": "740299017cba99694054ee6cba16e75f5fb76aa8e547ecc6fd1e4162745b45d9",
+    "src/lib/fleet.ts": "c4f3c4809354c8519469256ad5b03505ff70209c852f0e0d690c574796395d52",
     "src/lib/hardware.ts": "ed13d8a8f59c96f82e372a585013d5200fb181f370f75f3798c4d71e35ca1bc2",
-    "src/lib/mentionMatcher.ts": "a7e946643c138156a10f64808de8fd8e8a83c9c05b1ca3cb7381af56cd925596",
-    "src/lib/mentions.ts": "5f2020bb243d2e11c0cd7e2ec31aee4c1fc08eaefd69e78a6029be67dd0ea6bf",
+    "src/lib/mentionMatcher.ts": "9f1edee9d8b068ce8776ae621767303b3ed49aebc6e4c4960f24998e7e456ab5",
+    "src/lib/mentions.ts": "8e9202b10b9aa7ce5b8d4b2dd6f38006f1c673bbe9ec59163842ced9d1593c71",
     "src/lib/navigation.ts": "35d9a9aa4326bffa6648abf185256e96e8e24ddc7eeab9ae1ed2a97400635743",
+    "src/lib/readingNotes.ts": "c0c519a1aa6e0eadd35df18a6f27e576e9bbf9cd8c19749e5267315d83b5b97e",
     "src/lib/walks.ts": "53d1c7e1bfe806999502f4f4762a13bc4cd7c7dbba0f064713d2c24ae7e9be5e",
     "src/pages/404.astro": "c2c7933f237cd66b0b34b9bad408caca74fcf0772d5710f317df9b6c26de3532",
     "src/pages/biblioteka/index.astro": "955f4fbfbdb4d337578027107b0e1a009af83c20578b96ae4e90150a5ddf1d02",
@@ -45247,12 +45874,12 @@
     "src/pages/poisk/index.astro": "568248493bdcb8816985db3dcf441ba3b547b0e2a3b1c30e0db7b3221c07a77f",
     "src/pages/sezony/index.astro": "471d41d84d22c8483b55c417662ea451df8f223412bfe9651a4ac063792c3911",
     "src/pages/spravochnik/[kind]/[slug].astro": "a49cbb7b95b3bbbde7314dad04a8b8eb67b8a4dce30bed66f05a99b847b4844f",
-    "src/pages/stati/[slug].astro": "c8136441edbaaebdeb02c5b36c7cf79d2c2121749bcb30f507e8d7acf9a4916a",
+    "src/pages/stati/[slug].astro": "64eaf2b7c4c539c7195080dcc720f662e15748b2fce83b82d5a3076fd3e46a58",
     "src/pages/tehnika/[slug].astro": "593988f5032a302c33857a8dc8b1d895fb73ef12fcbe20d3405056955d4b4b2f",
-    "src/pages/tehnika/index.astro": "d163a68c50315031f0bb308c812bbaf661d977c22ef704cb3ef9e9c9d968c570",
-    "src/pages/tehnika/v-masshtabe.astro": "bed85a73b7df0fade7bf7ecb5a6ed673b9b176db60511570b6e4973fa44b4ed7",
+    "src/pages/tehnika/index.astro": "2d76800ed2b21e27e44ab595f07bae8b24181e88ff089605481a058aa04336d7",
+    "src/pages/tehnika/v-masshtabe.astro": "acba86ff49115f2b0d01e3c599a8da9e2a65741aff429ea30db9c11424aa7fda",
     "src/pages/ukazatel/index.astro": "7bae6a8085fff6bac88f808f8cd0669f68577ffd451cd57463b28e19e8f723e3",
-    "src/pages/zametki/[slug].astro": "c3ec3e9a7241eede46029b08b2fccb71bb70b1c0e43888fd7451c65f379968c1",
+    "src/pages/zametki/[slug].astro": "a088e92eede5444d3ad36c97c9d1ece7d846f4d8f71ab9651ac0683db53fa394",
     "src/pages/zametki/index.astro": "57c17b12985b917c6bcf08417f6454cf42b286b8c0c355fc8cf5196545c1e622",
     "src/pages/zametki/serii/[slug].astro": "a49a411cc993f8fba0ddb5cb443ee4da1a6d6ff8b14cc92d849d782da8b036e3",
     "src/pages/zametki/serii/index.astro": "6c340e023b28d27fc27243696e60b7b4a934a6b2b7cbd6327634244373f95cd8"

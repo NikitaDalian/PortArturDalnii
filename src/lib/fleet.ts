@@ -8,6 +8,7 @@ export interface FleetMeasurement {
   normalDisplacementTonnes:number|null;
   measurementNote:string;
   sources:{url:string;title:string;locator:string}[];
+  illustration:{file:string;hullStart:number;hullEnd:number;note:string;sourceUrls:string[]};
 }
 export interface FleetOverview {
   title:string; dek:string; intro:string[];

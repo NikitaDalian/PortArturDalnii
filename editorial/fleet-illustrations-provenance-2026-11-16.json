@@ -1,0 +1,590 @@
+{
+  "version": 1,
+  "palette": {
+    "ink": "#17374d",
+    "hull": "#173b54",
+    "shade": "#0d2c42",
+    "edge": "#365e73",
+    "paper": "#e2e8e7",
+    "shadow": "#9bb0b7",
+    "copper": "#a67b4f",
+    "glass": "#244b60"
+  },
+  "sharedGeometry": {
+    "viewBox": "0 0 1200 260",
+    "waterlineY": 233,
+    "transparentBackground": true,
+    "note": "Normalized profiles; root must set physical length externally. No absolute dimensions are encoded in artwork."
+  },
+  "ships": [
+    {
+      "shipSlug": "petropavlovsk",
+      "file": "profiles/petropavlovsk.svg",
+      "viewBox": "0 0 1200 260",
+      "waterlineY": 233,
+      "hullExtentsX": [
+        57.375,
+        1147
+      ],
+      "bow": "right",
+      "sha256": "d53bcafb93b5f0fe1d31f7b44754e48b4da78eba0b9984615088abade5143e53",
+      "referencePreview": "references/petropavlovsk.jpg",
+      "references": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Petropavlovsk_-_NH_84769-A.jpg",
+          "localImage": "site/public/images/hardware/petropavlovsk-1.webp",
+          "caption": "Эскадренный броненосец «Петропавловск» до гибели в 1904 году.",
+          "access": "Local full photograph inspected; original provenance retained from accepted hardware registry."
+        }
+      ],
+      "confirmed": [
+        "Две дымовые трубы",
+        "Две мачты, развитый боевой марс на передней",
+        "Две оконечные башни главной артиллерии",
+        "Средняя башенная артиллерия у борта"
+      ],
+      "simplified": "Снимок с носом влево развёрнут; бортовые башни объединены в два читаемых силуэта, мелкое вооружение и снасти сокращены.",
+      "visualNote": "Две трубы между мачтами и низкие тяжёлые башни в носу и корме.",
+      "funnelCount": 2,
+      "mastCount": 2,
+      "status": "Original artistic atlas illustration, not a measured engineering reconstruction. Color scheme is editorial, not a historical livery claim."
+    },
+    {
+      "shipSlug": "poltava",
+      "file": "profiles/poltava.svg",
+      "viewBox": "0 0 1200 260",
+      "waterlineY": 233,
+      "hullExtentsX": [
+        57.375,
+        1150
+      ],
+      "bow": "right",
+      "sha256": "78ee1aac2d3a901598e73dc8d124edffb0f14206e9d7fb46b0b8d3a90ca1b311",
+      "referencePreview": "references/poltava.jpg",
+      "references": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Poltava-Chesma.jpg",
+          "localImage": "site/public/images/hardware/poltava-2.webp",
+          "caption": "Броненосец «Полтава». Точная дата и место снимка не установлены.",
+          "access": "Local full photograph inspected; original provenance retained from accepted hardware registry."
+        }
+      ],
+      "confirmed": [
+        "Две трубы",
+        "Передняя тяжёлая мачта и более лёгкая задняя",
+        "Башни главного калибра в носу и корме",
+        "Выступающие бортовые башни"
+      ],
+      "simplified": "Сестринство с «Петропавловском» сохранено; пространственная перспектива фото уплощена, размер и расположение мелких лодок условны.",
+      "visualNote": "Две трубы, высокая боевая площадка на передней мачте и небольшие башни по бортам.",
+      "funnelCount": 2,
+      "mastCount": 2,
+      "status": "Original artistic atlas illustration, not a measured engineering reconstruction. Color scheme is editorial, not a historical livery claim."
+    },
+    {
+      "shipSlug": "sevastopol",
+      "file": "profiles/sevastopol.svg",
+      "viewBox": "0 0 1200 260",
+      "waterlineY": 233,
+      "hullExtentsX": [
+        53.375,
+        1146
+      ],
+      "bow": "right",
+      "sha256": "890d1289a522eb2b1936703c86375e5c1e4bb10f9f8528222d9b6be896ac0f6a",
+      "referencePreview": "references/sevastopol.jpg",
+      "references": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Sevastopol1900Kronshtadt.jpg",
+          "localImage": "site/public/images/hardware/sevastopol-1.webp",
+          "caption": "«Севастополь» в Кронштадте, 1900 год.",
+          "access": "Local full photograph inspected; original provenance retained from accepted hardware registry."
+        }
+      ],
+      "confirmed": [
+        "Две трубы",
+        "Две мачты",
+        "Низкая открытая кормовая палуба",
+        "Оконечные главные и бортовые средние башни"
+      ],
+      "simplified": "Мелкие детали кормового мостика и шлюпочного хозяйства сведены к контуру; близость силуэта к другим «Полтавам» намеренна.",
+      "visualNote": "Две трубы в середине, низкий борт и тяжёлые башни в носу и корме.",
+      "funnelCount": 2,
+      "mastCount": 2,
+      "status": "Original artistic atlas illustration, not a measured engineering reconstruction. Color scheme is editorial, not a historical livery claim."
+    },
+    {
+      "shipSlug": "retvizan",
+      "file": "profiles/retvizan.svg",
+      "viewBox": "0 0 1200 260",
+      "waterlineY": 233,
+      "hullExtentsX": [
+        51.375,
+        1151
+      ],
+      "bow": "right",
+      "sha256": "6f819dd4f70894222f8a6f57fcb536e4ae1ae6b7641a300c155a52050f139530",
+      "referencePreview": "references/retvizan.jpg",
+      "references": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Retvizan1902DelawareRiver.jpg",
+          "localImage": "site/public/images/hardware/retvizan-1.webp",
+          "caption": "«Ретвизан» на реке Делавэр, 1902 год.",
+          "access": "Local full photograph inspected; original provenance retained from accepted hardware registry."
+        }
+      ],
+      "confirmed": [
+        "Три трубы между двумя мачтами",
+        "Передний многоярусный мостик",
+        "Две главные башни",
+        "Высокий прямой борт"
+      ],
+      "simplified": "Видимая на фотографии перспективная разница высот труб сглажена; иллюминаторы и казематные порты обозначают ритм, а не точное число.",
+      "visualNote": "Три высокие трубы тесной группой и две массивные боевые мачты.",
+      "funnelCount": 3,
+      "mastCount": 2,
+      "status": "Original artistic atlas illustration, not a measured engineering reconstruction. Color scheme is editorial, not a historical livery claim."
+    },
+    {
+      "shipSlug": "bayan",
+      "file": "profiles/bayan.svg",
+      "viewBox": "0 0 1200 260",
+      "waterlineY": 233,
+      "hullExtentsX": [
+        45.375,
+        1154
+      ],
+      "bow": "right",
+      "sha256": "0b144c112dd372ef4da5ced16f21820c41190a4c6d59efa8c6872e2619416728",
+      "referencePreview": "references/bayan.jpg",
+      "references": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Bayan1903Kronstadt.jpg",
+          "localImage": "site/public/images/hardware/bayan-1.webp",
+          "caption": "«Баян» в Кронштадте, лето 1903 года.",
+          "access": "Local full photograph inspected; original provenance retained from accepted hardware registry."
+        }
+      ],
+      "confirmed": [
+        "Четыре трубы",
+        "Две мачты",
+        "Одиночные башни в оконечностях",
+        "Носовой приподнятый участок палубы"
+      ],
+      "simplified": "Фотография развёрнута носом вправо; точная видимая высота труб зависит от перспективы, их относительный силуэт стилизован.",
+      "visualNote": "Четыре трубы и две одиночные башни на длинном крейсерском корпусе.",
+      "funnelCount": 4,
+      "mastCount": 2,
+      "status": "Original artistic atlas illustration, not a measured engineering reconstruction. Color scheme is editorial, not a historical livery claim."
+    },
+    {
+      "shipSlug": "mikasa",
+      "file": "profiles/mikasa.svg",
+      "viewBox": "0 0 1200 260",
+      "waterlineY": 233,
+      "hullExtentsX": [
+        55.375,
+        1151
+      ],
+      "bow": "right",
+      "sha256": "9a5859346cb42da8e428c8703660e51d0b9b20c9649b1d21974a47767be26b40",
+      "referencePreview": "references/mikasa.jpg",
+      "references": [
+        {
+          "url": "https://www.govinfo.gov/app/details/SERIALSET-04915_00_00-002-0328-0000",
+          "localImage": "site/public/images/essays/mikasa.webp",
+          "caption": "«Микаса», флагман адмирала Того. Иллюстрация из отчёта американского военно-морского врача Уильяма К. Брейстеда, изданного в 1906 году. Точные дата и место съёмки не указаны.",
+          "access": "Local full photograph inspected; original provenance retained from accepted hardware registry."
+        }
+      ],
+      "confirmed": [
+        "Две трубы с контрастными полосами на выбранном снимке",
+        "Две военные мачты",
+        "Оконечные тяжёлые башни",
+        "Плотная центральная надстройка"
+      ],
+      "simplified": "Кольца труб основаны на фотографии, но вся палитра художественная; перспективное фото не даёт точных поперечных размеров.",
+      "visualNote": "Две широкие трубы с тёмными кольцами и высокие боевые мачты.",
+      "funnelCount": 2,
+      "mastCount": 2,
+      "status": "Original artistic atlas illustration, not a measured engineering reconstruction. Color scheme is editorial, not a historical livery claim."
+    },
+    {
+      "shipSlug": "novik",
+      "file": "profiles/novik.svg",
+      "viewBox": "0 0 1200 260",
+      "waterlineY": 233,
+      "hullExtentsX": [
+        50.375,
+        1152
+      ],
+      "bow": "right",
+      "sha256": "cae17e8e6aadb485659f2fa35ceb7d690aa1c9f375844d22311b27e6a84c47bc",
+      "referencePreview": "references/novik.jpg",
+      "references": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Novik1904Port-Artur.jpg",
+          "localImage": "site/public/images/hardware/novik-port-arthur.webp",
+          "caption": "Крейсер «Новик» в Порт-Артуре, 1904 год, по атрибуции фотокарточки. Точный день не установлен.",
+          "access": "Local full photograph inspected; original provenance retained from accepted hardware registry."
+        }
+      ],
+      "confirmed": [
+        "Три трубы",
+        "Одна мачта",
+        "Поднятая носовая палуба",
+        "Лёгкий открытый силуэт артиллерии",
+        "Единственная мачта между кормовой и средней трубами"
+      ],
+      "simplified": "Единственная мачта расположена между кормовой и средней трубами, как на снимке с носом вправо; мелкие орудия на неясных участках опущены.",
+      "visualNote": "Одна высокая мачта, три трубы и короткая приподнятая носовая палуба.",
+      "funnelCount": 3,
+      "mastCount": 1,
+      "status": "Original artistic atlas illustration, not a measured engineering reconstruction. Color scheme is editorial, not a historical livery claim."
+    },
+    {
+      "shipSlug": "varyag",
+      "file": "profiles/varyag.svg",
+      "viewBox": "0 0 1200 260",
+      "waterlineY": 233,
+      "hullExtentsX": [
+        47.375,
+        1153
+      ],
+      "bow": "right",
+      "sha256": "668df077107cf71accfa2c1a7940e02a4f48cadaaa7138c83b73f07592c97850",
+      "referencePreview": "references/varyag.jpg",
+      "references": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Varyag1901.jpg",
+          "localImage": "site/public/images/hardware/varyag-1901.webp",
+          "caption": "Крейсер «Варяг», июнь 1901 года, по атрибуции фотокарточки. Точное место съёмки не установлено.",
+          "access": "Local full photograph inspected; original provenance retained from accepted hardware registry."
+        },
+        {
+          "url": "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm#P_341",
+          "localImage": "site/public/images/hardware/varyag-jane-1904.webp",
+          "caption": "Схема крейсера «Варяг» из книги Фреда Т. Джейна The Imperial Japanese Navy, 1904, с. 341. Это исторический справочный рисунок, не фотография Чемульпинского боя.",
+          "access": "Local full photograph inspected; original provenance retained from accepted hardware registry."
+        }
+      ],
+      "confirmed": [
+        "Четыре трубы",
+        "Две тонкие мачты",
+        "Протяжённая низкая палуба",
+        "Палубная артиллерия без тяжёлых башен"
+      ],
+      "simplified": "Расположение проверено также по схеме Jane1904; точное число видимых152-мм стволов и шлюпок не воспроизводится.",
+      "visualNote": "Четыре одинаково стройные трубы в ряд и две высокие тонкие мачты.",
+      "funnelCount": 4,
+      "mastCount": 2,
+      "status": "Original artistic atlas illustration, not a measured engineering reconstruction. Color scheme is editorial, not a historical livery claim."
+    },
+    {
+      "shipSlug": "tsesarevich",
+      "file": "profiles/tsesarevich.svg",
+      "viewBox": "0 0 1200 260",
+      "waterlineY": 233,
+      "hullExtentsX": [
+        60.375,
+        1150
+      ],
+      "bow": "right",
+      "sha256": "3a7becbba95ce42e333a034cd00158b1644128aa008cb0b79e9c371b3503be42",
+      "referencePreview": "references/tsesarevich.jpg",
+      "references": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Tsesarevich1903Toulon.jpg",
+          "localImage": "site/public/images/hardware/tsesarevich-1.webp",
+          "caption": "«Цесаревич» в Тулоне, 1903 год.",
+          "access": "Local full photograph inspected; original provenance retained from accepted hardware registry."
+        }
+      ],
+      "confirmed": [
+        "Две трубы",
+        "Две тяжёлые мачты с развитым боевым оснащением",
+        "Две тяжёлые башни",
+        "Башенная средняя артиллерия и характерный высокий борт"
+      ],
+      "simplified": "Завал бортов внутрь обозначен верхней гранью; пространственную форму корпуса нельзя точно показать плоским боковым профилем.",
+      "visualNote": "Массивные мачты с двумя ярусами боевых площадок и две широкие трубы.",
+      "funnelCount": 2,
+      "mastCount": 2,
+      "status": "Original artistic atlas illustration, not a measured engineering reconstruction. Color scheme is editorial, not a historical livery claim."
+    },
+    {
+      "shipSlug": "peresvet",
+      "file": "profiles/peresvet.svg",
+      "viewBox": "0 0 1200 260",
+      "waterlineY": 233,
+      "hullExtentsX": [
+        54.375,
+        1150
+      ],
+      "bow": "right",
+      "sha256": "f76d7daa49c8d28a6778c718f68128e97512f24c212a6b01581915a3be5e57af",
+      "referencePreview": "references/peresvet.jpg",
+      "references": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Peresvet1901.jpg",
+          "localImage": "site/public/images/hardware/peresvet-1.webp",
+          "caption": "«Пересвет» в Тулоне, 1901 год.",
+          "access": "Local full photograph inspected; original provenance retained from accepted hardware registry."
+        },
+        {
+          "url": "https://keu-ocr.narod.ru/Peresvet/chap01.html",
+          "localText": "research_sources/port-arthur/hardware/guns-next/peresvet-book-1.txt",
+          "access": "Read local paragraphs on aft mast difference and fore/aft turret deck levels.",
+          "locator": "Lines540–580and680–705of local transcription."
+        }
+      ],
+      "confirmed": [
+        "Три трубы",
+        "Высокий полубак и низкая кормовая башня",
+        "Боевые марсы на обеих мачтах",
+        "Двухъярусные казематы"
+      ],
+      "simplified": "Текст Мельникова подтверждает кормовой боевой марс как внешнее отличие; укрупнены башни, мелкие казематы сокращены.",
+      "visualNote": "Приподнятая носовая палуба, три трубы и боевые площадки на обеих мачтах.",
+      "funnelCount": 3,
+      "mastCount": 2,
+      "status": "Original artistic atlas illustration, not a measured engineering reconstruction. Color scheme is editorial, not a historical livery claim."
+    },
+    {
+      "shipSlug": "pobeda",
+      "file": "profiles/pobeda.svg",
+      "viewBox": "0 0 1200 260",
+      "waterlineY": 233,
+      "hullExtentsX": [
+        54.375,
+        1151
+      ],
+      "bow": "right",
+      "sha256": "ebae70bf8b31eb0fd2b085e7ee7f7bb47e6f06180f58192c65c988ff82912db4",
+      "referencePreview": "references/pobeda.jpg",
+      "references": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Pobeda_1900-1904.jpg",
+          "localImage": "site/public/images/hardware/pobeda-1.webp",
+          "caption": "Броненосец «Победа» в русской службе, между 1900 и 1904 годами.",
+          "access": "Local full photograph inspected; original provenance retained from accepted hardware registry."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Pobeda1904Port-Artur.jpg",
+          "localImage": "site/public/images/hardware/pobeda-2.webp",
+          "caption": "«Победа» в Порт-Артуре, 1904 год.",
+          "access": "Local full photograph inspected; original provenance retained from accepted hardware registry."
+        },
+        {
+          "url": "https://keu-ocr.narod.ru/Peresvet/chap01.html",
+          "localText": "research_sources/port-arthur/hardware/guns-next/peresvet-book-1.txt",
+          "access": "Read local paragraphs on aft mast difference and fore/aft turret deck levels.",
+          "locator": "Lines540–580and680–705of local transcription."
+        }
+      ],
+      "confirmed": [
+        "Три трубы, частично перекрытые перспективой",
+        "Передний боевой марс",
+        "Задняя облегчённая мачта без тяжёлого марса",
+        "Ступень полубака и разная высота оконечных башен"
+      ],
+      "simplified": "Оба снимка носовые: продольный контур и разницу мачт дополнительно подтверждает Мельников; не выдаётся за точную боковую реконструкцию.",
+      "visualNote": "Три трубы и высокий нос, но задняя мачта легче, чем у «Пересвета».",
+      "funnelCount": 3,
+      "mastCount": 2,
+      "status": "Original artistic atlas illustration, not a measured engineering reconstruction. Color scheme is editorial, not a historical livery claim."
+    },
+    {
+      "shipSlug": "askold",
+      "file": "profiles/askold.svg",
+      "viewBox": "0 0 1200 260",
+      "waterlineY": 233,
+      "hullExtentsX": [
+        42.375,
+        1154
+      ],
+      "bow": "right",
+      "sha256": "2f112e3d15b44d7e516890830b6296d4acce1337fca8262412b0a4a5ec97e128",
+      "referencePreview": "references/askold.jpg",
+      "references": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Askold1901Kiel.jpg",
+          "localImage": "site/public/images/hardware/askold-1.webp",
+          "caption": "«Аскольд» на испытаниях в Киле, 1901 год.",
+          "access": "Local full photograph inspected; original provenance retained from accepted hardware registry."
+        }
+      ],
+      "confirmed": [
+        "Пять труб",
+        "Две тонкие мачты",
+        "Узкий низкий корпус с приподнятым носом",
+        "Открытые оконечные орудия"
+      ],
+      "simplified": "Фото с носом влево развёрнуто; дым убран, часть шлюпок и снастей опущена, пять труб сохранены раздельно.",
+      "visualNote": "Пять высоких тонких труб — самый легко узнаваемый силуэт крейсера.",
+      "funnelCount": 5,
+      "mastCount": 2,
+      "status": "Original artistic atlas illustration, not a measured engineering reconstruction. Color scheme is editorial, not a historical livery claim."
+    },
+    {
+      "shipSlug": "pallada",
+      "file": "profiles/pallada.svg",
+      "viewBox": "0 0 1200 260",
+      "waterlineY": 233,
+      "hullExtentsX": [
+        48.375,
+        1153
+      ],
+      "bow": "right",
+      "sha256": "da132729cf14e9a937a2598f5cfbbfe0dcc5cee097ca8f087cc96b2c02752a9c",
+      "referencePreview": "references/pallada.jpg",
+      "references": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Pallada1897-1905.jpg",
+          "localImage": "site/public/images/hardware/pallada-1.webp",
+          "caption": "«Паллада» в начале 1900-х годов, до японского подъёма и переименования.",
+          "access": "Local full photograph inspected; original provenance retained from accepted hardware registry."
+        }
+      ],
+      "confirmed": [
+        "Три трубы",
+        "Две тонкие мачты с реями",
+        "Носовая надстройка перед трубами",
+        "Палубная артиллерия без главных башен"
+      ],
+      "simplified": "Сохранено реальное сходство с «Дианой»; различия мелкого палубного оснащения условны, не выдаются за признаки класса.",
+      "visualNote": "Три стройные трубы между двумя мачтами на гладком длинном корпусе.",
+      "funnelCount": 3,
+      "mastCount": 2,
+      "status": "Original artistic atlas illustration, not a measured engineering reconstruction. Color scheme is editorial, not a historical livery claim."
+    },
+    {
+      "shipSlug": "diana",
+      "file": "profiles/diana.svg",
+      "viewBox": "0 0 1200 260",
+      "waterlineY": 233,
+      "hullExtentsX": [
+        49.375,
+        1153
+      ],
+      "bow": "right",
+      "sha256": "eb6c4bdcdf5857a1e3a041477ce422d149d9b3caca936731a8720809d578dc1b",
+      "referencePreview": "references/diana.jpg",
+      "references": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Diana1897-1922MalyyKronshatadskiyReyd.jpg",
+          "localImage": "site/public/images/hardware/diana-1.webp",
+          "caption": "«Диана» на Малом Кронштадтском рейде, до 1903 года.",
+          "access": "Local full photograph inspected; original provenance retained from accepted hardware registry."
+        }
+      ],
+      "confirmed": [
+        "Три трубы",
+        "Две тонкие мачты",
+        "Высокий носовой мостик",
+        "Открытая палубная артиллерия"
+      ],
+      "simplified": "Перспективная разница высот труб художественно сглажена; точные отличия сестёр в1904году не установлены и не изобретаются.",
+      "visualNote": "Три трубы, две тонкие мачты и высокий носовой мостик.",
+      "funnelCount": 3,
+      "mastCount": 2,
+      "status": "Original artistic atlas illustration, not a measured engineering reconstruction. Color scheme is editorial, not a historical livery claim."
+    },
+    {
+      "shipSlug": "boyarin",
+      "file": "profiles/boyarin.svg",
+      "viewBox": "0 0 1200 260",
+      "waterlineY": 233,
+      "hullExtentsX": [
+        51.375,
+        1152
+      ],
+      "bow": "right",
+      "sha256": "48c2de59352f5ab79cdd9e0dfc670063d1d65e5ffd3541cc0bd8abf22b7a0f5b",
+      "referencePreview": "references/boyarin.jpg",
+      "references": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Boyarin1902.jpg",
+          "localImage": "site/public/images/hardware/boyarin-1.webp",
+          "caption": "«Боярин» под датским флагом на испытаниях, 1902 год.",
+          "access": "Local full photograph inspected; original provenance retained from accepted hardware registry."
+        }
+      ],
+      "confirmed": [
+        "Три трубы",
+        "Две мачты, передняя выше задней",
+        "Полубак",
+        "Оконечные открытые орудия"
+      ],
+      "simplified": "Носовой и кормовой мостики, мелкие бортовые орудия сведены к читаемым массам; украшение носа не копируется.",
+      "visualNote": "Три короткие трубы, две мачты и приподнятая носовая палуба.",
+      "funnelCount": 3,
+      "mastCount": 2,
+      "status": "Original artistic atlas illustration, not a measured engineering reconstruction. Color scheme is editorial, not a historical livery claim."
+    },
+    {
+      "shipSlug": "hatsuse",
+      "file": "profiles/hatsuse.svg",
+      "viewBox": "0 0 1200 260",
+      "waterlineY": 233,
+      "hullExtentsX": [
+        56.375,
+        1150
+      ],
+      "bow": "right",
+      "sha256": "1216dbdc936f8c999ec806365fdcc27f2dba337012de4624d49a0b25c2694c7b",
+      "referencePreview": "references/hatsuse.jpg",
+      "references": [
+        {
+          "url": "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm#P_179",
+          "localImage": "site/public/images/hardware/hatsuse-jane1904.webp",
+          "caption": "«Хацусэ» в книге Фреда Т. Джейна «The Imperial Japanese Navy» (1904), с.179. Точные дата и место съёмки не установлены.",
+          "access": "Local full photograph inspected; original provenance retained from accepted hardware registry."
+        }
+      ],
+      "confirmed": [
+        "Три трубы",
+        "Две военные мачты с марсами",
+        "Две главные башни",
+        "Низкая сплошная бортовая батарея"
+      ],
+      "simplified": "Небольшая фотография Jane не позволяет читать отдельные люки и стволы; они опущены, сохранены главные массы.",
+      "visualNote": "Три трубы между двумя боевыми мачтами и тяжёлые башни в носу и корме.",
+      "funnelCount": 3,
+      "mastCount": 2,
+      "status": "Original artistic atlas illustration, not a measured engineering reconstruction. Color scheme is editorial, not a historical livery claim."
+    },
+    {
+      "shipSlug": "yashima",
+      "file": "profiles/yashima.svg",
+      "viewBox": "0 0 1200 260",
+      "waterlineY": 233,
+      "hullExtentsX": [
+        58.375,
+        1150
+      ],
+      "bow": "right",
+      "sha256": "096a1dd9e523d94974452f97d6b533ccd9e93428ecdf7d3da2892f5612fdcb6f",
+      "referencePreview": "references/yashima.jpg",
+      "references": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Yashima_NH_58968.jpg",
+          "localImage": "site/public/images/hardware/yashima-nh58968.webp",
+          "caption": "«Ясима», до мая 1904 года по каталожной карточке. Точное место и день съёмки не установлены.",
+          "access": "Local full photograph inspected; original provenance retained from accepted hardware registry."
+        }
+      ],
+      "confirmed": [
+        "Две трубы",
+        "Две боевые мачты",
+        "Низкие оконечные тяжёлые установки",
+        "Короткая средняя надстройка"
+      ],
+      "simplified": "Фото носом влево развёрнуто; перспективное перекрытие башен и шлюпок заменено условным боковым видом.",
+      "visualNote": "Компактный двухтрубный броненосец с двумя мачтами и низкими тяжёлыми башнями.",
+      "funnelCount": 2,
+      "mastCount": 2,
+      "status": "Original artistic atlas illustration, not a measured engineering reconstruction. Color scheme is editorial, not a historical livery claim."
+    }
+  ]
+}

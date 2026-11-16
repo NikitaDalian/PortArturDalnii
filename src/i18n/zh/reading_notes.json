@@ -1,0 +1,193 @@
+[
+  {
+    "slug": "internment",
+    "label": "中立国扣留军舰",
+    "aliases": [
+      "被中立港扣留",
+      "被扣留的军舰"
+    ],
+    "description": "中立港口可以让军舰避难，却不能任其长期充当作战基地。被扣留的军舰无法离港，舰员也不能重返战斗。因此，对舰队而言，即使舰体完好，这艘船在战争结束前也已无法参战。",
+    "sources": [
+      {
+        "title": "A. V. 库达什金：中立国扣留——《俄罗斯大百科全书》",
+        "url": "https://old.bigenc.ru/law/text/2014763"
+      }
+    ],
+    "relatedNotes": [
+      "poselyagin-poruchiki-po-admiralteistvu"
+    ],
+    "relatedEssays": []
+  },
+  {
+    "slug": "roadstead",
+    "label": "锚地：军舰停泊的水域",
+    "aliases": [
+      "锚地",
+      "外港"
+    ],
+    "description": "锚地是船舶抛锚停泊的水域。内锚地位于港口受到遮护的部分，外锚地则在港外入口附近。因此，同一座基地中，停在外锚地与躲入港湾，所处条件并不相同。",
+    "sources": [
+      {
+        "title": "V. A. 德加洛：《俄国海军》——部分海事术语",
+        "url": "https://flot.com/publications/books/shelf/russianfleet/40.htm"
+      }
+    ],
+    "relatedNotes": [
+      "pervaya-tihookeanskaya-eskadra",
+      "voina-na-more-osada-mukden-tsusima"
+    ],
+    "relatedEssays": []
+  },
+  {
+    "slug": "pennant-count",
+    "label": "舰只如何计数",
+    "aliases": [
+      "66艘舰只",
+      "66艘"
+    ],
+    "description": "长旒旗原是一种狭长的舰旗。俄文说一支舰队有“66面长旒旗”时，实际数的是军舰，一面旗代表一艘船。不过，这个总数本身还不能说明舰队组成与实力：一艘战列舰和一艘小鱼雷艇，都各算一艘。",
+    "sources": [
+      {
+        "title": "《小型学术词典》：长旒旗",
+        "url": "https://gufo.me/dict/mas/вымпел"
+      }
+    ],
+    "relatedNotes": [
+      "pervaya-tihookeanskaya-eskadra",
+      "port-artur-i-dalnii-dva-goroda"
+    ],
+    "relatedEssays": []
+  },
+  {
+    "slug": "shrapnel",
+    "label": "榴霰弹",
+    "aliases": [
+      "霰弹"
+    ],
+    "description": "榴霰弹内部装有弹丸，定时引信使炮弹在空中散开，再由弹丸杀伤暴露在外的人员。因此，回忆录中说“遭霰弹射击”，指的是遭到炮火，对来不及隐蔽的人尤其危险。",
+    "sources": [
+      {
+        "title": "《苏联大百科全书》第一版，第LXII卷，第654栏：榴霰弹",
+        "url": "https://ru.wikisource.org/wiki/БСЭ1/Шрапнель"
+      }
+    ],
+    "relatedNotes": [
+      "botkin-svet-i-teni-russko-yaponskoi-voiny"
+    ],
+    "relatedEssays": []
+  },
+  {
+    "slug": "breastwork",
+    "label": "胸墙",
+    "aliases": [
+      "胸墙"
+    ],
+    "description": "筑在战壕前方的土堤，用来遮挡敌方火力与观察。射手可以越过胸墙开火，也可利用其边缘支撑武器。若站到胸墙上直起身，就离开了这道掩护。",
+    "sources": [
+      {
+        "title": "《俄罗斯大百科全书》：胸墙",
+        "url": "https://old.bigenc.ru/world_history/text/1885500"
+      }
+    ],
+    "relatedNotes": [
+      "posle-tri-pali-razvlecheniya-na-pozitsiyah",
+      "vals-na-sopkah-manchzhurii-shatrov"
+    ],
+    "relatedEssays": []
+  },
+  {
+    "slug": "casemate",
+    "label": "堡垒中的掩蔽室",
+    "aliases": [
+      "掩蔽部"
+    ],
+    "description": "筑在防御工事内部、有防护的房间，可供守军、物资、火炮或射手使用，墙壁与顶盖应能承受敌方炮火。讲述堡垒防御时，这个词指的是这样的掩蔽空间，并非它在俄语中的另一种含义——牢房。",
+    "sources": [
+      {
+        "title": "《布罗克豪斯与叶夫龙百科辞典》，第XIIIa卷，第924—925页：掩蔽室",
+        "url": "https://ru.wikisource.org/wiki/ЭСБЕ/Казематы"
+      }
+    ],
+    "relatedNotes": [
+      "kondratenko-dusha-oborony"
+    ],
+    "relatedEssays": []
+  },
+  {
+    "slug": "fanza",
+    "label": "俄文中的“fanza”：中国乡村民居",
+    "aliases": [
+      "民居"
+    ],
+    "description": "俄国人描述中国时，常用“fanza”称呼乡村房屋。墙体往往使用泥土，屋顶铺秸秆或芦苇。室内可能有宽大的火炕，炉烟沿炕下烟道通过，为炕面加热。文中提到的是住宅，并非军事建筑。",
+    "sources": [
+      {
+        "title": "《苏联大百科全书》第一版，第LVI卷，第609栏：中国乡村民居",
+        "url": "https://ru.wikisource.org/wiki/БСЭ1/Фанза"
+      }
+    ],
+    "relatedNotes": [
+      "botkin-svet-i-teni-russko-yaponskoi-voiny",
+      "kotvich-borodovskii-lyaodun-i-ego-porty"
+    ],
+    "relatedEssays": []
+  },
+  {
+    "slug": "concession",
+    "label": "特许权",
+    "aliases": [
+      "特许权",
+      "修筑权"
+    ],
+    "description": "国家按约定条件，准许经营者开采自然资源，或建设、经营某项设施。这种权利通常由有期限的合同确定。这里谈到的是伐木与铁路；取得特许权，并不等于取得那片土地的所有权。",
+    "sources": [
+      {
+        "title": "E. E. 丘科夫斯卡娅：特许权——《俄罗斯大百科全书》",
+        "url": "https://old.bigenc.ru/law/text/2094412"
+      }
+    ],
+    "relatedNotes": [
+      "aleksandr-bezobrazov-kavalergard",
+      "vitte-chast-1-ministr-kotoryi-stroil"
+    ],
+    "relatedEssays": []
+  },
+  {
+    "slug": "war-indemnity",
+    "label": "战争赔款",
+    "aliases": [
+      "赔款"
+    ],
+    "description": "战后，战胜国向战败国索取的金钱。和谈争论的不只是疆界与港口，也包括是否赔款，以及赔多少。俄语中的同一词还可指占领军向被占地区居民强征的钱物。",
+    "sources": [
+      {
+        "title": "《俄罗斯大百科全书》：战争赔款",
+        "url": "https://old.bigenc.ru/military_science/text/2093544"
+      }
+    ],
+    "relatedNotes": [
+      "bokserskoe-vosstanie-ihetuani",
+      "li-hunchzhan-soyuznik-kotoryi-sdaval-kreposti",
+      "mir-i-itogi-voiny"
+    ],
+    "relatedEssays": []
+  },
+  {
+    "slug": "halftone-printing",
+    "label": "网目制版",
+    "aliases": [
+      "网目制版"
+    ],
+    "description": "将照片用于印刷的方法：把连续变化的明暗转为许多细小网点，再据此制成印版。网点在纸上共同形成层次丰富的明暗效果，使照片能够随普通印刷品大量复制。",
+    "sources": [
+      {
+        "title": "《苏联大百科全书》：网目制版",
+        "url": "https://gufo.me/dict/bse/Автотипия"
+      }
+    ],
+    "relatedNotes": [
+      "kto-fotografiroval-russko-yaponskuyu-voinu"
+    ],
+    "relatedEssays": []
+  }
+]

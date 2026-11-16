@@ -1,8 +1,9 @@
 {
   "data/articles.json": "e4c02d970facf9cf1d69b0f9baa0819f25708e3a1becffc0f4ae6449b6d78419",
-  "data/essays.json": "613368b0dae042444b652041df8964b80115242f04ce1defa01f88f9435b8b37",
-  "data/hardware.json": "cc8ef5c8fd1b405f9e40e55878c27ff909ff0523f7c771eeaf3ddc591d7363a1",
-  "data/fleet_overview.json": "1fe48ccc647ac02a7e4f083f780e784cd6caa709e3d8019a4bb7097f04619e19",
+  "data/essays.json": "b4f06f2c86e39ed71c477c9d5260e6ef65922603f73592df7add1ec573c0cade",
+  "data/hardware.json": "7702a34e293a06ff833be59c2a19142b28c2da703e86f7d739e46946aaed0077",
+  "data/fleet_overview.json": "93ea5c397aaec47a23c3ce674ef0cd483c7e53bf917846f65561f9511a142b7d",
+  "data/reading_notes.json": "1d36fe4bc79f4fd325a317553188583f002481573de9982ce30d55f604b6e5f5",
   "data/books.json": "f22f91c113300c2d02564e7664459c2cb4c99f5672d4840aa234ab1292cf828b",
   "data/people.json": "85244753efdd01808a7e72a3acd3bc104922ec0632dac051b509df383dd5a429",
   "data/places.json": "46a14a874ea1c415269013a64e74ffddd6c0af489bad7676290638c23ab82949",

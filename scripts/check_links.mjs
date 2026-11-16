@@ -115,6 +115,9 @@ for (const file of files) {
       const preview = JSON.parse(decode(m[1]));
       if (!preview.title || !preview.description) throw new Error('пустая справка');
       for (const resource of [preview.href, preview.image].filter(Boolean)) {
+        // Reviewed reading notes link explicitly to an external source.
+        // Entity pages and every preview image still require a local resource.
+        if (preview.kind === 'term' && resource === preview.href && /^https:\/\//.test(resource)) continue;
         checked++;
         if (!resource.startsWith(BASE) || !resolve(resource)) broken.push({ page: here, href: resource, why: 'нет ресурса справки' });
       }

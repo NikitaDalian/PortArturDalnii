@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import { translatedFiles, translationSources } from './translation_sources.mjs';
 import { reviewedBaselineStatus } from './translation_workflow.mjs';
+import { validateReadingNotes } from './reading_notes_validation.mjs';
 const root = new URL('../src/', import.meta.url);
 const read = (path) => JSON.parse(fs.readFileSync(new URL(path, root), 'utf8'));
 const files = translatedFiles;
@@ -43,6 +44,8 @@ function compare(original, translated, path, key = '') {
 for (const language of ['en', 'zh']) {
   if (!releases[language]) continue;
   errors.push(...reviewedBaselineStatus(language).errors);
+  try {errors.push(...validateReadingNotes(read(`i18n/${language}/reading_notes.json`),read(`i18n/${language}/articles.json`),read(`i18n/${language}/essays.json`)).map(error=>`${language}/${error}`));}
+  catch(error){errors.push(`${language}/reading_notes: ${error.message}`);}
   try {
     const reviewed = read(`i18n/${language}/source-manifest.json`);
     for (const [file, hash] of Object.entries(translationSources())) {

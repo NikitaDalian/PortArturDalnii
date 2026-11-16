@@ -1,0 +1,42 @@
+{
+  "status": "accepted",
+  "reviewer": "old_text_links",
+  "reviewDate": "2026-11-16",
+  "reviewType": "Independent full translation review against accepted Russian, not author self-review",
+  "russianSource": {
+    "file": "work/bank-rewrite/essay-ru.json",
+    "sha256": "4b3104c94f7c96f91affa98d3c7b7b2ac17e9da49addce9c681ba7de76e5d8c2"
+  },
+  "translations": [
+    {
+      "language": "en",
+      "file": "work/bank-rewrite/essay-en.json",
+      "sha256": "b9ed20a1e540b4b7d30f71a86ef16c86a31186d1ae4463260e3cefa77e755375",
+      "status": "accepted",
+      "fullRead": true,
+      "rereadAfterCorrections": false,
+      "unresolvedIssues": []
+    },
+    {
+      "language": "zh",
+      "file": "work/bank-rewrite/essay-zh.json",
+      "sha256": "185909c4071f254c241c88dc65238395394c14a8a76ca1e6cd44bb81e5ed418d",
+      "status": "accepted",
+      "fullRead": true,
+      "rereadAfterCorrections": false,
+      "unresolvedIssues": []
+    }
+  ],
+  "scopeLimit": "Read the complete publication JSON in all three languages, including metadata, source notes, limitations and illustration text. Translation fidelity reviewed against accepted RU; no new claim of separately reading every historical source.",
+  "resolvedIssues": [],
+  "findings": [
+    "Read the full title/dek, all five sections and fourteen paragraphs, all three limitations, both complete source records, and image caption/credit in English and Chinese against accepted RU. Both translations preserve the narrative from grain collateral and trusted borrowers through deposits, risk and wartime controls.",
+    "The grain firms’support for creditors is retained without conflating every firm named Yifahe with a single legal entity. Railway consignment security, property pledged to banks and overdraft operation remain distinct.",
+    "Two jiao per thousand yuan per day equals0.2yuan, with no annual conversion or claim of citywide average interest. The1931table retains300000banknote yuan and1923opening date; different currencies are not added together.",
+    "Prize scheme retains monthly3yuan, top prize30000and unknown winner name/year. The1935directory is identified as cited rather than separately read. Publication date1988belongs only to volume6.",
+    "Both translations correctly render inclusive permission thresholds: industrial100000or more, commercial50000or more, overdraft30000or more; eight cash houses by1944remain attributed to the account.",
+    "Sun’s role in both accounts and Huang’srecording/editing prevent presenting them as fully independent sources. The gold/silver dispute has no invented year; silver-system notes are not mistaken for metal coins.",
+    "The photograph remains Yokohama Specie Bank, explicitly not Sun’sLongkou workplace. The compiler is not identified as photographer. Unknown photograph date is preserved.",
+    "English and Chinese are independently readable and preserve source attribution and uncertainty. No mandatory translation corrections found."
+  ]
+}

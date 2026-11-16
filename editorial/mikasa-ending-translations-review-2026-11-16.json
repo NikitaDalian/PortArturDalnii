@@ -1,0 +1,46 @@
+{
+  "status": "accepted",
+  "reviewer": "old_text_links",
+  "reviewDate": "2026-11-16",
+  "reviewType": "Independent full translation review against accepted Russian, not author self-review",
+  "russianSource": {
+    "file": "work/mikasa-ending/essay-ru.json",
+    "sha256": "82569350d368c6b71ba1d02e631c93d2f0119a9168a9f1f80c9373ebd928f490"
+  },
+  "translations": [
+    {
+      "language": "en",
+      "file": "work/mikasa-ending/essay-en.json",
+      "sha256": "9d01641a1de225ac8de632ac860bb36910159274fb54d9a1227b5a691fbcf05e",
+      "status": "accepted",
+      "fullRead": true,
+      "rereadAfterCorrections": true,
+      "unresolvedIssues": []
+    },
+    {
+      "language": "zh",
+      "file": "work/mikasa-ending/essay-zh.json",
+      "sha256": "df7bd401c989358fd58f97e56c4723c75f7d2c9208dd5adbc05dc57f8e426ba6",
+      "status": "accepted",
+      "fullRead": true,
+      "rereadAfterCorrections": false,
+      "unresolvedIssues": []
+    }
+  ],
+  "scopeLimit": "Read the complete publication JSON in all three languages, including metadata, source notes, limitations and illustration text. Translation fidelity reviewed against accepted RU; no new claim of separately reading every historical source.",
+  "resolvedIssues": [
+    {
+      "language": "en",
+      "location": "supply.finalParagraph and sources[0].locator",
+      "issue": "Critically wounded unnecessarily narrowed RUтяжелораненые to a critical condition.",
+      "resolution": "Author replaced both with seriously wounded. The entire corrected English object was read again."
+    }
+  ],
+  "findings": [
+    "All three sections read in full in both translations, including the unchanged opening/menu and new ending. Paragraph order, dates, references, relations, source URL and illustration identities match accepted RU.",
+    "Both translations preserve27May1905, the first day of Tsushima, all three decks, hardtack and kudzu-starch drink, freely available eating/drinking, rice balls at17:00, normal arrangements at20:00and food for seriously wounded people.",
+    "156remains an illness count rather than deaths. Lack of supply ships is not asserted as the cause of this specific spoiled batch. Auxiliary1904transports remain distinct from Mamiya1924and Irako5December1941.",
+    "The naval-policy judgement remains attributed to Ishihara. Limits on original medical-source checking and uncertain photograph date/place remain visible. No new personal or documentary claims are introduced by translation.",
+    "The existing Chinese breakfast wording could be made smoother, but its current meaning remains clear; no change requested outside the accepted ending scope. No publication blocker remains."
+  ]
+}

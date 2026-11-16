@@ -5,10 +5,11 @@ const { text, context, limit = 4 } = Astro.props;
 const parts = linkMentions(text, context, limit);
 ---
 {parts.map(part => part.entity
-  ? <a class="entity-mention" href={part.entity.href} data-entity-preview={JSON.stringify(part.entity)}>{part.text}</a>
+  ? <a class:list={['entity-mention',{'is-term':part.entity.kind==='term'}]} href={part.entity.href} data-entity-kind={part.entity.kind} data-entity-preview={JSON.stringify(part.entity)} target={part.entity.kind==='term'?'_blank':undefined} rel={part.entity.kind==='term'?'noopener':undefined}>{part.text}</a>
   : part.text)}
 <style is:global>
   .entity-mention { color: inherit; text-decoration: underline; text-decoration-color: var(--steel); text-decoration-thickness: 1px; text-underline-offset: .18em; }
+  .entity-mention.is-term { text-decoration-style:dotted; }
   .entity-mention:hover, .entity-mention:focus-visible { color: var(--accent-on-light); text-decoration-color: currentColor; }
   .dark .entity-mention:hover, .dark .entity-mention:focus-visible { color: var(--accent-on-dark); }
 </style>

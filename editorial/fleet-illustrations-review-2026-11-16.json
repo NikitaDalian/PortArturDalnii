@@ -1,0 +1,169 @@
+{
+  "status": "accepted",
+  "author": "old_text_links",
+  "reviewer": "hardware_other_ships",
+  "reviewedAt": "2026-11-16",
+  "manifest": "work/fleet-visuals/manifest.json",
+  "sha256": "d3a0aa1ca85982f923c03d523b8ad7df50549fad6f0799b47eee97fce608a70f",
+  "svgFiles": [
+    {
+      "shipSlug": "petropavlovsk",
+      "file": "work/fleet-visuals/profiles/petropavlovsk.svg",
+      "sha256": "d53bcafb93b5f0fe1d31f7b44754e48b4da78eba0b9984615088abade5143e53",
+      "funnelCount": 2,
+      "mastCount": 2,
+      "status": "accepted"
+    },
+    {
+      "shipSlug": "poltava",
+      "file": "work/fleet-visuals/profiles/poltava.svg",
+      "sha256": "78ee1aac2d3a901598e73dc8d124edffb0f14206e9d7fb46b0b8d3a90ca1b311",
+      "funnelCount": 2,
+      "mastCount": 2,
+      "status": "accepted"
+    },
+    {
+      "shipSlug": "sevastopol",
+      "file": "work/fleet-visuals/profiles/sevastopol.svg",
+      "sha256": "890d1289a522eb2b1936703c86375e5c1e4bb10f9f8528222d9b6be896ac0f6a",
+      "funnelCount": 2,
+      "mastCount": 2,
+      "status": "accepted"
+    },
+    {
+      "shipSlug": "retvizan",
+      "file": "work/fleet-visuals/profiles/retvizan.svg",
+      "sha256": "6f819dd4f70894222f8a6f57fcb536e4ae1ae6b7641a300c155a52050f139530",
+      "funnelCount": 3,
+      "mastCount": 2,
+      "status": "accepted"
+    },
+    {
+      "shipSlug": "bayan",
+      "file": "work/fleet-visuals/profiles/bayan.svg",
+      "sha256": "0b144c112dd372ef4da5ced16f21820c41190a4c6d59efa8c6872e2619416728",
+      "funnelCount": 4,
+      "mastCount": 2,
+      "status": "accepted"
+    },
+    {
+      "shipSlug": "mikasa",
+      "file": "work/fleet-visuals/profiles/mikasa.svg",
+      "sha256": "9a5859346cb42da8e428c8703660e51d0b9b20c9649b1d21974a47767be26b40",
+      "funnelCount": 2,
+      "mastCount": 2,
+      "status": "accepted"
+    },
+    {
+      "shipSlug": "novik",
+      "file": "work/fleet-visuals/profiles/novik.svg",
+      "sha256": "cae17e8e6aadb485659f2fa35ceb7d690aa1c9f375844d22311b27e6a84c47bc",
+      "funnelCount": 3,
+      "mastCount": 1,
+      "status": "accepted"
+    },
+    {
+      "shipSlug": "varyag",
+      "file": "work/fleet-visuals/profiles/varyag.svg",
+      "sha256": "668df077107cf71accfa2c1a7940e02a4f48cadaaa7138c83b73f07592c97850",
+      "funnelCount": 4,
+      "mastCount": 2,
+      "status": "accepted"
+    },
+    {
+      "shipSlug": "tsesarevich",
+      "file": "work/fleet-visuals/profiles/tsesarevich.svg",
+      "sha256": "3a7becbba95ce42e333a034cd00158b1644128aa008cb0b79e9c371b3503be42",
+      "funnelCount": 2,
+      "mastCount": 2,
+      "status": "accepted"
+    },
+    {
+      "shipSlug": "peresvet",
+      "file": "work/fleet-visuals/profiles/peresvet.svg",
+      "sha256": "f76d7daa49c8d28a6778c718f68128e97512f24c212a6b01581915a3be5e57af",
+      "funnelCount": 3,
+      "mastCount": 2,
+      "status": "accepted"
+    },
+    {
+      "shipSlug": "pobeda",
+      "file": "work/fleet-visuals/profiles/pobeda.svg",
+      "sha256": "ebae70bf8b31eb0fd2b085e7ee7f7bb47e6f06180f58192c65c988ff82912db4",
+      "funnelCount": 3,
+      "mastCount": 2,
+      "status": "accepted"
+    },
+    {
+      "shipSlug": "askold",
+      "file": "work/fleet-visuals/profiles/askold.svg",
+      "sha256": "2f112e3d15b44d7e516890830b6296d4acce1337fca8262412b0a4a5ec97e128",
+      "funnelCount": 5,
+      "mastCount": 2,
+      "status": "accepted"
+    },
+    {
+      "shipSlug": "pallada",
+      "file": "work/fleet-visuals/profiles/pallada.svg",
+      "sha256": "da132729cf14e9a937a2598f5cfbbfe0dcc5cee097ca8f087cc96b2c02752a9c",
+      "funnelCount": 3,
+      "mastCount": 2,
+      "status": "accepted"
+    },
+    {
+      "shipSlug": "diana",
+      "file": "work/fleet-visuals/profiles/diana.svg",
+      "sha256": "eb6c4bdcdf5857a1e3a041477ce422d149d9b3caca936731a8720809d578dc1b",
+      "funnelCount": 3,
+      "mastCount": 2,
+      "status": "accepted"
+    },
+    {
+      "shipSlug": "boyarin",
+      "file": "work/fleet-visuals/profiles/boyarin.svg",
+      "sha256": "48c2de59352f5ab79cdd9e0dfc670063d1d65e5ffd3541cc0bd8abf22b7a0f5b",
+      "funnelCount": 3,
+      "mastCount": 2,
+      "status": "accepted"
+    },
+    {
+      "shipSlug": "hatsuse",
+      "file": "work/fleet-visuals/profiles/hatsuse.svg",
+      "sha256": "1216dbdc936f8c999ec806365fdcc27f2dba337012de4624d49a0b25c2694c7b",
+      "funnelCount": 3,
+      "mastCount": 2,
+      "status": "accepted"
+    },
+    {
+      "shipSlug": "yashima",
+      "file": "work/fleet-visuals/profiles/yashima.svg",
+      "sha256": "096a1dd9e523d94974452f97d6b533ccd9e93428ecdf7d3da2892f5612fdcb6f",
+      "funnelCount": 2,
+      "mastCount": 2,
+      "status": "accepted"
+    }
+  ],
+  "method": "Opened http://127.0.0.1:4328/contact.html through configured playwright_project; opened photograph details, inspected all 17 rendered profiles alongside their reference photographs in four screenshot groups. Reopened corrected Novik SVG with cache-busting query and inspected alongside the full-size accepted photograph. Site files unchanged.",
+  "screenshots": [
+    "review-batch1.png",
+    "review-batch2.png",
+    "review-batch3.png",
+    "review-batch4.png",
+    "review-novik-corrected.png"
+  ],
+  "resolvedIssues": [
+    {
+      "shipSlug": "novik",
+      "issue": "Single mast had been drawn ahead of all three funnels, contrary to the supplied photograph; manifest incorrectly described a reversal of the photo.",
+      "resolution": "Mast and rigging moved between aft and middle funnels; manifest now describes the correct right-facing bow and mast location. Corrected SVG visually rechecked; other 16 SVG hashes remain fixed."
+    }
+  ],
+  "notes": [
+    "Все 17 visualNote и записи confirmed/simplified прочитаны. Проверены counts труб/мачт, положение тяжёлых башен, поднятая носовая палуба и различимые классовые признаки; корабли не перепутаны с поздними тёзками.",
+    "Сходство трёх Полтав и двух бронепалубных сестёр сохранено намеренно, не создано ложное различие проектов. Пересвет/Победа различаются кормовой мачтой; Аскольд имеет пять труб, Баян/Варяг четыре, Новик одну мачту. Микаса/Ясима имеют две трубы, Хацусэ три.",
+    "Цвета и мелкое оснащение художественные; это явно обозначенные иллюстрации по фотографиям, не обмерные чертежи и не свидетельство исторической окраски. Плоский боковой профиль не доказывает точную поперечную форму или число мелких орудий.",
+    "Все 34 изображения атласа загрузились. Сверка источниковых фотографий опирается на уже принятые записи hardware; автор альбома не подставлен вместо неизвестного фотографа. Новых прав на исходные фотографии вердикт не создаёт.",
+    "Manifest SHA и каждый из 17 SVG SHA вычислены заново из фактических file bytes. Хеши зафиксированы выше; любые последующие изменения требуют отдельной проверки."
+  ],
+  "issues": []
+}

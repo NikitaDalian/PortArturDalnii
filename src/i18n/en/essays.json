@@ -34,12 +34,13 @@
       },
       {
         "id": "supply",
-        "title": "Two supply ships and a long aftermath",
+        "title": "From transport ship to the crew’s meal",
         "paragraphs": [
           "At the start of the war, two auxiliary vessels, Matsuyama Maru and Fukuoka Maru, were prepared to supply food. Deliveries to the forward forces were planned roughly every six days. But the warships often operated in dispersed groups, and two supply vessels proved too few. From August 1904, Kotohira Maru and other ships were brought into this work.",
           "The additional ships helped with transport, but they lacked enough equipment to preserve the food. They could not carry sufficient provisions. Even the few days’ voyage from the Japanese naval base at Sasebo to a forward base made it difficult to keep bread, vegetables, meat and fish fresh. Refrigeration technology already existed, but its installation aboard ships was only beginning.",
-          "The shortage of food supply vessels was recognised as one of the weaknesses of supply during the Russo-Japanese War. The auxiliary transports of 1904, however, were not yet the dedicated fleet food supply ships that appeared later. The first such ship in the Japanese navy, Mamiya, entered service in 1924. The second, Irako, followed on 5 December 1941.",
-          "Ishihara argues that, against the backdrop of the Japanese fleet’s victory at Tsushima in 1905, the supply shortcomings exposed by the war were not adequately reflected in subsequent naval policy. The dates behind that judgement are quite concrete: about twenty years passed between the war that revealed the shortage and Mamiya; another seventeen or so separated the commissioning of the first and second dedicated ships."
+          "The shortage of food supply vessels was recognised as one of the weaknesses of supply during the Russo-Japanese War. The auxiliary transports of 1904, however, were not yet the dedicated fleet food supply ships that appeared later. The first such ship in the Japanese navy, Mamiya, entered service in 1924. The second, Irako, followed on 5 December 1941. Ishihara argues that, against the backdrop of the Japanese fleet’s victory at Tsushima in 1905, the supply shortcomings exposed by the war were not adequately reflected in subsequent naval policy.",
+          "Feeding the crew during battle called for a different arrangement. On 27 May 1905, the first day of the Battle of Tsushima, hardtack and a drink made from kudzu starch were kept ready on Mikasa’s upper, middle and lower decks. Sailors could eat and drink as needed. Rice balls were handed out for dinner at five in the afternoon.",
+          "Regular meal arrangements resumed at eight that evening, when fighting paused for the night. The seriously wounded received special food: eggs, condensed milk and porridge."
         ],
         "refs": [
           1
@@ -57,7 +58,7 @@
         "author": "Akinori Ishihara (石原明徳), National Institute for Defense Studies, Japan",
         "date": "2024-05-28",
         "url": "https://www.nids.mod.go.jp/publication/commentary/pdf/commentary324.pdf",
-        "locator": "NIDS Commentary, No. 324. Page 4: refrigeration equipment; page 6: keeping food fresh during delivery from Sasebo; page 7: supply ships, Mamiya and Irako, Mikasa’s flagship status, anchorage and menu; page 8: those taken ill. Note 13 is on page 10.",
+        "locator": "NIDS Commentary, No. 324. Page 4: refrigeration equipment; page 6: keeping food fresh during delivery from Sasebo; page 7: supply ships, Mamiya and Irako, Mikasa’s flagship status, anchorage and menu; page 8: those taken ill and food during the Battle of Tsushima on 27 May 1905, including food for the seriously wounded. Note 13 is on page 10.",
         "note": "Original title: 日露戦争における艦のロジスティクス―勝ち戦の夕食は握飯. The study was read in full; the key pages were checked against page images and the official English version. The original medical documents have not been checked separately."
       }
     ],
@@ -84,62 +85,102 @@
   },
   {
     "slug": "bankovskiy-sluzhashchiy-dayrena",
-    "title": "Money in Dairen: who could get a loan?",
-    "dek": "Silver coins, Japanese banknotes and private credit firms. Bank clerk Sun Yaoting recalled a city with many kinds of money, where getting a loan was far from easy.",
-    "date": "2026-11-15",
+    "title": "Who could borrow in Dairen?",
+    "dek": "A grain merchant could borrow against a railway consignment note; an established business client might need only a telephone call. How Chinese cash houses connected trade, savings and bank credit.",
+    "date": "2026-11-16",
     "periods": [
       "japanese"
     ],
-    "perspective": "From Sun Yaoting’s Chinese memoir",
+    "perspective": "From bank clerk Sun Yaoting’s memoir and Guo Xipu and Sun’s account of Dalian’s cash houses",
     "sections": [
       {
-        "id": "clerk",
-        "title": "A bank clerk in Dairen",
+        "id": "grain-and-credit",
+        "title": "A borrower who could help his bank",
         "paragraphs": [
-          "Dairen was the name of Dalian under Japanese rule. Different kinds of money circulated in this trading city, yet an ordinary Chinese resident found it difficult to obtain a bank loan. Sun Yaoting recalled what people paid with, and who could borrow.",
-          "He had lived in Dalian since childhood and worked in banking from 1930. Starting as an apprentice and clerk, he eventually rose to senior positions. He knew the city’s banking life from the inside.",
-          "He names his workplace as Longkou, a joint Japanese-Chinese bank. He left an address too: Tianjin Street, as it was called when his account was recorded. Mergers and new bank names followed. Sun later described all this in the second issue of Materials on the History of Dalian."
+          "In Dairen in the 1920s and 1930s—the name of Dalian under Japanese rule—a large grain merchant might not only borrow from a bank but also come to its aid with money. Bank clerk Sun Yaoting named two such firms: Xingji, managed by Xin Bofen, and Yifahe, managed by Wang Xinzhai. They were major borrowers from banks and private cash houses. When necessary, the same trading firms supported their creditors when they ran short of funds for day-to-day payments.",
+          "Sun had worked in banking since 1930, including at the joint Japanese-Chinese Longkou Bank. These credit relationships rested on a particular business: grain trading and oil milling. Soybeans and gaoliang, or sorghum, came into the port; traders needed money while their goods were in transit. In another account of Dalian finance, Sun and Guo Xipu described a convenient form of security for a merchant: buy grain, hand the railway consignment note to a bank and obtain cash against it. In their judgement, a bank was more willing to accept a document covering grain in transit than a mortgage on property.",
+          "Such a loan was tied to a specific cargo and transaction. Another borrower needed guarantees of repayment of his own. Sun recalled that an ordinary resident found it hard to obtain a loan without adequate security. But between a large foreign bank and a private moneylender there was another option: a qianzhuang, or cash house."
         ],
         "refs": [
-          1
+          1,
+          2
         ]
       },
       {
-        "id": "currency",
-        "title": "Silver and paper gold",
+        "id": "money-house",
+        "title": "Property for the bank, trust for the client",
         "paragraphs": [
-          "His list includes silver coins, small silver coins, copper money and banknotes. He calls the Japanese paper money jinpiao, 金票. There is gold in the name, but these were notes, not gold coins.",
-          "Japanese banknotes predominated, Sun says. Chinese banks also issued paper money, but local issues required permission from the Japanese authorities and could serve only as temporary means of payment."
+          "Qianzhuang accepted deposits, made loans, exchanged money and transferred it to other cities. They were not pawnshops: their business extended beyond objects brought in as collateral. In the 1920s and early 1930s, they chiefly served Chinese commercial and industrial firms. According to Sun and Guo, a small business owner often preferred to pay them more rather than seek a loan from a foreign bank, with its complicated procedures and difficult access.",
+          "Cash houses had creditors of their own. They would generally mortgage property to a bank and arrange an overdraft—the right to draw more money from a current account than it held. Their own funds were insufficient: merchants left deposits for only short periods, and deposits from other residents were few. When incoming and outgoing payments did not balance, bank support was needed.",
+          "A cash house, in turn, might lend to a trusted client after a telephone call. There was no single interest rate or set of terms for everyone: the borrower’s standing mattered, as did the availability of money in the market. Sun gives one example of the cost of a short-term loan: two jiao, or two-tenths of a yuan, charged daily for every thousand yuan borrowed. He does not identify the lender or the length of the loan; treating this as the city’s average rate would be misleading."
         ],
         "refs": [
-          1
+          1,
+          2
         ]
       },
       {
-        "id": "credit",
-        "title": "Money in the city, money for its people",
+        "id": "trust-and-deposits",
+        "title": "Where the money came from",
         "paragraphs": [
-          "Sun describes Dairen as a city of manufacturing and trade with a constant need for money. Those seeking loans turned to the banks. But for an ordinary Chinese resident, he recalled, getting a bank loan was difficult: without adequate security—guarantees that the money would be repaid—there was little chance.",
-          "Loans were also available from qianzhuang, 钱庄, traditional private credit firms. They too required security and, Sun says, charged more interest than the banks. He writes separately about private moneylenders operating outside both banks and qianzhuang. In his judgement, an expensive loan could bring ruin in a short time."
+          "In a table of cash houses for 1931, the entry for Yifahe lists Wang Xinzhai, capital of 300,000 yuan in banknotes and an opening date of 1923. Nearby are establishments with capital of only five thousand. But the amounts are recorded in different kinds of money: silver, “gold” banknotes, and large and small silver monetary units. They cannot be added together as though every yuan were the same.",
+          "The reputation of an owner and his shareholders brought in depositors, whose deposits made lending possible. Connections often grew around a shared place of origin. Businesspeople from Shandong were important clients of cash houses run by people from that province. Yifahe belonged to the influential group from Laoting in Hebei. Yet Sun qualified this: shared interests mattered as well as a shared home, and the groups’ membership could change.",
+          "There was also a more entertaining way to attract residents’ savings. Sun describes Wanguo Chuxu Hui, a savings scheme with a prize draw: pay in three yuan each month for a chance at the year-end top prize of 30,000. A printer at the Taidong Ribao newspaper won it once. Sun left neither the winner’s name nor the year, but remembered the scheme’s promotional success: these deposits began to spread among Chinese banks. Many small payments pooled money for banking operations."
         ],
         "refs": [
-          1
+          1,
+          2
+        ]
+      },
+      {
+        "id": "trade-and-risk",
+        "title": "A consignment note could lead to the exchange",
+        "paragraphs": [
+          "Grain cargoes connected the bank’s cash desk to the railway, but did not guarantee uneventful trading. Sun and Guo recalled that well-funded cash houses acting as agents could obtain cash against consignment notes and then take that money to the currency exchange. There, transactions involved not only cash currency but also contracts for future delivery. In their account, some participants grew rich quickly while others were ruined. Having security did not mean that a borrower would use the money only for the next consignment of grain.",
+          "Merchants and financiers also defended the system of payments they knew. When the Japanese authorities tried to replace the silver basis of currency circulation with a gold basis, representatives of cash houses, grain firms and oil mills submitted a joint petition. Sun recalled appeals to the Kwantung authorities and a delegation’s journey to Tokyo. He did not give the year. Even Japanese banks were divided: the Yokohama Specie Bank, which issued silver banknotes, also opposed abolishing the silver system."
+        ],
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "war-controls",
+        "title": "When a telephone call was no longer enough",
+        "paragraphs": [
+          "In Sun’s account, the dispute ended with permission to use both systems, but Chinese financiers had to report their operations every month. They then strengthened their connections around a shared table: bank managers invited representatives of the chamber of commerce to weekly lunches at the Yamato Hotel. The gatherings were called Suiyokai, the Wednesday Society. Discussing business and supporting one another was a practical necessity.",
+          "War gradually narrowed this network’s scope. Sun and Guo’s account says that controls on grain undermined the business of trading agents, while the cash houses’ overseas transfers ceased. Its description of wartime restrictions gives the thresholds at which prior permission from the Japanese administration was required: industrial loans of 100,000 yuan or more, commercial loans of 50,000 or more, and overdrafts of 30,000 or more. By 1944, according to the account, only eight Chinese cash houses remained in Dalian.",
+          "Access to money had once begun with a grain consignment note, a shareholder’s reputation or a call to a familiar creditor. Now permits, reports and trade restrictions increasingly governed those relationships. A firm once able to help its bank depended on more than its goods and its depositors’ trust: the very transactions on which its credit rested could be closed to it."
+        ],
+        "refs": [
+          1,
+          2
         ]
       }
     ],
     "limitations": [
-      "Pages 49–53 of the library PDF were used, not the whole article. The publication date of the collection’s second issue has not been established. Tianjin Street is the name given by the memoirist; the exact building has not been identified.",
-      "This is a bank clerk’s later account, with pronounced anticolonial and class-based judgements, rather than a picture of all Chinese residents’ experience. Exact interest rates are not given here: their basis of calculation has not been checked. Currency circulation under Japanese rule cannot be applied to Russian Dalny or to Russian prices in 1913."
+      "These are retrospective accounts by participants in financial life, recorded and edited by Huang Benren. The first article was read in full, on pages 49–62 of the library PDF; the second on printed pages 91–106 (PDF pages 93–108). Sun contributes to both accounts, so they are not treated as two wholly independent testimonies.",
+      "Amounts and terms are given only as described in these accounts. Individual loan contracts, the named firms’ accounts and original Japanese regulations have not been checked. The two-jiao rate has not been converted into an annual rate; the currency issue used in that example is unspecified. Cash-house capital recorded in different currencies is not added together.",
+      "The first account omits the exact year of the dispute over the gold and silver systems. Its mistaken generalisations about Russian money and the continuity of banks are not adopted. The name, manager and credit connections of Yifahe do not establish that every similarly named firm was the same legal entity."
     ],
     "sources": [
       {
         "id": 1,
         "title": "Finance in Colonial Dalian under Japanese Rule. Materials on the History of Dalian, Issue 2",
-        "author": "Sun Yaoting (孙耀庭)",
+        "author": "Sun Yaoting (孙耀庭); recorded and edited by Huang Benren (黄本仁)",
         "date": "Publication date of the issue not established",
         "url": "https://www.dl-library.net.cn/wenxian/wszl/2.pdf",
-        "locator": "Pages 49–53 of the library PDF: title on 49; the author and his entry into banking on 50; the bank and currencies on 52; credit on 52–53. Page numbers are visible on 49, 51 and 53; 50 and 52 are identified by their position in the sequence.",
-        "note": "Original title: 孙耀庭：日寇统治下的大连殖民地金融业 // 大连文史资料 第二辑. A bank clerk’s later memoir, digitised by Dalian Municipal Library. This is a typeset library PDF; the collection’s publication date has not been confirmed. The checked extract does not cover the whole article."
+        "locator": "Complete article: PDF pages 49–62. Pages 52–53: security and interest rate; page 55: Xingji, Xin Bofen, Yifahe and Wang Xinzhai; page 58: connections based on shared origins; pages 61–62: the currency system, reporting, Suiyokai and prize deposits.",
+        "note": "Library text PDF, rather than a facsimile of the first edition. Page numbers and key passages were checked visually. The editor of the recorded account is named at the article’s end. The memoirist’s political and class-based judgements are not presented as the views of all residents."
+      },
+      {
+        "id": 2,
+        "title": "A Short Account of Dalian’s Cash Houses. Materials on the History of Dalian, Issue 6",
+        "author": "Guo Xipu (郭习朴) and Sun Yaoting (孙耀庭), oral accounts; edited by Huang Benren (黄本仁)",
+        "date": "December 1988",
+        "url": "https://www.dl-library.net.cn/wenxian/wszl/6.pdf",
+        "locator": "Complete article: printed pages 91–106, PDF pages 93–108. Page 93: Yifahe table; pages 94–95: depositors, connections based on shared origins, property pledged to banks and telephone lending; page 98: railway consignment notes; pages 101–104: wartime restrictions and eight houses remaining by 1944.",
+        "note": "A new complete PDF was downloaded from Dalian Municipal Library; the title page and publication details were checked. The table cites a 1935 directory of the Dalian Chamber of Commerce and Industry; the original directory has not been examined. Technical details are presented as a later account, rather than as independently verified loan documentation."
       }
     ],
     "relatedNotes": [
@@ -156,8 +197,8 @@
     "illustration": {
       "image": "/images/essays/dairen-bank.webp",
       "alt": "A stone bank building in Dairen with a large central dome and two smaller side domes; several people stand in the street.",
-      "caption": "The Yokohama Specie Bank branch in Dairen. Photograph from Asia Taikan; the exact date is not given. This is a different bank, not Longkou, and the photograph does not show Sun Yaoting’s workplace.",
-      "credit": "Photographer not identified. 亜細亜大観 (Asia Taikan), volume 1, plate 004; Black Dragon Society (Kokuryūkai). Via Wikimedia Commons. Public domain (PD-Japan-oldphoto, PD-1996).",
+      "caption": "The Yokohama Specie Bank in Dairen, one of the participants in the currency dispute described by Sun Yaoting. Asia Taikan, volume 1, plate 004; the exact date of the photograph has not been established. This is not Longkou Bank, where Sun worked.",
+      "credit": "Photographer not identified. 亜細亜大観 (Asia Taikan), volume 1, plate 004; compiled by the Black Dragon Society (Kokuryūkai), which is not identified as the photographer. Wikimedia Commons: public domain, PD-Japan-oldphoto and PD-1996.",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E4%BA%9C%E7%B4%B0%E4%BA%9C%E5%A4%A7%E8%A6%B3_01_004_%22%E6%AD%A3%E9%87%91%E9%8A%80%E8%A1%8C%E6%94%AF%E5%BA%97_%EF%BC%88%E5%A4%A7%E9%80%A3%EF%BC%89%22.jpg"
     }
   }

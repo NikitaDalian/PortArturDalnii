@@ -1,0 +1,47 @@
+{
+  "status": "accepted",
+  "reviewer": "old_text_links",
+  "reviewDate": "2026-11-16",
+  "reviewType": "Independent full translation review against accepted Russian, not author self-review",
+  "russianSource": {
+    "file": "work/reading-notes/reading-notes-ru.json",
+    "sha256": "cf02db68b493b7b7c4846640a3973c1f1ff02c1fa390271d0fd822b666976f4a"
+  },
+  "translations": [
+    {
+      "language": "en",
+      "file": "work/reading-notes/reading-notes-en.json",
+      "sha256": "26fd7e4554ff088552fb72bb2d92e835cf7f835f97b16d9b194a952e5074536b",
+      "status": "accepted",
+      "fullRead": true,
+      "rereadAfterCorrections": false,
+      "unresolvedIssues": []
+    },
+    {
+      "language": "zh",
+      "file": "work/reading-notes/reading-notes-zh.json",
+      "sha256": "80469aac809f4e2f4fff279f49deecaaac5394e8468aaaca12ade1f18fb87f2e",
+      "status": "accepted",
+      "fullRead": true,
+      "rereadAfterCorrections": true,
+      "unresolvedIssues": []
+    }
+  ],
+  "scopeLimit": "Read the complete publication JSON in all three languages, including metadata, source notes, limitations and illustration text. Translation fidelity reviewed against accepted RU; no new claim of separately reading every historical source.",
+  "resolvedIssues": [
+    {
+      "language": "zh",
+      "location": "fanza.description",
+      "issue": "稻草 narrowed generic Russian straw to rice straw.",
+      "resolution": "Author changed it to 秸秆; all ten corrected ZH records were read in full again."
+    }
+  ],
+  "findings": [
+    "All ten EN and ten ZH definitions read completely. Scope arrays, slugs and every source URL match accepted RU; no additional dates, numerical claims or unsupported historical episodes were introduced.",
+    "EN is natural and preserves maritime and fortification senses. Casemate and indemnity identify their additional Russian senses explicitly rather than attributing them indiscriminately to English terms.",
+    "ZH is readable and uses appropriate naval/fortification words: 锚地, 榴霰弹, 胸墙, 掩蔽部. The fanza roof description no longer invents a crop.",
+    "EN pennant-count alias66vessels and fanza aliashouses were checked in final-matcher-audit-en.json actual contexts. These attach a contextual explanation without changing the existing translated article. Their assigned pages remain restricted.",
+    "Internment excludes ships from combat without retroactively applying1907/1949conventions; concession does not transfer ownership of land. Conditional house construction and print-process explanation retain their original limits.",
+    "No unresolved translation issues. Author of Russian definitions is the reviewer here, but EN and ZH were authored by other agents; this is not acceptance of the reviewer’s own translation."
+  ]
+}
