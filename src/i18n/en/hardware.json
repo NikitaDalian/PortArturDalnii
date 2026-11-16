@@ -183,7 +183,7 @@
       {
         "name": "Nikolai Matveyevich Yakovlev",
         "role": "Captain at the start of the war; rescued after the disaster.",
-        "personSlug": null,
+        "personSlug": "yakovlev",
         "refs": [
           1,
           3
@@ -192,7 +192,7 @@
       {
         "name": "Mikhail Pavlovich Molas",
         "role": "Chief of staff to the fleet commander; died aboard the flagship.",
-        "personSlug": null,
+        "personSlug": "molas",
         "refs": [
           1,
           6
@@ -248,7 +248,9 @@
     "relatedEssays": [],
     "relatedPeople": [
       "makarov",
-      "vereshchagin"
+      "vereshchagin",
+      "stark",
+      "kirill-vladimirovich"
     ],
     "relatedPlaces": [
       "gavan-port-artura",
@@ -528,7 +530,7 @@
       {
         "name": "Eduard Nikolayevich Shchensnovich",
         "role": "Captain in Russian service; involved in supervising construction and defending Port Arthur.",
-        "personSlug": null,
+        "personSlug": "shchensnovich",
         "refs": [
           1,
           2
@@ -537,16 +539,16 @@
       {
         "name": "Kazimir Filippovich Ketlinsky",
         "role": "Senior gunnery officer; helped repel the blockship attack.",
-        "personSlug": null,
+        "personSlug": "ketlinsky",
         "refs": [
           1,
           2
         ]
       },
       {
-        "name": "Alexander Vasilyevich Razvozov",
+        "name": "Alexander Vladimirovich Razvozov",
         "role": "Torpedo officer; beside the captain during the action of 28 July.",
-        "personSlug": null,
+        "personSlug": "razvozov",
         "refs": [
           2
         ]
@@ -600,7 +602,8 @@
     ],
     "relatedEssays": [],
     "relatedPeople": [
-      "vitgeft"
+      "vitgeft",
+      "stark"
     ],
     "relatedPlaces": [
       "gavan-port-artura"
@@ -912,16 +915,16 @@
       {
         "name": "Robert Nikolayevich Viren",
         "role": "Commanded the cruiser on the voyage to the Far East and in the actions of 1904; later led the ships remaining at Port Arthur.",
-        "personSlug": null,
+        "personSlug": "viren",
         "refs": [
           1,
           5
         ]
       },
       {
-        "name": "Alexander Romanovich Rodionov",
+        "name": "Alexander Rostislavovich Rodionov",
         "role": "First captain during construction; involved in supervising the ship’s preparation.",
-        "personSlug": null,
+        "personSlug": "rodionov",
         "refs": [
           1
         ]
@@ -929,7 +932,7 @@
       {
         "name": "Ivan Konstantinovich Grigorovich",
         "role": "Supervised construction of the ships ordered in France; this did not make him a member of Bayan’s crew.",
-        "personSlug": null,
+        "personSlug": "grigorovich",
         "refs": [
           2
         ]
@@ -982,7 +985,8 @@
     ],
     "relatedEssays": [],
     "relatedPeople": [
-      "makarov"
+      "makarov",
+      "sakamoto"
     ],
     "relatedPlaces": [
       "gavan-port-artura"
@@ -1060,7 +1064,7 @@
       "Mikasa",
       "Mikasa memorial ship"
     ],
-    "summary": "A British-built Japanese battleship and Admiral Heihachirō Tōgō’s flagship in the war of 1904–1905. Mikasa fought against the Port Arthur squadron and at Tsushima; after a long career and two restorations she became a memorial ship at Yokosuka.",
+    "summary": "A British-built Japanese battleship and Admiral Tōgō Heihachirō’s flagship in the war of 1904–1905. Mikasa fought against the Port Arthur squadron and at Tsushima; after a long career and two restorations she became a memorial ship at Yokosuka.",
     "intro": [
       "Mikasa survived the war with Russia, sank after peace had been signed, returned to service and then nearly disappeared after becoming a memorial. Today she can be visited at Yokosuka, a Japanese naval port south of Tokyo. Yet half a century of history separates Tōgō’s bridge from the present museum: an explosion, repairs, an earthquake and the reconstruction of an almost vanished silhouette."
     ],
@@ -1093,7 +1097,7 @@
         "id": "port-arthur",
         "title": "The flagship off Port Arthur",
         "paragraphs": [
-          "At the end of December 1903 Mikasa became flagship of the Combined Fleet, carrying Tōgō and his staff. The captain was responsible for the battleship and her crew, while the admiral commanded the fleet: two different chains of responsibility met on one deck. In 1904–1905 Mikasa’s captain was Hikojirō Ijichi; Tōgō’s staff included Tomosaburō Katō and the operations officer Saneyuki Akiyama.",
+          "At the end of December 1903 Mikasa became flagship of the Combined Fleet, carrying Tōgō and his staff. The captain was responsible for the battleship and her crew, while the admiral commanded the fleet: two different chains of responsibility met on one deck. In 1904–1905 Mikasa’s captain was Hikojirō Ijichi; Tōgō’s staff included Tomosaburō Katō and the operations officer Akiyama Saneyuki.",
           "Mikasa’s connection with Port Arthur was direct: she operated against the Russian squadron based there. On 27 January (9 February) 1904 she took part in the daylight action off the fortress, and on 28 July (10 August) in the Battle of the Yellow Sea. The Russian ships were attempting to break out from Port Arthur to Vladivostok; the Japanese fleet sought to stop them. Mikasa was no observation post safely in the distance. The Japanese flagship came under fire, sustained damage and needed repairs."
         ],
         "refs": [
@@ -1256,9 +1260,9 @@
     ],
     "crew": [
       {
-        "name": "Heihachirō Tōgō",
+        "name": "Tōgō Heihachirō",
         "role": "Commander of the Combined Fleet; flew his flag in Mikasa during the war of 1904–1905.",
-        "personSlug": null,
+        "personSlug": "togo",
         "refs": [
           3
         ]
@@ -1266,15 +1270,15 @@
       {
         "name": "Hikojirō Ijichi",
         "role": "Captain during the Russo-Japanese War, not commander of the whole fleet.",
-        "personSlug": null,
+        "personSlug": "ijichi",
         "refs": [
           3
         ]
       },
       {
-        "name": "Saneyuki Akiyama",
+        "name": "Akiyama Saneyuki",
         "role": "Operations officer on Tōgō’s staff aboard the flagship.",
-        "personSlug": null,
+        "personSlug": "akiyama",
         "refs": [
           3
         ]
@@ -1321,7 +1325,12 @@
     "relatedEssays": [
       "mikasa-obed-i-snabzhenie"
     ],
-    "relatedPeople": [],
+    "relatedPeople": [
+      "togo",
+      "akiyama",
+      "ijichi",
+      "kato-tomosaburo"
+    ],
     "relatedPlaces": [
       "gavan-port-artura"
     ],
@@ -1660,7 +1669,7 @@
       {
         "name": "Nikolai Ottovich Essen",
         "role": "Captain of the cruiser at the beginning of the Russo-Japanese War; later commanded Sevastopol.",
-        "personSlug": null,
+        "personSlug": "essen",
         "refs": [
           1,
           3
@@ -1669,7 +1678,7 @@
       {
         "name": "Maximilian Fyodorovich Schultz",
         "role": "Captain during the breakout from Port Arthur and final action off Sakhalin.",
-        "personSlug": null,
+        "personSlug": "shults",
         "refs": [
           1,
           4,
@@ -1677,9 +1686,9 @@
         ]
       },
       {
-        "name": "Andrey Petrovich Shter",
+        "name": "Andrei Petrovich Shter",
         "role": "A lieutenant aboard the cruiser, participant in the events and author of the diary Aboard the Cruiser Novik.",
-        "personSlug": null,
+        "personSlug": "shter",
         "refs": [
           3,
           4,
@@ -2079,24 +2088,24 @@
       {
         "name": "Vsevolod Fyodorovich Rudnev",
         "role": "Captain of Varyag at Chemulpo; previously served in the administration of Port Arthur’s naval port.",
-        "personSlug": null,
+        "personSlug": "rudnev",
         "refs": [
           3,
           5
         ]
       },
       {
-        "name": "Alexei Alexeyevich Nirod",
+        "name": "Alexei Mikhailovich Nirod",
         "role": "Midshipman and rangefinding officer; killed at Chemulpo.",
-        "personSlug": null,
+        "personSlug": "nirod",
         "refs": [
           5
         ]
       },
       {
-        "name": "Pavel Nikolayevich Gubonin",
-        "role": "Midshipman commanding a gun division; wounded in the action.",
-        "personSlug": null,
+        "name": "Pyotr Nikolayevich Gubonin",
+        "role": "Midshipman aboard Varyag; seriously wounded in the Battle of Chemulpo.",
+        "personSlug": "gubonin",
         "refs": [
           5
         ]
@@ -2143,7 +2152,9 @@
       "lektsiya-nazarenko-russko-yaponskaya-voina"
     ],
     "relatedEssays": [],
-    "relatedPeople": [],
+    "relatedPeople": [
+      "uriu"
+    ],
     "relatedPlaces": [
       "gavan-port-artura"
     ],
@@ -2261,7 +2272,7 @@
         "title": "Why twelve inches was retained",
         "paragraphs": [
           "In 1891 the Naval Technical Committee considered a practical question: could the main calibre of new ships be reduced? Lighter guns promised lighter mountings and faster fire. The committee decided, however, that too much projectile power would be lost. Twelve inches was retained, but a new gun had to be designed.",
-          "The principal designer was artillery engineer Alexander Brink, and the manufacturer the Obukhov Steel Works. The design took shape in winter 1891–1892, with trials in 1895. The French Canet system helped the Russians develop a new breech mechanism, but this did not make the whole gun a French licensed model. It had its own design history."
+          "The principal designer was artillery engineer Anton Brink, and the manufacturer the Obukhov Steel Works. The design took shape in winter 1891–1892, with trials in 1895. The French Canet system helped the Russians develop a new breech mechanism, but this did not make the whole gun a French licensed model. It had its own design history."
         ],
         "refs": [
           1
@@ -2343,7 +2354,7 @@
         "year": 1891,
         "date": "1891–1892",
         "title": "A new gun designed",
-        "text": "Alexander Brink and specialists of the Naval Technical Committee developed the new main battery weapon.",
+        "text": "Anton Brink and specialists of the Naval Technical Committee developed the new main battery weapon.",
         "refs": [
           1
         ]
@@ -2386,7 +2397,9 @@
       "pervaya-tihookeanskaya-eskadra"
     ],
     "relatedEssays": [],
-    "relatedPeople": [],
+    "relatedPeople": [
+      "brink"
+    ],
     "relatedPlaces": [],
     "relatedSources": [],
     "sources": [
@@ -2572,7 +2585,9 @@
       "pervaya-tihookeanskaya-eskadra"
     ],
     "relatedEssays": [],
-    "relatedPeople": [],
+    "relatedPeople": [
+      "canet"
+    ],
     "relatedPlaces": [],
     "relatedSources": [],
     "sources": [
@@ -2645,7 +2660,7 @@
       "8-inch/45",
       "Obukhov eight-inch gun"
     ],
-    "summary": "An eight-inch gun designed by Alexander Brink and used on Russian armoured cruisers. In the Port Arthur squadron it formed Bayan’s main battery.",
+    "summary": "An eight-inch gun designed by Anton Brink and used on Russian armoured cruisers. In the Port Arthur squadron it formed Bayan’s main battery.",
     "intro": [
       "Bayan had only two large turrets, each with one eight-inch gun. Beside a battleship’s four heavy guns, that may look modest. But the cruiser was built for a different role: scouting for the squadron, supporting light forces and fighting cruisers. Her main battery needs to be considered alongside that purpose."
     ],
@@ -2654,7 +2669,7 @@
         "id": "creation",
         "title": "A Russian eight-inch gun",
         "paragraphs": [
-          "In 1892 Alexander Brink designed a new eight-inch gun at the Obukhov Works, drawing on experience gained with the six-inch Canet. That connection does not justify giving every Russian gun of the period the same French name. The eight-inch system had its own design and breech mechanism.",
+          "In 1892 Anton Brink designed a new eight-inch gun at the Obukhov Works, drawing on experience gained with the six-inch Canet. That connection does not justify giving every Russian gun of the period the same French name. The eight-inch system had its own design and breech mechanism.",
           "“Pattern 1892” is a common designation in the literature, while 1895 appears as the year it entered service. These refer to different stages and need not contradict each other; NavWeaps places both dates side by side. The designation “203-mm/45” remains the same whichever stage of development a reference book’s compiler means."
         ],
         "refs": [
@@ -2748,7 +2763,7 @@
         "year": 1892,
         "date": "1892",
         "title": "Designed",
-        "text": "Alexander Brink created an eight-inch gun drawing on experience with the Canet system.",
+        "text": "Anton Brink created an eight-inch gun drawing on experience with the Canet system.",
         "refs": [
           2
         ]
@@ -2791,7 +2806,9 @@
       "pervaya-tihookeanskaya-eskadra"
     ],
     "relatedEssays": [],
-    "relatedPeople": [],
+    "relatedPeople": [
+      "brink"
+    ],
     "relatedPlaces": [],
     "relatedSources": [],
     "sources": [
@@ -3014,7 +3031,9 @@
       "voina-na-more-osada-mukden-tsusima"
     ],
     "relatedEssays": [],
-    "relatedPeople": [],
+    "relatedPeople": [
+      "armstrong"
+    ],
     "relatedPlaces": [],
     "relatedSources": [],
     "sources": [
@@ -3503,7 +3522,7 @@
       {
         "name": "Ivan Konstantinovich Grigorovich",
         "role": "Supervised construction and commanded until appointed commander of the port in spring 1904.",
-        "personSlug": null,
+        "personSlug": "grigorovich",
         "refs": [
           1
         ]
@@ -3511,7 +3530,7 @@
       {
         "name": "Nikolai Mikhailovich Ivanov",
         "role": "Captain in the July battle; wounded when the conning tower was hit.",
-        "personSlug": null,
+        "personSlug": "ivanov-nikolai",
         "refs": [
           1,
           2
@@ -3528,7 +3547,7 @@
       {
         "name": "Vladimir Ivanovich Litvinov",
         "role": "Commanded the midshipmen’s training squadron during the assistance to Messina.",
-        "personSlug": null,
+        "personSlug": "litvinov",
         "refs": [
           3
         ]
@@ -3582,7 +3601,9 @@
     ],
     "relatedEssays": [],
     "relatedPeople": [
-      "vitgeft"
+      "vitgeft",
+      "lagane",
+      "matusevich"
     ],
     "relatedPlaces": [
       "gavan-port-artura"
@@ -3695,7 +3716,7 @@
         "id": "battle",
         "title": "Returning from the Yellow Sea",
         "paragraphs": [
-          "In the action of 28 July (10 August) 1904, Peresvet received numerous hits. Boisman was badly wounded, and the executive officer, Apollon Apollonovich Dmitriev, took command. The wounded captain survived the fortress’s surrender but died in Japanese captivity in 1905. His remains were brought back for burial in Vladivostok in 1906; these two dates are sometimes confused.",
+          "In the action of 28 July (10 August) 1904, Peresvet received numerous hits. Boisman was badly wounded, and the executive officer, Apollon Apollonovich Dmitriyev, took command. The wounded captain survived the fortress’s surrender but died in Japanese captivity in 1905. His remains were brought back for burial in Vladivostok in 1906; these two dates are sometimes confused.",
           "After Vitgeft’s death, Ukhtomsky had to re-establish command of the squadron. Damage to Peresvet’s masts and spars made signalling difficult, and the formation had already broken up. The battleship returned to Port Arthur with other ships. The attempted passage to Vladivostok had failed. Damaged upperworks and guns were repaired, but the base’s situation was worsening: the siege increasingly tied naval service to the defence of positions ashore."
         ],
         "refs": [
@@ -3852,7 +3873,7 @@
       {
         "name": "Vasily Arsenyevich Boisman",
         "role": "Captain at the outbreak of war; wounded in the July action and died in captivity in 1905.",
-        "personSlug": null,
+        "personSlug": "boisman",
         "refs": [
           1,
           4
@@ -3861,15 +3882,15 @@
       {
         "name": "Pavel Petrovich Ukhtomsky",
         "role": "Junior flag officer of the squadron, whose flag she carried.",
-        "personSlug": null,
+        "personSlug": "ukhtomsky",
         "refs": [
           1
         ]
       },
       {
-        "name": "Apollon Apollonovich Dmitriev",
+        "name": "Apollon Apollonovich Dmitriyev",
         "role": "Executive officer who took command after Boisman was wounded.",
-        "personSlug": null,
+        "personSlug": "dmitriev",
         "refs": [
           1
         ]
@@ -3877,15 +3898,15 @@
       {
         "name": "Vasily Nilovich Cherkasov",
         "role": "Senior gunnery officer and author of records of the defence.",
-        "personSlug": null,
+        "personSlug": "cherkasov",
         "refs": [
           1
         ]
       },
       {
         "name": "Konstantin Petrovich Ivanov-Trinadtsaty",
-        "role": "Captain during the final voyage and the ship’s loss.",
-        "personSlug": null,
+        "role": "Commander of Peresvet on her final voyage in 1916; survived her loss to mines off Port Said.",
+        "personSlug": "ivanov-13",
         "refs": [
           2
         ]
@@ -4031,8 +4052,7 @@
         "id": "weapons",
         "title": "Heavy guns and the land front",
         "paragraphs": [
-          "The main battery comprised four 254-mm guns with barrels 45 calibres long, mounted in two twin turrets. The secondary battery originally numbered eleven 152-mm Canet guns; small quick-firing guns and torpedo tubes were also carried. As the siege progressed, some guns and ammunition went to the land defences, so the original inventory does not automatically describe every day of 1904.",
-          "The link with the shore was also a human one. Pobeda’s officers and sailors served in land positions; her gunnery officer V. A. Lyubinsky commanded a 254-mm coastal gun on Electric Cliff, supplied with ammunition from the battleship. This does not mean that one of the ship’s turret guns was removed and installed on the cliff. The shore mounting had its own history."
+          "The main battery comprised four 254-mm guns with barrels 45 calibres long, mounted in two twin turrets. The secondary battery originally numbered eleven 152-mm Canet guns; small quick-firing guns and torpedo tubes were also carried. As the siege progressed, some guns and ammunition went to the land defences, so the original inventory does not automatically describe every day of 1904."
         ],
         "refs": [
           1
@@ -4042,7 +4062,7 @@
         "id": "mine",
         "title": "A mine after the flagship’s loss",
         "paragraphs": [
-          "At the outbreak of war Pobeda was commanded by Vasily Maksimovich Zatsarenny. She escaped the opening night’s torpedoes and took part in the daylight action with the rest of the squadron. Her most dangerous early experience came on 31 March (13 April) 1904. Makarov’s flagship Petropavlovsk sank in the minefield off the base. Shortly afterwards Pobeda also struck a mine.",
+          "At the outbreak of war Pobeda was commanded by Vasily Maximovich Zatsarenny. She escaped the opening night’s torpedoes and took part in the daylight action with the rest of the squadron. Her most dangerous early experience came on 31 March (13 April) 1904. Makarov’s flagship Petropavlovsk sank in the minefield off the base. Shortly afterwards Pobeda also struck a mine.",
           "Water entered the hull and the ship listed, but internal bulkheads confined flooding to a limited part of the vessel. She returned to harbour under her own power. Repairs again required a caisson, a watertight enclosure attached outside the damaged hull, allowing work without a suitable dry dock. They kept the ship out of action for weeks, but did not end her part in the campaign."
         ],
         "refs": [
@@ -4214,18 +4234,18 @@
     ],
     "crew": [
       {
-        "name": "Vasily Maksimovich Zatsarenny",
+        "name": "Vasily Maximovich Zatsarenny",
         "role": "Captain during the Russo-Japanese War; signed the report on the July damage.",
-        "personSlug": null,
+        "personSlug": "zatsarenny",
         "refs": [
           1,
           2
         ]
       },
       {
-        "name": "V. A. Lyubinsky",
-        "role": "Pobeda’s gunnery officer; commanded a 254-mm coastal gun on Electric Cliff.",
-        "personSlug": null,
+        "name": "Vladimir Alexandrovich Lyubinsky",
+        "role": "Senior gunnery officer of Pobeda during the Russo-Japanese War.",
+        "personSlug": "lyubinsky",
         "refs": [
           1
         ]
@@ -4563,7 +4583,7 @@
       {
         "name": "Ivan Petrovich Uspensky",
         "role": "Captain during the Russo-Japanese War.",
-        "personSlug": null,
+        "personSlug": "uspensky",
         "refs": [
           1,
           2
@@ -4572,7 +4592,7 @@
       {
         "name": "Sergei Ivanovich Lutonin",
         "role": "Executive officer who left accounts of the defence and battles.",
-        "personSlug": null,
+        "personSlug": "lutonin",
         "refs": [
           1
         ]
@@ -4713,7 +4733,7 @@
         "id": "essen",
         "title": "A captain from Novik",
         "paragraphs": [
-          "The battleship escaped the first torpedo attack on the outer roadstead, on the night preceding 27 January (9 February) 1904, without a hit. She suffered damage in the daylight action but remained operational. At the start of the campaign her captain was Nikolai Kirillovich Chernyshev. In March he was replaced by Nikolai Ottovich Essen, previously captain of the fast cruiser Novik.",
+          "The battleship escaped the first torpedo attack on the outer roadstead, on the night preceding 27 January (9 February) 1904, without a hit. She suffered damage in the daylight action but remained operational. At the start of the campaign her captain was Nikolai Kuzmich Chernyshev. In March he was replaced by Nikolai Ottovich Essen, previously captain of the fast cruiser Novik.",
           "His new ship was quite different: large, slower and with a propeller damaged in a collision with Peresvet. Once again repairs had to be carried out at a base without a suitably large dock. Sevastopol’s Port Arthur career was a succession of combat sorties and returns to repair damage. Each time, her continued service depended on specific work by the crew and port specialists."
         ],
         "refs": [
@@ -4889,9 +4909,9 @@
     ],
     "crew": [
       {
-        "name": "Nikolai Kirillovich Chernyshev",
+        "name": "Nikolai Kuzmich Chernyshev",
         "role": "Captain at the outbreak of war, until March 1904.",
-        "personSlug": null,
+        "personSlug": "chernyshev",
         "refs": [
           1
         ]
@@ -4899,7 +4919,7 @@
       {
         "name": "Nikolai Ottovich Essen",
         "role": "Captain from March 1904 until scuttling; author of the report on the April gunfire.",
-        "personSlug": null,
+        "personSlug": "essen",
         "refs": [
           1,
           3
@@ -4954,7 +4974,8 @@
     ],
     "relatedEssays": [],
     "relatedPeople": [
-      "vitgeft"
+      "vitgeft",
+      "kirill-vladimirovich"
     ],
     "relatedPlaces": [
       "gavan-port-artura"
@@ -5189,7 +5210,9 @@
     ],
     "relatedNotes": [],
     "relatedEssays": [],
-    "relatedPeople": [],
+    "relatedPeople": [
+      "canet"
+    ],
     "relatedPlaces": [],
     "relatedSources": [],
     "sources": [
@@ -5438,7 +5461,9 @@
     ],
     "relatedNotes": [],
     "relatedEssays": [],
-    "relatedPeople": [],
+    "relatedPeople": [
+      "brink"
+    ],
     "relatedPlaces": [],
     "relatedSources": [],
     "sources": [
@@ -5672,7 +5697,9 @@
     ],
     "relatedNotes": [],
     "relatedEssays": [],
-    "relatedPeople": [],
+    "relatedPeople": [
+      "hotchkiss"
+    ],
     "relatedPlaces": [],
     "relatedSources": [],
     "sources": [
@@ -5757,7 +5784,7 @@
         "title": "An order placed in Kiel",
         "paragraphs": [
           "Askold was ordered from the German firm Germania in 1898 to strengthen the fleet in the Far East. Work at Kiel began before the detailed drawings were finally approved. She was officially laid down in 1899 and launched in 1900; trials continued in 1901, while acceptance and the hoisting of the St Andrew’s flag were completed early in 1902.",
-          "Her first captain, Nikolai Karlovich Reitzenstein, supervised construction and chaired the acceptance commission. Russian specialists required checks on the long, narrow hull’s strength and reinforcement of certain structures. They also disputed the bow shape and bilge keels, underwater longitudinal fins that reduce rolling. High speed had to be reconciled with strength and behaviour in a seaway."
+          "Her first captain, Nikolai Karlovich Reitsenstein, supervised construction and chaired the acceptance commission. Russian specialists required checks on the long, narrow hull’s strength and reinforcement of certain structures. They also disputed the bow shape and bilge keels, underwater longitudinal fins that reduce rolling. High speed had to be reconciled with strength and behaviour in a seaway."
         ],
         "refs": [
           1,
@@ -5958,9 +5985,9 @@
     ],
     "crew": [
       {
-        "name": "Nikolai Karlovich Reitzenstein",
+        "name": "Nikolai Karlovich Reitsenstein",
         "role": "First captain, later commander of the cruiser division with his flag aboard Askold in 1904.",
-        "personSlug": null,
+        "personSlug": "reitsenstein",
         "refs": [
           1,
           3,
@@ -5970,7 +5997,7 @@
       {
         "name": "K. A. Grammatchikov",
         "role": "Captain during the Russo-Japanese War; author of the February report.",
-        "personSlug": null,
+        "personSlug": "grammatchikov",
         "refs": [
           2
         ]
@@ -5978,7 +6005,7 @@
       {
         "name": "Kazimir Filippovich Ketlinsky",
         "role": "Captain during the final stage of repairs in France and the passage north in 1916–1917.",
-        "personSlug": null,
+        "personSlug": "ketlinsky",
         "refs": [
           5
         ]
@@ -6023,7 +6050,8 @@
     ],
     "relatedEssays": [],
     "relatedPeople": [
-      "vitgeft"
+      "vitgeft",
+      "krylov"
     ],
     "relatedPlaces": [
       "gavan-port-artura"
@@ -6330,7 +6358,7 @@
       {
         "name": "Vladimir Simonovich Sarnavsky",
         "role": "Captain during the Russo-Japanese War.",
-        "personSlug": null,
+        "personSlug": "sarnavsky",
         "refs": [
           1
         ]
@@ -6338,7 +6366,7 @@
       {
         "name": "A. A. Brovtsyn",
         "role": "Officer of the watch who sighted the Japanese torpedo boats on the first night of the war.",
-        "personSlug": null,
+        "personSlug": "brovtsyn",
         "refs": [
           1
         ]
@@ -6383,7 +6411,8 @@
     ],
     "relatedEssays": [],
     "relatedPeople": [
-      "vitgeft"
+      "vitgeft",
+      "stark"
     ],
     "relatedPlaces": [
       "gavan-port-artura"
@@ -6664,7 +6693,7 @@
       {
         "name": "Alexander Alexandrovich Lieven",
         "role": "Captain from May 1904; author of the report on the battle and passage to Saigon.",
-        "personSlug": null,
+        "personSlug": "lieven",
         "refs": [
           1,
           2
@@ -6673,15 +6702,15 @@
       {
         "name": "Vladimir Ivanovich Semyonov",
         "role": "Executive officer in 1904; author of the memoir Rasplata (The Reckoning).",
-        "personSlug": null,
+        "personSlug": "semenov",
         "refs": [
           1
         ]
       },
       {
-        "name": "M. B. Cherkassky",
+        "name": "Mikhail Borisovich Cherkassky",
         "role": "Midshipman who took part in discussing the southern route to French ports.",
-        "personSlug": null,
+        "personSlug": "cherkassky",
         "refs": [
           1
         ]
@@ -6717,7 +6746,8 @@
     ],
     "relatedEssays": [],
     "relatedPeople": [
-      "vitgeft"
+      "vitgeft",
+      "stackelberg"
     ],
     "relatedPlaces": [
       "gavan-port-artura"
@@ -6970,7 +7000,7 @@
       {
         "name": "Vladimir Fyodorovich Sarychev",
         "role": "Captain during the Far Eastern passage and opening of the war; wrote the report on the mine hit and abandonment.",
-        "personSlug": null,
+        "personSlug": "sarychev",
         "refs": [
           2,
           6
@@ -7016,7 +7046,9 @@
       "voina-na-more-osada-mukden-tsusima"
     ],
     "relatedEssays": [],
-    "relatedPeople": [],
+    "relatedPeople": [
+      "stark"
+    ],
     "relatedPlaces": [
       "gavan-port-artura",
       "port-dalniy"
@@ -7156,7 +7188,7 @@
         "id": "service",
         "title": "A flagship off the Russian base",
         "paragraphs": [
-          "At the outbreak of war, Captain Nakao commanded the ship, while Rear Admiral Nashiba Tokioki flew his flag aboard her. The captain was responsible for the battleship; the admiral directed the force. Hatsuse took part in the daylight action off Port Arthur on 27 January (9 February) 1904. Her subsequent service centred on the blockade: watching the Russian squadron and restricting its freedom to put to sea.",
+          "At the outbreak of war, Captain Nakao Yū commanded the ship, while Rear Admiral Nashiba Tokioki flew his flag aboard her. The captain was responsible for the battleship; the admiral directed the force. Hatsuse took part in the daylight action off Port Arthur on 27 January (9 February) 1904. Her subsequent service centred on the blockade: watching the Russian squadron and restricting its freedom to put to sea.",
           "Blockade duty meant returning to familiar stretches of water. The Russians exploited this routine. On 1 (14) May, the minelayer Amur laid a field across the Japanese ships’ route. The following day Hatsuse, Shikishima and Yashima approached Port Arthur with their accompanying vessels. Here the minelaying operation became part of the battleship’s own story, on the seaward approaches to the Russian base."
         ],
         "refs": [
@@ -7170,7 +7202,7 @@
         "id": "mines",
         "title": "Two explosions, little time to escape",
         "paragraphs": [
-          "The first mine damaged Hatsuse’s stern and steering. She remained afloat, and attempts were made to approach her to give assistance and take her in tow. Then she struck a second mine. Her ammunition exploded, and the battleship sank rapidly. Postwar accounts describe minutes, rather than hours of damage control. Hundreds of sailors died. Nakao and Nashiba were among those rescued; an exact death toll cannot be calculated by subtracting an early estimate of survivors from the ship’s nominal complement.",
+          "The first mine damaged Hatsuse’s stern and steering. She remained afloat, and attempts were made to approach her to give assistance and take her in tow. Then she struck a second mine. Her ammunition exploded, and the battleship sank rapidly. Postwar accounts describe minutes, rather than hours of damage control. Hundreds of sailors died. Nakao Yū and Nashiba were among those rescued; an exact death toll cannot be calculated by subtracting an early estimate of survivors from the ship’s nominal complement.",
           "Even nearby ships did not immediately understand what was happening. Historian Chiharu Inaba, studying Japanese records of the underwater threat, cites signals warning of possible Russian submarines. Yashima was also damaged. Those reports of an unseen attacker must be distinguished from the established cause: both battleships had struck Russian mines. No submarine attack is needed to explain the sudden explosions."
         ],
         "refs": [
@@ -7295,9 +7327,9 @@
     ],
     "crew": [
       {
-        "name": "Nakao",
+        "name": "Nakao Yū",
         "role": "Captain of Hatsuse; rescued when the ship sank.",
-        "personSlug": null,
+        "personSlug": "nakao",
         "refs": [
           6
         ]
@@ -7305,7 +7337,7 @@
       {
         "name": "Nashiba Tokioki",
         "role": "Rear admiral commanding the force, with his flag aboard the battleship; rescued.",
-        "personSlug": null,
+        "personSlug": "nashiba",
         "refs": [
           5,
           6
@@ -7341,7 +7373,10 @@
       "voina-na-more-osada-mukden-tsusima"
     ],
     "relatedEssays": [],
-    "relatedPeople": [],
+    "relatedPeople": [
+      "nashiba",
+      "nakao"
+    ],
     "relatedPlaces": [
       "gavan-port-artura"
     ],
@@ -7394,7 +7429,7 @@
       },
       {
         "id": 6,
-        "title": "Rear-admiral Nashiba. Captain Nakao. Saved from the Hatsuse",
+        "title": "Rear-admiral Nashiba. Captain Nakao Yū. Saved from the Hatsuse",
         "author": "International Research Center for Japanese Studies, Nichibun; E. Sharpe Grew (book editor)",
         "date": "Early twentieth century; catalogue date [190-?]",
         "url": "https://sekiei.nichibun.ac.jp/GAI/ja/detail/?gid=GH035066&hid=5010",
@@ -7504,7 +7539,7 @@
         "id": "after",
         "title": "The ship was lost before the news became public",
         "paragraphs": [
-          "Captain Sakamoto, who commanded Yashima, survived her loss. By the summer of 1905, an American naval journal was reporting his involvement in raising the Russian Bayan at Port Arthur. This concerns the captain’s later work, rather than further service by his former ship: Yashima was never raised, renamed or returned to the fleet. Saving the crew and saving the ship were different outcomes of the rescue effort.",
+          "Captain Sakamoto Hajime, who commanded Yashima, survived her loss. By the summer of 1905, an American naval journal was reporting his involvement in raising the Russian Bayan at Port Arthur. This concerns the captain’s later work, rather than further service by his former ship: Yashima was never raised, renamed or returned to the fleet. Saving the crew and saving the ship were different outcomes of the rescue effort.",
           "News of the loss followed its own course. The January 1905 issue of Proceedings still discussed persistent rumours that Japanese authorities had neither publicly confirmed nor denied. It even gave the wrong month for the sinking. In early June 1905, a report from Tokyo on disclosed naval losses explicitly named Yashima; the Southland Times printed it on 3 June. A newspaper’s publication date must therefore not be mistaken for the date the ship sank. Yashima was already absent from the line at the Yellow Sea and Tsushima. The mine operation off Port Arthur had ended her service many months before Japan’s victorious campaign concluded."
         ],
         "refs": [
@@ -7640,9 +7675,9 @@
     ],
     "crew": [
       {
-        "name": "Sakamoto",
+        "name": "Sakamoto Hajime",
         "role": "Captain commanding Yashima at her loss; later involved in raising Bayan. The English publication used here does not give his first name.",
-        "personSlug": null,
+        "personSlug": "sakamoto",
         "refs": [
           9
         ]
@@ -7650,7 +7685,7 @@
       {
         "name": "Nashiba Tokioki",
         "role": "Rear admiral directing the force from another battleship, Hatsuse; not Yashima’s own captain.",
-        "personSlug": null,
+        "personSlug": "nashiba",
         "refs": [
           5
         ]
@@ -7685,7 +7720,10 @@
       "voina-na-more-osada-mukden-tsusima"
     ],
     "relatedEssays": [],
-    "relatedPeople": [],
+    "relatedPeople": [
+      "nashiba",
+      "sakamoto"
+    ],
     "relatedPlaces": [
       "gavan-port-artura"
     ],
@@ -7765,11 +7803,11 @@
       },
       {
         "id": 9,
-        "title": "Professional Notes: Captain Sakamoto and the Raising of Bayan",
+        "title": "Professional Notes: Captain Sakamoto Hajime and the Raising of Bayan",
         "author": "Philip R. Alger (compiler), U.S. Naval Institute / Proceedings",
         "date": "July 1905, 31/3/115",
         "url": "https://www.usni.org/magazines/proceedings/1905/july/professional-notes",
-        "locator": "Section on raising Russian ships; paragraph beginning “The name of Captain Sakamoto”.",
+        "locator": "Section on raising Russian ships; paragraph beginning “The name of Captain Sakamoto Hajime”.",
         "note": "Contemporary publication reprinting Engineering. Confirms his former command and subsequent work; nearby claims of naval superiority are not adopted."
       },
       {

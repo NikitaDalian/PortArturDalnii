@@ -1,0 +1,13 @@
+{
+  "reviewer": "home_architecture_audit",
+  "status": "accepted",
+  "fullNarrativeRead": {"en": 6, "zh": 6},
+  "files": [
+    {"file": "work/hardware-people/narrative-en.json", "sha256": "a0782e330ff11907905da5c560dc314a2658501c3c8d824f4539cf686804add1"},
+    {"file": "work/hardware-people/narrative-zh.json", "sha256": "2d9acca08be68866c939a36eb61ab6f977ac5caf6ff3457643bb3d5c4ac2bed5"}
+  ],
+  "sourceRuSha256": "c38d1f5f3b6839d98461ee481a0a39a22e2c71f1dbfd8bc383f9899f13924a02",
+  "method": "Read all six Russian source narratives and all six complete EN and ZH translations; reread final ZH artifact after the terminology correction. Checked identity, dates, ship versus formation roles, technical terms and retained qualifications.",
+  "resolvedFinding": "Stackelberg's earlier Bayan is described in Chinese as a steam-and-sail vessel, removing a nonstandard phrase that might suggest a modern light cruiser.",
+  "remainingBlockers": []
+}

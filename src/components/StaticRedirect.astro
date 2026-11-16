@@ -1,0 +1,8 @@
+---
+import { locale } from '../i18n/locale';
+interface Props { destination:string; title:string }
+const { destination,title }=Astro.props;
+const canonical=new URL(destination,Astro.site);
+---
+<!doctype html>
+<html lang={locale}><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>{title}</title><meta http-equiv="refresh" content={`0;url=${destination}`} /><meta name="robots" content="noindex" /><link rel="canonical" href={canonical} /></head><body><h1><a href={destination}>{title}</a></h1></body></html>

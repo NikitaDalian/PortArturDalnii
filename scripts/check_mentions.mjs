@@ -64,6 +64,13 @@ const numberedCjk=createMentionMatcher(new Map([['66艘',new Set(['term/fleet-co
 assert.deepEqual(links(numberedCjk('舰队达到66艘。')),['term/fleet-count'],'Numeric Chinese aliases do not require a space after Han text');
 assert.deepEqual(links(numberedCjk('共有166艘，编号A66艘。')),[],'Numeric Chinese aliases cannot match the tail of another number or identifier');
 const aliases = read('entity_aliases'); const terms = read('index_terms');
+const personRedirects=read('person_redirects');
+const fullPeople=new Set(read('people').map(person=>person.slug));
+for(const [oldSlug,target] of Object.entries(personRedirects)){
+  assert.ok(oldSlug in terms.people, `Unknown legacy person: ${oldSlug}`);
+  assert.ok(fullPeople.has(target), `Missing canonical biography: ${target}`);
+  assert.ok(!(target in personRedirects), 'Person redirects must resolve in one step');
+}
 const valid = {
   people: new Set([...read('people').map(p => p.slug), ...Object.keys(terms.people)]),
   places: new Set([...read('places').map(p => p.slug), ...Object.keys(terms.geo)]),

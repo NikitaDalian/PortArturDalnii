@@ -1,0 +1,13 @@
+{
+  "author": "home_architecture_audit",
+  "reviewer": "armament_alignment",
+  "status": "accepted",
+  "readComplete": true,
+  "sourceSha256": "ce22b2a1268d5703fa7d297305e8f1ecad0d54e59c9b290fe0b5c38fcc87d2ae",
+  "sha256": "e39d250024a820da2a3d69706b13ce3e2e3ee6470dcb79789f72c61ea6084726",
+  "files": [
+    "work\\hardware-people\\intl-translations.json"
+  ],
+  "scope": "All12 biographies, roles/names, source titles+notes and portrait captions/credits/licenses read fully in EN+ZH against acceptedRU; identity IDs,sourceURLs,assetpaths checked.",
+  "remainingBlockers": []
+}

@@ -1,6 +1,6 @@
 import { createMentionMatcher } from './mentionMatcher';
 export { mentionContext, type MentionContext } from './mentionMatcher';
-import { people, places, terms, referenceDescriptions, href, img, imgCrop, photoMeta, referencePhoto } from './data';
+import { people, places, terms, referenceDescriptions, href, img, imgCrop, photoMeta, referencePhoto, canonicalPersonSlug } from './data';
 import aliases from '../data/entity_aliases.json';
 import { locale, intlLocale, assetUrl } from '../i18n/locale';
 import { hardware } from './hardware';
@@ -49,6 +49,10 @@ for (const p of places) {
 for (const kind of ['people', 'geo'] as const) {
   for (const [slug, title] of Object.entries(terms[kind])) {
     const person = kind === 'people';
+    if (person && registry.has(`person/${canonicalPersonSlug(slug)}`)) {
+      addName(title, `person/${canonicalPersonSlug(slug)}`);
+      continue;
+    }
     const photo = referencePhoto(kind, slug);
     register({ id: `${person ? 'person' : 'place'}/${slug}`, kind: person ? 'person' : 'place', title,
       description: excerpt(referenceDescriptions[kind][slug]), href: href.reference(kind, slug),
@@ -59,7 +63,7 @@ for (const kind of ['people', 'geo'] as const) {
 const edition = aliases[locale];
 for (const kind of ['people', 'places'] as const) {
   for (const [slug, variants] of Object.entries(edition[kind])) {
-    const id = `${kind === 'people' ? 'person' : 'place'}/${slug}`;
+    const id = `${kind === 'people' ? 'person' : 'place'}/${kind === 'people' ? canonicalPersonSlug(slug) : slug}`;
     if (!registry.has(id)) throw new Error(`Unknown mention entity: ${id}`);
     variants.forEach(value => addName(value, id));
   }
@@ -77,6 +81,10 @@ for (const note of readingNotes) {
 // Exact quotes and descriptive aliases such as “броненосец «Победа»” remain eligible.
 const ambiguousShips = new Set(['pobeda','poltava','sevastopol','tsesarevich','diana','pallada']);
 const contextualNames = new Map<string,Set<string>>();
+// These family names alone do not identify one historical person.
+for (const [name,ids] of names) if (/^(?:Иванов[а-яё]*|Романов[а-яё]*|Ivanov|Romanov|伊万诺夫|罗曼诺夫)$/u.test(name)) {
+  contextualNames.set(name,new Set([...ids].filter(id=>id==='person/ivanov-nikolai'||id==='person/kirill-vladimirovich')));
+}
 for(const item of hardware.filter(item=>ambiguousShips.has(item.slug))){
   const bare=[item.shortName,...item.aliases.filter(alias=>!/[\s«»"“”]/u.test(alias)&&!/[号號]$/u.test(alias))];
   for(const name of bare){const ids=contextualNames.get(name)??new Set<string>();ids.add(`ship/${item.slug}`);contextualNames.set(name,ids);}

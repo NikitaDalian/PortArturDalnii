@@ -129,7 +129,11 @@
       ],
       "essen": [
         "Эссена",
-        "Эссеном"
+        "Эссеном",
+        "Эссену",
+        "Эссене",
+        "фон Эссен",
+        "фон Эссена"
       ],
       "georg-grecheskii": [],
       "grodekov": [
@@ -138,8 +142,28 @@
       "hodyakov": [
         "Ходякова"
       ],
-      "ivanov-13": [],
-      "kirill-vladimirovich": [],
+      "ivanov-13": [
+        "Иванова-Тринадцатого",
+        "Иванову-Тринадцатому",
+        "Ивановым-Тринадцатым",
+        "Иванове-Тринадцатом",
+        "Иванов 13-й",
+        "Иванова 13-го",
+        "Иванову 13-му",
+        "Константин Иванов-Тринадцатый",
+        "Константина Иванова-Тринадцатого"
+      ],
+      "kirill-vladimirovich": [
+        "Кирилла Владимировича",
+        "Кириллу Владимировичу",
+        "Кириллом Владимировичем",
+        "Кирилле Владимировиче",
+        "Кирилла Владимировича Романова",
+        "Кириллу Владимировичу Романову",
+        "Кириллом Владимировичем Романовым",
+        "великий князь Кирилл Владимирович",
+        "великого князя Кирилла Владимировича"
+      ],
       "kokovtsov": [
         "Коковцова"
       ],
@@ -219,7 +243,10 @@
         "Сталиным"
       ],
       "stark": [
-        "Старка"
+        "Старка",
+        "Старку",
+        "Старком",
+        "Старке"
       ],
       "suvorin": [
         "Суворина"
@@ -227,7 +254,10 @@
       "takahasi": [
         "Такахаси"
       ],
-      "togo": [],
+      "togo": [
+        "Того Хэйхатиро",
+        "Хэйхатиро Того"
+      ],
       "trusov": [],
       "tsuda-sandzo": [],
       "tsysi": [
@@ -237,7 +267,10 @@
         "Ухтомского"
       ],
       "viren": [
-        "Вирену"
+        "Вирену",
+        "Вирена",
+        "Виреном",
+        "Вирене"
       ],
       "yaroslavskii": [
         "Ярославского"
@@ -267,7 +300,333 @@
       "tretyakov": [
         "Третьякова"
       ],
-      "grigorovich": []
+      "grigorovich": [
+        "Григоровича",
+        "Григоровичу",
+        "Григоровичем",
+        "Григоровиче"
+      ],
+      "yakovlev": [
+        "Яковлева",
+        "Яковлеву",
+        "Яковлевым",
+        "Яковлеве"
+      ],
+      "molas": [
+        "Моласа",
+        "Моласу",
+        "Моласом",
+        "Моласе"
+      ],
+      "shchensnovich": [
+        "Щенсновича",
+        "Щенсновичу",
+        "Щенсновичем",
+        "Щенсновиче"
+      ],
+      "ketlinsky": [
+        "Кетлинского",
+        "Кетлинскому",
+        "Кетлинским",
+        "Кетлинском"
+      ],
+      "razvozov": [
+        "Развозова",
+        "Развозову",
+        "Развозовым",
+        "Развозове"
+      ],
+      "shults": [
+        "Шульца",
+        "Шульцу",
+        "Шульцем",
+        "Шульце",
+        "Михаил Фёдорович Шульц",
+        "Михаил Федорович Шульц"
+      ],
+      "rudnev": [
+        "Руднева",
+        "Рудневу",
+        "Рудневым",
+        "Рудневе"
+      ],
+      "reitsenstein": [
+        "Рейценштейна",
+        "Рейценштейну",
+        "Рейценштейном",
+        "Рейценштейне"
+      ],
+      "semenov": [
+        "Семёнова",
+        "Семёнову",
+        "Семёновым",
+        "Семёнове",
+        "Семенов",
+        "Семенова",
+        "Семенову",
+        "Семеновым",
+        "Семенове"
+      ],
+      "zatsarenny": [
+        "Зацарённого",
+        "Зацарённому",
+        "Зацарённым",
+        "Зацарённом",
+        "Зацаренный",
+        "Зацаренного",
+        "Зацаренному",
+        "Зацаренным",
+        "Зацаренном"
+      ],
+      "ivanov-nikolai": [
+        "Николай Иванов",
+        "Николая Иванова",
+        "Николаю Иванову",
+        "Николаем Ивановым",
+        "Николае Иванове",
+        "Николая Михайловича Иванова",
+        "Николаю Михайловичу Иванову",
+        "Николаем Михайловичем Ивановым",
+        "Н. М. Иванов",
+        "Н. М. Иванова",
+        "Н.М. Иванов",
+        "Н.М. Иванова"
+      ],
+      "sarychev": [
+        "Сарычева",
+        "Сарычеву",
+        "Сарычевым",
+        "Сарычеве"
+      ],
+      "sarnavsky": [
+        "Сарнавского",
+        "Сарнавскому",
+        "Сарнавским",
+        "Сарнавском"
+      ],
+      "grammatchikov": [
+        "Грамматчикова",
+        "Грамматчикову",
+        "Грамматчиковым",
+        "Грамматчикове",
+        "К.А. Грамматчиков",
+        "К. А. Грамматчикова",
+        "К.А. Грамматчикова"
+      ],
+      "ukhtomsky": [
+        "Ухтомского",
+        "Ухтомскому",
+        "Ухтомским",
+        "Ухтомском"
+      ],
+      "gubonin": [
+        "Губонина",
+        "Губонину",
+        "Губониным",
+        "Губонине",
+        "Пётр Губонин",
+        "Петр Губонин",
+        "Петра Губонина"
+      ],
+      "lieven": [
+        "Ливена",
+        "Ливену",
+        "Ливеном",
+        "Ливене"
+      ],
+      "lyubinsky": [
+        "Любинского",
+        "Любинскому",
+        "Любинским",
+        "Любинском"
+      ],
+      "shter": [
+        "Штера",
+        "Штеру",
+        "Штером",
+        "Штере"
+      ],
+      "chernyshev": [
+        "Чернышёва",
+        "Чернышёву",
+        "Чернышёвым",
+        "Чернышёве",
+        "Чернышев",
+        "Чернышева",
+        "Чернышеву",
+        "Чернышевым",
+        "Чернышеве"
+      ],
+      "brovtsyn": [
+        "Бровцына",
+        "Бровцыну",
+        "Бровцыным",
+        "Бровцыне",
+        "А.А. Бровцын",
+        "А. А. Бровцына",
+        "А.А. Бровцына"
+      ],
+      "boisman": [
+        "Бойсмана",
+        "Бойсману",
+        "Бойсманом",
+        "Бойсмане"
+      ],
+      "dmitriev": [
+        "Дмитриева",
+        "Дмитриеву",
+        "Дмитриевым",
+        "Дмитриеве"
+      ],
+      "cherkassky": [
+        "Черкасского",
+        "Черкасскому",
+        "Черкасским",
+        "Черкасском"
+      ],
+      "cherkasov": [
+        "Черкасова",
+        "Черкасову",
+        "Черкасовым",
+        "Черкасове",
+        "Василия Ниловича Черкасова"
+      ],
+      "nirod": [
+        "Нирода",
+        "Нироду",
+        "Ниродом",
+        "Нироде"
+      ],
+      "uspensky": [
+        "Успенского",
+        "Успенскому",
+        "Успенским",
+        "Успенском"
+      ],
+      "lutonin": [
+        "Лутонина",
+        "Лутонину",
+        "Лутониным",
+        "Лутонине"
+      ],
+      "rodionov": [
+        "Родионова",
+        "Родионову",
+        "Родионовым",
+        "Родионове"
+      ],
+      "litvinov": [
+        "Литвинова",
+        "Литвинову",
+        "Литвиновым",
+        "Литвинове"
+      ],
+      "lagane": [
+        "Лагань",
+        "Лаганя",
+        "Лаганю",
+        "Лаганем",
+        "Лагане",
+        "Амаль Лагань",
+        "Амаля Лаганя",
+        "Амалю Лаганю",
+        "Амалем Лаганем",
+        "Амале Лагане"
+      ],
+      "matusevich": [
+        "Матусевича",
+        "Матусевичу",
+        "Матусевичем",
+        "Матусевиче"
+      ],
+      "stackelberg": [
+        "Штакельберга",
+        "Штакельбергу",
+        "Штакельбергом",
+        "Штакельберге"
+      ],
+      "krylov": [
+        "Крылова",
+        "Крылову",
+        "Крыловым",
+        "Крылове",
+        "Алексея Николаевича Крылова",
+        "Алексею Николаевичу Крылову",
+        "Алексеем Николаевичем Крыловым"
+      ],
+      "akiyama": [
+        "Акиямы",
+        "Акияме",
+        "Акияму",
+        "Акиямой",
+        "Акияма Санэюки"
+      ],
+      "ijichi": [
+        "Идзити Хикодзиро"
+      ],
+      "nashiba": [
+        "Насибы",
+        "Насибе",
+        "Насибу",
+        "Насибой",
+        "Насиба Токиоки"
+      ],
+      "sakamoto": [
+        "Сакамото Хадзимэ",
+        "капитана Сакамото"
+      ],
+      "nakao": [
+        "Накао Ю",
+        "капитана Накао"
+      ],
+      "canet": [
+        "Канэ",
+        "Гюстава Кане",
+        "Гюставу Кане",
+        "Гюставом Кане",
+        "Гюставе Кане",
+        "Гюстав Канэ",
+        "Гюстава Канэ"
+      ],
+      "brink": [
+        "Бринка",
+        "Бринку",
+        "Бринком",
+        "Бринке",
+        "Антона Бринка",
+        "Антону Бринку",
+        "Антоном Бринком",
+        "Антона Францевича Бринка",
+        "Антону Францевичу Бринку",
+        "Антоном Францевичем Бринком"
+      ],
+      "hotchkiss": [
+        "Гочкиса",
+        "Гочкису",
+        "Гочкисом",
+        "Гочкисе",
+        "Готчкис",
+        "Готчкиса",
+        "Бенджамина Гочкиса",
+        "Бенджамину Гочкису"
+      ],
+      "armstrong": [
+        "Армстронга",
+        "Армстронгу",
+        "Армстронгом",
+        "Армстронге",
+        "Уильяма Армстронга",
+        "Уильяму Армстронгу"
+      ],
+      "kato-tomosaburo": [
+        "Като Томосабуро",
+        "Томосабуро Като"
+      ],
+      "uriu": [
+        "Уриу Сотокити",
+        "Сотокити Уриу",
+        "адмирала Уриу"
+      ]
     },
     "places": {
       "vysokaya-gora": [
@@ -716,15 +1075,28 @@
       "chertkov": [],
       "denikin": [],
       "dubasov": [],
-      "essen": [],
+      "essen": [
+        "Nikolai von Essen",
+        "Nikolay von Essen",
+        "Nikolai Essen"
+      ],
       "georg-grecheskii": [
         "Prince George"
       ],
       "grodekov": [],
       "hodyakov": [],
-      "ivanov-13": [],
+      "ivanov-13": [
+        "Konstantin Ivanov-Trinadtsatyi",
+        "Ivanov-Trinadtsatyi",
+        "Ivanov XIII",
+        "Konstantin Ivanov-Trinadtsaty"
+      ],
       "kirill-vladimirovich": [
-        "Grand Duke Kirill"
+        "Grand Duke Kirill",
+        "Kirill Vladimirovich",
+        "Grand Duke Kirill Vladimirovich",
+        "Grand Duke Cyril Vladimirovich",
+        "Cyril Vladimirovich Romanov"
       ],
       "kokovtsov": [],
       "kolchak": [],
@@ -755,12 +1127,18 @@
       "smirnov": [],
       "sozonov": [],
       "stalin": [],
-      "stark": [],
+      "stark": [
+        "Oskar Stark"
+      ],
       "suvorin": [],
       "takahasi": [
         "Takahashi"
       ],
-      "togo": [],
+      "togo": [
+        "Togo Heihachiro",
+        "Heihachiro Togo",
+        "Heihachirō Tōgō"
+      ],
       "trusov": [],
       "tsuda-sandzo": [
         "Tsuda"
@@ -769,7 +1147,10 @@
         "Cixi"
       ],
       "uhtomskii": [],
-      "viren": [],
+      "viren": [
+        "Robert Wiren",
+        "Robert Viren"
+      ],
       "yaroslavskii": [],
       "ayrapetov": [],
       "akunin": [],
@@ -782,7 +1163,158 @@
       "goloschekin": [],
       "sverdlov": [],
       "tretyakov": [],
-      "grigorovich": []
+      "grigorovich": [
+        "Ivan Grigorovich"
+      ],
+      "yakovlev": [
+        "Nikolai Yakovlev"
+      ],
+      "molas": [
+        "Mikhail Molas"
+      ],
+      "shchensnovich": [
+        "Eduard Shchensnovich"
+      ],
+      "ketlinsky": [
+        "Kazimir Ketlinsky"
+      ],
+      "razvozov": [
+        "Alexander Razvozov"
+      ],
+      "shults": [
+        "Mikhail Fyodorovich Schultz",
+        "Maximilian Schultz"
+      ],
+      "rudnev": [
+        "Vsevolod Rudnev"
+      ],
+      "reitsenstein": [
+        "Nikolai Reitsenstein"
+      ],
+      "semenov": [
+        "Vladimir Semenov",
+        "Vladimir Ivanovich Semenov",
+        "Vladimir Semyonov"
+      ],
+      "zatsarenny": [
+        "Vasily Zatsarenny"
+      ],
+      "ivanov-nikolai": [
+        "N. M. Ivanov",
+        "Nikolai Ivanov"
+      ],
+      "sarychev": [
+        "Vladimir Sarychev"
+      ],
+      "sarnavsky": [
+        "Vladimir Sarnavsky"
+      ],
+      "grammatchikov": [
+        "K. A. Grammatchikov"
+      ],
+      "ukhtomsky": [
+        "Pavel Ukhtomsky"
+      ],
+      "gubonin": [
+        "Pyotr Gubonin"
+      ],
+      "lieven": [
+        "Alexander Lieven"
+      ],
+      "lyubinsky": [
+        "Vladimir Lyubinsky"
+      ],
+      "shter": [
+        "Andrei Shter"
+      ],
+      "chernyshev": [
+        "Nikolai Chernyshev"
+      ],
+      "brovtsyn": [
+        "A. A. Brovtsyn"
+      ],
+      "boisman": [
+        "Vasily Boisman"
+      ],
+      "dmitriev": [
+        "Apollon Dmitriyev"
+      ],
+      "cherkassky": [
+        "Mikhail Cherkassky"
+      ],
+      "cherkasov": [
+        "Vasily Cherkasov"
+      ],
+      "nirod": [
+        "Alexei Nirod"
+      ],
+      "uspensky": [
+        "Ivan Uspensky"
+      ],
+      "lutonin": [
+        "Sergei Lutonin"
+      ],
+      "rodionov": [
+        "Alexander Rodionov"
+      ],
+      "litvinov": [
+        "Vladimir Litvinov"
+      ],
+      "lagane": [
+        "Antoine Jean Amable Lagane"
+      ],
+      "matusevich": [
+        "Nikolai Matusevich"
+      ],
+      "stackelberg": [
+        "Ewald Stackelberg"
+      ],
+      "krylov": [
+        "Alexei Krylov"
+      ],
+      "akiyama": [
+        "Saneyuki Akiyama"
+      ],
+      "ijichi": [
+        "Hikojiro Ijichi",
+        "Ijichi Hikojiro",
+        "Ijichi Hikojirō"
+      ],
+      "nashiba": [
+        "Tokioki Nashiba"
+      ],
+      "sakamoto": [
+        "Hajime Sakamoto"
+      ],
+      "nakao": [
+        "Nakao Yu",
+        "Yu Nakao",
+        "Yū Nakao"
+      ],
+      "canet": [
+        "Jean-Baptiste Gustave Adolphe Canet"
+      ],
+      "brink": [
+        "Anton Brink"
+      ],
+      "hotchkiss": [
+        "Benjamin B. Hotchkiss",
+        "Benjamin Hotchkiss"
+      ],
+      "armstrong": [
+        "William Armstrong"
+      ],
+      "kato-tomosaburo": [
+        "Kato Tomosaburo",
+        "Tomosaburo Kato",
+        "Tomosaburō Katō"
+      ],
+      "uriu": [
+        "Uriu Sotokichi",
+        "Sotokichi Uriu",
+        "Sotokichi Uryū",
+        "Uryu Sotokichi"
+      ]
     },
     "places": {
       "vysokaya-gora": [
@@ -1081,14 +1613,21 @@
       "chertkov": [],
       "denikin": [],
       "dubasov": [],
-      "essen": [],
+      "essen": [
+        "尼古拉·埃森"
+      ],
       "georg-grecheskii": [
         "乔治王子"
       ],
       "grodekov": [],
       "hodyakov": [],
-      "ivanov-13": [],
-      "kirill-vladimirovich": [],
+      "ivanov-13": [
+        "康斯坦丁·伊万诺夫-特里纳德察特"
+      ],
+      "kirill-vladimirovich": [
+        "基里尔·弗拉基米罗维奇",
+        "基里尔大公"
+      ],
       "kokovtsov": [],
       "kolchak": [],
       "kotvich": [],
@@ -1116,11 +1655,15 @@
       "smirnov": [],
       "sozonov": [],
       "stalin": [],
-      "stark": [],
+      "stark": [
+        "奥斯卡·斯塔尔克"
+      ],
       "suvorin": [],
       "takahasi": [],
       "togo": [
-        "东乡"
+        "东乡",
+        "東鄉平八郎",
+        "東郷平八郎"
       ],
       "trusov": [],
       "tsuda-sandzo": [
@@ -1130,7 +1673,9 @@
         "慈禧"
       ],
       "uhtomskii": [],
-      "viren": [],
+      "viren": [
+        "罗伯特·维连"
+      ],
       "yaroslavskii": [],
       "ayrapetov": [],
       "akunin": [],
@@ -1143,7 +1688,146 @@
       "goloschekin": [],
       "sverdlov": [],
       "tretyakov": [],
-      "grigorovich": []
+      "grigorovich": [
+        "伊万·格里戈罗维奇"
+      ],
+      "yakovlev": [
+        "尼古拉·雅科夫列夫"
+      ],
+      "molas": [
+        "米哈伊尔·莫拉斯"
+      ],
+      "shchensnovich": [
+        "爱德华·申斯诺维奇"
+      ],
+      "ketlinsky": [
+        "卡齐米尔·克特林斯基"
+      ],
+      "razvozov": [
+        "亚历山大·拉兹沃佐夫"
+      ],
+      "shults": [
+        "米哈伊尔·费奥多罗维奇·舒尔茨",
+        "马克西米利安·舒尔茨"
+      ],
+      "rudnev": [
+        "弗谢沃洛德·鲁德涅夫"
+      ],
+      "reitsenstein": [
+        "尼古拉·赖岑施泰因"
+      ],
+      "semenov": [
+        "弗拉基米尔·谢苗诺夫"
+      ],
+      "zatsarenny": [
+        "瓦西里·扎察连内"
+      ],
+      "ivanov-nikolai": [
+        "尼古拉·伊万诺夫"
+      ],
+      "sarychev": [
+        "弗拉基米尔·萨雷切夫"
+      ],
+      "sarnavsky": [
+        "弗拉基米尔·萨尔纳夫斯基"
+      ],
+      "grammatchikov": [
+        "K.A. 格拉马奇科夫"
+      ],
+      "ukhtomsky": [
+        "帕维尔·乌赫托姆斯基"
+      ],
+      "gubonin": [
+        "彼得·古博宁"
+      ],
+      "lieven": [
+        "亚历山大·利文"
+      ],
+      "lyubinsky": [
+        "弗拉基米尔·柳宾斯基"
+      ],
+      "shter": [
+        "安德烈·施捷尔"
+      ],
+      "chernyshev": [
+        "尼古拉·切尔内绍夫"
+      ],
+      "brovtsyn": [
+        "A.A. 布罗夫岑"
+      ],
+      "boisman": [
+        "瓦西里·博伊斯曼"
+      ],
+      "dmitriev": [
+        "阿波隆·德米特里耶夫"
+      ],
+      "cherkassky": [
+        "米哈伊尔·切尔卡斯基"
+      ],
+      "cherkasov": [
+        "瓦西里·切尔卡索夫"
+      ],
+      "nirod": [
+        "阿列克谢·尼罗德"
+      ],
+      "uspensky": [
+        "伊万·乌斯片斯基"
+      ],
+      "lutonin": [
+        "谢尔盖·卢托宁"
+      ],
+      "rodionov": [
+        "亚历山大·罗季奥诺夫"
+      ],
+      "litvinov": [
+        "弗拉基米尔·利特维诺夫"
+      ],
+      "lagane": [
+        "阿马布尔·拉加纳",
+        "安托万·让·阿马布尔·拉加纳"
+      ],
+      "matusevich": [
+        "尼古拉·马图谢维奇"
+      ],
+      "stackelberg": [
+        "埃瓦尔德·施塔克尔贝格"
+      ],
+      "krylov": [
+        "阿列克谢·克雷洛夫"
+      ],
+      "akiyama": [
+        "秋山真之"
+      ],
+      "ijichi": [
+        "伊地知彥次郎"
+      ],
+      "nashiba": [
+        "梨羽時起"
+      ],
+      "sakamoto": [
+        "坂本一"
+      ],
+      "nakao": [
+        "中尾雄"
+      ],
+      "canet": [
+        "居斯塔夫·卡内"
+      ],
+      "brink": [
+        "安东·布林克"
+      ],
+      "hotchkiss": [
+        "本杰明·霍奇基斯"
+      ],
+      "armstrong": [
+        "威廉·阿姆斯特朗"
+      ],
+      "kato-tomosaburo": [
+        "加藤友三郎"
+      ],
+      "uriu": [
+        "瓜生外吉"
+      ]
     },
     "places": {
       "vysokaya-gora": [

@@ -43,6 +43,7 @@ const portraitArchive = (p.portrait && photoMeta(p.portrait as string)?.record_u
       <div class="ph__inner">
         <div class="ph__portrait">
           <Portrait p={p} />
+          {p.portraitSource && <details class="portrait-credit"><summary>Источник и права</summary><p>{p.portraitSource.caption}</p><p>{p.portraitSource.credit}</p><p>{p.portraitSource.license}</p><a href={p.portraitSource.url} target="_blank" rel="noopener">Запись в архиве</a></details>}
           {portraitArchive && (
             <p class="ph__pnote">
               {(p as any).portrait_note ? `${(p as any).portrait_note} ` : ''}<a class="link" href={`${href.credits()}#${portraitArchive}`}>Источник снимка</a>
@@ -67,7 +68,8 @@ const portraitArchive = (p.portrait && photoMeta(p.portrait as string)?.record_u
     <div class="container ps-split">
       <div class="stack ps-main" style="--stack-gap:28px">
         <h2 class="sr-only">Биография</h2>
-        {p.bio && <div class="prose reveal"><p><LinkedText text={p.bio} context={mentions} limit={7} /></p></div>}
+        {p.bio && <div class="prose person-bio">{p.bio.split(/\n\s*\n/).map(paragraph=><p><LinkedText text={paragraph} context={mentions} limit={7} /></p>)}</div>}
+        {(p.sources?.length??0)>0 && <details class="person-sources"><summary>Источники биографии</summary><ul>{p.sources!.map(source=><li><a href={source.url} target="_blank" rel="noopener">{source.title}</a>{source.note&&<p>{source.note}</p>}</li>)}</ul></details>}
         <DossierLinks kind="people" slug={p.slug} />
         {quote && (
           <blockquote class="quote ps-quote reveal" style="--d:80ms">
@@ -181,16 +183,19 @@ const portraitArchive = (p.portrait && photoMeta(p.portrait as string)?.record_u
 
   .ps-split { display: flex; flex-wrap: wrap; gap: 40px 64px; align-items: flex-start; }
   .ps-main { flex: 1 1 560px; min-width: 0; }
+  .person-bio { color:var(--ink); }
   .ps-aside { flex: 1 1 300px; max-width: 440px; min-width: 0; display: flex; flex-direction: column; gap: 12px; }
   .ps-quote { margin: 0; max-width: 60ch; }
   .ps-quote__src { margin-top: 10px; font-size: 14px; font-weight: 500; }
   .ps-grid { display: grid; gap: 0 48px; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); }
   .ps-also { margin-top: 20px; font-size: 16px; }
+  .portrait-credit{font-size:13px;line-height:1.6;margin-top:12px;color:var(--mist);overflow-wrap:anywhere}.portrait-credit summary,.person-sources summary{cursor:pointer;min-height:44px;padding-block:10px}.portrait-credit p{margin-block:8px}.portrait-credit a,.person-sources a{text-decoration:underline}.person-sources{font-size:15px;line-height:1.7;border-block:1px solid var(--line);overflow-wrap:anywhere}.person-sources ul{padding-left:20px}.person-sources li{margin-bottom:16px}
 
   @media (max-width: 620px) {
-    .ph__inner { grid-template-areas: "img head" "role role"; grid-template-rows: auto auto; align-items: end; }
-    .ph__name { font-size: clamp(24px, 7vw, 34px); }
-    .ph__meta { font-size: 14px; }
+    .ph__inner { grid-template-columns:120px minmax(0,1fr); grid-template-areas: "img meta" "name name" "role role"; grid-template-rows: auto auto auto; align-items:center; }
+    .ph__head { display:contents; }
+    .ph__name { grid-area:name; font-size: clamp(28px, 7vw, 34px); hyphens:none; }
+    .ph__meta { grid-area:meta; font-size: 14px; }
     .ph__role { font-size: 16px; }
   }
 </style>

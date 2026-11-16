@@ -1,0 +1,9 @@
+{
+  "file": "work/hardware-people/intl-profiles.json",
+  "sha256": "ce22b2a1268d5703fa7d297305e8f1ecad0d54e59c9b290fe0b5c38fcc87d2ae",
+  "reviewer": "root",
+  "status": "accepted",
+  "fullNarrativeRead": 12,
+  "reviewerMessage": "Полностью дочитал исправленные intl12, включая Идзити и формулировку Насибы. Принимаю RU SHA ce22b2a1268d5703fa7d297305e8f1ecad0d54e59c9b290fe0b5c38fcc87d2ae.",
+  "resolvedFinding": "Removed unsupported claim that Ijichi commanded Hashidate during the Sino-Japanese War; retained participation only. Corrected a Russian case typo in Nashiba's profile."
+}

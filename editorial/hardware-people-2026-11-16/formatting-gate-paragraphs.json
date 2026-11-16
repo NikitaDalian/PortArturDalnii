@@ -1,0 +1,605 @@
+{
+  "type": "whitespace-only formatting gate",
+  "author": "hardware_people",
+  "status": "accepted",
+  "scope": "12 author biographies and six narrative biographies, RU/EN/ZH; all 54 bio values divided into three semantic paragraphs. No editorial wording changes.",
+  "normalization": "Remove all Unicode whitespace with re.sub(r\"\\s+\", \"\", value); this permits new paragraph whitespace in Chinese without treating it as textual content. Exact non-whitespace Unicode code-point equality is asserted.",
+  "createdUtc": "2026-11-16T02:56:58.624238+00:00",
+  "files": [
+    {
+      "file": "work/hardware-people/people-author12.json",
+      "sha256Before": "e00644b38e1799ff130a3ca80ceac8674b8839f6513220326961b07809357270",
+      "sha256After": "4764d0e09c3133ee3ccf419bf2a5acb8c0c312ce9692bc0fcaa11398f54ccbab",
+      "allOtherBytesUnchanged": true,
+      "normalizedExactEquality": true,
+      "biographies": [
+        {
+          "slug": "yakovlev",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "fabbef2f30ad06690229ce9980b588727052516895d649ec0bfbb2850c6584c7",
+          "bioSha256After": "4e307f9cdeb96be3c5fa46fd2e8461141f73f99164bfcd973c94cdc28e74f41d",
+          "normalizedSha256Before": "6f5afa178c4abb93c8a854f68e7e3ebc12a06fa2fc63fadb604f1e7bf9e52387",
+          "normalizedSha256After": "6f5afa178c4abb93c8a854f68e7e3ebc12a06fa2fc63fadb604f1e7bf9e52387",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "molas",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "4e368383a84122b63cce3eb44e1b2989179689ed2ecc114a97b2145a28c61b56",
+          "bioSha256After": "5e2d4bf0ee2efc06320c1da9efb84aab7edb6453715d9f575aff7a7dfde7eecb",
+          "normalizedSha256Before": "7a03d1e0a0753a9c8365a5b53b223709e28770ddba753c6fe7044752ec941b19",
+          "normalizedSha256After": "7a03d1e0a0753a9c8365a5b53b223709e28770ddba753c6fe7044752ec941b19",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "shchensnovich",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "5819d1aebf45334ebd0940181040a13fa53becffad47d3e02e59da2e82270a0b",
+          "bioSha256After": "1654b988f08dd4f3fc6d3eaa6c537dac7a978818125cb989f03bc331c97aa9ba",
+          "normalizedSha256Before": "c18d2acd2e32d54b8a11e8cb546ffc837693ec264c910b3f84c2e142d519e5a3",
+          "normalizedSha256After": "c18d2acd2e32d54b8a11e8cb546ffc837693ec264c910b3f84c2e142d519e5a3",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "ketlinsky",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "78a9e70340abf033a95accf245b0f7262130fd0c679fa2c214549a5bfeb3ed7e",
+          "bioSha256After": "f76226d77f0867eeb8360b6c0c22404dcf19f33379d249ecf86eb492ab363e76",
+          "normalizedSha256Before": "a8952e0cddc36f337f4e513440ce037471e49500e0e52bfafc9d5290e1828661",
+          "normalizedSha256After": "a8952e0cddc36f337f4e513440ce037471e49500e0e52bfafc9d5290e1828661",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "razvozov",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "2543d9d30ae1c9489df546191b7eb8503ae8db9d5a0c5cd2e0fa4d7236922298",
+          "bioSha256After": "cc73d3af7299df87356d56301c2b79c63f2b364975bb81fd8ba85ca83fa2b8ae",
+          "normalizedSha256Before": "c3d809fd268d585f0efcfd1cb9f1803a04ed9adf096fc8b3596218e7b6005ca2",
+          "normalizedSha256After": "c3d809fd268d585f0efcfd1cb9f1803a04ed9adf096fc8b3596218e7b6005ca2",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "viren",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "c29d73eac7e88b9db159889f6bf24dd1beb793fb3f6d8408166ac2dd743579a8",
+          "bioSha256After": "ec578f413f870cefb58aaf0ff1614e0409997f236f8c79a8d61c32b09fc55af6",
+          "normalizedSha256Before": "308252a6195eb957cea5636ff26eb9898fda156a984b224cd9d47244ad559309",
+          "normalizedSha256After": "308252a6195eb957cea5636ff26eb9898fda156a984b224cd9d47244ad559309",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "grigorovich",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "2f2f27af3e78b278857e271b5112c7ae8783a2a61537b4e14ea7aca0c383d61f",
+          "bioSha256After": "6fd1d16de5054a7a92cd4b81074703a36ebc75fb79936c889b58a7c51de12b8c",
+          "normalizedSha256Before": "59203aa3a5a1d5c16b597508daa04cafe661dcda9002a91577db756babb22c6e",
+          "normalizedSha256After": "59203aa3a5a1d5c16b597508daa04cafe661dcda9002a91577db756babb22c6e",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "essen",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "2260a0fcf142bbdbb56bacdd246c10417f1292830b1b8908d4b37e117dcf3d2c",
+          "bioSha256After": "6a2f3ed8ef69cc70a3bf654b40fdd222287e6edf64fb224ebb675c84ffbb85ec",
+          "normalizedSha256Before": "a9c8d822e8b1a173b8490086a3a819480a8670fca3a9b3d86ee376767bf3d9f3",
+          "normalizedSha256After": "a9c8d822e8b1a173b8490086a3a819480a8670fca3a9b3d86ee376767bf3d9f3",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "shults",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "dbccc5682b7e3cbe0579502841110160edf491ada283f0697a88648fe0fd41f1",
+          "bioSha256After": "73f332dd3117983b3fac096a9741bfabc068c06d64de8c810e1384386f93f35c",
+          "normalizedSha256Before": "d35458d33a65a8c78234e80d840310806bcfd699f212f37d1b78a8802a62a0c3",
+          "normalizedSha256After": "d35458d33a65a8c78234e80d840310806bcfd699f212f37d1b78a8802a62a0c3",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "rudnev",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "7f4a00fb19598cd5346459869e2444414201b729850a67d8fdba753c6e8e0204",
+          "bioSha256After": "ef0bc24be06cf58c695f4222d58d18df94004cd6065cba51f0af1b5efebff4c5",
+          "normalizedSha256Before": "ac56a582b1a059f900eb200a6e926365f418891777592afd3290c487232768cc",
+          "normalizedSha256After": "ac56a582b1a059f900eb200a6e926365f418891777592afd3290c487232768cc",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "reitsenstein",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "d5d26153ade5bd9f976cdd74b18a627dd5b36950050b2e8b64b8b25b663712a5",
+          "bioSha256After": "bc49801d3aa40f1a01f6ddc4526b263cf8906d87a23deaf10ffacb7af8016e7d",
+          "normalizedSha256Before": "83c55ff4b2976dc1a65e9a59b2c850b3225a18b23733d5bc32b6bfda42458d02",
+          "normalizedSha256After": "83c55ff4b2976dc1a65e9a59b2c850b3225a18b23733d5bc32b6bfda42458d02",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "semenov",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "74162854eb5d91a584360b0f3e18bdb0fd1b5e9c7129cf97c793589908cc966e",
+          "bioSha256After": "d6e130290df9c2709d3187491d7ccc013c42f4ca7033c5885d502b856e5f0619",
+          "normalizedSha256Before": "87595a90deb5ebd34c8431c5864d4079e9f708de4c9a53520efcc94e0f703a72",
+          "normalizedSha256After": "87595a90deb5ebd34c8431c5864d4079e9f708de4c9a53520efcc94e0f703a72",
+          "normalizedExactEquality": true
+        }
+      ]
+    },
+    {
+      "file": "work/hardware-people/people-author12-en.json",
+      "sha256Before": "8f65476dfcc2af9edbc4f21c00ad1df0feb5a061619720ae1a0f667389ae2e43",
+      "sha256After": "925e02559dc07fe039f88b31be275ff5e98fcfca747471d663589f839e0eea8c",
+      "allOtherBytesUnchanged": true,
+      "normalizedExactEquality": true,
+      "biographies": [
+        {
+          "slug": "yakovlev",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "219f8ac499030f5dba41f5d7e876c8bb7553f1f9882ccbcce9cfb042ee45c5be",
+          "bioSha256After": "c99a549993c9d4120732fbc35966f329c0e457573da307bfef18773a65a67cdd",
+          "normalizedSha256Before": "9ef4bd896c6d11694255ec392663768090c3968c8b72a4d59ce3d9e894999cf4",
+          "normalizedSha256After": "9ef4bd896c6d11694255ec392663768090c3968c8b72a4d59ce3d9e894999cf4",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "molas",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "592320e6359bccc19bbd7a3c20c37f1c7ffcfd25901895234b367a5a9d0e3e57",
+          "bioSha256After": "0de00b819c2551af1d7df6f2e78f4eeed3816300084a88ea446f526b03c6e905",
+          "normalizedSha256Before": "2e0b01dc340e48e17e57da710bdf011014a65bdcacc00e9d3124164710b52b79",
+          "normalizedSha256After": "2e0b01dc340e48e17e57da710bdf011014a65bdcacc00e9d3124164710b52b79",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "shchensnovich",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "f73c8239b66047ff34f615425941d4ae9b2b3b9364054a5cc3af2f4d4a84ea3c",
+          "bioSha256After": "e2617cdc11d058dec8010247f63e36294ebd27891c19fdf6374476f938fe974f",
+          "normalizedSha256Before": "0282d5ed1abc9b9e2a6d13e0e05a96b0d79e0afebd40dbfe77bb5d3fbf1ac420",
+          "normalizedSha256After": "0282d5ed1abc9b9e2a6d13e0e05a96b0d79e0afebd40dbfe77bb5d3fbf1ac420",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "ketlinsky",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "c22a570963957690379538e2cd6016e9d730d42d81791b79055e02b2f78da8a0",
+          "bioSha256After": "aa65dcc789a8242827160c76860b4261cbbf4d83f52c40f29246f7fc3394872a",
+          "normalizedSha256Before": "4cd8c4977b2cf34ca578b34119c2c5658ca3c8b228810b49211784daff97f9ce",
+          "normalizedSha256After": "4cd8c4977b2cf34ca578b34119c2c5658ca3c8b228810b49211784daff97f9ce",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "razvozov",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "edf11b3f37c193714bd43573df9d89ed752361b1498651cf221c180d35d8de3f",
+          "bioSha256After": "d552c1d566088adf711f3652146ba648ed2e944203a1be93c069976afe0903fa",
+          "normalizedSha256Before": "f3f33b09e555f91c57d4c135034902ae6edfa6fed4186a2899e1c1afaa0942f9",
+          "normalizedSha256After": "f3f33b09e555f91c57d4c135034902ae6edfa6fed4186a2899e1c1afaa0942f9",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "viren",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "c772101e05c07adbcc60d2d63dd2c34e3d4f664cec6af3b1fb54184a97873a4f",
+          "bioSha256After": "200a184578353bda2c1df4ed6c967b360f04e28cf820bb5092b50ec72402cbd1",
+          "normalizedSha256Before": "b7ca806eb3d30e144568b4c9d3ade7a554a1e101534f8f98d457a2d225271595",
+          "normalizedSha256After": "b7ca806eb3d30e144568b4c9d3ade7a554a1e101534f8f98d457a2d225271595",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "grigorovich",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "f8270f0d2324ca61e8a6b17df615724282f51a97809f8b4c88a742bdecef7d8b",
+          "bioSha256After": "5dc58c7a39c738083bfb35ef2049b80eb004558465f73c8b0eedd16231f8e072",
+          "normalizedSha256Before": "310b92da104fd1eb6e879b126344e830ba5bbd43dbe3c94f242aff20a1b77bfb",
+          "normalizedSha256After": "310b92da104fd1eb6e879b126344e830ba5bbd43dbe3c94f242aff20a1b77bfb",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "essen",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "6106910ef493af827bcb9cb0aea7ec1f40765963c6e85ff3fb251f6b7b7795e3",
+          "bioSha256After": "bfa1349f856d7da5df285085787a15cca02d4a39f7e59def4e81b74ae6e53443",
+          "normalizedSha256Before": "3e237b9753735ae5af5620bc055d9896db91ddef3e9d2449c3c80dfd7ed1ff25",
+          "normalizedSha256After": "3e237b9753735ae5af5620bc055d9896db91ddef3e9d2449c3c80dfd7ed1ff25",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "shults",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "1f13af56243d98b2d7f2f08360c8082d8d47b5c0522049f6658f1094f8c4841f",
+          "bioSha256After": "6801f508007595c89ca7c0e46c20a832c7aefa03f908dc345827074194fd3bcf",
+          "normalizedSha256Before": "8a4013856a52dfb27a4c670403ae7aa42af9d46fb7f7fe74ce1a30aa674896b7",
+          "normalizedSha256After": "8a4013856a52dfb27a4c670403ae7aa42af9d46fb7f7fe74ce1a30aa674896b7",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "rudnev",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "40b79f1d8938a49f8399bcde190b1bd05e4ca1264e65b32ec2ca32ecc53384ca",
+          "bioSha256After": "ea853a50295ed2dbd25e92f604afd8714eea03775950e0f82565f3d5da1890c8",
+          "normalizedSha256Before": "a0e127509abc958c67a61a2a125cb9134d06d3e4a5a75cc60eae58b412b15716",
+          "normalizedSha256After": "a0e127509abc958c67a61a2a125cb9134d06d3e4a5a75cc60eae58b412b15716",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "reitsenstein",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "b6a6d90fb293e721460e31f2ceadb41c74bdff7a7607aca8158f2e619deec999",
+          "bioSha256After": "5bdd23d3abd597dd0461a2565b64420c13fe25e981a699d3814c806520ef7cec",
+          "normalizedSha256Before": "feb11a58eb6fca38b37ff57a47cc3b698c2e4a77a23b8c8d11641eddf4c6c561",
+          "normalizedSha256After": "feb11a58eb6fca38b37ff57a47cc3b698c2e4a77a23b8c8d11641eddf4c6c561",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "semenov",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "bc45cfbb1c5cf9446e4c053f45117d53b42f00d26e1cb9c67b100bb62b4be918",
+          "bioSha256After": "baaeb7df3123cdac951f4bdc7581fe5190e7042863e2a13514ed45549649b6c7",
+          "normalizedSha256Before": "213541ba86efed4a934e31f8ad6312883d53ba389e0b65c5d9a9f012c654f966",
+          "normalizedSha256After": "213541ba86efed4a934e31f8ad6312883d53ba389e0b65c5d9a9f012c654f966",
+          "normalizedExactEquality": true
+        }
+      ]
+    },
+    {
+      "file": "work/hardware-people/people-author12-zh.json",
+      "sha256Before": "52c58055be728b9c8847c977229d5071b82f2b377bc95aa67cfe88d870483d4a",
+      "sha256After": "f703075466c3ad13833d585f1a259264cc7cc5fb242792c0bdb78db498dd9ee3",
+      "allOtherBytesUnchanged": true,
+      "normalizedExactEquality": true,
+      "biographies": [
+        {
+          "slug": "yakovlev",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "d2ea5ef6231a57220e64c0ca1640f0a921ac8113531de43cfc5910236343662b",
+          "bioSha256After": "126475c4e405ad5930f5022cf43376fa0edfe376cdc03b27ab163adae48a53f0",
+          "normalizedSha256Before": "d2ea5ef6231a57220e64c0ca1640f0a921ac8113531de43cfc5910236343662b",
+          "normalizedSha256After": "d2ea5ef6231a57220e64c0ca1640f0a921ac8113531de43cfc5910236343662b",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "molas",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "86193f2069f324e15f5689f7c49e581700dda4be2fb911b33f861cb4b4655732",
+          "bioSha256After": "1472a0cbcc26bbb7e1a5f2ccbbb171eae49600506746efd3ef70e875aeffb8ec",
+          "normalizedSha256Before": "86193f2069f324e15f5689f7c49e581700dda4be2fb911b33f861cb4b4655732",
+          "normalizedSha256After": "86193f2069f324e15f5689f7c49e581700dda4be2fb911b33f861cb4b4655732",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "shchensnovich",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "dd54b5497e0bc284be8c33c65d68ba81c9fc8d47dd58bf2973f3c02eb8b54a51",
+          "bioSha256After": "c6c555f19d8878d278909f58bdb04af018ad15915aa2248ca01084767a389477",
+          "normalizedSha256Before": "dd54b5497e0bc284be8c33c65d68ba81c9fc8d47dd58bf2973f3c02eb8b54a51",
+          "normalizedSha256After": "dd54b5497e0bc284be8c33c65d68ba81c9fc8d47dd58bf2973f3c02eb8b54a51",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "ketlinsky",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "326a59a435ff47094acfd9acc8400f6b30bd1fb16cda9dbb4157143708807a9a",
+          "bioSha256After": "83dbe75e15ad6295b8cac5a3260ed171f213408c4848054a427adb98c19819ec",
+          "normalizedSha256Before": "326a59a435ff47094acfd9acc8400f6b30bd1fb16cda9dbb4157143708807a9a",
+          "normalizedSha256After": "326a59a435ff47094acfd9acc8400f6b30bd1fb16cda9dbb4157143708807a9a",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "razvozov",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "6d2d159df22b23256fc81af44f5d79aa6f133679be5364d5758541223a1b23b9",
+          "bioSha256After": "eb80bfe105ccb0e0c735aff731c7c407bd8756770798947ce020592d0ce572e0",
+          "normalizedSha256Before": "6d2d159df22b23256fc81af44f5d79aa6f133679be5364d5758541223a1b23b9",
+          "normalizedSha256After": "6d2d159df22b23256fc81af44f5d79aa6f133679be5364d5758541223a1b23b9",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "viren",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "b28fd719929d3defd2d302a3176fe5ab22576e0e8e4553d84f413115d9a01b96",
+          "bioSha256After": "b40cb9b65ed2a2117e73fb5a1e9651a3202955d34ae8c69d560e9329e9b0317f",
+          "normalizedSha256Before": "b28fd719929d3defd2d302a3176fe5ab22576e0e8e4553d84f413115d9a01b96",
+          "normalizedSha256After": "b28fd719929d3defd2d302a3176fe5ab22576e0e8e4553d84f413115d9a01b96",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "grigorovich",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "e59e7753548973d12285d068d4030a952eab113dc63a33f16d52daa144b67e9c",
+          "bioSha256After": "6c23e452330c4a71a25e26a008892b41e79f23674b88dd6674990c8bf52fa740",
+          "normalizedSha256Before": "e59e7753548973d12285d068d4030a952eab113dc63a33f16d52daa144b67e9c",
+          "normalizedSha256After": "e59e7753548973d12285d068d4030a952eab113dc63a33f16d52daa144b67e9c",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "essen",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "45bc62bcf368f536999d60df1a4bb9fde5f3971ac80af024bcbe0aeb112f603c",
+          "bioSha256After": "1ffffb6e9fed279d93b150f0761a00e0a65930bb9a942220d44d3a7d86d398ba",
+          "normalizedSha256Before": "45bc62bcf368f536999d60df1a4bb9fde5f3971ac80af024bcbe0aeb112f603c",
+          "normalizedSha256After": "45bc62bcf368f536999d60df1a4bb9fde5f3971ac80af024bcbe0aeb112f603c",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "shults",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "fcf9079b54afb5a9bba658af8ac8ad10b5cae12a2df346d46abc58d3c5165f1c",
+          "bioSha256After": "81ae7c3508ccba568a1ce50a374cc5adb9f3d47a7ca56b97cf8603fb794bd749",
+          "normalizedSha256Before": "fcf9079b54afb5a9bba658af8ac8ad10b5cae12a2df346d46abc58d3c5165f1c",
+          "normalizedSha256After": "fcf9079b54afb5a9bba658af8ac8ad10b5cae12a2df346d46abc58d3c5165f1c",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "rudnev",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "64098ea7b19639af293c30c9af7532f95d4778970492002c4153a9cd961edb3b",
+          "bioSha256After": "b938940afcee5d2ff20d4a73277db0daa169a1bc3d937ca257d74c8124df2d05",
+          "normalizedSha256Before": "64098ea7b19639af293c30c9af7532f95d4778970492002c4153a9cd961edb3b",
+          "normalizedSha256After": "64098ea7b19639af293c30c9af7532f95d4778970492002c4153a9cd961edb3b",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "reitsenstein",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "7bb72fe22c9242ebc2d25164f975a6af27b92fcbe015653b547211857a8e51f3",
+          "bioSha256After": "a10e8b7bf689dfb380ff9fc746d73dd87f047e5e65c5b29bcea54eb958dd0061",
+          "normalizedSha256Before": "7bb72fe22c9242ebc2d25164f975a6af27b92fcbe015653b547211857a8e51f3",
+          "normalizedSha256After": "7bb72fe22c9242ebc2d25164f975a6af27b92fcbe015653b547211857a8e51f3",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "semenov",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "9b3abe5a6d7b40602783777942f82b71f16dc5aa2f67266cb52fd07023ae2fbf",
+          "bioSha256After": "c725b8c2766f23eef5fa9140500fdeace9dd680cb3d6e8da612e159739e54718",
+          "normalizedSha256Before": "9b3abe5a6d7b40602783777942f82b71f16dc5aa2f67266cb52fd07023ae2fbf",
+          "normalizedSha256After": "9b3abe5a6d7b40602783777942f82b71f16dc5aa2f67266cb52fd07023ae2fbf",
+          "normalizedExactEquality": true
+        }
+      ]
+    },
+    {
+      "file": "work/hardware-people/narrative-ru.json",
+      "sha256Before": "c38d1f5f3b6839d98461ee481a0a39a22e2c71f1dbfd8bc383f9899f13924a02",
+      "sha256After": "ffd545e9eff4448d37eb1289c91d80381b8694fc559150c65da56aaf7741f402",
+      "allOtherBytesUnchanged": true,
+      "normalizedExactEquality": true,
+      "biographies": [
+        {
+          "slug": "stark",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "2128d0489a7d4201b04368f71057179e1d845c203e0568399ac3ebe42d2e92c0",
+          "bioSha256After": "21788c90d5789937093958adf785d407fe51d529787e29394194045dd00dcc60",
+          "normalizedSha256Before": "cabc1579a1d4812269b862f7f1e30d0127bfc2b7dcac1fd1c9dc9f78b887708f",
+          "normalizedSha256After": "cabc1579a1d4812269b862f7f1e30d0127bfc2b7dcac1fd1c9dc9f78b887708f",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "kirill-vladimirovich",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "49fa99dddcd5d8d3487f173a9bae3290ae19507d4a8ffa78dc97be6e37adf8db",
+          "bioSha256After": "312f8efd057438cf57905c779a41b447e2315e935080e150df3a20dbbab32307",
+          "normalizedSha256Before": "a1ccb2917f7164adf4ab25e38349dee5394946f49a828a896f23a36f4430990a",
+          "normalizedSha256After": "a1ccb2917f7164adf4ab25e38349dee5394946f49a828a896f23a36f4430990a",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "lagane",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "d88da00356fe9404c80922c2246f48f3fa308ad5fdbf06ca05b83df744853093",
+          "bioSha256After": "3b1b05fdc111d5f4d19e9e1fa2e8e3450a75c86c4e7e736b9c9d7c1f986f78a0",
+          "normalizedSha256Before": "3b98ad2444adb86aa13881226a3c4497552e60dba076809b215253dbcdb94a44",
+          "normalizedSha256After": "3b98ad2444adb86aa13881226a3c4497552e60dba076809b215253dbcdb94a44",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "matusevich",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "d154baa16a8d7d8bd5f81787b2d96926099be12c96a3a3db5f7c26b98020686f",
+          "bioSha256After": "00a6d4eda2682e8324b8799bdd7548c5b64220bcb357d107a8fd97115b687535",
+          "normalizedSha256Before": "14ccb413d16343d11fe66ec1d9defac91a980de78a05246415178c4ecb5edc53",
+          "normalizedSha256After": "14ccb413d16343d11fe66ec1d9defac91a980de78a05246415178c4ecb5edc53",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "stackelberg",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "03b1d82cbc35236cdbebe456659d61afd45af40dafe48148233522c18c665b01",
+          "bioSha256After": "07c61d754b9d0f3043c1af3e02a4b8a1402e85cb14f7a89f5d0e8bf2e6e775f3",
+          "normalizedSha256Before": "5a501be92ab1b9ab8609dc557a451cb0b10b71c11fd03e895e9a98b909cbd3c5",
+          "normalizedSha256After": "5a501be92ab1b9ab8609dc557a451cb0b10b71c11fd03e895e9a98b909cbd3c5",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "krylov",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "b7f7e4b289958c305e0da004b548ab319182eecebdf5884ae29c2c54fad48361",
+          "bioSha256After": "41b1ac8d6e58b050dbdf38ddd9a4c1f786318a7febba436132c74e91c5410c9f",
+          "normalizedSha256Before": "5b40f10a0e417a1b2360dfa621e3ff7b60819a13084a699da857abe7300f9ae2",
+          "normalizedSha256After": "5b40f10a0e417a1b2360dfa621e3ff7b60819a13084a699da857abe7300f9ae2",
+          "normalizedExactEquality": true
+        }
+      ]
+    },
+    {
+      "file": "work/hardware-people/narrative-en.json",
+      "sha256Before": "a0782e330ff11907905da5c560dc314a2658501c3c8d824f4539cf686804add1",
+      "sha256After": "494a19c6337823df7e0ef7f440bbf57924abe289a8d8c13b7dc5862448d293ce",
+      "allOtherBytesUnchanged": true,
+      "normalizedExactEquality": true,
+      "biographies": [
+        {
+          "slug": "stark",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "39d7f80f2a7af35051d12a8098698a629f92f4c5d959356a032845efc5488712",
+          "bioSha256After": "201dd20cf49c14ad90ef5809663b4afc4009efae712b89a213a16692ea2b308f",
+          "normalizedSha256Before": "537daecb94b6c4eafdd435ef52517183be02cb72fc4d76d14e1b76f7b2e1d009",
+          "normalizedSha256After": "537daecb94b6c4eafdd435ef52517183be02cb72fc4d76d14e1b76f7b2e1d009",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "kirill-vladimirovich",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "6d281b1eeba44adfd4342b24103976396668d78794ed59e5afb536649d5a927b",
+          "bioSha256After": "f10a7531f7bb02037c3f1ddb5581f246e02c6930b5932bfe6a61a4fff6dd59f7",
+          "normalizedSha256Before": "c95642277fae6597bf117d8fe689923fc31d522d401875865bbb99bbb73bae49",
+          "normalizedSha256After": "c95642277fae6597bf117d8fe689923fc31d522d401875865bbb99bbb73bae49",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "lagane",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "7d6600d1ad07dc29b42da6fcc9ef2da9b6517a2d06841acc191df24aa432f291",
+          "bioSha256After": "1b9c7aafe14fb164e3b2e8fc4a9d4cc6413f28543a2ac2f323dcb2a1cbcc67a2",
+          "normalizedSha256Before": "1a06006f2443ecd26635399520ba0648c84629e3d03ee3528546333845c98408",
+          "normalizedSha256After": "1a06006f2443ecd26635399520ba0648c84629e3d03ee3528546333845c98408",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "matusevich",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "ead225abdac01f762042155cce18b8948250aa680a76bb1ee4e6c39063f5f056",
+          "bioSha256After": "69be2fa20e887af7287a2580b9de58570ce162cb6b96c3771bfbd34c763246de",
+          "normalizedSha256Before": "c4a26d88a0c60d8e06ebea909cd02c7b7d8ae80b555a254ef3b9f33c270cd02d",
+          "normalizedSha256After": "c4a26d88a0c60d8e06ebea909cd02c7b7d8ae80b555a254ef3b9f33c270cd02d",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "stackelberg",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "cef28891af0077afa68e8d42c027b2bfe0c0a760c74ad49ebbb532ebca418084",
+          "bioSha256After": "0de95bdb2d39a419e3960af9939d30c822f3fa63d854ee4c7c932ba1c0f14791",
+          "normalizedSha256Before": "44b9d298e475e669f945253986f089842a21c21dd863d0ef24378b35335085d7",
+          "normalizedSha256After": "44b9d298e475e669f945253986f089842a21c21dd863d0ef24378b35335085d7",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "krylov",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "0b1595c297deaed34e98b5584a3eae662016544c5e8b215f23454f5831efbaf5",
+          "bioSha256After": "0c4bb1daaf607aea92c2677a069447578c35bc98b76ae9daa77e3160b1efeddc",
+          "normalizedSha256Before": "fa8030ffe4e830a92c55be74f0618cfabd9c2bfecbdc5345caf2cf5a831ce6c1",
+          "normalizedSha256After": "fa8030ffe4e830a92c55be74f0618cfabd9c2bfecbdc5345caf2cf5a831ce6c1",
+          "normalizedExactEquality": true
+        }
+      ]
+    },
+    {
+      "file": "work/hardware-people/narrative-zh.json",
+      "sha256Before": "2d9acca08be68866c939a36eb61ab6f977ac5caf6ff3457643bb3d5c4ac2bed5",
+      "sha256After": "a8141a94f8a8450331844c8f40d659bf4e78775396122ab7974724aece677661",
+      "allOtherBytesUnchanged": true,
+      "normalizedExactEquality": true,
+      "biographies": [
+        {
+          "slug": "stark",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "1ac427b895c4574820faf540f49c65e68b046e4595588e15e53138f4e14e690f",
+          "bioSha256After": "2bda6dae68283b136601f69a1b2247043f0eec3be621d8623c59dd2c0c713f94",
+          "normalizedSha256Before": "1ac427b895c4574820faf540f49c65e68b046e4595588e15e53138f4e14e690f",
+          "normalizedSha256After": "1ac427b895c4574820faf540f49c65e68b046e4595588e15e53138f4e14e690f",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "kirill-vladimirovich",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "b4ded949b8196ae240ccf424bc6c8fe0bd5697f44686bfa632652533901dcd65",
+          "bioSha256After": "c4566a98dc4797986d303f16312d9998747518055f752c5a45636ec7f3a6784f",
+          "normalizedSha256Before": "b4ded949b8196ae240ccf424bc6c8fe0bd5697f44686bfa632652533901dcd65",
+          "normalizedSha256After": "b4ded949b8196ae240ccf424bc6c8fe0bd5697f44686bfa632652533901dcd65",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "lagane",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "310a2e2aa68eea9788534ffb360b2ddcbbd2d7c43852fbe6fc725dc06d9da50e",
+          "bioSha256After": "bfea1750ea79f234bcef95b03d56f6a8f5039ba88d6ef60a93b949c8a8a3ab7d",
+          "normalizedSha256Before": "310a2e2aa68eea9788534ffb360b2ddcbbd2d7c43852fbe6fc725dc06d9da50e",
+          "normalizedSha256After": "310a2e2aa68eea9788534ffb360b2ddcbbd2d7c43852fbe6fc725dc06d9da50e",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "matusevich",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "303a0d9b64cf4dbf1db5fe5f906c829cea033d0ce10b9cc3084a5f99f1c7c712",
+          "bioSha256After": "0309ca001ff307978797c4764a4e15cdde63ad37842b6cc44c79586df085726b",
+          "normalizedSha256Before": "303a0d9b64cf4dbf1db5fe5f906c829cea033d0ce10b9cc3084a5f99f1c7c712",
+          "normalizedSha256After": "303a0d9b64cf4dbf1db5fe5f906c829cea033d0ce10b9cc3084a5f99f1c7c712",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "stackelberg",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "fcf21fe6b11322bbb16b1cb71d3e4ef9b96ce8d0d1ff28289393f4d15d61f907",
+          "bioSha256After": "ee441576b8c95ee4ba4da31c254d13bf118b19552d2d150a5c40983d857eef33",
+          "normalizedSha256Before": "fcf21fe6b11322bbb16b1cb71d3e4ef9b96ce8d0d1ff28289393f4d15d61f907",
+          "normalizedSha256After": "fcf21fe6b11322bbb16b1cb71d3e4ef9b96ce8d0d1ff28289393f4d15d61f907",
+          "normalizedExactEquality": true
+        },
+        {
+          "slug": "krylov",
+          "paragraphsBefore": 1,
+          "paragraphsAfter": 3,
+          "bioSha256Before": "d5bbe5a7d976deb023c784a40c69dd3e397fe9cf5e349e178f5cd232bcdd9b34",
+          "bioSha256After": "1ad73e48a0aa637d474867f40986416b88655f40f1e74859d801a3fbbd755216",
+          "normalizedSha256Before": "d5bbe5a7d976deb023c784a40c69dd3e397fe9cf5e349e178f5cd232bcdd9b34",
+          "normalizedSha256After": "d5bbe5a7d976deb023c784a40c69dd3e397fe9cf5e349e178f5cd232bcdd9b34",
+          "normalizedExactEquality": true
+        }
+      ]
+    }
+  ],
+  "blockers": []
+}

@@ -1,0 +1,65 @@
+{
+  "reviewer": "armament_alignment",
+  "status": "accepted",
+  "readComplete": true,
+  "visualSheet": "C:\\Users\\NikitaEN\\Documents\\Claude\\PortArturDalniiWS\\work\\hardware-people\\portrait-retry-review.jpg",
+  "records": [
+    {
+      "slug": "stackelberg",
+      "file": "C:\\Users\\NikitaEN\\Documents\\Claude\\PortArturDalniiWS\\work\\hardware-people\\portrait-retry\\stackelberg.jpg",
+      "sha256": "4ee152e1185e8f4cab6065f760a80d6df18b8d4d2d6f27ec1148ffee6a33b70f",
+      "metadataTitle": "File:Ewald von Stackelberg, 1904.jpg"
+    },
+    {
+      "slug": "matusevich",
+      "file": "C:\\Users\\NikitaEN\\Documents\\Claude\\PortArturDalniiWS\\work\\hardware-people\\portrait-retry\\matusevich.jpg",
+      "sha256": "c7a5510f6aa56e32333006cc2591e5fba7aed1b9dc51cd757cd506b73c702f81",
+      "metadataTitle": "File:Matusevich NA3.jpg"
+    },
+    {
+      "slug": "stark",
+      "file": "C:\\Users\\NikitaEN\\Documents\\Claude\\PortArturDalniiWS\\work\\hardware-people\\portrait-retry\\stark.jpg",
+      "sha256": "4aca57cd4bcf0e084111114aeb58cad751b4b8598b23287c8f9871edc755a28a",
+      "metadataTitle": "File:Oskar Victorovich Stark.jpg"
+    },
+    {
+      "slug": "kirill-vladimirovich",
+      "file": "C:\\Users\\NikitaEN\\Documents\\Claude\\PortArturDalniiWS\\work\\hardware-people\\portrait-retry\\kirill-vladimirovich.jpg",
+      "sha256": "e1e25ab03d7a70e09a89e2f7a139b0ef7f10bd6f737b601b94d0f9d289b1c95b",
+      "metadataTitle": "File:Великий князь Кирилл Владимирович.jpg"
+    },
+    {
+      "slug": "reitsenstein",
+      "file": "C:\\Users\\NikitaEN\\Documents\\Claude\\PortArturDalniiWS\\work\\hardware-people\\portrait-retry\\reitsenstein.jpg",
+      "sha256": "8a7e111ec9948fab193fdf9a21ced2b688472b3ecffb8744bea52803de26b104",
+      "metadataTitle": "File:Reitsenstein.jpg"
+    },
+    {
+      "slug": "grigorovich",
+      "file": "C:\\Users\\NikitaEN\\Documents\\Claude\\PortArturDalniiWS\\work\\hardware-people\\portrait-retry\\grigorovich.jpg",
+      "sha256": "5653c0a02078eedc96bbb1d2f1bd4618b44f98f857d14e68bda73f04a5d0ab5a",
+      "metadataTitle": "File:Григорович Иван.jpg"
+    },
+    {
+      "slug": "shults",
+      "file": "C:\\Users\\NikitaEN\\Documents\\Claude\\PortArturDalniiWS\\work\\hardware-people\\portrait-retry\\shults.jpg",
+      "sha256": "711010c39fe5e9074fc5d1b2338dbc903838dbfb05bed06781739244d05f6523",
+      "metadataTitle": "File:Михаил Федорович Шульц.jpg"
+    },
+    {
+      "slug": "zatsarenny",
+      "file": "C:\\Users\\NikitaEN\\Documents\\Claude\\PortArturDalniiWS\\work\\hardware-people\\portrait-retry\\zatsarenny.jpg",
+      "sha256": "67d8b38dc7f50c20739ba25433955ed375e1af8f2de9905e0b939faa7b7e03b4",
+      "metadataTitle": "File:Zatsarenniy Vasily Maximovich.jpg"
+    }
+  ],
+  "notes": [
+    "8файлов визуально проверены, соответствуют именам в исходных карточках.",
+    "Шульц: Михаил и Максимилиан — один командир Новика, независимо подтверждено энциклопедией немцев России https://enc.rusdeutsch.ru/articles/2446 и словарём С.В.Волкова. Современный автор Емелин не назначен фотографом.",
+    "Кирилл:2014 вDateTimeOriginal является датой цифровой записи;1904 подтверждается описанием и шифром РНБ.",
+    "Штакельберг и Рейценштейн: указана дата публикации, не выдумана дата съёмки.",
+    "Старк: Здобнов назван автором репродукции, не автором исходного снимка.",
+    "Сайт не изменён; root интегрирует overlay и файлы."
+  ],
+  "overlaySha256": "e9919d71671352813fc33c14d204e7f01a9996af72e06e54275bd4ad9b116b6a"
+}

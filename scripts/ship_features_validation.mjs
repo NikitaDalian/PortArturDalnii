@@ -8,6 +8,7 @@ export function validateShipFeatures(records,hardware,profileProvenance){
     const ship=ships.get(record.shipSlug);
     if(!ship||ids.has(record.shipSlug)){errors.push(`${prefix}: unknown or duplicate ship`);continue;}
     ids.add(record.shipSlug);
+    if(!ship.images.some(image=>image.file===record.photoFile))errors.push(`${prefix}: annotation photo must belong to this ship`);
     if(!nonempty(record.period))errors.push(`${prefix}: missing dated scope`);
     if(!Array.isArray(record.features)||record.features.length<3||record.features.length>6){errors.push(`${prefix}: expected 3–6 reviewed zones`);continue;}
     const features=new Set();

@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Coast from '../../components/Coast.astro';
 import Crumbs from '../../components/Crumbs.astro';
 import ShipExplorer from '../../components/hardware/ShipExplorer.astro';
 import { shipFeaturesBySlug } from '../../lib/shipFeatures';
@@ -11,12 +12,13 @@ import SourceRefs from '../../components/hardware/SourceRefs.astro';
 import HardwareRow from '../../components/hardware/HardwareRow.astro';
 import { hardware, hardwareKind, shipsUsing, type Hardware } from '../../lib/hardware';
 import { mentionContext } from '../../lib/mentions';
-import { href, articleBySlug, placeBySlug, personBySlug, sourceBySlug, layerByKey } from '../../lib/data';
+import { href, imgCrop, articleBySlug, placeBySlug, personBySlug, sourceBySlug, layerByKey } from '../../lib/data';
 import { essays } from '../../lib/essays';
 import { assetUrl } from '../../i18n/locale';
 export function getStaticPaths() { return hardware.map(item=>({params:{slug:item.slug},props:{item}})); }
 const { item:e } = Astro.props as { item:Hardware };
-const context=mentionContext([`${e.kind}/${e.slug}`],[...e.relatedPeople.map(slug=>`person/${slug}`),...e.armament.map(gun=>`weapon/${gun.weaponSlug}`)]);
+const context=mentionContext([`${e.kind}/${e.slug}`],[...e.relatedPeople.map(slug=>`person/${slug}`),...e.crew.filter(member=>member.personSlug).map(member=>`person/${member.personSlug}`),...e.armament.map(gun=>`weapon/${gun.weaponSlug}`)]);
+const explorerPhoto = shipFeaturesBySlug.get(e.slug)?.photoFile;
 const installedOn=shipsUsing(e.slug);
 const readings=[
   ...e.relatedEssays.map(slug=>essays.find(item=>item.slug===slug)).filter(Boolean).map(item=>({name:item!.title,url:href.essay(item!.slug)})),
@@ -39,6 +41,7 @@ const connections=[
       <span hidden data-pagefind-meta={`sub:${e.category}`}></span>
       <span class="sr-only">{e.aliases.join(' · ')}</span>
     </div>
+    <Coast />
   </header>
   <article class="container hardware-layout">
     <aside class="hardware-aside" data-pagefind-ignore>
@@ -56,7 +59,7 @@ const connections=[
     </aside>
     <div class="hardware-body">
       {e.kind==='ship'&&<ShipExplorer ship={e} record={shipFeaturesBySlug.get(e.slug)} />}
-      {e.images[0] && <ArchiveFigure picture={e.images[0]} eager />}
+      {e.images[0] && e.images[0].file !== explorerPhoto && <ArchiveFigure picture={e.images[0]} eager />}
       <div class="hardware-intro prose" id="story">{e.intro.map(paragraph=><p><LinkedText text={paragraph} context={context} /></p>)}</div>
       {e.sections.map((section,index)=><>
         <section class="hardware-section" id={section.id} aria-labelledby={`${section.id}-title`}>
@@ -65,12 +68,15 @@ const connections=[
           <p class="refs"><SourceRefs refs={section.refs} /></p>
         </section>
         {index===0 && <HardwareSpecs item={e} />}
-        {e.images[index+1] && <div class="hardware-section"><ArchiveFigure picture={e.images[index+1]} /></div>}
+        {e.images[index+1] && e.images[index+1].file !== explorerPhoto && <div class="hardware-section"><ArchiveFigure picture={e.images[index+1]} /></div>}
       </>)}
       {e.sections.length===0 && <HardwareSpecs item={e} />}
       {e.armament.length>0 && <ArmamentGrid armament={e.armament} />}
       {e.crew.length>0 && <section class="hardware-section" id="crew" aria-labelledby="crew-title"><h2 id="crew-title">Люди и корабль</h2>
-        <ul class="hardware-crew">{e.crew.map(member=><li><h3>{member.personSlug ? <a href={href.person(member.personSlug)}>{member.name}</a> : member.name}</h3><p>{member.role}</p><SourceRefs refs={member.refs} /></li>)}</ul>
+        <ul class="hardware-crew">{e.crew.map(member=>{const person=personBySlug.get(member.personSlug??'');return <li>
+          {person?.portrait && <a class="crew-portrait" href={href.person(person.slug)} tabindex="-1" aria-hidden="true"><img src={imgCrop(person.portrait,'4x5',320)} alt="" width="96" height="120" loading="lazy" /></a>}
+          <div><h3>{member.personSlug ? <LinkedText text={member.name} /> : member.name}</h3><p>{member.role}</p><SourceRefs refs={member.refs} /></div>
+        </li>})}</ul>
       </section>}
       <section class="hardware-section" id="timeline" aria-labelledby="timeline-title"><h2 id="timeline-title">Хронология</h2>
         <ol class="hardware-timeline">{[...e.timeline].sort((a,b)=>a.year-b.year).map(event=><li><p class="timeline-date">{event.date}</p><h3>{event.title}</h3><p>{event.text}</p><SourceRefs refs={event.refs} /></li>)}</ol>
@@ -85,7 +91,8 @@ const connections=[
   </article>
 </Base>
 <style>
-  .hardware-head { padding:32px 0 48px; }
+  .hardware-head { padding:32px 0 0; }
+  .hardware-head > .container { padding-bottom:28px; }
   .hardware-category { color:var(--steel); margin-top:28px; font-size:16px; }
   h1 { font-size:clamp(34px,4.6vw,64px); line-height:1.12; margin:14px 0 24px; max-width:1000px; text-wrap:balance; }
   .lead { max-width:70ch; color:var(--mist); line-height:1.65; }
@@ -103,7 +110,10 @@ const connections=[
   h3 { font-size:20px; line-height:1.4; }
   .refs { margin-top:12px; }
   .hardware-crew { list-style:none; margin:0; padding:0; }
-  .hardware-crew li { padding:22px 0; border-bottom:1px solid var(--line); }
+  .hardware-crew li { display:flex; gap:20px; align-items:flex-start; padding:22px 0; border-bottom:1px solid var(--line); }
+  .hardware-crew li > div { min-width:0; }
+  .crew-portrait { flex:0 0 80px; }
+  .crew-portrait img { display:block; width:80px; height:100px; object-fit:cover; object-position:top; filter:grayscale(1); }
   li p { margin:8px 0; line-height:1.7; } h3 a { text-decoration:underline; text-underline-offset:4px; }
   .hardware-timeline { padding:0 0 0 24px; margin-left:8px; border-left:2px solid var(--line-2); list-style:none; }
   .hardware-timeline li { position:relative; padding-bottom:28px; } .hardware-timeline li:last-child { padding-bottom:0; }

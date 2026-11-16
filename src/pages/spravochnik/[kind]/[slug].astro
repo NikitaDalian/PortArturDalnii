@@ -1,14 +1,16 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import StaticRedirect from '../../../components/StaticRedirect.astro';
 import LinkedText from '../../../components/LinkedText.astro';
 import { mentionContext } from '../../../lib/mentions';
 import Crumbs from '../../../components/Crumbs.astro';
 import Related from '../../../components/Related.astro';
-import { articles, terms, referenceDescriptions, referencePhoto, img, href, tgPost } from '../../../lib/data';
+import { articles, terms, referenceDescriptions, referencePhoto, img, href, tgPost, personBySlug } from '../../../lib/data';
 export function getStaticPaths() {
   return (['people', 'geo'] as const).flatMap((kind) => Object.entries(terms[kind]).map(([slug, name]) => ({ params: { kind, slug }, props: { kind, slug, name } })));
 }
 const { kind, slug, name } = Astro.props as { kind: 'people' | 'geo'; slug: string; name: string };
+const redirectTo = kind === 'people' && personBySlug.has(slug) ? href.person(slug) : null;
 const description = referenceDescriptions[kind][slug];
 const photo = referencePhoto(kind, slug);
 const mentions = mentionContext([`${kind === 'people' ? 'person' : 'place'}/${slug}`]);
@@ -21,7 +23,7 @@ const related = {
   books: [...new Set(notes.flatMap((a) => a.books))].slice(0, 8),
 };
 ---
-<Base title={name} description={description.slice(0,180)} section={kind === 'people' ? 'people' : 'map'}>
+{redirectTo ? <StaticRedirect destination={redirectTo} title={name} /> : <Base title={name} description={description.slice(0,180)} section={kind === 'people' ? 'people' : 'map'}>
   <header class="reference-head dark">
     <div class="container reference-width">
       <Crumbs items={[{ label: 'Главная', href: href.home() }, { label: 'Указатель А–Я', href: href.index() }]} />
@@ -51,7 +53,7 @@ const related = {
     <Related people={related.people} places={related.places} books={related.books} title="Связанные люди и места" />
     <p class="reference-back"><a class="link" href={href.index()}>Вернуться к указателю</a></p>
   </article>
-</Base>
+</Base>}
 <style>
   .reference-width { max-width: 880px; }
   .reference-head { padding: 32px 0 48px; }

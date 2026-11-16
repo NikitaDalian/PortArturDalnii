@@ -1,0 +1,19 @@
+{
+  "reviewer": "home_architecture_audit",
+  "status": "accepted",
+  "scope": "Only source.note fields for all 22 profiles: 42 English and 42 Chinese notes, each read in full against its Russian source. Previously approved biographies were not rereviewed in this pass.",
+  "sourceRuSha256": "515b3eecd4523954585dd2e13fe167feaa3f7ad952a7591271d621fafdbf339c",
+  "files": [
+    {"file": "work/hardware-people/other-ru-en.json", "sha256": "a206e1e72360cdbd52ba61d1de44ce56a02715efe169b5ad7ca44a8c98bc6c46"},
+    {"file": "work/hardware-people/other-ru-zh.json", "sha256": "adf0d0fbd87dabb498e0420689c292d409f7d2a78cefd7945caec3dce1195645"}
+  ],
+  "resolved": ["Corrected English Lyubinsky date spacing from 15July to 15 July; final changed note rechecked."],
+  "fidelityChecks": [
+    "All names, dates, appointments and cited document scopes retained.",
+    "Brovtsyn patronymic contradiction remains explicit in both translations.",
+    "Nirod forum source remains clearly distinguished from an archive original.",
+    "Grammatchikov's source-specific expanded name is identified as a name form, without silently changing the approved profile name."
+  ],
+  "unchangedContentVerification": "Independently reconstructed the previously accepted EN and ZH files by replacing source.note values with empty strings and using their original two-space CRLF serialization without a final newline. Both reconstructed SHA256 values exactly match review-other22-translations-by-hardware.json, confirming all content outside source.note is unchanged.",
+  "remainingBlockers": []
+}

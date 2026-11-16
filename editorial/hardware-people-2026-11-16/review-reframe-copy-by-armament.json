@@ -1,0 +1,15 @@
+{
+  "author": "root",
+  "reviewer": "armament_alignment",
+  "status": "accepted",
+  "readComplete": true,
+  "files": {
+    "work/reframe-translations.json": "c36019347eae5063b0ba4db5b9dc7e7187cc295311ea49da7243b8234dab3b8d",
+    "work/finish_reframe_copy.py": "2bc2f8d1caa8214f2289146b2e666e3af29ddadf9fde7c77c7959dc321b1dfdc"
+  },
+  "resolved": [
+    "RUизображения не приведены к общему масштабу вместо двусмысленного не масштабируются.",
+    "EN learn about the people and events вместо meet events."
+  ],
+  "remainingBlockers": []
+}

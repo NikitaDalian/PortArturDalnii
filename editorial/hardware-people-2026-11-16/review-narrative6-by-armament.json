@@ -1,0 +1,14 @@
+{
+  "author": "hardware_people",
+  "reviewer": "armament_alignment",
+  "version": "v3",
+  "status": "accepted",
+  "file": "work\\hardware-people\\narrative-ru.json",
+  "sha256": "c38d1f5f3b6839d98461ee481a0a39a22e2c71f1dbfd8bc383f9899f13924a02",
+  "readComplete": true,
+  "resolved": [
+    "Атрибуция монографии о Диане исправлена на А.В.Скворцова.",
+    "Первое предложение Крылова ограничено последними главами истории Аскольда, не отрицает раннюю связь1902года."
+  ],
+  "remainingBlockers": []
+}

@@ -1,0 +1,26 @@
+{
+  "author": "hardware_people",
+  "reviewer": "root",
+  "status": "accepted",
+  "scope": "Full reading of all 17 dated scopes and 68 feature descriptions in RU, EN and ZH. Surgical adaptation from drawn profiles to attributed photographs. Original technical evidence and uncertainty retained. Photograph coordinates independently placed by root after visual inspection, never treated as an engineering plan.",
+  "files": {
+    "ru": {
+      "reviewedProseSha256": "115c53e24c75b3bfad9dae21ba35aed9665aa497a0fb0477cbc4b540340b45b1",
+      "integratedSha256": "4f153f308f2cc155e95a1b632b2dc249c3af41233b8827278dad03a6fa97c1e8"
+    },
+    "en": {
+      "reviewedProseSha256": "16fce9fb5c240c04f0bec53bb47224e141d20ba789d00d0c8a08b69d8b9e1c59",
+      "integratedSha256": "c31ee75db26e83c39ef7a754907b06b744fb427a71f1e82c48ea6e86e919e824"
+    },
+    "zh": {
+      "reviewedProseSha256": "c73443219b99f2f703880f68e1c306c6ccc0086d70cc33b91c43aec1efa85566",
+      "integratedSha256": "bda13c5e78559e57332ce9b19329349999f675eb5762cec5e9c2f59706b50fcb"
+    }
+  },
+  "finalIntegratedHashes": {
+    "src\\data\\ship_features.json": "c9bca80d8977238ce2a650517f7c316390ea5fcb04bc32cae2b5e367b88f9734",
+    "src\\i18n\\en\\ship_features.json": "80dca095dc338cc2af154fda85fe62dc4e37d5506474afcdff7d798d6aff8ac9",
+    "src\\i18n\\zh\\ship_features.json": "ea990fac80f6436be0b9d3291a3f3a5d72cc0df6d687e4715400b0ce05e31c57"
+  },
+  "visualReview": "All 17 rendered overlays inspected; corrected Mikasa, Peresvet and Tsesarevich coordinates before final build."
+}

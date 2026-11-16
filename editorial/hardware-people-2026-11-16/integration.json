@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-16",
+  "status": "validated; ready for publication",
+  "architecture": "Homepage: city/harbour/fortress first, then three paths, one latest feed, author. Fleet: archival photo atlas with separate shared-scale length bars. Ship points bound to exact photograph.",
+  "newBiographies": 52,
+  "newPortraits": 28,
+  "portraitMissing": [
+    "molas",
+    "semenov",
+    "ivanov-nikolai",
+    "sarychev",
+    "sarnavsky",
+    "grammatchikov",
+    "gubonin",
+    "lyubinsky",
+    "chernyshev",
+    "dmitriev",
+    "cherkassky",
+    "cherkasov",
+    "nirod",
+    "uspensky",
+    "lutonin",
+    "litvinov",
+    "lagane",
+    "ijichi",
+    "nashiba",
+    "sakamoto",
+    "nakao",
+    "canet",
+    "brink",
+    "uriu"
+  ],
+  "corrections": [
+    "Anton Frantsevich Brink, not Alexander; corrected crew names from reviewed sources.",
+    "Removed unverified Lyubinsky coastal-gun paragraph in all languages.",
+    "Existing short references resolve to full biographies, including alternate Reitsenstein/Ukhtomsky slugs."
+  ],
+  "images": "28 historical portraits with source/rights; unavailable or unverified portraits retained as absent, never substituted with invented likenesses.",
+  "checks": [
+    "31 tests passed before final formatting; source/relationship and mention checks passed.",
+    "Actual compiled armament grid visually checked at 1440/390, including expanded rights disclosure.",
+    "17 photographic overlays visually inspected; Mikasa/Peresvet/Tsesarevich coordinates corrected.",
+    "Mobile hotspot interaction and person-preview tap tested; no page navigation on first tap."
+  ],
+  "integratedHashes": {
+    "src\\data\\people.json": "9447f4f5c4ffc337a4ecb1caa8e31b7d9a68642247d80b65871d447d5d826b59",
+    "src\\data\\hardware.json": "eb779c5f99a00774a843a71dce9fdefd09137352854d7fac1eb7a707675a85e7",
+    "src\\data\\ship_features.json": "c9bca80d8977238ce2a650517f7c316390ea5fcb04bc32cae2b5e367b88f9734",
+    "src\\data\\fleet_overview.json": "9086ede7a56b8a1925a94ffb2f1a22f66d4beb4f5fe742779ceea2542daf6dec",
+    "src\\i18n\\en\\people.json": "b894bfcce1a23495c084b4ac0fc91d15f86b3dda39a6c5379ac5524da7077bfb",
+    "src\\i18n\\en\\hardware.json": "b7d3f1118e4365deab2a6d2d91271798f229d3a5a57b5a5cba4a9b4e9f077d26",
+    "src\\i18n\\en\\ship_features.json": "80dca095dc338cc2af154fda85fe62dc4e37d5506474afcdff7d798d6aff8ac9",
+    "src\\i18n\\en\\fleet_overview.json": "1aa9badb5e65547613ba4911e549d4062b66c7b045ae01dd8a9abbd736521374",
+    "src\\i18n\\zh\\people.json": "a026bd8086750fd24763939e79e5911f95ee90f53667bb1d526574a93bb77cd9",
+    "src\\i18n\\zh\\hardware.json": "47b95784df9e1550ec05cc0d72bc14052af41663c18bdb1cc3edcf4205c2bf96",
+    "src\\i18n\\zh\\ship_features.json": "ea990fac80f6436be0b9d3291a3f3a5d72cc0df6d687e4715400b0ce05e31c57",
+    "src\\i18n\\zh\\fleet_overview.json": "908aae7155956ebe1d10fade8783c32aebb1d3e795f87fb665aaca2d8f3c63a2"
+  },
+  "finalValidation": {
+    "tests": 31,
+    "pages": 1269,
+    "internalLinks": 111312,
+    "errors": 0,
+    "languages": [
+      "ru",
+      "en",
+      "zh"
+    ],
+    "browser": "390px mobile and 1440px desktop; no overflow or broken loaded images; fleet filters/table, photographic hotspots, person previews, legacy redirects checked. All 52 biographies independently read in source and both translations; all source notes translated and independently reviewed."
+  },
+  "redirectImplementation": "Static HTML redirect with canonical URL and visible fallback heading/link preserves old reference URLs in all three language builds."
+}

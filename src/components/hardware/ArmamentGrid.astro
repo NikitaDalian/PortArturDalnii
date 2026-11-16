@@ -16,7 +16,7 @@ const { armament } = Astro.props;
         <h3><a href={href.hardware(gun.weaponSlug)}>{weapon.name}</a></h3>
         {gun.count!==null&&<p class="armament-count"><span class="sr-only">Количество орудий:</span>× {gun.count}</p>}
       </div>
-      {weapon.images[0]&&<ArchiveFigure picture={weapon.images[0]} destination={href.hardware(gun.weaponSlug)} />}
+      {weapon.images[0] ? <ArchiveFigure picture={weapon.images[0]} destination={href.hardware(gun.weaponSlug)} /> : <div class="armament-no-image" aria-hidden="true" />}
       <div class="armament-installation">
         <p class="armament-period">{gun.period}</p>
         <p>{gun.note}</p>
@@ -29,19 +29,29 @@ const { armament } = Astro.props;
   .armament-section { margin-top:48px; scroll-margin-top:100px; }
   h2 { font-size:clamp(25px,2.5vw,34px); line-height:1.25; margin-bottom:18px; }
   .armament-context { font-size:16px; line-height:1.7; color:var(--ink-2); max-width:65ch; margin-bottom:24px; }
-  .armament-grid { list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; align-items:start; }
-  .armament-tile { min-width:0; background:var(--paper); border:1px solid var(--line); }
+  .armament-grid { list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+  .armament-tile { min-width:0; display:flex; flex-direction:column; background:var(--paper); border:1px solid var(--line); }
   .armament-heading { display:flex; align-items:start; gap:16px; padding:20px; min-height:112px; }
   h3 { flex:1; font-size:20px; line-height:1.4; margin:0; }
   h3 a { text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:4px; }
   h3 a:hover { color:var(--accent-on-light); }
   .armament-count { flex-shrink:0; color:var(--sea); font-size:28px; line-height:1.2; font-weight:750; font-variant-numeric:tabular-nums; white-space:nowrap; }
-  .armament-tile :global(.archive-figure img) { width:100%; height:auto; aspect-ratio:8/5; object-fit:contain; }
+  .armament-tile :global(.archive-figure > a) { display:block; aspect-ratio:8/5; background:var(--frost); }
+  .armament-tile :global(.archive-figure img) { width:100%; height:100%; max-height:none; object-fit:contain; }
   .armament-tile :global(figcaption) { padding:0 20px; font-size:13px; line-height:1.65; }
   .armament-tile :global(figcaption details) { font-size:12px; }
   .armament-installation { padding:20px; font-size:15px; line-height:1.7; }
   .armament-period { font-weight:700; color:var(--ink-2); margin-bottom:8px; }
   .armament-installation :global(.source-refs) { display:inline-block; margin-top:10px; }
-  @media(max-width:620px) { .armament-grid { grid-template-columns:1fr; gap:24px; }.armament-heading { min-height:0; }.armament-tile :global(figcaption) { font-size:14px; } }
+  /* Share each pair's heading, photograph, caption and installation tracks.
+     Opening an archive credit expands the caption track without clipping text. */
+  @supports (grid-template-rows:subgrid) {
+    @media(min-width:621px) {
+      .armament-tile { display:grid; grid-row:span 4; grid-template-rows:subgrid; row-gap:0; }
+      .armament-tile :global(.archive-figure) { display:grid; grid-row:span 2; grid-template-rows:subgrid; row-gap:0; }
+      .armament-no-image { grid-row:span 2; }
+    }
+  }
+  @media(max-width:620px) { .armament-grid { grid-template-columns:1fr; gap:24px; }.armament-heading { min-height:0; }.armament-tile :global(figcaption) { font-size:14px; }.armament-no-image { display:none; } }
   @media print { .armament-tile { break-inside:avoid; } }
 </style>

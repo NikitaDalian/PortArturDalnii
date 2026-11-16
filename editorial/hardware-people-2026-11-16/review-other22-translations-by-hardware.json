@@ -1,0 +1,32 @@
+{
+  "author": "armament_alignment",
+  "reviewer": "hardware_people",
+  "status": "accepted",
+  "readComplete": true,
+  "scope": "All 22 complete English and all 22 complete Chinese biographies, names, roles, source titles and available portrait captions/credits, compared with the complete accepted Russian source. Complete Chinese reread after corrections; English remains unchanged from first complete reading.",
+  "source": {
+    "file": "work/hardware-people/other-ru-profiles.json",
+    "sha256": "515b3eecd4523954585dd2e13fe167feaa3f7ad952a7591271d621fafdbf339c"
+  },
+  "files": [
+    {
+      "file": "work/hardware-people/other-ru-en.json",
+      "sha256": "f3ff6f2e8644c3e3255f2db64a927dd61ecd6fb5f200c1e3b3e6172de5236580"
+    },
+    {
+      "file": "work/hardware-people/other-ru-zh.json",
+      "sha256": "169a86c9bb3e3c5bc680751bd16cd88e7fe2114161e7a9a28d54b3cf250c3a7c"
+    }
+  ],
+  "resolved": [
+    "Chinese Gubonin wording now preserves the source's agency: naval service was chosen for the grandson, rather than claiming he personally chose it.",
+    "Chinese Viren rendering unified to 维连 in Ukhtomsky and Rodionov, consistent with the accepted author12 batch.",
+    "Chinese Boisman role states death in Japanese captivity, without adding a specific camp location unsupported by the Russian role."
+  ],
+  "notes": [
+    "Calendar qualifiers, captain-versus-flag-officer distinctions, corrected identities and initials retained.",
+    "Sdobnov photographer spelling follows the candidate's own recorded metadata; not silently altered to a different surname.",
+    "This gate approves translation fidelity and editorial completeness. It does not expand the scope of the earlier Russian factual gate or establish new photo provenance."
+  ],
+  "blockers": []
+}

@@ -1,11 +1,11 @@
 ---
 import { assetUrl } from '../../i18n/locale';
 import type { HardwareImage } from '../../lib/hardware';
-interface Props { picture: HardwareImage; eager?: boolean; destination?:string }
-const { picture:p, eager=false, destination } = Astro.props;
+interface Props { picture: HardwareImage; eager?: boolean; destination?:string; destinationLabel?:string }
+const { picture:p, eager=false, destination, destinationLabel='Подробнее об орудии' } = Astro.props;
 ---
 <figure class="archive-figure">
-  <a href={destination??assetUrl(p.file)} target={destination?undefined:'_blank'} rel={destination?undefined:'noopener'} aria-label={destination?'Подробнее об орудии':'Открыть изображение крупнее'}>
+  <a href={destination??assetUrl(p.file)} target={destination?undefined:'_blank'} rel={destination?undefined:'noopener'} aria-label={destination?destinationLabel:'Открыть изображение крупнее'}>
     <img src={assetUrl(p.file)} alt={p.alt} width={p.width} height={p.height} loading={eager ? 'eager' : 'lazy'} decoding="async" />
   </a>
   <figcaption>

@@ -1,0 +1,1778 @@
+{
+  "author": "hardware_people",
+  "scope": "Translate every nonempty source.note in the author12 RU source into EN and ZH. No biography or other field changes.",
+  "ruSha256": "4764d0e09c3133ee3ccf419bf2a5acb8c0c312ce9692bc0fcaa11398f54ccbab",
+  "files": [
+    {
+      "file": "work/hardware-people/people-author12-en.json",
+      "sha256Before": "925e02559dc07fe039f88b31be275ff5e98fcfca747471d663589f839e0eea8c",
+      "sha256After": "6a52cfcc613012fa6b0ab07cb31fe948b06c921e20329a3db0cef7342b8b2d90",
+      "onlySourceNoteTokensChanged": true,
+      "biographiesExactEquality": true,
+      "sourceUrlOrderExactEquality": true,
+      "nonemptyNotes": 109,
+      "preReviewSha256": "965c04c813e41a60665aea8d741242f0add3108d11e106580ada8e8043b38714"
+    },
+    {
+      "file": "work/hardware-people/people-author12-zh.json",
+      "sha256Before": "f703075466c3ad13833d585f1a259264cc7cc5fb242792c0bdb78db498dd9ee3",
+      "sha256After": "9ef90c061de3e98b7f0c0c4277b69acdfafd4c336f544a3028150941b9b12db7",
+      "onlySourceNoteTokensChanged": true,
+      "biographiesExactEquality": true,
+      "sourceUrlOrderExactEquality": true,
+      "nonemptyNotes": 109,
+      "preReviewSha256": "f6d929dbc64c9272da9e1ccb1d93444973d8765d85983f75fd10f6b1ebc260ec"
+    }
+  ],
+  "notes": [
+    {
+      "lang": "en",
+      "slug": "yakovlev",
+      "sourceIndex": 0,
+      "url": "https://rjw.narod.ru/people/bship/officers/1.htm",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "Biography and service; shipboard episodes were also checked against the sources cited in the corresponding ship article."
+    },
+    {
+      "lang": "en",
+      "slug": "yakovlev",
+      "sourceIndex": 1,
+      "url": "https://www.buninlib.orel.ru/ekoll/2025_2/Polynkin_AM_Liudi_Zmievskogo_kraia_%282021%29.pdf",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "Biography and service; shipboard episodes were also checked against the sources cited in the corresponding ship article."
+    },
+    {
+      "lang": "en",
+      "slug": "yakovlev",
+      "sourceIndex": 2,
+      "url": "https://keu-ocr.narod.ru/Petropavlovsk_sunk/",
+      "ru": "Статья целиком; последовательность выхода, спасение и потери",
+      "translated": "Entire article: sequence of the sortie, rescue and casualties"
+    },
+    {
+      "lang": "en",
+      "slug": "yakovlev",
+      "sourceIndex": 3,
+      "url": "https://www.navypedia.org/ships/russia/ru_bb_poltava.htm",
+      "ru": "Technical data; Ship protection Petropavlovsk",
+      "translated": "Technical data; Ship protection Petropavlovsk"
+    },
+    {
+      "lang": "en",
+      "slug": "yakovlev",
+      "sourceIndex": 4,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Разведчик_1904-0695.pdf",
+      "ru": "Перечень участвовавших кораблей и командиров",
+      "translated": "List of participating ships and commanding officers"
+    },
+    {
+      "lang": "en",
+      "slug": "yakovlev",
+      "sourceIndex": 5,
+      "url": "https://special.navalmuseum.ru/news/memorable?id=649",
+      "ru": "Карточка памятной даты",
+      "translated": "Commemorative-date entry"
+    },
+    {
+      "lang": "en",
+      "slug": "yakovlev",
+      "sourceIndex": 6,
+      "url": "https://chelmuseum.ru/istoriya-v-predmetah/bronenosets-petropavlovsk/",
+      "ru": "Текст о Верещагине и его присутствии на корабле",
+      "translated": "Text on Vereshchagin and his presence aboard"
+    },
+    {
+      "lang": "en",
+      "slug": "yakovlev",
+      "sourceIndex": 7,
+      "url": "https://heritage-institute.ru/wp-content/uploads/2023/04/russkie-zahoroneniya-v-kitae.pdf",
+      "ru": "С. 368–369, «Корабли — братские могилы»: «Петропавловск»",
+      "translated": "pp. 368–369, “Ships as Mass Graves”: Petropavlovsk"
+    },
+    {
+      "lang": "en",
+      "slug": "molas",
+      "sourceIndex": 0,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_19/page_26/page_26_004/",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "Biography and service; shipboard episodes were also checked against the sources cited in the corresponding ship article."
+    },
+    {
+      "lang": "en",
+      "slug": "molas",
+      "sourceIndex": 1,
+      "url": "https://heritage-institute.ru/wp-content/uploads/2023/04/russkie-zahoroneniya-v-kitae.pdf",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "Biography and service; shipboard episodes were also checked against the sources cited in the corresponding ship article."
+    },
+    {
+      "lang": "en",
+      "slug": "molas",
+      "sourceIndex": 2,
+      "url": "https://keu-ocr.narod.ru/Petropavlovsk_sunk/",
+      "ru": "Статья целиком; последовательность выхода, спасение и потери",
+      "translated": "Entire article: sequence of the sortie, rescue and casualties"
+    },
+    {
+      "lang": "en",
+      "slug": "molas",
+      "sourceIndex": 3,
+      "url": "https://www.navypedia.org/ships/russia/ru_bb_poltava.htm",
+      "ru": "Technical data; Ship protection Petropavlovsk",
+      "translated": "Technical data; Ship protection Petropavlovsk"
+    },
+    {
+      "lang": "en",
+      "slug": "molas",
+      "sourceIndex": 4,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Разведчик_1904-0695.pdf",
+      "ru": "Перечень участвовавших кораблей и командиров",
+      "translated": "List of participating ships and commanding officers"
+    },
+    {
+      "lang": "en",
+      "slug": "molas",
+      "sourceIndex": 5,
+      "url": "https://special.navalmuseum.ru/news/memorable?id=649",
+      "ru": "Карточка памятной даты",
+      "translated": "Commemorative-date entry"
+    },
+    {
+      "lang": "en",
+      "slug": "molas",
+      "sourceIndex": 6,
+      "url": "https://chelmuseum.ru/istoriya-v-predmetah/bronenosets-petropavlovsk/",
+      "ru": "Текст о Верещагине и его присутствии на корабле",
+      "translated": "Text on Vereshchagin and his presence aboard"
+    },
+    {
+      "lang": "en",
+      "slug": "shchensnovich",
+      "sourceIndex": 0,
+      "url": "https://history.milportal.ru/pervyj-v-rossii-admiral-podvodnik-e-n-shhensnovich/?print=print",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "Biography and service; shipboard episodes were also checked against the sources cited in the corresponding ship article."
+    },
+    {
+      "lang": "en",
+      "slug": "shchensnovich",
+      "sourceIndex": 1,
+      "url": "https://tsushima.su/RU/libru/i/Page_6/page_15/balakin-retvizan/balakin-retvizan-06/",
+      "ru": "Раздел «Служба»: переход; торпедное повреждение; бой 28 июля; последний этап осады; японская служба",
+      "translated": "“Service” section: voyage, torpedo damage, action of 28 July, final stage of the siege and Japanese service"
+    },
+    {
+      "lang": "en",
+      "slug": "shchensnovich",
+      "sourceIndex": 2,
+      "url": "https://tile.loc.gov/storage-services/service/ndnp/dlc/batch_dlc_austria_ver01/data/sn83030214/00175041096/1901101201/0204.pdf",
+      "ru": "Газетная страница 7, заметка о заходе в док",
+      "translated": "Newspaper p. 7: report of the docking"
+    },
+    {
+      "lang": "en",
+      "slug": "shchensnovich",
+      "sourceIndex": 3,
+      "url": "https://www.navypedia.org/ships/russia/ru_bb_retvizan.htm",
+      "ru": "Ships; Technical data",
+      "translated": "Ships; Technical data"
+    },
+    {
+      "lang": "en",
+      "slug": "shchensnovich",
+      "sourceIndex": 4,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/doc_stark/doc_stark_091/",
+      "ru": "Описание попытки заграждения гавани и расположения пароходов",
+      "translated": "Description of the attempt to block the harbour and the positions of the steamers"
+    },
+    {
+      "lang": "en",
+      "slug": "shchensnovich",
+      "sourceIndex": 5,
+      "url": "https://www.navypedia.org/ships/japan/jap_bb_hizen.htm",
+      "ru": "Project history; Naval service",
+      "translated": "Project history; Naval service"
+    },
+    {
+      "lang": "en",
+      "slug": "ketlinsky",
+      "sourceIndex": 0,
+      "url": "https://ru.wikipedia.org/wiki/Кетлинский,_Казимир_Филиппович",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "Biography and service; shipboard episodes were also checked against the sources cited in the corresponding ship article."
+    },
+    {
+      "lang": "en",
+      "slug": "ketlinsky",
+      "sourceIndex": 1,
+      "url": "https://www.docs.historyrussia.org/ru/nodes/200919-telegramma-predsedatelya-tsentromura-m-a-lyaudanskogo-iz-petrograda-v-tsentromur-ob-osvobozhdenii-k-f-ketlinskogo-iz-pod-aresta-i-vooruzhenii-murmanskogo-kraya-11-yanvarya-1918-g",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "Biography and service; shipboard episodes were also checked against the sources cited in the corresponding ship article."
+    },
+    {
+      "lang": "en",
+      "slug": "ketlinsky",
+      "sourceIndex": 2,
+      "url": "https://tsushima.su/RU/libru/i/Page_6/page_15/balakin-retvizan/balakin-retvizan-06/",
+      "ru": "Раздел «Служба»: переход; торпедное повреждение; бой 28 июля; последний этап осады; японская служба",
+      "translated": "“Service” section: voyage, torpedo damage, action of 28 July, final stage of the siege and Japanese service"
+    },
+    {
+      "lang": "en",
+      "slug": "ketlinsky",
+      "sourceIndex": 3,
+      "url": "https://history.milportal.ru/pervyj-v-rossii-admiral-podvodnik-e-n-shhensnovich/?print=print",
+      "ru": "Абзацы о приёмке «Ретвизана» и свидетельстве Щенсновича о бое 28 июля",
+      "translated": "Passages on Retvizan’s acceptance and Shchensnovich’s account of the action of 28 July"
+    },
+    {
+      "lang": "en",
+      "slug": "ketlinsky",
+      "sourceIndex": 4,
+      "url": "https://tile.loc.gov/storage-services/service/ndnp/dlc/batch_dlc_austria_ver01/data/sn83030214/00175041096/1901101201/0204.pdf",
+      "ru": "Газетная страница 7, заметка о заходе в док",
+      "translated": "Newspaper p. 7: report of the docking"
+    },
+    {
+      "lang": "en",
+      "slug": "ketlinsky",
+      "sourceIndex": 5,
+      "url": "https://www.navypedia.org/ships/russia/ru_bb_retvizan.htm",
+      "ru": "Ships; Technical data",
+      "translated": "Ships; Technical data"
+    },
+    {
+      "lang": "en",
+      "slug": "ketlinsky",
+      "sourceIndex": 6,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/doc_stark/doc_stark_091/",
+      "ru": "Описание попытки заграждения гавани и расположения пароходов",
+      "translated": "Description of the attempt to block the harbour and the positions of the steamers"
+    },
+    {
+      "lang": "en",
+      "slug": "ketlinsky",
+      "sourceIndex": 7,
+      "url": "https://www.navypedia.org/ships/japan/jap_bb_hizen.htm",
+      "ru": "Project history; Naval service",
+      "translated": "Project history; Naval service"
+    },
+    {
+      "lang": "en",
+      "slug": "ketlinsky",
+      "sourceIndex": 8,
+      "url": "https://keu-ocr.narod.ru/Cruisers/chap06.html",
+      "ru": "Глава 5 электронной книги, подразделы о дальних и ближних разведчиках; «Аскольд» и «Боярин», проектирование и испытания.",
+      "translated": "Chapter 5 of the online book, sections on distant and close scouts; Askold and Boyarin, design and trials."
+    },
+    {
+      "lang": "en",
+      "slug": "ketlinsky",
+      "sourceIndex": 9,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/doc_stark/doc_stark_064/",
+      "ru": "Полный рапорт о разведке 5 февраля у островов Блонд.",
+      "translated": "Complete report on the reconnaissance of 5 February near the Blonde Islands."
+    },
+    {
+      "lang": "en",
+      "slug": "ketlinsky",
+      "sourceIndex": 10,
+      "url": "https://navalmuseum.ru/collection/ship/modeli?id=1427",
+      "ru": "Историческая справка о постройке, испытаниях и поднятии флага.",
+      "translated": "Historical account of construction, trials and the hoisting of the flag."
+    },
+    {
+      "lang": "en",
+      "slug": "ketlinsky",
+      "sourceIndex": 11,
+      "url": "https://www.navypedia.org/ships/russia/ru_cr_askold.htm",
+      "ru": "Technical data, Naval service и таблица.",
+      "translated": "Technical data, Naval service and ship table."
+    },
+    {
+      "lang": "en",
+      "slug": "ketlinsky",
+      "sourceIndex": 12,
+      "url": "https://djvu.online/file/1VhPY1sNDqpU5",
+      "ru": "Веб-транскрипция: приход в Порт-Артур и командование (строки 1422–1658), Средиземное море, ремонт 1916, Север и конец корабля (2619–3105).",
+      "translated": "Web transcription: arrival at Port Arthur and command (lines 1422–1658); Mediterranean, 1916 repairs, the north and final fate (2619–3105)."
+    },
+    {
+      "lang": "en",
+      "slug": "ketlinsky",
+      "sourceIndex": 13,
+      "url": "https://keu-ocr.narod.ru/Diana_Liven/",
+      "ru": "Предбоевое совещание у Рейценштейна, действия отряда после гибели флагмана.",
+      "translated": "Pre-battle conference with Reitsenstein and the detachment’s actions after the flag officer’s death."
+    },
+    {
+      "lang": "en",
+      "slug": "razvozov",
+      "sourceIndex": 0,
+      "url": "https://warlib.site/razvozov/",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "Biography and service; shipboard episodes were also checked against the sources cited in the corresponding ship article."
+    },
+    {
+      "lang": "en",
+      "slug": "razvozov",
+      "sourceIndex": 1,
+      "url": "https://ru.wikipedia.org/wiki/Развозов,_Александр_Владимирович",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "Biography and service; shipboard episodes were also checked against the sources cited in the corresponding ship article."
+    },
+    {
+      "lang": "en",
+      "slug": "razvozov",
+      "sourceIndex": 2,
+      "url": "https://tsushima.su/RU/libru/i/Page_6/page_15/balakin-retvizan/balakin-retvizan-06/",
+      "ru": "Раздел «Служба»: переход; торпедное повреждение; бой 28 июля; последний этап осады; японская служба",
+      "translated": "“Service” section: voyage, torpedo damage, action of 28 July, final stage of the siege and Japanese service"
+    },
+    {
+      "lang": "en",
+      "slug": "razvozov",
+      "sourceIndex": 3,
+      "url": "https://history.milportal.ru/pervyj-v-rossii-admiral-podvodnik-e-n-shhensnovich/?print=print",
+      "ru": "Абзацы о приёмке «Ретвизана» и свидетельстве Щенсновича о бое 28 июля",
+      "translated": "Passages on Retvizan’s acceptance and Shchensnovich’s account of the action of 28 July"
+    },
+    {
+      "lang": "en",
+      "slug": "razvozov",
+      "sourceIndex": 4,
+      "url": "https://tile.loc.gov/storage-services/service/ndnp/dlc/batch_dlc_austria_ver01/data/sn83030214/00175041096/1901101201/0204.pdf",
+      "ru": "Газетная страница 7, заметка о заходе в док",
+      "translated": "Newspaper p. 7: report of the docking"
+    },
+    {
+      "lang": "en",
+      "slug": "razvozov",
+      "sourceIndex": 5,
+      "url": "https://www.navypedia.org/ships/russia/ru_bb_retvizan.htm",
+      "ru": "Ships; Technical data",
+      "translated": "Ships; Technical data"
+    },
+    {
+      "lang": "en",
+      "slug": "razvozov",
+      "sourceIndex": 6,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/doc_stark/doc_stark_091/",
+      "ru": "Описание попытки заграждения гавани и расположения пароходов",
+      "translated": "Description of the attempt to block the harbour and the positions of the steamers"
+    },
+    {
+      "lang": "en",
+      "slug": "razvozov",
+      "sourceIndex": 7,
+      "url": "https://www.navypedia.org/ships/japan/jap_bb_hizen.htm",
+      "ru": "Project history; Naval service",
+      "translated": "Project history; Naval service"
+    },
+    {
+      "lang": "en",
+      "slug": "viren",
+      "sourceIndex": 0,
+      "url": "https://ru.wikisource.org/wiki/ВЭ/ДО/Вирен,_Роберт_Николаевич",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "Biography and service; shipboard episodes were also checked against the sources cited in the corresponding ship article."
+    },
+    {
+      "lang": "en",
+      "slug": "viren",
+      "sourceIndex": 1,
+      "url": "https://old.sgu.ru/sites/default/files/depnews/file/2023/04/vysshie_chiny_rossiyskoy_imperii_biograficheskiy_slovar_t_1_a-g_m_2019.pdf",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "Biography and service; shipboard episodes were also checked against the sources cited in the corresponding ship article."
+    },
+    {
+      "lang": "en",
+      "slug": "viren",
+      "sourceIndex": 2,
+      "url": "https://keu-ocr.narod.ru/Bayan/",
+      "ru": "Гл. 2 «Конструкция и устройство»; гл. 3 «Постройка и испытания»; гл. 4 «Через моря и океаны»; гл. 5 «Порт-Артур»; приложение 2 «Баян в японском флоте»",
+      "translated": "Ch. 2, “Design and Layout”; ch. 3, “Construction and Trials”; ch. 4, “Across Seas and Oceans”; ch. 5, “Port Arthur”; appendix 2, “Bayan in the Japanese Navy”"
+    },
+    {
+      "lang": "en",
+      "slug": "viren",
+      "sourceIndex": 3,
+      "url": "https://tsushima.su/RU/libru/i/Page_6/page_13/biblmelbayanru/",
+      "ru": "Статья целиком: замысел, постройка, служба в 1904 г.",
+      "translated": "Entire article: conception, construction and service in 1904"
+    },
+    {
+      "lang": "en",
+      "slug": "viren",
+      "sourceIndex": 4,
+      "url": "https://www.navypedia.org/ships/russia/ru_cr_bayan.htm",
+      "ru": "Technical data; Ship protection Bayan (i)",
+      "translated": "Technical data; Ship protection Bayan (i)"
+    },
+    {
+      "lang": "en",
+      "slug": "viren",
+      "sourceIndex": 5,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/doc_stark/doc_stark_091/",
+      "ru": "Выходы крейсеров «Баян», «Аскольд» и «Новик»",
+      "translated": "Sorties by Bayan, Askold and Novik"
+    },
+    {
+      "lang": "en",
+      "slug": "viren",
+      "sourceIndex": 6,
+      "url": "https://heritage-institute.ru/wp-content/uploads/2021/08/pisma-oficzera-flota.pdf",
+      "ru": "С. 19, редакционные примечания 26–27 о «Баяне» и Вирене",
+      "translated": "p. 19, editorial notes 26–27 on Bayan and Viren"
+    },
+    {
+      "lang": "en",
+      "slug": "grigorovich",
+      "sourceIndex": 0,
+      "url": "https://navalmuseum.ru/news/memorable?id=546",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "Biography and service; shipboard episodes were also checked against the sources cited in the corresponding ship article."
+    },
+    {
+      "lang": "en",
+      "slug": "grigorovich",
+      "sourceIndex": 1,
+      "url": "https://ru.wikipedia.org/wiki/Григорович,_Иван_Константинович",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "Biography and service; shipboard episodes were also checked against the sources cited in the corresponding ship article."
+    },
+    {
+      "lang": "en",
+      "slug": "grigorovich",
+      "sourceIndex": 2,
+      "url": "https://keu-ocr.narod.ru/Bayan/",
+      "ru": "Гл. 2 «Конструкция и устройство»; гл. 3 «Постройка и испытания»; гл. 4 «Через моря и океаны»; гл. 5 «Порт-Артур»; приложение 2 «Баян в японском флоте»",
+      "translated": "Ch. 2, “Design and Layout”; ch. 3, “Construction and Trials”; ch. 4, “Across Seas and Oceans”; ch. 5, “Port Arthur”; appendix 2, “Bayan in the Japanese Navy”"
+    },
+    {
+      "lang": "en",
+      "slug": "grigorovich",
+      "sourceIndex": 3,
+      "url": "https://tsushima.su/RU/libru/i/Page_6/page_13/biblmelbayanru/",
+      "ru": "Статья целиком: замысел, постройка, служба в 1904 г.",
+      "translated": "Entire article: conception, construction and service in 1904"
+    },
+    {
+      "lang": "en",
+      "slug": "grigorovich",
+      "sourceIndex": 4,
+      "url": "https://www.navypedia.org/ships/russia/ru_cr_bayan.htm",
+      "ru": "Technical data; Ship protection Bayan (i)",
+      "translated": "Technical data; Ship protection Bayan (i)"
+    },
+    {
+      "lang": "en",
+      "slug": "grigorovich",
+      "sourceIndex": 5,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/doc_stark/doc_stark_091/",
+      "ru": "Выходы крейсеров «Баян», «Аскольд» и «Новик»",
+      "translated": "Sorties by Bayan, Askold and Novik"
+    },
+    {
+      "lang": "en",
+      "slug": "grigorovich",
+      "sourceIndex": 6,
+      "url": "https://heritage-institute.ru/wp-content/uploads/2021/08/pisma-oficzera-flota.pdf",
+      "ru": "С. 19, редакционные примечания 26–27 о «Баяне» и Вирене",
+      "translated": "p. 19, editorial notes 26–27 on Bayan and Viren"
+    },
+    {
+      "lang": "en",
+      "slug": "grigorovich",
+      "sourceIndex": 7,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_19/Page_30/grib-zesar-28-07-04/",
+      "ru": "Полная электронная статья: создание, вооружение, бой, повреждения и интернирование.",
+      "translated": "Complete online article: construction, armament, battle, damage and internment."
+    },
+    {
+      "lang": "en",
+      "slug": "grigorovich",
+      "sourceIndex": 8,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/page_25/bibldoczesar/",
+      "ru": "Ведомость повреждений корпуса, артиллерии и управления.",
+      "translated": "Report of damage to the hull, artillery and control systems."
+    },
+    {
+      "lang": "en",
+      "slug": "grigorovich",
+      "sourceIndex": 9,
+      "url": "https://navalmuseum.ru/news?id=1628",
+      "ru": "Состав отряда, флагман Литвинова, спасательная операция и музейный флаг.",
+      "translated": "Composition of the squadron, Litvinov’s flagship, rescue work and the museum flag."
+    },
+    {
+      "lang": "en",
+      "slug": "grigorovich",
+      "sourceIndex": 10,
+      "url": "https://www.navypedia.org/ships/russia/ru_bb_tsesarevich.htm",
+      "ru": "Таблица, Technical data и Naval service.",
+      "translated": "Ship table, Technical data and Naval service."
+    },
+    {
+      "lang": "en",
+      "slug": "essen",
+      "sourceIndex": 0,
+      "url": "https://mmflota.ru/index.php/news-2019/538-den-rozhdeniya-admirala-nikolaya-ottovicha-essena",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "Biography and service; shipboard episodes were also checked against the sources cited in the corresponding ship article."
+    },
+    {
+      "lang": "en",
+      "slug": "essen",
+      "sourceIndex": 1,
+      "url": "https://ru.wikipedia.org/wiki/Эссен,_Николай_Оттович_фон",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "Biography and service; shipboard episodes were also checked against the sources cited in the corresponding ship article."
+    },
+    {
+      "lang": "en",
+      "slug": "essen",
+      "sourceIndex": 2,
+      "url": "https://keu-ocr.narod.ru/Novik/",
+      "ru": "Основная статья; блок «Краткая историческая справка и тактико-технические элементы»; заключительные абзацы о японской службе",
+      "translated": "Main article; “Brief Historical Summary and Tactical and Technical Data”; concluding passages on Japanese service"
+    },
+    {
+      "lang": "en",
+      "slug": "essen",
+      "sourceIndex": 3,
+      "url": "https://keu-ocr.narod.ru/Cruisers/chap06.html",
+      "ru": "Подраздел «Новик»: испытания и переход в Порт-Артур",
+      "translated": "“Novik” subsection: trials and voyage to Port Arthur"
+    },
+    {
+      "lang": "en",
+      "slug": "essen",
+      "sourceIndex": 4,
+      "url": "https://militera.lib.ru/memo/russian/shter_ap/02.html",
+      "ru": "Глава 2",
+      "translated": "Chapter 2"
+    },
+    {
+      "lang": "en",
+      "slug": "essen",
+      "sourceIndex": 5,
+      "url": "https://militera.lib.ru/memo/russian/shter_ap/07.html",
+      "ru": "Глава 7",
+      "translated": "Chapter 7"
+    },
+    {
+      "lang": "en",
+      "slug": "essen",
+      "sourceIndex": 6,
+      "url": "https://militera.lib.ru/memo/russian/shter_ap/08.html",
+      "ru": "Глава 8",
+      "translated": "Chapter 8"
+    },
+    {
+      "lang": "en",
+      "slug": "essen",
+      "sourceIndex": 7,
+      "url": "https://militera.lib.ru/memo/russian/shter_ap/09.html",
+      "ru": "Начало главы: отправка команды 17 августа, 8 офицеров и 270 человек",
+      "translated": "Opening: the party’s departure on 17 August, eight officers and 270 men"
+    },
+    {
+      "lang": "en",
+      "slug": "essen",
+      "sourceIndex": 8,
+      "url": "https://navsource.narod.ru/photos/02/056/index.html",
+      "ru": "Хронологическая справка, переименование и исключение",
+      "translated": "Chronological summary, renaming and removal from the navy list"
+    },
+    {
+      "lang": "en",
+      "slug": "essen",
+      "sourceIndex": 9,
+      "url": "https://www.navweaps.com/Weapons/WNRussian_47-45_m1892.php",
+      "ru": "Description; Gun Characteristics; Ammunition; Mount/Turret Data",
+      "translated": "Description; Gun Characteristics; Ammunition; Mount/Turret Data"
+    },
+    {
+      "lang": "en",
+      "slug": "essen",
+      "sourceIndex": 10,
+      "url": "https://navypedia.org/ships/russia/ru_cr_novik.htm",
+      "ru": "Technical data: Armament",
+      "translated": "Technical data: Armament"
+    },
+    {
+      "lang": "en",
+      "slug": "essen",
+      "sourceIndex": 11,
+      "url": "https://tsushima.su/RU/libru/i/Page_6/page_15/suliga-balakin-poltava/",
+      "ru": "Разделы 1–11 электронной публикации: проект, устройство, вооружение, служба, война и заключение.",
+      "translated": "Sections 1–11 of the online publication: design, layout, armament, service, war and conclusion."
+    },
+    {
+      "lang": "en",
+      "slug": "essen",
+      "sourceIndex": 12,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/page_25/bibldocseva/",
+      "ru": "Перечень повреждений после боя в Жёлтом море.",
+      "translated": "List of damage after the Battle of the Yellow Sea."
+    },
+    {
+      "lang": "en",
+      "slug": "essen",
+      "sourceIndex": 13,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/doc_namestnik/doc_namestnik_009/",
+      "ru": "Полный рапорт о стрельбе 2 апреля, включая аварию 305-мм установки.",
+      "translated": "Complete report on the gunfire of 2 April, including the breakdown of a 305-mm mounting."
+    },
+    {
+      "lang": "en",
+      "slug": "essen",
+      "sourceIndex": 14,
+      "url": "https://catalog.shm.ru/entity/OBJECT/5828858",
+      "ru": "Каталожная карточка, описание выхода в ночь на 26 ноября, автор и инвентарный номер И VI 43998/337.",
+      "translated": "Catalogue record describing the sortie on the night preceding 26 November, author and inventory number И VI 43998/337."
+    },
+    {
+      "lang": "en",
+      "slug": "essen",
+      "sourceIndex": 15,
+      "url": "https://militera.lib.ru/memo/english/norregaard_bw/21.html",
+      "ru": "Глава 21: положение эскадры, ночные атаки и затопление «Севастополя».",
+      "translated": "Chapter 21: the squadron’s position, night attacks and Sevastopol’s scuttling."
+    },
+    {
+      "lang": "en",
+      "slug": "shults",
+      "sourceIndex": 0,
+      "url": "https://ru.wikipedia.org/wiki/Шульц,_Максимилиан_Фёдорович",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "Biography and service; shipboard episodes were also checked against the sources cited in the corresponding ship article."
+    },
+    {
+      "lang": "en",
+      "slug": "shults",
+      "sourceIndex": 1,
+      "url": "https://keu-ocr.narod.ru/Novik/",
+      "ru": "Основная статья; блок «Краткая историческая справка и тактико-технические элементы»; заключительные абзацы о японской службе",
+      "translated": "Main article; “Brief Historical Summary and Tactical and Technical Data”; concluding passages on Japanese service"
+    },
+    {
+      "lang": "en",
+      "slug": "shults",
+      "sourceIndex": 2,
+      "url": "https://keu-ocr.narod.ru/Cruisers/chap06.html",
+      "ru": "Подраздел «Новик»: испытания и переход в Порт-Артур",
+      "translated": "“Novik” subsection: trials and voyage to Port Arthur"
+    },
+    {
+      "lang": "en",
+      "slug": "shults",
+      "sourceIndex": 3,
+      "url": "https://militera.lib.ru/memo/russian/shter_ap/02.html",
+      "ru": "Глава 2",
+      "translated": "Chapter 2"
+    },
+    {
+      "lang": "en",
+      "slug": "shults",
+      "sourceIndex": 4,
+      "url": "https://militera.lib.ru/memo/russian/shter_ap/07.html",
+      "ru": "Глава 7",
+      "translated": "Chapter 7"
+    },
+    {
+      "lang": "en",
+      "slug": "shults",
+      "sourceIndex": 5,
+      "url": "https://militera.lib.ru/memo/russian/shter_ap/08.html",
+      "ru": "Глава 8",
+      "translated": "Chapter 8"
+    },
+    {
+      "lang": "en",
+      "slug": "shults",
+      "sourceIndex": 6,
+      "url": "https://militera.lib.ru/memo/russian/shter_ap/09.html",
+      "ru": "Начало главы: отправка команды 17 августа, 8 офицеров и 270 человек",
+      "translated": "Opening: the party’s departure on 17 August, eight officers and 270 men"
+    },
+    {
+      "lang": "en",
+      "slug": "shults",
+      "sourceIndex": 7,
+      "url": "https://navsource.narod.ru/photos/02/056/index.html",
+      "ru": "Хронологическая справка, переименование и исключение",
+      "translated": "Chronological summary, renaming and removal from the navy list"
+    },
+    {
+      "lang": "en",
+      "slug": "shults",
+      "sourceIndex": 8,
+      "url": "https://www.navweaps.com/Weapons/WNRussian_47-45_m1892.php",
+      "ru": "Description; Gun Characteristics; Ammunition; Mount/Turret Data",
+      "translated": "Description; Gun Characteristics; Ammunition; Mount/Turret Data"
+    },
+    {
+      "lang": "en",
+      "slug": "shults",
+      "sourceIndex": 9,
+      "url": "https://navypedia.org/ships/russia/ru_cr_novik.htm",
+      "ru": "Technical data: Armament",
+      "translated": "Technical data: Armament"
+    },
+    {
+      "lang": "en",
+      "slug": "rudnev",
+      "sourceIndex": 0,
+      "url": "https://tbclib.ru/informaczionnyie-resursyi/kraevedenie/elektronnaya-biblioteka/personalii/rudnev-vsevolod-fedorovich-%281855-1913%29",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "Biography and service; shipboard episodes were also checked against the sources cited in the corresponding ship article."
+    },
+    {
+      "lang": "en",
+      "slug": "rudnev",
+      "sourceIndex": 1,
+      "url": "https://ru.wikipedia.org/wiki/Руднев,_Всеволод_Фёдорович",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "Biography and service; shipboard episodes were also checked against the sources cited in the corresponding ship article."
+    },
+    {
+      "lang": "en",
+      "slug": "rudnev",
+      "sourceIndex": 2,
+      "url": "https://keu-ocr.narod.ru/Cruisers/chap06.html",
+      "ru": "Подраздел «Варяг»: контракт, испытания, переход",
+      "translated": "“Varyag” subsection: contract, trials and voyage"
+    },
+    {
+      "lang": "en",
+      "slug": "rudnev",
+      "sourceIndex": 3,
+      "url": "https://www.navypedia.org/ships/russia/ru_cr_varyag.htm",
+      "ru": "Technical data; Project history; Naval service",
+      "translated": "Technical data; Project history; Naval service"
+    },
+    {
+      "lang": "en",
+      "slug": "rudnev",
+      "sourceIndex": 4,
+      "url": "https://militera.org/books/pdf/research/guschin_av01.pdf",
+      "ru": "Печатные с. 183–200 (PDF с. 193–210), особенно с. 187–191",
+      "translated": "Printed pp. 183–200 (PDF pp. 193–210), especially pp. 187–191"
+    },
+    {
+      "lang": "en",
+      "slug": "rudnev",
+      "sourceIndex": 5,
+      "url": "https://special.navalmuseum.ru/exposition?id=31",
+      "ru": "Два исторических абзаца; каталог экспонатов",
+      "translated": "Two historical paragraphs; exhibit catalogue"
+    },
+    {
+      "lang": "en",
+      "slug": "rudnev",
+      "sourceIndex": 6,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/biblchemulpodoc/chemulpo_002/",
+      "ru": "Рапорт № 103 и «Описание боя»",
+      "translated": "Report no. 103 and “Description of the Battle”"
+    },
+    {
+      "lang": "en",
+      "slug": "rudnev",
+      "sourceIndex": 7,
+      "url": "https://data.tularlic.ru/books/Tul%27skaya_istoriko-kul%27turnaya_entsiklopediya/378/",
+      "ru": "С. 378: музей, семейные предметы и фрагменты корабля",
+      "translated": "p. 378: museum, family possessions and ship fragments"
+    },
+    {
+      "lang": "en",
+      "slug": "rudnev",
+      "sourceIndex": 8,
+      "url": "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm#P_341",
+      "ru": "Схема крейсера на с. 341",
+      "translated": "Cruiser diagram on p. 341"
+    },
+    {
+      "lang": "en",
+      "slug": "reitsenstein",
+      "sourceIndex": 0,
+      "url": "https://militera.lib.ru/tw/melnikov1/12.html",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "Biography and service; shipboard episodes were also checked against the sources cited in the corresponding ship article."
+    },
+    {
+      "lang": "en",
+      "slug": "reitsenstein",
+      "sourceIndex": 1,
+      "url": "https://ru.wikipedia.org/wiki/Рейценштейн,_Николай_Карлович",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "Biography and service; shipboard episodes were also checked against the sources cited in the corresponding ship article."
+    },
+    {
+      "lang": "en",
+      "slug": "reitsenstein",
+      "sourceIndex": 2,
+      "url": "https://keu-ocr.narod.ru/Cruisers/chap06.html",
+      "ru": "Глава 5 электронной книги, подразделы о дальних и ближних разведчиках; «Аскольд» и «Боярин», проектирование и испытания.",
+      "translated": "Chapter 5 of the online book, sections on distant and close scouts; Askold and Boyarin, design and trials."
+    },
+    {
+      "lang": "en",
+      "slug": "reitsenstein",
+      "sourceIndex": 3,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/doc_stark/doc_stark_064/",
+      "ru": "Полный рапорт о разведке 5 февраля у островов Блонд.",
+      "translated": "Complete report on the reconnaissance of 5 February near the Blonde Islands."
+    },
+    {
+      "lang": "en",
+      "slug": "reitsenstein",
+      "sourceIndex": 4,
+      "url": "https://navalmuseum.ru/collection/ship/modeli?id=1427",
+      "ru": "Историческая справка о постройке, испытаниях и поднятии флага.",
+      "translated": "Historical account of construction, trials and the hoisting of the flag."
+    },
+    {
+      "lang": "en",
+      "slug": "reitsenstein",
+      "sourceIndex": 5,
+      "url": "https://www.navypedia.org/ships/russia/ru_cr_askold.htm",
+      "ru": "Technical data, Naval service и таблица.",
+      "translated": "Technical data, Naval service and ship table."
+    },
+    {
+      "lang": "en",
+      "slug": "reitsenstein",
+      "sourceIndex": 6,
+      "url": "https://djvu.online/file/1VhPY1sNDqpU5",
+      "ru": "Веб-транскрипция: приход в Порт-Артур и командование (строки 1422–1658), Средиземное море, ремонт 1916, Север и конец корабля (2619–3105).",
+      "translated": "Web transcription: arrival at Port Arthur and command (lines 1422–1658); Mediterranean, 1916 repairs, the north and final fate (2619–3105)."
+    },
+    {
+      "lang": "en",
+      "slug": "reitsenstein",
+      "sourceIndex": 7,
+      "url": "https://keu-ocr.narod.ru/Diana_Liven/",
+      "ru": "Предбоевое совещание у Рейценштейна, действия отряда после гибели флагмана.",
+      "translated": "Pre-battle conference with Reitsenstein and the detachment’s actions after the flag officer’s death."
+    },
+    {
+      "lang": "en",
+      "slug": "semenov",
+      "sourceIndex": 0,
+      "url": "https://ru.wikipedia.org/wiki/Семёнов,_Владимир_Иванович_(капитан_1-го_ранга)",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "Biography and service; shipboard episodes were also checked against the sources cited in the corresponding ship article."
+    },
+    {
+      "lang": "en",
+      "slug": "semenov",
+      "sourceIndex": 1,
+      "url": "https://ru.wikisource.org/wiki/Автор:Владимир_Иванович_Семёнов",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "Biography and service; shipboard episodes were also checked against the sources cited in the corresponding ship article."
+    },
+    {
+      "lang": "en",
+      "slug": "semenov",
+      "sourceIndex": 2,
+      "url": "https://keu-ocr.narod.ru/Diana/",
+      "ru": "Главы 1–6, 8–10: постройка, устройство, служба в Порт-Артуре, выход в Сайгон, возвращение, война и завершение судьбы.",
+      "translated": "Chapters 1–6 and 8–10: construction, design, Port Arthur service, the passage to Saigon, return, war and final fate."
+    },
+    {
+      "lang": "en",
+      "slug": "semenov",
+      "sourceIndex": 3,
+      "url": "https://keu-ocr.narod.ru/Diana_Liven/",
+      "ru": "Подготовка к выходу, бой, подводная пробоина, совещание о дальнейшем пути, уголь и Сайгон.",
+      "translated": "Preparations, battle, underwater hole, conference on the next destination, coal and Saigon."
+    },
+    {
+      "lang": "en",
+      "slug": "semenov",
+      "sourceIndex": 4,
+      "url": "https://www.navypedia.org/ships/russia/ru_cr_pallada.htm",
+      "ru": "Строка Diana, техническая таблица и Naval service.",
+      "translated": "Diana entry, technical table and Naval service."
+    },
+    {
+      "lang": "zh",
+      "slug": "yakovlev",
+      "sourceIndex": 0,
+      "url": "https://rjw.narod.ru/people/bship/officers/1.htm",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "生平与服役经历；舰上事件另与相应舰艇文章引用的资料核对。"
+    },
+    {
+      "lang": "zh",
+      "slug": "yakovlev",
+      "sourceIndex": 1,
+      "url": "https://www.buninlib.orel.ru/ekoll/2025_2/Polynkin_AM_Liudi_Zmievskogo_kraia_%282021%29.pdf",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "生平与服役经历；舰上事件另与相应舰艇文章引用的资料核对。"
+    },
+    {
+      "lang": "zh",
+      "slug": "yakovlev",
+      "sourceIndex": 2,
+      "url": "https://keu-ocr.narod.ru/Petropavlovsk_sunk/",
+      "ru": "Статья целиком; последовательность выхода, спасение и потери",
+      "translated": "全文：出航经过、救援与伤亡。"
+    },
+    {
+      "lang": "zh",
+      "slug": "yakovlev",
+      "sourceIndex": 3,
+      "url": "https://www.navypedia.org/ships/russia/ru_bb_poltava.htm",
+      "ru": "Technical data; Ship protection Petropavlovsk",
+      "translated": "技术数据；“彼得罗巴甫洛夫斯克”号防护部分。"
+    },
+    {
+      "lang": "zh",
+      "slug": "yakovlev",
+      "sourceIndex": 4,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Разведчик_1904-0695.pdf",
+      "ru": "Перечень участвовавших кораблей и командиров",
+      "translated": "参战舰艇与舰长名单。"
+    },
+    {
+      "lang": "zh",
+      "slug": "yakovlev",
+      "sourceIndex": 5,
+      "url": "https://special.navalmuseum.ru/news/memorable?id=649",
+      "ru": "Карточка памятной даты",
+      "translated": "历史纪念日条目。"
+    },
+    {
+      "lang": "zh",
+      "slug": "yakovlev",
+      "sourceIndex": 6,
+      "url": "https://chelmuseum.ru/istoriya-v-predmetah/bronenosets-petropavlovsk/",
+      "ru": "Текст о Верещагине и его присутствии на корабле",
+      "translated": "韦列夏金及其在舰经历的相关文字。"
+    },
+    {
+      "lang": "zh",
+      "slug": "yakovlev",
+      "sourceIndex": 7,
+      "url": "https://heritage-institute.ru/wp-content/uploads/2023/04/russkie-zahoroneniya-v-kitae.pdf",
+      "ru": "С. 368–369, «Корабли — братские могилы»: «Петропавловск»",
+      "translated": "第368—369页，“舰船——集体墓地”之“彼得罗巴甫洛夫斯克”号。"
+    },
+    {
+      "lang": "zh",
+      "slug": "molas",
+      "sourceIndex": 0,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_19/page_26/page_26_004/",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "生平与服役经历；舰上事件另与相应舰艇文章引用的资料核对。"
+    },
+    {
+      "lang": "zh",
+      "slug": "molas",
+      "sourceIndex": 1,
+      "url": "https://heritage-institute.ru/wp-content/uploads/2023/04/russkie-zahoroneniya-v-kitae.pdf",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "生平与服役经历；舰上事件另与相应舰艇文章引用的资料核对。"
+    },
+    {
+      "lang": "zh",
+      "slug": "molas",
+      "sourceIndex": 2,
+      "url": "https://keu-ocr.narod.ru/Petropavlovsk_sunk/",
+      "ru": "Статья целиком; последовательность выхода, спасение и потери",
+      "translated": "全文：出航经过、救援与伤亡。"
+    },
+    {
+      "lang": "zh",
+      "slug": "molas",
+      "sourceIndex": 3,
+      "url": "https://www.navypedia.org/ships/russia/ru_bb_poltava.htm",
+      "ru": "Technical data; Ship protection Petropavlovsk",
+      "translated": "技术数据；“彼得罗巴甫洛夫斯克”号防护部分。"
+    },
+    {
+      "lang": "zh",
+      "slug": "molas",
+      "sourceIndex": 4,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Разведчик_1904-0695.pdf",
+      "ru": "Перечень участвовавших кораблей и командиров",
+      "translated": "参战舰艇与舰长名单。"
+    },
+    {
+      "lang": "zh",
+      "slug": "molas",
+      "sourceIndex": 5,
+      "url": "https://special.navalmuseum.ru/news/memorable?id=649",
+      "ru": "Карточка памятной даты",
+      "translated": "历史纪念日条目。"
+    },
+    {
+      "lang": "zh",
+      "slug": "molas",
+      "sourceIndex": 6,
+      "url": "https://chelmuseum.ru/istoriya-v-predmetah/bronenosets-petropavlovsk/",
+      "ru": "Текст о Верещагине и его присутствии на корабле",
+      "translated": "韦列夏金及其在舰经历的相关文字。"
+    },
+    {
+      "lang": "zh",
+      "slug": "shchensnovich",
+      "sourceIndex": 0,
+      "url": "https://history.milportal.ru/pervyj-v-rossii-admiral-podvodnik-e-n-shhensnovich/?print=print",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "生平与服役经历；舰上事件另与相应舰艇文章引用的资料核对。"
+    },
+    {
+      "lang": "zh",
+      "slug": "shchensnovich",
+      "sourceIndex": 1,
+      "url": "https://tsushima.su/RU/libru/i/Page_6/page_15/balakin-retvizan/balakin-retvizan-06/",
+      "ru": "Раздел «Служба»: переход; торпедное повреждение; бой 28 июля; последний этап осады; японская служба",
+      "translated": "“服役”部分：航行、鱼雷损伤、7月28日海战、围城后期及日本服役经历。"
+    },
+    {
+      "lang": "zh",
+      "slug": "shchensnovich",
+      "sourceIndex": 2,
+      "url": "https://tile.loc.gov/storage-services/service/ndnp/dlc/batch_dlc_austria_ver01/data/sn83030214/00175041096/1901101201/0204.pdf",
+      "ru": "Газетная страница 7, заметка о заходе в док",
+      "translated": "报纸第7页，入坞报道。"
+    },
+    {
+      "lang": "zh",
+      "slug": "shchensnovich",
+      "sourceIndex": 3,
+      "url": "https://www.navypedia.org/ships/russia/ru_bb_retvizan.htm",
+      "ru": "Ships; Technical data",
+      "translated": "舰艇条目；技术数据。"
+    },
+    {
+      "lang": "zh",
+      "slug": "shchensnovich",
+      "sourceIndex": 4,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/doc_stark/doc_stark_091/",
+      "ru": "Описание попытки заграждения гавани и расположения пароходов",
+      "translated": "有关堵塞港口行动与汽船位置的记载。"
+    },
+    {
+      "lang": "zh",
+      "slug": "shchensnovich",
+      "sourceIndex": 5,
+      "url": "https://www.navypedia.org/ships/japan/jap_bb_hizen.htm",
+      "ru": "Project history; Naval service",
+      "translated": "设计沿革；服役经历。"
+    },
+    {
+      "lang": "zh",
+      "slug": "ketlinsky",
+      "sourceIndex": 0,
+      "url": "https://ru.wikipedia.org/wiki/Кетлинский,_Казимир_Филиппович",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "生平与服役经历；舰上事件另与相应舰艇文章引用的资料核对。"
+    },
+    {
+      "lang": "zh",
+      "slug": "ketlinsky",
+      "sourceIndex": 1,
+      "url": "https://www.docs.historyrussia.org/ru/nodes/200919-telegramma-predsedatelya-tsentromura-m-a-lyaudanskogo-iz-petrograda-v-tsentromur-ob-osvobozhdenii-k-f-ketlinskogo-iz-pod-aresta-i-vooruzhenii-murmanskogo-kraya-11-yanvarya-1918-g",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "生平与服役经历；舰上事件另与相应舰艇文章引用的资料核对。"
+    },
+    {
+      "lang": "zh",
+      "slug": "ketlinsky",
+      "sourceIndex": 2,
+      "url": "https://tsushima.su/RU/libru/i/Page_6/page_15/balakin-retvizan/balakin-retvizan-06/",
+      "ru": "Раздел «Служба»: переход; торпедное повреждение; бой 28 июля; последний этап осады; японская служба",
+      "translated": "“服役”部分：航行、鱼雷损伤、7月28日海战、围城后期及日本服役经历。"
+    },
+    {
+      "lang": "zh",
+      "slug": "ketlinsky",
+      "sourceIndex": 3,
+      "url": "https://history.milportal.ru/pervyj-v-rossii-admiral-podvodnik-e-n-shhensnovich/?print=print",
+      "ru": "Абзацы о приёмке «Ретвизана» и свидетельстве Щенсновича о бое 28 июля",
+      "translated": "有关“列特维赞”号验收，以及申斯诺维奇叙述7月28日海战的段落。"
+    },
+    {
+      "lang": "zh",
+      "slug": "ketlinsky",
+      "sourceIndex": 4,
+      "url": "https://tile.loc.gov/storage-services/service/ndnp/dlc/batch_dlc_austria_ver01/data/sn83030214/00175041096/1901101201/0204.pdf",
+      "ru": "Газетная страница 7, заметка о заходе в док",
+      "translated": "报纸第7页，入坞报道。"
+    },
+    {
+      "lang": "zh",
+      "slug": "ketlinsky",
+      "sourceIndex": 5,
+      "url": "https://www.navypedia.org/ships/russia/ru_bb_retvizan.htm",
+      "ru": "Ships; Technical data",
+      "translated": "舰艇条目；技术数据。"
+    },
+    {
+      "lang": "zh",
+      "slug": "ketlinsky",
+      "sourceIndex": 6,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/doc_stark/doc_stark_091/",
+      "ru": "Описание попытки заграждения гавани и расположения пароходов",
+      "translated": "有关堵塞港口行动与汽船位置的记载。"
+    },
+    {
+      "lang": "zh",
+      "slug": "ketlinsky",
+      "sourceIndex": 7,
+      "url": "https://www.navypedia.org/ships/japan/jap_bb_hizen.htm",
+      "ru": "Project history; Naval service",
+      "translated": "设计沿革；服役经历。"
+    },
+    {
+      "lang": "zh",
+      "slug": "ketlinsky",
+      "sourceIndex": 8,
+      "url": "https://keu-ocr.narod.ru/Cruisers/chap06.html",
+      "ru": "Глава 5 электронной книги, подразделы о дальних и ближних разведчиках; «Аскольд» и «Боярин», проектирование и испытания.",
+      "translated": "电子版第5章，远程与近程侦察舰部分；“阿斯科尔德”号、“博雅林”号的设计和试航。"
+    },
+    {
+      "lang": "zh",
+      "slug": "ketlinsky",
+      "sourceIndex": 9,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/doc_stark/doc_stark_064/",
+      "ru": "Полный рапорт о разведке 5 февраля у островов Блонд.",
+      "translated": "关于2月5日在布隆德群岛附近侦察的完整报告。"
+    },
+    {
+      "lang": "zh",
+      "slug": "ketlinsky",
+      "sourceIndex": 10,
+      "url": "https://navalmuseum.ru/collection/ship/modeli?id=1427",
+      "ru": "Историческая справка о постройке, испытаниях и поднятии флага.",
+      "translated": "建造、试航与升旗的历史简介。"
+    },
+    {
+      "lang": "zh",
+      "slug": "ketlinsky",
+      "sourceIndex": 11,
+      "url": "https://www.navypedia.org/ships/russia/ru_cr_askold.htm",
+      "ru": "Technical data, Naval service и таблица.",
+      "translated": "技术数据、服役经历与表格。"
+    },
+    {
+      "lang": "zh",
+      "slug": "ketlinsky",
+      "sourceIndex": 12,
+      "url": "https://djvu.online/file/1VhPY1sNDqpU5",
+      "ru": "Веб-транскрипция: приход в Порт-Артур и командование (строки 1422–1658), Средиземное море, ремонт 1916, Север и конец корабля (2619–3105).",
+      "translated": "网页转录：抵达旅顺与指挥人员（第1422—1658行）；地中海、1916年维修、北方及结局（第2619—3105行）。"
+    },
+    {
+      "lang": "zh",
+      "slug": "ketlinsky",
+      "sourceIndex": 13,
+      "url": "https://keu-ocr.narod.ru/Diana_Liven/",
+      "ru": "Предбоевое совещание у Рейценштейна, действия отряда после гибели флагмана.",
+      "translated": "赖岑施泰因主持的战前会议，旗舰司令阵亡后支队的行动。"
+    },
+    {
+      "lang": "zh",
+      "slug": "razvozov",
+      "sourceIndex": 0,
+      "url": "https://warlib.site/razvozov/",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "生平与服役经历；舰上事件另与相应舰艇文章引用的资料核对。"
+    },
+    {
+      "lang": "zh",
+      "slug": "razvozov",
+      "sourceIndex": 1,
+      "url": "https://ru.wikipedia.org/wiki/Развозов,_Александр_Владимирович",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "生平与服役经历；舰上事件另与相应舰艇文章引用的资料核对。"
+    },
+    {
+      "lang": "zh",
+      "slug": "razvozov",
+      "sourceIndex": 2,
+      "url": "https://tsushima.su/RU/libru/i/Page_6/page_15/balakin-retvizan/balakin-retvizan-06/",
+      "ru": "Раздел «Служба»: переход; торпедное повреждение; бой 28 июля; последний этап осады; японская служба",
+      "translated": "“服役”部分：航行、鱼雷损伤、7月28日海战、围城后期及日本服役经历。"
+    },
+    {
+      "lang": "zh",
+      "slug": "razvozov",
+      "sourceIndex": 3,
+      "url": "https://history.milportal.ru/pervyj-v-rossii-admiral-podvodnik-e-n-shhensnovich/?print=print",
+      "ru": "Абзацы о приёмке «Ретвизана» и свидетельстве Щенсновича о бое 28 июля",
+      "translated": "有关“列特维赞”号验收，以及申斯诺维奇叙述7月28日海战的段落。"
+    },
+    {
+      "lang": "zh",
+      "slug": "razvozov",
+      "sourceIndex": 4,
+      "url": "https://tile.loc.gov/storage-services/service/ndnp/dlc/batch_dlc_austria_ver01/data/sn83030214/00175041096/1901101201/0204.pdf",
+      "ru": "Газетная страница 7, заметка о заходе в док",
+      "translated": "报纸第7页，入坞报道。"
+    },
+    {
+      "lang": "zh",
+      "slug": "razvozov",
+      "sourceIndex": 5,
+      "url": "https://www.navypedia.org/ships/russia/ru_bb_retvizan.htm",
+      "ru": "Ships; Technical data",
+      "translated": "舰艇条目；技术数据。"
+    },
+    {
+      "lang": "zh",
+      "slug": "razvozov",
+      "sourceIndex": 6,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/doc_stark/doc_stark_091/",
+      "ru": "Описание попытки заграждения гавани и расположения пароходов",
+      "translated": "有关堵塞港口行动与汽船位置的记载。"
+    },
+    {
+      "lang": "zh",
+      "slug": "razvozov",
+      "sourceIndex": 7,
+      "url": "https://www.navypedia.org/ships/japan/jap_bb_hizen.htm",
+      "ru": "Project history; Naval service",
+      "translated": "设计沿革；服役经历。"
+    },
+    {
+      "lang": "zh",
+      "slug": "viren",
+      "sourceIndex": 0,
+      "url": "https://ru.wikisource.org/wiki/ВЭ/ДО/Вирен,_Роберт_Николаевич",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "生平与服役经历；舰上事件另与相应舰艇文章引用的资料核对。"
+    },
+    {
+      "lang": "zh",
+      "slug": "viren",
+      "sourceIndex": 1,
+      "url": "https://old.sgu.ru/sites/default/files/depnews/file/2023/04/vysshie_chiny_rossiyskoy_imperii_biograficheskiy_slovar_t_1_a-g_m_2019.pdf",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "生平与服役经历；舰上事件另与相应舰艇文章引用的资料核对。"
+    },
+    {
+      "lang": "zh",
+      "slug": "viren",
+      "sourceIndex": 2,
+      "url": "https://keu-ocr.narod.ru/Bayan/",
+      "ru": "Гл. 2 «Конструкция и устройство»; гл. 3 «Постройка и испытания»; гл. 4 «Через моря и океаны»; гл. 5 «Порт-Артур»; приложение 2 «Баян в японском флоте»",
+      "translated": "第2章“结构与设备”、第3章“建造与试航”、第4章“跨越海洋”、第5章“旅顺”；附录2“巴扬号在日本海军”。"
+    },
+    {
+      "lang": "zh",
+      "slug": "viren",
+      "sourceIndex": 3,
+      "url": "https://tsushima.su/RU/libru/i/Page_6/page_13/biblmelbayanru/",
+      "ru": "Статья целиком: замысел, постройка, служба в 1904 г.",
+      "translated": "全文：构想、建造与1904年服役经历。"
+    },
+    {
+      "lang": "zh",
+      "slug": "viren",
+      "sourceIndex": 4,
+      "url": "https://www.navypedia.org/ships/russia/ru_cr_bayan.htm",
+      "ru": "Technical data; Ship protection Bayan (i)",
+      "translated": "技术数据；第一艘“巴扬”号的防护。"
+    },
+    {
+      "lang": "zh",
+      "slug": "viren",
+      "sourceIndex": 5,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/doc_stark/doc_stark_091/",
+      "ru": "Выходы крейсеров «Баян», «Аскольд» и «Новик»",
+      "translated": "“巴扬”“阿斯科尔德”“诺维克”三舰的出航。"
+    },
+    {
+      "lang": "zh",
+      "slug": "viren",
+      "sourceIndex": 6,
+      "url": "https://heritage-institute.ru/wp-content/uploads/2021/08/pisma-oficzera-flota.pdf",
+      "ru": "С. 19, редакционные примечания 26–27 о «Баяне» и Вирене",
+      "translated": "第19页编者注26—27，涉及“巴扬”号与维连。"
+    },
+    {
+      "lang": "zh",
+      "slug": "grigorovich",
+      "sourceIndex": 0,
+      "url": "https://navalmuseum.ru/news/memorable?id=546",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "生平与服役经历；舰上事件另与相应舰艇文章引用的资料核对。"
+    },
+    {
+      "lang": "zh",
+      "slug": "grigorovich",
+      "sourceIndex": 1,
+      "url": "https://ru.wikipedia.org/wiki/Григорович,_Иван_Константинович",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "生平与服役经历；舰上事件另与相应舰艇文章引用的资料核对。"
+    },
+    {
+      "lang": "zh",
+      "slug": "grigorovich",
+      "sourceIndex": 2,
+      "url": "https://keu-ocr.narod.ru/Bayan/",
+      "ru": "Гл. 2 «Конструкция и устройство»; гл. 3 «Постройка и испытания»; гл. 4 «Через моря и океаны»; гл. 5 «Порт-Артур»; приложение 2 «Баян в японском флоте»",
+      "translated": "第2章“结构与设备”、第3章“建造与试航”、第4章“跨越海洋”、第5章“旅顺”；附录2“巴扬号在日本海军”。"
+    },
+    {
+      "lang": "zh",
+      "slug": "grigorovich",
+      "sourceIndex": 3,
+      "url": "https://tsushima.su/RU/libru/i/Page_6/page_13/biblmelbayanru/",
+      "ru": "Статья целиком: замысел, постройка, служба в 1904 г.",
+      "translated": "全文：构想、建造与1904年服役经历。"
+    },
+    {
+      "lang": "zh",
+      "slug": "grigorovich",
+      "sourceIndex": 4,
+      "url": "https://www.navypedia.org/ships/russia/ru_cr_bayan.htm",
+      "ru": "Technical data; Ship protection Bayan (i)",
+      "translated": "技术数据；第一艘“巴扬”号的防护。"
+    },
+    {
+      "lang": "zh",
+      "slug": "grigorovich",
+      "sourceIndex": 5,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/doc_stark/doc_stark_091/",
+      "ru": "Выходы крейсеров «Баян», «Аскольд» и «Новик»",
+      "translated": "“巴扬”“阿斯科尔德”“诺维克”三舰的出航。"
+    },
+    {
+      "lang": "zh",
+      "slug": "grigorovich",
+      "sourceIndex": 6,
+      "url": "https://heritage-institute.ru/wp-content/uploads/2021/08/pisma-oficzera-flota.pdf",
+      "ru": "С. 19, редакционные примечания 26–27 о «Баяне» и Вирене",
+      "translated": "第19页编者注26—27，涉及“巴扬”号与维连。"
+    },
+    {
+      "lang": "zh",
+      "slug": "grigorovich",
+      "sourceIndex": 7,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_19/Page_30/grib-zesar-28-07-04/",
+      "ru": "Полная электронная статья: создание, вооружение, бой, повреждения и интернирование.",
+      "translated": "完整电子文章：建造、武器、海战、损伤与扣留。"
+    },
+    {
+      "lang": "zh",
+      "slug": "grigorovich",
+      "sourceIndex": 8,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/page_25/bibldoczesar/",
+      "ru": "Ведомость повреждений корпуса, артиллерии и управления.",
+      "translated": "舰体、舰炮与操纵系统损伤清单。"
+    },
+    {
+      "lang": "zh",
+      "slug": "grigorovich",
+      "sourceIndex": 9,
+      "url": "https://navalmuseum.ru/news?id=1628",
+      "ru": "Состав отряда, флагман Литвинова, спасательная операция и музейный флаг.",
+      "translated": "支队组成、利特维诺夫的旗舰、救援行动与馆藏舰旗。"
+    },
+    {
+      "lang": "zh",
+      "slug": "grigorovich",
+      "sourceIndex": 10,
+      "url": "https://www.navypedia.org/ships/russia/ru_bb_tsesarevich.htm",
+      "ru": "Таблица, Technical data и Naval service.",
+      "translated": "舰艇表格、Technical data与Naval service栏目。"
+    },
+    {
+      "lang": "zh",
+      "slug": "essen",
+      "sourceIndex": 0,
+      "url": "https://mmflota.ru/index.php/news-2019/538-den-rozhdeniya-admirala-nikolaya-ottovicha-essena",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "生平与服役经历；舰上事件另与相应舰艇文章引用的资料核对。"
+    },
+    {
+      "lang": "zh",
+      "slug": "essen",
+      "sourceIndex": 1,
+      "url": "https://ru.wikipedia.org/wiki/Эссен,_Николай_Оттович_фон",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "生平与服役经历；舰上事件另与相应舰艇文章引用的资料核对。"
+    },
+    {
+      "lang": "zh",
+      "slug": "essen",
+      "sourceIndex": 2,
+      "url": "https://keu-ocr.narod.ru/Novik/",
+      "ru": "Основная статья; блок «Краткая историческая справка и тактико-технические элементы»; заключительные абзацы о японской службе",
+      "translated": "正文、“历史简况与战术技术数据”资料栏，以及日本服役经历的结尾段落。"
+    },
+    {
+      "lang": "zh",
+      "slug": "essen",
+      "sourceIndex": 3,
+      "url": "https://keu-ocr.narod.ru/Cruisers/chap06.html",
+      "ru": "Подраздел «Новик»: испытания и переход в Порт-Артур",
+      "translated": "“诺维克”号部分：试航及赴旅顺航程。"
+    },
+    {
+      "lang": "zh",
+      "slug": "essen",
+      "sourceIndex": 4,
+      "url": "https://militera.lib.ru/memo/russian/shter_ap/02.html",
+      "ru": "Глава 2",
+      "translated": "第2章。"
+    },
+    {
+      "lang": "zh",
+      "slug": "essen",
+      "sourceIndex": 5,
+      "url": "https://militera.lib.ru/memo/russian/shter_ap/07.html",
+      "ru": "Глава 7",
+      "translated": "第7章。"
+    },
+    {
+      "lang": "zh",
+      "slug": "essen",
+      "sourceIndex": 6,
+      "url": "https://militera.lib.ru/memo/russian/shter_ap/08.html",
+      "ru": "Глава 8",
+      "translated": "第8章。"
+    },
+    {
+      "lang": "zh",
+      "slug": "essen",
+      "sourceIndex": 7,
+      "url": "https://militera.lib.ru/memo/russian/shter_ap/09.html",
+      "ru": "Начало главы: отправка команды 17 августа, 8 офицеров и 270 человек",
+      "translated": "章首：8月17日启程，八名军官与270名海军人员。"
+    },
+    {
+      "lang": "zh",
+      "slug": "essen",
+      "sourceIndex": 8,
+      "url": "https://navsource.narod.ru/photos/02/056/index.html",
+      "ru": "Хронологическая справка, переименование и исключение",
+      "translated": "编年简况、改名及除籍。"
+    },
+    {
+      "lang": "zh",
+      "slug": "essen",
+      "sourceIndex": 9,
+      "url": "https://www.navweaps.com/Weapons/WNRussian_47-45_m1892.php",
+      "ru": "Description; Gun Characteristics; Ammunition; Mount/Turret Data",
+      "translated": "概述、火炮特性、弹药、炮架/炮塔数据。"
+    },
+    {
+      "lang": "zh",
+      "slug": "essen",
+      "sourceIndex": 10,
+      "url": "https://navypedia.org/ships/russia/ru_cr_novik.htm",
+      "ru": "Technical data: Armament",
+      "translated": "技术数据中的武器配置。"
+    },
+    {
+      "lang": "zh",
+      "slug": "essen",
+      "sourceIndex": 11,
+      "url": "https://tsushima.su/RU/libru/i/Page_6/page_15/suliga-balakin-poltava/",
+      "ru": "Разделы 1–11 электронной публикации: проект, устройство, вооружение, служба, война и заключение.",
+      "translated": "电子版第1—11节：设计、结构、武器、服役、战争及结语。"
+    },
+    {
+      "lang": "zh",
+      "slug": "essen",
+      "sourceIndex": 12,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/page_25/bibldocseva/",
+      "ru": "Перечень повреждений после боя в Жёлтом море.",
+      "translated": "黄海海战后的损伤清单。"
+    },
+    {
+      "lang": "zh",
+      "slug": "essen",
+      "sourceIndex": 13,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/doc_namestnik/doc_namestnik_009/",
+      "ru": "Полный рапорт о стрельбе 2 апреля, включая аварию 305-мм установки.",
+      "translated": "关于4月2日射击的完整报告，包括305毫米炮装置的故障。"
+    },
+    {
+      "lang": "zh",
+      "slug": "essen",
+      "sourceIndex": 14,
+      "url": "https://catalog.shm.ru/entity/OBJECT/5828858",
+      "ru": "Каталожная карточка, описание выхода в ночь на 26 ноября, автор и инвентарный номер И VI 43998/337.",
+      "translated": "馆藏目录：关于11月26日凌晨前夜间出航的说明、作者及藏品编号И VI 43998/337。"
+    },
+    {
+      "lang": "zh",
+      "slug": "essen",
+      "sourceIndex": 15,
+      "url": "https://militera.lib.ru/memo/english/norregaard_bw/21.html",
+      "ru": "Глава 21: положение эскадры, ночные атаки и затопление «Севастополя».",
+      "translated": "第21章：舰队处境、夜间攻击与“塞瓦斯托波尔”号自沉。"
+    },
+    {
+      "lang": "zh",
+      "slug": "shults",
+      "sourceIndex": 0,
+      "url": "https://ru.wikipedia.org/wiki/Шульц,_Максимилиан_Фёдорович",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "生平与服役经历；舰上事件另与相应舰艇文章引用的资料核对。"
+    },
+    {
+      "lang": "zh",
+      "slug": "shults",
+      "sourceIndex": 1,
+      "url": "https://keu-ocr.narod.ru/Novik/",
+      "ru": "Основная статья; блок «Краткая историческая справка и тактико-технические элементы»; заключительные абзацы о японской службе",
+      "translated": "正文、“历史简况与战术技术数据”资料栏，以及日本服役经历的结尾段落。"
+    },
+    {
+      "lang": "zh",
+      "slug": "shults",
+      "sourceIndex": 2,
+      "url": "https://keu-ocr.narod.ru/Cruisers/chap06.html",
+      "ru": "Подраздел «Новик»: испытания и переход в Порт-Артур",
+      "translated": "“诺维克”号部分：试航及赴旅顺航程。"
+    },
+    {
+      "lang": "zh",
+      "slug": "shults",
+      "sourceIndex": 3,
+      "url": "https://militera.lib.ru/memo/russian/shter_ap/02.html",
+      "ru": "Глава 2",
+      "translated": "第2章。"
+    },
+    {
+      "lang": "zh",
+      "slug": "shults",
+      "sourceIndex": 4,
+      "url": "https://militera.lib.ru/memo/russian/shter_ap/07.html",
+      "ru": "Глава 7",
+      "translated": "第7章。"
+    },
+    {
+      "lang": "zh",
+      "slug": "shults",
+      "sourceIndex": 5,
+      "url": "https://militera.lib.ru/memo/russian/shter_ap/08.html",
+      "ru": "Глава 8",
+      "translated": "第8章。"
+    },
+    {
+      "lang": "zh",
+      "slug": "shults",
+      "sourceIndex": 6,
+      "url": "https://militera.lib.ru/memo/russian/shter_ap/09.html",
+      "ru": "Начало главы: отправка команды 17 августа, 8 офицеров и 270 человек",
+      "translated": "章首：8月17日启程，八名军官与270名海军人员。"
+    },
+    {
+      "lang": "zh",
+      "slug": "shults",
+      "sourceIndex": 7,
+      "url": "https://navsource.narod.ru/photos/02/056/index.html",
+      "ru": "Хронологическая справка, переименование и исключение",
+      "translated": "编年简况、改名及除籍。"
+    },
+    {
+      "lang": "zh",
+      "slug": "shults",
+      "sourceIndex": 8,
+      "url": "https://www.navweaps.com/Weapons/WNRussian_47-45_m1892.php",
+      "ru": "Description; Gun Characteristics; Ammunition; Mount/Turret Data",
+      "translated": "概述、火炮特性、弹药、炮架/炮塔数据。"
+    },
+    {
+      "lang": "zh",
+      "slug": "shults",
+      "sourceIndex": 9,
+      "url": "https://navypedia.org/ships/russia/ru_cr_novik.htm",
+      "ru": "Technical data: Armament",
+      "translated": "技术数据中的武器配置。"
+    },
+    {
+      "lang": "zh",
+      "slug": "rudnev",
+      "sourceIndex": 0,
+      "url": "https://tbclib.ru/informaczionnyie-resursyi/kraevedenie/elektronnaya-biblioteka/personalii/rudnev-vsevolod-fedorovich-%281855-1913%29",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "生平与服役经历；舰上事件另与相应舰艇文章引用的资料核对。"
+    },
+    {
+      "lang": "zh",
+      "slug": "rudnev",
+      "sourceIndex": 1,
+      "url": "https://ru.wikipedia.org/wiki/Руднев,_Всеволод_Фёдорович",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "生平与服役经历；舰上事件另与相应舰艇文章引用的资料核对。"
+    },
+    {
+      "lang": "zh",
+      "slug": "rudnev",
+      "sourceIndex": 2,
+      "url": "https://keu-ocr.narod.ru/Cruisers/chap06.html",
+      "ru": "Подраздел «Варяг»: контракт, испытания, переход",
+      "translated": "“瓦良格”号部分：合同、试航与航程。"
+    },
+    {
+      "lang": "zh",
+      "slug": "rudnev",
+      "sourceIndex": 3,
+      "url": "https://www.navypedia.org/ships/russia/ru_cr_varyag.htm",
+      "ru": "Technical data; Project history; Naval service",
+      "translated": "技术数据；设计沿革；服役经历。"
+    },
+    {
+      "lang": "zh",
+      "slug": "rudnev",
+      "sourceIndex": 4,
+      "url": "https://militera.org/books/pdf/research/guschin_av01.pdf",
+      "ru": "Печатные с. 183–200 (PDF с. 193–210), особенно с. 187–191",
+      "translated": "纸本第183—200页（PDF第193—210页），重点为第187—191页。"
+    },
+    {
+      "lang": "zh",
+      "slug": "rudnev",
+      "sourceIndex": 5,
+      "url": "https://special.navalmuseum.ru/exposition?id=31",
+      "ru": "Два исторических абзаца; каталог экспонатов",
+      "translated": "两段历史说明及展品目录。"
+    },
+    {
+      "lang": "zh",
+      "slug": "rudnev",
+      "sourceIndex": 6,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/biblchemulpodoc/chemulpo_002/",
+      "ru": "Рапорт № 103 и «Описание боя»",
+      "translated": "第103号报告及“战斗经过”。"
+    },
+    {
+      "lang": "zh",
+      "slug": "rudnev",
+      "sourceIndex": 7,
+      "url": "https://data.tularlic.ru/books/Tul%27skaya_istoriko-kul%27turnaya_entsiklopediya/378/",
+      "ru": "С. 378: музей, семейные предметы и фрагменты корабля",
+      "translated": "第378页：博物馆、家族物品及军舰残片。"
+    },
+    {
+      "lang": "zh",
+      "slug": "rudnev",
+      "sourceIndex": 8,
+      "url": "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm#P_341",
+      "ru": "Схема крейсера на с. 341",
+      "translated": "第341页巡洋舰示意图。"
+    },
+    {
+      "lang": "zh",
+      "slug": "reitsenstein",
+      "sourceIndex": 0,
+      "url": "https://militera.lib.ru/tw/melnikov1/12.html",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "生平与服役经历；舰上事件另与相应舰艇文章引用的资料核对。"
+    },
+    {
+      "lang": "zh",
+      "slug": "reitsenstein",
+      "sourceIndex": 1,
+      "url": "https://ru.wikipedia.org/wiki/Рейценштейн,_Николай_Карлович",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "生平与服役经历；舰上事件另与相应舰艇文章引用的资料核对。"
+    },
+    {
+      "lang": "zh",
+      "slug": "reitsenstein",
+      "sourceIndex": 2,
+      "url": "https://keu-ocr.narod.ru/Cruisers/chap06.html",
+      "ru": "Глава 5 электронной книги, подразделы о дальних и ближних разведчиках; «Аскольд» и «Боярин», проектирование и испытания.",
+      "translated": "电子版第5章，远程与近程侦察舰部分；“阿斯科尔德”号、“博雅林”号的设计和试航。"
+    },
+    {
+      "lang": "zh",
+      "slug": "reitsenstein",
+      "sourceIndex": 3,
+      "url": "https://tsushima.su/RU/libru/i/Page_7/page_18/page_20/doc_stark/doc_stark_064/",
+      "ru": "Полный рапорт о разведке 5 февраля у островов Блонд.",
+      "translated": "关于2月5日在布隆德群岛附近侦察的完整报告。"
+    },
+    {
+      "lang": "zh",
+      "slug": "reitsenstein",
+      "sourceIndex": 4,
+      "url": "https://navalmuseum.ru/collection/ship/modeli?id=1427",
+      "ru": "Историческая справка о постройке, испытаниях и поднятии флага.",
+      "translated": "建造、试航与升旗的历史简介。"
+    },
+    {
+      "lang": "zh",
+      "slug": "reitsenstein",
+      "sourceIndex": 5,
+      "url": "https://www.navypedia.org/ships/russia/ru_cr_askold.htm",
+      "ru": "Technical data, Naval service и таблица.",
+      "translated": "技术数据、服役经历与表格。"
+    },
+    {
+      "lang": "zh",
+      "slug": "reitsenstein",
+      "sourceIndex": 6,
+      "url": "https://djvu.online/file/1VhPY1sNDqpU5",
+      "ru": "Веб-транскрипция: приход в Порт-Артур и командование (строки 1422–1658), Средиземное море, ремонт 1916, Север и конец корабля (2619–3105).",
+      "translated": "网页转录：抵达旅顺与指挥人员（第1422—1658行）；地中海、1916年维修、北方及结局（第2619—3105行）。"
+    },
+    {
+      "lang": "zh",
+      "slug": "reitsenstein",
+      "sourceIndex": 7,
+      "url": "https://keu-ocr.narod.ru/Diana_Liven/",
+      "ru": "Предбоевое совещание у Рейценштейна, действия отряда после гибели флагмана.",
+      "translated": "赖岑施泰因主持的战前会议，旗舰司令阵亡后支队的行动。"
+    },
+    {
+      "lang": "zh",
+      "slug": "semenov",
+      "sourceIndex": 0,
+      "url": "https://ru.wikipedia.org/wiki/Семёнов,_Владимир_Иванович_(капитан_1-го_ранга)",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "生平与服役经历；舰上事件另与相应舰艇文章引用的资料核对。"
+    },
+    {
+      "lang": "zh",
+      "slug": "semenov",
+      "sourceIndex": 1,
+      "url": "https://ru.wikisource.org/wiki/Автор:Владимир_Иванович_Семёнов",
+      "ru": "Биография и служба; корабельные эпизоды также сверены с источниками соответствующей статьи о корабле.",
+      "translated": "生平与服役经历；舰上事件另与相应舰艇文章引用的资料核对。"
+    },
+    {
+      "lang": "zh",
+      "slug": "semenov",
+      "sourceIndex": 2,
+      "url": "https://keu-ocr.narod.ru/Diana/",
+      "ru": "Главы 1–6, 8–10: постройка, устройство, служба в Порт-Артуре, выход в Сайгон, возвращение, война и завершение судьбы.",
+      "translated": "第1—6、8—10章：建造、结构、旅顺服役、驶往西贡、归国、战争及最终命运。"
+    },
+    {
+      "lang": "zh",
+      "slug": "semenov",
+      "sourceIndex": 3,
+      "url": "https://keu-ocr.narod.ru/Diana_Liven/",
+      "ru": "Подготовка к выходу, бой, подводная пробоина, совещание о дальнейшем пути, уголь и Сайгон.",
+      "translated": "出航准备、海战、水下破口、后续航线讨论、煤与西贡。"
+    },
+    {
+      "lang": "zh",
+      "slug": "semenov",
+      "sourceIndex": 4,
+      "url": "https://www.navypedia.org/ships/russia/ru_cr_pallada.htm",
+      "ru": "Строка Diana, техническая таблица и Naval service.",
+      "translated": "Diana一行、技术表与服役经历。"
+    }
+  ],
+  "reviewCorrections": [
+    "Chinese steamer positions no longer imply wrecks.",
+    "Chinese mounting/turret data includes both mounting and turret.",
+    "English устройство translated as layout rather than construction."
+  ]
+}

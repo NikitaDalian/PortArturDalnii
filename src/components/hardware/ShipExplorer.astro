@@ -7,19 +7,21 @@ import SourceRefs from './SourceRefs.astro';
 interface Props { ship: Hardware; record?: ShipFeatures }
 const { ship, record } = Astro.props;
 const data = validShipFeatures(ship, record);
+const photo = ship.images.find(image=>image.file===record?.photoFile) ?? ship.images[ship.slug==='poltava'?1:0];
 const prefix = `explorer-${ship.slug}`;
 ---
 {data && <section id="ship-explorer" class="ship-explorer" data-ship-explorer aria-labelledby={`${prefix}-title`}>
   <h2 id={`${prefix}-title`}>Как устроен корабль</h2>
-  <p class="explorer-instruction">Нажмите на точку или выберите деталь под профилем.</p>
+  <p class="explorer-instruction">Нажмите на точку на фотографии или выберите деталь ниже.</p>
   <p class="explorer-period">{data.period}</p>
-  <p class="explorer-scroll-hint">Сдвиньте схему, чтобы увидеть весь корабль.</p>
-  <div class="explorer-viewport" tabindex="0" role="region" aria-label="Профиль корабля: можно прокручивать по горизонтали">
+  <p class="explorer-scroll-hint">Сдвиньте фотографию, чтобы увидеть весь корабль.</p>
+  <div class="explorer-viewport" tabindex="0" role="region" aria-label="Фотография корабля: можно прокручивать по горизонтали">
   <div class="explorer-diagram">
-    <img src={assetUrl(`images/fleet/${ship.slug}.svg`)} alt={`${ship.shortName}: стилизованный боковой профиль, нос справа`} width="1200" height="260" loading="lazy" decoding="async" />
+    <img src={assetUrl(photo.file)} alt={photo.alt} width={photo.width} height={photo.height} loading="lazy" decoding="async" />
     {data.features.map((feature, index) => <button type="button" class="explorer-point" style={`left:${feature.x}%;top:${feature.y}%`} data-feature-select={feature.id} aria-label={feature.label} aria-controls={`${prefix}-${feature.id}`} aria-pressed={index === 0 ? 'true' : 'false'}><span>{index + 1}</span></button>)}
   </div>
   </div>
+  <details class="explorer-photo-credit"><summary>О фотографии</summary><p>{photo.caption}</p><p>{photo.credit} · {photo.license}</p><a href={photo.sourceUrl} target="_blank" rel="noopener">Запись в архиве</a></details>
   <div class="explorer-choices" role="group" aria-label="Детали корабля">
     {data.features.map((feature, index) => <button type="button" data-feature-select={feature.id} aria-controls={`${prefix}-${feature.id}`} aria-pressed={index === 0 ? 'true' : 'false'}><span class="choice-number" aria-hidden="true">{index + 1}</span>{feature.label}</button>)}
   </div>
@@ -31,7 +33,7 @@ const prefix = `explorer-${ship.slug}`;
       {feature.weaponSlug && <a class="explorer-weapon" href={href.hardware(feature.weaponSlug)}>Подробнее об орудии</a>}
     </article>)}
   </div>
-  <p class="explorer-note">Профиль стилизован по историческим изображениям. Точки обозначают области корабля; мелкие детали и расстояния условны. Внутренняя защита снаружи не видна.</p>
+  <p class="explorer-note">Точки обозначают области корабля на архивном снимке. Устройство внутренних механизмов и брони объясняется по источникам: снаружи эти детали не видны.</p>
   <noscript><style is:inline>.ship-explorer [data-feature-panel][hidden]{display:block}.ship-explorer .explorer-point,.ship-explorer .explorer-choices{display:none}</style></noscript>
 </section>}
 <script>
@@ -77,6 +79,7 @@ const prefix = `explorer-${ship.slug}`;
   .choice-number{font-size:12px;font-weight:700;min-width:16px}.explorer-details{border-left:3px solid var(--navy);padding:4px 0 6px 22px;max-width:72ch}
   h3{font-size:21px;margin:0 0 10px}.explorer-details p{line-height:1.8;margin:0 0 12px}.explorer-weapon{text-decoration:underline;text-underline-offset:4px;font-size:14px}
   .explorer-note{max-width:78ch;font-size:13px;line-height:1.7;color:var(--ink-2);margin-top:18px}
+  .explorer-photo-credit{font-size:13px;color:var(--ink-2);line-height:1.7;margin:-8px 0 20px;overflow-wrap:anywhere}.explorer-photo-credit summary{cursor:pointer;min-height:36px}.explorer-photo-credit p{margin-bottom:8px}.explorer-photo-credit a{text-decoration:underline}
   .explorer-image-sources{display:flex;flex-wrap:wrap;gap:14px;font-size:13px}.explorer-image-sources a{text-decoration:underline}
   button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}[hidden]{display:none}
   @media(max-width:540px){.explorer-viewport{margin-top:22px;margin-bottom:20px}.explorer-choices{display:grid;grid-template-columns:1fr 1fr;gap:7px}.explorer-choices button{padding:9px;font-size:13px}.explorer-details{padding-left:15px}.explorer-note{font-size:12px}}

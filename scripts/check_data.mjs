@@ -102,10 +102,17 @@ for (const name of ['people', 'places', 'books', 'sources', 'series']) {
 for (const item of [...data.articles, ...data.people, ...data.places, ...data.books, ...data.sources, ...read('routes')]) {
   for (const field of ['photos', 'cover', 'portrait', 'image']) {
     const files = Array.isArray(item[field]) ? item[field] : [item[field]];
-    for (const file of files) if (file && !photoFiles.has(file)) errors.push(`${item.slug}: unknown photo ${file}`);
+    for (const file of files) if (file && !photoFiles.has(file)) {
+      const portrait = field === 'portrait' && maps.people.get(item.slug) === item && /^images\/people\/[a-z0-9-]+\.(jpg|jpeg|png|webp)$/.test(file);
+      if (!portrait || !existsSync(new URL(`../public/${file}`, import.meta.url))) errors.push(`${item.slug}: unknown photo ${file}`);
+      else if (!item.portraitSource || !['caption','credit','license','url'].every(key=>typeof item.portraitSource[key]==='string'&&item.portraitSource[key].trim()) || !/^https:\/\//.test(item.portraitSource.url)) errors.push(`${item.slug}: missing portrait attribution`);
+    }
   }
 }
 const reviews = read('guide_evidence');
+for (const person of data.people) {
+  if (person.sources && (!person.sources.length || person.sources.some(source=>!source.title?.trim()||!/^https:\/\//.test(source.url)))) errors.push(`${person.slug}: invalid biography sources`);
+}
 for (const [slug, review] of Object.entries(reviews)) {
   if (!maps.places.has(slug) || !review.checks?.length || !review.sources?.length) errors.push(`${slug}: incomplete guide review`);
   if (review.sources.some(source => !['primary', 'catalogue', 'field', 'secondary'].includes(source.kind))) errors.push(`${slug}: unknown source kind`);

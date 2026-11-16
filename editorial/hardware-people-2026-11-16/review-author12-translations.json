@@ -1,0 +1,13 @@
+{
+  "reviewer": "home_architecture_audit",
+  "status": "accepted",
+  "fullNarrativeRead": {"en": 12, "zh": 12},
+  "files": [
+    {"file": "work/hardware-people/people-author12-en.json", "sha256": "8f65476dfcc2af9edbc4f21c00ad1df0feb5a061619720ae1a0f667389ae2e43"},
+    {"file": "work/hardware-people/people-author12-zh.json", "sha256": "52c58055be728b9c8847c977229d5071b82f2b377bc95aa67cfe88d870483d4a"}
+  ],
+  "sourceRuSha256": "e00644b38e1799ff130a3ca80ceac8674b8839f6513220326961b07809357270",
+  "method": "Read complete EN and ZH narratives twice, including final exact artifacts after the Grigorovich correction. Compared names, roles, dates, ship relationships and uncertainty wording with accepted Russian biographies.",
+  "resolvedFinding": "Removed Grigorovich supervision start year 1899 in all three languages. Gribovsky explicitly dates appointment to 30 October 1898; neutral wording avoids conflating supervision and command appointments.",
+  "remainingBlockers": []
+}

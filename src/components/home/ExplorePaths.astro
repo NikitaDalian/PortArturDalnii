@@ -1,0 +1,31 @@
+---
+import { href, imgCrop } from '../../lib/data';
+import { assetUrl } from '../../i18n/locale';
+---
+<section class="section container" aria-labelledby="explore-title">
+  <h2 class="h2" id="explore-title">Продолжить знакомство</h2>
+  <div class="explore-paths">
+    <article class="explore-path">
+      <a class="explore-image" href={href.map()} tabindex="-1" aria-hidden="true"><img src={imgCrop(68,'1x1')} alt="" width="640" height="480" loading="lazy" /></a>
+      <h3><a href={href.places()}>Увидеть историю в городе</a></h3>
+      <p>Старые планы, сохранившиеся здания и укрепления. Выберите место на карте или готовый маршрут для прогулки.</p>
+      <div class="explore-links"><a href={href.map()}>Открыть карту</a><a href={href.routes()}>Все маршруты</a></div>
+    </article>
+    <article class="explore-path">
+      <a class="explore-image" href={href.hardwareIndex()} tabindex="-1" aria-hidden="true"><img src={assetUrl('images/hardware/retvizan-1.webp')} alt="" width="1800" height="1080" loading="lazy" /></a>
+      <h3><a href={href.hardwareIndex()}>Корабли, орудия и люди</a></h3>
+      <p>Как были устроены корабли, кто на них служил и что с ними произошло. Фотографии, характеристики и истории экипажей.</p>
+      <div class="explore-links"><a href={href.fleetOverview()}>Корабли в масштабе</a><a href={href.people()}>Лица</a></div>
+    </article>
+    <article class="explore-path explore-path--reading">
+      <a class="explore-image" href={href.layers()} tabindex="-1" aria-hidden="true"><img src={assetUrl('img/gen/layer-1905-1945-720.webp')} alt="" width="720" height="480" loading="lazy" /></a>
+      <h3><a href={href.layers()}>Разобраться в эпохах</a></h3>
+      <p>Как менялись город и его жители. Исторические периоды, свидетельства современников и книги для дальнейшего чтения.</p>
+      <div class="explore-links"><a href={href.layers()}>Вся хронология</a><a href={href.library()}>Библиотека</a></div>
+    </article>
+  </div>
+</section>
+<style>
+  h2{margin-bottom:28px}.explore-paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}.explore-path{display:flex;flex-direction:column;min-width:0}.explore-image{display:block;background:var(--frost)}.explore-image img{display:block;width:100%;height:220px;object-fit:cover}.explore-path h3{font-size:27px;line-height:1.25;margin:22px 0 14px}.explore-path h3 a:hover{text-decoration:underline}.explore-path p{font-size:17px;line-height:1.7;color:var(--ink-2)}.explore-links{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:auto;padding-top:20px}.explore-links a{text-decoration:underline;text-underline-offset:4px;min-height:44px;display:flex;align-items:center}.explore-reading-art{height:220px;background:var(--navy);color:var(--mist);display:grid;grid-template-columns:1fr 1fr;place-items:center;gap:0;font-size:42px;font-weight:600;font-variant-numeric:tabular-nums}.explore-reading-art span{border-bottom:1px solid var(--sea);padding-bottom:8px}
+  @media(max-width:900px){.explore-paths{grid-template-columns:1fr;gap:32px}.explore-image img{height:240px}.explore-reading-art{height:180px}.explore-path{border-bottom:1px solid var(--line);padding-bottom:18px}.explore-path h3{font-size:25px}}
+</style>

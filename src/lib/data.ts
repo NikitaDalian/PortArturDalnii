@@ -14,11 +14,15 @@ import termsJson from '../data/index_terms.json';
 import focusJson from '../data/focus.json';
 import descriptionsJson from '../data/reference_descriptions.json';
 import referenceMediaJson from '../data/reference_media.json';
+import personRedirects from '../data/person_redirects.json';
 import { assetUrl, locale, intlLocale } from '../i18n/locale';
 
 export type LayerKey = 'pre1898' | 'russian' | 'japanese' | 'soviet' | 'modern';
 export type Article = (typeof articlesJson)[number];
-export type Person = (typeof peopleJson)[number];
+export type Person = (typeof peopleJson)[number] & {
+  sources?: { title:string; url:string; note:string }[];
+  portraitSource?: { caption:string; credit:string; license:string; url:string };
+};
 export type Place = (typeof placesJson)[number];
 export type Book = (typeof booksJson)[number];
 export type Source = (typeof sourcesJson)[number];
@@ -30,6 +34,7 @@ export type Series = (typeof seriesJson)[number];
 const periodOverrides = editorialPeriods as Record<string, LayerKey[]>;
 export const articles: Article[] = articlesJson.map(a => ({ ...a, layer: periodOverrides[a.slug] ?? a.layer }));
 export const people = peopleJson as Person[];
+export const canonicalPersonSlug = (slug:string) => (personRedirects as Record<string,string>)[slug] ?? slug;
 export const places = placesJson as Place[];
 export const books = booksJson as Book[];
 export const sources = sourcesJson as Source[];
@@ -97,7 +102,7 @@ export const href = {
   layers: () => url('/istoriya/'),
   layer: (k: string) => url(`/istoriya/${layerByKey(k)?.slug ?? k}/`),
   people: () => url('/lica/'),
-  person: (s: string) => url(`/lica/${s}/`),
+  person: (s: string) => url(`/lica/${canonicalPersonSlug(s)}/`),
   library: () => url('/biblioteka/'),
   book: (s: string) => url(`/biblioteka/knigi/${s}/`),
   source: (s: string) => url(`/biblioteka/istochniki/${s}/`),
@@ -123,7 +128,8 @@ export const href = {
   route: (s: string) => url(`/marshruty/${s}/`),
   seasons: () => url('/sezony/'),
   index: () => url('/ukazatel/'),
-  reference: (kind: 'people' | 'geo', slug: string) => url(`/spravochnik/${kind}/${slug}/`),
+  reference: (kind: 'people' | 'geo', slug: string) => kind === 'people' && people.some(person => person.slug === canonicalPersonSlug(slug))
+    ? url(`/lica/${canonicalPersonSlug(slug)}/`) : url(`/spravochnik/${kind}/${slug}/`),
   search: (q?: string) => url('/poisk/' + (q ? `?q=${encodeURIComponent(q)}` : '')),
   about: () => url('/o-proekte/'),
   credits: () => url('/o-proekte/illyustratsii/'),
@@ -133,6 +139,10 @@ export const href = {
 const by = <T extends { slug: string }>(xs: T[]) => new Map(xs.map((x) => [x.slug, x]));
 export const articleBySlug = by(articles);
 export const personBySlug = by(people);
+for (const [alias, slug] of Object.entries(personRedirects)) {
+  const person = personBySlug.get(slug);
+  if (person) personBySlug.set(alias, person);
+}
 export const placeBySlug = by(places);
 export const bookBySlug = by(books);
 export const sourceBySlug = by(sources);
@@ -174,6 +184,7 @@ export function noteRelations(a: Article): { people: string[]; places: string[];
 /** 'photos/photo_98@...jpg' | 98 → адрес WebP с водяным знаком. size 640 — превью. */
 export function img(file: string | number | null | undefined, size: 'full' | 640 = 'full'): string | null {
   if (file === null || file === undefined) return null;
+  if (typeof file === 'string' && /^images\/people\/[a-z0-9-]+\.(jpg|jpeg|png|webp)$/.test(file)) return assetUrl(file);
   const id = typeof file === 'number' ? file : (String(file).match(/photo_(\d+)@/)?.[1] ?? null);
   if (!id) return null;
   return assetUrl(`/img/p/${id}${size === 640 ? '-640' : ''}.webp`);

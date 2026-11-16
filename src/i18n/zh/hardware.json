@@ -71,7 +71,7 @@
         "id": "people-and-memory",
         "title": "舰上不只有海军官兵",
         "paragraphs": [
-          "遇难者包括马卡罗夫、其参谋长米哈伊尔·帕夫洛维奇·莫拉斯海军少将，以及画家瓦西里·瓦西里耶维奇·韦列夏金。画家来到战区观察战争，并非战列舰的正式舰员。他年轻时受过海军教育，但到1904年，已是享有国际声誉、希望亲眼看到战争的画家。他的在场，使这艘军舰的名字也进入了俄国美术史。",
+          "遇难者包括马卡罗夫、其参谋长米哈伊尔·巴甫洛维奇·莫拉斯海军少将，以及画家瓦西里·瓦西里耶维奇·韦列夏金。画家来到战区观察战争，并非战列舰的正式舰员。他年轻时受过海军教育，但到1904年，已是享有国际声誉、希望亲眼看到战争的画家。他的在场，使这艘军舰的名字也进入了俄国美术史。",
           "中央海军博物馆列出约650人遇难、80人获救，获救者中有舰长雅科夫列夫和基里尔·弗拉基米罗维奇大公。文献中的总数并不完全一致，差别涉及是否计入参谋部及其他在舰人员；博物馆的约数不能直接当作最终名册。该舰再未重返战列。旅顺在同一场灾难中失去了战列舰、舰队司令和部分参谋人员，此时距围城结束还很远。1909—1913年，日本企业家樱井常之助的探查队调查了沉舰遗骸。据A. V. 奥科罗科夫研究，潜水员打捞出六名俄国海军人员的遗骸，1913年将其安葬于旅顺军人公墓。其中，依据发现的文件辨认出了莫拉斯，马卡罗夫不在已辨认者之列。沉舰的水下历史仍在延续，至于它后来是否被完全拆解，现有说法仍属于一种推测，不能据此宣称沉没地点已被彻底查清。"
         ],
         "refs": [
@@ -184,16 +184,16 @@
       {
         "name": "尼古拉·马特维耶维奇·雅科夫列夫",
         "role": "战争初期的舰长；在沉舰后获救。",
-        "personSlug": null,
+        "personSlug": "yakovlev",
         "refs": [
           1,
           3
         ]
       },
       {
-        "name": "米哈伊尔·帕夫洛维奇·莫拉斯",
+        "name": "米哈伊尔·巴甫洛维奇·莫拉斯",
         "role": "舰队司令参谋长；随旗舰遇难。",
-        "personSlug": null,
+        "personSlug": "molas",
         "refs": [
           1,
           6
@@ -249,7 +249,9 @@
     "relatedEssays": [],
     "relatedPeople": [
       "makarov",
-      "vereshchagin"
+      "vereshchagin",
+      "stark",
+      "kirill-vladimirovich"
     ],
     "relatedPlaces": [
       "gavan-port-artura",
@@ -529,25 +531,25 @@
       {
         "name": "爱德华·尼古拉耶维奇·申斯诺维奇",
         "role": "俄国服役时期的舰长，参与监造及旅顺防御战。",
-        "personSlug": null,
+        "personSlug": "shchensnovich",
         "refs": [
           1,
           2
         ]
       },
       {
-        "name": "卡济米尔·菲利波维奇·克特林斯基",
+        "name": "卡齐米尔·菲利波维奇·克特林斯基",
         "role": "高级炮术军官，参加阻击日本堵塞船的行动。",
-        "personSlug": null,
+        "personSlug": "ketlinsky",
         "refs": [
           1,
           2
         ]
       },
       {
-        "name": "亚历山大·瓦西里耶维奇·拉兹沃佐夫",
+        "name": "亚历山大·弗拉基米罗维奇·拉兹沃佐夫",
         "role": "鱼雷军官；7月28日海战时在舰长身旁。",
-        "personSlug": null,
+        "personSlug": "razvozov",
         "refs": [
           2
         ]
@@ -601,7 +603,8 @@
     ],
     "relatedEssays": [],
     "relatedPeople": [
-      "vitgeft"
+      "vitgeft",
+      "stark"
     ],
     "relatedPlaces": [
       "gavan-port-artura"
@@ -914,16 +917,16 @@
       {
         "name": "罗伯特·尼古拉耶维奇·维连",
         "role": "率舰前往远东，指挥1904年的作战；后来统率旅顺剩余舰艇。",
-        "personSlug": null,
+        "personSlug": "viren",
         "refs": [
           1,
           5
         ]
       },
       {
-        "name": "亚历山大·罗曼诺维奇·罗季奥诺夫",
+        "name": "亚历山大·罗斯季斯拉沃维奇·罗季奥诺夫",
         "role": "建造时期的首任舰长，参与监督军舰的准备工作。",
-        "personSlug": null,
+        "personSlug": "rodionov",
         "refs": [
           1
         ]
@@ -931,7 +934,7 @@
       {
         "name": "伊万·康斯坦丁诺维奇·格里戈罗维奇",
         "role": "负责监督在法国订造的军舰；这并不意味着他是“巴扬”号正式舰员。",
-        "personSlug": null,
+        "personSlug": "grigorovich",
         "refs": [
           2
         ]
@@ -984,7 +987,8 @@
     ],
     "relatedEssays": [],
     "relatedPeople": [
-      "makarov"
+      "makarov",
+      "sakamoto"
     ],
     "relatedPlaces": [
       "gavan-port-artura"
@@ -1261,7 +1265,7 @@
       {
         "name": "东乡平八郎",
         "role": "联合舰队司令，1904—1905年战争中以“三笠”号为旗舰。",
-        "personSlug": null,
+        "personSlug": "togo",
         "refs": [
           3
         ]
@@ -1269,7 +1273,7 @@
       {
         "name": "伊地知彦次郎",
         "role": "日俄战争中的本舰舰长，并非整个舰队的司令。",
-        "personSlug": null,
+        "personSlug": "ijichi",
         "refs": [
           3
         ]
@@ -1277,7 +1281,7 @@
       {
         "name": "秋山真之",
         "role": "在旗舰上担任东乡参谋部作战军官。",
-        "personSlug": null,
+        "personSlug": "akiyama",
         "refs": [
           3
         ]
@@ -1324,7 +1328,12 @@
     "relatedEssays": [
       "mikasa-obed-i-snabzhenie"
     ],
-    "relatedPeople": [],
+    "relatedPeople": [
+      "togo",
+      "akiyama",
+      "ijichi",
+      "kato-tomosaburo"
+    ],
     "relatedPlaces": [
       "gavan-port-artura"
     ],
@@ -1664,7 +1673,7 @@
       {
         "name": "尼古拉·奥托维奇·埃森",
         "role": "日俄战争初期的舰长，后来指挥“塞瓦斯托波尔”号。",
-        "personSlug": null,
+        "personSlug": "essen",
         "refs": [
           1,
           3
@@ -1673,7 +1682,7 @@
       {
         "name": "马克西米利安·费奥多罗维奇·舒尔茨",
         "role": "旅顺突围及萨哈林附近最后一战时的舰长。",
-        "personSlug": null,
+        "personSlug": "shults",
         "refs": [
           1,
           4,
@@ -1681,9 +1690,9 @@
         ]
       },
       {
-        "name": "安德烈·彼得罗维奇·什捷尔",
+        "name": "安德烈·彼得罗维奇·施捷尔",
         "role": "本舰海军中尉，亲历者及《在诺维克号巡洋舰上》日记作者。",
-        "personSlug": null,
+        "personSlug": "shter",
         "refs": [
           3,
           4,
@@ -2084,24 +2093,24 @@
       {
         "name": "弗谢沃洛德·费奥多罗维奇·鲁德涅夫",
         "role": "济物浦海战中的舰长，先前在旅顺港管理机构任职。",
-        "personSlug": null,
+        "personSlug": "rudnev",
         "refs": [
           3,
           5
         ]
       },
       {
-        "name": "阿列克谢·阿列克谢耶维奇·尼罗德",
+        "name": "阿列克谢·米哈伊洛维奇·尼罗德",
         "role": "海军少尉、测距军官，在济物浦海战中阵亡。",
-        "personSlug": null,
+        "personSlug": "nirod",
         "refs": [
           5
         ]
       },
       {
-        "name": "帕维尔·尼古拉耶维奇·古博宁",
-        "role": "海军少尉，指挥一个炮兵分队，战斗中负伤。",
-        "personSlug": null,
+        "name": "彼得·尼古拉耶维奇·古博宁",
+        "role": "“瓦良格”号海军少尉；在仁川海战中重伤。",
+        "personSlug": "gubonin",
         "refs": [
           5
         ]
@@ -2148,7 +2157,9 @@
       "lektsiya-nazarenko-russko-yaponskaya-voina"
     ],
     "relatedEssays": [],
-    "relatedPeople": [],
+    "relatedPeople": [
+      "uriu"
+    ],
     "relatedPlaces": [
       "gavan-port-artura"
     ],
@@ -2266,7 +2277,7 @@
         "title": "为何保留十二英寸",
         "paragraphs": [
           "1891年，海军技术委员会讨论了一个很实际的问题：新军舰的主炮能否小一点？较轻的火炮可以减轻炮架负担，也可能加快射击。但委员会认为，炮弹威力损失太大，得不偿失。十二英寸保留了下来，火炮本身却需要重新设计。",
-          "主要设计由炮兵工程师亚历山大·布林克完成，生产交给奥布霍夫钢铁厂。方案在1891—1892年冬季成形，1895年试验。法国卡内系统帮助俄国掌握了新的炮闩形式，但这并不使整门重炮成为法国型号的许可仿制品。它有自己独立的设计过程。"
+          "主要设计由炮兵工程师安东·布林克完成，生产交给奥布霍夫钢铁厂。方案在1891—1892年冬季成形，1895年试验。法国卡内系统帮助俄国掌握了新的炮闩形式，但这并不使整门重炮成为法国型号的许可仿制品。它有自己独立的设计过程。"
         ],
         "refs": [
           1
@@ -2348,7 +2359,7 @@
         "year": 1891,
         "date": "1891–1892",
         "title": "研制新炮",
-        "text": "亚历山大·布林克与海军技术委员会专家研制新的主炮。",
+        "text": "安东·布林克与海军技术委员会专家研制新的主炮。",
         "refs": [
           1
         ]
@@ -2391,7 +2402,9 @@
       "pervaya-tihookeanskaya-eskadra"
     ],
     "relatedEssays": [],
-    "relatedPeople": [],
+    "relatedPeople": [
+      "brink"
+    ],
     "relatedPlaces": [],
     "relatedSources": [],
     "sources": [
@@ -2577,7 +2590,9 @@
       "pervaya-tihookeanskaya-eskadra"
     ],
     "relatedEssays": [],
-    "relatedPeople": [],
+    "relatedPeople": [
+      "canet"
+    ],
     "relatedPlaces": [],
     "relatedSources": [],
     "sources": [
@@ -2650,7 +2665,7 @@
       "8英寸/45",
       "布林克203毫米炮"
     ],
-    "summary": "亚历山大·布林克设计的八英寸炮，装备俄国装甲巡洋舰。在旅顺舰队，它是“巴扬”号的主炮。",
+    "summary": "安东·布林克设计的八英寸炮，装备俄国装甲巡洋舰。在旅顺舰队，它是“巴扬”号的主炮。",
     "intro": [
       "“巴扬”号只有两座大炮塔，每座各一门八英寸炮。与战列舰的四门重炮相比，似乎不算多，但巡洋舰的任务不同：为舰队侦察、支援轻型舰艇，以及与敌方巡洋舰交战。衡量它的主炮，首先要看它准备做什么。"
     ],
@@ -2659,7 +2674,7 @@
         "id": "creation",
         "title": "俄国的八英寸炮",
         "paragraphs": [
-          "1892年，亚历山大·布林克在奥布霍夫厂研制新八英寸炮，借鉴了掌握六英寸卡内系统的经验。这种联系很重要，却不足以把当时所有俄国火炮都冠上同一个法国姓氏。八英寸系统有自己的设计和炮闩。",
+          "1892年，安东·布林克在奥布霍夫厂研制新八英寸炮，借鉴了掌握六英寸卡内系统的经验。这种联系很重要，却不足以把当时所有俄国火炮都冠上同一个法国姓氏。八英寸系统有自己的设计和炮闩。",
           "文献常称它为“1892年型”，1895年则见于服役时间记载。两个日期反映不同阶段，未必矛盾，NavWeaps也同时列出两者。不论参考书编者指的是研制过程中的哪一步，“203毫米/45”这一识别方式始终不变。"
         ],
         "refs": [
@@ -2753,7 +2768,7 @@
         "year": 1892,
         "date": "1892",
         "title": "研制",
-        "text": "亚历山大·布林克借鉴卡内系统经验，研制八英寸炮。",
+        "text": "安东·布林克借鉴卡内系统经验，研制八英寸炮。",
         "refs": [
           2
         ]
@@ -2796,7 +2811,9 @@
       "pervaya-tihookeanskaya-eskadra"
     ],
     "relatedEssays": [],
-    "relatedPeople": [],
+    "relatedPeople": [
+      "brink"
+    ],
     "relatedPlaces": [],
     "relatedSources": [],
     "sources": [
@@ -3018,7 +3035,9 @@
       "voina-na-more-osada-mukden-tsusima"
     ],
     "relatedEssays": [],
-    "relatedPeople": [],
+    "relatedPeople": [
+      "armstrong"
+    ],
     "relatedPlaces": [],
     "relatedSources": [],
     "sources": [
@@ -3508,7 +3527,7 @@
       {
         "name": "伊万·康斯坦丁诺维奇·格里戈罗维奇",
         "role": "监督建造并担任舰长，直至1904年春出任港口长官。",
-        "personSlug": null,
+        "personSlug": "grigorovich",
         "refs": [
           1
         ]
@@ -3516,7 +3535,7 @@
       {
         "name": "尼古拉·米哈伊洛维奇·伊万诺夫",
         "role": "7月海战时的舰长，司令塔遭炮击时负伤。",
-        "personSlug": null,
+        "personSlug": "ivanov-nikolai",
         "refs": [
           1,
           2
@@ -3533,7 +3552,7 @@
       {
         "name": "弗拉基米尔·伊万诺维奇·利特维诺夫",
         "role": "墨西拿救灾期间指挥海军候补军官训练支队。",
-        "personSlug": null,
+        "personSlug": "litvinov",
         "refs": [
           3
         ]
@@ -3587,7 +3606,9 @@
     ],
     "relatedEssays": [],
     "relatedPeople": [
-      "vitgeft"
+      "vitgeft",
+      "lagane",
+      "matusevich"
     ],
     "relatedPlaces": [
       "gavan-port-artura"
@@ -3702,7 +3723,7 @@
         "id": "battle",
         "title": "黄海归来",
         "paragraphs": [
-          "1904年7月28日（8月10日）的海战中，“佩列斯韦特”号多次中弹。博伊斯曼重伤，大副阿波罗·阿波罗诺维奇·德米特里耶夫接掌指挥。舰长活到了要塞投降后，却于1905年死于日本战俘营。遗体1906年送回海参崴安葬；死亡和安葬的年份，有时被误混在一起。",
+          "1904年7月28日（8月10日）的海战中，“佩列斯韦特”号多次中弹。博伊斯曼重伤，大副阿波隆·阿波洛诺维奇·德米特里耶夫接掌指挥。舰长活到了要塞投降后，却于1905年死于日本战俘营。遗体1906年送回海参崴安葬；死亡和安葬的年份，有时被误混在一起。",
           "维特格夫特阵亡后，乌赫托姆斯基需要重新组织舰队指挥。“佩列斯韦特”号桅樯受损，信号难以传达，队形也已散乱。它与其他军舰返回旅顺，向海参崴突围失败。上层建筑和舰炮尚能修理，基地局势却日趋恶化，海上服役与陆上防御越来越难分开。"
         ],
         "refs": [
@@ -3859,7 +3880,7 @@
       {
         "name": "瓦西里·阿尔谢尼耶维奇·博伊斯曼",
         "role": "战争初期的舰长，7月海战负伤，1905年死于战俘营。",
-        "personSlug": null,
+        "personSlug": "boisman",
         "refs": [
           1,
           4
@@ -3868,15 +3889,15 @@
       {
         "name": "帕维尔·彼得罗维奇·乌赫托姆斯基",
         "role": "舰队副司令，在本舰升将旗。",
-        "personSlug": null,
+        "personSlug": "ukhtomsky",
         "refs": [
           1
         ]
       },
       {
-        "name": "阿波罗·阿波罗诺维奇·德米特里耶夫",
+        "name": "阿波隆·阿波洛诺维奇·德米特里耶夫",
         "role": "大副，博伊斯曼负伤后接掌指挥。",
-        "personSlug": null,
+        "personSlug": "dmitriev",
         "refs": [
           1
         ]
@@ -3884,15 +3905,15 @@
       {
         "name": "瓦西里·尼洛维奇·切尔卡索夫",
         "role": "高级炮术军官，留下防御战记录。",
-        "personSlug": null,
+        "personSlug": "cherkasov",
         "refs": [
           1
         ]
       },
       {
-        "name": "康斯坦丁·彼得罗维奇·伊万诺夫-特里纳德察特（Ivanov-Trinadtsaty）",
-        "role": "最后一次航行及沉没时的舰长。",
-        "personSlug": null,
+        "name": "康斯坦丁·彼得罗维奇·伊万诺夫-特里纳德察特",
+        "role": "“佩列斯韦特”号1916年最后航行的舰长；军舰在塞得港附近触雷沉没时幸存。",
+        "personSlug": "ivanov-13",
         "refs": [
           2
         ]
@@ -4039,8 +4060,7 @@
         "id": "weapons",
         "title": "大炮与陆上战线",
         "paragraphs": [
-          "四门主炮口径254毫米、身管长45倍径，安装在两座双联装炮塔内。最初另有十一门152毫米卡内炮，以及小口径速射炮、鱼雷发射管。围城期间，部分武器和弹药送往陆上，最初的清单并不适用于1904年的每一天。",
-          "与陆上的联系，也体现在人员身上。“胜利”号官兵参加阵地防御，炮术军官V. A. 柳宾斯基指挥电岩炮台的一门254毫米海岸炮，由战列舰供应弹药。这不意味着把舰上炮塔里的炮拆下来搬上山崖。那门海岸炮有自己的来历。"
+          "四门主炮口径254毫米、身管长45倍径，安装在两座双联装炮塔内。最初另有十一门152毫米卡内炮，以及小口径速射炮、鱼雷发射管。围城期间，部分武器和弹药送往陆上，最初的清单并不适用于1904年的每一天。"
         ],
         "refs": [
           1
@@ -4050,7 +4070,7 @@
         "id": "mine",
         "title": "旗舰沉没后的又一次触雷",
         "paragraphs": [
-          "开战时，舰长为瓦西里·马克西莫维奇·扎察廖内。第一夜的鱼雷未击中“胜利”号，随后白天它与舰队一同作战。开战初期最危险的经历发生在1904年3月31日（4月13日）：马卡罗夫的旗舰“彼得罗巴甫洛夫斯克”号在基地附近雷区沉没，紧接着，“胜利”号也触雷。",
+          "开战时，舰长为瓦西里·马克西莫维奇·扎察连内。第一夜的鱼雷未击中“胜利”号，随后白天它与舰队一同作战。开战初期最危险的经历发生在1904年3月31日（4月13日）：马卡罗夫的旗舰“彼得罗巴甫洛夫斯克”号在基地附近雷区沉没，紧接着，“胜利”号也触雷。",
           "海水涌入，舰体倾斜，内部舱壁却将进水限制在部分舱室。战列舰依靠自身动力回港。修复破口又要借助围堰，在舰外破口周围围出防水空间，使没有合适干船坞的维修仍能进行。它退出战列数周，却未就此结束当年的战事。"
         ],
         "refs": [
@@ -4222,18 +4242,18 @@
     ],
     "crew": [
       {
-        "name": "瓦西里·马克西莫维奇·扎察廖内",
+        "name": "瓦西里·马克西莫维奇·扎察连内",
         "role": "日俄战争期间的舰长，签署了7月海战损伤清单。",
-        "personSlug": null,
+        "personSlug": "zatsarenny",
         "refs": [
           1,
           2
         ]
       },
       {
-        "name": "V. A. 柳宾斯基",
-        "role": "“胜利”号炮术军官，指挥电岩炮台的一门254毫米海岸炮。",
-        "personSlug": null,
+        "name": "弗拉基米尔·亚历山德罗维奇·柳宾斯基",
+        "role": "日俄战争期间“胜利”号首席炮术军官。",
+        "personSlug": "lyubinsky",
         "refs": [
           1
         ]
@@ -4572,7 +4592,7 @@
       {
         "name": "伊万·彼得罗维奇·乌斯片斯基",
         "role": "日俄战争期间的舰长。",
-        "personSlug": null,
+        "personSlug": "uspensky",
         "refs": [
           1,
           2
@@ -4581,7 +4601,7 @@
       {
         "name": "谢尔盖·伊万诺维奇·卢托宁",
         "role": "大副，留下防御战及海战见闻。",
-        "personSlug": null,
+        "personSlug": "lutonin",
         "refs": [
           1
         ]
@@ -4724,7 +4744,7 @@
         "id": "essen",
         "title": "从“诺维克”号调来的舰长",
         "paragraphs": [
-          "1904年1月27日（2月9日）凌晨前，外锚地第一次鱼雷袭击未击中该舰。白天交锋中它受损，但仍留在战列。战事初期舰长为尼古拉·基里洛维奇·切尔内绍夫，3月由此前指挥快速巡洋舰“诺维克”号的尼古拉·奥托维奇·埃森接任。",
+          "1904年1月27日（2月9日）凌晨前，外锚地第一次鱼雷袭击未击中该舰。白天交锋中它受损，但仍留在战列。战事初期舰长为尼古拉·库兹米奇·切尔内绍夫，3月由此前指挥快速巡洋舰“诺维克”号的尼古拉·奥托维奇·埃森接任。",
           "新舰长接手的是一艘完全不同的军舰：更大、更慢，且此前与“佩列斯韦特”号相撞，螺旋桨已经受损。基地没有合适的大型船坞，维修仍须因地制宜。在旅顺，它总在出海作战与回港修理之间往返。每一次继续服役的可能，都是舰员和港口技术人员具体工作换来的。"
         ],
         "refs": [
@@ -4900,9 +4920,9 @@
     ],
     "crew": [
       {
-        "name": "尼古拉·基里洛维奇·切尔内绍夫",
+        "name": "尼古拉·库兹米奇·切尔内绍夫",
         "role": "战争初期的舰长，任职至1904年3月。",
-        "personSlug": null,
+        "personSlug": "chernyshev",
         "refs": [
           1
         ]
@@ -4910,7 +4930,7 @@
       {
         "name": "尼古拉·奥托维奇·埃森",
         "role": "1904年3月至自沉时的舰长，撰写了4月射击报告。",
-        "personSlug": null,
+        "personSlug": "essen",
         "refs": [
           1,
           3
@@ -4965,7 +4985,8 @@
     ],
     "relatedEssays": [],
     "relatedPeople": [
-      "vitgeft"
+      "vitgeft",
+      "kirill-vladimirovich"
     ],
     "relatedPlaces": [
       "gavan-port-artura"
@@ -5200,7 +5221,9 @@
     ],
     "relatedNotes": [],
     "relatedEssays": [],
-    "relatedPeople": [],
+    "relatedPeople": [
+      "canet"
+    ],
     "relatedPlaces": [],
     "relatedSources": [],
     "sources": [
@@ -5448,7 +5471,9 @@
     ],
     "relatedNotes": [],
     "relatedEssays": [],
-    "relatedPeople": [],
+    "relatedPeople": [
+      "brink"
+    ],
     "relatedPlaces": [],
     "relatedSources": [],
     "sources": [
@@ -5681,7 +5706,9 @@
     ],
     "relatedNotes": [],
     "relatedEssays": [],
-    "relatedPeople": [],
+    "relatedPeople": [
+      "hotchkiss"
+    ],
     "relatedPlaces": [],
     "relatedSources": [],
     "sources": [
@@ -5972,7 +5999,7 @@
       {
         "name": "尼古拉·卡尔洛维奇·赖岑施泰因",
         "role": "首任舰长，后来担任巡洋舰支队司令，1904年在“阿斯科尔德”号升将旗。",
-        "personSlug": null,
+        "personSlug": "reitsenstein",
         "refs": [
           1,
           3,
@@ -5982,15 +6009,15 @@
       {
         "name": "K. A. 格拉马奇科夫",
         "role": "日俄战争期间的舰长，撰写2月侦察报告。",
-        "personSlug": null,
+        "personSlug": "grammatchikov",
         "refs": [
           2
         ]
       },
       {
-        "name": "卡齐米尔·菲利波维奇·凯特林斯基",
+        "name": "卡齐米尔·菲利波维奇·克特林斯基",
         "role": "1916—1917年法国维修末期及驶往北方期间的舰长。",
-        "personSlug": null,
+        "personSlug": "ketlinsky",
         "refs": [
           5
         ]
@@ -6035,7 +6062,8 @@
     ],
     "relatedEssays": [],
     "relatedPeople": [
-      "vitgeft"
+      "vitgeft",
+      "krylov"
     ],
     "relatedPlaces": [
       "gavan-port-artura"
@@ -6343,7 +6371,7 @@
       {
         "name": "弗拉基米尔·西莫诺维奇·萨尔纳夫斯基",
         "role": "日俄战争期间的舰长。",
-        "personSlug": null,
+        "personSlug": "sarnavsky",
         "refs": [
           1
         ]
@@ -6351,7 +6379,7 @@
       {
         "name": "A. A. 布罗夫岑",
         "role": "战争第一夜发现日本鱼雷艇的值更军官。",
-        "personSlug": null,
+        "personSlug": "brovtsyn",
         "refs": [
           1
         ]
@@ -6396,7 +6424,8 @@
     ],
     "relatedEssays": [],
     "relatedPeople": [
-      "vitgeft"
+      "vitgeft",
+      "stark"
     ],
     "relatedPlaces": [
       "gavan-port-artura"
@@ -6678,7 +6707,7 @@
       {
         "name": "亚历山大·亚历山德罗维奇·利文",
         "role": "1904年5月起的舰长，撰写海战及前往西贡的报告。",
-        "personSlug": null,
+        "personSlug": "lieven",
         "refs": [
           1,
           2
@@ -6687,15 +6716,15 @@
       {
         "name": "弗拉基米尔·伊万诺维奇·谢苗诺夫",
         "role": "1904年的大副，回忆录《代价》（Rasplata）作者。",
-        "personSlug": null,
+        "personSlug": "semenov",
         "refs": [
           1
         ]
       },
       {
-        "name": "M. B. 切尔卡斯基",
+        "name": "米哈伊尔·鲍里索维奇·切尔卡斯基",
         "role": "海军少尉，参与讨论通往南方法国港口的航线。",
-        "personSlug": null,
+        "personSlug": "cherkassky",
         "refs": [
           1
         ]
@@ -6731,7 +6760,8 @@
     ],
     "relatedEssays": [],
     "relatedPeople": [
-      "vitgeft"
+      "vitgeft",
+      "stackelberg"
     ],
     "relatedPlaces": [
       "gavan-port-artura"
@@ -6985,7 +7015,7 @@
       {
         "name": "弗拉基米尔·费奥多罗维奇·萨雷切夫",
         "role": "远航远东及战争初期的舰长，撰写触雷与撤舰报告。",
-        "personSlug": null,
+        "personSlug": "sarychev",
         "refs": [
           2,
           6
@@ -7031,7 +7061,9 @@
       "voina-na-more-osada-mukden-tsusima"
     ],
     "relatedEssays": [],
-    "relatedPeople": [],
+    "relatedPeople": [
+      "stark"
+    ],
     "relatedPlaces": [
       "gavan-port-artura",
       "port-dalniy"
@@ -7172,7 +7204,7 @@
         "id": "service",
         "title": "俄国基地外的旗舰",
         "paragraphs": [
-          "开战时，舰长为海军大佐中尾，梨羽时起海军少将则在本舰升将旗。舰长负责本舰，提督指挥支队。“初濑”号参加1904年1月27日（2月9日）旅顺外海的昼间交战，之后主要执行封锁：监视俄国舰队，限制它自由出海。",
+          "开战时，舰长为海军大佐中尾雄，梨羽时起海军少将则在本舰升将旗。舰长负责本舰，提督指挥支队。“初濑”号参加1904年1月27日（2月9日）旅顺外海的昼间交战，之后主要执行封锁：监视俄国舰队，限制它自由出海。",
           "封锁意味着不断驶回熟悉的海域，俄方利用了这个规律。5月1日（14日），布雷舰“阿穆尔”号在日本军舰惯常航路布雷。次日，“初濑”号、“敷岛”号、“八岛”号及伴随舰艇驶近旅顺。布雷行动就在俄国基地外海，与这艘战列舰的命运直接相连。"
         ],
         "refs": [
@@ -7186,7 +7218,7 @@
         "id": "mines",
         "title": "两次爆炸，截然不同的结果",
         "paragraphs": [
-          "第一次触雷损坏舰艉和操纵设备。“初濑”号仍浮在水上，其他舰艇尝试靠近援助、准备拖带。接着，它又触及第二枚水雷。弹药爆炸，战列舰迅速沉没。战后叙述中的过程以分钟计，并非持续数小时的抢救。数百名海军人员遇难，中尾与梨羽获救。不能从额定舰员中减去早期粗略的获救人数，就得出准确死亡数字。",
+          "第一次触雷损坏舰艉和操纵设备。“初濑”号仍浮在水上，其他舰艇尝试靠近援助、准备拖带。接着，它又触及第二枚水雷。弹药爆炸，战列舰迅速沉没。战后叙述中的过程以分钟计，并非持续数小时的抢救。数百名海军人员遇难，中尾雄与梨羽获救。不能从额定舰员中减去早期粗略的获救人数，就得出准确死亡数字。",
           "连附近军舰也未立即弄清发生了什么。研究日本水下威胁档案的历史学家稻叶千晴，引用了警告可能出现俄国潜艇的信号。“八岛”号也在此时受损。关于看不见的袭击者的报告，应与已知原因分开：两艘战列舰实际触及俄国雷区。不能为了说明爆炸突然，就给这场战斗加上一艘潜艇。"
         ],
         "refs": [
@@ -7311,9 +7343,9 @@
     ],
     "crew": [
       {
-        "name": "中尾",
+        "name": "中尾雄",
         "role": "“初濑”号舰长，沉船时获救。",
-        "personSlug": null,
+        "personSlug": "nakao",
         "refs": [
           6
         ]
@@ -7321,7 +7353,7 @@
       {
         "name": "梨羽时起",
         "role": "海军少将，支队司令，在本舰升将旗；获救。",
-        "personSlug": null,
+        "personSlug": "nashiba",
         "refs": [
           5,
           6
@@ -7357,7 +7389,10 @@
       "voina-na-more-osada-mukden-tsusima"
     ],
     "relatedEssays": [],
-    "relatedPeople": [],
+    "relatedPeople": [
+      "nashiba",
+      "nakao"
+    ],
     "relatedPlaces": [
       "gavan-port-artura"
     ],
@@ -7410,7 +7445,7 @@
       },
       {
         "id": 6,
-        "title": "从初濑号获救的梨羽海军少将与中尾舰长",
+        "title": "从初濑号获救的梨羽海军少将与中尾雄舰长",
         "author": "日本国际日本文化研究中心（Nichibun）；E. Sharpe Grew（原书编辑）",
         "date": "20世纪初；目录日期[190-?]",
         "url": "https://sekiei.nichibun.ac.jp/GAI/ja/detail/?gid=GH035066&hid=5010",
@@ -7521,7 +7556,7 @@
         "id": "after",
         "title": "军舰消失在消息公布之前",
         "paragraphs": [
-          "指挥“八岛”号的坂本大佐在灾难中幸存。1905年夏，美国海军刊物已报道他参与在旅顺打捞俄国“巴扬”号。这是舰长后来的工作，并非日本战列舰继续服役：“八岛”号未被打捞，没有改名，也未返回舰队。救下人员与救下军舰，是救援的不同结果。",
+          "指挥“八岛”号的坂本一大佐在灾难中幸存。1905年夏，美国海军刊物已报道他参与在旅顺打捞俄国“巴扬”号。这是舰长后来的工作，并非日本战列舰继续服役：“八岛”号未被打捞，没有改名，也未返回舰队。救下人员与救下军舰，是救援的不同结果。",
           "损失消息有自己的传播过程。1905年1月的《Proceedings》仍讨论日方未公开证实或否认的持续传闻，甚至给出错误的沉没月份。1905年6月初，东京公布海上损失的消息已明确提到“八岛”号，《Southland Times》于6月3日刊出。因此，报纸日期不能变成沉船日期。黄海与对马海战时，它早已不在战列。旅顺外海的布雷行动，在日本战役胜利结束许久之前，就已终结它的服役。"
         ],
         "refs": [
@@ -7657,9 +7692,9 @@
     ],
     "crew": [
       {
-        "name": "坂本",
+        "name": "坂本一",
         "role": "沉船时的“八岛”号舰长，后来参与打捞“巴扬”号。所用英文文章未给出完整姓名。",
-        "personSlug": null,
+        "personSlug": "sakamoto",
         "refs": [
           9
         ]
@@ -7667,7 +7702,7 @@
       {
         "name": "梨羽时起",
         "role": "海军少将，从另一艘战列舰“初濑”号指挥支队，并非“八岛”号舰长。",
-        "personSlug": null,
+        "personSlug": "nashiba",
         "refs": [
           5
         ]
@@ -7702,7 +7737,10 @@
       "voina-na-more-osada-mukden-tsusima"
     ],
     "relatedEssays": [],
-    "relatedPeople": [],
+    "relatedPeople": [
+      "nashiba",
+      "sakamoto"
+    ],
     "relatedPlaces": [
       "gavan-port-artura"
     ],
@@ -7782,7 +7820,7 @@
       },
       {
         "id": 9,
-        "title": "专业纪事：坂本舰长与巴扬号打捞",
+        "title": "专业纪事：坂本一舰长与巴扬号打捞",
         "author": "Philip R. Alger（编），美国海军学会／Proceedings",
         "date": "1905年7月，第31/3/115卷期",
         "url": "https://www.usni.org/magazines/proceedings/1905/july/professional-notes",

@@ -1,0 +1,27 @@
+{
+  "author": "hardware_people",
+  "reviewer": "armament_alignment",
+  "status": "accepted",
+  "scope": "All109source.note entries perlanguage;52uniqueRU/EN/ZH note triples read fully twice,including correctedfinalversion. Biographyreviewunchanged.",
+  "readComplete": true,
+  "files": {
+    "en": {
+      "file": "C:\\Users\\NikitaEN\\Documents\\Claude\\PortArturDalniiWS\\work\\hardware-people\\people-author12-en.json",
+      "sha256": "6a52cfcc613012fa6b0ab07cb31fe948b06c921e20329a3db0cef7342b8b2d90"
+    },
+    "zh": {
+      "file": "C:\\Users\\NikitaEN\\Documents\\Claude\\PortArturDalniiWS\\work\\hardware-people\\people-author12-zh.json",
+      "sha256": "9ef90c061de3e98b7f0c0c4277b69acdfafd4c336f544a3028150941b9b12db7"
+    }
+  },
+  "ruSha256": "4764d0e09c3133ee3ccf419bf2a5acb8c0c312ce9692bc0fcaa11398f54ccbab",
+  "sourceNotesPerLanguage": 109,
+  "totalNotesRead": 218,
+  "uniqueFormulationsRead": 52,
+  "resolved": [
+    "ZH steamers rendered 汽船 rather than assuming wrecks.",
+    "ZH Mount/Turret retains both 炮架/炮塔.",
+    "EN устройство rendered layout rather than construction process."
+  ],
+  "remainingBlockers": []
+}

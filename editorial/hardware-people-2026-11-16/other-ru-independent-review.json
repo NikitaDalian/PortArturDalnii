@@ -1,0 +1,27 @@
+{
+  "file": "work/hardware-people/other-ru-profiles.json",
+  "sha256": "515b3eecd4523954585dd2e13fe167feaa3f7ad952a7591271d621fafdbf339c",
+  "reviewer": "home_architecture_audit",
+  "status": "accepted",
+  "fullNarrativeRead": 22,
+  "method": "Read every complete biography twice, including final corrected artifact. Checked disputed identities and key ship-role chronology against cited sources; this is an independent editorial/factual review, not a fresh archival reconstruction of every service date.",
+  "resolvedFindings": [
+    "Ivanov-Nikolai: removed unsupported assertion that he personally resumed command and chose Qingdao. Gribovsky describes Shumov, then Matusevich, after Ivanov was wounded.",
+    "Ivanov-13: restored the actual relationship to Peresvet in 1916, without confusing it with his emergency command of Rurik in 1904.",
+    "Lyubinsky: unsupported Electric Cliff command assertion is absent; current profile stays within shipboard artillery role."
+  ],
+  "sourceChecks": [
+    "Gribovsky, Tsesarevich: command succession, separate hits on bridge and conning tower, departure and internment.",
+    "Yalta Museum Gubonin family article with RGA VMF references: Pyotr Nikolayevich, grandson of Pyotr Ionovich, 1897 school application, wound and separate evacuation.",
+    "Bayan appendix: Aleksandr Rostislavovich Rodionov, 1849–1910, command 1899–1902, distinct from Viren's combat command.",
+    "Diana chapter 4: Brovtsyn's watch and detection of torpedo boats; Pallada repair chronology.",
+    "Diana chapter 6: Cherkassky's Saigon proposal, Lieven's decisions and Grozovoy/Brovtsyn route to Shanghai.",
+    "Peresvet chapter 4: Sarnavsky's temporary substitution for Zatsarenny.",
+    "Pobeda officer list: Lyubinsky senior gunnery officer, Wilken junior gunnery officer.",
+    "Biographical chronology crosschecks: Shter's Skory death, Dmitriev's temporary command, Cherkasov identity and brother, Uspensky postwar service, Ivanov-13's Peresvet command."
+  ],
+  "limits": [
+    "Uncertain death years and disputed expanded patronymics remain explicitly unresolved rather than invented.",
+    "Several remaining service chronologies rely on identified reference biographies; no claim that all archive originals were examined."
+  ]
+}

@@ -3,7 +3,7 @@
   "dek": "Set the ships side by side to understand their size, roles and place in the war off Port Arthur.",
   "intro": [
     "A longer ship is not necessarily a stronger one. In the Russian squadron at Port Arthur in early 1904, some cruisers were longer than certain battleships, although the battleships carried the heaviest guns and thickest side armour. The difference lay in what each ship was built to do: fight in the battle line, find the enemy, accompany torpedo boats or operate far from base.",
-    "Here you can place the ships side by side at a common scale. The opening view shows Port Arthur’s principal warships on the eve of war; you can also look separately at Varyag, stationed at Chemulpo, and several Japanese opponents. The outlines convey hull length, while photographs and articles restore each ship’s actual appearance and history. Familiar names become easier to understand: why the small Novik was constantly putting to sea, how Bayan differed from the other cruisers, and what tasks united seven different battleships."
+    "Here you can compare ship lengths at a common scale. The opening view shows Port Arthur’s principal warships on the eve of war; you can also look separately at Varyag, stationed at Chemulpo, and several Japanese opponents. The bars convey hull length, while photographs and articles restore each ship’s actual appearance and history. Familiar names become easier to understand: why the small Novik was constantly putting to sea, how Bayan differed from the other cruisers, and what tasks united seven different battleships."
   ],
   "sections": [
     {
@@ -49,7 +49,7 @@
       "id": "reading-scale",
       "title": "What the outline leaves out",
       "paragraphs": [
-        "The diagram compares length overall. Books also give waterline length and length between perpendiculars, measured between different points. Substituting one for another can make a ship shorter on the diagram without any rebuilding. The outline itself is schematic: it does not reconstruct turrets, funnels or superstructures.",
+        "The bars compare length overall. Books also give waterline length and length between perpendiculars, measured between different points. Substituting one for another can make a ship shorter on the scale without any rebuilding. The photographs show ships from different angles, so their size on screen is not a measure of length.",
         "Length does not reveal coal reserves, machinery condition, crew training or damage. Even a shared calibre does not guarantee identical mountings and ammunition supply arrangements. Choose two ships of similar size and open their articles: compare how much hull space their machinery occupied, what the armour protected, and what weapons each ship actually took into a particular battle."
       ],
       "refs": [
