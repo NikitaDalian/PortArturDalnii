@@ -1,0 +1,26 @@
+{
+  "author": "bank_narrative",
+  "reviewer": "ship_page_visuals",
+  "file": "work/bank-narrative/essay-ru.json",
+  "sha256": "c348ded8fe1e1bf1e502254287867e0cf22e279532d523ca06389555479f363e",
+  "verdict": "accepted",
+  "completeReads": 2,
+  "sourceComparison": [
+    "work/bank-rewrite/vol2-decoded.txt: PDF 50,52,55,58 and article context 49–62",
+    "work/bank-rewrite/vol6-decoded.txt: PDF 96–97,100,103–104",
+    "work/bank-rewrite/evidence.md",
+    "work/bank-narrative/evidence.md"
+  ],
+  "findings": [
+    "Opening establishes Dairen/Dalian, Japanese administration, period and lending practice; qianzhuang is explained at first use.",
+    "Title promises an explanation of unequal access to credit. The narrative delivers through reputation, collateral and institutional backing; it does not promise a named individual telephone incident.",
+    "Four sections develop one credit chain. Grain documents, named firms and wartime permission thresholds give concrete content; no fictional borrower or unsupported transaction is inserted.",
+    "Named grain-trading firms are not assigned speculative transactions described generally in the source. Inclusive thresholds 50000/100000/30000 and eight surviving houses in 1944 match the extract.",
+    "Memoir attribution and overlapping witnesses remain explicit. Conditional cash-flow explanation is not represented as a particular historical crisis.",
+    "Photo caption identifies Yokohama Specie Bank and explicitly distinguishes the Longkou workplace. Existing provenance and uncertainty are retained.",
+    "Ending gives a concrete change in who could authorize a loan. No mandatory correction requested."
+  ],
+  "resolvedFindings": [],
+  "remainingBlockers": [],
+  "scope": "Independent complete reader gate for Russian candidate and all metadata. Reviewer did not author or edit this version. Original loan contracts and Japanese legal acts were not independently examined."
+}

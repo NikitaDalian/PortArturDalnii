@@ -1,0 +1,95 @@
+{
+  "reviewer": "bank_narrative",
+  "status": "verified source disagreement; patch proposal only",
+  "evidence": [
+    {
+      "source": "А. В. Скворцов, Крейсеры «Диана», «Паллада», «Аврора», глава 2",
+      "local": "research_sources/port-arthur/hardware/cruisers-next/diana-chap02.txt",
+      "lines": "253–259",
+      "url": "https://keu-ocr.narod.ru/Diana/chap02.html",
+      "finding": "Котлы Бельвиля: по восемь в носовом и кормовом отделениях, шесть в среднем; перечисление даёт 22. Это не Мельников: source id 1 обоих кораблей — Скворцов. Электронная транскрипция не сверена с бумажным оригиналом, поэтому 22 не объявляется окончательной исправленной цифрой."
+    },
+    {
+      "source": "Navypedia, PALLADA 1st class cruisers, Technical data",
+      "local": "research_sources/port-arthur/hardware/cruisers-next/diana-navypedia.txt",
+      "lines": "136",
+      "url": "https://www.navypedia.org/ships/russia/ru_cr_pallada.htm",
+      "finding": "3 VTE, 24 Belleville boilers. Source id 3 обоих кораблей."
+    }
+  ],
+  "patches": [
+    {
+      "shipSlug": "pallada",
+      "match": {
+        "specificationIndex": 2,
+        "ruLabel": "Механизмы"
+      },
+      "ru": {
+        "label": "Механизмы",
+        "value": "3 паровые машины; котлы Бельвиля; 3 вала",
+        "note": "Проектная мощность 11610 л.с. Число котлов в источниках расходится: перечисление в электронной главе Скворцова даёт 22 (8 + 8 + 6), Navypedia указывает 24. Без сверки с оригинальной документацией одно число не выбирается.",
+        "refs": [
+          1,
+          3
+        ]
+      },
+      "en": {
+        "label": "Machinery",
+        "value": "3 steam engines; Belleville boilers; 3 shafts",
+        "note": "Designed power 11610 hp. Sources disagree on boiler count: the arrangement in Skvortsov’s online chapter totals 22 (8 + 8 + 6), while Navypedia lists 24. No single count is adopted without checking original documentation.",
+        "refs": [
+          1,
+          3
+        ]
+      },
+      "zh": {
+        "label": "动力",
+        "value": "3台蒸汽主机；贝尔维尔锅炉；3轴",
+        "note": "设计功率11610马力。锅炉数量存在资料分歧：斯克沃尔佐夫著作的电子章节列出8＋8＋6座，合计22座；Navypedia记载24座。未经原始文件核对，此处不取单一数值。",
+        "refs": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "shipSlug": "diana",
+      "match": {
+        "specificationIndex": 2,
+        "ruLabel": "Механизмы"
+      },
+      "ru": {
+        "label": "Механизмы",
+        "value": "3 паровые машины; котлы Бельвиля; 3 вала",
+        "note": "Проектная мощность 11610 л.с. Число котлов в источниках расходится: перечисление в электронной главе Скворцова даёт 22 (8 + 8 + 6), Navypedia указывает 24. Без сверки с оригинальной документацией одно число не выбирается.",
+        "refs": [
+          1,
+          3
+        ]
+      },
+      "en": {
+        "label": "Machinery",
+        "value": "3 steam engines; Belleville boilers; 3 shafts",
+        "note": "Designed power 11610 hp. Sources disagree on boiler count: the arrangement in Skvortsov’s online chapter totals 22 (8 + 8 + 6), while Navypedia lists 24. No single count is adopted without checking original documentation.",
+        "refs": [
+          1,
+          3
+        ]
+      },
+      "zh": {
+        "label": "动力",
+        "value": "3台蒸汽主机；贝尔维尔锅炉；3轴",
+        "note": "设计功率11610马力。锅炉数量存在资料分歧：斯克沃尔佐夫著作的电子章节列出8＋8＋6座，合计22座；Navypedia记载24座。未经原始文件核对，此处不取单一数值。",
+        "refs": [
+          1,
+          3
+        ]
+      }
+    }
+  ],
+  "integrationReview": {
+    "reviewer": "root",
+    "status": "accepted",
+    "method": "Read exact stored Skvortsov chapter passage (8+8+6) and Navypedia machinery row (24); retain uncertainty, no invented correction. RU/EN/ZH notes preserve both readings and original power."
+  }
+}

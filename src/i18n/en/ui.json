@@ -925,5 +925,20 @@
   "У каждого корабля свой облик. Сравните трубы, мачты и башни, затем откройте фотографию и его историю. Профили стилизованы по архивным снимкам; в общем масштабе показана длина корпуса, мелкие детали упрощены.": "Each ship has its own appearance. Compare funnels, masts and turrets, then open the photograph and read its history. The profiles are stylised from archival photographs: hull lengths share a common scale, while small details are simplified.",
   "Пояснение к тексту": "Reading note",
   "Источник пояснения": "Source for this note",
-  "Цвета условны; это иллюстрации, а не технические чертежи.": "Colours are interpretive; these are illustrations, not technical drawings."
+  "Цвета условны; это иллюстрации, а не технические чертежи.": "Colours are interpretive; these are illustrations, not technical drawings.",
+  "Размеры и водоизмещение": "Dimensions and displacement",
+  "Механизмы и ход": "Machinery and speed",
+  "Оснащение и служба": "Equipment and service",
+  "Параметры орудия": "Gun specifications",
+  "Боеприпасы и применение": "Ammunition and service",
+  "Количество орудий:": "Number of guns:",
+  "Как устроен корабль": "Explore the ship",
+  "Нажмите на точку или выберите деталь под профилем.": "Tap a point or choose a feature below the profile.",
+  "Сдвиньте схему, чтобы увидеть весь корабль.": "Scroll the diagram sideways to see the whole ship.",
+  "Профиль корабля: можно прокручивать по горизонтали": "Ship profile: scroll horizontally",
+  "Детали корабля": "Ship features",
+  "Подробнее об орудии": "Read about the gun",
+  "Историческое изображение": "Historical image",
+  "стилизованный боковой профиль, нос справа": "stylized side profile, bow to the right",
+  "Профиль стилизован по историческим изображениям. Точки обозначают области корабля; мелкие детали и расстояния условны. Внутренняя защита снаружи не видна.": "The profile is stylized from historical images. Points identify areas of the ship; small details and distances are approximate. Internal protection is not visible from outside."
 }

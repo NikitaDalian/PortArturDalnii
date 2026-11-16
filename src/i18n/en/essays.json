@@ -85,8 +85,8 @@
   },
   {
     "slug": "bankovskiy-sluzhashchiy-dayrena",
-    "title": "Who could borrow in Dairen?",
-    "dek": "A grain merchant could borrow against a railway consignment note; an established business client might need only a telephone call. How Chinese cash houses connected trade, savings and bank credit.",
+    "title": "Why some borrowers needed only a telephone call",
+    "dek": "In Dairen, a cash house could arrange a loan for a familiar business client over the telephone. Yet to borrow from a bank itself, it pledged property. What made a telephone loan possible?",
     "date": "2026-11-16",
     "periods": [
       "japanese"
@@ -94,12 +94,12 @@
     "perspective": "From bank clerk Sun Yaoting’s memoir and Guo Xipu and Sun’s account of Dalian’s cash houses",
     "sections": [
       {
-        "id": "grain-and-credit",
-        "title": "A borrower who could help his bank",
+        "id": "a-loan-by-telephone",
+        "title": "You had to know who was calling",
         "paragraphs": [
-          "In Dairen in the 1920s and 1930s—the name of Dalian under Japanese rule—a large grain merchant might not only borrow from a bank but also come to its aid with money. Bank clerk Sun Yaoting named two such firms: Xingji, managed by Xin Bofen, and Yifahe, managed by Wang Xinzhai. They were major borrowers from banks and private cash houses. When necessary, the same trading firms supported their creditors when they ran short of funds for day-to-day payments.",
-          "Sun had worked in banking since 1930, including at the joint Japanese-Chinese Longkou Bank. These credit relationships rested on a particular business: grain trading and oil milling. Soybeans and gaoliang, or sorghum, came into the port; traders needed money while their goods were in transit. In another account of Dalian finance, Sun and Guo Xipu described a convenient form of security for a merchant: buy grain, hand the railway consignment note to a bank and obtain cash against it. In their judgement, a bank was more willing to accept a document covering grain in transit than a mortgage on property.",
-          "Such a loan was tied to a specific cargo and transaction. Another borrower needed guarantees of repayment of his own. Sun recalled that an ordinary resident found it hard to obtain a loan without adequate security. But between a large foreign bank and a private moneylender there was another option: a qianzhuang, or cash house."
+          "In the late 1920s and early 1930s, a Chinese business owner with a good reputation could arrange a loan by telephone in Dairen, as Dalian was known under Japanese rule. The lender was a qianzhuang: a private cash house that accepted deposits, made loans and transferred money to other cities. Making the call was easy. Becoming someone who would get the money afterwards was another matter.",
+          "Guo Xipu and bank clerk Sun Yaoting described this practice. Sun had worked in finance since 1930, including at the joint Japanese-Chinese Longkou Bank. In their recollection, small and medium-sized Chinese businesses often preferred a cash house to a foreign bank, where loans were harder to obtain and procedures more complicated. They were willing to pay more for a loan they could actually get.",
+          "The telephone did not make credit equally available to everyone. A cash house considered the borrower’s reputation and adjusted its terms to the availability of money in the market. Sun separately recalled how difficult it was for an ordinary resident to obtain a loan without adequate security. In the same city, one borrower could get money after a call while another found the door all but closed."
         ],
         "refs": [
           1,
@@ -107,12 +107,12 @@
         ]
       },
       {
-        "id": "money-house",
-        "title": "Property for the bank, trust for the client",
+        "id": "behind-the-call",
+        "title": "Behind the call was a property mortgage",
         "paragraphs": [
-          "Qianzhuang accepted deposits, made loans, exchanged money and transferred it to other cities. They were not pawnshops: their business extended beyond objects brought in as collateral. In the 1920s and early 1930s, they chiefly served Chinese commercial and industrial firms. According to Sun and Guo, a small business owner often preferred to pay them more rather than seek a loan from a foreign bank, with its complicated procedures and difficult access.",
-          "Cash houses had creditors of their own. They would generally mortgage property to a bank and arrange an overdraft—the right to draw more money from a current account than it held. Their own funds were insufficient: merchants left deposits for only short periods, and deposits from other residents were few. When incoming and outgoing payments did not balance, bank support was needed.",
-          "A cash house, in turn, might lend to a trusted client after a telephone call. There was no single interest rate or set of terms for everyone: the borrower’s standing mattered, as did the availability of money in the market. Sun gives one example of the cost of a short-term loan: two jiao, or two-tenths of a yuan, charged daily for every thousand yuan borrowed. He does not identify the lender or the length of the loan; treating this as the city’s average rate would be misleading."
+          "There was another side to this convenience: the cash house itself depended on a bank. Merchants left money with it for only short periods, and deposits from residents were few. If depositors withdrew their money before loans were repaid, the house’s own funds might fall short. Sun and Guo were explicit: without bank support, a cash house risked being unable to meet its payments.",
+          "A qianzhuang would therefore generally mortgage property to a bank and arrange an overdraft: the right to draw more from an account than it held. For its own client, it might make borrowing as simple as a telephone call. To borrow itself, it provided something quite tangible as security. Personal trust and a bank’s demand for collateral fitted comfortably into the same chain.",
+          "Nor was the borrower the only person whose reputation mattered. Depositors looked at the wealth and standing of a cash house’s owner and shareholders. Trust in these people brought money into the till, from which loans could then be made. Connections based on a shared home province helped too: Shandong cash houses chiefly served businesspeople from Shandong. But Sun qualified this picture. Shared economic interests also held people together, and the groups’ membership changed."
         ],
         "refs": [
           1,
@@ -120,12 +120,12 @@
         ]
       },
       {
-        "id": "trust-and-deposits",
-        "title": "Where the money came from",
+        "id": "grain-on-paper",
+        "title": "A document worth more than property",
         "paragraphs": [
-          "In a table of cash houses for 1931, the entry for Yifahe lists Wang Xinzhai, capital of 300,000 yuan in banknotes and an opening date of 1923. Nearby are establishments with capital of only five thousand. But the amounts are recorded in different kinds of money: silver, “gold” banknotes, and large and small silver monetary units. They cannot be added together as though every yuan were the same.",
-          "The reputation of an owner and his shareholders brought in depositors, whose deposits made lending possible. Connections often grew around a shared place of origin. Businesspeople from Shandong were important clients of cash houses run by people from that province. Yifahe belonged to the influential group from Laoting in Hebei. Yet Sun qualified this: shared interests mattered as well as a shared home, and the groups’ membership could change.",
-          "There was also a more entertaining way to attract residents’ savings. Sun describes Wanguo Chuxu Hui, a savings scheme with a prize draw: pay in three yuan each month for a chance at the year-end top prize of 30,000. A printer at the Taidong Ribao newspaper won it once. Sun left neither the winner’s name nor the year, but remembered the scheme’s promotional success: these deposits began to spread among Chinese banks. Many small payments pooled money for banking operations."
+          "There was another kind of security that, according to Sun and Guo, a bank would accept more readily than property: a railway consignment note for grain. Some well-funded cash houses were set up specifically to trade soybeans, gaoliang and other grain. After buying the goods, they handed the transport document to a bank and obtained cash against it. The grain was still on its journey, but the document already made borrowing possible.",
+          "Here the credit relationships acquire names. Sun listed the firm Xingji, managed by Xin Bofen, and Yifahe, managed by Wang Xinzhai, among the major clients of banks and cash houses. These were well-funded participants in grain trading and oil milling. When necessary, they themselves helped their creditors meet day-to-day payments. Who came to whose aid depended on who had money available at the time.",
+          "Yet a consignment note said nothing about where the borrowed money would go. Sun and Guo recalled that cash houses acting as grain-trading agents also used such credit to speculate on the currency exchange. Some grew rich quickly; others were ruined. Their account does not identify particular transactions by Xingji or Yifahe, and we cannot assign this course to either firm. The lending mechanism itself is clear, however: reliable security helped a borrower obtain money, but the borrower could still put it to risky use."
         ],
         "refs": [
           1,
@@ -133,35 +133,21 @@
         ]
       },
       {
-        "id": "trade-and-risk",
-        "title": "A consignment note could lead to the exchange",
+        "id": "permission-to-lend",
+        "title": "Who now decided whether to lend?",
         "paragraphs": [
-          "Grain cargoes connected the bank’s cash desk to the railway, but did not guarantee uneventful trading. Sun and Guo recalled that well-funded cash houses acting as agents could obtain cash against consignment notes and then take that money to the currency exchange. There, transactions involved not only cash currency but also contracts for future delivery. In their account, some participants grew rich quickly while others were ruined. Having security did not mean that a borrower would use the money only for the next consignment of grain.",
-          "Merchants and financiers also defended the system of payments they knew. When the Japanese authorities tried to replace the silver basis of currency circulation with a gold basis, representatives of cash houses, grain firms and oil mills submitted a joint petition. Sun recalled appeals to the Kwantung authorities and a delegation’s journey to Tokyo. He did not give the year. Even Japanese banks were divided: the Yokohama Specie Bank, which issued silver banknotes, also opposed abolishing the silver system."
+          "This network depended on being able to trade, transfer money and reach an agreement with a creditor. After full-scale war between Japan and China began in 1937, the Japanese authorities tightened their control over trade. According to Sun and Guo, restrictions on the grain market undermined the trading agents’ business; Chinese cash houses’ overseas transfers ceased, and some establishments closed or changed their line of business.",
+          "Their account of wartime regulations includes a particularly telling detail. A commercial loan of 50,000 yuan or more required prior permission from the Japanese administration. The threshold was 100,000 for an industrial loan and 30,000 for an overdraft. Agreement between lender and borrower, even with adequate security, was no longer enough: a transaction of this size needed official approval. By 1944, according to the same account, only eight Chinese cash houses remained in Dalian.",
+          "More people stood behind a telephone loan than could be heard on the call. Behind the lender were depositors and a bank; behind money borrowed against a consignment note was the grain trade. War changed the conditions for the entire chain. You could keep your good name, have goods to offer and find someone willing to lend, then still have to wait for permission. The question was no longer just whether someone trusted you with the money, but whether the loan would be allowed."
         ],
         "refs": [
-          1,
-          2
-        ]
-      },
-      {
-        "id": "war-controls",
-        "title": "When a telephone call was no longer enough",
-        "paragraphs": [
-          "In Sun’s account, the dispute ended with permission to use both systems, but Chinese financiers had to report their operations every month. They then strengthened their connections around a shared table: bank managers invited representatives of the chamber of commerce to weekly lunches at the Yamato Hotel. The gatherings were called Suiyokai, the Wednesday Society. Discussing business and supporting one another was a practical necessity.",
-          "War gradually narrowed this network’s scope. Sun and Guo’s account says that controls on grain undermined the business of trading agents, while the cash houses’ overseas transfers ceased. Its description of wartime restrictions gives the thresholds at which prior permission from the Japanese administration was required: industrial loans of 100,000 yuan or more, commercial loans of 50,000 or more, and overdrafts of 30,000 or more. By 1944, according to the account, only eight Chinese cash houses remained in Dalian.",
-          "Access to money had once begun with a grain consignment note, a shareholder’s reputation or a call to a familiar creditor. Now permits, reports and trade restrictions increasingly governed those relationships. A firm once able to help its bank depended on more than its goods and its depositors’ trust: the very transactions on which its credit rested could be closed to it."
-        ],
-        "refs": [
-          1,
           2
         ]
       }
     ],
     "limitations": [
-      "These are retrospective accounts by participants in financial life, recorded and edited by Huang Benren. The first article was read in full, on pages 49–62 of the library PDF; the second on printed pages 91–106 (PDF pages 93–108). Sun contributes to both accounts, so they are not treated as two wholly independent testimonies.",
-      "Amounts and terms are given only as described in these accounts. Individual loan contracts, the named firms’ accounts and original Japanese regulations have not been checked. The two-jiao rate has not been converted into an annual rate; the currency issue used in that example is unspecified. Cash-house capital recorded in different currencies is not added together.",
-      "The first account omits the exact year of the dispute over the gold and silver systems. Its mistaken generalisations about Russian money and the continuity of banks are not adopted. The name, manager and credit connections of Yifahe do not establish that every similarly named firm was the same legal entity."
+      "This article draws on retrospective accounts by participants in financial life, recorded and edited by Huang Benren: Sun Yaoting’s memoir and the joint account by Guo Xipu and Sun. Sun contributes to both texts; they are not two wholly independent testimonies.",
+      "Credit mechanisms, wartime restrictions and the number of cash houses are described only as given in these accounts. Individual contracts, the named firms’ accounts and original Japanese regulations have not been checked. Naming a firm as a major borrower does not establish that it engaged in every type of transaction described here."
     ],
     "sources": [
       {
@@ -170,7 +156,7 @@
         "author": "Sun Yaoting (孙耀庭); recorded and edited by Huang Benren (黄本仁)",
         "date": "Publication date of the issue not established",
         "url": "https://www.dl-library.net.cn/wenxian/wszl/2.pdf",
-        "locator": "Complete article: PDF pages 49–62. Pages 52–53: security and interest rate; page 55: Xingji, Xin Bofen, Yifahe and Wang Xinzhai; page 58: connections based on shared origins; pages 61–62: the currency system, reporting, Suiyokai and prize deposits.",
+        "locator": "PDF pages 50 and 52: Sun’s employment and loan security; page 55: Xingji, Xin Bofen, Yifahe, Wang Xinzhai and support for creditors; page 58: connections based on shared origins. Complete account: PDF pages 49–62.",
         "note": "Library text PDF, rather than a facsimile of the first edition. Page numbers and key passages were checked visually. The editor of the recorded account is named at the article’s end. The memoirist’s political and class-based judgements are not presented as the views of all residents."
       },
       {
@@ -179,7 +165,7 @@
         "author": "Guo Xipu (郭习朴) and Sun Yaoting (孙耀庭), oral accounts; edited by Huang Benren (黄本仁)",
         "date": "December 1988",
         "url": "https://www.dl-library.net.cn/wenxian/wszl/6.pdf",
-        "locator": "Complete article: printed pages 91–106, PDF pages 93–108. Page 93: Yifahe table; pages 94–95: depositors, connections based on shared origins, property pledged to banks and telephone lending; page 98: railway consignment notes; pages 101–104: wartime restrictions and eight houses remaining by 1944.",
+        "locator": "Printed pages 94–95 (PDF pages 96–97): owners’ reputations, deposits, connections based on shared origins, security pledged to banks and telephone lending; page 98 (PDF page 100): railway consignment notes and speculation; pages 101–102 (PDF pages 103–104): wartime restrictions and eight houses remaining by 1944. Complete article: printed pages 91–106.",
         "note": "A new complete PDF was downloaded from Dalian Municipal Library; the title page and publication details were checked. The table cites a 1935 directory of the Dalian Chamber of Commerce and Industry; the original directory has not been examined. Technical details are presented as a later account, rather than as independently verified loan documentation."
       }
     ],
@@ -197,7 +183,7 @@
     "illustration": {
       "image": "/images/essays/dairen-bank.webp",
       "alt": "A stone bank building in Dairen with a large central dome and two smaller side domes; several people stand in the street.",
-      "caption": "The Yokohama Specie Bank in Dairen, one of the participants in the currency dispute described by Sun Yaoting. Asia Taikan, volume 1, plate 004; the exact date of the photograph has not been established. This is not Longkou Bank, where Sun worked.",
+      "caption": "The Yokohama Specie Bank in Dairen. Asia Taikan, volume 1, plate 004; the exact date of the photograph has not been established. Sun Yaoting worked at a different bank, Longkou. The photograph shows the city’s banking environment, rather than his workplace.",
       "credit": "Photographer not identified. 亜細亜大観 (Asia Taikan), volume 1, plate 004; compiled by the Black Dragon Society (Kokuryūkai), which is not identified as the photographer. Wikimedia Commons: public domain, PD-Japan-oldphoto and PD-1996.",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E4%BA%9C%E7%B4%B0%E4%BA%9C%E5%A4%A7%E8%A6%B3_01_004_%22%E6%AD%A3%E9%87%91%E9%8A%80%E8%A1%8C%E6%94%AF%E5%BA%97_%EF%BC%88%E5%A4%A7%E9%80%A3%EF%BC%89%22.jpg"
     }

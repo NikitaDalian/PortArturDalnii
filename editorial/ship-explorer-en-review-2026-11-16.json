@@ -1,0 +1,18 @@
+{
+  "reviewer": "ship_explorer",
+  "author": "ship_page_visuals",
+  "file": "work/ship-explorer/ship-features-en.json",
+  "sha256": "d87f878deb045c0e02307df6b37be85a844b93df24dbc175d7c3081efc23b621",
+  "acceptedRussianSha256": "dc358fb2d04b1c3dae5b4eb4bf0dc2ca8456f235aa66ac3161371e7588d3aea2",
+  "scope": "Complete independent reading of all 17 dated scopes, 68 labels and 68 explanations against the accepted Russian text.",
+  "verdict": "accepted",
+  "checks": [
+    "English technical terms distinguish armoured cruisers from protected cruisers, single from twin mounts, shields from turrets and shafts from propellers.",
+    "Fighting tops, forecastles, casemates and calibre receive the explanations supplied by the Russian text.",
+    "Photographic dates and uncertainties, stylized geometry and invisible internal protection remain explicit.",
+    "Late Russian corrections are retained: no selected boiler count for Diana or Pallada, no stronger-gun assertion for Pobeda, Diana's report is retrospective, and Petropavlovsk's underwater hull is not described as separately protected.",
+    "Machine comparison confirms unchanged 68 IDs, coordinates, weapon links, source IDs and photograph URLs."
+  ],
+  "resolvedFindings": ["Author independently revised generic mast labels to Masts and platforms before this complete reading; the reviewed version does not imply fighting tops on all slender masts."],
+  "blockers": []
+}

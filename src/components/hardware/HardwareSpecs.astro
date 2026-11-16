@@ -1,0 +1,60 @@
+---
+import SourceRefs from './SourceRefs.astro';
+import type { Hardware } from '../../lib/hardware';
+interface Props { item: Hardware }
+const { item } = Astro.props;
+// The stored order is shared by every locale. Never split or round historical values.
+const weaponGroups: Record<string, number[]> = {
+  'obukhov-305-40':[0,1,3], 'canet-152-45':[0,1],
+  'obukhov-203-45':[0,1,2], 'armstrong-305-40':[0,1,2],
+  'japanese-280-howitzer':[0,2], 'canet-120-45':[0,1,3],
+  'obukhov-254-45':[0,1], 'hotchkiss-47-single':[0,1,2],
+};
+const gunIndices=weaponGroups[item.slug] ?? item.specifications.map((_,index)=>index);
+const groups = item.kind==='ship' ? [
+  { title:'Размеры и водоизмещение', indices:[0,1] },
+  { title:'Механизмы и ход', indices:[2,3] },
+  { title:'Оснащение и служба', indices:item.specifications.map((_,index)=>index).slice(4) },
+] : [
+  { title:'Параметры орудия', indices:gunIndices },
+  { title:'Боеприпасы и применение', indices:item.specifications.map((_,index)=>index).filter(index=>!gunIndices.includes(index)) },
+];
+---
+<section class="hardware-specs" id="specifications" aria-labelledby="spec-title">
+  <h2 id="spec-title">Основные характеристики</h2>
+  <div class="spec-groups">
+    {groups.filter(group=>group.indices.length).map(group=><section class="spec-group">
+      <h3>{group.title}</h3>
+      <dl>{group.indices.map(index=>item.specifications[index]).filter(Boolean).map(spec=><div class:list={['spec',{ 'spec-long':spec.value.length>34, 'spec-short':spec.value.length<24 }]}>
+        <dt>{spec.label}</dt>
+        <dd><strong>{spec.value}</strong>{spec.note&&<p>{spec.note}</p>}<SourceRefs refs={spec.refs} /></dd>
+      </div>)}</dl>
+    </section>)}
+  </div>
+</section>
+<style>
+  .hardware-specs { margin-top:48px; scroll-margin-top:100px; }
+  h2 { font-size:clamp(25px,2.5vw,34px); line-height:1.25; margin-bottom:24px; }
+  .spec-groups { background:var(--paper); border:1px solid var(--line); }
+  .spec-group + .spec-group { border-top:1px solid var(--line); }
+  h3 { padding:15px 24px; margin:0; background:var(--frost); color:var(--ink-2); font-size:16px; line-height:1.5; font-weight:650; letter-spacing:0; }
+  dl { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); margin:0; padding:0 24px; column-gap:28px; }
+  .spec { padding:22px 0; min-width:0; }
+  .spec-long { grid-column:1/-1; }
+  .spec + .spec-long, .spec-long + .spec { border-top:1px solid var(--line); }
+  dt { color:var(--ink-2); font-size:15px; line-height:1.5; margin-bottom:9px; }
+  dd { margin:0; font-size:18px; line-height:1.6; overflow-wrap:anywhere; }
+  strong { display:block; font-size:21px; line-height:1.45; font-weight:650; font-variant-numeric:tabular-nums; }
+  .spec-short strong { font-size:clamp(24px,2.6vw,32px); line-height:1.25; }
+  .spec-long strong { font-size:19px; }
+  dd p { color:var(--ink-2); font-size:14px; line-height:1.65; margin:10px 0 6px; }
+  dd :global(.source-refs) { display:inline-block; margin-top:8px; }
+  @media(max-width:540px) {
+    dl { grid-template-columns:1fr; padding-inline:20px; }
+    h3 { padding-inline:20px; }
+    .spec { padding-block:20px; }
+    .spec + .spec { border-top:1px solid var(--line); }
+    .spec-short strong { font-size:28px; }
+  }
+  @media print { .spec-group { break-inside:avoid; } h2,h3 { break-after:avoid; } }
+</style>

@@ -10,7 +10,7 @@ const groups = [{ kind:'ship', title:'Корабли' }, { kind:'weapon', title:
 const fleetByShip=new Map(fleetOverview.ships.map(row=>[row.shipSlug,row.group]));
 const countries = Object.keys(COUNTRIES).filter(country => hardware.some(item => item.countries.includes(country)));
 ---
-<Base searchable={false} title="Корабли и вооружение" description="Корабли, орудия и их история: создание, служба, люди, основные характеристики и проверенные источники." section="notes">
+<Base searchable={false} title="Корабли и вооружение" description="Корабли, орудия и их история: создание, служба, люди, основные характеристики и проверенные источники." section="hardware">
   <header class="dark hardware-head">
     <div class="container">
       <Crumbs items={[{label:'Главная',href:href.home()},{label:'Корабли и вооружение'}]} />

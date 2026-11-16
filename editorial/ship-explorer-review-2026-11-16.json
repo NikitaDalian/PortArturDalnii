@@ -1,0 +1,158 @@
+{
+  "author": "ship_explorer",
+  "reviewer": "bank_narrative",
+  "file": "work/ship-explorer/ship-features-ru.json",
+  "sha256": "dc358fb2d04b1c3dae5b4eb4bf0dc2ca8456f235aa66ac3161371e7588d3aea2",
+  "status": "accepted",
+  "version": "v5 after corrections",
+  "readings": "Full first reading of all 17 periods and 68 descriptions; source checks; full rereading of corrected v5 in two uninterrupted batches (ships 1–9 and 10–17).",
+  "sourceScope": "Compared descriptions with each ship’s sources/dated armament, local source passages, historical photo contact sheets and verified photo provenance. Read relevant technical passages rather than claiming whole books reread. SVG positions compared with actual individual drawing geometry. Browser behavior and mobile layout are reviewed separately by root.",
+  "resolved": [
+    "Photo-only zones originally failed refs-only validation: type/validator/component now support checked sourceUrls and display image evidence links.",
+    "Petropavlovsk: removed unsupported suggestion of different protection covering the entire underwater part.",
+    "Boyarin: removed unrelated 120mm gun reference from hull protection description.",
+    "Pobeda: moved forecastle marker from low aft side to raised deck; Poltava/Sevastopol battery markers moved centrally; Askold mast marker moved to rear mast to avoid overlap.",
+    "Diana: clarified that Lieven retrospectively describes preparations; report was not asserted to have been sent before departure.",
+    "Diana/Pallada: omitted boiler count because Skvortsov online text totals22 while Navypedia says24. Separate registry correction proposal prepared.",
+    "Pobeda: removed insufficiently supported strengthening/ballistic comparison with Peresvet; retained supported forecastle geometry and newer armour."
+  ],
+  "remainingBlockers": [],
+  "checks": [
+    {
+      "ship": "petropavlovsk",
+      "zones": 4,
+      "refs": "own ship sources",
+      "photoUrls": "own ship images",
+      "weaponPeriod": "dated armament matched",
+      "positions": "compared with separate SVG geometry; internal protection marked as explanation area"
+    },
+    {
+      "ship": "poltava",
+      "zones": 4,
+      "refs": "own ship sources",
+      "photoUrls": "own ship images",
+      "weaponPeriod": "dated armament matched",
+      "positions": "compared with separate SVG geometry; internal protection marked as explanation area"
+    },
+    {
+      "ship": "sevastopol",
+      "zones": 4,
+      "refs": "own ship sources",
+      "photoUrls": "own ship images",
+      "weaponPeriod": "dated armament matched",
+      "positions": "compared with separate SVG geometry; internal protection marked as explanation area"
+    },
+    {
+      "ship": "retvizan",
+      "zones": 4,
+      "refs": "own ship sources",
+      "photoUrls": "own ship images",
+      "weaponPeriod": "dated armament matched",
+      "positions": "compared with separate SVG geometry; internal protection marked as explanation area"
+    },
+    {
+      "ship": "bayan",
+      "zones": 4,
+      "refs": "own ship sources",
+      "photoUrls": "own ship images",
+      "weaponPeriod": "dated armament matched",
+      "positions": "compared with separate SVG geometry; internal protection marked as explanation area"
+    },
+    {
+      "ship": "mikasa",
+      "zones": 4,
+      "refs": "own ship sources",
+      "photoUrls": "own ship images",
+      "weaponPeriod": "dated armament matched",
+      "positions": "compared with separate SVG geometry; internal protection marked as explanation area"
+    },
+    {
+      "ship": "novik",
+      "zones": 4,
+      "refs": "own ship sources",
+      "photoUrls": "own ship images",
+      "weaponPeriod": "dated armament matched",
+      "positions": "compared with separate SVG geometry; internal protection marked as explanation area"
+    },
+    {
+      "ship": "varyag",
+      "zones": 4,
+      "refs": "own ship sources",
+      "photoUrls": "own ship images",
+      "weaponPeriod": "dated armament matched",
+      "positions": "compared with separate SVG geometry; internal protection marked as explanation area"
+    },
+    {
+      "ship": "tsesarevich",
+      "zones": 4,
+      "refs": "own ship sources",
+      "photoUrls": "own ship images",
+      "weaponPeriod": "dated armament matched",
+      "positions": "compared with separate SVG geometry; internal protection marked as explanation area"
+    },
+    {
+      "ship": "peresvet",
+      "zones": 4,
+      "refs": "own ship sources",
+      "photoUrls": "own ship images",
+      "weaponPeriod": "dated armament matched",
+      "positions": "compared with separate SVG geometry; internal protection marked as explanation area"
+    },
+    {
+      "ship": "pobeda",
+      "zones": 4,
+      "refs": "own ship sources",
+      "photoUrls": "own ship images",
+      "weaponPeriod": "dated armament matched",
+      "positions": "compared with separate SVG geometry; internal protection marked as explanation area"
+    },
+    {
+      "ship": "askold",
+      "zones": 4,
+      "refs": "own ship sources",
+      "photoUrls": "own ship images",
+      "weaponPeriod": "dated armament matched",
+      "positions": "compared with separate SVG geometry; internal protection marked as explanation area"
+    },
+    {
+      "ship": "pallada",
+      "zones": 4,
+      "refs": "own ship sources",
+      "photoUrls": "own ship images",
+      "weaponPeriod": "dated armament matched",
+      "positions": "compared with separate SVG geometry; internal protection marked as explanation area"
+    },
+    {
+      "ship": "diana",
+      "zones": 4,
+      "refs": "own ship sources",
+      "photoUrls": "own ship images",
+      "weaponPeriod": "dated armament matched",
+      "positions": "compared with separate SVG geometry; internal protection marked as explanation area"
+    },
+    {
+      "ship": "boyarin",
+      "zones": 4,
+      "refs": "own ship sources",
+      "photoUrls": "own ship images",
+      "weaponPeriod": "dated armament matched",
+      "positions": "compared with separate SVG geometry; internal protection marked as explanation area"
+    },
+    {
+      "ship": "hatsuse",
+      "zones": 4,
+      "refs": "own ship sources",
+      "photoUrls": "own ship images",
+      "weaponPeriod": "dated armament matched",
+      "positions": "compared with separate SVG geometry; internal protection marked as explanation area"
+    },
+    {
+      "ship": "yashima",
+      "zones": 4,
+      "refs": "own ship sources",
+      "photoUrls": "own ship images",
+      "weaponPeriod": "dated armament matched",
+      "positions": "compared with separate SVG geometry; internal protection marked as explanation area"
+    }
+  ]
+}

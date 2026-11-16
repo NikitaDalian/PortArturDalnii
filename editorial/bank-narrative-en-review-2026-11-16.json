@@ -1,0 +1,19 @@
+{
+  "reviewer": "ship_explorer",
+  "author": "ship_page_visuals",
+  "file": "work/bank-narrative/essay-en.json",
+  "sha256": "8bf6731155290066803ed5ada4ee1b140b1140df163486e7d4a06f5785b26e8d",
+  "acceptedRussianSha256": "c348ded8fe1e1bf1e502254287867e0cf22e279532d523ca06389555479f363e",
+  "scope": "Complete independent reading of title, dek, all twelve paragraphs, headings, limitations, source records and image attribution against the accepted Russian version.",
+  "verdict": "accepted",
+  "checks": [
+    "Opening establishes Chinese borrowers, Dairen/Dalian, Japanese rule and the late 1920s to early 1930s.",
+    "Qianzhuang and overdraft are explained on first use; translation is readable without the research brief.",
+    "The telephone, bank mortgage, consignment note and wartime permission stages preserve the Russian argument and reach a concrete ending.",
+    "Named firms are not falsely linked to the speculative transactions. Sun's participation in both accounts and retrospective source limitations remain explicit.",
+    "Thresholds 50000/100000/30000 yuan, 1937 and eight establishments by 1944 preserve scope and attribution.",
+    "The image explicitly shows Yokohama Specie Bank, not Sun's Longkou workplace; compiler is not falsely named as photographer."
+  ],
+  "resolvedFindings": [],
+  "blockers": []
+}

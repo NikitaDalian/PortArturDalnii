@@ -1,11 +1,15 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Crumbs from '../../components/Crumbs.astro';
+import ShipExplorer from '../../components/hardware/ShipExplorer.astro';
+import { shipFeaturesBySlug } from '../../lib/shipFeatures';
 import LinkedText from '../../components/LinkedText.astro';
 import ArchiveFigure from '../../components/hardware/ArchiveFigure.astro';
+import HardwareSpecs from '../../components/hardware/HardwareSpecs.astro';
+import ArmamentGrid from '../../components/hardware/ArmamentGrid.astro';
 import SourceRefs from '../../components/hardware/SourceRefs.astro';
 import HardwareRow from '../../components/hardware/HardwareRow.astro';
-import { hardware, hardwareBySlug, hardwareKind, shipsUsing, type Hardware } from '../../lib/hardware';
+import { hardware, hardwareKind, shipsUsing, type Hardware } from '../../lib/hardware';
 import { mentionContext } from '../../lib/mentions';
 import { href, articleBySlug, placeBySlug, personBySlug, sourceBySlug, layerByKey } from '../../lib/data';
 import { essays } from '../../lib/essays';
@@ -24,7 +28,7 @@ const connections=[
   ...e.relatedSources.map(slug=>sourceBySlug.get(slug)).filter(Boolean).map(item=>({name:item!.title,url:href.source(item!.slug)})),
 ];
 ---
-<Base title={e.name} description={e.summary} image={e.images[0] ? assetUrl(e.images[0].file) : undefined} section="notes">
+<Base title={e.name} description={e.summary} image={e.images[0] ? assetUrl(e.images[0].file) : undefined} section="hardware">
   <header class="dark hardware-head">
     <div class="container">
       <Crumbs items={[{label:'Главная',href:href.home()},{label:'Корабли и вооружение',href:href.hardwareIndex()}]} />
@@ -40,6 +44,7 @@ const connections=[
     <aside class="hardware-aside" data-pagefind-ignore>
       <nav aria-label="Содержание страницы">
         {e.kind==='ship'&&<a href={href.fleetOverview()}>Сравнить с другими кораблями</a>}
+        {e.kind==='ship'&&<a href="#ship-explorer">Как устроен корабль</a>}
         <a href="#story">История</a>
         <a href="#specifications">Характеристики</a>
         {e.armament.length>0 && <a href="#armament">Вооружение корабля</a>}
@@ -50,6 +55,7 @@ const connections=[
       <div class="hardware-periods">{e.periods.map(period=>layerByKey(period)).filter(Boolean).map(period=><a class="text-link" href={href.layer(period!.key)}>{period!.title}</a>)}</div>
     </aside>
     <div class="hardware-body">
+      {e.kind==='ship'&&<ShipExplorer ship={e} record={shipFeaturesBySlug.get(e.slug)} />}
       {e.images[0] && <ArchiveFigure picture={e.images[0]} eager />}
       <div class="hardware-intro prose" id="story">{e.intro.map(paragraph=><p><LinkedText text={paragraph} context={context} /></p>)}</div>
       {e.sections.map((section,index)=><>
@@ -58,20 +64,11 @@ const connections=[
           <div class="prose">{section.paragraphs.map(paragraph=><p><LinkedText text={paragraph} context={context} /></p>)}</div>
           <p class="refs"><SourceRefs refs={section.refs} /></p>
         </section>
-        {index===0 && <section class="hardware-section hardware-specs" id="specifications" aria-labelledby="spec-title">
-          <h2 id="spec-title">Основные характеристики</h2>
-          <dl>{e.specifications.map(spec=><div><dt>{spec.label}</dt><dd><strong>{spec.value}</strong>{spec.note&&<p>{spec.note}</p>}<SourceRefs refs={spec.refs} /></dd></div>)}</dl>
-        </section>}
+        {index===0 && <HardwareSpecs item={e} />}
         {e.images[index+1] && <div class="hardware-section"><ArchiveFigure picture={e.images[index+1]} /></div>}
       </>)}
-      {e.armament.length>0 && <section class="hardware-section" id="armament" aria-labelledby="armament-title">
-        <h2 id="armament-title">Вооружение корабля</h2>
-        <p class="hardware-note">Состав относится к указанному периоду службы. На страницах орудий — их устройство, характеристики и история.</p>
-        <ul class="hardware-armament">{e.armament.map(gun=><li>
-          <h3><a href={href.hardware(gun.weaponSlug)}>{hardwareBySlug.get(gun.weaponSlug)!.name}</a>{gun.count!==null&&<span class="gun-count"> × {gun.count}</span>}</h3>
-          <p class="meta">{gun.period}</p><p>{gun.note}</p><SourceRefs refs={gun.refs} />
-        </li>)}</ul>
-      </section>}
+      {e.sections.length===0 && <HardwareSpecs item={e} />}
+      {e.armament.length>0 && <ArmamentGrid armament={e.armament} />}
       {e.crew.length>0 && <section class="hardware-section" id="crew" aria-labelledby="crew-title"><h2 id="crew-title">Люди и корабль</h2>
         <ul class="hardware-crew">{e.crew.map(member=><li><h3>{member.personSlug ? <a href={href.person(member.personSlug)}>{member.name}</a> : member.name}</h3><p>{member.role}</p><SourceRefs refs={member.refs} /></li>)}</ul>
       </section>}
@@ -105,22 +102,17 @@ const connections=[
   h2 { font-size:clamp(25px,2.5vw,34px); line-height:1.25; margin-bottom:22px; }
   h3 { font-size:20px; line-height:1.4; }
   .refs { margin-top:12px; }
-  .hardware-specs { background:var(--paper); border-block:1px solid var(--line); padding:28px; }
-  dl { margin:0; } dl>div { display:grid; grid-template-columns:minmax(110px,1fr) minmax(0,2fr); gap:20px; padding:16px 0; border-bottom:1px solid var(--line); } dl>div:last-child { border:0; }
-  dt { color:var(--ink-2); font-size:15px; } dd { margin:0; font-size:16px; line-height:1.6; } dd p { margin-block:5px; color:var(--ink-2); font-size:14px; }
-  .hardware-note { font-size:16px; line-height:1.7; color:var(--ink-2); }
-  .hardware-armament, .hardware-crew { list-style:none; margin:0; padding:0; }
-  .hardware-armament li,.hardware-crew li { padding:22px 0; border-bottom:1px solid var(--line); }
-  li p { margin:8px 0; line-height:1.7; } h3 a { text-decoration:underline; text-underline-offset:4px; } .gun-count { white-space:nowrap; }
+  .hardware-crew { list-style:none; margin:0; padding:0; }
+  .hardware-crew li { padding:22px 0; border-bottom:1px solid var(--line); }
+  li p { margin:8px 0; line-height:1.7; } h3 a { text-decoration:underline; text-underline-offset:4px; }
   .hardware-timeline { padding:0 0 0 24px; margin-left:8px; border-left:2px solid var(--line-2); list-style:none; }
   .hardware-timeline li { position:relative; padding-bottom:28px; } .hardware-timeline li:last-child { padding-bottom:0; }
   .hardware-timeline li::before { content:''; position:absolute; left:-31px; top:8px; width:12px; height:12px; border:2px solid var(--paper); border-radius:50%; background:var(--sea); }
   .timeline-date { color:var(--ink-2); font-size:15px; font-weight:650; }
-  .hardware-sources { border-top:1px solid var(--line); padding-top:32px; font-size:16px; line-height:1.65; }
+  .hardware-sources { overflow-wrap:anywhere; border-top:1px solid var(--line); padding-top:32px; font-size:16px; line-height:1.65; }
   .hardware-sources ol { padding-left:22px; } .hardware-sources li { margin-bottom:24px; scroll-margin-top:100px; } .hardware-sources a { text-decoration:underline; overflow-wrap:anywhere; }
   .hardware-sources details { margin-bottom:28px; border-left:3px solid var(--line-2); padding-left:18px; } .hardware-sources summary { cursor:pointer; padding-block:10px; } .hardware-sources details p { margin-top:12px; }
   .hardware-reading { display:flex; flex-direction:column; gap:18px; } .hardware-reading a { text-decoration:underline; line-height:1.5; }
-  @media(max-width:850px) { .hardware-layout { grid-template-columns:1fr; gap:28px; padding-top:24px; }.hardware-aside{position:static}.hardware-aside nav{flex-direction:row;flex-wrap:wrap;gap:4px 20px}.hardware-periods{flex-direction:row;flex-wrap:wrap;margin-top:10px;padding-top:14px}.hardware-body{max-width:none}.hardware-specs{padding:20px;} }
-  @media(max-width:480px) { dl>div{grid-template-columns:1fr;gap:6px;} }
-  @media print { .hardware-aside{display:none}.hardware-layout{display:block}.hardware-head{background:white;color:var(--ink)}.hardware-category,.lead{color:var(--ink-2)}.hardware-body{max-width:none}h2,h3{break-after:avoid}p{orphans:3;widows:3}.hardware-specs{background:white} }
+  @media(max-width:850px) { .hardware-layout { grid-template-columns:1fr; gap:28px; padding-top:24px; }.hardware-aside{position:static}.hardware-aside nav{flex-direction:row;flex-wrap:wrap;gap:4px 20px}.hardware-periods{flex-direction:row;flex-wrap:wrap;margin-top:10px;padding-top:14px}.hardware-body{max-width:none}}
+  @media print { .hardware-aside{display:none}.hardware-layout{display:block}.hardware-head{background:white;color:var(--ink)}.hardware-category,.lead{color:var(--ink-2)}.hardware-body{max-width:none}h2,h3{break-after:avoid}p{orphans:3;widows:3} }
 </style>

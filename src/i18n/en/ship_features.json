@@ -1,0 +1,1002 @@
+[
+  {
+    "shipSlug": "petropavlovsk",
+    "period": "Armament: the original Russian-service fit at the beginning of 1904. The battleship Petropavlovsk before her loss in 1904.",
+    "features": [
+      {
+        "id": "main-artillery",
+        "label": "Forward turret, 305 mm",
+        "x": 82.42,
+        "y": 62.31,
+        "text": "Four 305-mm guns formed the main armament, two in the forward turret and two aft. Calibre is the diameter of a gun’s bore; here it was 30.5 centimetres. Twelve smaller 152-mm guns were mounted separately: eight in four wing turrets and another four in the battery.",
+        "weaponSlug": "obukhov-305-40",
+        "refs": [
+          2
+        ],
+        "sourceUrls": []
+      },
+      {
+        "id": "funnels",
+        "label": "Two funnels",
+        "x": 55.25,
+        "y": 52.31,
+        "text": "The two funnels stand between the masts. Fourteen cylindrical boilers supplied steam to two triple-expansion engines, which drove two propellers. Funnels do not correspond one for one to boilers: there were far more boilers aboard.",
+        "weaponSlug": null,
+        "refs": [
+          2
+        ],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Petropavlovsk_-_NH_84769-A.jpg"
+        ]
+      },
+      {
+        "id": "masts",
+        "label": "Masts and platforms",
+        "x": 69.83,
+        "y": 20.77,
+        "text": "The forward mast, on the right of the profile, carries a substantial fighting platform known as a fighting top. The after mast looks lighter. These different shapes help identify the ship in an old photograph; fine rigging and equipment on the platforms have been simplified in the drawing.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Petropavlovsk_-_NH_84769-A.jpg"
+        ]
+      },
+      {
+        "id": "hull-protection",
+        "label": "Side and armour belt",
+        "x": 20.42,
+        "y": 82.31,
+        "text": "An armour belt protected an important part of the side at the waterline, reaching a maximum thickness of 406 mm. This was not the thickness of the ship’s entire surface. The deck and turrets had different protection, while a mine could strike below the belt. Lines on this artistic profile do not mark the precise edges of armour plates.",
+        "weaponSlug": null,
+        "refs": [
+          2
+        ],
+        "sourceUrls": []
+      }
+    ]
+  },
+  {
+    "shipSlug": "poltava",
+    "period": "Armament: the original Russian-service fit at the beginning of 1904. The battleship Poltava. The exact date and location of the photograph have not been established.",
+    "features": [
+      {
+        "id": "main-artillery",
+        "label": "Forward turret, 305 mm",
+        "x": 83.08,
+        "y": 62.69,
+        "text": "The main armament comprised four 305-mm guns from the Obukhov Works, two forward and two aft. The secondary guns were arranged differently: eight 152-mm guns in four turrets and another four in the battery. The small wing turrets in the profile should therefore not be mistaken for additional main-gun mounts.",
+        "weaponSlug": "obukhov-305-40",
+        "refs": [
+          1
+        ],
+        "sourceUrls": []
+      },
+      {
+        "id": "funnels",
+        "label": "Two funnels",
+        "x": 54.33,
+        "y": 51.73,
+        "text": "The two funnels identify the boiler section in the silhouette. On Poltava, fourteen cylindrical boilers supplied two steam engines driving two propellers. Her sister Sevastopol had sixteen boilers, although she too had two funnels.",
+        "weaponSlug": null,
+        "refs": [
+          1,
+          4
+        ],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Poltava-Chesma.jpg"
+        ]
+      },
+      {
+        "id": "masts",
+        "label": "Masts and platforms",
+        "x": 67.0,
+        "y": 19.23,
+        "text": "The forward mast, on the right of the profile, is noticeably heavier than the after mast and carries a high fighting platform, or fighting top. This feature is visible in the chosen photograph, but its exact date is unknown. The mast’s small fittings are therefore not presented as its configuration on a particular day of the war.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Poltava-Chesma.jpg"
+        ]
+      },
+      {
+        "id": "hull-protection",
+        "label": "Side and battery",
+        "x": 43.33,
+        "y": 78.85,
+        "text": "Eight 152-mm guns were mounted in pairs in four wing turrets, with another four in the battery. The secondary guns thus differed in both protection and position. The profile simplifies the side mounts and does not show their full number or the exact extent of the armour.",
+        "weaponSlug": null,
+        "refs": [
+          1
+        ],
+        "sourceUrls": []
+      }
+    ]
+  },
+  {
+    "shipSlug": "sevastopol",
+    "period": "Armament: the original Russian-service fit at the beginning of 1904. Sevastopol at Kronstadt, 1900.",
+    "features": [
+      {
+        "id": "main-artillery",
+        "label": "Forward turret, 305 mm",
+        "x": 83.83,
+        "y": 63.08,
+        "text": "The two large turrets at the ends of the ship each carried two 305-mm guns. Sevastopol also had twelve 152-mm Canet guns: eight in four smaller turrets and four in the battery. This was the original fit; the illustration is not an inventory of the guns still aboard at the end of the siege.",
+        "weaponSlug": "obukhov-305-40",
+        "refs": [
+          1
+        ],
+        "sourceUrls": []
+      },
+      {
+        "id": "funnels",
+        "label": "Two funnels",
+        "x": 54.17,
+        "y": 54.04,
+        "text": "Behind a two-funnel silhouette resembling Poltava’s was a different boiler installation: sixteen cylindrical boilers rather than fourteen. Two steam engines drove two propellers. You cannot therefore count boilers from funnels or transfer one sister ship’s specifications to another.",
+        "weaponSlug": null,
+        "refs": [
+          1
+        ],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Sevastopol1900Kronshtadt.jpg"
+        ]
+      },
+      {
+        "id": "masts",
+        "label": "Masts and platforms",
+        "x": 67.08,
+        "y": 25.0,
+        "text": "Two masts can be distinguished in the chosen photograph of Sevastopol at Kronstadt in 1900. The forward mast, on the right of the profile, has a fighting platform, or fighting top. The illustration preserves the major shapes; it cannot establish the masts’ precise armament or rigging.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Sevastopol1900Kronshtadt.jpg"
+        ]
+      },
+      {
+        "id": "hull-protection",
+        "label": "Side and battery",
+        "x": 43.33,
+        "y": 78.85,
+        "text": "Eight 152-mm guns were mounted in pairs in four wing turrets, with another four in the battery. The secondary guns thus differed in both protection and position. The profile simplifies the side mounts and does not show their full number or the exact extent of the armour.",
+        "weaponSlug": null,
+        "refs": [
+          1
+        ],
+        "sourceUrls": []
+      }
+    ]
+  },
+  {
+    "shipSlug": "retvizan",
+    "period": "Armament: the original Russian-service fit at the beginning of 1904. Retvizan on the Delaware River, 1902.",
+    "features": [
+      {
+        "id": "main-artillery",
+        "label": "Forward turret, 305 mm",
+        "x": 84.08,
+        "y": 60.0,
+        "text": "The forward and after turrets each held two 305-mm guns from the Obukhov Works. Twelve 152-mm Canet guns were mounted in casemates, with their crews in protected compartments of the side battery. These numbers describe the full fit at the start of the war; during the siege, some weapons were transferred ashore.",
+        "weaponSlug": "obukhov-305-40",
+        "refs": [
+          1,
+          4
+        ],
+        "sourceUrls": []
+      },
+      {
+        "id": "funnels",
+        "label": "Three funnels",
+        "x": 49.5,
+        "y": 49.42,
+        "text": "Retvizan had three funnels. Twenty-four Niclausse water-tube boilers supplied steam to two engines. The number of funnels helps identify the silhouette, but does not tell us how many boilers were below deck or what speed the ship could maintain after damage.",
+        "weaponSlug": null,
+        "refs": [
+          1,
+          4
+        ],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Retvizan1902DelawareRiver.jpg"
+        ]
+      },
+      {
+        "id": "masts",
+        "label": "Masts and platforms",
+        "x": 71.83,
+        "y": 18.85,
+        "text": "Two substantial masts frame the group of three funnels. Their fighting platforms, or fighting tops, can be distinguished. The appearance follows the photograph taken on the Delaware River in 1902: this is the pre-war ship, rather than a reconstruction of her equipment in the siege’s final month.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Retvizan1902DelawareRiver.jpg"
+        ]
+      },
+      {
+        "id": "hull-protection",
+        "label": "Side armour",
+        "x": 20.42,
+        "y": 82.31,
+        "text": "The main belt reached 229 mm at its thickest; the same maximum is given for turret armour. These figures do not imply uniform protection across the hull. The profile shows the exterior side, rather than an armour plan or a layout of watertight compartments.",
+        "weaponSlug": null,
+        "refs": [
+          1,
+          4
+        ],
+        "sourceUrls": []
+      }
+    ]
+  },
+  {
+    "shipSlug": "bayan",
+    "period": "Armament: the original Russian-service fit at the beginning of 1904. Bayan at Kronstadt, summer 1903.",
+    "features": [
+      {
+        "id": "main-artillery",
+        "label": "Forward turret, 203 mm",
+        "x": 86.25,
+        "y": 56.15,
+        "text": "Bayan had only two main guns: one 203-mm gun in the forward turret and one aft. These were not the twin-gun turrets of a battleship. Another eight 152-mm Canet guns stood along the sides. The armament suited a cruiser scouting and supporting the light forces attached to the squadron.",
+        "weaponSlug": "obukhov-203-45",
+        "refs": [
+          1,
+          2,
+          3
+        ],
+        "sourceUrls": []
+      },
+      {
+        "id": "funnels",
+        "label": "Four funnels",
+        "x": 56.0,
+        "y": 49.81,
+        "text": "Four funnels are a conspicuous feature of the first Bayan. Twenty-six Belleville boilers supplied steam to two triple-expansion engines. Designed speed was about 21 knots: a design characteristic, rather than a speed guaranteed on every sortie.",
+        "weaponSlug": null,
+        "refs": [
+          1,
+          3
+        ],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Bayan1903Kronstadt.jpg"
+        ]
+      },
+      {
+        "id": "masts",
+        "label": "Masts and platforms",
+        "x": 75.17,
+        "y": 23.46,
+        "text": "Two slender masts contrast with the heavy military masts of the nearby battleships. The photograph confirms their general appearance and position, but the drawing simplifies the rigging. Points on the profile do not identify particular instruments or stations that cannot be made out in the photograph.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Bayan1903Kronstadt.jpg"
+        ]
+      },
+      {
+        "id": "hull-protection",
+        "label": "Side armour",
+        "x": 20.42,
+        "y": 82.31,
+        "text": "Bayan was an armoured cruiser, with a side belt up to 200 mm thick at its strongest point. The turrets had 150-mm armour. This distinguished her from protected cruisers, whose machinery was shielded chiefly by an internal deck. The stylized profile does not show the belt’s precise boundaries.",
+        "weaponSlug": null,
+        "refs": [
+          1,
+          3
+        ],
+        "sourceUrls": []
+      }
+    ]
+  },
+  {
+    "shipSlug": "mikasa",
+    "period": "Armament: Japanese service at the beginning of the war in 1904. Mikasa, Admiral Togo’s flagship. Illustration from a report by US naval surgeon William C. Braisted, published in 1906. The exact date and location of the photograph are not given.",
+    "features": [
+      {
+        "id": "main-artillery",
+        "label": "Forward turret, 305 mm",
+        "x": 84.75,
+        "y": 59.23,
+        "text": "Four 305-mm guns were mounted in pairs in the forward and after turrets. They belonged to the Elswick/Armstrong export family, rather than being Russian guns of the same calibre. Between the main turrets was a battery of fourteen 152-mm guns; casemates protected their crews with armour.",
+        "weaponSlug": "armstrong-305-40",
+        "refs": [
+          1,
+          2,
+          10
+        ],
+        "sourceUrls": []
+      },
+      {
+        "id": "funnels",
+        "label": "Two funnels",
+        "x": 56.5,
+        "y": 51.15,
+        "text": "Mikasa had two funnels but twenty-five Belleville boilers. Two triple-expansion engines drove two propellers; the museum gives an output of 15,000 horsepower and a speed of 18 knots. The funnel bands follow the chosen historical image, while the profile’s colours are illustrative.",
+        "weaponSlug": null,
+        "refs": [
+          1,
+          2
+        ],
+        "sourceUrls": [
+          "https://www.govinfo.gov/app/details/SERIALSET-04915_00_00-002-0328-0000"
+        ]
+      },
+      {
+        "id": "masts",
+        "label": "Masts and platforms",
+        "x": 69.67,
+        "y": 19.23,
+        "text": "The forward and after masts carry fighting platforms, or fighting tops. Together with the two broad funnels, they form a distinctive silhouette. Small platform equipment is stylized: an approximate detail in the drawing does not establish its model or role in a particular battle.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://www.govinfo.gov/app/details/SERIALSET-04915_00_00-002-0328-0000"
+        ]
+      },
+      {
+        "id": "hull-protection",
+        "label": "Side and internal protection",
+        "x": 20.42,
+        "y": 82.31,
+        "text": "Mikasa was intended to fight in a line of battleships, with armour protecting her sides and important internal areas. The secondary-gun casemates were separate protected compartments for guns and crews. The external profile shows their general area, but not plate thicknesses or the arrangement of protection inside the hull.",
+        "weaponSlug": null,
+        "refs": [
+          1,
+          2
+        ],
+        "sourceUrls": []
+      }
+    ]
+  },
+  {
+    "shipSlug": "novik",
+    "period": "Armament: the original Russian-service fit at the beginning of 1904. The cruiser Novik at Port Arthur in 1904, according to the photograph’s catalogue attribution. The exact day has not been established.",
+    "features": [
+      {
+        "id": "main-artillery",
+        "label": "Deck guns, 120 mm",
+        "x": 86.5,
+        "y": 61.54,
+        "text": "Novik’s main weapons were six single 120-mm Canet guns. The profile shows only the clearly readable mounts at the ends of the ship, rather than all six guns. Such a cruiser could support friendly torpedo craft, but had a lighter main armament than a large cruiser with 152-mm guns.",
+        "weaponSlug": "canet-120-45",
+        "refs": [
+          1,
+          2,
+          8
+        ],
+        "sourceUrls": []
+      },
+      {
+        "id": "funnels",
+        "label": "Three funnels",
+        "x": 47.5,
+        "y": 53.85,
+        "text": "Three funnels suit Novik’s light, fast silhouette. Twelve water-tube boilers supplied three engines, each driving its own propeller. Average speed over the final five trial runs was 25.08 knots; an individual record should not be treated as a sustained fighting speed.",
+        "weaponSlug": null,
+        "refs": [
+          1,
+          2
+        ],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Novik1904Port-Artur.jpg"
+        ]
+      },
+      {
+        "id": "masts",
+        "label": "Mast",
+        "x": 40.83,
+        "y": 19.23,
+        "text": "Novik had one tall mast. In the chosen photograph, with the bow pointing right, it stands between the after and middle funnels: an unusual and useful identifying feature. The drawing preserves this position but simplifies the fine rigging.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Novik1904Port-Artur.jpg"
+        ]
+      },
+      {
+        "id": "hull-protection",
+        "label": "Internal protective deck",
+        "x": 20.42,
+        "y": 82.31,
+        "text": "Novik was a protected cruiser, without a side armour belt. An armoured deck shielded the machinery and other important parts from within, with sloping edges descending towards the sides. It lies inside the hull and is not visible in the profile; the point marks the area being explained, rather than an armour plate drawn on the ship.",
+        "weaponSlug": null,
+        "refs": [
+          1,
+          2
+        ],
+        "sourceUrls": []
+      }
+    ]
+  },
+  {
+    "shipSlug": "varyag",
+    "period": "Armament: the original Russian-service fit at the beginning of 1904. The cruiser Varyag in June 1901, according to the photograph’s catalogue attribution. The exact location has not been established.",
+    "features": [
+      {
+        "id": "main-artillery",
+        "label": "Open gun mounts, 152 mm",
+        "x": 87.58,
+        "y": 63.08,
+        "text": "Varyag carried twelve 152-mm Canet guns in open single deck mounts. She had no large protected turrets. Twelve was the ship’s total, rather than the number that could fire simultaneously to one side. The drawing indicates guns at the ends schematically and does not reproduce every mount.",
+        "weaponSlug": "canet-152-45",
+        "refs": [
+          2,
+          3
+        ],
+        "sourceUrls": []
+      },
+      {
+        "id": "funnels",
+        "label": "Four funnels",
+        "x": 55.25,
+        "y": 52.12,
+        "text": "Four slender funnels appear in the photograph of 1901 and Jane’s diagram of 1904. Below deck were thirty Niclausse boilers; two engines drove two propellers. Acceptance trials produced about 23 knots, but subsequent repairs and wear mean that this figure cannot be taken as the cruiser’s speed at every moment of a battle.",
+        "weaponSlug": null,
+        "refs": [
+          1,
+          3
+        ],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Varyag1901.jpg",
+          "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm#P_341"
+        ]
+      },
+      {
+        "id": "masts",
+        "label": "Masts and platforms",
+        "x": 76.83,
+        "y": 21.15,
+        "text": "Two slender masts stand on either side of the four funnels. Their general appearance has been checked against the photograph of 1901 and Jane’s diagram of 1904. This is a recognizable pre-war silhouette; the detailed arrangement of rigging and small equipment is not reproduced.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Varyag1901.jpg",
+          "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm#P_341"
+        ]
+      },
+      {
+        "id": "hull-protection",
+        "label": "Protected-cruiser hull",
+        "x": 20.42,
+        "y": 82.31,
+        "text": "Varyag was a protected cruiser: an armoured deck shielded important parts inside the hull, while there was no heavy side belt. The deck guns remained open. The external profile shows the hull’s shape; it is not a cutaway of the protection, and the side colour cannot tell us the armour’s thickness.",
+        "weaponSlug": null,
+        "refs": [
+          2,
+          3
+        ],
+        "sourceUrls": []
+      }
+    ]
+  },
+  {
+    "shipSlug": "tsesarevich",
+    "period": "Armament: the original Russian-service fit at the beginning of 1904. Tsesarevich at Toulon, 1903.",
+    "features": [
+      {
+        "id": "main-artillery",
+        "label": "Forward turret, 305 mm",
+        "x": 85.33,
+        "y": 60.0,
+        "text": "Each of the two turrets at the ends of the ship held two 305-mm guns. All twelve 152-mm Canet guns also had turrets: six twin mounts. This was an important difference from the Poltava-class battleships, where some secondary guns remained in the battery. The side profile shows only schematic indications of some wing turrets.",
+        "weaponSlug": "obukhov-305-40",
+        "refs": [
+          1,
+          2
+        ],
+        "sourceUrls": []
+      },
+      {
+        "id": "funnels",
+        "label": "Two funnels",
+        "x": 56.67,
+        "y": 50.38,
+        "text": "Two broad funnels stand between heavy masts. Twenty Belleville boilers supplied steam; two steam engines drove two propeller shafts. The photograph shows the ship at Toulon in 1903, before wartime damage and subsequent repairs.",
+        "weaponSlug": null,
+        "refs": [
+          4
+        ],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Tsesarevich1903Toulon.jpg"
+        ]
+      },
+      {
+        "id": "masts",
+        "label": "Masts and platforms",
+        "x": 70.17,
+        "y": 18.85,
+        "text": "Both heavy masts carry substantial fighting platforms, or fighting tops, arranged in tiers. Together with the high sides, they make the French design easy to recognize. The profile is based on the photograph taken at Toulon in 1903; small platform details are approximate.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Tsesarevich1903Toulon.jpg"
+        ]
+      },
+      {
+        "id": "hull-protection",
+        "label": "Side and torpedo bulkhead",
+        "x": 20.42,
+        "y": 82.31,
+        "text": "Two armour belts protected the side, while a longitudinal torpedo bulkhead ran inside: an additional wall limiting the spread of water after an underwater explosion. It is invisible from outside. The ship stayed afloat after a torpedo hit on the first night of the war; this profile is not a cutaway of her compartments.",
+        "weaponSlug": null,
+        "refs": [
+          1,
+          2
+        ],
+        "sourceUrls": []
+      }
+    ]
+  },
+  {
+    "shipSlug": "peresvet",
+    "period": "Armament: the original Russian-service fit at the beginning of 1904. Peresvet at Toulon, 1901.",
+    "features": [
+      {
+        "id": "main-artillery",
+        "label": "Forward turret, 254 mm",
+        "x": 85.83,
+        "y": 56.54,
+        "text": "Four 254-mm guns were mounted in pairs in the forward and after turrets. Their calibre was smaller than the 305 mm of Poltava or Tsesarevich. The forward turret stood higher than the after one: the high forecastle, or raised forward section of deck, is clearly visible in the silhouette. The later Japanese armament is not shown here.",
+        "weaponSlug": "obukhov-254-45",
+        "refs": [
+          1,
+          3
+        ],
+        "sourceUrls": []
+      },
+      {
+        "id": "funnels",
+        "label": "Three funnels",
+        "x": 49.83,
+        "y": 51.73,
+        "text": "Three funnels and a high bow help distinguish this silhouette from the two-funnel Poltava-class battleships. Thirty Belleville boilers supplied three steam engines driving three shafts. The outward resemblance to Pobeda does not erase differences in their armament and protection.",
+        "weaponSlug": null,
+        "refs": [
+          1
+        ],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Peresvet1901.jpg"
+        ]
+      },
+      {
+        "id": "masts",
+        "label": "Masts and platforms",
+        "x": 73.17,
+        "y": 19.23,
+        "text": "Both masts carry fighting platforms, or fighting tops. The after fighting top, on the left of the profile, helps distinguish Peresvet’s original appearance from Pobeda’s, with her lighter after mast. The difference is confirmed by the photograph of 1901 and Melnikov’s description of the design.",
+        "weaponSlug": null,
+        "refs": [
+          1
+        ],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Peresvet1901.jpg"
+        ]
+      },
+      {
+        "id": "hull-protection",
+        "label": "Side belt",
+        "x": 20.42,
+        "y": 82.31,
+        "text": "The armour belt protected the most important part of the hull, rather than the entire side equally. Coal and other loads affected how far the belt stood above water. One thickness or line on the exterior silhouette therefore cannot establish the level of protection: that requires an armour plan and knowledge of the ship’s loading.",
+        "weaponSlug": null,
+        "refs": [
+          1,
+          3
+        ],
+        "sourceUrls": []
+      }
+    ]
+  },
+  {
+    "shipSlug": "pobeda",
+    "period": "Armament: the original Russian-service fit at the beginning of 1904. The battleship Pobeda in Russian service, between 1900 and 1904.",
+    "features": [
+      {
+        "id": "main-artillery",
+        "label": "Forward turret, 254 mm",
+        "x": 86.08,
+        "y": 56.92,
+        "text": "Two turrets carried four 254-mm guns, two in each. The forward turret stood higher than the after one, on the raised forward section of deck known as the forecastle. Eleven 152-mm Canet guns formed the original secondary armament. This profile cannot reconstruct transfers of weapons ashore.",
+        "weaponSlug": "obukhov-254-45",
+        "refs": [
+          1
+        ],
+        "sourceUrls": []
+      },
+      {
+        "id": "funnels",
+        "label": "Three funnels",
+        "x": 50.08,
+        "y": 51.54,
+        "text": "Behind the three-funnel silhouette were thirty Belleville boilers and three steam engines driving three shafts. In photographs taken from ahead, the funnels partly overlap. The artistic side view separates them for clarity, but is not an exact technical drawing.",
+        "weaponSlug": null,
+        "refs": [
+          1
+        ],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Pobeda_1900-1904.jpg",
+          "https://commons.wikimedia.org/wiki/File:Pobeda1904Port-Artur.jpg"
+        ]
+      },
+      {
+        "id": "masts",
+        "label": "Masts and platforms",
+        "x": 73.33,
+        "y": 19.23,
+        "text": "The forward mast, on the right, has a fighting top, while the lighter after mast lacks a heavy platform of this kind. This is a useful difference from Peresvet. Photographs taken from ahead do not provide an exact side view: the difference between the masts has also been checked against Melnikov’s description.",
+        "weaponSlug": null,
+        "refs": [
+          1
+        ],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Pobeda_1900-1904.jpg",
+          "https://commons.wikimedia.org/wiki/File:Pobeda1904Port-Artur.jpg"
+        ]
+      },
+      {
+        "id": "hull-protection",
+        "label": "High side and forecastle",
+        "x": 35.42,
+        "y": 63.85,
+        "text": "The forward deck, or forecastle, is raised above the after deck, placing the forward and after turrets at different levels. Pobeda shares this general feature with Peresvet. The design nevertheless evolved: Pobeda received more modern armour. An outward resemblance does not imply identical protection.",
+        "weaponSlug": null,
+        "refs": [
+          1
+        ],
+        "sourceUrls": []
+      }
+    ]
+  },
+  {
+    "shipSlug": "askold",
+    "period": "Armament: the original Russian-service fit at the beginning of 1904. Askold on trials at Kiel, 1901.",
+    "features": [
+      {
+        "id": "main-artillery",
+        "label": "Deck guns, 152 mm",
+        "x": 88.83,
+        "y": 61.15,
+        "text": "Twelve 152-mm Canet guns stood on deck behind shields. A shield protected its crew only partly; it was not an enclosed armoured turret. The profile indicates the mounts at the ends of the ship, rather than the complete battery. The smaller guns were intended chiefly to repel torpedo-boat attacks.",
+        "weaponSlug": "canet-152-45",
+        "refs": [
+          1,
+          4
+        ],
+        "sourceUrls": []
+      },
+      {
+        "id": "funnels",
+        "label": "Five funnels",
+        "x": 52.58,
+        "y": 49.81,
+        "text": "Five tall funnels are Askold’s most recognizable feature. They served an installation of nineteen Schulz–Thornycroft boilers. Three engines drove three propellers. The number of funnels alone was no measure of fighting strength: artillery, protection and the condition of the machinery mattered too.",
+        "weaponSlug": null,
+        "refs": [
+          1,
+          4
+        ],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Askold1901Kiel.jpg"
+        ]
+      },
+      {
+        "id": "masts",
+        "label": "Masts and platforms",
+        "x": 23.42,
+        "y": 20.0,
+        "text": "Two slender masts stand on either side of the long group of five funnels. There are no heavy, tiered military masts like those on Tsesarevich. The outline is based on the trial photograph taken at Kiel in 1901; smoke and some rigging have been omitted to keep the silhouette clear.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Askold1901Kiel.jpg"
+        ]
+      },
+      {
+        "id": "hull-protection",
+        "label": "Internal protective deck",
+        "x": 20.42,
+        "y": 82.31,
+        "text": "An armoured deck with sloping edges towards the sides protected the main machinery and magazines from above. Askold had no continuous side armour belt. Hence the term “protected cruiser”. This deck is invisible from outside: the point on the side simply connects the explanation to the ship’s hull.",
+        "weaponSlug": null,
+        "refs": [
+          1,
+          4
+        ],
+        "sourceUrls": []
+      }
+    ]
+  },
+  {
+    "shipSlug": "pallada",
+    "period": "Armament: the original Russian-service fit at the beginning of 1904. Pallada in the early 1900s, before being raised and renamed by the Japanese.",
+    "features": [
+      {
+        "id": "main-artillery",
+        "label": "Deck guns, 152 mm",
+        "x": 87.17,
+        "y": 62.69,
+        "text": "Pallada originally carried eight 152-mm Canet guns in deck mounts. There were no main turrets like those on a battleship. During the siege, guns and men went to land positions, so the original eight cannot automatically be taken as the armament on any given day in 1904. The drawing shows only some mounts.",
+        "weaponSlug": "canet-152-45",
+        "refs": [
+          1,
+          3
+        ],
+        "sourceUrls": []
+      },
+      {
+        "id": "funnels",
+        "label": "Three funnels",
+        "x": 50.83,
+        "y": 52.12,
+        "text": "Three funnels, two slender masts and a long hull give Pallada a family resemblance to Diana. Belleville boilers supplied three engines driving three propellers. Small differences in the sisters’ equipment in a schematic drawing should not be treated as documentary identifying features.",
+        "weaponSlug": null,
+        "refs": [
+          1,
+          3
+        ],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Pallada1897-1905.jpg"
+        ]
+      },
+      {
+        "id": "masts",
+        "label": "Masts and platforms",
+        "x": 74.25,
+        "y": 21.15,
+        "text": "Two slender masts with transverse yards frame the three funnels. This was Pallada’s appearance in the early 1900s, before being raised and renamed by the Japanese. The drawing does not reconstruct the precise differences between sister cruisers’ mast equipment in each year.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Pallada1897-1905.jpg"
+        ]
+      },
+      {
+        "id": "hull-protection",
+        "label": "Internal protective deck",
+        "x": 20.42,
+        "y": 82.31,
+        "text": "The armoured deck ran inside the hull, almost horizontally in the middle, with its edges sloping down towards the sides. It protected the machinery and magazines; there was no continuous side armour belt. This explains the term “protected cruiser”. The external profile does not show the deck’s construction or exact position.",
+        "weaponSlug": null,
+        "refs": [
+          1,
+          3
+        ],
+        "sourceUrls": []
+      }
+    ]
+  },
+  {
+    "shipSlug": "diana",
+    "period": "Armament: the original fit, with the July battle of 1904 identified separately. Diana in the Small Kronstadt Roadstead, before 1903.",
+    "features": [
+      {
+        "id": "main-artillery",
+        "label": "Deck guns, 152 mm",
+        "x": 87.42,
+        "y": 62.31,
+        "text": "The original fit comprised eight 152-mm Canet guns. Six remained for the battle of 28 July (10 August) 1904: two had been transferred to Retvizan. In his account of preparations for departure, Captain Alexander Lieven noted this shortage. The profile, with its schematic guns at either end, cannot therefore be read as a precise plan of the July armament.",
+        "weaponSlug": "canet-152-45",
+        "refs": [
+          1,
+          2
+        ],
+        "sourceUrls": []
+      },
+      {
+        "id": "funnels",
+        "label": "Three funnels",
+        "x": 50.42,
+        "y": 51.54,
+        "text": "Three funnels belong to the original appearance of the Pallada-class cruiser. Belleville boilers supplied steam to three engines driving three propellers. Behind Diana’s and Pallada’s similar silhouettes lie different wartime histories and changes in armament; the profile does not turn them into a single ship.",
+        "weaponSlug": null,
+        "refs": [
+          1
+        ],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Diana1897-1922MalyyKronshatadskiyReyd.jpg"
+        ]
+      },
+      {
+        "id": "masts",
+        "label": "Masts and platforms",
+        "x": 73.92,
+        "y": 20.38,
+        "text": "The two slender masts follow a photograph taken in the Small Kronstadt Roadstead before 1903. It confirms the pre-war appearance, rather than every equipment detail during later voyages. Fine rigging has been simplified in the profile.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Diana1897-1922MalyyKronshatadskiyReyd.jpg"
+        ]
+      },
+      {
+        "id": "hull-protection",
+        "label": "Internal protective deck",
+        "x": 20.42,
+        "y": 82.31,
+        "text": "An armoured deck with sloping edges towards the sides protected the machinery and magazines from above. There was no side belt, while above-water compartments and deck-gun crews remained more vulnerable. The internal deck is invisible from outside: the point identifies the hull, rather than a particular plate on its surface.",
+        "weaponSlug": null,
+        "refs": [
+          1,
+          2
+        ],
+        "sourceUrls": []
+      }
+    ]
+  },
+  {
+    "shipSlug": "boyarin",
+    "period": "Armament: the original Russian-service fit at the beginning of 1904. Boyarin flying the Danish flag on trials, 1902.",
+    "features": [
+      {
+        "id": "main-artillery",
+        "label": "Deck guns, 120 mm",
+        "x": 87.33,
+        "y": 58.08,
+        "text": "Boyarin’s main armament comprised six 120-mm Canet guns in single mounts. The profile indicates the guns at the ends, rather than the whole battery. A light cruiser’s tasks were scouting, communications and cooperation with torpedo craft, rather than fighting in the line alongside battleships.",
+        "weaponSlug": "canet-120-45",
+        "refs": [
+          1,
+          4
+        ],
+        "sourceUrls": []
+      },
+      {
+        "id": "funnels",
+        "label": "Three funnels",
+        "x": 49.25,
+        "y": 54.04,
+        "text": "Three comparatively short funnels are clearly visible in the trial photograph of 1902. Sixteen Belleville boilers supplied two engines driving two propellers. Another small cruiser, Novik, had three propellers: the same number of funnels does not imply the same machinery installation.",
+        "weaponSlug": null,
+        "refs": [
+          1,
+          3
+        ],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Boyarin1902.jpg"
+        ]
+      },
+      {
+        "id": "masts",
+        "label": "Masts and platforms",
+        "x": 73.92,
+        "y": 20.77,
+        "text": "The forward mast, on the right of the profile, is taller than the after mast. The difference appears in the trial photograph of 1902, when the ship still flew the Danish flag. The photograph therefore supports the pre-war silhouette, rather than flags and small fittings at Port Arthur.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Boyarin1902.jpg"
+        ]
+      },
+      {
+        "id": "hull-protection",
+        "label": "Internal protective deck",
+        "x": 20.42,
+        "y": 82.31,
+        "text": "An armoured deck with sloping edges protected the machinery and magazines from above. There was no continuous side armour belt. A light cruiser could serve with the squadron without having a battleship’s protection. The deck lies inside the hull; the point on the profile does not show its precise height or thickness.",
+        "weaponSlug": null,
+        "refs": [
+          1,
+          3
+        ],
+        "sourceUrls": []
+      }
+    ]
+  },
+  {
+    "shipSlug": "hatsuse",
+    "period": "Armament: Japanese service at the beginning of the war in 1904. Hatsuse in Fred T. Jane’s The Imperial Japanese Navy (1904), page 179. The exact date and location of the photograph have not been established.",
+    "features": [
+      {
+        "id": "main-artillery",
+        "label": "Forward turret, 305 mm",
+        "x": 84.67,
+        "y": 61.15,
+        "text": "The forward and after turrets each held two 305-mm guns from the Elswick/Armstrong export family. The secondary armament comprised fourteen 152-mm guns. Jane’s photograph distinguishes the broad masses of the turrets and battery, but not every individual barrel and port; the drawing does not reconstruct them.",
+        "weaponSlug": "armstrong-305-40",
+        "refs": [
+          1,
+          2
+        ],
+        "sourceUrls": []
+      },
+      {
+        "id": "funnels",
+        "label": "Three funnels",
+        "x": 50.83,
+        "y": 53.08,
+        "text": "Three funnels stand between two military masts. Twenty-five Belleville boilers supplied steam to two triple-expansion engines. Designed speed was about 18 knots; the average of 19.1 knots over four trial runs in December 1900 belongs to trial conditions.",
+        "weaponSlug": null,
+        "refs": [
+          1,
+          3
+        ],
+        "sourceUrls": [
+          "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm#P_179"
+        ]
+      },
+      {
+        "id": "masts",
+        "label": "Masts and platforms",
+        "x": 71.75,
+        "y": 18.85,
+        "text": "Two military masts with platforms, or fighting tops, frame the three funnels. These major shapes are readable in the small photograph published by Jane in 1904. Individual barrels and platform equipment are not clear enough and are not reconstructed here.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://www.gutenberg.org/files/74624/74624-h/74624-h.htm#P_179"
+        ]
+      },
+      {
+        "id": "hull-protection",
+        "label": "Side belt",
+        "x": 20.42,
+        "y": 82.31,
+        "text": "The armour belt was up to 229 mm thick amidships; behind it, the slopes of the armoured deck gave important internal areas additional protection. Protection relied on a combination of barriers. But a waterline belt did not shield the whole underwater hull against a mine explosion. Its exact boundaries are not marked in the drawing.",
+        "weaponSlug": null,
+        "refs": [
+          1,
+          3
+        ],
+        "sourceUrls": []
+      }
+    ]
+  },
+  {
+    "shipSlug": "yashima",
+    "period": "Armament: Japanese service at the beginning of the war in 1904. Yashima before May 1904, according to the catalogue record. The exact location and day of the photograph have not been established.",
+    "features": [
+      {
+        "id": "main-artillery",
+        "label": "Forward mount, 305 mm",
+        "x": 84.67,
+        "y": 64.23,
+        "text": "Four 305-mm Armstrong guns were mounted in pairs forward and aft. Some of the ten 152-mm guns had casemates, while the rest stood higher up behind shields. Even within one battery, crew protection differed. A similar main calibre to the later Mikasa does not imply identical mounts or ammunition-handling arrangements.",
+        "weaponSlug": "armstrong-305-40",
+        "refs": [
+          1,
+          2
+        ],
+        "sourceUrls": []
+      },
+      {
+        "id": "funnels",
+        "label": "Two funnels",
+        "x": 55.33,
+        "y": 53.27,
+        "text": "Yashima had two funnels and two triple-expansion engines driving two shafts. Her boilers were cylindrical. Reference works disagree on their number, so no single count is adopted here. Despite a similar two-funnel silhouette, the boiler installation differed from the later Mikasa’s.",
+        "weaponSlug": null,
+        "refs": [
+          1,
+          2
+        ],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Yashima_NH_58968.jpg"
+        ]
+      },
+      {
+        "id": "masts",
+        "label": "Masts and platforms",
+        "x": 69.67,
+        "y": 21.54,
+        "text": "Two military masts and low, heavy gun mounts at the ends form a compact silhouette. The archive record dates the photograph to before May 1904, without an exact day or location. The drawing replaces perspective with a schematic side view and simplifies small equipment on the fighting tops.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Yashima_NH_58968.jpg"
+        ]
+      },
+      {
+        "id": "hull-protection",
+        "label": "Side belt",
+        "x": 20.42,
+        "y": 82.31,
+        "text": "The main belt reached 457 mm at its thickest and used Harvey armour. This does not mean that the entire side was this thick or that the ship was twice as well protected as Hatsuse. The material, area covered and entire protection scheme differed. The artistic profile does not show the boundaries of armour plates.",
+        "weaponSlug": null,
+        "refs": [
+          1,
+          2
+        ],
+        "sourceUrls": []
+      }
+    ]
+  }
+]

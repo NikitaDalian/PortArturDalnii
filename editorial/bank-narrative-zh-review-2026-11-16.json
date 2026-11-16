@@ -1,0 +1,19 @@
+{
+  "reviewer": "ship_explorer",
+  "author": "bank_narrative",
+  "file": "work/bank-narrative/essay-zh.json",
+  "sha256": "ec060b0c43e51a197e3804b458a617470bf65b24ba3cbb56cfd68e191e66a3dc",
+  "acceptedRussianSha256": "c348ded8fe1e1bf1e502254287867e0cf22e279532d523ca06389555479f363e",
+  "scope": "Complete independent reading of title, dek, all four sections and twelve paragraphs, both limitations, source records and full image attribution against the accepted Russian version.",
+  "verdict": "accepted",
+  "checks": [
+    "The opening clearly locates the story in Japanese-rule Dalian in the late 1920s to early 1930s and explains 钱庄 for readers.",
+    "Chinese reads naturally and preserves the chain from personal reputation to bank security, railway documents and wartime official permission.",
+    "1930, 1937, 1944, the 50000/100000/30000 yuan thresholds and eight remaining houses retain their original scope and attribution.",
+    "Sun's participation in both accounts remains explicit, and named borrowers are not falsely identified as speculative traders.",
+    "The concluding paragraph reaches the same practical consequence without adding transactions or motives.",
+    "The photograph remains identified as Yokohama Specie Bank rather than Sun's Longkou workplace; compiler, unknown photographer and rights statement remain distinct."
+  ],
+  "resolvedFindings": [],
+  "blockers": []
+}

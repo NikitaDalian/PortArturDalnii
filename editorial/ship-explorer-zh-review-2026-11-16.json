@@ -1,0 +1,22 @@
+{
+  "reviewer": "ship_explorer",
+  "author": "bank_narrative",
+  "file": "work/ship-explorer/ship-features-zh.json",
+  "sha256": "9aa99d793e587f5a2980354c4357a39a560b47b657b0016deef8e90522c87764",
+  "acceptedRussianSha256": "dc358fb2d04b1c3dae5b4eb4bf0dc2ca8456f235aa66ac3161371e7588d3aea2",
+  "scope": "Complete independent reading of all 17 dated scopes, 68 labels and 68 explanations against the accepted Russian version, followed by complete re-reading after the author corrected the findings below.",
+  "verdict": "accepted",
+  "checks": [
+    "Chinese distinguishes armoured and protected cruisers, guns and their mounts, shields and turrets, boilers and funnels, shafts and propellers.",
+    "Photographic dates and uncertainty, schematic coordinates and invisible internal armour remain explicit.",
+    "Diana's 8-to-6 gun change preserves both calendars and the retrospective report wording; Diana and Pallada do not gain an unsupported boiler count.",
+    "Pobeda does not acquire the removed stronger-gun comparison, and Petropavlovsk does not acquire an unsupported claim of underwater armour protection.",
+    "Machine comparison confirms all 68 IDs, positions, weapon links, source IDs and photographic URLs remain identical to accepted Russian data."
+  ],
+  "resolvedFindings": [
+    "Generic mast labels changed from 桅杆与桅盘 to 桅杆与平台, avoiding an implication that all slender masts had fighting tops.",
+    "Varyag's two references to Jane now identify Fred Jane and his 1904 publication explicitly.",
+    "Yashima's secondary-gun protection comparison no longer uses 同一炮组, which could imply different protection within a single gun crew."
+  ],
+  "blockers": []
+}

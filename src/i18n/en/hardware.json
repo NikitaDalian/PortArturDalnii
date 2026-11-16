@@ -6207,8 +6207,8 @@
       },
       {
         "label": "Machinery",
-        "value": "3 engines; 24 Belleville boilers; 3 shafts",
-        "note": "Designed power 11610 hp.",
+        "value": "3 steam engines; Belleville boilers; 3 shafts",
+        "note": "Designed power 11610 hp. Sources disagree on boiler count: the arrangement in Skvortsov’s online chapter totals 22 (8 + 8 + 6), while Navypedia lists 24. No single count is adopted without checking original documentation.",
         "refs": [
           1,
           3
@@ -6549,10 +6549,11 @@
       },
       {
         "label": "Machinery",
-        "value": "3 engines; 24 Belleville boilers; 3 shafts",
-        "note": "Designed power 11610 hp.",
+        "value": "3 steam engines; Belleville boilers; 3 shafts",
+        "note": "Designed power 11610 hp. Sources disagree on boiler count: the arrangement in Skvortsov’s online chapter totals 22 (8 + 8 + 6), while Navypedia lists 24. No single count is adopted without checking original documentation.",
         "refs": [
-          1
+          1,
+          3
         ]
       },
       {

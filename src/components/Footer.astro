@@ -15,7 +15,6 @@ import { primaryNavigation } from '../lib/navigation';
       {primaryNavigation().map(item => <a href={item.href}>{item.label}</a>)}
     </nav>
     <nav class="stack" style="--stack-gap:10px" aria-label="Материалы">
-      <a href={href.hardwareIndex()}>Корабли и вооружение</a>
       <a href={href.map()}>Карта</a>
       <a href={href.routes()}>Готовые маршруты</a>
       <a href={href.seasons()}>Сезоны</a>

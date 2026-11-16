@@ -1,0 +1,85 @@
+---
+import type { Hardware } from '../../lib/hardware';
+import { validShipFeatures, type ShipFeatures } from '../../lib/shipFeatures';
+import { href } from '../../lib/data';
+import { assetUrl } from '../../i18n/locale';
+import SourceRefs from './SourceRefs.astro';
+interface Props { ship: Hardware; record?: ShipFeatures }
+const { ship, record } = Astro.props;
+const data = validShipFeatures(ship, record);
+const prefix = `explorer-${ship.slug}`;
+---
+{data && <section id="ship-explorer" class="ship-explorer" data-ship-explorer aria-labelledby={`${prefix}-title`}>
+  <h2 id={`${prefix}-title`}>Как устроен корабль</h2>
+  <p class="explorer-instruction">Нажмите на точку или выберите деталь под профилем.</p>
+  <p class="explorer-period">{data.period}</p>
+  <p class="explorer-scroll-hint">Сдвиньте схему, чтобы увидеть весь корабль.</p>
+  <div class="explorer-viewport" tabindex="0" role="region" aria-label="Профиль корабля: можно прокручивать по горизонтали">
+  <div class="explorer-diagram">
+    <img src={assetUrl(`images/fleet/${ship.slug}.svg`)} alt={`${ship.shortName}: стилизованный боковой профиль, нос справа`} width="1200" height="260" loading="lazy" decoding="async" />
+    {data.features.map((feature, index) => <button type="button" class="explorer-point" style={`left:${feature.x}%;top:${feature.y}%`} data-feature-select={feature.id} aria-label={feature.label} aria-controls={`${prefix}-${feature.id}`} aria-pressed={index === 0 ? 'true' : 'false'}><span>{index + 1}</span></button>)}
+  </div>
+  </div>
+  <div class="explorer-choices" role="group" aria-label="Детали корабля">
+    {data.features.map((feature, index) => <button type="button" data-feature-select={feature.id} aria-controls={`${prefix}-${feature.id}`} aria-pressed={index === 0 ? 'true' : 'false'}><span class="choice-number" aria-hidden="true">{index + 1}</span>{feature.label}</button>)}
+  </div>
+  <div class="explorer-details" aria-live="polite" aria-atomic="true">
+    {data.features.map((feature, index) => <article id={`${prefix}-${feature.id}`} data-feature-panel={feature.id} hidden={index !== 0} aria-labelledby={`${prefix}-${feature.id}-title`}>
+      <h3 id={`${prefix}-${feature.id}-title`}>{feature.label}</h3>
+      <p>{feature.text} <SourceRefs refs={feature.refs} /></p>
+      {(feature.sourceUrls?.length ?? 0) > 0 && <p class="explorer-image-sources">{feature.sourceUrls!.map((url, index) => <a href={url} target="_blank" rel="noopener">{index ? `Историческое изображение ${index + 1}` : 'Историческое изображение'}</a>)}</p>}
+      {feature.weaponSlug && <a class="explorer-weapon" href={href.hardware(feature.weaponSlug)}>Подробнее об орудии</a>}
+    </article>)}
+  </div>
+  <p class="explorer-note">Профиль стилизован по историческим изображениям. Точки обозначают области корабля; мелкие детали и расстояния условны. Внутренняя защита снаружи не видна.</p>
+  <noscript><style is:inline>.ship-explorer [data-feature-panel][hidden]{display:block}.ship-explorer .explorer-point,.ship-explorer .explorer-choices{display:none}</style></noscript>
+</section>}
+<script>
+  function initializeExplorers() {
+    document.querySelectorAll<HTMLElement>('[data-ship-explorer]').forEach(root => {
+      if (root.dataset.ready) return;
+      root.dataset.ready = 'true';
+      const buttons = [...root.querySelectorAll<HTMLButtonElement>('[data-feature-select]')];
+      const panels = [...root.querySelectorAll<HTMLElement>('[data-feature-panel]')];
+      const viewport = root.querySelector<HTMLElement>('.explorer-viewport');
+      function showPoint(id: string | undefined, animate = false) {
+        const point = buttons.find(control => control.classList.contains('explorer-point') && control.dataset.featureSelect === id);
+        if (!viewport || !point) return;
+        viewport.scrollTo({ left: Math.max(0, point.offsetLeft - viewport.clientWidth / 2), behavior: animate && !window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'smooth' : 'instant' });
+      }
+      buttons.forEach(button => button.addEventListener('click', () => {
+        const id = button.dataset.featureSelect;
+        buttons.forEach(control => control.setAttribute('aria-pressed', String(control.dataset.featureSelect === id)));
+        panels.forEach(panel => { panel.hidden = panel.dataset.featurePanel !== id; });
+        showPoint(id, true);
+      }));
+      requestAnimationFrame(() => showPoint(buttons.find(button => button.getAttribute('aria-pressed') === 'true')?.dataset.featureSelect));
+    });
+  }
+  initializeExplorers();
+  document.addEventListener('astro:page-load', initializeExplorers);
+</script>
+<style>
+  .ship-explorer{margin-block:42px;color:var(--ink);min-width:0}
+  .ship-explorer:first-child{margin-top:0}
+  h2{font-size:32px;line-height:1.2;margin-bottom:12px}.explorer-instruction{margin:0 0 6px;line-height:1.6}.explorer-period{font-size:14px;color:var(--ink-2);margin:0 0 20px}
+  .explorer-scroll-hint{display:none;font-size:13px;color:var(--ink-2);margin:0}
+  .explorer-viewport{overflow-x:auto;overscroll-behavior-inline:contain;margin-block:28px 24px;padding-block:8px;scrollbar-width:thin}
+  .explorer-viewport:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .explorer-diagram{position:relative;width:100%;min-width:620px;background:var(--frost);border-bottom:1px solid var(--line)}
+  .explorer-diagram img{display:block;width:100%;height:auto}
+  .explorer-point{position:absolute;transform:translate(-50%,-50%);width:44px;height:44px;padding:0;background:transparent;border:0;display:grid;place-items:center;cursor:pointer;color:var(--navy)}
+  .explorer-point span{display:grid;place-items:center;width:27px;height:27px;border-radius:50%;background:white;border:2px solid var(--navy);font-size:13px;font-weight:700;box-shadow:0 1px 4px #17374d33}
+  .explorer-point[aria-pressed=true] span{background:var(--navy);color:white}
+  .explorer-choices{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+  .explorer-choices button{min-height:44px;text-align:left;border:1px solid var(--line);border-radius:4px;background:transparent;color:var(--ink);padding:9px 12px;font:inherit;font-size:14px;cursor:pointer;display:flex;align-items:center;gap:8px}
+  .explorer-choices button[aria-pressed=true]{border-color:var(--navy);background:var(--frost);color:var(--navy)}
+  .choice-number{font-size:12px;font-weight:700;min-width:16px}.explorer-details{border-left:3px solid var(--navy);padding:4px 0 6px 22px;max-width:72ch}
+  h3{font-size:21px;margin:0 0 10px}.explorer-details p{line-height:1.8;margin:0 0 12px}.explorer-weapon{text-decoration:underline;text-underline-offset:4px;font-size:14px}
+  .explorer-note{max-width:78ch;font-size:13px;line-height:1.7;color:var(--ink-2);margin-top:18px}
+  .explorer-image-sources{display:flex;flex-wrap:wrap;gap:14px;font-size:13px}.explorer-image-sources a{text-decoration:underline}
+  button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}[hidden]{display:none}
+  @media(max-width:540px){.explorer-viewport{margin-top:22px;margin-bottom:20px}.explorer-choices{display:grid;grid-template-columns:1fr 1fr;gap:7px}.explorer-choices button{padding:9px;font-size:13px}.explorer-details{padding-left:15px}.explorer-note{font-size:12px}}
+  @media(max-width:680px){.explorer-scroll-hint{display:block}}
+  @media print{.explorer-point,.explorer-choices{display:none}[data-feature-panel][hidden]{display:block}.explorer-details article{margin-bottom:20px}}
+</style>

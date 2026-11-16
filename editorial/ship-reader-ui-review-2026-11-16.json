@@ -1,0 +1,23 @@
+{
+  "reviewer": "root",
+  "status": "accepted",
+  "scope": "Read all new English and Chinese UI labels, instructions, scroll hint, image alt and specification group labels; translations preserve navigation actions and explicit limits of the illustration.",
+  "files": [
+    {
+      "file": "work/ship-reader/ui-en.json",
+      "sha256": "758e974b51d1a00762bd01b7074d377145a2410876b87f6b908b2c3493ec5036"
+    },
+    {
+      "file": "work/ship-explorer/ui-en.json",
+      "sha256": "1822cf2fa98761a47967c1a0dbb7999777300e1ae5f6083e52f2eec011131d2b"
+    },
+    {
+      "file": "work/ship-reader/ui-zh.json",
+      "sha256": "3eb3f1cfa473950dcb68338cc870fa65552de6326cbceb859de5c94950de9a2f"
+    },
+    {
+      "file": "work/ship-explorer/ui-zh.json",
+      "sha256": "fc6129f19c6f1b01079d8318d25006b134c7773376d41ab548f0562162fab946"
+    }
+  ]
+}

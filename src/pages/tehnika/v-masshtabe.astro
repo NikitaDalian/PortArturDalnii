@@ -18,7 +18,7 @@ const reading=overview.relatedNotes.map(slug=>articleBySlug.get(slug)).filter(Bo
 const context=mentionContext();
 const featured=hardwareBySlug.get('retvizan')!;
 ---
-<Base title={overview.title} description={overview.dek} section="notes">
+<Base title={overview.title} description={overview.dek} section="hardware">
   <header class="fleet-head">
     <div class="container">
       <Crumbs items={[{label:'Главная',href:href.home()},{label:'Корабли и вооружение',href:href.hardwareIndex()}]} />
