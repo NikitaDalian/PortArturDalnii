@@ -1,16 +1,16 @@
 {
   "version": 1,
   "locale": "zh",
-  "commit": "370819df33e838d9b82761606912b3cd77e8d2d7",
-  "reviewedAt": "2026-11-16T02:05:11.994Z",
-  "reviewedPacket": "dceec4dbd481dd2520268a6f1c1cd1e8b1273f82c5b270dac78e2875830ca07f",
+  "commit": "9644cea1f64701e8d5343522c796ca36b2a03ddc",
+  "reviewedAt": "2026-11-16T02:13:59.820Z",
+  "reviewedPacket": "150a9e598bfb09bb03092b3233a28525f69d1b98ff4951d70592412bb905c64d",
   "reviewedItems": [
     {
-      "id": "58cc562e74e07e6d17e0",
-      "file": "UI source files",
-      "path": "",
-      "action": "unchanged",
-      "note": "CSS-only correction: allow long source URLs in Chinese Retvizan source notes to wrap within the mobile viewport. No source prose or translated wording changed. Existing translated UI remains valid."
+      "id": "4950202bf9dbda4e333e",
+      "file": "data/essays.json",
+      "path": "/@slug=bankovskiy-sluzhashchiy-dayrena/title",
+      "action": "translated",
+      "note": "Title-only correction requested by user. Independent agent bank_title read the complete Russian essay and recommended a concrete subject and location. EN uses Cash Houses consistently with the existing article; ZH names banks, cash houses and credit. Body and historical claims unchanged."
     }
   ],
   "sources": {
@@ -3161,7 +3161,7 @@
       },
       {
         "slug": "bankovskiy-sluzhashchiy-dayrena",
-        "title": "Почему одному давали взаймы по звонку",
+        "title": "Банки и денежные дома Дайрена: как работал кредит",
         "dek": "В Дайрене денежный дом мог согласовать заём знакомому предпринимателю по телефону. Но сам он шёл в банк с залогом недвижимости. Что стояло за простотой телефонного займа.",
         "date": "2026-11-16",
         "periods": [
@@ -26387,7 +26387,7 @@
       },
       {
         "slug": "bankovskiy-sluzhashchiy-dayrena",
-        "title": "为什么有人打个电话就能借到钱",
+        "title": "大连的银行与钱庄：信贷如何运作",
         "dek": "在日治大连，钱庄可以通过电话与熟识的商户谈妥贷款，自己向银行借款时却要抵押不动产。一通电话背后，究竟还有哪些关系？",
         "date": "2026-11-16",
         "periods": [
