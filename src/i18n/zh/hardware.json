@@ -8945,5 +8945,818 @@
       "此图反映了出版物对战斗的描绘。本页采用这幅插图，因为目前还没有找到可确认是1904年那艘「可怕」号的照片。后来另有一艘舰也叫「可怕」号。"
     ],
     "updatedAt": "2026-11-21"
+  },
+  {
+    "name": "「阿穆尔」号布雷运输舰",
+    "shortName": "阿穆尔",
+    "category": "布雷运输舰",
+    "aliases": [
+      "阿穆尔号布雷运输舰",
+      "阿穆尔号",
+      "Amur"
+    ],
+    "summary": "为布雷任务建造的第一太平洋舰队舰艇。1904年5月，两艘日本战列舰在旅顺口外触及它布设的水雷后沉没。",
+    "intro": [
+      "1904年春，日本舰队从海上封锁旅顺口。「阿穆尔」号是保卫港口的俄国舰艇之一，公文将它列为运输舰。它与同级的「叶尼塞」号为布雷任务建造，外观像小型巡洋舰。"
+    ],
+    "slug": "amur",
+    "kind": "ship",
+    "countries": [
+      "russia"
+    ],
+    "periods": [
+      "russian"
+    ],
+    "sections": [
+      {
+        "id": "transports",
+        "title": "两艘专用运输舰",
+        "paragraphs": [
+          "「阿穆尔」号1898年在波罗的海造船厂开工，1901年服役，1902年3月抵达旅顺口。俄国海军部规定两艘舰都称为运输舰。「布雷舰」则说明它们的专门用途。"
+        ],
+        "refs": [
+          1
+        ]
+      },
+      {
+        "id": "may-1904",
+        "title": "一天损失两艘战列舰",
+        "paragraphs": [
+          "1904年5月，「阿穆尔」号由海军中校费奥多尔·伊万诺夫指挥。它于5月14日（俄历5月1日）在旅顺口外布雷。次日，日本战列舰「初濑」号和「八岛」号在那里触雷。「初濑」号不久就沉没了，「八岛」号撑到了下午。"
+        ],
+        "refs": [
+          1
+        ]
+      },
+      {
+        "id": "dock",
+        "title": "船坞里的最后几周",
+        "paragraphs": [
+          "5月之后，「阿穆尔」号继续在旅顺口服役。围城接近尾声时，它已在船坞里维修。旅顺口投降时，俄军炸毁了这艘舰和其他可能落入日军之手的受损舰艇。"
+        ],
+        "refs": [
+          1,
+          2,
+          4
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "全长",
+        "value": "92.7米",
+        "note": "垂线间长为91.4米。",
+        "refs": [
+          3
+        ]
+      },
+      {
+        "label": "舰宽",
+        "value": "14.9米",
+        "note": "本级舰艇的参考数据。",
+        "refs": [
+          3
+        ]
+      },
+      {
+        "label": "建造船厂",
+        "value": "波罗的海造船厂",
+        "note": "与同级的「叶尼塞」号一同建造。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "服役",
+        "value": "1901年",
+        "note": "1902年抵达旅顺口。",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1898,
+        "date": "1898年",
+        "title": "下水",
+        "text": "「阿穆尔」号在波罗的海造船厂下水。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1902,
+        "date": "1902年3月",
+        "title": "抵达基地",
+        "text": "布雷运输舰抵达旅顺口。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "1904年5月15日（俄历5月2日）",
+        "title": "「初濑」号和「八岛」号沉没",
+        "text": "两艘日本军舰触及「阿穆尔」号前一天布设的水雷。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "围城结束时",
+        "title": "军舰停在船坞",
+        "text": "旅顺口投降时，「阿穆尔」号被炸毁。",
+        "refs": [
+          4
+        ]
+      }
+    ],
+    "crew": [
+      {
+        "name": "费奥多尔·尼古拉耶维奇·伊万诺夫",
+        "role": "1904年5月任布雷运输舰舰长",
+        "personSlug": null,
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "armament": [],
+    "images": [
+      {
+        "file": "/images/hardware/amur-1.webp",
+        "alt": "首艘「阿穆尔」号布雷运输舰。拍摄时间与地点不详。",
+        "caption": "首艘「阿穆尔」号布雷运输舰。拍摄时间与地点不详。",
+        "credit": "摄影者不详。俄国与苏联舰船照片档案，经维基共享资源刊载。",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amur1898-1904.jpg",
+        "license": "公有领域（PD-RusEmpire）。",
+        "width": 1600,
+        "height": 1088
+      }
+    ],
+    "relatedNotes": [
+      "pervaya-tihookeanskaya-eskadra",
+      "voina-na-more-osada-mukden-tsusima"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [],
+    "relatedPlaces": [
+      "gavan-port-artura"
+    ],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "《阿穆尔级布雷舰，1895–1941年》",
+        "author": "弗·雅·克列斯季亚尼诺夫",
+        "date": "2008年",
+        "url": "https://www.universalinternetlibrary.ru/book/94558/chitat_knigu.shtml",
+        "locator": "建造、前往远东的航程以及战时服役",
+        "note": "首批两艘舰艇的历史及公开文献。"
+      },
+      {
+        "id": 2,
+        "title": "「阿穆尔」号布雷运输舰舰长报告",
+        "author": "费·尼·伊万诺夫",
+        "date": "俄历1904年6月4日",
+        "url": "https://docs.historyrussia.org/ru/nodes/534419",
+        "locator": "历史文献电子图书馆，第534419条",
+        "note": "记载舰艇后续布雷工作，是6月的报告。"
+      },
+      {
+        "id": 3,
+        "title": "1901年阿穆尔级布雷运输舰",
+        "author": "Navypedia",
+        "date": "在线参考",
+        "url": "https://www.navypedia.org/ships/russia/ru_ms_amur01.htm",
+        "locator": "技术数据的舰长一栏",
+        "note": "分别列出全长和垂线间长。"
+      },
+      {
+        "id": 4,
+        "title": "《旅顺口，1904年》",
+        "author": "迪斯坎特",
+        "date": "海军史研究",
+        "url": "https://militera.lib.ru/h/dyskant/08.html",
+        "locator": "要塞投降一章",
+        "note": "停在港池和船坞里的舰艇结局。"
+      }
+    ],
+    "limitations": [
+      "本页介绍的是在旅顺口损失的那艘「阿穆尔」号。后来另一艘布雷舰沿用了「阿穆尔」这个名字。"
+    ],
+    "updatedAt": "2026-11-21"
+  },
+  {
+    "name": "「布列亚」号货运轮船",
+    "shortName": "布列亚",
+    "category": "货运轮船",
+    "aliases": [
+      "布列亚号",
+      "布列亚号货轮",
+      "Bureya"
+    ],
+    "summary": "曾向旅顺口运送军用物资的中东铁路轮船。战争爆发后奉调编入俄国第一太平洋舰队。",
+    "slug": "bureya",
+    "kind": "ship",
+    "countries": [
+      "russia"
+    ],
+    "periods": [
+      "russian"
+    ],
+    "intro": [
+      "曾向旅顺口运送军用物资的中东铁路轮船。战争爆发后奉调编入俄国第一太平洋舰队。"
+    ],
+    "sections": [
+      {
+        "id": "railway-voyages",
+        "title": "中东铁路的运输航线",
+        "paragraphs": [
+          "1901年6月，「布列亚」号将一批军用物资运抵旅顺口。这艘钢壳货轮由上海博伊德公司（Boyd & Co.）船厂于同年建造，订造方为中东铁路公司。12月，「布列亚」号再次驶往旅顺口，这一次运送的是部队。根据俄军总参谋部与中东铁路公司于1902年7月达成的协议，该船从海参崴驶往旅顺口时有义务搭载部队和军用物资。"
+        ],
+        "refs": [
+          1
+        ]
+      },
+      {
+        "id": "wartime-service",
+        "title": "征用与战时服役",
+        "paragraphs": [
+          "1903年至1904年的冬季，「布列亚」号停在旅顺口。日俄战争爆发后，俄国海军部征用该船，将它编入第一太平洋舰队。1904年5月25日（俄历5月12日），「布列亚」号和另一艘中东铁路轮船「结雅」号从达里尼港驶往旅顺口。"
+        ],
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "loss",
+        "title": "在旅顺口损失",
+        "paragraphs": [
+          "同年，「布列亚」号在旅顺口防御战期间损失。"
+        ],
+        "refs": [
+          1,
+          3
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "建造",
+        "value": "上海，1901年",
+        "note": "博伊德公司（Boyd & Co.）船厂。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "原船东",
+        "value": "中东铁路公司",
+        "note": "",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "登记吨位",
+        "value": "总吨位919，净吨位445",
+        "note": "",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "参考尺寸",
+        "value": "61.0 × 9.1 × 4.0米",
+        "note": "资料未说明船长的测量方法。",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1901,
+        "date": "1901年",
+        "title": "建造与运送物资",
+        "text": "6月将军用物资运抵旅顺口。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1902,
+        "date": "1902年7月",
+        "title": "运输协议",
+        "text": "该船从海参崴出航时有义务搭载部队和军用物资。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "1904年5月25日（俄历5月12日）",
+        "title": "从达里尼港启航",
+        "text": "「结雅」号与「布列亚」号驶往旅顺口。",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "1904年",
+        "title": "损失",
+        "text": "该船在旅顺口防御战期间损失。",
+        "refs": [
+          1,
+          3
+        ]
+      }
+    ],
+    "crew": [],
+    "armament": [],
+    "images": [
+      {
+        "file": "/images/hardware/bureya-dalny-context.webp",
+        "kind": "context",
+        "alt": "建设中的达里尼港。约翰·巴雷特收藏的全景照片。画面中尚未辨认出「布列亚」号。",
+        "caption": "建设中的达里尼港。约翰·巴雷特收藏的全景照片。画面中尚未辨认出「布列亚」号。",
+        "credit": "摄影者不详。美国国会图书馆，LCCN 2007662373。",
+        "sourceUrl": "https://www.loc.gov/pictures/item/2007662373/",
+        "license": "美国国会图书馆标注无已知使用限制。",
+        "width": 1024,
+        "height": 817
+      }
+    ],
+    "relatedNotes": [
+      "pervaya-tihookeanskaya-eskadra"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [],
+    "relatedPlaces": [
+      "port-dalniy",
+      "gavan-port-artura"
+    ],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "《俄国陆军部所属船队》",
+        "author": "列·阿·雅科文科",
+        "date": "在线参考",
+        "url": "https://www.jakol.ru/Vv15v0p1.htm",
+        "locator": "第1.4.1节，「布列亚」号",
+        "note": "建造、运输、征用和技术数据。"
+      },
+      {
+        "id": 2,
+        "title": "《旅顺口：1904年舰队行动》",
+        "author": "康·彼·古别尔编（俄罗斯国家海军档案馆）",
+        "date": "2003年",
+        "url": "https://keu-ocr.narod.ru/Lebedev/chap04.html",
+        "locator": "俄历5月12日条",
+        "note": "从达里尼港驶往旅顺口。"
+      },
+      {
+        "id": 3,
+        "title": "《俄罗斯在太平洋的航海史：1639–2014年航运及海难纪事》",
+        "author": "尤·弗·韦杰尔尼科夫",
+        "date": "2016年",
+        "url": "https://shturman-tof.ru/Personal/32_vedernikov/knigi_16/02_korablekrusheniy_2016%2B.pdf#page=77",
+        "locator": "第77页，俄国舰船在旅顺口沉没一节",
+        "note": "将该船列入旅顺口的损失名单。"
+      },
+      {
+        "id": 4,
+        "title": "旅顺口附近的俄国达里尼港",
+        "author": "美国国会图书馆",
+        "date": "确切日期不详",
+        "url": "https://www.loc.gov/pictures/item/2007662373/",
+        "locator": "LCCN 2007662373，数字副本3c13511",
+        "note": "港口全景。"
+      }
+    ],
+    "limitations": [
+      "该船损失的具体日期和经过仍待核实。目前尚未找到经确认的船照。"
+    ],
+    "updatedAt": "2026-11-21"
+  },
+  {
+    "slug": "angara",
+    "kind": "ship",
+    "name": "「安加拉」号运输船",
+    "shortName": "安加拉",
+    "category": "运输船及水上医院",
+    "aliases": [
+      "安加拉号",
+      "安加拉号运输船",
+      "Angara"
+    ],
+    "countries": [
+      "russia"
+    ],
+    "periods": [
+      "russian"
+    ],
+    "summary": "前身为向旅顺口运送物资的「莫斯科」号轮船。战争期间，「安加拉」号先后承担运输和水上医疗任务。",
+    "intro": [
+      "1903年夏，轮船「莫斯科」号把三千吨政府物资运抵旅顺口。几天后，这艘船成为关东海军部队的运输船，并获得了新名字「安加拉」。一年后，船舱里已摆上了收治伤员的病床。"
+    ],
+    "sections": [
+      {
+        "id": "from-moskva",
+        "title": "从「莫斯科」到「安加拉」",
+        "paragraphs": [
+          "「莫斯科」号在克莱德班克建造，于1898年交付俄国志愿舰队。志愿舰队经营客货运输，旗下的快速轮船在必要时可由海军调用。完成旅顺口的运货任务后，「安加拉」号被编入海军，列为运输船，随后在海参崴装上火炮。日俄战争爆发时，它随舰队停泊在旅顺口外锚地，在开战后的第一场日间交战中中弹。"
+        ],
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "hospital",
+        "title": "轮船里的病房",
+        "paragraphs": [
+          "旅顺口被围期间，「安加拉」号转交红十字会。船上的火炮拆除后，船舱改成了病房。据历史学者瓦·瓦·亚罗沃伊记载，到7月，病房已有342张供卧床伤员使用的床位。日军炮击内港时，医院船也遭到炮火波及。病员、伤员和医护人员被转移到岸上。1904年10月30日（俄历10月17日），「安加拉」号在老虎尾半岛附近沉底。"
+        ],
+        "refs": [
+          1,
+          4
+        ]
+      },
+      {
+        "id": "afloat",
+        "title": "重新浮起",
+        "paragraphs": [
+          "意大利海军武官埃尔内斯托·布尔扎利于1905年1月拍摄了这艘船。它已沉底，船头仍露出水面。旅顺口失守后，日方将「安加拉」号打捞起来修复，以「姉川」号之名编入日本海军。1911年，日本在海参崴把船交还俄国。"
+        ],
+        "refs": [
+          1,
+          3
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "全长",
+        "value": "154.84米",
+        "note": "依据建造合同。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "船宽",
+        "value": "17.68米",
+        "note": "依据建造合同。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "建造地",
+        "value": "克莱德班克",
+        "note": "1898年交付俄国志愿舰队。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "医院容量",
+        "value": "342张供卧床者使用的床位",
+        "note": "亚罗沃伊所引1904年7月数据。",
+        "refs": [
+          1,
+          4
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1898,
+        "date": "1898年",
+        "title": "交付",
+        "text": "俄国志愿舰队接收「莫斯科」号。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1903,
+        "date": "1903年夏",
+        "title": "运送物资",
+        "text": "「莫斯科」号将三千吨政府物资运抵旅顺口。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "1904年",
+        "title": "水上医院",
+        "text": "运输船拆除火炮后改装为医院。",
+        "refs": [
+          1,
+          4
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "1904年10月30日（俄历10月17日）",
+        "title": "沉底",
+        "text": "船只在旅顺口沉底。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1911,
+        "date": "1911年",
+        "title": "归还俄国",
+        "text": "该船在日本海军服役后，于海参崴交还俄国。",
+        "refs": [
+          1,
+          3
+        ]
+      }
+    ],
+    "crew": [],
+    "armament": [],
+    "images": [
+      {
+        "file": "/images/hardware/angara-1.webp",
+        "alt": "沉底后的「安加拉」号，1905年1月摄于旅顺口。",
+        "caption": "沉底后的「安加拉」号，1905年1月摄于旅顺口。",
+        "credit": "埃尔内斯托·布尔扎利摄，布尔扎利家族档案收藏。",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porthartur_(9).jpg",
+        "license": "公有领域。",
+        "width": 500,
+        "height": 284
+      },
+      {
+        "file": "/images/hardware/angara-2.webp",
+        "alt": "前方是「吉利亚克」号炮舰，后方是「安加拉」号运输船。拍摄日期待考。",
+        "caption": "前方是「吉利亚克」号炮舰，后方是「安加拉」号运输船。拍摄日期待考。",
+        "credit": "摄影者不详，图见《俄国舰队》。",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gilyak%26Angara.jpg",
+        "license": "公有领域。",
+        "width": 960,
+        "height": 612
+      }
+    ],
+    "relatedNotes": [
+      "pervaya-tihookeanskaya-eskadra"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [],
+    "relatedPlaces": [
+      "gavan-port-artura"
+    ],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "《莫斯科号轮船》",
+        "author": "瓦·瓦·亚罗沃伊",
+        "date": "2008年",
+        "url": "https://www.sstc.spb.ru/upload/iblock/fa7/2008_2.pdf",
+        "locator": "《造船》第2期，第74–78页",
+        "note": "合同尺寸、运货航程及医院船服役情况。"
+      },
+      {
+        "id": 2,
+        "title": "《偿还》",
+        "author": "弗·伊·谢苗诺夫",
+        "date": "1907年",
+        "url": "https://shipdesign.ru/Geography/Semenov/I.html",
+        "locator": "旅顺口部分",
+        "note": "「安加拉」号副舰长的回忆。"
+      },
+      {
+        "id": 3,
+        "title": "前俄国医院船资料",
+        "author": "日本海军省",
+        "date": "1909年",
+        "url": "https://www.jacar.archives.go.jp/das/meta/B08090039600",
+        "locator": "JACAR，B08090039600",
+        "note": "文件将「安加拉」号与「姉川」号记为同一艘船。"
+      },
+      {
+        "id": 4,
+        "title": "旅顺口防御战中的医生与护士",
+        "author": "第二中央军事临床医院",
+        "date": "在线资料",
+        "url": "https://2cvkg.ru/o-gospitale/istoriya/iz-istorii-voennoj-mediczinyi/oborona-port-artura-v-1904-1905-gg.-vrachi-i-sestr.html",
+        "locator": "第429号命令及叶·伊·阿列克谢耶夫的报告",
+        "note": "有关改装水上医院的文件。"
+      }
+    ],
+    "limitations": [
+      "有关床位数量的记载不一。此处采用亚罗沃伊所引1904年7月数据。"
+    ],
+    "updatedAt": "2026-11-21"
+  },
+  {
+    "slug": "mongoliya",
+    "kind": "ship",
+    "name": "「蒙古」号医院船",
+    "shortName": "蒙古",
+    "category": "医院船",
+    "aliases": [
+      "蒙古号",
+      "蒙古号医院船",
+      "Mongolia"
+    ],
+    "countries": [
+      "russia"
+    ],
+    "periods": [
+      "russian"
+    ],
+    "summary": "中东铁路客轮改成的红十字会医院船，在黄海海战当天随舰队出航。",
+    "intro": [
+      "日俄战争爆发后，「蒙古」号轮船的吸烟室改成了主手术室。这艘中东铁路的客运快船成了旅顺口的红十字会医院船。"
+    ],
+    "sections": [
+      {
+        "id": "x-ray",
+        "title": "船舱里的X光机",
+        "paragraphs": [
+          "「蒙古」号于1901年在的里雅斯特建造。开战前，它往返于达里尼、长崎、上海等远东港口。1904年2月，轮船被调作医院船。战地记者叶夫根尼·诺任曾登船，记下病房和诊疗设施的布置。医护人员用起重机将担架上的伤员从小艇吊上船。一间舱室内还装有X光机，医生可在手术前查明子弹和弹片的位置。"
+        ],
+        "refs": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "patients-and-staff",
+        "title": "患者与护理人员",
+        "paragraphs": [
+          "诺任提到，「彼得罗巴甫洛夫斯克」号战列舰舰长尼古拉·雅科夫列夫曾在「蒙古」号上接受治疗。1904年4月13日（俄历3月31日），他的军舰沉没，他幸存下来。护士奥尔加·冯·鲍姆加滕也曾在「蒙古」号上工作，她在日记中记录了自己在船上和岸上医院的经历。"
+        ],
+        "refs": [
+          1,
+          4
+        ]
+      },
+      {
+        "id": "squadron",
+        "title": "随舰队出海",
+        "paragraphs": [
+          "1904年8月10日（俄历7月28日），俄国舰队试图从旅顺口突围前往海参崴，「蒙古」号以红十字会医院船的身份随行。前一天，船上的患者已转移到岸上。黄海海战中，「蒙古」号与军舰保持距离。返回旅顺口内港后，「蒙古」号开始接收军舰转来的伤员。舰队再度困在港内，这艘原来的客运快船继续承担水上医院的工作。"
+        ],
+        "refs": [
+          1,
+          3
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "建造",
+        "value": "的里雅斯特，1901年",
+        "note": "战前在远东航线上运营。",
+        "refs": [
+          3
+        ]
+      },
+      {
+        "label": "战前船东",
+        "value": "中东铁路",
+        "note": "客运快船。",
+        "refs": [
+          2,
+          3
+        ]
+      },
+      {
+        "label": "战时任务",
+        "value": "红十字会医院船",
+        "note": "主手术室由原来的吸烟室改装。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "医疗设备",
+        "value": "X光机",
+        "note": "安装在一间舱室内。",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1901,
+        "date": "1901年",
+        "title": "建造",
+        "text": "客轮在的里雅斯特建成。",
+        "refs": [
+          3
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "1904年2月",
+        "title": "改装",
+        "text": "该船被调作医院船。",
+        "refs": [
+          2,
+          3
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "1904年8月10日（俄历7月28日）",
+        "title": "随舰队出海",
+        "text": "医院船随试图前往海参崴的舰队出航。",
+        "refs": [
+          1,
+          3
+        ]
+      }
+    ],
+    "crew": [],
+    "armament": [],
+    "images": [
+      {
+        "file": "/images/hardware/mongoliya-1.webp",
+        "alt": "1904至1905年，停泊在旅顺口的「蒙古」号。",
+        "caption": "1904至1905年，停泊在旅顺口的「蒙古」号。",
+        "credit": "摄影者不详，翻印自《跨越一个世纪的世界》。",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mongolia_(ship,_1901).jpg",
+        "license": "据维基共享资源档案记录，照片属公有领域。",
+        "width": 960,
+        "height": 284
+      }
+    ],
+    "relatedNotes": [
+      "pervaya-tihookeanskaya-eskadra"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [],
+    "relatedPlaces": [
+      "gavan-port-artura"
+    ],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "《旅顺口真相》",
+        "author": "叶·康·诺任",
+        "date": "1908年",
+        "url": "https://ru.wikisource.org/wiki/Правда_о_Порт-Артуре_(Ножин)/Часть_2",
+        "locator": "第二部分，俄历7月28日海战及医院记述",
+        "note": "目击者记录了医院设备以及随舰队出航。"
+      },
+      {
+        "id": 2,
+        "title": "《在远东》",
+        "author": "《田野》",
+        "date": "1904年",
+        "url": "https://commons.wikimedia.org/wiki/File:Нива._1904._№1-26.pdf",
+        "locator": "第6期",
+        "note": "当时关于筹备医院船的报道。"
+      },
+      {
+        "id": 3,
+        "title": "旅顺口防御战中的医生与护士",
+        "author": "第二中央军事临床医院",
+        "date": "在线资料",
+        "url": "https://2cvkg.ru/o-gospitale/istoriya/iz-istorii-voennoj-mediczinyi/oborona-port-artura-v-1904-1905-gg.-vrachi-i-sestr.html",
+        "locator": "「蒙古」号一节",
+        "note": "改作医院及后续服役情况。"
+      },
+      {
+        "id": 4,
+        "title": "《被围的旅顺口》",
+        "author": "奥·阿·冯·鲍姆加滕",
+        "date": "1906年",
+        "url": "https://heritage-navalis.ru/product/v-osazhdyonnom-port-arture-dnevnik-sestry-miloserdiya",
+        "locator": "国立公共历史图书馆再版简介",
+        "note": "证实作者曾在「蒙古」号服务。"
+      },
+      {
+        "id": 5,
+        "title": "Maritime Heritage Association Journal",
+        "author": "海事遗产协会",
+        "date": "2005年",
+        "url": "https://www.maritimeheritage.org.au/documents/MHA%20June%202005%20journal.pdf",
+        "locator": "6月刊，「蒙古」号船史",
+        "note": "提供参考船长，其他资料所列数值不同。"
+      }
+    ],
+    "limitations": [
+      "可用于比较的全长尚未核实。"
+    ],
+    "updatedAt": "2026-11-21"
   }
 ]

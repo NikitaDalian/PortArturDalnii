@@ -1,10 +1,10 @@
 ---
-import type { Hardware } from '../../lib/hardware';
+import { subjectImage, type Hardware } from '../../lib/hardware';
 import { href } from '../../lib/data';
 import { assetUrl } from '../../i18n/locale';
 interface Props { item: Hardware }
 const { item } = Astro.props;
-const photo = item.images[0];
+const photo = subjectImage(item);
 ---
 <article class="hardware-row">
   {photo && <a class="hardware-row__image" href={href.hardware(item.slug)} tabindex="-1" aria-hidden="true"><img src={assetUrl(photo.file)} alt="" width={photo.width} height={photo.height} loading="lazy" decoding="async" /></a>}
@@ -17,6 +17,7 @@ const photo = item.images[0];
 <style>
   .hardware-row { display:grid; grid-template-columns:minmax(160px,1fr) minmax(0,2fr); gap:28px; padding-block:28px; border-bottom:1px solid var(--line); align-items:center; }
   .hardware-row__image { display:block; background:var(--frost); }
+  .hardware-row > div:only-child { grid-column:1 / -1; }
   img { width:100%; height:auto; max-height:240px; display:block; object-fit:contain; }
   h3 { font-size:clamp(23px,2.1vw,30px); line-height:1.2; margin:8px 0 12px; }
   h3 a:hover { text-decoration:underline; text-underline-offset:4px; }

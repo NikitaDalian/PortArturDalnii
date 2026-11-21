@@ -69,6 +69,19 @@
         2,
         3
       ]
+    },
+    {
+      "id": "support-vessels",
+      "title": "保障船只",
+      "paragraphs": [
+        "这组船只包括编入舰队的舰艇，也包括为舰队提供服务的船只。「阿穆尔」号为布雷任务建造。「布列亚」号和后来改名为「安加拉」号的轮船都曾向旅顺口运送物资。战争期间，「安加拉」号改为水上医院，「蒙古」号作为红十字会医院船随舰队出航。"
+      ],
+      "refs": [
+        10,
+        11,
+        12,
+        13
+      ]
     }
   ],
   "relatedNotes": [
@@ -156,6 +169,42 @@
       "url": "https://expositions.nlr.ru/ex_manus/tsusima/war.php",
       "locator": "对马海战及各舰的结局",
       "note": "展览使用俄历日期。"
+    },
+    {
+      "id": 10,
+      "title": "《阿穆尔级布雷舰，1895–1941年》",
+      "author": "弗·雅·克列斯季亚尼诺夫",
+      "date": "2008年",
+      "url": "https://www.universalinternetlibrary.ru/book/94558/chitat_knigu.shtml",
+      "locator": "建造、前往远东的航程以及战时服役",
+      "note": "首批两艘舰艇的历史及公开文献。"
+    },
+    {
+      "id": 11,
+      "title": "《俄国陆军部所属船队》",
+      "author": "列·阿·雅科文科",
+      "date": "在线参考",
+      "url": "https://www.jakol.ru/Vv15v0p1.htm",
+      "locator": "第1.4.1节，「布列亚」号",
+      "note": "建造、运输、征用和技术数据。"
+    },
+    {
+      "id": 12,
+      "title": "《莫斯科号轮船》",
+      "author": "瓦·瓦·亚罗沃伊",
+      "date": "2008年",
+      "url": "https://www.sstc.spb.ru/upload/iblock/fa7/2008_2.pdf",
+      "locator": "《造船》第2期，第74–78页",
+      "note": "合同尺寸、运货航程及医院船服役情况。"
+    },
+    {
+      "id": 13,
+      "title": "《旅顺口真相》",
+      "author": "叶·康·诺任",
+      "date": "1908年",
+      "url": "https://ru.wikisource.org/wiki/Правда_о_Порт-Артуре_(Ножин)/Часть_2",
+      "locator": "第二部分，俄历7月28日海战及医院记述",
+      "note": "目击者记录了医院设备以及随舰队出航。"
     }
   ],
   "ships": [
@@ -692,6 +741,70 @@
           "url": "https://keu-ocr.narod.ru/Sokoly/",
           "title": "尼·尼·阿福宁《旅顺口的「猎鹰」级驱逐舰》",
           "locator": "组装与试航表中的「椋鸟」号／「可怕」号条目。"
+        }
+      ],
+      "illustration": null
+    },
+    {
+      "shipSlug": "amur",
+      "group": "port-arthur-support",
+      "profile": "auxiliary",
+      "lengthOverallM": 92.7,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "92.7米是阿穆尔级的全长。同一栏中的91.4米是垂线间长。",
+      "sources": [
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_ms_amur01.htm",
+          "title": "1901年阿穆尔级布雷运输舰",
+          "locator": "技术数据的舰长一栏"
+        }
+      ],
+      "illustration": null
+    },
+    {
+      "shipSlug": "bureya",
+      "group": "port-arthur-support",
+      "profile": "auxiliary",
+      "lengthOverallM": null,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "参考资料所列船长为61.0米，未说明测量方法。",
+      "sources": [
+        {
+          "url": "https://www.jakol.ru/Vv15v0p1.htm",
+          "title": "《俄国陆军部所属船队》",
+          "locator": "第1.4.1节，「布列亚」号"
+        }
+      ],
+      "illustration": null
+    },
+    {
+      "shipSlug": "angara",
+      "group": "port-arthur-support",
+      "profile": "auxiliary",
+      "lengthOverallM": 154.84,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "建造合同列出的全长为154.84米。",
+      "sources": [
+        {
+          "title": "《莫斯科号轮船》",
+          "url": "https://www.sstc.spb.ru/upload/iblock/fa7/2008_2.pdf",
+          "locator": "《造船》第2期，第74–78页"
+        }
+      ],
+      "illustration": null
+    },
+    {
+      "shipSlug": "mongoliya",
+      "group": "port-arthur-support",
+      "profile": "auxiliary",
+      "lengthOverallM": null,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "不同资料所列全长不一致，仍需查核船舶登记册。",
+      "sources": [
+        {
+          "title": "Maritime Heritage Association Journal",
+          "url": "https://www.maritimeheritage.org.au/documents/MHA%20June%202005%20journal.pdf",
+          "locator": "6月刊，「蒙古」号船史"
         }
       ],
       "illustration": null

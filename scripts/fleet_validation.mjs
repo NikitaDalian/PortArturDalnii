@@ -20,7 +20,7 @@ export function validateFleetOverview(overview,hardware,notes){
   if(!rows.length||included.size!==rows.length||included.size!==known.size||[...known].some(slug=>!included.has(slug)))errors.push('fleet_overview: comparison must cover each published ship once');
   for(const row of rows){
     if(!known.has(row.shipSlug))errors.push(`fleet_overview/${row.shipSlug}: unknown ship`);
-    if(!['port-arthur','second-pacific','chemulpo','japanese'].includes(row.group)||!['battleship','armored-cruiser','protected-cruiser','destroyer'].includes(row.profile))errors.push(`fleet_overview/${row.shipSlug}: invalid historical group or profile`);
+    if(!['port-arthur','port-arthur-support','second-pacific','chemulpo','japanese'].includes(row.group)||!['battleship','armored-cruiser','protected-cruiser','destroyer','auxiliary'].includes(row.profile))errors.push(`fleet_overview/${row.shipSlug}: invalid historical group or profile`);
     for(const field of ['lengthOverallM','normalDisplacementTonnes'])if(row[field]!==null&&(typeof row[field]!=='number'||!Number.isFinite(row[field])||row[field]<=0))errors.push(`fleet_overview/${row.shipSlug}: invalid comparable measurement ${field}`);
     if(!present(row.measurementNote)||!row.sources?.length||row.sources.some(source=>!/^https:\/\//.test(source.url)||!present(source.title)||!present(source.locator)))errors.push(`fleet_overview/${row.shipSlug}: missing measurement provenance`);
     const art=row.illustration;

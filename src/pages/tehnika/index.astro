@@ -71,7 +71,8 @@ const countries = Object.keys(COUNTRIES).filter(country => hardware.some(item =>
       const words=normalize(input.value).split(/\s+/).filter(Boolean);
       let count=0;
       root!.querySelectorAll<HTMLElement>('[data-record]').forEach(item=>{
-        const fleetMatch=!fleet||(fleet==='ships'?item.dataset.kind==='ship':fleet==='weapons'?item.dataset.kind==='weapon':item.dataset.fleet===fleet);
+        const groupMatch=item.dataset.fleet===fleet||(fleet==='port-arthur'&&item.dataset.fleet==='port-arthur-support');
+        const fleetMatch=!fleet||(fleet==='ships'?item.dataset.kind==='ship':fleet==='weapons'?item.dataset.kind==='weapon':groupMatch);
         const visible=fleetMatch&&words.every(word=>normalize(item.dataset.search??'').includes(word))&&(!country.value||(item.dataset.countries??'').split(' ').includes(country.value));
         item.hidden=!visible; if(visible) count++;
       });

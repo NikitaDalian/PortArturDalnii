@@ -3,7 +3,7 @@ export { mentionContext, type MentionContext } from './mentionMatcher';
 import { people, places, terms, referenceDescriptions, href, img, imgCrop, photoMeta, referencePhoto, canonicalPersonSlug } from './data';
 import aliases from '../data/entity_aliases.json';
 import { locale, intlLocale, assetUrl } from '../i18n/locale';
-import { hardware } from './hardware';
+import { hardware, subjectImage } from './hardware';
 import { readingNotes } from './readingNotes';
 
 export interface EntityPreview {
@@ -69,7 +69,7 @@ for (const kind of ['people', 'places'] as const) {
   }
 }
 for (const item of hardware) {
-  const picture = item.images[0];
+  const picture = subjectImage(item);
   register({id:`${item.kind}/${item.slug}`,kind:item.kind,title:item.name,description:excerpt(item.summary),
     href:href.hardware(item.slug),image:picture ? assetUrl(picture.file) : null,alt:picture?.alt??''},[item.shortName,...item.aliases]);
 }
@@ -79,7 +79,7 @@ for (const note of readingNotes) {
 }
 // City names, personal names and the title “Цесаревич” need ship context.
 // Exact quotes and descriptive aliases such as “броненосец «Победа»” remain eligible.
-const ambiguousShips = new Set(['pobeda','poltava','sevastopol','tsesarevich','diana','pallada','borodino','orel','imperator-aleksandr-iii','strashnyi']);
+const ambiguousShips = new Set(['pobeda','poltava','sevastopol','tsesarevich','diana','pallada','borodino','orel','imperator-aleksandr-iii','strashnyi','amur','angara','mongoliya','bureya']);
 const contextualNames = new Map<string,Set<string>>();
 // These family names alone do not identify one historical person.
 for (const [name,ids] of names) if (/^(?:Иванов[а-яё]*|Романов[а-яё]*|Ivanov|Romanov|伊万诺夫|罗曼诺夫)$/u.test(name)) {

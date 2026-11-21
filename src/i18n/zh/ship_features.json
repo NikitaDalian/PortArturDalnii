@@ -1195,5 +1195,134 @@
         ]
       }
     ]
+  },
+  {
+    "shipSlug": "amur",
+    "photoFile": "/images/hardware/amur-1.webp",
+    "period": "首艘「阿穆尔」号。拍摄时间与地点不详。",
+    "features": [
+      {
+        "id": "funnels",
+        "x": 36,
+        "y": 52,
+        "label": "两根烟囱",
+        "text": "两根烟囱位于桅杆之间。照片中可以看到锅炉运行时排出的烟。",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Amur1898-1904.jpg"
+        ]
+      },
+      {
+        "id": "stern-ensign",
+        "x": 84,
+        "y": 54,
+        "label": "舰艉与舰旗",
+        "text": "舰艉挂着圣安德烈旗，这是俄国海军的舰艉旗。",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Amur1898-1904.jpg"
+        ]
+      },
+      {
+        "id": "boats",
+        "x": 32,
+        "y": 61,
+        "label": "舰载小艇",
+        "text": "小艇吊在舷侧上方。弯曲的吊艇架在照片中清晰可见。",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Amur1898-1904.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "shipSlug": "angara",
+    "photoFile": "/images/hardware/angara-1.webp",
+    "period": "1905年1月，旅顺口。船已沉至港底。",
+    "features": [
+      {
+        "id": "bow",
+        "x": 59,
+        "y": 61,
+        "label": "船首",
+        "text": "船首仍露出水面。",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Porthartur_(9).jpg"
+        ]
+      },
+      {
+        "id": "funnels",
+        "x": 31,
+        "y": 49,
+        "label": "烟囱",
+        "text": "甲板上方可见这艘原客轮的三根烟囱。",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Porthartur_(9).jpg"
+        ]
+      },
+      {
+        "id": "stern",
+        "x": 24,
+        "y": 76,
+        "label": "船艉",
+        "text": "船艉比船首沉得更深。",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Porthartur_(9).jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "shipSlug": "mongoliya",
+    "photoFile": "/images/hardware/mongoliya-1.webp",
+    "period": "改装为医院船后停泊在旅顺口，1904至1905年。",
+    "features": [
+      {
+        "id": "funnel-cross",
+        "x": 50,
+        "y": 39,
+        "label": "烟囱上的十字标志",
+        "text": "浅色烟囱上可见红十字标志。",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Mongolia_(ship,_1901).jpg"
+        ]
+      },
+      {
+        "id": "hull-cross",
+        "x": 52,
+        "y": 76,
+        "label": "船身上的十字标志",
+        "text": "船身浅色带上还绘有一个红十字标志。",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Mongolia_(ship,_1901).jpg"
+        ]
+      },
+      {
+        "id": "boats",
+        "x": 64,
+        "y": 59,
+        "label": "船载小艇",
+        "text": "照片中烟囱右边的甲板上可见小艇。",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Mongolia_(ship,_1901).jpg"
+        ]
+      }
+    ]
   }
 ]

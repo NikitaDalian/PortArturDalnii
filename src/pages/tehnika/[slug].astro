@@ -10,7 +10,7 @@ import HardwareSpecs from '../../components/hardware/HardwareSpecs.astro';
 import ArmamentGrid from '../../components/hardware/ArmamentGrid.astro';
 import SourceRefs from '../../components/hardware/SourceRefs.astro';
 import HardwareRow from '../../components/hardware/HardwareRow.astro';
-import { hardware, hardwareKind, shipsUsing, type Hardware } from '../../lib/hardware';
+import { hardware, hardwareKind, shipsUsing, subjectImage, type Hardware } from '../../lib/hardware';
 import { mentionContext } from '../../lib/mentions';
 import { href, imgCrop, articleBySlug, placeBySlug, personBySlug, sourceBySlug, layerByKey } from '../../lib/data';
 import { essays } from '../../lib/essays';
@@ -19,6 +19,7 @@ export function getStaticPaths() { return hardware.map(item=>({params:{slug:item
 const { item:e } = Astro.props as { item:Hardware };
 const context=mentionContext([`${e.kind}/${e.slug}`],[...e.relatedPeople.map(slug=>`person/${slug}`),...e.crew.filter(member=>member.personSlug).map(member=>`person/${member.personSlug}`),...e.armament.map(gun=>`weapon/${gun.weaponSlug}`)]);
 const explorerPhoto = shipFeaturesBySlug.get(e.slug)?.photoFile;
+const portrait = subjectImage(e);
 const installedOn=shipsUsing(e.slug);
 const readings=[
   ...e.relatedEssays.map(slug=>essays.find(item=>item.slug===slug)).filter(Boolean).map(item=>({name:item!.title,url:href.essay(item!.slug)})),
@@ -30,7 +31,7 @@ const connections=[
   ...e.relatedSources.map(slug=>sourceBySlug.get(slug)).filter(Boolean).map(item=>({name:item!.title,url:href.source(item!.slug)})),
 ];
 ---
-<Base title={e.name} description={e.summary} image={e.images[0] ? assetUrl(e.images[0].file) : undefined} section="hardware">
+<Base title={e.name} description={e.summary} image={portrait ? assetUrl(portrait.file) : undefined} section="hardware">
   <header class="dark hardware-head">
     <div class="container">
       <Crumbs items={[{label:'Главная',href:href.home()},{label:'Корабли и вооружение',href:href.hardwareIndex()}]} />

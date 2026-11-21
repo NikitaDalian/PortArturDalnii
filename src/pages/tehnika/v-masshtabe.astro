@@ -6,10 +6,10 @@ import LinkedText from '../../components/LinkedText.astro';
 import FleetFilters from '../../components/hardware/FleetFilters.astro';
 import SourceRefs from '../../components/hardware/SourceRefs.astro';
 import { fleetOverview as overview } from '../../lib/fleet';
-import { hardwareBySlug } from '../../lib/hardware';
+import { hardwareBySlug, subjectImage } from '../../lib/hardware';
 import { href, articleBySlug } from '../../lib/data';
 import { mentionContext } from '../../lib/mentions';
-import { intlLocale, assetUrl } from '../../i18n/locale';
+import { intlLocale, locale, assetUrl } from '../../i18n/locale';
 
 const rows=overview.ships.map(row=>({...row,ship:hardwareBySlug.get(row.shipSlug)!})).filter(row=>row.ship).sort((a,b)=>(b.lengthOverallM??-1)-(a.lengthOverallM??-1));
 const maxLength=Math.max(150,...rows.map(row=>Math.ceil((row.lengthOverallM??0)/50)*50));
@@ -17,7 +17,7 @@ const ticks=Array.from({length:maxLength/50+1},(_,i)=>i*50);
 const fmt=(value:number|null)=>value===null?'—':new Intl.NumberFormat(intlLocale,{maximumFractionDigits:2}).format(value);
 const reading=overview.relatedNotes.map(slug=>articleBySlug.get(slug)).filter(Boolean);
 const context=mentionContext();
-const photoFor=(ship:any)=>ship.images[ship.slug==='poltava'?1:0];
+const missingPhoto = {ru:'Фотография судна пока не установлена.',en:'A photograph of the vessel has yet to be identified.',zh:'尚未确认该船的照片。'}[locale];
 ---
 <Base title={overview.title} description={overview.dek} section="hardware">
   <PageHero title={overview.title} lead={overview.dek} crumbs={[{label:'Главная',href:href.home()},{label:'Корабли и вооружение',href:href.hardwareIndex()}]} />
@@ -34,7 +34,10 @@ const photoFor=(ship:any)=>ship.images[ship.slug==='poltava'?1:0];
       <ol class="fleet-rows">
         {rows.map(row=><li class={`fleet-row fleet-profile-${row.profile}`} data-fleet-record data-group={row.group}>
           <div class="fleet-name"><h3><LinkedText text={row.ship.shortName} context={mentionContext([],[`ship/${row.shipSlug}`])}/></h3><p>{row.ship.category}</p></div>
-          <div class="fleet-photo"><ArchiveFigure picture={photoFor(row.ship)} destination={href.hardware(row.shipSlug)} destinationLabel="Читать историю корабля" /></div>
+          <div class="fleet-photo">{(() => {
+            const picture = subjectImage(row.ship, row.shipSlug === 'poltava' ? 1 : 0);
+            return picture ? <ArchiveFigure picture={picture} destination={href.hardware(row.shipSlug)} destinationLabel="Читать историю корабля" /> : <p class="meta">{missingPhoto}</p>;
+          })()}</div>
           <div class="fleet-measure">
             {row.lengthOverallM!==null ? <>
               <div class="fleet-ruler" aria-hidden="true">{ticks.map(tick=><span style={`left:${tick/maxLength*100}%`}>{tick} м</span>)}</div>
@@ -87,7 +90,10 @@ const photoFor=(ship:any)=>ship.images[ship.slug==='poltava'?1:0];
     let group=filters.some(button=>button.dataset.fleetFilter===requested)?requested:'port-arthur';
     let view=params.get('view')==='table'?'table':'diagram';
     function update(){
-      root!.querySelectorAll<HTMLElement>('[data-fleet-record]').forEach(row=>row.hidden=!!group&&row.dataset.group!==group);
+      root!.querySelectorAll<HTMLElement>('[data-fleet-record]').forEach(row=>{
+        const groupMatch=row.dataset.group===group||(group==='port-arthur'&&row.dataset.group==='port-arthur-support');
+        row.hidden=!!group&&!groupMatch;
+      });
       filters.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.fleetFilter===group)));
       root!.querySelector('[data-fleet-count]')!.textContent=String(root!.querySelectorAll('.fleet-row:not([hidden])').length);
       root!.querySelectorAll<HTMLElement>('[data-fleet-view]').forEach(panel=>panel.hidden=panel.dataset.fleetView!==view);

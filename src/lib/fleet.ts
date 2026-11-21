@@ -2,8 +2,8 @@ import data from '../data/fleet_overview.json';
 import type { Hardware } from './hardware';
 export interface FleetMeasurement {
   shipSlug:string;
-  group:'port-arthur'|'second-pacific'|'chemulpo'|'japanese';
-  profile:'battleship'|'armored-cruiser'|'protected-cruiser'|'destroyer';
+  group:'port-arthur'|'port-arthur-support'|'second-pacific'|'chemulpo'|'japanese';
+  profile:'battleship'|'armored-cruiser'|'protected-cruiser'|'destroyer'|'auxiliary';
   lengthOverallM:number|null;
   normalDisplacementTonnes:number|null;
   measurementNote:string;

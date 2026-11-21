@@ -1,10 +1,10 @@
 {
   "data/articles.json": "337d94f410fd5e40cc5cd69f29412813cba901545570c3c20e0e854bcd842739",
   "data/essays.json": "a26b9574a076265100da2630ecc7cc39f8e3776e221e2cbfa9aac8967cced523",
-  "data/hardware.json": "04cddeb717eb6741c2f9158f12006746b1e6015456c137f1bea3809f5c892b4b",
-  "data/fleet_overview.json": "d04f18624287974a2186fd719a86334412862ea182350f03fc6a0ecec07ee6b3",
+  "data/hardware.json": "acb756b312f23ef201214920dd56b68a51ca87bd167f091b0baabc46166d46c2",
+  "data/fleet_overview.json": "578e697cf64e54fc24ba449eda3c76d80f01d8467035d80487d395d47daa5bdb",
   "data/reading_notes.json": "1d36fe4bc79f4fd325a317553188583f002481573de9982ce30d55f604b6e5f5",
-  "data/ship_features.json": "f920ae9e9de5439d13f1ffd911c25e783e2f183ba81a976e8bbac63eb6ef9c01",
+  "data/ship_features.json": "04d6b5d30e70ff63009eb1f3a2657e67bd2435e4ac02180a1dffd18c456f5230",
   "data/books.json": "1ca47781bb2f6199811e247d4f17eb49b8de962153980f4cc62a54f97f921354",
   "data/people.json": "5e2d27d915e041fa95b11c0a22884dda7db8af7b30bac12cce5c017e686fceaa",
   "data/places.json": "f25a2c89afb49237cfd5a41bf8cefb29e946fc2fa3e55f62d5b4c03ff45dc200",

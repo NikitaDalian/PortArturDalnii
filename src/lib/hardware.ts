@@ -4,7 +4,7 @@ import { href } from './data';
 export interface HardwareImage {
   file: string; alt: string; caption: string; credit: string;
   sourceUrl: string; license: string; width: number; height: number;
-  kind?: 'illustration';
+  kind?: 'illustration' | 'context';
 }
 export interface Hardware {
   slug: string; kind: 'ship' | 'weapon'; name: string; shortName: string; category: string;
@@ -20,6 +20,10 @@ export interface Hardware {
   limitations: string[]; updatedAt: string;
 }
 export const hardware = records as Hardware[];
+export function subjectImage(item: Hardware, preferredIndex = 0) {
+  const picture = item.images[preferredIndex];
+  return picture && picture.kind !== 'context' ? picture : item.images.find(image => image.kind !== 'context');
+}
 export const hardwareBySlug = new Map(hardware.map(item => [item.slug, item]));
 export const hardwareKind = (kind: Hardware['kind']) => kind === 'ship' ? 'Корабли' : 'Вооружение';
 export type HardwareRelation = 'notes' | 'essays' | 'people' | 'places' | 'library' | 'periods';

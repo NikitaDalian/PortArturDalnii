@@ -2,7 +2,7 @@
 // недоступен (режим разработки или индекс не собран).
 import { articles, people, places, books, sources, terms, referenceDescriptions, entity, href, img, imgCrop, fmtDateShort, TYPES } from '../../lib/data';
 import { essays } from '../../lib/essays';
-import { hardware, hardwareKind } from '../../lib/hardware';
+import { hardware, hardwareKind, subjectImage } from '../../lib/hardware';
 import { assetUrl } from '../../i18n/locale';
 import { fleetOverview } from '../../lib/fleet';
 
@@ -15,8 +15,11 @@ const hay = (...xs: (string | null | undefined)[]) => xs.filter(Boolean).join(' 
 export function fallbackItems(): FbItem[] {
   const out: FbItem[] = [];
   out.push({tab:'Корабли',url:href.fleetOverview(),title:fleetOverview.title,text:fleetOverview.dek,meta:'Визуальный обзор',hay:hay(fleetOverview.title,fleetOverview.dek,...fleetOverview.intro,...fleetOverview.sections.flatMap(section=>[section.title,...section.paragraphs]))});
-  hardware.forEach(item=>out.push({tab:hardwareKind(item.kind),url:href.hardware(item.slug),title:item.name,text:item.summary,meta:item.category,image:item.images[0]?assetUrl(item.images[0].file):null,
-    hay:hay(item.name,item.shortName,...item.aliases,item.summary,...item.intro,item.sections.flatMap(section=>[section.title,...section.paragraphs]).join(' '),item.specifications.map(spec=>`${spec.label} ${spec.value}`).join(' '))}));
+  hardware.forEach(item => {
+    const picture = subjectImage(item);
+    out.push({tab:hardwareKind(item.kind),url:href.hardware(item.slug),title:item.name,text:item.summary,meta:item.category,image:picture ? assetUrl(picture.file) : null,
+      hay:hay(item.name,item.shortName,...item.aliases,item.summary,...item.intro,item.sections.flatMap(section=>[section.title,...section.paragraphs]).join(' '),item.specifications.map(spec=>`${spec.label} ${spec.value}`).join(' '))});
+  });
   essays.forEach(e => out.push({ tab:'Статьи', url:href.essay(e.slug), title:e.title, text:e.dek, meta:e.perspective,
     hay:hay(e.title,e.dek,e.sections.flatMap(s=>[s.title,...s.paragraphs]).join(' ')) }));
   articles.forEach((a) => {

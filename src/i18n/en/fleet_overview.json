@@ -69,6 +69,19 @@
         2,
         3
       ]
+    },
+    {
+      "id": "support-vessels",
+      "title": "Support vessels",
+      "paragraphs": [
+        "This group includes vessels in the squadron and others that served it. Amur was built for mine warfare. Bureya and the steamer later named Angara carried cargo to Port Arthur. During the war Angara became a floating hospital. Mongolia accompanied the squadron as a Red Cross hospital ship."
+      ],
+      "refs": [
+        10,
+        11,
+        12,
+        13
+      ]
     }
   ],
   "relatedNotes": [
@@ -156,6 +169,42 @@
       "url": "https://expositions.nlr.ru/ex_manus/tsusima/war.php",
       "locator": "The Battle of Tsushima and the fate of individual ships",
       "note": "The exhibition gives the battle dates in the Old Style calendar."
+    },
+    {
+      "id": 10,
+      "title": "Amur-class Minelayers, 1895–1941",
+      "author": "V. Ya. Krestyaninov",
+      "date": "2008",
+      "url": "https://www.universalinternetlibrary.ru/book/94558/chitat_knigu.shtml",
+      "locator": "Construction, voyage to the Far East and wartime service",
+      "note": "History of the first two vessels with published documents."
+    },
+    {
+      "id": 11,
+      "title": "Fleet of the Russian War Department",
+      "author": "L. A. Yakovenko",
+      "date": "Online reference",
+      "url": "https://www.jakol.ru/Vv15v0p1.htm",
+      "locator": "§ 1.4.1, Bureya",
+      "note": "Construction, voyages, mobilisation and technical data."
+    },
+    {
+      "id": 12,
+      "title": "Steamship Moskva",
+      "author": "V. V. Yarovoy",
+      "date": "2008",
+      "url": "https://www.sstc.spb.ru/upload/iblock/fa7/2008_2.pdf",
+      "locator": "Sudostroenie, no. 2, pp. 74–78",
+      "note": "Contract dimensions, cargo voyage and hospital service."
+    },
+    {
+      "id": 13,
+      "title": "The Truth about Port Arthur",
+      "author": "E. K. Nozhin",
+      "date": "1908",
+      "url": "https://ru.wikisource.org/wiki/Правда_о_Порт-Артуре_(Ножин)/Часть_2",
+      "locator": "Part 2, Battle of 28 July and description of the hospital",
+      "note": "An eyewitness describes the hospital and its sortie with the squadron."
     }
   ],
   "ships": [
@@ -692,6 +741,70 @@
           "url": "https://keu-ocr.narod.ru/Sokoly/",
           "title": "N. N. Afonin, Port Arthur's Sokol-class Destroyers",
           "locator": "Assembly and trial table, row for Skvorets / Strashnyi."
+        }
+      ],
+      "illustration": null
+    },
+    {
+      "shipSlug": "amur",
+      "group": "port-arthur-support",
+      "profile": "auxiliary",
+      "lengthOverallM": 92.7,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "92.7 m is the overall length for the class. The 91.4 m figure in the same row is the length between perpendiculars.",
+      "sources": [
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_ms_amur01.htm",
+          "title": "AMUR mine transports (1901)",
+          "locator": "Technical data, Length, m"
+        }
+      ],
+      "illustration": null
+    },
+    {
+      "shipSlug": "bureya",
+      "group": "port-arthur-support",
+      "profile": "auxiliary",
+      "lengthOverallM": null,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "The reference gives 61.0 m without specifying how the length was measured.",
+      "sources": [
+        {
+          "url": "https://www.jakol.ru/Vv15v0p1.htm",
+          "title": "Fleet of the Russian War Department",
+          "locator": "§ 1.4.1, Bureya"
+        }
+      ],
+      "illustration": null
+    },
+    {
+      "shipSlug": "angara",
+      "group": "port-arthur-support",
+      "profile": "auxiliary",
+      "lengthOverallM": 154.84,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "154.84 m is the overall length in the contract specification.",
+      "sources": [
+        {
+          "title": "Steamship Moskva",
+          "url": "https://www.sstc.spb.ru/upload/iblock/fa7/2008_2.pdf",
+          "locator": "Sudostroenie, no. 2, pp. 74–78"
+        }
+      ],
+      "illustration": null
+    },
+    {
+      "shipSlug": "mongoliya",
+      "group": "port-arthur-support",
+      "profile": "auxiliary",
+      "lengthOverallM": null,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "Published overall lengths differ. The measurement still needs to be checked against a shipping register.",
+      "sources": [
+        {
+          "title": "Maritime Heritage Association Journal",
+          "url": "https://www.maritimeheritage.org.au/documents/MHA%20June%202005%20journal.pdf",
+          "locator": "June issue, account of Mongolia"
         }
       ],
       "illustration": null

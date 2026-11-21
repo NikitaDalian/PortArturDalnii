@@ -1195,5 +1195,134 @@
         ]
       }
     ]
+  },
+  {
+    "shipSlug": "amur",
+    "photoFile": "/images/hardware/amur-1.webp",
+    "period": "The first Amur. Date and location unknown.",
+    "features": [
+      {
+        "id": "funnels",
+        "x": 36,
+        "y": 52,
+        "label": "Two funnels",
+        "text": "The funnels stand between two masts. The smoke shows the boilers were under steam.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Amur1898-1904.jpg"
+        ]
+      },
+      {
+        "id": "stern-ensign",
+        "x": 84,
+        "y": 54,
+        "label": "Stern and ensign",
+        "text": "The St Andrew's ensign marks the stern. This was the ensign of the Russian fleet.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Amur1898-1904.jpg"
+        ]
+      },
+      {
+        "id": "boats",
+        "x": 32,
+        "y": 61,
+        "label": "Ship's boats",
+        "text": "The boats are hoisted above the side. Their curved davits are clearly visible.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Amur1898-1904.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "shipSlug": "angara",
+    "photoFile": "/images/hardware/angara-1.webp",
+    "period": "Port Arthur, January 1905. The ship had already settled on the bottom.",
+    "features": [
+      {
+        "id": "bow",
+        "x": 59,
+        "y": 61,
+        "label": "Bow",
+        "text": "The bow rises above the water.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Porthartur_(9).jpg"
+        ]
+      },
+      {
+        "id": "funnels",
+        "x": 31,
+        "y": 49,
+        "label": "Funnels",
+        "text": "The former passenger steamer’s three funnels stand above the deck.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Porthartur_(9).jpg"
+        ]
+      },
+      {
+        "id": "stern",
+        "x": 24,
+        "y": 76,
+        "label": "Stern",
+        "text": "The stern sits deeper in the water than the bow.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Porthartur_(9).jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "shipSlug": "mongoliya",
+    "photoFile": "/images/hardware/mongoliya-1.webp",
+    "period": "Port Arthur after the ship’s conversion into a hospital, 1904–1905.",
+    "features": [
+      {
+        "id": "funnel-cross",
+        "x": 50,
+        "y": 39,
+        "label": "Cross on the funnel",
+        "text": "The light-painted funnel bears a Red Cross emblem.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Mongolia_(ship,_1901).jpg"
+        ]
+      },
+      {
+        "id": "hull-cross",
+        "x": 52,
+        "y": 76,
+        "label": "Cross on the hull",
+        "text": "A second emblem sits on the light band of the hull.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Mongolia_(ship,_1901).jpg"
+        ]
+      },
+      {
+        "id": "boats",
+        "x": 64,
+        "y": 59,
+        "label": "Ship’s boats",
+        "text": "The ship’s boats are visible to the right of the funnel in the photograph.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Mongolia_(ship,_1901).jpg"
+        ]
+      }
+    ]
   }
 ]

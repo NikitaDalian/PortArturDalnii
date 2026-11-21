@@ -17,6 +17,17 @@ export const updates = [
     title: text('Эскадры, городской архив и новые заметки', 'Fleet profiles, city history and new notes', '舰艇资料、城市档案与新收录文章'),
     entries: [
       {
+        body: text('В справочник Первой Тихоокеанской эскадры добавлены минный транспорт «Амур», грузовой пароход «Бурея», транспорт «Ангара» и госпитальное судно «Монголия». В карточках указано, какие задачи выполняло каждое судно и какими документами это подтверждается.',
+          'Four vessels supporting the First Pacific Squadron now have profiles with sources documenting their service: the minelayer Amur, the cargo steamer Bureya, the transport Angara and the hospital ship Mongoliya.',
+          '新增四艘为第一太平洋舰队提供支援的船只条目，分别为布雷舰「阿穆尔」号、货轮「布列亚」号、运输船「安加拉」号和医院船「蒙古」号。各条目均附服役史料。'),
+        links: [
+          link(href.hardware('amur'), '«Амур»', 'Amur', '「阿穆尔」号'),
+          link(href.hardware('bureya'), '«Бурея»', 'Bureya', '「布列亚」号'),
+          link(href.hardware('angara'), '«Ангара»', 'Angara', '「安加拉」号'),
+          link(href.hardware('mongoliya'), '«Монголия»', 'Mongoliya', '「蒙古」号'),
+        ],
+      },
+      {
         body: text('Четыре броненосца первого отряда Второй Тихоокеанской эскадры получили отдельные карточки. Из них можно перейти к биографиям командиров и уцелевшего матроса «Бородино» Семёна Ющина.',
           'The four ships of the Second Pacific Squadron’s First Battleship Division now have individual profiles linking to their captains and to Semyon Yushchin, Borodino’s sole survivor.',
           '第二太平洋舰队第一战列舰分队的四艘战列舰各有独立条目，并附舰长和「博罗季诺」号唯一幸存者谢苗恩·尤先的生平链接。'),

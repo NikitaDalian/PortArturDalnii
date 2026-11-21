@@ -69,6 +69,19 @@
         2,
         3
       ]
+    },
+    {
+      "id": "support-vessels",
+      "title": "Суда обеспечения",
+      "paragraphs": [
+        "В этой подборке вместе показаны суда эскадры и суда, которые её обслуживали. «Амур» строили для минной службы. «Бурея» и пароход, получивший имя «Ангара», доставляли грузы в Порт-Артур. В войну «Ангара» стала плавучим госпиталем. «Монголия» сопровождала эскадру как госпитальное судно Красного Креста."
+      ],
+      "refs": [
+        10,
+        11,
+        12,
+        13
+      ]
     }
   ],
   "relatedNotes": [
@@ -156,6 +169,42 @@
       "url": "https://expositions.nlr.ru/ex_manus/tsusima/war.php",
       "locator": "Цусимское сражение и судьба отдельных кораблей",
       "note": "В выставке даты сражения даны по старому стилю."
+    },
+    {
+      "id": 10,
+      "title": "Минные заградители типа «Амур». 1895–1941 гг.",
+      "author": "В. Я. Крестьянинов",
+      "date": "2008",
+      "url": "https://www.universalinternetlibrary.ru/book/94558/chitat_knigu.shtml",
+      "locator": "Постройка, переход на Дальний Восток и боевая служба",
+      "note": "История кораблей первой серии и публикация документов."
+    },
+    {
+      "id": 11,
+      "title": "Флот Военного ведомства России",
+      "author": "Л. А. Яковенко",
+      "date": "Электронный справочник",
+      "url": "https://www.jakol.ru/Vv15v0p1.htm",
+      "locator": "§ 1.4.1, «Бурея»",
+      "note": "Постройка, перевозки, мобилизация и технические данные."
+    },
+    {
+      "id": 12,
+      "title": "Пароход «Москва»",
+      "author": "В. В. Яровой",
+      "date": "2008",
+      "url": "https://www.sstc.spb.ru/upload/iblock/fa7/2008_2.pdf",
+      "locator": "«Судостроение», № 2, с. 74–78",
+      "note": "Контрактные размеры, рейс с грузом и служба госпиталем."
+    },
+    {
+      "id": 13,
+      "title": "Правда о Порт-Артуре",
+      "author": "Е. К. Ножин",
+      "date": "1908",
+      "url": "https://ru.wikisource.org/wiki/Правда_о_Порт-Артуре_(Ножин)/Часть_2",
+      "locator": "Ч. 2, «Бой 28-го июля» и описание госпиталя",
+      "note": "Очевидец описал устройство госпиталя и выход с эскадрой."
     }
   ],
   "ships": [
@@ -692,6 +741,70 @@
           "url": "https://keu-ocr.narod.ru/Sokoly/",
           "title": "Н. Н. Афонин. Порт-артурские «соколы»",
           "locator": "Таблица сборки и испытаний, строка «Скворец» / «Страшный»."
+        }
+      ],
+      "illustration": null
+    },
+    {
+      "shipSlug": "amur",
+      "group": "port-arthur-support",
+      "profile": "auxiliary",
+      "lengthOverallM": 92.7,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "92,7 м — наибольшая длина для типа. 91,4 м в той же строке — длина между перпендикулярами.",
+      "sources": [
+        {
+          "url": "https://www.navypedia.org/ships/russia/ru_ms_amur01.htm",
+          "title": "AMUR mine transports (1901)",
+          "locator": "Technical data, Length, m"
+        }
+      ],
+      "illustration": null
+    },
+    {
+      "shipSlug": "bureya",
+      "group": "port-arthur-support",
+      "profile": "auxiliary",
+      "lengthOverallM": null,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "В справочнике указано 61,0 м. Способ измерения длины не уточнён.",
+      "sources": [
+        {
+          "url": "https://www.jakol.ru/Vv15v0p1.htm",
+          "title": "Флот Военного ведомства России",
+          "locator": "§ 1.4.1, «Бурея»"
+        }
+      ],
+      "illustration": null
+    },
+    {
+      "shipSlug": "angara",
+      "group": "port-arthur-support",
+      "profile": "auxiliary",
+      "lengthOverallM": 154.84,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "154,84 м — наибольшая длина по контрактной спецификации.",
+      "sources": [
+        {
+          "title": "Пароход «Москва»",
+          "url": "https://www.sstc.spb.ru/upload/iblock/fa7/2008_2.pdf",
+          "locator": "«Судостроение», № 2, с. 74–78"
+        }
+      ],
+      "illustration": null
+    },
+    {
+      "shipSlug": "mongoliya",
+      "group": "port-arthur-support",
+      "profile": "auxiliary",
+      "lengthOverallM": null,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "Публикации приводят разные значения наибольшей длины. Нужна сверка с судовым регистром.",
+      "sources": [
+        {
+          "title": "Maritime Heritage Association Journal",
+          "url": "https://www.maritimeheritage.org.au/documents/MHA%20June%202005%20journal.pdf",
+          "locator": "Июньский выпуск, описание Mongolia"
         }
       ],
       "illustration": null

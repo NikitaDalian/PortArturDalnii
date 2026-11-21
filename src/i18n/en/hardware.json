@@ -8931,5 +8931,815 @@
       "The illustration shows how the engagement was portrayed in print. A verified photograph of the 1904 destroyer was unavailable for this page. A later ship also bore the name Strashnyi."
     ],
     "updatedAt": "2026-11-21"
+  },
+  {
+    "name": "Mine transport Amur",
+    "shortName": "Amur",
+    "category": "Mine transport",
+    "aliases": [
+      "Amur",
+      "mine transport Amur",
+      "minelayer Amur"
+    ],
+    "summary": "A vessel of the First Pacific Squadron built for mine warfare. In May 1904 two Japanese battleships sank after striking its mines off Port Arthur.",
+    "intro": [
+      "In the spring of 1904 the Japanese fleet blockaded Port Arthur from the sea. Amur, listed in Russian records as a transport, was one of the ships defending the base. It and its sister ship Yenisey were built for mine warfare and looked much like small cruisers."
+    ],
+    "slug": "amur",
+    "kind": "ship",
+    "countries": [
+      "russia"
+    ],
+    "periods": [
+      "russian"
+    ],
+    "sections": [
+      {
+        "id": "transports",
+        "title": "Two purpose-built transports",
+        "paragraphs": [
+          "The Baltic Works laid down Amur in 1898. It entered service in 1901 and reached Port Arthur in March 1902. The Naval Ministry insisted that both vessels be called transports. Minelayer describes the work they were built to do."
+        ],
+        "refs": [
+          1
+        ]
+      },
+      {
+        "id": "may-1904",
+        "title": "Two battleships in a day",
+        "paragraphs": [
+          "Captain 2nd Rank Fyodor Ivanov commanded Amur in May 1904. The ship laid mines off Port Arthur on 14 May (1 May Old Style). The following day the Japanese battleships Hatsuse and Yashima struck mines there. Hatsuse sank shortly after the explosion. Yashima remained afloat into the afternoon."
+        ],
+        "refs": [
+          1
+        ]
+      },
+      {
+        "id": "dock",
+        "title": "The last weeks in dock",
+        "paragraphs": [
+          "Amur continued serving at Port Arthur after the May operation. It was under repair by the end of the siege. When the fortress surrendered, the ship was blown up in dock along with other damaged vessels that could still fall into Japanese hands."
+        ],
+        "refs": [
+          1,
+          2,
+          4
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Overall length",
+        "value": "92.7 m",
+        "note": "91.4 m between perpendiculars.",
+        "refs": [
+          3
+        ]
+      },
+      {
+        "label": "Beam",
+        "value": "14.9 m",
+        "note": "Reference figure for the class.",
+        "refs": [
+          3
+        ]
+      },
+      {
+        "label": "Shipyard",
+        "value": "Baltic Works",
+        "note": "Built with sister ship Yenisey.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Entered service",
+        "value": "1901",
+        "note": "Reached Port Arthur in 1902.",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1898,
+        "date": "1898",
+        "title": "Launch",
+        "text": "Amur was launched at the Baltic Works.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1902,
+        "date": "March 1902",
+        "title": "Arrival at the base",
+        "text": "The mine transport arrived at Port Arthur.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "15 May 1904 (2 May Old Style)",
+        "title": "Loss of Hatsuse and Yashima",
+        "text": "The Japanese ships struck mines that Amur had laid the day before.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "End of the siege",
+        "title": "Ship in dock",
+        "text": "Amur was blown up when Port Arthur surrendered.",
+        "refs": [
+          4
+        ]
+      }
+    ],
+    "crew": [
+      {
+        "name": "Fyodor Nikolayevich Ivanov",
+        "role": "Captain of the mine transport in May 1904",
+        "personSlug": null,
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "armament": [],
+    "images": [
+      {
+        "file": "/images/hardware/amur-1.webp",
+        "alt": "The first mine transport Amur. Exact date and location unknown.",
+        "caption": "The first mine transport Amur. Exact date and location unknown.",
+        "credit": "Unknown photographer. Russian and Soviet Naval Photo Archive via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amur1898-1904.jpg",
+        "license": "Public domain (PD-RusEmpire).",
+        "width": 1600,
+        "height": 1088
+      }
+    ],
+    "relatedNotes": [
+      "pervaya-tihookeanskaya-eskadra",
+      "voina-na-more-osada-mukden-tsusima"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [],
+    "relatedPlaces": [
+      "gavan-port-artura"
+    ],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "Amur-class Minelayers, 1895–1941",
+        "author": "V. Ya. Krestyaninov",
+        "date": "2008",
+        "url": "https://www.universalinternetlibrary.ru/book/94558/chitat_knigu.shtml",
+        "locator": "Construction, voyage to the Far East and wartime service",
+        "note": "History of the first two vessels with published documents."
+      },
+      {
+        "id": 2,
+        "title": "Report of the Captain of the Mine Transport Amur",
+        "author": "F. N. Ivanov",
+        "date": "4 June 1904 Old Style",
+        "url": "https://docs.historyrussia.org/ru/nodes/534419",
+        "locator": "Electronic Library of Historical Documents, record 534419",
+        "note": "A document on later mine warfare, dating from June."
+      },
+      {
+        "id": 3,
+        "title": "AMUR mine transports (1901)",
+        "author": "Navypedia",
+        "date": "Online reference",
+        "url": "https://www.navypedia.org/ships/russia/ru_ms_amur01.htm",
+        "locator": "Technical data, Length, m",
+        "note": "Overall length and length between perpendiculars are given separately."
+      },
+      {
+        "id": 4,
+        "title": "Port Arthur, 1904",
+        "author": "J. W. Dyskant",
+        "date": "Naval history study",
+        "url": "https://militera.lib.ru/h/dyskant/08.html",
+        "locator": "Chapter on the surrender",
+        "note": "Fate of the ships in the harbour and dock."
+      }
+    ],
+    "limitations": [
+      "This record covers the ship lost at Port Arthur. The name later passed to a new minelayer."
+    ],
+    "updatedAt": "2026-11-21"
+  },
+  {
+    "name": "Cargo steamer Bureya",
+    "shortName": "Bureya",
+    "category": "Cargo steamer",
+    "aliases": [
+      "Bureya",
+      "cargo steamer Bureya"
+    ],
+    "summary": "A Chinese Eastern Railway steamer that carried military cargo to Port Arthur. The Russian Navy mobilised it into the First Pacific Squadron at the outbreak of war.",
+    "slug": "bureya",
+    "kind": "ship",
+    "countries": [
+      "russia"
+    ],
+    "periods": [
+      "russian"
+    ],
+    "intro": [
+      "A Chinese Eastern Railway steamer that carried military cargo to Port Arthur. The Russian Navy mobilised it into the First Pacific Squadron at the outbreak of war."
+    ],
+    "sections": [
+      {
+        "id": "railway-voyages",
+        "title": "Chinese Eastern Railway voyages",
+        "paragraphs": [
+          "In June 1901 Bureya delivered military cargo to Port Arthur. Boyd & Co. had built the steel cargo steamer that year in Shanghai for the Chinese Eastern Railway Company. In December Bureya sailed for Port Arthur again, this time carrying troops. Under a July 1902 agreement between the General Staff and the railway company, the steamer had to carry troops and military cargo on its voyages from Vladivostok to Port Arthur."
+        ],
+        "refs": [
+          1
+        ]
+      },
+      {
+        "id": "wartime-service",
+        "title": "Mobilisation and wartime service",
+        "paragraphs": [
+          "The steamer spent the winter of 1903–04 at Port Arthur. When the Russo-Japanese War began, the Naval Department mobilised it into the First Pacific Squadron. On 25 May 1904 (12 May Old Style), Bureya and another railway steamer, Zeya, sailed from Dalny to Port Arthur."
+        ],
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "loss",
+        "title": "Loss at Port Arthur",
+        "paragraphs": [
+          "Bureya was lost in 1904 during the defence of the fortress."
+        ],
+        "refs": [
+          1,
+          3
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Built",
+        "value": "Shanghai, 1901",
+        "note": "Boyd & Co. shipyard.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Original owner",
+        "value": "Chinese Eastern Railway Company",
+        "note": "",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Register tonnage",
+        "value": "919 gross / 445 net register tons",
+        "note": "",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Recorded dimensions",
+        "value": "61.0 × 9.1 × 4.0 m",
+        "note": "The source gives no method for measuring length.",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1901,
+        "date": "1901",
+        "title": "Construction and cargo delivery",
+        "text": "The steamer delivered military cargo to Port Arthur in June.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1902,
+        "date": "July 1902",
+        "title": "Transport agreement",
+        "text": "The steamer had to take troops and military cargo on voyages from Vladivostok.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "25 May 1904 (12 May Old Style)",
+        "title": "Passage from Dalny",
+        "text": "Zeya and Bureya sailed to Port Arthur.",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "1904",
+        "title": "Loss",
+        "text": "The steamer was lost during the defence of the fortress.",
+        "refs": [
+          1,
+          3
+        ]
+      }
+    ],
+    "crew": [],
+    "armament": [],
+    "images": [
+      {
+        "file": "/images/hardware/bureya-dalny-context.webp",
+        "kind": "context",
+        "alt": "Dalny harbour under construction. Panorama from the John Barrett Collection. Bureya has not been identified in the image.",
+        "caption": "Dalny harbour under construction. Panorama from the John Barrett Collection. Bureya has not been identified in the image.",
+        "credit": "Unknown photographer. Library of Congress, LCCN 2007662373.",
+        "sourceUrl": "https://www.loc.gov/pictures/item/2007662373/",
+        "license": "No known restrictions according to the Library of Congress.",
+        "width": 1024,
+        "height": 817
+      }
+    ],
+    "relatedNotes": [
+      "pervaya-tihookeanskaya-eskadra"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [],
+    "relatedPlaces": [
+      "port-dalniy",
+      "gavan-port-artura"
+    ],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "Fleet of the Russian War Department",
+        "author": "L. A. Yakovenko",
+        "date": "Online reference",
+        "url": "https://www.jakol.ru/Vv15v0p1.htm",
+        "locator": "§ 1.4.1, Bureya",
+        "note": "Construction, voyages, mobilisation and technical data."
+      },
+      {
+        "id": 2,
+        "title": "Port Arthur: Fleet Operations in 1904",
+        "author": "Compiled by K. P. Guber (Russian State Naval Archive)",
+        "date": "2003",
+        "url": "https://keu-ocr.narod.ru/Lebedev/chap04.html",
+        "locator": "Entry for 12 May Old Style",
+        "note": "Passage from Dalny."
+      },
+      {
+        "id": 3,
+        "title": "Russian Navigation in the Pacific: A Chronicle of Shipping and Shipwrecks, 1639–2014",
+        "author": "Yu. V. Vedernikov",
+        "date": "2016",
+        "url": "https://shturman-tof.ru/Personal/32_vedernikov/knigi_16/02_korablekrusheniy_2016%2B.pdf#page=77",
+        "locator": "p. 77, Sinking of Russian ships and vessels at Port Arthur",
+        "note": "Lists the steamer among the losses at Port Arthur."
+      },
+      {
+        "id": 4,
+        "title": "Russian Port of “Dalny” Near Port Arthur",
+        "author": "Library of Congress",
+        "date": "Exact date unknown",
+        "url": "https://www.loc.gov/pictures/item/2007662373/",
+        "locator": "LCCN 2007662373, digital copy 3c13511",
+        "note": "Panorama of the harbour."
+      }
+    ],
+    "limitations": [
+      "The exact date and circumstances of the loss remain uncertain. No verified photograph of the steamer has been found."
+    ],
+    "updatedAt": "2026-11-21"
+  },
+  {
+    "slug": "angara",
+    "kind": "ship",
+    "name": "Transport Angara",
+    "shortName": "Angara",
+    "category": "Transport and floating hospital",
+    "aliases": [
+      "Angara",
+      "transport Angara"
+    ],
+    "countries": [
+      "russia"
+    ],
+    "periods": [
+      "russian"
+    ],
+    "summary": "The former steamship Moskva carried cargo to Port Arthur. During the war Angara served as a transport and floating hospital.",
+    "intro": [
+      "In the summer of 1903 the steamship Moskva delivered 3,000 tonnes of government cargo to Port Arthur. A few days later it was assigned to the Kwantung Naval Crew as a transport and received a new name, Angara. A year later its compartments held beds for the wounded."
+    ],
+    "sections": [
+      {
+        "id": "from-moskva",
+        "title": "From Moskva to Angara",
+        "paragraphs": [
+          "Moskva was built at Clydebank and accepted by the Volunteer Fleet in 1898. The fleet carried passengers and cargo, and the navy could take over its fast steamships when needed. After delivering its cargo to Port Arthur, Angara joined the navy as a transport. Guns were installed at Vladivostok. At the start of the Russo-Japanese War it lay with the squadron in Port Arthur’s outer roadstead. It was hit in the first daylight engagement."
+        ],
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "hospital",
+        "title": "Hospital wards aboard a steamship",
+        "paragraphs": [
+          "During the siege the ship passed to the Red Cross. Its guns were removed and its compartments converted into hospital wards. The historian V. V. Yarovoy records that by July there were 342 beds for patients who needed to lie down. The ship came under fire when Japanese artillery began shelling the inner harbour. Wounded and sick patients, along with medical staff, were transferred ashore. On 30 October 1904 (17 October Old Style), Angara settled on the bottom near the Tiger’s Tail Peninsula."
+        ],
+        "refs": [
+          1,
+          4
+        ]
+      },
+      {
+        "id": "afloat",
+        "title": "Afloat again",
+        "paragraphs": [
+          "In the photograph taken by Italian naval attaché Ernesto Burzagli in January 1905, the bow still rises above the water even though the ship is resting on the bottom. After Port Arthur fell, the Japanese raised and repaired Angara. It served in the Japanese navy as Anegawa. In 1911 Japan returned it to Russia at Vladivostok."
+        ],
+        "refs": [
+          1,
+          3
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Overall length",
+        "value": "154.84 m",
+        "note": "Contract specification.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Beam",
+        "value": "17.68 m",
+        "note": "Contract specification.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Built",
+        "value": "Clydebank",
+        "note": "Accepted by the Volunteer Fleet in 1898.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Hospital capacity",
+        "value": "342 beds for patients who needed to lie down",
+        "note": "Yarovoy’s figure for July 1904.",
+        "refs": [
+          1,
+          4
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1898,
+        "date": "1898",
+        "title": "Acceptance",
+        "text": "The Volunteer Fleet accepted Moskva.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1903,
+        "date": "Summer 1903",
+        "title": "Cargo delivery",
+        "text": "Moskva delivered 3,000 tonnes of government cargo to Port Arthur.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "1904",
+        "title": "Floating hospital",
+        "text": "The disarmed transport was fitted out to receive wounded men.",
+        "refs": [
+          1,
+          4
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "30 October 1904 (17 October Old Style)",
+        "title": "Sinking",
+        "text": "The ship settled on the bottom at Port Arthur.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1911,
+        "date": "1911",
+        "title": "Return to Russia",
+        "text": "After service in the Japanese navy the ship was returned at Vladivostok.",
+        "refs": [
+          1,
+          3
+        ]
+      }
+    ],
+    "crew": [],
+    "armament": [],
+    "images": [
+      {
+        "file": "/images/hardware/angara-1.webp",
+        "alt": "Angara after sinking at Port Arthur, January 1905.",
+        "caption": "Angara after sinking at Port Arthur, January 1905.",
+        "credit": "Ernesto Burzagli, Burzagli family archive.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porthartur_(9).jpg",
+        "license": "Public domain.",
+        "width": 500,
+        "height": 284
+      },
+      {
+        "file": "/images/hardware/angara-2.webp",
+        "alt": "The gunboat Gilyak in the foreground, with the transport Angara behind it. Date uncertain.",
+        "caption": "The gunboat Gilyak in the foreground, with the transport Angara behind it. Date uncertain.",
+        "credit": "Unknown photographer, reproduced in The Russian Fleet.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gilyak%26Angara.jpg",
+        "license": "Public domain.",
+        "width": 960,
+        "height": 612
+      }
+    ],
+    "relatedNotes": [
+      "pervaya-tihookeanskaya-eskadra"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [],
+    "relatedPlaces": [
+      "gavan-port-artura"
+    ],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "Steamship Moskva",
+        "author": "V. V. Yarovoy",
+        "date": "2008",
+        "url": "https://www.sstc.spb.ru/upload/iblock/fa7/2008_2.pdf",
+        "locator": "Sudostroenie, no. 2, pp. 74–78",
+        "note": "Contract dimensions, cargo voyage and hospital service."
+      },
+      {
+        "id": 2,
+        "title": "The Reckoning",
+        "author": "V. I. Semyonov",
+        "date": "1907",
+        "url": "https://shipdesign.ru/Geography/Semenov/I.html",
+        "locator": "Port Arthur section",
+        "note": "Memoirs of Angara’s senior officer."
+      },
+      {
+        "id": 3,
+        "title": "Records of former Russian hospital ships",
+        "author": "Japanese Naval Ministry",
+        "date": "1909",
+        "url": "https://www.jacar.archives.go.jp/das/meta/B08090039600",
+        "locator": "JACAR, B08090039600",
+        "note": "The document identifies Angara with Anegawa."
+      },
+      {
+        "id": 4,
+        "title": "Doctors and nurses in the defence of Port Arthur",
+        "author": "2nd Central Military Clinical Hospital",
+        "date": "Online publication",
+        "url": "https://2cvkg.ru/o-gospitale/istoriya/iz-istorii-voennoj-mediczinyi/oborona-port-artura-v-1904-1905-gg.-vrachi-i-sestr.html",
+        "locator": "Order no. 429 and E. I. Alekseyev’s report",
+        "note": "Documents on conversion into a floating hospital."
+      }
+    ],
+    "limitations": [
+      "Published estimates of hospital capacity differ. The figure here is Yarovoy’s for July 1904."
+    ],
+    "updatedAt": "2026-11-21"
+  },
+  {
+    "slug": "mongoliya",
+    "kind": "ship",
+    "name": "Hospital ship Mongolia",
+    "shortName": "Mongolia",
+    "category": "Hospital ship",
+    "aliases": [
+      "Mongolia",
+      "hospital ship Mongolia"
+    ],
+    "countries": [
+      "russia"
+    ],
+    "periods": [
+      "russian"
+    ],
+    "summary": "The Chinese Eastern Railway passenger steamer became a Red Cross hospital ship and accompanied the squadron on the day of the Battle of the Yellow Sea.",
+    "intro": [
+      "At the start of the Russo-Japanese War the smoking lounge aboard Mongolia became its main operating theatre. The Chinese Eastern Railway’s passenger express steamship was now a Red Cross hospital ship at Port Arthur."
+    ],
+    "sections": [
+      {
+        "id": "x-ray",
+        "title": "An X-ray machine in a cabin",
+        "paragraphs": [
+          "Mongolia was built in Trieste in 1901. Before the war it sailed between Far Eastern ports including Dalny, Nagasaki and Shanghai. In February 1904 it was turned over for conversion into a hospital. War correspondent Yevgeny Nozhin went aboard and described how the hospital worked. A crane lifted wounded men on stretchers from small boats. An X-ray machine in one cabin helped doctors locate bullets and fragments before surgery."
+        ],
+        "refs": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "patients-and-staff",
+        "title": "Patients and nurses",
+        "paragraphs": [
+          "Nozhin names Nikolai Yakovlev, captain of the battleship Petropavlovsk, among those treated aboard Mongolia. He survived the loss of his ship on 13 April 1904 (31 March Old Style). Olga von Baumgarten worked aboard Mongolia as a nurse. She kept a diary of her service there and in a hospital ashore."
+        ],
+        "refs": [
+          1,
+          4
+        ]
+      },
+      {
+        "id": "squadron",
+        "title": "Putting to sea with the squadron",
+        "paragraphs": [
+          "On 10 August 1904 (28 July Old Style) Mongolia left Port Arthur as a Red Cross hospital ship accompanying the squadron in its attempt to reach Vladivostok. The patients had been moved ashore the previous day. During the Battle of the Yellow Sea, Mongolia kept clear of the warships. Once back in Port Arthur’s inner harbour, it took wounded men aboard from the ships. When the squadron found itself confined to the harbour again, the former passenger steamship continued to serve as a floating hospital."
+        ],
+        "refs": [
+          1,
+          3
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Built",
+        "value": "Trieste, 1901",
+        "note": "The steamer served Far Eastern routes before the war.",
+        "refs": [
+          3
+        ]
+      },
+      {
+        "label": "Prewar owner",
+        "value": "Chinese Eastern Railway",
+        "note": "Operated as a passenger express.",
+        "refs": [
+          2,
+          3
+        ]
+      },
+      {
+        "label": "Wartime role",
+        "value": "Red Cross hospital ship",
+        "note": "The main operating theatre was fitted out in the former smoking lounge.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Hospital equipment",
+        "value": "X-ray machine",
+        "note": "Installed in one of the cabins.",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1901,
+        "date": "1901",
+        "title": "Built",
+        "text": "The passenger steamer was built in Trieste.",
+        "refs": [
+          3
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "February 1904",
+        "title": "Conversion",
+        "text": "The ship was assigned to hospital service.",
+        "refs": [
+          2,
+          3
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "10 August 1904 (28 July Old Style)",
+        "title": "Departure with the squadron",
+        "text": "The hospital ship accompanied the squadron on its attempt to reach Vladivostok.",
+        "refs": [
+          1,
+          3
+        ]
+      }
+    ],
+    "crew": [],
+    "armament": [],
+    "images": [
+      {
+        "file": "/images/hardware/mongoliya-1.webp",
+        "alt": "Mongolia at Port Arthur, 1904–1905.",
+        "caption": "Mongolia at Port Arthur, 1904–1905.",
+        "credit": "Unknown photographer. Reproduced from Mir cherez stoletiye.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mongolia_(ship,_1901).jpg",
+        "license": "Public domain according to the Wikimedia Commons record.",
+        "width": 960,
+        "height": 284
+      }
+    ],
+    "relatedNotes": [
+      "pervaya-tihookeanskaya-eskadra"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [],
+    "relatedPlaces": [
+      "gavan-port-artura"
+    ],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "The Truth about Port Arthur",
+        "author": "E. K. Nozhin",
+        "date": "1908",
+        "url": "https://ru.wikisource.org/wiki/Правда_о_Порт-Артуре_(Ножин)/Часть_2",
+        "locator": "Part 2, Battle of 28 July and description of the hospital",
+        "note": "An eyewitness describes the hospital and its sortie with the squadron."
+      },
+      {
+        "id": 2,
+        "title": "In the Far East",
+        "author": "Niva",
+        "date": "1904",
+        "url": "https://commons.wikimedia.org/wiki/File:Нива._1904._№1-26.pdf",
+        "locator": "No. 6",
+        "note": "Contemporary account of the hospital ship’s preparation."
+      },
+      {
+        "id": 3,
+        "title": "Doctors and nurses in the defence of Port Arthur",
+        "author": "2nd Central Military Clinical Hospital",
+        "date": "Online publication",
+        "url": "https://2cvkg.ru/o-gospitale/istoriya/iz-istorii-voennoj-mediczinyi/oborona-port-artura-v-1904-1905-gg.-vrachi-i-sestr.html",
+        "locator": "Mongolia subsection",
+        "note": "Conversion into a hospital and subsequent service."
+      },
+      {
+        "id": 4,
+        "title": "In Besieged Port Arthur",
+        "author": "O. A. von Baumgarten",
+        "date": "1906",
+        "url": "https://heritage-navalis.ru/product/v-osazhdyonnom-port-arture-dnevnik-sestry-miloserdiya",
+        "locator": "State Public Historical Library reprint description",
+        "note": "Confirms the author’s service aboard Mongolia."
+      },
+      {
+        "id": 5,
+        "title": "Maritime Heritage Association Journal",
+        "author": "Maritime Heritage Association",
+        "date": "2005",
+        "url": "https://www.maritimeheritage.org.au/documents/MHA%20June%202005%20journal.pdf",
+        "locator": "June issue, account of Mongolia",
+        "note": "Reference length. Other publications give a different figure."
+      }
+    ],
+    "limitations": [
+      "A comparable overall length remains unverified."
+    ],
+    "updatedAt": "2026-11-21"
   }
 ]

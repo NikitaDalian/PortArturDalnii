@@ -7,10 +7,10 @@ import SourceRefs from './SourceRefs.astro';
 interface Props { ship: Hardware; record?: ShipFeatures }
 const { ship, record } = Astro.props;
 const data = validShipFeatures(ship, record);
-const photo = ship.images.find(image=>image.file===record?.photoFile) ?? ship.images[ship.slug==='poltava'?1:0];
+const photo = ship.images.find(image => image.file === record?.photoFile && !image.kind);
 const prefix = `explorer-${ship.slug}`;
 ---
-{data && <section id="ship-explorer" class="ship-explorer" data-ship-explorer aria-labelledby={`${prefix}-title`}>
+{data && photo && <section id="ship-explorer" class="ship-explorer" data-ship-explorer aria-labelledby={`${prefix}-title`}>
   <h2 id={`${prefix}-title`}>Как устроен корабль</h2>
   <p class="explorer-instruction">Нажмите на точку на фотографии или выберите деталь ниже.</p>
   <p class="explorer-period">{data.period}</p>

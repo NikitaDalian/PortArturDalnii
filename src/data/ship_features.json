@@ -1195,5 +1195,134 @@
         ]
       }
     ]
+  },
+  {
+    "shipSlug": "amur",
+    "photoFile": "/images/hardware/amur-1.webp",
+    "period": "Снимок первого «Амура». Дата и место не установлены.",
+    "features": [
+      {
+        "id": "funnels",
+        "x": 36,
+        "y": 52,
+        "label": "Две трубы",
+        "text": "Дымовые трубы выделяются между двух мачт. Дым показывает, что в котлах поддерживали пар.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Amur1898-1904.jpg"
+        ]
+      },
+      {
+        "id": "stern-ensign",
+        "x": 84,
+        "y": 54,
+        "label": "Корма и флаг",
+        "text": "Корму на снимке легко узнать по Андреевскому флагу, кормовому флагу русского флота.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Amur1898-1904.jpg"
+        ]
+      },
+      {
+        "id": "boats",
+        "x": 32,
+        "y": 61,
+        "label": "Шлюпки",
+        "text": "Шлюпки подняты над бортом. На фотографии хорошо видны их изогнутые шлюпбалки.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Amur1898-1904.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "shipSlug": "angara",
+    "photoFile": "/images/hardware/angara-1.webp",
+    "period": "Порт-Артур, январь 1905 года. Судно уже лежит на грунте.",
+    "features": [
+      {
+        "id": "bow",
+        "x": 59,
+        "y": 61,
+        "label": "Нос",
+        "text": "Нос судна поднят над водой.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Porthartur_(9).jpg"
+        ]
+      },
+      {
+        "id": "funnels",
+        "x": 31,
+        "y": 49,
+        "label": "Дымовые трубы",
+        "text": "Над палубой выделяются три трубы бывшего пассажирского парохода.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Porthartur_(9).jpg"
+        ]
+      },
+      {
+        "id": "stern",
+        "x": 24,
+        "y": 76,
+        "label": "Корма",
+        "text": "Кормовая часть осела глубже носовой.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Porthartur_(9).jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "shipSlug": "mongoliya",
+    "photoFile": "/images/hardware/mongoliya-1.webp",
+    "period": "Судно в Порт-Артуре после переоборудования в госпиталь, 1904–1905 годы.",
+    "features": [
+      {
+        "id": "funnel-cross",
+        "x": 50,
+        "y": 39,
+        "label": "Крест на трубе",
+        "text": "Красный Крест обозначили на светлой дымовой трубе.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Mongolia_(ship,_1901).jpg"
+        ]
+      },
+      {
+        "id": "hull-cross",
+        "x": 52,
+        "y": 76,
+        "label": "Крест на борту",
+        "text": "Второй знак помещён на светлой полосе корпуса.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Mongolia_(ship,_1901).jpg"
+        ]
+      },
+      {
+        "id": "boats",
+        "x": 64,
+        "y": 59,
+        "label": "Шлюпки",
+        "text": "На палубе по правую сторону от трубы видны судовые шлюпки.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Mongolia_(ship,_1901).jpg"
+        ]
+      }
+    ]
   }
 ]
