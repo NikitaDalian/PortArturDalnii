@@ -79,7 +79,7 @@ for (const note of readingNotes) {
 }
 // City names, personal names and the title “Цесаревич” need ship context.
 // Exact quotes and descriptive aliases such as “броненосец «Победа»” remain eligible.
-const ambiguousShips = new Set(['pobeda','poltava','sevastopol','tsesarevich','diana','pallada']);
+const ambiguousShips = new Set(['pobeda','poltava','sevastopol','tsesarevich','diana','pallada','borodino','orel','imperator-aleksandr-iii','strashnyi']);
 const contextualNames = new Map<string,Set<string>>();
 // These family names alone do not identify one historical person.
 for (const [name,ids] of names) if (/^(?:Иванов[а-яё]*|Романов[а-яё]*|Ivanov|Romanov|伊万诺夫|罗曼诺夫)$/u.test(name)) {
@@ -93,4 +93,5 @@ for(const item of hardware.filter(item=>ambiguousShips.has(item.slug))){
 for (const [name,ids] of names) for (const id of ids) if (id.startsWith('term/')) {
   const restricted=contextualNames.get(name)??new Set<string>();restricted.add(id);contextualNames.set(name,restricted);
 }
-export const linkMentions = createMentionMatcher(names, registry, { quotedEntities:new Set(hardware.filter(item=>item.kind==='ship').map(item=>`ship/${item.slug}`)), contextualNames, annotationEntities:new Set(readingNotes.map(note=>`term/${note.slug}`)) });
+// The hospital ship also sailed under the name Orel. Require a descriptive alias in quotes.
+export const linkMentions = createMentionMatcher(names, registry, { quotedEntities:new Set(hardware.filter(item=>item.kind==='ship'&&item.slug!=='orel').map(item=>`ship/${item.slug}`)), contextualNames, annotationEntities:new Set(readingNotes.map(note=>`term/${note.slug}`)) });

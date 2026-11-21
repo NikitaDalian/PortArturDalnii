@@ -1,1439 +1,1579 @@
 [
- {
-  "slug": "vysokaya-gora",
-  "name": "203高地（俄称高山）",
-  "name_zh": "203高地（203 Gāodì）；日本纪念碑题名“尔灵山”（Ěrlíngshān）",
-  "name_now": "要塞西部防线的203纪念景区，山脚有樱花园",
-  "city": "lushun",
-  "layers": [
-   "russian",
-   "japanese"
-  ],
-  "kind": "fort",
-  "lat": 38.8286,
-  "lng": 121.1935,
-  "coord_confidence": "high",
-  "summary": "位于主要堡垒线后方的高地，韦利奇科方案未在这里设置永久工事。1904年11月15日起，日军连续强攻一周；守山部队损失约5000人，于11月22日（12月5日）撤离。由山顶可俯瞰内港，攻城榴弹炮数日内便将停泊码头的舰队击沉。如今山顶立有日方所建的子弹形“尔灵山”纪念碑，名称与“203”谐音；部分战壕仍存，并标示乃木将军之子阵亡处。可眺望港湾和旅顺西部。",
-  "visit": "景区入口有203景区停车场，须购票。票价和开放时间请现场确认；2025年旅行社资料标价30元，春季樱花期间可能另行定价。",
-  "season": [
-   "spring",
-   "autumn"
-  ],
-  "posts": [
-   50,
-   127,
-   227
-  ],
-  "photos": [
-   "photos/photo_341@archive.jpg"
-  ],
-  "verify": true,
-  "articles": [
-   "voina-na-more-osada-mukden-tsusima",
-   "stepanov-port-artur-retsenziya",
-   "port-artur-poslednyaya-zamorskaya-koloniya",
-   "pervaya-tihookeanskaya-eskadra",
-   "ukreplenie-5-yahutszui",
-   "dnevnik-kapitana-lile",
-   "gaolyan-i-sopki",
-   "kondratenko-dusha-oborony",
-   "posleznanie-kak-sudit-o-port-arture",
-   "oborona-port-artura-vrachi-i-sestry",
-   "tsena-port-artura-v-tsifrah"
-  ]
- },
- {
-  "slug": "fort-2",
-  "name": "第II号堡垒（东鸡冠山北堡垒）",
-  "name_zh": "东鸡冠山北堡垒 (Dōng Jīguānshān běi bǎolěi)",
-  "name_now": "东鸡冠山景区，包含堡垒遗址与旅顺日俄战争陈列馆",
-  "city": "lushun",
-  "layers": [
-   "russian",
-   "japanese"
-  ],
-  "kind": "fort",
-  "lat": 38.8349,
-  "lng": 121.2798,
-  "coord_confidence": "medium",
-  "summary": "东北防线的支撑点，围绕外壕壁廊道的争夺持续数周，甚至深入地下。1904年12月2（15）日，一枚11英寸榴弹击中军官掩蔽部，罗曼·康德拉坚科将军与8名军官一同阵亡。三天后，即公历12月18日，日军炸毁胸墙，攻占堡垒。如今可见残破掩蔽部、壕沟和侧射堡。将军阵亡处有日方所立石碑，题为“俄国陆军少将康德拉坚科战死之所”，旁有小型陈列馆。",
-  "visit": "据携程，开放时间07:30–17:00，收费参观，旅行社资料标价25元。入口设东鸡冠山停车场。出发前请核实开放时间。",
-  "season": [
-   "spring",
-   "autumn",
-   "winter"
-  ],
-  "posts": [
-   50,
-   227,
-   210,
-   154
-  ],
-  "photos": [
-   "photos/photo_160@28-10-2026_08-55-08.jpg",
-   "photos/photo_191@02-11-2026_09-35-08.jpg",
-   "photos/photo_335@archive.jpg"
-  ],
-  "verify": true,
-  "articles": [
-   "port-artur-poslednyaya-zamorskaya-koloniya",
-   "kak-ustroen-fort",
-   "kondratenko-put-k-port-arturu",
-   "kondratenko-dusha-oborony",
-   "kulichkin-kondratenko-zhzl",
-   "general-fok-geroy-dunaya-i-port-artur"
-  ]
- },
- {
-  "slug": "bolshoe-orlinoe-gnezdo",
-  "name": "大鹰巢",
-  "name_zh": "望台炮台 (Wàngtái pàotái)",
-  "name_now": "鸡冠山路旁的高地，设有日方纪念标志及观景处",
-  "city": "lushun",
-  "layers": [
-   "russian",
-   "japanese"
-  ],
-  "kind": "battery",
-  "lat": 38.8342,
-  "lng": 121.2728,
-  "coord_confidence": "high",
-  "summary": "位于第II、第III号堡垒之间高地上的炮台，属于东北防线。1904年12月19日（公历1905年1月1日）失守，是防御战最后一场重大战斗；当天斯特塞尔便向日方提出投降。如今山顶有旧炮和纪念标志，可眺望鸡冠山至二龙山的整条山岭。俄称“大鹰巢”对应中文“望台”的说法已被广泛采用，但仍宜对照1904年要塞图核实。",
-  "visit": null,
-  "season": [
-   "autumn",
-   "winter"
-  ],
-  "posts": [
-   227
-  ],
-  "photos": [
-   "photos/photo_159@28-10-2026_08-55-08.jpg",
-   "photos/photo_336@archive.jpg"
-  ],
-  "verify": true,
-  "articles": [
-   "kondratenko-dusha-oborony"
-  ]
- },
- {
-  "slug": "fort-3",
-  "name": "第III号堡垒",
-  "name_zh": "二龙山堡垒 (Èrlóngshān bǎolěi)",
-  "name_now": "二龙山上的堡垒遗址",
-  "city": "lushun",
-  "layers": [
-   "russian",
-   "japanese"
-  ],
-  "kind": "fort",
-  "lat": 38.8373,
-  "lng": 121.2654,
-  "coord_confidence": "medium",
-  "summary": "位于大鹰巢以西二龙山上的北部防线堡垒。日军挖掘坑道，炸毁胸墙后，于1904年12月15（28）日攻占。壕沟和混凝土工事尚有遗存。坐标标示山顶，堡垒实际位于山坡，具体位置须现场确认。",
-  "visit": null,
-  "season": [
-   "autumn",
-   "winter"
-  ],
-  "posts": [
-   227
-  ],
-  "photos": [
-   "photos/photo_161@28-10-2026_08-55-08.jpg",
-   "photos/photo_338@archive.jpg"
-  ],
-  "verify": true,
-  "articles": [
-   "kondratenko-dusha-oborony"
-  ]
- },
- {
-  "slug": "ukreplenie-3",
-  "name": "第3号防御工事",
-  "name_zh": "松树山堡垒 (Sōngshùshān bǎolěi)",
-  "name_now": "松树山防御工事遗址",
-  "city": "lushun",
-  "layers": [
-   "russian",
-   "japanese"
-  ],
-  "kind": "fort",
-  "lat": 38.8374,
-  "lng": 121.254,
-  "coord_confidence": "high",
-  "summary": "北部堡垒之间的中间防御工事，结构与堡垒相似，包括土垒、干壕、侧射堡和营房。1904年12月18（31）日，日军引爆胸墙下的炸药，掩蔽部坍塌，工事随后失守。如今松林间仍有废墟和爆炸坑，访客明显少于203高地和东鸡冠山。",
-  "visit": null,
-  "season": [
-   "spring",
-   "autumn"
-  ],
-  "posts": [
-   144,
-   154
-  ],
-  "photos": [
-   "photos/photo_158@28-10-2026_08-55-08.jpg",
-   "photos/photo_162@28-10-2026_08-55-09.jpg"
-  ],
-  "verify": true,
-  "articles": [
-   "ukreplenie-5-yahutszui",
-   "kak-ustroen-fort"
-  ]
- },
- {
-  "slug": "ukreplenie-5",
-  "name": "第5号防御工事",
-  "name_zh": "鸦户嘴（Yāhùzuǐ），指示牌称“俄军指挥堡”",
-  "name_now": "林间保存较好的防御工事，有小型陈列室、要塞模型和海岸炮",
-  "city": "lushun",
-  "layers": [
-   "russian",
-   "japanese",
-   "soviet"
-  ],
-  "kind": "fort",
-  "lat": 38.797,
-  "lng": 121.1933,
-  "coord_confidence": "high",
-  "summary": "西部防线第V、第VI号堡垒之间的中间工事。公开刊载的备战报告称，到1903年12月1日第5号防御工事已完工，第VI号堡垒则刚开工。据频道记述，1898年后的俄军改建之前已有清代工程；各阶段的确切沿革仍需核实。频道称此处未遭单独强攻。工事按投降条件移交，但此前曾参与炮战，皮尔苏茨基的日记有记述。如今仍可见土垒、干壕、侧射堡、营房与地下通道。实地文章作者将场地上的火炮辨认为采用杜尔拉赫尔式炮架的10英寸海岸炮，其来源尚未确定。旁边的小陈列室展示要塞模型和士兵生活。所谓在此指挥203高地作战的说法，尚无文献支持。",
-  "visit": "访客不多，尚非成熟景点。频道原帖导航点为38.7970, 121.1933。入口安排及是否收费，最好提前确认。",
-  "season": [
-   "spring",
-   "summer",
-   "autumn"
-  ],
-  "posts": [
-   144,
-   154,
-   174
-  ],
-  "photos": [
-   "photos/photo_114@21-10-2026_09-30-12.jpg",
-   "photos/photo_115@21-10-2026_09-30-12.jpg",
-   "photos/photo_116@21-10-2026_09-30-12.jpg",
-   "photos/photo_117@21-10-2026_09-30-12.jpg",
-   "photos/photo_118@21-10-2026_09-30-12.jpg",
-   "photos/photo_119@21-10-2026_09-30-12.jpg"
-  ],
-  "verify": false,
-  "articles": [
-   "ukreplenie-5-yahutszui",
-   "kak-ustroen-fort"
-  ]
- },
- {
-  "slug": "elektricheskiy-utes",
-  "name": "电岩炮台",
-  "name_zh": "电岩炮台 (Diànyán pàotái)",
-  "name_now": "黄海岸边悬崖上的海岸炮台遗址",
-  "city": "lushun",
-  "layers": [
-   "russian",
-   "japanese"
-  ],
-  "kind": "battery",
-  "lat": 38.7918,
-  "lng": 121.264,
-  "coord_confidence": "high",
-  "summary": "位于黄金山东侧岩崖上的海岸炮台，名称来自当年设于崖上的探照灯。这里曾装备杜尔拉赫尔式炮架的10英寸火炮，与第5号防御工事现存火炮相同。炮台掩护港口入口，自战争初期便向日本舰队射击。如今可见混凝土炮位，眺望海面和旅顺港入口。",
-  "visit": "一份旅行社资料称不对外国人开放，另一些则将其列为普通收费景点，票价约15元。出发前务必确认。",
-  "season": [
-   "spring",
-   "summer",
-   "autumn"
-  ],
-  "posts": [
-   144,
-   127
-  ],
-  "photos": [],
-  "verify": true,
-  "articles": [
-   "stepanov-port-artur-retsenziya",
-   "pervaya-tihookeanskaya-eskadra",
-   "ukreplenie-5-yahutszui"
-  ]
- },
- {
-  "slug": "zolotaya-gora",
-  "name": "黄金山",
-  "name_zh": "黄金山 (Huángjīnshān)",
-  "name_now": "旅顺港入口处的山体，部分属于军事区域",
-  "city": "lushun",
-  "layers": [
-   "chinese",
-   "russian",
-   "japanese",
-   "soviet"
-  ],
-  "kind": "viewpoint",
-  "lat": 38.7961,
-  "lng": 121.2615,
-  "coord_confidence": "high",
-  "summary": "位于港口入口东侧，与老虎尾半岛共同遮蔽内港。1898年3月16（28）日，基里尔·弗拉基米罗维奇大公在山上升起俄国国旗。山上原有清朝海岸炮台，后经俄军改建。1904年1月27日（2月9日），俄国舰队停在山脚外港锚地，遭日本鱼雷艇袭击。如今山脚为市区海滨浴场，山顶有军事设施。",
-  "visit": null,
-  "season": [
-   "summer"
-  ],
-  "posts": [
-   50,
-   127
-  ],
-  "photos": [
-   "photos/photo_302@archive.jpg",
-   "photos/photo_308@archive.jpg",
-   "photos/photo_304@archive.jpg",
-   "photos/photo_342@archive.jpg"
-  ],
-  "verify": true,
-  "articles": [
-   "port-artur-poslednyaya-zamorskaya-koloniya",
-   "pervaya-tihookeanskaya-eskadra"
-  ]
- },
- {
-  "slug": "perepelinaya-gora",
-  "name": "白玉山（俄称鹌鹑山）",
-  "name_zh": "白玉山 (Báiyùshān)",
-  "name_now": "山顶公园，有1909年建成的白玉山塔和港湾景观，设索道",
-  "city": "lushun",
-  "layers": [
-   "russian",
-   "japanese",
-   "soviet"
-  ],
-  "kind": "viewpoint",
-  "lat": 38.8106,
-  "lng": 121.2517,
-  "coord_confidence": "high",
-  "summary": "位于东港池上方、新旧市街之间，俄国旅顺的全景照片常从这里拍摄。战后日方在乃木与东乡倡议下修建约67米高的“表忠塔”，即今日白玉山塔。观景处可见内港、黄金山、老虎尾及陆地防线群山，因此游览旅顺可从这里开始。",
-  "visit": "可沿公路或乘白玉山索道上山。票价资料不一：旅行社有的称门票40元，有的称塔区免费、索道收费。请现场确认。",
-  "season": [
-   "spring",
-   "summer",
-   "autumn",
-   "winter"
-  ],
-  "posts": [
-   50,
-   127
-  ],
-  "photos": [
-   "photos/photo_34@06-10-2026_17-18-17.jpg",
-   "photos/photo_100@17-10-2026_15-14-01.jpg"
-  ],
-  "verify": true,
-  "articles": [
-   "port-artur-poslednyaya-zamorskaya-koloniya",
-   "pervaya-tihookeanskaya-eskadra"
-  ]
- },
- {
-  "slug": "gavan-port-artura",
-  "name": "旅顺内港（东港池与西港池）",
-  "name_zh": "旅顺港 (Lǚshùn gǎng); 旅顺口 (Lǚshùnkǒu)",
-  "name_now": "中国人民解放军海军基地，市区设有滨海街道与观景点",
-  "city": "lushun",
-  "layers": [
-   "chinese",
-   "russian",
-   "japanese",
-   "soviet"
-  ],
-  "kind": "port",
-  "lat": 38.802,
-  "lng": 121.255,
-  "coord_confidence": "medium",
-  "summary": "俄国租借关东，正是为了这处港湾。黄金山与老虎尾间的入口狭窄而深，内部有两个港池。第一太平洋舰队的七艘战列舰、巡洋舰和鱼雷艇曾停泊于此。203高地失守后，攻城榴弹炮将军舰击沉在码头边；只有埃森带往白狼湾的“塞瓦斯托波尔”号暂时幸存。如今这里仍是军事基地，水边有市区，其余景观可从白玉山远眺。坐标仅为东港池上方的示意点。",
-  "visit": "基地内部不开放，不建议拍摄军舰。",
-  "season": [
-   "spring",
-   "summer",
-   "autumn",
-   "winter"
-  ],
-  "posts": [
-   50,
-   127,
-   91
-  ],
-  "photos": [
-   "photos/photo_36@06-10-2026_17-18-17.jpg",
-   "photos/photo_113@20-10-2026_21-45-06.jpg",
-   "photos/photo_97@17-10-2026_15-14-01.jpg",
-   "photos/photo_101@17-10-2026_15-14-01.jpg",
-   "photos/photo_35@06-10-2026_17-18-17.jpg",
-   "photos/photo_300@archive.jpg",
-   "photos/photo_306@archive.jpg",
-   "photos/photo_301@archive.jpg",
-   "photos/photo_303@archive.jpg",
-   "photos/photo_307@archive.jpg",
-   "photos/photo_342@archive.jpg"
-  ],
-  "verify": true,
-  "articles": [
-   "port-artur-poslednyaya-zamorskaya-koloniya",
-   "otkuda-nazvanie-port-artur",
-   "pervaya-tihookeanskaya-eskadra",
-   "vereshchagin-hudozhnik-na-voyne",
-   "tsena-port-artura-v-tsifrah"
-  ]
- },
- {
-  "slug": "vokzal-lushun",
-  "name": "旅顺火车站",
-  "name_zh": "旅顺站 (Lǚshùn zhàn)",
-  "name_now": "滨水的俄式木构车站，定期列车已停运",
-  "city": "lushun",
-  "layers": [
-   "russian",
-   "japanese"
-  ],
-  "kind": "station",
-  "lat": 38.8068,
-  "lng": 121.2473,
-  "coord_confidence": "high",
-  "summary": "中东铁路南部支线终点，约1900年开工，1903年启用。如今西港池畔的木构车站有绿色尖顶，是旅顺最常被拍摄的景观之一。建筑本身的沿革尚不清楚：一些资料称日方于1905–1908年改建，另一些称2000年代按旧图修复。列车已不再抵达这里；地铁12号线停靠的是市中心以北另一座“旅顺站”。",
-  "visit": "可从外部观看，旁有滨海步道和白玉山索道入口。",
-  "season": [
-   "spring",
-   "summer",
-   "autumn",
-   "winter"
-  ],
-  "posts": [
-   50
-  ],
-  "photos": [],
-  "verify": true,
-  "articles": [
-   "port-artur-poslednyaya-zamorskaya-koloniya"
-  ]
- },
- {
-  "slug": "tyurma-lushun",
-  "name": "旅顺监狱",
-  "name_zh": "旅顺日俄监狱旧址 (Lǚshùn Rì-É jiānyù jiùzhǐ)",
-  "name_now": "旅顺日俄监狱旧址博物馆",
-  "city": "lushun",
-  "layers": [
-   "russian",
-   "japanese"
-  ],
-  "kind": "museum",
-  "lat": 38.8246,
-  "lng": 121.2599,
-  "coord_confidence": "high",
-  "summary": "俄方于1902年动工，日方于1907年扩建。砖色仍能辨别两个阶段：入口附近灰色建筑为俄建，大型红砖建筑为日建。日治时期，这里关押中国、朝鲜及日本囚犯。1910年，刺杀伊藤博文的朝鲜爱国人士安重根在此被处决。监狱使用至1945年，1971年改为博物馆，牢房、工场和刑场均有保存。",
-  "visit": "据旅行社2026年资料，免费参观，周一闭馆。尚未找到官方确认，请提前核实。",
-  "season": [
-   "spring",
-   "summer",
-   "autumn",
-   "winter"
-  ],
-  "posts": [],
-  "photos": [],
-  "verify": true,
-  "articles": []
- },
- {
-  "slug": "kladbishche-lushun",
-  "name": "旅顺俄国（俄苏）军人公墓",
-  "name_zh": "旅顺苏军烈士陵园 (Lǚshùn Sūjūn lièshì língyuán)",
-  "name_now": "三里桥一带的苏军烈士纪念墓地，老墓区有1904–1905年墓葬",
-  "city": "lushun",
-  "layers": [
-   "russian",
-   "japanese",
-   "soviet"
-  ],
-  "kind": "cemetery",
-  "lat": 38.8294,
-  "lng": 121.24,
-  "coord_confidence": "high",
-  "summary": "俄罗斯境外规模较大的俄国军人墓地之一，始建于俄国租借时期。战争后，日本当局将其整理为要塞阵亡守军纪念地；老墓区主要为1904年的集体墓，设礼拜堂和纪念碑。1945年起安葬在旅顺去世的苏军官兵，后来亦葬有朝鲜战争阵亡人员。入口处有1955年苏军纪念碑。2000年代由俄罗斯专家修复。康德拉坚科并不葬在这里，他的遗骸1905年已运回圣彼得堡。",
-  "visit": null,
-  "season": [
-   "spring",
-   "autumn",
-   "winter"
-  ],
-  "posts": [
-   227,
-   114
-  ],
-  "photos": [],
-  "verify": true,
-  "articles": [
-   "port-artur-i-dalnii-dva-goroda",
-   "kondratenko-dusha-oborony"
-  ]
- },
- {
-  "slug": "muzey-lushun",
-  "name": "旅顺博物馆",
-  "name_zh": "旅顺博物馆 (Lǚshùn bówùguǎn)",
-  "name_now": "太阳沟新市街内的国有博物馆",
-  "city": "lushun",
-  "layers": [
-   "japanese",
-   "soviet"
-  ],
-  "kind": "museum",
-  "lat": 38.8075,
-  "lng": 121.2297,
-  "coord_confidence": "high",
-  "summary": "博物馆创办于日治时期：1915年为地方物产展览，1917年成为关东都督府“满蒙物产馆”。建筑融合欧洲样式与东方细部。1951年2月1日，苏军将其移交中国。如今馆藏包括考古、青铜器、书法和新疆文物。当地有建筑始建于俄国时期的说法，但尚未找到文献证明。",
-  "visit": null,
-  "season": [
-   "spring",
-   "summer",
-   "autumn",
-   "winter"
-  ],
-  "posts": [],
-  "photos": [],
-  "verify": true,
-  "articles": []
- },
- {
-  "slug": "novy-gorod-taiyangou",
-  "name": "旅顺新市街",
-  "name_zh": "太阳沟 (Tàiyánggōu)",
-  "name_now": "太阳沟历史街区，街道宁静，留有俄式与日式宅邸",
-  "city": "lushun",
-  "layers": [
-   "russian",
-   "japanese",
-   "soviet"
-  ],
-  "kind": "street",
-  "lat": 38.81,
-  "lng": 121.2281,
-  "coord_confidence": "medium",
-  "summary": "俄方在港湾西侧按欧洲方式规划新市街，街道笔直；频道文章提到海滨街和普希金街。日方后来兴建行政建筑，因此俄式宅邸——其中一座标为“俄式高官住宅”——与原关东军司令部、旅顺博物馆、中苏友谊塔并存。街道绿树成荫，5月刺槐开白花。",
-  "visit": "可从旅顺博物馆出发步行游览，约1–1.5小时。",
-  "season": [
-   "spring",
-   "autumn"
-  ],
-  "posts": [
-   50
-  ],
-  "photos": [
-   "photos/photo_37@06-10-2026_17-18-17.jpg"
-  ],
-  "verify": true,
-  "articles": [
-   "port-artur-poslednyaya-zamorskaya-koloniya"
-  ]
- },
- {
-  "slug": "bashnya-druzhby",
-  "name": "中苏友谊塔",
-  "name_zh": "中苏友谊纪念塔 (Zhōng-Sū yǒuyì jìniàntǎ)",
-  "name_now": "旅顺博物馆旁广场上的纪念塔",
-  "city": "lushun",
-  "layers": [
-   "soviet"
-  ],
-  "kind": "monument",
-  "lat": 38.8085,
-  "lng": 121.2291,
-  "coord_confidence": "high",
-  "summary": "1950年代为纪念中苏友谊而建，彼时旅顺为两国共同使用的海军基地，直至1955年。不同资料对工期记载有差异，有称1955年开工，之后完工。纪念塔位于新市街旅顺博物馆旁的圆形广场，浮雕表现两国共同历史的场景。",
-  "visit": "广场开放，可从外部观赏。",
-  "season": [
-   "spring",
-   "summer",
-   "autumn",
-   "winter"
-  ],
-  "posts": [
-   93,
-   114
-  ],
-  "photos": [],
-  "verify": true,
-  "articles": [
-   "dalnii-gorod-s-nulya",
-   "port-artur-i-dalnii-dva-goroda"
-  ]
- },
- {
-  "slug": "shuishiying",
-  "name": "水师营会见所",
-  "name_zh": "水师营会见所旧址 (Shuǐshīyíng huìjiànsuǒ jiùzhǐ)",
-  "name_now": "旅顺北郊的纪念建筑",
-  "city": "lushun",
-  "layers": [
-   "russian",
-   "japanese"
-  ],
-  "kind": "building",
-  "lat": 38.8528,
-  "lng": 121.2388,
-  "coord_confidence": "high",
-  "summary": "水师营村的一座农舍。1904年12月23日（公历1905年1月5日），投降协议签署后，斯特塞尔与乃木在此会面。据流传的故事，院中树下曾拴着斯特塞尔赠给乃木的马。这次会面还写入日本学校歌曲。现存房屋看来经过复建，与原貌的符合程度仍待核实。",
-  "visit": null,
-  "season": [
-   "winter",
-   "spring",
-   "autumn"
-  ],
-  "posts": [
-   50
-  ],
-  "photos": [],
-  "verify": true,
-  "articles": [
-   "port-artur-poslednyaya-zamorskaya-koloniya"
-  ]
- },
- {
-  "slug": "longwangtang",
-  "name": "龙王塘：水库旁的樱花园",
-  "name_zh": "龙王塘樱花园 (Lóngwángtáng yīnghuā yuán)",
-  "name_now": "龙王塘水库大坝旁的樱花公园",
-  "city": "lushun",
-  "layers": [
-   "japanese"
-  ],
-  "kind": "park",
-  "lat": 38.854,
-  "lng": 121.386,
-  "coord_confidence": "low",
-  "summary": "位于大连与旅顺之间，水库建于日治时期。樱花最初由日本人栽植，如今是大连周边最知名的赏樱地。单瓣约4月中旬开放，重瓣晚一周左右，花期延续至月底。203高地脚下的樱花园通常再晚一周。坐标为近似位置，公园在水库南端大坝下方。",
-  "visit": "季节性收费公园。据旅行社，2025年门票20元；花期有从大连出发的旅游巴士。",
-  "season": [
-   "spring"
-  ],
-  "posts": [],
-  "photos": [],
-  "verify": true,
-  "articles": []
- },
- {
-  "slug": "nikolaevskaya-ploshchad",
-  "name": "尼古拉广场",
-  "name_zh": "中山广场 (Zhōngshān guǎngchǎng)",
-  "name_now": "大连市中心的中山广场，圆形广场周围为日治时期银行及旅馆建筑",
-  "city": "dalian",
-  "layers": [
-   "russian",
-   "japanese",
-   "soviet"
-  ],
-  "kind": "square",
-  "lat": 38.9208,
-  "lng": 121.6388,
-  "coord_confidence": "high",
-  "summary": "斯科利莫夫斯基规划的中心，仿巴黎星形广场，直径213米，十条街道放射而出。俄方完成布局，未及建起周边楼宇。日方改称“大广场”，1908–1936年沿圆周建银行、市役所、警察署和大和旅馆。八座战前建筑保留至今，英国领事馆1995年拆除。1945年后，广场以孙中山命名。",
-  "visit": "地铁中山广场站。广场全天开放，建筑夜间亮灯。",
-  "season": [
-   "spring",
-   "summer",
-   "autumn",
-   "winter"
-  ],
-  "posts": [
-   93,
-   114
-  ],
-  "photos": [
-   "photos/photo_320@archive.jpg",
-   "photos/photo_67@11-10-2026_14-03-01.jpg",
-   "photos/photo_68@11-10-2026_14-03-01.jpg",
-   "photos/photo_366@11-11-2026_10-19-57.jpg"
-  ],
-  "verify": false,
-  "articles": [
-   "dalnii-gorod-s-nulya",
-   "port-artur-i-dalnii-dva-goroda",
-   "skolimovsky-chelovek-kotoryy-narisoval-dalnii",
-   "zodchiy-1904-plan-goroda-dalnego"
-  ]
- },
- {
-  "slug": "russkaya-ulitsa",
-  "name": "俄罗斯风情街（原工程街）",
-  "name_zh": "团结街 / 俄罗斯风情街 (Tuánjié jiē / Éluósī fēngqíng jiē)",
-  "name_now": "原俄国行政区内的旅游步行街",
-  "city": "dalian",
-  "layers": [
-   "russian",
-   "japanese"
-  ],
-  "kind": "street",
-  "lat": 38.927,
-  "lng": 121.6307,
-  "coord_confidence": "high",
-  "summary": "位于达里尼最早开发的铁路以北地区，1899–1902年建设行政区。据频道资料，原工程街即今日俄罗斯风情街。部分房屋为原物，旅游开发时也增建、翻修了不少仿古建筑，一层多为纪念品店。街道尽头是原达里尼市政厅。",
-  "visit": "从中山广场经胜利桥步行约15–20分钟。街道全天开放。",
-  "season": [
-   "spring",
-   "summer",
-   "autumn"
-  ],
-  "posts": [
-   93
-  ],
-  "photos": [
-   "photos/photo_70@11-10-2026_14-03-01.jpg",
-   "photos/photo_71@11-10-2026_14-03-01.jpg",
-   "photos/photo_317@archive.jpg"
-  ],
-  "verify": true,
-  "articles": [
-   "dalnii-gorod-s-nulya",
-   "skolimovsky-chelovek-kotoryy-narisoval-dalnii",
-   "zodchiy-1904-plan-goroda-dalnego"
-  ]
- },
- {
-  "slug": "upravlenie-dalnego",
-  "name": "达里尼市政厅旧址",
-  "name_zh": "达里尼市政厅旧址 (Dálǐní shìzhèngtīng jiùzhǐ)",
-  "name_now": "俄罗斯风情街北端的历史建筑",
-  "city": "dalian",
-  "layers": [
-   "russian",
-   "japanese"
-  ],
-  "kind": "building",
-  "lat": 38.9281,
-  "lng": 121.6279,
-  "coord_confidence": "high",
-  "summary": "达里尼最早的砖石建筑之一，1900年代初为市政机构修建。港口建设者、首任市长萨哈罗夫工程师曾在此管理城市。1904年他志愿赴旅顺，后因斑疹伤寒去世。1905年后建筑由日本机构使用，后来长期为大连自然博物馆。现为受保护文物，馆内可能不开放。",
-  "visit": null,
-  "season": [
-   "spring",
-   "summer",
-   "autumn"
-  ],
-  "posts": [
-   93,
-   114
-  ],
-  "photos": [
-   "photos/photo_66@11-10-2026_14-03-01.jpg",
-   "photos/photo_361@11-11-2026_10-18-04.jpg",
-   "photos/photo_362@11-11-2026_10-18-05.jpg"
-  ],
-  "verify": true,
-  "articles": [
-   "dalnii-gorod-s-nulya",
-   "port-artur-i-dalnii-dva-goroda",
-   "skolimovsky-chelovek-kotoryy-narisoval-dalnii",
-   "zodchiy-1904-plan-goroda-dalnego"
-  ]
- },
- {
-  "slug": "zdanie-kvzhd-1902",
-  "name": "桥头的1902年建筑（中东铁路公司办公楼）",
-  "name_zh": "大连艺术展览馆 / 大连美术馆 (Dàlián yìshù zhǎnlǎnguǎn / Dàlián měishùguǎn)",
-  "name_now": "大连美术馆",
-  "city": "dalian",
-  "layers": [
-   "russian",
-   "japanese"
-  ],
-  "kind": "building",
-  "lat": 38.9266,
-  "lng": 121.6326,
-  "coord_confidence": "high",
-  "summary": "胜利桥北端带有塔楼和高屋顶的建筑，建于1902年。最初使用者的说法不一：中东铁路公司、达里尼俄国行政机关，后来又有日本轮船公司。建筑师也有德国建筑师、斯科利莫夫斯基等不同说法。2001年列为全国重点文物保护单位。日本门司港有其复制建筑——大连友好纪念馆。现用于展览。",
-  "visit": null,
-  "season": [
-   "spring",
-   "summer",
-   "autumn",
-   "winter"
-  ],
-  "posts": [
-   93
-  ],
-  "photos": [],
-  "verify": true,
-  "articles": [
-   "dalnii-gorod-s-nulya"
-  ]
- },
- {
-  "slug": "most-pobedy",
-  "name": "胜利桥",
-  "name_zh": "胜利桥 (Shènglì qiáo)",
-  "name_now": "跨越铁路线、连接俄罗斯风情街与市中心的桥梁",
-  "city": "dalian",
-  "layers": [
-   "russian",
-   "japanese",
-   "soviet"
-  ],
-  "kind": "street",
-  "lat": 38.9257,
-  "lng": 121.6334,
-  "coord_confidence": "high",
-  "summary": "跨越铁路，将俄国行政区与达里尼其他城区连接起来。日治时期称日本桥，1945年后称胜利桥。桥上可观看铁路北侧的历史街区。初建与历次重建年代各资料并不一致，常见说法为1900年代末由日方重建。",
-  "visit": "桥上人行通道全天开放。",
-  "season": [
-   "spring",
-   "summer",
-   "autumn",
-   "winter"
-  ],
-  "posts": [
-   93
-  ],
-  "photos": [],
-  "verify": true,
-  "articles": [
-   "dalnii-gorod-s-nulya"
-  ]
- },
- {
-  "slug": "gorodskoy-sad",
-  "name": "西公园（市民花园？）",
-  "name_zh": "劳动公园 (Láodòng gōngyuán)",
-  "name_now": "劳动公园，大连市中心最大的公园",
-  "city": "dalian",
-  "layers": [
-   "russian",
-   "japanese",
-   "soviet"
-  ],
-  "kind": "park",
-  "lat": 38.9105,
-  "lng": 121.6302,
-  "coord_confidence": "high",
-  "summary": "据中文资料，俄方于1898年在当时城市西郊开辟公园，称西公园。日治时期扩建，增设相扑、 高尔夫球场和泳池，1926年改称中央公园。1947年称列宁公园，1949年改称劳动公园。频道有一张达里尼“市民花园”的照片，但尚未确认是否同一处。秋天可看金黄银杏。",
-  "visit": "免费开放。劳动公园东门距中山广场步行约10–15分钟。",
-  "season": [
-   "spring",
-   "autumn"
-  ],
-  "posts": [
-   93
-  ],
-  "photos": [
-   "photos/photo_69@11-10-2026_14-03-01.jpg"
-  ],
-  "verify": true,
-  "articles": [
-   "dalnii-gorod-s-nulya"
-  ]
- },
- {
-  "slug": "port-dalniy",
-  "name": "达里尼港（维多利亚湾）",
-  "name_zh": "大连港 (Dàlián gǎng)",
-  "name_now": "大连港，市区一侧为大连港客运站及港湾广场",
-  "city": "dalian",
-  "layers": [
-   "russian",
-   "japanese",
-   "soviet"
-  ],
-  "kind": "port",
-  "lat": 38.93,
-  "lng": 121.6578,
-  "coord_confidence": "high",
-  "summary": "整座城市为港口而建。设计者萨哈罗夫此前曾建设海参崴商港。一期设施耗资1080万卢布，迅速使达里尼货物吞吐量居中国第二，仅次上海。1904年5月，日军获得几近完工的港口，并以此供应围攻旅顺的军队。如今仍为大型港口，客运站与市区相接。坐标位于客运站附近。",
-  "visit": "客运站面向轮渡旅客开放，货运港区不开放。",
-  "season": [
-   "summer",
-   "autumn"
-  ],
-  "posts": [
-   93,
-   114,
-   137
-  ],
-  "photos": [
-   "photos/photo_73@11-10-2026_14-03-01.jpg",
-   "photos/photo_324@archive.jpg",
-   "photos/photo_319@archive.jpg"
-  ],
-  "verify": false,
-  "articles": [
-   "dalnii-gorod-s-nulya",
-   "port-artur-i-dalnii-dva-goroda",
-   "vitte-chast-2-ministr-kotoryi-otdaval",
-   "skolimovsky-chelovek-kotoryy-narisoval-dalnii"
-  ]
- },
- {
-  "slug": "gostinitsa-yamato",
-  "name": "大和旅馆",
-  "name_zh": "大连宾馆（Dàlián bīnguǎn），原大和旅馆",
-  "name_now": "中山广场上的酒店",
-  "city": "dalian",
-  "layers": [
-   "japanese",
-   "soviet"
-  ],
-  "kind": "building",
-  "lat": 38.9195,
-  "lng": 121.6395,
-  "coord_confidence": "high",
-  "summary": "南满洲铁道株式会社的酒店，1914年在大广场南侧开业。满铁在满洲和关东主要城市经营“大和”连锁旅馆，旅顺也有一家，大连这家最为知名。柱廊立面尚存，建筑仍作酒店使用，是广场上少数可住宿的战前建筑。",
-  "visit": "仍在营业，外立面可从广场观看。",
-  "season": [
-   "spring",
-   "summer",
-   "autumn",
-   "winter"
-  ],
-  "posts": [],
-  "photos": [
-   "photos/photo_325@archive.jpg",
-   "photos/photo_322@archive.jpg"
-  ],
-  "verify": false,
-  "articles": []
- },
- {
-  "slug": "bank-yokohama",
-  "name": "横滨正金银行大连支店",
-  "name_zh": "横滨正金银行大连支店旧址（Héngbīn Zhèngjīn yínháng），现为中国银行",
-  "name_now": "中国银行营业网点",
-  "city": "dalian",
-  "layers": [
-   "japanese"
-  ],
-  "kind": "building",
-  "lat": 38.9218,
-  "lng": 121.6383,
-  "coord_confidence": "high",
-  "summary": "1909年建成的三穹顶建筑，由明治时期重要建筑师妻木赖黄及其学生太田毅设计。横滨正金银行为对外贸易提供融资，满洲大豆及豆饼经大连外运。现为中国银行，历史建筑后方于2005年增建楼宇。",
-  "visit": "银行仍在营业。",
-  "season": [
-   "spring",
-   "summer",
-   "autumn",
-   "winter"
-  ],
-  "posts": [],
-  "photos": [
-   "photos/photo_326@archive.jpg"
-  ],
-  "verify": false,
-  "articles": []
- },
- {
-  "slug": "merija-dajrena",
-  "name": "大连市役所",
-  "name_zh": "大连市役所旧址（Dàlián shìyìsuǒ），现为中国工商银行",
-  "name_now": "中国工商银行营业网点",
-  "city": "dalian",
-  "layers": [
-   "japanese"
-  ],
-  "kind": "building",
-  "lat": 38.9199,
-  "lng": 121.6403,
-  "coord_confidence": "high",
-  "summary": "1919年建成的日治时期市政厅，由松室重光团队设计，入口上方设塔楼。与1908年警察署、1920年朝鲜银行、1917年邮便局及1936年东洋拓殖会社共同环绕广场。日方用三十年，建起俄国所规划广场的周边建筑。现为中国工商银行。",
-  "visit": "银行仍在营业。",
-  "season": [
-   "spring",
-   "summer",
-   "autumn",
-   "winter"
-  ],
-  "posts": [],
-  "photos": [],
-  "verify": false,
-  "articles": []
- },
- {
-  "slug": "politsiya-dajrena",
-  "name": "大连警察署",
-  "name_zh": "大连警察署旧址 (Dàlián jǐngchá shǔ)",
-  "name_now": "中山广场上的办公建筑",
-  "city": "dalian",
-  "layers": [
-   "japanese"
-  ],
-  "kind": "building",
-  "lat": 38.9197,
-  "lng": 121.6374,
-  "coord_confidence": "high",
-  "summary": "大广场上最早的建筑，1908年建成，由关东都督府建筑部门前田松韵团队设计。红砖配白色饰带，转角设塔。1908年俄方留下的广场仍是一个空圆，放射状街道刚有轮廓，这栋楼为后来建筑确定了尺度与风格。现为办公用房，包括花旗银行网点。",
-  "visit": "办公建筑，内部不开放。",
-  "season": [
-   "spring",
-   "summer",
-   "autumn",
-   "winter"
-  ],
-  "posts": [],
-  "photos": [],
-  "verify": false,
-  "articles": []
- },
- {
-  "slug": "vokzal-dalian",
-  "name": "日治时期大连站",
-  "name_zh": "大连站 (Dàlián zhàn)",
-  "name_now": "大连主要铁路客运站",
-  "city": "dalian",
-  "layers": [
-   "japanese",
-   "soviet"
-  ],
-  "kind": "station",
-  "lat": 38.9213,
-  "lng": 121.6282,
-  "coord_confidence": "high",
-  "summary": "1937年启用，以楼层区分旅客流线：出发旅客沿坡道上楼，到达旅客从下层出站。外观常被拿来与东京上野站比较。日方为扩大的城市兴建此站，俄国达里尼时期的车站是另一栋建筑。如今仍正常使用，前方为宽阔站前广场。",
-  "visit": "车站仍在运营，地铁大连站可达。",
-  "season": [
-   "spring",
-   "summer",
-   "autumn",
-   "winter"
-  ],
-  "posts": [],
-  "photos": [],
-  "verify": true,
-  "articles": []
- },
- {
-  "slug": "nagasaki-goshinji",
-  "name": "长崎悟真寺俄国人墓地",
-  "name_zh": "悟真寺国際墓地（日语Goshinji kokusai bochi；汉语Wùzhēnsì）",
-  "name_now": "悟真寺旁的稻佐国际墓地",
-  "city": "other",
-  "layers": [
-   "russian",
-   "japanese"
-  ],
-  "kind": "cemetery",
-  "lat": 32.753,
-  "lng": 129.8603,
-  "coord_confidence": "high",
-  "summary": "1897年以前，俄国太平洋舰队常在长崎越冬，稻佐地区悟真寺旁由此形成俄国水兵墓地。婴儿米哈伊尔·米尔贝格也葬于此：1904年11月13日生于被围旅顺，投降次日受洗，只活了52天。历史学者德米特里·尼古拉耶夫依据教会登记簿重建其家族经历，发表于《祖国》的《来自长崎的米沙》。",
-  "visit": "位于长崎湾西岸稻佐地区，附近为“悟真寺前”公交站。",
-  "season": [
-   "spring",
-   "autumn"
-  ],
-  "posts": [
-   143,
-   127
-  ],
-  "photos": [],
-  "verify": false,
-  "articles": [
-   "otsu-1891-pokushenie-na-tsesarevicha",
-   "pervaya-tihookeanskaya-eskadra",
-   "misha-iz-nagasaki-myulberg"
-  ]
- },
- {
-  "slug": "dalyanskiy-universitet-inyaz",
-  "name": "大连外国语大学旅顺校区",
-  "name_zh": "大连外国语大学（旅顺校区）",
-  "name_now": "在用大学校区，大连俄罗斯俱乐部游览活动在校门附近集合",
-  "city": "lushun",
-  "layers": [
-   "modern"
-  ],
-  "kind": "meeting",
-  "lat": 38.8098,
-  "lng": 121.3057,
-  "coord_confidence": "high",
-  "summary": "大连俄罗斯俱乐部旅顺专题游的集合点，约09:00在此会合，返程也送回这里。校区位于旅顺东部新大学城，距历史中心及老火车站直线约5公里。校园本身与要塞史无关，主要是地址明确、便于打车且有停车空间。集合后分乘汽车，第一站为旅顺火车站。",
-  "visit": "具体校门和时间由活动组织者通知，请提前一天确认。导航搜索“大连外国语大学 旅顺校区”。",
-  "season": [
-   "spring",
-   "summer",
-   "autumn",
-   "winter"
-  ],
-  "posts": [],
-  "photos": [],
-  "verify": true,
-  "articles": []
- },
- {
-  "slug": "staryy-gorod-port-artura",
-  "name": "旅顺老市街",
-  "name_zh": "旅顺老城区（黄河路一带）",
-  "name_now": "白玉山东侧、东港池旁的旅顺中心，留有俄式及日式房屋",
-  "city": "lushun",
-  "layers": [
-   "pre1898",
-   "russian",
-   "japanese",
-   "soviet"
-  ],
-  "kind": "street",
-  "lat": 38.8075,
-  "lng": 121.256,
-  "coord_confidence": "medium",
-  "summary": "黄金山与白玉山脚、东港池旁的市街，在清朝北洋海军时期已形成。俄国租借时期，太平洋舰队军官和水兵住在这里，港务机构、商店和餐馆集中于此；西岸新市街尚在建设。1905年后日方改造市中心，如今所见房屋不少建于日治时期。地图点仅示意街区范围，适合步行。",
-  "visit": "可从火车站或白玉山索道下站步行前往。不要拍摄港边军事设施，哪些建筑开放请现场确认。",
-  "season": [
-   "spring",
-   "summer",
-   "autumn",
-   "winter"
-  ],
-  "posts": [],
-  "photos": [
-   "photos/photo_104@17-10-2026_15-14-01.jpg",
-   "photos/photo_63@10-10-2026_21-53-29.jpg",
-   "photos/photo_305@archive.jpg"
-  ],
-  "verify": true,
-  "articles": []
- },
- {
-  "slug": "redut-1",
-  "name": "第1号多面堡（东盘龙山）",
-  "name_zh": "盘龙山东堡垒 (Pánlóngshān dōng bǎolěi)",
-  "name_now": "大鹰巢以北、主堡垒线前方的野战工事遗存",
-  "city": "lushun",
-  "layers": [
-   "russian",
-   "japanese"
-  ],
-  "kind": "fort",
-  "lat": 38.8389,
-  "lng": 121.2741,
-  "coord_confidence": "low",
-  "summary": "盘龙山两座多面堡之一，位于东部战线第II、第III号堡垒之间、主防线前方。1904年8月6–11日（19–24日）第一次总攻中，日军付出重大损失夺取两堡，这是当次攻势唯一收获。主防线继续坚守，围攻随后转为工程攻坚。两堡各自的编号及现存遗迹，仍须对照图纸并现场核实。",
-  "visit": "没有独立景区。坐标依据1904年要塞图估计，可在鸡冠山路北侧寻找残存土垒。",
-  "season": [
-   "autumn",
-   "winter",
-   "spring"
-  ],
-  "posts": [],
-  "photos": [],
-  "verify": true,
-  "articles": []
- },
- {
-  "slug": "redut-2",
-  "name": "第2号多面堡（西盘龙山）",
-  "name_zh": "盘龙山西堡垒 (Pánlóngshān xī bǎolěi)",
-  "name_now": "二龙山东侧、主堡垒线前方的野战工事遗存",
-  "city": "lushun",
-  "layers": [
-   "russian",
-   "japanese"
-  ],
-  "kind": "fort",
-  "lat": 38.8401,
-  "lng": 121.2703,
-  "coord_confidence": "low",
-  "summary": "盘龙山的另一座多面堡，位于第一座以西，更靠近第III号堡垒。两堡共同掩护东部主防线的接近地，均在1904年8月总攻中失守。此后日军由这里将战壕向主防线推进。1904年要塞图上，两堡已在日军战壕线之后。编号与确切位置仍须图地核对。",
-  "visit": "坐标据1904年图估定。如有指示牌，预计仅为中文。",
-  "season": [
-   "autumn",
-   "winter",
-   "spring"
-  ],
-  "posts": [],
-  "photos": [],
-  "verify": true,
-  "articles": []
- },
- {
-  "slug": "ukreplenie-4",
-  "name": "第4号防御工事",
-  "name_zh": "大案子山堡垒 (Dà Ànzishān bǎolěi)",
-  "name_now": "新市街以北大案子山上的工事，OpenStreetMap标为观景点",
-  "city": "lushun",
-  "layers": [
-   "russian",
-   "japanese"
-  ],
-  "kind": "fort",
-  "lat": 38.8197,
-  "lng": 121.2207,
-  "coord_confidence": "medium",
-  "summary": "西部防线第IV、第V号堡垒之间的中间工事，位于新市街上方。1904年要塞图以红色标注，表示12月19日仍由俄军控制。日军未强攻西线，主要攻击203高地和东北部，工事在要塞投降后移交。结构与第5号相似，设土垒、干壕和侧射堡。遗址现状仍需现场核实。",
-  "visit": "可从新市街民泰街方向接近。是否开放、是否收费，请提前确认。",
-  "season": [
-   "spring",
-   "autumn",
-   "winter"
-  ],
-  "posts": [],
-  "photos": [],
-  "verify": true,
-  "articles": []
- },
- {
-  "slug": "fort-4",
-  "name": "第IV号堡垒",
-  "name_zh": "椅子山堡垒 (Yǐzishān bǎolěi)",
-  "name_now": "新市街西北侧椅子山上的堡垒",
-  "city": "lushun",
-  "layers": [
-   "russian",
-   "japanese"
-  ],
-  "kind": "fort",
-  "lat": 38.8285,
-  "lng": 121.2247,
-  "coord_confidence": "medium",
-  "summary": "椅子山上的西部防线堡垒，位于西线北翼，是这一段最靠近203高地的堡垒。1904年要塞图显示，它与西部其他堡垒一样，到围城结束仍在俄军手中；日军11月22日（12月5日）夺取203高地后，并未继续向西进攻。1904年12月20日（1905年1月2日）要塞投降，堡垒未经战斗便被占领。地图点来自OpenStreetMap，与1904年图相符。",
-  "visit": "可由春城路接近。暂无门票信息，请现场确认。",
-  "season": [
-   "spring",
-   "autumn",
-   "winter"
-  ],
-  "posts": [],
-  "photos": [],
-  "verify": true,
-  "articles": []
- },
- {
-  "slug": "batareya-d",
-  "name": "字母“Д”炮台",
-  "name_zh": "—",
-  "name_now": "第V号堡垒与第5号防御工事之间的永久炮台旧址",
-  "city": "lushun",
-  "layers": [
-   "russian",
-   "japanese"
-  ],
-  "kind": "battery",
-  "lat": 38.8048,
-  "lng": 121.2042,
-  "coord_confidence": "low",
-  "summary": "西部防线的永久炮台。旅顺陆地炮台以字母编号，因此称字母炮台。1904年要塞图上，“Д炮台”位于第V号堡垒以南、通往第5号防御工事的中段，掩护通向新市街的谷地。炮台曾参与炮战，皮尔苏茨基1904年12月的日记记述了它开炮及日军炮击的情况。遗存与接近路线尚未实地确认，坐标据图估定，可能偏差一二百米。",
-  "visit": "坐标为1904年图上的近似位置，出发前请与卫星影像对照。",
-  "season": [
-   "spring",
-   "autumn",
-   "winter"
-  ],
-  "posts": [],
-  "photos": [],
-  "verify": true,
-  "articles": []
- },
- {
-  "slug": "morskoe-sobranie",
-  "name": "海军军官俱乐部",
-  "name_zh": "—",
-  "name_now": "建筑尚未确认，地图位置仅供示意",
-  "city": "lushun",
-  "layers": [
-   "russian"
-  ],
-  "kind": "building",
-  "lat": 38.8066,
-  "lng": 121.2292,
-  "coord_confidence": "low",
-  "summary": "俄国旅顺的海军军官聚会休息场所，服务太平洋舰队军官。军官俱乐部是俄国海军基地日常生活的一部分，围城回忆录与日记中也有记载。目前尚未确认它对应今日旅顺哪一栋建筑，也不清楚是否保存，因此暂在旅顺博物馆附近设示意点。后续将结合1904年城市图和导游讲解核实。",
-  "visit": "专题游由导游指认，独自前往时宜先了解其说明。地图点仅供示意。",
-  "season": [
-   "spring",
-   "summer",
-   "autumn",
-   "winter"
-  ],
-  "posts": [],
-  "photos": [],
-  "verify": true,
-  "articles": []
- },
- {
-  "slug": "yamato-lyuyshun",
-  "name": "旅顺大和旅馆",
-  "name_zh": "旅顺大和旅馆旧址 (Lǚshùn Dàhé lǚguǎn jiùzhǐ), 文化路30号",
-  "name_now": "文化路上的1903年两层宅邸，据媒体报道建筑状况堪忧",
-  "city": "lushun",
-  "layers": [
-   "russian",
-   "japanese"
-  ],
-  "kind": "building",
-  "lat": 38.8045,
-  "lng": 121.2252,
-  "coord_confidence": "low",
-  "summary": "请勿与大连中山广场的大和旅馆混淆。文物保护牌记载建于1903年。中文媒体称其原为入俄籍华商纪凤台宅邸，战后日方改作满铁“大和”连锁旅馆；同类报道还称溥仪1931年曾下榻。2010年代末，记者报道墙体开裂，周围设有施工围挡。",
-  "visit": "地址为旅顺口区文化路30号，旅顺博物馆以西。地图点标在街道上，并非房屋精确位置，内部很可能不开放。",
-  "season": [
-   "spring",
-   "summer",
-   "autumn",
-   "winter"
-  ],
-  "posts": [],
-  "photos": [],
-  "verify": true,
-  "articles": []
- },
- {
-  "slug": "russkaya-shkola",
-  "name": "俄国学校",
-  "name_zh": "—",
-  "name_now": "建筑尚未确认，地图点暂设于新市街，仅供示意",
-  "city": "lushun",
-  "layers": [
-   "russian",
-   "japanese"
-  ],
-  "kind": "building",
-  "lat": 38.8098,
-  "lng": 121.2262,
-  "coord_confidence": "low",
-  "summary": "俄国租借时期，旅顺有军官、官员和雇员家庭，因而开办学校供子女就读。目前尚未核实游览中所指“俄国学校”究竟是哪栋建筑，也不清楚1905年后用途，地图点暂设于新市街老街区，当地保留几座日治时期校舍。待城市图和文献核实后，再提供准确地址。",
-  "visit": "专题游中由导游指认。地图点仅供示意。",
-  "season": [
-   "spring",
-   "summer",
-   "autumn",
-   "winter"
-  ],
-  "posts": [],
-  "photos": [],
-  "verify": true,
-  "articles": []
- },
- {
-  "slug": "yaponskie-kvartaly-lyuyshunya",
-  "name": "旅顺日治时期街区",
-  "name_zh": "太阳沟历史街区 (中央大街、新华大街一带)",
-  "name_now": "太阳沟街道，留有1905–1945年的行政建筑和宅邸",
-  "city": "lushun",
-  "layers": [
-   "japanese",
-   "soviet"
-  ],
-  "kind": "street",
-  "lat": 38.8082,
-  "lng": 121.2295,
-  "coord_confidence": "medium",
-  "summary": "1905年后，日本以旅顺为关东统治中心，继续建设俄方开辟的新市街。这里留有原关东行政机关、宪兵司令部、清亡后居旅顺的肃亲王宅邸，以及日本官员的学校和住宅。许多建筑设有文物保护牌，部分已闲置。地图点仅示意街区，从博物馆出发步行游览较方便。",
-  "visit": "从旅顺博物馆沿中央大街、新华大街步行约1–1.5小时。建筑说明牌为中文。",
-  "season": [
-   "spring",
-   "summer",
-   "autumn"
-  ],
-  "posts": [],
-  "photos": [],
-  "verify": true,
-  "articles": []
- },
- {
-  "slug": "gospital-krasnogo-kresta",
-  "name": "红十字医院",
-  "name_zh": "旅顺红十字医院旧址 (Lǚshùn Hóngshízì yīyuàn jiùzhǐ)",
-  "name_now": "老市街黄河路旁巷内的旧建筑，列为历史遗址",
-  "city": "lushun",
-  "layers": [
-   "russian",
-   "japanese"
-  ],
-  "kind": "building",
-  "lat": 38.813,
-  "lng": 121.2621,
-  "coord_confidence": "medium",
-  "summary": "1904年围城时，旅顺有多所红十字医院，来自俄国的护士在此工作；伤员太多，其他建筑也被征作病房。老市街这栋楼被列为红十字医院旧址。它具体属于哪所俄国医院、日治时期作何用途，仍须文献核实。坐标来自OpenStreetMap。",
-  "visit": "位于黄河路北一巷，靠近区医院，可从外部观看。",
-  "season": [
-   "spring",
-   "summer",
-   "autumn",
-   "winter"
-  ],
-  "posts": [],
-  "photos": [],
-  "verify": true,
-  "articles": []
- },
- {
-  "slug": "dom-kondratenko",
-  "name": "康德拉坚科将军旧居",
-  "name_zh": "康特拉琴柯旧居 (Kāngtèlāqínkē jiùjū)",
-  "name_now": "新市街宁波街上的宅邸",
-  "city": "lushun",
-  "layers": [
-   "russian",
-   "japanese"
-  ],
-  "kind": "building",
-  "lat": 38.8121,
-  "lng": 121.2328,
-  "coord_confidence": "high",
-  "summary": "当地指认为要塞陆地防御负责人、罗曼·康德拉坚科少将住处的新市街房屋。将军1904年12月2（15）日在第II号堡垒阵亡，1905年遗骸运回圣彼得堡，因此这栋房屋是游览路线上唯一与他相关的日常生活地点。归属说法见于当地说明牌和地图，尚未见文献确认。",
-  "visit": "新市街宁波街，可从外部观看。",
-  "season": [
-   "spring",
-   "summer",
-   "autumn",
-   "winter"
-  ],
-  "posts": [],
-  "photos": [],
-  "verify": true,
-  "articles": []
- },
- {
-  "slug": "mayak-laoteshan",
-  "name": "老铁山灯塔",
-  "name_zh": "老铁山灯塔 (Lǎotiěshān dēngtǎ)",
-  "name_now": "辽东半岛南端仍在使用的灯塔及观景台",
-  "city": "lushun",
-  "layers": [
-   "pre1898",
-   "russian",
-   "japanese",
-   "soviet",
-   "modern"
-  ],
-  "kind": "viewpoint",
-  "lat": 38.727,
-  "lng": 121.1348,
-  "coord_confidence": "high",
-  "summary": "位于旅顺西南、辽东半岛最南端。黄海与渤海的习惯分界经过这里，晴日可从观景台看到颜色不同的海水交会。灯塔建于19世纪末清朝时期，早于俄国租借；确切年代与设备来源宜现场核实。从西面和渤海湾驶向旅顺的船只均经过此岬角，距港口入口直线约13公里。",
-  "visit": "距旅顺中心约20公里，需自驾或打车。据旅行社，观景区收费，请核实开放时间。岬角风大。",
-  "season": [
-   "spring",
-   "summer",
-   "autumn"
-  ],
-  "posts": [],
-  "photos": [],
-  "verify": true,
-  "articles": []
- },
- {
-  "slug": "dahei-shan",
-  "name": "大黑山",
-  "name_zh": "大黑山 (Dàhēishān)",
-  "name_now": "大连市内六区最高山峰，海拔663米",
-  "city": "dalian",
-  "layers": [
-   "modern"
-  ],
-  "kind": "viewpoint",
-  "lat": 39.0945,
-  "lng": 121.7866,
-  "coord_confidence": "medium",
-  "summary": "位于金州区，海拔663米，属千山山脉，山脚有大连大学校园。与旅顺、达里尼历史没有直接关联，主要作为郊外步行地点收录。春季山坡及峰顶附近有杜鹃和其他花卉。",
-  "visit": null,
-  "season": [
-   "spring",
-   "autumn"
-  ],
-  "posts": [],
-  "photos": [],
-  "verify": true,
-  "articles": []
- }
+  {
+    "slug": "vysokaya-gora",
+    "name": "203高地（俄称高山）",
+    "name_zh": "203高地（203 Gāodì）；日本纪念碑题名“尔灵山”（Ěrlíngshān）",
+    "name_now": "要塞西部防线的203纪念景区，山脚有樱花园",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "fort",
+    "lat": 38.8286,
+    "lng": 121.1935,
+    "coord_confidence": "high",
+    "summary": "二〇三高地位于主要永久性堡垒防线之外，韦利奇科的方案没有在山顶布置永久工事。经过数日交战，日军于1904年12月5日（俄历11月22日）占领山顶。从这里可以俯瞰港内水域，观察员得以引导攻城炮火射向停泊的军舰。山顶现有日方所立的尔灵山纪念碑，部分战壕仍存，并有标记指示乃木将军之子阵亡的位置。",
+    "visit": "景区入口有203景区停车场，须购票。票价和开放时间请现场确认；2025年旅行社资料标价30元，春季樱花期间可能另行定价。",
+    "season": [
+      "spring",
+      "autumn"
+    ],
+    "posts": [
+      50,
+      127,
+      227
+    ],
+    "photos": [
+      "photos/photo_341@archive.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "russko-yaponskaya-voina-v-kino",
+      "tri-proekta-kreposti-port-artur",
+      "ukreplenie-4-daanzishan",
+      "voina-na-more-osada-mukden-tsusima",
+      "stepanov-port-artur-retsenziya",
+      "port-artur-poslednyaya-zamorskaya-koloniya",
+      "pervaya-tihookeanskaya-eskadra",
+      "ukreplenie-5-yahutszui",
+      "dnevnik-kapitana-lile",
+      "gaolyan-i-sopki",
+      "kondratenko-dusha-oborony",
+      "posleznanie-kak-sudit-o-port-arture",
+      "oborona-port-artura-vrachi-i-sestry",
+      "tsena-port-artura-v-tsifrah"
+    ]
+  },
+  {
+    "slug": "fort-2",
+    "name": "第II号堡垒（东鸡冠山北堡垒）",
+    "name_zh": "东鸡冠山北堡垒 (Dōng Jīguānshān běi bǎolěi)",
+    "name_now": "东鸡冠山景区，包含堡垒遗址与旅顺日俄战争陈列馆",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "fort",
+    "lat": 38.8349,
+    "lng": 121.2798,
+    "coord_confidence": "medium",
+    "summary": "东北防线的支撑点，围绕外壕壁廊道的争夺持续数周，甚至深入地下。1904年12月2（15）日，一枚11英寸榴弹击中军官掩蔽部，罗曼·康德拉坚科将军与8名军官一同阵亡。三天后，即公历12月18日，日军炸毁胸墙，攻占堡垒。如今可见残破掩蔽部、壕沟和侧射堡。将军阵亡处有日方所立石碑，题为“俄国陆军少将康德拉坚科战死之所”，旁有小型陈列馆。",
+    "visit": "据携程，开放时间07:30–17:00，收费参观，旅行社资料标价25元。入口设东鸡冠山停车场。出发前请核实开放时间。",
+    "season": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "posts": [
+      50,
+      227,
+      210,
+      154
+    ],
+    "photos": [
+      "photos/photo_160@28-10-2026_08-55-08.jpg",
+      "photos/photo_191@02-11-2026_09-35-08.jpg",
+      "photos/photo_335@archive.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "gibel-petropavlovska-fotografiya",
+      "general-fok-geroy-dunaya-i-port-artur",
+      "port-artur-poslednyaya-zamorskaya-koloniya",
+      "kak-ustroen-fort",
+      "kondratenko-put-k-port-arturu",
+      "kondratenko-dusha-oborony",
+      "kulichkin-kondratenko-zhzl"
+    ]
+  },
+  {
+    "slug": "bolshoe-orlinoe-gnezdo",
+    "name": "大鹰巢",
+    "name_zh": "望台炮台 (Wàngtái pàotái)",
+    "name_now": "鸡冠山路旁的高地，设有日方纪念标志及观景处",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "battery",
+    "lat": 38.8342,
+    "lng": 121.2728,
+    "coord_confidence": "high",
+    "summary": "位于第II、第III号堡垒之间高地上的炮台，属于东北防线。1904年12月19日（公历1905年1月1日）失守，是防御战最后一场重大战斗；当天斯特塞尔便向日方提出投降。如今山顶有旧炮和纪念标志，可眺望鸡冠山至二龙山的整条山岭。俄称“大鹰巢”对应中文“望台”的说法已被广泛采用，但仍宜对照1904年要塞图核实。",
+    "visit": null,
+    "season": [
+      "autumn",
+      "winter"
+    ],
+    "posts": [
+      227
+    ],
+    "photos": [
+      "photos/photo_159@28-10-2026_08-55-08.jpg",
+      "photos/photo_336@archive.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "kondratenko-dusha-oborony"
+    ]
+  },
+  {
+    "slug": "fort-3",
+    "name": "第III号堡垒",
+    "name_zh": "二龙山堡垒 (Èrlóngshān bǎolěi)",
+    "name_now": "二龙山上的堡垒遗址",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "fort",
+    "lat": 38.8373,
+    "lng": 121.2654,
+    "coord_confidence": "medium",
+    "summary": "位于大鹰巢以西二龙山上的北部防线堡垒。日军挖掘坑道，炸毁胸墙后，于1904年12月15（28）日攻占。壕沟和混凝土工事尚有遗存。坐标标示山顶，堡垒实际位于山坡，具体位置须现场确认。",
+    "visit": null,
+    "season": [
+      "autumn",
+      "winter"
+    ],
+    "posts": [
+      227
+    ],
+    "photos": [
+      "photos/photo_539@place.jpg",
+      "photos/photo_161@28-10-2026_08-55-08.jpg",
+      "photos/photo_338@archive.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "kondratenko-dusha-oborony"
+    ]
+  },
+  {
+    "slug": "ukreplenie-3",
+    "name": "第3号防御工事",
+    "name_zh": "松树山堡垒 (Sōngshùshān bǎolěi)",
+    "name_now": "松树山防御工事遗址",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "fort",
+    "lat": 38.8374,
+    "lng": 121.254,
+    "coord_confidence": "high",
+    "summary": "北部堡垒之间的中间防御工事，结构与堡垒相似，包括土垒、干壕、侧射堡和营房。1904年12月18（31）日，日军引爆胸墙下的炸药，掩蔽部坍塌，工事随后失守。如今松林间仍有废墟和爆炸坑，访客明显少于203高地和东鸡冠山。",
+    "visit": null,
+    "season": [
+      "spring",
+      "autumn"
+    ],
+    "posts": [
+      144,
+      154
+    ],
+    "photos": [
+      "photos/photo_158@28-10-2026_08-55-08.jpg",
+      "photos/photo_162@28-10-2026_08-55-09.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "ukreplenie-5-yahutszui",
+      "kak-ustroen-fort"
+    ]
+  },
+  {
+    "slug": "ukreplenie-5",
+    "name": "第5号防御工事",
+    "name_zh": "鸦户嘴（Yāhùzuǐ），指示牌称“俄军指挥堡”",
+    "name_now": "林间保存较好的防御工事，有小型陈列室、要塞模型和海岸炮",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese",
+      "soviet"
+    ],
+    "kind": "fort",
+    "lat": 38.797,
+    "lng": 121.1933,
+    "coord_confidence": "high",
+    "summary": "西部防线第V、第VI号堡垒之间的中间工事。公开刊载的备战报告称，到1903年12月1日第5号防御工事已完工，第VI号堡垒则刚开工。据频道记述，1898年后的俄军改建之前已有清代工程；各阶段的确切沿革仍需核实。频道称此处未遭单独强攻。工事按投降条件移交，但此前曾参与炮战，皮尔苏茨基的日记有记述。如今仍可见土垒、干壕、侧射堡、营房与地下通道。实地文章作者将场地上的火炮辨认为采用杜尔拉赫尔式炮架的10英寸海岸炮，其来源尚未确定。旁边的小陈列室展示要塞模型和士兵生活。所谓在此指挥203高地作战的说法，尚无文献支持。",
+    "visit": "访客不多，尚非成熟景点。频道原帖导航点为38.7970, 121.1933。入口安排及是否收费，最好提前确认。",
+    "season": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "posts": [
+      144,
+      154,
+      174
+    ],
+    "photos": [
+      "photos/photo_118@21-10-2026_09-30-12.jpg",
+      "photos/photo_114@21-10-2026_09-30-12.jpg",
+      "photos/photo_115@21-10-2026_09-30-12.jpg",
+      "photos/photo_116@21-10-2026_09-30-12.jpg",
+      "photos/photo_117@21-10-2026_09-30-12.jpg",
+      "photos/photo_119@21-10-2026_09-30-12.jpg"
+    ],
+    "verify": false,
+    "articles": [
+      "ukreplenie-5-yahutszui",
+      "kak-ustroen-fort"
+    ]
+  },
+  {
+    "slug": "elektricheskiy-utes",
+    "name": "电岩炮台",
+    "name_zh": "电岩炮台 (Diànyán pàotái)",
+    "name_now": "黄海岸边悬崖上的海岸炮台遗址",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "battery",
+    "lat": 38.7918,
+    "lng": 121.264,
+    "coord_confidence": "high",
+    "summary": "15号海岸炮台位于黄金山以东、旅顺港入口附近的岩壁。电岩之名与崖上曾安装的探照灯有关。战争开始后的数周内，俄国报刊已在关于港口遭炮击的报道中提到电岩。崖上现存炮台遗迹。",
+    "visit": "一份旅行社资料称不对外国人开放，另一些则将其列为普通收费景点，票价约15元。出发前务必确认。",
+    "season": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "posts": [
+      144,
+      127
+    ],
+    "photos": [
+      "photos/photo_533@place.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "stepanov-port-artur-retsenziya",
+      "pervaya-tihookeanskaya-eskadra",
+      "ukreplenie-5-yahutszui"
+    ]
+  },
+  {
+    "slug": "zolotaya-gora",
+    "name": "黄金山",
+    "name_zh": "黄金山 (Huángjīnshān)",
+    "name_now": "旅顺港入口处的山体，部分属于军事区域",
+    "city": "lushun",
+    "layers": [
+      "chinese",
+      "russian",
+      "japanese",
+      "soviet"
+    ],
+    "kind": "viewpoint",
+    "lat": 38.7961,
+    "lng": 121.2615,
+    "coord_confidence": "high",
+    "summary": "位于港口入口东侧，与老虎尾半岛共同遮蔽内港。1898年3月16（28）日，基里尔·弗拉基米罗维奇大公在山上升起俄国国旗。山上原有清朝海岸炮台，后经俄军改建。1904年1月27日（2月9日），俄国舰队停在山脚外港锚地，遭日本鱼雷艇袭击。如今山脚为市区海滨浴场，山顶有军事设施。",
+    "visit": null,
+    "season": [
+      "summer"
+    ],
+    "posts": [
+      50,
+      127
+    ],
+    "photos": [
+      "photos/photo_540@place.jpg",
+      "photos/photo_302@archive.jpg",
+      "photos/photo_308@archive.jpg",
+      "photos/photo_304@archive.jpg",
+      "photos/photo_342@archive.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "gibel-petropavlovska-fotografiya",
+      "tri-proekta-kreposti-port-artur",
+      "port-artur-poslednyaya-zamorskaya-koloniya",
+      "pervaya-tihookeanskaya-eskadra"
+    ]
+  },
+  {
+    "slug": "perepelinaya-gora",
+    "name": "白玉山（俄称鹌鹑山）",
+    "name_zh": "白玉山 (Báiyùshān)",
+    "name_now": "山顶公园，有1909年建成的白玉山塔和港湾景观，设索道",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese",
+      "soviet"
+    ],
+    "kind": "viewpoint",
+    "lat": 38.8106,
+    "lng": 121.2517,
+    "coord_confidence": "high",
+    "summary": "位于东港池上方、新旧市街之间，俄国旅顺的全景照片常从这里拍摄。战后日方在乃木与东乡倡议下修建约67米高的“表忠塔”，即今日白玉山塔。观景处可见内港、黄金山、老虎尾及陆地防线群山，因此游览旅顺可从这里开始。",
+    "visit": "可沿公路或乘白玉山索道上山。票价资料不一：旅行社有的称门票40元，有的称塔区免费、索道收费。请现场确认。",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [
+      50,
+      127
+    ],
+    "photos": [
+      "photos/photo_542@place.jpg",
+      "photos/photo_34@06-10-2026_17-18-17.jpg",
+      "photos/photo_100@17-10-2026_15-14-01.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "port-artur-poslednyaya-zamorskaya-koloniya",
+      "pervaya-tihookeanskaya-eskadra"
+    ]
+  },
+  {
+    "slug": "gavan-port-artura",
+    "name": "旅顺内港（东港池与西港池）",
+    "name_zh": "旅顺港 (Lǚshùn gǎng); 旅顺口 (Lǚshùnkǒu)",
+    "name_now": "中国人民解放军海军基地，市区设有滨海街道与观景点",
+    "city": "lushun",
+    "layers": [
+      "chinese",
+      "russian",
+      "japanese",
+      "soviet"
+    ],
+    "kind": "port",
+    "lat": 38.802,
+    "lng": 121.255,
+    "coord_confidence": "medium",
+    "summary": "俄国租借关东，正是为了这处港湾。黄金山与老虎尾间的入口狭窄而深，内部有两个港池。第一太平洋舰队的七艘战列舰、巡洋舰和鱼雷艇曾停泊于此。203高地失守后，攻城榴弹炮将军舰击沉在码头边；只有埃森带往白狼湾的“塞瓦斯托波尔”号暂时幸存。如今这里仍是军事基地，水边有市区，其余景观可从白玉山远眺。坐标仅为东港池上方的示意点。",
+    "visit": "基地内部不开放，不建议拍摄军舰。",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [
+      50,
+      127,
+      91
+    ],
+    "photos": [
+      "photos/photo_36@06-10-2026_17-18-17.jpg",
+      "photos/photo_113@20-10-2026_21-45-06.jpg",
+      "photos/photo_97@17-10-2026_15-14-01.jpg",
+      "photos/photo_101@17-10-2026_15-14-01.jpg",
+      "photos/photo_35@06-10-2026_17-18-17.jpg",
+      "photos/photo_300@archive.jpg",
+      "photos/photo_306@archive.jpg",
+      "photos/photo_301@archive.jpg",
+      "photos/photo_303@archive.jpg",
+      "photos/photo_307@archive.jpg",
+      "photos/photo_342@archive.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "port-artur-poslednyaya-zamorskaya-koloniya",
+      "otkuda-nazvanie-port-artur",
+      "pervaya-tihookeanskaya-eskadra",
+      "vereshchagin-hudozhnik-na-voyne",
+      "tsena-port-artura-v-tsifrah"
+    ]
+  },
+  {
+    "slug": "vokzal-lushun",
+    "name": "旅顺火车站",
+    "name_zh": "旅顺站 (Lǚshùn zhàn)",
+    "name_now": "滨水的俄式木构车站，定期列车已停运",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "station",
+    "lat": 38.8068,
+    "lng": 121.2473,
+    "coord_confidence": "high",
+    "summary": "通往旅顺军港的中东铁路支线以这里为终点。辽宁省文物管理部门将这座木结构站房的建造时间定为1900年10月。候车室上方有一座铺设鱼鳞状铁瓦的塔楼。1945年，车站纳入中苏双方共同管理的中国长春铁路，1952年移交中国管理。同名地铁站位于旧站以北。",
+    "visit": "井岗街8号。可从街上参观建筑外观。",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [
+      50
+    ],
+    "photos": [
+      "photos/photo_514@place.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "port-artur-poslednyaya-zamorskaya-koloniya"
+    ]
+  },
+  {
+    "slug": "tyurma-lushun",
+    "name": "旅顺监狱",
+    "name_zh": "旅顺日俄监狱旧址 (Lǚshùn Rì-É jiānyù jiùzhǐ)",
+    "name_now": "旅顺日俄监狱旧址博物馆",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "museum",
+    "lat": 38.8246,
+    "lng": 121.2599,
+    "coord_confidence": "high",
+    "summary": "俄方于1902年动工，日方于1907年扩建。砖色仍能辨别两个阶段：入口附近灰色建筑为俄建，大型红砖建筑为日建。日治时期，这里关押中国、朝鲜及日本囚犯。1910年，刺杀伊藤博文的朝鲜爱国人士安重根在此被处决。监狱使用至1945年，1971年改为博物馆，牢房、工场和刑场均有保存。",
+    "visit": "向阳街139号。建筑现为旅顺日俄监狱旧址博物馆。",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [
+      "photos/photo_515@place.jpg",
+      "photos/photo_516@place.jpg"
+    ],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "kladbishche-lushun",
+    "name": "旅顺俄国（俄苏）军人公墓",
+    "name_zh": "旅顺苏军烈士陵园 (Lǚshùn Sūjūn lièshì língyuán)",
+    "name_now": "三里桥一带的苏军烈士纪念墓地，老墓区有1904–1905年墓葬",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese",
+      "soviet"
+    ],
+    "kind": "cemetery",
+    "lat": 38.8294,
+    "lng": 121.24,
+    "coord_confidence": "high",
+    "summary": "俄罗斯境外规模较大的俄国军人墓地之一，始建于俄国租借时期。战争后，日本当局将其整理为要塞阵亡守军纪念地；老墓区主要为1904年的集体墓，设礼拜堂和纪念碑。1945年起安葬在旅顺去世的苏军官兵，后来亦葬有朝鲜战争阵亡人员。入口处有1955年苏军纪念碑。2000年代由俄罗斯专家修复。康德拉坚科并不葬在这里，他的遗骸1905年已运回圣彼得堡。",
+    "visit": null,
+    "season": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "posts": [
+      227,
+      114
+    ],
+    "photos": [
+      "photos/photo_517@place.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "port-artur-i-dalnii-dva-goroda",
+      "kondratenko-dusha-oborony"
+    ]
+  },
+  {
+    "slug": "muzey-lushun",
+    "name": "旅顺博物馆",
+    "name_zh": "旅顺博物馆 (Lǚshùn bówùguǎn)",
+    "name_now": "太阳沟新市街内的国有博物馆",
+    "city": "lushun",
+    "layers": [
+      "japanese",
+      "soviet"
+    ],
+    "kind": "museum",
+    "lat": 38.8075,
+    "lng": 121.2297,
+    "coord_confidence": "high",
+    "summary": "旅顺博物馆源于日本当局在1915年开始筹办的满蒙物产陈列所。博物馆于1917年4月对外开放，建筑融合了欧洲与东亚的风格。如今馆藏包括考古出土文物、青铜器、书法和来自新疆的文物。",
+    "visit": null,
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [
+      "photos/photo_512@place.jpg"
+    ],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "novy-gorod-taiyangou",
+    "name": "旅顺新市街",
+    "name_zh": "太阳沟 (Tàiyánggōu)",
+    "name_now": "太阳沟历史街区，街道宁静，留有俄式与日式宅邸",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese",
+      "soviet"
+    ],
+    "kind": "street",
+    "lat": 38.81,
+    "lng": 121.2281,
+    "coord_confidence": "medium",
+    "summary": "俄方在港湾西侧按欧洲方式规划新市街，街道笔直；频道文章提到海滨街和普希金街。日方后来兴建行政建筑，因此俄式宅邸——其中一座标为“俄式高官住宅”——与原关东军司令部、旅顺博物馆、中苏友谊塔并存。街道绿树成荫，5月刺槐开白花。",
+    "visit": "可从旅顺博物馆出发步行游览，约1–1.5小时。",
+    "season": [
+      "spring",
+      "autumn"
+    ],
+    "posts": [
+      50
+    ],
+    "photos": [
+      "photos/photo_37@06-10-2026_17-18-17.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "port-artur-poslednyaya-zamorskaya-koloniya"
+    ]
+  },
+  {
+    "slug": "bashnya-druzhby",
+    "name": "中苏友谊塔",
+    "name_zh": "中苏友谊纪念塔 (Zhōng-Sū yǒuyì jìniàntǎ)",
+    "name_now": "旅顺博物馆旁广场上的纪念塔",
+    "city": "lushun",
+    "layers": [
+      "soviet"
+    ],
+    "kind": "monument",
+    "lat": 38.8085,
+    "lng": 121.2291,
+    "coord_confidence": "high",
+    "summary": "中苏友谊纪念塔位于旅顺博物馆前。纪念塔于1955年2月奠基，1956年10月竣工，1957年2月举行落成典礼。塔座浮雕刻有天安门与克里姆林宫、鞍钢高炉、旅顺口风光和丰收场景。",
+    "visit": "广场开放，可从外部观赏。",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [
+      93,
+      114
+    ],
+    "photos": [
+      "photos/photo_518@place.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "dalnii-gorod-s-nulya",
+      "port-artur-i-dalnii-dva-goroda"
+    ]
+  },
+  {
+    "slug": "shuishiying",
+    "name": "水师营会见所",
+    "name_zh": "水师营会见所旧址 (Shuǐshīyíng huìjiànsuǒ jiùzhǐ)",
+    "name_now": "旅顺北郊的纪念建筑",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "building",
+    "lat": 38.8528,
+    "lng": 121.2388,
+    "coord_confidence": "high",
+    "summary": "1905年1月2日（俄历1904年12月20日），日俄两军代表在旅顺以北的水师营签署开城条款。三天后，即1月5日（俄历12月23日），乃木希典与斯捷塞尔在此会见。日本明信片留下了会见地的影像。一张明信片上可见村屋及后来增设的纪念碑。现存建筑的哪些部分可追溯至20世纪初，尚待核实。",
+    "visit": null,
+    "season": [
+      "winter",
+      "spring",
+      "autumn"
+    ],
+    "posts": [
+      50
+    ],
+    "photos": [
+      "photos/photo_511@place.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "port-artur-poslednyaya-zamorskaya-koloniya"
+    ]
+  },
+  {
+    "slug": "longwangtang",
+    "name": "龙王塘：水库旁的樱花园",
+    "name_zh": "龙王塘樱花园 (Lóngwángtáng yīnghuā yuán)",
+    "name_now": "龙王塘水库大坝旁的樱花公园",
+    "city": "lushun",
+    "layers": [
+      "japanese"
+    ],
+    "kind": "park",
+    "lat": 38.854,
+    "lng": 121.386,
+    "coord_confidence": "low",
+    "summary": "龙王塘樱花园坐落在大连与旅顺之间的龙王塘水库坝旁。水库和花园连成一片，从亭子附近的小径可以同时看到花树和坝体。樱花通常在春季绽放，具体花期随天气变化。",
+    "visit": "地图可搜索“龙王塘樱花园”。具体花期每年有所不同。",
+    "season": [
+      "spring"
+    ],
+    "posts": [],
+    "photos": [
+      "photos/photo_519@place.jpg"
+    ],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "nikolaevskaya-ploshchad",
+    "name": "尼古拉广场",
+    "name_zh": "中山广场 (Zhōngshān guǎngchǎng)",
+    "name_now": "大连市中心的中山广场，圆形广场周围为日治时期银行及旅馆建筑",
+    "city": "dalian",
+    "layers": [
+      "russian",
+      "japanese",
+      "soviet"
+    ],
+    "kind": "square",
+    "lat": 38.9208,
+    "lng": 121.6388,
+    "coord_confidence": "high",
+    "summary": "圆形广场和向外辐射的十条街道已经出现在俄国时期的达里尼规划图上。日本统治时期，这里被称为“大广场”。从1908年起，行政机关、银行和大和旅馆陆续在广场四周兴建。1946年6月1日，广场改名，以纪念孙中山。原英国领事馆的地块上现为大连金融大厦。",
+    "visit": "地铁中山广场站。广场全天开放，建筑夜间亮灯。",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [
+      93,
+      114
+    ],
+    "photos": [
+      "photos/photo_320@archive.jpg",
+      "photos/photo_67@11-10-2026_14-03-01.jpg",
+      "photos/photo_68@11-10-2026_14-03-01.jpg",
+      "photos/photo_366@11-11-2026_10-19-57.jpg"
+    ],
+    "verify": false,
+    "articles": [
+      "dalnii-gorod-s-nulya",
+      "port-artur-i-dalnii-dva-goroda",
+      "skolimovsky-chelovek-kotoryy-narisoval-dalnii",
+      "zodchiy-1904-plan-goroda-dalnego"
+    ]
+  },
+  {
+    "slug": "russkaya-ulitsa",
+    "name": "俄罗斯风情街（原工程街）",
+    "name_zh": "团结街 / 俄罗斯风情街 (Tuánjié jiē / Éluósī fēngqíng jiē)",
+    "name_now": "原俄国行政区内的旅游步行街",
+    "city": "dalian",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "street",
+    "lat": 38.927,
+    "lng": 121.6307,
+    "coord_confidence": "high",
+    "summary": "位于达里尼最早开发的铁路以北地区，1899–1902年建设行政区。据频道资料，原工程街即今日俄罗斯风情街。部分房屋为原物，旅游开发时也增建、翻修了不少仿古建筑，一层多为纪念品店。街道尽头是原达里尼市政厅。",
+    "visit": "从中山广场经胜利桥步行约15–20分钟。街道全天开放。",
+    "season": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "posts": [
+      93
+    ],
+    "photos": [
+      "photos/photo_525@place.jpg",
+      "photos/photo_70@11-10-2026_14-03-01.jpg",
+      "photos/photo_71@11-10-2026_14-03-01.jpg",
+      "photos/photo_317@archive.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "dalnii-gorod-s-nulya",
+      "skolimovsky-chelovek-kotoryy-narisoval-dalnii",
+      "zodchiy-1904-plan-goroda-dalnego"
+    ]
+  },
+  {
+    "slug": "upravlenie-dalnego",
+    "name": "达里尼市政厅旧址",
+    "name_zh": "达里尼市政厅旧址 (Dálǐní shìzhèngtīng jiùzhǐ)",
+    "name_now": "俄罗斯风情街北端的历史建筑",
+    "city": "dalian",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "building",
+    "lat": 38.9281,
+    "lng": 121.6279,
+    "coord_confidence": "high",
+    "summary": "达里尼最早的砖石建筑之一，1900年代初为市政机构修建。港口建设者、首任市长萨哈罗夫工程师曾在此管理城市。1904年他志愿赴旅顺，后因斑疹伤寒去世。1905年后建筑由日本机构使用，后来长期为大连自然博物馆。现为受保护文物，馆内可能不开放。",
+    "visit": null,
+    "season": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "posts": [
+      93,
+      114
+    ],
+    "photos": [
+      "photos/photo_538@place.jpg",
+      "photos/photo_66@11-10-2026_14-03-01.jpg",
+      "photos/photo_361@11-11-2026_10-18-04.jpg",
+      "photos/photo_362@11-11-2026_10-18-05.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "dalnii-gorod-s-nulya",
+      "port-artur-i-dalnii-dva-goroda",
+      "skolimovsky-chelovek-kotoryy-narisoval-dalnii",
+      "zodchiy-1904-plan-goroda-dalnego"
+    ]
+  },
+  {
+    "slug": "zdanie-kvzhd-1902",
+    "name": "桥头的1902年建筑（中东铁路公司办公楼）",
+    "name_zh": "大连艺术展览馆 / 大连美术馆 (Dàlián yìshù zhǎnlǎnguǎn / Dàlián měishùguǎn)",
+    "name_now": "大连美术馆",
+    "city": "dalian",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "building",
+    "lat": 38.9266,
+    "lng": 121.6326,
+    "coord_confidence": "high",
+    "summary": "俄罗斯风情街入口处有一座带塔楼的建筑，即东清轮船会社旧址。辽宁省文物管理部门记载，大楼于1902年始建，由卡齐米日·斯科利莫夫斯基设计，曾供俄国地方行政机关和后来的日本东清轮船会社使用。1998年，大楼重建为艺术展览场所。2001年，旧址获列为全国重点文物保护单位。",
+    "visit": null,
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [
+      93
+    ],
+    "photos": [
+      "photos/photo_526@place.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "dalnii-gorod-s-nulya"
+    ]
+  },
+  {
+    "slug": "most-pobedy",
+    "name": "胜利桥",
+    "name_zh": "胜利桥 (Shènglì qiáo)",
+    "name_now": "跨越铁路线、连接俄罗斯风情街与市中心的桥梁",
+    "city": "dalian",
+    "layers": [
+      "russian",
+      "japanese",
+      "soviet"
+    ],
+    "kind": "street",
+    "lat": 38.9257,
+    "lng": 121.6334,
+    "coord_confidence": "high",
+    "summary": "跨越铁路，将俄国行政区与达里尼其他城区连接起来。日治时期称日本桥，1945年后称胜利桥。桥上可观看铁路北侧的历史街区。初建与历次重建年代各资料并不一致，常见说法为1900年代末由日方重建。",
+    "visit": "胜利桥连接大连市中心与俄罗斯风情街，桥上设有人行道。",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [
+      93
+    ],
+    "photos": [
+      "photos/photo_510@place.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "dalnii-gorod-s-nulya"
+    ]
+  },
+  {
+    "slug": "gorodskoy-sad",
+    "name": "西公园（市民花园？）",
+    "name_zh": "劳动公园 (Láodòng gōngyuán)",
+    "name_now": "劳动公园，大连市中心最大的公园",
+    "city": "dalian",
+    "layers": [
+      "russian",
+      "japanese",
+      "soviet"
+    ],
+    "kind": "park",
+    "lat": 38.9105,
+    "lng": 121.6302,
+    "coord_confidence": "high",
+    "summary": "据中文资料，俄方于1898年在当时城市西郊开辟公园，称西公园。日治时期扩建，增设相扑、 高尔夫球场和泳池，1926年改称中央公园。1947年称列宁公园，1949年改称劳动公园。频道有一张达里尼“市民花园”的照片，但尚未确认是否同一处。秋天可看金黄银杏。",
+    "visit": "免费开放。劳动公园东门距中山广场步行约10–15分钟。",
+    "season": [
+      "spring",
+      "autumn"
+    ],
+    "posts": [
+      93
+    ],
+    "photos": [
+      "photos/photo_524@place.jpg",
+      "photos/photo_541@place.jpg",
+      "photos/photo_69@11-10-2026_14-03-01.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "dalnii-gorod-s-nulya"
+    ]
+  },
+  {
+    "slug": "port-dalniy",
+    "name": "达里尼港（维多利亚湾）",
+    "name_zh": "大连港 (Dàlián gǎng)",
+    "name_now": "大连港，市区一侧为大连港客运站及港湾广场",
+    "city": "dalian",
+    "layers": [
+      "russian",
+      "japanese",
+      "soviet"
+    ],
+    "kind": "port",
+    "lat": 38.93,
+    "lng": 121.6578,
+    "coord_confidence": "high",
+    "summary": "整座城市为港口而建。设计者萨哈罗夫此前曾建设海参崴商港。一期设施耗资1080万卢布，迅速使达里尼货物吞吐量居中国第二，仅次上海。1904年5月，日军获得几近完工的港口，并以此供应围攻旅顺的军队。如今仍为大型港口，客运站与市区相接。坐标位于客运站附近。",
+    "visit": "客运站面向轮渡旅客开放，货运港区不开放。",
+    "season": [
+      "summer",
+      "autumn"
+    ],
+    "posts": [
+      93,
+      114,
+      137
+    ],
+    "photos": [
+      "photos/photo_73@11-10-2026_14-03-01.jpg",
+      "photos/photo_324@archive.jpg",
+      "photos/photo_319@archive.jpg"
+    ],
+    "verify": false,
+    "articles": [
+      "dalnii-gorod-s-nulya",
+      "port-artur-i-dalnii-dva-goroda",
+      "vitte-chast-2-ministr-kotoryi-otdaval",
+      "skolimovsky-chelovek-kotoryy-narisoval-dalnii"
+    ]
+  },
+  {
+    "slug": "gostinitsa-yamato",
+    "name": "大和旅馆",
+    "name_zh": "大连宾馆（Dàlián bīnguǎn），原大和旅馆",
+    "name_now": "原大连宾馆，中山广场4号",
+    "city": "dalian",
+    "layers": [
+      "japanese",
+      "soviet"
+    ],
+    "kind": "building",
+    "lat": 38.9195,
+    "lng": 121.6395,
+    "coord_confidence": "high",
+    "summary": "中山广场南侧的大和旅馆大楼于1914年建成。旅馆早在1907年已在另一处营业，由南满洲铁道株式会社经营。该公司曾在铁路沿线多个城市开设连锁旅馆。战后，这座楼成为大连宾馆。雅高官网将这里列为即将开业的大连费尔蒙酒店。",
+    "visit": "中山广场4号。从广场可以看到柱廊立面。",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [
+      "photos/photo_325@archive.jpg",
+      "photos/photo_322@archive.jpg"
+    ],
+    "verify": false,
+    "articles": []
+  },
+  {
+    "slug": "bank-yokohama",
+    "name": "横滨正金银行大连支店",
+    "name_zh": "横滨正金银行大连支店旧址（Héngbīn Zhèngjīn yínháng），现为中国银行",
+    "name_now": "中国银行营业网点",
+    "city": "dalian",
+    "layers": [
+      "japanese"
+    ],
+    "kind": "building",
+    "lat": 38.9218,
+    "lng": 121.6383,
+    "coord_confidence": "high",
+    "summary": "1909年建成的三穹顶建筑，由明治时期重要建筑师妻木赖黄及其学生太田毅设计。横滨正金银行为对外贸易提供融资，满洲大豆及豆饼经大连外运。现为中国银行，历史建筑后方于2005年增建楼宇。",
+    "visit": "银行仍在营业。",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [
+      "photos/photo_326@archive.jpg"
+    ],
+    "verify": false,
+    "articles": []
+  },
+  {
+    "slug": "merija-dajrena",
+    "name": "大连市役所",
+    "name_zh": "大连市役所旧址（Dàlián shìyìsuǒ），现为中国工商银行",
+    "name_now": "中国工商银行营业网点",
+    "city": "dalian",
+    "layers": [
+      "japanese"
+    ],
+    "kind": "building",
+    "lat": 38.9199,
+    "lng": 121.6403,
+    "coord_confidence": "high",
+    "summary": "大连市役所旧址位于中山广场5号。1922年，日本统治时期的大连民政署由2号迁来。向外凸出的入口和上方塔楼，使它在面向环形广场的建筑中容易辨认。后来，中国工商银行使用过这座大楼。",
+    "visit": "银行仍在营业。",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [
+      "photos/photo_504@place.jpg"
+    ],
+    "verify": false,
+    "articles": []
+  },
+  {
+    "slug": "politsiya-dajrena",
+    "name": "大连警察署",
+    "name_zh": "大连警察署旧址 (Dàlián jǐngchá shǔ)",
+    "name_now": "大连民政署旧址，中山广场2号",
+    "city": "dalian",
+    "layers": [
+      "japanese"
+    ],
+    "kind": "building",
+    "lat": 38.9197,
+    "lng": 121.6374,
+    "coord_confidence": "high",
+    "summary": "今中山广场上的红砖建筑建成于1908年，由建筑师前田松韵设计，原供日本统治时期的大连民政署办公。1922年，民政署迁至同一广场上的大连市役所，警察署迁入这座建筑。因此，两种名称都见于导览资料。",
+    "visit": "中山广场2号。沿外侧人行道可看到建筑立面。",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [
+      "photos/photo_502@place.jpg"
+    ],
+    "verify": false,
+    "articles": []
+  },
+  {
+    "slug": "vokzal-dalian",
+    "name": "日治时期大连站",
+    "name_zh": "大连站 (Dàlián zhàn)",
+    "name_now": "大连主要铁路客运站",
+    "city": "dalian",
+    "layers": [
+      "japanese",
+      "soviet"
+    ],
+    "kind": "station",
+    "lat": 38.9213,
+    "lng": 121.6282,
+    "coord_confidence": "high",
+    "summary": "1937年启用，以楼层区分旅客流线：出发旅客沿坡道上楼，到达旅客从下层出站。外观常被拿来与东京上野站比较。日方为扩大的城市兴建此站，俄国达里尼时期的车站是另一栋建筑。如今仍正常使用，前方为宽阔站前广场。",
+    "visit": "车站仍在运营，地铁大连站可达。",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [
+      "photos/photo_513@place.jpg"
+    ],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "nagasaki-goshinji",
+    "name": "长崎悟真寺俄国人墓地",
+    "name_zh": "悟真寺国際墓地（日语Goshinji kokusai bochi；汉语Wùzhēnsì）",
+    "name_now": "悟真寺旁的稻佐国际墓地",
+    "city": "other",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "cemetery",
+    "lat": 32.753,
+    "lng": 129.8603,
+    "coord_confidence": "high",
+    "summary": "1897年以前，俄国太平洋舰队常在长崎越冬，稻佐地区悟真寺旁由此形成俄国水兵墓地。婴儿米哈伊尔·米尔贝格也葬于此：1904年11月13日生于被围旅顺，投降次日受洗，只活了52天。历史学者德米特里·尼古拉耶夫依据教会登记簿重建其家族经历，发表于《祖国》的《来自长崎的米沙》。",
+    "visit": "位于长崎湾西岸稻佐地区，附近为“悟真寺前”公交站。",
+    "season": [
+      "spring",
+      "autumn"
+    ],
+    "posts": [
+      143,
+      127
+    ],
+    "photos": [
+      "photos/photo_520@place.jpg"
+    ],
+    "verify": false,
+    "articles": [
+      "otsu-1891-pokushenie-na-tsesarevicha",
+      "pervaya-tihookeanskaya-eskadra",
+      "misha-iz-nagasaki-myulberg"
+    ]
+  },
+  {
+    "slug": "dalyanskiy-universitet-inyaz",
+    "name": "大连外国语大学旅顺校区",
+    "name_zh": "大连外国语大学（旅顺校区）",
+    "name_now": "在用大学校区，大连俄罗斯俱乐部游览活动在校门附近集合",
+    "city": "lushun",
+    "layers": [
+      "modern"
+    ],
+    "kind": "meeting",
+    "lat": 38.8098,
+    "lng": 121.3057,
+    "coord_confidence": "high",
+    "summary": "大连俄罗斯俱乐部旅顺专题游的集合点，约09:00在此会合，返程也送回这里。校区位于旅顺东部新大学城，距历史中心及老火车站直线约5公里。校园本身与要塞史无关，主要是地址明确、便于打车且有停车空间。集合后分乘汽车，第一站为旅顺火车站。",
+    "visit": "具体校门和时间由活动组织者通知，请提前一天确认。导航搜索“大连外国语大学 旅顺校区”。",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [
+      "photos/photo_521@place.jpg"
+    ],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "staryy-gorod-port-artura",
+    "name": "旅顺老市街",
+    "name_zh": "旅顺老城区（黄河路一带）",
+    "name_now": "白玉山东侧、东港池旁的旅顺中心，留有俄式及日式房屋",
+    "city": "lushun",
+    "layers": [
+      "pre1898",
+      "russian",
+      "japanese",
+      "soviet"
+    ],
+    "kind": "street",
+    "lat": 38.8075,
+    "lng": 121.256,
+    "coord_confidence": "medium",
+    "summary": "黄金山与白玉山脚、东港池旁的市街，在清朝北洋海军时期已形成。俄国租借时期，太平洋舰队军官和水兵住在这里，港务机构、商店和餐馆集中于此；西岸新市街尚在建设。1905年后日方改造市中心，如今所见房屋不少建于日治时期。地图点仅示意街区范围，适合步行。",
+    "visit": "可从火车站或白玉山索道下站步行前往。不要拍摄港边军事设施，哪些建筑开放请现场确认。",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [
+      "photos/photo_104@17-10-2026_15-14-01.jpg",
+      "photos/photo_63@10-10-2026_21-53-29.jpg",
+      "photos/photo_305@archive.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "tri-proekta-kreposti-port-artur"
+    ]
+  },
+  {
+    "slug": "redut-1",
+    "name": "第1号多面堡（东盘龙山）",
+    "name_zh": "盘龙山东堡垒 (Pánlóngshān dōng bǎolěi)",
+    "name_now": "大鹰巢以北、主堡垒线前方的野战工事遗存",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "fort",
+    "lat": 38.8389,
+    "lng": 121.2741,
+    "coord_confidence": "low",
+    "summary": "俄文史料将盘龙山东堡垒标为一号。它与西侧的二号堡垒一同位于旅顺主要防线前方。1904年8月，日军在第一次总攻中占领了两座堡垒。日方占领后拍摄的照片呈现了堡垒后部。现存遗迹的准确位置还需实地核对。",
+    "visit": "没有独立景区。坐标依据1904年要塞图估计，可在鸡冠山路北侧寻找残存土垒。",
+    "season": [
+      "autumn",
+      "winter",
+      "spring"
+    ],
+    "posts": [],
+    "photos": [
+      "photos/photo_534@place.jpg"
+    ],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "redut-2",
+    "name": "第2号多面堡（西盘龙山）",
+    "name_zh": "盘龙山西堡垒 (Pánlóngshān xī bǎolěi)",
+    "name_now": "二龙山东侧、主堡垒线前方的野战工事遗存",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "fort",
+    "lat": 38.8401,
+    "lng": 121.2703,
+    "coord_confidence": "low",
+    "summary": "俄文史料将盘龙山西堡垒标为二号。它与东堡垒一同掩护通往旅顺主要防线的道路。两座堡垒均于1904年8月失守。日方占领后拍摄的照片可见西堡垒的一处掩蔽部。现存遗迹的准确位置还需实地核对。",
+    "visit": "坐标据1904年图估定。如有指示牌，预计仅为中文。",
+    "season": [
+      "autumn",
+      "winter",
+      "spring"
+    ],
+    "posts": [],
+    "photos": [
+      "photos/photo_535@place.jpg"
+    ],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "ukreplenie-4",
+    "name": "第4号防御工事",
+    "name_zh": "大案子山堡垒 (Dà Ànzishān bǎolěi)",
+    "name_now": "新市街以北大案子山上的工事，OpenStreetMap标为观景点",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "fort",
+    "lat": 38.8197,
+    "lng": 121.2207,
+    "coord_confidence": "medium",
+    "summary": "大案子山上的这座工事位于旅顺西线，在四号和五号堡垒之间。围城末期的地图显示，它仍处在俄军防线之内，直到要塞投降后才移交日军。本站作者拍摄的照片展示了干壕的石墙、拱形洞口和混凝土胸墙残段。",
+    "visit": "可从新市街民泰街方向接近。是否开放、是否收费，请提前确认。",
+    "season": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "posts": [
+      309,
+      319
+    ],
+    "photos": [
+      "photos/photo_416@15-11-2026_17-20-09.jpg",
+      "photos/photo_417@15-11-2026_17-20-10.jpg",
+      "photos/photo_418@15-11-2026_17-20-10.jpg",
+      "photos/photo_419@15-11-2026_17-20-10.jpg",
+      "photos/photo_420@15-11-2026_17-20-10.jpg",
+      "photos/photo_421@15-11-2026_17-20-10.jpg",
+      "photos/photo_422@15-11-2026_17-20-10.jpg",
+      "photos/photo_423@15-11-2026_17-20-10.jpg",
+      "photos/photo_424@15-11-2026_17-24-47.jpg",
+      "photos/photo_425@15-11-2026_17-24-47.jpg",
+      "photos/photo_426@15-11-2026_17-24-47.jpg",
+      "photos/photo_427@15-11-2026_17-24-47.jpg",
+      "photos/photo_428@15-11-2026_17-24-47.jpg",
+      "photos/photo_429@15-11-2026_17-24-47.jpg",
+      "photos/photo_430@15-11-2026_17-24-47.jpg",
+      "photos/photo_431@15-11-2026_17-24-47.jpg",
+      "photos/photo_432@15-11-2026_17-24-47.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "ukreplenie-4-daanzishan"
+    ]
+  },
+  {
+    "slug": "fort-4",
+    "name": "第IV号堡垒",
+    "name_zh": "椅子山堡垒 (Yǐzishān bǎolěi)",
+    "name_now": "新市街西北侧椅子山上的堡垒",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "fort",
+    "lat": 38.8285,
+    "lng": 121.2247,
+    "coord_confidence": "medium",
+    "summary": "椅子山上的西部防线堡垒，位于西线北翼，是这一段最靠近203高地的堡垒。1904年要塞图显示，它与西部其他堡垒一样，到围城结束仍在俄军手中；日军11月22日（12月5日）夺取203高地后，并未继续向西进攻。1904年12月20日（1905年1月2日）要塞投降，堡垒未经战斗便被占领。地图点来自OpenStreetMap，与1904年图相符。",
+    "visit": "可由春城路接近。暂无门票信息，请现场确认。",
+    "season": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [
+      "photos/photo_532@place.jpg"
+    ],
+    "verify": true,
+    "articles": [
+      "ukreplenie-4-daanzishan"
+    ]
+  },
+  {
+    "slug": "batareya-d",
+    "name": "字母“Д”炮台",
+    "name_zh": "—",
+    "name_now": "第V号堡垒与第5号防御工事之间的永久炮台旧址",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "battery",
+    "lat": 38.8048,
+    "lng": 121.2042,
+    "coord_confidence": "low",
+    "summary": "旅顺陆防线的部分炮台以字母编号。俄国军事历史委员会标注1904年12月19日（俄历）防御态势的地图上，“Бат. Д”标记位于五号堡垒以南。格·谢·毕苏斯基在当月的日记中提到炮台参与炮战。其在现代地图上的准确位置和遗迹现状尚待核实，暂未找到可确认的炮台照片。",
+    "visit": null,
+    "season": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "morskoe-sobranie",
+    "name": "海军军官俱乐部",
+    "name_zh": "—",
+    "name_now": "建筑尚未确认，地图位置仅供示意",
+    "city": "lushun",
+    "layers": [
+      "russian"
+    ],
+    "kind": "building",
+    "lat": 38.8066,
+    "lng": 121.2292,
+    "coord_confidence": "low",
+    "summary": "海军军官俱乐部是俄国统治时期旅顺海军军官聚会的场所。一张俄文明信片上可见带圆窗和镂空栏板的门楼。同一座门楼也出现在1922年出版的日本画册中，题为“旅顺水交社”。现今的确切地址和这组建筑后来的去向尚未查明。地图标记指向新市区的游览停靠点。",
+    "visit": "专题游由导游指认，独自前往时宜先了解其说明。地图点仅供示意。",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [
+      "photos/photo_528@place.jpg"
+    ],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "yamato-lyuyshun",
+    "name": "旅顺大和旅馆",
+    "name_zh": "旅顺大和旅馆旧址 (Lǚshùn Dàhé lǚguǎn jiùzhǐ), 文化路30号",
+    "name_now": "文化路上的1903年两层宅邸，据媒体报道建筑状况堪忧",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "building",
+    "lat": 38.8045,
+    "lng": 121.2252,
+    "coord_confidence": "low",
+    "summary": "请勿与大连中山广场的大和旅馆混淆。文物保护牌记载建于1903年。中文媒体称其原为入俄籍华商纪凤台宅邸，战后日方改作满铁“大和”连锁旅馆；同类报道还称溥仪1931年曾下榻。2010年代末，记者报道墙体开裂，周围设有施工围挡。",
+    "visit": "地址为旅顺口区文化路30号，旅顺博物馆以西。地图点标在街道上，并非房屋精确位置，内部很可能不开放。",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [
+      "photos/photo_531@place.jpg"
+    ],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "russkaya-shkola",
+    "name": "俄国学校",
+    "name_zh": "—",
+    "name_now": "建筑尚未确认，地图点暂设于新市街，仅供示意",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "building",
+    "lat": 38.8098,
+    "lng": 121.2262,
+    "coord_confidence": "low",
+    "summary": "俄国统治时期的旅顺设有数所俄文学校，其中包括普希金学校。布加勒斯特Fortuna出版社的明信片留下了该校建筑的影像。目前尚未确定新市区游览路线中的“俄文学校”对应哪所学校。地图标记仅指示大致区域。",
+    "visit": "专题游中由导游指认。地图点仅供示意。",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [
+      "photos/photo_527@place.jpg"
+    ],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "yaponskie-kvartaly-lyuyshunya",
+    "name": "旅顺日治时期街区",
+    "name_zh": "太阳沟历史街区 (中央大街、新华大街一带)",
+    "name_now": "太阳沟街道，留有1905–1945年的行政建筑和宅邸",
+    "city": "lushun",
+    "layers": [
+      "japanese",
+      "soviet"
+    ],
+    "kind": "street",
+    "lat": 38.8082,
+    "lng": 121.2295,
+    "coord_confidence": "medium",
+    "summary": "1905年后，日本以旅顺为关东统治中心，继续建设俄方开辟的新市街。这里留有原关东行政机关、宪兵司令部、清亡后居旅顺的肃亲王宅邸，以及日本官员的学校和住宅。许多建筑设有文物保护牌，部分已闲置。地图点仅示意街区，从博物馆出发步行游览较方便。",
+    "visit": "从旅顺博物馆沿中央大街、新华大街步行约1–1.5小时。建筑说明牌为中文。",
+    "season": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "posts": [],
+    "photos": [
+      "photos/photo_530@place.jpg"
+    ],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "gospital-krasnogo-kresta",
+    "name": "红十字医院",
+    "name_zh": "旅顺红十字医院旧址 (Lǚshùn Hóngshízì yīyuàn jiùzhǐ)",
+    "name_now": "红十字医院旧址，黄河路107号",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "building",
+    "lat": 38.813,
+    "lng": 121.2621,
+    "coord_confidence": "medium",
+    "summary": "黄河路上的这座建筑于1900年始建，原为旅顺地方政府开办的综合医院。辽宁文物登记记载，医院当时有40间病房。1905年3月由日本赤十字社接管，1907年改称日本赤十字社关东州病院。1945年苏军接管，1955年起由中国人民解放军海军使用。",
+    "visit": "黄河路107号。省文物登记页面附有历史与现代照片。",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [
+      "photos/photo_537@place.jpg",
+      "photos/photo_536@place.jpg"
+    ],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "dom-kondratenko",
+    "name": "康德拉坚科将军旧居",
+    "name_zh": "康特拉琴柯旧居 (Kāngtèlāqínkē jiùjū)",
+    "name_now": "宁波街的1903年宅邸",
+    "city": "lushun",
+    "layers": [
+      "russian",
+      "japanese"
+    ],
+    "kind": "building",
+    "lat": 38.8121,
+    "lng": 121.2328,
+    "coord_confidence": "high",
+    "summary": "旅顺陆防指挥官罗曼·康特拉琴柯少将曾住在今宁波街的这座宅邸。辽宁省文物名录将这座建于1903年的建筑列为他的旧居。1904年12月15日（俄历12月2日），康特拉琴柯在二号堡垒阵亡，遗骸于1905年迁往圣彼得堡。",
+    "visit": "新市区宁波街47号，可从街上观看建筑立面。",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "posts": [],
+    "photos": [
+      "photos/photo_529@place.jpg"
+    ],
+    "verify": false,
+    "articles": []
+  },
+  {
+    "slug": "mayak-laoteshan",
+    "name": "老铁山灯塔",
+    "name_zh": "老铁山灯塔 (Lǎotiěshān dēngtǎ)",
+    "name_now": "辽东半岛南端仍在使用的灯塔及观景台",
+    "city": "lushun",
+    "layers": [
+      "pre1898",
+      "russian",
+      "japanese",
+      "soviet",
+      "modern"
+    ],
+    "kind": "viewpoint",
+    "lat": 38.727,
+    "lng": 121.1348,
+    "coord_confidence": "high",
+    "summary": "老铁山灯塔位于辽东半岛南端，靠近传统所指的黄海与渤海分界处。清朝海关于1893年建造这座铁塔，安装了法国制造的灯机，镜组借助水银浮槽转动。灯光引导船只绕过岬角，驶向旅顺港或进入渤海湾。",
+    "visit": "距旅顺中心约20公里，需自驾或打车。据旅行社，观景区收费，请核实开放时间。岬角风大。",
+    "season": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "posts": [],
+    "photos": [
+      "photos/photo_522@place.jpg"
+    ],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "dahei-shan",
+    "name": "大黑山",
+    "name_zh": "大黑山 (Dàhēishān)",
+    "name_now": "大连市内六区最高山峰，海拔663米",
+    "city": "dalian",
+    "layers": [
+      "modern"
+    ],
+    "kind": "viewpoint",
+    "lat": 39.0945,
+    "lng": 121.7866,
+    "coord_confidence": "medium",
+    "summary": "位于金州区，海拔663米，属千山山脉，山脚有大连大学校园。与旅顺、达里尼历史没有直接关联，主要作为郊外步行地点收录。春季山坡及峰顶附近有杜鹃和其他花卉。",
+    "visit": null,
+    "season": [
+      "spring",
+      "autumn"
+    ],
+    "posts": [],
+    "photos": [
+      "photos/photo_523@place.jpg"
+    ],
+    "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "ploshchad-sinhai",
+    "name": "星海广场",
+    "name_zh": "星海广场",
+    "name_now": "大连市沙河口区的滨海广场",
+    "city": "dalian",
+    "layers": [
+      "modern"
+    ],
+    "kind": "square",
+    "lat": 38.88111,
+    "lng": 121.58278,
+    "coord_confidence": "high",
+    "summary": "20世纪90年代初，如今大连星海广场所在的地方还是海湾的一部分。1993年，大连开始填筑近岸浅滩。为迎接香港回归，广场于1997年6月30日建成。两年后，海边增设了纪念大连建市百年的雕塑。镶嵌着市民足印的步道通向一座打开的书形雕塑。沿着足印向海边走，书本后面就能看到星海湾跨海大桥的悬索桥段。",
+    "visit": "从地铁1号线星海广场站走到圆形广场，再向南步行至海边。",
+    "season": [],
+    "posts": [],
+    "photos": [
+      "photos/photo_500@place.jpg"
+    ],
+    "verify": false,
+    "articles": []
+  },
+  {
+    "slug": "most-buhty-sinhai",
+    "name": "星海湾跨海大桥",
+    "name_zh": "星海湾跨海大桥",
+    "name_now": "大连南部的双层公路桥",
+    "city": "dalian",
+    "layers": [
+      "modern"
+    ],
+    "kind": "bridge",
+    "lat": 38.867764,
+    "lng": 121.578328,
+    "coord_confidence": "high",
+    "summary": "2015年10月30日，星海湾跨海大桥通车。大连从此多了一条沿海通道，可以绕开拥堵的中山西路。桥梁线路全长6.8公里，其中悬索桥段长820米。行车道分上下两层，主缆固定在海中的大型锚碇上。悬索桥段离岸约一公里，正对星海广场中轴线，让人在广场上就能看见大桥。",
+    "visit": "到星海广场南端的海边，可以看到两座桥塔和中间的悬索桥段。地图标记位于海湾里的桥上。",
+    "season": [],
+    "posts": [],
+    "photos": [
+      "photos/photo_501@place.jpg"
+    ],
+    "verify": false,
+    "articles": []
+  }
 ]

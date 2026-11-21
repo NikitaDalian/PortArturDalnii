@@ -1,0 +1,161 @@
+{
+  "sources": {
+    "heritage": {
+      "label": "Liaoning Department of Culture and Tourism. Zhongshan Square building ensemble",
+      "url": "https://whly.ln.gov.cn/whly/wlzt/lnww/zdwwbhdw/851036343A2D4CCBB6CE68CDB7890470/index.shtml"
+    },
+    "register": {
+      "label": "Liaoning Provincial Government. Ninth list of protected heritage sites",
+      "url": "https://www.ln.gov.cn/web/zwgkx/lnsrmzfgb/2014n/qk/2014n_deseq/szfwj/95D65AE1E4E44B2BBC43B50BD46EC3C6/index.shtml"
+    },
+    "survey": {
+      "label": "The Paper. Field survey of Zhongshan Square, published January 2017",
+      "url": "https://www.thepaper.cn/newsDetail_forward_1605369"
+    },
+    "fieldwork": {
+      "label": "University of Cincinnati. Dalian architectural fieldwork, photographs and site plans",
+      "url": "https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file/send?accession=ucin1321642088&disposition=inline"
+    },
+    "consulate": {
+      "label": "Sun Yu’s research on the consulates of Dalian, reported by China News",
+      "url": "https://www.chinanews.com/cul/2014/07-18/6401800.shtml"
+    },
+    "museum": {
+      "label": "Lüshun Museum. Exhibition of photographs from the South Manchuria Railway collection",
+      "url": "https://lvshunmuseum.cn/Exhibition/ProductDetail.aspx?ID=238"
+    },
+    "mantetsu": {
+      "label": "The South Manchuria Railway Exposed, chapter 3, National Central Library copy",
+      "url": "https://commons.wikimedia.org/wiki/File:NCL-9910015495_滿鐵事業的暴露,_又名,_滿鐵會社之解剖.pdf"
+    }
+  },
+  "title": "Ten addresses around Zhongshan Square",
+  "intro": "Ten streets converge on the round square. Follow the outer pavement from No. 1 and you will pass banks, the former city hall, a hotel and a concert hall. The numbers follow the first row of buildings facing the circle. Each sector has its own address. No. 3 is included because the building there now occupies the site of the demolished consulate.",
+  "buildings": [
+    {
+      "number": 1,
+      "title": "Bank of Chosen",
+      "zh": "朝鲜银行大连支店旧址",
+      "body": "The former Dalian branch of the Bank of Chosen stands on the western side of the square. Low steps lead to a portico with Corinthian capitals. Several Chinese banks occupied the property after 1945, including the People’s Bank of China. The sign of the Industrial and Commercial Bank of China appeared on the façade later.",
+      "sources": [
+        "heritage",
+        "survey"
+      ],
+      "photo": "photos/photo_327@archive.jpg",
+      "place": null
+    },
+    {
+      "number": 2,
+      "title": "Dairen Civil Administration and Police",
+      "zh": "大连民政署旧址",
+      "place": "politsiya-dajrena",
+      "body": "The red-brick building with a tower was built in 1908 as the seat of the Japanese civil administration, to a design by the Japanese architect Maeda (前田松韻). In 1922 the administration moved into the city hall building, and the police took its place here. That is how one building came to have two historical names.",
+      "sources": [
+        "heritage"
+      ],
+      "photo": "photos/photo_502@place.jpg"
+    },
+    {
+      "number": 3,
+      "title": "Financial Building on the site of the British Consulate",
+      "zh": "大连金融大厦／英国驻大连领事馆旧址",
+      "body": "The British consulate opened at this address in October 1914. Britain later used two addresses in Dalian at the same time: the office remained on the square, while the second property also served as the consul’s residence. The old consulate was demolished in the 1990s. The Financial Building stands on its site.",
+      "sources": [
+        "consulate",
+        "survey"
+      ],
+      "photo": "photos/photo_503@place.jpg",
+      "place": null,
+      "historicalPhoto": "photos/photo_509@place.jpg"
+    },
+    {
+      "number": 4,
+      "title": "Yamato Hotel",
+      "zh": "大和旅馆旧址",
+      "place": "gostinitsa-yamato",
+      "body": "In 1914 the South Manchuria Railway completed the new building of the Yamato Hotel, which had begun receiving guests in another building in 1907. The columned façade faces the square, with the main reception rooms behind the corner entrance. The hotel later took the name Dalian.",
+      "sources": [
+        "heritage",
+        "museum",
+        "mantetsu",
+        "fieldwork"
+      ],
+      "photo": "photos/photo_325@archive.jpg"
+    },
+    {
+      "number": 5,
+      "title": "Dairen City Hall",
+      "zh": "大连市役所旧址",
+      "place": "merija-dajrena",
+      "body": "The municipal offices occupied a building between Jiefang Street and Luxun Road. In 1922 the civil administration moved here from No. 2. The projecting entrance and the tower above it distinguish the old city hall from the bank façades nearby.",
+      "sources": [
+        "heritage",
+        "register",
+        "fieldwork"
+      ],
+      "photo": "photos/photo_504@place.jpg"
+    },
+    {
+      "number": 6,
+      "title": "Oriental Development Company branch",
+      "zh": "东洋拓殖株式会社大连支店旧址",
+      "body": "Near the turn onto Renmin Road stands a former branch of Japan’s Oriental Development Company, or Tōyō Takushoku. The company financed economic development in territories under Japanese control. The municipal authorities used the premises after the war, and the Bank of Communications later moved in.",
+      "sources": [
+        "register",
+        "survey",
+        "fieldwork"
+      ],
+      "photo": "photos/photo_505@place.jpg",
+      "place": null
+    },
+    {
+      "number": 7,
+      "title": "Dalian branch of the Ta-Ching Government Bank",
+      "zh": "大清银行大连支店旧址",
+      "body": "This branch of the Qing imperial bank opened on the square before the dynasty fell in 1911–1912. Look for the rounded façade at the corner of Qiyi Street. The premises later housed the Bank of China, and CITIC Bank occupied them at the time of the survey.",
+      "sources": [
+        "register",
+        "survey",
+        "fieldwork"
+      ],
+      "photo": "photos/photo_506@place.jpg",
+      "place": null
+    },
+    {
+      "number": 8,
+      "title": "Dalian People’s Culture Club",
+      "zh": "大连人民文化俱乐部",
+      "body": "The concert hall and theatre opened in 1951, after the People’s Republic of China was founded. Soviet specialists took part in the design. The building was renovated in the 1990s, which accounts for the differences between its present façade and early photographs.",
+      "sources": [
+        "survey",
+        "fieldwork"
+      ],
+      "photo": "photos/photo_507@place.jpg",
+      "place": null
+    },
+    {
+      "number": 9,
+      "title": "Yokohama Specie Bank branch",
+      "zh": "横滨正金银行大连支店旧址",
+      "place": "bank-yokohama",
+      "body": "In 1909 the Japanese Yokohama Specie Bank moved into its own building between Minsheng Street and Shanghai Road. The old branch still faces the circle. A newer building for the Bank of China’s Dalian branch stands behind it.",
+      "sources": [
+        "register",
+        "fieldwork"
+      ],
+      "photo": "photos/photo_326@archive.jpg"
+    },
+    {
+      "number": 10,
+      "title": "Kwantung Post and Telegraph Bureau",
+      "zh": "关东都督府邮便电信局旧址",
+      "body": "The Post and Telegraph Bureau of the Kwantung Leased Territory operated from this building. The property retained a postal role in its later history. The Japanese-era Dalian Central Post Office on Changjiang Road is a separate historic building.",
+      "sources": [
+        "register",
+        "survey"
+      ],
+      "photo": "photos/photo_508@place.jpg",
+      "place": null
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 // Серверные помощники разделов «Карта», «Места», «Маршруты» (только во frontmatter .astro).
 import { places, routes, people, href, img, focusStyle, layerByKey, photoMeta, placeBySlug, LAYERS, type Place, type Route } from '../../lib/data';
 import { haversine, yandexRoute, type LL } from './geo';
+import { squareBuildingBySlug } from '../../lib/zhongshan';
 
 export const KINDS: Record<string, string> = {
   fort: 'Форт, укрепление',
@@ -15,6 +16,7 @@ export const KINDS: Record<string, string> = {
   building: 'Здание',
   park: 'Парк',
   square: 'Площадь',
+  bridge: 'Мост',
   meeting: 'Точка сбора',
 };
 export const CITIES: Record<string, string> = { lushun: 'Люйшунь', dalian: 'Далянь', other: 'Другое' };
@@ -70,6 +72,7 @@ export function mapPayload() {
   return {
     places: places.map((p) => ({
       s: p.slug,
+      addressNumber: squareBuildingBySlug.get(p.slug)?.number,
       n: p.name,
       zh: p.name_zh,
       now: p.name_now,

@@ -1,0 +1,56 @@
+---
+import buildingGuide from '../../data/zhongshan_buildings.json';
+import { href, img, photoMeta } from '../../lib/data';
+import { squareBuildings, squareMapLabel, mapLinkLabel } from '../../lib/zhongshan';
+
+const { title, intro, sources } = buildingGuide;
+---
+
+<section class="section paper" id="zdaniya-ploshchadi" aria-labelledby="zhongshan-buildings-title">
+  <div class="container stack">
+    <h2 class="h2" id="zhongshan-buildings-title">{title}</h2>
+    <p class="prose">{intro}</p>
+    <a class="link" href={href.map() + '?area=zhongshan'}>{squareMapLabel} · {mapLinkLabel}</a>
+    <ol class="building-grid" role="list">
+      {squareBuildings.map((building) => {
+        const images = [building.photo, 'historicalPhoto' in building ? building.historicalPhoto : null]
+          .flatMap((file) => file ? [photoMeta(file)].filter(Boolean) : []);
+        return (
+          <li id={`zhongshan-${building.number}`} class="building">
+            <h3 class="h3">
+              <span aria-hidden="true">№ {building.number} · </span>
+              <a class="link" href={href.place(building.slug)}>{building.title}</a>
+            </h3>
+            <p class="meta" lang="zh">{building.zh}</p>
+            {images.map((photo) => (
+              <figure class="building-photo">
+                <img src={img(photo.file, 640)} alt={photo.subject} width={photo.w} height={photo.h} loading="lazy" decoding="async" />
+                <figcaption class="meta">
+                  {photo.subject}
+                  {photo.record_url && <> · <a class="link" href={photo.record_url}>{photo.author || 'Запись в архиве'}</a></>}
+                  {photo.license && <> · {photo.license_url ? <a class="link" href={photo.license_url}>{photo.license}</a> : photo.license}</>}
+                  {photo.derivative && <> · {photo.derivative}</>}
+                </figcaption>
+              </figure>
+            ))}
+            <p>{building.body}</p>
+            <a class="link" href={href.map(building.slug)}>{mapLinkLabel}</a>
+            <ul class="building-sources meta" role="list">
+              {building.sources.map((key) => <li><a class="link" href={sources[key as keyof typeof sources].url}>{sources[key as keyof typeof sources].label}</a></li>)}
+            </ul>
+          </li>
+        );
+      })}
+    </ol>
+  </div>
+</section>
+
+<style>
+  .building-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); list-style: none; gap: 24px; margin: 0; padding: 0; }
+  .building { display: grid; align-content: start; gap: 12px; padding: 20px 0; border-top: 1px solid var(--line); scroll-margin-top: calc(var(--header-h) + 24px); }
+  .building-photo { margin: 0; }
+  .building-photo img { display: block; width: 100%; height: auto; max-height: 380px; object-fit: contain; background: var(--ice); }
+  .building-photo figcaption { margin-top: 8px; }
+  .building-sources { list-style: none; margin: 0; padding: 0; }
+  .building-sources li + li { margin-top: 4px; }
+</style>

@@ -626,6 +626,53 @@
         "Уриу Сотокити",
         "Сотокити Уриу",
         "адмирала Уриу"
+      ],
+      "pavel-dmitriev": [
+        "Павла Дмитриева",
+        "Павлом Дмитриевым"
+      ],
+      "konstantin-yurasovskii": [
+        "Юрасовского",
+        "Юрасовским"
+      ],
+      "sergei-rashevskii": [
+        "Рашевского",
+        "Рашевским",
+        "Сергея Рашевского"
+      ],
+      "sergei-korsakov": [
+        "Сергея Корсакова",
+        "Сергеем Корсаковым"
+      ],
+      "vasilii-nemirovich-danchenko": [],
+      "nebogatov": [
+        "Небогатова",
+        "Небогатовым"
+      ],
+      "vasilii-ignatsius": [],
+      "nikolai-bukhvostov": [],
+      "pyotr-serebrennikov": [],
+      "nikolai-yung": [],
+      "semen-yushchin": [],
+      "dmitrii-mendeleev": [
+        "Менделеев",
+        "Менделеева",
+        "Менделееву",
+        "Менделеевым",
+        "Менделееве",
+        "Дмитрия Менделеева",
+        "Д. И. Менделеев",
+        "Д. И. Менделеева"
+      ],
+      "boris-ananich": [
+        "Ананьич",
+        "Ананьича",
+        "Ананьичу",
+        "Ананьичем",
+        "Ананьиче",
+        "Бориса Ананьича",
+        "Б. В. Ананьич",
+        "Б. В. Ананьича"
       ]
     },
     "places": {
@@ -1017,6 +1064,13 @@
         "Систов",
         "Свиштовым",
         "Систова"
+      ],
+      "ploshchad-sinhai": [
+        "площади Синхай"
+      ],
+      "most-buhty-sinhai": [
+        "моста через бухту Синхай",
+        "мостом через бухту Синхай"
       ]
     }
   },
@@ -1314,6 +1368,26 @@
         "Sotokichi Uriu",
         "Sotokichi Uryū",
         "Uryu Sotokichi"
+      ],
+      "pavel-dmitriev": [],
+      "konstantin-yurasovskii": [],
+      "sergei-rashevskii": [],
+      "sergei-korsakov": [],
+      "vasilii-nemirovich-danchenko": [],
+      "nebogatov": [],
+      "vasilii-ignatsius": [],
+      "nikolai-bukhvostov": [],
+      "pyotr-serebrennikov": [],
+      "nikolai-yung": [],
+      "semen-yushchin": [],
+      "dmitrii-mendeleev": [
+        "Mendeleev",
+        "Dmitry Mendeleev",
+        "D. I. Mendeleev"
+      ],
+      "boris-ananich": [
+        "Ananich",
+        "B. V. Ananich"
       ]
     },
     "places": {
@@ -1557,6 +1631,12 @@
       "iokogama": [],
       "svistov": [
         "Svishtov"
+      ],
+      "ploshchad-sinhai": [
+        "Xinghai Plaza"
+      ],
+      "most-buhty-sinhai": [
+        "Xinghaiwan Bridge"
       ]
     }
   },
@@ -1827,6 +1907,25 @@
       ],
       "uriu": [
         "瓜生外吉"
+      ],
+      "pavel-dmitriev": [],
+      "konstantin-yurasovskii": [],
+      "sergei-rashevskii": [],
+      "sergei-korsakov": [],
+      "vasilii-nemirovich-danchenko": [],
+      "nebogatov": [],
+      "vasilii-ignatsius": [],
+      "nikolai-bukhvostov": [],
+      "pyotr-serebrennikov": [],
+      "nikolai-yung": [],
+      "semen-yushchin": [],
+      "dmitrii-mendeleev": [
+        "德米特里·门捷列夫",
+        "门捷列夫"
+      ],
+      "boris-ananich": [
+        "阿纳尼奇",
+        "鲍里斯·阿纳尼奇"
       ]
     },
     "places": {
@@ -2054,6 +2153,13 @@
       "svistov": [
         "斯维什托夫",
         "锡斯托夫"
+      ],
+      "ploshchad-sinhai": [
+        "星海广场"
+      ],
+      "most-buhty-sinhai": [
+        "星海大桥",
+        "星海湾大桥"
       ]
     }
   }

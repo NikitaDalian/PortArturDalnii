@@ -1,11 +1,31 @@
 ---
 // Полноэкранная карта: MapLibre + OSM, фильтры, карточка места (bottom sheet / панель справа), конструктор маршрута.
-import { img } from '../../lib/data';
+import { img, photos, tgPost } from '../../lib/data';
+import { squareMapLabel } from '../../lib/zhongshan';
+import { assetUrl, locale } from '../../i18n/locale';
+import registrations from './registrations.json';
 import { mapPayload, KINDS, CITIES } from './places';
 import { LAYERS } from '../../lib/data';
-import { inEra } from './geo';
+import { inEra, PLAN_1904_CORNERS } from './geo';
 import { href } from '../../lib/data';
-const payload = { ...mapPayload(), plan: img(32) };
+const controls = {
+  ru: ['Исторические карты', 'Лист', 'Прозрачность', 'Источник листа', 'Расхождение в контрольной точке', 'м', 'Привязка прежнего выпуска, ориентировочная погрешность до 150 м.'],
+  en: ['Historical maps', 'Map sheet', 'Opacity', 'Map source', 'Offset at the check point', 'm', 'Earlier registration, estimated uncertainty up to 150 m.'],
+  zh: ['历史地图', '图幅', '不透明度', '地图来源', '检核点偏差', '米', '沿用先前配准结果，估计误差可达150米。'],
+}[locale];
+const historicCheck = {ru:'Сверка с планом декабря 1904 года',en:'Compared with the December 1904 plan',zh:'与1904年12月地图比对'}[locale];
+const plans = [{ photo: 32, corners: PLAN_1904_CORNERS, checkMeters: [], masked: false, reference: '' }, ...registrations].map(row => {
+  const photo = photos.find(p => p.file.includes('photo_' + row.photo + '@'));
+  const title = row.photo === 314
+    ? {ru:'Люйшунь, ок. 1913 · Японские государственные железные дороги',en:'Lüshun, c. 1913 · Imperial Japanese Government Railways',zh:'旅顺市街图，约1913年，日本帝国铁道院'}[locale]
+    : photo.subject;
+  const source = row.photo === 314 ? 'https://commons.wikimedia.org/wiki/File:Lushun_Port_1913.jpg'
+    : photo.record_url || (photo.post_id ? tgPost(photo.post_id) : img(row.photo)!);
+  const accuracy = row.checkMeters.length ? controls[4] + ' ≈ ' + row.checkMeters[0] + ' ' + controls[5] : controls[6];
+  return { ...row, image: row.masked ? assetUrl('images/historical-maps/' + row.photo + '.webp') : img(row.photo)!, title, source,
+    accuracy: row.reference === 'historic' ? historicCheck + '. ' + accuracy : accuracy };
+});
+const payload = { ...mapPayload(), plans };
 const authored = payload.routes.filter((r) => r.a);
 const authorName = authored[0]?.a ?? '';
 const eraCount = (k: string) => payload.places.filter((x) => inEra(x, k)).length;
@@ -21,47 +41,22 @@ const usedKinds = Object.keys(KINDS).filter((k) => payload.places.some((p) => p.
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>
         <input id="m-q" type="search" enterkeyhint="search" autocomplete="off" placeholder="Форт, гора, улица" aria-label="Поиск места на карте" />
       </form>
-      <button type="button" class="mbtn mbtn--float mbtn--icon" id="m-list" aria-pressed="false" aria-label="Список мест">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"></path><circle cx="4.5" cy="6" r="1.2"></circle><circle cx="4.5" cy="12" r="1.2"></circle><circle cx="4.5" cy="18" r="1.2"></circle></svg>
+      <button type="button" class="map-tools-toggle" id="m-tools" aria-controls="m-tools-panel" aria-expanded="false">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h9m4 0h5M3 12h3m4 0h11M3 18h11m4 0h3"/><circle cx="14" cy="6" r="2"/><circle cx="8" cy="12" r="2"/><circle cx="16" cy="18" r="2"/></svg>
+        {{ru:'Меню карты',en:'Map menu',zh:'地图菜单'}[locale]}
       </button>
     </div>
+    <div class="map-drawer" id="m-tools-panel" hidden>
+      <button class="map-option" type="button" id="m-list" aria-pressed="false">Список мест</button>
+      <button class="map-option" type="button" data-square>{squareMapLabel}</button>
+      <button class="map-option" type="button" id="m-filters" aria-controls="m-filter-panel" aria-expanded="false" aria-pressed="false">Фильтры <span class="mchip__n" hidden></span></button>
+    <div class="mpanel" id="m-filter-panel" hidden>
+      <fieldset class="mpanel__group"><legend>Эпоха</legend>
     <div class="mtop__chips mtop__eras" role="group" aria-label="Эпоха">
       <button type="button" class="mchip mchip--era" data-era="all" aria-pressed="true">Все эпохи <span class="mchip__c">{payload.places.length}</span></button>
       {LAYERS.map((l) => <button type="button" class="mchip mchip--era" data-era={l.key} aria-pressed="false">{l.years} <span class="mchip__c">{eraCount(l.key)}</span></button>)}
     </div>
-    {authored.length > 0 && (
-      <div class="mtop__chips mtop__routes" role="group" aria-label="Авторские маршруты">
-        <span class="mtop__lbl"><b>Авторские маршруты</b><span>От {authorName.replace('Русский клуб Даляня', 'Русского клуба Даляня')}</span></span>
-        {authored.map((r) => <button type="button" class="mchip mchip--route" data-route={r.s} aria-pressed="false">{r.title}</button>)}
-        <a class="mchip mchip--link" href={href.routes()}>Все маршруты</a>
-      </div>
-    )}
-    <div class="mtop__chips" role="toolbar" aria-label="Фильтры и режимы карты">
-      <button type="button" class="mchip" id="m-filters" aria-expanded="false" aria-controls="m-filter-panel" aria-pressed="false">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"></path></svg>
-        Фильтры <span class="mchip__n" hidden></span>
-      </button>
-      <button type="button" class="mchip" id="m-build" aria-pressed="false">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="6" cy="18" r="2.5"></circle><circle cx="18" cy="6" r="2.5"></circle><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"></path></svg>
-        Свой маршрут <span class="mchip__n" id="m-build-n" hidden></span>
-      </button>
-      <button type="button" class="mchip" id="m-plan" aria-pressed="false" aria-controls="m-plan-panel">План 1904</button>
-      <button type="button" class="mchip" id="m-geo">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v3M12 19v3M2 12h3M19 12h3"></path></svg>
-        Где я
-      </button>
-    </div>
-
-    <div class="msuggest" id="m-suggest" hidden>
-      <span>Есть план крепости 1904 года</span>
-      <button type="button" class="mbtn mbtn--dark mbtn--sm" id="m-suggest-plan">Наложить</button>
-    </div>
-    <div class="mnone" id="m-none" role="status" hidden>
-      <p><b>В этой эпохе мест не нашлось.</b> <span id="m-none-t">Попробуйте другие фильтры.</span></p>
-      <button type="button" class="mbtn mbtn--dark mbtn--sm" id="m-none-btn">Показать все эпохи</button>
-    </div>
-
-    <div class="mpanel" id="m-filter-panel" hidden>
+      </fieldset>
       <fieldset class="mpanel__group">
         <legend>Город</legend>
         <div class="mpanel__chips">
@@ -83,10 +78,29 @@ const usedKinds = Object.keys(KINDS).filter((k) => payload.places.some((p) => p.
       </div>
     </div>
 
+      <button class="map-option" type="button" id="m-plan" aria-controls="m-plan-panel" aria-pressed="false">{controls[0]}</button>
     <div class="mplan" id="m-plan-panel" hidden>
-      <label for="m-plan-op">Старый план 1904 · прозрачность</label>
+      <label for="m-plan-sheet">{controls[1]}</label>
+      <select id="m-plan-sheet">{plans.map(p => <option value={p.photo}>{p.title}</option>)}</select>
+      <label for="m-plan-op">{controls[2]}</label>
       <input id="m-plan-op" type="range" min="10" max="100" value="70" />
-      <p>Привязка приблизительная, ошибка до 150 м. План А. Свечина, положение на 19 декабря 1904 года.</p>
+      <p><span id="m-plan-accuracy">{plans[0].accuracy}</span> · <a id="m-plan-source" href={plans[0].source} target="_blank" rel="noopener">{controls[3]}</a></p>
+    </div>
+      <details class="map-routes"><summary class="map-option">Маршруты</summary>
+    {authored.length > 0 && (
+      <div class="mtop__chips mtop__routes" role="group" aria-label="Авторские маршруты">
+        <span class="mtop__lbl"><b>Авторские маршруты</b><span>От {authorName.replace('Русский клуб Даляня', 'Русского клуба Даляня')}</span></span>
+        {authored.map((r) => <button type="button" class="mchip mchip--route" data-route={r.s} aria-pressed="false">{r.title}</button>)}
+        <a class="mchip mchip--link" href={href.routes()}>Все маршруты</a>
+      </div>
+    )}
+        <button class="map-option" type="button" id="m-build" aria-pressed="false">Свой маршрут <span class="mchip__n" id="m-build-n" hidden></span></button>
+      </details>
+      <button class="map-option" type="button" id="m-geo">Где я</button>
+    </div>
+    <div class="mnone" id="m-none" role="status" hidden>
+      <p><b>В этой эпохе мест не нашлось.</b> <span id="m-none-t">Попробуйте другие фильтры.</span></p>
+      <button type="button" class="mbtn mbtn--dark mbtn--sm" id="m-none-btn">Показать все эпохи</button>
     </div>
   </div>
 
@@ -163,9 +177,27 @@ const usedKinds = Object.keys(KINDS).filter((k) => payload.places.some((p) => p.
 
   .mplan { background: rgba(255, 255, 255, .96); border-radius: 16px; padding: 10px 14px 12px; box-shadow: 0 2px 10px rgba(11, 34, 56, .18); max-width: 420px; }
   .mplan label { font-size: 14px; font-weight: 700; }
+  .mplan select { display: block; width: 100%; min-width: 0; margin: 3px 0 7px; padding: 5px; font: inherit; color: var(--ink); }
   .mplan input { width: 100%; height: 32px; accent-color: var(--accent); }
   .mplan p { font-size: 12.5px; line-height: 1.4; color: var(--ink-3); }
 
+  .mapapp__top { max-width: 550px; }
+  .mtop__row { align-items: stretch; }
+  .mtop__search { border-radius: 8px; border: 1px solid var(--line); }
+  .map-tools-toggle { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 15px; border: 0; border-radius: 8px; background: var(--navy); color: white; font: 600 15px var(--font); cursor: pointer; }
+  .map-tools-toggle[aria-expanded="true"] { background: var(--ink-2); }
+  .map-drawer { position: absolute; top: 100%; left: 16px; width: min(350px, calc(100% - 32px)); max-height: min(58dvh, 490px); overflow: auto; overscroll-behavior: contain; background: var(--paper); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 6px 22px rgba(11,34,56,.22); }
+  .map-option { display: flex; align-items: center; gap: 8px; width: 100%; min-height: 45px; padding: 8px 16px; border: 0; border-bottom: 1px solid var(--line); background: transparent; color: var(--navy); text-align: start; font: 600 15px var(--font); cursor: pointer; }
+  .map-option:hover, .map-option[aria-expanded="true"], .map-option[aria-pressed="true"] { background: var(--frost); }
+  .map-option:focus-visible, .map-tools-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: -3px; }
+  .map-routes summary::after, .map-option[aria-controls]::after { content: "⌄"; margin-inline-start: auto; }
+  .map-routes[open] summary::after, .map-option[aria-expanded="true"]::after { transform: rotate(180deg); }
+  .map-drawer .mtop__chips { flex-wrap: wrap; overflow: visible; margin: 0; padding: 0; gap: 5px; }
+  .map-drawer .mchip { border: 1px solid var(--line); padding: 3px 9px; box-shadow: none; font-size: 13px; white-space: normal; }
+  .map-drawer .mtop__routes { padding: 8px 14px; }
+  .map-drawer .mtop__lbl { width: 100%; padding: 0; box-shadow: none; }
+  .map-drawer .mpanel, .map-drawer .mplan { max-height: none; border-radius: 0; box-shadow: none; background: var(--frost); }
+  @media(max-width: 560px) { .mapapp__top { padding: 8px 10px 4px; } .map-drawer { left: 10px; width: calc(100% - 20px); } .map-tools-toggle { padding-inline: 10px; } }
   /* кнопки */
   .mbtn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; padding: 0 16px; border-radius: 22px; font: 600 15px var(--font); border: 1.5px solid transparent; cursor: pointer; background: transparent; color: var(--ink); white-space: nowrap; text-decoration: none; transition: background .2s, color .2s, border-color .2s; }
   .mbtn--primary { background: var(--accent); color: #fff; }

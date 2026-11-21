@@ -1,5 +1,495 @@
 [
   {
+    "slug": "ananich-bankirskie-doma",
+    "tg_ids": [
+      354
+    ],
+    "date": "2026-11-20",
+    "title": "Boris Ananich on the Banking Houses of Imperial Russia",
+    "dek": "What private capital and bank regulation reveal about the economy of the period.",
+    "summary": "Boris Ananich traces the fortunes of the Gintsburg, Polyakov and Ryabushinsky banking families. Working from archives, he shows how family trading firms became large financial concerns and how the authorities tried to regulate them. The post places the study in the context of the Russo-Japanese War and compares the scale of private banking capital with government borrowing.",
+    "facts": [
+      "The note draws on Banking Houses in Russia, 1860–1914, first published in 1991.",
+      "An attempt by the Ministry of Finance to tighten oversight of private bankers in 1907 came to nothing."
+    ],
+    "type": "book",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "boris-ananich"
+    ],
+    "places": [
+      "moskva",
+      "manchzhuriya",
+      "mukden"
+    ],
+    "books": [
+      "ananich-bankirskie-doma"
+    ],
+    "photos": [],
+    "cover": null,
+    "read_min": 3,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/354",
+    "series_slug": null
+  },
+  {
+    "slug": "mendeleev-i-yaponskaya-voina",
+    "tg_ids": [
+      352
+    ],
+    "date": "2026-11-20",
+    "title": "Mendeleev and the War with Japan",
+    "dek": "Why the scientist cared about access to the Pacific, industrial development and education.",
+    "summary": "In 1904, Dmitri Mendeleev devoted a chapter of Cherished Thoughts to the war with Japan. He saw Russia’s access to the Pacific as central to the conflict and called for shipyards and factories on its shores. He expected Russia to win, a prediction the war proved wrong. At the end of the chapter he returned to the work of developing Russia itself, above all through education and industrial growth.",
+    "facts": [
+      "The note draws on Chapter V, “On the War with Japan,” in the 1995 Mysl edition, pp. 193–222.",
+      "Mendeleev discussed Arctic voyages by the icebreaker Yermak with Stepan Makarov."
+    ],
+    "type": "source",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "dmitrii-mendeleev",
+      "makarov",
+      "menshikov"
+    ],
+    "places": [
+      "port-artur",
+      "dalnii",
+      "manchzhuriya",
+      "koreya"
+    ],
+    "books": [
+      "mendeleev-zavetnye-mysli"
+    ],
+    "photos": [
+      "photos/photo_452@20-11-2026_12-19-56.jpg"
+    ],
+    "cover": "photos/photo_452@20-11-2026_12-19-56.jpg",
+    "read_min": 3,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/352",
+    "series_slug": null
+  },
+  {
+    "slug": "russko-yaponskaya-voina-v-kino",
+    "tg_ids": [
+      351
+    ],
+    "date": "2026-11-19",
+    "title": "The Russo-Japanese War: A Century on Screen",
+    "dek": "How American silent cinema and films from the Soviet Union, Japan and South Korea depicted the same war.",
+    "summary": "This roundup ranges from the American film The Hero of Liao-Yang (1904) and the Soviet Cruiser Varyag to Japan’s Clouds Above the Hill and South Korea’s Gabi (Russian Coffee). The note looks at whose stories the films tell and how they shift the angle on the same events.",
+    "facts": [
+      "The Hero of Liao-Yang appeared while the war was still being fought.",
+      "Gabi takes viewers to the Korean court on the eve of the war."
+    ],
+    "type": "culture",
+    "layer": [
+      "russian"
+    ],
+    "people": [],
+    "places": [
+      "port-artur",
+      "vysokaya-gora",
+      "lyaoyan",
+      "tsusima",
+      "koreya"
+    ],
+    "books": [],
+    "photos": [],
+    "cover": null,
+    "read_min": 2,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/351",
+    "series_slug": null
+  },
+  {
+    "slug": "gibel-petropavlovska-fotografiya",
+    "tg_ids": [
+      350
+    ],
+    "date": "2026-11-19",
+    "title": "Who Photographed the Loss of the Petropavlovsk?",
+    "dek": "What we know about the photographs of the sinking in the outer roadstead and the two men who may have taken them.",
+    "summary": "On the morning of 13 April 1904 (31 March Old Style), the battleship Petropavlovsk sank in the outer roadstead of Port Arthur. In 1914, the magazine Iskry published a photograph of the disaster and credited Lieutenant Sergei Korsakov. Officer Mikhail Lilie recalled that the military engineer Sergei Rashevsky also took photographs that morning, watching the ship from Golden Hill. Some surviving images still have no secure attribution.",
+    "facts": [
+      "Admiral Stepan Makarov, the artist Vasily Vereshchagin and more than 600 sailors died aboard the battleship.",
+      "Sergei Rashevsky described the disaster in his diary. In December 1904, he and Roman Kondratenko were killed at Fort II."
+    ],
+    "type": "source",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "sergei-korsakov",
+      "sergei-rashevskii",
+      "makarov",
+      "vereshchagin",
+      "kondratenko"
+    ],
+    "places": [
+      "port-artur",
+      "zolotaya-gora",
+      "fort-2"
+    ],
+    "books": [
+      "lilye-dnevnik-osady-port-artura",
+      "petropavlovsk-iskry-1914"
+    ],
+    "photos": [
+      "photos/photo_449@19-11-2026_11-15-02.jpg"
+    ],
+    "cover": "photos/photo_449@19-11-2026_11-15-02.jpg",
+    "read_min": 3,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/350",
+    "series_slug": null
+  },
+  {
+    "slug": "ekaterinburg-i-port-artur",
+    "tg_ids": [
+      347
+    ],
+    "date": "2026-11-18",
+    "title": "Pavel Dmitriev: From Yekaterinburg to Port Arthur",
+    "dek": "The engineer of the destroyer Strashny and the ship later named in his honour.",
+    "summary": "Pavel Dmitriev grew up in Yekaterinburg and served in the navy as a mechanical engineer. When war broke out, he was recalled from the reserve and assigned to the destroyer Strashny. Dmitriev was killed off Port Arthur on 13 April 1904 (31 March Old Style). A new destroyer was named in his honour, and his sister Maria opened a free library in his memory in Yekaterinburg.",
+    "facts": [
+      "The cruiser Bayan rescued five of the Strashny’s crew.",
+      "The destroyer Inzhener-mekhanik Dmitriev later served under the name Roshal."
+    ],
+    "type": "person",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "pavel-dmitriev",
+      "konstantin-yurasovskii",
+      "makarov",
+      "nikolai-ii"
+    ],
+    "places": [
+      "ekaterinburg",
+      "port-artur",
+      "vladivostok"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_446@18-11-2026_14-34-13.jpg",
+      "photos/photo_448@18-11-2026_14-34-13.jpg"
+    ],
+    "cover": "photos/photo_446@18-11-2026_14-34-13.jpg",
+    "read_min": 3,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/347",
+    "series_slug": null
+  },
+  {
+    "slug": "krestnitsa-generala-kondratenko",
+    "tg_ids": [
+      339
+    ],
+    "date": "2026-11-17",
+    "title": "General Kondratenko’s Goddaughter",
+    "dek": "A family story connects the siege of Port Arthur with the surrender of the Kwantung Army.",
+    "summary": "In August 1945, Colonel Ivan Artyomenko arrived in Changchun with a Soviet delegation and delivered a demand for surrender to General Otozō Yamada. Artyomenko recalled that his father and grandfather had fought against Japan forty years earlier and that his mother was Roman Kondratenko’s goddaughter. The post cites his memoirs for the family connection and provides no documentary confirmation.",
+    "facts": [
+      "The negotiations on 19 August 1945 took place in Changchun.",
+      "Japan’s general instrument of surrender was signed on 2 September 1945."
+    ],
+    "type": "memory",
+    "layer": [
+      "russian",
+      "soviet"
+    ],
+    "people": [
+      "kondratenko"
+    ],
+    "places": [
+      "port-artur",
+      "dalnii",
+      "kvantun",
+      "manchzhuriya"
+    ],
+    "books": [],
+    "photos": [],
+    "cover": null,
+    "read_min": 3,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/339",
+    "series_slug": null
+  },
+  {
+    "slug": "kukushkin-sudostroitelnaya-programma-1881",
+    "tg_ids": [
+      338
+    ],
+    "date": "2026-11-17",
+    "title": "Alexei Kukushkin on the 1881 Shipbuilding Programme",
+    "dek": "The ships Russia considered building and the effect of decisions made in the 1880s on the fleet two decades later.",
+    "summary": "Alexei Kukushkin compares the ship designs accepted and rejected under Russia’s twenty-year shipbuilding programme. He connects those choices to the capacity of the yards, supply problems and government spending, then considers how different decisions might have affected the war with Japan. The review notes how negotiations with contractors, missed deliveries and work in the yards bring the tables and drawings to life.",
+    "facts": [
+      "Rideró published the book in 2024. The publisher’s site has a table of contents and a sample."
+    ],
+    "type": "book",
+    "layer": [
+      "pre1898",
+      "russian"
+    ],
+    "people": [
+      "rozhestvenskii"
+    ],
+    "places": [
+      "port-artur",
+      "zheltoe-more",
+      "tsusima"
+    ],
+    "books": [
+      "kukushkin-sudostroitelnaya-programma-1881"
+    ],
+    "photos": [],
+    "cover": null,
+    "read_min": 2,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/338",
+    "series_slug": null
+  },
+  {
+    "slug": "tri-proekta-kreposti-port-artur",
+    "tg_ids": [
+      335
+    ],
+    "date": "2026-11-17",
+    "title": "Three Plans for Port Arthur Fortress",
+    "dek": "Why the planned line of forts moved closer to the city, and how much was ready by the outbreak of war.",
+    "summary": "When Russia leased the Kwantung territory in 1898, Port Arthur already had Chinese coastal batteries and earthen defences. The first two plans proposed a wider defensive perimeter. Construction costs and limits on the size of the garrison led to the adoption of Konstantin Velichko’s more compact plan. Building began in 1901. War reached the fortress in 1904, five years before the work was due to be finished.",
+    "facts": [
+      "The initial estimate was about 15 million roubles. Roughly 4.5 million had been allocated to the defences by the time war broke out.",
+      "203 Metre Hill lay outside the main line of forts. Work to fortify it was deferred to the second phase."
+    ],
+    "type": "explainer",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "velichko"
+    ],
+    "places": [
+      "port-artur",
+      "kvantun",
+      "staryy-gorod-port-artura",
+      "vysokaya-gora",
+      "zolotaya-gora"
+    ],
+    "books": [],
+    "photos": [],
+    "cover": null,
+    "read_min": 4,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/335",
+    "series_slug": null
+  },
+  {
+    "slug": "velichko-inzhener-port-artura",
+    "tg_ids": [
+      333
+    ],
+    "date": "2026-11-17",
+    "title": "Konstantin Velichko: The Engineer Behind Port Arthur",
+    "dek": "From the Nicholas Engineering Academy to the fortress plan approved in 1900.",
+    "summary": "Konstantin Velichko, a professor of fortification and a veteran of the Russo-Turkish War, drew up the plans for the Russian fortress at Port Arthur. They were approved in 1900. The note follows his career from engineering school to military service after the revolution and asks how the orders and resources he received shaped his decisions.",
+    "facts": [
+      "Velichko served under Alexei Kuropatkin in the Russo-Japanese War.",
+      "Velichko joined the Red Army in 1918. He died in Leningrad in 1927."
+    ],
+    "type": "person",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "velichko",
+      "kuropatkin"
+    ],
+    "places": [
+      "port-artur",
+      "kvantun",
+      "vladivostok",
+      "lyaoyan",
+      "mukden"
+    ],
+    "books": [],
+    "photos": [],
+    "cover": null,
+    "read_min": 2,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/333",
+    "series_slug": null
+  },
+  {
+    "slug": "diletant-malenkaya-pobedonosnaya-voina",
+    "tg_ids": [
+      332
+    ],
+    "date": "2026-11-16",
+    "title": "Diletant on the Russo-Japanese War",
+    "dek": "An April 2022 magazine issue on Port Arthur, Tsushima and wartime propaganda.",
+    "summary": "The author recommends Diletant’s special issue on the Russo-Japanese War. It brings together articles on Port Arthur, Tsushima and propaganda in Russia and Japan, alongside period illustrations and cartoons.",
+    "facts": [
+      "“A Small Victorious War,” Diletant, no. 76, April 2022."
+    ],
+    "type": "book",
+    "layer": [
+      "russian"
+    ],
+    "people": [],
+    "places": [
+      "port-artur",
+      "tsusima"
+    ],
+    "books": [
+      "diletant-76"
+    ],
+    "photos": [],
+    "cover": null,
+    "read_min": 1,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/332",
+    "series_slug": null
+  },
+  {
+    "slug": "nemirovich-danchenko-v-port-arture",
+    "tg_ids": [
+      329
+    ],
+    "date": "2026-11-16",
+    "title": "The “King of War Correspondents” at Port Arthur",
+    "dek": "What Vasily Nemirovich-Danchenko saw in the fortress in spring 1904.",
+    "summary": "Vasily Nemirovich-Danchenko, a correspondent for the newspaper Russkoye Slovo, arrived at Port Arthur soon after the loss of the Petropavlovsk. He reported on the city as it braced for a siege and called Roman Kondratenko the “soul and brain of Port Arthur.” His reporting took him on through Manchuria. After the revolution, he emigrated. He spent his last years in Prague, where he died in 1936.",
+    "facts": [
+      "The journalist described his journey east in To the War: From St Petersburg to Port Arthur.",
+      "Vasily Nemirovich-Danchenko left Russia after the revolution. His younger brother Vladimir stayed and became a co-founder of the Moscow Art Theatre."
+    ],
+    "type": "person",
+    "layer": [
+      "russian"
+    ],
+    "people": [
+      "vasilii-nemirovich-danchenko",
+      "kondratenko",
+      "sergei-rashevskii"
+    ],
+    "places": [
+      "port-artur",
+      "manchzhuriya",
+      "vafangou",
+      "lyaoyan",
+      "mukden"
+    ],
+    "books": [],
+    "photos": [
+      "photos/photo_433@16-11-2026_11-05-02.jpg"
+    ],
+    "cover": "photos/photo_433@16-11-2026_11-05-02.jpg",
+    "read_min": 3,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/329",
+    "series_slug": null
+  },
+  {
+    "slug": "ukreplenie-4-daanzishan",
+    "tg_ids": [
+      309,
+      319
+    ],
+    "date": "2026-11-15",
+    "title": "Fortification No. 4: Eight Empty Gun Positions",
+    "dek": "What remains on Mount Daanzishan west of Port Arthur.",
+    "summary": "A ditch cut into the rock, casemates and eight empty gun positions survive on Mount Daanzishan. The author climbed to the fortification and compared what she found with the account by Alexei von Schwarz and Yuri Romanovsky. She follows the site from its beginnings as a Chinese fort to its current status as a protected monument. What became of the guns themselves remains unclear.",
+    "facts": [
+      "Fortification No. 4 stands on the Great Table Mountain (大案子山). Fort IV occupies the neighbouring Chair Mountain (椅子山).",
+      "The second instalment includes more of the author’s photographs from the mountain and the fortification."
+    ],
+    "type": "place",
+    "layer": [
+      "pre1898",
+      "russian",
+      "soviet",
+      "modern"
+    ],
+    "people": [
+      "nogi"
+    ],
+    "places": [
+      "ukreplenie-4",
+      "fort-4",
+      "vysokaya-gora",
+      "port-artur"
+    ],
+    "books": [
+      "shvarts-romanovskii-oborona-port-artura"
+    ],
+    "photos": [
+      "photos/photo_416@15-11-2026_17-20-09.jpg",
+      "photos/photo_417@15-11-2026_17-20-10.jpg",
+      "photos/photo_418@15-11-2026_17-20-10.jpg",
+      "photos/photo_419@15-11-2026_17-20-10.jpg",
+      "photos/photo_420@15-11-2026_17-20-10.jpg",
+      "photos/photo_421@15-11-2026_17-20-10.jpg",
+      "photos/photo_422@15-11-2026_17-20-10.jpg",
+      "photos/photo_423@15-11-2026_17-20-10.jpg",
+      "photos/photo_424@15-11-2026_17-24-47.jpg",
+      "photos/photo_425@15-11-2026_17-24-47.jpg",
+      "photos/photo_426@15-11-2026_17-24-47.jpg",
+      "photos/photo_427@15-11-2026_17-24-47.jpg",
+      "photos/photo_428@15-11-2026_17-24-47.jpg",
+      "photos/photo_429@15-11-2026_17-24-47.jpg",
+      "photos/photo_430@15-11-2026_17-24-47.jpg",
+      "photos/photo_431@15-11-2026_17-24-47.jpg",
+      "photos/photo_432@15-11-2026_17-24-47.jpg"
+    ],
+    "cover": "photos/photo_417@15-11-2026_17-20-10.jpg",
+    "read_min": 3,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/309",
+    "series_slug": null
+  },
+  {
+    "slug": "rasporyadok-dnya-v-okopah-port-artura",
+    "tg_ids": [
+      303
+    ],
+    "date": "2026-11-15",
+    "title": "A Day in the Trenches at Port Arthur",
+    "dek": "How the fortress defenders slept, ate and rested during the siege.",
+    "summary": "On the front line at besieged Port Arthur, the day revolved around brief spells of rest, meals, duties and work at night. The defenders recalled brewing tea whenever they could. Off duty, they read, played games and looked after their kit. Alexander Lysev collected their accounts in his book on daily life in the fortress during the war.",
+    "facts": [
+      "The note draws on Alexander Lysev’s Russian Port Arthur in 1904: A History of Everyday Military Life (Posev, Moscow, 2019).",
+      "The original post links its historical photographs to the Getty Images collection on the siege of Port Arthur."
+    ],
+    "type": "explainer",
+    "layer": [
+      "russian"
+    ],
+    "people": [],
+    "places": [
+      "port-artur"
+    ],
+    "books": [
+      "lysev-russkiy-port-artur-v-1904-godu",
+      "siege-port-arthur-getty"
+    ],
+    "photos": [],
+    "cover": null,
+    "read_min": 2,
+    "series": null,
+    "tg_url": "https://t.me/portartur_dalnii/303",
+    "series_slug": null
+  },
+  {
     "slug": "general-fok-geroy-dunaya-i-port-artur",
     "title": "General Fok: The Danube, Port Arthur and the Trial",
     "dek": "Military honours, the retreat from Jinzhou, the dispute with Smirnov and the outcome of the 1908 trial.",
@@ -2985,7 +3475,8 @@
       "stessel",
       "kuropatkin",
       "rozhestvenskii",
-      "togo"
+      "togo",
+      "nebogatov"
     ],
     "places": [
       "port-artur",

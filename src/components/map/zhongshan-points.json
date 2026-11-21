@@ -1,0 +1,72 @@
+[
+  {
+    "number": 1,
+    "lat": 38.920668,
+    "lng": 121.637377,
+    "source": "https://www.openstreetmap.org/way/219428635",
+    "slug": "bank-choson"
+  },
+  {
+    "number": 2,
+    "lat": 38.919706,
+    "lng": 121.637384,
+    "source": "https://www.openstreetmap.org/way/219427937",
+    "slug": "politsiya-dajrena"
+  },
+  {
+    "number": 3,
+    "lat": 38.919466,
+    "lng": 121.638364,
+    "source": "https://www.openstreetmap.org/way/219428625",
+    "slug": "britanskoe-konsulstvo-dalian"
+  },
+  {
+    "number": 4,
+    "lat": 38.919458,
+    "lng": 121.639409,
+    "source": "https://www.openstreetmap.org/relation/2902893",
+    "slug": "gostinitsa-yamato"
+  },
+  {
+    "number": 5,
+    "lat": 38.920042,
+    "lng": 121.640216,
+    "source": "https://www.openstreetmap.org/way/219428689",
+    "slug": "merija-dajrena"
+  },
+  {
+    "number": 6,
+    "lat": 38.920771,
+    "lng": 121.640242,
+    "source": "https://www.openstreetmap.org/node/10681875746",
+    "slug": "vostochnoe-kolonizatsionnoe-obshchestvo"
+  },
+  {
+    "number": 7,
+    "lat": 38.921492,
+    "lng": 121.639955,
+    "source": "https://www.openstreetmap.org/way/219428651",
+    "slug": "bank-velikoy-tsin"
+  },
+  {
+    "number": 8,
+    "lat": 38.921906,
+    "lng": 121.639244,
+    "source": "https://www.openstreetmap.org/way/219428671",
+    "slug": "narodnyy-klub-dalian"
+  },
+  {
+    "number": 9,
+    "lat": 38.921789,
+    "lng": 121.638337,
+    "source": "https://www.openstreetmap.org/way/219428665",
+    "slug": "bank-yokohama"
+  },
+  {
+    "number": 10,
+    "lat": 38.921342,
+    "lng": 121.637581,
+    "source": "https://www.openstreetmap.org/way/228871685",
+    "slug": "pochtamt-dajrena"
+  }
+]

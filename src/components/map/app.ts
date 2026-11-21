@@ -2,15 +2,17 @@
 import { loadMapLibre, webglOk } from './ml';
 import {
   haversine, optimizeOrder, inEra, amapMarker, amapNav, yandexPoint, yandexRoute, fmtKm, osmStyle, kindSvg,
-  PLAN_1904_CORNERS, type LL,
+  type LL,
 } from './geo';
 
 type P = {
+  addressNumber?: number;
   v: boolean; s: string; n: string; zh: string | null; now: string | null; c: string; l: string[]; k: string;
   lat: number; lng: number; u: boolean; low: boolean; t: string; ph: { f: string; t: string; a: string; s: string }[]; h: string;
 };
 type R = { s: string; title: string; dek: string; a: string | null; stops: string[]; line: LL[] | null; h: string };
-type Data = { places: P[]; routes: R[]; layers: { k: string; t: string; y: string }[]; kinds: Record<string, string>; cities: Record<string, string>; plan: string | null };
+type Sheet = { photo: number; image: string; source: string; accuracy: string; corners: [number, number][] };
+type Data = { places: P[]; routes: R[]; layers: { k: string; t: string; y: string }[]; kinds: Record<string, string>; cities: Record<string, string>; plans: Sheet[] };
 
 const esc = (s: unknown) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]!));
 const ICON = {
@@ -48,7 +50,7 @@ export async function initMapApp() {
     sel: [] as string[],         // выбранные точки своего маршрута (в рациональном порядке)
     start: null as string | null, // фиксированная стартовая точка
     city: 'all', era: null as string | null, kinds: new Set<string>(), q: '',
-    plan: false, planOpacity: 0.7,
+    plan: false, planId: 32, planOpacity: 0.7, square: false,
   };
 
   // ---------- URL ----------
@@ -56,8 +58,10 @@ export async function initMapApp() {
   const setUrl = () => {
     const u = new URL(location.href);
     u.search = '';
+    if (st.square && !st.cur && !st.route && !st.sel.length) u.searchParams.set('area', 'zhongshan');
     if (st.era) u.searchParams.set('layer', st.era);
     if (st.city !== 'all') u.searchParams.set('city', st.city);
+    if (st.plan) u.searchParams.set('sheet', String(st.planId));
     if (st.kinds.size) u.searchParams.set('kind', [...st.kinds].join(','));
     if (st.route) u.searchParams.set('route', st.route);
     else if (st.sel.length) {
@@ -102,8 +106,10 @@ export async function initMapApp() {
     const el = document.createElement('button');
     el.type = 'button';
     el.className = 'mk';
-    el.setAttribute('aria-label', p.n);
-    el.title = p.n;
+    const label = p.addressNumber ? p.addressNumber + ' · ' + p.n : p.n;
+    el.setAttribute('aria-label', label);
+    el.title = label;
+    if (p.addressNumber) el.dataset.address = String(p.addressNumber);
     el.innerHTML = `<span class="mk__dot" data-kind="${esc(p.k)}">${kindSvg(p.k)}</span>`;
     el.addEventListener('click', (e) => { e.stopPropagation(); openPlace(p.s, { fly: false }); });
     const m = new ml.Marker({ element: el, anchor: 'center' }).setLngLat([p.lng, p.lat]).addTo(map);
@@ -115,7 +121,9 @@ export async function initMapApp() {
     if (st.kinds.size && !st.kinds.has(p.k)) return false;
     if (st.q) {
       const q = st.q.toLowerCase();
-      if (![p.n, p.zh, p.now].some((x) => x && x.toLowerCase().includes(q))) return false;
+      const square = p.addressNumber || p.s === 'nikolaevskaya-ploshchad'
+        ? 'чжуншань чжуншана чжуншаня джуншан джуншана джуншань zhongshan square 中山广场' : '';
+      if (![p.n, p.zh, p.now, square].some((x) => x && x.toLowerCase().includes(q))) return false;
     }
     return true;
   };
@@ -131,12 +139,13 @@ export async function initMapApp() {
       const p = P.get(s)!;
       const n = nums.get(s);
       const show = visible(p) || n !== undefined || s === st.cur;
-      el.hidden = !show;
+      const compact = !!p.addressNumber && map.getZoom() < 15 && !n && s !== st.cur && !st.q && !st.kinds.size;
+      el.hidden = !show || compact;
       el.classList.toggle('is-active', s === st.cur);
       el.classList.toggle('is-num', n !== undefined);
       el.classList.toggle('is-dim', !!st.route && n === undefined && s !== st.cur);
       el.classList.toggle('is-unsure', p.low);
-      const want = n !== undefined ? String(n) : '';
+      const want = n !== undefined ? String(n) : p.addressNumber ? String(p.addressNumber) : '';
       if (dot.dataset.n !== want) {
         dot.dataset.n = want;
         dot.innerHTML = want || kindSvg(p.k);
@@ -145,6 +154,7 @@ export async function initMapApp() {
       el.setAttribute('aria-pressed', String(s === st.cur));
     }
   };
+  map.on('zoomend', paintMarkers);
 
   // ---------- линии ----------
   const setLine = async (pts: LL[] | null) => {
@@ -157,10 +167,6 @@ export async function initMapApp() {
     map.addSource('path', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
     map.addLayer({ id: 'path-case', type: 'line', source: 'path', layout: { 'line-join': 'round', 'line-cap': 'round' }, paint: { 'line-color': '#FFFFFF', 'line-width': 7, 'line-opacity': 0.9 } });
     map.addLayer({ id: 'path', type: 'line', source: 'path', layout: { 'line-join': 'round', 'line-cap': 'round' }, paint: { 'line-color': '#E0452B', 'line-width': 3.5, 'line-dasharray': [2, 1.4] } });
-    if (data.plan) {
-      map.addSource('plan', { type: 'image', url: data.plan, coordinates: PLAN_1904_CORNERS as any });
-      map.addLayer({ id: 'plan', type: 'raster', source: 'plan', layout: { visibility: 'none' }, paint: { 'raster-opacity': st.planOpacity, 'raster-fade-duration': 0 } }, 'path-case');
-    }
   });
 
   const fit = (pts: LL[], maxZoom = 15) => {
@@ -415,11 +421,14 @@ export async function initMapApp() {
   function openPlace(s: string, o: { fly?: boolean } = {}) {
     const p = P.get(s);
     if (!p) return;
+    setMenu(false);
+    st.square = false;
     if (st.mode !== 'place') st.back = st.mode === 'list' || st.mode === 'builder' || st.mode === 'route' ? st.mode : null;
     st.cur = s;
     render('place');
     const pad = padding();
-    map.easeTo({ center: [p.lng, p.lat], zoom: o.fly === false ? Math.max(map.getZoom(), 13) : Math.max(map.getZoom(), 15), padding: pad, duration: reduce ? 0 : 700 });
+    const zoom = p.addressNumber || s === 'nikolaevskaya-ploshchad' ? 17 : o.fly === false ? 13 : 15;
+    map.easeTo({ center: [p.lng, p.lat], zoom: Math.max(map.getZoom(), zoom), padding: pad, duration: reduce ? 0 : 700 });
   }
   function unroute() {
     st.route = null;
@@ -516,9 +525,34 @@ export async function initMapApp() {
   };
 
   // ---------- верхняя панель ----------
-  const eras = $('.mtop__eras'), suggest = $('#m-suggest'), none = $('#m-none');
+  const eras = $('.mtop__eras'), none = $('#m-none');
   const chipFilters = $('#m-filters'), chipPlan = $('#m-plan'), chipBuild = $('#m-build'), chipGeo = $('#m-geo'), btnList = $('#m-list');
   const panel = $('#m-filter-panel'), planPanel = $('#m-plan-panel');
+  const menu = $('#m-tools-panel'), menuToggle = $('#m-tools');
+  function setMenu(open: boolean) {
+    menu.hidden = !open;
+    menuToggle.setAttribute('aria-expanded', String(open));
+  }
+  menuToggle.addEventListener('click', () => {
+    if (menu.hidden && !sheet.hidden) { st.back = null; closeSheet(); }
+    setMenu(menu.hidden);
+  });
+  menu.addEventListener('click', e => {
+    if ((e.target as HTMLElement).closest('#m-list,#m-build,#m-geo,[data-route]')) setMenu(false);
+  });
+  function showSquare() {
+    st.back = null;
+    closeSheet();
+    resetFilters();
+    st.square = true;
+    setMenu(false);
+    if (menu.contains(document.activeElement)) menuToggle.focus();
+    setUrl();
+    fit(data.places.filter(p => p.addressNumber).map(p => [p.lat, p.lng] as LL), 17.7);
+  }
+  root.addEventListener('click', e => {
+    if ((e.target as HTMLElement).closest('[data-square]')) showSquare();
+  });
   function syncChips() {
     const nf = (st.city !== 'all' ? 1 : 0) + st.kinds.size;
     const fn = chipFilters.querySelector<HTMLElement>('.mchip__n')!;
@@ -531,8 +565,7 @@ export async function initMapApp() {
     panel.querySelectorAll<HTMLElement>('[data-city]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.city === st.city)));
     eras.querySelectorAll<HTMLElement>('[data-era]').forEach((b) => b.setAttribute('aria-pressed', String((b.dataset.era === 'all' ? null : b.dataset.era) === st.era)));
     root.querySelectorAll<HTMLElement>('[data-route].mchip').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.route === st.route)));
-    const planOn = st.plan;
-    suggest.hidden = !(st.era === 'russian' && !planOn);
+    chipPlan.setAttribute('aria-expanded', String(st.plan));
     const shown = data.places.filter(visible).length;
     panel.querySelector<HTMLElement>('[data-count]')!.textContent = String(shown);
     none.hidden = shown > 0 || !!st.q;
@@ -549,13 +582,13 @@ export async function initMapApp() {
   });
   panel.addEventListener('click', (e) => {
     const b = (e.target as HTMLElement).closest<HTMLElement>('button');
-    if (!b) return;
+    if (!b || b.hasAttribute('data-era')) return;
     if (b.dataset.city) {
       st.city = b.dataset.city;
       applyFilters(); fitVisible(); return;
     } else if (b.dataset.kind) { const k = b.dataset.kind; st.kinds.has(k) ? st.kinds.delete(k) : st.kinds.add(k); }
     else if (b.hasAttribute('data-reset')) { resetFilters(); return; }
-    else if (b.hasAttribute('data-done')) { panel.hidden = true; chipFilters.setAttribute('aria-expanded', 'false'); chipFilters.focus(); return; }
+    else if (b.hasAttribute('data-done')) { panel.hidden = true; chipFilters.setAttribute('aria-expanded', 'false'); setMenu(false); menuToggle.focus(); return; }
     applyFilters();
   });
   const applyFilters = () => { paintMarkers(); syncChips(); setUrl(); if (st.mode === 'list') renderListFoot(); };
@@ -583,9 +616,9 @@ export async function initMapApp() {
     setEra(k);
   });
   $('#m-none-btn').addEventListener('click', () => { if (st.era) setEra(null); else resetFilters(); fitVisible(); });
-  $('#m-suggest-plan').addEventListener('click', () => { if (!st.plan) chipPlan.click(); });
   const q = $<HTMLInputElement>('#m-q');
   q.addEventListener('input', () => {
+    setMenu(false);
     st.q = q.value.trim();
     if (st.q && st.mode !== 'list') { st.back = null; render('list'); } else applyFilters();
   });
@@ -599,19 +632,30 @@ export async function initMapApp() {
     if (st.mode === 'builder') { closeSheet(); return; }
     st.route = null; st.back = null; render('builder'); fitCurrent();
   });
-  chipPlan.addEventListener('click', async () => {
-    st.plan = !st.plan;
-    planPanel.hidden = !st.plan;
+  const sheetSelect = $<HTMLSelectElement>('#m-plan-sheet');
+  const showPlan = async () => {
     await ready;
-    if (map.getLayer('plan')) map.setLayoutProperty('plan', 'visibility', st.plan ? 'visible' : 'none');
-    if (st.plan) {
-      const b = map.getBounds();
-      const c = map.getCenter();
-      if (map.getZoom() < 11.5 || !(c.lng > 121.16 && c.lng < 121.33 && c.lat > 38.75 && c.lat < 38.87)) {
-        fit([[38.775, 121.18], [38.86, 121.31]], 14);
-      }
-      void b;
-    }
+    if (map.getLayer('plan')) map.removeLayer('plan');
+    if (map.getSource('plan')) map.removeSource('plan');
+    if (!st.plan) return;
+    const plan = data.plans.find(p => p.photo === st.planId)!;
+    map.addSource('plan', { type: 'image', url: plan.image, coordinates: plan.corners });
+    map.addLayer({ id: 'plan', type: 'raster', source: 'plan', paint: { 'raster-opacity': st.planOpacity, 'raster-fade-duration': 0 } }, 'path-case');
+    $('#m-plan-accuracy').textContent = plan.accuracy;
+    $<HTMLAnchorElement>('#m-plan-source').href = plan.source;
+    fit(plan.corners.map(([lng, lat]): LL => [lat, lng]), 16);
+  };
+  sheetSelect.addEventListener('change', () => {
+    st.planId = Number(sheetSelect.value);
+    setUrl();
+    void showPlan();
+  });
+  chipPlan.addEventListener('click', () => {
+    st.plan = !st.plan;
+    st.planId = Number(sheetSelect.value);
+    planPanel.hidden = !st.plan;
+    setUrl();
+    void showPlan();
     syncChips();
   });
   const op = $<HTMLInputElement>('#m-plan-op');
@@ -642,11 +686,11 @@ export async function initMapApp() {
   root.querySelector('[data-zoom="out"]')?.addEventListener('click', () => map.zoomOut());
 
   // клик по пустой карте закрывает панель фильтров
-  map.on('click', () => { if (!panel.hidden) { panel.hidden = true; chipFilters.setAttribute('aria-expanded', 'false'); } });
+  map.on('click', () => setMenu(false));
 
   const onKey = (e: KeyboardEvent) => {
     if (e.key !== 'Escape') return;
-    if (!panel.hidden) { panel.hidden = true; chipFilters.setAttribute('aria-expanded', 'false'); return; }
+    if (!menu.hidden) { setMenu(false); menuToggle.focus(); return; }
     if (!sheet.hidden) closeSheet();
   };
   document.addEventListener('keydown', onKey);
@@ -674,6 +718,13 @@ export async function initMapApp() {
   if (cityParam && (cityParam in data.cities)) st.city = cityParam;
   for (const k of (params.get('kind') || '').split(',')) if (k in data.kinds) st.kinds.add(k);
   const ptsParam = (params.get('pts') || '').split(',').map((s) => s.trim()).filter((s) => P.has(s));
+  const selectedPlan = data.plans.find(p => p.photo === Number(params.get('sheet')));
+  if (selectedPlan) {
+    st.plan = true;
+    st.planId = selectedPlan.photo;
+    sheetSelect.value = String(selectedPlan.photo);
+    planPanel.hidden = false;
+  }
   const hash = decodeURIComponent(location.hash.slice(1));
   // маршрут, выбранные точки или место вне эпохи: эпоху сбрасываем, ничего не пропадает
   const wanted = [
@@ -684,6 +735,7 @@ export async function initMapApp() {
   if (st.era && wanted.some((s) => P.has(s) && !inEra(P.get(s)!, st.era!))) { st.era = null; }
   paintMarkers(); syncChips();
   await ready;
+  if (selectedPlan) await showPlan();
   if (rParam && Rt.has(rParam)) {
     st.route = rParam; render('route'); fitCurrent();
   } else if (ptsParam.length) {
@@ -696,7 +748,9 @@ export async function initMapApp() {
   } else if (params.has('build')) {
     fit(data.places.filter((p) => p.c === 'lushun').map((p) => [p.lat, p.lng] as LL), 13);
     render('builder');
-  } else {
+  } else if (params.get('area') === 'zhongshan') {
+    showSquare();
+  } else if (!selectedPlan) {
     fit(data.places.filter((p) => p.c !== 'other').map((p) => [p.lat, p.lng] as LL), 13);
   }
   if (hash && P.has(hash)) {
@@ -704,7 +758,7 @@ export async function initMapApp() {
     const p = P.get(hash)!;
     if (st.route || st.sel.length) st.back = st.route ? 'route' : 'builder';
     st.cur = hash; render('place');
-    map.jumpTo({ center: [p.lng, p.lat], zoom: 15, padding: padding() });
+    map.jumpTo({ center: [p.lng, p.lat], zoom: p.addressNumber || hash === 'nikolaevskaya-ploshchad' ? 17 : 15, padding: padding() });
   }
 }
 

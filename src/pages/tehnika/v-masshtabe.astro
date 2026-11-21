@@ -23,8 +23,8 @@ const photoFor=(ship:any)=>ship.images[ship.slug==='poltava'?1:0];
   <PageHero title={overview.title} lead={overview.dek} crumbs={[{label:'Главная',href:href.home()},{label:'Корабли и вооружение',href:href.hardwareIndex()}]} />
   <span hidden data-pagefind-filter="type:Корабли"></span>
   <section class="container fleet-comparison" aria-labelledby="comparison-title" data-fleet-comparison>
-    <div class="fleet-heading"><h2 id="comparison-title">Сравните корабли эскадры</h2><a class="text-link" href={href.hardwareIndex()}>Подробные истории кораблей</a></div>
-    <p class="fleet-explanation">От самого длинного корпуса к самому короткому. Линейки приведены к общему масштабу; архивные фотографии показывают облик кораблей и не приведены к общему масштабу.</p>
+    <div class="fleet-heading"><h2 id="comparison-title">Сравните корабли по длине</h2><a class="text-link" href={href.hardwareIndex()}>Подробные истории кораблей</a></div>
+    <p class="fleet-explanation">Линейки показывают длину корпуса в общем масштабе. Архивные фотографии и рисунки сопровождаются подписями об их происхождении.</p>
     <FleetFilters />
     <form class="fleet-controls" onsubmit="return false" data-pagefind-ignore>
       <fieldset><legend>Вид сравнения</legend><div class="fleet-view"><button type="button" data-view="diagram" aria-pressed="true">Фотографии и размеры</button><button type="button" data-view="table" aria-pressed="false">Таблица</button></div></fieldset>

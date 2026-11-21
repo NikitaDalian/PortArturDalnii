@@ -56,6 +56,7 @@
   "cover": "photos/photo_125@23-10-2026_21-41-01.jpg",
   "links": [],
   "articles": [
+   "rasporyadok-dnya-v-okopah-port-artura",
    "lysev-russkii-port-artur-v-1904-godu",
    "posle-tri-pali-razvlecheniya-na-pozitsiyah"
   ]
@@ -76,6 +77,7 @@
   "cover": "photos/photo_132@24-10-2026_19-45-02.jpg",
   "links": [],
   "articles": [
+   "gibel-petropavlovska-fotografiya",
    "dnevnik-kapitana-lile"
   ]
  },
@@ -551,6 +553,111 @@
   "links": [],
   "articles": [
    "tsena-port-artura-v-tsifrah"
+  ]
+ },
+ {
+  "slug": "shvarts-romanovskii-oborona-port-artura",
+  "title": "旅顺防御战",
+  "author": "阿列克谢·冯·施瓦茨、尤里·罗曼诺夫斯基",
+  "author_years": null,
+  "year": "1908–1910",
+  "kind": "reference",
+  "level": "deep",
+  "verdict": "关于旅顺要塞修筑及围城经过的史料。",
+  "annotation": "全书两卷，记述要塞如何备战与防守。第4号防御工事的文章借此对照开战时炮台的状况与日军开始近距离围攻时拍摄的照片。",
+  "review_post": [
+   309
+  ],
+  "cover": null,
+  "links": [
+   "https://search.rsl.ru/ru/record/01003529049"
+  ],
+  "articles": [
+   "ukreplenie-4-daanzishan"
+  ]
+ },
+ {
+  "slug": "diletant-76",
+  "title": "《业余爱好者》第76期：一场小小的胜利战争",
+  "author": "《业余爱好者》杂志编辑部",
+  "author_years": null,
+  "year": "2022",
+  "kind": "history",
+  "level": "start",
+  "verdict": "供初次了解这场战争及其背景的读者阅读。",
+  "annotation": "2022年4月号刊登了旅顺、对马海战和战时宣传等方面的文章，并收录历史插图和漫画。",
+  "review_post": [
+   332
+  ],
+  "cover": null,
+  "links": [
+   "https://diletant.media/magazine/"
+  ],
+  "articles": [
+   "diletant-malenkaya-pobedonosnaya-voina"
+  ]
+ },
+ {
+  "slug": "kukushkin-sudostroitelnaya-programma-1881",
+  "title": "1881年造舰计划的实施方案",
+  "author": "阿列克谢·库库什金",
+  "author_years": null,
+  "year": "2024",
+  "kind": "history",
+  "level": "deep",
+  "verdict": "适合关注舰队建设决策及其后果的读者。",
+  "annotation": "作者考察1881年的造舰计划、相互竞争的设计方案以及俄国船厂的产能，并将实际的造舰历程与其他可能的选择作对照。",
+  "review_post": [
+   338
+  ],
+  "cover": null,
+  "links": [
+   "https://ridero.ru/books/varianty_vypolneniya_sudostroitelnoi_programmy_1881_goda/"
+  ],
+  "articles": [
+   "kukushkin-sudostroitelnaya-programma-1881"
+  ]
+ },
+ {
+  "slug": "mendeleev-zavetnye-mysli",
+  "title": "肺腑之言",
+  "author": "德米特里·门捷列夫",
+  "author_years": null,
+  "year": "1995",
+  "kind": "reference",
+  "level": "deep",
+  "verdict": "了解1904年初俄国如何看待日俄战争的一手史料。",
+  "annotation": "门捷列夫在第五章《论对日战争》中讨论太平洋出海口之争、工业发展与俄国的未来。文章采用1995年出版的完整版。",
+  "review_post": [
+   352
+  ],
+  "cover": null,
+  "links": [
+   "https://ru.wikisource.org/wiki/Заветные_мысли_(Д._И._Менделеев)/Глава_5"
+  ],
+  "articles": [
+   "mendeleev-i-yaponskaya-voina"
+  ]
+ },
+ {
+  "slug": "ananich-bankirskie-doma",
+  "title": "俄国的私人银行商号，1860至1914年",
+  "author": "鲍里斯·阿纳尼奇",
+  "author_years": null,
+  "year": "1991",
+  "kind": "history",
+  "level": "deep",
+  "verdict": "一部依据档案撰写的俄国私人资本史研究。",
+  "annotation": "本书以金茨堡、波利亚科夫和里亚布申斯基等银行家家族为线索，研究俄国的私人企业。初版由科学出版社在列宁格勒出版。",
+  "review_post": [
+   354
+  ],
+  "cover": null,
+  "links": [
+   "https://elib.fa.ru/AVTOGRAF/ananich1991.pdf/en/info"
+  ],
+  "articles": [
+   "ananich-bankirskie-doma"
   ]
  }
 ]

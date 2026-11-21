@@ -3,7 +3,7 @@
   "dek": "把军舰并排放在一起，看看它们有多大、担负什么任务，以及在旅顺战事中各自的位置。",
   "intro": [
     "舰身长，并不一定战力更强。1904年初，俄国驻旅顺舰队中，有些巡洋舰比战列舰还长；然而，最重的舰炮和最厚的舷侧装甲，仍在战列舰上。差别在于造舰时赋予它们的任务：列阵迎战、搜索敌舰、护卫鱼雷艇，或是远离基地独立行动。",
-    "这里可以在同一比例下比较军舰的长度。最先展示的是开战前旅顺的主要作战舰艇；还可以单独查看当时驻泊仁川的“瓦良格”号，以及几艘日本对手。长度条表示舰体全长，照片和文章则呈现每艘军舰真正的外形与经历。借此再看那些熟悉的舰名，会更容易理解：小小的“诺维克”号为何频频出海，“巴扬”号与其他巡洋舰有何不同，以及七艘各具特点的战列舰承担着哪些共同任务。"
+    "本页按同一尺度比较舰艇全长。默认显示驻旅顺口的舰队，也可单独查看第二太平洋舰队的四艘战列舰、驻仁川的「瓦良格」号和若干日本舰艇。标尺表示舰体长度，照片展示当时舰艇的外观。"
   ],
   "sections": [
     {
@@ -25,7 +25,7 @@
       "title": "同一场战争，不同的驻泊地",
       "paragraphs": [
         "战争爆发时，旅顺有七艘战列舰，以及这里介绍的六艘巡洋舰：“巴扬”“阿斯科尔德”“帕拉达”“狄安娜”“诺维克”和“博雅林”。“瓦良格”号当时在朝鲜的济物浦，即今天的仁川。海参崴巡洋舰分队的基地还要更远；本次比较没有列入该分队的军舰。",
-        "鱼雷艇、炮舰、布雷运输舰和辅助舰船，同样是舰队不可缺少的部分。这幅示意图选取的是部分大型军舰，并未涵盖所有舰艇。日本的“三笠”“初濑”和“八岛”号展示了不同设计的对手，也不代表日军战列线的全貌。"
+        "驱逐舰、炮舰、布雷舰和辅助舰船也是舰队不可缺少的一部分。本页以「可怕」号驱逐舰为例，讲述轻型舰艇的服役经历。日本的「三笠」号、「初濑」号和「八岛」号是日本战列线中的三艘战舰。"
       ],
       "refs": [
         1,
@@ -43,6 +43,18 @@
       "refs": [
         4,
         5
+      ]
+    },
+    {
+      "id": "second-squadron",
+      "title": "未抵达旅顺口的舰队",
+      "paragraphs": [
+        "1904年秋，季诺维·罗杰斯特文斯基率第二太平洋舰队离开波罗的海，赴远东增援俄国海军。旅顺口在远航途中投降，舰队改以海参崴（符拉迪沃斯托克）为目的地。尼古拉·涅博加托夫的分舰队稍后离开波罗的海，在越南近海与他们会合。1905年5月，两支舰队会合后在对马海峡遭遇日本舰队。",
+        "「苏沃洛夫公爵」号、「亚历山大三世皇帝」号、「博罗季诺」号和「鹰」号是同一级战列舰，编在同一分队。三艘在对马海战中沉没。「鹰」号幸存，第二天被俘，经修复后转入日本海军。本页比较第一战列舰分队的这四艘舰艇。一同出航的还有其他型号的战列舰、巡洋舰、驱逐舰和后勤船只。"
+      ],
+      "refs": [
+        8,
+        9
       ]
     },
     {
@@ -126,6 +138,24 @@
       "url": "https://tsushima.su/RU/libru/i/Page_6/page_13/biblmelbayanru/",
       "locator": "巡洋舰在战列舰舰队中的任务，以及两条舷侧装甲带的说明。",
       "note": "已核对文章的电子转录本。“巴扬”号的设计考虑较为复杂，不能用“独立巡航”一句话概括。"
+    },
+    {
+      "id": 8,
+      "title": "《为何是对马？》：1904–1905年远征",
+      "author": "俄罗斯国家图书馆",
+      "date": "线上展览",
+      "url": "https://expositions.nlr.ru/ex_manus/tsusima/pohod.php",
+      "locator": "舰队编成、路线和参与者文件",
+      "note": "从波罗的海出发的舰艇、远征航程与涅博加托夫分队会合。"
+    },
+    {
+      "id": 9,
+      "title": "《为何是对马？》：俄历1905年5月14日至15日的海战",
+      "author": "俄罗斯国家图书馆",
+      "date": "线上展览",
+      "url": "https://expositions.nlr.ru/ex_manus/tsusima/war.php",
+      "locator": "对马海战及各舰的结局",
+      "note": "展览使用俄历日期。"
     }
   ],
   "ships": [
@@ -585,6 +615,86 @@
           "https://commons.wikimedia.org/wiki/File:Yashima_NH_58968.jpg"
         ]
       }
+    },
+    {
+      "shipSlug": "knyaz-suvorov",
+      "group": "second-pacific",
+      "profile": "battleship",
+      "lengthOverallM": 121,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "121米为博罗季诺级战列舰的设计全长，数据来自1899年设计表。",
+      "sources": [
+        {
+          "url": "https://djvu.online/file/drGHmkZOp7ATt",
+          "title": "弗·尤·格里博夫斯基《战列舰「博罗季诺」号》",
+          "locator": "1899年「皇太子」号与「博罗季诺」号设计对照表，全长一栏，单位为米。"
+        }
+      ],
+      "illustration": null
+    },
+    {
+      "shipSlug": "imperator-aleksandr-iii",
+      "group": "second-pacific",
+      "profile": "battleship",
+      "lengthOverallM": 121,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "121米为博罗季诺级战列舰的设计全长，数据来自1899年设计表。",
+      "sources": [
+        {
+          "url": "https://djvu.online/file/drGHmkZOp7ATt",
+          "title": "弗·尤·格里博夫斯基《战列舰「博罗季诺」号》",
+          "locator": "1899年「皇太子」号与「博罗季诺」号设计对照表，全长一栏，单位为米。"
+        }
+      ],
+      "illustration": null
+    },
+    {
+      "shipSlug": "borodino",
+      "group": "second-pacific",
+      "profile": "battleship",
+      "lengthOverallM": 121,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "121米为博罗季诺级战列舰的设计全长，数据来自1899年设计表。",
+      "sources": [
+        {
+          "url": "https://djvu.online/file/drGHmkZOp7ATt",
+          "title": "弗·尤·格里博夫斯基《战列舰「博罗季诺」号》",
+          "locator": "1899年「皇太子」号与「博罗季诺」号设计对照表，全长一栏，单位为米。"
+        }
+      ],
+      "illustration": null
+    },
+    {
+      "shipSlug": "orel",
+      "group": "second-pacific",
+      "profile": "battleship",
+      "lengthOverallM": 121,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "121米为博罗季诺级战列舰的设计全长，数据来自1899年设计表。",
+      "sources": [
+        {
+          "url": "https://djvu.online/file/drGHmkZOp7ATt",
+          "title": "弗·尤·格里博夫斯基《战列舰「博罗季诺」号》",
+          "locator": "1899年「皇太子」号与「博罗季诺」号设计对照表，全长一栏，单位为米。"
+        }
+      ],
+      "illustration": null
+    },
+    {
+      "shipSlug": "strashnyi",
+      "group": "port-arthur",
+      "profile": "destroyer",
+      "lengthOverallM": null,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "已查阅的组装记录未列出该舰的实际全长，因此标尺留空。",
+      "sources": [
+        {
+          "url": "https://keu-ocr.narod.ru/Sokoly/",
+          "title": "尼·尼·阿福宁《旅顺口的「猎鹰」级驱逐舰》",
+          "locator": "组装与试航表中的「椋鸟」号／「可怕」号条目。"
+        }
+      ],
+      "illustration": null
     }
   ]
 }

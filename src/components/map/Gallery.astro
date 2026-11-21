@@ -1,10 +1,12 @@
 ---
 // Галерея фотографий места с лайтбоксом (<dialog>), листание стрелками и свайпом.
-import { img, focusStyle } from '../../lib/data';
+import { img, focusStyle, photoMeta } from '../../lib/data';
 import { photoCaption } from './places';
 interface Props { files: string[]; title: string }
 const { files, title } = Astro.props;
-const items = files.map((f) => ({ full: img(f), thumb: img(f, 640), cap: photoCaption(f), st: focusStyle(f) })).filter((x) => x.full);
+const items = files.map((f) => ({
+  full: img(f), thumb: img(f, 640), cap: photoCaption(f), st: focusStyle(f), credit: photoMeta(f),
+})).filter((x) => x.full);
 ---
 {items.length > 0 && (
   <div class="pgal" data-pgal>
@@ -14,6 +16,10 @@ const items = files.map((f) => ({ full: img(f), thumb: img(f, 640), cap: photoCa
           <button type="button" class="pgal__btn" data-i={i} aria-label={`Открыть фото ${i + 1} из ${items.length}${x.cap ? `: ${x.cap}` : ''}`}>
             <img src={x.thumb} alt="" loading="lazy" decoding="async" style={x.st} />
           </button>
+          {x.credit?.license_url && <p class="meta pgal__credit">
+            {x.cap} · <a class="link" href={x.credit.record_url}>{x.credit.author}</a> · <a class="link" href={x.credit.license_url}>{x.credit.license}</a>
+            {x.credit.derivative && <> · {x.credit.derivative}</>}
+          </p>}
         </li>
       ))}
     </ul>
@@ -27,7 +33,7 @@ const items = files.map((f) => ({ full: img(f), thumb: img(f, 640), cap: photoCa
         <button type="button" class="pgal__ctl pgal__prev" data-step="-1" aria-label="Предыдущее фото"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg></button>
         <button type="button" class="pgal__ctl pgal__next" data-step="1" aria-label="Следующее фото"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></button>
       </>}
-      <script type="application/json" set:html={JSON.stringify(items).replace(/</g, '\\u003c')}></script>
+      <script type="application/json" set:html={JSON.stringify(items.map(({full, cap}) => ({full, cap}))).replace(/</g, '\\u003c')}></script>
     </dialog>
   </div>
 )}
@@ -74,6 +80,7 @@ const items = files.map((f) => ({ full: img(f), thumb: img(f, 640), cap: photoCa
   .pgal__btn { display: block; width: 100%; padding: 0; border: 0; cursor: zoom-in; background: var(--frost); overflow: hidden; }
   .pgal__btn img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; transition: transform .5s var(--ease); }
   .pgal__btn:hover img { transform: scale(1.04); }
+  .pgal__credit { margin: 6px 2px 0; }
   .pgal__dlg { width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: rgba(6, 18, 30, .96); color: #fff; }
   .pgal__dlg::backdrop { background: rgba(6, 18, 30, .8); }
   .pgal__dlg[open] { display: flex; flex-direction: column; }

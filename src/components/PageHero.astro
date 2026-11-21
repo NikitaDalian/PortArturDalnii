@@ -30,7 +30,7 @@ const { title, eyebrow, lead, crumbs = [], image = null, imageAlt = '', caption,
     {image && (
       <figure class="page-hero__fig">
         <img src={image} alt={imageAlt} style={imageStyle} loading="eager" decoding="async" data-pagefind-meta={imageMeta ? 'image[src], image_alt[alt]' : undefined} />
-        {caption && <figcaption>{caption}</figcaption>}
+        {(caption || Astro.slots.has('image-credit')) && <figcaption>{caption}<slot name="image-credit" /></figcaption>}
       </figure>
     )}
   </div>

@@ -2,13 +2,13 @@ import data from '../data/fleet_overview.json';
 import type { Hardware } from './hardware';
 export interface FleetMeasurement {
   shipSlug:string;
-  group:'port-arthur'|'chemulpo'|'japanese';
-  profile:'battleship'|'armored-cruiser'|'protected-cruiser';
+  group:'port-arthur'|'second-pacific'|'chemulpo'|'japanese';
+  profile:'battleship'|'armored-cruiser'|'protected-cruiser'|'destroyer';
   lengthOverallM:number|null;
   normalDisplacementTonnes:number|null;
   measurementNote:string;
   sources:{url:string;title:string;locator:string}[];
-  illustration:{file:string;hullStart:number;hullEnd:number;note:string;sourceUrls:string[]};
+  illustration:{file:string;hullStart:number;hullEnd:number;note:string;sourceUrls:string[]}|null;
 }
 export interface FleetOverview {
   title:string; dek:string; intro:string[];

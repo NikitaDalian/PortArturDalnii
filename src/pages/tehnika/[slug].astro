@@ -47,7 +47,7 @@ const connections=[
     <aside class="hardware-aside" data-pagefind-ignore>
       <nav aria-label="Содержание страницы">
         {e.kind==='ship'&&<a href={href.fleetOverview()}>Сравнить с другими кораблями</a>}
-        {e.kind==='ship'&&<a href="#ship-explorer">Как устроен корабль</a>}
+        {explorerPhoto&&<a href="#ship-explorer">Как устроен корабль</a>}
         <a href="#story">История</a>
         <a href="#specifications">Характеристики</a>
         {e.armament.length>0 && <a href="#armament">Вооружение корабля</a>}
@@ -58,7 +58,7 @@ const connections=[
       <div class="hardware-periods">{e.periods.map(period=>layerByKey(period)).filter(Boolean).map(period=><a class="text-link" href={href.layer(period!.key)}>{period!.title}</a>)}</div>
     </aside>
     <div class="hardware-body">
-      {e.kind==='ship'&&<ShipExplorer ship={e} record={shipFeaturesBySlug.get(e.slug)} />}
+      {explorerPhoto&&<ShipExplorer ship={e} record={shipFeaturesBySlug.get(e.slug)} />}
       {e.images[0] && e.images[0].file !== explorerPhoto && <ArchiveFigure picture={e.images[0]} eager />}
       <div class="hardware-intro prose" id="story">{e.intro.map(paragraph=><p><LinkedText text={paragraph} context={context} /></p>)}</div>
       {e.sections.map((section,index)=><>

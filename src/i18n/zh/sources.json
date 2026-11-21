@@ -375,5 +375,35 @@
     "posts": [],
     "image": null,
     "articles": []
+  },
+  {
+    "slug": "petropavlovsk-iskry-1914",
+    "title": "《火星》杂志刊登的“彼得罗巴甫洛夫斯克”号沉没照片",
+    "kind": "archive",
+    "author": "谢尔盖·科尔萨科夫（《火星》杂志署名摄影者）",
+    "annotation": "1914年《火星》第13期刊登此照，并署名科尔萨科夫中尉。该署名对应这张刊载的照片，其他存世照片仍须逐一考证。",
+    "url": "https://commons.wikimedia.org/wiki/File:Броненосец_Петропавловск_-_взрыв_на_мине_у_Порт-Артур,_31-3-1904г_ж.Искры1914-N13)e1.png",
+    "posts": [
+      350
+    ],
+    "image": null,
+    "articles": [
+      "gibel-petropavlovska-fotografiya"
+    ]
+  },
+  {
+    "slug": "siege-port-arthur-getty",
+    "title": "盖蒂图片社目录中的旅顺围城照片",
+    "kind": "archive",
+    "author": "盖蒂图片社（Getty Images）",
+    "annotation": "这组围城照片和插图见于介绍旅顺守军作息的原帖。",
+    "url": "https://www.gettyimages.com/photos/siege-of-port-arthur",
+    "posts": [
+      303
+    ],
+    "image": null,
+    "articles": [
+      "rasporyadok-dnya-v-okopah-port-artura"
+    ]
   }
 ]

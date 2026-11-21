@@ -375,5 +375,35 @@
     "posts": [],
     "image": null,
     "articles": []
+  },
+  {
+    "slug": "petropavlovsk-iskry-1914",
+    "title": "The Iskry photograph of the loss of Petropavlovsk",
+    "kind": "archive",
+    "author": "Sergei Korsakov (photographer as credited in Iskry)",
+    "annotation": "Iskry, no. 13 (1914), published this photograph with a credit to Lieutenant Korsakov. The attribution applies to this publication. The authorship of other surviving photographs is a separate question.",
+    "url": "https://commons.wikimedia.org/wiki/File:Броненосец_Петропавловск_-_взрыв_на_мине_у_Порт-Артур,_31-3-1904г_ж.Искры1914-N13)e1.png",
+    "posts": [
+      350
+    ],
+    "image": null,
+    "articles": [
+      "gibel-petropavlovska-fotografiya"
+    ]
+  },
+  {
+    "slug": "siege-port-arthur-getty",
+    "title": "Photographs of the siege of Port Arthur in the Getty Images catalogue",
+    "kind": "archive",
+    "author": "Getty Images",
+    "annotation": "The post about daily life at the front refers to this collection of photographs and illustrations of the siege.",
+    "url": "https://www.gettyimages.com/photos/siege-of-port-arthur",
+    "posts": [
+      303
+    ],
+    "image": null,
+    "articles": [
+      "rasporyadok-dnya-v-okopah-port-artura"
+    ]
   }
 ]

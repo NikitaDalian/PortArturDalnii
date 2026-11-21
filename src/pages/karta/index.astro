@@ -3,22 +3,43 @@ import Base from '../../layouts/Base.astro';
 import MapApp from '../../components/map/MapApp.astro';
 import ExploreNav from '../../components/map/ExploreNav.astro';
 import PlaceCard from '../../components/PlaceCard.astro';
-import { places, href, plural } from '../../lib/data';
+import { places, href, plural, img } from '../../lib/data';
+import { locale } from '../../i18n/locale';
+import { squareMapLabel } from '../../lib/zhongshan';
 import { CITIES, sortedRoutes, routeAuthor, TRANSPORT } from '../../components/map/places';
 const groups = ['lushun', 'dalian', 'other'].map((c) => ({ c, xs: places.filter((p) => p.city === c) })).filter((g) => g.xs.length);
 const rs = sortedRoutes();
+const mapDescription = {
+  ru: 'Порт-Артур и Дальний на современной карте. Сравните улицы и береговую линию с историческими планами, откройте фотографии мест или соберите маршрут.',
+  en: 'Explore Port Arthur and Dalny on a modern map. Compare streets and shorelines with historical maps, open photographs of places or build a route.',
+  zh: '在现代地图上探索旅顺与达里尼。叠加历史地图，对照街道与海岸线，查看地点照片，或规划自己的路线。',
+}[locale];
+const originals = {
+  ru: ['Другие архивные листы', 'Карта Маньчжурии с врезками, 1901', 'В этой копии мелкая координатная сетка плохо читается.', 'План старого и нового Люйшуня', 'Даляньская библиотека. Масштаб и дата листа не установлены.'],
+  en: ['Other archival sheets', 'Manchuria and inset maps, 1901', 'The fine graticule is difficult to read in this copy.', 'Old and new Lüshun', 'Dalian Library. The scale and date of the sheet are uncertain.'],
+  zh: ['其他历史图幅','满洲地图及附图，1901年','这份复制件的经纬网标注难以辨认。','旅顺新旧市街图','大连图书馆藏，比例尺与绘制日期待考。'],
+}[locale];
 ---
-<Base searchable={false} title="Карта" description="Карта мест Порт-Артура и Дальнего: форты, вокзалы, кладбища, улицы. Фильтры по слоям истории, старый план крепости 1904 года и конструктор своего маршрута." section="map">
+<Base searchable={false} title="Карта" description={mapDescription} section="map">
   <h1 class="sr-only">Карта мест Порт-Артура и Дальнего</h1>
-  <div class="container"><ExploreNav current="map" /></div>
   <MapApp />
+  <div class="container section--tight">
+    <a class="text-link" href={href.places() + '#zhongshan'}>{squareMapLabel}</a>
+    <ExploreNav current="map" />
+    <details><summary>{originals[0]}</summary>
+      <ul>
+        <li><a class="link" href={img(82)!}>{originals[1]}</a> · {originals[2]}</li>
+        <li><a class="link" href="https://www.dl-library.net.cn/wenxian/old/content.php?id=482">{originals[3]}</a> · {originals[4]}</li>
+      </ul>
+    </details>
+  </div>
 
   <section class="section section--tight" aria-labelledby="k-routes">
     <div class="container stack" style="--stack-gap:20px">
       <div class="section-head" style="margin-bottom:0">
         <div class="stack" style="--stack-gap:8px">
           <h2 class="h2" id="k-routes">Маршруты на карте</h2>
-          <p class="muted">Готовый маршрут откроется на карте с линией и номерами остановок. Свой маршрут собирается кнопкой «Свой маршрут» над картой.</p>
+          <p class="muted">{{ru:'Выберите маршрут, чтобы увидеть на карте все его остановки.',en:'Choose a route to see its stops on the map.',zh:'选择一条路线，即可在地图上查看沿途各站。'}[locale]}</p>
         </div>
         <a class="link" href={href.routes()}>Все маршруты</a>
       </div>

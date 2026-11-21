@@ -14,7 +14,7 @@ export function validShipFeatures(ship: Hardware, record?: ShipFeatures): ShipFe
   if (!record || ship.kind !== 'ship' || record.shipSlug !== ship.slug) return undefined;
   if(!ship.images.some(image=>image.file===record.photoFile))throw new Error(`Unknown annotation photograph: ${ship.slug}`);
   const sourceIds = new Set(ship.sources.map(source => source.id));
-  const imageUrls = new Set([...ship.images.map(picture => picture.sourceUrl),...(fleetOverview.ships.find(row=>row.shipSlug===ship.slug)?.illustration.sourceUrls??[])]);
+  const imageUrls = new Set([...ship.images.map(picture => picture.sourceUrl),...(fleetOverview.ships.find(row=>row.shipSlug===ship.slug)?.illustration?.sourceUrls??[])]);
   const ids = new Set<string>();
   const features = record.features.filter(feature => {
     if (!feature.id || ids.has(feature.id) || !feature.label || !feature.text ||

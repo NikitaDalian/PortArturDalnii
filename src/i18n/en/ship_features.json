@@ -1015,5 +1015,185 @@
       }
     ],
     "photoFile": "/images/hardware/yashima-nh58968.webp"
+  },
+  {
+    "shipSlug": "knyaz-suvorov",
+    "photoFile": "/images/hardware/knyaz-suvorov-1.webp",
+    "period": "Kronstadt, 1904. View from astern before the Second Squadron's voyage.",
+    "features": [
+      {
+        "id": "after-turret",
+        "label": "After turret",
+        "x": 63,
+        "y": 69,
+        "text": "The two barrels in the foreground belong to the after main turret. The forward turret carried another two 305 mm guns.",
+        "weaponSlug": "obukhov-305-40",
+        "refs": [
+          1
+        ],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/suvorov/photo/06.jpg"
+        ]
+      },
+      {
+        "id": "after-mast",
+        "label": "After mast",
+        "x": 54,
+        "y": 33,
+        "text": "There is a platform on the mast. The crosspieces are yards, from which signal flags could be flown.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/suvorov/photo/06.jpg"
+        ]
+      },
+      {
+        "id": "funnels",
+        "label": "Funnels",
+        "x": 49,
+        "y": 49,
+        "text": "From astern, one funnel overlaps the other. The top of the nearer funnel is visible, with part of the second hidden behind it.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/suvorov/photo/06.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "shipSlug": "imperator-aleksandr-iii",
+    "photoFile": "/images/hardware/imperator-aleksandr-iii-1.webp",
+    "period": "Kronstadt, 1904. The battleship before its departure for the Far East.",
+    "features": [
+      {
+        "id": "forward-turret",
+        "label": "Forward turret",
+        "x": 65,
+        "y": 68,
+        "text": "The forward turret carried two main guns. A second turret of the same design stood aft.",
+        "weaponSlug": "obukhov-305-40",
+        "refs": [
+          1
+        ],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/alex3/photo/04.jpg"
+        ]
+      },
+      {
+        "id": "funnels",
+        "label": "Two funnels",
+        "x": 47,
+        "y": 44,
+        "text": "The funnels stand between the masts. Their light paint and dark tops are clear in this Baltic photograph.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/alex3/photo/04.jpg"
+        ]
+      },
+      {
+        "id": "forward-mast",
+        "label": "Mast platform",
+        "x": 55,
+        "y": 34,
+        "text": "The foremast carries a platform enclosed by a railing, known as a fighting top.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/alex3/photo/04.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "shipSlug": "borodino",
+    "photoFile": "/images/hardware/borodino-1.webp",
+    "period": "Kronstadt roadstead, 1904. Russian service.",
+    "features": [
+      {
+        "id": "after-turret",
+        "label": "After turret",
+        "x": 20,
+        "y": 58,
+        "text": "The after turret carried a pair of 305 mm guns. The matching forward turret is visible at the other end of the ship.",
+        "weaponSlug": "obukhov-305-40",
+        "refs": [
+          1
+        ],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Borodino1904Kronstadt.jpg"
+        ]
+      },
+      {
+        "id": "funnels",
+        "label": "Funnels",
+        "x": 40,
+        "y": 46,
+        "text": "Two funnels between the masts carried exhaust from the steam boilers. There were more boilers than funnels.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Borodino1904Kronstadt.jpg"
+        ]
+      },
+      {
+        "id": "bridge",
+        "label": "Forward superstructure",
+        "x": 57,
+        "y": 52,
+        "text": "The stepped superstructure rises behind the forward turret. Its bridge gave a clear view over the deck.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Borodino1904Kronstadt.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "shipSlug": "orel",
+    "photoFile": "/images/hardware/orel-1.webp",
+    "period": "Maizuru, 1905. After the Battle of Tsushima and before the Japanese refit.",
+    "features": [
+      {
+        "id": "forward-turret",
+        "label": "Forward turret",
+        "x": 30,
+        "y": 66,
+        "text": "The forward turret is on the left. Like the after turret, it was designed to carry two 305 mm guns.",
+        "weaponSlug": "obukhov-305-40",
+        "refs": [
+          1
+        ],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/orel/photo/32.jpg"
+        ]
+      },
+      {
+        "id": "funnels",
+        "label": "Two funnels",
+        "x": 50,
+        "y": 45,
+        "text": "Both funnels still stand in their original positions. The photograph shows Oryol before its refit for the Japanese fleet.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/orel/photo/32.jpg"
+        ]
+      },
+      {
+        "id": "damage",
+        "label": "Visible damage",
+        "x": 59,
+        "y": 73,
+        "text": "Holes and damaged fittings are visible amidships. The photograph shows what survived the battle, with no way to determine the exact time or order of the hits.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/orel/photo/32.jpg"
+        ]
+      }
+    ]
   }
 ]

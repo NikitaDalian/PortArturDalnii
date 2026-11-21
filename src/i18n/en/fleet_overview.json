@@ -3,7 +3,7 @@
   "dek": "Set the ships side by side to understand their size, roles and place in the war off Port Arthur.",
   "intro": [
     "A longer ship is not necessarily a stronger one. In the Russian squadron at Port Arthur in early 1904, some cruisers were longer than certain battleships, although the battleships carried the heaviest guns and thickest side armour. The difference lay in what each ship was built to do: fight in the battle line, find the enemy, accompany torpedo boats or operate far from base.",
-    "Here you can compare ship lengths at a common scale. The opening view shows Port Arthur’s principal warships on the eve of war; you can also look separately at Varyag, stationed at Chemulpo, and several Japanese opponents. The bars convey hull length, while photographs and articles restore each ship’s actual appearance and history. Familiar names become easier to understand: why the small Novik was constantly putting to sea, how Bayan differed from the other cruisers, and what tasks united seven different battleships."
+    "The comparison places ship lengths on one scale. It opens with the Port Arthur squadron, and also shows four battleships from the Second Squadron, Varyag at Chemulpo and a selection of Japanese ships. The bars show hull length. The photographs show how the ships looked."
   ],
   "sections": [
     {
@@ -25,7 +25,7 @@
       "title": "One war, different stations",
       "paragraphs": [
         "At the outbreak of war, Port Arthur had seven battleships and the six cruisers shown here: Bayan, Askold, Pallada, Diana, Novik and Boyarin. Varyag was then at the Korean port of Chemulpo, now Incheon. The Vladivostok cruiser detachment was based farther away; its ships are not included in this comparison.",
-        "Torpedo boats, gunboats, minelayers and auxiliary vessels were also essential to the fleet. The diagram presents selected large warships rather than every vessel. Japan’s Mikasa, Hatsuse and Yashima illustrate different designs; they do not represent the entire Japanese battle line either."
+        "Destroyers, gunboats, minelayers and auxiliary vessels were also essential to the fleet. The destroyer Strashnyi tells the story of service in the light forces. Mikasa, Hatsuse and Yashima represent three ships of the Japanese battle line."
       ],
       "refs": [
         1,
@@ -43,6 +43,18 @@
       "refs": [
         4,
         5
+      ]
+    },
+    {
+      "id": "second-squadron",
+      "title": "The squadron that never reached Port Arthur",
+      "paragraphs": [
+        "In autumn 1904 the Second Pacific Squadron sailed from the Baltic under Zinovy Rozhestvensky to reinforce the Russian fleet in the Far East. Port Arthur fell during the voyage, making Vladivostok the squadron's destination. Off Vietnam it was joined by Nikolai Nebogatov's detachment, which had left the Baltic later. The combined squadron met the Japanese fleet at Tsushima in May 1905.",
+        "Knyaz Suvorov, Imperator Aleksandr III, Borodino and Oryol were sister ships in the same division. Three sank at Tsushima. Oryol survived the battle, was captured on the second day and later served in the Japanese fleet. The comparison shows these four battleships of the First Division. They sailed alongside other classes of battleship, as well as cruisers, destroyers and support vessels."
+      ],
+      "refs": [
+        8,
+        9
       ]
     },
     {
@@ -126,6 +138,24 @@
       "url": "https://tsushima.su/RU/libru/i/Page_6/page_13/biblmelbayanru/",
       "locator": "The cruiser’s intended role alongside the battleship squadron and description of both side armour belts.",
       "note": "The article’s electronic transcription was checked. Bayan’s complex design concept is not reduced to a single formula about independent cruising."
+    },
+    {
+      "id": 8,
+      "title": "Why Tsushima? The Voyage, 1904–1905",
+      "author": "National Library of Russia",
+      "date": "Online exhibition",
+      "url": "https://expositions.nlr.ru/ex_manus/tsusima/pohod.php",
+      "locator": "Squadron composition, route and participants' documents",
+      "note": "Ships, the voyage from the Baltic and the rendezvous with Nebogatov's detachment."
+    },
+    {
+      "id": 9,
+      "title": "Why Tsushima? The Battle, 14–15 May 1905 Old Style",
+      "author": "National Library of Russia",
+      "date": "Online exhibition",
+      "url": "https://expositions.nlr.ru/ex_manus/tsusima/war.php",
+      "locator": "The Battle of Tsushima and the fate of individual ships",
+      "note": "The exhibition gives the battle dates in the Old Style calendar."
     }
   ],
   "ships": [
@@ -585,6 +615,86 @@
           "https://commons.wikimedia.org/wiki/File:Yashima_NH_58968.jpg"
         ]
       }
+    },
+    {
+      "shipSlug": "knyaz-suvorov",
+      "group": "second-pacific",
+      "profile": "battleship",
+      "lengthOverallM": 121,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "121 m is the overall design length of the Borodino-class battleships, taken from the 1899 design table.",
+      "sources": [
+        {
+          "url": "https://djvu.online/file/drGHmkZOp7ATt",
+          "title": "V. Yu. Gribovsky, Battleship Borodino",
+          "locator": "1899 design comparison of Tsesarevich and Borodino, row for overall length in metres."
+        }
+      ],
+      "illustration": null
+    },
+    {
+      "shipSlug": "imperator-aleksandr-iii",
+      "group": "second-pacific",
+      "profile": "battleship",
+      "lengthOverallM": 121,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "121 m is the overall design length of the Borodino-class battleships, taken from the 1899 design table.",
+      "sources": [
+        {
+          "url": "https://djvu.online/file/drGHmkZOp7ATt",
+          "title": "V. Yu. Gribovsky, Battleship Borodino",
+          "locator": "1899 design comparison of Tsesarevich and Borodino, row for overall length in metres."
+        }
+      ],
+      "illustration": null
+    },
+    {
+      "shipSlug": "borodino",
+      "group": "second-pacific",
+      "profile": "battleship",
+      "lengthOverallM": 121,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "121 m is the overall design length of the Borodino-class battleships, taken from the 1899 design table.",
+      "sources": [
+        {
+          "url": "https://djvu.online/file/drGHmkZOp7ATt",
+          "title": "V. Yu. Gribovsky, Battleship Borodino",
+          "locator": "1899 design comparison of Tsesarevich and Borodino, row for overall length in metres."
+        }
+      ],
+      "illustration": null
+    },
+    {
+      "shipSlug": "orel",
+      "group": "second-pacific",
+      "profile": "battleship",
+      "lengthOverallM": 121,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "121 m is the overall design length of the Borodino-class battleships, taken from the 1899 design table.",
+      "sources": [
+        {
+          "url": "https://djvu.online/file/drGHmkZOp7ATt",
+          "title": "V. Yu. Gribovsky, Battleship Borodino",
+          "locator": "1899 design comparison of Tsesarevich and Borodino, row for overall length in metres."
+        }
+      ],
+      "illustration": null
+    },
+    {
+      "shipSlug": "strashnyi",
+      "group": "port-arthur",
+      "profile": "destroyer",
+      "lengthOverallM": null,
+      "normalDisplacementTonnes": null,
+      "measurementNote": "The assembly records examined here give no individual overall length for this destroyer, so the scale is left blank.",
+      "sources": [
+        {
+          "url": "https://keu-ocr.narod.ru/Sokoly/",
+          "title": "N. N. Afonin, Port Arthur's Sokol-class Destroyers",
+          "locator": "Assembly and trial table, row for Skvorets / Strashnyi."
+        }
+      ],
+      "illustration": null
     }
   ]
 }

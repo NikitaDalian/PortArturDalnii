@@ -29,6 +29,7 @@
       "kvantun"
     ],
     "articles": [
+      "ekaterinburg-i-port-artur",
       "kak-vse-nachinalos-predposylki-voiny",
       "nikolai-ii-i-russko-yaponskaya-voina",
       "otsu-1891-pokushenie-na-tsesarevicha",
@@ -264,6 +265,7 @@
       "mukden"
     ],
     "articles": [
+      "velichko-inzhener-port-artura",
       "voina-na-more-osada-mukden-tsusima",
       "albom-shtaba-glavnokomanduyushchego-1905",
       "neolurk-russko-yaponskaya-voina",
@@ -307,6 +309,9 @@
       "vysokaya-gora"
     ],
     "articles": [
+      "gibel-petropavlovska-fotografiya",
+      "krestnitsa-generala-kondratenko",
+      "nemirovich-danchenko-v-port-arture",
       "voina-na-more-osada-mukden-tsusima",
       "stepanov-port-artur-retsenziya",
       "port-artur-poslednyaya-zamorskaya-koloniya",
@@ -393,6 +398,9 @@
       "port-artur"
     ],
     "articles": [
+      "mendeleev-i-yaponskaya-voina",
+      "gibel-petropavlovska-fotografiya",
+      "ekaterinburg-i-port-artur",
       "voina-na-more-osada-mukden-tsusima",
       "port-artur-poslednyaya-zamorskaya-koloniya",
       "port-artur-i-dalnii-dva-goroda",
@@ -460,6 +468,8 @@
       "vysokaya-gora"
     ],
     "articles": [
+      "tri-proekta-kreposti-port-artur",
+      "velichko-inzhener-port-artura",
       "port-artur-poslednyaya-zamorskaya-koloniya",
       "skolko-eto-v-nyneshnih-dengah",
       "ukreplenie-5-yahutszui",
@@ -568,6 +578,7 @@
     ],
     "portrait_note": "Identified from the archive caption.",
     "articles": [
+      "ukreplenie-4-daanzishan",
       "voina-na-more-osada-mukden-tsusima",
       "kto-fotografiroval-russko-yaponskuyu-voinu",
       "port-artur-poslednyaya-zamorskaya-koloniya"
@@ -797,6 +808,7 @@
     "portrait": "photos/photo_204@05-11-2026_11-05-03.jpg",
     "places": [],
     "articles": [
+      "mendeleev-i-yaponskaya-voina",
       "menshikov-pisma-k-blizhnim"
     ]
   },
@@ -911,6 +923,7 @@
       "nikko"
     ],
     "articles": [
+      "gibel-petropavlovska-fotografiya",
       "voina-na-more-osada-mukden-tsusima",
       "vereshchagin-hudozhnik-na-voyne"
     ]
@@ -3117,6 +3130,455 @@
         "title": "Uryū Sotokichi: biographical reference",
         "url": "https://en.wikipedia.org/wiki/Ury%C5%AB_Sotokichi",
         "note": "Supplementary check of birth year and Japanese name."
+      }
+    ]
+  },
+  {
+    "slug": "pavel-dmitriev",
+    "name": "Pavel Mikhailovich Dmitriev",
+    "short": "Pavel Dmitriev",
+    "years": "1872–1904",
+    "country": "russia",
+    "role": "Chief engineer of the destroyer Strashny",
+    "group": "navy",
+    "bio": "By the spring of 1904 Pavel Dmitriev, a graduate of Moscow Technical School, was back in naval service. Recalled from the reserve to Port Arthur, he became chief engineer of Strashny, responsible for keeping its machinery running.\n\nOn the night of 12–13 April 1904 (30–31 March Old Style), the destroyer fell behind its detachment. At dawn it fought Japanese warships and sank. Dmitriev died alongside the other officers. In 1905 a new ship was launched under his name, Inzhener-Mekhanik Dmitriev.",
+    "quote": "",
+    "posts": [
+      347
+    ],
+    "portrait": null,
+    "places": [
+      "port-artur"
+    ],
+    "articles": [
+      "ekaterinburg-i-port-artur"
+    ],
+    "sources": [
+      {
+        "title": "Engineer, Bauman Moscow State Technical University, no. 5 (2015)",
+        "url": "https://guimc.bmstu.ru/wp-content/uploads/2018/03/engineer-2015-sep-oct.pdf",
+        "note": "The graduate's life and the ship named in his honour."
+      },
+      {
+        "title": "J. W. Dyskant, Port Arthur, 1904",
+        "url": "https://militera.lib.ru/h/dyskant/04.html",
+        "note": "The chapter on Makarov's squadron and the loss of Strashny."
+      }
+    ]
+  },
+  {
+    "slug": "konstantin-yurasovskii",
+    "name": "Konstantin Konstantinovich Yurasovsky",
+    "short": "Yurasovsky",
+    "years": "1864–1904",
+    "country": "russia",
+    "role": "Captain of the destroyer Strashny in its final engagement",
+    "group": "navy",
+    "bio": "Captain 2nd Rank Konstantin Yurasovsky took command of Strashny at Port Arthur in 1904. The destroyer had only just entered service and was already scouting off the Kwantung Peninsula.\n\nOn the night of 12–13 April 1904 (30–31 March Old Style), Strashny lost contact with the Russian ships and met a Japanese detachment at dawn. Yurasovsky was killed and Lieutenant Maleyev took command. New destroyers later took the names of both officers and their chief engineer, Pavel Dmitriev.",
+    "quote": "",
+    "posts": [
+      347
+    ],
+    "portrait": null,
+    "places": [
+      "port-artur"
+    ],
+    "articles": [
+      "ekaterinburg-i-port-artur"
+    ],
+    "sources": [
+      {
+        "title": "J. W. Dyskant, Port Arthur, 1904",
+        "url": "https://militera.lib.ru/h/dyskant/04.html",
+        "note": "The destroyer's last fight, Yurasovsky's death and the change of command."
+      },
+      {
+        "title": "Russian Burials in China, Heritage Institute",
+        "url": "https://heritage-institute.ru/wp-content/uploads/2023/04/russkie-zahoroneniya-v-kitae.pdf",
+        "note": "The chapter on ships as communal graves documents the service of Strashny's officers."
+      },
+      {
+        "title": "Military History Journal, The combat use of wireless telegraphy",
+        "url": "https://history.milportal.ru/russko-yaponskaya-vojna-1904-1905-gg-kak-kolybel-boevogo-primeneniya-besprovolochnogo-telegrafa/",
+        "note": "Destroyers named in memory of the three officers."
+      }
+    ]
+  },
+  {
+    "slug": "sergei-rashevskii",
+    "name": "Sergei Alexandrovich Rashevsky",
+    "short": "Rashevsky",
+    "years": "1866–1904",
+    "country": "russia",
+    "role": "Military engineer and diarist of the Port Arthur siege",
+    "group": "military",
+    "bio": "In the spring of 1904 Lieutenant Colonel Sergei Rashevsky served as an engineer at Port Arthur. From Golden Hill he saw Petropavlovsk sink in the outer roadstead. In his entry for 13 April (31 March Old Style), he recalled how observers ashore initially took the smoke above the battleship for gunfire.\n\nDuring the siege Rashevsky worked on the defences with Roman Kondratenko. On 15 December (2 December Old Style) they were killed at Fort No. II when a Japanese shell burst inside a casemate. Rashevsky's diary was found after his death and first published in 1954.",
+    "quote": "",
+    "posts": [
+      329,
+      350
+    ],
+    "portrait": null,
+    "places": [
+      "port-artur"
+    ],
+    "articles": [
+      "gibel-petropavlovska-fotografiya",
+      "nemirovich-danchenko-v-port-arture"
+    ],
+    "sources": [
+      {
+        "title": "S. A. Rashevsky, Diary (Port Arthur, 1904)",
+        "url": "https://militera.lib.ru/db/all/r/b36611/index.html",
+        "note": "Editorial introduction and the entry for 31 March 1904 Old Style."
+      }
+    ]
+  },
+  {
+    "slug": "sergei-korsakov",
+    "name": "Sergei Alexandrovich Korsakov",
+    "short": "Sergei Korsakov",
+    "years": "",
+    "country": "russia",
+    "role": "Fortress artillery officer who photographed Port Arthur",
+    "group": "military",
+    "bio": "In 1904 Sergei Korsakov served with the Kwantung fortress artillery and photographed the defence of Port Arthur. His name survives in archival captions for photographs taken at the fortress.\n\nIn 1914 the magazine Iskry published a photograph of the loss of Petropavlovsk and credited Korsakov as its photographer. In his account of the same morning, the officer Mikhail Lilie names another photographer, the military engineer Sergei Rashevsky.",
+    "quote": "",
+    "posts": [
+      350
+    ],
+    "portrait": null,
+    "places": [
+      "port-artur"
+    ],
+    "articles": [
+      "gibel-petropavlovska-fotografiya"
+    ],
+    "sources": [
+      {
+        "title": "Iskry, no. 13 (1914)",
+        "url": "https://commons.wikimedia.org/wiki/File:Броненосец_Петропавловск_-_взрыв_на_мине_у_Порт-Артур,_31-3-1904г_ж.Искры1914-N13)e1.png",
+        "note": "Scan of the published photograph with Korsakov's credit."
+      },
+      {
+        "title": "St Petersburg Archives, The Baltic Fleet at the Turn of the Twentieth Century",
+        "url": "https://spbarchives.ru/balt2023-2",
+        "note": "Archival descriptions of photographs attributed to Korsakov."
+      },
+      {
+        "title": "M. I. Lilie, Diary of the Siege of Port Arthur",
+        "url": "https://militera.lib.ru/db/lilie_mi/index.html",
+        "note": "An officer's contemporary account. The magazine attribution is discussed in the linked article."
+      }
+    ]
+  },
+  {
+    "slug": "vasilii-nemirovich-danchenko",
+    "name": "Vasily Ivanovich Nemirovich-Danchenko",
+    "short": "Vasily Nemirovich-Danchenko",
+    "years": "1844/1845–1936",
+    "country": "russia",
+    "role": "Russkoye Slovo's war correspondent at Port Arthur",
+    "group": "culture",
+    "bio": "In the spring of 1904 Vasily Nemirovich-Danchenko arrived in Port Arthur on assignment for Russkoye Slovo. He had already covered the Russo-Turkish War. From the Far East he sent dispatches on the fighting and on life inside the fortress.\n\nHis account of the journey, To the War: From St Petersburg to Port Arthur, appeared that same year. He was still reporting during the First World War. He spent his last years in Prague, where he died in 1936.",
+    "quote": "",
+    "posts": [
+      329
+    ],
+    "portrait": null,
+    "places": [
+      "port-artur"
+    ],
+    "articles": [
+      "nemirovich-danchenko-v-port-arture"
+    ],
+    "sources": [
+      {
+        "title": "V. I. Nemirovich-Danchenko, To the War: From St Petersburg to Port Arthur",
+        "url": "https://lib.militera.org/prose/all/n/b45950/",
+        "note": "The correspondent's letters, published in 1904."
+      },
+      {
+        "title": "The War Prose of Vasily Ivanovich Nemirovich-Danchenko",
+        "url": "https://psyjournals.ru/journals/langt/archive/2022_n4/Vititnev_Shmeleva",
+        "note": "A study of the correspondent's work for Russkoye Slovo and his later books."
+      },
+      {
+        "title": "Presidential Library, catalogue search",
+        "url": "https://www.prlib.ru/search?key=%D0%9D%D0%B5%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B8%D1%87-%D0%94%D0%B0%D0%BD%D1%87%D0%B5%D0%BD%D0%BA%D0%BE",
+        "note": "The catalogue gives two possible years of birth."
+      }
+    ]
+  },
+  {
+    "slug": "rozhestvenskii",
+    "name": "Zinovy Petrovich Rozhestvensky",
+    "short": "Rozhestvensky",
+    "years": "1848–1909",
+    "country": "russia",
+    "role": "Commander of the Second Pacific Squadron on its voyage and at Tsushima",
+    "group": "navy",
+    "bio": "In 1904 Zinovy Rozhestvensky led the Second Pacific Squadron from the Baltic to reinforce the Russian fleet in the Far East. Port Arthur fell while the ships were making their way around Africa and across the Indian Ocean. The squadron's new destination was Vladivostok.\n\nAt Tsushima on 27 May 1905 (14 May Old Style), Rozhestvensky was aboard his flagship Knyaz Suvorov. The destroyer Buiny took the badly wounded admiral aboard. He was transferred to Bedovy and taken prisoner by the Japanese. In 1906 he was acquitted at the trial over Bedovy's surrender.",
+    "quote": "",
+    "posts": [],
+    "portrait": null,
+    "places": [],
+    "articles": [
+      "kukushkin-sudostroitelnaya-programma-1881",
+      "voina-na-more-osada-mukden-tsusima",
+      "neolurk-russko-yaponskaya-voina"
+    ],
+    "sources": [
+      {
+        "title": "National Library of Russia, Why Tsushima? The Voyage",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/pohod.php",
+        "note": "The ships and voyage of the Second Squadron, with documents from Rozhestvensky."
+      },
+      {
+        "title": "National Library of Russia, Why Tsushima? The Battle",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/war.php",
+        "note": "Flagship, wounding and captivity."
+      },
+      {
+        "title": "National Library of Russia, Why Tsushima? Causes of Defeat",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/poragenie.php",
+        "note": "The proceedings after the prisoners returned."
+      }
+    ]
+  },
+  {
+    "slug": "nebogatov",
+    "name": "Nikolai Ivanovich Nebogatov",
+    "short": "Nebogatov",
+    "years": "1849–1922",
+    "country": "russia",
+    "role": "Commander of the Third Pacific Squadron who surrendered four ships after Tsushima",
+    "group": "navy",
+    "bio": "In 1905 Rear Admiral Nikolai Nebogatov led the Third Pacific Squadron out of the Baltic. Off the coast of Vietnam it joined Rozhestvensky's Second Squadron, with Nebogatov commanding his battleship detachment under his flag on Imperator Nikolai I.\n\nOn the morning of 28 May (15 May Old Style), the second day of the Battle of Tsushima, the Japanese fleet surrounded the ships still with Nebogatov. The admiral gave the order to surrender. In 1906 a court sentenced him to death. The sentence was commuted to ten years in prison and Nebogatov was pardoned in 1909.",
+    "quote": "",
+    "posts": [],
+    "portrait": null,
+    "places": [],
+    "articles": [
+      "voina-na-more-osada-mukden-tsusima"
+    ],
+    "sources": [
+      {
+        "title": "National Library of Russia, Why Tsushima? The Voyage",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/pohod.php",
+        "note": "The two squadrons rendezvoused in Van Phong Bay."
+      },
+      {
+        "title": "National Library of Russia, Why Tsushima? The Battle",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/war.php",
+        "note": "Which ships were present and how they surrendered on the second day."
+      },
+      {
+        "title": "National Library of Russia, Why Tsushima? Causes of Defeat",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/poragenie.php",
+        "note": "The sentence, its commutation and the pardon."
+      }
+    ]
+  },
+  {
+    "slug": "vasilii-ignatsius",
+    "name": "Vasily Vasilyevich Ignatius",
+    "short": "Ignatius",
+    "years": "1854–1905",
+    "country": "russia",
+    "role": "Captain of Knyaz Suvorov and marine artist",
+    "group": "navy",
+    "bio": "Years before Tsushima, Lieutenant Vasily Ignatius drew the ships he served on. His drawings appeared in St Petersburg in the album The Russian Fleet. He later served in the Pacific as executive officer of the cruiser Razboynik.\n\nIn 1904 Ignatius took Knyaz Suvorov from the Baltic to the Far East. The squadron commander, Zinovy Rozhestvensky, flew his flag on the ship. Ignatius captained the battleship and died at Tsushima on 27 May 1905 (14 May Old Style).",
+    "quote": "",
+    "posts": [],
+    "portrait": null,
+    "places": [],
+    "articles": [],
+    "sources": [
+      {
+        "title": "National Electronic Library, The Russian Fleet",
+        "url": "https://kp.rusneb.ru/item/material/russkiy-flot-albom-risoval-leytenant-v-ignacius-izdanie-velikogo-knyazya-aleksandra-mihaylovicha",
+        "note": "Pre-revolutionary edition of Ignatius's drawings."
+      },
+      {
+        "title": "Museum of the Maritime and River Fleet, Vasily Ignatius",
+        "url": "https://mmflota.ru/index.php/news/577-den-rozhdeniya-vasiliya-vasilevicha-ignatsiusa",
+        "note": "Lifespan, service and command of the battleship."
+      }
+    ]
+  },
+  {
+    "slug": "nikolai-bukhvostov",
+    "name": "Nikolai Mikhailovich Bukhvostov",
+    "short": "Bukhvostov",
+    "years": "1857–1905",
+    "country": "russia",
+    "role": "Captain of Imperator Aleksandr III",
+    "group": "navy",
+    "bio": "In the autumn of 1904 Captain 1st Rank Nikolai Bukhvostov sailed from the Baltic aboard Imperator Aleksandr III. The battleship drew its sailors from the Naval Guards Crew, where Bukhvostov had served before his appointment.\n\nIn the Tsushima Strait on 27 May 1905 (14 May Old Style), Aleksandr III took the lead of the Russian column after the damaged flagship fell out of line. The battleship went down that evening. Bukhvostov and his entire crew died.",
+    "quote": "",
+    "posts": [],
+    "portrait": null,
+    "places": [],
+    "articles": [],
+    "sources": [
+      {
+        "title": "National Library of Russia, Bukhvostov bibliography",
+        "url": "https://www.vss.nlr.ru/archive_catalog.php?p=4&rid=1744",
+        "note": "Guide to biographical sources."
+      },
+      {
+        "title": "The Naval Guards Crew",
+        "url": "https://imha.ru/1144524353-gvardejjskijj-jekipazh.html",
+        "note": "The crew's service and losses at Tsushima."
+      },
+      {
+        "title": "Why Tsushima? The Battle",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/war.php",
+        "note": "Course of the battle and the ship's loss."
+      }
+    ]
+  },
+  {
+    "slug": "pyotr-serebrennikov",
+    "name": "Pyotr Osipovich Serebrennikov",
+    "short": "Serebrennikov",
+    "years": "1853–1905",
+    "country": "russia",
+    "role": "Captain of Borodino",
+    "group": "navy",
+    "bio": "Pyotr Serebrennikov took command of Borodino while it was still under construction, before the Russo-Japanese War. In 1904, by then a captain 1st rank, he sailed from the Baltic in the First Battleship Division of the Second Pacific Squadron.\n\nOn 27 May 1905 (14 May Old Style), Borodino briefly led the Russian column at Tsushima. The ship sank that evening. Serebrennikov died. Semyon Yushchin, a petty officer, was the battleship's only survivor.",
+    "quote": "",
+    "posts": [],
+    "portrait": null,
+    "places": [],
+    "articles": [],
+    "sources": [
+      {
+        "title": "Pyotr Osipovich Serebrennikov, biography",
+        "url": "https://hrono.ru/biograf/bio_s/serebren_po.html",
+        "note": "Lifespan and command of the battleship. Some sources give his patronymic as Iosifovich."
+      },
+      {
+        "title": "V. Yu. Gribovsky, Battleship Borodino",
+        "url": "https://djvu.online/file/drGHmkZOp7ATt",
+        "note": "Construction, voyage and loss."
+      }
+    ]
+  },
+  {
+    "slug": "nikolai-yung",
+    "name": "Nikolai Viktorovich Yung",
+    "short": "Yung",
+    "years": "1855–1905",
+    "country": "russia",
+    "role": "Captain of Oryol",
+    "group": "navy",
+    "bio": "In 1904 Captain 1st Rank Nikolai Yung sailed for the Far East in command of the new battleship Oryol. Three other Borodino-class ships sailed in the same division of the Second Pacific Squadron.\n\nYung was mortally wounded on the first day of the Battle of Tsushima. The next morning the damaged Oryol was among the ships Rear Admiral Nikolai Nebogatov surrendered to the Japanese fleet. Yung died of his wounds.",
+    "quote": "",
+    "posts": [],
+    "portrait": null,
+    "places": [],
+    "articles": [],
+    "sources": [
+      {
+        "title": "Oryol on the Voyage and in Battle: Participants' Memoirs and Reports",
+        "url": "https://mybook.ru/author/sbornik/orel-vpohode-i-v-boyu-vospominaniya-i-doneseniya-u/read/?page=3",
+        "note": "Biographical note on the captain in the documentary edition."
+      },
+      {
+        "title": "Why Tsushima? The Battle",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/war.php",
+        "note": "Yung's wounds and the surrender of the ship on the second day."
+      }
+    ]
+  },
+  {
+    "slug": "semen-yushchin",
+    "name": "Semyon Semyonovich Yushchin",
+    "short": "Yushchin",
+    "years": "",
+    "country": "russia",
+    "role": "Petty officer in charge of a mast top and survivor of the battleship Borodino",
+    "group": "navy",
+    "bio": "On the evening of 27 May 1905 (14 May Old Style) the battleship Borodino capsized and sank in the Tsushima Strait. Semyon Yushchin escaped through an opening in the side. He later told the Main Naval Staff that the crew of a Japanese destroyer pulled him from the water. Records of the loss name him as the only survivor.\n\nIn Japanese captivity Yushchin met Aleksei Novikov, who later wrote as Novikov-Priboy. Novikov based his account of Borodino's sinking, published in 1906, on Yushchin's testimony. The Mordovian regional museum holds his documents and awards. Yushchin returned to his native Alkaevo and died in 1935.",
+    "quote": "",
+    "posts": [],
+    "portrait": null,
+    "places": [],
+    "articles": [],
+    "sources": [
+      {
+        "title": "Mordovian regional museum, A Man Returned from the Grave",
+        "url": "https://mrkm.ru/upload/medialibrary/49b/%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8_2021.pdf#page=49",
+        "note": "Regional Studies Notes, pp. 49–55. Yushchin's testimony, award record, museum papers and later life."
+      },
+      {
+        "title": "National Library of Russia, Why Tsushima? The Battle",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/war.php",
+        "note": "A 1905 newspaper clipping on his rescue."
+      }
+    ]
+  },
+  {
+    "slug": "dmitrii-mendeleev",
+    "name": "Dmitri Ivanovich Mendeleev",
+    "short": "Dmitri Mendeleev",
+    "years": "1834–1907",
+    "country": "russia",
+    "role": "Chemist and author of Cherished Thoughts",
+    "group": "other",
+    "bio": "Dmitri Mendeleev was born in Tobolsk in 1834. He taught chemistry at St Petersburg University and formulated the periodic law in 1869. In the 1890s he became head of the Central Bureau of Weights and Measures, where he helped develop Russia’s system of measurement standards.\n\nWhen the Russo-Japanese War broke out, Mendeleev devoted a chapter of Cherished Thoughts to it. He wrote about the importance of access to the Pacific and the need for industrial development in Russia. He died in St Petersburg in 1907.",
+    "quote": "",
+    "posts": [
+      352
+    ],
+    "portrait": null,
+    "places": [],
+    "articles": [
+      "mendeleev-i-yaponskaya-voina"
+    ],
+    "sources": [
+      {
+        "title": "Rosstandart Metrology Museum: Dmitri Ivanovich Mendeleev",
+        "url": "https://www.vniim.ru/about/structure/metrologicheskiy-muzey-rosstandarta/portretnaya-galereya/mendeleev-dmitriy-ivanovich/",
+        "note": "Dates, teaching at St Petersburg University and work at the Central Bureau of Weights and Measures."
+      },
+      {
+        "title": "Rosstandart Metrology Museum: Cherished Thoughts",
+        "url": "https://museum.vniim.ru/mend-thought.html",
+        "note": "The book and its chapter “On the War with Japan”."
+      }
+    ]
+  },
+  {
+    "slug": "boris-ananich",
+    "name": "Boris Vasilyevich Ananich",
+    "short": "Boris Ananich",
+    "years": "1931–2015",
+    "country": "russia",
+    "role": "Historian of the Russian economy and author of Banking Houses in Russia",
+    "group": "other",
+    "bio": "Boris Ananich was born in Leningrad in 1931 and graduated from the history faculty of Leningrad University. In 1956 he joined the Leningrad branch of the Soviet Academy of Sciences’ Institute of History, now the St Petersburg Institute of History of the Russian Academy of Sciences. The Academy elected him a full member in 1994.\n\nAnanich studied public finances and private enterprise in the Russian Empire. In Banking Houses in Russia, 1860–1914, he traced the history of family-run banking firms. He died in St Petersburg in 2015.",
+    "quote": "",
+    "posts": [
+      354
+    ],
+    "portrait": null,
+    "places": [],
+    "articles": [
+      "ananich-bankirskie-doma"
+    ],
+    "sources": [
+      {
+        "title": "Russian Academy of Sciences: Boris Vasilyevich Ananich",
+        "url": "https://new.ras.ru/staff/akademiki/ananich-boris-vasilevich/",
+        "note": "Dates, education and election to the Russian Academy of Sciences."
+      },
+      {
+        "title": "St Petersburg Institute of History, Russian Academy of Sciences: Boris Vasilyevich Ananich",
+        "url": "https://spbiiran.ru/colleague/persons/ananich-boris-vasilevich/",
+        "note": "Work at the institute, research interests and bibliography."
       }
     ]
   }

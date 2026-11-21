@@ -6,6 +6,7 @@ import ExplorePaths from '../components/home/ExplorePaths.astro';
 import Authors from '../components/home/Authors.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import { essays } from '../lib/essays';
+import { updatesTitle } from '../lib/updates';
 import { articles, href, TG_CHANNEL } from '../lib/data';
 import { assetUrl } from '../i18n/locale';
 
@@ -21,7 +22,7 @@ const latest = [
   <ExplorePaths />
   <section class="paper home-new" aria-labelledby="new-title">
     <div class="container section">
-      <div class="section-head"><h2 class="h2" id="new-title">Новое на сайте</h2><a class="link" href={href.notes()}>Статьи и заметки</a></div>
+      <div class="section-head"><h2 class="h2" id="new-title">Новое на сайте</h2><a class="link" href={href.updates()}>{updatesTitle}</a></div>
       <div class="home-new-grid">
         {latest.map(entry=>entry.kind==='note' ? <ArticleCard a={entry.item} /> : <article class="home-essay">
           {entry.item.illustration&&<a href={href.essay(entry.item.slug)} tabindex="-1" aria-hidden="true"><img src={assetUrl(entry.item.illustration.image)} alt="" width="960" height="640" loading="lazy" /></a>}

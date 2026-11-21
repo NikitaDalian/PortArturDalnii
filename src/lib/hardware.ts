@@ -4,6 +4,7 @@ import { href } from './data';
 export interface HardwareImage {
   file: string; alt: string; caption: string; credit: string;
   sourceUrl: string; license: string; width: number; height: number;
+  kind?: 'illustration';
 }
 export interface Hardware {
   slug: string; kind: 'ship' | 'weapon'; name: string; shortName: string; category: string;

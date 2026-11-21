@@ -375,5 +375,35 @@
     "posts": [],
     "image": null,
     "articles": []
+  },
+  {
+    "slug": "petropavlovsk-iskry-1914",
+    "title": "Снимок гибели «Петропавловска» в журнале «Искры»",
+    "kind": "archive",
+    "author": "Сергей Корсаков (указан как фотограф в журнале «Искры»)",
+    "annotation": "Журнал «Искры» № 13 за 1914 год подписал снимок именем поручика Корсакова. Атрибуцию этой публикации следует отличать от авторства других сохранившихся кадров.",
+    "url": "https://commons.wikimedia.org/wiki/File:Броненосец_Петропавловск_-_взрыв_на_мине_у_Порт-Артур,_31-3-1904г_ж.Искры1914-N13)e1.png",
+    "posts": [
+      350
+    ],
+    "image": null,
+    "articles": [
+      "gibel-petropavlovska-fotografiya"
+    ]
+  },
+  {
+    "slug": "siege-port-arthur-getty",
+    "title": "Фотографии осады Порт-Артура в каталоге Getty Images",
+    "kind": "archive",
+    "author": "Getty Images",
+    "annotation": "Подборка фотографий и иллюстраций осады, указанная в посте о распорядке дня защитников.",
+    "url": "https://www.gettyimages.com/photos/siege-of-port-arthur",
+    "posts": [
+      303
+    ],
+    "image": null,
+    "articles": [
+      "rasporyadok-dnya-v-okopah-port-artura"
+    ]
   }
 ]

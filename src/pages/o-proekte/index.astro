@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import PageHero from '../../components/PageHero.astro';
 import SiteGuide from '../../components/about/SiteGuide.astro';
+import { updatesTitle } from '../../lib/updates';
 import { href, authorImg, TG_CHANNEL } from '../../lib/data';
 const channelLabel = TG_CHANNEL.replace(/^https?:\/\//, '');
 ---
@@ -97,6 +98,7 @@ const channelLabel = TG_CHANNEL.replace(/^https?:\/\//, '');
       </div>
       <div class="stack reveal" style="--stack-gap:20px; --d:100ms">
         <h2 class="h2">Как устроен сайт</h2>
+        <a class="link" href={href.updates()}>{updatesTitle}</a>
         <p class="lead">Из заметки можно перейти к людям и местам, от места — к маршруту и карте. Ссылки на исторических лиц и географические названия открывают краткие справки, а страницы источников помогают понять, на чём основан рассказ.</p>
       </div>
     </div>

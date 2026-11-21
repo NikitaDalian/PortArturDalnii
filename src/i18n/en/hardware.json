@@ -243,14 +243,18 @@
     "relatedNotes": [
       "pervaya-tihookeanskaya-eskadra",
       "vereshchagin-hudozhnik-na-voyne",
-      "voina-na-more-osada-mukden-tsusima"
+      "voina-na-more-osada-mukden-tsusima",
+      "gibel-petropavlovska-fotografiya",
+      "nemirovich-danchenko-v-port-arture"
     ],
     "relatedEssays": [],
     "relatedPeople": [
       "makarov",
       "vereshchagin",
       "stark",
-      "kirill-vladimirovich"
+      "kirill-vladimirovich",
+      "sergei-korsakov",
+      "sergei-rashevskii"
     ],
     "relatedPlaces": [
       "gavan-port-artura",
@@ -7826,5 +7830,1106 @@
       "Japanese and British dates are New Style. The Port Arthur event is also given in Russian Old Style; later publications and rumours do not determine when the ship sank."
     ],
     "updatedAt": "2026-11-16"
+  },
+  {
+    "slug": "knyaz-suvorov",
+    "kind": "ship",
+    "name": "Squadron battleship Knyaz Suvorov",
+    "shortName": "Knyaz Suvorov",
+    "category": "Squadron battleship",
+    "countries": [
+      "russia"
+    ],
+    "periods": [
+      "russian"
+    ],
+    "aliases": [
+      "Knyaz Suvorov",
+      "Prince Suvorov"
+    ],
+    "summary": "Vice Admiral Zinovy Rozhestvensky led the Second Pacific Squadron from the Baltic to the Tsushima Strait aboard Knyaz Suvorov.",
+    "intro": [
+      "In the autumn of 1904 a squadron left Libau to reinforce the Russian fleet in the Far East. Its commander, Vice Admiral Zinovy Rozhestvensky, flew his flag aboard Knyaz Suvorov. By the time the squadron encountered the Japanese fleet, its staff was taking the ships to Vladivostok. Port Arthur had fallen during the voyage."
+    ],
+    "sections": [
+      {
+        "id": "design",
+        "title": "Flagship of a new class",
+        "paragraphs": [
+          "Knyaz Suvorov was built at the Baltic Works. Its design was based on Tsesarevich, which was at Port Arthur when war broke out. All five ships inherited a conspicuous feature of the original design: the 152 mm guns sat in small turrets along the sides."
+        ],
+        "refs": [
+          1
+        ]
+      },
+      {
+        "id": "voyage",
+        "title": "A change of destination",
+        "paragraphs": [
+          "The squadron's heavy ships sailed around Africa. After a stop off Madagascar, they crossed the Indian Ocean. In Van Phong Bay, off modern Vietnam, they were joined by Rear Admiral Nikolai Nebogatov's detachment, which had left the Baltic later."
+        ],
+        "refs": [
+          2
+        ]
+      },
+      {
+        "id": "tsushima",
+        "title": "The flagship falls out of line",
+        "paragraphs": [
+          "On 27 May 1905 (14 May Old Style), Knyaz Suvorov led the Russian battleship column at Tsushima. Badly damaged under fire, it fell out of line. The destroyer Buiny took aboard the wounded Rozhestvensky and some of his staff, including the memoirist Vladimir Semyonov. The battleship went down with its captain, Vasily Ignatius, and most of its crew."
+        ],
+        "refs": [
+          3,
+          4
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Overall length",
+        "value": "121 m",
+        "note": "From the 1899 design table.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Beam",
+        "value": "23.2 m",
+        "note": "Rounded design figure.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Main armament",
+        "value": "4 × 305 mm",
+        "note": "Two twin turrets.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Secondary armament",
+        "value": "12 × 152 mm",
+        "note": "Six twin turrets.",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1902,
+        "date": "1902",
+        "title": "Launch",
+        "text": "The battleship was launched at the Baltic Works.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "Autumn 1904",
+        "title": "Voyage to the Far East",
+        "text": "Knyaz Suvorov left the Baltic under Rozhestvensky's flag.",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "year": 1905,
+        "date": "27 May 1905 (14 May Old Style)",
+        "title": "Lost at Tsushima",
+        "text": "Buiny took the wounded commander off the battleship. The ship sank that evening.",
+        "refs": [
+          3,
+          4
+        ]
+      }
+    ],
+    "crew": [
+      {
+        "name": "Zinovy Petrovich Rozhestvensky",
+        "role": "Commander of the Second Squadron, flying his flag aboard",
+        "personSlug": "rozhestvenskii",
+        "refs": [
+          2,
+          3
+        ]
+      },
+      {
+        "name": "Vasily Vasilyevich Ignatius",
+        "role": "Captain during the voyage and at Tsushima",
+        "personSlug": "vasilii-ignatsius",
+        "refs": [
+          1,
+          3
+        ]
+      },
+      {
+        "name": "Vladimir Ivanovich Semyonov",
+        "role": "Staff officer and eyewitness to the battle",
+        "personSlug": "semenov",
+        "refs": [
+          4
+        ]
+      }
+    ],
+    "armament": [
+      {
+        "weaponSlug": "obukhov-305-40",
+        "count": 4,
+        "period": "Russian service, 1904–1905",
+        "note": "Forward and after turrets.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "weaponSlug": "canet-152-45",
+        "count": 12,
+        "period": "Russian service, 1904–1905",
+        "note": "In six twin turrets along the sides.",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "images": [
+      {
+        "file": "/images/hardware/knyaz-suvorov-1.webp",
+        "alt": "Knyaz Suvorov at the Kronstadt roadstead, dated by the photo archive to early September 1904.",
+        "caption": "Knyaz Suvorov at the Kronstadt roadstead, dated by the photo archive to early September 1904.",
+        "credit": "Unknown photographer. Yuri Chernov collection, Tsushima photo archive.",
+        "sourceUrl": "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/suvorov/photo/06.jpg",
+        "license": "Public domain. Anonymous photograph from the Russian Empire, 1904.",
+        "width": 1368,
+        "height": 1600
+      }
+    ],
+    "relatedNotes": [
+      "voina-na-more-osada-mukden-tsusima"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [
+      "nebogatov"
+    ],
+    "relatedPlaces": [],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "Battleship Borodino",
+        "author": "V. Yu. Gribovsky",
+        "date": "1995",
+        "url": "https://djvu.online/file/drGHmkZOp7ATt",
+        "locator": "1899 design comparison and chapters on construction and Tsushima",
+        "note": "A comparison of Borodino's design with the French-built Tsesarevich, with details on ships of the class."
+      },
+      {
+        "id": 2,
+        "title": "Why Tsushima? The Voyage, 1904–1905",
+        "author": "National Library of Russia",
+        "date": "Online exhibition",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/pohod.php",
+        "locator": "Squadron composition, route and participants' documents",
+        "note": "Ships, the voyage from the Baltic and the rendezvous with Nebogatov's detachment."
+      },
+      {
+        "id": 3,
+        "title": "Why Tsushima? The Battle, 14–15 May 1905 Old Style",
+        "author": "National Library of Russia",
+        "date": "Online exhibition",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/war.php",
+        "locator": "The Battle of Tsushima and the fate of individual ships",
+        "note": "The exhibition gives the battle dates in the Old Style calendar."
+      },
+      {
+        "id": 4,
+        "title": "The Loss of the Flagship (Knyaz Suvorov)",
+        "author": "V. I. Semyonov",
+        "date": "Pre-revolutionary edition",
+        "url": "https://v.militera.org/books/pdf/h/semyonov_vi03.pdf",
+        "locator": "Part II, the flagship falls out of line and the transfer to Buiny",
+        "note": "A staff officer's memoir of what he could see aboard ship."
+      }
+    ],
+    "limitations": [
+      "Sources differ on the timing of individual actions. Dates are given in both calendars without reconstructing the minutes of the battle."
+    ],
+    "updatedAt": "2026-11-21"
+  },
+  {
+    "slug": "imperator-aleksandr-iii",
+    "kind": "ship",
+    "name": "Squadron battleship Imperator Aleksandr III",
+    "shortName": "Imperator Aleksandr III",
+    "category": "Squadron battleship",
+    "countries": [
+      "russia"
+    ],
+    "periods": [
+      "russian"
+    ],
+    "aliases": [
+      "Imperator Aleksandr III",
+      "Emperor Alexander III"
+    ],
+    "summary": "A Borodino-class battleship commanded by Nikolai Bukhvostov. It briefly led the Russian line at Tsushima and went down with all hands.",
+    "intro": [
+      "In the Tsushima Strait on 27 May 1905 (14 May Old Style), the badly damaged Knyaz Suvorov fell out of line. Next came Captain Nikolai Bukhvostov's Imperator Aleksandr III. It now led the Russian column."
+    ],
+    "sections": [
+      {
+        "id": "construction",
+        "title": "Built at the Baltic Works",
+        "paragraphs": [
+          "Imperator Aleksandr III was built in St Petersburg. The class took its name from Borodino, but Imperator Aleksandr III was the first to enter service. Its sailors came from the Naval Guards Crew."
+        ],
+        "refs": [
+          1,
+          4
+        ]
+      },
+      {
+        "id": "voyage",
+        "title": "From the Baltic to Tsushima",
+        "paragraphs": [
+          "In 1904 the battleship joined the First Division of the Second Pacific Squadron. It sailed around Africa and across the Indian Ocean with three sister ships, reaching the Tsushima Strait."
+        ],
+        "refs": [
+          2
+        ]
+      },
+      {
+        "id": "loss",
+        "title": "The last day",
+        "paragraphs": [
+          "When the flagship fell out of line, Bukhvostov's ship briefly took its place at the head of the column. That evening the damaged battleship capsized and sank. There were no survivors."
+        ],
+        "refs": [
+          1,
+          3,
+          4
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Overall length",
+        "value": "121 m",
+        "note": "From the 1899 design table.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Beam",
+        "value": "23.2 m",
+        "note": "Rounded design figure.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Main armament",
+        "value": "4 × 305 mm",
+        "note": "Two twin turrets.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Secondary armament",
+        "value": "12 × 152 mm",
+        "note": "Six twin turrets.",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1901,
+        "date": "1901",
+        "title": "Launch",
+        "text": "The ship was launched at the Baltic Works.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "Autumn 1904",
+        "title": "Departure",
+        "text": "The battleship left the Baltic with the Second Squadron.",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "year": 1905,
+        "date": "27 May 1905 (14 May Old Style)",
+        "title": "Lost at Tsushima",
+        "text": "The damaged ship capsized and sank with its entire crew.",
+        "refs": [
+          1,
+          3,
+          4
+        ]
+      }
+    ],
+    "crew": [
+      {
+        "name": "Nikolai Mikhailovich Bukhvostov",
+        "role": "Captain during the voyage and at Tsushima",
+        "personSlug": "nikolai-bukhvostov",
+        "refs": [
+          1,
+          4
+        ]
+      }
+    ],
+    "armament": [
+      {
+        "weaponSlug": "obukhov-305-40",
+        "count": 4,
+        "period": "Russian service, 1904–1905",
+        "note": "Forward and after turrets.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "weaponSlug": "canet-152-45",
+        "count": 12,
+        "period": "Russian service, 1904–1905",
+        "note": "In six twin turrets along the sides.",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "images": [
+      {
+        "file": "/images/hardware/imperator-aleksandr-iii-1.webp",
+        "alt": "Imperator Aleksandr III at the Kronstadt roadstead, 1904.",
+        "caption": "Imperator Aleksandr III at the Kronstadt roadstead, 1904.",
+        "credit": "Unknown photographer. Tsushima photo archive.",
+        "sourceUrl": "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/alex3/photo/04.jpg",
+        "license": "Public domain. Anonymous photograph from the Russian Empire, 1904.",
+        "width": 1600,
+        "height": 1098
+      }
+    ],
+    "relatedNotes": [
+      "voina-na-more-osada-mukden-tsusima"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [
+      "rozhestvenskii"
+    ],
+    "relatedPlaces": [],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "Battleship Borodino",
+        "author": "V. Yu. Gribovsky",
+        "date": "1995",
+        "url": "https://djvu.online/file/drGHmkZOp7ATt",
+        "locator": "1899 design comparison and chapters on construction and Tsushima",
+        "note": "A comparison of Borodino's design with the French-built Tsesarevich, with details on ships of the class."
+      },
+      {
+        "id": 2,
+        "title": "Why Tsushima? The Voyage, 1904–1905",
+        "author": "National Library of Russia",
+        "date": "Online exhibition",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/pohod.php",
+        "locator": "Squadron composition, route and participants' documents",
+        "note": "Ships, the voyage from the Baltic and the rendezvous with Nebogatov's detachment."
+      },
+      {
+        "id": 3,
+        "title": "Why Tsushima? The Battle, 14–15 May 1905 Old Style",
+        "author": "National Library of Russia",
+        "date": "Online exhibition",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/war.php",
+        "locator": "The Battle of Tsushima and the fate of individual ships",
+        "note": "The exhibition gives the battle dates in the Old Style calendar."
+      },
+      {
+        "id": 4,
+        "title": "Battleship Imperator Aleksandr III",
+        "author": "Tsushima photo archive",
+        "date": "Online reference",
+        "url": "https://www.tsushima.su/RU/shipsru/shipsrussiaru/shipsrussiabronru/shipsrussiabronebrru/alex3ru/",
+        "locator": "Service and specifications",
+        "note": "A supplementary reference for the captain, crew and loss."
+      }
+    ],
+    "limitations": [
+      "This battleship sank in 1905. A later battleship in the Black Sea Fleet also bore the name Imperator Aleksandr III."
+    ],
+    "updatedAt": "2026-11-21"
+  },
+  {
+    "slug": "borodino",
+    "kind": "ship",
+    "name": "Squadron battleship Borodino",
+    "shortName": "Borodino",
+    "category": "Squadron battleship",
+    "countries": [
+      "russia"
+    ],
+    "periods": [
+      "russian"
+    ],
+    "aliases": [
+      "Borodino",
+      "Battleship Borodino"
+    ],
+    "summary": "The lead ship of a five-ship battleship class. Borodino sank at Tsushima in 1905 with only one survivor.",
+    "intro": [
+      "Borodino gave its name to a class of five battleships. By autumn 1904 four were in the same division of the Second Pacific Squadron. At Tsushima the lead ship of the class would find itself at the head of the whole Russian battle line."
+    ],
+    "sections": [
+      {
+        "id": "construction",
+        "title": "French design, Russian ships",
+        "paragraphs": [
+          "Borodino was built at the New Admiralty in St Petersburg. The builders started from the design of Tsesarevich, which Russia had ordered from France. The French-built battleship was already in the Pacific when war broke out. Work on the Russian ships was still under way in the Baltic."
+        ],
+        "refs": [
+          1
+        ]
+      },
+      {
+        "id": "first-division",
+        "title": "Four sister ships",
+        "paragraphs": [
+          "Borodino sailed with Knyaz Suvorov, Imperator Aleksandr III and Oryol. All four made up the First Battleship Division, the core of the Second Pacific Squadron. Other classes of warship and support vessels sailed with them."
+        ],
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "loss",
+        "title": "One survivor",
+        "paragraphs": [
+          "When the flagship Knyaz Suvorov fell out of line at Tsushima, Imperator Aleksandr III led the column for a time. Borodino then took the lead. On the evening of 27 May (14 May Old Style), Borodino sank. The sole survivor was Semyon Yushchin, a petty officer whom the Japanese picked up. The National Library of Russia holds a newspaper clipping about him."
+        ],
+        "refs": [
+          1,
+          3,
+          4
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Overall length",
+        "value": "121 m",
+        "note": "From the 1899 design table.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Beam",
+        "value": "23.2 m",
+        "note": "Rounded design figure.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Main armament",
+        "value": "4 × 305 mm",
+        "note": "Two twin turrets.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Secondary armament",
+        "value": "12 × 152 mm",
+        "note": "Six twin turrets.",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1901,
+        "date": "1901",
+        "title": "Launch",
+        "text": "The lead ship of the class was launched in St Petersburg.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "Autumn 1904",
+        "title": "Departure from the Baltic",
+        "text": "The ship joined the First Battleship Division of the Second Squadron.",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "year": 1905,
+        "date": "27 May 1905 (14 May Old Style)",
+        "title": "Lost at Tsushima",
+        "text": "The battleship sank. Semyon Yushchin survived.",
+        "refs": [
+          1,
+          3,
+          4
+        ]
+      }
+    ],
+    "crew": [
+      {
+        "name": "Pyotr Osipovich Serebrennikov",
+        "role": "Captain during the voyage and at Tsushima",
+        "personSlug": "pyotr-serebrennikov",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "name": "Semyon Semyonovich Yushchin",
+        "role": "Petty officer and sole survivor",
+        "personSlug": "semen-yushchin",
+        "refs": [
+          1,
+          4
+        ]
+      }
+    ],
+    "armament": [
+      {
+        "weaponSlug": "obukhov-305-40",
+        "count": 4,
+        "period": "Russian service, 1904–1905",
+        "note": "Forward and after turrets.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "weaponSlug": "canet-152-45",
+        "count": 12,
+        "period": "Russian service, 1904–1905",
+        "note": "In six twin turrets along the sides.",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "images": [
+      {
+        "file": "/images/hardware/borodino-1.webp",
+        "alt": "Borodino at the Kronstadt roadstead, 1904.",
+        "caption": "Borodino at the Kronstadt roadstead, 1904.",
+        "credit": "Unknown photographer. Tsushima photo archive via Wikimedia Commons.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Borodino1904Kronstadt.jpg",
+        "license": "Public domain (PD-RusEmpire).",
+        "width": 1600,
+        "height": 1046
+      }
+    ],
+    "relatedNotes": [
+      "voina-na-more-osada-mukden-tsusima"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [
+      "rozhestvenskii"
+    ],
+    "relatedPlaces": [],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "Battleship Borodino",
+        "author": "V. Yu. Gribovsky",
+        "date": "1995",
+        "url": "https://djvu.online/file/drGHmkZOp7ATt",
+        "locator": "1899 design comparison and chapters on construction and Tsushima",
+        "note": "A comparison of Borodino's design with the French-built Tsesarevich, with details on ships of the class."
+      },
+      {
+        "id": 2,
+        "title": "Why Tsushima? The Voyage, 1904–1905",
+        "author": "National Library of Russia",
+        "date": "Online exhibition",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/pohod.php",
+        "locator": "Squadron composition, route and participants' documents",
+        "note": "Ships, the voyage from the Baltic and the rendezvous with Nebogatov's detachment."
+      },
+      {
+        "id": 3,
+        "title": "Why Tsushima? The Battle, 14–15 May 1905 Old Style",
+        "author": "National Library of Russia",
+        "date": "Online exhibition",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/war.php",
+        "locator": "The Battle of Tsushima and the fate of individual ships",
+        "note": "The exhibition gives the battle dates in the Old Style calendar."
+      },
+      {
+        "id": 4,
+        "title": "Why Tsushima? Exhibition Documents",
+        "author": "National Library of Russia",
+        "date": "Online exhibition",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/index.php",
+        "locator": "List of exhibits, newspaper clipping about S. Yushchin",
+        "note": "Archival record concerning Borodino's only survivor."
+      }
+    ],
+    "limitations": [
+      "Accounts from other ships inform reconstructions of Borodino's sudden loss. The recorded outcome and Yushchin's rescue are documented here."
+    ],
+    "updatedAt": "2026-11-21"
+  },
+  {
+    "slug": "orel",
+    "kind": "ship",
+    "name": "Squadron battleship Oryol",
+    "shortName": "Oryol",
+    "category": "Squadron battleship",
+    "countries": [
+      "russia",
+      "japan"
+    ],
+    "periods": [
+      "russian"
+    ],
+    "aliases": [
+      "Oryol",
+      "Orel",
+      "Iwami",
+      "Battleship Oryol"
+    ],
+    "summary": "Oryol survived the first day of the Battle of Tsushima. The Japanese captured the battleship on the second day and repaired it for service as Iwami.",
+    "intro": [
+      "Two vessels in the Second Pacific Squadron shared the name Oryol. One was a hospital ship and the other a new battleship. The battleship sailed from the Baltic to Tsushima in a division of sister ships. After the battle it ended up at a Japanese dockyard."
+    ],
+    "sections": [
+      {
+        "id": "design",
+        "title": "One of five",
+        "paragraphs": [
+          "Oryol was built in St Petersburg to the Borodino-class design. Four ships of the class were sent to the Far East. The fifth, Slava, stayed in the Baltic and missed the Battle of Tsushima."
+        ],
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "surrender",
+        "title": "Tsushima, day two",
+        "paragraphs": [
+          "The battleship sustained numerous hits on the first day. Its captain, Nikolai Yung, was mortally wounded. By the morning of 28 May 1905 (15 May Old Style), the damaged Oryol was sailing with Nebogatov's ships. When the Japanese surrounded the detachment, the rear admiral ordered the ships to surrender. Oryol was the only one of the four sister ships at Tsushima to remain afloat."
+        ],
+        "refs": [
+          2,
+          3
+        ]
+      },
+      {
+        "id": "iwami",
+        "title": "After the battle",
+        "paragraphs": [
+          "Photographs taken in Japan soon after the capture show Oryol's shattered superstructure. After repairs and a refit the battleship joined the Japanese fleet as Iwami. Photographs from that period show how much its appearance had changed since leaving the Baltic."
+        ],
+        "refs": [
+          1,
+          4
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Overall length",
+        "value": "121 m",
+        "note": "From the 1899 design table.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Beam",
+        "value": "23.2 m",
+        "note": "Rounded design figure.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Main armament",
+        "value": "4 × 305 mm",
+        "note": "Two twin turrets.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Secondary armament",
+        "value": "12 × 152 mm",
+        "note": "Six twin turrets.",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1902,
+        "date": "1902",
+        "title": "Launch",
+        "text": "Oryol was launched in St Petersburg.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "Autumn 1904",
+        "title": "With the Second Squadron",
+        "text": "The battleship sailed for the Far East.",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "year": 1905,
+        "date": "28 May 1905 (15 May Old Style)",
+        "title": "Surrender at Tsushima",
+        "text": "The ship was captured together with three other battleships in Nebogatov's detachment.",
+        "refs": [
+          3
+        ]
+      },
+      {
+        "year": 1907,
+        "date": "1907",
+        "title": "Service as Iwami",
+        "text": "After repairs the battleship entered Japanese service.",
+        "refs": [
+          4
+        ]
+      }
+    ],
+    "crew": [
+      {
+        "name": "Nikolai Viktorovich Yung",
+        "role": "Captain of Oryol, mortally wounded at Tsushima",
+        "personSlug": "nikolai-yung",
+        "refs": [
+          1,
+          3
+        ]
+      }
+    ],
+    "armament": [
+      {
+        "weaponSlug": "obukhov-305-40",
+        "count": 4,
+        "period": "Russian service, 1904–1905",
+        "note": "Forward and after turrets.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "weaponSlug": "canet-152-45",
+        "count": 12,
+        "period": "Russian service, 1904–1905",
+        "note": "In six twin turrets along the sides.",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "images": [
+      {
+        "file": "/images/hardware/orel-1.webp",
+        "alt": "The damaged Oryol at Maizuru, 1905.",
+        "caption": "The damaged Oryol at Maizuru, 1905.",
+        "credit": "Unknown photographer. Naval History and Heritage Command material via the Tsushima photo archive.",
+        "sourceUrl": "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/orel/photo/32.jpg",
+        "license": "Public domain. Historical Japanese photograph from 1905.",
+        "width": 1600,
+        "height": 866
+      }
+    ],
+    "relatedNotes": [
+      "voina-na-more-osada-mukden-tsusima"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [
+      "nebogatov"
+    ],
+    "relatedPlaces": [],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "Battleship Borodino",
+        "author": "V. Yu. Gribovsky",
+        "date": "1995",
+        "url": "https://djvu.online/file/drGHmkZOp7ATt",
+        "locator": "1899 design comparison and chapters on construction and Tsushima",
+        "note": "A comparison of Borodino's design with the French-built Tsesarevich, with details on ships of the class."
+      },
+      {
+        "id": 2,
+        "title": "Why Tsushima? The Voyage, 1904–1905",
+        "author": "National Library of Russia",
+        "date": "Online exhibition",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/pohod.php",
+        "locator": "Squadron composition, route and participants' documents",
+        "note": "Ships, the voyage from the Baltic and the rendezvous with Nebogatov's detachment."
+      },
+      {
+        "id": 3,
+        "title": "Why Tsushima? The Battle, 14–15 May 1905 Old Style",
+        "author": "National Library of Russia",
+        "date": "Online exhibition",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/war.php",
+        "locator": "The Battle of Tsushima and the fate of individual ships",
+        "note": "The exhibition gives the battle dates in the Old Style calendar."
+      },
+      {
+        "id": 4,
+        "title": "NH 84789. OREL (Russian Battleship, 1902–05)",
+        "author": "Naval History and Heritage Command",
+        "date": "1905",
+        "url": "https://www.history.navy.mil/our-collections/photography/numerical-list-of-images/nhhc-series/nh-series/NH-84000/NH-84789.html",
+        "locator": "Archive description of a photograph after the surrender",
+        "note": "Details on the capture and service as Iwami."
+      }
+    ],
+    "limitations": [
+      "Dimensions and armament describe the original design and Russian service. The ship's armament changed during the Japanese refit."
+    ],
+    "updatedAt": "2026-11-21"
+  },
+  {
+    "slug": "strashnyi",
+    "kind": "ship",
+    "name": "Destroyer Strashnyi",
+    "shortName": "Strashnyi",
+    "category": "Destroyer",
+    "countries": [
+      "russia"
+    ],
+    "periods": [
+      "russian"
+    ],
+    "aliases": [
+      "Strashnyi",
+      "Strashny",
+      "Destroyer Strashnyi",
+      "Skvorets"
+    ],
+    "summary": "A Sokol-class destroyer assembled at Port Arthur. It sank in action at dawn on 13 April 1904 (31 March Old Style).",
+    "intro": [
+      "At dawn on 13 April 1904 (31 March Old Style), the Russian destroyer Strashnyi found itself among Japanese warships off Port Arthur. It was the ship's last engagement. Strashnyi had served with the squadron for about a month."
+    ],
+    "sections": [
+      {
+        "id": "assembly",
+        "title": "From St Petersburg in pieces",
+        "paragraphs": [
+          "Construction began at the Nevsky Works. The navy listed the destroyer as Skvorets. The parts travelled to the Far East, where the yard's workers assembled the ship at Port Arthur. In 1902 Skvorets was renamed Strashnyi. It was launched the following year."
+        ],
+        "refs": [
+          1
+        ]
+      },
+      {
+        "id": "last-night",
+        "title": "A night off Port Arthur",
+        "paragraphs": [
+          "In March 1904 (Old Style), Strashnyi made scouting sorties. On the last night it fell behind the Russian detachment and fought Japanese destroyers at dawn. The captain, Konstantin Yurasovsky, was killed. Lieutenant Maleyev took command."
+        ],
+        "refs": [
+          2,
+          3
+        ]
+      },
+      {
+        "id": "rescue",
+        "title": "Rescue by Bayan",
+        "paragraphs": [
+          "The cruiser Bayan reached the scene and picked people out of the water. The destroyer sank. That same morning Petropavlovsk went down with Admiral Makarov in Port Arthur's outer roadstead. The names of later destroyers, including Inzhener-Mekhanik Dmitriev, kept the memory of Strashnyi alive."
+        ],
+        "refs": [
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Class",
+        "value": "Sokol",
+        "note": "The Port Arthur group was assembled there by workers from the Nevsky Works.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Assembly site",
+        "value": "Port Arthur",
+        "note": "The hull arrived in sections.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Launched",
+        "value": "1903",
+        "note": "From the table of assembly and trials.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "Trial speed",
+        "value": "26.67 knots",
+        "note": "Recorded for Strashnyi in Afonin's table.",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1903,
+        "date": "1903",
+        "title": "Launch",
+        "text": "The destroyer was launched at Port Arthur.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "14 March 1904 (1 March Old Style)",
+        "title": "Accepted by the navy",
+        "text": "The yard delivered the destroyer after trials.",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "13 April 1904 (31 March Old Style)",
+        "title": "Final engagement",
+        "text": "The destroyer fought Japanese warships and sank.",
+        "refs": [
+          2,
+          3
+        ]
+      }
+    ],
+    "crew": [
+      {
+        "name": "Konstantin Konstantinovich Yurasovsky",
+        "role": "Captain of the destroyer",
+        "personSlug": "konstantin-yurasovskii",
+        "refs": [
+          3
+        ]
+      },
+      {
+        "name": "Pavel Mikhailovich Dmitriev",
+        "role": "Chief engineer",
+        "personSlug": "pavel-dmitriev",
+        "refs": [
+          3
+        ]
+      }
+    ],
+    "armament": [],
+    "images": [
+      {
+        "file": "/images/hardware/strashnyi-1.webp",
+        "alt": "The destroyer Strashnyi in action. Illustration from The Truth about the Russo-Japanese Naval War, 1907.",
+        "caption": "The destroyer Strashnyi in action. Illustration from The Truth about the Russo-Japanese Naval War, 1907.",
+        "credit": "Unknown artist. Reproduced by the Belarusian Union of Naval Seamen.",
+        "sourceUrl": "https://morsouyz.by/node/1352",
+        "license": "Public domain. Illustration published in 1907.",
+        "width": 703,
+        "height": 526,
+        "kind": "illustration"
+      }
+    ],
+    "relatedNotes": [
+      "ekaterinburg-i-port-artur",
+      "gibel-petropavlovska-fotografiya",
+      "pervaya-tihookeanskaya-eskadra"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [
+      "makarov"
+    ],
+    "relatedPlaces": [
+      "gavan-port-artura"
+    ],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "Port Arthur's Sokol-class Destroyers",
+        "author": "N. N. Afonin",
+        "date": "1991",
+        "url": "https://keu-ocr.narod.ru/Sokoly/",
+        "locator": "Gangut, no. 2, table of assembly and trials",
+        "note": "Former name, assembly, launch and trials."
+      },
+      {
+        "id": 2,
+        "title": "Missionary Review, no. 7",
+        "author": "Official war reports",
+        "date": "April 1904",
+        "url": "https://azbyka.ru/otechnik/pravoslavnye-zhurnaly/missionerskoe-obozrenie-1904-g-1-polugodie/7_18",
+        "locator": "The viceroy's report on 31 March Old Style",
+        "note": "An early official account of the engagement and Bayan's rescue."
+      },
+      {
+        "id": 3,
+        "title": "Port Arthur, 1904",
+        "author": "J. W. Dyskant",
+        "date": "Naval history study",
+        "url": "https://militera.lib.ru/h/dyskant/04.html",
+        "locator": "Chapter on Makarov's squadron",
+        "note": "Strashnyi's final action, the deaths of its officers and the events of the same morning."
+      },
+      {
+        "id": 4,
+        "title": "Returned from the Dead: The Life and Fate of Grigory Khodosevich",
+        "author": "Belarusian Union of Naval Seamen",
+        "date": "Online article",
+        "url": "https://morsouyz.by/node/1352",
+        "locator": "An illustration of Strashnyi's final action",
+        "note": "The reproduction is credited to the 1907 book. The article also traces one of the survivors."
+      }
+    ],
+    "limitations": [
+      "The illustration shows how the engagement was portrayed in print. A verified photograph of the 1904 destroyer was unavailable for this page. A later ship also bore the name Strashnyi."
+    ],
+    "updatedAt": "2026-11-21"
   }
 ]

@@ -1,0 +1,32 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import { href } from '../../lib/data';
+import { intlLocale } from '../../i18n/locale';
+import { updates, updatesTitle, updatesIntro } from '../../lib/updates';
+const dates = new Intl.DateTimeFormat(intlLocale, { dateStyle: 'long', timeZone: 'UTC' });
+---
+<Base title={updatesTitle} description={updatesIntro} section="about">
+  <PageHero title={updatesTitle} lead={updatesIntro} crumbs={[{ label: 'Главная', href: href.home() }, { label: updatesTitle }]} />
+  <div class="container section journal">
+    {updates.map(({ date, title, entries }) => (
+      <article id={date}>
+        <a class="meta" href={'#' + date}><time datetime={date}>{dates.format(new Date(date))}</time></a>
+        <div class="stack">
+          <h2 class="h2">{title}</h2>
+          {entries.map(entry => <div class="prose">
+            <p>{entry.body}</p>
+            <ul>{entry.links.map(item => <li><a href={item.url}>{item.label}</a></li>)}</ul>
+          </div>)}
+        </div>
+      </article>
+    ))}
+  </div>
+</Base>
+<style>
+  .journal article { display: grid; grid-template-columns: minmax(9rem, 1fr) minmax(0, 4fr); gap: 2rem; padding-block: 2rem; border-top: 1px solid var(--line); scroll-margin-top: 6rem; }
+  .journal .meta { align-self: start; }
+  .journal .prose { max-width: 74ch; }
+  .journal ul { margin-top: .45rem; }
+  @media (max-width: 700px) { .journal article { grid-template-columns: 1fr; gap: .7rem; } }
+</style>

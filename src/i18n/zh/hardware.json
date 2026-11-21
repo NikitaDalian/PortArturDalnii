@@ -244,14 +244,18 @@
     "relatedNotes": [
       "pervaya-tihookeanskaya-eskadra",
       "vereshchagin-hudozhnik-na-voyne",
-      "voina-na-more-osada-mukden-tsusima"
+      "voina-na-more-osada-mukden-tsusima",
+      "gibel-petropavlovska-fotografiya",
+      "nemirovich-danchenko-v-port-arture"
     ],
     "relatedEssays": [],
     "relatedPeople": [
       "makarov",
       "vereshchagin",
       "stark",
-      "kirill-vladimirovich"
+      "kirill-vladimirovich",
+      "sergei-korsakov",
+      "sergei-rashevskii"
     ],
     "relatedPlaces": [
       "gavan-port-artura",
@@ -7843,5 +7847,1103 @@
       "日本与英国日期均为公历；旅顺事件也列俄国旧历。后来刊物与传闻的日期不决定军舰何时沉没。"
     ],
     "updatedAt": "2026-11-16"
+  },
+  {
+    "slug": "knyaz-suvorov",
+    "kind": "ship",
+    "name": "「苏沃洛夫公爵」号战列舰",
+    "shortName": "苏沃洛夫公爵",
+    "category": "战列舰",
+    "countries": [
+      "russia"
+    ],
+    "periods": [
+      "russian"
+    ],
+    "aliases": [
+      "苏沃洛夫公爵号"
+    ],
+    "summary": "海军中将季诺维·罗杰斯特文斯基以「苏沃洛夫公爵」号为旗舰，率第二太平洋舰队从波罗的海远航至对马海峡。",
+    "intro": [
+      "1904年秋，一支舰队从利巴瓦启航，前往远东增援俄国海军。司令季诺维·罗杰斯特文斯基中将的将旗升在「苏沃洛夫公爵」号上。旅顺口在远征途中投降。等到俄国舰队与日本舰队相遇时，旗舰上的司令部已将目的地改为海参崴（符拉迪沃斯托克）。"
+    ],
+    "sections": [
+      {
+        "id": "design",
+        "title": "新一级战列舰的旗舰",
+        "paragraphs": [
+          "「苏沃洛夫公爵」号由波罗的海造船厂建造，设计源于开战时驻守旅顺口的「皇太子」号。同级五艘战列舰保留了原设计中一处容易辨认的特征，即装在两舷小型炮塔里的152毫米舰炮。"
+        ],
+        "refs": [
+          1
+        ]
+      },
+      {
+        "id": "voyage",
+        "title": "航向改变",
+        "paragraphs": [
+          "舰队的重型舰艇绕过非洲，在马达加斯加近海停留后横渡印度洋。尼古拉·涅博加托夫少将所率的分舰队从波罗的海稍后出发，在今越南沿岸的云峰湾与他们会合。"
+        ],
+        "refs": [
+          2
+        ]
+      },
+      {
+        "id": "tsushima",
+        "title": "旗舰退出战列",
+        "paragraphs": [
+          "1905年5月27日（俄历5月14日），「苏沃洛夫公爵」号在对马海战中领航俄国战列舰纵队。中弹受重创后，旗舰退出战列。「勇猛」号驱逐舰接走了受伤的罗杰斯特文斯基和部分参谋，其中包括后来写下回忆录的弗拉基米尔·谢苗诺夫。舰长瓦西里·伊格纳季乌斯与大部分船员随舰沉没。"
+        ],
+        "refs": [
+          3,
+          4
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "全长",
+        "value": "121米",
+        "note": "数据来自1899年设计表。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "舰宽",
+        "value": "23.2米",
+        "note": "设计值取近似数。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "主炮",
+        "value": "4门305毫米炮",
+        "note": "两座双联装炮塔。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "副炮",
+        "value": "12门152毫米炮",
+        "note": "六座双联装炮塔。",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1902,
+        "date": "1902年",
+        "title": "下水",
+        "text": "战列舰在波罗的海造船厂下水。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "1904年秋",
+        "title": "远征远东",
+        "text": "「苏沃洛夫公爵」号挂罗杰斯特文斯基将旗离开波罗的海。",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "year": 1905,
+        "date": "1905年5月27日（俄历5月14日）",
+        "title": "沉没于对马海战",
+        "text": "「勇猛」号接走受伤的司令。当天傍晚，战列舰沉没。",
+        "refs": [
+          3,
+          4
+        ]
+      }
+    ],
+    "crew": [
+      {
+        "name": "季诺维·彼得罗维奇·罗杰斯特文斯基",
+        "role": "第二太平洋舰队司令，在舰上悬挂将旗",
+        "personSlug": "rozhestvenskii",
+        "refs": [
+          2,
+          3
+        ]
+      },
+      {
+        "name": "瓦西里·瓦西里耶维奇·伊格纳季乌斯",
+        "role": "远征及对马海战期间的舰长",
+        "personSlug": "vasilii-ignatsius",
+        "refs": [
+          1,
+          3
+        ]
+      },
+      {
+        "name": "弗拉基米尔·伊万诺维奇·谢苗诺夫",
+        "role": "参谋军官，海战亲历者",
+        "personSlug": "semenov",
+        "refs": [
+          4
+        ]
+      }
+    ],
+    "armament": [
+      {
+        "weaponSlug": "obukhov-305-40",
+        "count": 4,
+        "period": "俄国海军服役期间，1904–1905年",
+        "note": "装在舰艏、舰艉炮塔上。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "weaponSlug": "canet-152-45",
+        "count": 12,
+        "period": "俄国海军服役期间，1904–1905年",
+        "note": "装在两舷的六座炮塔上。",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "images": [
+      {
+        "file": "/images/hardware/knyaz-suvorov-1.webp",
+        "alt": "停泊在喀琅施塔得锚地的「苏沃洛夫公爵」号，据照片档案定为1904年9月初。",
+        "caption": "停泊在喀琅施塔得锚地的「苏沃洛夫公爵」号，据照片档案定为1904年9月初。",
+        "credit": "摄影者不详。尤里·切尔诺夫收藏，经「对马」照片档案刊载。",
+        "sourceUrl": "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/suvorov/photo/06.jpg",
+        "license": "公有领域。1904年俄国历史照片，摄影者不详。",
+        "width": 1368,
+        "height": 1600
+      }
+    ],
+    "relatedNotes": [
+      "voina-na-more-osada-mukden-tsusima"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [
+      "nebogatov"
+    ],
+    "relatedPlaces": [],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "《战列舰「博罗季诺」号》",
+        "author": "弗·尤·格里博夫斯基",
+        "date": "1995年",
+        "url": "https://djvu.online/file/drGHmkZOp7ATt",
+        "locator": "1899年设计对照表，及建造与对马海战诸章",
+        "note": "对照博罗季诺级与法国建造的「皇太子」号，兼述同级各舰。"
+      },
+      {
+        "id": 2,
+        "title": "《为何是对马？》：1904–1905年远征",
+        "author": "俄罗斯国家图书馆",
+        "date": "线上展览",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/pohod.php",
+        "locator": "舰队编成、路线和参与者文件",
+        "note": "从波罗的海出发的舰艇、远征航程与涅博加托夫分队会合。"
+      },
+      {
+        "id": 3,
+        "title": "《为何是对马？》：俄历1905年5月14日至15日的海战",
+        "author": "俄罗斯国家图书馆",
+        "date": "线上展览",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/war.php",
+        "locator": "对马海战及各舰的结局",
+        "note": "展览使用俄历日期。"
+      },
+      {
+        "id": 4,
+        "title": "《旗舰「苏沃洛夫公爵」号之沉没》",
+        "author": "弗·伊·谢苗诺夫",
+        "date": "俄国革命前版",
+        "url": "https://v.militera.org/books/pdf/h/semyonov_vi03.pdf",
+        "locator": "第二节，旗舰退出战列及转移至「勇猛」号的经过",
+        "note": "参谋军官的回忆，记述他在舰上所见。"
+      }
+    ],
+    "limitations": [
+      "各来源所记的战斗时间有差异。关键事件并列公历与俄历日期，只记经过，不逐分钟复原。"
+    ],
+    "updatedAt": "2026-11-21"
+  },
+  {
+    "slug": "imperator-aleksandr-iii",
+    "kind": "ship",
+    "name": "「亚历山大三世皇帝」号战列舰",
+    "shortName": "亚历山大三世皇帝",
+    "category": "战列舰",
+    "countries": [
+      "russia"
+    ],
+    "periods": [
+      "russian"
+    ],
+    "aliases": [
+      "亚历山大三世皇帝号"
+    ],
+    "summary": "由尼古拉·布赫沃斯托夫指挥的博罗季诺级战列舰。在对马海战中一度领航俄国纵队，后来沉没，全舰无人幸存。",
+    "intro": [
+      "1905年5月27日（俄历5月14日），「苏沃洛夫公爵」号在对马海峡遭受重创，退出战列。紧随其后的是尼古拉·布赫沃斯托夫舰长指挥的「亚历山大三世皇帝」号。此时由这艘战列舰领航俄国纵队。"
+    ],
+    "sections": [
+      {
+        "id": "construction",
+        "title": "波罗的海造船厂的战列舰",
+        "paragraphs": [
+          "「亚历山大三世皇帝」号在圣彼得堡建造。这一级战列舰虽以「博罗季诺」号命名，最先服役的却是「亚历山大三世皇帝」号。水兵来自近卫海军部队。"
+        ],
+        "refs": [
+          1,
+          4
+        ]
+      },
+      {
+        "id": "voyage",
+        "title": "从波罗的海到对马",
+        "paragraphs": [
+          "1904年，这艘战列舰编入第二太平洋舰队第一战列舰分队。它与另外三艘同级舰绕过非洲，横渡印度洋，进入对马海峡。"
+        ],
+        "refs": [
+          2
+        ]
+      },
+      {
+        "id": "loss",
+        "title": "最后一天",
+        "paragraphs": [
+          "旗舰退出战列后，布赫沃斯托夫的战列舰曾在队列最前方领航。傍晚，受损的战列舰倾覆沉没，全舰无人幸存。"
+        ],
+        "refs": [
+          1,
+          3,
+          4
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "全长",
+        "value": "121米",
+        "note": "数据来自1899年设计表。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "舰宽",
+        "value": "23.2米",
+        "note": "设计值取近似数。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "主炮",
+        "value": "4门305毫米炮",
+        "note": "两座双联装炮塔。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "副炮",
+        "value": "12门152毫米炮",
+        "note": "六座双联装炮塔。",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1901,
+        "date": "1901年",
+        "title": "下水",
+        "text": "战列舰在波罗的海造船厂下水。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "1904年秋",
+        "title": "开始远征",
+        "text": "战列舰随第二太平洋舰队离开波罗的海。",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "year": 1905,
+        "date": "1905年5月27日（俄历5月14日）",
+        "title": "沉没于对马海战",
+        "text": "受损的战列舰倾覆沉没，全体船员遇难。",
+        "refs": [
+          1,
+          3,
+          4
+        ]
+      }
+    ],
+    "crew": [
+      {
+        "name": "尼古拉·米哈伊洛维奇·布赫沃斯托夫",
+        "role": "远征及对马海战期间的舰长",
+        "personSlug": "nikolai-bukhvostov",
+        "refs": [
+          1,
+          4
+        ]
+      }
+    ],
+    "armament": [
+      {
+        "weaponSlug": "obukhov-305-40",
+        "count": 4,
+        "period": "俄国海军服役期间，1904–1905年",
+        "note": "装在舰艏、舰艉炮塔上。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "weaponSlug": "canet-152-45",
+        "count": 12,
+        "period": "俄国海军服役期间，1904–1905年",
+        "note": "装在两舷的六座炮塔上。",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "images": [
+      {
+        "file": "/images/hardware/imperator-aleksandr-iii-1.webp",
+        "alt": "「亚历山大三世皇帝」号停泊在喀琅施塔得锚地，1904年。",
+        "caption": "「亚历山大三世皇帝」号停泊在喀琅施塔得锚地，1904年。",
+        "credit": "摄影者不详。「对马」照片档案。",
+        "sourceUrl": "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/alex3/photo/04.jpg",
+        "license": "公有领域。1904年俄国历史照片，摄影者不详。",
+        "width": 1600,
+        "height": 1098
+      }
+    ],
+    "relatedNotes": [
+      "voina-na-more-osada-mukden-tsusima"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [
+      "rozhestvenskii"
+    ],
+    "relatedPlaces": [],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "《战列舰「博罗季诺」号》",
+        "author": "弗·尤·格里博夫斯基",
+        "date": "1995年",
+        "url": "https://djvu.online/file/drGHmkZOp7ATt",
+        "locator": "1899年设计对照表，及建造与对马海战诸章",
+        "note": "对照博罗季诺级与法国建造的「皇太子」号，兼述同级各舰。"
+      },
+      {
+        "id": 2,
+        "title": "《为何是对马？》：1904–1905年远征",
+        "author": "俄罗斯国家图书馆",
+        "date": "线上展览",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/pohod.php",
+        "locator": "舰队编成、路线和参与者文件",
+        "note": "从波罗的海出发的舰艇、远征航程与涅博加托夫分队会合。"
+      },
+      {
+        "id": 3,
+        "title": "《为何是对马？》：俄历1905年5月14日至15日的海战",
+        "author": "俄罗斯国家图书馆",
+        "date": "线上展览",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/war.php",
+        "locator": "对马海战及各舰的结局",
+        "note": "展览使用俄历日期。"
+      },
+      {
+        "id": 4,
+        "title": "战列舰「亚历山大三世皇帝」号",
+        "author": "「对马」照片档案",
+        "date": "在线资料",
+        "url": "https://www.tsushima.su/RU/shipsru/shipsrussiaru/shipsrussiabronru/shipsrussiabronebrru/alex3ru/",
+        "locator": "服役经历与技术资料",
+        "note": "用于复核舰长、编员以及沉没经过。"
+      }
+    ],
+    "limitations": [
+      "这艘战列舰于1905年沉没。后来黑海舰队另一艘战列舰也曾命名为「亚历山大三世皇帝」。"
+    ],
+    "updatedAt": "2026-11-21"
+  },
+  {
+    "slug": "borodino",
+    "kind": "ship",
+    "name": "「博罗季诺」号战列舰",
+    "shortName": "博罗季诺",
+    "category": "战列舰",
+    "countries": [
+      "russia"
+    ],
+    "periods": [
+      "russian"
+    ],
+    "aliases": [
+      "博罗季诺号",
+      "博罗季诺号战列舰"
+    ],
+    "summary": "五艘同级战列舰的首舰。1905年「博罗季诺」号沉没于对马海战，只有一名舰员幸存。",
+    "intro": [
+      "「博罗季诺」号为同级的五艘战列舰留下了舰级名。1904年秋，其中四艘编入第二太平洋舰队同一个分队。到了对马海战，这艘首舰一度领航整个俄国战列舰纵队。"
+    ],
+    "sections": [
+      {
+        "id": "construction",
+        "title": "法国设计与俄国同级舰",
+        "paragraphs": [
+          "「博罗季诺」号由圣彼得堡新海军造船厂建造，以俄国向法国订购的「皇太子」号为设计基础。开战时，法国建造的战列舰已在太平洋，俄国的博罗季诺级战列舰则还在波罗的海舾装。"
+        ],
+        "refs": [
+          1
+        ]
+      },
+      {
+        "id": "first-division",
+        "title": "四艘同级舰",
+        "paragraphs": [
+          "「博罗季诺」号与「苏沃洛夫公爵」号、「亚历山大三世皇帝」号和「鹰」号一同出航。四艘同级舰编成第一战列舰分队，是第二太平洋舰队的主力。随行的还有其他舰型和后勤船只。"
+        ],
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "loss",
+        "title": "唯一的幸存者",
+        "paragraphs": [
+          "对马海战中，「苏沃洛夫公爵」号退出战列，「亚历山大三世皇帝」号一度领航，随后换成「博罗季诺」号。5月27日（俄历5月14日）傍晚，「博罗季诺」号沉没。水兵班长谢苗恩·尤先被日军救起，是全舰唯一的幸存者。俄罗斯国家图书馆收藏着有关他的剪报。"
+        ],
+        "refs": [
+          1,
+          3,
+          4
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "全长",
+        "value": "121米",
+        "note": "数据来自1899年设计表。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "舰宽",
+        "value": "23.2米",
+        "note": "设计值取近似数。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "主炮",
+        "value": "4门305毫米炮",
+        "note": "两座双联装炮塔。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "副炮",
+        "value": "12门152毫米炮",
+        "note": "六座双联装炮塔。",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1901,
+        "date": "1901年",
+        "title": "下水",
+        "text": "同级首舰在圣彼得堡下水。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "1904年秋",
+        "title": "离开波罗的海",
+        "text": "战列舰加入第二太平洋舰队第一战列舰分队。",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "year": 1905,
+        "date": "1905年5月27日（俄历5月14日）",
+        "title": "沉没于对马海战",
+        "text": "战列舰沉没，谢苗恩·尤先幸存。",
+        "refs": [
+          1,
+          3,
+          4
+        ]
+      }
+    ],
+    "crew": [
+      {
+        "name": "彼得·奥西波维奇·谢列布连尼科夫",
+        "role": "远征及对马海战期间的舰长",
+        "personSlug": "pyotr-serebrennikov",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "name": "谢苗恩·谢苗诺维奇·尤先",
+        "role": "水兵班长，全舰唯一的幸存者",
+        "personSlug": "semen-yushchin",
+        "refs": [
+          1,
+          4
+        ]
+      }
+    ],
+    "armament": [
+      {
+        "weaponSlug": "obukhov-305-40",
+        "count": 4,
+        "period": "俄国海军服役期间，1904–1905年",
+        "note": "装在舰艏、舰艉炮塔上。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "weaponSlug": "canet-152-45",
+        "count": 12,
+        "period": "俄国海军服役期间，1904–1905年",
+        "note": "装在两舷的六座炮塔上。",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "images": [
+      {
+        "file": "/images/hardware/borodino-1.webp",
+        "alt": "「博罗季诺」号停泊在喀琅施塔得锚地，1904年。",
+        "caption": "「博罗季诺」号停泊在喀琅施塔得锚地，1904年。",
+        "credit": "摄影者不详。「对马」照片档案，经维基共享资源刊载。",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Borodino1904Kronstadt.jpg",
+        "license": "公有领域（PD-RusEmpire）。",
+        "width": 1600,
+        "height": 1046
+      }
+    ],
+    "relatedNotes": [
+      "voina-na-more-osada-mukden-tsusima"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [
+      "rozhestvenskii"
+    ],
+    "relatedPlaces": [],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "《战列舰「博罗季诺」号》",
+        "author": "弗·尤·格里博夫斯基",
+        "date": "1995年",
+        "url": "https://djvu.online/file/drGHmkZOp7ATt",
+        "locator": "1899年设计对照表，及建造与对马海战诸章",
+        "note": "对照博罗季诺级与法国建造的「皇太子」号，兼述同级各舰。"
+      },
+      {
+        "id": 2,
+        "title": "《为何是对马？》：1904–1905年远征",
+        "author": "俄罗斯国家图书馆",
+        "date": "线上展览",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/pohod.php",
+        "locator": "舰队编成、路线和参与者文件",
+        "note": "从波罗的海出发的舰艇、远征航程与涅博加托夫分队会合。"
+      },
+      {
+        "id": 3,
+        "title": "《为何是对马？》：俄历1905年5月14日至15日的海战",
+        "author": "俄罗斯国家图书馆",
+        "date": "线上展览",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/war.php",
+        "locator": "对马海战及各舰的结局",
+        "note": "展览使用俄历日期。"
+      },
+      {
+        "id": 4,
+        "title": "《为何是对马？》展览文献",
+        "author": "俄罗斯国家图书馆",
+        "date": "线上展览",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/index.php",
+        "locator": "展品目录，有关谢苗恩·尤先的剪报",
+        "note": "档案记录涉及「博罗季诺」号唯一的幸存者。"
+      }
+    ],
+    "limitations": [
+      "对于战列舰突然沉没的原因，后人只能依据其他舰艇上的观察来推断。这里记下可核实的战斗结果和尤先获救的经过。"
+    ],
+    "updatedAt": "2026-11-21"
+  },
+  {
+    "slug": "orel",
+    "kind": "ship",
+    "name": "「鹰」号战列舰",
+    "shortName": "鹰",
+    "category": "战列舰",
+    "countries": [
+      "russia",
+      "japan"
+    ],
+    "periods": [
+      "russian"
+    ],
+    "aliases": [
+      "鹰号战列舰",
+      "鹰号",
+      "石见号"
+    ],
+    "summary": "「鹰」号战列舰在对马海战首日幸存，次日被日军俘获。修复后，它以「石见」号之名在日本海军服役。",
+    "intro": [
+      "第二太平洋舰队里有两艘「鹰」号，一艘是医院船，另一艘是新战列舰。战列舰与同级舰编在一起，从波罗的海来到对马海峡，战后进了日本船厂。"
+    ],
+    "sections": [
+      {
+        "id": "design",
+        "title": "五艘同级舰之一",
+        "paragraphs": [
+          "「鹰」号在圣彼得堡建造，属于博罗季诺级战列舰。同级四艘军舰被派往远东，第五艘「光荣」号留在波罗的海，未参加对马海战。"
+        ],
+        "refs": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "surrender",
+        "title": "对马海战第二日",
+        "paragraphs": [
+          "第一天，「鹰」号多处中弹，舰长尼古拉·荣格受致命伤。1905年5月28日（俄历5月15日）清晨，受损的「鹰」号与涅博加托夫的分队同行。日舰包围分队后，涅博加托夫下令投降。参加对马海战的四艘同级舰中，只有「鹰」号仍在水面。"
+        ],
+        "refs": [
+          2,
+          3
+        ]
+      },
+      {
+        "id": "iwami",
+        "title": "海战之后",
+        "paragraphs": [
+          "「鹰」号被俘不久后在日本拍摄的照片，留下了上层建筑遭重创的样子。经维修和改装，它以「石见」号加入日本海军。此后拍摄的照片上，它的外观与从波罗的海启航时已有所不同。"
+        ],
+        "refs": [
+          1,
+          4
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "全长",
+        "value": "121米",
+        "note": "数据来自1899年设计表。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "舰宽",
+        "value": "23.2米",
+        "note": "设计值取近似数。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "主炮",
+        "value": "4门305毫米炮",
+        "note": "两座双联装炮塔。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "副炮",
+        "value": "12门152毫米炮",
+        "note": "六座双联装炮塔。",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1902,
+        "date": "1902年",
+        "title": "下水",
+        "text": "「鹰」号在圣彼得堡下水。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "1904年秋",
+        "title": "编入第二太平洋舰队",
+        "text": "战列舰启航前往远东。",
+        "refs": [
+          2
+        ]
+      },
+      {
+        "year": 1905,
+        "date": "1905年5月28日（俄历5月15日）",
+        "title": "在对马海战中投降",
+        "text": "与涅博加托夫分队的另三艘战列舰一同被俘。",
+        "refs": [
+          3
+        ]
+      },
+      {
+        "year": 1907,
+        "date": "1907年",
+        "title": "以「石见」号之名服役",
+        "text": "修复后加入日本海军。",
+        "refs": [
+          4
+        ]
+      }
+    ],
+    "crew": [
+      {
+        "name": "尼古拉·维克托罗维奇·荣格",
+        "role": "「鹰」号舰长，在对马海战中受致命伤",
+        "personSlug": "nikolai-yung",
+        "refs": [
+          1,
+          3
+        ]
+      }
+    ],
+    "armament": [
+      {
+        "weaponSlug": "obukhov-305-40",
+        "count": 4,
+        "period": "俄国海军服役期间，1904–1905年",
+        "note": "装在舰艏、舰艉炮塔上。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "weaponSlug": "canet-152-45",
+        "count": 12,
+        "period": "俄国海军服役期间，1904–1905年",
+        "note": "装在两舷的六座炮塔上。",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "images": [
+      {
+        "file": "/images/hardware/orel-1.webp",
+        "alt": "受损的「鹰」号停在舞鹤，1905年。",
+        "caption": "受损的「鹰」号停在舞鹤，1905年。",
+        "credit": "摄影者不详。美国海军历史与遗产司令部资料，经「对马」照片档案刊载。",
+        "sourceUrl": "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/orel/photo/32.jpg",
+        "license": "公有领域。1905年日本历史照片。",
+        "width": 1600,
+        "height": 866
+      }
+    ],
+    "relatedNotes": [
+      "voina-na-more-osada-mukden-tsusima"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [
+      "nebogatov"
+    ],
+    "relatedPlaces": [],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "《战列舰「博罗季诺」号》",
+        "author": "弗·尤·格里博夫斯基",
+        "date": "1995年",
+        "url": "https://djvu.online/file/drGHmkZOp7ATt",
+        "locator": "1899年设计对照表，及建造与对马海战诸章",
+        "note": "对照博罗季诺级与法国建造的「皇太子」号，兼述同级各舰。"
+      },
+      {
+        "id": 2,
+        "title": "《为何是对马？》：1904–1905年远征",
+        "author": "俄罗斯国家图书馆",
+        "date": "线上展览",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/pohod.php",
+        "locator": "舰队编成、路线和参与者文件",
+        "note": "从波罗的海出发的舰艇、远征航程与涅博加托夫分队会合。"
+      },
+      {
+        "id": 3,
+        "title": "《为何是对马？》：俄历1905年5月14日至15日的海战",
+        "author": "俄罗斯国家图书馆",
+        "date": "线上展览",
+        "url": "https://expositions.nlr.ru/ex_manus/tsusima/war.php",
+        "locator": "对马海战及各舰的结局",
+        "note": "展览使用俄历日期。"
+      },
+      {
+        "id": 4,
+        "title": "NH 84789，「鹰」号战列舰",
+        "author": "美国海军历史与遗产司令部",
+        "date": "1905年",
+        "url": "https://www.history.navy.mil/our-collections/photography/numerical-list-of-images/nhhc-series/nh-series/NH-84000/NH-84789.html",
+        "locator": "投降后所摄照片的档案说明",
+        "note": "记载被俘经过及以「石见」号之名服役的情况。"
+      }
+    ],
+    "limitations": [
+      "尺寸和武备数据采用原设计及俄国海军服役时期的数据。日本修复战列舰时调整了武备。"
+    ],
+    "updatedAt": "2026-11-21"
+  },
+  {
+    "slug": "strashnyi",
+    "kind": "ship",
+    "name": "「可怕」号驱逐舰",
+    "shortName": "可怕",
+    "category": "驱逐舰",
+    "countries": [
+      "russia"
+    ],
+    "periods": [
+      "russian"
+    ],
+    "aliases": [
+      "可怕号驱逐舰",
+      "可怕号",
+      "椋鸟号",
+      "Strashnyi"
+    ],
+    "summary": "在旅顺口组装的「猎鹰」级驱逐舰。1904年4月13日（俄历3月31日）黎明战沉。",
+    "intro": [
+      "1904年4月13日（俄历3月31日）黎明，俄国驱逐舰「可怕」号在旅顺口外陷入日本舰艇之间。这是它的最后一战。此时它在舰队中只服役了约一个月。"
+    ],
+    "sections": [
+      {
+        "id": "assembly",
+        "title": "从彼得堡运来的部件",
+        "paragraphs": [
+          "这艘舰由涅瓦造船厂开工建造，最初以「椋鸟」号列入海军名册。部件运到远东，造船工人在旅顺口完成组装。1902年更名为「可怕」号，次年下水。"
+        ],
+        "refs": [
+          1
+        ]
+      },
+      {
+        "id": "last-night",
+        "title": "旅顺口外的一夜",
+        "paragraphs": [
+          "俄历1904年3月，「可怕」号曾出海侦察。最后一夜，它落在俄国编队后面，黎明时与日本驱逐舰交战。舰长康斯坦丁·尤拉索夫斯基阵亡，马列耶夫上尉接过指挥。"
+        ],
+        "refs": [
+          2,
+          3
+        ]
+      },
+      {
+        "id": "rescue",
+        "title": "「巴扬」号救人",
+        "paragraphs": [
+          "巡洋舰「巴扬」号赶到战场，将落水人员救上舰。驱逐舰沉没。同一天早上，旗舰「彼得罗巴甫洛夫斯克」号在旅顺口外锚地沉没，马卡罗夫随舰遇难。后来又有一艘驱逐舰以「轮机长德米特里耶夫」号之名服役，纪念「可怕」号的舰员。"
+        ],
+        "refs": [
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "label": "舰级",
+        "value": "「猎鹰」级",
+        "note": "由涅瓦造船厂派工人在旅顺口组装的一组驱逐舰。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "组装地点",
+        "value": "旅顺口",
+        "note": "舰体部件分装运输。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "下水",
+        "value": "1903年",
+        "note": "据组装与试航记录。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "label": "试航速度",
+        "value": "26.67节",
+        "note": "阿福宁表中所列「可怕」号的试航数据。",
+        "refs": [
+          1
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1903,
+        "date": "1903年",
+        "title": "下水",
+        "text": "驱逐舰在旅顺口下水。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "1904年3月14日（俄历3月1日）",
+        "title": "交付海军",
+        "text": "造船厂在试航后交付驱逐舰。",
+        "refs": [
+          1
+        ]
+      },
+      {
+        "year": 1904,
+        "date": "1904年4月13日（俄历3月31日）",
+        "title": "最后一战",
+        "text": "驱逐舰与日本舰艇交战后沉没。",
+        "refs": [
+          2,
+          3
+        ]
+      }
+    ],
+    "crew": [
+      {
+        "name": "康斯坦丁·康斯坦丁诺维奇·尤拉索夫斯基",
+        "role": "驱逐舰舰长",
+        "personSlug": "konstantin-yurasovskii",
+        "refs": [
+          3
+        ]
+      },
+      {
+        "name": "帕维尔·米哈伊洛维奇·德米特里耶夫",
+        "role": "轮机长",
+        "personSlug": "pavel-dmitriev",
+        "refs": [
+          3
+        ]
+      }
+    ],
+    "armament": [],
+    "images": [
+      {
+        "file": "/images/hardware/strashnyi-1.webp",
+        "alt": "「可怕」号驱逐舰交战图，载于1907年《俄日海战真相》。",
+        "caption": "「可怕」号驱逐舰交战图，载于1907年《俄日海战真相》。",
+        "credit": "作者不详。图片由白俄罗斯海军军人联盟转载。",
+        "sourceUrl": "https://morsouyz.by/node/1352",
+        "license": "公有领域。插图发表于1907年。",
+        "width": 703,
+        "height": 526,
+        "kind": "illustration"
+      }
+    ],
+    "relatedNotes": [
+      "ekaterinburg-i-port-artur",
+      "gibel-petropavlovska-fotografiya",
+      "pervaya-tihookeanskaya-eskadra"
+    ],
+    "relatedEssays": [],
+    "relatedPeople": [
+      "makarov"
+    ],
+    "relatedPlaces": [
+      "gavan-port-artura"
+    ],
+    "relatedSources": [],
+    "sources": [
+      {
+        "id": 1,
+        "title": "《旅顺口的「猎鹰」级驱逐舰》",
+        "author": "尼·尼·阿福宁",
+        "date": "1991年",
+        "url": "https://keu-ocr.narod.ru/Sokoly/",
+        "locator": "《甘古特》第2期，组装与试航表",
+        "note": "曾用名、组装、下水和试航。"
+      },
+      {
+        "id": 2,
+        "title": "《传教评论》第7期",
+        "author": "官方战报",
+        "date": "1904年4月",
+        "url": "https://azbyka.ru/otechnik/pravoslavnye-zhurnaly/missionerskoe-obozrenie-1904-g-1-polugodie/7_18",
+        "locator": "总督关于俄历3月31日战事的报告",
+        "note": "官方早期报告，记载海战及「巴扬」号救人。"
+      },
+      {
+        "id": 3,
+        "title": "《旅顺口，1904年》",
+        "author": "迪斯坎特",
+        "date": "海军史研究",
+        "url": "https://militera.lib.ru/h/dyskant/04.html",
+        "locator": "马卡罗夫舰队行动一章",
+        "note": "驱逐舰的最后一战、军官阵亡以及同一早晨发生的事件。"
+      },
+      {
+        "id": 4,
+        "title": "《死里逃生：格里戈里·霍多谢维奇的命运》",
+        "author": "白俄罗斯海军军人联盟",
+        "date": "网络文章",
+        "url": "https://morsouyz.by/node/1352",
+        "locator": "「可怕」号最后一战的插图",
+        "note": "注明插图出自1907年出版物，并讲述一名幸存者的经历。"
+      }
+    ],
+    "limitations": [
+      "此图反映了出版物对战斗的描绘。本页采用这幅插图，因为目前还没有找到可确认是1904年那艘「可怕」号的照片。后来另有一艘舰也叫「可怕」号。"
+    ],
+    "updatedAt": "2026-11-21"
   }
 ]

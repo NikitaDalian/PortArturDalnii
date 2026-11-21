@@ -56,6 +56,7 @@
   "cover": "photos/photo_125@23-10-2026_21-41-01.jpg",
   "links": [],
   "articles": [
+   "rasporyadok-dnya-v-okopah-port-artura",
    "lysev-russkii-port-artur-v-1904-godu",
    "posle-tri-pali-razvlecheniya-na-pozitsiyah"
   ]
@@ -76,6 +77,7 @@
   "cover": "photos/photo_132@24-10-2026_19-45-02.jpg",
   "links": [],
   "articles": [
+   "gibel-petropavlovska-fotografiya",
    "dnevnik-kapitana-lile"
   ]
  },
@@ -551,6 +553,111 @@
   "links": [],
   "articles": [
    "tsena-port-artura-v-tsifrah"
+  ]
+ },
+ {
+  "slug": "shvarts-romanovskii-oborona-port-artura",
+  "title": "Оборона Порт-Артура",
+  "author": "Алексей фон Шварц и Юрий Романовский",
+  "author_years": null,
+  "year": "1908–1910",
+  "kind": "reference",
+  "level": "deep",
+  "verdict": "Исторический источник по строительству крепости и ходу осады.",
+  "annotation": "Двухтомник о подготовке и обороне крепости. В заметке об укреплении № 4 по нему сопоставлены состояние батареи в начале войны и фотография, сделанная к началу тесной осады.",
+  "review_post": [
+   309
+  ],
+  "cover": null,
+  "links": [
+   "https://search.rsl.ru/ru/record/01003529049"
+  ],
+  "articles": [
+   "ukreplenie-4-daanzishan"
+  ]
+ },
+ {
+  "slug": "diletant-76",
+  "title": "«Дилетант» № 76. Маленькая победоносная война",
+  "author": "Редакция журнала «Дилетант»",
+  "author_years": null,
+  "year": "2022",
+  "kind": "history",
+  "level": "start",
+  "verdict": "Тематический выпуск для первого знакомства с разными сторонами войны.",
+  "annotation": "Номер за апрель 2022 года содержит материалы о Порт-Артуре, Цусиме и пропаганде, а также исторические иллюстрации и карикатуры.",
+  "review_post": [
+   332
+  ],
+  "cover": null,
+  "links": [
+   "https://diletant.media/magazine/"
+  ],
+  "articles": [
+   "diletant-malenkaya-pobedonosnaya-voina"
+  ]
+ },
+ {
+  "slug": "kukushkin-sudostroitelnaya-programma-1881",
+  "title": "Варианты выполнения судостроительной программы 1881 года",
+  "author": "Алексей Кукушкин",
+  "author_years": null,
+  "year": "2024",
+  "kind": "history",
+  "level": "deep",
+  "verdict": "Для читателей, которым интересны решения о строительстве флота и их последствия.",
+  "annotation": "Автор рассматривает программу 1881 года, конкурировавшие проекты и возможности российских верфей, а затем сравнивает исторический ход кораблестроения с альтернативными путями.",
+  "review_post": [
+   338
+  ],
+  "cover": null,
+  "links": [
+   "https://ridero.ru/books/varianty_vypolneniya_sudostroitelnoi_programmy_1881_goda/"
+  ],
+  "articles": [
+   "kukushkin-sudostroitelnaya-programma-1881"
+  ]
+ },
+ {
+  "slug": "mendeleev-zavetnye-mysli",
+  "title": "Заветные мысли",
+  "author": "Дмитрий Менделеев",
+  "author_years": null,
+  "year": "1995",
+  "kind": "reference",
+  "level": "deep",
+  "verdict": "Первичный источник о том, как в России рассуждали о войне в начале 1904 года.",
+  "annotation": "В главе V «По поводу японской войны» Менделеев обсуждает борьбу за выход к Тихому океану, промышленное развитие и будущее России. Заметка опирается на полное издание 1995 года.",
+  "review_post": [
+   352
+  ],
+  "cover": null,
+  "links": [
+   "https://ru.wikisource.org/wiki/Заветные_мысли_(Д._И._Менделеев)/Глава_5"
+  ],
+  "articles": [
+   "mendeleev-i-yaponskaya-voina"
+  ]
+ },
+ {
+  "slug": "ananich-bankirskie-doma",
+  "title": "Банкирские дома в России, 1860–1914 гг.",
+  "author": "Борис Ананьич",
+  "author_years": null,
+  "year": "1991",
+  "kind": "history",
+  "level": "deep",
+  "verdict": "Архивное исследование об истории российского частного капитала.",
+  "annotation": "Исследование сосредоточено на частном предпринимательстве и банкирских династиях Гинцбургов, Поляковых и Рябушинских. Первое издание вышло в Ленинграде в издательстве «Наука».",
+  "review_post": [
+   354
+  ],
+  "cover": null,
+  "links": [
+   "https://elib.fa.ru/AVTOGRAF/ananich1991.pdf/en/info"
+  ],
+  "articles": [
+   "ananich-bankirskie-doma"
   ]
  }
 ]

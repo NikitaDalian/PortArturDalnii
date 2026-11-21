@@ -40,6 +40,10 @@ assert.deepEqual(links(victoryMatch('Победа досталась дорог�
 assert.deepEqual(links(victoryMatch('«Победа» вышла в море.')),['ship/pobeda']);
 assert.deepEqual(links(victoryMatch('В море вышел броненосец «Победа».')),['ship/pobeda']);
 assert.deepEqual(links(victoryMatch('Победа',mentionContext([],['ship/pobeda']))),['ship/pobeda']);
+const orelNames=new Map([['Орёл',new Set(['ship/orel'])],['броненосец «Орёл»',new Set(['ship/orel'])]]);
+const orelMatch=createMentionMatcher(orelNames,new Map([['ship/orel',{id:'ship/orel'}]]),{contextualNames:new Map([['Орёл',new Set(['ship/orel'])]])});
+assert.deepEqual(links(orelMatch('Госпитальное судно «Орёл» и броненосец «Орёл».')),['ship/orel']);
+assert.deepEqual(links(orelMatch('Госпитальное судно «Орёл».')),[],'The hospital ship is separate from the battleship');
 const termNames=new Map([['рейде',new Set(['term/roadstead'])]]);
 const termMatch=createMentionMatcher(termNames,new Map([['term/roadstead',{id:'term/roadstead'}]]),{contextualNames:termNames});
 assert.deepEqual(links(termMatch('На рейде.')),[],'A definition is absent outside its reviewed scope');

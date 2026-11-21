@@ -7,6 +7,9 @@ import LinkedText from '../../components/LinkedText.astro';
 import { mentionContext } from '../../lib/mentions';
 import DossierHero from '../../components/places/DossierHero.astro';
 import PlaceDossier from '../../components/places/PlaceDossier.astro';
+import ZhongshanBuildings from '../../components/places/ZhongshanBuildings.astro';
+import { buildingSources, squareBuildingBySlug, squareSlug, squareMapLabel } from '../../lib/zhongshan';
+import placeSources from '../../data/place_sources.json';
 import { dossierFor } from '../../components/places/dossiers';
 import PageHero from '../../components/PageHero.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
@@ -17,7 +20,7 @@ import Coast from '../../components/Coast.astro';
 import MiniMap from '../../components/map/MiniMap.astro';
 import MapFigure from '../../components/MapFigure.astro';
 import Gallery from '../../components/map/Gallery.astro';
-import { places, href, img, imgCrop, articlesOf, amapUrl, yandexUrl, layerByKey, plural, type Place } from '../../lib/data';
+import { places, href, img, imgCrop, articlesOf, amapUrl, yandexUrl, layerByKey, photoMeta, plural, type Place } from '../../lib/data';
 import { KINDS, CITIES, SEASONS, placeLayers, isUncertain, routesThrough, peopleAt, nearest, photoCaption } from '../../components/map/places';
 import { fmtKm } from '../../components/map/geo';
 
@@ -28,7 +31,7 @@ interface Props { p: Place }
 const { p } = Astro.props;
 const mentions = mentionContext([`place/${p.slug}`]);
 const dossier = dossierFor(p.slug);
-const placeMap = ({ 'nikolaevskaya-ploshchad': 68, 'fort-2': 120, 'ukreplenie-3': 120, 'ukreplenie-5': 114, 'yaponskie-kvartaly-lyuyshunya': 315 } as Record<string, number>)[p.slug] ?? null;
+const placeMap = ({ 'nikolaevskaya-ploshchad': 68, 'fort-2': 120, 'ukreplenie-3': 120, 'ukreplenie-5': 114, 'batareya-d': 32, 'yaponskie-kvartaly-lyuyshunya': 315 } as Record<string, number>)[p.slug] ?? null;
 const photos = ((p.photos || []) as string[]).filter((f) => !placeMap || !String(f).includes(`photo_${placeMap}@`));
 const cover = photos[0] ?? null;
 const layers = placeLayers(p);
@@ -41,6 +44,11 @@ const conf: Record<string, string> = { high: 'точная', medium: 'приме
 const seasons = ((p.season || []) as string[]).filter((s) => SEASONS[s]);
 const city = CITIES[p.city] ?? '';
 const placeEssays = essays.filter(e => e.relatedPlaces.includes(p.slug));
+const building = squareBuildingBySlug.get(p.slug);
+const existingSources = (placeSources as Record<string, { title: string; url: string }[]>)[p.slug] ?? [];
+const references = [...new Map([...existingSources, ...buildingSources(p.slug)].map(s => [s.url, s])).values()];
+const relatedXinghai = p.slug === 'ploshchad-sinhai' ? 'most-buhty-sinhai' : p.slug === 'most-buhty-sinhai' ? 'ploshchad-sinhai' : null;
+const coverMeta = cover && photoMeta(cover);
 ---
 <Base title={dossier?.title ?? p.name} description={(dossier?.intro ?? p.summary).slice(0, 180)} image={img(cover)} section={dossier ? "notes" : "places"}>
   {dossier ? <DossierHero dossier={dossier} city={city} /> : <PageHero
@@ -50,10 +58,11 @@ const placeEssays = essays.filter(e => e.relatedPlaces.includes(p.slug));
     crumbs={[{ label: 'Главная', href: href.home() }, { label: 'Места и маршруты', href: href.places() }, { label: p.name }]}
     image={imgCrop(cover, '3x2')}
     imageAlt={cover ? photoCaption(cover) || p.name : ''}
-    caption={cover ? photoCaption(cover) : undefined}
+    caption={cover && !coverMeta?.license_url ? photoCaption(cover) : undefined}
     transitionName={`place-${p.slug}`}
     imageMeta
   >
+    {coverMeta?.license_url && <span slot="image-credit">{coverMeta.subject} · <a href={coverMeta.record_url}>{coverMeta.author}</a> · <a href={coverMeta.license_url}>{coverMeta.license}</a>{coverMeta.derivative && <> · {coverMeta.derivative}</>}</span>}
     <span hidden data-pagefind-filter="type:Места"></span>
     <span hidden data-pagefind-meta={`sub:${[city, KINDS[p.kind]].filter(Boolean).join(" · ")}`}></span>
     {p.name_zh && p.name_zh !== '—' && <p class="pl-zh" lang="zh">{p.name_zh}</p>}
@@ -71,6 +80,9 @@ const placeEssays = essays.filter(e => e.relatedPlaces.includes(p.slug));
     <div class="container split pl-split">
       <div class="stack" style="--stack-gap:28px">
         {!dossier && <div class="prose"><p><LinkedText text={p.summary} context={mentions} limit={6} /></p></div>}
+        {relatedXinghai && <p><a class="link" href={href.place(relatedXinghai)}>{places.find(place => place.slug === relatedXinghai)?.name}</a></p>}
+          {building && <p><a class="link" href={href.place(squareSlug) + '#zhongshan-' + building.number}>{squareMapLabel}</a></p>}
+        {p.slug === 'nikolaevskaya-ploshchad' && <p><a class="link" href="#zdaniya-ploshchadi">Десять адресов вокруг площади Чжуншань</a></p>}
         {placeMap && !dossier && <div class="reveal"><MapFigure id={placeMap} /></div>}
         {unsure && (
           <Unsure block text={p.coord_confidence === 'low'
@@ -114,6 +126,15 @@ const placeEssays = essays.filter(e => e.relatedPlaces.includes(p.slug));
   </section>
 
   {dossier && placeMap && <section class="section section--tight"><div class="container"><MapFigure id={placeMap} /></div></section>}
+
+  {p.slug === 'nikolaevskaya-ploshchad' && <ZhongshanBuildings />}
+
+  {references.length > 0 && (
+    <section class="section section--tight container stack" aria-labelledby="pl-sources">
+      <h2 class="h3" id="pl-sources">Источники</h2>
+      <ul>{references.map(reference => <li><a class="link" href={reference.url}>{reference.title}</a></li>)}</ul>
+    </section>
+  )}
 
   {photos.length > 0 && (
     <section class="section section--tight paper" aria-labelledby="pl-photos">

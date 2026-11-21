@@ -1015,5 +1015,185 @@
       }
     ],
     "photoFile": "/images/hardware/yashima-nh58968.webp"
+  },
+  {
+    "shipSlug": "knyaz-suvorov",
+    "photoFile": "/images/hardware/knyaz-suvorov-1.webp",
+    "period": "喀琅施塔得，1904年。从舰艉拍摄，第二太平洋舰队尚未启航。",
+    "features": [
+      {
+        "id": "after-turret",
+        "label": "舰艉炮塔",
+        "x": 63,
+        "y": 69,
+        "text": "画面前方的两根炮管属于舰艉主炮塔。另两门305毫米炮装在舰艏炮塔上。",
+        "weaponSlug": "obukhov-305-40",
+        "refs": [
+          1
+        ],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/suvorov/photo/06.jpg"
+        ]
+      },
+      {
+        "id": "after-mast",
+        "label": "后桅",
+        "x": 54,
+        "y": 33,
+        "text": "桅杆上有一处平台。横杆称为桁，可用来悬挂信号旗。",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/suvorov/photo/06.jpg"
+        ]
+      },
+      {
+        "id": "funnels",
+        "label": "烟囱",
+        "x": 49,
+        "y": 49,
+        "text": "从舰艉看，两根烟囱有一部分重叠。离镜头较近的烟囱顶端可见，另一根被遮住一部分。",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/suvorov/photo/06.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "shipSlug": "imperator-aleksandr-iii",
+    "photoFile": "/images/hardware/imperator-aleksandr-iii-1.webp",
+    "period": "喀琅施塔得，1904年。战列舰尚未启航前往远东。",
+    "features": [
+      {
+        "id": "forward-turret",
+        "label": "舰艏炮塔",
+        "x": 65,
+        "y": 68,
+        "text": "舰艏炮塔装有两门主炮。舰艉另有一座相同的炮塔。",
+        "weaponSlug": "obukhov-305-40",
+        "refs": [
+          1
+        ],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/alex3/photo/04.jpg"
+        ]
+      },
+      {
+        "id": "funnels",
+        "label": "两根烟囱",
+        "x": 47,
+        "y": 44,
+        "text": "烟囱位于两根桅杆之间。这张在波罗的海拍摄的照片上，可以看清烟囱涂成浅色，顶部较深。",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/alex3/photo/04.jpg"
+        ]
+      },
+      {
+        "id": "forward-mast",
+        "label": "桅杆上的平台",
+        "x": 55,
+        "y": 34,
+        "text": "前桅上有一处带栏杆的平台，称为桅盘。",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/alex3/photo/04.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "shipSlug": "borodino",
+    "photoFile": "/images/hardware/borodino-1.webp",
+    "period": "喀琅施塔得锚地，1904年，俄国海军服役期间。",
+    "features": [
+      {
+        "id": "after-turret",
+        "label": "舰艉炮塔",
+        "x": 20,
+        "y": 58,
+        "text": "舰艉炮塔装有两门305毫米主炮。在舰体另一端可以看到同样的炮塔。",
+        "weaponSlug": "obukhov-305-40",
+        "refs": [
+          1
+        ],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Borodino1904Kronstadt.jpg"
+        ]
+      },
+      {
+        "id": "funnels",
+        "label": "烟囱",
+        "x": 40,
+        "y": 46,
+        "text": "两根桅杆之间的烟囱用来排出蒸汽锅炉的烟气。锅炉的数量比烟囱多。",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Borodino1904Kronstadt.jpg"
+        ]
+      },
+      {
+        "id": "bridge",
+        "label": "前部上层建筑",
+        "x": 57,
+        "y": 52,
+        "text": "舰艏炮塔后方是数层高的上层建筑。站在舰桥上可以俯视甲板。",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Borodino1904Kronstadt.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "shipSlug": "orel",
+    "photoFile": "/images/hardware/orel-1.webp",
+    "period": "舞鹤，1905年。对马海战后，日本海军改装之前。",
+    "features": [
+      {
+        "id": "forward-turret",
+        "label": "舰艏炮塔",
+        "x": 30,
+        "y": 66,
+        "text": "舰艏炮塔在照片左侧。它和舰艉炮塔一样，原设计都装两门305毫米炮。",
+        "weaponSlug": "obukhov-305-40",
+        "refs": [
+          1
+        ],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/orel/photo/32.jpg"
+        ]
+      },
+      {
+        "id": "funnels",
+        "label": "两根烟囱",
+        "x": 50,
+        "y": 45,
+        "text": "两根烟囱仍在原先位置。此时「鹰」号还没经过日本海军改装。",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/orel/photo/32.jpg"
+        ]
+      },
+      {
+        "id": "damage",
+        "label": "受损痕迹",
+        "x": 59,
+        "y": 73,
+        "text": "舰体中部可见破洞和受损构件。照片记录的是战斗后的状况，难以据此判断各处中弹的确切时间和顺序。",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/orel/photo/32.jpg"
+        ]
+      }
+    ]
   }
 ]

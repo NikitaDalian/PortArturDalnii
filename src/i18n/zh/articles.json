@@ -1,5 +1,495 @@
 [
  {
+  "slug": "ananich-bankirskie-doma",
+  "tg_ids": [
+   354
+  ],
+  "date": "2026-11-20",
+  "title": "鲍里斯·阿纳尼奇谈俄罗斯帝国的私人银行商号",
+  "dek": "私人资本和银行监管折射出怎样的经济状况。",
+  "summary": "鲍里斯·阿纳尼奇追溯了金茨堡、波利亚科夫和里亚布申斯基三家银行商号的历史。他通过档案说明家族贸易公司如何壮大为大型金融企业，以及当局如何尝试对它们实施监管。原帖将这项研究放在日俄战争的背景下，比较私人银行资本与政府借款的规模。",
+  "facts": [
+   "文章依据1991年出版的《俄国的私人银行商号，1860至1914年》。",
+   "1907年，俄国财政部试图加强对私人银行家的监管，这一举措最终未形成改革。"
+  ],
+  "type": "book",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "boris-ananich"
+  ],
+  "places": [
+   "moskva",
+   "manchzhuriya",
+   "mukden"
+  ],
+  "books": [
+   "ananich-bankirskie-doma"
+  ],
+  "photos": [],
+  "cover": null,
+  "read_min": 3,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/354",
+  "series_slug": null
+ },
+ {
+  "slug": "mendeleev-i-yaponskaya-voina",
+  "tg_ids": [
+   352
+  ],
+  "date": "2026-11-20",
+  "title": "门捷列夫谈日俄战争",
+  "dek": "这位科学家为何看重太平洋出海口、工业和教育。",
+  "summary": "1904年，德米特里·门捷列夫在《肺腑之言》中专设一章讨论对日战争。他从俄国取得太平洋出海口的需要来解释这场战争，并主张在太平洋沿岸建设船厂和工厂。他预料俄国会获胜，战局却与他的判断相反。文章最后又回到俄国国内的发展，重点谈教育和扩大生产。",
+  "facts": [
+   "本文依据《肺腑之言》第五章《论对日战争》，思想出版社1995年版，第193至222页。",
+   "门捷列夫曾与斯捷潘·马卡罗夫讨论“叶尔马克”号破冰船的北极航行。"
+  ],
+  "type": "source",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "dmitrii-mendeleev",
+   "makarov",
+   "menshikov"
+  ],
+  "places": [
+   "port-artur",
+   "dalnii",
+   "manchzhuriya",
+   "koreya"
+  ],
+  "books": [
+   "mendeleev-zavetnye-mysli"
+  ],
+  "photos": [
+   "photos/photo_452@20-11-2026_12-19-56.jpg"
+  ],
+  "cover": "photos/photo_452@20-11-2026_12-19-56.jpg",
+  "read_min": 3,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/352",
+  "series_slug": null
+ },
+ {
+  "slug": "russko-yaponskaya-voina-v-kino",
+  "tg_ids": [
+   351
+  ],
+  "date": "2026-11-19",
+  "title": "银幕上的日俄战争百年",
+  "dek": "美国默片与苏联、日本、韩国作品如何呈现同一场战争。",
+  "summary": "这份片单从1904年的美国默片《辽阳的英雄》和苏联影片《瓦良格号巡洋舰》，一直列到日本的《坂上之云》和韩国的《咖啡》（又名《俄国咖啡》）。文章比较了各部作品以谁为主角，又如何从不同的角度讲述同一段历史。",
+  "facts": [
+   "《辽阳的英雄》问世时，战争还在继续。",
+   "《咖啡》的故事发生在开战前夕的朝鲜王宫。"
+  ],
+  "type": "culture",
+  "layer": [
+   "russian"
+  ],
+  "people": [],
+  "places": [
+   "port-artur",
+   "vysokaya-gora",
+   "lyaoyan",
+   "tsusima",
+   "koreya"
+  ],
+  "books": [],
+  "photos": [],
+  "cover": null,
+  "read_min": 2,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/351",
+  "series_slug": null
+ },
+ {
+  "slug": "gibel-petropavlovska-fotografiya",
+  "tg_ids": [
+   350
+  ],
+  "date": "2026-11-19",
+  "title": "谁拍下了“彼得罗巴甫洛夫斯克”号沉没的照片？",
+  "dek": "记录外锚地沉船事件的照片，以及两位可能的拍摄者。",
+  "summary": "1904年3月31日（公历4月13日）早晨，“彼得罗巴甫洛夫斯克”号战列舰在旅顺外锚地沉没。1914年，《火星》杂志刊登了一张灾难现场的照片，署名谢尔盖·科尔萨科夫中尉。据米哈伊尔·利利耶记述，军事工程师谢尔盖·拉舍夫斯基当天早晨也在黄金山上观察并拍摄了这艘军舰。部分留存下来的照片的拍摄者仍无法确定。",
+  "facts": [
+   "海军将领斯捷潘·马卡罗夫、画家瓦西里·韦列夏金及六百多名水兵在沉舰事故中丧生。",
+   "谢尔盖·拉舍夫斯基在日记中记录了这场灾难。1904年12月，他与罗曼·康德拉坚科一同在第II号堡垒阵亡。"
+  ],
+  "type": "source",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "sergei-korsakov",
+   "sergei-rashevskii",
+   "makarov",
+   "vereshchagin",
+   "kondratenko"
+  ],
+  "places": [
+   "port-artur",
+   "zolotaya-gora",
+   "fort-2"
+  ],
+  "books": [
+   "lilye-dnevnik-osady-port-artura",
+   "petropavlovsk-iskry-1914"
+  ],
+  "photos": [
+   "photos/photo_449@19-11-2026_11-15-02.jpg"
+  ],
+  "cover": "photos/photo_449@19-11-2026_11-15-02.jpg",
+  "read_min": 3,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/350",
+  "series_slug": null
+ },
+ {
+  "slug": "ekaterinburg-i-port-artur",
+  "tg_ids": [
+   347
+  ],
+  "date": "2026-11-18",
+  "title": "帕维尔·德米特里耶夫从叶卡捷琳堡到旅顺",
+  "dek": "“可怕”号驱逐舰的轮机工程师，以及后来为纪念他而命名的军舰。",
+  "summary": "帕维尔·德米特里耶夫在叶卡捷琳堡长大，后来在海军担任轮机工程师。战争爆发后，他从预备役被召回，派往“可怕”号驱逐舰。1904年4月13日（俄历3月31日），他在旅顺附近的战斗中阵亡。一艘新驱逐舰以他命名。为纪念他，他的姐妹玛丽亚在叶卡捷琳堡创办了一座免费图书馆。",
+  "facts": [
+   "“巴扬”号巡洋舰救起了“可怕”号上的五名水兵。",
+   "“轮机长德米特里耶夫”号驱逐舰后来改名为“罗沙尔”号。"
+  ],
+  "type": "person",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "pavel-dmitriev",
+   "konstantin-yurasovskii",
+   "makarov",
+   "nikolai-ii"
+  ],
+  "places": [
+   "ekaterinburg",
+   "port-artur",
+   "vladivostok"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_446@18-11-2026_14-34-13.jpg",
+   "photos/photo_448@18-11-2026_14-34-13.jpg"
+  ],
+  "cover": "photos/photo_446@18-11-2026_14-34-13.jpg",
+  "read_min": 3,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/347",
+  "series_slug": null
+ },
+ {
+  "slug": "krestnitsa-generala-kondratenko",
+  "tg_ids": [
+   339
+  ],
+  "date": "2026-11-17",
+  "title": "康德拉坚科将军的教女",
+  "dek": "一段家族往事把旅顺围城与关东军投降联系起来。",
+  "summary": "1945年8月，伊万·阿尔乔缅科上校随苏军谈判代表抵达长春，向山田乙三大将递交投降要求。据阿尔乔缅科回忆，四十年前，他的父亲和祖父曾与日军作战，母亲则是罗曼·康德拉坚科的教女。原帖所述的这段家族关系来自他的回忆录，仍待文献证实。",
+  "facts": [
+   "1945年8月19日的谈判在长春举行。",
+   "日本于1945年9月2日签署投降书。"
+  ],
+  "type": "memory",
+  "layer": [
+   "russian",
+   "soviet"
+  ],
+  "people": [
+   "kondratenko"
+  ],
+  "places": [
+   "port-artur",
+   "dalnii",
+   "kvantun",
+   "manchzhuriya"
+  ],
+  "books": [],
+  "photos": [],
+  "cover": null,
+  "read_min": 3,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/339",
+  "series_slug": null
+ },
+ {
+  "slug": "kukushkin-sudostroitelnaya-programma-1881",
+  "tg_ids": [
+   338
+  ],
+  "date": "2026-11-17",
+  "title": "阿列克谢·库库什金谈1881年造舰计划",
+  "dek": "俄国当时考虑建造哪些军舰，19世纪80年代的决定又如何影响二十年后的舰队。",
+  "summary": "阿列克谢·库库什金比较了俄国二十年造舰计划中获准建造和遭到否决的舰艇方案。他结合船厂产能、物资供应和政府开支解释这些取舍，并讨论其他选择可能怎样影响对日战争。书评指出，透过表格和图纸，还能看到与承包商的谈判、交付受阻的情况和船厂的实际运作。",
+  "facts": [
+   "该书由Rideró于2024年出版。出版社网站提供目录和试读。"
+  ],
+  "type": "book",
+  "layer": [
+   "pre1898",
+   "russian"
+  ],
+  "people": [
+   "rozhestvenskii"
+  ],
+  "places": [
+   "port-artur",
+   "zheltoe-more",
+   "tsusima"
+  ],
+  "books": [
+   "kukushkin-sudostroitelnaya-programma-1881"
+  ],
+  "photos": [],
+  "cover": null,
+  "read_min": 2,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/338",
+  "series_slug": null
+ },
+ {
+  "slug": "tri-proekta-kreposti-port-artur",
+  "tg_ids": [
+   335
+  ],
+  "date": "2026-11-17",
+  "title": "旅顺要塞的三个设计方案",
+  "dek": "堡垒防线为什么向城区收缩，开战前又完成了多少工程。",
+  "summary": "1898年俄国租借关东州时，旅顺已有中国修筑的海岸炮台和土垒。前两个方案的设防范围较广。由于工程造价和驻军人数受限，最终获批的是康斯坦丁·韦利奇科范围较小的方案。工程于1901年动工，1904年战事已波及旅顺，距离预定竣工还有五年。",
+  "facts": [
+   "原方案估价约1500万卢布。到开战时，防御工程已获拨款约450万卢布。",
+   "203高地位于主堡垒线之外，筑防工程推迟到第二期。"
+  ],
+  "type": "explainer",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "velichko"
+  ],
+  "places": [
+   "port-artur",
+   "kvantun",
+   "staryy-gorod-port-artura",
+   "vysokaya-gora",
+   "zolotaya-gora"
+  ],
+  "books": [],
+  "photos": [],
+  "cover": null,
+  "read_min": 4,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/335",
+  "series_slug": null
+ },
+ {
+  "slug": "velichko-inzhener-port-artura",
+  "tg_ids": [
+   333
+  ],
+  "date": "2026-11-17",
+  "title": "康斯坦丁·韦利奇科与旅顺要塞的设计",
+  "dek": "从尼古拉工程学院到1900年获批的要塞方案。",
+  "summary": "康斯坦丁·韦利奇科是筑城学教授，曾参加俄土战争。他设计的俄军旅顺要塞方案于1900年获批。文章从他的军校经历写到革命后的服役生涯，考察上级交付的任务和手头的资源如何影响他的设计。",
+  "facts": [
+   "日俄战争期间，韦利奇科在阿列克谢·库罗帕特金手下服役。",
+   "他于1918年加入红军，1927年在列宁格勒去世。"
+  ],
+  "type": "person",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "velichko",
+   "kuropatkin"
+  ],
+  "places": [
+   "port-artur",
+   "kvantun",
+   "vladivostok",
+   "lyaoyan",
+   "mukden"
+  ],
+  "books": [],
+  "photos": [],
+  "cover": null,
+  "read_min": 2,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/333",
+  "series_slug": null
+ },
+ {
+  "slug": "diletant-malenkaya-pobedonosnaya-voina",
+  "tg_ids": [
+   332
+  ],
+  "date": "2026-11-16",
+  "title": "《业余爱好者》杂志的日俄战争专号",
+  "dek": "2022年4月号关注旅顺、对马海战和战时宣传。",
+  "summary": "频道作者推荐《业余爱好者》（Diletant）杂志的日俄战争专号。杂志刊登了关于旅顺、对马海战及俄日双方战时宣传的文章，并收录了历史插图和漫画。",
+  "facts": [
+   "《一场小小的胜利战争》，《业余爱好者》第76期，2022年4月。"
+  ],
+  "type": "book",
+  "layer": [
+   "russian"
+  ],
+  "people": [],
+  "places": [
+   "port-artur",
+   "tsusima"
+  ],
+  "books": [
+   "diletant-76"
+  ],
+  "photos": [],
+  "cover": null,
+  "read_min": 1,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/332",
+  "series_slug": null
+ },
+ {
+  "slug": "nemirovich-danchenko-v-port-arture",
+  "tg_ids": [
+   329
+  ],
+  "date": "2026-11-16",
+  "title": "旅顺的“战地记者之王”",
+  "dek": "1904年春，瓦西里·涅米罗维奇-丹琴科在旅顺要塞的见闻。",
+  "summary": "“彼得罗巴甫洛夫斯克”号沉没后不久，《俄罗斯言论报》记者瓦西里·涅米罗维奇-丹琴科抵达旅顺。他报道了当地备战、准备应对围城的情况，并称罗曼·康德拉坚科为“旅顺的灵魂和头脑”。此后，他继续在满洲采访。革命后，他离开俄国，晚年居住在布拉格，1936年在那里去世。",
+  "facts": [
+   "他在《奔赴战场：从彼得堡到旅顺口》中记述了这次远东之行。",
+   "他的弟弟弗拉基米尔留在俄国，是莫斯科艺术剧院的创办人之一。"
+  ],
+  "type": "person",
+  "layer": [
+   "russian"
+  ],
+  "people": [
+   "vasilii-nemirovich-danchenko",
+   "kondratenko",
+   "sergei-rashevskii"
+  ],
+  "places": [
+   "port-artur",
+   "manchzhuriya",
+   "vafangou",
+   "lyaoyan",
+   "mukden"
+  ],
+  "books": [],
+  "photos": [
+   "photos/photo_433@16-11-2026_11-05-02.jpg"
+  ],
+  "cover": "photos/photo_433@16-11-2026_11-05-02.jpg",
+  "read_min": 3,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/329",
+  "series_slug": null
+ },
+ {
+  "slug": "ukreplenie-4-daanzishan",
+  "tg_ids": [
+   309,
+   319
+  ],
+  "date": "2026-11-15",
+  "title": "第4号防御工事的八个空炮位",
+  "dek": "旅顺以西的大案子山上还保留着哪些遗迹。",
+  "summary": "大案子山上至今可见开凿在岩石中的壕沟、掩蔽部和八个空炮位。频道作者登山察看工事，并将实地所见与阿列克谢·冯·施瓦茨和尤里·罗曼诺夫斯基的记载对照。这里原为中国的堡垒，如今是区级文物保护单位。现有资料尚无法说明这八个炮位上的火炮后来去了哪里。",
+  "facts": [
+   "第4号防御工事在大案子山，第IV号堡垒在相邻的椅子山。",
+   "第二篇原帖还收录了作者在山上和工事内拍摄的照片。"
+  ],
+  "type": "place",
+  "layer": [
+   "pre1898",
+   "russian",
+   "soviet",
+   "modern"
+  ],
+  "people": [
+   "nogi"
+  ],
+  "places": [
+   "ukreplenie-4",
+   "fort-4",
+   "vysokaya-gora",
+   "port-artur"
+  ],
+  "books": [
+   "shvarts-romanovskii-oborona-port-artura"
+  ],
+  "photos": [
+   "photos/photo_416@15-11-2026_17-20-09.jpg",
+   "photos/photo_417@15-11-2026_17-20-10.jpg",
+   "photos/photo_418@15-11-2026_17-20-10.jpg",
+   "photos/photo_419@15-11-2026_17-20-10.jpg",
+   "photos/photo_420@15-11-2026_17-20-10.jpg",
+   "photos/photo_421@15-11-2026_17-20-10.jpg",
+   "photos/photo_422@15-11-2026_17-20-10.jpg",
+   "photos/photo_423@15-11-2026_17-20-10.jpg",
+   "photos/photo_424@15-11-2026_17-24-47.jpg",
+   "photos/photo_425@15-11-2026_17-24-47.jpg",
+   "photos/photo_426@15-11-2026_17-24-47.jpg",
+   "photos/photo_427@15-11-2026_17-24-47.jpg",
+   "photos/photo_428@15-11-2026_17-24-47.jpg",
+   "photos/photo_429@15-11-2026_17-24-47.jpg",
+   "photos/photo_430@15-11-2026_17-24-47.jpg",
+   "photos/photo_431@15-11-2026_17-24-47.jpg",
+   "photos/photo_432@15-11-2026_17-24-47.jpg"
+  ],
+  "cover": "photos/photo_417@15-11-2026_17-20-10.jpg",
+  "read_min": 3,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/309",
+  "series_slug": null
+ },
+ {
+  "slug": "rasporyadok-dnya-v-okopah-port-artura",
+  "tg_ids": [
+   303
+  ],
+  "date": "2026-11-15",
+  "title": "旅顺战壕里的一天",
+  "dek": "围城期间，守军怎样睡觉、吃饭和休息。",
+  "summary": "旅顺被围期间，前线守军白天值勤，抽空吃饭和休息，夜里还要作业。据守军回忆，只要有机会，他们就烧水泡茶。休息时，有人读书，有人玩游戏，也有人整理装备。亚历山大·雷谢夫在研究要塞战时生活的书里汇集了这些回忆。",
+  "facts": [
+   "本文依据亚历山大·雷谢夫的《1904年的俄国旅顺：战时日常生活史》（莫斯科，播种出版社，2019年）。",
+   "原帖的历史照片附有盖蒂图片社旅顺围城专题的链接。"
+  ],
+  "type": "explainer",
+  "layer": [
+   "russian"
+  ],
+  "people": [],
+  "places": [
+   "port-artur"
+  ],
+  "books": [
+   "lysev-russkiy-port-artur-v-1904-godu",
+   "siege-port-arthur-getty"
+  ],
+  "photos": [],
+  "cover": null,
+  "read_min": 2,
+  "series": null,
+  "tg_url": "https://t.me/portartur_dalnii/303",
+  "series_slug": null
+ },
+ {
   "slug": "general-fok-geroy-dunaya-i-port-artur",
   "title": "福克将军：多瑙河、旅顺与审判",
   "dek": "战功勋章、金州撤退、与斯米尔诺夫的冲突，以及1908年审判的结局。",
@@ -2985,7 +3475,8 @@
    "stessel",
    "kuropatkin",
    "rozhestvenskii",
-   "togo"
+   "togo",
+   "nebogatov"
   ],
   "places": [
    "port-artur",

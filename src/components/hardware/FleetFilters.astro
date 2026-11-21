@@ -4,6 +4,7 @@ const { catalog=false }=Astro.props;
 const choices=[
   ...(catalog?[{key:'',label:'Все материалы'}]:[]),
   {key:'port-arthur',label:'Первая Тихоокеанская эскадра'},
+  {key:'second-pacific',label:'Вторая Тихоокеанская эскадра'},
   {key:'japanese',label:'Японский флот'},
   {key:'chemulpo',label:'Чемульпо'},
   {key:catalog?'ships':'',label:'Все корабли'},

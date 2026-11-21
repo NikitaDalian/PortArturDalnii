@@ -3,6 +3,9 @@
 // По нажатию открывается полноэкранный просмотр: колесо и щипок — масштаб, перетаскивание — сдвиг,
 // Esc и кнопка — закрыть. Без внешних библиотек.
 import { img, imgBig, href, photos, tgPost } from '../lib/data';
+import registrations from './map/registrations.json';
+import { locale } from '../i18n/locale';
+const overlayLabel = {ru:'Сопоставить с современной картой',en:'Compare with the modern map',zh:'与现代地图对照'}[locale];
 // Подписи по каталогу photos.json (описание карты, без домыслов).
 const MAPS: Record<number, { caption: string; note?: string; maxWidth?: number; origin?: string }> = {
   32: { caption: 'План крепости Порт-Артур: положение линии обороны 19 декабря 1904 г. (А. Свечин, карта Военно-исторической комиссии). Русские позиции красным, японские зелёным, подписаны форты I–VI и укрепления № 1–5.', note: 'литография, 200 саженей в дюйме' },
@@ -63,6 +66,8 @@ const items = ids.map((id, i) => {
             ? <>{m.origin ?? 'Открытый архив'} · Public domain · <a class="link" href={m.record} target="_blank" rel="noopener">запись</a> · <a class="link" href={href.credits()}>все источники</a></>
             : <>Из архива канала{m.post ? <> · <a class="link" href={m.post} target="_blank" rel="noopener">пост {m.meta.post_id}</a></> : ''}</>}
           {m.note ? ` · ${m.note}` : ''}
+          {(m.id === 32 || registrations.some(row => row.photo === m.id)) &&
+            <> · <a class="link" href={href.map() + '?sheet=' + m.id}>{overlayLabel}</a></>}
         </span>
       </figcaption>
     </figure>

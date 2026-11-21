@@ -8,7 +8,7 @@ export function validateShipFeatures(records,hardware,profileProvenance){
     const ship=ships.get(record.shipSlug);
     if(!ship||ids.has(record.shipSlug)){errors.push(`${prefix}: unknown or duplicate ship`);continue;}
     ids.add(record.shipSlug);
-    if(!ship.images.some(image=>image.file===record.photoFile))errors.push(`${prefix}: annotation photo must belong to this ship`);
+    if(!ship.images.some(image=>image.file===record.photoFile&&image.kind!=='illustration'))errors.push(`${prefix}: annotation photo must belong to this ship`);
     if(!nonempty(record.period))errors.push(`${prefix}: missing dated scope`);
     if(!Array.isArray(record.features)||record.features.length<3||record.features.length>6){errors.push(`${prefix}: expected 3–6 reviewed zones`);continue;}
     const features=new Set();
@@ -26,6 +26,6 @@ export function validateShipFeatures(records,hardware,profileProvenance){
       if(!(feature.refs?.length||feature.sourceUrls?.length))errors.push(`${name}: unsourced explanation`);
     }
   }
-  if(ids.size!==ships.size||[...ships.keys()].some(id=>!ids.has(id)))errors.push('ship_features: every published ship needs a reviewed profile');
+  if([...ships.values()].some(ship=>!ids.has(ship.slug)&&ship.images.some(image=>image.kind!=='illustration')))errors.push('ship_features: every published ship needs a reviewed profile if it has a photograph');
   return errors;
 }

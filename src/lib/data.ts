@@ -1,6 +1,7 @@
 // Единая точка доступа к данным и адресам сайта.
 // ВСЕ ссылки внутри сайта строятся через функции этого файла (учёт base-пути GitHub Pages).
 import articlesJson from '../data/articles.json';
+import { squareBuildings, squareBuildingBySlug } from './zhongshan';
 import editorialPeriods from '../data/editorial_periods.json';
 import peopleJson from '../data/people.json';
 import placesJson from '../data/places.json';
@@ -35,7 +36,18 @@ const periodOverrides = editorialPeriods as Record<string, LayerKey[]>;
 export const articles: Article[] = articlesJson.map(a => ({ ...a, layer: periodOverrides[a.slug] ?? a.layer }));
 export const people = peopleJson as Person[];
 export const canonicalPersonSlug = (slug:string) => (personRedirects as Record<string,string>)[slug] ?? slug;
-export const places = placesJson as Place[];
+export const places: Place[] = [
+  ...placesJson.map(place => {
+    const building = squareBuildingBySlug.get(place.slug);
+    return building ? { ...place, lat:building.lat, lng:building.lng } : place;
+  }),
+  ...squareBuildings.filter(building => !building.place).map(building => ({
+    slug:building.slug, name:building.title, name_zh:building.zh, name_now:building.address,
+    city:'dalian', kind:'building', layers:building.number === 8 ? ['soviet','modern'] : ['japanese','modern'],
+    lat:building.lat, lng:building.lng, coord_confidence:'high', summary:building.body,
+    visit:building.address, season:[], posts:[], articles:[], photos:[building.photo, 'historicalPhoto' in building ? building.historicalPhoto : null].filter(Boolean) as string[], verify:false,
+  })),
+];
 export const books = booksJson as Book[];
 export const sources = sourcesJson as Source[];
 export const routes = routesJson as Route[];
@@ -132,6 +144,7 @@ export const href = {
     ? url(`/lica/${canonicalPersonSlug(slug)}/`) : url(`/spravochnik/${kind}/${slug}/`),
   search: (q?: string) => url('/poisk/' + (q ? `?q=${encodeURIComponent(q)}` : '')),
   about: () => url('/o-proekte/'),
+  updates: () => url('/obnovleniya/'),
   credits: () => url('/o-proekte/illyustratsii/'),
 };
 

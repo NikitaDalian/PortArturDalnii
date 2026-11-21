@@ -13,7 +13,7 @@
     "lat": 38.8286,
     "lng": 121.1935,
     "coord_confidence": "high",
-    "summary": "A height behind the main line of forts, left without permanent defences in Velichko’s plan. Japanese troops assaulted it for a week from 15 November 1904. Its garrison lost around 5,000 men before abandoning it on 22 November (5 December). The summit overlooked the inner basins, allowing siege howitzers to sink the squadron at its moorings within days. Today a Japanese rifle-bullet-shaped monument, Erlingshan, whose name echoes “203”, stands on top. Sections of trenches survive, and the place where General Nogi’s son died is marked. Views extend over the harbour and western Lüshun.",
+    "summary": "203 Metre Hill stood outside the main ring of permanent forts and received no permanent fortifications under Velichko’s plan. After several days of fighting, Japanese troops took the summit on 5 December 1904 (22 November Old Style). It overlooked the inner basins, allowing observers to direct siege artillery onto ships at their moorings. The Japanese monument called Erlingshan stands on the summit. Sections of trenches survive, and the place where General Nogi’s son died is marked.",
     "visit": "There is parking at the entrance (203景区停车场). Admission is paid; check prices and hours locally. Travel agencies quoted 30 yuan in 2025. Prices may differ during the spring cherry-blossom season.",
     "season": [
       "spring",
@@ -29,6 +29,9 @@
     ],
     "verify": true,
     "articles": [
+      "russko-yaponskaya-voina-v-kino",
+      "tri-proekta-kreposti-port-artur",
+      "ukreplenie-4-daanzishan",
       "voina-na-more-osada-mukden-tsusima",
       "stepanov-port-artur-retsenziya",
       "port-artur-poslednyaya-zamorskaya-koloniya",
@@ -76,12 +79,13 @@
     ],
     "verify": true,
     "articles": [
+      "gibel-petropavlovska-fotografiya",
+      "general-fok-geroy-dunaya-i-port-artur",
       "port-artur-poslednyaya-zamorskaya-koloniya",
       "kak-ustroen-fort",
       "kondratenko-put-k-port-arturu",
       "kondratenko-dusha-oborony",
-      "kulichkin-kondratenko-zhzl",
-      "general-fok-geroy-dunaya-i-port-artur"
+      "kulichkin-kondratenko-zhzl"
     ]
   },
   {
@@ -140,6 +144,7 @@
       227
     ],
     "photos": [
+      "photos/photo_539@place.jpg",
       "photos/photo_161@28-10-2026_08-55-08.jpg",
       "photos/photo_338@archive.jpg"
     ],
@@ -210,11 +215,11 @@
       174
     ],
     "photos": [
+      "photos/photo_118@21-10-2026_09-30-12.jpg",
       "photos/photo_114@21-10-2026_09-30-12.jpg",
       "photos/photo_115@21-10-2026_09-30-12.jpg",
       "photos/photo_116@21-10-2026_09-30-12.jpg",
       "photos/photo_117@21-10-2026_09-30-12.jpg",
-      "photos/photo_118@21-10-2026_09-30-12.jpg",
       "photos/photo_119@21-10-2026_09-30-12.jpg"
     ],
     "verify": false,
@@ -237,7 +242,7 @@
     "lat": 38.7918,
     "lng": 121.264,
     "coord_confidence": "high",
-    "summary": "A coastal battery on a cliff east of Golden Hill, named after a searchlight stationed there. It held 10-inch guns on Durlacher mountings, like the gun at Fortification No. 5. The battery covered the harbour entrance and fired on the Japanese fleet from the war’s first days. Today its concrete gun emplacements overlook the sea and the entrance to Lüshun harbour.",
+    "summary": "Coastal Battery No. 15 stood on the cliff east of Gold Hill near the entrance to Port Arthur harbour. The name refers to a searchlight installed on the cliff. Within the first weeks of the war, the Russian press was already mentioning Electric Cliff in reports of the bombardment of the harbour. Traces of the battery survive on the cliff.",
     "visit": "One travel-agency account says foreigners cannot visit; other sources describe a normal paid attraction costing about 15 yuan. Check before travelling.",
     "season": [
       "spring",
@@ -248,7 +253,9 @@
       144,
       127
     ],
-    "photos": [],
+    "photos": [
+      "photos/photo_533@place.jpg"
+    ],
     "verify": true,
     "articles": [
       "stepanov-port-artur-retsenziya",
@@ -282,6 +289,7 @@
       127
     ],
     "photos": [
+      "photos/photo_540@place.jpg",
       "photos/photo_302@archive.jpg",
       "photos/photo_308@archive.jpg",
       "photos/photo_304@archive.jpg",
@@ -289,6 +297,8 @@
     ],
     "verify": true,
     "articles": [
+      "gibel-petropavlovska-fotografiya",
+      "tri-proekta-kreposti-port-artur",
       "port-artur-poslednyaya-zamorskaya-koloniya",
       "pervaya-tihookeanskaya-eskadra"
     ]
@@ -321,6 +331,7 @@
       127
     ],
     "photos": [
+      "photos/photo_542@place.jpg",
       "photos/photo_34@06-10-2026_17-18-17.jpg",
       "photos/photo_100@17-10-2026_15-14-01.jpg"
     ],
@@ -395,8 +406,8 @@
     "lat": 38.8068,
     "lng": 121.2473,
     "coord_confidence": "high",
-    "summary": "Terminus of the Chinese Eastern Railway’s southern branch. Construction began around 1900 and the station opened in 1903. The wooden building with its green tented roof stands beside the Western Basin, one of Lüshun’s most photographed sights. The building’s history is tangled: some sources describe a Japanese rebuilding in 1905–1908, others a reconstruction from old drawings in the 2000s. Trains no longer run here. Metro Line 12 serves a different station, Lüshun, north of the centre.",
-    "visit": "View the building from outside. The waterfront and the Quail Hill cable-car entrance are nearby.",
+    "summary": "The Chinese Eastern Railway branch to the naval port of Port Arthur ended here. Liaoning’s heritage office dates the timber building to October 1900. A turret with fish-scale metal roofing marks the waiting room. In 1945 the station became part of the Chinese Changchun Railway, jointly run by China and the Soviet Union. It passed to Chinese administration in 1952. The metro station of the same name is farther north.",
+    "visit": "8 Jinggang Street (井岗街8号). The building can be seen from the street.",
     "season": [
       "spring",
       "summer",
@@ -406,7 +417,9 @@
     "posts": [
       50
     ],
-    "photos": [],
+    "photos": [
+      "photos/photo_514@place.jpg"
+    ],
     "verify": true,
     "articles": [
       "port-artur-poslednyaya-zamorskaya-koloniya"
@@ -427,7 +440,7 @@
     "lng": 121.2599,
     "coord_confidence": "high",
     "summary": "The Russians began building the prison in 1902; the Japanese enlarged it in 1907. Brickwork reveals the difference: the grey blocks by the entrance are Russian, the large red blocks Japanese. Under Japanese rule it held Chinese, Korean and Japanese prisoners. Korean independence activist An Jung-geun, who killed Itō Hirobumi, was executed here in 1910. The prison operated until 1945 and became a museum in 1971. Cells, workshops and the execution site survive.",
-    "visit": "Travel agencies in 2026 report free admission and Monday closure. We have not found official confirmation; check before visiting.",
+    "visit": "139 Xiangyang Street (向阳街139号). The former prison is now a museum.",
     "season": [
       "spring",
       "summer",
@@ -435,7 +448,10 @@
       "winter"
     ],
     "posts": [],
-    "photos": [],
+    "photos": [
+      "photos/photo_515@place.jpg",
+      "photos/photo_516@place.jpg"
+    ],
     "verify": true,
     "articles": []
   },
@@ -465,7 +481,9 @@
       227,
       114
     ],
-    "photos": [],
+    "photos": [
+      "photos/photo_517@place.jpg"
+    ],
     "verify": true,
     "articles": [
       "port-artur-i-dalnii-dva-goroda",
@@ -486,7 +504,7 @@
     "lat": 38.8075,
     "lng": 121.2297,
     "coord_confidence": "high",
-    "summary": "Opened under Japanese administration in 1915 as an exhibition of local products and in 1917 as the Kwantung Government-General’s Museum of Manchurian and Mongolian Products. Its eclectic building combines European forms with Eastern details. Soviet troops transferred the museum to China on 1 February 1951. Collections now include archaeology, bronzes, calligraphy and material from Xinjiang. Local tradition says construction began under Russian rule; we have not found documentary confirmation.",
+    "summary": "Lüshun Museum grew out of an exhibition of products from Manchuria and Mongolia that the Japanese administration began organising in 1915. The museum opened to the public in April 1917. Its building combines European and East Asian forms. Its collections now include archaeological finds, bronzes, calligraphy and objects from Xinjiang.",
     "visit": null,
     "season": [
       "spring",
@@ -495,7 +513,9 @@
       "winter"
     ],
     "posts": [],
-    "photos": [],
+    "photos": [
+      "photos/photo_512@place.jpg"
+    ],
     "verify": true,
     "articles": []
   },
@@ -544,7 +564,7 @@
     "lat": 38.8085,
     "lng": 121.2291,
     "coord_confidence": "high",
-    "summary": "A monument of the 1950s, begun in 1955 and completed later according to differing sources. It commemorates Sino-Soviet friendship during the years when Port Arthur was a joint naval base, until 1955. It stands on a circular square beside Lüshun Museum in the New Town. Reliefs depict episodes from the two countries’ shared history.",
+    "summary": "The Sino-Soviet Friendship Tower stands in front of Lüshun Museum. The foundation stone was laid in February 1955, construction was completed in October 1956 and the inauguration followed in February 1957. Reliefs around the base show Tiananmen and the Kremlin, the Anshan steelworks, views of Port Arthur and a harvest scene.",
     "visit": "The square is open; view the monument from outside.",
     "season": [
       "spring",
@@ -556,7 +576,9 @@
       93,
       114
     ],
-    "photos": [],
+    "photos": [
+      "photos/photo_518@place.jpg"
+    ],
     "verify": true,
     "articles": [
       "dalnii-gorod-s-nulya",
@@ -577,7 +599,7 @@
     "lat": 38.8528,
     "lng": 121.2388,
     "coord_confidence": "high",
-    "summary": "A farmhouse in Shuishiying village where Generals Stessel and Nogi met on 23 December 1904 (5 January 1905 New Style), after the surrender had been signed. According to a familiar account, the horse Stessel gave Nogi was tied to a tree in the yard. The meeting entered a Japanese school song. The present house appears to be a reconstruction; its fidelity to the original needs checking.",
+    "summary": "In Shuishiying, north of Port Arthur, representatives of the two armies signed the surrender terms on 2 January 1905 (20 December 1904 Old Style). Three days later, on 5 January (23 December), Generals Nogi and Stessel met here. Japanese postcards document the meeting site. One shows the village house and a later memorial marker. Which parts of today’s building date to the early twentieth century remains unconfirmed.",
     "visit": null,
     "season": [
       "winter",
@@ -587,7 +609,9 @@
     "posts": [
       50
     ],
-    "photos": [],
+    "photos": [
+      "photos/photo_511@place.jpg"
+    ],
     "verify": true,
     "articles": [
       "port-artur-poslednyaya-zamorskaya-koloniya"
@@ -606,13 +630,15 @@
     "lat": 38.854,
     "lng": 121.386,
     "coord_confidence": "low",
-    "summary": "A park beside a reservoir built under Japanese rule between Dalian and Lüshun. Japanese settlers planted cherry trees here; it is now the best-known blossom spot near Dalian. Single-flowered varieties open around mid-April, doubles roughly a week later, with flowering continuing to the end of the month. The garden at 203 Metre Hill blooms about a week later. The coordinate is approximate: the park is below the dam at the reservoir’s southern end.",
-    "visit": "A seasonal park with paid admission: travel agencies quoted 20 yuan in 2025. Excursion buses run from Dalian during the blossom season.",
+    "summary": "Longwangtang Cherry Blossom Park lies by the reservoir dam between Dalian and Lüshun. The garden and reservoir share one landscape: on the path near the pavilion you can see the flowering trees and the embankment. The cherries bloom in spring, with exact dates varying with the weather.",
+    "visit": "Search for 龙王塘樱花园 on your map. Blossom dates vary by year.",
     "season": [
       "spring"
     ],
     "posts": [],
-    "photos": [],
+    "photos": [
+      "photos/photo_519@place.jpg"
+    ],
     "verify": true,
     "articles": []
   },
@@ -631,7 +657,7 @@
     "lat": 38.9208,
     "lng": 121.6388,
     "coord_confidence": "high",
-    "summary": "The centre of Kazimierz Skolimowski’s plan: a circle 213 m across, with ten radiating streets, modelled on Paris’s Place de l’Étoile. The Russians laid out the square but did not build around it. The Japanese called it Ōhiroba, “Great Square”, and added banks, city hall, police headquarters and the Yamato Hotel between 1908 and 1936. Eight pre-war buildings survive; the British consulate was demolished in 1995. After 1945 the square was named for Sun Yat-sen.",
+    "summary": "The circle and its ten radiating streets took shape on the Russian plan of Dalny. Under Japanese administration it was called Ōhiroba, meaning Grand Square. Administrative buildings, banks and the Yamato Hotel went up around it from 1908. On 1 June 1946 it was named after Sun Yat-sen, also known in China as Sun Zhongshan. The Financial Building now occupies the former British consulate site.",
     "visit": "Metro: Zhongshan Square station (中山广场站). The square is open around the clock; buildings are illuminated in the evening.",
     "season": [
       "spring",
@@ -682,6 +708,7 @@
       93
     ],
     "photos": [
+      "photos/photo_525@place.jpg",
       "photos/photo_70@11-10-2026_14-03-01.jpg",
       "photos/photo_71@11-10-2026_14-03-01.jpg",
       "photos/photo_317@archive.jpg"
@@ -719,6 +746,7 @@
       114
     ],
     "photos": [
+      "photos/photo_538@place.jpg",
       "photos/photo_66@11-10-2026_14-03-01.jpg",
       "photos/photo_361@11-11-2026_10-18-04.jpg",
       "photos/photo_362@11-11-2026_10-18-05.jpg"
@@ -745,7 +773,7 @@
     "lat": 38.9266,
     "lng": 121.6326,
     "coord_confidence": "high",
-    "summary": "A turreted building with tall roofs at the northern end of Victory Bridge, dating from 1902. Sources differ on its first occupant: the Chinese Eastern Railway Company office, Dalny’s Russian administration or, later, a Japanese shipping company. They also disagree on its architect, naming either a German or Skolimowski. It became a nationally protected monument in 2001. A replica stands in the Japanese port of Moji as the Dalian Friendship Memorial. The original now hosts exhibitions.",
+    "summary": "The turreted building at the entrance to Russian Street is known as the former East China Steamship Company office. Liaoning’s heritage office dates the start of construction to 1902, credits the design to Kazimierz Skolimowski and records its use by the Russian administration and later a Japanese steamship company. The building was reconstructed for art exhibitions in 1998. In 2001 the site received national heritage protection.",
     "visit": null,
     "season": [
       "spring",
@@ -756,7 +784,9 @@
     "posts": [
       93
     ],
-    "photos": [],
+    "photos": [
+      "photos/photo_526@place.jpg"
+    ],
     "verify": true,
     "articles": [
       "dalnii-gorod-s-nulya"
@@ -778,7 +808,7 @@
     "lng": 121.6334,
     "coord_confidence": "high",
     "summary": "A bridge linking the Russian administrative quarter with the rest of Dalny across the railway tracks. Called Nipponbashi under Japanese rule, it became Victory Bridge after 1945. It offers views of the buildings north of the tracks. Sources disagree on the first bridge’s construction and later rebuilding; a Japanese reconstruction in the late 1900s is often mentioned.",
-    "visit": "The pedestrian crossing is always open.",
+    "visit": "The bridge links central Dalian with Russian Street and carries a pavement.",
     "season": [
       "spring",
       "summer",
@@ -788,7 +818,9 @@
     "posts": [
       93
     ],
-    "photos": [],
+    "photos": [
+      "photos/photo_510@place.jpg"
+    ],
     "verify": true,
     "articles": [
       "dalnii-gorod-s-nulya"
@@ -819,6 +851,8 @@
       93
     ],
     "photos": [
+      "photos/photo_524@place.jpg",
+      "photos/photo_541@place.jpg",
       "photos/photo_69@11-10-2026_14-03-01.jpg"
     ],
     "verify": true,
@@ -869,7 +903,7 @@
     "slug": "gostinitsa-yamato",
     "name": "Yamato Hotel",
     "name_zh": "大连宾馆 (Dàlián bīnguǎn), formerly 大和旅馆",
-    "name_now": "A hotel on Zhongshan Square",
+    "name_now": "Former Dalian Hotel, 4 Zhongshan Square",
     "city": "dalian",
     "layers": [
       "japanese",
@@ -879,8 +913,8 @@
     "lat": 38.9195,
     "lng": 121.6395,
     "coord_confidence": "high",
-    "summary": "A South Manchuria Railway hotel opened in 1914 on the south side of Ōhiroba. The railway operated Yamato hotels in the principal cities of Manchuria and Kwantung, including Port Arthur; Dalian’s is the best known. Its colonnaded façade survives and it still operates as a hotel, one of the few pre-war buildings on the square where visitors can stay overnight.",
-    "visit": "A working hotel; view its façade from the square.",
+    "summary": "The Yamato Hotel building on the south side of Zhongshan Square was completed in 1914. The hotel had been receiving guests at another address since 1907. It was run by the South Manchuria Railway, which had a chain of hotels in cities along its line. The building later became the Dalian Hotel. Accor lists the property as the forthcoming Fairmont Dalian.",
+    "visit": "4 Zhongshan Square. The columned façade can be seen from the square.",
     "season": [
       "spring",
       "summer",
@@ -936,7 +970,7 @@
     "lat": 38.9199,
     "lng": 121.6403,
     "coord_confidence": "high",
-    "summary": "Dairen’s city hall, built in 1919 to a design by Matsumuro Shigemitsu’s team, with a tower above the entrance. It stands on the circular square alongside the 1908 police headquarters, 1920 Bank of Korea, 1917 post office and 1936 Oriental Development Company office. Over thirty years, the Japanese built around the square laid out by the Russians. It now houses ICBC.",
+    "summary": "The former Dairen City Hall occupies No. 5 Zhongshan Square. In 1922 the Japanese civil administration moved here from No. 2. Its projecting entrance and tower stand out among the buildings facing the circle. The Industrial and Commercial Bank of China later used the premises.",
     "visit": "A working bank.",
     "season": [
       "spring",
@@ -945,7 +979,9 @@
       "winter"
     ],
     "posts": [],
-    "photos": [],
+    "photos": [
+      "photos/photo_504@place.jpg"
+    ],
     "verify": false,
     "articles": []
   },
@@ -953,7 +989,7 @@
     "slug": "politsiya-dajrena",
     "name": "Dairen Police Headquarters",
     "name_zh": "大连警察署旧址 (Dàlián jǐngchá shǔ)",
-    "name_now": "An office building on Zhongshan Square",
+    "name_now": "Former Dairen Civil Administration Office, 2 Zhongshan Square",
     "city": "dalian",
     "layers": [
       "japanese"
@@ -962,8 +998,8 @@
     "lat": 38.9197,
     "lng": 121.6374,
     "coord_confidence": "high",
-    "summary": "The first building on Ōhiroba, completed in 1908 to a design by Maeda Shōin’s team in the Kwantung Government-General’s construction department. Red brick with white bands and corner towers. In 1908, the Russian square was still an empty circle with radiating streets marked out; this building established the scale and style of what followed. It now houses offices, including a Citibank branch.",
-    "visit": "Offices; no public access inside.",
+    "summary": "The red-brick building on today’s Zhongshan Square was built in 1908 for the Japanese civil administration of Dairen, to a design by the architect Maeda (前田松韻). In 1922 the administration moved into the city hall on the same square and the police took over the premises. Both names appear in guidebooks.",
+    "visit": "2 Zhongshan Square. The façade is visible from the outer pavement.",
     "season": [
       "spring",
       "summer",
@@ -971,7 +1007,9 @@
       "winter"
     ],
     "posts": [],
-    "photos": [],
+    "photos": [
+      "photos/photo_502@place.jpg"
+    ],
     "verify": false,
     "articles": []
   },
@@ -998,7 +1036,9 @@
       "winter"
     ],
     "posts": [],
-    "photos": [],
+    "photos": [
+      "photos/photo_513@place.jpg"
+    ],
     "verify": true,
     "articles": []
   },
@@ -1026,7 +1066,9 @@
       143,
       127
     ],
-    "photos": [],
+    "photos": [
+      "photos/photo_520@place.jpg"
+    ],
     "verify": false,
     "articles": [
       "otsu-1891-pokushenie-na-tsesarevicha",
@@ -1056,7 +1098,9 @@
       "winter"
     ],
     "posts": [],
-    "photos": [],
+    "photos": [
+      "photos/photo_521@place.jpg"
+    ],
     "verify": true,
     "articles": []
   },
@@ -1091,7 +1135,9 @@
       "photos/photo_305@archive.jpg"
     ],
     "verify": true,
-    "articles": []
+    "articles": [
+      "tri-proekta-kreposti-port-artur"
+    ]
   },
   {
     "slug": "redut-1",
@@ -1107,7 +1153,7 @@
     "lat": 38.8389,
     "lng": 121.2741,
     "coord_confidence": "low",
-    "summary": "One of two redoubts on Panlongshan, forward of the Eastern Front’s main line between Forts II and III. During the first general assault, 6–11 (19–24) August 1904, the Japanese captured both at great cost, their only gains in that attack. The main line held, and the siege turned to engineering operations. Which redoubt was No. 1 and which No. 2, and what survives, needs checking against the plan and on the ground.",
+    "summary": "Russian accounts identify Eastern Panlongshan Redoubt as No. 1. It stood in front of Port Arthur’s main defensive line beside Western Redoubt No. 2. Japanese troops captured both redoubts during the first general assault in August 1904. A Japanese photograph taken after the capture shows the gorge at the rear of the redoubt. The exact location of surviving remains still needs field verification.",
     "visit": "There is no separate visitor area. The approximate point comes from the 1904 fortress plan. Look for earthwork remains north of Jiguan Shan Road.",
     "season": [
       "autumn",
@@ -1115,7 +1161,9 @@
       "spring"
     ],
     "posts": [],
-    "photos": [],
+    "photos": [
+      "photos/photo_534@place.jpg"
+    ],
     "verify": true,
     "articles": []
   },
@@ -1133,7 +1181,7 @@
     "lat": 38.8401,
     "lng": 121.2703,
     "coord_confidence": "low",
-    "summary": "The second Panlongshan redoubt, west of the first and closer to Fort No. III. Both covered approaches to the Eastern Front’s main line and fell during the August 1904 assault. Japanese trenches then advanced from here towards the main defences. On the 1904 fortress plan, the redoubts already lie behind the Japanese trench line. Their numbering and exact positions need checking against the plan and on site.",
+    "summary": "Russian accounts identify Western Panlongshan Redoubt as No. 2. Together with the eastern redoubt, it covered the approaches to Port Arthur’s main defensive line. Both redoubts fell in August 1904. A Japanese photograph taken after the capture shows a shelter in the western redoubt. The exact location of surviving remains still needs field verification.",
     "visit": "The approximate position comes from the 1904 plan. Any signs are in Chinese only.",
     "season": [
       "autumn",
@@ -1141,7 +1189,9 @@
       "spring"
     ],
     "posts": [],
-    "photos": [],
+    "photos": [
+      "photos/photo_535@place.jpg"
+    ],
     "verify": true,
     "articles": []
   },
@@ -1159,17 +1209,40 @@
     "lat": 38.8197,
     "lng": 121.2207,
     "coord_confidence": "medium",
-    "summary": "An intermediate work on the Western Front between Forts IV and V, directly above the New Town. It is red on the 1904 fortress plan: these positions remained Russian on 19 December. The Japanese did not assault the Western Front, concentrating on 203 Metre Hill and the northeast, and received the work after the surrender. Its design resembles No. 5: rampart, dry ditch and caponiers. The ruins’ condition needs checking on site.",
+    "summary": "The fortification on Da’anzishan stood on the western front of Port Arthur, between Forts IV and V. On the map from the end of the siege it was still within the Russian lines. It passed to the Japanese after the fortress surrendered. The project’s photographs show the stone wall of the dry ditch, arched openings and remnants of the concrete parapet.",
     "visit": "Approach from the New Town streets (民泰街). Check access and ticket arrangements in advance.",
     "season": [
       "spring",
       "autumn",
       "winter"
     ],
-    "posts": [],
-    "photos": [],
+    "posts": [
+      309,
+      319
+    ],
+    "photos": [
+      "photos/photo_416@15-11-2026_17-20-09.jpg",
+      "photos/photo_417@15-11-2026_17-20-10.jpg",
+      "photos/photo_418@15-11-2026_17-20-10.jpg",
+      "photos/photo_419@15-11-2026_17-20-10.jpg",
+      "photos/photo_420@15-11-2026_17-20-10.jpg",
+      "photos/photo_421@15-11-2026_17-20-10.jpg",
+      "photos/photo_422@15-11-2026_17-20-10.jpg",
+      "photos/photo_423@15-11-2026_17-20-10.jpg",
+      "photos/photo_424@15-11-2026_17-24-47.jpg",
+      "photos/photo_425@15-11-2026_17-24-47.jpg",
+      "photos/photo_426@15-11-2026_17-24-47.jpg",
+      "photos/photo_427@15-11-2026_17-24-47.jpg",
+      "photos/photo_428@15-11-2026_17-24-47.jpg",
+      "photos/photo_429@15-11-2026_17-24-47.jpg",
+      "photos/photo_430@15-11-2026_17-24-47.jpg",
+      "photos/photo_431@15-11-2026_17-24-47.jpg",
+      "photos/photo_432@15-11-2026_17-24-47.jpg"
+    ],
     "verify": true,
-    "articles": []
+    "articles": [
+      "ukreplenie-4-daanzishan"
+    ]
   },
   {
     "slug": "fort-4",
@@ -1193,9 +1266,13 @@
       "winter"
     ],
     "posts": [],
-    "photos": [],
+    "photos": [
+      "photos/photo_532@place.jpg"
+    ],
     "verify": true,
-    "articles": []
+    "articles": [
+      "ukreplenie-4-daanzishan"
+    ]
   },
   {
     "slug": "batareya-d",
@@ -1211,8 +1288,8 @@
     "lat": 38.8048,
     "lng": 121.2042,
     "coord_confidence": "low",
-    "summary": "A permanent Western Front battery. Port Arthur’s land-front batteries were designated by letters. On the 1904 plan, Battery D stands south of Fort V, halfway to Fortification No. 5, covering the valley towards the New Town. The battery took part in artillery action: G. S. Pilsudski’s diary for December 1904 describes its fire and Japanese shelling. Surviving remains and access have not been checked: the point was taken from the plan and may be off by a hundred or two hundred metres.",
-    "visit": "An approximate point from the 1904 plan. Compare it with satellite imagery before visiting.",
+    "summary": "Port Arthur’s land-front batteries were designated by letters. On the Military Historical Commission’s plan showing the defences on 19 December 1904 Old Style, the mark “Бат. Д” is south of Fort No. V. G. S. Piłsudski wrote about the battery’s role in the artillery fighting that December. Its exact position on modern maps and any surviving remains need verification. No photograph of the battery has been confirmed.",
+    "visit": null,
     "season": [
       "spring",
       "autumn",
@@ -1236,7 +1313,7 @@
     "lat": 38.8066,
     "lng": 121.2292,
     "coord_confidence": "low",
-    "summary": "The naval officers’ club, a meeting place and centre of leisure for Pacific Squadron officers in Russian Port Arthur. A Naval Assembly was a regular feature of Russian naval-base life and appears in siege memoirs and diaries. We have not yet identified its building in modern Lüshun or established whether it survives. The point is therefore provisionally placed near Lüshun Museum. We will check the 1904 town plans and the guide’s account.",
+    "summary": "The Naval Assembly was the naval officers’ club in Russian Port Arthur. A Russian postcard shows a gate with a circular opening and decorative latticework. The same gate can be recognised in a Japanese album published in 1922, where it is captioned as the Suikōsha naval club (水交社). The exact modern address and the subsequent fate of the compound remain unknown. The map pin indicates the tour stop in the New Town.",
     "visit": "Shown on the guided excursion. For independent visits, follow the guide’s description. The map position is provisional.",
     "season": [
       "spring",
@@ -1245,7 +1322,9 @@
       "winter"
     ],
     "posts": [],
-    "photos": [],
+    "photos": [
+      "photos/photo_528@place.jpg"
+    ],
     "verify": true,
     "articles": []
   },
@@ -1272,7 +1351,9 @@
       "winter"
     ],
     "posts": [],
-    "photos": [],
+    "photos": [
+      "photos/photo_531@place.jpg"
+    ],
     "verify": true,
     "articles": []
   },
@@ -1290,7 +1371,7 @@
     "lat": 38.8098,
     "lng": 121.2262,
     "coord_confidence": "low",
-    "summary": "Officers, officials and employees lived with their families in Russian Port Arthur, and schools opened for their children. We have not yet checked which building is shown as the “Russian School” or its use after 1905. The point is provisionally placed among the New Town’s old streets, where several Japanese-era school buildings survive. We will check town plans and sources before supplying a precise address.",
+    "summary": "Port Arthur had several Russian schools, among them the Pushkin School, whose building appears on a postcard published by Fortuna. Which school corresponds to the tour stop called “Russian School” in the New Town remains uncertain. The map pin identifies the general area.",
     "visit": "Shown on the guided excursion. The map position is provisional.",
     "season": [
       "spring",
@@ -1299,7 +1380,9 @@
       "winter"
     ],
     "posts": [],
-    "photos": [],
+    "photos": [
+      "photos/photo_527@place.jpg"
+    ],
     "verify": true,
     "articles": []
   },
@@ -1325,7 +1408,9 @@
       "autumn"
     ],
     "posts": [],
-    "photos": [],
+    "photos": [
+      "photos/photo_530@place.jpg"
+    ],
     "verify": true,
     "articles": []
   },
@@ -1333,7 +1418,7 @@
     "slug": "gospital-krasnogo-kresta",
     "name": "Red Cross Hospital",
     "name_zh": "旅顺红十字医院旧址 (Lǚshùn Hóngshízì yīyuàn jiùzhǐ)",
-    "name_now": "An old building in the Old Town, in a lane off Huanghe Road, listed as a historic site",
+    "name_now": "Former Red Cross Hospital, 107 Huanghe Road",
     "city": "lushun",
     "layers": [
       "russian",
@@ -1343,8 +1428,8 @@
     "lat": 38.813,
     "lng": 121.2621,
     "coord_confidence": "medium",
-    "summary": "During the siege of 1904, Red Cross hospitals in Port Arthur employed nurses who had come from Russia. Casualties were so numerous that other buildings were also taken over as wards. This Old Town building is listed as a former Red Cross hospital. Which Russian hospital it housed, and its use under the Japanese, need checking against sources. The point comes from OpenStreetMap.",
-    "visit": "In the lane north of Huanghe Road (黄河路北一巷), beside the district hospital. Viewed from outside.",
+    "summary": "Construction began in 1900 on the Huanghe Road building for Port Arthur’s municipal hospital. The Liaoning heritage register lists 40 wards. The Japanese Red Cross Society took it over in March 1905. In 1907 it became the society’s hospital for the Kwantung Leased Territory. The complex passed to Soviet administration in 1945 and has been used by the Chinese navy since 1955.",
+    "visit": "107 Huanghe Road (黄河路107号). The provincial register includes historical and modern photographs of the building.",
     "season": [
       "spring",
       "summer",
@@ -1352,7 +1437,10 @@
       "winter"
     ],
     "posts": [],
-    "photos": [],
+    "photos": [
+      "photos/photo_537@place.jpg",
+      "photos/photo_536@place.jpg"
+    ],
     "verify": true,
     "articles": []
   },
@@ -1360,7 +1448,7 @@
     "slug": "dom-kondratenko",
     "name": "General Kondratenko’s House",
     "name_zh": "康特拉琴柯旧居 (Kāngtèlāqínkē jiùjū)",
-    "name_now": "A mansion on Ningbo Street in the New Town",
+    "name_now": "A 1903 residence on Ningbo Street",
     "city": "lushun",
     "layers": [
       "russian",
@@ -1370,8 +1458,8 @@
     "lat": 38.8121,
     "lng": 121.2328,
     "coord_confidence": "high",
-    "summary": "A New Town house presented locally as the residence of Major General Roman Kondratenko, commander of the fortress’s land defences. He was killed at Fort No. II on 2 (15) December 1904, and his remains were taken to St Petersburg in 1905, making this house the routes’ only “peacetime” site associated with him. The attribution comes from a local plaque and map; we have not yet seen documentary confirmation.",
-    "visit": "Ningbo Street (宁波街), New Town. Viewed from outside.",
+    "summary": "Major General Roman Kondratenko, who commanded the land defences of Port Arthur, lived in the house on what is now Ningbo Street. The Liaoning register identifies the building, which dates to 1903, as his former residence. He was killed at Fort No. II on 15 December 1904 (2 December Old Style). His remains were taken to St Petersburg in 1905.",
+    "visit": "47 Ningbo Street (宁波街47号), New Town. The façade can be seen from the street.",
     "season": [
       "spring",
       "summer",
@@ -1379,8 +1467,10 @@
       "winter"
     ],
     "posts": [],
-    "photos": [],
-    "verify": true,
+    "photos": [
+      "photos/photo_529@place.jpg"
+    ],
+    "verify": false,
     "articles": []
   },
   {
@@ -1400,7 +1490,7 @@
     "lat": 38.727,
     "lng": 121.1348,
     "coord_confidence": "high",
-    "summary": "The lighthouse stands at Liaodong’s southernmost point, southwest of Lüshun. The notional boundary between the Yellow and Bohai seas runs here; on clear days the viewpoint reveals a band where differently coloured waters meet. The lighthouse was built under the Qing in the late nineteenth century, before the Russians arrived. Check the exact date and equipment’s origins on site. Every ship approaching Port Arthur from the west and Bohai Bay passed this cape, about 13 km in a straight line from the harbour entrance.",
+    "summary": "The lighthouse marks the southern end of the Liaodong Peninsula, near the conventional boundary between the Yellow and Bohai Seas. The Qing maritime customs service built the iron tower in 1893. It housed a French-made mechanism in which the optics rotated on a mercury bearing. The light guided ships around the cape as they sailed to Port Arthur or into the Bohai Gulf.",
     "visit": "About 20 km from central Lüshun, by car or taxi. Travel agencies report paid admission to the viewing area; check hours. The cape is very windy.",
     "season": [
       "spring",
@@ -1408,7 +1498,9 @@
       "autumn"
     ],
     "posts": [],
-    "photos": [],
+    "photos": [
+      "photos/photo_522@place.jpg"
+    ],
     "verify": true,
     "articles": []
   },
@@ -1432,8 +1524,56 @@
       "autumn"
     ],
     "posts": [],
-    "photos": [],
+    "photos": [
+      "photos/photo_523@place.jpg"
+    ],
     "verify": true,
+    "articles": []
+  },
+  {
+    "slug": "ploshchad-sinhai",
+    "name": "Xinghai Square",
+    "name_zh": "星海广场 (Xīnghǎi Guǎngchǎng)",
+    "name_now": "Waterfront square in Shahekou District",
+    "city": "dalian",
+    "layers": [
+      "modern"
+    ],
+    "kind": "square",
+    "lat": 38.88111,
+    "lng": 121.58278,
+    "coord_confidence": "high",
+    "summary": "Dalian’s Xinghai Square stands on land that was part of the bay in the early 1990s. The city began reclaiming the coastal shallows in 1993. Construction of the square was completed on 30 June 1997 for Hong Kong’s return to China. Two years later, a sculpture commemorating the centenary of Dalian was installed by the seafront. A walkway lined with residents’ footprints leads to a sculpture in the shape of an open book. Follow the footprints towards the water and the suspension span of the bay bridge comes into view behind the book.",
+    "visit": "From Xinghai Square station on metro line 1, walk towards the open circle of the square, then south towards the sea.",
+    "season": [],
+    "posts": [],
+    "photos": [
+      "photos/photo_500@place.jpg"
+    ],
+    "verify": false,
+    "articles": []
+  },
+  {
+    "slug": "most-buhty-sinhai",
+    "name": "Xinghai Bay Bridge",
+    "name_zh": "星海湾跨海大桥 (Xīnghǎiwān Kuàhǎi Dàqiáo)",
+    "name_now": "Double-deck road bridge in southern Dalian",
+    "city": "dalian",
+    "layers": [
+      "modern"
+    ],
+    "kind": "bridge",
+    "lat": 38.867764,
+    "lng": 121.578328,
+    "coord_confidence": "high",
+    "summary": "When Xinghai Bay Bridge opened on 30 October 2015, Dalian gained a coastal road that bypassed the congested Zhongshan West Road (中山西路). The bridge route runs for 6.8 km, including an 820 m suspension section. The road runs on two levels. Massive offshore anchor blocks secure the main cables. The suspension section stands about a kilometre offshore, aligned with the centreline of Xinghai Square so it can be seen from the square.",
+    "visit": "For a view of the two towers and the suspension span, walk to the waterfront at the southern end of Xinghai Square. The map pin marks the bridge out in the bay.",
+    "season": [],
+    "posts": [],
+    "photos": [
+      "photos/photo_501@place.jpg"
+    ],
+    "verify": false,
     "articles": []
   }
 ]

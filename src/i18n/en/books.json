@@ -56,6 +56,7 @@
     "cover": "photos/photo_125@23-10-2026_21-41-01.jpg",
     "links": [],
     "articles": [
+      "rasporyadok-dnya-v-okopah-port-artura",
       "lysev-russkii-port-artur-v-1904-godu",
       "posle-tri-pali-razvlecheniya-na-pozitsiyah"
     ]
@@ -76,6 +77,7 @@
     "cover": "photos/photo_132@24-10-2026_19-45-02.jpg",
     "links": [],
     "articles": [
+      "gibel-petropavlovska-fotografiya",
       "dnevnik-kapitana-lile"
     ]
   },
@@ -551,6 +553,111 @@
     "links": [],
     "articles": [
       "tsena-port-artura-v-tsifrah"
+    ]
+  },
+  {
+    "slug": "shvarts-romanovskii-oborona-port-artura",
+    "title": "The Defence of Port Arthur",
+    "author": "Alexei von Schwarz and Yuri Romanovsky",
+    "author_years": null,
+    "year": "1908–1910",
+    "kind": "reference",
+    "level": "deep",
+    "verdict": "A historical source on the building of the fortress and the course of the siege.",
+    "annotation": "These two volumes cover preparations for the siege and the defence of the fortress. The note on Fortification No. 4 compares the battery’s condition at the outbreak of war with an image from the start of the close siege.",
+    "review_post": [
+      309
+    ],
+    "cover": null,
+    "links": [
+      "https://search.rsl.ru/ru/record/01003529049"
+    ],
+    "articles": [
+      "ukreplenie-4-daanzishan"
+    ]
+  },
+  {
+    "slug": "diletant-76",
+    "title": "Diletant No. 76: A Small Victorious War",
+    "author": "Diletant editorial staff",
+    "author_years": null,
+    "year": "2022",
+    "kind": "history",
+    "level": "start",
+    "verdict": "A special issue for readers new to the different aspects of the war.",
+    "annotation": "The April 2022 issue includes articles on Port Arthur, Tsushima and propaganda, as well as period illustrations and cartoons.",
+    "review_post": [
+      332
+    ],
+    "cover": null,
+    "links": [
+      "https://diletant.media/magazine/"
+    ],
+    "articles": [
+      "diletant-malenkaya-pobedonosnaya-voina"
+    ]
+  },
+  {
+    "slug": "kukushkin-sudostroitelnaya-programma-1881",
+    "title": "Options for Implementing the 1881 Shipbuilding Programme",
+    "author": "Alexei Kukushkin",
+    "author_years": null,
+    "year": "2024",
+    "kind": "history",
+    "level": "deep",
+    "verdict": "For readers interested in how decisions about building the fleet were made and what followed.",
+    "annotation": "Kukushkin examines the 1881 programme, the competing designs and the capacity of Russian shipyards. He then compares the actual development of the fleet with alternatives.",
+    "review_post": [
+      338
+    ],
+    "cover": null,
+    "links": [
+      "https://ridero.ru/books/varianty_vypolneniya_sudostroitelnoi_programmy_1881_goda/"
+    ],
+    "articles": [
+      "kukushkin-sudostroitelnaya-programma-1881"
+    ]
+  },
+  {
+    "slug": "mendeleev-zavetnye-mysli",
+    "title": "Cherished Thoughts",
+    "author": "Dmitri Mendeleev",
+    "author_years": null,
+    "year": "1995",
+    "kind": "reference",
+    "level": "deep",
+    "verdict": "A primary source on how Russians thought about the war in early 1904.",
+    "annotation": "In Chapter V, “On the War with Japan,” Mendeleev discusses the struggle for access to the Pacific, industrial development and Russia’s future. The note uses the complete 1995 edition.",
+    "review_post": [
+      352
+    ],
+    "cover": null,
+    "links": [
+      "https://ru.wikisource.org/wiki/Заветные_мысли_(Д._И._Менделеев)/Глава_5"
+    ],
+    "articles": [
+      "mendeleev-i-yaponskaya-voina"
+    ]
+  },
+  {
+    "slug": "ananich-bankirskie-doma",
+    "title": "Banking Houses in Russia, 1860–1914",
+    "author": "Boris Ananich",
+    "author_years": null,
+    "year": "1991",
+    "kind": "history",
+    "level": "deep",
+    "verdict": "An archival study of Russian private capital.",
+    "annotation": "This study looks at private enterprise through the histories of banking families. The first edition was published by Nauka in Leningrad.",
+    "review_post": [
+      354
+    ],
+    "cover": null,
+    "links": [
+      "https://elib.fa.ru/AVTOGRAF/ananich1991.pdf/en/info"
+    ],
+    "articles": [
+      "ananich-bankirskie-doma"
     ]
   }
 ]

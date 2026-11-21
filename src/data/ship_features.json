@@ -1015,5 +1015,185 @@
       }
     ],
     "photoFile": "/images/hardware/yashima-nh58968.webp"
+  },
+  {
+    "shipSlug": "knyaz-suvorov",
+    "photoFile": "/images/hardware/knyaz-suvorov-1.webp",
+    "period": "Кронштадт, 1904 год. Вид с кормы до похода Второй эскадры.",
+    "features": [
+      {
+        "id": "after-turret",
+        "label": "Кормовая башня",
+        "x": 63,
+        "y": 69,
+        "text": "Два ствола в передней части кадра принадлежат кормовой башне главного калибра. Ещё два 305-мм орудия стояли в носовой башне.",
+        "weaponSlug": "obukhov-305-40",
+        "refs": [
+          1
+        ],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/suvorov/photo/06.jpg"
+        ]
+      },
+      {
+        "id": "after-mast",
+        "label": "Кормовая мачта",
+        "x": 54,
+        "y": 33,
+        "text": "На мачте видна площадка. Реями называют поперечные перекладины, на которых можно было поднимать сигналы.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/suvorov/photo/06.jpg"
+        ]
+      },
+      {
+        "id": "funnels",
+        "label": "Дымовые трубы",
+        "x": 49,
+        "y": 49,
+        "text": "С кормы две трубы перекрывают одна другую. На снимке видна верхушка ближней трубы, а часть второй скрыта за ней.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/suvorov/photo/06.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "shipSlug": "imperator-aleksandr-iii",
+    "photoFile": "/images/hardware/imperator-aleksandr-iii-1.webp",
+    "period": "Кронштадт, 1904 год. Броненосец до отправления на Дальний Восток.",
+    "features": [
+      {
+        "id": "forward-turret",
+        "label": "Носовая башня",
+        "x": 65,
+        "y": 68,
+        "text": "В носовой башне стояли два орудия главного калибра. Вторая такая установка находилась в корме.",
+        "weaponSlug": "obukhov-305-40",
+        "refs": [
+          1
+        ],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/alex3/photo/04.jpg"
+        ]
+      },
+      {
+        "id": "funnels",
+        "label": "Две трубы",
+        "x": 47,
+        "y": 44,
+        "text": "Дымовые трубы стоят между мачтами. Светлая окраска с тёмным верхом хорошо видна на балтийской фотографии.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/alex3/photo/04.jpg"
+        ]
+      },
+      {
+        "id": "forward-mast",
+        "label": "Площадка на мачте",
+        "x": 55,
+        "y": 34,
+        "text": "На передней мачте видна ограждённая площадка, которую называли марсом.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/alex3/photo/04.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "shipSlug": "borodino",
+    "photoFile": "/images/hardware/borodino-1.webp",
+    "period": "Кронштадтский рейд, 1904 год. Русская служба.",
+    "features": [
+      {
+        "id": "after-turret",
+        "label": "Кормовая башня",
+        "x": 20,
+        "y": 58,
+        "text": "Башня у кормы несла пару 305-мм орудий. Другая такая башня видна у противоположного конца корабля.",
+        "weaponSlug": "obukhov-305-40",
+        "refs": [
+          1
+        ],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Borodino1904Kronstadt.jpg"
+        ]
+      },
+      {
+        "id": "funnels",
+        "label": "Дымовые трубы",
+        "x": 40,
+        "y": 46,
+        "text": "Две трубы между мачтами отводили дым от паровых котлов. По числу труб нельзя узнать число котлов.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Borodino1904Kronstadt.jpg"
+        ]
+      },
+      {
+        "id": "bridge",
+        "label": "Носовая надстройка",
+        "x": 57,
+        "y": 52,
+        "text": "Над носовой башней поднимается многоярусная надстройка с мостиком. С неё открывался обзор поверх палубы.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://commons.wikimedia.org/wiki/File:Borodino1904Kronstadt.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "shipSlug": "orel",
+    "photoFile": "/images/hardware/orel-1.webp",
+    "period": "Майдзуру, 1905 год. Броненосец после Цусимского сражения, до японского переоборудования.",
+    "features": [
+      {
+        "id": "forward-turret",
+        "label": "Носовая башня",
+        "x": 30,
+        "y": 66,
+        "text": "Носовую башню на этом снимке видно слева. Как и кормовая установка, она была рассчитана на два 305-мм орудия.",
+        "weaponSlug": "obukhov-305-40",
+        "refs": [
+          1
+        ],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/orel/photo/32.jpg"
+        ]
+      },
+      {
+        "id": "funnels",
+        "label": "Две трубы",
+        "x": 50,
+        "y": 45,
+        "text": "Две трубы ещё стоят на прежних местах. Снимок показывает состояние «Орла» до переоборудования для японского флота.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/orel/photo/32.jpg"
+        ]
+      },
+      {
+        "id": "damage",
+        "label": "Следы повреждений",
+        "x": 59,
+        "y": 73,
+        "text": "В средней части борта видны пробоины и повреждённые конструкции. Фотография фиксирует их после боя, без точного времени и последовательности попаданий.",
+        "weaponSlug": null,
+        "refs": [],
+        "sourceUrls": [
+          "https://tsushima.su/uploads/photoarhiv/ships/russia/epoch_bron/ebr/orel/photo/32.jpg"
+        ]
+      }
+    ]
   }
 ]

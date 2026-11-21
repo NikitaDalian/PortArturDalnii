@@ -1,0 +1,161 @@
+{
+  "sources": {
+    "heritage": {
+      "label": "辽宁省文化和旅游厅《中山广场建筑群》",
+      "url": "https://whly.ln.gov.cn/whly/wlzt/lnww/zdwwbhdw/851036343A2D4CCBB6CE68CDB7890470/index.shtml"
+    },
+    "register": {
+      "label": "辽宁省人民政府《第九批省级文物保护单位》",
+      "url": "https://www.ln.gov.cn/web/zwgkx/lnsrmzfgb/2014n/qk/2014n_deseq/szfwj/95D65AE1E4E44B2BBC43B50BD46EC3C6/index.shtml"
+    },
+    "survey": {
+      "label": "澎湃新闻《中山广场实地调查》，2017年1月发表",
+      "url": "https://www.thepaper.cn/newsDetail_forward_1605369"
+    },
+    "fieldwork": {
+      "label": "辛辛那提大学大连建筑研究，含实地照片和建筑平面图",
+      "url": "https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file/send?accession=ucin1321642088&disposition=inline"
+    },
+    "consulate": {
+      "label": "中国新闻网介绍孙玉关于大连领事馆的研究",
+      "url": "https://www.chinanews.com/cul/2014/07-18/6401800.shtml"
+    },
+    "museum": {
+      "label": "旅顺博物馆，馆藏满铁历史照片展",
+      "url": "https://lvshunmuseum.cn/Exhibition/ProductDetail.aspx?ID=238"
+    },
+    "mantetsu": {
+      "label": "《满铁事业的暴露》第三章，国家图书馆藏本",
+      "url": "https://commons.wikimedia.org/wiki/File:NCL-9910015495_滿鐵事業的暴露,_又名,_滿鐵會社之解剖.pdf"
+    }
+  },
+  "title": "中山广场环线的十个门牌",
+  "intro": "十条街道汇入圆形广场。从1号沿外侧人行道走一圈，依次经过银行、旧市役所、旅馆和音乐厅。这里按门牌介绍正对广场的第一排建筑，每个临街地块对应一个门牌。3号也在其中，如今的大楼建在已拆除的英国领事馆原址上。",
+  "buildings": [
+    {
+      "number": 1,
+      "title": "朝鲜银行大连支店",
+      "zh": "朝鲜银行大连支店旧址",
+      "body": "原朝鲜银行大连支店位于广场西侧。沿低矮的台阶走上门廊，可以看到科林斯式柱头。1945年以后，多家中国银行先后使用过这座建筑，其中包括中国人民银行。后来，建筑外立面挂上了中国工商银行的招牌。",
+      "sources": [
+        "heritage",
+        "survey"
+      ],
+      "photo": "photos/photo_327@archive.jpg",
+      "place": null
+    },
+    {
+      "number": 2,
+      "title": "大连民政署和警察署",
+      "zh": "大连民政署旧址",
+      "place": "politsiya-dajrena",
+      "body": "这座有塔楼的红砖建筑由日本建筑师前田松韵设计，建成于1908年，最初供日本统治时期的大连民政署使用。1922年，民政署迁入市役所办公楼，警察署接管这里。同一座建筑由此留下两个历史名称。",
+      "sources": [
+        "heritage"
+      ],
+      "photo": "photos/photo_502@place.jpg"
+    },
+    {
+      "number": 3,
+      "title": "英国领事馆原址上的大连金融大厦",
+      "zh": "大连金融大厦／英国驻大连领事馆旧址",
+      "body": "英国领事馆于1914年10月在这里开馆。后来英国在大连同时使用两处馆址，广场上的办公地点继续保留，另一处建筑还兼作领事官邸。旧领事馆在20世纪90年代拆除，后来原地建起大连金融大厦。",
+      "sources": [
+        "consulate",
+        "survey"
+      ],
+      "photo": "photos/photo_503@place.jpg",
+      "place": null,
+      "historicalPhoto": "photos/photo_509@place.jpg"
+    },
+    {
+      "number": 4,
+      "title": "大和旅馆",
+      "zh": "大和旅馆旧址",
+      "place": "gostinitsa-yamato",
+      "body": "1914年，南满洲铁道株式会社建成新的大和旅馆大楼。早在1907年，旅馆已在另一处建筑接待客人。带柱廊的立面朝向广场，转角入口后是主要的公共厅室。旅馆后来改名为大连宾馆。",
+      "sources": [
+        "heritage",
+        "museum",
+        "mantetsu",
+        "fieldwork"
+      ],
+      "photo": "photos/photo_325@archive.jpg"
+    },
+    {
+      "number": 5,
+      "title": "大连市役所",
+      "zh": "大连市役所旧址",
+      "place": "merija-dajrena",
+      "body": "大连市役所位于解放街与鲁迅路之间。1922年，大连民政署从2号迁入这里。入口向外凸出，上方耸立着塔楼，走在环路上很容易从几座银行中辨认出这座旧市役所。",
+      "sources": [
+        "heritage",
+        "register",
+        "fieldwork"
+      ],
+      "photo": "photos/photo_504@place.jpg"
+    },
+    {
+      "number": 6,
+      "title": "东洋拓殖株式会社大连支店",
+      "zh": "东洋拓殖株式会社大连支店旧址",
+      "body": "靠近人民路路口的是日本东洋拓殖株式会社大连支店旧址。这家公司曾为日本控制地区的经济开发提供资金。战后，地方政府曾在这里办公，后来交通银行迁入。",
+      "sources": [
+        "register",
+        "survey",
+        "fieldwork"
+      ],
+      "photo": "photos/photo_505@place.jpg",
+      "place": null
+    },
+    {
+      "number": 7,
+      "title": "大清银行大连支店",
+      "zh": "大清银行大连支店旧址",
+      "body": "1911至1912年清朝覆亡之前，大清银行已在广场开设大连支店。走到七一街转角，就能看到它的弧形立面。中国银行后来使用过这座建筑。开展广场实地调查时，这里是中信银行的营业场所。",
+      "sources": [
+        "register",
+        "survey",
+        "fieldwork"
+      ],
+      "photo": "photos/photo_506@place.jpg",
+      "place": null
+    },
+    {
+      "number": 8,
+      "title": "大连人民文化俱乐部",
+      "zh": "大连人民文化俱乐部",
+      "body": "这座兼作音乐厅和剧场的建筑于1951年开放，当时中华人民共和国已经成立。苏联专家参与了设计。大楼在20世纪90年代改建，今天的外立面与早期照片有所不同。",
+      "sources": [
+        "survey",
+        "fieldwork"
+      ],
+      "photo": "photos/photo_507@place.jpg",
+      "place": null
+    },
+    {
+      "number": 9,
+      "title": "横滨正金银行大连支店",
+      "zh": "横滨正金银行大连支店旧址",
+      "place": "bank-yokohama",
+      "body": "1909年，日本横滨正金银行在民生街与上海路之间有了自己的营业楼。旧支店的立面依然朝向广场，后面是后来建起的中国银行大连分行大楼。",
+      "sources": [
+        "register",
+        "fieldwork"
+      ],
+      "photo": "photos/photo_326@archive.jpg"
+    },
+    {
+      "number": 10,
+      "title": "关东都督府邮便电信局",
+      "zh": "关东都督府邮便电信局旧址",
+      "body": "关东都督府邮便电信局曾在这里办公，后来这座建筑仍作邮政用途。长江路上的大连中央邮便局旧址是另一处文物建筑。",
+      "sources": [
+        "register",
+        "survey"
+      ],
+      "photo": "photos/photo_508@place.jpg",
+      "place": null
+    }
+  ]
+}

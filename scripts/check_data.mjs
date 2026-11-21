@@ -126,9 +126,9 @@ for (const [slug, reading] of Object.entries(read('document_readings'))) {
   if (new Set(sectionIds).size !== sectionIds.length) errors.push(`${slug}: duplicate document sections`);
 }
 errors.push(...validateFleetOverview(read('fleet_overview'),read('hardware'),maps.articles));
-for(const row of read('fleet_overview').ships)if(!row.illustration?.file||!existsSync(new URL(`../public/${row.illustration.file}`,import.meta.url)))errors.push(`fleet_overview/${row.shipSlug}: missing profile image`);
+for(const row of read('fleet_overview').ships)if(row.illustration&&!existsSync(new URL(`../public/${row.illustration.file}`,import.meta.url)))errors.push(`fleet_overview/${row.shipSlug}: missing profile image`);
 errors.push(...validateReadingNotes(read('reading_notes'),data.articles,essays));
-errors.push(...validateShipFeatures(read('ship_features'),read('hardware'),{ships:read('fleet_overview').ships.map(row=>({shipSlug:row.shipSlug,references:row.illustration.sourceUrls.map(url=>({url}))}))}));
+errors.push(...validateShipFeatures(read('ship_features'),read('hardware'),{ships:read('fleet_overview').ships.map(row=>({shipSlug:row.shipSlug,references:(row.illustration?.sourceUrls??[]).map(url=>({url}))}))}));
 for(const [slug,limit] of Object.entries(read('reading_note_limits')))if(!maps.articles.has(slug)||!Number.isInteger(limit)||limit<1||limit>8)errors.push(`reading_note_limits/${slug}: invalid reviewed summary budget`);
 errors.push(...validateHardware(read('hardware'),{
   assetsExist:file=>existsSync(new URL(`../public${file}`,import.meta.url)),

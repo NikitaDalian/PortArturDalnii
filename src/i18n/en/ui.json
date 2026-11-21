@@ -914,6 +914,7 @@
   "Как читать сравнение": "How to read the comparison",
   "Все материалы": "All material",
   "Первая Тихоокеанская эскадра": "First Pacific Squadron",
+  "Вторая Тихоокеанская эскадра": "Second Pacific Squadron",
   "Японский флот": "Japanese fleet",
   "Чемульпо": "Chemulpo",
   "Все корабли": "All ships",
@@ -953,7 +954,8 @@
   "Разобраться в эпохах": "Explore the historical periods",
   "Как менялись город и его жители. Исторические периоды, свидетельства современников и книги для дальнейшего чтения.": "How the city and its people changed. Historical periods, eyewitness accounts and books for further reading.",
   "Новое на сайте": "New on the site",
-  "Сравните корабли эскадры": "Compare the squadron’s ships",
+  "Сравните корабли по длине": "Compare ships by length",
+  "Линейки показывают длину корпуса в общем масштабе. Архивные фотографии и рисунки сопровождаются подписями об их происхождении.": "The bars show hull length on a single scale. Captions identify the sources of archival photographs and illustrations.",
   "От самого длинного корпуса к самому короткому. Линейки приведены к общему масштабу; архивные фотографии показывают облик кораблей и не приведены к общему масштабу.": "From the longest hull to the shortest. The length bars share a common scale; archival photographs show the ships’ appearance and are not to scale.",
   "Фотографии и размеры": "Photographs and dimensions",
   "Сопоставимая длина не подтверждена — вне шкалы.": "A comparable length has not been confirmed; excluded from the scale.",
@@ -963,5 +965,7 @@
   "Фотография корабля: можно прокручивать по горизонтали": "Ship photograph: scroll horizontally",
   "О фотографии": "About the photograph",
   "Точки обозначают области корабля на архивном снимке. Устройство внутренних механизмов и брони объясняется по источникам: снаружи эти детали не видны.": "The points mark areas of the ship in an archival photograph. Internal machinery and armour are explained from sources; these details cannot be seen from outside.",
-  "Источники биографии": "Biographical sources"
+  "Источники биографии": "Biographical sources",
+  "Мост": "Bridge",
+  "Десять адресов вокруг площади Чжуншань": "Ten addresses around Zhongshan Square"
 }
