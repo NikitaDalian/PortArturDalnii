@@ -282,8 +282,9 @@ const russianDossiers: Dossier[] = [
       {"title": "Приказ о передаче укреплений после капитуляции", "url": "https://militera.lib.ru/db/larenko_pn/09.html", "note": "П. Н. Ларенко, «Страдные дни Порт-Артура», раздел IX, приказ № 975. Использована HTML-перепечатка опубликованного документа; подписанный подлинник не просмотрен."},
     ],
     notes: ['ukreplenie-5-yahutszui', 'kak-ustroen-fort'],
-    people: ['velichko'], library: [],
+    people: ['velichko'], library: ['video-ukreplenie-5'],
     related: [
+      { label: 'Видео об укреплении № 5 в библиотеке', url: href.source('video-ukreplenie-5') },
       { label: 'Схема типового форта', url: href.note('kak-ustroen-fort') },
       { label: 'Константин Величко', url: href.person('velichko') },
       { label: 'Батарея Электрический утёс', url: href.place('elektricheskiy-utes') },

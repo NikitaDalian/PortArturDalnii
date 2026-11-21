@@ -17,6 +17,7 @@ import descriptionsJson from '../data/reference_descriptions.json';
 import referenceMediaJson from '../data/reference_media.json';
 import personRedirects from '../data/person_redirects.json';
 import { assetUrl, locale, intlLocale } from '../i18n/locale';
+import { annotatedNoteSlugs } from './telegramAnnotations';
 
 export type LayerKey = 'pre1898' | 'russian' | 'japanese' | 'soviet' | 'modern';
 export type Article = (typeof articlesJson)[number];
@@ -180,6 +181,10 @@ export function entity(kind: 'person' | 'place' | 'book', slug: string): { href:
 }
 
 export const articlesOf = (slugs: string[] = []) => slugs.map((s) => articleBySlug.get(s)).filter(Boolean) as Article[];
+
+export function articlesAbout(kind: 'person' | 'place' | 'book' | 'source' | 'ship' | 'weapon', slug: string, related: string[] = []) {
+  return articlesOf([...new Set([...related, ...annotatedNoteSlugs(kind, slug)])]);
+}
 
 /** Связи заметки в обе стороны: её собственные списки + сущности, которые сами ссылаются на заметку
  *  (people[].articles, places[].articles, books[]/sources[].articles). Так заметка всегда ссылается обратно. */

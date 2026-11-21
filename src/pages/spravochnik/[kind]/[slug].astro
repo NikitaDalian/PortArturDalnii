@@ -5,7 +5,7 @@ import LinkedText from '../../../components/LinkedText.astro';
 import { mentionContext } from '../../../lib/mentions';
 import Crumbs from '../../../components/Crumbs.astro';
 import Related from '../../../components/Related.astro';
-import { articles, terms, referenceDescriptions, referencePhoto, img, href, tgPost, personBySlug } from '../../../lib/data';
+import { articles, articlesAbout, terms, referenceDescriptions, referencePhoto, img, href, tgPost, personBySlug } from '../../../lib/data';
 export function getStaticPaths() {
   return (['people', 'geo'] as const).flatMap((kind) => Object.entries(terms[kind]).map(([slug, name]) => ({ params: { kind, slug }, props: { kind, slug, name } })));
 }
@@ -16,11 +16,12 @@ const photo = referencePhoto(kind, slug);
 const mentions = mentionContext([`${kind === 'people' ? 'person' : 'place'}/${slug}`]);
 if (!description) throw new Error(`Missing reference description: ${kind}/${slug}`);
 const field = kind === 'people' ? 'people' : 'places';
-const notes = articles.filter((a) => (a[field] as string[]).includes(slug));
+const thematic = articles.filter((a) => (a[field] as string[]).includes(slug));
+const notes = articlesAbout(kind === 'people' ? 'person' : 'place', slug, thematic.map((a) => a.slug));
 const related = {
-  people: [...new Set(notes.flatMap((a) => a.people))].filter((s) => s !== slug).slice(0, 10),
-  places: [...new Set(notes.flatMap((a) => a.places))].filter((s) => s !== slug).slice(0, 10),
-  books: [...new Set(notes.flatMap((a) => a.books))].slice(0, 8),
+  people: [...new Set(thematic.flatMap((a) => a.people))].filter((s) => s !== slug).slice(0, 10),
+  places: [...new Set(thematic.flatMap((a) => a.places))].filter((s) => s !== slug).slice(0, 10),
+  books: [...new Set(thematic.flatMap((a) => a.books))].slice(0, 8),
 };
 ---
 {redirectTo ? <StaticRedirect destination={redirectTo} title={name} /> : <Base title={name} description={description.slice(0,180)} section={kind === 'people' ? 'people' : 'map'}>

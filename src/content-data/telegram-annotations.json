@@ -1,0 +1,1052 @@
+[
+  {
+    "postId": 6,
+    "quote": "«Микасу»",
+    "kind": "ship",
+    "slug": "mikasa"
+  },
+  {
+    "postId": 6,
+    "quote": "контрибуцию в 200 миллионов лянов серебра",
+    "kind": "term",
+    "slug": "war-indemnity"
+  },
+  {
+    "postId": 6,
+    "quote": "концессию",
+    "kind": "term",
+    "slug": "concession"
+  },
+  {
+    "postId": 7,
+    "quote": "статс-секретарём Александром Безобразовым",
+    "kind": "person",
+    "slug": "bezobrazov"
+  },
+  {
+    "postId": 7,
+    "quote": "мемуаров Сергея Витте",
+    "kind": "book",
+    "slug": "vitte-vospominaniya"
+  },
+  {
+    "postId": 8,
+    "quote": "внешнем рейде",
+    "kind": "term",
+    "slug": "roadstead"
+  },
+  {
+    "postId": 8,
+    "quote": "его флагман «Петропавловск»",
+    "kind": "ship",
+    "slug": "petropavlovsk"
+  },
+  {
+    "postId": 8,
+    "quote": "гора Высокая",
+    "kind": "place",
+    "slug": "vysokaya-gora"
+  },
+  {
+    "postId": 9,
+    "quote": "Зиновия Рожественского",
+    "kind": "person",
+    "slug": "rozhestvenskii"
+  },
+  {
+    "postId": 9,
+    "quote": "Цусимском проливе",
+    "kind": "place",
+    "slug": "tsusima"
+  },
+  {
+    "postId": 10,
+    "quote": "Такахаси Корэкиё",
+    "kind": "person",
+    "slug": "takahasi"
+  },
+  {
+    "postId": 10,
+    "quote": "американском Портсмуте",
+    "kind": "place",
+    "slug": "portsmut"
+  },
+  {
+    "postId": 10,
+    "quote": "избежать контрибуции",
+    "kind": "term",
+    "slug": "war-indemnity"
+  },
+  {
+    "postId": 28,
+    "quote": "автотипии",
+    "kind": "term",
+    "slug": "halftone-printing"
+  },
+  {
+    "postId": 28,
+    "quote": "«Альбом боевой жизни XVII Армейского корпуса во время русско-японской войны 1904–1905 гг.»",
+    "kind": "source",
+    "slug": "albom-boevoy-zhizni-xvii-korpusa"
+  },
+  {
+    "postId": 28,
+    "quote": "цветные работы самого Прокудина-Горского",
+    "kind": "source",
+    "slug": "prokudin-gorskiy-biblioteka-kongressa"
+  },
+  {
+    "postId": 30,
+    "quote": "«Русско-японская война 1904–1905 г.»",
+    "kind": "source",
+    "slug": "albom-russko-yaponskaya-voyna-shtab-1905"
+  },
+  {
+    "postId": 30,
+    "quote": "Путиловская сопка",
+    "kind": "place",
+    "slug": "sopka-putilovskaya"
+  },
+  {
+    "postId": 43,
+    "quote": "«Анекдоты Российской империи. Русско-японская война»",
+    "kind": "book",
+    "slug": "shevchenko-anekdoty-rossiyskoy-imperii-russko-yaponskaya-voyna"
+  },
+  {
+    "postId": 45,
+    "quote": "Александр Фок",
+    "kind": "person",
+    "slug": "fok"
+  },
+  {
+    "postId": 45,
+    "quote": "«Семья Звонарёвых»",
+    "kind": "book",
+    "slug": "stepanov-semya-zvonaryovyh"
+  },
+  {
+    "postId": 45,
+    "quote": "неожиданные результаты литературно-архивного поиска",
+    "kind": "source",
+    "slug": "nikolaev-chistyakov-port-artur-arhivnyy-poisk"
+  },
+  {
+    "postId": 50,
+    "quote": "поднял русский флаг над Золотой горой",
+    "kind": "place",
+    "slug": "zolotaya-gora"
+  },
+  {
+    "postId": 50,
+    "quote": "военного инженера Константина Величко",
+    "kind": "person",
+    "slug": "velichko"
+  },
+  {
+    "postId": 50,
+    "quote": "на форте № 2",
+    "kind": "place",
+    "slug": "fort-2"
+  },
+  {
+    "postId": 64,
+    "quote": "на бруствер",
+    "kind": "term",
+    "slug": "breastwork"
+  },
+  {
+    "postId": 64,
+    "quote": "«Мокшанский полк на сопках Маньчжурии»",
+    "kind": "source",
+    "slug": "vals-na-sopkah-manchzhurii"
+  },
+  {
+    "postId": 68,
+    "quote": "группа Безобразова",
+    "kind": "person",
+    "slug": "bezobrazov"
+  },
+  {
+    "postId": 68,
+    "quote": "во главе с Алексеевым",
+    "kind": "person",
+    "slug": "alekseev"
+  },
+  {
+    "postId": 68,
+    "quote": "фразу Плеве",
+    "kind": "person",
+    "slug": "plehve"
+  },
+  {
+    "postId": 74,
+    "quote": "принц Георг Греческий",
+    "kind": "person",
+    "slug": "georg-grecheskii"
+  },
+  {
+    "postId": 74,
+    "quote": "бывший самурай Цуда Сандзо",
+    "kind": "person",
+    "slug": "tsuda-sandzo"
+  },
+  {
+    "postId": 74,
+    "quote": "первый камень Уссурийской дороги",
+    "kind": "place",
+    "slug": "transsib"
+  },
+  {
+    "postId": 79,
+    "quote": "«Одумайтесь!»",
+    "kind": "source",
+    "slug": "tolstoy-odumaytes"
+  },
+  {
+    "postId": 79,
+    "quote": "Владимир Чертков",
+    "kind": "person",
+    "slug": "chertkov"
+  },
+  {
+    "postId": 79,
+    "quote": "27 января (9 января) 1904 года",
+    "slug": "port-arthur-attack-date",
+    "kind": "term"
+  },
+  {
+    "postId": 84,
+    "quote": "Квантунской области",
+    "kind": "place",
+    "slug": "kvantun"
+  },
+  {
+    "postId": 84,
+    "quote": "окружение Безобразова",
+    "kind": "person",
+    "slug": "bezobrazov"
+  },
+  {
+    "postId": 84,
+    "quote": "Мемуары Витте",
+    "kind": "book",
+    "slug": "vitte-vospominaniya"
+  },
+  {
+    "postId": 89,
+    "quote": "«Русско-японская война 1904–1905»",
+    "kind": "book",
+    "slug": "martin-russko-yaponskaya-voyna"
+  },
+  {
+    "postId": 91,
+    "quote": "лейтенант Уильям Артур",
+    "kind": "person",
+    "slug": "artur"
+  },
+  {
+    "postId": 92,
+    "quote": "Статья «Русско-японская война» на Неолурке",
+    "kind": "source",
+    "slug": "neolurk-russko-yaponskaya-voyna"
+  },
+  {
+    "postId": 92,
+    "quote": "потом Мартин",
+    "kind": "book",
+    "slug": "martin-russko-yaponskaya-voyna"
+  },
+  {
+    "postId": 93,
+    "quote": "бухте Виктория",
+    "kind": "place",
+    "slug": "port-dalniy"
+  },
+  {
+    "postId": 93,
+    "quote": "архитектор Казимир Сколимовский",
+    "kind": "person",
+    "slug": "skolimovsky"
+  },
+  {
+    "postId": 93,
+    "quote": "площадь Чжуншань",
+    "kind": "place",
+    "slug": "nikolaevskaya-ploshchad"
+  },
+  {
+    "postId": 102,
+    "quote": "фонд 487 «Русско-японская война 1904–1905 гг.»",
+    "kind": "source",
+    "slug": "rosarhiv-elektronnyy-chitalnyy-zal"
+  },
+  {
+    "postId": 102,
+    "quote": "Japan Center for Asian Historical Records",
+    "kind": "source",
+    "slug": "jacar"
+  },
+  {
+    "postId": 109,
+    "quote": "«Ляо-дун и его порты: Порт-Артур и Да-лянь-вань»",
+    "kind": "book",
+    "slug": "kotvich-borodovskiy-lyao-dun-i-ego-porty"
+  },
+  {
+    "postId": 109,
+    "quote": "60–80 фанз",
+    "kind": "term",
+    "slug": "fanza"
+  },
+  {
+    "postId": 111,
+    "quote": "Шаньхайгуань",
+    "kind": "place",
+    "slug": "shanhaiguan"
+  },
+  {
+    "postId": 111,
+    "quote": "адмирал Евгений Иванович Алексеев",
+    "kind": "person",
+    "slug": "alekseev"
+  },
+  {
+    "postId": 114,
+    "quote": "66 вымпелов",
+    "kind": "term",
+    "slug": "pennant-count"
+  },
+  {
+    "postId": 114,
+    "quote": "инженер В.В. Сахаров",
+    "kind": "person",
+    "slug": "saharov"
+  },
+  {
+    "postId": 114,
+    "quote": "архитектор К.Э. Сколимовский",
+    "kind": "person",
+    "slug": "skolimovsky"
+  },
+  {
+    "postId": 115,
+    "quote": "приехал Ли Хунчжан",
+    "kind": "person",
+    "slug": "li-hunchzhan"
+  },
+  {
+    "postId": 115,
+    "quote": "концессию на дорогу",
+    "kind": "term",
+    "slug": "concession"
+  },
+  {
+    "postId": 120,
+    "quote": "«Прапорщики по Адмиралтейству»",
+    "kind": "book",
+    "slug": "poselyagin-praporshchiki-po-admiralteystvu"
+  },
+  {
+    "postId": 120,
+    "quote": "«Петропавловске»",
+    "kind": "ship",
+    "slug": "petropavlovsk"
+  },
+  {
+    "postId": 122,
+    "quote": "обещанные Ли Хунчжану",
+    "kind": "person",
+    "slug": "li-hunchzhan"
+  },
+  {
+    "postId": 123,
+    "quote": "историки Д. Николаев и О. Чистяков проверили эту историю по архивам",
+    "kind": "source",
+    "slug": "nikolaev-chistyakov-port-artur-arhivnyy-poisk"
+  },
+  {
+    "postId": 123,
+    "quote": "по роману Александра Степанова",
+    "kind": "book",
+    "slug": "stepanov-port-artur"
+  },
+  {
+    "postId": 124,
+    "quote": "Императрица Цыси",
+    "kind": "person",
+    "slug": "tsysi"
+  },
+  {
+    "postId": 124,
+    "quote": "снизили контрибуцию",
+    "kind": "term",
+    "slug": "war-indemnity"
+  },
+  {
+    "postId": 124,
+    "quote": "будущую КВЖД",
+    "kind": "place",
+    "slug": "kvzhd"
+  },
+  {
+    "postId": 126,
+    "quote": "выпуск про Русско-японскую войну",
+    "kind": "source",
+    "slug": "minaev-live-russko-yaponskaya-voyna"
+  },
+  {
+    "postId": 127,
+    "quote": "66 вымпелов",
+    "kind": "term",
+    "slug": "pennant-count"
+  },
+  {
+    "postId": 127,
+    "quote": "вице-адмирал Оскар Викторович Старк",
+    "kind": "person",
+    "slug": "stark"
+  },
+  {
+    "postId": 127,
+    "quote": "в нейтральные порты, где их разоружили",
+    "kind": "term",
+    "slug": "internment"
+  },
+  {
+    "postId": 137,
+    "quote": "Вячеслав Плеве",
+    "kind": "person",
+    "slug": "plehve"
+  },
+  {
+    "postId": 137,
+    "quote": "«Воспоминания»",
+    "kind": "book",
+    "slug": "vitte-vospominaniya"
+  },
+  {
+    "postId": 138,
+    "quote": "генерала Николая Линевича",
+    "kind": "person",
+    "slug": "linevich"
+  },
+  {
+    "postId": 138,
+    "quote": "Контрибуция",
+    "kind": "term",
+    "slug": "war-indemnity"
+  },
+  {
+    "postId": 138,
+    "quote": "Китайско-Восточную железную дорогу",
+    "kind": "place",
+    "slug": "kvzhd"
+  },
+  {
+    "postId": 142,
+    "quote": "Книга «Россия и Франция: сердечное согласие (1889–1900)»",
+    "kind": "book",
+    "slug": "molodyakov-rossiya-i-frantsiya"
+  },
+  {
+    "postId": 142,
+    "quote": "«Россией и Японией» (1905–1916)",
+    "kind": "book",
+    "slug": "molodyakov-rossiya-i-yaponiya-zolotoy-vek"
+  },
+  {
+    "postId": 142,
+    "quote": "в апреле 1904-го, в разгар осады Порт-Артура",
+    "slug": "entente-and-port-arthur-siege",
+    "kind": "term"
+  },
+  {
+    "postId": 143,
+    "quote": "при храме Госиндзи в Нагасаки",
+    "kind": "place",
+    "slug": "nagasaki-goshinji"
+  },
+  {
+    "postId": 143,
+    "quote": "«Миша из Нагасаки»",
+    "kind": "source",
+    "slug": "nikolaev-misha-iz-nagasaki"
+  },
+  {
+    "postId": 144,
+    "quote": "«Яхуцзуй» (鸦户嘴)",
+    "kind": "place",
+    "slug": "ukreplenie-5"
+  },
+  {
+    "postId": 144,
+    "quote": "Константин Иванович Величко",
+    "kind": "person",
+    "slug": "velichko"
+  },
+  {
+    "postId": 144,
+    "quote": "в этих казематах",
+    "kind": "term",
+    "slug": "casemate"
+  },
+  {
+    "postId": 154,
+    "quote": "на Укреплении № 5 в Люйшуне",
+    "kind": "place",
+    "slug": "ukreplenie-5"
+  },
+  {
+    "postId": 155,
+    "quote": "его записках «На японской войне»",
+    "kind": "book",
+    "slug": "veresaev-na-yaponskoy-voyne"
+  },
+  {
+    "postId": 155,
+    "quote": "из реляций Куропаткина",
+    "kind": "person",
+    "slug": "kuropatkin"
+  },
+  {
+    "postId": 158,
+    "quote": "владивостокский купец Юлий Бринер",
+    "kind": "person",
+    "slug": "briner"
+  },
+  {
+    "postId": 158,
+    "quote": "лесную концессию на реках Ялу и Тумень",
+    "kind": "term",
+    "slug": "concession"
+  },
+  {
+    "postId": 158,
+    "quote": "контр-адмирал А.М. Абаза",
+    "kind": "person",
+    "slug": "abaza"
+  },
+  {
+    "postId": 159,
+    "quote": "«Русский Порт-Артур в 1904 году»",
+    "kind": "book",
+    "slug": "lysev-russkiy-port-artur-v-1904-godu"
+  },
+  {
+    "postId": 159,
+    "quote": "на Новом городе",
+    "kind": "place",
+    "slug": "novy-gorod-taiyangou"
+  },
+  {
+    "postId": 161,
+    "quote": "Илья Семёнович Левитов",
+    "kind": "person",
+    "slug": "levitov"
+  },
+  {
+    "postId": 161,
+    "quote": "Деан Суботич",
+    "kind": "person",
+    "slug": "subotich"
+  },
+  {
+    "postId": 161,
+    "quote": "Приамурский генерал-губернатор Николай Гродеков",
+    "kind": "person",
+    "slug": "grodekov"
+  },
+  {
+    "postId": 164,
+    "quote": "гибель «Петропавловска»",
+    "kind": "ship",
+    "slug": "petropavlovsk"
+  },
+  {
+    "postId": 164,
+    "quote": "О горе Высокой",
+    "kind": "place",
+    "slug": "vysokaya-gora"
+  },
+  {
+    "postId": 164,
+    "quote": "Лилье М.И. Дневник осады Порт-Артура",
+    "kind": "book",
+    "slug": "lilye-dnevnik-osady-port-artura"
+  },
+  {
+    "postId": 167,
+    "quote": "Карла Иессена",
+    "kind": "person",
+    "slug": "iessen"
+  },
+  {
+    "postId": 167,
+    "quote": "Камимура Хиконодзё",
+    "kind": "person",
+    "slug": "kamimura"
+  },
+  {
+    "postId": 174,
+    "quote": "бруствер",
+    "kind": "term",
+    "slug": "breastwork"
+  },
+  {
+    "postId": 174,
+    "quote": "капониры",
+    "slug": "caponier",
+    "kind": "term"
+  },
+  {
+    "postId": 175,
+    "quote": "Валентин Саввич Пикуль",
+    "kind": "person",
+    "slug": "pikul"
+  },
+  {
+    "postId": 180,
+    "quote": "«Реформатор после реформ. С. Ю. Витте и российское общество. 1906–1915 годы»",
+    "kind": "book",
+    "slug": "saginadze-reformator-posle-reform"
+  },
+  {
+    "postId": 180,
+    "quote": "Сергее Витте",
+    "kind": "person",
+    "slug": "vitte"
+  },
+  {
+    "postId": 183,
+    "quote": "«Манджурия. Русско-японская война»",
+    "kind": "source",
+    "slug": "albom-mandzhuriya-1906"
+  },
+  {
+    "postId": 189,
+    "quote": "«Русский Порт-Артур в 1904 году. История военной повседневности»",
+    "kind": "book",
+    "slug": "lysev-russkiy-port-artur-v-1904-godu"
+  },
+  {
+    "postId": 189,
+    "quote": "«Нитиро сэнъэки сясинтё»",
+    "kind": "source",
+    "slug": "nitiro-senyeki-syasincho"
+  },
+  {
+    "postId": 199,
+    "quote": "«Кризис нравственного сознания в России и русско-японская война 1904–1905 годов»",
+    "kind": "book",
+    "slug": "panishchev-krizis-nravstvennogo-soznaniya"
+  },
+  {
+    "postId": 200,
+    "quote": "«Крейсера» Пикуля",
+    "kind": "book",
+    "slug": "pikul-kreysera"
+  },
+  {
+    "postId": 200,
+    "quote": "Карл Петрович Иессен",
+    "kind": "person",
+    "slug": "iessen"
+  },
+  {
+    "postId": 200,
+    "quote": "Камимура Хиконодзё",
+    "kind": "person",
+    "slug": "kamimura"
+  },
+  {
+    "postId": 210,
+    "quote": "генерал Роман Исидорович Кондратенко",
+    "kind": "person",
+    "slug": "kondratenko"
+  },
+  {
+    "postId": 214,
+    "quote": "«Поручики по Адмиралтейству»",
+    "kind": "book",
+    "slug": "poselyagin-poruchiki-po-admiralteystvu"
+  },
+  {
+    "postId": 216,
+    "quote": "«Русско-японская война 1904–1905 гг.»",
+    "kind": "source",
+    "slug": "nazarenko-lektsiya-russko-yaponskaya-voyna"
+  },
+  {
+    "postId": 219,
+    "quote": "«На сопках Маньчжурии»",
+    "kind": "source",
+    "slug": "vals-na-sopkah-manchzhurii"
+  },
+  {
+    "postId": 219,
+    "quote": "Ильи Шатрова",
+    "kind": "person",
+    "slug": "shatrov"
+  },
+  {
+    "postId": 227,
+    "quote": "Величко",
+    "kind": "person",
+    "slug": "velichko"
+  },
+  {
+    "postId": 234,
+    "quote": "лекции Кирилла Назаренко",
+    "kind": "source",
+    "slug": "nazarenko-lektsiya-russko-yaponskaya-voyna"
+  },
+  {
+    "postId": 234,
+    "quote": "Витгефт",
+    "kind": "person",
+    "slug": "vitgeft"
+  },
+  {
+    "postId": 235,
+    "quote": "Вячеславу Константиновичу фон Плеве",
+    "kind": "person",
+    "slug": "plehve"
+  },
+  {
+    "postId": 241,
+    "quote": "«Кондратенко»",
+    "kind": "book",
+    "slug": "kulichkin-kondratenko"
+  },
+  {
+    "postId": 242,
+    "quote": "Михаил Осипович Меньшиков",
+    "kind": "person",
+    "slug": "menshikov"
+  },
+  {
+    "postId": 242,
+    "quote": "«Писем к ближним»",
+    "kind": "book",
+    "slug": "menshikov-pisma-k-blizhnim-1902-1904"
+  },
+  {
+    "postId": 244,
+    "quote": "Евгений Сергеевич Боткин",
+    "kind": "person",
+    "slug": "botkin"
+  },
+  {
+    "postId": 244,
+    "quote": "«Свет и тени русско-японской войны»",
+    "kind": "book",
+    "slug": "botkin-svet-i-teni-russko-yaponskoy-voyny"
+  },
+  {
+    "postId": 244,
+    "quote": "перевязочные под шрапнелью",
+    "kind": "term",
+    "slug": "shrapnel"
+  },
+  {
+    "postId": 250,
+    "quote": "Русско-японская война и отношение к ней большевиков",
+    "kind": "book",
+    "slug": "yaroslavskiy-russko-yaponskaya-voyna-i-bolsheviki"
+  },
+  {
+    "postId": 251,
+    "quote": "Константин Дмитриевич Бальмонт",
+    "kind": "person",
+    "slug": "balmont"
+  },
+  {
+    "postId": 251,
+    "quote": "«Наш царь»",
+    "kind": "source",
+    "slug": "balmont-nash-tsar"
+  },
+  {
+    "postId": 255,
+    "quote": "«На пути к краху. Русско-японская война 1904–1905 гг. Военно-политическая история»",
+    "kind": "book",
+    "slug": "ayrapetov-na-puti-k-krahu"
+  },
+  {
+    "postId": 256,
+    "quote": "Ли Хунчжан, тот самый",
+    "kind": "person",
+    "slug": "li-hunchzhan"
+  },
+  {
+    "postId": 256,
+    "quote": "Витте вспоминал",
+    "kind": "person",
+    "slug": "vitte"
+  },
+  {
+    "postId": 263,
+    "quote": "Евгений Боткин",
+    "kind": "person",
+    "slug": "botkin"
+  },
+  {
+    "postId": 263,
+    "quote": "«Свет и тени русско-японской войны»",
+    "kind": "book",
+    "slug": "botkin-svet-i-teni-russko-yaponskoy-voyny"
+  },
+  {
+    "postId": 269,
+    "quote": "площадь Чжуншань",
+    "kind": "place",
+    "slug": "nikolaevskaya-ploshchad"
+  },
+  {
+    "postId": 269,
+    "quote": "Сахаров",
+    "kind": "person",
+    "slug": "saharov"
+  },
+  {
+    "postId": 269,
+    "quote": "Казимире Сколимовском",
+    "kind": "person",
+    "slug": "skolimovsky"
+  },
+  {
+    "postId": 276,
+    "quote": "Журнал «Зодчий» за 1904 год",
+    "kind": "source",
+    "slug": "zodchiy-plan-dalnego-1904"
+  },
+  {
+    "postId": 276,
+    "quote": "Сколимовского",
+    "kind": "person",
+    "slug": "skolimovsky"
+  },
+  {
+    "postId": 280,
+    "quote": "Россия и Япония: золотой век (1905–1916)",
+    "kind": "book",
+    "slug": "molodyakov-rossiya-i-yaponiya-zolotoy-vek"
+  },
+  {
+    "postId": 281,
+    "quote": "«Монголия»",
+    "kind": "ship",
+    "slug": "mongoliya"
+  },
+  {
+    "postId": 281,
+    "quote": "Центрального военного клинического госпиталя имени Мандрыка",
+    "kind": "source",
+    "slug": "mandryka-oborona-port-artura"
+  },
+  {
+    "postId": 285,
+    "quote": "Василий Верещагин",
+    "kind": "person",
+    "slug": "vereshchagin"
+  },
+  {
+    "postId": 285,
+    "quote": "«Петропавловска»",
+    "kind": "ship",
+    "slug": "petropavlovsk"
+  },
+  {
+    "postId": 294,
+    "quote": "«Алмазная колесница» из серии",
+    "kind": "book",
+    "slug": "akunin-almaznaya-kolesnitsa"
+  },
+  {
+    "postId": 295,
+    "quote": "Россия и СССР в войнах XX века. Потери вооружённых сил",
+    "kind": "book",
+    "slug": "krivosheev-rossiya-sssr-poteri-2001"
+  },
+  {
+    "postId": 295,
+    "quote": "гору Высокую",
+    "kind": "place",
+    "slug": "vysokaya-gora"
+  },
+  {
+    "postId": 299,
+    "quote": "Генерал Александр Викторович Фок",
+    "kind": "person",
+    "slug": "fok"
+  },
+  {
+    "postId": 299,
+    "quote": "форт № II",
+    "kind": "place",
+    "slug": "fort-2"
+  },
+  {
+    "postId": 299,
+    "quote": "адмирал Григорович",
+    "kind": "person",
+    "slug": "grigorovich"
+  },
+  {
+    "postId": 303,
+    "quote": "Русский Порт-Артур в 1904 году",
+    "kind": "book",
+    "slug": "lysev-russkiy-port-artur-v-1904-godu"
+  },
+  {
+    "postId": 303,
+    "quote": "Getty images",
+    "kind": "source",
+    "slug": "siege-port-arthur-getty"
+  },
+  {
+    "postId": 309,
+    "quote": "форт № IV",
+    "kind": "place",
+    "slug": "fort-4"
+  },
+  {
+    "postId": 309,
+    "quote": "на горе Дааньцзышань",
+    "kind": "place",
+    "slug": "ukreplenie-4"
+  },
+  {
+    "postId": 329,
+    "quote": "Василии Ивановиче Немировиче-Данченко",
+    "kind": "person",
+    "slug": "vasilii-nemirovich-danchenko"
+  },
+  {
+    "postId": 329,
+    "quote": "Рашевском",
+    "kind": "person",
+    "slug": "sergei-rashevskii"
+  },
+  {
+    "postId": 332,
+    "quote": "журнала «Дилетант» за апрель 2022 года",
+    "kind": "book",
+    "slug": "diletant-76"
+  },
+  {
+    "postId": 333,
+    "quote": "Константина Ивановича Величко",
+    "kind": "person",
+    "slug": "velichko"
+  },
+  {
+    "postId": 333,
+    "quote": "Куропаткине",
+    "kind": "person",
+    "slug": "kuropatkin"
+  },
+  {
+    "postId": 335,
+    "quote": "аренды Квантуна",
+    "kind": "term",
+    "slug": "concession"
+  },
+  {
+    "postId": 335,
+    "quote": "Константина Величко",
+    "kind": "person",
+    "slug": "velichko"
+  },
+  {
+    "postId": 338,
+    "quote": "«Варианты выполнения судостроительной программы 1881 года. Влияние на Русско-японскую войну 1904–1905 годов»",
+    "kind": "book",
+    "slug": "kukushkin-sudostroitelnaya-programma-1881"
+  },
+  {
+    "postId": 338,
+    "quote": "Рожественским",
+    "kind": "person",
+    "slug": "rozhestvenskii"
+  },
+  {
+    "postId": 339,
+    "quote": "генерала Кондратенко",
+    "kind": "person",
+    "slug": "kondratenko"
+  },
+  {
+    "postId": 347,
+    "quote": "Павел Михайлович Дмитриев",
+    "kind": "person",
+    "slug": "pavel-dmitriev"
+  },
+  {
+    "postId": 347,
+    "quote": "Юрасовский",
+    "kind": "person",
+    "slug": "konstantin-yurasovskii"
+  },
+  {
+    "postId": 347,
+    "quote": "«Страшный» затонул",
+    "kind": "ship",
+    "slug": "strashnyi"
+  },
+  {
+    "postId": 350,
+    "quote": "Сергея Александровича Корсакова",
+    "kind": "person",
+    "slug": "sergei-korsakov"
+  },
+  {
+    "postId": 350,
+    "quote": "Сергей Александрович Рашевский",
+    "kind": "person",
+    "slug": "sergei-rashevskii"
+  },
+  {
+    "postId": 350,
+    "quote": "«Искры»",
+    "kind": "source",
+    "slug": "petropavlovsk-iskry-1914"
+  },
+  {
+    "postId": 351,
+    "quote": "высота 203",
+    "kind": "place",
+    "slug": "vysokaya-gora"
+  },
+  {
+    "postId": 352,
+    "quote": "Дмитрии Ивановиче Менделееве",
+    "kind": "person",
+    "slug": "dmitrii-mendeleev"
+  },
+  {
+    "postId": 352,
+    "quote": "книги «Заветные мысли»",
+    "kind": "book",
+    "slug": "mendeleev-zavetnye-mysli"
+  },
+  {
+    "postId": 352,
+    "quote": "Макаровым",
+    "kind": "person",
+    "slug": "makarov"
+  },
+  {
+    "postId": 354,
+    "quote": "Бориса Ананьича",
+    "kind": "person",
+    "slug": "boris-ananich"
+  },
+  {
+    "postId": 354,
+    "quote": "«Банкирские дома в России, 1860–1914 гг.»",
+    "kind": "book",
+    "slug": "ananich-bankirskie-doma"
+  }
+]

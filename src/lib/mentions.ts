@@ -1,18 +1,35 @@
 import { createMentionMatcher } from './mentionMatcher';
 export { mentionContext, type MentionContext } from './mentionMatcher';
-import { people, places, terms, referenceDescriptions, href, img, imgCrop, photoMeta, referencePhoto, canonicalPersonSlug } from './data';
+import { people, places, terms, referenceDescriptions, href, img, imgCrop, photoMeta, referencePhoto, canonicalPersonSlug, bookBySlug, sourceBySlug } from './data';
 import aliases from '../data/entity_aliases.json';
 import { locale, intlLocale, assetUrl } from '../i18n/locale';
 import { hardware, subjectImage } from './hardware';
 import { readingNotes } from './readingNotes';
+import editorialNotes from '../content-data/telegram-editorial-notes.json';
 
 export interface EntityPreview {
-  id: string; kind: 'person' | 'place' | 'ship' | 'weapon' | 'term'; title: string; description: string;
+  id: string; kind: 'person' | 'place' | 'ship' | 'weapon' | 'term' | 'book' | 'source'; title: string; description: string;
   href: string; image: string | null; alt: string;
   linkLabel?: string; linkTitle?: string;
+  additionalSources?: {title:string;url:string}[];
 }
 export interface MentionPart { text: string; entity?: EntityPreview }
 const registry = new Map<string, EntityPreview>();
+export function previewFor(kind:EntityPreview['kind'],slug:string):EntityPreview {
+  if (kind === 'term' && Object.hasOwn(editorialNotes,slug)) {
+    const note = editorialNotes[slug as keyof typeof editorialNotes];
+    return {id:'term/'+slug,kind,title:note.title[locale],description:note.description[locale],
+      href:note.source.url,linkLabel:'Источник пояснения',linkTitle:note.source.title,
+      additionalSources:'additionalSources' in note ? note.additionalSources : undefined,image:null,alt:''};
+  }
+  const item = kind === 'book' ? bookBySlug.get(slug) : kind === 'source' ? sourceBySlug.get(slug) : undefined;
+  if (item) return {id:kind+'/'+slug, kind, title:item.title, description:excerpt(item.annotation),
+    href:kind === 'book' ? href.book(slug) : href.source(slug), image:null, alt:''};
+  const key = kind + '/' + (kind === 'person' ? canonicalPersonSlug(slug) : slug);
+  const record = registry.get(key);
+  if (!record) throw new Error('Unknown footnote reference: ' + key);
+  return record;
+}
 const names = new Map<string, Set<string>>();
 const sentence = new Intl.Segmenter(intlLocale, { granularity: 'sentence' });
 const excerpt = (text: string) => {

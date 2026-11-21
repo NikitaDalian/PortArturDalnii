@@ -17,6 +17,13 @@ export const updates = [
     title: text('Эскадры, городской архив и новые заметки', 'Fleet profiles, city history and new notes', '舰艇资料、城市档案与新收录文章'),
     entries: [
       {
+        body: text('В оригиналах появились раскрывающиеся примечания. Рядом с двумя спорными датировками приведены источники. Из карточек упомянутых людей, мест, книг и кораблей можно вернуться к заметкам.',
+          'The Russian originals now have expandable reading notes. Two notes clarify dates and link to the evidence. Profiles of people, places, books and ships link back to the relevant posts.',
+          '俄文原帖新增可展开的阅读注释。其中两条说明订正了日期，并附有史料来源。人物、地点、书籍和舰船条目也提供了返回相关笔记的链接。'),
+        links: [link(href.note('tolstoi-odumaites-1904') + '#fn-79-term-port-arthur-attack-date', 'Два стиля датировки', 'Old and New Style dates', '俄历与公历日期'),
+          link(href.note('molodyakov-rossiya-i-frantsiya') + '#fn-142-term-entente-and-port-arthur-siege', 'Англо-французское соглашение и осада', 'The Entente Cordiale and the siege', '英法协约与围城时间')],
+      },
+      {
         body: text('Все 84 заметки можно прочитать на сайте в исходной русской редакции. Шесть из них объединяют по два сообщения. У каждой части сохранены дата и ссылка для обсуждения в канале.',
           'All 84 notes include their original Russian text. Six notes bring together two posts each. Each post retains its date and a link to the channel for discussion.',
           '全部84篇笔记现已收录俄文原文。其中六篇各包含两条原帖，每条均保留发布日期和前往频道讨论的链接。'),

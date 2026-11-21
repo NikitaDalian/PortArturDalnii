@@ -12,7 +12,7 @@ import SourceRefs from '../../components/hardware/SourceRefs.astro';
 import HardwareRow from '../../components/hardware/HardwareRow.astro';
 import { hardware, hardwareKind, shipsUsing, subjectImage, type Hardware } from '../../lib/hardware';
 import { mentionContext } from '../../lib/mentions';
-import { href, imgCrop, articleBySlug, placeBySlug, personBySlug, sourceBySlug, layerByKey } from '../../lib/data';
+import { href, imgCrop, articlesAbout, placeBySlug, personBySlug, sourceBySlug, layerByKey } from '../../lib/data';
 import { essays } from '../../lib/essays';
 import { assetUrl } from '../../i18n/locale';
 export function getStaticPaths() { return hardware.map(item=>({params:{slug:item.slug},props:{item}})); }
@@ -30,7 +30,7 @@ const structuredData = {
 const installedOn=shipsUsing(e.slug);
 const readings=[
   ...e.relatedEssays.map(slug=>essays.find(item=>item.slug===slug)).filter(Boolean).map(item=>({name:item!.title,url:href.essay(item!.slug)})),
-  ...e.relatedNotes.map(slug=>articleBySlug.get(slug)).filter(Boolean).map(item=>({name:item!.title,url:href.note(item!.slug)})),
+  ...articlesAbout(e.kind,e.slug,e.relatedNotes).map(item=>({name:item.title,url:href.note(item.slug)})),
 ];
 const connections=[
   ...e.relatedPeople.map(slug=>personBySlug.get(slug)).filter(Boolean).map(item=>({name:item!.name,url:href.person(item!.slug)})),

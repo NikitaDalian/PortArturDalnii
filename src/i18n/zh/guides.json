@@ -445,8 +445,9 @@
   "people": [
    "velichko"
   ],
-  "library": [],
+  "library": ["video-ukreplenie-5"],
   "related": [
+   {"label": "资料库中的第5号防御工事视频", "url": "/PortArturDalnii/biblioteka/istochniki/video-ukreplenie-5/"},
    {
     "label": "典型堡垒示意图",
     "url": "/PortArturDalnii/zametki/kak-ustroen-fort/"

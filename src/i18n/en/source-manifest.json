@@ -1,6 +1,6 @@
 {
   "data/articles.json": "337d94f410fd5e40cc5cd69f29412813cba901545570c3c20e0e854bcd842739",
-  "data/essays.json": "a26b9574a076265100da2630ecc7cc39f8e3776e221e2cbfa9aac8967cced523",
+  "data/essays.json": "91a4e100f4294b5053a292af1d27bba108629f94222021d0c0b36f45286a3d3a",
   "data/hardware.json": "acb756b312f23ef201214920dd56b68a51ca87bd167f091b0baabc46166d46c2",
   "data/fleet_overview.json": "578e697cf64e54fc24ba449eda3c76d80f01d8467035d80487d395d47daa5bdb",
   "data/reading_notes.json": "1d36fe4bc79f4fd325a317553188583f002481573de9982ce30d55f604b6e5f5",
@@ -21,5 +21,5 @@
   "data/walk_guides.json": "7953e94ebb141003853095a8bc2b9d6c861b64179649dc76cee4d7feac42e889",
   "data/zhongshan_buildings.json": "832796681f8cc737efe57b930a3d79fb8d32bd58d3a9c32e310fb348b78f1bf3",
   "data/place_sources.json": "ff41670f0dd2c0441206704f243bdc8d9a54f9711015277153d54a3d1f7c6cdc",
-  "components/places/dossiers.ts": "8370432ed9f9cd15ba9f283bbf5cb09a3f455ef293bf65edcf29fe1cce90b980"
+  "components/places/dossiers.ts": "623780394574df1df73390ec631846df903ed7534fc8534c8134cef63cce06f8"
 }

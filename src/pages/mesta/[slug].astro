@@ -20,7 +20,7 @@ import Coast from '../../components/Coast.astro';
 import MiniMap from '../../components/map/MiniMap.astro';
 import MapFigure from '../../components/MapFigure.astro';
 import Gallery from '../../components/map/Gallery.astro';
-import { places, href, img, imgCrop, articlesOf, amapUrl, yandexUrl, layerByKey, photoMeta, plural, type Place } from '../../lib/data';
+import { places, href, img, imgCrop, articlesAbout, amapUrl, yandexUrl, layerByKey, photoMeta, plural, type Place } from '../../lib/data';
 import { KINDS, CITIES, SEASONS, placeLayers, isUncertain, routesThrough, peopleAt, nearest, photoCaption } from '../../components/map/places';
 import { fmtKm } from '../../components/map/geo';
 
@@ -35,7 +35,7 @@ const placeMap = ({ 'nikolaevskaya-ploshchad': 68, 'fort-2': 120, 'ukreplenie-3'
 const photos = ((p.photos || []) as string[]).filter((f) => !placeMap || !String(f).includes(`photo_${placeMap}@`));
 const cover = photos[0] ?? null;
 const layers = placeLayers(p);
-const notes = articlesOf((p.articles || []) as string[]);
+const notes = articlesAbout('place', p.slug, (p.articles || []) as string[]);
 const folk = peopleAt(p.slug);
 const rts = routesThrough(p.slug);
 const near = nearest(p, 4);

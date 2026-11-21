@@ -1,0 +1,56 @@
+{
+  "caponier": {
+    "title": {
+      "ru": "Капонир",
+      "en": "Caponier",
+      "zh": "壕沟侧防堡"
+    },
+    "description": {
+      "ru": "Защищённая постройка в крепостном рву. Из неё защитники форта могли стрелять вдоль рва.",
+      "en": "A sheltered structure in a fort’s ditch from which defenders could fire along the ditch.",
+      "zh": "设在要塞壕沟里的防御工事，守军可从里面沿壕沟方向射击。"
+    },
+    "source": {
+      "title": "Большая советская энциклопедия. «Капонир»",
+      "url": "https://gufo.me/dict/bse/%D0%9A%D0%B0%D0%BF%D0%BE%D0%BD%D0%B8%D1%80"
+    }
+  },
+  "port-arthur-attack-date": {
+    "title": {
+      "ru": "Дата нападения на Порт-Артур",
+      "en": "Date of the attack on Port Arthur",
+      "zh": "旅顺口遇袭的日期"
+    },
+    "description": {
+      "ru": "Японские миноносцы атаковали русскую эскадру в ночь на 27 января по старому стилю, то есть на 9 февраля 1904 года по новому. В скобках оригинала верное число, но указан январь вместо февраля.",
+      "en": "Japanese destroyers attacked the Russian squadron on the night leading into 27 January Old Style, corresponding to 9 February 1904 New Style. The original gives January instead of February in parentheses.",
+      "zh": "日本鱼雷艇夜袭俄国舰队，按俄历是1月26日深夜至27日凌晨，按公历则是1904年2月8日深夜至9日凌晨。原文括号里把公历日期的月份误写成了1月。"
+    },
+    "source": {
+      "title": "Президентская библиотека. Началась русско-японская война 1904–1905 гг.",
+      "url": "https://www.prlib.ru/history/1181970"
+    }
+  },
+  "entente-and-port-arthur-siege": {
+    "title": {
+      "ru": "Англо-французское соглашение и осада Порт-Артура",
+      "en": "The Entente Cordiale and the siege of Port Arthur",
+      "zh": "英法协约与旅顺口围城"
+    },
+    "description": {
+      "ru": "Великобритания и Франция подписали соглашения Антанты 8 апреля 1904 года. К тому времени война уже шла. Сухопутная осада Порт-Артура развернулась позже, в конце июля.",
+      "en": "Britain and France signed the Entente Cordiale agreements on 8 April 1904, after the war had begun. The land siege of Port Arthur developed later, in late July.",
+      "zh": "英国和法国于1904年4月8日签署英法协约时，日俄战争已经爆发。日军从陆上围攻旅顺口是在7月下旬。"
+    },
+    "source": {
+      "title": "Японский центр азиатских исторических документов. Хронология русско-японской войны",
+      "url": "https://www.jacar.go.jp/english/exhibition/nichiro/nenpyou_2.htm"
+    },
+    "additionalSources": [
+      {
+        "title": "Declaration between the United Kingdom and France, 8 April 1904",
+        "url": "https://avalon.law.yale.edu/20th_century/entecord.asp"
+      }
+    ]
+  }
+}

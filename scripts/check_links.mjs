@@ -65,6 +65,9 @@ function resolve(path) {
 }
 
 const placeExists = (slug) => existsSync(join(root, 'mesta', slug, 'index.html'));
+const sourceJson = path => JSON.parse(readFileSync(new URL('../src/'+path,import.meta.url),'utf8'));
+const originals = sourceJson('content-data/telegram-originals.json');
+const notePosts = new Map(sourceJson('data/articles.json').map(note => [note.slug,note.tg_ids]));
 
 const broken = [];
 const dupes = [];
@@ -74,6 +77,16 @@ let checked = 0;
 for (const file of files) {
   const here = pageUrl(file);
   const { raw, body, ids } = load(file);
+  const noteSlug = here.match(/\/zametki\/([^/]+)\/$/)?.[1];
+  const expectedPosts = notePosts.get(noteSlug);
+  if (expectedPosts) {
+    const rendered = [...body.matchAll(/<section class="post" id="post-(\d+)"[^>]*>[\s\S]*?<div class="prose post-body"[^>]*>([\s\S]*?)<\/div>/g)];
+    if (rendered.map(post => post[1]).join(',') !== expectedPosts.join(',')) broken.push({page:here,href:'#original',why:'не все оригинальные публикации показаны в исходном порядке'});
+    for (const [,id,html] of rendered) {
+      const restored = html.replace(/<a\b[^>]* data-footnote="\d+"[^>]*>([^<]*)<\/a>/g,'$1');
+      if (restored !== originals[id]?.html) broken.push({page:here,href:'#post-'+id,why:'текст, ссылки или форматирование расходятся с оригиналом'});
+    }
+  }
 
   for (const m of body.matchAll(/\shref="([^"]*)"/g)) {
     const href = decode(m[1]);
@@ -110,7 +123,7 @@ for (const file of files) {
   }
 
   // Карточки загружают изображения после наведения: их URL хранится в JSON, а не src.
-  for (const m of body.matchAll(/\sdata-entity-preview="([^"]*)"/g)) {
+  for (const m of body.matchAll(/\sdata-(?:entity-preview|note-preview)="([^"]*)"/g)) {
     try {
       const preview = JSON.parse(decode(m[1]));
       if (!preview.title || !preview.description) throw new Error('пустая справка');

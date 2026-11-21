@@ -11,7 +11,7 @@ import SourceCard from '../../../components/library/SourceCard.astro';
 import DocumentReading from '../../../components/library/DocumentReading.astro';
 import { documentReading } from '../../../lib/evidence';
 import { sourceKindLabel, peopleOf, similarSources } from '../../../components/library/labels';
-import { sources, href, imgCrop, articlesOf, type Source } from '../../../lib/data';
+import { sources, href, imgCrop, articlesOf, articlesAbout, type Source } from '../../../lib/data';
 
 export function getStaticPaths() {
   return sources.map((s) => ({ params: { slug: s.slug }, props: { s } }));
@@ -22,10 +22,11 @@ const reading = documentReading(s.slug);
 
 const pic = imgCrop(s.image, '3x2');
 const kind = sourceKindLabel(s.kind);
-const notes = articlesOf(s.articles ?? []);
+const thematic = articlesOf(s.articles ?? []);
+const notes = articlesAbout('source', s.slug, s.articles ?? []);
 const firstPost = s.posts?.[0] ?? null;
 const people = peopleOf(s.articles ?? []);
-const places = [...new Set(notes.flatMap((a) => a.places ?? []))];
+const places = [...new Set(thematic.flatMap((a) => a.places ?? []))];
 const similar = similarSources(s, sources);
 const hostOf = (u: string) => {
   try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return null; }
@@ -95,7 +96,7 @@ const description = s.annotation ? s.annotation.slice(0, 180) : `${kind}: ${s.ti
     <section class="section section--tight paper src-sec" aria-labelledby="notes-h">
       <div class="container">
         <div class="section-head">
-          <h2 class="h2" id="notes-h">Заметки об источнике</h2>
+          <h2 class="h2" id="notes-h">Заметки</h2>
         </div>
         <div class="row-list">
           {notes.map((a) => <ArticleCard a={a} variant="row" showSummary />)}

@@ -445,8 +445,9 @@
     "people": [
       "velichko"
     ],
-    "library": [],
+    "library": ["video-ukreplenie-5"],
     "related": [
+      {"label": "Video about Fortification No. 5 in the library", "url": "/PortArturDalnii/biblioteka/istochniki/video-ukreplenie-5/"},
       {
         "label": "Diagram of a Typical Fort",
         "url": "/PortArturDalnii/zametki/kak-ustroen-fort/"

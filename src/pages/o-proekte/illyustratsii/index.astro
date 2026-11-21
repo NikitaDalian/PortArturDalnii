@@ -153,7 +153,7 @@ const n = (x: number, a: string, b: string, c: string) => `${x} ${plural(x, a, b
   .cr__intro { max-width: 72ch; }
   .cr__group { display: flex; flex-direction: column; gap: 12px; margin-top: 12px; }
   .cr__list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
-  .cr__item { padding: 14px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 90px; }
+  .cr__item { padding: 14px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 90px; overflow-wrap: anywhere; }
   .cr__item:target { background: var(--frost); box-shadow: -12px 0 0 var(--frost), 12px 0 0 var(--frost); }
   .cr__line { margin: 0; font-size: 16px; line-height: 1.5; color: var(--ink-2); overflow-wrap: anywhere; }
   .cr__meta { margin: 6px 0 0; display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 14px; }

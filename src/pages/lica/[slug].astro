@@ -13,7 +13,7 @@ import Portrait from '../../components/people/Portrait.astro';
 import PersonFacts from '../../components/people/PersonFacts.astro';
 import PersonNav from '../../components/people/PersonNav.astro';
 import { personArticles, personBooks, neighbors, splitName, splitQuote } from '../../components/people/relations';
-import { href, img, entity, people, placeBySlug, photoMeta, COUNTRIES, plural, type Person, type Place } from '../../lib/data';
+import { href, img, entity, people, placeBySlug, photoMeta, articlesAbout, COUNTRIES, plural, type Person, type Place } from '../../lib/data';
 
 export function getStaticPaths() {
   return people.map((p) => ({ params: { slug: p.slug }, props: { p } }));
@@ -24,7 +24,8 @@ const { p } = Astro.props;
 const mentions = mentionContext([`person/${p.slug}`], p.places.map(slug => `place/${slug}`));
 const c = COUNTRIES[p.country] ?? COUNTRIES.other;
 const name = splitName(p.name);
-const notes = personArticles(p);
+const notes = articlesAbout('person', p.slug, personArticles(p).map(note => note.slug))
+  .sort((a, b) => a.date.localeCompare(b.date));
 const { authored, reviewed } = personBooks(p);
 const near = neighbors(p, 8);
 const quote = p.quote ? splitQuote(p.quote) : null;

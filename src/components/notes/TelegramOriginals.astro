@@ -2,6 +2,7 @@
 import { fmtDate, tgPost } from '../../lib/data';
 import { locale } from '../../i18n/locale';
 import { originalsFor } from '../../lib/telegramOriginals';
+import { annotatedTelegramText } from '../../lib/annotatedTelegramText';
 interface Props { posts: ReturnType<typeof originalsFor> }
 const { posts } = Astro.props;
 const copy = {
@@ -9,24 +10,57 @@ const copy = {
   en: {title:'Original note in Russian', part:'Post', discuss:'Discuss on Telegram', via:'Forwarded from'},
   zh: {title:'俄文原文', part:'原帖', discuss:'前往 Telegram 讨论', via:'转发自'},
 }[locale];
+const labels = {
+  ru:{one:'Примечание', all:'Примечания', read:'Подробнее', back:'Вернуться к тексту'},
+  en:{one:'Note', all:'Reading notes', read:'Read more', back:'Back to the text'},
+  zh:{one:'注释', all:'阅读注释', read:'查看详情', back:'返回原文'},
+}[locale];
+let nextNumber = 1;
+const annotated = posts.map(post => {
+  const { html, notes } = annotatedTelegramText(post, labels.one, nextNumber);
+  nextNumber += notes.length;
+  return {...post, html, notes};
+});
 ---
 <section aria-labelledby="original" class="originals">
   <h2 class="h2" id="original">{copy.title}</h2>
-  {posts.map((post, i) => <section class="post" id={`post-${post.id}`}>
+  {annotated.map((post, i) => <section class="post" id={`post-${post.id}`}>
     <header class="meta">
       {posts.length > 1 && <strong>{copy.part} {i + 1} · </strong>}
       <time datetime={post.date}>{fmtDate(post.date.slice(0, 10))}</time>
       {post.forwardedFrom && <span> · {copy.via} <span lang="ru">{post.forwardedFrom}</span></span>}
     </header>
     <div class="prose post-body" lang="ru" set:html={post.html} />
+    {post.notes.length > 0 && <details class="footnotes" data-pagefind-ignore>
+      <summary>{labels.all} <span class="meta">({post.notes.length})</span></summary>
+      <ol start={post.notes[0].number}>
+        {post.notes.map(({id,entity}) => <li id={id} data-note-preview={JSON.stringify(entity)}>
+          <strong>{entity.title}</strong>
+          <p>{entity.description}</p>
+          <a class="link" href={entity.href}>{entity.linkTitle ?? labels.read}</a>
+          {entity.additionalSources?.map(source => <> · <a class="link" href={source.url}>{source.title}</a></>)}
+          <a class="footnote-back" aria-label={labels.back} title={labels.back} href={'#ref-'+id}>↩</a>
+        </li>)}
+      </ol>
+    </details>}
     <a class="text-link" href={tgPost(post.id)} rel="noopener" target="_blank">{copy.discuss} ↗</a>
   </section>)}
 </section>
 <style>
-  .post { max-width:68ch; margin-top:1.2rem; }
+  .post { max-width:65ch; margin-top:1.2rem; }
   .post + .post { border-top:1px solid var(--line); margin-top:2rem; padding-top:1.5rem; }
   .post-body { margin-block:.8rem 1.25rem; overflow-wrap:anywhere; }
   .post-body :global(p) { white-space:pre-wrap; }
   .post-body :global(blockquote) { margin-inline:0; padding-left:1rem; border-left:3px solid var(--line); }
   .post-body :global(a) { text-decoration:underline; text-underline-offset:.16em; }
+  .post-body :global(.note-ref) { color:inherit; text-decoration:underline dotted var(--steel); }
+  .post-body :global(.note-ref::after) { content:attr(data-footnote); font:650 .7em var(--font); color:var(--accent-on-light); vertical-align:super; margin-inline-start:.12em; }
+  .footnotes { border-block-start:1px solid var(--line); margin:.6rem 0 1rem; }
+  .footnotes summary { cursor:pointer; padding:.7rem 0; font-weight:650; }
+  .footnotes ol { padding-inline-start:1.8rem; }
+  .footnotes li { padding:.4em .2em .8em; scroll-margin-top:calc(var(--header-h) + 14px); }
+  .footnotes li:target { background:var(--frost); }
+  .footnotes p { margin:.25rem 0; line-height:1.55; }
+  .footnote-back { display:inline-block; padding:4px 12px; }
+  .post-body :global(.note-ref) { scroll-margin-top:calc(var(--header-h) + 14px); }
 </style>
