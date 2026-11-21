@@ -15,8 +15,9 @@ interface Props {
   lang?: 'ru' | 'en' | 'zh' | 'zh-Hans';
   /** false — страница-список: не попадает в поисковый индекс Pagefind (чтобы не дублировать карточки) */
   searchable?: boolean;
+  structuredData?: Record<string, unknown>;
 }
-const { title, description = t.description, image = null, section = null, lang = htmlLang, searchable = true } = Astro.props;
+const { title, description = t.description, image = null, section = null, lang = htmlLang, searchable = true, structuredData } = Astro.props;
 const fullTitle = title ? `${title} — ${t.site}` : `${t.site} — ${t.tagline}`;
 const ogImage = new URL(image || assetUrl('img/p/98.webp'), Astro.site).href;
 const fontUrl = assetUrl('fonts/Onest-var.woff2');
@@ -30,9 +31,10 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
   <title>{fullTitle}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonical} />
+  <link rel="sitemap" type="application/xml" href={new URL(assetUrl('sitemap.xml'), Astro.site).href} />
   {languages.map((language) => <link rel="alternate" hreflang={language.hreflang} href={new URL(languagePath(Astro.url.pathname, language.code), Astro.site).href} />)}
   <link rel="alternate" hreflang="x-default" href={new URL(languagePath(Astro.url.pathname, 'ru'), Astro.site).href} />
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content={structuredData?.['@type'] === 'Article' ? 'article' : 'website'} />
   <meta property="og:title" content={fullTitle} />
   <meta property="og:description" content={description} />
   <meta property="og:image" content={ogImage} />
@@ -41,6 +43,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
   <link rel="icon" href={assetUrl('favicon.svg')} type="image/svg+xml" />
   <!-- Шрифт Onest (лицензия OFL) отдаём с самого сайта: Google Fonts из материкового Китая обычно недоступны -->
   <link rel="preload" href={fontUrl} as="font" type="font/woff2" crossorigin />
+  {structuredData && <script is:inline type="application/ld+json" set:html={JSON.stringify({
+    '@context':'https://schema.org', url:canonical, inLanguage:lang, ...structuredData,
+  }).replace(/</g, '\\u003c')} />}
   <style is:inline set:html={`@font-face{font-family:'Onest';src:url(${fontUrl}) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}`}></style>
   <slot name="head" />
   <ClientRouter fallback="swap" />

@@ -91,7 +91,7 @@ const portraitArchive = (p.portrait && photoMeta(p.portrait as string)?.record_u
         <div class="section-head">
           <div class="stack" style="--stack-gap:8px">
             <h2 class="h2" id="notes">Читать в канале</h2>
-            <p class="muted">{notes.length} {plural(notes.length, 'заметка', 'заметки', 'заметок')}: на сайте краткое изложение, полный текст в Telegram</p>
+            <p class="muted">{notes.length} {plural(notes.length, 'заметка', 'заметки', 'заметок')}</p>
           </div>
           {firstPost && <TgButton id={firstPost} label="Первый пост в Telegram" variant="outline" />}
         </div>

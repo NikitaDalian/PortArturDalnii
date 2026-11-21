@@ -17,6 +17,13 @@ export const updates = [
     title: text('Эскадры, городской архив и новые заметки', 'Fleet profiles, city history and new notes', '舰艇资料、城市档案与新收录文章'),
     entries: [
       {
+        body: text('Все 84 заметки можно прочитать на сайте в исходной русской редакции. Шесть из них объединяют по два сообщения. У каждой части сохранены дата и ссылка для обсуждения в канале.',
+          'All 84 notes include their original Russian text. Six notes bring together two posts each. Each post retains its date and a link to the channel for discussion.',
+          '全部84篇笔记现已收录俄文原文。其中六篇各包含两条原帖，每条均保留发布日期和前往频道讨论的链接。'),
+        links: [link(href.notes(), 'Все заметки', 'Browse the notes', '浏览全部笔记'),
+          link(href.note('ukreplenie-4-daanzishan') + '#original', 'Две публикации об укреплении № 4', 'Two posts on Fortification No. 4', '关于第4号防御工事的两条原帖')],
+      },
+      {
         body: text('В справочник Первой Тихоокеанской эскадры добавлены минный транспорт «Амур», грузовой пароход «Бурея», транспорт «Ангара» и госпитальное судно «Монголия». В карточках указано, какие задачи выполняло каждое судно и какими документами это подтверждается.',
           'Four vessels supporting the First Pacific Squadron now have profiles with sources documenting their service: the minelayer Amur, the cargo steamer Bureya, the transport Angara and the hospital ship Mongoliya.',
           '新增四艘为第一太平洋舰队提供支援的船只条目，分别为布雷舰「阿穆尔」号、货轮「布列亚」号、运输船「安加拉」号和医院船「蒙古」号。各条目均附服役史料。'),

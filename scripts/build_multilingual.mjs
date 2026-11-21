@@ -1,5 +1,5 @@
 import { spawnSync } from 'node:child_process';
-import { mkdirSync, readFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 const root = fileURLToPath(new URL('../', import.meta.url));
@@ -20,4 +20,20 @@ for (const language of editions) {
   // Index each language immediately, before the following locale is copied in.
   run('node_modules/pagefind/lib/runner/bin.cjs', ['--site', destination], language);
 }
+// Use the canonical URLs emitted by the templates, including the project base
+// and language prefix. The redirect pages point at their canonical target.
+const canonicalUrls = new Set();
+for (const entry of readdirSync(output, {recursive:true, withFileTypes:true})) {
+  if (!entry.isFile() || entry.name !== 'index.html') continue;
+  const html = readFileSync(path.join(entry.parentPath,entry.name),'utf8');
+  if (/<meta\b[^>]*(?:http-equiv="refresh"|content="[^"]*noindex)/i.test(html)) continue;
+  const canonical = html.match(/<link rel="canonical" href="([^"]+)"/)?.[1];
+  if (canonical) canonicalUrls.add(canonical);
+}
+if (!canonicalUrls.size) throw new Error('Build contains no canonical pages');
+const entries = [...canonicalUrls].sort().map(url => '  <url><loc>' + url + '</loc></url>');
+writeFileSync(path.join(output,'sitemap.xml'), [
+  '<?xml version="1.0" encoding="UTF-8"?>',
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">', ...entries, '</urlset>', '',
+].join('\n'));
 console.log(`Built ${editions.join(', ')} in ${output}`);

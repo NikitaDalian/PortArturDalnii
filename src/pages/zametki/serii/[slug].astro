@@ -48,7 +48,7 @@ const others = series.filter((x) => x.slug !== s.slug);
             <h2 class="h3"><a class="ss__title" href={href.note(a.slug)}><span class="sr-only">Часть {i + 1}. </span>{a.title}</a></h2>
             {a.dek && <p class="muted">{a.dek}</p>}
             <div class="cluster" style="--cluster-gap:8px 20px">
-              <a class="link" href={href.note(a.slug)}>Пересказ и факты</a>
+              <a class="link" href={href.note(a.slug)}>Читать заметку</a>
               <TgButton id={a.tg_ids[0]} label="В Telegram" variant="outline" />
             </div>
           </div>

@@ -18,7 +18,7 @@ export const ru = {
   menu: 'Меню',
   close: 'Закрыть',
   readInTg: 'Читать в Telegram',
-  readFull: 'Полный текст в канале',
+  readFull: 'Читать полностью',
   allPeople: 'Все персоны',
   all: 'Все',
   more: 'Подробнее',

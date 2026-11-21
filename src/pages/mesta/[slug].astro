@@ -49,8 +49,20 @@ const existingSources = (placeSources as Record<string, { title: string; url: st
 const references = [...new Map([...existingSources, ...buildingSources(p.slug)].map(s => [s.url, s])).values()];
 const relatedXinghai = p.slug === 'ploshchad-sinhai' ? 'most-buhty-sinhai' : p.slug === 'most-buhty-sinhai' ? 'ploshchad-sinhai' : null;
 const coverMeta = cover && photoMeta(cover);
+const placePage = new URL(href.place(p.slug), Astro.site).href;
+const structuredData = {
+  '@type':'WebPage', name:dossier?.title ?? p.name, description:dossier?.intro ?? p.summary,
+  mainEntity:{
+    '@type':'Place', '@id':placePage + '#place', name:p.name,
+    alternateName:p.name_zh && p.name_zh !== '—' ? p.name_zh : undefined,
+    geo:p.coord_confidence === 'high' && Number.isFinite(p.lat) && Number.isFinite(p.lng)
+      ? {'@type':'GeoCoordinates', latitude:p.lat, longitude:p.lng} : undefined,
+    containedInPlace:building ? {'@type':'Place','@id':new URL(href.place(squareSlug), Astro.site).href + '#place'} : undefined,
+  },
+  citation:references.map(ref => ({'@type':'CreativeWork', name:ref.title, url:ref.url})),
+};
 ---
-<Base title={dossier?.title ?? p.name} description={(dossier?.intro ?? p.summary).slice(0, 180)} image={img(cover)} section={dossier ? "notes" : "places"}>
+<Base structuredData={structuredData} title={dossier?.title ?? p.name} description={(dossier?.intro ?? p.summary).slice(0, 180)} image={img(cover)} section={dossier ? "notes" : "places"}>
   {dossier ? <DossierHero dossier={dossier} city={city} /> : <PageHero
     title={dossier?.title ?? p.name}
     eyebrow={`${city} · ${KINDS[p.kind] ?? p.kind}`}

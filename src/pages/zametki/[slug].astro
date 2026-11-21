@@ -9,7 +9,9 @@ import NoteCover from '../../components/NoteCover.astro';
 import Crumbs from '../../components/Crumbs.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import Related from '../../components/Related.astro';
-import TgButton from '../../components/TgButton.astro';
+import TelegramOriginals from '../../components/notes/TelegramOriginals.astro';
+import { originalsFor } from '../../lib/telegramOriginals';
+import { locale } from '../../i18n/locale';
 import TypeTag from '../../components/notes/TypeTag.astro';
 import MapFigure from '../../components/MapFigure.astro';
 import PhotoGallery from '../../components/notes/PhotoGallery.astro';
@@ -17,7 +19,7 @@ import MiniMap from '../../components/map/MiniMap.astro';
 import { prevNext, readAlso } from '../../components/notes/lib';
 import {
   articles, articleBySlug, seriesBySlug, articlesOf, layerByKey, href, img, imgCrop, tgPost, fmtDate,
-  TYPES, photoMeta, noteRelations, placeBySlug, type Article,
+  TYPES, photoMeta, noteRelations, placeBySlug, entity, type Article,
 } from '../../lib/data';
 
 export function getStaticPaths() {
@@ -47,10 +49,26 @@ const layers = a.layer.map((k) => layerByKey(k)).filter(Boolean) as NonNullable<
 const also = readAlso(a, 3);
 const { prev, next } = prevNext(a.slug);
 const rel = noteRelations(a);
+const originals = originalsFor(a.tg_ids);
+const pageUrl = new URL(href.note(a.slug), Astro.site).href;
+const mentioned = [
+  ...rel.places.map(slug => entity('place',slug)),
+  ...rel.people.map(slug => entity('person',slug)),
+  ...rel.books.map(slug => entity('book',slug)),
+];
+const structuredData = {
+  '@type':'Article', headline:a.title, description:a.summary, mainEntityOfPage:pageUrl,
+  image:a.cover ? new URL(img(a.cover)!, Astro.site).href : undefined,
+  mentions:mentioned.filter(item => item.href).map(item => ({'@type':'Thing', name:item.label, url:new URL(item.href!, Astro.site).href})),
+  hasPart:originals.map(post => ({
+    '@type':'SocialMediaPosting', '@id':pageUrl + '#post-' + post.id,
+    inLanguage:'ru', url:tgPost(post.id), datePublished:post.date,
+  })),
+};
 const hasRelated = rel.people.length + rel.places.length + rel.books.length > 0;
 const mapPlaces = rel.places.map((slug) => placeBySlug.get(slug)).filter((place) => place && Number.isFinite(place.lat) && Number.isFinite(place.lng));
 ---
-<Base title={a.title} description={a.dek || a.summary.slice(0, 160)} image={img(a.cover)} section="notes">
+<Base structuredData={structuredData} title={a.title} description={a.dek || a.summary.slice(0, 160)} image={img(a.cover)} section="notes">
   <section class="dark nh page-top" data-pagefind-filter="type:Заметки">
     <div class="container nh__inner page-top__inner" class:list={[{ 'has-img': cover }]}>
       <div class="nh__text stack" style="--stack-gap:18px">
@@ -63,7 +81,7 @@ const mapPlaces = rel.places.map((slug) => placeBySlug.get(slug)).filter((place)
         <div class="nh__meta" data-pagefind-ignore>
           <TypeTag type={a.type} size="md" />
           <span class="meta"><time datetime={a.date}>{fmtDate(a.date)}</time></span>
-          <span class="meta">{a.read_min} мин чтения в канале</span>
+          <span class="meta">{a.read_min} {{ru:'мин чтения',en:'min read',zh:'分钟阅读'}[locale]}</span>
           {ser && <span class="meta">Серия · {serPos + 1} из {ser.articles.length}</span>}
         </div>
         <h1 class="h1 nh__title" data-pagefind-meta="title">{a.title}</h1>
@@ -90,6 +108,7 @@ const mapPlaces = rel.places.map((slug) => placeBySlug.get(slug)).filter((place)
       <section class="stack" style="--stack-gap:14px" aria-labelledby="h-short">
         <h2 class="eyebrow eyebrow--accent" id="h-short">Коротко</h2>
         <p class="nb__summary"><LinkedText text={a.summary} context={mentions} limit={readingSummaryLimit(a.slug)} /></p>
+        <a class="text-link" href="#original">{{ru:'К авторскому тексту ↓',en:'Read the Russian original ↓',zh:'阅读俄文原文 ↓'}[locale]}</a>
       </section>
 
       {a.facts.length > 0 && (
@@ -101,19 +120,10 @@ const mapPlaces = rel.places.map((slug) => placeBySlug.get(slug)).filter((place)
         </section>
       )}
 
+      <TelegramOriginals posts={originals} />
       <DossierLinks kind="notes" slug={a.slug} />
       {noteMap && <div data-pagefind-ignore><MapFigure id={noteMap} /></div>}
 
-      <section class="nb__tg panel panel--frost stack" style="--stack-gap:14px" data-pagefind-ignore>
-        <p class="muted">Здесь — пересказ. Полный текст{a.photos.length ? ', все фотографии' : ''} и обсуждение — в посте канала.</p>
-        <div><TgButton id={a.tg_ids[0]} /></div>
-        {a.tg_ids.length > 1 && (
-          <div class="cluster" style="--cluster-gap:8px 18px">
-            <span class="meta">Пост в нескольких частях:</span>
-            {a.tg_ids.map((id, i) => <a class="link" href={tgPost(id)} target="_blank" rel="noopener">Часть {i + 1}</a>)}
-          </div>
-        )}
-      </section>
 
       <div data-pagefind-ignore><PhotoGallery photos={galleryPhotos} /></div>
     </article>
@@ -207,7 +217,6 @@ const mapPlaces = rel.places.map((slug) => placeBySlug.get(slug)).filter((place)
   .nb__facts { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; border-top: 1px solid var(--line); }
   .nb__facts li { position: relative; padding: 14px 0 14px 28px; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.5; }
   .nb__facts li::before { content: ''; position: absolute; left: 4px; top: 23px; width: 10px; height: 2px; background: var(--accent); }
-  .nb__tg .btn { white-space: normal; text-align: center; }
 
   .nb__layer { display: inline-flex; flex-direction: column; justify-content: center; min-height: 52px; padding: 8px 16px; border-radius: 12px; border: 1.5px solid var(--line-2); background: var(--paper); font-weight: 600; font-size: 15px; line-height: 1.25; transition: border-color .2s; }
   .nb__layer:hover { border-color: var(--navy); }

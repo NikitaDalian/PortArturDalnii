@@ -20,6 +20,13 @@ const { item:e } = Astro.props as { item:Hardware };
 const context=mentionContext([`${e.kind}/${e.slug}`],[...e.relatedPeople.map(slug=>`person/${slug}`),...e.crew.filter(member=>member.personSlug).map(member=>`person/${member.personSlug}`),...e.armament.map(gun=>`weapon/${gun.weaponSlug}`)]);
 const explorerPhoto = shipFeaturesBySlug.get(e.slug)?.photoFile;
 const portrait = subjectImage(e);
+const pageUrl = new URL(href.hardware(e.slug), Astro.site).href;
+const structuredData = {
+  '@type':'Article', headline:e.name, description:e.summary, mainEntityOfPage:pageUrl,
+  about:{'@type':'Thing', name:e.name, alternateName:e.aliases},
+  image:portrait ? new URL(assetUrl(portrait.file), Astro.site).href : undefined,
+  citation:e.sources.map(source => ({'@type':'CreativeWork', name:source.title, url:source.url})),
+};
 const installedOn=shipsUsing(e.slug);
 const readings=[
   ...e.relatedEssays.map(slug=>essays.find(item=>item.slug===slug)).filter(Boolean).map(item=>({name:item!.title,url:href.essay(item!.slug)})),
@@ -31,7 +38,7 @@ const connections=[
   ...e.relatedSources.map(slug=>sourceBySlug.get(slug)).filter(Boolean).map(item=>({name:item!.title,url:href.source(item!.slug)})),
 ];
 ---
-<Base title={e.name} description={e.summary} image={portrait ? assetUrl(portrait.file) : undefined} section="hardware">
+<Base structuredData={structuredData} title={e.name} description={e.summary} image={portrait ? assetUrl(portrait.file) : undefined} section="hardware">
   <header class="dark hardware-head">
     <div class="container">
       <Crumbs items={[{label:'Главная',href:href.home()},{label:'Корабли и вооружение',href:href.hardwareIndex()}]} />
